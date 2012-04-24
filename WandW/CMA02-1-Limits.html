@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="latexinput" content="mmd-cambridge-header"/>
+	<title>A Course of Modern Analysis-Limits 2-1</title>
+	<meta name="subtitle" content="An introduction to the general theory of
+infinite processes and analytic functions;
+with an account of the principal
+transcendental functions."/>
+	<meta name="author" content="E.T. Whittaker and G.N. Watson"/>
+	<meta name="editor" content="Eric Nitardy"/>
+	<meta name="date" content="March 30, 2012"/>
+	<meta name="titlefile" content="mmd-WandW-title"/>
+	<meta name="copyrightfile" content="mmd-WandW-copyright"/>
+	<meta name="test" content="And this is a new key-value pair"/>
+	<meta name="latexmode" content="memoir"/>
+	<meta name="latexinput" content="mmd-cambridge-begin-doc"/>
+	<meta name="latexfooter" content="mmd-cambridge-footer"/>
+	<link type="text/css" rel="stylesheet" href="css/documentation.css"/>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+<script type="text/javascript" src="https://raw.github.com/gist/1046538/footnotify.js#verbose"></script>
+<script type="text/javascript" src="js/showhide.js"></script>
+<script type="text/javascript" src="js/mathjaxend.js"></script>
+</head>
+<body>
+<div id="header"><h1><a href="CMA00-Front.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
+<div id="content">
+<div class="contenttext">
+
+<h2 id="thetheoryofconvergence">The Theory of Convergence</h2>
+
+<h3 id="limits">2.1 The definition of the limit of a sequence<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a></h3>
+
+<p>Let <span class="math">\(z_1, z_2, z_3, \dots\)</span> be an unending sequence of numbers, real or complex. Then, if a number <span class="math">\(l\)</span> exists such that, corresponding to every positive<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a> number <span class="math">\(\epsilon\)</span>, no matter how small, a number <span class="math">\(n_0\)</span> can be found, such that
+<span class="math">\[ \left|\, z_n-l \,\right| < \epsilon \]</span>
+for all values of <span class="math">\(n\)</span> greater than <span class="math">\(n_0\)</span>,<em>the sequence <span class="math">\((z_n)\)</span> is said to tend to the limit <span class="math">\(l\)</span> as <span class="math">\(n\)</span> tends to infinity.</em></p>
+
+<p>Symbolic forms of the statement<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a> ‘the limit of the sequence <span class="math">\((z_n)\)</span>, as <span class="math">\(n\)</span>
+tends to infinity, is <span class="math">\(l\)</span>’ are:
+<span class="math">\[ \lim_{n \rightarrow \infty} z_n= l, \quad \lim z_n = l, \quad z_n \rightarrow l \textit{ as } n \rightarrow \infty . \]</span></p>
+
+<p>If the sequence be such that, given an arbitrary number N (no matter how large), we can find <span class="math">\(n_0\)</span> such that <span class="math">\(\left|\,z_n\,\right| > N\)</span> for all values of <span class="math">\(n\)</span> greater than <span class="math">\(n_0\)</span>, we say that ‘<span class="math">\(\left|\, z_n \,\right|\)</span> tends to infinity as <span class="math">\(n\)</span> tends to infinity’, and we write
+<span class="math">\[ \left|\, z_n \,\right| \rightarrow \infty .\]</span></p>
+
+<p>In the corresponding case when <span class="math">\(-x_n>N\)</span> when <span class="math">\(n> n_0\)</span> we say that <span class="math">\(x_n \rightarrow \infty\)</span>.</p>
+
+<p>If a sequence of real numbers does not tend to a limit or to <span class="math">\(\infty\)</span> or to <span class="math">\(-\infty\)</span>, the sequence is said to <em>oscillate</em>.</p>
+
+<h4 id="definitionofthephraseoftheorderof">2.11 Definition of the phrase &#8216;of the order of&#8217;</h4>
+
+<p>If <span class="math">\((\zeta_n)\)</span> and <span class="math">\((z_n)\)</span> are two sequences such that a number <span class="math">\(n_0\)</span> exists such that <span class="math">\(\left|\,(\zeta_n/z_n)\,\right| < K\)</span> whenever <span class="math">\(n > n_0\)</span>, where <span class="math">\(K\)</span> is <em>independent of <span class="math">\(n\)</span></em>, we say that <span class="math">\(\zeta_n\)</span> is ‘of the order of’ <span class="math">\(z_n\)</span>, and we write<a href="#fn:4" id="fnref:4" title="see footnote" class="footnote">[4]</a>
+<span class="math">\[ \zeta_n = O(z_n) \]</span>
+thus
+<span class="math">\[ \frac{15n +19}{1 + n^3} = O \left (\frac{1}{n^2} \right ) \]</span>
+If <span class="math">\(\lim(\zeta_n/z_n) = 0\)</span>, we write <span class="math">\(\zeta_n = o(z_n)\)</span>.</p>
+
+<h3 id="thelimitofanincreasingsequence">2.2 The limit of an increasing sequence</h3>
+
+<p>Let <span class="math">\((x_n)\)</span> be a sequence of real numbers such that <span class="math">\(x_{n+1} \geq x_n\)</span> for all values of <span class="math">\(n\)</span>; then <em>the sequence tends to a limit or else tends to infinity</em> (and so it does not oscillate).</p>
+
+<p>Let <span class="math">\(x\)</span> be any rational-real number; then either:</p>
+
+<ol>
+<li><span class="math">\(x_n \geq x\)</span> for all values of <span class="math">\(n\)</span> greater than some number <span class="math">\(n_0\)</span> depending on the value of <span class="math">\(x\)</span>.</li>
+<li><span class="math">\(x_n < x\)</span> for every value of <span class="math">\(n\)</span>.</li>
+</ol>
+
+<p>If (ii) is not the case for <em>any</em> value of <span class="math">\(x\)</span> (no matter how large), then <span class="math">\(x_n \rightarrow \infty\)</span>.</p>
+
+<p>But if values of <span class="math">\(x\)</span> exist for which (ii) holds, we can divide the rational numbers into two classes, the <span class="math">\(L\)</span>-class consisting of those rational numbers <span class="math">\(x\)</span> for which (i) holds and the <span class="math">\(R\)</span>-class of those rational numbers <span class="math">\(x\)</span> for which (ii) holds. This section defines a real number <span class="math">\(\alpha\)</span>, rational or irrational.</p>
+
+<p>And if <span class="math">\(\epsilon\)</span> be an arbitrary positive number, <span class="math">\(\alpha - \frac{1}{2}\epsilon\)</span> belongs to the <span class="math">\(L\)</span>-class which defines <span class="math">\(\alpha\)</span>, and so we can find <span class="math">\(n_1\)</span> such that <span class="math">\(x_n \geq \alpha - \frac{1}{2}\epsilon\)</span> whenever <span class="math">\(n > n_1\)</span>;
+and <span class="math">\(\alpha + \frac{1}{2}\epsilon\)</span> is a member of the <span class="math">\(R\)</span>-class and so <span class="math">\(x_n \leq \alpha + \frac{1}{2}\epsilon\)</span>. Therefore, whenever <span class="math">\(n > n_1\)</span>,
+<span class="math">\( \left|\, \alpha - x_n \,\right| < \epsilon .\)</span>
+Therefore <span class="math">\(x_n \rightarrow \alpha \)</span>.<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a></p>
+
+<blockquote>
+<p><em>Corollary.</em> A decreasing sequence tends to a limit or to <span class="math">\(-\infty\)</span></p>
+
+<h6 id="monotonicex1"><em>Example</em> 1. If <span class="math">\(\lim z_n = l, \; \lim z\prime_n = l\prime\)</span>, then <span class="math">\(\lim(z_n + z\prime_n) = l + l\prime\)</span>. For, given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(n\)</span> and <span class="math">\(n\prime\)</span> such that</h6>
+
+<ol>
+<li>when <span class="math">\(m > n, \;  \left|\, z_m - l \,\right| < \frac{1}{2} \epsilon ,\)</span></li>
+<li>when <span class="math">\(m > n\prime, \;  \left|\, z\prime_m- l\prime \,\right| < \frac{1}{2} \epsilon .\)</span></li>
+</ol>
+
+<p>Let <span class="math">\(n_1\)</span> be the greater of <span class="math">\(n\)</span> and <span class="math">\(n\prime\)</span>; then, when <span class="math">\(m>n_1\)</span>,
+<span class="math">\[ \left|\, (z_m + z\prime_m) - (l + l\prime) \,\right| \leq \left|\, (z_n - l) \,\right| + \left|\, (z\prime_m - l\prime) \,\right| < \epsilon ; \]</span>
+and this is the condition that <span class="math">\(\lim (z_n + z\prime_m)= l + l\prime\)</span>.</p>
+
+<h6 id="monotonicex2"><em>Example</em> 2. Prove similarly that</h6>
+
+<ol>
+<li><span class="math">\(\lim (z_n - z\prime_n) = l - l\prime,\)</span></li>
+<li><span class="math">\( \lim (z_n z\prime_n) = l  l\prime,\)</span></li>
+<li>and, if <span class="math">\( l\prime \neq 0 , \;  \lim (z_n / z\prime_n) = l / l\prime.\)</span></li>
+</ol>
+
+<h6 id="monotonicex3"><em>Example</em> 3. If <span class="math">\( 0 < x < 1\)</span>, <span class="math">\(x^n \rightarrow 0\)</span>. For if <span class="math">\(x = (1+a)^{-1}\)</span>, <span class="math">\(a > 0\)</span> and <span class="math">\[ 0 < x^n =\frac{1}{(1+a)^n} <\frac{1}{1+na} \]</span> by the binomial theorem for a positive integral index.</h6>
+
+<p>And it is obvious that, given a positive number <span class="math">\(\epsilon\)</span>, we can choose <span class="math">\(n_0\)</span> such that <span class="math">\((1 + na)^{-1} < \epsilon \)</span> when <span class="math">\(n > n_0\)</span>; and so <span class="math">\(x^n \rightarrow 0\)</span>.</p>
+</blockquote>
+
+<h4 id="bolzanosection">2.21 Limit-points and the Bolzano-Weierstrass theorem<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a></h4>
+
+<p>Let <span class="math">\((x_n)\)</span> be a sequence of real numbers. if any number <span class="math">\(G\)</span> exists such that, for every positive value of <span class="math">\(\epsilon\)</span>, no matter how small, an unlimited number of terms of the sequence can be found such that
+<span class="math">\[ G - \epsilon < x_n  < G + \epsilon, \]</span>
+then <span class="math">\(G\)</span> is called a limit-point, or cluster-point, of the sequence.</p>
+
+<p>Bolzano&#8217;s theorem is that, <em>if <span class="math">\(\lambda \leq x_n \leq \rho\)</span>, where <span class="math">\(\lambda\)</span>, <span class="math">\(\rho\)</span> are independent of <span class="math">\(n\)</span>, then the sequence <span class="math">\((x_n)\)</span> has at least one limit-point.</em></p>
+
+<p>To prove the theorem, choose a section in which (i) the <span class="math">\(R\)</span>-class consists of all the rational numbers which are such that, if <span class="math">\(A\)</span> be any one of them, there are only a limited number of terms <span class="math">\(x_n\)</span> satisfying <span class="math">\(x_n >A\)</span>; and (ii) the <span class="math">\(L\)</span>-class is such that there are an unlimited number of terms <span class="math">\(x_n\)</span> such that <span class="math">\(x_n \geq a\)</span> for all members <span class="math">\(a\)</span> of the <span class="math">\(L\)</span>-class.</p>
+
+<p>This section defines a real number <span class="math">\(G\)</span>; and, if <span class="math">\(\epsilon\)</span> be an arbitrary positive number, <span class="math">\(G -  \frac{1}{2} \epsilon\)</span> and <span class="math">\(G +  \frac{1}{2} \epsilon\)</span> are members of the <span class="math">\(L\)</span> and <span class="math">\(R\)</span> classes respectively,<a href="#fn:7" id="fnref:7" title="see footnote" class="footnote">[7]</a> and so there are an unlimited number of terms of the sequence satisfying
+ <span class="math">\[ \textstyle G - \epsilon < G - \frac{1}{2} \epsilon \leq x_n \leq G + \frac{1}{2} \epsilon< G + \epsilon, \]</span>
+and so <span class="math">\(G\)</span> satisfies the condition that it should be a limit-point.</p>
+
+<h5 id="definitionofthegreatestofthelimits">2.211 Definition of &#8216;the greatest of the limits&#8217;</h5>
+
+<p>The number <span class="math">\(G\)</span> obtained in <a href="#bolzanosection">§2.21</a> is called &#8216;the greatest of the limits of the sequence <span class="math">\((x_n)\)</span>&#8217;. The sequence <span class="math">\((x_n)\)</span> cannot have a limit-point greater than <span class="math">\(G\)</span>; for if <span class="math">\(G\prime \)</span> were such a limit-point, and <span class="math">\(\epsilon =\frac{1}{2}(G -G\prime )\)</span>, <span class="math">\(G\prime —\epsilon\)</span> is a member of the <span class="math">\(R\)</span>-class defining <span class="math">\(G\)</span>, so that there are only a limited number of terms of the sequence which satisfy <span class="math">\(x_n > G\prime  -\epsilon\)</span>. This condition is inconsistent with <span class="math">\(G\prime \)</span> being a limit-point. We write
+<span class="math">\[ G= \varlimsup_{n \rightarrow \infty}  x_n. \]</span>
+The &#8216;least of the limits&#8217;, L ,of the sequence (written <span class="math">\(\displaystyle \varliminf_{n \rightarrow \infty}  x_n\)</span> ) is defined to be
+<span class="math">\[ - \varlimsup_{n \rightarrow \infty}  (-x_n). \]</span></p>
+
+<h4 id="cauchy">2.22 Cauchy&#8217;s theorem on the necessary and sufficient condition for the existence of a limit.<a href="#fn:8" id="fnref:8" title="see footnote" class="footnote">[8]</a></h4>
+
+<p>We shall now shew that the necessary and sufficient condition for the existence of a limiting value of a sequence of numbers <span class="math">\(z_1, z_2, z_3, \dots\)</span> is that, <em>corresponding to any given positive number <span class="math">\(\epsilon\)</span>, however small, it shall be possible to find a number <span class="math">\(n\)</span> such that
+<span class="math">\[ \left|\, z_{n+p}-z_n \,\right| < \epsilon \]</span>
+for all positive integral values of <span class="math">\(p\)</span>.</em> This result is one of the most important and fundamental theorems of analysis. It is sometimes called the <em>Principle of Convergence</em>.</p>
+
+<p>First, we have to shew that this condition is <em>necessary</em>, i.e. that it is satisfied whenever a limit exists. Suppose then that a limit <span class="math">\(l\)</span> exists; then (§<a href="#limits">2.1</a>) corresponding to any positive number <span class="math">\(\epsilon\)</span>, however small, an integer <span class="math">\(n\)</span> can be chosen such that
+<span class="math">\[ \textstyle \left|\, z_n - l \,\right| < \frac{1}{2} \epsilon, \quad \left|\, z_{n+p} - l \,\right| < \frac{1}{2} \epsilon , \]</span>
+for all positive values of <span class="math">\(p\)</span>; therefore
+<span class="math">\[
+\begin{align*}
+ \left|\,  z_{n+p} - z_n \,\right|  &= \left|\,  (z_{n+p} - l) - (z_n - l) \,\right| \\
+                                   & \leq \left|\, z_{n+p} - l \,\right| + \left|\, z_n - l \,\right| < \epsilon , \\
+ \end{align*}
+ \]</span>
+which shews the <em>necessity</em> of the condition
+<span class="math">\[  \left|\,  z_{n+p} - z_n \,\right| < \epsilon , \]</span>
+and thus establishes the first half of the theorem.</p>
+
+<p>Secondly, we have to prove<a href="#fn:9" id="fnref:9" title="see footnote" class="footnote">[9]</a> that this condition is <em>sufficient</em>, i.e. that if it is satisfied, then a limit exists. </p>
+
+<p>(I) Suppose that the sequence of real numbers <span class="math">\((x_n)\)</span> satisfies Cauchy&#8217;s condition; that is to say that, corresponding to any positive number <span class="math">\(\epsilon\)</span>, an integer <span class="math">\(n\)</span> can be chosen such that
+<span class="math">\[ \left|\, z_{n+p} - z_n \,\right| < \epsilon \]</span>
+for all positive integral values of <span class="math">\(p\)</span>.</p>
+
+<p>Let the value of <span class="math">\(n\)</span>, corresponding to the <span class="math">\(\epsilon\)</span> equaling <span class="math">\(1\)</span>, be <span class="math">\(m\)</span>.</p>
+
+<p>Let <span class="math">\(\lambda_1\)</span>, <span class="math">\(\rho_1\)</span> be the least and greatest of <span class="math">\(x_1, x_2, \dots , x_m\)</span>; then
+<span class="math">\[  \lambda_1 -1 < x_n < \rho_1 +1 , \]</span>
+for all values of <span class="math">\(n\)</span>; write <span class="math">\(\lambda_1 -1=\lambda , \; \rho_1 +1=\rho \)</span>.</p>
+
+<p>Then, for all values of <span class="math">\(n\)</span>, <span class="math">\(\lambda < x_n < \rho\)</span>. <em>Therefore by the theorem of</em> <a href="#bolzanosection">§2.21</a>, <em>the sequence <span class="math">\((x_n)\)</span> has at least one limit-point <span class="math">\(G\)</span></em>.</p>
+
+<p>Further, there cannot be more than one limit-point; for if there were two, <span class="math">\(G\)</span> and <span class="math">\(H \)</span> <span class="math">\( (H < G)\)</span>, take <span class="math">\(\epsilon < \frac{1}{4}(G - H)\)</span>. Then, by hypothesis, a number <span class="math">\(n\)</span> exists such that <span class="math">\(\left|\, x_{n+p} - x_n \,\right| < \epsilon\)</span> for every positive value of <span class="math">\(p\)</span>. But since <span class="math">\(G\)</span> and <span class="math">\(H\)</span> are limit-points, positive numbers <span class="math">\(q\)</span> and <span class="math">\(r\)</span> exist such that
+<span class="math">\[ \left|\, G - x_{n+q} \,\right| < \epsilon, \quad  \left|\, H - x_{n+r} \,\right| < \epsilon . \]</span></p>
+
+<p>Then <span class="math">\( \left|\, G - x_{n+q} \,\right| + \left|\, x_{n+q} - x_n \,\right| + \left|\, x_n - x_{n+r} \,\right| + \left|\, H - x_{n+r} \,\right| < 4 \epsilon \)</span>.</p>
+
+<p>But, by <a href="CMA01-Complex.html#themodulusofacomplexnumber">§1.4</a>, the sum on the left is greater than or equal to <span class="math">\(\left|\, G - H \,\right|\)</span>.</p>
+
+<p>Therefore <span class="math">\(G - H < 4\epsilon\)</span>, which is contrary to hypothesis; so there is only one limit-point. Hence there are only a finite number of terms of the sequence outside the interval <span class="math">\((G - \delta, G + \delta)\)</span>, where <span class="math">\(\delta\)</span> is an arbitrary positive number; for, if there were an unlimited number of such terms, these would have a limit-point which would be a limit-point of the given sequence and which would not coincide with <span class="math">\(G\)</span>; and therefore <span class="math">\(G\)</span> is the limit of <span class="math">\((x_n)\)</span>.</p>
+
+<p>(II) Now let the sequence <span class="math">\((z_n)\)</span> of real or complex numbers satisfy Cauchy&#8217;s condition; and let <span class="math">\(z_n = x_n -  i y_n\)</span>, where <span class="math">\(x_n\)</span> and <span class="math">\(y_n\)</span> are real; then for all values of <span class="math">\(n\)</span> and <span class="math">\(p\)</span>
+<span class="math">\[ \left|\, x_{n+p} - x_n \,\right| \leq \left|\, z_{n+p} - z_n \,\right|, \quad \left|\, y_{n+p} - y_n \,\right| \leq \left|\, z_{n+p} - z_n \,\right|. \]</span></p>
+
+<p><em>Therefore the sequences of real numbers <span class="math">\((x_n)\)</span> and <span class="math">\((y_n)\)</span> satisfy Cauchy&#8217;s condition</em>; and so, by (I), the limits of <span class="math">\((x_n)\)</span> and <span class="math">\((y_n)\)</span> exist. Therefore, by
+<a href="#thelimitofanincreasingsequence">§2.2</a>, <a href="#monotonicex1">example 1</a>, the limit of <span class="math">\((z_n)\)</span> exists. The result is therefore established.</p>
+
+<p></div></p>
+
+<p></div></p>
+
+<div id="footer">
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
+<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+</div>
+
+<div id="navlimits1" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navlimits1');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>
+  <ul>
+    <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
+    <li><a href="#thetheoryofconvergence">The Theory of Convergence</a>
+      <ul>
+        <li  class="current"><a href="#limits">The Definition of the Limit of a Sequence</a></li>
+        <li  class="current"><a href="#thelimitofanincreasingsequence">The Limit of an Increasing Sequence</a></li>
+    <li><a href="CMA02-2-Series.html#convergenceofaninfiniteseries">Convergence of an Infinite Series</a></li>
+    <li><a href="CMA02-3-MoreSeries.html#effectofchangingtheorderoftermsinaseries">Changing the Order of the Terms in a Series</a></li>
+    <li><a href="CMA02-3-MoreSeries.html#doubleseries">Double Series</a></li>
+    <li><a href="CMA02-3-MoreSeries.html#powerseries">Power Series</a></li>
+    <li><a href="CMA02-4-Products.html#infiniteproducts">Infinite Products</a></li>
+    <li><a href="CMA02-4-Products.html#infinitedeterminants">Infinite Determinants</a></li>
+       <li><a href="CMA02-4-Products.html#references">References</a></li>
+        <li><a href="CMA02-4-Products.html#miscellaneousexamples">Miscellaneous Examples</a></li>
+      </ul>
+    </li>
+    <li><a href="#whereOwhere">Continuity and Uniform Convergence</a></li>
+    <li class="more"><a onClick="hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navfront" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a>FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-Front.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-Front.html#preface">Preface</a></li>
+    <li><a href="CMA00-Front.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navprocesses" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navlimits1');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a>PROCESSES OF ANALYSIS</a>
+  <ul >
+    <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
+    <li  class="current"><a href="#" onClick="showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">The Theory of Convergence</a></li>
+     <li class="notdone"><a href="#whereOwhere">Continuity and Uniform Convergence</a></li>
+     <li class="notdone"><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
+     <li class="notdone"><a href="#whereOwhere">The Properties of Analytic Functions</a></li>
+     <li class="notdone"><a href="#whereOwhere">The Theory of Residues</a></li>
+     <li class="notdone"><a href="#whereOwhere">Expanding Functions in Infinite Series</a></li>
+     <li class="notdone"><a href="#whereOwhere">Asymptotic Expansions and Summability</a></li>
+     <li class="notdone"><a href="#whereOwhere">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="#whereOwhere">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="#whereOwhere">Integral Equations</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navtranscendental" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navlimits1');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a> 
+<ul>
+    <li class="more current"><a onClick="showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
+  <ul>
+    <li class="notdone"><a href="#whereOwhere">The Gamma Function</a></li>
+    <li class="notdone"><a href="#whereOwhere">The Zeta Function</a></li>
+    <li class="notdone"><a href="#whereOwhere">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="#whereOwhere">Legendre Functions</a></li>
+    <li class="notdone"><a href="#whereOwhere">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="#whereOwhere">Bessel Functions</a></li>
+    <li class="notdone"><a href="#whereOwhere">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="#whereOwhere">Mathieu Functions</a></li>
+    <li class="notdone"><a href="#whereOwhere">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="#whereOwhere">The Theta Functions</a></li>
+    <li class="notdone"><a href="#whereOwhere">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="#whereOwhere">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
+  </ul>
+  </li>
+<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navback" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navlimits1');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a>BACKMATTER</a>
+  <ul >
+    <li ><a href="#whereOwhere">Appendix</a></li>
+    <li ><a href="#whereOwhere">Authors Quoted</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfixedleft" class="fixedBleft">
+<p><a href="CMA01-Complex.html">&#x25C0;</a></p>
+</div>
+
+<div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
+<p><a onClick="showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA02-2-Series.html" style="float: right;">&#x25B6;</a></p>
+</div>
+
+<div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
+<p><a onClick="hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA02-2-Series.html" style="float: right;">&#x25B6;   </a></p>
+</div>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p>A definition equivalent to this was first given by John Wallis in 1655. [<a href="http://catalog.hathitrust.org/Record/009285660"><em>Opera</em>, <strong>I</strong> (1695)</a>. p. 382.] <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:2">
+<p>The number zero is excluded from the class of positive numbers. <a href="#fnref:2" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:3">
+<p>The arrow notation is due to Leathem, <a href="http://www.archive.org/details/volumesurfaceint00leatuoft"><em>Camb. Math. Tracts</em>, No. 1</a>. <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:4">
+<p>This notation is due to Bachmann, <a href="http://books.google.com/books?id=0iMCAAAAYAAJ"><em>Zahlentheorie</em> (1894)</a>, p. 401, and Landau, <a href="http://www.archive.org/details/handbuchderlehre01landuoft"><em>Primzahlen</em>, <strong>I.</strong> (1909)</a>, p. 61. <a href="#fnref:4" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:5">
+<p><em>Editor&#8217;s Note:</em> We seem to be ignoring the possibility that <span class="math">\(\alpha - \frac{1}{2}\epsilon\)</span> is irrational. Nonetheless, since <span class="math">\( \alpha> \alpha- \frac{1}{2}\epsilon\)</span>, there are rationals in the <span class="math">\(L\)</span>-class of <span class="math">\(\alpha\)</span> that are larger than <span class="math">\(\alpha - \frac{1}{2}\epsilon\)</span>, say, <span class="math">\(r = \alpha-\epsilon_1 \)</span>. Since <span class="math">\( \epsilon_1<\frac{1}{2}\epsilon\)</span>, using <span class="math">\( \epsilon_1 \)</span> in place of <span class="math">\( \frac{1}{2}\epsilon\)</span> will let this argument work. <a href="#fnref:5" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:6">
+<p>This theorem, frequently ascribed to Weierstrass, was proved by Bolzano, <em>Abh. der k. böhmischen Gen. der Wiss.</em> <strong>v.</strong> (1817). [Reprinted in <a href="http://books.google.com/books?id=rtMFAAAAIAAJ"><em>Klassiker der Exakten Wiss.</em>, No. 153</a>.] It seems to have been known to Cauchy. <a href="#fnref:6" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:7">
+<p><em>Editor&#8217;s Note:</em> Just as earlier, a small adjustment needs to be made in the event <span class="math">\(G -  \frac{1}{2} \epsilon\)</span> and <span class="math">\(G +  \frac{1}{2} \epsilon\)</span> are irrational. <a href="#fnref:7" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:8">
+<p><a href="http://www.archive.org/details/coursdanalysedel00cauc"><em>Analyse Algébrique</em></a> (1821)}, p. 125. <a href="#fnref:8" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:9">
+<p>This proof is given by Stolz and Gmeiner, <a href="http://books.google.com/books?id=MesGAAAAYAAJ"><em>Theoretische Arithmetik</em></a>, <strong>II.</strong> (1902)}, p. 144. <a href="#fnref:9" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+</body>
+</html>

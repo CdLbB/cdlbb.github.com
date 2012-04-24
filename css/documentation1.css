@@ -1,0 +1,186 @@
+@import "documentation.css";
+
+
+/**BEGIN****** H E A D E R   S T U F F *******BEGIN**/
+
+body
+    {
+    background-color: #f4f6f0;
+    }
+
+div.maxwrapper
+    {   
+    max-width:1000px;
+    }
+    
+
+div#header
+    {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin:0;
+    *background-color: /* #5b2100; */
+    *height: 60px;
+    width: 100%;
+    
+    text-align: left;
+    padding-top: .56em; /* base: 1em=18px */
+    padding-bottom: .1em;
+    padding-left: 0;
+    display: block;
+    }
+
+
+
+div#header h1
+    {
+    *display: inline;
+    text-transform: uppercase;
+    margin: 0;
+    padding 0;
+    font-size: 1.8em; /*base: 1em=18px, now: 1em=34px */
+    font-weight: normal;
+    line-height: 1.1em;
+    letter-spacing: .05em;
+    margin-top: .6em;
+    margin-left:25%;
+    padding-left: 0em;
+    text-align: left;
+    *width: 72%;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    *font-family: 'Gill Sans', 'Gill Sans Std', 'Gill Sans MT', Verdana, 'Bitstream Vera Sans', sans-serif;
+    color: white;
+    }
+
+div#header h2
+    {
+    *display: block;
+    margin: 0;
+    margin-left:25%;
+    padding-left: 0.2em;
+    padding-top: 3px;
+    padding-bottom:0;
+    font-size: .9em;
+    font-weight: 200;
+    *width: 70%;
+    *font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans Std', 'Gill Sans MT', Verdana, 'Bitstream Vera Sans', sans-serif;
+    color: white;
+    border-bottom:none;
+    }
+    
+.floatheader
+    {
+    float: left;
+    margin-top: 1em;    
+    margin-right: 0.5em;
+    margin-left: 0em;
+    margin-bottom: 2.0em;
+    width: 25%;
+    max-width:300px;
+    min-width:200px;
+    }
+    
+.imagepair
+    {
+    margin:.5em;
+    margin-top: 2.5em;
+    min-height: 260px;
+    *width: 95%;
+    max-width: 1000px;
+    text-align: left;
+    padding-top: .56em; /* base: 1em=18px */
+    padding-bottom: .1em;
+    padding-left: 0;
+    display: block;
+    }
+
+h2, h3, h4, h5
+    {
+    *margin: 0;
+    margin-left:25%;
+    padding-left: 2em;
+    padding-bottom:0;
+    font-size: 1em;
+    font-weight: 200;
+    border-bottom:none;
+    *color: #6b2100;
+    }
+
+h2 a:link, h3 a:link, h4 a:link, h5 a:link, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited
+    {
+    color: #001160;
+    }
+    
+.imagepair p
+    {
+    margin-left:25%;
+    padding-left: 2em;
+    }
+    
+.float
+    {
+    float: left;
+    margin-top: 0em;    
+    margin-right: .5em;
+    margin-left: .5em;
+    margin-bottom: 0.5em;
+    width: 25%;
+    display: inline;
+    }
+
+
+
+p
+    {
+    margin-left: 25%;
+    padding-left: 2em;
+    }
+    
+blockquote
+    {
+    *margin-left: 25%;
+    padding-left: 4em;
+    }
+
+
+    
+div#footer
+    {
+    *background-color: #5b2100;
+    margin-bottom: -1em;
+    }
+    
+    
+
+
+.SCREEN {
+	padding: 1ex;
+}
+
+
+@media screen {  /* hide from IE3 */
+	a[href]:hover { color: #dd7722 } /* old #ee7700 */
+    a[onClick]:hover { color: #dd7722 } /* old #ee7700 */
+}
+
+
+
+
+
+/***********  Un-used Code *************
+
+
+*** Font Stacks for Optima and Helvetica Neu
+
+font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+
+font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+
+
+
+
+*/

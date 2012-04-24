@@ -1,0 +1,774 @@
+
+
+html 
+    {
+	margin: 0; 
+	padding: 0;
+    }
+
+body 
+    {
+    font-family: Baskerville, "Baskerville old face", Garamond, "Hoefler Text", Cochin,  "Times New Roman", serif;  
+    color: black;
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+
+    }
+
+body
+    {
+    font-size: large;
+    *line-height: 1.3em; /* move to p?? */
+    }
+    
+body
+    {
+    background-color: #f0eaca; /* body bg color (old paper) #f0f1dd too blue green  */;
+    }
+    
+    
+p, h6
+    {
+    line-height: 1.35em; /* 2em for no \displaystyle space */
+    margin: 1.45em 0 0 0;
+    font-weight: normal;
+    font-size: inherit;
+    }
+    
+strong
+    {
+    font-weight: normal;
+    *text-transform: uppercase;
+    font-variant: small-caps;
+    letter-spacing: .1em;
+    font-size:0.95em
+    
+    }
+    
+        
+
+
+blockquote 
+    {
+    font-size: .90em;
+    padding: 0;
+    padding-top: .5em;
+    padding-bottom: 0.5em;
+    margin-top: 0em;
+	margin-bottom: 0em;
+    margin-left: 2.0em;
+    margin-right: 2.5em;
+    }
+
+/*******************************************/
+
+h1, h2, h3, h4, h5 /*  h6  */
+    {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: normal;
+    color: #001160; /* Dark Blue */
+    }
+
+
+h1 {
+    font-size: 2.3em; 
+    font-weight: bold;    
+    line-height: 1.3em;
+    text-align: center;
+    letter-spacing: .1em;
+    }
+
+
+
+h2 {
+    font-size: 1.3em;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.15em;
+    padding: 0;
+    padding-bottom: 0.6em; 
+    padding-top: 0.7em;
+    letter-spacing: .10em;
+    margin-bottom: -0.6em; /* wanders into gutter to find easier */
+    }
+
+h2{
+    border-bottom: 1px solid black;
+}
+
+h3, h4, h5   /*  h6  */
+    {
+    line-height: 1.1em;
+    margin: 0;
+    margin-top: 1em;
+    margin-bottom: -0.5em;
+    }
+
+h3 {
+    font-size: 1.1em;
+    text-align: left;
+    text-indent: -1.6em;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    margin-top: 1.8em;
+    
+    }
+
+h4  {
+    font-size: 1.1em;
+    font-style:italic;
+    font-weight: normal;
+    }
+
+h5  {
+ 	font-size: 1.0em;
+    font-style:italic;
+    font-weight: normal;
+    }
+
+/*
+h6  {
+ 	font-size: 1.0em;
+    font-style:italic;
+    font-weight: normal;
+    }
+*/    
+    
+    
+/*******************************************/
+
+/* table for individual lines */    
+table
+    {
+    line-height: 1.2;
+    margin: 0 0 -.5em 0;
+    }
+
+/*******************************************/
+ 
+a:link
+    {
+    text-decoration: none;
+    *font-weight: bold;
+    color: #640818; /*red1 #990000* new #770808 lastly #007010  */
+    }
+
+a:visited
+    {
+    text-decoration: none;
+    *font-weight: bold;
+    color: #640818; /* red1 old #c20a0a new #990000* new #770808 lastly #007010 */
+    }
+
+a:hover
+    {
+    text-decoration: none;
+    *font-weight: bold;
+    color: #dd7722;/*amber*/
+    }
+ 
+a:active, a:focus
+    {
+    text-decoration: none;
+    *font-weight: bold;
+    color: #009900;/*green*/
+    }
+    
+/* avoid annoying borders on linked images*/
+a img
+{
+border: none;
+}
+
+/*******************************************/
+
+
+/* Definition List (dl dt dd) for references */
+    
+dl, div#references dl
+    {
+	line-height: 1.5;
+    margin: 1.5em 0 0 0;
+    
+    }
+    
+dt, div#references dt
+    {
+    *font-style:italic;
+    display: block;
+    margin: 0 0 0 0;
+    
+    }
+
+dd, div#references dd  
+    {
+    font-size: 0.9em;
+    display: block;
+    margin: 0 0 0 0; 
+    margin-left: 2em; 
+    }
+    
+/** Definition List (dl dt dd) for main content **
+** Do NOT use unless you create a div for references **
+
+dl
+    {
+    font-size: 1em;
+	line-height: 1.5;
+    margin: 0 0 0 0;
+    
+    }
+    
+dt
+    {
+    *font-style:italic;
+    display: inline-block;
+    margin: 2em 0 0 0;
+    }
+
+dd  
+    {
+    display: inline;
+    margin: 0 0 0 0;
+    }
+
+**/
+
+/*******************************************/
+
+.fixedTleft
+    {
+    text-align: left;
+    position:fixed;
+    left: .5ex;
+    top:.5ex
+    }
+
+.fixedTright
+    {
+    text-align: left;
+    position:fixed;
+    right: .5ex;
+    top:.5ex
+    }
+
+.fixedBleft
+    {
+    text-align: left;
+    position:fixed;
+    left:2ex;
+    bottom:2.5ex
+    }
+
+.fixedBright
+    {
+    text-align: left;
+    position:fixed;
+    right: 2ex;
+    bottom:2ex;
+    width:9.5em;
+    *height: 8%;
+    }
+
+
+
+.fixedBright p, .fixedBleft p, .fixedTright p, .fixedTleft p, .fixedBright a, .fixedBleft a, .fixedTright a, .fixedTleft a
+    {
+    margin:0;
+    padding: 0; 
+    line-height: 1.8em; 
+    font-size: xx-large;
+    font-weight:bold; 
+    color: #002148;
+  
+    }
+
+/**BEGIN****** H E A D E R   S T U F F *******BEGIN**/
+
+div#header
+    {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin;0;
+    background-color: #002148;
+    *height: 60px;
+    width: 100%;
+    text-align: left;
+    padding-top: .56em; /* base: 1em=18px */
+    padding-bottom: 1.11em;
+    padding-left: 0;
+    display: block;
+    }
+
+div#header img
+    {
+    color: #002147;
+    }
+
+
+div#header h1
+    {
+    margin: 0;
+    padding 0;
+    font-size: 1.89em; /*base: 1em=18px, now: 1em=34px */
+    font-weight: normal;
+    line-height: 1.1em;
+    letter-spacing: .026em;
+    margin-top: 5px;
+    margin-left: .74em;
+    text-align: left;
+    width: 62%;
+    *font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans Std', 'Gill Sans MT', Verdana, 'Bitstream Vera Sans', sans-serif;
+    color: white;
+    }
+
+div#header h2
+    {
+    margin: 0;
+    margin-left: 30px;
+    padding-top: 3px;
+    padding-bottom:0;
+    font-size: 1em;
+    font-weight: 200;
+    width: 70%;
+    *font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans Std', 'Gill Sans MT', Verdana, 'Bitstream Vera Sans', sans-serif;
+    color: white;
+    border-bottom:none;
+    }
+
+
+div#footer
+    {
+    position: relative;
+    top: 0;
+    left: 0px;
+    margin;0;
+    margin-bottom: 1.5em;
+    margin-top: 3em;
+    background-color: #002148;
+    *height: 60px;
+    width: 100%;
+    text-align: left;
+    padding-top: .75em; /* base: 1em=18px */
+    padding-bottom: .85em;
+    padding-left: 0;
+    display: block;
+    }
+    
+div#footer h3
+    {
+    text-indent: 0;
+    margin: 0;
+    margin-left: 30px;
+    padding-top: 0;
+    padding-bottom:0;
+    font-size: 0.85em;
+    font-weight: 200;
+    *width: 70%;
+    *font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans Std', 'Gill Sans MT', Verdana, 'Bitstream Vera Sans', sans-serif;
+    color: white;
+    border-bottom:none;
+    }
+div#footer h4
+    {
+    margin: 0;
+    margin-left: 30px;
+    margin-right: 20px;
+    padding-top: 0.25em;
+    padding-bottom:0;
+    font-size: 0.70em;
+    font-style: normal;
+    font-weight: 200;
+    *width: 90%;
+    *font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans Std', 'Gill Sans MT', Verdana, 'Bitstream Vera Sans', sans-serif;
+    color: white;
+    border-bottom:none;
+    }
+    
+div#header h1 a, div#header h2 a, div#footer h3 a, div#footer h4 a
+    {
+    color: white;
+    }
+
+
+/**BEGIN************ F O O T N O T E   S T U F F **********BEGIN**/
+
+/** NOTE: footnotes are a class, but footnotify stuff is a div **/
+
+
+.footnotes  {
+    font-size: .80em;
+    margin-left: 8%;
+    margin-right: 27%; 
+    padding: 0;
+    padding-right: 75px;
+    *padding-left: 2em;
+	max-width: 700px;
+    min-width: 320px;
+    }
+
+.footnotes hr
+    {
+    margin: 0;
+	border-width: 0 0 0 0;
+    }
+
+
+h4.footheader
+    {
+    margin-bottom: 0.6em;
+    text-indent: -0.8em;
+    font-size: 1.4em;
+    }
+    
+a.footnote, a.marginmark{
+    vertical-align: super;
+    text-indent: 0;
+    font-weight: bold;
+    font-size: .55em;
+    line-height: 1.0em;
+    color: #00a039;  /* #992000 was #bb0000 lastly #008811 then #008839 then  #009939*/
+    text-decoration: none;
+    }
+    
+a.reversefootnote {
+font-size: .75em;
+font-weight: bold;
+color: #00a039;
+text-decoration: none;
+    }
+    
+.marginnotes  {
+    visibility: hidden;
+    font-size: .80em;
+    float: right;
+    width: 24.5%;
+    margin-left: 0%;
+    margin-right: 2.5%;
+    margin-top: -10em;
+    margin-bottom: -10em;
+    padding:0;
+    padding-right: .2em;
+    padding-left:  0em;
+    *border: 1px solid;
+    }
+
+
+.marginnotes p
+    {
+    margin: 0.5em;
+    padding: 0;
+    text-indent: 0.5em:
+    }
+
+
+
+div#footnotify_panel ul li
+    {
+    display: block;
+    color: #001160;
+    }
+
+div#footnotify_panel ul li ul, div#footnotify_panel ul li h4
+    {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    }
+
+/**END************ F O O T N O T E   S T U F F *************/
+
+
+
+/**BEGIN************ M A I N   C O N T E N T **********BEGIN**/
+
+
+div#content
+{
+max-width: 1200px;
+}
+
+
+
+.contenttext
+    {
+    margin-left: 8%;
+    padding: 0;
+    padding-left: 0;
+    margin-right: 27%;
+    padding-right: 75px;
+    *padding-bottom: 10px;
+    max-width: 700px;
+    min-width: 320px;
+    }
+
+    
+/* Unordered List (ul li) for main content */
+    
+.contenttext ul
+    {
+    margin: 0 0 0 0;
+    line-height: 1.5;
+    }
+    
+.contenttext ul li
+    {
+    display: block;
+    text-indent: -1.3em;
+    }
+
+/* Ordered List (ol li) for main content */
+
+.contenttext ol
+    {
+    margin: 0 0 0 0;
+    line-height: 1.5;
+    }
+
+/** Future (W3C Working Draft) support for parentheses
+
+.contenttext ol li::marker 
+    {
+    content: "(" counter(list-item, lower-roman) ")"; 
+    }
+**/       
+       
+       
+.contenttext ol li
+    {
+    display: list-item;
+    list-style-type: lower-roman;
+    margin-left: 0em;
+    }
+    
+    
+/* Ordered List (ol li) for exercises */
+        
+div#exercises ol  
+    {
+    margin-top: 1.5em;
+    font-size: 0.9em;
+    margin: 0;
+    margin-top: 2em;
+    margin-right: 1.0em;
+    padding-left: 2em;
+    line-height: 1.5;
+    }
+    
+div#exercises ol li
+    {
+    list-style-type: decimal;
+    *padding-bottom: 0.5em;
+    *display: list;
+    *text-indent: -1.6em;
+    }
+    
+
+
+/**END************ M A I N   C O N T E N T **********END**/
+
+
+
+
+
+ /*************** N A V  B A R:  S T A R T S  ***************/
+ 
+ /* position mainnav div below the header div and to the left of the page*/
+ 
+.navigation
+    {
+    font-family: "Gill Sans", "Gill Sans Std", "Gill Sans MT", Verdana, "Bitstream Vera Sans", sans-serif;
+    font-weight: normal;
+    position:fixed;
+    right: 0ex;
+    bottom:0em;
+    width:  17em; 
+/*scroll min ht: 18.3 to 18.65em, but 17em smallest, BEFORE SCROLL: 17.9em */
+    height: 100%;   
+    margin:0;
+    padding:0;
+    overflow-y: scroll;
+    background-color:#f0f0aa;
+    }
+ 
+ 
+.navigation h2
+    {
+    position: absolute;
+    left: -3600px;
+    }
+ 
+ 
+.navigation ul
+    {
+    padding: 0;
+    margin: 0;
+    margin-bottom:4em;
+    border-bottom: 1px solid #fffff0;
+    }
+    
+.navigation ul li ul
+    {
+    padding: 0;
+    margin: 0;
+    border-bottom: none;
+    }
+
+.navigation ul li
+    {
+    list-style: none;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #ffffe0;
+    *font-weight: bold;
+    font-weight: normal;
+    }
+
+
+
+.navigation ul li a
+    {
+    text-align: left;   
+    display: block;
+    font-size: 1em;
+    line-height: 1em;
+    padding: 10px 10px 10px 5px;
+    }
+
+.navigation ul li ul li a
+    {
+    text-align: right;       
+    padding-top: 7px;
+    padding-bottom: 8px;
+    font-size: 1em;
+    *font-variant: small-caps;
+    }
+
+
+.navigation ul li ul li ul li a
+    {
+    text-align: left;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    *text-transform: lowercase;
+    *font-variant: small-caps;
+    * font-style: italic;
+    }
+
+.navigation ul li ul li ul li ul li a
+    {
+    text-align: left;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    font-size: .9em;
+    *text-transform: lowercase;    
+    *font-variant: small-caps;
+    font-style: italic;
+    padding-left: 1em;
+    }
+    
+
+.navigation ul li.part a
+    {
+    background-color: #e8a900; /* dark grey green: #28aa24 later #55bb44 #bb3a2b now dark amber */
+    color: black;
+    }
+
+.navigation ul li.part ul li a 
+    {
+    background-color: #f0d400; /* light grey green: #55bb44 ee6666 medium amber */
+    color: black;
+    }
+    
+
+.navigation ul li.current a, .navigation ul li.part ul li.current a
+    {
+    background-color: #ffee66;/*red: #d20a0a , #e20f0f later  #e21f0f #ee2222 ffbbbb now light amber*/
+    color: black;
+    }   
+    
+.navigation ul li a:hover, .navigation ul li a:active, .navigation ul li.part a:hover, .navigation ul li.part a:active
+    {
+    background-color: #50b040;/*green*/
+    color: white;
+    }
+    
+.navigation ul li.current a:hover, .navigation ul li.current a:active, .navigation ul li.part ul li.current a:hover, .navigation ul li.part ul li.current a:active, .navigation ul li.part ul li.toc a:hover, .navigation ul li.part ul li.toc a:active
+    {
+    background-color: #50b040; /* green was #ffaa00 */
+    color: white;
+    }
+    
+.navigation ul li.notdone a, .navigation ul li.part ul li.notdone a
+    {
+    background-color: #555555;/*grey*/
+    }    
+
+.navigation ul li.toc a, .navigation ul li.part ul li.toc a
+    {
+    color: black;
+    }
+    
+.navigation .more a
+    {
+    padding-top: 3px;
+    padding-bottom: 4px;
+    padding-left: 1em;
+    *padding-right: 1.5em;
+    font-size:0.9em;
+    line-height: 1.2em;
+    }
+    
+    
+/* HI */
+ /*************** N A V  B A R:  E  N D S  ****************/
+ 
+
+
+   
+        
+/**************************************************************/
+
+
+
+
+.SCREEN {
+	padding: 1ex;
+}
+
+
+@media screen {  /* hide from IE3 */
+	a[href]:hover { color: #dd7722 } /* old #ee7700 */
+    a[onClick]:hover { color: #dd7722 } /* old #ee7700 */
+}
+
+
+
+
+
+/***********  Un-used Code *************
+
+
+*** Font Stacks for Optima and Helvetica Neu
+
+font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+
+font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+
+
+
+
+*/
