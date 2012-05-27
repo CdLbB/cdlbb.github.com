@@ -17,8 +17,8 @@ latex footer:	mmd-cambridge-footer
 CSS:	css/documentation.css
 HTML header:	<script type="text/javascript"
        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-                                <script type="text/javascript" src="js/showhide.js"></script>
-                                <script type="text/javascript" src="js/mathjaxend.js"></script>
+                                 <script type="text/javascript" src="js/showhide.js"></script>
+                                 <script type="text/javascript" src="js/mathjaxend.js"></script>
 
 <div id="header"><h1><a href="CMA00-FrontMN.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
 
