@@ -437,7 +437,7 @@ is equivalent to the equation
         <li class="current"><a href="#miscellaneousexamples">Miscellaneous Examples</a></li>
       </ul>
     </li>
-    <li><a href="#whereOwhere">Continuity and Uniform Convergence</a></li>
+    <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
     <li class="more"><a onClick="hideIt('navseries2');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
   </ul>
 </li>
@@ -479,7 +479,7 @@ is equivalent to the equation
   <ul >
     <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
     <li  class="current"><a href="#" onClick="showIt('navseries2');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">The Theory of Convergence</a></li>
-     <li class="notdone"><a href="#whereOwhere">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
      <li class="notdone"><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
      <li class="notdone"><a href="#whereOwhere">The Properties of Analytic Functions</a></li>
      <li class="notdone"><a href="#whereOwhere">The Theory of Residues</a></li>
@@ -552,9 +552,9 @@ is equivalent to the equation
 </div>
 
 <div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
-<p><a onClick="showIt('navseries2');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA02-4-Products.html" style="float: right;">&#x25B6;</a></p>
+<p><a onClick="showIt('navseries2');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA03-1-ContinuousFns.html" style="float: right;">&#x25B6;</a></p>
 </div>
 
 <div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
-<p><a onClick="hideIt('navseries2');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA02-4-Products.html" style="float: right;">&#x25B6;	</a></p>
+<p><a onClick="hideIt('navseries2');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA03-1-ContinuousFns.html" style="float: right;">&#x25B6;	</a></p>
 </div>

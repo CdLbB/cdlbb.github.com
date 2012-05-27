@@ -16,8 +16,8 @@ latex footer:	mmd-cambridge-footer
 CSS:	css/documentation.css
 HTML header:	<script type="text/javascript"
        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-                                 <script type="text/javascript" src="js/showhide.js"></script>
-                                 <script type="text/javascript" src="js/mathjaxend.js"></script>
+                                <script type="text/javascript" src="js/showhide.js"></script>
+                                <script type="text/javascript" src="js/mathjaxend.js"></script>
 
 <div id="header"><h1><a href="CMA00-FrontMN.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
 
@@ -434,7 +434,7 @@ measured by the product of the radii vectores of \\(P_1\\) and \\(P_2\\), and a 
 1. Shew that the representative points of the complex numbers \\(1 + 4i\\), \\(2 +7i\\), \\(3 +10i\\) are collinear.
 2. Shew that a parabola can be drawn to pass through the representative points of the complex numbers 
 \\[ 2 + i, \quad  4 + 4i, \quad  6 + 9i, \quad  8+16i, \quad  10 + 25i. \\]
-3. Determine the \\(n\\)th roots of unity by aid of the Argand diagram; and shew that the number of primitive roots (roots the powers of each of which give all the roots) is the number of integers (including unity) less than n and prime to it.
+3. Determine the \\(n\\)th roots of unity by aid of the Argand diagram; and shew that the number of primitive roots (roots the powers of each of which give all the roots) is the number of integers (including unity) less than \\(n\\) and prime to it.
 
     Prove that if \\(\theta_1, \theta_2, \theta_3, \dots \\) are the arguments of the primitive roots, 
 \\[ \sum  \cos p \theta=0 \\]
@@ -518,7 +518,7 @@ where \\(\mu\\) is the number of the constituent primes.  (Math. Trip. 1895.)
   <ul >
     <li  class="current"><a href="#complexnumbers" onClick="showIt('navcomplex');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">Complex Numbers</a></li>
     <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
-     <li class="notdone"><a href="#whereOwhere">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
      <li class="notdone"><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
      <li class="notdone"><a href="#whereOwhere">The Properties of Analytic Functions</a></li>
      <li class="notdone"><a href="#whereOwhere">The Theory of Residues</a></li>

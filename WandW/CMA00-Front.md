@@ -223,7 +223,19 @@ April, 2012.
          <li><a href="CMA02-4-Products.html#miscellaneousexamples">Miscellaneous Examples</a></li>
       </ol>
     </li>
-    <li class="notdone"><a href="#whereOwhere">Continuous Functions and Uniform&nbsp;Convergence</a></li>
+    <li><a href="CMA03-1-ContinuousFns.html">Continuous Functions and Uniform&nbsp;Convergence</a>
+      <ol>
+          <li>3.1 <a href="CMA03-1-ContinuousFns.html#thedependenceofonecomplexnumberonanother">The Dependence of One Complex Number on Another</a></li>
+          <li>3.2 <a href="CMA03-1-ContinuousFns.html#continuityoffunctionsofrealvariables">Continuity of Functions of Real Variables</a></li>
+	  <li>3.3 <a href="#a">Series of Variable Terms. Uniformity of Convergence.</a></li>
+	  <li>3.4 <a href="#a">A Particular Double Series</a></li>
+	  <li>3.5 <a href="#a">The Concept of Uniformity</a></li>
+	  <li>3.6 <a href="#a">The Modified Heine-Borel Theorem</a></li>
+	  <li>3.7 <a href="#a">Uniform Convergence of Power Series</a></li>
+         <li><a href="#references">References</a>
+         <li><a href="#miscellaneousexamples">Miscellaneous Examples</a></li>
+      </ol>
+</li>
     <li class="notdone"><a href="#whereOwhere">The Theory of Reimann Integration</a></li>
      <li class="notdone"><a href="#whereOwhere">The Fundamental Properties of Analytic&nbsp;Functions</a></li>
     <li class="notdone"><a href="#whereOwhere">The Theory of Residues</a></li>
@@ -297,7 +309,7 @@ April, 2012.
   <ul >
     <li><a href="CMA01-Complex.html#complexnumbers">Complex Numbers</a></li>
     <li><a href="CMA02-1-Limits.html">The Theory of Convergence</a></li>
-     <li class="notdone"><a href="#whereOwhere">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
      <li class="notdone"><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
      <li class="notdone"><a href="#whereOwhere">The Properties of Analytic Functions</a></li>
      <li class="notdone"><a href="#whereOwhere">The Theory of Residues</a></li>

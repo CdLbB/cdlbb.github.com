@@ -17,8 +17,8 @@ latex footer:	mmd-cambridge-footer
 CSS:	css/front.css
 HTML header:	<script type="text/javascript"
        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-                                 <script type="text/javascript" src="js/showhide.js"></script>
-                                 <script type="text/javascript" src="js/mathjaxend.js"></script>
+                                <script type="text/javascript" src="js/showhide.js"></script>
+                                <script type="text/javascript" src="js/mathjaxend.js"></script>
 
 
 <div id="header"><h1><a href="CMA00-FrontMN.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
@@ -89,7 +89,7 @@ HTML header:	<script type="text/javascript"
 
 #### LONDON: FETTER LANE, E.C. 4 ####
 
-![](deviceT.png)
+![](cambridge.png)
 
 
 
@@ -272,7 +272,19 @@ April, 2012.
          <li><a href="CMA02-4-ProductsMN.html#miscellaneousexamples">Miscellaneous Examples</a></li>
       </ol>
     </li>
-    <li class="notdone"><a href="#whereOwhere">Continuous Functions and Uniform&nbsp;Convergence</a></li>
+    <li><a href="CMA03-1-ContinuousFnsMN.html">Continuous Functions and Uniform&nbsp;Convergence</a>
+      <ol>
+          <li>3.1 <a href="CMA03-1-ContinuousFnsMN.html#thedependenceofonecomplexnumberonanother">The Dependence of One Complex Number on Another</a></li>
+          <li>3.2 <a href="CMA03-1-ContinuousFnsMN.html#continuityoffunctionsofrealvariables">Continuity of Functions of Real Variables</a></li>
+	  <li>3.3 <a href="#a">Series of Variable Terms. Uniformity of Convergence.</a></li>
+	  <li>3.4 <a href="#a">A Particular Double Series</a></li>
+	  <li>3.5 <a href="#a">The Concept of Uniformity</a></li>
+	  <li>3.6 <a href="#a">The Modified Heine-Borel Theorem</a></li>
+	  <li>3.7 <a href="#a">Uniform Convergence of Power Series</a></li>
+         <li><a href="#references">References</a>
+         <li><a href="#miscellaneousexamples">Miscellaneous Examples</a></li>
+      </ol>
+</li>
     <li class="notdone"><a href="#whereOwhere">The Theory of Reimann Integration</a></li>
      <li class="notdone"><a href="#whereOwhere">The Fundamental Properties of Analytic&nbsp;Functions</a></li>
     <li class="notdone"><a href="#whereOwhere">The Theory of Residues</a></li>
@@ -346,7 +358,7 @@ April, 2012.
   <ul >
     <li><a href="CMA01-ComplexMN.html#complexnumbers">Complex Numbers</a></li>
     <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
-     <li class="notdone"><a href="#whereOwhere">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
      <li class="notdone"><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
      <li class="notdone"><a href="#whereOwhere">The Properties of Analytic Functions</a></li>
      <li class="notdone"><a href="#whereOwhere">The Theory of Residues</a></li>

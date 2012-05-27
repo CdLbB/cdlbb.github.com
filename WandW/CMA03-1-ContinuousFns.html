@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="latexinput" content="mmd-cambridge-header"/>
+	<title>A Course of Modern Analysis-Continuous Functions 3-1</title>
+	<meta name="subtitle" content="An introduction to the general theory of
+infinite processes and analytic functions;
+with an account of the principal
+transcendental functions."/>
+	<meta name="author" content="E.T. Whittaker and G.N. Watson"/>
+	<meta name="editor" content="Eric Nitardy"/>
+	<meta name="date" content="April 25, 2012"/>
+	<meta name="titlefile" content="mmd-WandW-title"/>
+	<meta name="copyrightfile" content="mmd-WandW-copyright"/>
+	<meta name="test" content="And this is a new key-value pair"/>
+	<meta name="latexmode" content="memoir"/>
+	<meta name="latexinput" content="mmd-cambridge-begin-doc"/>
+	<meta name="latexfooter" content="mmd-cambridge-footer"/>
+	<link type="text/css" rel="stylesheet" href="css/documentation.css"/>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+<script type="text/javascript" src="https://raw.github.com/gist/1046538/footnotify.js#verbose"></script>
+<script type="text/javascript" src="js/showhide.js"></script>
+<script type="text/javascript" src="js/mathjaxend.js"></script>
+</head>
+<body>
+<div id="header"><h1><a href="CMA00-Front.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
+<div id="content">
+<div class="contenttext">
+
+<h2 id="continuousfunctionsanduniformconvergence">CONTINUOUS FUNCTIONS AND UNIFORM CONVERGENCE</h2>
+
+<h3 id="thedependenceofonecomplexnumberonanother">3.1 The dependence of one complex number on another</h3>
+
+<p>The problems with which Analysis is mainly occupied relate to the <em>dependence</em> of one complex number on another. If <span class="math">\(z\)</span> and <span class="math">\(\zeta\)</span> are two complex numbers, so connected that, if <span class="math">\(z\)</span> is given any one of a certain set of values, corresponding values of <span class="math">\(\zeta\)</span> can be determined, e.g. if <span class="math">\(\zeta\)</span> is the square of <span class="math">\(z\)</span>, or if <span class="math">\(\zeta = 1\)</span> when <span class="math">\(z\)</span> is real and <span class="math">\(\zeta = 0\)</span> for all other values of <span class="math">\(z\)</span>, then <span class="math">\(\zeta\)</span> is said to be a function of <span class="math">\(z\)</span>. </p>
+
+<p>This dependence must not be confused with the most important case of it, which will be explained later under the title of <em>analytic functionality</em>. </p>
+
+<blockquote>
+<p>If <span class="math">\(f\)</span> is a real function of a real variable <span class="math">\(z\)</span>, then the relation between <span class="math">\(f\)</span> and <span class="math">\(z\)</span>, which may be written
+<span class="math">\[\zeta =f(z),\]</span>
+can be visualised by a curve in a plane, namely the locus of a point whose coordinates referred to rectangular axes in the plane are <span class="math">\((z, \zeta)\)</span>. No such simple and convenient geometrical method can be found for visualising an equation
+<span class="math">\[\zeta =f(z),\]</span>
+considered as defining the dependence of one complex number <span class="math">\(\zeta=\xi+i\eta\)</span> on another complex number <span class="math">\(z=x+iy\)</span>. A representation strictly analogous to the one already given for real variables would require four-dimensional space, since the number of variables <span class="math">\(\xi, \eta, x,y\)</span> is now four.</p>
+
+<p>One suggestion (made by Lie and Weierstrass) is to use a doubly-manifold system of lines in the quadruply-manifold totality of lines in three-dimensional space.<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a></p>
+
+<p>Another suggestion is to represent <span class="math">\(\xi\)</span> and <span class="math">\(\eta\)</span>; separately by means of surfaces
+<span class="math">\[\xi=\xi(x,y), \; \eta=\eta(x,y).\]</span> </p>
+
+<p>A third suggestion, due to Heffter<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a> is to write
+<span class="math">\[\zeta=re^{i\theta} ,\]</span>
+then draw the surface <span class="math">\(r = r(x, y)\)</span> — which may be called the <em>modular-surface</em> of the function — and on it to- express the values of <span class="math">\(\theta\)</span> by surface-markings. It might be possible to modify this suggestion in various ways by representing <span class="math">\(\theta\)</span> by curves drawn on the surface <span class="math">\(r=r(x,y)\)</span>.<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a></p>
+</blockquote>
+
+<h3 id="continuityoffunctionsofrealvariables">3.2 Continuity of functions of real variables</h3>
+
+<p>The reader will have a general idea (derived from the graphical representation of functions of a real variable) as to what is meant by continuity. </p>
+
+<p>We now have to give a precise definition which shall embody this vague idea. </p>
+
+<p>Let <span class="math">\(f(x)\)</span> be a function of <span class="math">\(x\)</span> defined when <span class="math">\(a\leq x\leq b\)</span>. </p>
+
+<p>Let <span class="math">\(x_1\)</span> be such that <span class="math">\(a\leq x_1\leq b\)</span>. If there exists a number <span class="math">\(l\)</span> such that, corresponding to an arbitrary positive number <span class="math">\(\epsilon\)</span>, we can find a positive number <span class="math">\(\eta\)</span> such that
+<span class="math">\[\left|\,f(x)-l \,\right| < \epsilon ,\]</span>
+whenever <span class="math">\(\left|\, x-x_1  \right| < \eta\)</span>, <span class="math">\(x\neq x_1\)</span>, and <span class="math">\(a\leq x\leq b\)</span>, then <span class="math">\(l\)</span> is called the limit of <span class="math">\(f(x)\)</span> as <span class="math">\(x \rightarrow x_1\)</span>.</p>
+
+<p>It may happen that we can find a number <span class="math">\(l_+\)</span>(even when <span class="math">\(l\)</span> does not exist) such that <span class="math">\(\left|\,f(x)-l \,\right| < \epsilon\)</span> when <span class="math">\(x_1 < x < x_1 +\eta\)</span>. We call <span class="math">\(l_+\)</span> the limit of <span class="math">\(f(x)\)</span> when <span class="math">\(x\)</span> approaches <span class="math">\(x_1\)</span> from the right and denote it by <span class="math">\(f(x_1 + 0)\)</span>; in a similar
+manner we define <span class="math">\(f(x_1 - 0)\)</span> if it exists. </p>
+
+<p>If <span class="math">\(f(x_1 + 0),\, f(x), f(x_1 - 0)\)</span> all exist and are equal, we say that <span class="math">\(f(x)\)</span> is
+<em>continuous</em> at <span class="math">\(x_1\)</span>; so that if <span class="math">\(f(x)\)</span> is
+continuous at <span class="math">\(x_1\)</span>, then, given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(\eta\)</span> such that
+<span class="math">\[\left|\,f(x)-l \,\right| < \epsilon ,\]</span>
+whenever <span class="math">\(\left|\, x-x_1  \right| < \eta\)</span> and <span class="math">\(a\leq x\leq b\)</span>.<a href="#fn:4" id="fnref:4" title="see footnote" class="footnote">[4]</a> </p>
+
+<p>If <span class="math">\(l_+\)</span> and <span class="math">\(l_-\)</span> exist but are unequal,<span class="math">\(f(x)\)</span> is said to have an <em>ordinary
+discontinuity</em><a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a> at <span class="math">\(x_1\)</span>; and if <span class="math">\(l_+ = l_- \neq f(x_1)\)</span>, <span class="math">\(f(x)\)</span> is said to have a <em>removable
+discontinuity</em> at <span class="math">\(x_1\)</span>.</p>
+
+<p>If <span class="math">\(f(x)\)</span> is a complex function of a real variable, and if <span class="math">\(f(x) = g(x)+ih (x)\)</span>
+where <span class="math">\(g (x)\)</span> and <span class="math">\(h (x)\)</span> are real, the continuity of <span class="math">\(f(x)\)</span> at <span class="math">\(x_1\)</span> implies the continuity of <span class="math">\(g(x)\)</span> and of <span class="math">\(h(x)\)</span>. For when <span class="math">\(\left|\,f(x)-f(x_1) \,\right| < \epsilon \)</span>, then <span class="math">\(\left|\,g(x)-g(x_1) \,\right| < \epsilon \)</span>
+and <span class="math">\(\left|\,h(x)-h(x_1) \,\right| < \epsilon \)</span>; and the result stated is obvious. </p>
+
+<blockquote>
+<p><em>Example</em> 1. From <a href="CMA02-1-Limits.html#monotonicex1">§2.2 examples 1 and 2</a> deduce that if <span class="math">\(f(x)\)</span> and <span class="math">\(\phi(x)\)</span> are continuous at <span class="math">\(x_1\)</span>, so are <span class="math">\(f(x)\pm \phi(x)\)</span>, <span class="math">\(f(x) \times \phi(x)\)</span> and, if <span class="math">\(\phi(x_1)\neq 0\)</span>, <span class="math">\(f(x)\left/\phi(x)\right.\)</span>.</p>
+
+<p>The popular idea of continuity, so far as it relates to a real variable <span class="math">\(f(x)\)</span> depending on another real variable <span class="math">\(x\)</span>, is somewhat different from that, just considered, and may perhaps best be expressed by the statement &#8220;The function <span class="math">\(f(x)\)</span> is said to depend continuously on <span class="math">\(x\)</span> if, as <span class="math">\(x\)</span> passes through the set of all values intermediate between any two adjacent values <span class="math">\(x_1\)</span> and <span class="math">\(x_2\)</span>, <span class="math">\(f(x)\)</span> passes through the set of all values intermediate between the corresponding values <span class="math">\(f(x_1)\)</span> and <span class="math">\(f(x_2)\)</span>.&#8221;</p>
+
+<p>The question thus arises, how far this popular definition is equivalent to the precise definition given above.</p>
+
+<p>Cauchy shewed that if a real function <span class="math">\(f(x)\)</span>, of a real variable <span class="math">\(x\)</span>, satisfies the precise definition, then it also satisfies what we have called the popular definition; this result will be proved in <a href="">§3.63</a>. But the converse is not true, as was shewn by Darboux. This fact may be illustrated by the following example.<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a></p>
+
+<p>Between <span class="math">\(x= - 1\)</span> and <span class="math">\(x = +1\)</span> (except at <span class="math">\(x=0\)</span>), let <span class="math">\(f(x) = \sin\frac{\pi}{2x}\)</span>; and let <span class="math">\(f(0)=0\)</span>. </p>
+
+<p>It can then be proved that <span class="math">\(f(x)\)</span> depends continuously on <span class="math">\(x\)</span> near <span class="math">\(x=0\)</span>, in the sense of the popular definition, but is not continuous at <span class="math">\(x=0\)</span> in the sense of the precise definition.
+<em>Example</em> 2. If <span class="math">\(f(x)\)</span> be defined and be an increasing function in the range <span class="math">\((a, b)\)</span>, the limits <span class="math">\(f(x\pm0)\)</span> exist at all points in the interior of the range. </p>
+
+<p>[If <span class="math">\(f(x)\)</span> be an increasing function, a section of rational numbers can be found such that, if <span class="math">\(a\)</span>, <span class="math">\(A\)</span> be any members of its <span class="math">\(L\)</span>-class and its <span class="math">\(R\)</span>-class, <span class="math">\(a < f(x + h)\)</span> for every positive value of <span class="math">\(h\)</span>, and <span class="math">\(A \geq f(x + h)\)</span> for some positive value of <span class="math">\(h\)</span>. The number defined by this section is <span class="math">\(f(x+0)\)</span>.] </p>
+</blockquote>
+
+<h3 id="simplecurves.continua.">3.21 Simple curves. Continua.</h3>
+
+<p>Let <span class="math">\(x\)</span> and <span class="math">\(y\)</span> be two real functions of a real variable <span class="math">\(t\)</span> which are continuous
+for every value of <span class="math">\(t\)</span> such that <span class="math">\(a \leq t\leq b\)</span>. We denote the dependence of <span class="math">\(x\)</span> and <span class="math">\(y\)</span>
+on <span class="math">\(t\)</span> by writing
+<span class="math">\[\qquad x=x(t), \quad y=y(t).\qquad (a \leq t \leq b)\]</span>
+The functions <span class="math">\(x(t)\)</span>, <span class="math">\(y (t)\)</span> are supposed to be such that they do not assume the same pair of values for any two different values of <span class="math">\(t\)</span> in the range <span class="math">\(a < t < b\)</span>. </p>
+
+<p>Then the set of points with coordinates <span class="math">\((x, y)\)</span> corresponding to these values
+of <span class="math">\(t\)</span> is called a <em>simple curve</em>. If
+<span class="math">\[x(a) = x (b),\quad y(a) = y (b),\]</span>
+the simple curve is said to be <em>closed</em>. </p>
+
+<blockquote>
+<p><em>Example</em> 1. The circle <span class="math">\(x^2 +y^2 =1\)</span> is a simple closed curve; for we may write
+<span class="math">\[\qquad x=\sin t, \quad y=\cos t. \qquad (0 \leq t \leq 2\pi)\]</span></p>
+</blockquote>
+
+<p>A two-dimensional continuum is a set of points in a plane possessing the
+following two properties : </p>
+
+<ol>
+<li>If <span class="math">\((x, y)\)</span> be the Cartesian coordinates of any point of it, a positive number <span class="math">\(\delta\)</span> (depending on <span class="math">\(x\)</span> and <span class="math">\(y\)</span>) can be found such that every point whose distance from (x, y) is less than <span class="math">\(\delta\)</span> belongs to the set.</li>
+<li>Any two points of the set can be joined by a simple curve consisting entirely of points of the set.<a href="#fn:7" id="fnref:7" title="see footnote" class="footnote">[7]</a></li>
+</ol>
+
+<blockquote>
+<p>Example. The points for which <span class="math">\(x^2+y^2 < 1\)</span> form a continuum. For if P be any point inside the unit circle such that <span class="math">\(OP=r < 1\)</span>, we may take <span class="math">\(\delta=1— r\)</span>; and any two points inside the circle may be joined by a straight line lying wholly inside the circle. </p>
+</blockquote>
+
+<p>The following two theorems will be assumed in this work;<a href="#fn:8" id="fnref:8" title="see footnote" class="footnote">[8]</a> simple cases of them appear obvious from geometrical intuitions and, generally, theorems of a similar nature will be taken for granted, as formal proofs are usually extremely long and difficult. </p>
+
+<p>(I) A simple closed curve divides the plane into two continua (the &#8216;interior&#8217; and the &#8216;exterior&#8217;). </p>
+
+<p>(II) If <span class="math">\(P\)</span> be a point on the curve and <span class="math">\(Q\)</span> be a point not on the curve, the angle between <span class="math">\(QP\)</span> and <span class="math">\(Ox\)</span> increases by <span class="math">\(\pm 2\pi\)</span> or by zero, as <span class="math">\(P\)</span> describes the curve, according as <span class="math">\(Q\)</span> is an interior point or an exterior point. If the increase is <span class="math">\(+ 2\pi\)</span>, <span class="math">\(P\)</span> is said to describe the curve &#8216;counterclockwise&#8217;. </p>
+
+<p>A continuum formed by the interior of a simple curve is sometimes called an <em>open two-dimensional region</em>, or briefly an <em>open region</em>, and the curve is called its <em>boundary</em>; such a continuum with its boundary is then called a
+<em>closed two-dimensional region</em>, or briefly a <em>closed region</em> or <em>domain</em>. </p>
+
+<p>A simple curve is sometimes called a <em>closed one-dimensional region</em>; a simple curve with its end-points omitted is then called an open one-dimensional region. </p>
+
+<h3 id="continuousfunctionsofcomplexvariables">3.22 Continuous functions of complex variables</h3>
+
+<p>Let <span class="math">\(f(z)\)</span> be a function of <span class="math">\(z\)</span> defined at all points of a closed region (one- or two-dimensional) in the Argand diagram, and let <span class="math">\(z_1\)</span> be a point of the region. </p>
+
+<p>Then <span class="math">\(f(z)\)</span> is said to be continuous at <span class="math">\(z_1\)</span> , if given any positive number <span class="math">\(\epsilon\)</span>, we can find a corresponding positive number <span class="math">\(\eta\)</span> such that
+<span class="math">\[\left|\, f(z)-f(z_1)\,\right| < \epsilon, \]</span>
+whenever <span class="math">\(\left|\, z-z_1\right| < \eta \)</span> and <span class="math">\(z\)</span> is a point of the region. </p>
+
+<p></div></p>
+
+<p></div></p>
+
+<div id="footer">
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
+<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+</div>
+
+<div id="navunicont" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>
+  <ul>
+    <li class="more"><a onClick="hideIt('navunicont');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
+    <li><a href="CMA02-1-Limits.html#thetheoryofconvergence">The Theory of Convergence</a></li>
+    <li><a href="#continuousfunctionsanduniformconvergence">Continuity and Uniform Convergence</a>
+      <ul>
+        <li  class="current"><a href="#thedependenceofonecomplexnumberonanother">Functions of a Complex Variable</a></li>
+        <li  class="current"><a href="#continuityoffunctionsofrealvariables">Continuity of Functions of Real Variables</a></li>
+    <li><a href="CMA03-2-Uniformity.html#convergenceofaninfiniteseries">Uniformity of Convergence</a></li>
+    <li><a href="CMA03-2-Uniformity.html#effectofchangingtheorderoftermsinaseries">A Particular Double Series</a></li>
+    <li><a href="CMA03-3-Heine-Borel.html#doubleseries">The Concept of Uniformity</a></li>
+    <li><a href="CMA03-3-Heine-Borel.html#powerseries">The Modified Heine-Borel Theorem</a></li>
+    <li><a href="CMA03-3-Heine-Borel.html#infiniteproducts">Uniform Convergence of Power Series</a></li>
+       <li><a href="CMA03-3-Heine-Borel.html#references">References</a></li>
+        <li><a href="CMA03-3-Heine-Borel.html#miscellaneousexamples">Miscellaneous Examples</a></li>
+      </ul>
+    </li>
+    <li><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
+    <li class="more"><a onClick="hideIt('navunicont');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navfront" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a>FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-Front.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-Front.html#preface">Preface</a></li>
+    <li><a href="CMA00-Front.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navprocesses" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a>PROCESSES OF ANALYSIS</a>
+  <ul >
+    <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
+    <li><a href="CMA02-1-Limits.html">The Theory of Convergence</a></li>
+     <li class="current"><a href="#" onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">Continuity and Uniform Convergence</a></li>
+     <li><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
+     <li class="notdone"><a href="#whereOwhere">The Properties of Analytic Functions</a></li>
+     <li class="notdone"><a href="#whereOwhere">The Theory of Residues</a></li>
+     <li class="notdone"><a href="#whereOwhere">Expanding Functions in Infinite Series</a></li>
+     <li class="notdone"><a href="#whereOwhere">Asymptotic Expansions and Summability</a></li>
+     <li class="notdone"><a href="#whereOwhere">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="#whereOwhere">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="#whereOwhere">Integral Equations</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navtranscendental" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a> 
+<ul>
+    <li class="more current"><a onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
+  <ul>
+    <li class="notdone"><a href="#whereOwhere">The Gamma Function</a></li>
+    <li class="notdone"><a href="#whereOwhere">The Zeta Function</a></li>
+    <li class="notdone"><a href="#whereOwhere">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="#whereOwhere">Legendre Functions</a></li>
+    <li class="notdone"><a href="#whereOwhere">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="#whereOwhere">Bessel Functions</a></li>
+    <li class="notdone"><a href="#whereOwhere">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="#whereOwhere">Mathieu Functions</a></li>
+    <li class="notdone"><a href="#whereOwhere">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="#whereOwhere">The Theta Functions</a></li>
+    <li class="notdone"><a href="#whereOwhere">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="#whereOwhere">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
+  </ul>
+  </li>
+<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navback" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a>BACKMATTER</a>
+  <ul >
+    <li ><a href="#whereOwhere">Appendix</a></li>
+    <li ><a href="#whereOwhere">Authors Quoted</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfixedleft" class="fixedBleft">
+<p><a href="CMA02-4-Products.html">&#x25C0;</a></p>
+</div>
+
+<div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
+<p><a onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA03-2-Uniformity.html" style="float: right;">&#x25B6;</a></p>
+</div>
+
+<div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
+<p><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA03-2-Uniformity.html" style="float: right;">&#x25B6;   </a></p>
+</div>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p><em>Editor&#8217;s Note</em>: This description is very vague. Suggestions towards clarifying it are welcome as answers to <a href="http://math.stackexchange.com/q/137290">this Mathematics - Stack Exchange question</a>. <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:2">
+<p><a href="http://archive.org/details/zeitschriftfrma07teubgoog"><em>Zeitschrift für Math. und Phys.</em> <strong>xliv</strong>. (1899)</a>, p. 235. <a href="#fnref:2" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:3">
+<p><em>Editor&#8217;s Note</em>: Heffter&#8217;s approach is equivalent to the common practice of coloring the graph of a modular surface to indicate <span class="math">\(\theta\)</span>. Following Whittaker and Watson&#8217;s suggestion, we can use lines or boundaries to denote specific <span class="math">\(\theta\)</span> values, which improves the readability of such colored graphs. Other ways of visualizing complex functions are discussed in Hans Lundmark&#8217;s <a href="http://www.mai.liu.se/~halun/complex/domain_coloring-unicode.html"><em>Visualizing complex analytic functions using domain coloring</em></a> and <a href="http://zeus.nyf.hu/~kovacsz/VOCP.pdf"><em>Visualizations on the Complex Plane</em></a> by Jan Hubička, Zoltán Kovács, and Zoltán Kovács.  <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:4">
+<p><em>Editor&#8217;s Note</em>: Continuity at the end points <span class="math">\(a\)</span> or <span class="math">\(b\)</span> only requires one of the one-sided limits to exist. <a href="#fnref:4" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:5">
+<p>If a function is said to have ordinary discontinuities at certain points of an interval it is implied that it is continuous at all other points of the interval.  <a href="#fnref:5" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:6">
+<p>Due to Mansion, <a href="http://archive.org/details/mathesisrecueil06unkngoog"><em>Mathesis</em>, (2) <strong>xix</strong>. (1899)</a>, pp. 129&#8211;131. <a href="#fnref:6" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:7">
+<p><em>Editor&#8217;s Note</em>: In modern terminology, the first property asserts the set is <em>open</em>. The second property asserts that the set is <em>path-connected</em>. Most authors use the term <em>domain</em> for a non-empty open path-connected set of complex numbers. Whittaker and Watson use that term a bit differently. <a href="#fnref:7" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:8">
+<p>Formal proofs will be found in Watson&#8217;s <a href="http://archive.org/details/complexintegrat00watsrich"><em>Complex Integration and Cauchy&#8217;s Theorem.</em> (Cambridge Math. Tracts, No. 15.)</a> <a href="#fnref:8" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+</body>
+</html>

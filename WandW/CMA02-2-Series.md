@@ -419,7 +419,7 @@ Hence *when \\(\left|\,z\,\right|=1 \\), a sufficient condition[^necessaryalso] 
        <li class="more"><a onClick="hideIt('navseries');showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
       </ul>
     </li>
-    <li><a href="#whereOwhere">Continuity and Uniform Convergence</a></li>
+    <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
     <li class="more"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
   </ul>
 </li>
@@ -453,7 +453,7 @@ Hence *when \\(\left|\,z\,\right|=1 \\), a sufficient condition[^necessaryalso] 
         <li><a href="CMA02-4-Products.html#miscellaneousexamples">Miscellaneous Examples</a></li>
       </ul>
     </li>
-    <li><a href="#whereOwhere">Continuity and Uniform Convergence</a></li>
+    <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
     <li class="more"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
   </ul>
 </li>
@@ -495,7 +495,7 @@ Hence *when \\(\left|\,z\,\right|=1 \\), a sufficient condition[^necessaryalso] 
   <ul >
     <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
     <li  class="current"><a href="#" onClick="hideIt('navseries');showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">The Theory of Convergence</a></li>
-     <li class="notdone"><a href="#whereOwhere">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
      <li class="notdone"><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
      <li class="notdone"><a href="#whereOwhere">The Properties of Analytic Functions</a></li>
      <li class="notdone"><a href="#whereOwhere">The Theory of Residues</a></li>

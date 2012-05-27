@@ -16,8 +16,8 @@ latex footer:	mmd-cambridge-footer
 CSS:	css/documentation.css
 HTML header:	<script type="text/javascript"
        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-                                 <script type="text/javascript" src="js/showhide.js"></script>
-                                 <script type="text/javascript" src="js/mathjaxend.js"></script>
+                                <script type="text/javascript" src="js/showhide.js"></script>
+                                <script type="text/javascript" src="js/mathjaxend.js"></script>
 
 
 <div id="header"><h1><a href="CMA00-FrontMN.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
@@ -528,7 +528,7 @@ Hence *when \\(\left|\,z\,\right|=1 \\), a sufficient condition<a class="marginm
        <li class="more"><a onClick="hideIt('navseries');showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
       </ul>
     </li>
-    <li><a href="#whereOwhere">Continuity and Uniform Convergence</a></li>
+    <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
     <li class="more"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
   </ul>
 </li>
@@ -562,7 +562,7 @@ Hence *when \\(\left|\,z\,\right|=1 \\), a sufficient condition<a class="marginm
         <li><a href="CMA02-4-ProductsMN.html#miscellaneousexamples">Miscellaneous Examples</a></li>
       </ul>
     </li>
-    <li><a href="#whereOwhere">Continuity and Uniform Convergence</a></li>
+    <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
     <li class="more"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
   </ul>
 </li>
@@ -604,7 +604,7 @@ Hence *when \\(\left|\,z\,\right|=1 \\), a sufficient condition<a class="marginm
   <ul >
     <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
     <li  class="current"><a href="#" onClick="hideIt('navseries');showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">The Theory of Convergence</a></li>
-     <li class="notdone"><a href="#whereOwhere">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
      <li class="notdone"><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
      <li class="notdone"><a href="#whereOwhere">The Properties of Analytic Functions</a></li>
      <li class="notdone"><a href="#whereOwhere">The Theory of Residues</a></li>

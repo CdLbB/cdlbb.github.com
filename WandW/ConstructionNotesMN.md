@@ -45,6 +45,11 @@ All found
 7.  [Infinite determinants had previously occurred in the researches of F&uuml;rstenau on the algebraic equation of the 7th degree, Darstellung der reellen Wurzeln algebraischer Gleichungen durch Determinanten der Coeffizienten (Marburg, 1860).](CMA02-4-ProductsMN.html#infinitedeterminants)
 8. [(de la Vallee Poussin, M&eacute;m. de l&rsquo;Acad. de Belgique, LIII. (1896), no. 6.)](CMA02-4-ProductsMN.html#miscellaneousexamples) Example 10.
 
+*Chapter 3.*
+
+1. [One suggestion (for visualizing complex functions) (made by Lie and Weierstrass) is to use a doubly-manifold system of lines in the quadruply-manifold totality of lines in three-dimensional space.](CMA03-1-ContinuousFnsMN.html#thedependenceofonecomplexnumberonanother)
+2. [Cauchy shewed that if a real function f(x), of a real variable x, satisfies the precise definition (of continuity), then it also satisfies what we have called the popular definition; …. But the converse is not true, as was shewn by Darboux.](CMA03-1-ContinuousFnsMN.html#continuityoffunctionsofrealvariables) 
+
 W&W have given references for some examples, but many of these references are almost useless, like (Cauchy.). There are some, like (Trinity, 1904.), (Peterhouse, 1906.), or  (Math. Trip., 1906.), which appear to reference specific college exams. I have found no on-line source for these, however.
 
 ### Unresolved Examples ###

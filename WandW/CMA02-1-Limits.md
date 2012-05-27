@@ -138,7 +138,7 @@ and so \\(G\\) satisfies the condition that it should be a limit-point.
 
 The number \\(G\\) obtained in [§2.21][BolzanoSection]  is called 'the greatest of the limits of the sequence \\((x_n)\\)'. The sequence \\((x_n)\\) cannot have a limit-point greater than \\(G\\); for if \\(G\prime \\) were such a limit-point, and \\(\epsilon =\frac{1}{2}(G -G\prime )\\), \\(G\prime —\epsilon\\) is a member of the \\(R\\)-class defining \\(G\\), so that there are only a limited number of terms of the sequence which satisfy \\(x_n > G\prime  -\epsilon\\). This condition is inconsistent with \\(G\prime \\) being a limit-point. We write
 \\[ G= \varlimsup_{n \rightarrow \infty}  x_n. \\]
-The 'least of the limits', L ,of the sequence (written \\(\displaystyle \varliminf_{n \rightarrow \infty}  x_n\\) ) is defined to be
+The 'least of the limits', \\(L\\), of the sequence (written \\(\displaystyle \varliminf_{n \rightarrow \infty}  x_n\\) ) is defined to be
 \\[ - \varlimsup_{n \rightarrow \infty}  (-x_n). \\]
 
 #### 2.22 Cauchy's theorem on the necessary and sufficient condition for the existence of a limit.[^CauchySource,+0][Cauchy] ####
@@ -205,7 +205,7 @@ Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is 
 
 <div id="footer">
 <h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
-<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h/Users/nithardt/Current Projects/Whittaker and Watson/MMD4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
 </div>
 
 
@@ -235,7 +235,7 @@ Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is 
         <li><a href="CMA02-4-Products.html#miscellaneousexamples">Miscellaneous Examples</a></li>
       </ul>
     </li>
-    <li><a href="#whereOwhere">Continuity and Uniform Convergence</a></li>
+    <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
     <li class="more"><a onClick="hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
   </ul>
 </li>
@@ -276,7 +276,7 @@ Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is 
   <ul >
     <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
     <li  class="current"><a href="#" onClick="showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">The Theory of Convergence</a></li>
-     <li class="notdone"><a href="#whereOwhere">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
      <li class="notdone"><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
      <li class="notdone"><a href="#whereOwhere">The Properties of Analytic Functions</a></li>
      <li class="notdone"><a href="#whereOwhere">The Theory of Residues</a></li>
