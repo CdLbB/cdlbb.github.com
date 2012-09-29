@@ -6,7 +6,7 @@ Subtitle:	An introduction to the general theory of
                                  transcendental functions.
 Author:	E.T. Whittaker and G.N. Watson
 Editor:	Eric Nitardy
-Date:	April 25, 2012
+Date:	May 27, 2012
 Title File:	mmd-WandW-title
 Copyright File:	mmd-WandW-copyright
 Test:	And this is a new key-value pair
@@ -109,7 +109,7 @@ and \\(\left|\,h(x)-h(x_1) \,\right| < \epsilon \\); and the result stated is ob
 >[If \\(f(x)\\) be an increasing function, a section of rational numbers can be found such that, if \\(a\\), \\(A\\) be any members of its \\(L\\)-class and its \\(R\\)-class, \\(a < f(x + h)\\) for every positive value of \\(h\\), and \\(A \geq f(x + h)\\) for some positive value of \\(h\\). The number defined by this section is \\(f(x+0)\\).] 
 
 
-### 3.21 Simple curves. Continua. ###
+#### 3.21 Simple curves. Continua. ####
 
 Let \\(x\\) and \\(y\\) be two real functions of a real variable \\(t\\) which are continuous 
 for every value of \\(t\\) such that \\(a \leq t\leq b\\). We denote the dependence of \\(x\\) and \\(y\\) 
@@ -148,7 +148,7 @@ A continuum formed by the interior of a simple curve is sometimes called an *ope
 
 A simple curve is sometimes called a *closed one-dimensional region*; a simple curve with its end-points omitted is then called an open one-dimensional region. 
 
-### 3.22 Continuous functions of complex variables ###
+#### 3.22 Continuous functions of complex variables ####
 
 Let \\(f(z)\\) be a function of \\(z\\) defined at all points of a closed region (one- or two-dimensional) in the Argand diagram, and let \\(z_1\\) be a point of the region. 
 
