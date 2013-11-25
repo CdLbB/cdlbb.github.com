@@ -47,7 +47,7 @@ and[^ExpContinuous,-15]
 \\[\exp\{\lim_{m \rightarrow \infty}u_m\}=\lim_{m \rightarrow \infty}\{ \exp u_m\}\\]
 if the former limit exists; hence a sufficient condition that the product should converge is that \\(\sum\limits_{n=1}^{\infty} \log (1 + a_n )\\) should converge when the logarithms have their principal values. If this series of logarithms converges absolutely, the convergence of the product is said to be *absolute*. 
 
-[^ExpContinuous,-15]: See the Appendix, [§A.2](#whereOwhere), (where it is shown that \\(f(z)=e^{\,z}\,\\) is continuous, *editor's note*).
+[^ExpContinuous,-15]: See the Appendix, [§A.2](whereOwhere.html), (where it is shown that \\(f(z)=e^{\,z}\,\\) is continuous, *editor's note*).
 
 The condition for absolute convergence is given by the following theorem: *in order that the infinite product
 \\[\Pi = (1+a_1)(1+a_2)(1+a_3) \dots , \\]
@@ -89,7 +89,7 @@ This establishes the result.[^ProductNoLog]
 
 Consider the infinite product
 \\[\left(1-\frac{z^2}{\pi^2}\right)\left(1-\frac{z^2}{2^2\pi^2}\right)\left(1-\frac{z^2}{3^2\pi^2}\right) \dots ,\\]
-which, as will be proved later ([§7.5](#whereOwhere)), represents the function \\(z^{-1} \sin z\\). 
+which, as will be proved later ([§7.5](whereOwhere.html)), represents the function \\(z^{-1} \sin z\\). 
 
 In order to find whether it is absolutely convergent, we must consider the \\(\sum\limits_{n=1}^{\infty} \displaystyle \frac{z^2}{n^2\pi^2}\\) or \\(\displaystyle\frac{z^2}{\pi^2} \textstyle \sum\limits_{n=1}^{\infty} \displaystyle \frac{1}{n^2}\\);  this series is absolutely convergent, and so the product is absolutely convergent for all values of \\(z\\). 
 
@@ -113,7 +113,7 @@ and so the absolute convergence of the series in question follows by comparison
 with the series 
 \\[1+1+\frac{1}{2^2}+\frac{1}{2^2}+\frac{1}{3^2}+\frac{1}{3^2}+\frac{1}{4^2}+\frac{1}{4^2}+ \dots .\\]
 
-The infinite product in this last form is therefore again absolutely convergent, the adjunction of the factors \\(e^{\pm\frac{z}{n\pi}}\\) having changed the convergence from conditional to absolute. This result is a particular case of the first part of the factor theorem of Weierstrass ([§7.6](#whereOwhere)).
+The infinite product in this last form is therefore again absolutely convergent, the adjunction of the factors \\(e^{\pm\frac{z}{n\pi}}\\) having changed the convergence from conditional to absolute. This result is a particular case of the first part of the factor theorem of Weierstrass ([§7.6](whereOwhere.html)).
 
 >*Example* 1. Prove that \\(\prod\limits_{n=1}^{\infty} \displaystyle \left\{\left(1-\frac{z}{c+n}\right)e^{\frac{z}{n}}\right\}\\) is absolutely convergent for all values of \\(z\\), if \\(c\\) is a constant other than a negative integer. 
 >
@@ -392,7 +392,7 @@ be a conditionally convergent series of real terms, then \\(\prod\limits_{n=1}^{
 converges; and shew that the equation 
 \\[\Delta( c)=0\\]
 is equivalent to the equation 
-\\[\sin^2 \textstyle \frac{1}{2} \pi c = \Delta(0)\,\sin^2 \frac{1}{2} \pi \, \theta_0^{\,\frac{1}{2}} .\\] (Hill; see [§19.42](#whereOwhere).)
+\\[\sin^2 \textstyle \frac{1}{2} \pi c = \Delta(0)\,\sin^2 \frac{1}{2} \pi \, \theta_0^{\,\frac{1}{2}} .\\] (Hill; see [§19.42](whereOwhere.html).)
 
 
 </div>
@@ -479,14 +479,14 @@ is equivalent to the equation
     <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
     <li  class="current"><a href="#" onClick="showIt('navseries2');hideIt('navprocesses');">The Theory of Convergence</a></li>
      <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
-     <li class="notdone"><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
-     <li class="notdone"><a href="#whereOwhere">The Properties of Analytic Functions</a></li>
-     <li class="notdone"><a href="#whereOwhere">The Theory of Residues</a></li>
-     <li class="notdone"><a href="#whereOwhere">Expanding Functions in Infinite Series</a></li>
-     <li class="notdone"><a href="#whereOwhere">Asymptotic Expansions and Summability</a></li>
-     <li class="notdone"><a href="#whereOwhere">Fourier Series &amp; Trigonometrical Series</a></li>
-     <li class="notdone"><a href="#whereOwhere">Linear Differential Equations</a></li>
-     <li class="notdone"><a href="#whereOwhere">Integral Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">The Theory of Riemann Integration</a></li>
+     <li class="notdone"><a href="whereOwhere.html">The Properties of Analytic Functions</a></li>
+     <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
@@ -506,18 +506,18 @@ is equivalent to the equation
 </li>
 <li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
   <ul>
-    <li class="notdone"><a href="#whereOwhere">The Gamma Function</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Zeta Function</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Hypergeometric Function</a></li>
-    <li class="notdone"><a href="#whereOwhere">Legendre Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Confluent Hypergeometric Function</a></li>
-    <li class="notdone"><a href="#whereOwhere">Bessel Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Equations of Mathematical Physics</a></li>
-    <li class="notdone"><a href="#whereOwhere">Mathieu Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">Elliptic &amp; Weierstrassian Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Theta Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Jacobian Elliptic Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
+    <li class="notdone"><a href="whereOwhere.html">The Gamma Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Zeta Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Legendre Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Bessel Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Mathieu Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
   </ul>
   </li>
 <li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
@@ -537,8 +537,8 @@ is equivalent to the equation
 <li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a>BACKMATTER</a>
   <ul >
-    <li ><a href="#whereOwhere">Appendix</a></li>
-    <li ><a href="#whereOwhere">Authors Quoted</a></li>
+    <li ><a href="whereOwhere.html">Appendix</a></li>
+    <li ><a href="whereOwhere.html">Authors Quoted</a></li>
   </ul>
 </li>
 </ul>

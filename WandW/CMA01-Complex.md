@@ -231,7 +231,7 @@ From geometrical considerations, it appears that (although the modulus of a comp
 
 [^nonunique,-9]: See the Appendix, [§A.521][].
 
-[§A.521]: http://whereOwhere
+[§A.521]: http:/whereOwhere.html
 
 If \\(P_1\\) and \\(P_2\\) are the representative points corresponding to values \\(z_1\\) and \\(z_2\\) respectively of \\(z\\), then the point which represents the value \\(z_1 +z_2\\) is clearly the terminus of a line drawn from \\(P_1\\), equal and parallel to that which joins the origin to \\(P_2\\).
 
@@ -371,14 +371,14 @@ where \\(\mu\\) is the number of the constituent primes.  (Math. Trip. 1895.)
     <li  class="current"><a href="#complexnumbers" onClick="showIt('navcomplex');hideIt('navprocesses');">Complex Numbers</a></li>
     <li><a href="CMA02-1-Limits.html">The Theory of Convergence</a></li>
      <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
-     <li class="notdone"><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
-     <li class="notdone"><a href="#whereOwhere">The Properties of Analytic Functions</a></li>
-     <li class="notdone"><a href="#whereOwhere">The Theory of Residues</a></li>
-     <li class="notdone"><a href="#whereOwhere">Expanding Functions in Infinite Series</a></li>
-     <li class="notdone"><a href="#whereOwhere">Asymptotic Expansions and Summability</a></li>
-     <li class="notdone"><a href="#whereOwhere">Fourier Series &amp; Trigonometrical Series</a></li>
-     <li class="notdone"><a href="#whereOwhere">Linear Differential Equations</a></li>
-     <li class="notdone"><a href="#whereOwhere">Integral Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">The Theory of Riemann Integration</a></li>
+     <li class="notdone"><a href="whereOwhere.html">The Properties of Analytic Functions</a></li>
+     <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
@@ -398,18 +398,18 @@ where \\(\mu\\) is the number of the constituent primes.  (Math. Trip. 1895.)
 </li>
 <li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
   <ul>
-    <li class="notdone"><a href="#whereOwhere">The Gamma Function</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Zeta Function</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Hypergeometric Function</a></li>
-    <li class="notdone"><a href="#whereOwhere">Legendre Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Confluent Hypergeometric Function</a></li>
-    <li class="notdone"><a href="#whereOwhere">Bessel Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Equations of Mathematical Physics</a></li>
-    <li class="notdone"><a href="#whereOwhere">Mathieu Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">Elliptic &amp; Weierstrassian Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Theta Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Jacobian Elliptic Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
+    <li class="notdone"><a href="whereOwhere.html">The Gamma Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Zeta Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Legendre Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Bessel Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Mathieu Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
   </ul>
   </li>
 <li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
@@ -429,8 +429,8 @@ where \\(\mu\\) is the number of the constituent primes.  (Math. Trip. 1895.)
 <li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a>BACKMATTER</a>
   <ul >
-    <li ><a href="#whereOwhere">Appendix</a></li>
-    <li ><a href="#whereOwhere">Authors Quoted</a></li>
+    <li ><a href="whereOwhere.html">Appendix</a></li>
+    <li ><a href="whereOwhere.html">Authors Quoted</a></li>
   </ul>
 </li>
 </ul>

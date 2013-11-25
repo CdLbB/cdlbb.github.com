@@ -56,10 +56,10 @@ There are two general classes of problems which we are called upon to investigat
 
 (i)  We may arrive at a series by some formal process, e.g. that of solving a linear differential equation by a series, and then to justify the process it will usually have to be proved that the series thus formally obtained is convergent. Simple conditions for establishing convergence in such circumstances are obtained in §§2.31-2.61.
 
-(ii) Given an expression \\(S\\), it may be possible to obtain a development \\(S= \sum\limits_{m=1}^n u_m  + R_n\\), valid for all values of \\(n\\); and, from the definition of a limit, it follows that, if we can prove that \\(R_n \rightarrow 0\\), then the series \\( \sum\limits_{m=1}^n u_m\\), converges and its sum is \\(S\\). An example of this problem occurs in  [§5.4](#whereOwhere).
+(ii) Given an expression \\(S\\), it may be possible to obtain a development \\(S= \sum\limits_{m=1}^n u_m  + R_n\\), valid for all values of \\(n\\); and, from the definition of a limit, it follows that, if we can prove that \\(R_n \rightarrow 0\\), then the series \\( \sum\limits_{m=1}^n u_m\\), converges and its sum is \\(S\\). An example of this problem occurs in  [§5.4](whereOwhere.html).
 
 
->Infinite series were used[^brounckner,-38] by Lord Brouncker in [*Phil. Trans.* **iii.** (1668)][broucknerHREF], pp. 645-649, and the expressions convergent and divergent were introduced by James Gregory, Professor of Mathematics at Edinburgh, in the same year. Infinite series were used systematically by Newton in 1669, [*De analysi per aequat. num. term, inf.*][newton], and he investigated the convergence of hypergeometric series ([§14.1](#whereOwhere)) in 1704. But the great mathematicians of the eighteenth century used infinite series freely without, for the most part, considering the question of their convergence. Thus Euler gave the sum of the series
+>Infinite series were used[^brounckner,-38] by Lord Brouncker in [*Phil. Trans.* **iii.** (1668)][broucknerHREF], pp. 645-649, and the expressions convergent and divergent were introduced by James Gregory, Professor of Mathematics at Edinburgh, in the same year. Infinite series were used systematically by Newton in 1669, [*De analysi per aequat. num. term, inf.*][newton], and he investigated the convergence of hypergeometric series ([§14.1](whereOwhere.html)) in 1704. But the great mathematicians of the eighteenth century used infinite series freely without, for the most part, considering the question of their convergence. Thus Euler gave the sum of the series
 >
 | 	| 	| 	|
 |:-----|-------|-------:|
@@ -337,7 +337,7 @@ As \\(\sum v_n\\) is convergent, \\(\sum \left|u_n\right|\\) is also convergent,
 
 The theorems which have been given may be illustrated by a discussion of the convergence of the *hypergeometric series*
 \\[1+\frac{a \cdot b}{1 \cdot c}z+\frac{a(a+1)b(b+1)}{1 \cdot 2 \cdot c(c+1)}z^2+\frac{a(a+1)(a+2)b(b+1)(b+2)}{1 \cdot 2 \cdot 3 \cdot c(c+1)(c+2)}z^3+ \cdots \\]
-which is generally denoted (see [Chapter 15](#whereOwhere)) by \\(F(a,b;c;z)\\).
+which is generally denoted (see [Chapter 15](whereOwhere.html)) by \\(F(a,b;c;z)\\).
 
 If \\(c\\) is a negative integer, all the terms after the \\((1 — c)\\)th have zero denominators; and if either \\(a\\) or \\(b\\) is a negative integer the series will terminate at the \\((1 - a)\\)th or \\((1 — b)\\)th term as the case may be. We shall suppose these cases set aside, so that \\(a\\), \\(b\\), and \\(c\\) are assumed not to be negative integers.
 
@@ -493,14 +493,14 @@ Hence *when \\(\left|\,z\,\right|=1 \\), a sufficient condition[^necessaryalso] 
     <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
     <li  class="current"><a href="#" onClick="showIt('navlimits1');hideIt('navprocesses');">The Theory of Convergence</a></li>
      <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
-     <li class="notdone"><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
-     <li class="notdone"><a href="#whereOwhere">The Properties of Analytic Functions</a></li>
-     <li class="notdone"><a href="#whereOwhere">The Theory of Residues</a></li>
-     <li class="notdone"><a href="#whereOwhere">Expanding Functions in Infinite Series</a></li>
-     <li class="notdone"><a href="#whereOwhere">Asymptotic Expansions and Summability</a></li>
-     <li class="notdone"><a href="#whereOwhere">Fourier Series &amp; Trigonometrical Series</a></li>
-     <li class="notdone"><a href="#whereOwhere">Linear Differential Equations</a></li>
-     <li class="notdone"><a href="#whereOwhere">Integral Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">The Theory of Riemann Integration</a></li>
+     <li class="notdone"><a href="whereOwhere.html">The Properties of Analytic Functions</a></li>
+     <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
@@ -520,18 +520,18 @@ Hence *when \\(\left|\,z\,\right|=1 \\), a sufficient condition[^necessaryalso] 
 </li>
 <li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
   <ul>
-    <li class="notdone"><a href="#whereOwhere">The Gamma Function</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Zeta Function</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Hypergeometric Function</a></li>
-    <li class="notdone"><a href="#whereOwhere">Legendre Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Confluent Hypergeometric Function</a></li>
-    <li class="notdone"><a href="#whereOwhere">Bessel Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Equations of Mathematical Physics</a></li>
-    <li class="notdone"><a href="#whereOwhere">Mathieu Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">Elliptic &amp; Weierstrassian Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Theta Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Jacobian Elliptic Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
+    <li class="notdone"><a href="whereOwhere.html">The Gamma Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Zeta Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Legendre Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Bessel Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Mathieu Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
   </ul>
   </li>
 <li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
@@ -551,8 +551,8 @@ Hence *when \\(\left|\,z\,\right|=1 \\), a sufficient condition[^necessaryalso] 
 <li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a>BACKMATTER</a>
   <ul >
-    <li ><a href="#whereOwhere">Appendix</a></li>
-    <li ><a href="#whereOwhere">Authors Quoted</a></li>
+    <li ><a href="whereOwhere.html">Appendix</a></li>
+    <li ><a href="whereOwhere.html">Authors Quoted</a></li>
   </ul>
 </li>
 </ul>

@@ -14,16 +14,15 @@ Base Header Level:	1
 LaTeX Mode:	memoir  
 latex input:	mmd-cambridge-begin-doc 
 latex footer:	mmd-cambridge-footer
-CSS:	front.css
+CSS:	css/documentation.css
 
 <div id="header"><h1>A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
 
-
+<div markdown=1 id="content">
 <div markdown=1 class="contenttext">
-
 ## Construction Notes ##
 
-These notes are reminders of issues that have come up in building this website. They may appear and disappear as the site develops. If you think you can help, feel free to email me at [nithardt@uw.edu](mailto:nithardt@uw.edu).
+These notes are reminders of issues that have come up in building this website. They may appear and disappear as the site develops. If you think you can help, feel free to email me at <a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#110;&#x69;&#x74;&#104;&#x61;&#114;&#100;&#x74;&#x40;&#x75;&#x77;&#46;&#101;&#x64;&#x75;">&#x6e;&#x69;&#116;&#x68;&#x61;&#114;&#100;&#x74;&#x40;&#117;&#119;&#x2e;&#101;&#x64;&#x75;</a>.
 
 ### Missing References ###
 
@@ -59,6 +58,8 @@ Here, I am keeping a running list of examples that I have been unable to solve o
 [*Chapter 2.*](CMA02-4-ProductsMN.html#miscellaneousexamples)
 :15*
 :21
+
+</div>
 
 </div>
 
