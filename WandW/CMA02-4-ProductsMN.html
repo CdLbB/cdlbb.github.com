@@ -24,6 +24,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></scr
 <script type="text/javascript" src="js/mathjaxend.js"></script>
 </head>
 <body>
+
 <div id="header"><h1><a href="CMA00-FrontMN.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
 <div id="content">
 <div class="contenttext">
@@ -41,7 +42,6 @@ and the product is said to be <em>convergent</em>.<a class="marginmark" onClick=
 
 </div>
 <div class="marginnotes"  id="mn:1,-7"  style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;1&#93;</a>The convergence of the product in which <span class="math">\(a_{n-1}=-1/n^2\,\)</span> was investigated by Wallis as early as 1655.<a onClick="hideIt('mn:1,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
-
 </div>
 <div class="contenttext">
 
@@ -52,10 +52,8 @@ and the product is said to be <em>convergent</em>.<a class="marginmark" onClick=
 and<a class="marginmark" onClick="toggleHide('mn:2,-15');">&#91;2&#93;</a>
 <span class="math">\[\exp\{\lim_{m \rightarrow \infty}u_m\}=\lim_{m \rightarrow \infty}\{ \exp u_m\}\]</span>
 if the former limit exists; hence a sufficient condition that the product should converge is that <span class="math">\(\sum\limits_{n=1}^{\infty} \log (1 + a_n )\)</span> should converge when the logarithms have their principal values. If this series of logarithms converges absolutely, the convergence of the product is said to be <em>absolute</em>. </p>
-
 </div>
-<div class="marginnotes"  id="mn:2,-15"  style="margin-top: -15em; margin-bottom: -15em;"><a class="marginmark">&#91;2&#93;</a>See the Appendix, <a href="#whereOwhere">&#167;A.2</a>, (where it is shown that <span class="math">\(f(z)=e^{\,z}\,\)</span> is continuous, <em>editor&#8217;s note</em>).<a onClick="hideIt('mn:2,-15')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
-
+<div class="marginnotes"  id="mn:2,-15"  style="margin-top: -15em; margin-bottom: -15em;"><a class="marginmark">&#91;2&#93;</a>See the Appendix, <a href="whereOwhere.html">&#167;A.2</a>, (where it is shown that <span class="math">\(f(z)=e^{\,z}\,\)</span> is continuous, <em>editor&#8217;s note</em>).<a onClick="hideIt('mn:2,-15')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
 <div class="contenttext">
 
@@ -79,20 +77,24 @@ is absolutely convergent or not. </p>
 And thence, when n &gt; m, <span class="math">\(\frac{1}{2} \leq \left| \frac{\log(1+a_n)}{a_n}\right| \leq \frac{3}{2}\)</span>;
 therefore, by the comparison theorem, the absolute convergence of <span class="math">\(\sum \log(1 + a_n )\)</span> entails that of <span class="math">\(\sum a_n\)</span> and conversely, provided that <span class="math">\(a_n \neq - 1\)</span> for any value of <span class="math">\(n\)</span>.
 This establishes the result.<a class="marginmark" onClick="toggleHide('mn:3,-7');">&#91;3&#93;</a></p>
-
 </div>
 <div class="marginnotes"  id="mn:3,-7"  style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;3&#93;</a>A discussion of the convergence of infinite products, in which the results are obtained without making use of the logarithmic function, is given by Pringsheim, <a href="http://www.digizeitschriften.de/dms/toc/?PPN=PPN235181684_0033"><em>Math. Ann.</em> <strong>xxxiii.</strong> (1889)</a>, pp. 119&#8211;154, and also by Bromwich, <a href="http://archive.org/details/introductiontoth00bromuoft"><em>Infinite Series</em></a>, Ch. <strong>VI.</strong><a onClick="hideIt('mn:3,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
-
 </div>
 <div class="contenttext">
 
 <blockquote>
 <p>If, in a product, a finite number of factors vanish, and if, when these are suppressed, the resulting product converges, the original product is said to <em>converge</em> to zero. But such a product as <span class="math">\(\prod_{n=2}^{\infty} (1-n^{-1})\)</span> is said to <em>diverge</em> to zero. </p>
+</blockquote>
 
+<blockquote>
 <p><em>Corollary</em>. Since, if <span class="math">\(S_n \rightarrow l\)</span>, <span class="math">\(exp (S_n ) \rightarrow exp(l)\)</span>, it follows from <a href="CMA02-3-MoreSeriesMN.html#thefundamentalpropertyofabsolutelyconvergentseries">&#167;2.41</a> that the factors of an absolutely convergent product can be deranged without affecting the value of the product. </p>
+</blockquote>
 
+<blockquote>
 <p><em>Example</em> 1. Shew that if <span class="math">\(\prod_{n=1}^{\infty}(1+a_n)\)</span> converges, so does <span class="math">\(\sum_{n=1}^{\infty} \log(1+a_n)\)</span>, if the logarithms have their principal values. </p>
+</blockquote>
 
+<blockquote>
 <p>Example 2. Shew that the infinite product
 <span class="math">\[\left(\frac{\sin z}{z}\right)\left(\frac{\sin \frac{1}{2} z}{ \frac{1}{2}z}\right)\left(\frac{\sin \frac{1}{3}z}{\frac{1}{3}z}\right)\left(\frac{\sin \frac{1}{4}z}{\frac{1}{4}z}\right)\]</span>
 is absolutely convergent for all values of z. </p>
@@ -104,7 +106,7 @@ is absolutely convergent for all values of z. </p>
 
 <p>Consider the infinite product
 <span class="math">\[\left(1-\frac{z^2}{\pi^2}\right)\left(1-\frac{z^2}{2^2\pi^2}\right)\left(1-\frac{z^2}{3^2\pi^2}\right) \dots ,\]</span>
-which, as will be proved later (<a href="#whereOwhere">&#167;7.5</a>), represents the function <span class="math">\(z^{-1} \sin z\)</span>. </p>
+which, as will be proved later (<a href="whereOwhere.html">&#167;7.5</a>), represents the function <span class="math">\(z^{-1} \sin z\)</span>. </p>
 
 <p>In order to find whether it is absolutely convergent, we must consider the <span class="math">\(\sum\limits_{n=1}^{\infty} \displaystyle \frac{z^2}{n^2\pi^2}\)</span> or <span class="math">\(\displaystyle\frac{z^2}{\pi^2} \textstyle \sum\limits_{n=1}^{\infty} \displaystyle \frac{1}{n^2}\)</span>; this series is absolutely convergent, and so the product is absolutely convergent for all values of <span class="math">\(z\)</span>. </p>
 
@@ -128,7 +130,7 @@ and so the absolute convergence of the series in question follows by comparison
 with the series
 <span class="math">\[1+1+\frac{1}{2^2}+\frac{1}{2^2}+\frac{1}{3^2}+\frac{1}{3^2}+\frac{1}{4^2}+\frac{1}{4^2}+ \dots .\]</span></p>
 
-<p>The infinite product in this last form is therefore again absolutely convergent, the adjunction of the factors <span class="math">\(e^{\pm\frac{z}{n\pi}}\)</span> having changed the convergence from conditional to absolute. This result is a particular case of the first part of the factor theorem of Weierstrass (<a href="#whereOwhere">&#167;7.6</a>).</p>
+<p>The infinite product in this last form is therefore again absolutely convergent, the adjunction of the factors <span class="math">\(e^{\pm\frac{z}{n\pi}}\)</span> having changed the convergence from conditional to absolute. This result is a particular case of the first part of the factor theorem of Weierstrass (<a href="whereOwhere.html">&#167;7.6</a>).</p>
 
 <blockquote>
 <p><em>Example</em> 1. Prove that <span class="math">\(\prod\limits_{n=1}^{\infty} \displaystyle \left\{\left(1-\frac{z}{c+n}\right)e^{\frac{z}{n}}\right\}\)</span> is absolutely convergent for all values of <span class="math">\(z\)</span>, if <span class="math">\(c\)</span> is a constant other than a negative integer. </p>
@@ -137,57 +139,63 @@ with the series
 <span class="math">\[\sum\limits_{n=1}^{\infty} \displaystyle \left\{\left(1-\frac{z}{c+n}\right)e^{\frac{z}{n}}-1\right\} .\]</span>
 Now the general term of this series is
 <span class="math">\[
-\begin{align*}
-\left(1-\frac{z}{c+n}\right)& \left\{1+\frac{z}{n}+\frac{z^2}{2n^2}+O\left(\frac{1}{n^3}\right)\right\}-1\\
- =&\frac{zc-\frac{1}{2}z^2}{n^2}+O\left(\frac{1}{n^3}\right)=O\left(\frac{1}{n^2}\right)
-\end{align*}
-\]</span>
+\begin{align*}
+\left(1-\frac{z}{c+n}\right)& \left\{1+\frac{z}{n}+\frac{z^2}{2n^2}+O\left(\frac{1}{n^3}\right)\right\}-1\\
+ =&\frac{zc-\frac{1}{2}z^2}{n^2}+O\left(\frac{1}{n^3}\right)=O\left(\frac{1}{n^2}\right)
+\end{align*}
+\]</span>
 But <span class="math">\(\sum\limits_{n=1}^{\infty} \displaystyle \frac{1}{n^2}\)</span> converges, and so, by <a href="CMA02-2-SeriesMN.html#thecomparisontheorem">&#167;2.34</a>, <span class="math">\(\sum\limits_{n=1}^{\infty} \displaystyle \left\{\left(1-\frac{z}{c+n}\right)e^{\frac{z}{n}}-1\right\} .\)</span> converges absolutely, and therefore the product converges absolutely. </p>
+</blockquote>
 
+<blockquote>
 <p><em>Example</em> 2. Shew that <span class="math">\(\prod\limits_{n=2}^{\infty}\left\{1-\left(1-\frac{1}{n}\right)^{-n} z^{-n}\right\}\)</span> converges for all points <span class="math">\(z\)</span> situated outside a circle whose centre is the origin and radius unity.</p>
 
 <p>For the infinite product is absolutely convergent provided that the series
 <span class="math">\[\sum\limits_{n=2}^{\infty}\left(1-\frac{1}{n}\right)^{-n} z^{-n}\]</span>
 is absolutely convergent. But <span class="math">\(\lim\limits_{n \rightarrow \infty} \displaystyle \left(1-\frac{1}{n}\right)^{-n} =e\)</span>, so the limit of the ratio of the <span class="math">\((n+1)\)</span>th term of the series to the <span class="math">\(n\)</span>th term is <span class="math">\(\displaystyle \frac{1}{z}\)</span>; there is therefore absolute convergence when
 <span class="math">\[\left|\,\frac{1}{z}\,\right| < 1,\, \textrm{ i.e. when } \left|\,z\,\right| > 1 .\]</span></p>
+</blockquote>
 
+<blockquote>
 <p><em>Example</em> 3. Shew that
 <span class="math">\[\frac{1\cdot2\cdot 3 \cdots (m-1)}{(z+1)(z+2)(z+3) \cdots (z+m-1)} m^z\]</span>
 tends to a finite limit as <span class="math">\(m \rightarrow \infty\)</span> , unless<span class="math">\(z\)</span> is a negative integer. </p>
 
 <p>For the expression can be written as a product of which the <span class="math">\(n\)</span>th. factor is
 <span class="math">\[
-\begin{align*}
-\frac{n}{z+n}\left(\frac{n+1}{n}\right)^z&=\left(1+\frac{1}{n}\right)^z\left(1+\frac{z}{n}\right)^{-1}\\
-&=\left\{1+\frac{z(z-1)}{2n^2}+O\left(\frac{1}{n^3}\right)\right\} .
-\end{align*}
-\]</span>
+\begin{align*}
+\frac{n}{z+n}\left(\frac{n+1}{n}\right)^z&=\left(1+\frac{1}{n}\right)^z\left(1+\frac{z}{n}\right)^{-1}\\
+&=\left\{1+\frac{z(z-1)}{2n^2}+O\left(\frac{1}{n^3}\right)\right\} .
+\end{align*}
+\]</span>
 This product is therefore absolutely convergent, provided the series
 <span class="math">\[\sum_{n=1}^{\infty}\left\{\frac{z(z-1)}{2n^2} + O\left(\frac{1}{n^3}\right)\right\}\]</span>
 is absolutely convergent; and a comparison with the convergent series <span class="math">\(\sum\limits_{n=1}^{\infty} \displaystyle \frac{1}{n^2}\)</span> shews that this is the case. When <span class="math">\(z\)</span> is a negative integer the expression does not exist because one of the factors in the denominator vanishes. </p>
+</blockquote>
 
+<blockquote>
 <p><em>Example</em> 4. Prove that
 <span class="math">\[z\left(1-\frac{z}{\pi}\right)\left(1-\frac{z}{2\pi}\right)\left(1+\frac{z}{\pi}\right)\left(1-\frac{z}{3\pi}\right)\left(1-\frac{z}{4\pi}\right)\left(1+\frac{z}{2\pi}\right) \dots\]</span>
 <span class="math">\[=e^{-\frac{z}{\pi}\log 2}sin z .\]</span>
 For the given product
 <span class="math">\[
-\begin{align*}
-\quad \lim_{k \rightarrow \infty} &z\left(1-\frac{z}{\pi}\right)\left(1-\frac{z}{2\pi}\right)\left(1+\frac{z}{\pi}\right) \times \cdots \\
-\cdots &\times \left(1-\frac{z}{(2k-1)\pi}\right)\left(1-\frac{z}{2k\pi}\right)\left(1+\frac{z}{k\pi}\right)
+\begin{align*}
+\quad \lim_{k \rightarrow \infty} &z\left(1-\frac{z}{\pi}\right)\left(1-\frac{z}{2\pi}\right)\left(1+\frac{z}{\pi}\right) \times \cdots \\
+\cdots &\times \left(1-\frac{z}{(2k-1)\pi}\right)\left(1-\frac{z}{2k\pi}\right)\left(1+\frac{z}{k\pi}\right)
 \\
-\qquad & \qquad \\
-\qquad & \qquad \\
-\qquad & \qquad \\
-=\lim_{k \rightarrow \infty} &e^{ \frac{z}{\pi}\left(-1-\frac{1}{2}+1-\frac{1}{3}-\frac{1}{4}+\frac{1}{2}- \cdots -\frac{1}{2k-1}-\frac{1}{2k}+\frac{1}{k}\right) }\times \cdots \\
-\cdots& \times \left\{ z \left(1-\frac{z}{\pi}\right)e^{\frac{z}{\pi}}\right\}\left\{\left(1-\frac{z}{2\pi}\right)e^{\frac{z}{2\pi}}\right\}\left\{ z \left(1+\frac{z}{\pi}\right)e^{-\frac{z}{\pi}}\right\} \times\cdots \\
-\cdots& \times   \left\{ \left(1-\frac{z}{(2k-1)\pi}\right)e^{\frac{z}{(2k-1)\pi}}\right\}\left\{ \left(1-\frac{z}{2k\pi}\right)e^{\frac{z}{2k\pi}}\right\}\left\{\left(1+\frac{z}{k\pi}\right)e^{-\frac{z}{k\pi}}\right\} \\
-\qquad & \qquad \\
-\qquad & \qquad \\
-\qquad & \qquad \\
-=\lim_{k \rightarrow \infty} &e^{ -\frac{z}{\pi}\left(1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+ \cdots +\frac{1}{2k-1}-\frac{1}{2k}\right) }\times \cdots \\
-\cdots& \times \; z \left(1-\frac{z}{\pi}\right)e^{\frac{z}{\pi}}\left(1+\frac{z}{\pi}\right)e^{-\frac{z}{\pi}} \left(1-\frac{z}{2\pi}\right)e^{\frac{z}{2\pi}}\left(1+\frac{z}{2\pi}\right)e^{-\frac{z}{2\pi}} \dots ,
-\end{align*}
-\]</span>
+\qquad & \qquad \\
+\qquad & \qquad \\
+\qquad & \qquad \\
+=\lim_{k \rightarrow \infty} &e^{ \frac{z}{\pi}\left(-1-\frac{1}{2}+1-\frac{1}{3}-\frac{1}{4}+\frac{1}{2}- \cdots -\frac{1}{2k-1}-\frac{1}{2k}+\frac{1}{k}\right) }\times \cdots \\
+\cdots& \times \left\{ z \left(1-\frac{z}{\pi}\right)e^{\frac{z}{\pi}}\right\}\left\{\left(1-\frac{z}{2\pi}\right)e^{\frac{z}{2\pi}}\right\}\left\{ z \left(1+\frac{z}{\pi}\right)e^{-\frac{z}{\pi}}\right\} \times\cdots \\
+\cdots& \times   \left\{ \left(1-\frac{z}{(2k-1)\pi}\right)e^{\frac{z}{(2k-1)\pi}}\right\}\left\{ \left(1-\frac{z}{2k\pi}\right)e^{\frac{z}{2k\pi}}\right\}\left\{\left(1+\frac{z}{k\pi}\right)e^{-\frac{z}{k\pi}}\right\} \\
+\qquad & \qquad \\
+\qquad & \qquad \\
+\qquad & \qquad \\
+=\lim_{k \rightarrow \infty} &e^{ -\frac{z}{\pi}\left(1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+ \cdots +\frac{1}{2k-1}-\frac{1}{2k}\right) }\times \cdots \\
+\cdots& \times \; z \left(1-\frac{z}{\pi}\right)e^{\frac{z}{\pi}}\left(1+\frac{z}{\pi}\right)e^{-\frac{z}{\pi}} \left(1-\frac{z}{2\pi}\right)e^{\frac{z}{2\pi}}\left(1+\frac{z}{2\pi}\right)e^{-\frac{z}{2\pi}} \dots ,
+\end{align*}
+\]</span>
 since the product whose factors are
 <span class="math">\[\left(1+\mp\frac{z}{m\pi}\right)e^{\pm\frac{z}{m\pi}}\]</span>
 is <em>absolutely</em> convergent, and so the order of its factors can be altered. </p>
@@ -199,16 +207,12 @@ is <em>absolutely</em> convergent, and so the order of its factors can be altere
 <h3 id="infinitedeterminants">2.8 Infinite Determinants</h3>
 
 <p>Infinite series and infinite products are not by any means the only known cases of limiting processes which can lead to intelligible results. The researches of G. W. Hill in the Lunar Theory<a class="marginmark" onClick="toggleHide('mn:4,-14');">&#91;4&#93;</a> brought into notice the possibilities of <em>infinite determinants</em>.<a class="marginmark" onClick="toggleHide('mn:5,+8');">&#91;5&#93;</a> </p>
-
 </div>
 <div class="marginnotes"  id="mn:4,-14"  style="margin-top: -14em; margin-bottom: -14em;"><a class="marginmark">&#91;4&#93;</a>Reprinted in <a href="http://archive.org/details/actamathematica09lefgoog"><em>Acta Mathematica</em>, <strong>viii.</strong> (1886)</a>, pp. 1&#8211;36. Infinite determinants had previously occurred in the researches of F&uuml;rstenau on the algebraic equation of the 7th degree, <em>Darstellung der reellen Wurzeln algebraischer Gleichungen durch Determinanten der Coeffizienten</em> (Marburg, 1860). Special types of infinite determinants (known as continuants) occur in the theory of infinite continued fractions; see Sylvester, <a href="http://archive.org/details/collectedmathem01sylvrich"><em>Math. Papers</em>, <strong>I</strong></a>, p. 504 and <a href="http://quod.lib.umich.edu/u/umhistmath/AAS8085.0003.001/271?rgn=full+text;view=pdf"><strong>III</strong></a>, p. 249<a onClick="hideIt('mn:4,-14')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
-
 </div>
 <div class="contenttext">
-
 </div>
 <div class="marginnotes"  id="mn:5,+8"  style="margin-top: +8em; margin-bottom: +8em;"><a class="marginmark">&#91;5&#93;</a>The actual investigation of the convergence is due not to Hill but to Poincare, <a href="http://www.numdam.org/numdam-bin/browse?id=BSMF_1886__14_"><em>Bull. de la Soc. Math. de France</em>, <strong>xiv.</strong> (1886)</a>, p. 87. We shall follow the exposition given by H. von Koch, <a href="http://archive.org/details/actamathematica20lefgoog"><em>Acta Math.</em>, <strong>xvi.</strong> (1892)</a>, p. 217. <a onClick="hideIt('mn:5,+8')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
-
 </div>
 <div class="contenttext">
 
@@ -259,10 +263,8 @@ Therefore, since <span class="math">\(P_m\)</span> tends to a limit as <span cla
 <h4 id="therearrangementtheoremforconvergentinfinitedeterminants">2.82 The rearrangement theorem for convergent infinite determinants</h4>
 
 <p>We shall now shew that <em>a determinant, of the convergent form already considered,<a class="marginmark" onClick="toggleHide('mn:6,-7');">&#91;6&#93;</a> remains convergent when the elements of any row are replaced by any set of elements whose moduli are all less than some fixed positive number.</em></p>
-
 </div>
 <div class="marginnotes"  id="mn:6,-7"  style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;6&#93;</a><em>Editor&#8217;s Note</em>: That is, where the product of the diagonal elements converges absolutely, and the sum of the non-diagonal elements converges absolutely.<a onClick="hideIt('mn:6,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
-
 </div>
 <div class="contenttext">
 
@@ -296,6 +298,7 @@ shall be absolutely convergent. (von Koch.)</p>
 </blockquote>
 
 <h3 id="references">References</h3>
+
 <dl>
 <dt><em>Convergent series.</em></dt>
 <dd>A. Pringsheim, <a href="http://www.digizeitschriften.de/dms/toc/?PPN=PPN235181684_0035"><em>Math. Ann.</em> <strong>xxxv.</strong> (1890)</a>, pp. 297&#8211;394.</dd>
@@ -318,7 +321,6 @@ shall be absolutely convergent. (von Koch.)</p>
 
 <dd>G. H. Hardy, <a href="http://archive.org/details/proceedingslond23socigoog"><em>Proc. London Math. Soc.</em> (2) <strong>i.</strong> (1904)</a>, pp. 124&#8211;128.</dd>
 </dl>
-
 <div id="exercises">
 
 <h3 id="miscellaneousexamples">Miscellaneous Examples</h3>
@@ -412,13 +414,10 @@ be a conditionally convergent series of real terms, then <span class="math">\(\p
 converges; and shew that the equation
 <span class="math">\[\Delta( c)=0\]</span>
 is equivalent to the equation
-<span class="math">\[\sin^2 \textstyle \frac{1}{2} \pi c = \Delta(0)\,\sin^2 \frac{1}{2} \pi \, \theta_0^{\,\frac{1}{2}} .\]</span> (Hill; see <a href="#whereOwhere">&#167;19.42</a>.)</li>
+<span class="math">\[\sin^2 \textstyle \frac{1}{2} \pi c = \Delta(0)\,\sin^2 \frac{1}{2} \pi \, \theta_0^{\,\frac{1}{2}} .\]</span> (Hill; see <a href="whereOwhere.html">&#167;19.42</a>.)</li>
 </ol>
-
 </div>
-
 </div>
-
 </div>
 
 <div id="footer">
@@ -429,12 +428,12 @@ is equivalent to the equation
 <div id="navseries2" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navseries2');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a>
+<li class="part"><a onClick="hideIt('navseries2');showIt('navfront');">FRONTMATTER</a>
   <ul>
     <li><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries2');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>
+<li class="part"><a onClick="hideIt('navseries2');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
   <ul>
     <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
     <li><a href="CMA02-1-LimitsMN.html#thetheoryofconvergence">The Theory of Convergence</a>
@@ -452,11 +451,11 @@ is equivalent to the equation
       </ul>
     </li>
     <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
-    <li class="more"><a onClick="hideIt('navseries2');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
+    <li class="more"><a onClick="hideIt('navseries2');showIt('navprocesses');"> more . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries2');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navseries2');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navseries2');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navseries2');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -472,83 +471,84 @@ is equivalent to the equation
     <li class="toc"><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries2');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
 <ul>
-    <li class="more current"><a onClick="showIt('navseries2');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+    <li class="more current"><a onClick="showIt('navseries2');hideIt('navfront');"> you are here . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries2');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navseries2');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
 <div id="navprocesses" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navseries2');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
 <li class="part"><a>PROCESSES OF ANALYSIS</a>
   <ul >
     <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
-    <li  class="current"><a href="#" onClick="showIt('navseries2');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">The Theory of Convergence</a></li>
+    <li><a href="#" onClick="showIt('navseries2');hideIt('navprocesses');">The Theory of Convergence</a></li>
+     <li class="more current"><a onClick="showIt('navseries2');hideIt('navprocesses');"> you are here . . . </a></li>
      <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
-     <li class="notdone"><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
-     <li class="notdone"><a href="#whereOwhere">The Properties of Analytic Functions</a></li>
-     <li class="notdone"><a href="#whereOwhere">The Theory of Residues</a></li>
-     <li class="notdone"><a href="#whereOwhere">Expanding Functions in Infinite Series</a></li>
-     <li class="notdone"><a href="#whereOwhere">Asymptotic Expansions and Summability</a></li>
-     <li class="notdone"><a href="#whereOwhere">Fourier Series &amp; Trigonometrical Series</a></li>
-     <li class="notdone"><a href="#whereOwhere">Linear Differential Equations</a></li>
-     <li class="notdone"><a href="#whereOwhere">Integral Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">The Theory of Riemann Integration</a></li>
+     <li class="notdone"><a href="whereOwhere.html">The Properties of Analytic Functions</a></li>
+     <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries2');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navseries2');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
 <div id="navtranscendental" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navseries2');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
-<li class="part"><a onClick="hideIt('navseries2');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a> 
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
 <ul>
-    <li class="more current"><a onClick="showIt('navseries2');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+    <li class="more current"><a onClick="showIt('navseries2');hideIt('navtranscendental');"> you are here . . . </a></li>
   </ul>
 </li>
 <li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
   <ul>
-    <li class="notdone"><a href="#whereOwhere">The Gamma Function</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Zeta Function</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Hypergeometric Function</a></li>
-    <li class="notdone"><a href="#whereOwhere">Legendre Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Confluent Hypergeometric Function</a></li>
-    <li class="notdone"><a href="#whereOwhere">Bessel Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Equations of Mathematical Physics</a></li>
-    <li class="notdone"><a href="#whereOwhere">Mathieu Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">Elliptic &amp; Weierstrassian Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Theta Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">The Jacobian Elliptic Functions</a></li>
-    <li class="notdone"><a href="#whereOwhere">Ellipsoidal Harmonics &amp; Lam&eacute;&#8217;s Equation</a></li> 
+    <li class="notdone"><a href="whereOwhere.html">The Gamma Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Zeta Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Legendre Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Bessel Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Mathieu Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lam&eacute;&#8217;s Equation</a></li> 
   </ul>
   </li>
-<li class="part"><a onClick="hideIt('navseries2');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
 <div id="navback" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navseries2');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
-<li class="part"><a onClick="hideIt('navseries2');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
 <ul>
-    <li class="more current"><a onClick="showIt('navseries2');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+    <li class="more current"><a onClick="showIt('navseries2');hideIt('navback');"> you are here . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries2');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a>BACKMATTER</a>
   <ul >
-    <li ><a href="#whereOwhere">Appendix</a></li>
-    <li ><a href="#whereOwhere">Authors Quoted</a></li>
+    <li ><a href="whereOwhere.html">Appendix</a></li>
+    <li ><a href="whereOwhere.html">Authors Quoted</a></li>
   </ul>
 </li>
 </ul>
@@ -565,5 +565,6 @@ is equivalent to the equation
 <div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
 <p><a onClick="hideIt('navseries2');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA03-1-ContinuousFnsMN.html" style="float: right;">&#x25B6;  </a></p>
 </div>
+
 </body>
 </html>
