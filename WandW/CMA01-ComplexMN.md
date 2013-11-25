@@ -1,9 +1,9 @@
 latex input:	mmd-cambridge-header
 Title:	A Course of Modern Analysis-Complex Numbers
 Subtitle:	An introduction to the general theory of
-                                 infinite processes and analytic functions;
-                                 with an account of the principal
-                                 transcendental functions.
+	infinite processes and analytic functions;
+	with an account of the principal
+	transcendental functions.
 Author:	E.T. Whittaker and G.N. Watson
 Editor:	Eric Nitardy
 Date:	March 6, 2012
@@ -15,9 +15,9 @@ latex input:	mmd-cambridge-begin-doc
 latex footer:	mmd-cambridge-footer
 CSS:	css/documentation.css
 HTML header:	<script type="text/javascript"
-       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-                                <script type="text/javascript" src="js/showhide.js"></script>
-                                <script type="text/javascript" src="js/mathjaxend.js"></script>
+	src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+	<script type="text/javascript" src="js/showhide.js"></script>
+	<script type="text/javascript" src="js/mathjaxend.js"></script>
 
 <div id="header"><h1><a href="CMA00-FrontMN.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
 
@@ -156,7 +156,7 @@ Then this section is such that the \\(R\\)-class has no least member and the \\(
 and \\( \displaystyle \; y= \frac{x(x^2+6)}{3x^2+2} \\), 
 then \\( \displaystyle \; y-x= \frac{2x(2-x^2)}{3x^2+2} \\)
 and \\( \displaystyle \; y^2-2= \frac{x(x^2-2)^3}{(3x^2+2)^2}, \\) 
-so \\(x^2\\), \\(y^2\\) and \\(2\\) are in order of magnitude; and therefore given any member \\(x\\) of the \\(L\\)-class, we can always find a greater member of the \\(L\\)-class, or given any member \\(x\prime \\) of the \\(R\\)-class, we can always find a smaller member of the \\(R\\)-class, such numbers being, for instance, \\(y\\) and \\(y\prime \\), where \\(y\prime \\) is the same function of \\(x\prime \\) as \\(y\\) of \\(x\\).
+so \\(x^2\\), \\(y^2\\) and \\(2\\) are in order of magnitude; and therefore given any member \\(x\\) of the \\(L\\)-class, we can always find a greater member of the \\(L\\)-class, or given any member \\(x' \\) of the \\(R\\)-class, we can always find a smaller member of the \\(R\\)-class, such numbers being, for instance, \\(y\\) and \\(y' \\), where \\(y' \\) is the same function of \\(x' \\) as \\(y\\) of \\(x\\).
  
 If a section is made in which the \\(R\\)-class has a least member \\(A_2\\), or if the \\(L\\)-class has a greatest member \\(A_1\\), the section determines a *rational-real* number, which it is convenient to denote by the *same*<a class="marginmark" onClick="toggleHide('mn:8,-10');">&#91;8&#93;</a> symbol \\(A_2\\) or \\(A_1\\).
  
@@ -207,13 +207,13 @@ Let \\(\alpha, \beta,\dots\\) be real numbers and let \\(A_1, B_1,\dots\\) be an
 Then the *sum* (written  \\(\alpha + \beta\\)) of two real numbers \\(\alpha\\) and \\(\beta\\) is defined as the real number (rational or irrational) which is determined by the \\(L\\)-class \\((A_1+B_1)\\) and the \\(R\\)-class \\((A_2+B_2)\\).
  
 >It is, of course, necessary to prove that these classes determine a section of the rational numbers. It is evident that \\(A_1+B_1  < A_2+B_2\\)  and that at least one member of each of the classes \\((A_1+B_1)\\), \\((A_2+B_2)\\) exists. It remains to prove that there is, at most, *one* rational number which is greater than every \\(A_1+B_1\\) and less than every \\(A_2+B_2\\) ; suppose, if possible, that there are two, \\(x\\) and \\(y \; (y>x)\\). Let \\(a_1\\) be a member of \\((A_1)\\) and let \\(a_2\\) be a member of \\((A_2)\\); and let \\(N\\) be the integer next greater than \\((\alpha_2-\alpha_1)/\{ \frac{1}{2}(y-x)\} \\). Take the last of the numbers \\(a_1+\displaystyle \frac{m}{N}(a_2-a_1)\\), (where \\(m=0, 1, \dots N\\)), which belongs to \\((A_1)\\) and the first of them which belongs to \\((A_2)\\); let these two numbers be \\(c_1, c_2\\). Then \\[ c_2-c_1 = \frac{1}{N}(a_2-a_1) < \frac{1}{2}(y-x) \\]
-
->Choose \\(d_1, d_2\\) in a similar manner from the classes defining \\(\beta\\); then \\[ c_2 + d_2 - c_1 - d_1 < y - x \\]
-
->But \\(c_2 + d_2 \geq y, \; c_1+d_1 \leq x\\), and therefore \\(c_2+d_2-c_1-d_1 \geq y-x;\\) we have therefore arrived at a contradiction by supposing that two rational numbers \\(x,y\\) exist belonging neither to \\((A_1+B_1)\\) nor to \\((A_2+B_2)\\).
-
->If every rational number belongs either to the class \\((A_1+B_1)\\) or to the class \\((A_2+B_2)\\), then the classes \\((A_1+B_1), (A_2+B_2)\\) define an irrational number.<a class="marginmark" onClick="toggleHide('mn:11,-7');">&#91;11&#93;</a> If one rational number \\(x\\) exists belonging to neither class, then the \\(L\\)-class formed by \\(x\\) and \\((A_1+B_1)\\) and the \\(R\\)-class \\((A_2+B_2)\\) define the rational-real number x. In either case, the number defined is called the sum \\(\alpha + \beta\\).
 >
+>Choose \\(d_1, d_2\\) in a similar manner from the classes defining \\(\beta\\); then \\[ c_2 + d_2 - c_1 - d_1 < y - x \\]
+>
+>But \\(c_2 + d_2 \geq y, \; c_1+d_1 \leq x\\), and therefore \\(c_2+d_2-c_1-d_1 \geq y-x;\\) we have therefore arrived at a contradiction by supposing that two rational numbers \\(x,y\\) exist belonging neither to \\((A_1+B_1)\\) nor to \\((A_2+B_2)\\).
+>
+>If every rational number belongs either to the class \\((A_1+B_1)\\) or to the class \\((A_2+B_2)\\), then the classes \\((A_1+B_1), (A_2+B_2)\\) define an irrational number.<a class="marginmark" onClick="toggleHide('mn:11,-7');">&#91;11&#93;</a> If one rational number \\(x\\) exists belonging to neither class, then the \\(L\\)-class formed by \\(x\\) and \\((A_1+B_1)\\) and the \\(R\\)-class \\((A_2+B_2)\\) define the rational-real number x. In either case, the number defined is called the sum \\(\alpha + \beta\\).
+
 </div>
 
 
@@ -227,17 +227,19 @@ Then the *sum* (written  \\(\alpha + \beta\\)) of two real numbers \\(\alpha\\) 
 <div markdown=1 class="contenttext">
 
 >The difference \\(\alpha - \beta\\) of two real numbers is defined by the \\(L\\)-class \\((A_1-B_2)\\) and the \\(R\\)-class \\((A_2-B_1)\\).
-
+>
 >The product of two positive real numbers \\(\alpha, \beta\\)  is defined by the \\(R\\)-class \\((A_2B_2)\\) and the \\(L\\)-class of all other rational numbers.
-
+>
 >The reader will see without difficulty how to define the product of negative real numbers and the quotient of two real numbers; and further, it may be shewn that real numbers may be combined in accordance with the associative, distributive and commutative laws.
  
+
+
 The aggregate of rational-real and irrational-real numbers is called the aggregate of real numbers; for brevity, rational-real numbers and irrational-real numbers are called rational and irrational numbers respectively.
 
 ### 1.3 Complex numbers [complexnumberssection] ###
 
-We have seen that a real number may be visualised as a displacement along a definite straight line. If, however, \\(P\\) and \\(Q\\) are any two points in a plane, the displacement \\(\overline{PQ}\\) needs two real numbers for its specification; for instance, the differences of the coordinates of \\(P\\) and \\(Q\\) referred to fixed rectangular axes. If the coordinates of \\(P\\) be \\((\zeta, \eta)\\) and those of \\(Q\\) \\((\zeta+x,\eta+y)\\), the displacement \\(\overline{PQ}\\) may be described by the symbol \\([x, y]\\). We are thus led to consider the association of real numbers in ordered<a class="marginmark" onClick="toggleHide('mn:12,-12');">&#91;12&#93;</a> pairs. The natural definition of the sum of two displacements \\([x, y], \, [x\prime , y\prime ]\\) is the displacement which is the result of the successive applications of the two displacements it is therefore convenient to define the sum of two number-pairs by the equation
-\\[ [x, y] + [x\prime , y\prime ]=[x + x\prime , y + y\prime ]. \\]
+We have seen that a real number may be visualised as a displacement along a definite straight line. If, however, \\(P\\) and \\(Q\\) are any two points in a plane, the displacement \\(\overline{PQ}\\) needs two real numbers for its specification; for instance, the differences of the coordinates of \\(P\\) and \\(Q\\) referred to fixed rectangular axes. If the coordinates of \\(P\\) be \\((\zeta, \eta)\\) and those of \\(Q\\) \\((\zeta+x,\eta+y)\\), the displacement \\(\overline{PQ}\\) may be described by the symbol \\([x, y]\\). We are thus led to consider the association of real numbers in ordered<a class="marginmark" onClick="toggleHide('mn:12,-12');">&#91;12&#93;</a> pairs. The natural definition of the sum of two displacements \\([x, y], \, [x' , y' ]\\) is the displacement which is the result of the successive applications of the two displacements it is therefore convenient to define the sum of two number-pairs by the equation
+\\[ [x, y] + [x' , y' ]=[x + x' , y + y' ]. \\]
 
 </div>
 
@@ -251,16 +253,16 @@ We have seen that a real number may be visualised as a displacement along a defi
 
 <div markdown=1 class="contenttext">
 
-The product of a number-pair and a real number \\(x\prime \\) is then naturally defined by the equation
-\\[ x\prime  \times [x, y] = [x\prime  x, x\prime  y]. \\]
+The product of a number-pair and a real number \\(x' \\) is then naturally defined by the equation
+\\[ x'  \times [x, y] = [x'  x, x'  y]. \\]
 
 We are at liberty to define the product of two number-pairs in any convenient manner; but the only definition, which does not give rise to results that are merely trivial, is that symbolised by the equation
-\\[ [x,y] \times [x\prime ,y\prime ] = [xx\prime  - yy\prime , xy\prime +x\prime y]. \\]
+\\[ [x,y] \times [x' ,y' ] = [xx'  - yy' , xy' +x' y]. \\]
 
 It is then evident that
 \\[ \begin{align*}
-                      [x, 0] \times [x\prime , y\prime  ] =&[xx\prime , xy\prime ] = x \times [x\prime , y\prime ] \\
-\textrm{and} \quad [0, y] \times [x\prime , y\prime ] =&[- yy\prime , x\prime y] = y \times [- y\prime , x\prime ].
+                      [x, 0] \times [x' , y'  ] =&[xx' , xy' ] = x \times [x' , y' ] \\
+\textrm{and} \quad [0, y] \times [x' , y' ] =&[- yy' , x' y] = y \times [- y' , x' ].
 \end{align*} \\]
 
 The geometrical interpretation of these results is that the effect of multiplying by the displacement \\([x, 0]\\) is the same as that of multiplying by the real number \\(x\\); but the effect of multiplying a displacement by \\([0, y]\\) is to multiply it by a real number \\(y\\) and turn it through a right angle.
@@ -282,7 +284,7 @@ and if \\(ab\\) is zero, then either \\(a\\) or \\(b\\) is zero.
 It is found that algebraical operations, direct or inverse, when applied to complex numbers, do not suggest numbers of any fresh type; the complex number will therefore for our purposes be taken as the most general type of number.
 
 >The introduction of the complex number has led to many important developments in mathematics. Functions which, when real variables only are considered, appear as essentially distinct, are seen to be connected when complex variables are introduced: thus the circular functions are found to be expressible in terms of exponential functions of a complex argument, by the equations \\[ \cos x= \frac{1}{2}(e^{ix} + e^{-ix}), \quad \sin x= \frac{1}{2}(e^{ix} - e^{-ix}). \\]
-
+>
 >Again, many of the most important theorems of modern analysis are not true if the numbers concerned are restricted to be real; thus, the theorem that every algebraic equation of degree n has n roots is true in general only when regarded as a theorem concerning complex numbers, Hamilton's quaternions furnish an example of a still further extension of the idea of number. A quaternion \\[ w+xi+yj + zk \\] is formed from four real numbers \\(w, x, y, z\\), and four number-units \\(1, i, j, k\\) in the same way that the ordinary complex number \\(x + iy\\) might be regarded as being formed from two real numbers \\(x, y\\), and two number-units \\(1, i\\). Quaternions however do not obey the commutative law of multiplication.
 
 ### 1.4 The modulus of a complex number ###
@@ -350,7 +352,7 @@ The representation of complex numbers thus afforded is often called the *Argand 
 
 
 
-<div markdown=1 class="marginnotes" id="mn:14,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;14&#93;</a>[J. E. Argand][argand] published it in 1806; it had however previously been used by Gauss, and by Caspar Wessel, who discussed it in [a memoir presented to the Danish Academy][wessel] in 1797 and published by that Society in 1798--9.}<a onClick="hideIt('mn:14,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:14,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;14&#93;</a>[J. E. Argand][argand] published it in 1806; it had however previously been used by Gauss, and by Caspar Wessel, who discussed it in [a memoir presented to the Danish Academy][wessel] in 1797 and published by that Society in 1798--9.<a onClick="hideIt('mn:14,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -407,22 +409,22 @@ measured by the product of the radii vectores of \\(P_1\\) and \\(P_2\\), and a 
 
 *On irrational numbers.*
 :R. Dedekind, [*Stetigkeit und irrationale Zahlen*][Stetigkeit]. (Brunswick,1872).
-:V. von Dantscher, [*Vorlesungen ueber die Weierstrass&rsquo;sche Theorie der irrationalen Zahlen.*][Vorlesungen] (Leipzig, 1908).
+:V. von Dantscher, [*Vorlesungen ueber die Weierstrass&rsquo;sche Theorie der irrationalen Zahlen.*][Vorlesungen1] (Leipzig, 1908).
 :E. W. Hobson, [*Functions of a Real Variable*][Functions] (1907), Ch. **I.**
 :T. J. I&rsquo;a. Bromwich, [*Theory of Infinite Series*][Infinite] (1908), Appendix **I.**
 
 [Stetigkeit]: http://books.google.com/books?id=PywPAAAAIAAJ
-[Vorlesungen]: http://projecteuclid.org/DPubS?service=UI&version=1.0&verb=Display&handle=euclid.bams/1183420506
+[Vorlesungen1]: http://projecteuclid.org/DPubS?service=UI&version=1.0&verb=Display&handle=euclid.bams/1183420506
 [Functions]: http://books.google.com/books?id=PxgPAAAAIAAJ
 [Infinite]: http://www.archive.org/details/introductiontoth00bromuoft
 
 *On complex numbers.*
 :H. Hankel, [*Theorie der complexen Zahlen-systeme*.][Theorie] (Leipzig, 1867).
-:O. Stolz, [*Vorlesungen &uuml;ber allgemeine Arithmetik*, **II.**][Vorlesungen] (Leipzig, 1886).
+:O. Stolz, [*Vorlesungen &uuml;ber allgemeine Arithmetik*, **II.**][Vorlesungen2] (Leipzig, 1886).
 :G. H. Hardy, [*A course of Pure Mathematics*][Pure] (1914), Ch. **III.**
 
 [Theorie]: http://books.google.com/books?id=MkttAAAAMAAJ
-[Vorlesungen]: http://ebooks.library.cornell.edu/cgi/t/text/text-idx?c=math;cc=math;view=toc;subview=short;idno=02860003
+[Vorlesungen2]: http://ebooks.library.cornell.edu/cgi/t/text/text-idx?c=math;cc=math;view=toc;subview=short;idno=02860003
 [Pure]: http://www.gutenberg.org/ebooks/38769
 
 
@@ -459,12 +461,12 @@ where \\(\mu\\) is the number of the constituent primes.  (Math. Trip. 1895.)
 <div id="navcomplex" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navcomplex');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a>
+<li class="part"><a onClick="hideIt('navcomplex');showIt('navfront');">FRONTMATTER</a>
   <ul>
     <li><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navcomplex');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>
+<li class="part"><a onClick="hideIt('navcomplex');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
   <ul>
     <li><a href="#complexnumbers">Complex Numbers</a>
       <ul>
@@ -478,11 +480,11 @@ where \\(\mu\\) is the number of the constituent primes.  (Math. Trip. 1895.)
       </ul>
     </li>
     <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
-    <li class="more"><a onClick="hideIt('navcomplex');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
+    <li class="more"><a onClick="hideIt('navcomplex');showIt('navprocesses');"> more . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navcomplex');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navcomplex');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navcomplex');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navcomplex');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -499,13 +501,13 @@ where \\(\mu\\) is the number of the constituent primes.  (Math. Trip. 1895.)
     <li class="toc"><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navcomplex');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
 <ul>
-    <li class="more current"><a onClick="showIt('navcomplex');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+    <li class="more current"><a onClick="showIt('navcomplex');hideIt('navfront');"> you are here . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navcomplex');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navcomplex');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -513,10 +515,10 @@ where \\(\mu\\) is the number of the constituent primes.  (Math. Trip. 1895.)
 <div id="navprocesses" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navcomplex');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
 <li class="part"><a>PROCESSES OF ANALYSIS</a>
   <ul >
-    <li  class="current"><a href="#complexnumbers" onClick="showIt('navcomplex');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">Complex Numbers</a></li>
+    <li  class="current"><a href="#complexnumbers" onClick="showIt('navcomplex');hideIt('navprocesses');">Complex Numbers</a></li>
     <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
      <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
      <li class="notdone"><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
@@ -529,8 +531,8 @@ where \\(\mu\\) is the number of the constituent primes.  (Math. Trip. 1895.)
      <li class="notdone"><a href="#whereOwhere">Integral Equations</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navcomplex');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navcomplex');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -538,10 +540,10 @@ where \\(\mu\\) is the number of the constituent primes.  (Math. Trip. 1895.)
 <div id="navtranscendental" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navcomplex');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
-<li class="part"><a onClick="hideIt('navcomplex');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a> 
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
 <ul>
-    <li class="more current"><a onClick="showIt('navcomplex');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+    <li class="more current"><a onClick="showIt('navcomplex');hideIt('navtranscendental');"> you are here . . . </a></li>
   </ul>
 </li>
 <li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
@@ -560,7 +562,7 @@ where \\(\mu\\) is the number of the constituent primes.  (Math. Trip. 1895.)
     <li class="notdone"><a href="#whereOwhere">Ellipsoidal Harmonics &amp; Lam&eacute;&#8217;s Equation</a></li> 
   </ul>
   </li>
-<li class="part"><a onClick="hideIt('navcomplex');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -568,13 +570,13 @@ where \\(\mu\\) is the number of the constituent primes.  (Math. Trip. 1895.)
 <div id="navback" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navcomplex');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
-<li class="part"><a onClick="hideIt('navcomplex');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
 <ul>
-    <li class="more current"><a onClick="showIt('navcomplex');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+    <li class="more current"><a onClick="showIt('navcomplex');hideIt('navback');"> you are here . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navcomplex');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a>BACKMATTER</a>
   <ul >
     <li ><a href="#whereOwhere">Appendix</a></li>

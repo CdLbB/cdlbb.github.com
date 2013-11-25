@@ -19,11 +19,11 @@ transcendental functions."/>
 	<link type="text/css" rel="stylesheet" href="css/documentation.css"/>
 <script type="text/javascript"
 src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-<script type="text/javascript" src="https://raw.github.com/gist/1046538/footnotify.js#verbose"></script>
 <script type="text/javascript" src="js/showhide.js"></script>
 <script type="text/javascript" src="js/mathjaxend.js"></script>
 </head>
 <body>
+
 <div id="header"><h1><a href="CMA00-Front.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
 <div id="content">
 <div class="contenttext">
@@ -109,13 +109,11 @@ so the series is divergent; this result was noticed by Leibniz in 1673.</p>
 </tr>
 </tbody>
 </table>
-</blockquote>
 
-<blockquote>
 <p>For the history of researches on convergence, see Pringsheim and Molk, <a href="http://books.google.com/books?id=AQAsAAAAIAAJ"><em>Encyclopédie des Sci. Math.</em>, <strong>I.</strong> (1)</a> and Reiff, <a href="http://books.google.ca/books?id=fAoTAQAAMAAJ"><em>Geschichte der unendlichen Reihen</em> (Tübingen, 1889)</a>.</p>
 </blockquote>
 
-<h5 id="abelsinequality.journalfrmath.i.1826pp.311--339.aparticularcaseofthetheoremof2.31corollary1alsoappearsinthatmemoir.abelsineq0">2.301 Abel&#8217;s inequality.<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a></h5>
+<h5 id="abelsinequality.abelsineq0">2.301 Abel&#8217;s inequality.<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a></h5>
 
 <p>Let <span class="math">\(f_n \geq f_{n+1} > 0\)</span> for all integer values of <span class="math">\(n\)</span>. Then <span class="math">\(\left |\, \sum\limits_{n=1}^m a_n f_n \,\,\right|  \leq A f_1\)</span>, where <span class="math">\(A\)</span> is the greatest of the sums
 <span class="math">\[ \left| a_1 \right|, \left| a_1 + a_2 \right|,  \left| a_1 + a_2 + a_3 \right|, \, \dots \, ,  \left| a_1 + a_2 + \cdots + a_m \right|. \]</span>
@@ -156,11 +154,17 @@ where <span class="math">\(A <2K\)</span>.</p>
 <h6 id="dirichletcor1"><em>Corollary</em> 1. <em>Abel&#8217;s test for convergence.</em> If <span class="math">\( \sum\limits_{n=1}^{\infty} a_n \)</span> converges and the sequence <span class="math">\((u_n)\)</span> is monotonic, ( i.e. <span class="math">\(u_n \geq u_{n+1}\)</span> always or else <span class="math">\(u_n \leq u_{n+1}\)</span> always) and <span class="math">\(\left|\,u_n\,\right| < \kappa\)</span>, where <span class="math">\(\kappa\)</span> is independent of <span class="math">\(n\)</span>, then <span class="math">\( \sum\limits_{n=1}^{\infty} a_n u_n \)</span> converges.</h6>
 
 <p>For, by <a href="CMA02-1-Limits.html#thelimitofanincreasingsequence">§2.2</a>, <span class="math">\(u_n\)</span> tends to a limit <span class="math">\(u\)</span>; let <span class="math">\(\left|\,u-u_n\,\right|=f_n\)</span>. Then <span class="math">\(f_n \rightarrow 0\)</span> steadily; and therefore <span class="math">\( \sum\limits_{n=1}^{\infty} a_n f_n \)</span> converges. But, if <span class="math">\((u_n)\)</span> is an increasing sequence, <span class="math">\(f_n = u-u_n\)</span> and so <span class="math">\( \sum\limits_{n=1}^{\infty} a_n (u-u_n) \)</span> converges; therefore since <span class="math">\( \sum\limits_{n=1}^{\infty} a_n u\)</span> converges, <span class="math">\( \sum\limits_{n=1}^{\infty} a_n u_n \)</span> converges. If <span class="math">\((u_n)\)</span> is a decreasing sequence <span class="math">\(f_n = u_n-u\)</span>, and a similar proof holds.</p>
+</blockquote>
 
+<blockquote>
 <h6 id="dirichletcor2"><em>Corollary</em> 2. Taking <span class="math">\(a_n=(-1)^{n-1}\)</span> in Dirichlet&#8217;s test, it follows that, if <span class="math">\(f_n \geq f_{n+1}\)</span> and <span class="math">\(\lim f_n=0\)</span>, then <span class="math">\(f_1 - f_2 +f_3 - f_4 + \cdots \)</span> converges.</h6>
+</blockquote>
 
+<blockquote>
 <p><em>Example</em> 1. Shew that if <span class="math">\(0 < \theta < 2 \pi\)</span>, <span class="math">\(\left|\, \sum\limits_{n=1}^p  \sin n \theta \,\right| < \csc \frac{1}{2} \theta \)</span>; and deduce that, if <span class="math">\(f_n \rightarrow 0\)</span> steadily, <span class="math">\(\sum\limits_{n=1}^{\infty}  f_n \sin n \theta \)</span> converges for all real values of <span class="math">\(\theta\)</span>, and that <span class="math">\(\sum\limits_{n=1}^{\infty}  f_n \cos n \theta \)</span> converges if <span class="math">\(\theta\)</span> is not an even multiple of <span class="math">\(\pi\)</span>.</p>
+</blockquote>
 
+<blockquote>
 <p><em>Example</em> 2. Shew that, if <span class="math">\(f_n \rightarrow 0\)</span> steadily, <span class="math">\(\sum\limits_{n=1}^{\infty} (-1)^n  f_n \cos n \theta \)</span> converges if <span class="math">\(\theta\)</span> is real and not an odd multiple of <span class="math">\(\pi\)</span>, and <span class="math">\(\sum\limits_{n=1}^{\infty} (-1)^n f_n \sin n \theta \)</span> converges for all real values of <span class="math">\(\theta\)</span>. [Write <span class="math">\(\pi + \theta\)</span> for <span class="math">\(\theta\)</span> in example 1.]</p>
 </blockquote>
 
@@ -233,7 +237,9 @@ for all values of <span class="math">\(p\)</span>, i.e. the series <span class="
 
 <blockquote>
 <p><em>Corollary.</em> A series is absolutely convergent if the ratio of its <span class="math">\(n\)</span>th term to the <span class="math">\(n\)</span>th term of a series which is known to be absolutely convergent is less than some number independent of <span class="math">\(n\)</span>.</p>
+</blockquote>
 
+<blockquote>
 <p><em>Example</em> 1. Shew that the series
 <span class="math">\[  \cos z + \frac{1}{2^2}\cos 2z + \frac{1}{3^2}\cos 3z +\frac{1}{4^2}\cos 4z + \cdots \]</span>
 is absolutely convergent for all real values of z.</p>
@@ -241,14 +247,18 @@ is absolutely convergent for all real values of z.</p>
 <p>When <span class="math">\(z\)</span> we have <span class="math">\(\left|\, \cos n \theta \, \,\right| \leq 1\)</span>, and therefore <span class="math">\(\displaystyle \left|\,\frac{\cos n \theta}{n^2} \,\right| \leq \left|\,\frac{1}{n^2} \,\right|\)</span>. The moduli of the terms of the given series are therefore less than, or at most equal to, the corresponding terms of the series
 <span class="math">\[ 1+\frac{1}{2^2} + \frac{1}{3^2} +\frac{1}{4^2} + \cdots \]</span>
 which by <a href="#geometricseries">§2.33</a> is absolutely convergent. The given series is therefore absolutely convergent.</p>
+</blockquote>
 
+<blockquote>
 <p><em>Example</em> 2. Shew that the series
 <span class="math">\[ \frac{1}{1^2(z-z_1)}+\frac{1}{2^2(z-z_2)}+\frac{1}{3^2(z-z_3)}+\frac{1}{4^2(z-z_4)}+\dots , \]</span>
 <span class="math">\[ \textrm{where} \qquad z_n=e^{ni}, \quad (1,2,3, \dots) \]</span>
 is convergent for all values of <span class="math">\(z\)</span>, which are not on the circle <span class="math">\(\left|\,z\,\right|=1\)</span>.</p>
 
 <p>The geometric representation of complex numbers is helpful in discussing a question of this kind. Let values of the complex number <span class="math">\(z\)</span> be represented on a plane; then the numbers <span class="math">\(z_1, z_2, z_3, \dots\)</span> will give a sequence of points which lie on the circumference of the circle whose centre is the origin and whose radius is unity; and it can be shewn that every point on the circle is a limit-point (<a href="CMA02-1-Limits.html#bolzanosection">§2.21</a>) of the points <span class="math">\(z\)</span>.<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a></p>
+</blockquote>
 
+<blockquote>
 <p>For these special values <span class="math">\(z_n\)</span> of <span class="math">\(z\)</span> , the given series does not exist, since the denominator of the <span class="math">\(n\)</span>th term vanishes when <span class="math">\(z=z_n\)</span>. For simplicity we do not discuss the series for any point <span class="math">\(z\)</span> situated on the circumference of the circle of radius unity.</p>
 
 <p>Suppose now that <span class="math">\(\left|\,z\,\right| \neq 1 \)</span>. Then for all values of <span class="math">\(n, \, \left|\,z-z_n\,\right| \geq \left|\,\{1-\left|\,z\,\right|\,\}\,\right|>c^{-1}\)</span>, for some value of <span class="math">\(c\)</span>; so the moduli of the terms of the given series are less than the corresponding terms of the series
@@ -256,7 +266,9 @@ is convergent for all values of <span class="math">\(z\)</span>, which are not o
 which is known to be absolutely convergent. The given series is therefore absolutely convergent for all values of z, except those which are on the circle <span class="math">\(\left|\,z\,\right|=1\)</span>.</p>
 
 <p>It is interesting to notice that the area in the <span class="math">\(z\)</span>-plane over which the series converges is divided into two parts, between which there is no intercommunication, by the circle <span class="math">\(\left|\,z\,\right|=1\)</span>.</p>
+</blockquote>
 
+<blockquote>
 <p><em>Example</em> 3. Shew that the series
 <span class="math">\[ 2\sin \frac{z}{3}+4\sin \frac{z}{9}+8\sin \frac{z}{27}+ \dots +2^n\sin \frac{z}{3^n}+ \dots \]</span>
 converges absolutely for all values of <span class="math">\(z\)</span>.</p>
@@ -303,13 +315,17 @@ when <span class="math">\(n>r\)</span>.</p>
 converges absolutely for all values of <span class="math">\(z\)</span>.</p>
 
 <p>[For <span class="math">\(u_{n+1}/u_n=c^{(n+1)^2-n^2}e^z=c^{2n+1}e^z \rightarrow 0\)</span>, as <span class="math">\(n \rightarrow \infty\)</span>, if <span class="math">\(\left|\,c\,\right|<1\)</span>.]</p>
+</blockquote>
 
+<blockquote>
 <p><em>Example</em> 2. Shew that the series
 <span class="math">\[ z+\frac{a=b}{2!}z^2+\frac{(a-b)(a-2b)}{3!}z^3+\frac{(a-b)(a-2b)(a-3b)}{4!}z^4+ \dots\]</span>
 converges absolutely if <span class="math">\(\left|\,z\,\right| < b^{-1}\)</span>.</p>
 
 <p>[For <span class="math">\(\displaystyle \frac{u_{n+1}}{u_n}=\frac{a-nb}{n+1}z \rightarrow -bz\)</span>, as <span class="math">\(n \rightarrow \infty\)</span>; so the condition for absolute convergence is <span class="math">\(\left|\,bz\,\right|<1\)</span>, i.e. <span class="math">\(\left|\,z\,\right| < b^{-1}\)</span>.]</p>
+</blockquote>
 
+<blockquote>
 <p><em>Example</em> 3. Shew that the series <span class="math">\(\sum\limits_{n=1}^{\infty} \displaystyle \frac{nz^{n-1}}{z^n-(1+n^{-1})^n}\)</span> converges absolutely if <span class="math">\(\left|\,z\,\right|<1\)</span>.</p>
 
 <p>[For, when <span class="math">\(\left|\,z\,\right|<1\)</span>, <span class="math">\[\left|\,z^n-(1+n^{-1})^n\,\right| \geq (1+n^{-1})^n-\left|\,z^n\,\right| \geq 1+1+ \frac{n-1}{2n}+ \dots -1 > 1 ,\]</span> so the moduli of the terms of the series are less than the corresponding terms of the series <span class="math">\(\sum\limits_{n=1}^{\infty} n \left|\,z^{n-1}\,\right| \)</span>; but this latter series is absolutely convergent, and so the given series converges absolutely.]</p>
@@ -369,24 +385,23 @@ as <span class="math">\(n \rightarrow \infty \)</span>.</p>
 \end{align*}
 \]</span>
 Let <span class="math">\(a,b,c\)</span> be complex numbers,and let them be given in terms of their real and imaginary parts by the equations
-<span class="math">\[a=a\prime  + ia\prime \prime , \quad b=b\prime  + ib\prime \prime , \quad c=c\prime  + ic\prime \prime  .\]</span>
+<span class="math">\[a=a'  + ia' ' , \quad b=b'  + ib' ' , \quad c=c'  + ic' '  .\]</span>
 Then we have
 <span class="math">\[
 \begin{align*}
-\left|\frac{u_{n+1}}{u_n}\right| &= \left|\,1+ \frac{a\prime +b\prime -c\prime -1 + i(a\prime \prime +b\prime \prime -c\prime \prime -1)}{n} + O\left( \frac{1}{n^2}\right) \,\right| \\
-  &=\left\{\left(1+ \frac{a\prime +b\prime -c\prime -1}{n}\right)^2 +\left( \frac{a\prime \prime +b\prime \prime -c\prime \prime -1}{n}\right)^2+ O\left( \frac{1}{n^2}\right) \right\}^{\frac{1}{2}} \\
-   &=1+ \frac{a\prime+b\prime-c\prime-1}{n} + O\left( \frac{1}{n^2}\right)  . 
+\left|\frac{u_{n+1}}{u_n}\right| &= \left|\,1+ \frac{a' +b' -c' -1 + i(a' ' +b' ' -c' ' -1)}{n} + O\left( \frac{1}{n^2}\right) \,\right| \\
+  &=\left\{\left(1+ \frac{a' +b' -c' -1}{n}\right)^2 +\left( \frac{a' ' +b' ' -c' ' -1}{n}\right)^2+ O\left( \frac{1}{n^2}\right) \right\}^{\frac{1}{2}} \\
+   &=1+ \frac{a'+b'-c'-1}{n} + O\left( \frac{1}{n^2}\right)  . 
 \end{align*}
 \]</span> </p>
 
 <p>By <a href="#generalthmcor">§2.37, Corollary</a>, a condition for absolute convergence is
-<span class="math">\[a\prime +b\prime -c\prime  < 0 .\]</span></p>
+<span class="math">\[a' +b' -c'  < 0 .\]</span></p>
 
 <p>Hence <em>when <span class="math">\(\left|\,z\,\right|=1 \)</span>, a sufficient condition<a href="#fn:11" id="fnref:11" title="see footnote" class="footnote">[11]</a> for the absolute convergence of the hypergeometric series is that the real part of <span class="math">\(a + b - c\)</span> shall be negative.</em></p>
 
-<p></div></p>
-
-<p></div></p>
+</div>
+</div>
 
 <div id="footer">
 <h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
@@ -396,17 +411,17 @@ Then we have
 <div id="navseries" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a>
+<li class="part"><a onClick="hideIt('navseries');showIt('navfront');">FRONTMATTER</a>
   <ul>
     <li><a href="CMA00-Front.html#contents">Table of Contents</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>
+<li class="part"><a onClick="hideIt('navseries');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
   <ul>
     <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
-    <li><a onClick="hideIt('navseries');showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">The Theory of Convergence</a>
+    <li><a onClick="hideIt('navseries');showIt('navlimits1');">The Theory of Convergence</a>
       <ul>
-        <li class="more"><a onClick="hideIt('navseries');showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
+        <li class="more"><a onClick="hideIt('navseries');showIt('navlimits1');"> more . . . </a></li>
     <li class="current"><a href="#convergenceofaninfiniteseries">Convergence of an Infinite Series</a>
           <ul>
               <li  class="current"><a href="#dirichlet">Dirichlet's test for convergence</a>
@@ -419,34 +434,34 @@ Then we have
  <li  class="current"><a href="#convergenceofthehypergeometricseries">Convergence of the hypergeometric series</a>
           </ul>
        </li>
-       <li class="more"><a onClick="hideIt('navseries');showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
+       <li class="more"><a onClick="hideIt('navseries');showIt('navlimits1');"> more . . . </a></li>
       </ul>
     </li>
     <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
-    <li class="more"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
+    <li class="more"><a onClick="hideIt('navseries');showIt('navprocesses');"> more . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navseries');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navseries');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
 <div id="navlimits1" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a>
+<li class="part"><a onClick="hideIt('navlimits1');showIt('navfront');">FRONTMATTER</a>
   <ul>
     <li><a href="CMA00-Front.html#contents">Table of Contents</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>
+<li class="part"><a onClick="hideIt('navlimits1');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
   <ul>
     <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
     <li><a href="CMA02-1-Limits.html#thetheoryofconvergence">The Theory of Convergence</a>
       <ul>
         <li><a href="CMA02-1-Limits.html#limits">The Definition of the Limit of a Sequence</a></li>
         <li><a href="CMA02-1-Limits.html#thelimitofanincreasingsequence">The Limit of an Increasing Sequence</a></li>
-    <li class="current"><a onClick="showIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">Convergence of an Infinite Series</a></li>
+    <li class="current"><a onClick="showIt('navseries');hideIt('navlimits1');">Convergence of an Infinite Series</a></li>
     <li><a href="CMA02-3-MoreSeries.html#effectofchangingtheorderoftermsinaseries">Changing the Order of the Terms in a Series</a></li>
     <li><a href="CMA02-3-MoreSeries.html#doubleseries">Double Series</a></li>
     <li><a href="CMA02-3-MoreSeries.html#powerseries">Power Series</a></li>
@@ -457,11 +472,11 @@ Then we have
       </ul>
     </li>
     <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
-    <li class="more"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
+    <li class="more"><a onClick="hideIt('navlimits1');showIt('navprocesses');"> more . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navlimits1');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navlimits1');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -477,24 +492,24 @@ Then we have
     <li class="toc"><a href="CMA00-Front.html#contents">Table of Contents</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
 <ul>
-    <li class="more current"><a onClick="showIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+    <li class="more current"><a onClick="showIt('navseries');hideIt('navfront');"> you are here . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
 <div id="navprocesses" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
 <li class="part"><a>PROCESSES OF ANALYSIS</a>
   <ul >
     <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
-    <li  class="current"><a href="#" onClick="hideIt('navseries');showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">The Theory of Convergence</a></li>
+    <li  class="current"><a href="#" onClick="showIt('navlimits1');hideIt('navprocesses');">The Theory of Convergence</a></li>
      <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
      <li class="notdone"><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
      <li class="notdone"><a href="#whereOwhere">The Properties of Analytic Functions</a></li>
@@ -506,18 +521,18 @@ Then we have
      <li class="notdone"><a href="#whereOwhere">Integral Equations</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
 <div id="navtranscendental" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a> 
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
 <ul>
-    <li class="more current"><a onClick="showIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+    <li class="more current"><a onClick="showIt('navseries');hideIt('navtranscendental');"> you are here . . . </a></li>
   </ul>
 </li>
 <li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
@@ -536,20 +551,20 @@ Then we have
     <li class="notdone"><a href="#whereOwhere">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
   </ul>
   </li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
 <div id="navback" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
 <ul>
-    <li class="more current"><a onClick="showIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+    <li class="more current"><a onClick="showIt('navseries');hideIt('navback');"> you are here . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a>BACKMATTER</a>
   <ul >
     <li ><a href="#whereOwhere">Appendix</a></li>
@@ -621,6 +636,7 @@ Then we have
 
 </ol>
 </div>
+
 
 </body>
 </html>

@@ -1,9 +1,9 @@
 latex input:	mmd-cambridge-header
 Title:	A Course of Modern Analysis-Limits 2-1
 Subtitle:	An introduction to the general theory of
-                                 infinite processes and analytic functions;
-                                 with an account of the principal
-                                 transcendental functions.
+	infinite processes and analytic functions;
+	with an account of the principal
+	transcendental functions.
 Author:	E.T. Whittaker and G.N. Watson
 Editor:	Eric Nitardy
 Date:	March 30, 2012
@@ -16,19 +16,19 @@ latex input:	mmd-cambridge-begin-doc
 latex footer:	mmd-cambridge-footer
 CSS:	css/documentation.css
 HTML header:	<script type="text/javascript"
-       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-                                 <script type="text/javascript" src="js/showhide.js"></script>
-                                 <script type="text/javascript" src="js/mathjaxend.js"></script>
+	src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+	<script type="text/javascript" src="js/showhide.js"></script>
+	<script type="text/javascript" src="js/mathjaxend.js"></script>
 
 
 <div id="header"><h1><a href="CMA00-FrontMN.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
-
+ 
 <div markdown=1 id="content">
 <div markdown=1 class="contenttext">
 
 ## The Theory of Convergence ##
 
-### 2.1 The definition of the limit of a sequence<a class="marginmark" onClick="toggleHide('mn:1,+0');">&#91;1&#93;</a>[Limits] ###
+### 2.1 The definition of the limit of a sequence<a class="marginmark" onClick="toggleHide('mn:1,+0');">&#91;1&#93;</a>[limits] ### 
 
 </div>
 
@@ -142,27 +142,27 @@ Therefore \\(x_n \rightarrow \alpha \\).<a class="marginmark" onClick="toggleHid
 >*Corollary.* A decreasing sequence tends to a limit or to \\(-\infty\\)
 >
 
->######*Example* 1. If \\(\lim z_n = l, \; \lim z\prime_n = l\prime\\), then \\(\lim(z_n + z\prime_n) = l + l\prime\\). For, given \\(\epsilon\\), we can find \\(n\\) and \\(n\prime\\) such that [monotonicex1]######
+>######*Example* 1. If \\(\lim z_n = l, \; \lim z'_n = l'\\), then \\(\lim(z_n + z'_n) = l + l'\\). For, given \\(\epsilon\\), we can find \\(n\\) and \\(n'\\) such that [monotonicex1]######
 >
 >1. when \\(m > n, \;  \left|\, z_m - l \,\right| < \frac{1}{2} \epsilon ,\\)
->2. when \\(m > n\prime, \;  \left|\, z\prime_m- l\prime \,\right| < \frac{1}{2} \epsilon .\\)
+>2. when \\(m > n', \;  \left|\, z'_m- l' \,\right| < \frac{1}{2} \epsilon .\\)
 >
->Let \\(n_1\\) be the greater of \\(n\\) and \\(n\prime\\); then, when \\(m>n_1\\),
->\\[ \left|\, (z_m + z\prime_m) - (l + l\prime) \,\right| \leq \left|\, (z_n - l) \,\right| + \left|\, (z\prime_m - l\prime) \,\right| < \epsilon ; \\]
->and this is the condition that \\(\lim (z_n + z\prime_m)= l + l\prime\\).
+>Let \\(n_1\\) be the greater of \\(n\\) and \\(n'\\); then, when \\(m>n_1\\),
+>\\[ \left|\, (z_m + z'_m) - (l + l') \,\right| \leq \left|\, (z_n - l) \,\right| + \left|\, (z'_m - l') \,\right| < \epsilon ; \\]
+>and this is the condition that \\(\lim (z_n + z'_m)= l + l'\\).
 
 >######*Example* 2. Prove similarly that [monotonicex2]######
 >
->1.  \\(\lim (z_n - z\prime_n) = l - l\prime,\\)
->2.  \\( \lim (z_n z\prime_n) = l  l\prime,\\)
->3. and, if \\( l\prime \neq 0 , \;  \lim (z_n / z\prime_n) = l / l\prime.\\)
+>1.  \\(\lim (z_n - z'_n) = l - l',\\)
+>2.  \\( \lim (z_n z'_n) = l  l',\\)
+>3. and, if \\( l' \neq 0 , \;  \lim (z_n / z'_n) = l / l'.\\)
 
 
 >######*Example* 3. If \\( 0 < x < 1\\),  \\(x^n \rightarrow 0\\). For if \\(x = (1+a)^{-1}\\), \\(a > 0\\) and \\[ 0 < x^n =\frac{1}{(1+a)^n} <\frac{1}{1+na} \\] by the binomial theorem for a positive integral index. [monotonicex3]######
 >
 >And it is obvious that, given a positive number \\(\epsilon\\), we can choose \\(n_0\\) such that \\((1 + na)^{-1} < \epsilon \\) when \\(n > n_0\\); and so \\(x^n \rightarrow 0\\).
 
-#### 2.21 Limit-points and the Bolzano-Weierstrass theorem<a class="marginmark" onClick="toggleHide('mn:6,+0');">&#91;6&#93;</a>[BolzanoSection] ####
+#### 2.21 Limit-points and the Bolzano-Weierstrass theorem<a class="marginmark" onClick="toggleHide('mn:6,+0');">&#91;6&#93;</a>[bolzanosection] ####
 
 </div>
 
@@ -205,7 +205,7 @@ and so \\(G\\) satisfies the condition that it should be a limit-point.
 ##### 2.211 Definition of 'the greatest of the limits' #####
 
 
-The number \\(G\\) obtained in [&#167;2.21][BolzanoSection]  is called 'the greatest of the limits of the sequence \\((x_n)\\)'. The sequence \\((x_n)\\) cannot have a limit-point greater than \\(G\\); for if \\(G\prime \\) were such a limit-point, and \\(\epsilon =\frac{1}{2}(G -G\prime )\\), \\(G\prime —\epsilon\\) is a member of the \\(R\\)-class defining \\(G\\), so that there are only a limited number of terms of the sequence which satisfy \\(x_n > G\prime  -\epsilon\\). This condition is inconsistent with \\(G\prime \\) being a limit-point. We write
+The number \\(G\\) obtained in [&#167;2.21](#bolzanosection)  is called 'the greatest of the limits of the sequence \\((x_n)\\)'. The sequence \\((x_n)\\) cannot have a limit-point greater than \\(G\\); for if \\(G' \\) were such a limit-point, and \\(\epsilon =\frac{1}{2}(G -G' )\\), \\(G' —\epsilon\\) is a member of the \\(R\\)-class defining \\(G\\), so that there are only a limited number of terms of the sequence which satisfy \\(x_n > G'  -\epsilon\\). This condition is inconsistent with \\(G' \\) being a limit-point. We write
 \\[ G= \varlimsup_{n \rightarrow \infty}  x_n. \\]
 The 'least of the limits', \\(L\\), of the sequence (written \\(\displaystyle \varliminf_{n \rightarrow \infty}  x_n\\) ) is defined to be
 \\[ - \varlimsup_{n \rightarrow \infty}  (-x_n). \\]
@@ -228,7 +228,7 @@ We shall now shew that the necessary and sufficient condition for the existence 
 \\[ \left|\, z_{n+p}-z_n \,\right| < \epsilon \\]
 for all positive integral values of \\(p\\).* This result is one of the most important and fundamental theorems of analysis. It is sometimes called the *Principle of Convergence*.
 
-First, we have to shew that this condition is *necessary*, i.e. that it is satisfied whenever a limit exists. Suppose then that a limit \\(l\\) exists; then (&#167;[2.1][Limits]) corresponding to any positive number \\(\epsilon\\), however small, an integer \\(n\\) can be chosen such that
+First, we have to shew that this condition is *necessary*, i.e. that it is satisfied whenever a limit exists. Suppose then that a limit \\(l\\) exists; then (&#167;[2.1](#limits)) corresponding to any positive number \\(\epsilon\\), however small, an integer \\(n\\) can be chosen such that
 \\[ \textstyle \left|\, z_n - l \,\right| < \frac{1}{2} \epsilon, \quad \left|\, z_{n+p} - l \,\right| < \frac{1}{2} \epsilon , \\]
 for all positive values of \\(p\\); therefore
 \\[
@@ -265,7 +265,7 @@ Let \\(\lambda_1\\), \\(\rho_1\\) be the least and greatest of \\(x_1, x_2, \dot
 \\[  \lambda_1 -1 < x_n < \rho_1 +1 , \\]
 for all values of \\(n\\); write \\(\lambda_1 -1=\lambda , \; \rho_1 +1=\rho \\).
 
-Then, for all values of \\(n\\), \\(\lambda < x_n < \rho\\). *Therefore by the theorem of* [&#167;2.21][BolzanoSection], *the sequence \\((x_n)\\) has at least one limit-point \\(G\\)*.
+Then, for all values of \\(n\\), \\(\lambda < x_n < \rho\\). *Therefore by the theorem of* [&#167;2.21](#bolzanosection), *the sequence \\((x_n)\\) has at least one limit-point \\(G\\)*.
 
 Further, there cannot be more than one limit-point; for if there were two, \\(G\\) and \\(H \\) \\( (H < G)\\), take \\(\epsilon < \frac{1}{4}(G - H)\\). Then, by hypothesis, a number \\(n\\) exists such that \\(\left|\, x_{n+p} - x_n \,\right| < \epsilon\\) for every positive value of \\(p\\). But since \\(G\\) and \\(H\\) are limit-points, positive numbers \\(q\\) and \\(r\\) exist such that
 \\[ \left|\, G - x_{n+q} \,\right| < \epsilon, \quad  \left|\, H - x_{n+r} \,\right| < \epsilon . \\]
@@ -294,7 +294,7 @@ Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is 
 
 <div id="footer">
 <h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
-<h/Users/nithardt/Current Projects/Whittaker and Watson/MMD4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
 </div>
 
 
@@ -302,12 +302,12 @@ Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is 
 <div id="navlimits1" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navlimits1');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a>
+<li class="part"><a onClick="hideIt('navlimits1');showIt('navfront');">FRONTMATTER</a>
   <ul>
     <li><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>
+<li class="part"><a onClick="hideIt('navlimits1');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
   <ul>
     <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
     <li><a href="#thetheoryofconvergence">The Theory of Convergence</a>
@@ -325,11 +325,11 @@ Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is 
       </ul>
     </li>
     <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
-    <li class="more"><a onClick="hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
+    <li class="more"><a onClick="hideIt('navlimits1');showIt('navprocesses');"> more . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navlimits1');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navlimits1');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -346,13 +346,13 @@ Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is 
     <li class="toc"><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
 <ul>
-    <li class="more current"><a onClick="showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+    <li class="more current"><a onClick="showIt('navlimits1');hideIt('navfront');"> you are here . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -360,11 +360,11 @@ Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is 
 <div id="navprocesses" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navlimits1');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
 <li class="part"><a>PROCESSES OF ANALYSIS</a>
   <ul >
     <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
-    <li  class="current"><a href="#" onClick="showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">The Theory of Convergence</a></li>
+    <li  class="current"><a href="#" onClick="showIt('navlimits1');hideIt('navprocesses');">The Theory of Convergence</a></li>
      <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
      <li class="notdone"><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
      <li class="notdone"><a href="#whereOwhere">The Properties of Analytic Functions</a></li>
@@ -376,8 +376,8 @@ Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is 
      <li class="notdone"><a href="#whereOwhere">Integral Equations</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -385,10 +385,10 @@ Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is 
 <div id="navtranscendental" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navlimits1');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
-<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a> 
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
 <ul>
-    <li class="more current"><a onClick="showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+    <li class="more current"><a onClick="showIt('navlimits1');hideIt('navtranscendental');"> you are here . . . </a></li>
   </ul>
 </li>
 <li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
@@ -407,7 +407,7 @@ Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is 
     <li class="notdone"><a href="#whereOwhere">Ellipsoidal Harmonics &amp; Lam&eacute;&#8217;s Equation</a></li> 
   </ul>
   </li>
-<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -415,13 +415,13 @@ Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is 
 <div id="navback" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navlimits1');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
-<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
 <ul>
-    <li class="more current"><a onClick="showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+    <li class="more current"><a onClick="showIt('navlimits1');hideIt('navback');"> you are here . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a>BACKMATTER</a>
   <ul >
     <li ><a href="#whereOwhere">Appendix</a></li>

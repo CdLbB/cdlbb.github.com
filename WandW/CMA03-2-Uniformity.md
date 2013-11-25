@@ -1,9 +1,9 @@
 latex input:	mmd-cambridge-header
 Title:	A Course of Modern Analysis-Uniform Continuity 3-2
 Subtitle:	An introduction to the general theory of
-                                 infinite processes and analytic functions;
-                                 with an account of the principal
-                                 transcendental functions.
+	infinite processes and analytic functions;
+	with an account of the principal
+	transcendental functions.
 Author:	E.T. Whittaker and G.N. Watson
 Editor:	Eric Nitardy
 Date:	May 29, 2012
@@ -16,10 +16,9 @@ latex input:	mmd-cambridge-begin-doc
 latex footer:	mmd-cambridge-footer
 CSS:	css/documentation.css
 HTML header:	<script type="text/javascript"
-       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-                                 <script type="text/javascript" src="https://raw.github.com/gist/1046538/footnotify.js#verbose"></script>
-                                  <script type="text/javascript" src="js/showhide.js"></script>
-                                 <script type="text/javascript" src="js/mathjaxend.js"></script>
+	src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+	<script type="text/javascript" src="js/showhide.js"></script>
+	<script type="text/javascript" src="js/mathjaxend.js"></script>
 
 
 <div id="header"><h1><a href="CMA00-Front.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
@@ -89,6 +88,10 @@ Thus (writing \e for e) a necessary condition for uniformity of convergence is t
 condition is also sufficient ; for if it is satisfied it follows as in § 222 (I) 
 that | R NiP 0) | < 2e, which, by definition, is the condition for uniformity.
 
+</div>
+
+</div>
+
 
 
 
@@ -102,14 +105,14 @@ that | R NiP 0) | < 2e, which, by definition, is the condition for uniformity.
 <div id="navunicont" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navunicont');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navfront');">FRONTMATTER</a>
   <ul>
     <li><a href="CMA00-Front.html#contents">Table of Contents</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
   <ul>
-    <li class="more"><a onClick="hideIt('navunicont');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
+    <li class="more"><a onClick="hideIt('navunicont');showIt('navprocesses');"> more . . . </a></li>
     <li><a href="CMA02-1-Limits.html#thetheoryofconvergence">The Theory of Convergence</a></li>
     <li><a href="CMA03-1-ContinuousFns.html#continuousfunctionsanduniformconvergence">Continuity and Uniform Convergence</a>
       <ul>
@@ -125,11 +128,11 @@ that | R NiP 0) | < 2e, which, by definition, is the condition for uniformity.
       </ul>
     </li>
     <li><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
-    <li class="more"><a onClick="hideIt('navunicont');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
+    <li class="more"><a onClick="hideIt('navunicont');showIt('navprocesses');"> more . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -146,13 +149,13 @@ that | R NiP 0) | < 2e, which, by definition, is the condition for uniformity.
     <li class="toc"><a href="CMA00-Front.html#contents">Table of Contents</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
 <ul>
-    <li class="more current"><a onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+    <li class="more current"><a onClick="showIt('navunicont');hideIt('navfront');"> you are here . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -160,12 +163,12 @@ that | R NiP 0) | < 2e, which, by definition, is the condition for uniformity.
 <div id="navprocesses" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navunicont');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
 <li class="part"><a>PROCESSES OF ANALYSIS</a>
   <ul >
     <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
     <li><a href="CMA02-1-Limits.html">The Theory of Convergence</a></li>
-     <li class="current"><a href="#" onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">Continuity and Uniform Convergence</a></li>
+     <li class="current"><a href="#" onClick="showIt('navunicont');hideIt('navprocesses');">Continuity and Uniform Convergence</a></li>
      <li><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
      <li class="notdone"><a href="#whereOwhere">The Properties of Analytic Functions</a></li>
      <li class="notdone"><a href="#whereOwhere">The Theory of Residues</a></li>
@@ -176,8 +179,8 @@ that | R NiP 0) | < 2e, which, by definition, is the condition for uniformity.
      <li class="notdone"><a href="#whereOwhere">Integral Equations</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -185,10 +188,10 @@ that | R NiP 0) | < 2e, which, by definition, is the condition for uniformity.
 <div id="navtranscendental" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navunicont');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a> 
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
 <ul>
-    <li class="more current"><a onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+    <li class="more current"><a onClick="showIt('navunicont');hideIt('navtranscendental');"> you are here . . . </a></li>
   </ul>
 </li>
 <li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
@@ -207,7 +210,7 @@ that | R NiP 0) | < 2e, which, by definition, is the condition for uniformity.
     <li class="notdone"><a href="#whereOwhere">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
   </ul>
   </li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -215,13 +218,13 @@ that | R NiP 0) | < 2e, which, by definition, is the condition for uniformity.
 <div id="navback" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navunicont');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
 <ul>
-    <li class="more current"><a onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+    <li class="more current"><a onClick="showIt('navunicont');hideIt('navback');"> you are here . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a>BACKMATTER</a>
   <ul >
     <li ><a href="#whereOwhere">Appendix</a></li>

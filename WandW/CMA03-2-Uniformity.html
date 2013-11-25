@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="latexinput" content="mmd-cambridge-header"/>
+	<title>A Course of Modern Analysis-Uniform Continuity 3-2</title>
+	<meta name="subtitle" content="An introduction to the general theory of
+infinite processes and analytic functions;
+with an account of the principal
+transcendental functions."/>
+	<meta name="author" content="E.T. Whittaker and G.N. Watson"/>
+	<meta name="editor" content="Eric Nitardy"/>
+	<meta name="date" content="May 29, 2012"/>
+	<meta name="titlefile" content="mmd-WandW-title"/>
+	<meta name="copyrightfile" content="mmd-WandW-copyright"/>
+	<meta name="test" content="And this is a new key-value pair"/>
+	<meta name="latexmode" content="memoir"/>
+	<meta name="latexinput" content="mmd-cambridge-begin-doc"/>
+	<meta name="latexfooter" content="mmd-cambridge-footer"/>
+	<link type="text/css" rel="stylesheet" href="css/documentation.css"/>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+<script type="text/javascript" src="js/showhide.js"></script>
+<script type="text/javascript" src="js/mathjaxend.js"></script>
+</head>
+<body>
+
+<div id="header"><h1><a href="CMA00-Front.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
+<div id="content">
+<div class="contenttext">
+
+<h3 id="seriesofvariableterms.uniformityofconvergence.">3.3 Series of variable terms. Uniformity of convergence.</h3>
+
+<p>Consider the series
+<span class="math">\[x^2 + \frac{x^2}{1+x^2}+ \frac{x^2}{(1+x^2)^2}+  \dots +\frac{x^2}{(1+x^2)^n}+ \dots .\]</span>
+This series converges absolutely (<a href="CMA02-2-Series.html#geometricseries">§2.33</a>) for all real values of<span class="math">\(x\)</span>. </p>
+
+<p>If <span class="math">\(S_n (x)\)</span> be the sum of <span class="math">\(n\)</span> terms, then
+<span class="math">\[S_n(x)=1+x^2-\frac{1}{(1+x^2)^{n-1}} ;\]</span>
+and so
+<span class="math">\[\lim_{n \rightarrow \infty} S_n(x)=1+x^2 ; \qquad (x \neq 0)\]</span>
+but <span class="math">\(S_n (0) = 0\)</span>, and therefore <span class="math">\(\lim\limits_{n \rightarrow \infty} S_n (0) = 0\)</span>. </p>
+
+<p>Consequently, although the series is an absolutely convergent series of
+continuous functions of <span class="math">\(x\)</span>, the sum is a discontinuous function of <span class="math">\(x\)</span>. We naturally enquire the reason of this rather remarkable phenomenon, which was investigated in 1841&#8211;1848 by Stokes<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a>, Seidel<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a> and Weierstrass<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a>, who shewed that it cannot occur except in connexion with another phenomenon, that of <em>non-uniform</em> convergence, which will now be explained. </p>
+
+<p>Let the functions <span class="math">\(u_1(z), u_2(z), \dots \)</span> be defined at all points of a closed region of the Argand diagram. Let
+<span class="math">\[S_n(x)=u_1(z)+u_2(z)+ \dots +u_n(z) .\]</span></p>
+
+<p>The condition that the series <span class="math">\(\sum\limits_{n=1}^{\infty} u_n (z)\)</span> should converge for any particular value of <span class="math">\(z\)</span> is that, given <span class="math">\(\epsilon\)</span>, a number <span class="math">\(n\)</span> should exist such that
+<span class="math">\[\left|\,S_{n+p}(z) - S_n(z) \,\right| < \epsilon\]</span>
+for all positive values of <span class="math">\(p\)</span>, the value of <span class="math">\(n\)</span> of course depending on <span class="math">\(\epsilon\)</span>. </p>
+
+<p>Let <span class="math">\(n\)</span> have the smallest integer value for which the condition is satisfied. This integer will <em>in general</em> depend on the particular value of <span class="math">\(z\)</span> which has been selected for consideration. We denote this dependence by writing <span class="math">\(n(z)\)</span> in place of <span class="math">\(n\)</span>. Now it <em>may happen</em> that we can find a number <span class="math">\(N\)</span>, <em>independent of</em> <span class="math">\(z\)</span>, Such that
+<span class="math">\[n(x) < N\]</span>
+for all values of <span class="math">\(z\)</span> in the region under consideration.</p>
+
+<p>If this number <span class="math">\(N\)</span> exists, the series is said to <em>converge uniformly</em> throughout the region.</p>
+
+<p>If no such number <span class="math">\(N\)</span> exists, the convergence is said to be non-uniform.<a href="#fn:4" id="fnref:4" title="see footnote" class="footnote">[4]</a></p>
+
+<p>Uniformity of convergence is thus a property depending on a whole <em>set</em> of values of <span class="math">\(z\)</span>, whereas previously we have considered the convergence of a series for various particular values of <span class="math">\(z\)</span>, the convergence for each value being considered <em>without reference to the other values</em>. </p>
+
+<p>We define the phrase &#8216;uniformity of convergence near a point <span class="math">\(z\)</span>&#8217; to mean that there is a definite positive number <span class="math">\(\delta\)</span> such that the series converges uniformly in the domain common to the circle <span class="math">\(\left|\, z — z_1  \right | \leq \delta\)</span> and the region in which the series converges.</p>
+
+<h4 id="ontheconditionforuniformityofconvergenceremainder-2">3.31 On the condition for uniformity of convergence <a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a></h4>
+
+<p>If <span class="math">\(R_{n,\, p}(z) = u_{n+1} (z) + u_{n+2} (z)+ \dots + u_{n+p} (z)\)</span>, we have seen that the necessary and sufficient condition that <span class="math">\(\sum_{n=1}^{\infty}u_n (z)\)</span> should converge uniformly in a region is that, given any positive number <span class="math">\(\epsilon\)</span>, it should be possible to
+choose <span class="math">\(N\)</span> <em>independent of</em> <span class="math">\(z\)</span> (but depending on <span class="math">\(\epsilon\)</span>) such that
+<span class="math">\[\left|\, R_{N,p}(z)\,\right| < \epsilon\]</span>
+for <em>all</em> positive integral values of <span class="math">\(p\)</span>. </p>
+
+<p>If the condition is satisfied, by <a href="CMA02-1-Limits.html#cauchy">§2.22</a>, <span class="math">\(S_n (z)\)</span> tends to a limit, <span class="math">\(S(z)\)</span>, say for each value of <span class="math">\(z\)</span> under consideration; and then, since <span class="math">\(\epsilon\)</span> is <em>independent of</em> <span class="math">\(p\)</span>,
+<span class="math">\[\left|\,  \lim_{p \rightarrow \infty} R_{N,\,p} (z) \,\right|     \leq \epsilon ,\]</span>
+and therefore, when <span class="math">\(n > N\)</span>,
+<span class="math">\[S(z)-S_n(z)=  \lim_{p \rightarrow \infty} R_{N,\,p} (z)-R_{N,\, n-N}(z) ,\]</span>
+and so
+<span class="math">\[\left|\, S(z)-S_n(z)\,\right| < 2\epsilon .\]</span></p>
+
+<p>Thus (writing \e for e) a necessary condition for uniformity of convergence is that \S(z)~ S n (z) \ &lt; e, whenever n&gt;N and N is independent of z; the
+condition is also sufficient ; for if it is satisfied it follows as in § 222 (I)
+that | R NiP 0) | &lt; 2e, which, by definition, is the condition for uniformity.</p>
+
+<p></div></p>
+</div>
+
+<div id="footer">
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
+<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+</div>
+
+<div id="navunicont" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navfront');">FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
+  <ul>
+    <li class="more"><a onClick="hideIt('navunicont');showIt('navprocesses');"> more . . . </a></li>
+    <li><a href="CMA02-1-Limits.html#thetheoryofconvergence">The Theory of Convergence</a></li>
+    <li><a href="CMA03-1-ContinuousFns.html#continuousfunctionsanduniformconvergence">Continuity and Uniform Convergence</a>
+      <ul>
+        <li><a href="CMA03-1-ContinuousFns.html#thedependenceofonecomplexnumberonanother">Functions of a Complex Variable</a></li>
+        <li><a href="CMA03-1-ContinuousFns.html#continuityoffunctionsofrealvariables">Continuity of Functions of Real Variables</a></li>
+    <li class="current"><a href="#convergenceofaninfiniteseries">Uniformity of Convergence</a></li>
+    <li class="current"><a href="#effectofchangingtheorderoftermsinaseries">A Particular Double Series</a></li>
+    <li><a href="CMA03-3-Heine-Borel.html#doubleseries">The Concept of Uniformity</a></li>
+    <li><a href="CMA03-3-Heine-Borel.html#powerseries">The Modified Heine-Borel Theorem</a></li>
+    <li><a href="CMA03-3-Heine-Borel.html#infiniteproducts">Uniform Convergence of Power Series</a></li>
+       <li><a href="CMA03-3-Heine-Borel.html#references">References</a></li>
+        <li><a href="CMA03-3-Heine-Borel.html#miscellaneousexamples">Miscellaneous Examples</a></li>
+      </ul>
+    </li>
+    <li><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
+    <li class="more"><a onClick="hideIt('navunicont');showIt('navprocesses');"> more . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navfront" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a>FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-Front.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-Front.html#preface">Preface</a></li>
+    <li><a href="CMA00-Front.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navunicont');hideIt('navfront');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navprocesses" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
+<li class="part"><a>PROCESSES OF ANALYSIS</a>
+  <ul >
+    <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
+    <li><a href="CMA02-1-Limits.html">The Theory of Convergence</a></li>
+     <li class="current"><a href="#" onClick="showIt('navunicont');hideIt('navprocesses');">Continuity and Uniform Convergence</a></li>
+     <li><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
+     <li class="notdone"><a href="#whereOwhere">The Properties of Analytic Functions</a></li>
+     <li class="notdone"><a href="#whereOwhere">The Theory of Residues</a></li>
+     <li class="notdone"><a href="#whereOwhere">Expanding Functions in Infinite Series</a></li>
+     <li class="notdone"><a href="#whereOwhere">Asymptotic Expansions and Summability</a></li>
+     <li class="notdone"><a href="#whereOwhere">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="#whereOwhere">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="#whereOwhere">Integral Equations</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navtranscendental" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
+<ul>
+    <li class="more current"><a onClick="showIt('navunicont');hideIt('navtranscendental');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
+  <ul>
+    <li class="notdone"><a href="#whereOwhere">The Gamma Function</a></li>
+    <li class="notdone"><a href="#whereOwhere">The Zeta Function</a></li>
+    <li class="notdone"><a href="#whereOwhere">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="#whereOwhere">Legendre Functions</a></li>
+    <li class="notdone"><a href="#whereOwhere">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="#whereOwhere">Bessel Functions</a></li>
+    <li class="notdone"><a href="#whereOwhere">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="#whereOwhere">Mathieu Functions</a></li>
+    <li class="notdone"><a href="#whereOwhere">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="#whereOwhere">The Theta Functions</a></li>
+    <li class="notdone"><a href="#whereOwhere">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="#whereOwhere">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
+  </ul>
+  </li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navback" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navunicont');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a>BACKMATTER</a>
+  <ul >
+    <li ><a href="#whereOwhere">Appendix</a></li>
+    <li ><a href="#whereOwhere">Authors Quoted</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfixedleft" class="fixedBleft">
+<p><a href="CMA02-4-Products.html">&#x25C0;</a></p>
+</div>
+
+<div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
+<p><a onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA03-2-Uniformity.html" style="float: right;">&#x25B6;</a></p>
+</div>
+
+<div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
+<p><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA03-2-Uniformity.html" style="float: right;">&#x25B6;   </a></p>
+</div>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p><a href="http://archive.org/details/transactionsofca08camb"><em>Camb. Phil. Trans</em>, <strong>viii</strong>. (1847)</a>, pp. 533&#8211;583. <a href="http://archive.org/details/mathphyspapers01stokrich"><em>Collected Papers</em>, <strong>i</strong></a>. pp. 236&#8211;313.]  <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:2">
+<p><a href="http://archive.org/details/abhandlungenderk05wiss"><em>Münchener Abhandlungen</em>, <strong>v</strong>. (1848)</a>, p. 381.  <a href="#fnref:2" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:3">
+<p><a href="http://archive.org/details/mathematischewer01weieuoft"><em>Ges. Math. Werke</em>, <strong>i</strong></a>. pp. 67, 75.  <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:4">
+<p>The reader who is unacquainted with the concept of uniformity of convergence will find it made much clearer by consulting Bromwich, <a href="http://archive.org/details/introductiontoth00bromuoft"><em>Infinite Series</em></a>, Ch. <strong>vii</strong>, where an illuminating account of Osgood&#8217;s graphical investigation is given. <a href="#fnref:4" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:5">
+<p>This section shews that it is indifferent whether uniformity of convergence is defined by means of the partial remainder <span class="math">\(R_{n,p}(z)\)</span> or by <span class="math">\(R_n (z)\)</span>. Writers differ in the definition taken as fundamental. <a href="#fnref:5" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+
+</body>
+</html>

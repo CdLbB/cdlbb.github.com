@@ -1,12 +1,12 @@
 latex input:	mmd-cambridge-header
 Title:	A Course of Modern Analysis-Continuous Functions 3-1
 Subtitle:	An introduction to the general theory of
-                                 infinite processes and analytic functions;
-                                 with an account of the principal
-                                 transcendental functions.
+	infinite processes and analytic functions;
+	with an account of the principal
+	transcendental functions.
 Author:	E.T. Whittaker and G.N. Watson
 Editor:	Eric Nitardy
-Date:	April 25, 2012
+Date:	May 27, 2012
 Title File:	mmd-WandW-title
 Copyright File:	mmd-WandW-copyright
 Test:	And this is a new key-value pair
@@ -16,9 +16,9 @@ latex input:	mmd-cambridge-begin-doc
 latex footer:	mmd-cambridge-footer
 CSS:	css/documentation.css
 HTML header:	<script type="text/javascript"
-       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-                                 <script type="text/javascript" src="js/showhide.js"></script>
-                                 <script type="text/javascript" src="js/mathjaxend.js"></script>
+	src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+	<script type="text/javascript" src="js/showhide.js"></script>
+	<script type="text/javascript" src="js/mathjaxend.js"></script>
 
 
 <div id="header"><h1><a href="CMA00-FrontMN.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
@@ -41,7 +41,7 @@ This dependence must not be confused with the most important case of it, which w
 >considered as defining the dependence of one complex number \\(\zeta=\xi+i\eta\\) on another complex number \\(z=x+iy\\). A representation strictly analogous to the one already given for real variables would require four-dimensional space, since the number of variables \\(\xi, \eta, x,y\\) is now four.
 >
 >One suggestion (made by Lie and Weierstrass) is to use a doubly-manifold system of lines in the quadruply-manifold totality of lines in three-dimensional space.<a class="marginmark" onClick="toggleHide('mn:1,-5');">&#91;1&#93;</a>
->
+
 </div>
 
 
@@ -146,8 +146,8 @@ and \\(\left|\,h(x)-h(x_1) \,\right| < \epsilon \\); and the result stated is ob
 >
 >The question thus arises, how far this popular definition is equivalent to the precise definition given above.
 >
->Cauchy shewed that if a real function \\(f(x)\\), of a real variable \\(x\\), satisfies the precise definition, then it also satisfies what we have called the popular definition; this result will be proved in [&#167;3.63](). But the converse is not true, as was shewn by Darboux. This fact may be illustrated by the following example.<a class="marginmark" onClick="toggleHide('mn:6,-3');">&#91;6&#93;</a>
->
+>Cauchy shewed that if a real function \\(f(x)\\), of a real variable \\(x\\), satisfies the precise definition, then it also satisfies what we have called the popular definition; this result will be proved in [&#167;3.63](#whereOwhere). But the converse is not true, as was shewn by Darboux. This fact may be illustrated by the following example.<a class="marginmark" onClick="toggleHide('mn:6,-3');">&#91;6&#93;</a>
+
 </div>
 
 
@@ -168,7 +168,7 @@ and \\(\left|\,h(x)-h(x_1) \,\right| < \epsilon \\); and the result stated is ob
 >[If \\(f(x)\\) be an increasing function, a section of rational numbers can be found such that, if \\(a\\), \\(A\\) be any members of its \\(L\\)-class and its \\(R\\)-class, \\(a < f(x + h)\\) for every positive value of \\(h\\), and \\(A \geq f(x + h)\\) for some positive value of \\(h\\). The number defined by this section is \\(f(x+0)\\).] 
 
 
-### 3.21 Simple curves. Continua. ###
+#### 3.21 Simple curves. Continua. ####
 
 Let \\(x\\) and \\(y\\) be two real functions of a real variable \\(t\\) which are continuous 
 for every value of \\(t\\) such that \\(a \leq t\leq b\\). We denote the dependence of \\(x\\) and \\(y\\) 
@@ -227,7 +227,7 @@ A continuum formed by the interior of a simple curve is sometimes called an *ope
 
 A simple curve is sometimes called a *closed one-dimensional region*; a simple curve with its end-points omitted is then called an open one-dimensional region. 
 
-### 3.22 Continuous functions of complex variables ###
+#### 3.22 Continuous functions of complex variables ####
 
 Let \\(f(z)\\) be a function of \\(z\\) defined at all points of a closed region (one- or two-dimensional) in the Argand diagram, and let \\(z_1\\) be a point of the region. 
 
@@ -254,14 +254,14 @@ whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the regio
 <div id="navunicont" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navunicont');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navfront');">FRONTMATTER</a>
   <ul>
     <li><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
   <ul>
-    <li class="more"><a onClick="hideIt('navunicont');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
+    <li class="more"><a onClick="hideIt('navunicont');showIt('navprocesses');"> more . . . </a></li>
     <li><a href="CMA02-1-LimitsMN.html#thetheoryofconvergence">The Theory of Convergence</a></li>
     <li><a href="#continuousfunctionsanduniformconvergence">Continuity and Uniform Convergence</a>
       <ul>
@@ -277,11 +277,11 @@ whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the regio
       </ul>
     </li>
     <li><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
-    <li class="more"><a onClick="hideIt('navunicont');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
+    <li class="more"><a onClick="hideIt('navunicont');showIt('navprocesses');"> more . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -298,13 +298,13 @@ whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the regio
     <li class="toc"><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
 <ul>
-    <li class="more current"><a onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+    <li class="more current"><a onClick="showIt('navunicont');hideIt('navfront');"> you are here . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -312,12 +312,12 @@ whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the regio
 <div id="navprocesses" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navunicont');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
 <li class="part"><a>PROCESSES OF ANALYSIS</a>
   <ul >
     <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
     <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
-     <li class="current"><a href="#" onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">Continuity and Uniform Convergence</a></li>
+     <li class="current"><a href="#" onClick="showIt('navunicont');hideIt('navprocesses');">Continuity and Uniform Convergence</a></li>
      <li><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
      <li class="notdone"><a href="#whereOwhere">The Properties of Analytic Functions</a></li>
      <li class="notdone"><a href="#whereOwhere">The Theory of Residues</a></li>
@@ -328,8 +328,8 @@ whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the regio
      <li class="notdone"><a href="#whereOwhere">Integral Equations</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -337,10 +337,10 @@ whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the regio
 <div id="navtranscendental" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navunicont');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a> 
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
 <ul>
-    <li class="more current"><a onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+    <li class="more current"><a onClick="showIt('navunicont');hideIt('navtranscendental');"> you are here . . . </a></li>
   </ul>
 </li>
 <li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
@@ -359,7 +359,7 @@ whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the regio
     <li class="notdone"><a href="#whereOwhere">Ellipsoidal Harmonics &amp; Lam&eacute;&#8217;s Equation</a></li> 
   </ul>
   </li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -367,13 +367,13 @@ whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the regio
 <div id="navback" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navunicont');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
 <ul>
-    <li class="more current"><a onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+    <li class="more current"><a onClick="showIt('navunicont');hideIt('navback');"> you are here . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a>BACKMATTER</a>
   <ul >
     <li ><a href="#whereOwhere">Appendix</a></li>

@@ -1,9 +1,9 @@
 latex input:	mmd-cambridge-header
 Title:	A Course of Modern Analysis-Series 2-2
 Subtitle:	An introduction to the general theory of
-                                 infinite processes and analytic functions;
-                                 with an account of the principal
-                                 transcendental functions.
+	infinite processes and analytic functions;
+	with an account of the principal
+	transcendental functions.
 Author:	E.T. Whittaker and G.N. Watson
 Editor:	Eric Nitardy
 Date:	March 31, 2012
@@ -15,9 +15,9 @@ latex input:	mmd-cambridge-begin-doc
 latex footer:	mmd-cambridge-footer
 CSS:	css/documentation.css
 HTML header:	<script type="text/javascript"
-       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-                                <script type="text/javascript" src="js/showhide.js"></script>
-                                <script type="text/javascript" src="js/mathjaxend.js"></script>
+	src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+	<script type="text/javascript" src="js/showhide.js"></script>
+	<script type="text/javascript" src="js/mathjaxend.js"></script>
 
 
 <div id="header"><h1><a href="CMA00-FrontMN.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
@@ -59,7 +59,7 @@ There are two general classes of problems which we are called upon to investigat
 (ii) Given an expression \\(S\\), it may be possible to obtain a development \\(S= \sum\limits_{m=1}^n u_m  + R_n\\), valid for all values of \\(n\\); and, from the definition of a limit, it follows that, if we can prove that \\(R_n \rightarrow 0\\), then the series \\( \sum\limits_{m=1}^n u_m\\), converges and its sum is \\(S\\). An example of this problem occurs in  [&#167;5.4](#whereOwhere).
 
 
->Infinite series were used<a class="marginmark" onClick="toggleHide('mn:1,-33');">&#91;1&#93;</a> by Lord Brouncker in [*Phil. Trans.* **iii.** (1668)][broucknerHREF], pp. 645-649, and the expressions convergent and divergent were introduced by James Gregory, Professor of Mathematics at Edinburgh, in the same year. Infinite series were used systematically by Newton in 1669, [*De analysi per aequat. num. term, inf.*][newton], and he investigated the convergence of hypergeometric series ([&#167;14.1](#whereOwhere)) in 1704. But the great mathematicians of the eighteenth century used infinite series freely without, for the most part, considering the question of their convergence. Thus Euler gave the sum of the series
+>Infinite series were used<a class="marginmark" onClick="toggleHide('mn:1,-38');">&#91;1&#93;</a> by Lord Brouncker in [*Phil. Trans.* **iii.** (1668)][broucknerHREF], pp. 645-649, and the expressions convergent and divergent were introduced by James Gregory, Professor of Mathematics at Edinburgh, in the same year. Infinite series were used systematically by Newton in 1669, [*De analysi per aequat. num. term, inf.*][newton], and he investigated the convergence of hypergeometric series ([&#167;14.1](#whereOwhere)) in 1704. But the great mathematicians of the eighteenth century used infinite series freely without, for the most part, considering the question of their convergence. Thus Euler gave the sum of the series
 >
 | 	| 	| 	|
 |:-----|-------|-------:|
@@ -67,15 +67,17 @@ There are two general classes of problems which we are called upon to investigat
 |as zero, on the ground that|||
 | 	| \\[\begin{equation} z + z^2 + z^3 + \, \dots \, = \frac{z}{1-z} \end{equation}   \\]	| (b) \\(\quad\\)	|
 | and	|||
-| 	| \\[\begin{equation}1 +  \frac{1}{z} + \frac{1}{z^2} + \,  \dots \, = \frac{z}{z - 1}   \end{equation}\\]	| (c) \\(\quad\\)	|	
-
+| 	| \\[\begin{equation}1 +  \frac{1}{z} + \frac{1}{z^2} + \,  \dots \, = \frac{z}{z - 1}   \end{equation}\\]	| (c) \\(\quad\\)	|  
+>
 >The error of course arises from the fact that the series (b)  converges only when \\(	\left|\, z	\,\right| <1\\), and the series  (c)  converges only when \\(	\left|\, z 	\,\right| > 1\\), so the series (a) never converges.	|||
+>
+>For the history of researches on convergence, see Pringsheim and Molk, [*Encyclop&eacute;die des Sci. Math.*, **I.** (1)][PringsheimMolk] and Reiff, [*Geschichte der unendlichen Reihen* (T&uuml;bingen, 1889)][Reiff].
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:1,-33" style="margin-top: -33em; margin-bottom: -33em;"><a class="marginmark">&#91;1&#93;</a>See also the note to [&#167;2.7](CMA02-4-ProductsMN.html#infiniteproducts).<a onClick="hideIt('mn:1,-33')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:1,-38" style="margin-top: -38em; margin-bottom: -38em;"><a class="marginmark">&#91;1&#93;</a>See also the note to [&#167;2.7](CMA02-4-ProductsMN.html#infiniteproducts).<a onClick="hideIt('mn:1,-38')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -86,9 +88,6 @@ There are two general classes of problems which we are called upon to investigat
 [broucknerHREF]: http://rstl.royalsocietypublishing.org/content/3/33-44/645.full.pdf+html
 
 [newton]: http://www.e-rara.ch/zut/content/pageview/637329
-
->For the history of researches on convergence, see Pringsheim and Molk, [*Encyclop&eacute;die des Sci. Math.*, **I.** (1)][PringsheimMolk] and Reiff, [*Geschichte der unendlichen Reihen* (T&uuml;bingen, 1889)][Reiff].
-
 [PringsheimMolk]: http://books.google.com/books?id=AQAsAAAAIAAJ
 
 [Reiff]: http://books.google.ca/books?id=fAoTAQAAMAAJ
@@ -250,7 +249,7 @@ for all values of \\(p\\). It follows therefore that we can find \\(n\\) such th
 for all values of \\(p\\), i.e. the series \\(\sum \left|u_n\right|\\) is convergent. The series \\(\sum u_n\\) is therefore absolutely convergent.
 
 >*Corollary.* A series is absolutely convergent if the ratio of its \\(n\\)th term to the \\(n\\)th term of a series which is known to be absolutely convergent is less than some number independent of \\(n\\).
->
+
 >*Example* 1. Shew that the series
 \\[  \cos z + \frac{1}{2^2}\cos 2z + \frac{1}{3^2}\cos 3z +\frac{1}{4^2}\cos 4z + \cdots \\]
 is absolutely convergent for all real values of z.
@@ -258,14 +257,14 @@ is absolutely convergent for all real values of z.
 >When \\(z\\) we have \\(\left|\, \cos n \theta \, \,\right| \leq 1\\),  and therefore \\(\displaystyle \left|\,\frac{\cos n \theta}{n^2} \,\right| \leq \left|\,\frac{1}{n^2} \,\right|\\). The moduli of the terms of the given series are therefore less than, or at most equal to, the corresponding terms of the series
 >\\[ 1+\frac{1}{2^2} + \frac{1}{3^2} +\frac{1}{4^2} + \cdots \\]
 >which by [&#167;2.33](#geometricseries) is absolutely convergent. The given series is therefore absolutely convergent.
->
+
 >*Example* 2. Shew that the series 
 >\\[ \frac{1}{1^2(z-z_1)}+\frac{1}{2^2(z-z_2)}+\frac{1}{3^2(z-z_3)}+\frac{1}{4^2(z-z_4)}+\dots , \\]
 >\\[ \textrm{where} \qquad z_n=e^{ni}, \quad (1,2,3, \dots) \\]
 >is convergent for all values of \\(z\\), which are not on the circle \\(\left|\,z\,\right|=1\\).
 >
 >The geometric representation of complex numbers is helpful in discussing a question of this kind. Let values of the complex number \\(z\\) be represented on a plane; then the numbers \\(z_1, z_2, z_3, \dots\\) will give a sequence of points which lie on the circumference of the circle whose centre is the origin and whose radius is unity; and it can be shewn that every point on the circle is a limit-point ([&#167;2.21](CMA02-1-LimitsMN.html#bolzanosection)) of the points \\(z\\).<a class="marginmark" onClick="toggleHide('mn:5,-7');">&#91;5&#93;</a>
->
+
 </div>
 
 
@@ -421,8 +420,7 @@ By a suitable choice of the constant \\(A\\), we can therefore secure that for a
 As \\(\sum v_n\\) is convergent, \\(\sum \left|u_n\right|\\) is also convergent, and so \\(\sum u_n\\) is absolutely convergent.
 
 >######*Corollary*. If \\(\displaystyle \; \left|\,\frac{u_{n+1}}{u_n}\,\right| =1+\frac{A_1}{n}+ O\left( \frac{1}{n^2}\right)\\), where \\(A_1\\) is independent of \\(n\\), then the series is absolutely convergent if \\(A_1 < -1\\).[generalthmcor]###### 
-
-
+>
 >*Example*. Investigate the convergence of \\(\sum\limits_{n=1}^{\infty} n^r \exp \left( -k \sum\limits_{m=1}^n \displaystyle \frac{1}{m}\right) \\), when \\(r > k\\) and when \\(r < k\\).
 
 #### 2.38 Convergence of the hypergeometric series ####
@@ -447,13 +445,13 @@ When \\(\left|\,z\,\right| = 1\\), we have<a class="marginmark" onClick="toggleH
 \end{align*}
 \\] 
 Let \\(a,b,c\\) be complex numbers,and let them be given in terms of their real and imaginary parts by the equations
-\\[a=a\prime  + ia\prime \prime , \quad b=b\prime  + ib\prime \prime , \quad c=c\prime  + ic\prime \prime  .\\]
+\\[a=a'  + ia' ' , \quad b=b'  + ib' ' , \quad c=c'  + ic' '  .\\]
 Then we have 
 \\[
 \begin{align*}
-\left|\frac{u_{n+1}}{u_n}\right| &= \left|\,1+ \frac{a\prime +b\prime -c\prime -1 + i(a\prime \prime +b\prime \prime -c\prime \prime -1)}{n} + O\left( \frac{1}{n^2}\right) \,\right| \\
-  &=\left\{\left(1+ \frac{a\prime +b\prime -c\prime -1}{n}\right)^2 +\left( \frac{a\prime \prime +b\prime \prime -c\prime \prime -1}{n}\right)^2+ O\left( \frac{1}{n^2}\right) \right\}^{\frac{1}{2}} \\
-   &=1+ \frac{a\prime+b\prime-c\prime-1}{n} + O\left( \frac{1}{n^2}\right)  . 
+\left|\frac{u_{n+1}}{u_n}\right| &= \left|\,1+ \frac{a' +b' -c' -1 + i(a' ' +b' ' -c' ' -1)}{n} + O\left( \frac{1}{n^2}\right) \,\right| \\
+  &=\left\{\left(1+ \frac{a' +b' -c' -1}{n}\right)^2 +\left( \frac{a' ' +b' ' -c' ' -1}{n}\right)^2+ O\left( \frac{1}{n^2}\right) \right\}^{\frac{1}{2}} \\
+   &=1+ \frac{a'+b'-c'-1}{n} + O\left( \frac{1}{n^2}\right)  . 
 \end{align*}
 \\] 
 
@@ -470,7 +468,7 @@ Then we have
 <div markdown=1 class="contenttext">
 
 By [&#167;2.37, Corollary](#generalthmcor), a condition for absolute convergence is
-\\[a\prime +b\prime -c\prime  < 0 .\\]
+\\[a' +b' -c'  < 0 .\\]
 
 Hence *when \\(\left|\,z\,\right|=1 \\), a sufficient condition<a class="marginmark" onClick="toggleHide('mn:11,-7');">&#91;11&#93;</a> for the absolute convergence of the hypergeometric series is that the real part of \\(a + b - c\\) shall be negative.*
 
@@ -502,17 +500,17 @@ Hence *when \\(\left|\,z\,\right|=1 \\), a sufficient condition<a class="marginm
 <div id="navseries" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a>
+<li class="part"><a onClick="hideIt('navseries');showIt('navfront');">FRONTMATTER</a>
   <ul>
     <li><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>
+<li class="part"><a onClick="hideIt('navseries');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
   <ul>
     <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
-    <li><a onClick="hideIt('navseries');showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">The Theory of Convergence</a>
+    <li><a onClick="hideIt('navseries');showIt('navlimits1');">The Theory of Convergence</a>
       <ul>
-        <li class="more"><a onClick="hideIt('navseries');showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
+        <li class="more"><a onClick="hideIt('navseries');showIt('navlimits1');"> more . . . </a></li>
 	<li class="current"><a href="#convergenceofaninfiniteseries">Convergence of an Infinite Series</a>
           <ul>
               <li  class="current"><a href="#dirichlet">Dirichlet's test for convergence</a>
@@ -525,34 +523,34 @@ Hence *when \\(\left|\,z\,\right|=1 \\), a sufficient condition<a class="marginm
  <li  class="current"><a href="#convergenceofthehypergeometricseries">Convergence of the hypergeometric series</a>
           </ul>
        </li>
-       <li class="more"><a onClick="hideIt('navseries');showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
+       <li class="more"><a onClick="hideIt('navseries');showIt('navlimits1');"> more . . . </a></li>
       </ul>
     </li>
     <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
-    <li class="more"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
+    <li class="more"><a onClick="hideIt('navseries');showIt('navprocesses');"> more . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navseries');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navseries');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
 <div id="navlimits1" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a>
+<li class="part"><a onClick="hideIt('navlimits1');showIt('navfront');">FRONTMATTER</a>
   <ul>
     <li><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>
+<li class="part"><a onClick="hideIt('navlimits1');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
   <ul>
     <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
     <li><a href="CMA02-1-LimitsMN.html#thetheoryofconvergence">The Theory of Convergence</a>
       <ul>
         <li><a href="CMA02-1-LimitsMN.html#limits">The Definition of the Limit of a Sequence</a></li>
         <li><a href="CMA02-1-LimitsMN.html#thelimitofanincreasingsequence">The Limit of an Increasing Sequence</a></li>
-	<li class="current"><a onClick="showIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">Convergence of an Infinite Series</a></li>
+	<li class="current"><a onClick="showIt('navseries');hideIt('navlimits1');">Convergence of an Infinite Series</a></li>
 	<li><a href="CMA02-3-MoreSeriesMN.html#effectofchangingtheorderoftermsinaseries">Changing the Order of the Terms in a Series</a></li>
 	<li><a href="CMA02-3-MoreSeriesMN.html#doubleseries">Double Series</a></li>
 	<li><a href="CMA02-3-MoreSeriesMN.html#powerseries">Power Series</a></li>
@@ -563,11 +561,11 @@ Hence *when \\(\left|\,z\,\right|=1 \\), a sufficient condition<a class="marginm
       </ul>
     </li>
     <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
-    <li class="more"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> more . . . </a></li>
+    <li class="more"><a onClick="hideIt('navlimits1');showIt('navprocesses');"> more . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navlimits1');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navlimits1');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -585,13 +583,13 @@ Hence *when \\(\left|\,z\,\right|=1 \\), a sufficient condition<a class="marginm
     <li class="toc"><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
 <ul>
-    <li class="more current"><a onClick="showIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+    <li class="more current"><a onClick="showIt('navseries');hideIt('navfront');"> you are here . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -599,11 +597,11 @@ Hence *when \\(\left|\,z\,\right|=1 \\), a sufficient condition<a class="marginm
 <div id="navprocesses" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
 <li class="part"><a>PROCESSES OF ANALYSIS</a>
   <ul >
     <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
-    <li  class="current"><a href="#" onClick="hideIt('navseries');showIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">The Theory of Convergence</a></li>
+    <li  class="current"><a href="#" onClick="showIt('navlimits1');hideIt('navprocesses');">The Theory of Convergence</a></li>
      <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
      <li class="notdone"><a href="#whereOwhere">The Theory of Riemann Integration</a></li>
      <li class="notdone"><a href="#whereOwhere">The Properties of Analytic Functions</a></li>
@@ -615,8 +613,8 @@ Hence *when \\(\left|\,z\,\right|=1 \\), a sufficient condition<a class="marginm
      <li class="notdone"><a href="#whereOwhere">Integral Equations</a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -624,10 +622,10 @@ Hence *when \\(\left|\,z\,\right|=1 \\), a sufficient condition<a class="marginm
 <div id="navtranscendental" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a> 
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
 <ul>
-    <li class="more current"><a onClick="showIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+    <li class="more current"><a onClick="showIt('navseries');hideIt('navtranscendental');"> you are here . . . </a></li>
   </ul>
 </li>
 <li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
@@ -646,7 +644,7 @@ Hence *when \\(\left|\,z\,\right|=1 \\), a sufficient condition<a class="marginm
     <li class="notdone"><a href="#whereOwhere">Ellipsoidal Harmonics &amp; Lam&eacute;&#8217;s Equation</a></li> 
   </ul>
   </li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
 </ul>
 </div>
 
@@ -654,13 +652,13 @@ Hence *when \\(\left|\,z\,\right|=1 \\), a sufficient condition<a class="marginm
 <div id="navback" class="navigation" style="visibility:hidden;" >
 <h2 id="contents">Contents</h2>
 <ul>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');showIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">FRONTMATTER</a></li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');showIt('navprocesses');hideIt('navtranscendental');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
 <ul>
-    <li class="more current"><a onClick="showIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');"> you are here . . . </a></li>
+    <li class="more current"><a onClick="showIt('navseries');hideIt('navback');"> you are here . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a>BACKMATTER</a>
   <ul >
     <li ><a href="#whereOwhere">Appendix</a></li>
