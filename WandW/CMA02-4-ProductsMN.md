@@ -537,7 +537,8 @@ is equivalent to the equation
 <li class="part"><a>PROCESSES OF ANALYSIS</a>
   <ul >
     <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
-    <li  class="current"><a href="#" onClick="showIt('navseries2');hideIt('navprocesses');">The Theory of Convergence</a></li>
+    <li><a href="#" onClick="showIt('navseries2');hideIt('navprocesses');">The Theory of Convergence</a></li>
+     <li class="more current"><a onClick="showIt('navseries2');hideIt('navprocesses');"> you are here . . . </a></li>
      <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
      <li class="notdone"><a href="whereOwhere.html">The Theory of Riemann Integration</a></li>
      <li class="notdone"><a href="whereOwhere.html">The Properties of Analytic Functions</a></li>
