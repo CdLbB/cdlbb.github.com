@@ -255,7 +255,7 @@ Secondly, we have to prove<a class="marginmark" onClick="toggleHide('mn:9,-7');"
 
 <div markdown=1 class="contenttext">
 
-(I) Suppose that the sequence of real numbers \\((x_n)\\) satisfies Cauchy's condition; that is to say that, corresponding to any positive number \\(\epsilon\\), an integer \\(n\\) can be chosen such that
+<a id="cauchy1"></a> (I) Suppose that the sequence of real numbers \\((x_n)\\) satisfies Cauchy's condition; that is to say that, corresponding to any positive number \\(\epsilon\\), an integer \\(n\\) can be chosen such that
 \\[ \left|\, z_{n+p} - z_n \,\right| < \epsilon \\]
 for all positive integral values of \\(p\\).
 

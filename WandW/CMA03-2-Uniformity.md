@@ -84,9 +84,9 @@ and therefore, when \\(n > N\\),
 and so
 \\[\left|\, S(z)-S_n(z)\,\right| < 2\epsilon .\\]
 
-Thus (writing \e for e) a necessary condition for uniformity of convergence is that \S(z)~ S n (z) \ < e, whenever n>N and N is independent of z; the 
-condition is also sufficient ; for if it is satisfied it follows as in § 222 (I) 
-that | R NiP 0) | < 2e, which, by definition, is the condition for uniformity.
+Thus (writing \\(\frac{1}{2} \epsilon\\) for \\(\epsilon\\) ) a *necessary* condition for uniformity of convergence is that \\(\left|\,S(z) - S_n (z) \,\right| < \epsilon,\\) whenever \\(n>N\\) and \\(N\\) is *independent* of \\(z\\); the 
+condition is also sufficient ; for if it is satisfied it follows as in [§2.22(I)](CMA02-1-Limits.html#cauchy1) 
+that \\(\left|\, R_{N,p} (z)\, \right| < 2e\\), which, by definition, is the condition for uniformity.
 
 </div>
 
