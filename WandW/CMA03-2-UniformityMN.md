@@ -391,13 +391,13 @@ This converges if the series
 \\[\sum_{m,\,n}' \frac{1}{(m^2+n^2)^{\frac{1}{2}\alpha}}\\]
 converges; for the quotient of corresponding terms is 
 \\[\left\{\frac{(\alpha_1+\alpha_2 \mu)^2+(\beta_1+\beta_2 \mu)^2}{1+\mu^2} \right\}^{\frac{1}{2}\alpha}\\]
-where \\(\mu = n/m\\). This expression, *qua* function of a continuous real variable \\(\mu\\) , can be proved to have a positive minimum<a class="marginmark" onClick="toggleHide('mn:12,-9');">&#91;12&#93;</a> (not zero) since \\(\alpha_1\beta_2-\alpha_2\beta_1 \neq 0\\) and so the quotient is always greater than a positive number K (independent \\(\mu\\)).<a class="marginmark" onClick="toggleHide('mn:13,+2');">&#91;13&#93;</a> 
+where \\(\mu = n/m\\). This expression, *qua* function of a continuous real variable \\(\mu\\) , can be proved to have a positive minimum<a class="marginmark" onClick="toggleHide('mn:12,-12');">&#91;12&#93;</a> (not zero) since \\(\alpha_1\beta_2-\alpha_2\beta_1 \neq 0\\) and so the quotient is always greater than a positive number K (independent \\(\mu\\)).<a class="marginmark" onClick="toggleHide('mn:13,+3');">&#91;13&#93;</a> 
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:12,-9" style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;12&#93;</a>The reader will find no difficulty in verifying this statement; the minimum value in question is given by \\[K^{2/\alpha}=\frac{1}{2}\left[\alpha_1^2+\alpha_2^2+\beta_1^2+\beta_2^2-\left\{(\alpha_1-\beta_2)^2+(\alpha_2+\beta_1)^2\right\}^{1/2} \left\{(\alpha_1+\beta_2)^2+(\alpha_2-\beta_1)^2\right\}^{1/2}\right].\\]<a onClick="hideIt('mn:12,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:12,-12" style="margin-top: -12em; margin-bottom: -12em;"><a class="marginmark">&#91;12&#93;</a>The reader will find no difficulty in verifying this statement; the minimum value in question is given by \\[\begin{align*}K^{2/\alpha}=\frac{1}{2}&\left[ \,\alpha_1^2+\alpha_2^2+\beta_1^2+\beta_2^2 \right.\\&-\left\{(\alpha_1-\beta_2)^2+(\alpha_2+\beta_1)^2\right\}^{1/2} \\&\times \left.\left\{(\alpha_1+\beta_2)^2+(\alpha_2-\beta_1)^2\right\}^{1/2}\right].\end{align*}\\]<a onClick="hideIt('mn:12,-12')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -405,11 +405,12 @@ where \\(\mu = n/m\\). This expression, *qua* function of a continuous real vari
 
 <div markdown=1 class="contenttext">
 
+
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:13,+2" style="margin-top: +2em; margin-bottom: +2em;"><a class="marginmark">&#91;13&#93;</a>*Editor's Note*: For clarity's sake, we just demonstrated that \\[\frac{1}{(m^2+n^2)^{\frac{1}{2}\alpha}} \geq K\,\left\{\frac{1}{\{(\alpha_1 m+\alpha_2 n)^2+(\beta_1 m+\beta_2 n)^2\}^{\frac{1}{2}\alpha}}\right\}.\\]<a onClick="hideIt('mn:13,+2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:13,+3" style="margin-top: +3em; margin-bottom: +3em;"><a class="marginmark">&#91;13&#93;</a>*Editor's Note*: For clarity's sake, we just demonstrated that \\[\frac{1}{(m^2+n^2)^{\frac{1}{2}\alpha}} \geq \frac{K}{\{(\alpha_1 m+\alpha_2 n)^2+(\beta_1 m+\beta_2 n)^2\}^{\frac{1}{2}\alpha}}.\\]<a onClick="hideIt('mn:13,+3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
