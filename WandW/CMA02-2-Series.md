@@ -101,9 +101,7 @@ Since \\(f_1 - f_2, \, f_2 - f_3, \dots \\) are not negative, we have, when \\(n
 and so, summing and using [§1.4](CMA01-Complex.html#themodulusofacomplexnumber), we get
 \\[ \left|\, \sum\limits_{n=1}^m a_n f_n \,\right|  \leq A f_1.\\]
 
->*Corollary.* If \\(a_1, a_2, \dots \; w_1, w_2, \dots \,\\) are any numbers, real or complex,
-\\[ \left|\, \sum\limits_{n=1}^m a_n w_n \,\right|  \leq A \left \{ \sum\limits_{n=1}^m \left|\, w_n - w_{n+1} \,\right|+\left|\,w_m \,\right| \right \} , \\]
-where A is the greatest of the sums \\(\left|\, \sum\limits_{n=1}^m a_n  \,\right|\\),  \\((p = 1, 2, ... m)\\). (Hardy.) 
+>######*Corollary.* If \\(a_1, a_2, \dots \; w_1, w_2, \dots \,\\) are any numbers, real or complex,  \\[ \left|\, \sum\limits_{n=1}^m a_n w_n \,\right|  \leq A \left \{ \sum\limits_{n=1}^m \left|\, w_n - w_{n+1} \,\right|+\left|\,w_m \,\right| \right \} , \\] where A is the greatest of the sums \\(\left|\, \sum\limits_{n=1}^m a_n  \,\right|\\),  \\((p = 1, 2, ... m)\\). (Hardy.)[abelcorollary]######
 
 #### 2.31 Dirichlet's test for convergence.[^dirichlet,-5][dirichlet] ####
 

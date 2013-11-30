@@ -276,13 +276,13 @@ April, 2012.
       <ol>
           <li>3.1 <a href="CMA03-1-ContinuousFnsMN.html#thedependenceofonecomplexnumberonanother">The Dependence of One Complex Number on Another</a></li>
           <li>3.2 <a href="CMA03-1-ContinuousFnsMN.html#continuityoffunctionsofrealvariables">Continuity of Functions of Real Variables</a></li>
-	  <li>3.3 <a href="#a">Series of Variable Terms. Uniformity of Convergence.</a></li>
-	  <li>3.4 <a href="#a">A Particular Double Series</a></li>
-	  <li>3.5 <a href="#a">The Concept of Uniformity</a></li>
-	  <li>3.6 <a href="#a">The Modified Heine-Borel Theorem</a></li>
-	  <li>3.7 <a href="#a">Uniform Convergence of Power Series</a></li>
-         <li><a href="#references">References</a>
-         <li><a href="#miscellaneousexamples">Miscellaneous Examples</a></li>
+	  <li>3.3 <a href="CMA03-2-UniformityMN.html#seriesofvariableterms.uniformityofconvergence.">Series of Variable Terms. Uniformity of Convergence.</a></li>
+	  <li>3.4 <a href="CMA03-2-UniformityMN.html#discussionofaparticulardoubleseries.">A Particular Double Series</a></li>
+	  <li>3.5 <a href="CMA03-3-Heine-BorelMN.html#theconceptofuniformity.">The Concept of Uniformity</a></li>
+	  <li>3.6 <a href="CMA03-3-Heine-BorelMN.html#themodifiedheine-boreltheorem.">The Modified Heine-Borel Theorem</a></li>
+	  <li>3.7 <a href="CMA03-3-Heine-BorelMN.html#uniformconvergenceofpowerseries.">Uniform Convergence of Power Series</a></li>
+         <li><a href="CMA03-3-Heine-BorelMN.html#references">References</a>
+         <li><a href="CMA03-3-Heine-BorelMN.html#miscellaneousexamples">Miscellaneous Examples</a></li>
       </ol>
 </li>
     <li class="notdone"><a href="whereOwhere.html">The Theory of Reimann Integration</a></li>

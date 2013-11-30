@@ -25,7 +25,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></scr
 </head>
 <body>
 
-<div id="header"><h1><a href="CMA00-Front.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
+<div id="header"><h1><a href="CMA00-FrontMN.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
 <div id="content">
 <div class="contenttext">
 
@@ -33,7 +33,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></scr
 
 <p>Consider the series
 <span class="math">\[x^2 + \frac{x^2}{1+x^2}+ \frac{x^2}{(1+x^2)^2}+  \dots +\frac{x^2}{(1+x^2)^n}+ \dots .\]</span>
-This series converges absolutely (<a href="CMA02-2-Series.html#geometricseries">§2.33</a>) for all real values of<span class="math">\(x\)</span>. </p>
+This series converges absolutely (<a href="CMA02-2-SeriesMN.html#geometricseries">&#167;2.33</a>) for all real values of<span class="math">\(x\)</span>. </p>
 
 <p>If <span class="math">\(S_n (x)\)</span> be the sum of <span class="math">\(n\)</span> terms, then
 <span class="math">\[S_n(x)=1+x^2-\frac{1}{(1+x^2)^{n-1}} ;\]</span>
@@ -42,7 +42,20 @@ and so
 but <span class="math">\(S_n (0) = 0\)</span>, and therefore <span class="math">\(\lim\limits_{n \rightarrow \infty} S_n (0) = 0\)</span>. </p>
 
 <p>Consequently, although the series is an absolutely convergent series of
-continuous functions of <span class="math">\(x\)</span>, the sum is a discontinuous function of <span class="math">\(x\)</span>. We naturally enquire the reason of this rather remarkable phenomenon, which was investigated in 1841&#8211;1848 by Stokes<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a>, Seidel<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a> and Weierstrass<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a>, who shewed that it cannot occur except in connexion with another phenomenon, that of <em>non-uniform</em> convergence, which will now be explained. </p>
+continuous functions of <span class="math">\(x\)</span>, the sum is a discontinuous function of <span class="math">\(x\)</span>. We naturally enquire the reason of this rather remarkable phenomenon, which was investigated in 1841&#8211;1848 by Stokes<a class="marginmark" onClick="toggleHide('mn:1,-12');">&#91;1&#93;</a>, Seidel<a class="marginmark" onClick="toggleHide('mn:2,-6');">&#91;2&#93;</a> and Weierstrass<a class="marginmark" onClick="toggleHide('mn:3,-0');">&#91;3&#93;</a>, who shewed that it cannot occur except in connexion with another phenomenon, that of <em>non-uniform</em> convergence, which will now be explained. </p>
+
+</div>
+<div class="marginnotes"  id="mn:1,-12"  style="margin-top: -12em; margin-bottom: -12em;"><a class="marginmark">&#91;1&#93;</a><a href="http://archive.org/details/transactionsofca08camb"><em>Camb. Phil. Trans</em>, <strong>viii</strong>. (1847)</a>, pp. 533&#8211;583. <a href="http://archive.org/details/mathphyspapers01stokrich"><em>Collected Papers</em>, <strong>i</strong></a>. pp. 236&#8211;313.] <a onClick="hideIt('mn:1,-12')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+</div>
+<div class="marginnotes"  id="mn:2,-6"  style="margin-top: -6em; margin-bottom: -6em;"><a class="marginmark">&#91;2&#93;</a><a href="http://archive.org/details/abhandlungenderk05wiss"><em>M&uuml;nchener Abhandlungen</em>, <strong>v</strong>. (1848)</a>, p. 381. <a onClick="hideIt('mn:2,-6')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+</div>
+<div class="marginnotes"  id="mn:3,-0"  style="margin-top: -0em; margin-bottom: -0em;"><a class="marginmark">&#91;3&#93;</a><a href="http://archive.org/details/mathematischewer01weieuoft"><em>Ges. Math. Werke</em>, <strong>i</strong></a>. pp. 67, 75. <a onClick="hideIt('mn:3,-0')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
 
 <p>Let the functions <span class="math">\(u_1(z), u_2(z), \dots \)</span> be defined at all points of a closed region of the Argand diagram. Let
 <span class="math">\[S_n(x)=u_1(z)+u_2(z)+ \dots +u_n(z) .\]</span></p>
@@ -57,20 +70,28 @@ for all values of <span class="math">\(z\)</span> in the region under considerat
 
 <p>If this number <span class="math">\(N\)</span> exists, the series is said to <em>converge uniformly</em> throughout the region.</p>
 
-<p>If no such number <span class="math">\(N\)</span> exists, the convergence is said to be non-uniform.<a href="#fn:4" id="fnref:4" title="see footnote" class="footnote">[4]</a></p>
+<p>If no such number <span class="math">\(N\)</span> exists, the convergence is said to be non-uniform.<a class="marginmark" onClick="toggleHide('mn:4,-7');">&#91;4&#93;</a></p>
+</div>
+<div class="marginnotes"  id="mn:4,-7"  style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;4&#93;</a>The reader who is unacquainted with the concept of uniformity of convergence will find it made much clearer by consulting Bromwich, <a href="http://archive.org/details/introductiontoth00bromuoft"><em>Infinite Series</em></a>, Ch. <strong>vii</strong>, where an illuminating account of Osgood&#8217;s graphical investigation is given.<a onClick="hideIt('mn:4,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
 
 <p>Uniformity of convergence is thus a property depending on a whole <em>set</em> of values of <span class="math">\(z\)</span>, whereas previously we have considered the convergence of a series for various particular values of <span class="math">\(z\)</span>, the convergence for each value being considered <em>without reference to the other values</em>. </p>
 
 <p>We define the phrase &#8216;uniformity of convergence near a point <span class="math">\(z\)</span>&#8217; to mean that there is a definite positive number <span class="math">\(\delta\)</span> such that the series converges uniformly in the domain common to the circle <span class="math">\(\left|\, z — z_1  \right | \leq \delta\)</span> and the region in which the series converges.</p>
 
-<h4 id="ontheconditionforuniformityofconvergence.remainder-2">3.31 On the condition for uniformity of convergence.<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a></h4>
+<h4 id="ontheconditionforuniformityofconvergence.aclassmarginmarkonclicktogglehidemn:5-291593a">3.31 On the condition for uniformity of convergence.<a class="marginmark" onClick="toggleHide('mn:5,-2');">&#91;5&#93;</a></h4>
+</div>
+<div class="marginnotes"  id="mn:5,-2"  style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;5&#93;</a>This section shews that it is indifferent whether uniformity of convergence is defined by means of the partial remainder <span class="math">\(R_{n,p}(z)\)</span> or by <span class="math">\(R_n (z)\)</span>. Writers differ in the definition taken as fundamental.<a onClick="hideIt('mn:5,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
 
 <p>If <span class="math">\(R_{n,\, p}(z) = u_{n+1} (z) + u_{n+2} (z)+ \dots + u_{n+p} (z)\)</span>, we have seen that the necessary and sufficient condition that <span class="math">\(\sum_{n=1}^{\infty}u_n (z)\)</span> should converge uniformly in a region is that, given any positive number <span class="math">\(\epsilon\)</span>, it should be possible to
 choose <span class="math">\(N\)</span> <em>independent of</em> <span class="math">\(z\)</span> (but depending on <span class="math">\(\epsilon\)</span>) such that
 <span class="math">\[\left|\, R_{N,p}(z)\,\right| < \epsilon\]</span>
 for <em>all</em> positive integral values of <span class="math">\(p\)</span>. </p>
 
-<p>If the condition is satisfied, by <a href="CMA02-1-Limits.html#cauchy">§2.22</a>, <span class="math">\(S_n (z)\)</span> tends to a limit, <span class="math">\(S(z)\)</span>, say for each value of <span class="math">\(z\)</span> under consideration; and then, since <span class="math">\(\epsilon\)</span> is <em>independent of</em> <span class="math">\(p\)</span>,
+<p>If the condition is satisfied, by <a href="CMA02-1-LimitsMN.html#cauchy">&#167;2.22</a>, <span class="math">\(S_n (z)\)</span> tends to a limit, <span class="math">\(S(z)\)</span>, say for each value of <span class="math">\(z\)</span> under consideration; and then, since <span class="math">\(\epsilon\)</span> is <em>independent of</em> <span class="math">\(p\)</span>,
 <span class="math">\[\left|\,  \lim_{p \rightarrow \infty} R_{N,\,p} (z) \,\right|     \leq \epsilon ,\]</span>
 and therefore, when <span class="math">\(n > N\)</span>,
 <span class="math">\[S(z)-S_n(z)=  \lim_{p \rightarrow \infty} R_{N,\,p} (z)-R_{N,\, n-N}(z) ,\]</span>
@@ -78,7 +99,7 @@ and so
 <span class="math">\[\left|\, S(z)-S_n(z)\,\right| < 2\epsilon .\]</span></p>
 
 <p>Thus (writing <span class="math">\(\frac{1}{2} \epsilon\)</span> for <span class="math">\(\epsilon\)</span> ) a <em>necessary</em> condition for uniformity of convergence is that <span class="math">\(\left|\,S(z) - S_n (z) \,\right| < \epsilon,\)</span> whenever <span class="math">\(n>N\)</span> and <span class="math">\(N\)</span> is <em>independent</em> of <span class="math">\(z\)</span>; the
-condition is also sufficient; for if it is satisfied it follows as in <a href="CMA02-1-Limits.html#cauchy1">§2.22(I)</a>
+condition is also sufficient; for if it is satisfied it follows as in <a href="CMA02-1-LimitsMN.html#cauchy1">&#167;2.22(I)</a>
 that <span class="math">\(\left|\, R_{N,p} (z)\, \right| < 2e\)</span>, which, by definition, is the condition for uniformity.</p>
 
 <blockquote>
@@ -103,8 +124,12 @@ make <span class="math">\(n\)</span> greater than any number <span class="math">
 
 <p>[Note. In this example the sum of the series is not discontinuous at <span class="math">\(x=0\)</span>.]</p>
 
-<p>But (taking <span class="math">\(\epsilon <\frac{1}{2}\)</span> and <span class="math">\(x \neq 0\)</span> ), <span class="math">\(\left|\, R_n (x) \,\right| <\epsilon \)</span> if&#8217; <span class="math">\(\epsilon^{-1}(n+1)\,|x| < 1+(n+1)^2 x^2\)</span>; i.e. if <span class="math">\(n+1>\frac{1}{2}\{\epsilon^{-1}+\sqrt{\epsilon^{-2}-4}\,\}\,|x|^{-1}\)</span> or <span class="math">\(n+1<\frac{1}{2}\{\epsilon^{-1}-\sqrt{\epsilon^{-2}-4}\,\}\,|x|^{-1}\)</span>.<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a></p>
+<p>But (taking <span class="math">\(\epsilon <\frac{1}{2}\)</span> and <span class="math">\(x \neq 0\)</span> ), <span class="math">\(\left|\, R_n (x) \,\right| <\epsilon \)</span> if&#8217; <span class="math">\(\epsilon^{-1}(n+1)\,|x| < 1+(n+1)^2 x^2\)</span>; i.e. if <span class="math">\(n+1>\frac{1}{2}\{\epsilon^{-1}+\sqrt{\epsilon^{-2}-4}\,\}\,|x|^{-1}\)</span> or <span class="math">\(n+1<\frac{1}{2}\{\epsilon^{-1}-\sqrt{\epsilon^{-2}-4}\,\}\,|x|^{-1}\)</span>.<a class="marginmark" onClick="toggleHide('mn:6,-2');">&#91;6&#93;</a></p>
 </blockquote>
+</div>
+<div class="marginnotes"  id="mn:6,-2"  style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;6&#93;</a><em>Editor&#8217;s Note</em>: Rewrite <span class="math">\(\epsilon^{-1}(n+1)\,|x| < 1+(n+1)^2 x^2\)</span> as <span class="math">\((n+1)^2 x^2-\epsilon^{-1}(n+1)\,|x| + 1>0\)</span> , thinking of the left hand side as a quadratic in <span class="math">\((n+1)\,|x|\)</span>, and solve.<a onClick="hideIt('mn:6,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
 
 <blockquote>
 <p>Now it is not the case that the second inequality is satisfied for all values of n <em>greater</em> than a certain value and for all values of <em>x</em>; and the first inequality gives a value of <span class="math">\(n(x)\)</span> which tends to infinity as <span class="math">\(x \rightarrow 0 \)</span>; so that, corresponding to any interval containing the point <span class="math">\(x=0\)</span>, there is no number <span class="math">\(N\)</span> <em>independent of x</em>. The series, therefore, is non-uniformly convergent near <span class="math">\(x=0\)</span>. </p>
@@ -142,8 +167,12 @@ which is the condition for continuity at <span class="math">\(z\)</span>.</p>
 
 <p>The value of <span class="math">\(S_n (x)\)</span> is <span class="math">\(x^{\frac{1}{2n - 1}}\)</span>; as <span class="math">\(n\)</span> tends to infinity, <span class="math">\(S_n (x)\)</span> tends to 1, 0, or &#8211;1, according as <span class="math">\(x\)</span> is positive, zero, or negative. The series is therefore absolutely convergent for all values of <span class="math">\(x\)</span>, and has a discontinuity at <span class="math">\(x=0\)</span>. </p>
 
-<p>In this series <span class="math">\(R_n (x) = 1 - x^{\frac{1}{2n - 1}} ,\: (x > 0)\)</span>; however great <span class="math">\(n\)</span> may be, by taking<a href="#fn:7" id="fnref:7" title="see footnote" class="footnote">[7]</a> <span class="math">\(x = \epsilon^{-(2n - 1)}\)</span> we can cause this remainder to take the value <span class="math">\(1-\epsilon^{-1}\)</span> , which is not arbitrarily small. The series is therefore non-uniformly convergent near <span class="math">\(x=0\)</span>. </p>
+<p>In this series <span class="math">\(R_n (x) = 1 - x^{\frac{1}{2n - 1}} ,\: (x > 0)\)</span>; however great <span class="math">\(n\)</span> may be, by taking<a class="marginmark" onClick="toggleHide('mn:7,-7');">&#91;7&#93;</a> <span class="math">\(x = \epsilon^{-(2n - 1)}\)</span> we can cause this remainder to take the value <span class="math">\(1-\epsilon^{-1}\)</span> , which is not arbitrarily small. The series is therefore non-uniformly convergent near <span class="math">\(x=0\)</span>. </p>
 </blockquote>
+</div>
+<div class="marginnotes"  id="mn:7,-7"  style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;7&#93;</a>This value of x satisfies the condition <span class="math">\(| x | < \delta \)</span> whenever <span class="math">\(2n - 1 > \log \delta^{-1}\)</span>.<a onClick="hideIt('mn:7,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
 
 <blockquote>
 <p>Example 2. Shew that near <span class="math">\(z=0\)</span> the series <span class="math">\[\sum_{n=1}^{\infty} \frac{-2(1+z)^{n-1}}{\{1+(1+z)^{n-1}\}\{1+(1+z)^{n}\}}\]</span> is non-uniformly convergent and its sum is discontinuous. </p>
@@ -173,7 +202,11 @@ terms in that we can multiply them together and transpose their terms. </p>
 terms in that they are continuous if each term in the series is continuous
 and (as we shall see) the series can then be integrated term by term. </p>
 
-<h4 id="aconditionduetoweierstrassm-test-2foruniformconvergence.">3.34 A condition, due to Weierstrass,<a href="#fn:8" id="fnref:8" title="see footnote" class="footnote">[8]</a> for uniform convergence.</h4>
+<h4 id="aconditionduetoweierstrassaclassmarginmarkonclicktogglehidemn:8-291893aforuniformconvergence.">3.34 A condition, due to Weierstrass,<a class="marginmark" onClick="toggleHide('mn:8,-2');">&#91;8&#93;</a> for uniform convergence.</h4>
+</div>
+<div class="marginnotes"  id="mn:8,-2"  style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;8&#93;</a><a href="https://archive.org/details/abhandlungenausd00weieuoft"><em>Abhandlungen aus der Funktionerilehre</em></a>, p. 70. The test given by this condition is usually described (e.g. by Osgood, <a href="http://www.jstor.org/stable/i307097"><em>Annals of Mathematics</em>, <strong>iii.</strong> (1901)</a>, p. 130) as the M-test.<a onClick="hideIt('mn:8,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
 
 <p>A sufficient, though not necessary, condition for the uniform convergence
 of a series may be enunciated as follows: </p>
@@ -186,7 +219,7 @@ where <span class="math">\(M_n\)</span> is <em>independent of</em> <span class="
 it is always possible to choose <em>n</em> so that the remainder after the first <em>n</em> terms
 of <span class="math">\(T\)</span>, and therefore the modulus of the remainder after the first <em>n</em> terms
 of <em>S</em>, is less than an assigned positive number <span class="math">\(\epsilon\)</span>; and since the value of <em>n</em>
-thus found is independent of <span class="math">\(z\)</span>, it follows (<a href="#ontheconditionforuniformityofconvergence.remainder-2">§3.31</a>) that the series <em>S</em> is uniformly convergent; by <a href="CMA02-2-Series.html#thecomparisontheorem">§2.34</a>, the series <em>S</em> also converges absolutely. </p>
+thus found is independent of <span class="math">\(z\)</span>, it follows (<a href="#ontheconditionforuniformityofconvergence.remainder-2">&#167;3.31</a>) that the series <em>S</em> is uniformly convergent; by <a href="CMA02-2-SeriesMN.html#thecomparisontheorem">&#167;2.34</a>, the series <em>S</em> also converges absolutely. </p>
 
 <blockquote>
 <p>Example. The series
@@ -195,7 +228,11 @@ thus found is independent of <span class="math">\(z\)</span>, it follows (<a hre
 whose terms are positive constants. </p>
 </blockquote>
 
-<h5 id="uniformityofconvergenceofinfiniteproducts.uniproduct-2">3.341. Uniformity of convergence of infinite products.<a href="#fn:9" id="fnref:9" title="see footnote" class="footnote">[9]</a></h5>
+<h5 id="uniformityofconvergenceofinfiniteproducts.aclassmarginmarkonclicktogglehidemn:9-291993a">3.341. Uniformity of convergence of infinite products.<a class="marginmark" onClick="toggleHide('mn:9,-2');">&#91;9&#93;</a></h5>
+</div>
+<div class="marginnotes"  id="mn:9,-2"  style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;9&#93;</a>The definition is, effectively, that given by Osgood, <a href="https://archive.org/details/lehrbuchderfunk01osgogoog"><em>Funktionentheorie</em></a>, p. 462. The condition here given for uniformity of convergence is also established in that work.<a onClick="hideIt('mn:9,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
 
 <p>A convergent product <span class="math">\(\prod\limits_{n=1}^\infty \{1+u_n(z)\}\)</span> is said to converge uniformly in a domain of values of <span class="math">\(z\)</span> if, given <span class="math">\(\epsilon,\)</span> we can find <em>m</em> <em>independent of</em> <span class="math">\(z\)</span> such that
 <span class="math">\[\left|\,\prod\limits_{n=1}^{m+p} \{1+u_n(z)\}-\prod\limits_{n=1}^m \{1+u_n(z)\} \,\right| < \epsilon\]</span>
@@ -204,7 +241,7 @@ for all positive integral values of <em>p</em>. </p>
 <p>The only condition for uniformity of convergence which will be used in this work
 is that the product converges uniformly if <span class="math">\(\left|\, u_n (z) \,\right| < M_n\)</span> where <span class="math">\(M_n\)</span> is independent of <span class="math">\(z\)</span> and <span class="math">\(\sum\limits_{n=1}^\infty M_n\)</span> converges. </p>
 
-<p>To prove the validity of the condition we observe that <span class="math">\(\prod\limits_{n=1}^\infty (1+M_n)\)</span> converges (<a href="CMA02-4-Products.html#infiniteproducts">§2.7</a>), and so we can choose <em>m</em> such that
+<p>To prove the validity of the condition we observe that <span class="math">\(\prod\limits_{n=1}^\infty (1+M_n)\)</span> converges (<a href="CMA02-4-ProductsMN.html#infiniteproducts">&#167;2.7</a>), and so we can choose <em>m</em> such that
 <span class="math">\[\prod\limits_{n=1}^{m+p} \{1+M_n\}-\prod\limits_{n=1}^m \{1+M_n\}  < \epsilon ;\]</span>
  and then we have
 <span class="math">\[
@@ -219,16 +256,20 @@ is that the product converges uniformly if <span class="math">\(\left|\, u_n (z)
 \]</span>
 and the choice of <em>m</em> is independent of <span class="math">\(z\)</span>. </p>
 
-<h4 id="hardystestsforuniformconvergence.hardy-2">3.35. Hardy&#8217;s Tests for Uniform Convergence.<a href="#fn:10" id="fnref:10" title="see footnote" class="footnote">[10]</a></h4>
+<h4 id="hardystestsforuniformconvergence.aclassmarginmarkonclicktogglehidemn:10-2911093a">3.35. Hardy&#8217;s Tests for Uniform Convergence.<a class="marginmark" onClick="toggleHide('mn:10,-2');">&#91;10&#93;</a></h4>
+</div>
+<div class="marginnotes"  id="mn:10,-2"  style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;10&#93;</a><a href="https://archive.org/details/proceedingslond07socigoog"><em>Proc. London Math. Soc.</em> (2) <strong>iv.</strong> (1907)</a>, pp. 247&#8211;265. These results, which are generalisations of Abel&#8217;s theorem (<a href="whereOwhere.html">&#167;3.71</a>, below), though well known, do not appear to have been published before 1907. From their resemblance to the tests of Dirichlet and Abel for convergence, Bromwich proposes to call them Dirichlet&#8217;s and Abel&#8217;s tests respectively.<a onClick="hideIt('mn:10,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
 
-<p>The reader will see, from <a href="CMA02-2-Series.html#dirichlet">§2.31</a>, that if, in a given domain, <span class="math">\(\left|\,\sum_{n=1}^p a_b(z)\,\right| < k\)</span> where <span class="math">\( a_n (z)\)</span> is real and <em>k</em> is finite and independent of <em>p</em> and (z), and if <span class="math">\(f_n (z) \geq f_{n + 1} (z)\)</span> and <span class="math">\( f_n(z) \rightarrow 0\)</span> <em>uniformly</em> as <span class="math">\( n \rightarrow \infty\)</span> , then <span class="math">\(\sum\limits_{n=1}^\infty a_n(z) \, f_n(z)\)</span> converges uniformly. </p>
+<p>The reader will see, from <a href="CMA02-2-SeriesMN.html#dirichlet">&#167;2.31</a>, that if, in a given domain, <span class="math">\(\left|\,\sum_{n=1}^p a_b(z)\,\right| < k\)</span> where <span class="math">\( a_n (z)\)</span> is real and <em>k</em> is finite and independent of <em>p</em> and (z), and if <span class="math">\(f_n (z) \geq f_{n + 1} (z)\)</span> and <span class="math">\( f_n(z) \rightarrow 0\)</span> <em>uniformly</em> as <span class="math">\( n \rightarrow \infty\)</span> , then <span class="math">\(\sum\limits_{n=1}^\infty a_n(z) \, f_n(z)\)</span> converges uniformly. </p>
 
 <p>Also that if
 <span class="math">\[k \geq u_n(z) \geq u_{n-1}(z) \geq 0 \]</span>
 where <em>k</em> is <em>independent</em> of <span class="math">\(z\)</span> and <span class="math">\( \sum\limits_{n=1}^\infty a_n (z)\)</span> converges uniformly, then <span class="math">\( \sum\limits_{n=1}^\infty a_n (z)\,u_n (z)\)</span> converges uniformly. [To prove the latter, observe that <em>m</em> can be found such that
 <span class="math">\[
  a_{m+1}(z), \; a_{m+1}(z)+a_{m+2}(z), \cdots , \; a_{m+1}(z)+a_{m+2}(z)+ \cdots+ a_{m+p}(z) \]</span>
-are numerically less than <span class="math">\( \epsilon/k\)</span>; and therefore (<a href="CMA02-2-Series.html#abelsinequality.abelsineq0">§2.301</a>)
+are numerically less than <span class="math">\( \epsilon/k\)</span>; and therefore (<a href="CMA02-2-SeriesMN.html#abelsinequality.abelsineq0">&#167;2.301</a>)
 <span class="math">\[\left|\,\sum_{n=m+1}^{m+p} a_n(z)u_n(z)\,\right| < \frac{\epsilon u_{m+1}}{k} < \epsilon.\]</span>
 and the choice of <span class="math">\(\epsilon\)</span> and <em>m</em> to is independent of <span class="math">\(z\)</span>.]</p>
 
@@ -245,7 +286,7 @@ by writing <span class="math">\(\theta +\pi\)</span> for <span class="math">\(\p
 <blockquote>
 <p><em>Example</em> 2. If, when <span class="math">\( a < x < b\)</span>, <span class="math">\(\omega_n (x) < k_1\)</span> and <span class="math">\(\sum\limits_{n=1}^\infty \left|\, \omega_{n+1}(x)-\omega_n(x) \, \right| < k_2\)</span> , where <span class="math">\(k_1, \, k_2\)</span> are independent of <em>n</em> and <em>x</em>, and if <span class="math">\(\sum\limits_{n=1}^\infty a_n\)</span> is a convergent series independent of <em>x</em>, then <span class="math">\(\sum\limits_{n=1}^\infty a_n \omega_n(x)\)</span> converges uniformly when <span class="math">\( a < x < b\)</span>. (Hardy.) </p>
 
-<p>[For we can choose m, independent of x, such that <span class="math">\(\left|\, \sum_{n=m+1}^{m+p} a_n \,\right| < \epsilon\)</span> and then, by <a href="CMA02-2-Series.html#abelcorollary">§2.301 corollary</a>, we have <span class="math">\(\left|\, \sum_{n=m+1}^{m+p} a_n \omega_n (x) \,\right| < (k_1+k+2)\epsilon.\)</span> ]</p>
+<p>[For we can choose m, independent of x, such that <span class="math">\(\left|\, \sum_{n=m+1}^{m+p} a_n \,\right| < \epsilon\)</span> and then, by <a href="CMA02-2-SeriesMN.html#abelcorollary">&#167;2.301 corollary</a>, we have <span class="math">\(\left|\, \sum_{n=m+1}^{m+p} a_n \omega_n (x) \,\right| < (k_1+k+2)\epsilon.\)</span> ]</p>
 </blockquote>
 
 <h3 id="discussionofaparticulardoubleseries.">3.4. Discussion of a particular double series.</h3>
@@ -263,9 +304,13 @@ which <span class="math">\(m = n = 0\)</span> being omitted. </p>
 <p>Now, if <em>m</em> and <em>n</em> are not both zero, and if <span class="math">\(\left|\,z+2m\omega_1+2n\omega_2 \,\right| \geq \delta > 0\)</span> for all integral values of <em>m</em> and <em>n</em>, then we can find a positive number <span class="math">\(C\)</span>. depending on <span class="math">\(\delta\)</span> but not on <span class="math">\( z\)</span>, such that
 <span class="math">\[\left| \, \frac{1}{(z+2m\omega_1+2n\omega_2)^\alpha} \,\right| < C\,\left| \, \frac{1}{(2m\omega_1+2n\omega_2)^\alpha} \,\right|.\]</span></p>
 
-<p>Consequently, by <a href="#aconditionduetoweierstrassm-test-2foruniformconvergence.">§3,34</a>, the given series is absolutely and uniformly<a href="#fn:11" id="fnref:11" title="see footnote" class="footnote">[11]</a> convergent in the domain considered if
+<p>Consequently, by <a href="#aconditionduetoweierstrassm-test-2foruniformconvergence.">&#167;3,34</a>, the given series is absolutely and uniformly<a class="marginmark" onClick="toggleHide('mn:11,-10');">&#91;11&#93;</a> convergent in the domain considered if
 <span class="math">\[\sum_{m,\,n}' \frac{1}{\left|\, m\omega_1+n\omega_2  \right|^\alpha}\]</span>
 converges. </p>
+</div>
+<div class="marginnotes"  id="mn:11,-10"  style="margin-top: -10em; margin-bottom: -10em;"><a class="marginmark">&#91;11&#93;</a>The reader will easily define uniformity of convergence of double series (see <a href="whereOwhere.html">&#167;3.5</a>). <a onClick="hideIt('mn:11,-10')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
 
 <p>To discuss the convergence of the latter series, let
 <span class="math">\[\omega_1=\alpha_1+i\beta_1, \quad \omega_2=\alpha_2+i\beta_2,\]</span>
@@ -276,7 +321,15 @@ This converges if the series
 <span class="math">\[\sum_{m,\,n}' \frac{1}{(m^2+n^2)^{\frac{1}{2}\alpha}}\]</span>
 converges; for the quotient of corresponding terms is
 <span class="math">\[\left\{\frac{(\alpha_1+\alpha_2 \mu)^2+(\beta_1+\beta_2 \mu)^2}{1+\mu^2} \right\}^{\frac{1}{2}\alpha}\]</span>
-where <span class="math">\(\mu = n/m\)</span>. This expression, <em>qua</em> function of a continuous real variable <span class="math">\(\mu\)</span> , can be proved to have a positive minimum<a href="#fn:12" id="fnref:12" title="see footnote" class="footnote">[12]</a> (not zero) since <span class="math">\(\alpha_1\beta_2-\alpha_2\beta_1 \neq 0\)</span> and so the quotient is always greater than a positive number K (independent <span class="math">\(\mu\)</span>).<a href="#fn:13" id="fnref:13" title="see footnote" class="footnote">[13]</a> </p>
+where <span class="math">\(\mu = n/m\)</span>. This expression, <em>qua</em> function of a continuous real variable <span class="math">\(\mu\)</span> , can be proved to have a positive minimum<a class="marginmark" onClick="toggleHide('mn:12,-9');">&#91;12&#93;</a> (not zero) since <span class="math">\(\alpha_1\beta_2-\alpha_2\beta_1 \neq 0\)</span> and so the quotient is always greater than a positive number K (independent <span class="math">\(\mu\)</span>).<a class="marginmark" onClick="toggleHide('mn:13,+2');">&#91;13&#93;</a> </p>
+</div>
+<div class="marginnotes"  id="mn:12,-9"  style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;12&#93;</a>The reader will find no difficulty in verifying this statement; the minimum value in question is given by <span class="math">\[K^{2/\alpha}=\frac{1}{2}\left[\alpha_1^2+\alpha_2^2+\beta_1^2+\beta_2^2-\left\{(\alpha_1-\beta_2)^2+(\alpha_2+\beta_1)^2\right\}^{1/2} \left\{(\alpha_1+\beta_2)^2+(\alpha_2-\beta_1)^2\right\}^{1/2}\right].\]</span><a onClick="hideIt('mn:12,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+</div>
+<div class="marginnotes"  id="mn:13,+2"  style="margin-top: +2em; margin-bottom: +2em;"><a class="marginmark">&#91;13&#93;</a><em>Editor&#8217;s Note</em>: For clarity&#8217;s sake, we just demonstrated that <span class="math">\[\frac{1}{(m^2+n^2)^{\frac{1}{2}\alpha}} \geq K\,\left\{\frac{1}{\{(\alpha_1 m+\alpha_2 n)^2+(\beta_1 m+\beta_2 n)^2\}^{\frac{1}{2}\alpha}}\right\}.\]</span><a onClick="hideIt('mn:13,+2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
 
 <p>We have therefore only to study the convergence of the series <em>S</em>. Let
 <span class="math">\[
@@ -298,9 +351,8 @@ is convergent if <span class="math">\(a > 2\)</span>. The original series is the
 <blockquote>
 <p><em>Example</em>. Prove that the series
 <span class="math">\[\sum \frac{1}{(m_1^2+m_2^2+ \cdots +m_r^2)^\mu}\]</span>
-in which the summation extends over all positive and negative integral values and zero values of <span class="math">\(m_1,\, m_2, \dots ,\,m_r,\)</span> except the set of simultaneous zero values, is absolutely convergent if <span class="math">\(\mu < \frac{1}{2}r\)</span>. (Eisenstein, <a href="http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0035"><em>Journal für Math.</em>, <strong>xxxv</strong>. </a>) </p>
+in which the summation extends over all positive and negative integral values and zero values of <span class="math">\(m_1,\, m_2, \dots ,\,m_r,\)</span> except the set of simultaneous zero values, is absolutely convergent if <span class="math">\(\mu < \frac{1}{2}r\)</span>. (Eisenstein, <a href="http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0035"><em>Journal f&uuml;r Math.</em>, <strong>xxxv</strong>. </a>) </p>
 </blockquote>
-
 </div>
 </div>
 
@@ -314,24 +366,24 @@ in which the summation extends over all positive and negative integral values an
 <ul>
 <li class="part"><a onClick="hideIt('navunicont');showIt('navfront');">FRONTMATTER</a>
   <ul>
-    <li><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+    <li><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navunicont');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
   <ul>
     <li class="more"><a onClick="hideIt('navunicont');showIt('navprocesses');"> more . . . </a></li>
-    <li><a href="CMA02-1-Limits.html#thetheoryofconvergence">The Theory of Convergence</a></li>
-    <li><a href="CMA03-1-ContinuousFns.html#continuousfunctionsanduniformconvergence">Continuity and Uniform Convergence</a>
+    <li><a href="CMA02-1-LimitsMN.html#thetheoryofconvergence">The Theory of Convergence</a></li>
+    <li><a href="CMA03-1-ContinuousFnsMN.html#continuousfunctionsanduniformconvergence">Continuity and Uniform Convergence</a>
       <ul>
-        <li><a href="CMA03-1-ContinuousFns.html#thedependenceofonecomplexnumberonanother">Functions of a Complex Variable</a></li>
-        <li><a href="CMA03-1-ContinuousFns.html#continuityoffunctionsofrealvariables">Continuity of Functions of Real Variables</a></li>
+        <li><a href="CMA03-1-ContinuousFnsMN.html#thedependenceofonecomplexnumberonanother">Functions of a Complex Variable</a></li>
+        <li><a href="CMA03-1-ContinuousFnsMN.html#continuityoffunctionsofrealvariables">Continuity of Functions of Real Variables</a></li>
     <li class="current"><a href="#seriesofvariableterms.uniformityofconvergence.">Uniformity of Convergence</a></li>
     <li class="current"><a href="#discussionofaparticulardoubleseries.">A Particular Double Series</a></li>
-    <li><a href="CMA03-3-Heine-Borel.html#theconceptofuniformity.">The Concept of Uniformity</a></li>
-    <li><a href="CMA03-3-Heine-Borel.html#themodifiedheine-boreltheorem.">The Modified Heine-Borel Theorem</a></li>
-    <li><a href="CMA03-3-Heine-Borel.html#uniformconvergenceofpowerseries.">Uniform Convergence of Power Series</a></li>
-       <li><a href="CMA03-3-Heine-Borel.html#references">References</a></li>
-        <li><a href="CMA03-3-Heine-Borel.html#miscellaneousexamples">Miscellaneous Examples</a></li>
+    <li><a href="CMA03-3-Heine-BorelMN.html#theconceptofuniformity.">The Concept of Uniformity</a></li>
+    <li><a href="CMA03-3-Heine-BorelMN.html#themodifiedheine-boreltheorem.">The Modified Heine-Borel Theorem</a></li>
+    <li><a href="CMA03-3-Heine-BorelMN.html#uniformconvergenceofpowerseries.">Uniform Convergence of Power Series</a></li>
+       <li><a href="CMA03-3-Heine-BorelMN.html#references">References</a></li>
+        <li><a href="CMA03-3-Heine-BorelMN.html#miscellaneousexamples">Miscellaneous Examples</a></li>
       </ul>
     </li>
     <li><a href="whereOwhere.html">The Theory of Riemann Integration</a></li>
@@ -348,11 +400,11 @@ in which the summation extends over all positive and negative integral values an
 <ul>
 <li class="part"><a>FRONTMATTER</a>
   <ul>
-    <li><a href="CMA00-Front.html#acourseof">Title Page</a></li>
-    <li><a href="CMA00-Front.html#cambridgeuniversitypress">Copyright</a></li>
-    <li><a href="CMA00-Front.html#preface">Preface</a></li>
-    <li><a href="CMA00-Front.html#editorsnote">Editor&#8217;s Note</a></li>
-    <li class="toc"><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+    <li><a href="CMA00-FrontMN.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-FrontMN.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-FrontMN.html#preface">Preface</a></li>
+    <li><a href="CMA00-FrontMN.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
@@ -371,8 +423,8 @@ in which the summation extends over all positive and negative integral values an
 <li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
 <li class="part"><a>PROCESSES OF ANALYSIS</a>
   <ul >
-    <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
-    <li><a href="CMA02-1-Limits.html">The Theory of Convergence</a></li>
+    <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
+    <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
      <li><a href="#" onClick="showIt('navunicont');hideIt('navprocesses');">Continuity and Uniform Convergence</a></li>
      <li class="more current"><a onClick="showIt('navunicont');hideIt('navprocesses');"> you are here . . . </a></li>
      <li><a href="whereOwhere.html">The Theory of Riemann Integration</a></li>
@@ -412,7 +464,7 @@ in which the summation extends over all positive and negative integral values an
     <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
     <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
     <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
-    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lam&eacute;&#8217;s Equation</a></li> 
   </ul>
   </li>
 <li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
@@ -439,76 +491,16 @@ in which the summation extends over all positive and negative integral values an
 </div>
 
 <div id="navfixedleft" class="fixedBleft">
-<p><a href="CMA03-1-ContinuousFns.html">&#x25C0;</a></p>
+<p><a href="CMA03-1-ContinuousFnsMN.html">&#x25C0;</a></p>
 </div>
 
 <div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
-<p><a onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA03-3-Heine-Borel.html" style="float: right;">&#x25B6;</a></p>
+<p><a onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA03-3-Heine-BorelMN.html" style="float: right;">&#x25B6;</a></p>
 </div>
 
 <div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
-<p><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA03-3-Heine-Borel.html" style="float: right;">&#x25B6;  </a></p>
+<p><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA03-3-Heine-BorelMN.html" style="float: right;">&#x25B6;    </a></p>
 </div>
-
-<div class="footnotes">
-<hr />
-<ol>
-
-<li id="fn:1">
-<p><a href="http://archive.org/details/transactionsofca08camb"><em>Camb. Phil. Trans</em>, <strong>viii</strong>. (1847)</a>, pp. 533&#8211;583. <a href="http://archive.org/details/mathphyspapers01stokrich"><em>Collected Papers</em>, <strong>i</strong></a>. pp. 236&#8211;313.]  <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
-</li>
-
-<li id="fn:2">
-<p><a href="http://archive.org/details/abhandlungenderk05wiss"><em>Münchener Abhandlungen</em>, <strong>v</strong>. (1848)</a>, p. 381.  <a href="#fnref:2" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
-</li>
-
-<li id="fn:3">
-<p><a href="http://archive.org/details/mathematischewer01weieuoft"><em>Ges. Math. Werke</em>, <strong>i</strong></a>. pp. 67, 75.  <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
-</li>
-
-<li id="fn:4">
-<p>The reader who is unacquainted with the concept of uniformity of convergence will find it made much clearer by consulting Bromwich, <a href="http://archive.org/details/introductiontoth00bromuoft"><em>Infinite Series</em></a>, Ch. <strong>vii</strong>, where an illuminating account of Osgood&#8217;s graphical investigation is given. <a href="#fnref:4" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
-</li>
-
-<li id="fn:5">
-<p>This section shews that it is indifferent whether uniformity of convergence is defined by means of the partial remainder <span class="math">\(R_{n,p}(z)\)</span> or by <span class="math">\(R_n (z)\)</span>. Writers differ in the definition taken as fundamental. <a href="#fnref:5" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
-</li>
-
-<li id="fn:6">
-<p><em>Editor&#8217;s Note</em>: Rewrite <span class="math">\(\epsilon^{-1}(n+1)\,|x| < 1+(n+1)^2 x^2\)</span> as <span class="math">\((n+1)^2 x^2-\epsilon^{-1}(n+1)\,|x| + 1>0\)</span> , thinking of the left hand side as a quadratic in <span class="math">\((n+1)\,|x|\)</span>, and solve. <a href="#fnref:6" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
-</li>
-
-<li id="fn:7">
-<p>This value of x satisfies the condition <span class="math">\(| x | < \delta \)</span> whenever <span class="math">\(2n - 1 > \log \delta^{-1}\)</span>. <a href="#fnref:7" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
-</li>
-
-<li id="fn:8">
-<p><a href="https://archive.org/details/abhandlungenausd00weieuoft"><em>Abhandlungen aus der Funktionerilehre</em></a>, p. 70. The test given by this condition is usually described (e.g. by Osgood, <a href="http://www.jstor.org/stable/i307097"><em>Annals of Mathematics</em>, <strong>iii.</strong> (1901)</a>, p. 130) as the M-test. <a href="#fnref:8" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
-</li>
-
-<li id="fn:9">
-<p>The definition is, effectively, that given by Osgood, <a href="https://archive.org/details/lehrbuchderfunk01osgogoog"><em>Funktionentheorie</em></a>, p. 462. The condition here given for uniformity of convergence is also established in that work. <a href="#fnref:9" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
-</li>
-
-<li id="fn:10">
-<p><a href="https://archive.org/details/proceedingslond07socigoog"><em>Proc. London Math. Soc.</em> (2) <strong>iv.</strong> (1907)</a>, pp. 247&#8211;265. These results, which are generalisations of Abel&#8217;s theorem (<a href="whereOwhere.html">§3.71</a>, below), though well known, do not appear to have been published before 1907. From their resemblance to the tests of Dirichlet and Abel for convergence, Bromwich proposes to call them Dirichlet&#8217;s and Abel&#8217;s tests respectively. <a href="#fnref:10" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
-</li>
-
-<li id="fn:11">
-<p>The reader will easily define uniformity of convergence of double series (see <a href="whereOwhere.html">§3.5</a>).  <a href="#fnref:11" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
-</li>
-
-<li id="fn:12">
-<p>The reader will find no difficulty in verifying this statement; the minimum value in question is given by <span class="math">\[K^{2/\alpha}=\frac{1}{2}\left[\alpha_1^2+\alpha_2^2+\beta_1^2+\beta_2^2-\left\{(\alpha_1-\beta_2)^2+(\alpha_2+\beta_1)^2\right\}^{1/2} \left\{(\alpha_1+\beta_2)^2+(\alpha_2-\beta_1)^2\right\}^{1/2}\right].\]</span> <a href="#fnref:12" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
-</li>
-
-<li id="fn:13">
-<p><em>Editor&#8217;s Note</em>: For clarity&#8217;s sake, we just demonstrated that <span class="math">\[\frac{1}{(m^2+n^2)^{\frac{1}{2}\alpha}} \geq K\,\left\{\frac{1}{\{(\alpha_1 m+\alpha_2 n)^2+(\beta_1 m+\beta_2 n)^2\}^{\frac{1}{2}\alpha}}\right\}.\]</span> <a href="#fnref:13" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
-</li>
-
-</ol>
-</div>
-
 
 </body>
 </html>

@@ -188,10 +188,10 @@ whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the regio
         <li  class="current"><a href="#thedependenceofonecomplexnumberonanother">Functions of a Complex Variable</a></li>
         <li  class="current"><a href="#continuityoffunctionsofrealvariables">Continuity of Functions of Real Variables</a></li>
 	<li><a href="CMA03-2-Uniformity.html#convergenceofaninfiniteseries">Uniformity of Convergence</a></li>
-	<li><a href="CMA03-2-Uniformity.html#effectofchangingtheorderoftermsinaseries">A Particular Double Series</a></li>
-	<li><a href="CMA03-3-Heine-Borel.html#doubleseries">The Concept of Uniformity</a></li>
-	<li><a href="CMA03-3-Heine-Borel.html#powerseries">The Modified Heine-Borel Theorem</a></li>
-	<li><a href="CMA03-3-Heine-Borel.html#infiniteproducts">Uniform Convergence of Power Series</a></li>
+	<li><a href="CMA03-2-Uniformity.html#discussionofaparticulardoubleseries.">A Particular Double Series</a></li>
+	<li><a href="CMA03-3-Heine-Borel.html#theconceptofuniformity.">The Concept of Uniformity</a></li>
+	<li><a href="CMA03-3-Heine-Borel.html#themodifiedheine-boreltheorem.">The Modified Heine-Borel Theorem</a></li>
+	<li><a href="CMA03-3-Heine-Borel.html#uniformconvergenceofpowerseries.">Uniform Convergence of Power Series</a></li>
        <li><a href="CMA03-3-Heine-Borel.html#references">References</a></li>
         <li><a href="CMA03-3-Heine-Borel.html#miscellaneousexamples">Miscellaneous Examples</a></li>
       </ul>
