@@ -1,6 +1,6 @@
 \documentclass{book}
 
-\input{commands.tex}
+\input{wandw-commands.tex}
 
 \begin{document}
 
@@ -717,5 +717,198 @@ J_n(z)
 t^{-n-1}
 \exp\theparen{ t - \frac{z^2}{4t}  }
 \dmeasure t,
+$$
+%
+%363
+%
+and supposing that $z$ is positive, we have, on writing
+$t = \half u z$,
+$$
+J_n(z) 
+= 
+\frac{1}{2\pi i} 
+\int_{-\infty}^{(0+)}
+u^{-n-1}
+\exp \thebrace{ \half z \theparen{ u - \frac{1}{u}  }  }
+\dmeasure u.
+$$
+
+But, if the contour be taken to be that of the figure consisting of
+the real axis from $-1$ to $-\infty$ taken twice and the circle 
+$\absval{u} = 1$, this integral represents an analytic function of $z$
+when $\realpart(zu)$ is negative as
+$\absval{u} \rightarrow \infty$ on the path, \emph{i.e.} when 
+$\absval{ \arg z } < \half \pi$; and so, by the theory of analytic
+continuation, the formula (which has been proved by a direct
+transformation for \emph{positive} values of $z$) is true whenever 
+$\realpart(z) > 0$.
+
+Hence
+$$
+J_n(z)
+=
+\frac{1}{2\pi i}
+\thebrace{
+  \int_{-\infty}^{-1}
+  +
+  \int_C
+  +
+  \int_{-1}^{-\infty}
+}
+u^{-n-1}
+\exp\thebrace{ \half z \theparen{ u - \frac{1}{u}  }  }
+\dmeasure u,
+$$
+where $C$ denotes the circle $\absval{u} = 1$, and 
+$\arg u = -\pi$ on the first path of integration while 
+$\arg u = +\pi$ on the third path.
+
+TODO:missingfigure
+
+Writing $u = t e^{\mp \pi i}$ in the first and third integrals
+respectively (so that in each case $\arg t = 0$), and 
+$u = e^{i\theta}$ in the second, we have
+$$
+J_n(z) 
+=
+\frac{1}{2\pi}
+\int_{-\pi}^{\pi}
+e^{-ni\theta + iz\sin\theta}
+\dmeasure \theta
++
+\thebrace{
+  \frac{e^{(n+1)\pi i}}{2\pi i}
+  -
+  \frac{e^{-(n+1)\pi i}}{2\pi i}
+}
+\int_1^{\infty}
+t^{-n-1}
+e^{\half z \theparen{-t + \frac{1}{t}}}
+\dmeasure t.
+$$
+
+Modifying the former of these integrals as in
+\hardsubsectionref{17}{2}{3} and writing 
+$e^{\theta}$ for $t$ in the latter, we have at once
+$$
+J_n(z)
+=
+\frac{1}{\pi}
+\int_0^{\pi}
+\cos(n\theta - z\sin\theta)
+\dmeasure\theta
++
+\frac{\sin(n+1)z}{\pi}
+\int_0^{\infty}
+e^{-n\theta - z\sinh\theta}
+\dmeasure \theta,
+$$
+which is the required result, when
+$\absval{\arg z} < \half \pi$.
+
+%\begin{smalltext}
+When $\absval{ \arg z }$ lies between $\half \pi$ and $\pi$, since 
+$J_n(z) = e^{\pm n\pi i} J_n(-z)$, we have
+\begin{equation}
+  J_n(z)
+  =
+  \frac{e^{\pm n \pi i}}{\pi}
+  \thebrace{
+    \int_0^{\pi} \cos(n\theta + z\sin\theta) \dmeasure\theta
+    -
+    \sin n\pi \int_0^{\infty} e^{-n\theta + z\sinh\theta} \dmeasure\theta
+    },
+\end{equation}
+%\end{smalltext}
+the upper or lower sign taken as
+$\arg z > \half \pi$ or $< -\half \pi$.
+
+When $n$ is an integer TODO:addref reduces at once to Bessels'
+integral, and TODO:addref does so when we make use of the equation 
+$J_n(z) = (-)^n J_{-n}(z)$, which is true for integer values of $n$.
+
+%
+%364
+%
+Equation TODO:addref, as already stated, is due to TODO:addcitation,
+and equation TODO:addref was given by TODO:addcitation.
+
+These trigonometric integrals for the Bessel functions may be regarded
+as corresponding to Laplace's integrals for the Legendre functions.
+For (\hardsubsectionref{17}{1}{1} example TODO:addref)
+$J_m(z)$ satisfies the confluent form (obtained by making 
+$n \rightarrow \infty$ of the equation for
+$P_n^m(1-z^2/2n^2)$.
+
+But Laplace's integral for this function is a multiple of 
+$$
+TODO
+$$
+
+The limit of the integrand as $n \rightarrow \infty$ is 
+$e^{iz\cos\phi}\cos m\phi$, and this exhibits the similarity of
+Laplace's integral for $P_n^m(z)$ to the Bessel-\Schlafli integral for 
+$J_m(z)$.
+\begin{wandwexample}
+  From the integral
+  $J_0(x) = \int_{-\pi}^{\pi} e^{-ix\cos\phi}\dmeasure\phi$, by a
+  change of order of integration, shew that, when $n$ is a positive
+  integer and $\cos\theta > 0$,
+  $$
+  P_n(\cos\theta)
+  =
+  \frac{1}{\Gamma(n+1)}
+  \int_0^{\infty}
+  e^{-x\cos\theta}
+  J_0(x\sin\theta)
+  x^n
+  \dmeasure x.
+  $$
+  TODO:addattribution
+\end{wandwexample}
+\begin{wandwexample}
+  Shew that, with Ferrers' definition of $P_n^m(\cos\theta)$,
+  $$
+  P_n^m(\cos\theta)
+  =
+  \frac{1}{\Gamma(n-m+1)}
+  \int_0^{\infty}
+  e^{-x\cos\theta}
+  J_m(x\sin\theta)
+  x^n
+  \dmeasure x
+  $$
+  when $n$ and $m$ are positive integers and
+  $\cos\theta > 0$.
+  TODO:addattribution
+\end{wandwexample}
+\subsection{Bessel functions whose order is half an odd integer.}
+We have seen (\hardsectionref{17}{2}) that when the order $n$ of a
+Bessel function $J_n(z)$ is half an odd integer, the difference of the
+roots of the indicial equation at $z=0$ is $2n$, which is an integer.
+We now shew that, in such cases, $J_n(z)$ is expressible in terms of
+elementary functions.
+
+For 
+$$
+J_{\half}(z) 
+= 
+\frac{2^{\half} z^{\half}}{\pi^{\half}}
+\thebrace{ 1
+  - \frac{z^2}{2.3}
+  + \frac{z^4}{2.3.4.5}
+  - \cdots
+}
+= \theparen{ \frac{2}{\pi z}  }^{\half}
+\sin z,
+$$
+and therefore (\hardsubsubsectionref{17}{2}{1}{1}) if $k$ is a
+positive integer
+$$
+J_{k+\half}(z)
+=
+\frac{(-)^k (2z)^{k+\half}}{\pi^{\half}}
+\frac{d^k}{d (z^2)^k}
+\theparen{ \frac{\sin z}{z}  }
 $$
 \end{document}

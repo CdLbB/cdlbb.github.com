@@ -19,6 +19,7 @@
 \newcommand{\hardchapterref}[1]{\wandwsectionsymbol #1}
 \newcommand{\hardsectionref}[2]{\wandwsectionsymbol #1\wandwsubsectionsymbol#2}
 \newcommand{\hardsubsectionref}[3]{\wandwsectionsymbol #1\wandwsubsectionsymbol#2#3}
+\newcommand{\hardsubsubsectionref}[4]{\wandwsectionsymbol #1\wandwsubsectionsymbol#2#3#4}
 
 % Add W&W-style end-of-line example citations
 \newcommand{\addexamplecitation}[1]{#1 TODO}
@@ -27,6 +28,7 @@
 
 \theoremstyle{remark}
 \newtheorem{wandwexample}{Example}
+\numberwithin{wandwexample}{subsubsection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Names
