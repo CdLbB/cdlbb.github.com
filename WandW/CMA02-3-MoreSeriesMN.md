@@ -379,7 +379,7 @@ converges<a class="marginmark" onClick="toggleHide('mn:12,-3');">&#91;12&#93;</a
 
 A power-series may converge for all values of the variable, as happens, for instance, in the case of the series<a class="marginmark" onClick="toggleHide('mn:13,-12');">&#91;13&#93;</a>
 \\[z-\frac{z^3}{3!}+\frac{z^5}{5!}- \dots ,\\]
-which represents the function sin z ; in this case the series converges over the whole 2-plane. 
+which represents the function \\(\sin z\\); in this case the series converges over the whole 2-plane. 
 
 </div>
 
@@ -393,7 +393,7 @@ which represents the function sin z ; in this case the series converges over the
 
 <div markdown=1 class="contenttext">
 
-On the other hand, the radius of convergence of a power-series may be zero ; thus in the case of the series 
+On the other hand, the radius of convergence of a power-series may be zero; thus in the case of the series 
 \\[1+1!\,z+2!\,z^2+3!\,z^3+ 4!\,z^4+ \dots \\]
 we have
 \\[ \left|\frac{u_{n+1}}{u_n}\right|=n\left|\,z \,\right| ,\\]

@@ -109,9 +109,9 @@ This establishes the result.<a class="marginmark" onClick="toggleHide('mn:3,-7')
 
 >*Example* 1. Shew that if \\(\prod_{n=1}^{\infty}(1+a_n)\\) converges, so does \\(\sum_{n=1}^{\infty} \log(1+a_n)\\), if the logarithms have their principal values. 
 
->Example 2. Shew that the infinite product 
+>*Example* 2. Shew that the infinite product 
 >\\[\left(\frac{\sin z}{z}\right)\left(\frac{\sin \frac{1}{2} z}{ \frac{1}{2}z}\right)\left(\frac{\sin \frac{1}{3}z}{\frac{1}{3}z}\right)\left(\frac{\sin \frac{1}{4}z}{\frac{1}{4}z}\right)\\] 
->is absolutely convergent for all values of z. 
+>is absolutely convergent for all values of \\(z\\). 
 >
 >[For \\(\left(\sin \displaystyle{\frac{z}{n}}\right)\Big/\left(\displaystyle{\frac{z}{n}}\right)\\) can be written in the form \\(1-\displaystyle \frac{\lambda_n}{n^2}\\), where \\(\left|\,\lambda_n\,\right| < k \\) and \\(k\\) is independent of \\(n\\); and the series \\(\sum\limits_{n=1}^{\infty} \displaystyle \frac{\lambda_n}{n^2}\\) is absolutely convergent, as is seen on comparing it with \\(\sum\limits_{n=1}^{\infty} \displaystyle \frac{1}{n^2}\\) . The infinite product is therefore absolutely convergent.]
 

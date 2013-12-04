@@ -259,11 +259,11 @@ converges[^CircleClarify,-3], is called the *circle of convergence* of the serie
 
 A power-series may converge for all values of the variable, as happens, for instance, in the case of the series[^BasicFunctions,-12]
 \\[z-\frac{z^3}{3!}+\frac{z^5}{5!}- \dots ,\\]
-which represents the function sin z ; in this case the series converges over the whole 2-plane. 
+which represents the function \\(\sin z\\); in this case the series converges over the whole 2-plane. 
 
 [^BasicFunctions,-12]: The series for \\(e^z\\) , \\(\sin z\\), \\(\cos z\\) and the fundamental properties of these functions and of \\(\log z\\) will be assumed throughout. A brief account of the theory of the functions is given in the Appendix. 
 
-On the other hand, the radius of convergence of a power-series may be zero ; thus in the case of the series 
+On the other hand, the radius of convergence of a power-series may be zero; thus in the case of the series 
 \\[1+1!\,z+2!\,z^2+3!\,z^3+ 4!\,z^4+ \dots \\]
 we have
 \\[ \left|\frac{u_{n+1}}{u_n}\right|=n\left|\,z \,\right| ,\\]

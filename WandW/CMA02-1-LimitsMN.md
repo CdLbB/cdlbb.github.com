@@ -87,11 +87,11 @@ If a sequence of real numbers does not tend to a limit or to \\(\infty\\) or to 
 
 #### 2.11 Definition of the phrase 'of the order of' ####
 
-If \\((\zeta_n)\\) and \\((z_n)\\) are two sequences such that a number \\(n_0\\) exists such that \\(\left|\,(\zeta_n/z_n)\,\right| < K\\) whenever \\(n > n_0\\), where \\(K\\) is *independent of \\(n\\)*, we say that \\(\zeta_n\\) is &lsquo;of the order of&rsquo; \\(z_n\\), and we write<a class="marginmark" onClick="toggleHide('mn:4,-12');">&#91;4&#93;</a>
+If \\((\zeta_n)\\) and \\((z_n)\\) are two sequences such that a number \\(n_0\\) exists such that \\(\left|\,(\zeta_n \left/z_n \right.)\,\right| < K\\) whenever \\(n > n_0\\), where \\(K\\) is *independent of \\(n\\)*, we say that \\(\zeta_n\\) is &lsquo;of the order of&rsquo; \\(z_n\\), and we write<a class="marginmark" onClick="toggleHide('mn:4,-12');">&#91;4&#93;</a>
 \\[ \zeta_n = O(z_n) \\]
 thus 
 \\[ \frac{15n +19}{1 + n^3} = O \left (\frac{1}{n^2} \right ) \\]
-If \\(\lim(\zeta_n/z_n) = 0\\), we write \\(\zeta_n = o(z_n)\\).
+If \\(\lim(\zeta_n\left/z_n \right.) = 0\\), we write \\(\zeta_n = o(z_n)\\).
 
 </div>
 
@@ -154,8 +154,8 @@ Therefore \\(x_n \rightarrow \alpha \\).<a class="marginmark" onClick="toggleHid
 >######*Example* 2. Prove similarly that [monotonicex2]######
 >
 >1.  \\(\lim (z_n - z'_n) = l - l',\\)
->2.  \\( \lim (z_n z'_n) = l  l',\\)
->3. and, if \\( l' \neq 0 , \;  \lim (z_n / z'_n) = l / l'.\\)
+>2.  \\( \lim (z_n z'_n) = l \, l',\\)
+>3. and, if \\( l' \neq 0 , \;  \lim (z_n \left/ z'_n \right.) = \left. l \right/ l'.\\)
 
 
 >######*Example* 3. If \\( 0 < x < 1\\),  \\(x^n \rightarrow 0\\). For if \\(x = (1+a)^{-1}\\), \\(a > 0\\) and \\[ 0 < x^n =\frac{1}{(1+a)^n} <\frac{1}{1+na} \\] by the binomial theorem for a positive integral index. [monotonicex3]######
@@ -168,7 +168,7 @@ Therefore \\(x_n \rightarrow \alpha \\).<a class="marginmark" onClick="toggleHid
 
 
 
-<div markdown=1 class="marginnotes" id="mn:6,+0" style="margin-top: +0em; margin-bottom: +0em;"><a class="marginmark">&#91;6&#93;</a>This theorem, frequently ascribed to Weierstrass, was proved by Bolzano, *Abh. der k. b&ouml;hmischen Gen. der Wiss.* **v.** (1817). [Reprinted in [*Klassiker der Exakten Wiss.*, No. 153][exaktscience].] It seems to have been known to Cauchy.<a onClick="hideIt('mn:6,+0')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:6,+0" style="margin-top: +0em; margin-bottom: +0em;"><a class="marginmark">&#91;6&#93;</a>This theorem, frequently ascribed to Weierstrass, was proved by Bolzano, [*Abh. der k. b&ouml;hmischen Gen. der Wiss.* **v.** (1817)](http://dml.cz/handle/10338.dmlcz/400352). [Reprinted in [*Klassiker der Exakten Wiss.*, No. 153][exaktscience].] It seems to have been known to Cauchy.<a onClick="hideIt('mn:6,+0')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -255,7 +255,7 @@ Secondly, we have to prove<a class="marginmark" onClick="toggleHide('mn:9,-7');"
 
 <div markdown=1 class="contenttext">
 
-<a id="cauchy1"></a> (I) Suppose that the sequence of real numbers \\((x_n)\\) satisfies Cauchy's condition; that is to say that, corresponding to any positive number \\(\epsilon\\), an integer \\(n\\) can be chosen such that
+<a id="cauchy1"></a>(I) Suppose that the sequence of real numbers \\((x_n)\\) satisfies Cauchy's condition; that is to say that, corresponding to any positive number \\(\epsilon\\), an integer \\(n\\) can be chosen such that
 \\[ \left|\, z_{n+p} - z_n \,\right| < \epsilon \\]
 for all positive integral values of \\(p\\).
 

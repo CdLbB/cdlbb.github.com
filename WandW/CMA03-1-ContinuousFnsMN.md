@@ -140,13 +140,14 @@ If \\(f(x)\\) is a complex function of a real variable, and if \\(f(x) = g(x)+ih
 where \\(g (x)\\) and \\(h (x)\\) are real, the continuity of \\(f(x)\\) at \\(x_1\\) implies the continuity of \\(g(x)\\) and of \\(h(x)\\). For when \\(\left|\,f(x)-f(x_1) \,\right| < \epsilon \\), then \\(\left|\,g(x)-g(x_1) \,\right| < \epsilon \\)
 and \\(\left|\,h(x)-h(x_1) \,\right| < \epsilon \\); and the result stated is obvious. 
 
->*Example* 1. From [&#167;2.2 examples 1 and 2](CMA02-1-LimitsMN.html#monotonicex1) deduce that if \\(f(x)\\) and \\(\phi(x)\\) are continuous at \\(x_1\\), so are \\(f(x)\pm \phi(x)\\),  \\(f(x) \times \phi(x)\\) and, if \\(\phi(x_1)\neq 0\\), \\(f(x)\left/\phi(x)\right.\\).
->
+>######*Example* 1. From [&#167;2.2 examples 1 and 2](CMA02-1-LimitsMN.html#monotonicex1) deduce that if \\(f(x)\\) and \\(\phi(x)\\) are continuous at \\(x_1\\), so are \\(f(x)\pm \phi(x)\\),  \\(f(x) \times \phi(x)\\) and, if \\(\phi(x_1)\neq 0\\), \\(f(x)\left/\phi(x)\right.\\). [continuousexamples]######
+
+
 >The popular idea of continuity, so far as it relates to a real variable \\(f(x)\\) depending on another real variable \\(x\\), is somewhat different from that, just considered, and may perhaps best be expressed by the statement "The function \\(f(x)\\) is said to depend continuously on \\(x\\) if, as \\(x\\) passes through the set of all values intermediate between any two adjacent values \\(x_1\\) and \\(x_2\\), \\(f(x)\\)  passes through the set of all values intermediate between the corresponding values \\(f(x_1)\\) and \\(f(x_2)\\)."
 >
 >The question thus arises, how far this popular definition is equivalent to the precise definition given above.
 >
->Cauchy shewed that if a real function \\(f(x)\\), of a real variable \\(x\\), satisfies the precise definition, then it also satisfies what we have called the popular definition; this result will be proved in [&#167;3.63](whereOwhere.html). But the converse is not true, as was shewn by Darboux. This fact may be illustrated by the following example.<a class="marginmark" onClick="toggleHide('mn:6,-3');">&#91;6&#93;</a>
+>Cauchy shewed that if a real function \\(f(x)\\), of a real variable \\(x\\), satisfies the precise definition, then it also satisfies what we have called the popular definition; this result will be proved in [&#167;3.63](CMA03-3-Heine-BorelMN.html#arealfunctionofarealvariablecontinuousinaclosedintervalattainsallvaluesbetweenitsupperandlowerbounds.). But the converse is not true, as was shewn by Darboux. This fact may be illustrated by the following example.<a class="marginmark" onClick="toggleHide('mn:6,-3');">&#91;6&#93;</a>
 
 </div>
 
@@ -163,7 +164,8 @@ and \\(\left|\,h(x)-h(x_1) \,\right| < \epsilon \\); and the result stated is ob
 >Between \\(x= - 1\\) and \\(x = +1\\) (except at \\(x=0\\)), let \\(f(x) = \sin\frac{\pi}{2x}\\); and let \\(f(0)=0\\). 
 >
 >It can then be proved that \\(f(x)\\)  depends continuously on \\(x\\) near \\(x=0\\), in the sense of the popular definition, but is not continuous at \\(x=0\\) in the sense of the precise definition. 
->*Example* 2. If \\(f(x)\\) be defined and be an increasing function in the range \\((a, b)\\), the limits \\(f(x\pm0)\\) exist at all points in the interior of the range. 
+
+>######*Example* 2. If \\(f(x)\\) be defined and be an increasing function in the range \\((a, b)\\), the limits \\(f(x\pm0)\\) exist at all points in the interior of the range. [limitsexample]######
 >
 >[If \\(f(x)\\) be an increasing function, a section of rational numbers can be found such that, if \\(a\\), \\(A\\) be any members of its \\(L\\)-class and its \\(R\\)-class, \\(a < f(x + h)\\) for every positive value of \\(h\\), and \\(A \geq f(x + h)\\) for some positive value of \\(h\\). The number defined by this section is \\(f(x+0)\\).] 
 

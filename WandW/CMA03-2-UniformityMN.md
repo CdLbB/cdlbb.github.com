@@ -30,7 +30,7 @@ HTML header:	<script type="text/javascript"
 
 Consider the series 
 \\[x^2 + \frac{x^2}{1+x^2}+ \frac{x^2}{(1+x^2)^2}+  \dots +\frac{x^2}{(1+x^2)^n}+ \dots .\\]
-This series converges absolutely ([&#167;2.33](CMA02-2-SeriesMN.html#geometricseries)) for all real values of\\(x\\). 
+This series converges absolutely ([&#167;2.33](CMA02-2-SeriesMN.html#geometricseries)) for all real values of *x*. 
 
 If \\(S_n (x)\\) be the sum of \\(n\\) terms, then
 \\[S_n(x)=1+x^2-\frac{1}{(1+x^2)^{n-1}} ;\\]
@@ -108,7 +108,7 @@ Uniformity of convergence is thus a property depending on a whole *set* of value
 
 We define the phrase 'uniformity of convergence near a point \\(z\\)' to mean that there is a definite positive number \\(\delta\\) such that the series converges uniformly in the domain common to the circle \\(\left|\, z — z_1  \right | \leq \delta\\)  and the region in which the series converges.
 
-#### 3.31 On the condition for uniformity of convergence.<a class="marginmark" onClick="toggleHide('mn:5,-2');">&#91;5&#93;</a> ####
+#### 3.31 On the condition for uniformity of convergence.<a class="marginmark" onClick="toggleHide('mn:5,-2');">&#91;5&#93;</a>[ontheconditionforuniformityofconvergence.] ####
 
 </div>
 
@@ -246,7 +246,7 @@ terms in that we can multiply them together and transpose their terms.
 terms in that they are continuous if each term in the series is continuous 
 and (as we shall see) the series can then be integrated term by term. 
 
-####3.34 A condition, due to Weierstrass,<a class="marginmark" onClick="toggleHide('mn:8,-2');">&#91;8&#93;</a> for uniform convergence. ####
+####3.34 A condition, due to Weierstrass,<a class="marginmark" onClick="toggleHide('mn:8,-2');">&#91;8&#93;</a> for uniform convergence. [aconditionduetoweierstrassforuniformconvergence.] ####
 
 </div>
 
@@ -271,14 +271,14 @@ where \\(M_n\\) is *independent of* \\(z\\), then the series *S* is uniformly co
 it is always possible to choose *n* so that the remainder after the first *n* terms 
 of \\(T\\), and therefore the modulus of the remainder after the first *n* terms 
 of *S*, is less than an assigned positive number \\(\epsilon\\); and since the value of *n* 
-thus found is independent of \\(z\\), it follows ([&#167;3.31](#ontheconditionforuniformityofconvergence.remainder-2)) that the series *S* is uniformly convergent; by [&#167;2.34](CMA02-2-SeriesMN.html#thecomparisontheorem), the series *S* also converges absolutely. 
+thus found is independent of \\(z\\), it follows ([&#167;3.31](#ontheconditionforuniformityofconvergence.)) that the series *S* is uniformly convergent; by [&#167;2.34](CMA02-2-SeriesMN.html#thecomparisontheorem), the series *S* also converges absolutely. 
 
 >Example. The series 
 \\[\cos z +\frac{1}{2^2}\cos^2 z +\frac{1}{3^2}\cos^3 z + \cdots\\] convergent for all real values of \\(z\\), because the moduli of its terms are not greater than the corresponding terms of the convergent series 
 \\[1 +\frac{1}{2^2} +\frac{1}{3^2} + \cdots ,\\]
 whose terms are positive constants. 
 
-#####3.341. Uniformity of convergence of infinite products.<a class="marginmark" onClick="toggleHide('mn:9,-2');">&#91;9&#93;</a> #####
+#####3.341. Uniformity of convergence of infinite products.<a class="marginmark" onClick="toggleHide('mn:9,-2');">&#91;9&#93;</a> [uniformityofconvergenceofinfiniteproducts.]#####
 
 </div>
 
@@ -314,7 +314,7 @@ To prove the validity of the condition we observe that \\(\prod\limits_{n=1}^\in
 \\]
 and the choice of *m* is independent of \\(z\\). 
 
-#### 3.35. Hardy's Tests for Uniform Convergence.<a class="marginmark" onClick="toggleHide('mn:10,-2');">&#91;10&#93;</a> ####
+#### 3.35. Hardy's Tests for Uniform Convergence.<a class="marginmark" onClick="toggleHide('mn:10,-2');">&#91;10&#93;</a> [hardystestsforuniformconvergence.]####
 
 </div>
 
@@ -335,7 +335,7 @@ Also that if
 where *k* is *independent* of \\(z\\) and \\( \sum\limits_{n=1}^\infty a_n (z)\\) converges uniformly, then \\( \sum\limits_{n=1}^\infty a_n (z)\,u_n (z)\\) converges uniformly. [To prove the latter, observe that *m* can be found such that 
 \\[
  a_{m+1}(z), \; a_{m+1}(z)+a_{m+2}(z), \cdots , \; a_{m+1}(z)+a_{m+2}(z)+ \cdots+ a_{m+p}(z) \\]
-are numerically less than \\( \epsilon/k\\); and therefore ([&#167;2.301](CMA02-2-SeriesMN.html#abelsinequality.abelsineq0)) 
+are numerically less than \\( \left.\epsilon \middle/ k\right.\\); and therefore ([&#167;2.301](CMA02-2-SeriesMN.html#abelsinequality.)) 
 \\[\left|\,\sum_{n=m+1}^{m+p} a_n(z)u_n(z)\,\right| < \frac{\epsilon u_{m+1}}{k} < \epsilon.\\]
 and the choice of \\(\epsilon\\) and *m* to is independent of \\(z\\).]
 
@@ -366,7 +366,7 @@ which \\(m = n = 0\\) being omitted.
 Now, if *m* and *n* are not both zero, and if \\(\left|\,z+2m\omega_1+2n\omega_2 \,\right| \geq \delta > 0\\) for all integral values of *m* and *n*, then we can find a positive number \\(C\\). depending on \\(\delta\\) but not on \\( z\\), such that
 \\[\left| \, \frac{1}{(z+2m\omega_1+2n\omega_2)^\alpha} \,\right| < C\,\left| \, \frac{1}{(2m\omega_1+2n\omega_2)^\alpha} \,\right|.\\]
 
-Consequently, by [&#167;3,34](#aconditionduetoweierstrassm-test-2foruniformconvergence.), the given series is absolutely and uniformly<a class="marginmark" onClick="toggleHide('mn:11,-10');">&#91;11&#93;</a> convergent in the domain considered if 
+Consequently, by [&#167;3.34](#aconditionduetoweierstrassforuniformconvergence.), the given series is absolutely and uniformly<a class="marginmark" onClick="toggleHide('mn:11,-10');">&#91;11&#93;</a> convergent in the domain considered if 
 \\[\sum_{m,\,n}' \frac{1}{\left|\, m\omega_1+n\omega_2  \right|^\alpha}\\]
 converges. 
 
@@ -374,7 +374,7 @@ converges.
 
 
 
-<div markdown=1 class="marginnotes" id="mn:11,-10" style="margin-top: -10em; margin-bottom: -10em;"><a class="marginmark">&#91;11&#93;</a>The reader will easily define uniformity of convergence of double series (see [&#167;3.5](whereOwhere.html)). <a onClick="hideIt('mn:11,-10')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:11,-10" style="margin-top: -10em; margin-bottom: -10em;"><a class="marginmark">&#91;11&#93;</a>The reader will easily define uniformity of convergence of double series (see [&#167;3.5](CMA03-3-Heine-BorelMN.html#theconceptofuniformity.)). <a onClick="hideIt('mn:11,-10')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -384,14 +384,14 @@ converges.
 
 To discuss the convergence of the latter series, let 
 \\[\omega_1=\alpha_1+i\beta_1, \quad \omega_2=\alpha_2+i\beta_2,\\] 
-where \\(\alpha_1,\,\alpha_2,\;\beta_1, \,\beta_2\\) are real. Since \\(\\\omega_1 / \omega_2\\) is not real, \\(\alpha_1\beta_2-\alpha_2\beta_1 \neq 0\\). Then 
+where \\(\alpha_1,\,\alpha_2,\;\beta_1, \,\beta_2\\) are real. Since \\(\\\omega_1 \left/ \omega_2 \right.\\) is not real, \\(\alpha_1\beta_2-\alpha_2\beta_1 \neq 0\\). Then 
 the series is 
 \\[\sum_{m,\,n}' \frac{1}{\{(\alpha_1 m+\alpha_2 n)^2+(\beta_1 m+\beta_2 n)^2\}^{\frac{1}{2}\alpha}}.\\]
 This converges if the series 
 \\[\sum_{m,\,n}' \frac{1}{(m^2+n^2)^{\frac{1}{2}\alpha}}\\]
 converges; for the quotient of corresponding terms is 
 \\[\left\{\frac{(\alpha_1+\alpha_2 \mu)^2+(\beta_1+\beta_2 \mu)^2}{1+\mu^2} \right\}^{\frac{1}{2}\alpha}\\]
-where \\(\mu = n/m\\). This expression, *qua* function of a continuous real variable \\(\mu\\) , can be proved to have a positive minimum<a class="marginmark" onClick="toggleHide('mn:12,-12');">&#91;12&#93;</a> (not zero) since \\(\alpha_1\beta_2-\alpha_2\beta_1 \neq 0\\) and so the quotient is always greater than a positive number K (independent \\(\mu\\)).<a class="marginmark" onClick="toggleHide('mn:13,+3');">&#91;13&#93;</a> 
+where \\(\mu = n \left/m \right.\\). This expression, *qua* function of a continuous real variable \\(\mu\\) , can be proved to have a positive minimum<a class="marginmark" onClick="toggleHide('mn:12,-12');">&#91;12&#93;</a> (not zero) since \\(\alpha_1\beta_2-\alpha_2\beta_1 \neq 0\\) and so the quotient is always greater than a positive number K (independent \\(\mu\\)).<a class="marginmark" onClick="toggleHide('mn:13,+3');">&#91;13&#93;</a> 
 
 </div>
 

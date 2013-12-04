@@ -82,7 +82,7 @@ There are two general classes of problems which we are called upon to investigat
 
 [Reiff]: http://books.google.ca/books?id=fAoTAQAAMAAJ
 
-##### 2.301 Abel's inequality.[^abelsineq,+0] #####
+##### 2.301 Abel's inequality.[^abelsineq,+0][abelsinequality.] #####
 
 [^abelsineq,+0]: [*Journal für Math.* **i.** (1826)](http://www.archive.org/details/journalfrdierei107crelgoog), pp. 311--339. A particular case of the theorem of [§2.31, Corollary 1](#dirichletcor1), also appears in that memoir.
 
@@ -112,7 +112,7 @@ Then if \\(f_n \geq f_{n+1}> 0\\) and \\(\lim f_n = 0\\),[^steadydecrease,+2]   
 
 [^steadydecrease,+2]: In these circumstances, we say, \\(f_n \rightarrow 0\\) *steadily*.
 
-For, since \\(\lim f_n = 0\\), given an arbitrary positive number \\(\epsilon\\), we can find \\(m\\) such that \\(f_{m+1} < \epsilon/2K\\).
+For, since \\(\lim f_n = 0\\), given an arbitrary positive number \\(\epsilon\\), we can find \\(m\\) such that \\(f_{m+1} < \epsilon\left/2K\right.\\).
 
 Then \\(\left|\, \sum\limits_{n=m+1}^{m+q} a_n  \,\right| \leq \left|\, \sum\limits_{n=1}^{m} a_n  \,\right| + \left|\, \sum\limits_{n=1}^{q} a_n  \,\right| < 2K\\), for all positive values of \\(q\\); so 
 that, by Abel's inequality, we have, for all positive values of \\(p\\),
@@ -143,7 +143,7 @@ Therefore \\(\left|\, \sum\limits_{n=m+1}^{m+p} a_n f_n  \,\right| \leq 2K f_{m+
 In order that a series \\( \sum_{n=1}^{\infty}  u_n \\) of real or complex terms may converge, it is *sufficient* (but not necessary) that the series of moduli \\( \sum_{n=1}^{\infty}  \left|\, u_n \,\right|\\)  should converge. For, if \\(\sigma_{n,p} = \left|u_{n+1}\right|+\left|u_{n+2}\right|+ \cdots + \left|u_{n+p}\right| \\) and if \\( \sum_{n=1}^{\infty}  \left|\, u_n \,\right| \\) converges,
 we can find \\(n\\), corresponding to a given number \\(\epsilon\\), such that \\(\sigma_{n,p} < \epsilon\\) for all values of \\(p\\). But \\(\left|\, S_{n,p} \,\right|  < \sigma_{n,p}  < \epsilon\\), and so \\( \sum_{n=1}^{\infty}  u_n \\) converges.
 
-The condition is not necessary ; for, writing \\(f_n= 1/n\\) in [§2.31,  corollary 2](#dirichletcor2),
+The condition is not necessary; for, writing \\(f_n= 1/n\\) in [§2.31,  corollary 2](#dirichletcor2),
 we see that \\(\frac{1}{1} - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \cdots \\) converges, though [§2.3](#convergenceofaninfiniteseries), the series of moduli
  \\(\frac{1}{1} + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots \\) is known to diverge.
 
@@ -201,7 +201,7 @@ We shall now shew that *a series \\(u_1+u_2+u_3+ \dots\\) is absolutely converge
 For, under these conditions, we have
 \\[ \left|u_{n+1}\right|+\left|u_{n+2}\right|+ \cdots +\left|u_{n+p}\right| < C \,\{ \left|v_{n+1}\right|+\left|v_{n+2}\right|+ \cdots +\left|v_{n+p}\right|  \} \\]
 where \\(n\\) and \\(p\\) are any integers. But since the series \\(\sum v_n\\) is absolutely convergent, the series \\(\sum \left|\,v_n\,\right|\\) is convergent, and so, given \\(\epsilon\\), we can find \\(n\\) such that
-\\[  \left|v_{n+1}\right|+\left|v_{n+2}\right|+ \cdots +\left|v_{n+p}\right| < \epsilon/C \\]
+\\[  \left|v_{n+1}\right|+\left|v_{n+2}\right|+ \cdots +\left|v_{n+p}\right| < \epsilon\left/C \right.\\]
 for all values of \\(p\\). It follows therefore that we can find \\(n\\) such that
 \\[ \left|\,u_{n+1}\,\right|+\left|u_{n+2}\right|+ \cdots +\left|u_{n+p}\right| < \epsilon \\]
 for all values of \\(p\\), i.e. the series \\(\sum \left|u_n\right|\\) is convergent. The series \\(\sum u_n\\) is therefore absolutely convergent.
@@ -238,7 +238,7 @@ is absolutely convergent for all real values of z.
 >\\[ 2\sin \frac{z}{3}+4\sin \frac{z}{9}+8\sin \frac{z}{27}+ \dots +2^n\sin \frac{z}{3^n}+ \dots \\]
 >converges absolutely for all values of \\(z\\).
 >
->Since \\(\displaystyle \lim_{n \rightarrow \infty} 3^n \sin (z/3^n) = z\\),[^sinxoverx,-12] we can find a number \\(k\\), *independent of \\(n\\)* (but depending on \\(z\\) ), such that \\(\left|\,3^n \sin (z/3^n)\,\right|>k \,\\); and therefore
+>Since \\(\displaystyle \lim_{n \rightarrow \infty} 3^n \sin (\left. z\right/3^n) = z\\),[^sinxoverx,-12] we can find a number \\(k\\), *independent of \\(n\\)* (but depending on \\(z\\) ), such that \\(\left|\,3^n \sin (\left. z\right/3^n)\,\right|>k \,\\); and therefore
 >\\[ \left|\,2^n \sin \frac{z}{3^n} \,\right| < k \left (\frac{2}{3}\right )^n .\\]
 >
 >Since \\( \sum\limits_{n=1}^{\infty} k \left (\frac{2}{3}\right )^n \\)converges, the given series converges absolutely.

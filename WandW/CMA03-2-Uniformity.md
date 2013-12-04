@@ -30,7 +30,7 @@ HTML header:	<script type="text/javascript"
 
 Consider the series 
 \\[x^2 + \frac{x^2}{1+x^2}+ \frac{x^2}{(1+x^2)^2}+  \dots +\frac{x^2}{(1+x^2)^n}+ \dots .\\]
-This series converges absolutely ([§2.33](CMA02-2-Series.html#geometricseries)) for all real values of\\(x\\). 
+This series converges absolutely ([§2.33](CMA02-2-Series.html#geometricseries)) for all real values of *x*. 
 
 If \\(S_n (x)\\) be the sum of \\(n\\) terms, then
 \\[S_n(x)=1+x^2-\frac{1}{(1+x^2)^{n-1}} ;\\]
@@ -68,7 +68,7 @@ Uniformity of convergence is thus a property depending on a whole *set* of value
 
 We define the phrase 'uniformity of convergence near a point \\(z\\)' to mean that there is a definite positive number \\(\delta\\) such that the series converges uniformly in the domain common to the circle \\(\left|\, z — z_1  \right | \leq \delta\\)  and the region in which the series converges.
 
-#### 3.31 On the condition for uniformity of convergence.[^Remainder,-2] ####
+#### 3.31 On the condition for uniformity of convergence.[^Remainder,-2][ontheconditionforuniformityofconvergence.] ####
 
 [^Remainder,-2]: This section shews that it is indifferent whether uniformity of convergence is defined by means of the partial remainder \\(R_{n,p}(z)\\) or by \\(R_n (z)\\). Writers differ in the definition taken as fundamental.
 
@@ -176,7 +176,7 @@ terms in that we can multiply them together and transpose their terms.
 terms in that they are continuous if each term in the series is continuous 
 and (as we shall see) the series can then be integrated term by term. 
 
-####3.34 A condition, due to Weierstrass,[^M-test,-2] for uniform convergence. ####
+####3.34 A condition, due to Weierstrass,[^M-test,-2] for uniform convergence. [aconditionduetoweierstrassforuniformconvergence.] ####
 
 [^M-test,-2]: [*Abhandlungen aus der Funktionerilehre*](https://archive.org/details/abhandlungenausd00weieuoft), p. 70. The test given by this condition is usually described (e.g. by Osgood, [*Annals of Mathematics*, **iii.** (1901)](http://www.jstor.org/stable/i307097), p. 130) as the M-test.
 
@@ -191,14 +191,14 @@ where \\(M_n\\) is *independent of* \\(z\\), then the series *S* is uniformly co
 it is always possible to choose *n* so that the remainder after the first *n* terms 
 of \\(T\\), and therefore the modulus of the remainder after the first *n* terms 
 of *S*, is less than an assigned positive number \\(\epsilon\\); and since the value of *n* 
-thus found is independent of \\(z\\), it follows ([§3.31](#ontheconditionforuniformityofconvergence.remainder-2)) that the series *S* is uniformly convergent; by [§2.34](CMA02-2-Series.html#thecomparisontheorem), the series *S* also converges absolutely. 
+thus found is independent of \\(z\\), it follows ([§3.31](#ontheconditionforuniformityofconvergence.)) that the series *S* is uniformly convergent; by [§2.34](CMA02-2-Series.html#thecomparisontheorem), the series *S* also converges absolutely. 
 
 >Example. The series 
 \\[\cos z +\frac{1}{2^2}\cos^2 z +\frac{1}{3^2}\cos^3 z + \cdots\\] convergent for all real values of \\(z\\), because the moduli of its terms are not greater than the corresponding terms of the convergent series 
 \\[1 +\frac{1}{2^2} +\frac{1}{3^2} + \cdots ,\\]
 whose terms are positive constants. 
 
-#####3.341. Uniformity of convergence of infinite products.[^uniproduct,-2] #####
+#####3.341. Uniformity of convergence of infinite products.[^uniproduct,-2] [uniformityofconvergenceofinfiniteproducts.]#####
 
 [^uniproduct,-2]: The definition is, effectively, that given by Osgood, [*Funktionentheorie*](https://archive.org/details/lehrbuchderfunk01osgogoog), p. 462. The condition here given for uniformity of convergence is also established in that work.
 
@@ -224,7 +224,7 @@ To prove the validity of the condition we observe that \\(\prod\limits_{n=1}^\in
 \\]
 and the choice of *m* is independent of \\(z\\). 
 
-#### 3.35. Hardy's Tests for Uniform Convergence.[^hardy,-2] ####
+#### 3.35. Hardy's Tests for Uniform Convergence.[^hardy,-2] [hardystestsforuniformconvergence.]####
 
 [^hardy,-2]: [*Proc. London Math. Soc.* (2)  **iv.** (1907)](https://archive.org/details/proceedingslond07socigoog), pp. 247-265. These results, which are generalisations of Abel's theorem ([§3.71](whereOwhere.html), below), though well known, do not appear to have been published before 1907. From their resemblance to the tests of Dirichlet and Abel for convergence, Bromwich proposes to call them Dirichlet's and Abel's tests respectively.
 
@@ -235,7 +235,7 @@ Also that if
 where *k* is *independent* of \\(z\\) and \\( \sum\limits_{n=1}^\infty a_n (z)\\) converges uniformly, then \\( \sum\limits_{n=1}^\infty a_n (z)\,u_n (z)\\) converges uniformly. [To prove the latter, observe that *m* can be found such that 
 \\[
  a_{m+1}(z), \; a_{m+1}(z)+a_{m+2}(z), \cdots , \; a_{m+1}(z)+a_{m+2}(z)+ \cdots+ a_{m+p}(z) \\]
-are numerically less than \\( \epsilon/k\\); and therefore ([§2.301](CMA02-2-Series.html#abelsinequality.abelsineq0)) 
+are numerically less than \\( \left.\epsilon \middle/ k\right.\\); and therefore ([§2.301](CMA02-2-Series.html#abelsinequality.)) 
 \\[\left|\,\sum_{n=m+1}^{m+p} a_n(z)u_n(z)\,\right| < \frac{\epsilon u_{m+1}}{k} < \epsilon.\\]
 and the choice of \\(\epsilon\\) and *m* to is independent of \\(z\\).]
 
@@ -266,22 +266,22 @@ which \\(m = n = 0\\) being omitted.
 Now, if *m* and *n* are not both zero, and if \\(\left|\,z+2m\omega_1+2n\omega_2 \,\right| \geq \delta > 0\\) for all integral values of *m* and *n*, then we can find a positive number \\(C\\). depending on \\(\delta\\) but not on \\( z\\), such that
 \\[\left| \, \frac{1}{(z+2m\omega_1+2n\omega_2)^\alpha} \,\right| < C\,\left| \, \frac{1}{(2m\omega_1+2n\omega_2)^\alpha} \,\right|.\\]
 
-Consequently, by [§3,34](#aconditionduetoweierstrassm-test-2foruniformconvergence.), the given series is absolutely and uniformly[^dsunifromlty,-10] convergent in the domain considered if 
+Consequently, by [§3.34](#aconditionduetoweierstrassforuniformconvergence.), the given series is absolutely and uniformly[^dsunifromlty,-10] convergent in the domain considered if 
 \\[\sum_{m,\,n}' \frac{1}{\left|\, m\omega_1+n\omega_2  \right|^\alpha}\\]
 converges. 
 
-[^dsunifromlty,-10]:The reader will easily define uniformity of convergence of double series (see [§3.5](whereOwhere.html)). 
+[^dsunifromlty,-10]:The reader will easily define uniformity of convergence of double series (see [§3.5](CMA03-3-Heine-Borel.html#theconceptofuniformity.)). 
 
 To discuss the convergence of the latter series, let 
 \\[\omega_1=\alpha_1+i\beta_1, \quad \omega_2=\alpha_2+i\beta_2,\\] 
-where \\(\alpha_1,\,\alpha_2,\;\beta_1, \,\beta_2\\) are real. Since \\(\\\omega_1 / \omega_2\\) is not real, \\(\alpha_1\beta_2-\alpha_2\beta_1 \neq 0\\). Then 
+where \\(\alpha_1,\,\alpha_2,\;\beta_1, \,\beta_2\\) are real. Since \\(\\\omega_1 \left/ \omega_2 \right.\\) is not real, \\(\alpha_1\beta_2-\alpha_2\beta_1 \neq 0\\). Then 
 the series is 
 \\[\sum_{m,\,n}' \frac{1}{\{(\alpha_1 m+\alpha_2 n)^2+(\beta_1 m+\beta_2 n)^2\}^{\frac{1}{2}\alpha}}.\\]
 This converges if the series 
 \\[\sum_{m,\,n}' \frac{1}{(m^2+n^2)^{\frac{1}{2}\alpha}}\\]
 converges; for the quotient of corresponding terms is 
 \\[\left\{\frac{(\alpha_1+\alpha_2 \mu)^2+(\beta_1+\beta_2 \mu)^2}{1+\mu^2} \right\}^{\frac{1}{2}\alpha}\\]
-where \\(\mu = n/m\\). This expression, *qua* function of a continuous real variable \\(\mu\\) , can be proved to have a positive minimum[^Minimum,-12] (not zero) since \\(\alpha_1\beta_2-\alpha_2\beta_1 \neq 0\\) and so the quotient is always greater than a positive number K (independent \\(\mu\\)).[^clarify,+3] 
+where \\(\mu = n \left/m \right.\\). This expression, *qua* function of a continuous real variable \\(\mu\\) , can be proved to have a positive minimum[^Minimum,-12] (not zero) since \\(\alpha_1\beta_2-\alpha_2\beta_1 \neq 0\\) and so the quotient is always greater than a positive number K (independent \\(\mu\\)).[^clarify,+3] 
 
 [^Minimum,-12]: The reader will find no difficulty in verifying this statement; the minimum value in question is given by \\[\begin{align*}K^{2/\alpha}=\frac{1}{2}&\left[ \,\alpha_1^2+\alpha_2^2+\beta_1^2+\beta_2^2 \right.\\&-\left\{(\alpha_1-\beta_2)^2+(\alpha_2+\beta_1)^2\right\}^{1/2} \\&\times \left.\left\{(\alpha_1+\beta_2)^2+(\alpha_2-\beta_1)^2\right\}^{1/2}\right].\end{align*}\\]
 

@@ -63,11 +63,11 @@ tends to infinity, is <span class="math">\(l\)</span>&rsquo; are:
 
 <h4 id="definitionofthephraseoftheorderof">2.11 Definition of the phrase &#8216;of the order of&#8217;</h4>
 
-<p>If <span class="math">\((\zeta_n)\)</span> and <span class="math">\((z_n)\)</span> are two sequences such that a number <span class="math">\(n_0\)</span> exists such that <span class="math">\(\left|\,(\zeta_n/z_n)\,\right| < K\)</span> whenever <span class="math">\(n > n_0\)</span>, where <span class="math">\(K\)</span> is <em>independent of <span class="math">\(n\)</span></em>, we say that <span class="math">\(\zeta_n\)</span> is &lsquo;of the order of&rsquo; <span class="math">\(z_n\)</span>, and we write<a class="marginmark" onClick="toggleHide('mn:4,-12');">&#91;4&#93;</a>
+<p>If <span class="math">\((\zeta_n)\)</span> and <span class="math">\((z_n)\)</span> are two sequences such that a number <span class="math">\(n_0\)</span> exists such that <span class="math">\(\left|\,(\zeta_n \left/z_n \right.)\,\right| < K\)</span> whenever <span class="math">\(n > n_0\)</span>, where <span class="math">\(K\)</span> is <em>independent of <span class="math">\(n\)</span></em>, we say that <span class="math">\(\zeta_n\)</span> is &lsquo;of the order of&rsquo; <span class="math">\(z_n\)</span>, and we write<a class="marginmark" onClick="toggleHide('mn:4,-12');">&#91;4&#93;</a>
 <span class="math">\[ \zeta_n = O(z_n) \]</span>
 thus
 <span class="math">\[ \frac{15n +19}{1 + n^3} = O \left (\frac{1}{n^2} \right ) \]</span>
-If <span class="math">\(\lim(\zeta_n/z_n) = 0\)</span>, we write <span class="math">\(\zeta_n = o(z_n)\)</span>.</p>
+If <span class="math">\(\lim(\zeta_n\left/z_n \right.) = 0\)</span>, we write <span class="math">\(\zeta_n = o(z_n)\)</span>.</p>
 </div>
 <div class="marginnotes"  id="mn:4,-12"  style="margin-top: -12em; margin-bottom: -12em;"><a class="marginmark">&#91;4&#93;</a>This notation is due to Bachmann, <a href="http://books.google.com/books?id=0iMCAAAAYAAJ"><em>Zahlentheorie</em> (1894)</a>, p. 401, and Landau, <a href="http://www.archive.org/details/handbuchderlehre01landuoft"><em>Primzahlen</em>, <strong>I.</strong> (1909)</a>, p. 61.<a onClick="hideIt('mn:4,-12')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
@@ -119,8 +119,8 @@ and this is the condition that <span class="math">\(\lim (z_n + z'_m)= l + l'\)<
 
 <ol>
 <li><span class="math">\(\lim (z_n - z'_n) = l - l',\)</span></li>
-<li><span class="math">\( \lim (z_n z'_n) = l  l',\)</span></li>
-<li>and, if <span class="math">\( l' \neq 0 , \;  \lim (z_n / z'_n) = l / l'.\)</span></li>
+<li><span class="math">\( \lim (z_n z'_n) = l \, l',\)</span></li>
+<li>and, if <span class="math">\( l' \neq 0 , \;  \lim (z_n \left/ z'_n \right.) = \left. l \right/ l'.\)</span></li>
 </ol>
 </blockquote>
 
@@ -132,7 +132,7 @@ and this is the condition that <span class="math">\(\lim (z_n + z'_m)= l + l'\)<
 
 <h4 id="bolzanosection">2.21 Limit-points and the Bolzano-Weierstrass theorem<a class="marginmark" onClick="toggleHide('mn:6,+0');">&#91;6&#93;</a></h4>
 </div>
-<div class="marginnotes"  id="mn:6,+0"  style="margin-top: +0em; margin-bottom: +0em;"><a class="marginmark">&#91;6&#93;</a>This theorem, frequently ascribed to Weierstrass, was proved by Bolzano, <em>Abh. der k. b&ouml;hmischen Gen. der Wiss.</em> <strong>v.</strong> (1817). [Reprinted in <a href="http://books.google.com/books?id=rtMFAAAAIAAJ"><em>Klassiker der Exakten Wiss.</em>, No. 153</a>.] It seems to have been known to Cauchy.<a onClick="hideIt('mn:6,+0')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div class="marginnotes"  id="mn:6,+0"  style="margin-top: +0em; margin-bottom: +0em;"><a class="marginmark">&#91;6&#93;</a>This theorem, frequently ascribed to Weierstrass, was proved by Bolzano, <a href="http://dml.cz/handle/10338.dmlcz/400352"><em>Abh. der k. b&ouml;hmischen Gen. der Wiss.</em> <strong>v.</strong> (1817)</a>. [Reprinted in <a href="http://books.google.com/books?id=rtMFAAAAIAAJ"><em>Klassiker der Exakten Wiss.</em>, No. 153</a>.] It seems to have been known to Cauchy.<a onClick="hideIt('mn:6,+0')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
 <div class="contenttext">
 
@@ -188,7 +188,7 @@ and thus establishes the first half of the theorem.</p>
 </div>
 <div class="contenttext">
 
-<p><a id="cauchy1"></a> (I) Suppose that the sequence of real numbers <span class="math">\((x_n)\)</span> satisfies Cauchy&#8217;s condition; that is to say that, corresponding to any positive number <span class="math">\(\epsilon\)</span>, an integer <span class="math">\(n\)</span> can be chosen such that
+<p><a id="cauchy1"></a>(I) Suppose that the sequence of real numbers <span class="math">\((x_n)\)</span> satisfies Cauchy&#8217;s condition; that is to say that, corresponding to any positive number <span class="math">\(\epsilon\)</span>, an integer <span class="math">\(n\)</span> can be chosen such that
 <span class="math">\[ \left|\, z_{n+p} - z_n \,\right| < \epsilon \]</span>
 for all positive integral values of <span class="math">\(p\)</span>.</p>
 

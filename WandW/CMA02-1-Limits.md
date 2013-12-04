@@ -57,11 +57,11 @@ If a sequence of real numbers does not tend to a limit or to \\(\infty\\) or to 
 
 #### 2.11 Definition of the phrase 'of the order of' ####
 
-If \\((\zeta_n)\\) and \\((z_n)\\) are two sequences such that a number \\(n_0\\) exists such that \\(\left|\,(\zeta_n/z_n)\,\right| < K\\) whenever \\(n > n_0\\), where \\(K\\) is *independent of \\(n\\)*, we say that \\(\zeta_n\\) is ‘of the order of’ \\(z_n\\), and we write[^Onotation,-12]
+If \\((\zeta_n)\\) and \\((z_n)\\) are two sequences such that a number \\(n_0\\) exists such that \\(\left|\,(\zeta_n \left/z_n \right.)\,\right| < K\\) whenever \\(n > n_0\\), where \\(K\\) is *independent of \\(n\\)*, we say that \\(\zeta_n\\) is ‘of the order of’ \\(z_n\\), and we write[^Onotation,-12]
 \\[ \zeta_n = O(z_n) \\]
 thus 
 \\[ \frac{15n +19}{1 + n^3} = O \left (\frac{1}{n^2} \right ) \\]
-If \\(\lim(\zeta_n/z_n) = 0\\), we write \\(\zeta_n = o(z_n)\\).
+If \\(\lim(\zeta_n\left/z_n \right.) = 0\\), we write \\(\zeta_n = o(z_n)\\).
 
 [^Onotation,-12]: This notation is due to Bachmann, [*Zahlentheorie* (1894)][bachmann], p. 401, and Landau, [*Primzahlen*, **I.** (1909)][landau], p. 61.
 
@@ -104,8 +104,8 @@ Therefore \\(x_n \rightarrow \alpha \\).[^ignoringRat]
 >######*Example* 2. Prove similarly that [monotonicex2]######
 >
 >1.  \\(\lim (z_n - z'_n) = l - l',\\)
->2.  \\( \lim (z_n z'_n) = l  l',\\)
->3. and, if \\( l' \neq 0 , \;  \lim (z_n / z'_n) = l / l'.\\)
+>2.  \\( \lim (z_n z'_n) = l \, l',\\)
+>3. and, if \\( l' \neq 0 , \;  \lim (z_n \left/ z'_n \right.) = \left. l \right/ l'.\\)
 
 
 >######*Example* 3. If \\( 0 < x < 1\\),  \\(x^n \rightarrow 0\\). For if \\(x = (1+a)^{-1}\\), \\(a > 0\\) and \\[ 0 < x^n =\frac{1}{(1+a)^n} <\frac{1}{1+na} \\] by the binomial theorem for a positive integral index. [monotonicex3]######
@@ -114,7 +114,7 @@ Therefore \\(x_n \rightarrow \alpha \\).[^ignoringRat]
 
 #### 2.21 Limit-points and the Bolzano-Weierstrass theorem[^bolzano,+0][bolzanosection] ####
 
-[^bolzano,+0]: This theorem, frequently ascribed to Weierstrass, was proved by Bolzano, *Abh. der k. böhmischen Gen. der Wiss.* **v.** (1817). [Reprinted in [*Klassiker der Exakten Wiss.*, No. 153][exaktscience].] It seems to have been known to Cauchy.
+[^bolzano,+0]: This theorem, frequently ascribed to Weierstrass, was proved by Bolzano, [*Abh. der k. böhmischen Gen. der Wiss.* **v.** (1817)](http://dml.cz/handle/10338.dmlcz/400352). [Reprinted in [*Klassiker der Exakten Wiss.*, No. 153][exaktscience].] It seems to have been known to Cauchy.
 
 [exaktscience]: http://books.google.com/books?id=rtMFAAAAIAAJ
 

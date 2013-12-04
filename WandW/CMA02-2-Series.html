@@ -113,7 +113,7 @@ so the series is divergent; this result was noticed by Leibniz in 1673.</p>
 <p>For the history of researches on convergence, see Pringsheim and Molk, <a href="http://books.google.com/books?id=AQAsAAAAIAAJ"><em>Encyclopédie des Sci. Math.</em>, <strong>I.</strong> (1)</a> and Reiff, <a href="http://books.google.ca/books?id=fAoTAQAAMAAJ"><em>Geschichte der unendlichen Reihen</em> (Tübingen, 1889)</a>.</p>
 </blockquote>
 
-<h5 id="abelsinequality.abelsineq0">2.301 Abel&#8217;s inequality.<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a></h5>
+<h5 id="abelsinequality.">2.301 Abel&#8217;s inequality.<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a></h5>
 
 <p>Let <span class="math">\(f_n \geq f_{n+1} > 0\)</span> for all integer values of <span class="math">\(n\)</span>. Then <span class="math">\(\left |\, \sum\limits_{n=1}^m a_n f_n \,\,\right|  \leq A f_1\)</span>, where <span class="math">\(A\)</span> is the greatest of the sums
 <span class="math">\[ \left| a_1 \right|, \left| a_1 + a_2 \right|,  \left| a_1 + a_2 + a_3 \right|, \, \dots \, ,  \left| a_1 + a_2 + \cdots + a_m \right|. \]</span>
@@ -139,7 +139,7 @@ and so, summing and using <a href="CMA01-Complex.html#themodulusofacomplexnumber
 <p><em>Let <span class="math">\(\left|\, \sum\limits_{n=1}^p a_n  \,\right| < K\)</span>, where <span class="math">\(K\)</span> is independent of <span class="math">\(p\)</span>.
 Then if <span class="math">\(f_n \geq f_{n+1}> 0\)</span> and <span class="math">\(\lim f_n = 0\)</span>,<a href="#fn:4" id="fnref:4" title="see footnote" class="footnote">[4]</a> <span class="math">\( \sum\limits_{n=1}^{\infty} a_n f_n \)</span> converges.</em> </p>
 
-<p>For, since <span class="math">\(\lim f_n = 0\)</span>, given an arbitrary positive number <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(m\)</span> such that <span class="math">\(f_{m+1} < \epsilon/2K\)</span>.</p>
+<p>For, since <span class="math">\(\lim f_n = 0\)</span>, given an arbitrary positive number <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(m\)</span> such that <span class="math">\(f_{m+1} < \epsilon\left/2K\right.\)</span>.</p>
 
 <p>Then <span class="math">\(\left|\, \sum\limits_{n=m+1}^{m+q} a_n  \,\right| \leq \left|\, \sum\limits_{n=1}^{m} a_n  \,\right| + \left|\, \sum\limits_{n=1}^{q} a_n  \,\right| < 2K\)</span>, for all positive values of <span class="math">\(q\)</span>; so
 that, by Abel&#8217;s inequality, we have, for all positive values of <span class="math">\(p\)</span>,
@@ -171,7 +171,7 @@ where <span class="math">\(A <2K\)</span>.</p>
 <p>In order that a series <span class="math">\( \sum_{n=1}^{\infty}  u_n \)</span> of real or complex terms may converge, it is <em>sufficient</em> (but not necessary) that the series of moduli <span class="math">\( \sum_{n=1}^{\infty}  \left|\, u_n \,\right|\)</span> should converge. For, if <span class="math">\(\sigma_{n,p} = \left|u_{n+1}\right|+\left|u_{n+2}\right|+ \cdots + \left|u_{n+p}\right| \)</span> and if <span class="math">\( \sum_{n=1}^{\infty}  \left|\, u_n \,\right| \)</span> converges,
 we can find <span class="math">\(n\)</span>, corresponding to a given number <span class="math">\(\epsilon\)</span>, such that <span class="math">\(\sigma_{n,p} < \epsilon\)</span> for all values of <span class="math">\(p\)</span>. But <span class="math">\(\left|\, S_{n,p} \,\right|  < \sigma_{n,p}  < \epsilon\)</span>, and so <span class="math">\( \sum_{n=1}^{\infty}  u_n \)</span> converges.</p>
 
-<p>The condition is not necessary ; for, writing <span class="math">\(f_n= 1/n\)</span> in <a href="#dirichletcor2">§2.31, corollary 2</a>,
+<p>The condition is not necessary; for, writing <span class="math">\(f_n= 1/n\)</span> in <a href="#dirichletcor2">§2.31, corollary 2</a>,
 we see that <span class="math">\(\frac{1}{1} - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \cdots \)</span> converges, though <a href="#convergenceofaninfiniteseries">§2.3</a>, the series of moduli
  <span class="math">\(\frac{1}{1} + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots \)</span> is known to diverge.</p>
 
@@ -228,7 +228,7 @@ divergent, since the effect of diminishing <span class="math">\(s\)</span> is to
 <p>For, under these conditions, we have
 <span class="math">\[ \left|u_{n+1}\right|+\left|u_{n+2}\right|+ \cdots +\left|u_{n+p}\right| < C \,\{ \left|v_{n+1}\right|+\left|v_{n+2}\right|+ \cdots +\left|v_{n+p}\right|  \} \]</span>
 where <span class="math">\(n\)</span> and <span class="math">\(p\)</span> are any integers. But since the series <span class="math">\(\sum v_n\)</span> is absolutely convergent, the series <span class="math">\(\sum \left|\,v_n\,\right|\)</span> is convergent, and so, given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(n\)</span> such that
-<span class="math">\[  \left|v_{n+1}\right|+\left|v_{n+2}\right|+ \cdots +\left|v_{n+p}\right| < \epsilon/C \]</span>
+<span class="math">\[  \left|v_{n+1}\right|+\left|v_{n+2}\right|+ \cdots +\left|v_{n+p}\right| < \epsilon\left/C \right.\]</span>
 for all values of <span class="math">\(p\)</span>. It follows therefore that we can find <span class="math">\(n\)</span> such that
 <span class="math">\[ \left|\,u_{n+1}\,\right|+\left|u_{n+2}\right|+ \cdots +\left|u_{n+p}\right| < \epsilon \]</span>
 for all values of <span class="math">\(p\)</span>, i.e. the series <span class="math">\(\sum \left|u_n\right|\)</span> is convergent. The series <span class="math">\(\sum u_n\)</span> is therefore absolutely convergent.</p>
@@ -271,7 +271,7 @@ which is known to be absolutely convergent. The given series is therefore absolu
 <span class="math">\[ 2\sin \frac{z}{3}+4\sin \frac{z}{9}+8\sin \frac{z}{27}+ \dots +2^n\sin \frac{z}{3^n}+ \dots \]</span>
 converges absolutely for all values of <span class="math">\(z\)</span>.</p>
 
-<p>Since <span class="math">\(\displaystyle \lim_{n \rightarrow \infty} 3^n \sin (z/3^n) = z\)</span>,<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a> we can find a number <span class="math">\(k\)</span>, <em>independent of <span class="math">\(n\)</span></em> (but depending on <span class="math">\(z\)</span> ), such that <span class="math">\(\left|\,3^n \sin (z/3^n)\,\right|>k \,\)</span>; and therefore
+<p>Since <span class="math">\(\displaystyle \lim_{n \rightarrow \infty} 3^n \sin (\left. z\right/3^n) = z\)</span>,<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a> we can find a number <span class="math">\(k\)</span>, <em>independent of <span class="math">\(n\)</span></em> (but depending on <span class="math">\(z\)</span> ), such that <span class="math">\(\left|\,3^n \sin (\left. z\right/3^n)\,\right|>k \,\)</span>; and therefore
 <span class="math">\[ \left|\,2^n \sin \frac{z}{3^n} \,\right| < k \left (\frac{2}{3}\right )^n .\]</span></p>
 
 <p>Since <span class="math">\( \sum\limits_{n=1}^{\infty} k \left (\frac{2}{3}\right )^n \)</span>converges, the given series converges absolutely.</p>

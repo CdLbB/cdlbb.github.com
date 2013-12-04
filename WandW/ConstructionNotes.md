@@ -34,7 +34,6 @@ All found
 
 *Chapter 2.*
 
-1. [Bolzano, Abh. der k. b&ouml;hmischen Gen. der Wiss. v. (1817).](CMA02-1-LimitsMN.html#bolzanosection)
 2. [this result (divergence of harmonic series) was noticed by Leibniz in 1673.](CMA02-2-SeriesMN.html#convergenceofaninfiniteseries)
 3. [the expressions convergent and divergent were introduced by James Gregory, Professor of Mathematics at Edinburgh, in the same year (1668).](CMA02-2-SeriesMN.html#convergenceofaninfiniteseries) 
 3. [he (Newton) investigated the convergence of hypergeometric series in 1704.](CMA02-2-SeriesMN.html#convergenceofaninfiniteseries)

@@ -52,7 +52,7 @@ It is not part of the scheme of this work to discuss the construction of the cla
 >The extension of the idea of number, which has just been described, was not effected without some opposition from the more conservative mathematicians. In the latter half of the eighteenth century, Maseres (1731--1824) and Frend (1757--1841) published works on Algebra, Trigonometry, etc., in which the use of negative numbers was disallowed, although Descartes had used them unrestrictedly more than a hundred years before.
 
 A rational number \\(x\\) may be represented to the eye in the following manner:
-If, on a straight line, we take an origin \\(O\\) and a fixed segment \\(OP_1\\) (\\(P_1\\) being on the right of \\(O\\)), we can measure from a length \\(OP_x\\) such that the ratio \\(OP_x / OP_1\\) is equal to \\(x\\); the point \\(P_x\\) is taken on the right or left of \\(O\\) according as the number \\(x\\) is positive or negative. We may regard either the *point* \\(P_x\\) or the *displacement* \\(OP_x\\) (which will be written \\(\overline{OP}_x\\)) as representing the number \\(x\\).
+If, on a straight line, we take an origin \\(O\\) and a fixed segment \\(OP_1\\) (\\(P_1\\) being on the right of \\(O\\)), we can measure from a length \\(OP_x\\) such that the ratio \\(\left. OP_x \middle/ OP_1 \right.\\) is equal to \\(x\\); the point \\(P_x\\) is taken on the right or left of \\(O\\) according as the number \\(x\\) is positive or negative. We may regard either the *point* \\(P_x\\) or the *displacement* \\(OP_x\\) (which will be written \\(\overline{OP}_x\\)) as representing the number \\(x\\).
 
 All the rational numbers can thus be represented by points on the line, but the converse is not true. For if we measure off on the line a length \\(OQ\\) equal to the diagonal of a square of which \\(OP_1\\) is one side, it can be proved that \\(Q\\) does not correspond to any rational number.
 
@@ -80,7 +80,7 @@ Following up this idea, Dedekind considered rules by which a separation[^greeks,
 
 It is obvious that such a section is made by any rational number \\(x\\); and \\(x\\) is either the greatest number of the \\(L\\)-class or the least number of the \\(R\\)-class. But sections can be made in which no rational number \\(x\\) plays this part. Thus, since there is no rational number[^NoSQRT,-10] whose square is \\(2\\), it is easy to see that we may form a section in which the \\(R\\)-class consists of the positive rational numbers whose squares exceed \\(2\\), and the \\(L\\)-class consists of all other rational numbers.
  
- [^NoSQRT,-10]:For if \\(p/q\\) be such a number, this fraction being in its lowest terms, it may be seen that \\((2q-p)/(p-q)\\) is another such number, and \\( 0 < p-q < q \\), so that \\(p/q\\) is not in its lowest terms. The contradiction implies that such a rational number does not exist. (*Editor's Note:* This odd little argument can be generalized for any \\(n=(p/q)^2\\) provided \\(n\\) is not a perfect square. )
+ [^NoSQRT,-10]:For if \\(p\left/q \right.\\) be such a number, this fraction being in its lowest terms, it may be seen that \\(\left.(2q-p)\middle/(p-q)\right.\\) is another such number, and \\( 0 < p-q < q \\), so that \\(p/q\\) is not in its lowest terms. The contradiction implies that such a rational number does not exist. ( *Editor's Note:* This odd little argument can be generalized for any \\(n=(p\left/q\right.)^2\\) provided \\(n\\) is not a perfect square. )
 
 Then this section is such that the \\(R\\)-class has no least member and the \\(L\\)-class has no greatest member; for, if \\(x\\) be any positive rational fraction, 
 and \\( \displaystyle \; y= \frac{x(x^2+6)}{3x^2+2} \\), 
@@ -106,7 +106,7 @@ Let \\(\alpha, \beta,\dots\\) be real numbers and let \\(A_1, B_1,\dots\\) be an
  
 Then the *sum* (written  \\(\alpha + \beta\\)) of two real numbers \\(\alpha\\) and \\(\beta\\) is defined as the real number (rational or irrational) which is determined by the \\(L\\)-class \\((A_1+B_1)\\) and the \\(R\\)-class \\((A_2+B_2)\\).
  
->It is, of course, necessary to prove that these classes determine a section of the rational numbers. It is evident that \\(A_1+B_1  < A_2+B_2\\)  and that at least one member of each of the classes \\((A_1+B_1)\\), \\((A_2+B_2)\\) exists. It remains to prove that there is, at most, *one* rational number which is greater than every \\(A_1+B_1\\) and less than every \\(A_2+B_2\\) ; suppose, if possible, that there are two, \\(x\\) and \\(y \; (y>x)\\). Let \\(a_1\\) be a member of \\((A_1)\\) and let \\(a_2\\) be a member of \\((A_2)\\); and let \\(N\\) be the integer next greater than \\((\alpha_2-\alpha_1)/\{ \frac{1}{2}(y-x)\} \\). Take the last of the numbers \\(a_1+\displaystyle \frac{m}{N}(a_2-a_1)\\), (where \\(m=0, 1, \dots N\\)), which belongs to \\((A_1)\\) and the first of them which belongs to \\((A_2)\\); let these two numbers be \\(c_1, c_2\\). Then \\[ c_2-c_1 = \frac{1}{N}(a_2-a_1) < \frac{1}{2}(y-x) \\]
+>It is, of course, necessary to prove that these classes determine a section of the rational numbers. It is evident that \\(A_1+B_1  < A_2+B_2\\)  and that at least one member of each of the classes \\((A_1+B_1)\\), \\((A_2+B_2)\\) exists. It remains to prove that there is, at most, *one* rational number which is greater than every \\(A_1+B_1\\) and less than every \\(A_2+B_2\\); suppose, if possible, that there are two, \\(x\\) and \\(y \; (y>x)\\). Let \\(a_1\\) be a member of \\((A_1)\\) and let \\(a_2\\) be a member of \\((A_2)\\); and let \\(N\\) be the integer next greater than \\(\left. (\alpha_2-\alpha_1) \middle/\{ \frac{1}{2}(y-x) \} \right.\\). Take the last of the numbers \\(a_1+\displaystyle \frac{m}{N}(a_2-a_1)\\), (where \\(m=0, 1, \dots N\\)), which belongs to \\((A_1)\\) and the first of them which belongs to \\((A_2)\\); let these two numbers be \\(c_1, c_2\\). Then \\[ c_2-c_1 = \frac{1}{N}(a_2-a_1) < \frac{1}{2}(y-x) \\]
 >
 >Choose \\(d_1, d_2\\) in a similar manner from the classes defining \\(\beta\\); then \\[ c_2 + d_2 - c_1 - d_1 < y - x \\]
 >
@@ -265,7 +265,7 @@ measured by the product of the radii vectores of \\(P_1\\) and \\(P_2\\), and a 
 
 [Stetigkeit]: http://books.google.com/books?id=PywPAAAAIAAJ
 [Vorlesungen1]: http://projecteuclid.org/DPubS?service=UI&version=1.0&verb=Display&handle=euclid.bams/1183420506
-[Functions]: http://books.google.com/books?id=PxgPAAAAIAAJ
+[Functions]: http://archive.org/details/theoryfunctions00hobsgoog
 [Infinite]: http://www.archive.org/details/introductiontoth00bromuoft
 
 *On complex numbers.*
