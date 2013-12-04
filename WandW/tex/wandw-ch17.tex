@@ -911,4 +911,124 @@ J_{k+\half}(z)
 \frac{d^k}{d (z^2)^k}
 \theparen{ \frac{\sin z}{z}  }
 $$
+On differentiating out the expression on the right, we obtain the
+result that
+$$
+J_{k+\half}(z) = P_k \sin z + Q_k \cos z,
+$$
+where $P_k$, $Q_k$ are polynomials in $z^{-\half}$.
+\begin{wandwexample}
+  Shew that
+  $$
+  J_{-\half}(z) = \theparen{ \frac{2}{\pi z}}^{\half} \cos z
+  $$
+\end{wandwexample}
+%
+%365
+%
+\begin{wandwexample}
+  Prove by induction that if $k$ be an integer and $n = k + \half$,
+  then
+  \begin{align*}
+    J_n(z)
+    =
+    \theparen{\frac{2}{\pi z}}^{\half}
+    \left[
+      \cos(z - \half n \pi - \frac{1}{4}\pi)
+      \thebrace{
+        1
+        +
+        \sum_{r=1}
+        \frac{(-)^r (4n^2-1^2)(4n^2-3^2)\cdots(4n^2-(4r-1)^2)}{(2r)! 2^{6r} z^{2r}}
+        }
+      \right.
+      \\
+      % &
+      \left.
+      +
+      \sin(z - \half n \pi - \frac{1}{4}\pi)
+      \sum_{r=1}
+      \frac{(-)^r (4n^2-1^2)(4n^2-3^2)\cdots(4n^2-(4r-3)^2)}{(2r-1)!
+        2^{6r-3} z^{2r-1}}
+      \right],
+    \end{align*}
+    the summations being continued as far as the terms with the
+    vanishing factors in the numerators.
+\end{wandwexample}
+\begin{wandwexample}
+  Shew that
+  $$
+  z^{k+\half} \frac{d^k}{d (z^2)^k} \theparen{\frac{\cos z}{z}}
+  $$
+  is a solution of Bessel's equation for $J_{k+\half}(z)$.
+\end{wandwexample}
+\begin{wandwexample}
+  Shew that the solution of
+  $
+  z^{m+\half} \frac{d^{2m+1} y}{dz^{2m+1}} + y = 0
+  $
+  is
+  $$
+  y
+  =
+  z^{\half m + \frac{1}{4}}
+  \sum_{p=0}^{2m}
+  c_p
+  \thebrace{ J_{-m-\half}(2a_pz^{\half}) + iJ_{m+\half}(2a_pz^{\half})},
+  $$
+  where
+  $c_0,c_1,\ldots,c_{2m}$ are arbitrary and
+  $a_0,a_1,\ldots,a_{2m}$ are the roots of
+  $a^{2m+1}=i$. TODO:addattribution
+\end{wandwexample}
+\section[Hankel's contour integral for $J_n(z)$.]{Hankel's contour integral\footnote{TODO} for $J_n(z)$.}
+Consider the integral
+$$
+y = z^n \int_A^{(1+,-1-)} (t^2-1)^{n-\half} \cos(zt) \dmeasure t,
+$$
+where $A$ is a point on the right of the point $t=1$, and
+$$
+\arg(t-1) = \arg(t+1) = 0
+$$
+at $A$; the contour may conveniently be regarded as being in the shape
+of a figure of eight.
+
+We shall shew that this integral is a constant multiple of $J_n(z)$.
+It is easily seen that the integrand returns to its initial value
+after $t$ has described the path of integration; for
+$(t-1)^{n-\half}$ is multiplied by a factor
+$e^{(2n-1)\pi i}$ after the circuit $(1+)$ has been described, and
+$(t+1)^{n-\half}$ is multiplied by the factor
+$e^{-(2n-1)\pi i}$ after the circuit $(-1-)$ has been described.
+
+Since
+$$
+\sum_{r=0}^{\infty}
+\frac{(-)^r (zt)^{2r}}{(2r)!}
+(t^2-1)^{n-\half}
+$$
+converges uniformly on the contour, we have (\hardsectionref{4}{7})
+$$
+y
+=
+sum_{r=0}^{\infty}
+\frac{(-)^r z^{n+2r}}{(2r)!}
+\int_A^{(1+,-1-)}
+t^{2r}
+(t^2-1)^{n-\half}
+\dmeasure t.
+$$
+
+To evaluate these integrals, we observe firstly that they are analytic
+functions of $n$ for all values of $n$, and secondly that, when
+$\realpart\theparen{n+\half} > 0$, we may deform the contour into the
+circles $\absval{t-1}=\delta$, $\absval{t+1}=\delta$ and the real axis
+joining the points $t = \pm (1-\delta)$ taken twice, and then we may
+make $\delta \rightarrow 0$; the integrals round the circle tend to
+zero and, assigning to $t-1$
+%
+% 366
+%
+and $t+1$ their appropriate arguments on the modified path of
+integration, we get, if $\arg (1-t^2) = 0$ and $t^2 = u$,
 \end{document}
