@@ -1,0 +1,721 @@
+\documentclass{book}
+
+\input{commands.tex}
+
+\begin{document}
+
+%355
+\chapter{Bessel Functions}
+ \section{The Bessel coefficients}
+ In this chapter we shall consider a class of functions known as  \emph{Bessel functions}
+ or \emph{cylindrical functions}
+ which have many analogies with the Legendre functions of  Chapter XV.
+ Just as the Legendre functions proved to be particular forms of the
+ hypergeometric function with three regular singularities,  so the
+ Bessel functions are particular forms of the  confluent
+ hypergeometric function with one regular and one irregular
+ singularity. As is the case of the Legendre functions, we first
+ introduce\footnote{This procedure is due to TODO \Schlomilch}
+ a certain set of the Bessel functions as coefficients in an
+ expansion.
+
+ For all values of $z$ and $t$ ($t=0$ excepted), the function
+ $$
+ e^{ \frac{1}{2} z \left( t - \frac{1}{t} \right)}
+ $$
+can be expanded by Laurent's theorem in a series of positive and
+negative powers of $t$. If the coefficient of $t^n$, where $n$ is any
+integer positive or negative, be denoted by $J_n(z)$, it follows, from 
+\hardsectionref{5}{6}, that 
+$$
+J_n(z) = \frac{1}{2\pi i} \int^{(0+)} u^{-n-1} e^{\half z \theparen{u
+    - \frac{1}{u}}} \dmeasure u.
+$$
+
+To express $J_n(z)$ as a power series in $z$, write $u = 2t/z$; then
+$$
+J_n(z) = \frac{1}{2\pi i} \theparen{\half z }^n \int^{(0+)} t^{-n-1}
+\exp \thebrace{ t - \frac{z^2}{4t}  } \dmeasure t
+$$
+since the contour is any one which encircles the origin once 
+counter-clockwise, we may take it to be the circle 
+$\absval{t}=1$; as the integrand can be expanded in a series of powers
+of $z$ uniformly convergent on this contour, it follows from
+\hardsectionref{4}{7} that 
+$$
+J_n(z)
+=
+\frac{1}{2\pi i}
+\sum_{r=0}^{\infty} \theparen{\half z}^{n+2r} 
+\int^{(0+)} t^{-n-r-1} e^t \dmeasure t.
+$$
+
+Now the residue of the integrand at $t=0$ is 
+$\thebrace{ (n+r)!  }^{-1}$ by 
+\hardsectionref{6}{1}, when $n+r$ is a positive 
+integer or zero; when $n+r$ is a negative integer 
+the residue is zero.
+
+Therefore, if $n$ is a positive integer or zero, 
+\begin{align*}
+J_n(z) =& \sum_{r=0}^{\infty} \frac{ (-)^r (\half z)^{n+2r} }{
+  r!(n+r)! } \\
+=& \frac{ z^n }{ 2^n n! } 
+\thebrace{ 1 - \frac{z^2}{2^2.1(n+1)} + \frac{z^4}{2^4.1.2(n+1)(n+2)}
+  - \cdots };
+\end{align*}
+%
+%356
+%
+whereas, when $n$ is a negative integer equal to $-m$,
+$$
+J_n(z)
+= \sum_{r=m}^{\infty} \frac{ (-)^r (\half z)^{2r-m} }{ r!(r-m)!  }
+  = \sum_{s=0}^{\infty} \frac{ (-)^{m+s} (\half z)^{m+2s}  }{ (m+s)! s!  },
+  $$
+  and so $J_n(z) = (-)^m J_m(z)$.
+
+The function $J_n(z)$, which has now been defined for all integral
+values of $n$, positive and negative, is called the
+\emph{Bessel coefficient} of order $n$; the series defining it 
+converges for all values of $z$.
+
+%\begin{smalltext}
+We shall see later (\hardsectionref{17}{2}) that Bessel
+coefficients are a particular case of a class of functions known as
+\emph{Bessel functions}.
+
+The series by which $J_n(z)$ is defined occurs in a memoir by Euler,
+on the vibrations of a stretch circular membrane, TODO, 
+an investigation dealt with below in \hardsubsectionref{18}{5}{1};
+is also occurs in a memoir by Lagrange on elliptic motion, TODO.
+
+The earliest systematic study of the functions was made in 1824 by
+Bessel in his TODO; special cases of Bessel coefficients had, however,
+appeared in researches published before 1769; the earliest of these is
+in a latter, dated Oct. 3, 1703, from Jakob Bernolli to
+Leibniz\footnote{TODO}, in which occurs a series which is now
+described as a Bessel function of order $\half$; the Bessel
+coefficient of order zero occurs in 1732 in Daniel Bernoulli's memoir
+on the oscillations of heavy chains, TODO.
+
+In reading some of the earlier papers on the subject, it should be
+remembered that the notation has changed, what was formerly called
+$J_n(z)$ being now written $J_n(2z)$.
+% \end{smalltext}
+\begin{wandwexample}
+Prove that if 
+$$
+\frac{ 2b(1+\theta^2)  }{ (1-2a\theta-\theta^2)^2 + 4b^2\theta^2  }
+=
+A_1 + A_2 \theta + A_3 \theta^2 + \cdots,
+$$
+then
+$$
+e^{az} \sin bz 
+=
+A_1 J_1(z) + A_2 J_2(z) + A_3 J_3(z) + \cdots.
+$$
+\addexamplecitation{Math. Trip. 1896.}
+\end{wandwexample}
+
+[For, if the contour $D$ in the $u$-plane be a circle with centre
+$u=0$ and radius large enough to include the zeros of the denominator,
+we have
+$$
+e^{\half z \theparen{u - \frac{1}{u}}} 
+\frac{ 2b \theparen{\frac{1}{u^2} + \frac{1}{u^4} }  }{ \theparen{1 -
+    \frac{2a}{u} - \frac{1}{u^2}}^2
+  + \frac{4 b^2}{u^2}  }
+=
+\sum_{n=1}^{\infty}
+e^{\half z \theparen{u - \frac{1}{u}}} A_n u^{-n-1},
+$$
+the series on the right converging uniformly on the controu; and so, 
+using \hardsectionref{4}{7} and replacing the integrals by Bessel
+coefficients, we have
+\begin{align*}
+  \frac{1}{2\pi i}
+  \int_D
+  e^{\half z \theparen{u - \frac{1}{u}}}
+  \frac{ 2b \theparen{\frac{1}{u^2} + \frac{1}{u^4} }  }{ \theparen{1 -
+      \frac{2a}{u} - \frac{1}{u^2}}^2
+    + \frac{4 b^2}{u^2}  }
+  \dmeasure u
+  =& \frac{1}{2\pi i}
+  \int_D
+  e^{\half z \theparen{u - \frac{1}{u}}}
+  \theparen{ \frac{A_1}{u^2} + \frac{A_2}{u^3} + \frac{A_3}{u^4} +
+    \cdots  }
+  \dmeasure u \\
+  =& A_1 J_1(z) + A_2 J_2(z) + A_3 J_3(z) + \cdots .
+\end{align*}
+
+%
+%357
+%
+In the integral on the left write $\half (u - u^{-1}) - a = t$, so that as
+$u$ describes a circle of radius $e^{\beta}$, $t$ describes an ellipse
+with 
+semiaxes $\cosh\beta$ and $\sinh\beta$ with foci at 
+$-a \pm i$; then we have
+$$
+\sum_{n=1}^{\infty}
+=
+\frac{1}{2\pi i}
+\int
+\frac{ e^{z(t+a)}b \dmeasure t  }{ t^2 + b^2  },
+$$
+the contour being the ellipse just specified, which contains the zeros
+of $t^2 + b^2$. Evaluating the integral by 
+\hardsectionref{6}{1}, we have the required result.]
+\begin{wandwexample}
+  Shew that, when $n$ is an integer,
+  $$
+  J_n(y+z)
+  =
+  \sum_{m = -\infty}^{\infty} J_{m}(y) J_{n-m}(z)
+  $$
+\addexamplecitation{K. Neumann and \Schlafli}
+\end{wandwexample}
+[Consider the expansion of each side of the equation
+$$
+\exp \thebrace{ \half (y+z) \theparen{t - \frac{1}{t}}  }
+=
+\exp \thebrace{ \half y \theparen{t - \frac{1}{t}}  }
+\cdot
+\exp \thebrace{ \half z \theparen{t - \frac{1}{t}}  }.]
+$$
+\begin{wandwexample}
+  Shew that 
+$$
+e^{i z \cos \phi}
+= 
+J_0(z)
++ 2 i \cos\phi J_1(z)
++ 2 i^2 \cos 2\phi J_2(z)
++ \cdots.
+$$
+\end{wandwexample}
+\begin{wandwexample}
+  Shew that if $r^2 = x^2 + y^2$
+  $$
+  J_0(r)
+  =
+  J_0(x)J_0(y)
+  - 2 J_2(x) J_2(y)
+  + 2 J_4(x) J_4(y)
+  - \cdots .
+  $$
+\addexamplecitation{K. Neumann and Lommel.}
+\end{wandwexample}
+
+\subsection{Bessel's differential equation}
+We have seen that, when $n$ is an integer, the Bessel coefficient of
+order $n$ is given by the formula
+$$
+J_n(z)
+=
+\frac{1}{2\pi i} 
+\theparen{\half z}^n
+\int^{(0+)}
+t^{-n-1}
+\exp\theparen{ t - \frac{z^2}{4t}  }
+\dmeasure t.
+$$
+
+From this formula we shall now shew that $J_n(z)$ is a solution of the
+linear differential equation
+$$
+\frac{d^2 y}{dz^2}
++ \frac{1}{z} \frac{dy}{dz}
++ \theparen{ 1 - \frac{n^2}{z^2}  } y
+= 0,
+$$
+which is called Bessel's equation for functions of order $n$.
+
+For we find on performing the differentiations 
+(\hardsectionref{4}{2}) that
+\begin{align*}
+\frac{d^2 J_n(z)}{dz^2}
++& \frac{1}{z} \frac{d J_n(z)}{dz}
++ \theparen{ 1 - \frac{n^2}{z^2}  } J_n(z)
+ \\
+%
+=& 
+\frac{1}{2\pi i} 
+\theparen{ \half z  }^n 
+\int^{(0+)}
+t^{-n-1}
+\thebrace{ 1 - \frac{n+1}{t} + \frac{z^2}{4t^2}  }
+\exp\theparen{ t - \frac{z^2}{4t}  }
+\dmeasure t \\
+%
+=& 
+-\frac{1}{2\pi i}
+\theparen{ \half z  }
+\int^{(0+)}
+\frac{d}{dt} \thebrace{ t^{-n-1} \exp\theparen{ t - \frac{z^2}{4t}  }
+}
+\dmeasure t \\
+%
+=& 0,
+\end{align*}
+since $t^{-n-1} \exp\theparen{ t - z^2/4t  }$ is one-valued.
+\emph{Thus we have proved that }
+$$
+\frac{d^2 J_n(z)}{dz^2}
++ \frac{1}{z} \frac{d J_n(z)}{dz}
++ \theparen{ 1 - \frac{n^2}{z^2}  } J_n(z) 
+= 0.
+$$
+The reader will observe that $z=0$ is a regular point and 
+$z = \infty$ an irregular point, all other points being ordinary
+points of this equation.
+%
+%358
+%
+\begin{wandwexample}
+  By differentiating the expansion
+  $$
+  e^{\half z (t - \frac{1}{t})} = \sum_{n=-\infty}^{\infty} t^n J_n(z)
+  $$
+  with regard to $z$ and with regard to $t$, shew that the Bessel
+  coefficients satisfy Bessel's equation.
+\addexamplecitation{St John's, 1899.}
+\end{wandwexample}
+\begin{wandwexample}
+  The function $P_n^m\theparen{ 1 - \frac{z^2}{2n^2}  }$ satisfies the
+  equation defined by the scheme
+  $$
+  TODO
+  $$
+  shew that $J_m(z)$ satisfies the confluent form of this equation
+  obtained by making $n \rightarrow \infty$.
+\end{wandwexample}
+\section{The solution of Bessel's equation when $n$ is not necessarily
+  an integer.}
+We now proceed, after the manner of \hardsectionref{15}{2}, to
+extend the definition of $J_n(z)$ to the case when $n$ is any number,
+real or complex. It appears by methods similar to those of
+\hardsubsectionref{17}{1}{1} that, for all values of $n$, the
+equation
+$$
+\frac{d^2 y}{dz^2}
++ \frac{1}{z} \frac{dy}{dz}
++ \theparen{ 1 - \frac{n^2}{z^2}  } y
+= 0
+$$
+is satisfied by an integral of the form
+$$
+y
+=
+z^n
+\int_C
+t^{-n-1}
+\exp \theparen{ t - \frac{z^2}{4t}  }
+\dmeasure t
+$$
+provided that $t^{-n-1}\exp(t - z^2/4t)$ resumes its initial value
+after describing $C$ and that differentiations under the sign of
+integration is justified.
+
+Accordingly, we define $J_n(z)$ by the equation
+$$
+J_n(z) 
+= 
+\frac{z^n}{2^{n+1}\pi i}
+\int_{-\infty}^{(0+)}
+t^{-n-1} 
+\exp\theparen{ t - \frac{z^2}{4t}  }
+\dmeasure t,
+$$
+the expression being rendered precise by giving
+$\arg z$ its principal value and taking
+$\absval{ \arg t } \leq \pi$ on the contour.
+
+To express this integral as a power series, we observe that it is an
+analytic function of $z$; and we may obtain the coefficients in the
+Taylor's series in powers of $z$ by differentiating under the sign of 
+integration
+(\hardsectionref{5}{32} and \hardsubsectionref{4}{4}{4}
+TODO:print has two section symbols together).
+Hence we deduce that
+\begin{align*}
+  J_n(z)
+  =& \frac{z^n}{2^{n+1}\pi i}
+  \sum_{r=0}^{\infty} \frac{ (-)^r z^{2r}  }{ 2^{2r} r!  }
+  \int_{-\infty}^{(0+)}
+  e^t
+  t^{-n-r-1}
+  \dmeasure t
+  \\
+  %
+  =&
+  \sum_{r=0}^{\infty}
+  \frac{ (-)^r z^{n+2r}  }{ 2^{n+2r} r! \Gamma(n+r+1)  },
+\end{align*}
+by \hardsubsectionref{12}{2}{2}. This is the expansion in question.
+
+%
+%359
+%
+\emph{Accordingly, for general values of $n$, we define the
+  \emph{Bessel function} $J_n(z)$ by the equations}
+\begin{align*}
+  J_n(z)
+  =& \frac{1}{2\pi i} \theparen{\half z}^n
+  \int_{-\infty}^{(0+)}
+  t^{-n-1}
+  \exp\theparen{ t - \frac{z^2}{4t}  }
+  \dmeasure t
+  \\
+  %
+  =&
+  \sum_{r=0}^{\infty}
+  \frac{ (-)^r z^{n+2r}  }{ 2^{n+2r} r! \Gamma(n+r+1)  }.
+\end{align*}
+
+This function reduces to a Bessel coefficient when $n$ is an integer;
+it is sometimes called a Bessel function \emph{of the first kind}.
+
+The reader will observe that since Bessel's equation is unaltered by
+writing $-n$ for $n$, fundamental solutions are $J_n(z)$, $J_{-n}(z)$,
+except when $n$ is an integer, in which case the solutions are not
+independent. With this exception, \emph{the general solution of
+  Bessel's equation is
+$$
+\alpha J_n(z) + \beta J_{-n}(z),
+$$
+where $\alpha$ and $\beta$ are arbitrary constants.}
+
+A second solution of Bessel's equation when $n$ is an integer will be
+given later (\hardsectionref{17}{6}).
+
+\subsection{The recurrence formulae for the Bessel functions.}
+As the Bessel function satisfies a confluent form of the
+hypergeometric equation, it is to be expected that recurrence formulae
+will exist, corresponding to the relations between contiguous
+hypergeometric functions indicated in \hardsectionref{14}{7}.
+
+To establish these relations for general values of $n$, real or
+complex, we have recourse to the result of \hardsectionref{17}{2}.
+On writing the equation
+$$
+0 = \int_{-\infty}^{(0+)} \frac{d}{dt} \thebrace{ t^{-n}
+  \exp\theparen{ t - \frac{z^2}{4t}  }  } \dmeasure t
+$$
+at length, we have
+\begin{align*}
+0 =& \int_{-\infty}^{(0+)}
+\theparen{ t^{-n} + \frac{1}{4}z^2 t^{-n-2} - nt^{-n-1}  }
+  \exp\theparen{ t - \frac{z^2}{4t}  }  \dmeasure t \\
+%
+  =& 2\pi i
+  \thebrace{ (2z^{-1})^{n-1} J_{n-1}(z)
+    + \frac{1}{4} (2z^{-1})^{n+1} J_{n+1}(z)
+  - n (2z^{-1})^n J_n(z)},
+\end{align*}
+and so
+\begin{equation}
+J_{n-1}(z) + J_{n+1}(z) = \frac{2n}{z} J_n(z) 
+\label{eq:bessel:recur}
+%TODO: fill with dots?
+\end{equation}
+
+Next we have, by \hardsubsectionref{4}{4}{4},
+\begin{align*}
+  \frac{d}{dz} \thebrace{ z^{-n} J_n(z)  }
+  =& \frac{1}{2^{n+1}\pi i}
+  \frac{d}{dz}
+  \int_{-\infty}^{(0+)}
+  t^{-n-1}
+  \exp\theparen{ t - \frac{z^2}{4t} }
+  \dmeasure t
+  \\
+  %
+  =& - \frac{z}{2^{n+2}\pi i}
+  \int_{-\infty}^{(0+)}
+  t^{-n-2}
+  \exp\theparen{ t - \frac{z^2}{4t} }
+  \dmeasure t
+  \\
+  %
+  =& -z^{-n} J_{n+1}(z),  
+\end{align*}
+%
+%360
+%
+and consequently, if primes denote differentiations with regard to
+$z$,
+\begin{equation}
+  J'_n(z) = \frac{n}{z} J_n(z) - J_{n+1}(z)
+\label{eq:bessel:deriv}
+\end{equation}
+
+From \eqref{eq:bessel:recur} and \eqref{eq:bessel:deriv} it is easy to
+derive the other recurrence formulae
+\begin{equation}
+  J'_{n}(z) = \half \thebrace{ J_{n-1}(z) - J_{n+1}(z)  },
+\end{equation}
+and
+\begin{equation}
+  J'_{n}(z) = J_{n-1}(z) - \frac{n}{z} J_n{z}.
+\end{equation}
+\begin{wandwexample}
+  Obtain these results from the power series for $J_n(z)$.
+\end{wandwexample}
+\begin{wandwexample}
+  Shew that 
+  $$
+  \frac{d}{dz} \thebrace{ z^n J_n(z) } = z^n J_{n-1}(z).
+  $$
+\end{wandwexample}
+\begin{wandwexample}
+  Shew that
+  $$
+  J'_0(z) = -J_1(z).
+  $$
+\end{wandwexample}
+\begin{wandwexample}
+  Shew that
+  $$
+  TODO = J_{n-4}(z) - 4 J_{n-2}(z) + 6 J_n(z) - 4 J_{n+2}(z) + J_{n+4}(z).
+  $$
+\end{wandwexample}
+\begin{wandwexample}
+  Shew that
+  $$
+  J_2(z) - J_0(z) = 2 J''_0(z).
+  $$
+\end{wandwexample}
+\begin{wandwexample}
+  Shew that
+  $$
+  J_2(z) = J''_0(z) - z^{-1} J'_0(z).
+  $$
+\end{wandwexample}
+
+\subsubsection{Relation between two Bessel functions whose orders
+  differ by an integer.}
+From the last article can be deduced an equation connecting any two
+Bessel functions whose orders differ by an integer, namely
+$$
+z^{-n-r} J_{n+r}(z) TODO: verify subscript
+=
+(-)^r
+\frac{d^r}{ (z dz)^r }
+\thebrace{ z^{-n} J_n(z)  },
+$$
+where $n$ is unrestricted and $r$ is any positive integer. This result
+follows at once by induction from formula \eqref{eq:bessel:deriv},
+when it is written in the form
+$$
+z^{-n-1} J_{n+1}(z) 
+=
+- \frac{d}{z dz}
+\thebrace{ z^{-n} J_n(z)  }.
+$$
+\subsubsection{The connexion between $J_n(z)$ and $W_{k,m}$
+  functions.}
+The reader will verify without difficulty that, if in Bessel's
+equation we write $y = z^{-\half} v$ and then write $z = x/2i$, we get
+$$
+\frac{d^2 v}{dx^2}
++
+\theparen{ -\frac{1}{4} + \frac{\frac{1}{4} - n^2}{x^2}  } v
+=
+0,
+$$
+which is the equation satisfied by $W_{0,n}(x)$; it follows that
+$$
+J_n(z) = A z^{-\half} M_{0,n}(2iz) + B z^{-\half} M_{0,-n}(2iz).
+$$
+Comparing the coefficients of $z^{\pm n}$ on each side we see that
+$$
+J_n(z) = \frac{z^{-\half}}{2^{2n+\half} i^{n+\half} \Gamma(n+1)} M_{0,n}(2iz),
+$$
+%
+%361
+%
+except in the critical cases when $2n$ is a negative integer; 
+when $n$ is half of a negative integer, the result follows from
+Kummer's second formula (\hardsubsectionref{16}{1}{1}).
+\subsection{The zeros of Bessel functions whose order $n$ is real.}
+The relations of \hardsubsectionref{17}{2}{1} enable us to deduce the
+interesting theorem that \emph{between any two consecutive real zeros
+  of $z^{-n}J_n(z)$, there lies one and only one zero\footnote{TODO}
+  of $z^{-n}J_{n+1}(z)$.}
+
+For, from relation TODO:addref when written in the form
+$$
+z^{-n} J_{n+1}(z) 
+= 
+- \frac{d}{dz} \thebrace{ z^{-n} J_n(z) },
+$$
+it follows from Rolle's theorem\footnote{TODO} that between each
+consecutive pair of zeros of $z^{-n}J_n(z)$ there is at least one zero
+of $z^{-n} J_{n+1}(z)$.
+
+Similarly, from relation TODO:addref when written in the form
+$$
+z^{n+1} J_n(z) 
+= 
+\frac{d}{dz} \thebrace{ z^{n+1} J_{n+1}(z) },
+$$
+it follows that between each consecutive pair of zeros of 
+$z^{n+1}J_{n+1}(z)$ there is at least one zero of 
+$z^{n+1}J_n(z)$.
+
+Further $z^{-n}J_n(z)$ and 
+$\frac{d}{dz} \thebrace{ z^{-n} J_n(z)  }$ have no common zeros; for
+the former function satisfies the equation
+$$
+z \frac{d^2 y}{dz^2} + (2n+1) \frac{dy}{dz} + zy = 0,
+$$
+and it is easily verified by induction on differentiating this
+equation that if both $y$ and $\frac{dy}{dz}$ vanish for any value of
+$z$, all differential coefficients of $y$ vanish, and $y$ is zero by 
+\hardsectionref{5}{4}.
+
+The theorem required is now obvious except for the numerically
+smallest zeros $\pm \xi$ of $z^{-n}J_n(z)$, since (except for $z=0$), 
+$z^{-n}J_n(z)$ and $z^{n+1}J_n(z)$ have the same zeros. But $z=0$ is a
+zero of $z^{-n}J_{n+1}(z)$, and if there were any other positive zero
+of $z^{-n}J_{n+1}(z)$, say $\xi_1$, which was less than $\xi$, then
+$z^{n+1}J_n(z)$ would have a zero between $0$ and $\xi_1$, which
+contradicts the hypothesis that there were no zeros of 
+$z^{n+1}J_n(z)$ between $0$ and $\xi$.
+
+The theorem is therefore proved.
+
+%\begin{smalltext}
+[See also \hardsectionref{17}{3} examples TODO and TODO, and example
+TODO at the end of the chapter.]
+%\end{smalltext}
+%
+%362
+%
+\subsection{Bessel's integral for the Bessel coefficients.}
+We shall next obtain an integral first given by Bessel in the
+particular case of the Bessel functions for which $n$ is a positive
+integer; in some respects the result resembles Laplace's integrals
+given in \hardsubsectionref{15}{2}{3} and \hardsubsectionref{15}{3}{3}
+for the Legendre functions.
+
+In the integral of \hardsectionref{17}{1}, viz, 
+$$
+J_n(z) 
+=
+\frac{1}{2\pi i}
+\int^{(0+)}
+u^{-n-1}
+e^{\half z \theparen{ u - \frac{1}{u} }}
+\dmeasure u,
+$$
+take the contour to be the circle $\absval{u} = 1$ and write 
+$u = e^{i\theta}$, so that
+$$
+J_n(z)
+= 
+\frac{1}{2\pi}
+\int_{-\pi}^{\pi}
+e^{-ni\theta + iz\sin\theta}
+\dmeasure \theta
+$$
+
+Bisect the range of integration and in the former part write 
+$-\theta$ for $\theta$; we get
+$$
+J_n(z) 
+=
+\frac{1}{2\pi}
+\int_0^{\pi}
+e^{n i \theta - i z \sin\theta}
+\dmeasure \theta
++
+\frac{1}{2\pi}
+\int_0^{\pi}
+e^{-n i \theta + i z \sin\theta}
+\dmeasure \theta,
+$$
+and so
+$$
+J_n(z)
+=
+\frac{1}{\pi}
+\int_0^{\pi}
+\cos (n \theta - z \sin \theta)
+\dmeasure \theta,
+$$
+which is the formula in question.
+\begin{wandwexample}
+  Shew that, when $z$ is real and $n$ is an integer,
+  $$
+  \absval{ J_n(z) } \leq 1.
+  $$
+\end{wandwexample}
+\begin{wandwexample}
+  Shew that, for all values of $n$ (real or complex), the integral
+  $$
+  y
+  =
+  \frac{1}{\pi}
+  \int_0^{\pi}
+  \cos (n \theta - z \sin \theta)
+  \dmeasure \theta
+  $$
+  satisfies
+  $$
+  \frac{d^2 y}{dz^2}
+  +
+  \frac{1}{z}
+  \frac{dy}{dz}
+  +
+  \theparen{ 1 - \frac{n^2}{z^2} } y
+  =
+  \frac{ \sin n\pi }{\pi}
+  \theparen{ \frac{1}{z} - \frac{n}{z^2}  },
+  $$
+  which reduces to Bessel's equation when $n$ is an integer.
+
+[It is easy to shew, by differentiating under the integral sign, that
+the expression on the left is equal to
+$$
+-
+\frac{1}{\pi}
+\int_0^{\pi}
+\frac{d}{d\theta}
+\thebrace{ \theparen{ \frac{n}{z^2} + \frac{\cos\theta}{z}  }
+\sin(n\theta - z \sin\theta)}
+\dmeasure \theta
+.]
+$$
+\end{wandwexample}
+%
+\subsubsection{The modification of Bessel's integral when $n$ is not
+  an integer.}
+We shall now shew that\footnote{TODO}, for general values of $n$,
+\begin{equation}
+J_n(z) 
+=
+\frac{1}{\pi}
+\int_0^{\pi} \cos(n\theta - z\sin\theta) \dmeasure\theta
+-
+\frac{\sin n\pi}{\pi}
+\int_0^{\infty} e^{-n\theta - z\sinh\theta} \dmeasure\theta,
+\end{equation}
+when $\realpart(z) > 0$. This obviously reduces to the result of
+\hardsubsectionref{17}{2}{3} when $n$ is an integer.
+
+Taking the integral of \hardsectionref{17}{2}, viz,
+$$
+J_n(z) 
+=
+\frac{z^n}{2^{n+1}\pi i}
+\int_{-\infty}^{(0+)}
+t^{-n-1}
+\exp\theparen{ t - \frac{z^2}{4t}  }
+\dmeasure t,
+$$
+\end{document}
