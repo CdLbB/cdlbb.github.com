@@ -1,5 +1,13 @@
 \documentclass{book}
 
+\usepackage[T1]{fontenc}
+%\usepackage{lmodern}
+%\usepackage{mathpazo}
+\usepackage{courier}
+%\usepackage{cmbright}
+%\usepackage{ccfonts}
+%\usepackage{fouriernc}
+
 \input{wandw-commands.tex}
 
 \begin{document}
@@ -847,7 +855,7 @@ $$
 
 The limit of the integrand as $n \rightarrow \infty$ is 
 $e^{iz\cos\phi}\cos m\phi$, and this exhibits the similarity of
-Laplace's integral for $P_n^m(z)$ to the Bessel-\Schlafli integral for 
+Laplace's integral for $P_n^m(z)$ to the Bessel-\Schlafli\ integral for 
 $J_m(z)$.
 \begin{wandwexample}
   From the integral
@@ -1201,6 +1209,64 @@ $\absval{\arg (1 - \frac{1}{4} z^2/n^2)} < \pi$, we have
 $$
 P_n^{m}\theparen{1 - \frac{z^2}{2n^2}}
 =
-TODO
+\frac{\Gamma(n+m+1) z^m n^{-m}}{2^m . m! \Gamma(n-m+1)}
+\theparen{1 - \frac{z^2}{4n^2}}^{\half m}
+F(-n+m,n+1+m;m+1; \frac{1}{4} z^2 n^{-2}).
 $$
+
+Now make $n \rightarrow +\infty$ ($n$ being positive, but not
+necessarily integral), so that, if $\delta = n^{-1}$, 
+$\delta \rightarrow 0$ continuously through positive values.
+
+Then
+$ \frac{\Gamma(n+m+1)n^{-m}}{\Gamma(n-m+1) n^m} \rightarrow 1$,
+by \hardsectionref{13}{6}, and
+$ \theparen{1 - \frac{z^2}{4n^2}}^{\half m} \rightarrow 1$.
+
+Further, the $(r+1)$th term of the hypergeometric series is
+$$
+\frac{
+  (-)^r
+  (1-m\delta)
+  (1+\delta+m\delta+r\delta)
+  \thebrace{ 1 - (m+1)^2 \delta^2 }
+  \thebrace{ 1 - (m+2)^2 \delta^2 }
+  \cdots
+  \thebrace{ 1 - (m+r)^2 \delta^2 }
+}{ (m+1)(m+2)\cdots(m+r).r!}
+(\half z)^{2r};
+$$
+this is a continuous function of $\delta$ and the series of which this
+is the $(r+1)$th term is easily seen to converge uniformly in a range
+of values of $\delta$ including the point $\delta=0$; so, by
+\hardsubsectionref{3}{3}{2}, we have
+\begin{align*}
+  \lim_{n \rightarrow \infty}
+  \thebracket{ n^{-m} P_n^{m}\theparen{1 - \frac{z^2}{2n^2}}}
+  =& \frac{z^m}{2^m.m!}
+  \sum_{r=0}^{\infty} \frac{(-)^r (\half
+    z)^r}{(m+1)(m+2)\cdots(m+r)r!} \\
+  =& J_m(z),
+\end{align*}
+which is the relation required.
+\begin{wandwexample}
+  Shew that\footnote{TODO}
+  $$
+  \lim_{n\rightarrow\infty}
+  \thebracket{ n^{-m} P_n^{m}\theparen{\cos \frac{z}{n}}} = J_m(z).
+  $$
+\end{wandwexample}
+%
+% 368
+%
+\begin{wandwexample}
+  Shew that Bessel's equation is the confluent form of the equations
+  defined by the schemes
+  $$
+  TODO
+  $$
+  the confluence being obtained by making $c \rightarrow \infty$.
+\end{wandwexample}
+
+\section{Asymptotic series for $J_n(z)$ when $\absval{z}$ is large.}
 \end{document}
