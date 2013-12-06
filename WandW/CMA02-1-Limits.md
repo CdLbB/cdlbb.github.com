@@ -55,7 +55,7 @@ In the corresponding case when \\(-x_n>N\\) when \\(n> n_0\\) we say that \\(x_n
 
 If a sequence of real numbers does not tend to a limit or to \\(\infty\\) or to \\(-\infty\\), the sequence is said to *oscillate*.
 
-#### 2.11 Definition of the phrase 'of the order of' ####
+#### 2.11 Definition of the phrase 'of the order of' [definitionofthephraseoftheorderof]####
 
 If \\((\zeta_n)\\) and \\((z_n)\\) are two sequences such that a number \\(n_0\\) exists such that \\(\left|\,(\zeta_n \left/z_n \right.)\,\right| < K\\) whenever \\(n > n_0\\), where \\(K\\) is *independent of \\(n\\)*, we say that \\(\zeta_n\\) is ‘of the order of’ \\(z_n\\), and we write[^Onotation,-12]
 \\[ \zeta_n = O(z_n) \\]
@@ -68,7 +68,7 @@ If \\(\lim(\zeta_n\left/z_n \right.) = 0\\), we write \\(\zeta_n = o(z_n)\\).
 [bachmann]: http://books.google.com/books?id=0iMCAAAAYAAJ
 [landau]: http://www.archive.org/details/handbuchderlehre01landuoft
 
-### 2.2 The limit of an increasing sequence ###
+### 2.2 The limit of an increasing sequence [thelimitofanincreasingsequence]###
 
 Let \\((x_n)\\) be a sequence of real numbers such that \\(x_{n+1} \geq x_n\\) for all values of \\(n\\); then *the sequence tends to a limit or else tends to infinity* (and so it does not oscillate).
 
@@ -132,7 +132,7 @@ and so \\(G\\) satisfies the condition that it should be a limit-point.
 
 [^ignoreAgain,-12]: *Editor's Note:* Just as earlier, a small adjustment needs to be made in the event  \\(G -  \frac{1}{2} \epsilon\\) and \\(G +  \frac{1}{2} \epsilon\\) are irrational.
 
-##### 2.211 Definition of 'the greatest of the limits' #####
+##### 2.211 Definition of 'the greatest of the limits' [definitionofthegreatestofthelimits]#####
 
 
 The number \\(G\\) obtained in [§2.21](#bolzanosection)  is called 'the greatest of the limits of the sequence \\((x_n)\\)'. The sequence \\((x_n)\\) cannot have a limit-point greater than \\(G\\); for if \\(G' \\) were such a limit-point, and \\(\epsilon =\frac{1}{2}(G -G' )\\), \\(G' —\epsilon\\) is a member of the \\(R\\)-class defining \\(G\\), so that there are only a limited number of terms of the sequence which satisfy \\(x_n > G'  -\epsilon\\). This condition is inconsistent with \\(G' \\) being a limit-point. We write

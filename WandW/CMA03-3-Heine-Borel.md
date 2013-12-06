@@ -26,7 +26,7 @@ HTML header:	<script type="text/javascript"
 <div markdown=1 id="content">
 <div markdown=1 class="contenttext">
 
-###3.5 The concept of uniformity. ###
+###3.5 The concept of uniformity. [theconceptofuniformity.]###
 
 There are processes other than that of summing a series in which the idea 
 of uniformity is of importance. 
@@ -48,7 +48,7 @@ We shall find later ([§3.61](#uniformityofcontinuity.)) that continuity involve
 in marked contradistinction to the fact that convergence does not involve uniformity 
 of convergence. 
 
-###3.6 The modified Heine-Borel theorem. ###
+###3.6 The modified Heine-Borel theorem. [themodifiedheine-boreltheorem.]###
 
 The following theorem is of great importance in connexion with properties 
 of uniformity; we give a proof for a one-dimensional closed region.[^2dproof,-13] 
@@ -106,7 +106,7 @@ In the two-dimensional form of the theorem[^2dproofhowto,-9], the interval \\(CD
 
 [^disk,+1]: Or the portion of the circle (closed disk) which lies inside the region.
 
-####3.61 Uniformity of continuity.####
+####3.61 Uniformity of continuity.[uniformityofcontinuity.]####
 
 From the theorem just proved, it follows without difficulty that if a 
 function \\(f(x)\\) of a real variable *x* is continuous when \\(a \leq x \leq b\\), then \\(f(x)\\) is *uniformly* continuous[^heine,-2] throughout the range \\(a \leq x \leq b\\). 
@@ -164,7 +164,7 @@ The *uniformity* of the continuity is therefore established.
 >
 >The corresponding theorem for functions of complex variables is left to the reader. 
 
-####3.62 A real function, of a real variable, continuous in a closed interval, attains its upper bound. ####
+####3.62 A real function, of a real variable, continuous in a closed interval, attains its upper bound. [arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.]####
 
 Let \\(f(x)\\) be a real continuous function of *x* when \\(a \leq x \leq b\\). Form a 
 section in which the *R*-class consists of those numbers  *r* such that \\(r > f(x)\\) for all values of *x* in the range \\([a, b]\\), and the *L*-class of all other numbers. 
@@ -181,7 +181,7 @@ range; but since \\(\left|\,f(x)-\alpha\right|\\) is continuous at all points of
 >*Corollary* 2. If \\(f(z)\\) be a function of a complex variable continuous in 
 a closed region, \\(\left|\, f(z) \right|\\) attains its upper bound. 
 
-####3.63 A real function, of a real variable, continuous in a closed interval, attains all values between its upper and lower bounds. ####
+####3.63 A real function, of a real variable, continuous in a closed interval, attains all values between its upper and lower bounds. [arealfunctionofarealvariablecontinuousinaclosedintervalattainsallvaluesbetweenitsupperandlowerbounds.]####
 
 Let \\(M,\, m\\) be the upper and lower bounds of \\(f(x)\\); then we can find numbers \\(\underline{x}, \,\overline{x}\\), by [§3.62](#arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.), such that  \\(f(\overline{x}) = M,\,f(\underline{x}) = m\\); let \\(\mu\\) be any number such that \\(m < \mu < M\\). Given any positive number \\(\epsilon\\), we can (by [§3.61](#uniformityofcontinuity.)) divide the range \\([\underline{x},\, \overline{x}]\\) into a finite number, *r*, of closed intervals such that 
 \\[\left|\,f(x_1^{(r)}) -f(x_2^{(r)}) \right| < \epsilon,\\] 
@@ -378,9 +378,9 @@ upper bounds of \\(\left|\,f(x)\right|, \, \left|\,g(x)\right|\\) .]
 </div>
 
 <div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
-<p><a onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA04-1-Integration.html" style="float: right;">&#x25B6;</a></p>
+<p><a onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA03-4-PowerSeries.html" style="float: right;">&#x25B6;</a></p>
 </div>
 
 <div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
-<p><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA04-1-Integration.html" style="float: right;">&#x25B6;	</a></p>
+<p><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA03-4-PowerSeries.html" style="float: right;">&#x25B6;	</a></p>
 </div>

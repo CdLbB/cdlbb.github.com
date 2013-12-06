@@ -28,7 +28,7 @@ HTML header:	<script type="text/javascript"
 
 ## CONTINUOUS FUNCTIONS AND UNIFORM CONVERGENCE ##
 
-### 3.1 The dependence of one complex number on another ###
+### 3.1 The dependence of one complex number on another [thedependenceofonecomplexnumberonanother]###
 
 The problems with which Analysis is mainly occupied relate to the *dependence* of one complex number on another. If \\(z\\) and \\(\zeta\\) are two complex numbers, so connected that, if \\(z\\) is given any one of a certain set of values, corresponding values of \\(\zeta\\) can be determined, e.g. if \\(\zeta\\) is the square of \\(z\\), or if \\(\zeta = 1\\) when \\(z\\) is real and \\(\zeta = 0\\) for all other values of \\(z\\), then \\(\zeta\\) is said to be a function of \\(z\\). 
 
@@ -56,7 +56,7 @@ This dependence must not be confused with the most important case of it, which w
 [^improvedHeffter,-9]: *Editor's Note*: Heffter's approach is equivalent to the common practice of coloring the graph of a modular surface to indicate \\(\theta\\). Following Whittaker and Watson's suggestion, we can use lines or boundaries to denote specific \\(\theta\\) values, which improves the readability of such colored graphs. Other ways of visualizing complex functions are discussed in Hans Lundmark's  [*Visualizing complex analytic functions using domain coloring*](http://www.mai.liu.se/~halun/complex/domain_coloring-unicode.html) and [*Visualizations on the Complex Plane*](http://zeus.nyf.hu/~kovacsz/VOCP.pdf) by Jan Hubička, Zoltán Kovács, and Zoltán Kovács. 
 
 
-### 3.2 Continuity of functions of real variables ###
+### 3.2 Continuity of functions of real variables [continuityoffunctionsofrealvariables]###
 
 The reader will have a general idea (derived from the graphical representation of functions of a real variable) as to what is meant by continuity. 
 
@@ -110,7 +110,7 @@ and \\(\left|\,h(x)-h(x_1) \,\right| < \epsilon \\); and the result stated is ob
 >[If \\(f(x)\\) be an increasing function, a section of rational numbers can be found such that, if \\(a\\), \\(A\\) be any members of its \\(L\\)-class and its \\(R\\)-class, \\(a < f(x + h)\\) for every positive value of \\(h\\), and \\(A \geq f(x + h)\\) for some positive value of \\(h\\). The number defined by this section is \\(f(x+0)\\).] 
 
 
-#### 3.21 Simple curves. Continua. ####
+#### 3.21 Simple curves. Continua. [simplecurves.continua.]####
 
 Let \\(x\\) and \\(y\\) be two real functions of a real variable \\(t\\) which are continuous 
 for every value of \\(t\\) such that \\(a \leq t\leq b\\). We denote the dependence of \\(x\\) and \\(y\\) 
@@ -149,7 +149,7 @@ A continuum formed by the interior of a simple curve is sometimes called an *ope
 
 A simple curve is sometimes called a *closed one-dimensional region*; a simple curve with its end-points omitted is then called an open one-dimensional region. 
 
-#### 3.22 Continuous functions of complex variables ####
+#### 3.22 Continuous functions of complex variables [continuousfunctionsofcomplexvariables]####
 
 Let \\(f(z)\\) be a function of \\(z\\) defined at all points of a closed region (one- or two-dimensional) in the Argand diagram, and let \\(z_1\\) be a point of the region. 
 

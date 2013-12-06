@@ -26,7 +26,7 @@ HTML header:	<script type="text/javascript"
 <div markdown=1 id="content">
 <div markdown=1 class="contenttext">
 
-### 3.3 Series of variable terms. Uniformity of convergence. ###
+### 3.3 Series of variable terms. Uniformity of convergence. [seriesofvariableterms.uniformityofconvergence.]###
 
 Consider the series 
 \\[x^2 + \frac{x^2}{1+x^2}+ \frac{x^2}{(1+x^2)^2}+  \dots +\frac{x^2}{(1+x^2)^n}+ \dots .\\]
@@ -117,7 +117,7 @@ make \\(n\\) greater than any number \\(N\\) which is independent of *x*. There 
 
 
 
-####3.32 Connexion of discontinuity with non-uniform convergence. ####
+####3.32 Connexion of discontinuity with non-uniform convergence. [connexionofdiscontinuitywithnon-uniformconvergence.]####
 
 We shall now shew that *if a series of continuous functions of \\(z\\) is uniformly 
 convergent for all values of \\(z\\)  in a given closed domain, the sum is a continuous 
@@ -155,7 +155,7 @@ which is the condition for continuity at \\(z\\).
 >The *n*th term can be written \\[\frac{1-(1+z)^{n}}{1+(1+z)^{n}}-\frac{1-(1+z)^{n-1}}{1+(1+z)^{n-1}},\\] so the sum of the first n terms is \\[\frac{1-(1+z)^{n}}{1+(1+z)^{n}}.\\] Thus, considering real values of \\(z\\) greater 
 than -1, it is seen that the sum to infinity is 1, 0, or  -1, according as \\(z\\) is negative, zero, or positive. There is thus a discontinuity at \\(z=0\\). This discontinuity is explained by the fact that the series is non-uniformly convergent near \\(z=0\\); for the remainder after *n* terms in the series when  \\(z\\) is positive is \\[\frac{-2}{1+(1+z)^{n}},\\] and, however great *n* may be, by taking \\(z=\frac{1}{n}\\), this can be made numerically greater than \\(\frac{2}{1+e},\\) which is not arbitrarily small. The series is therefore non-uniformly convergent near \\(z=0\\).
 
-####3.33 The distinction between absolute and uniform convergence. ####
+####3.33 The distinction between absolute and uniform convergence. [thedistinctionbetweenabsoluteanduniformconvergence.]####
 
 The uniform convergence of a series in a domain does not necessitate its *absolute* convergence at any points of the domain, nor conversely. Thus the series \\(\sum \frac{z^2}{1+z^2}\\), converges *absolutely*, but (near \\(z = 0\\)) not *uniformly*; while in the case of the series 
 \\[\sum_{n=1}^\infty \frac{(-1)^{n-1}}{z^2+n},\\]
@@ -251,7 +251,7 @@ by writing \\(\theta +\pi\\) for \\(\pi\\).
 >
 >[For we can choose m, independent of x, such that \\(\left|\, \sum_{n=m+1}^{m+p} a_n \,\right| < \epsilon\\) and then, by [§2.301 corollary](CMA02-2-Series.html#abelcorollary), we have \\(\left|\, \sum_{n=m+1}^{m+p} a_n \omega_n (x) \,\right| < (k_1+k+2)\epsilon.\\) ]
 
-###3.4. Discussion of a particular double series. ###
+###3.4. Discussion of a particular double series. [discussionofaparticulardoubleseries.]###
 
 Let \\(\omega_1\\) and \\(\omega_2\\)  be any constants whose ratio is not purely real; and let \\(\alpha\\)  be positive. 
 
