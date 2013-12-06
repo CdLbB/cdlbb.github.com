@@ -8,10 +8,22 @@
 %\usepackage{ccfonts}
 %\usepackage{fouriernc}
 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{titlesec}
+
+\renewcommand{\partmark}[1]{ \markboth{#1}{} }
+
+\fancyhf{}
+\fancyhead[CE]{ \nouppercase{\leftmark} }
+\fancyhead[CO]{ \nouppercase{\rightmark}}
+
 \input{wandw-commands.tex}
 
-\begin{document}
+\setcounter{chapter}{16}
 
+\begin{document}
+\part{The Transcendental Functions}
 %355
 \chapter{Bessel Functions}
  \section{The Bessel coefficients}
@@ -1269,4 +1281,101 @@ which is the relation required.
 \end{wandwexample}
 
 \section{Asymptotic series for $J_n(z)$ when $\absval{z}$ is large.}
+When have seen (\hardsubsubsectionref{17}{2}{1}{2}) that
+$$
+J_n(z)
+=
+\frac{z^{-\half}}{2^{2n+\half} e^{\half(n+\half)\pi TODO} \Gamma(n+1)}
+M_{0,n}(2iz),
+$$
+where it is supposed that 
+$\absval{ \arg z } < \pi$,
+$-\half\pi < \arg (2iz) < \frac{3}{2} \pi$.
+
+But for this range of values of $z$
+$$
+M_{0,n}(2iz)
+=
+\frac{\Gamma(2n+1)}{\Gamma(\half + n)}
+e^{(n+\half)\pi i}
+W_{0,n}(2iz)
++
+\frac{\Gamma(2n+1)}{\Gamma(\half+n)}
+W_{0,n}(-2iz)
+$$
+by \hardsubsectionref{16}{4}{1} example TODO,
+if
+$-\frac{3}{2} \pi < \arg (-2iz) < \half \pi$; and so, when
+$\absval{\arg z} < \pi$,
+$$
+J_n(z)
+=
+\frac{1}{(2\pi z)^{\half}}
+\thebrace{
+  e^{\half (n+\half)\pi i} W_{0,n}(2iz)
+  +
+  e^{-\half (n+\half)\pi i} W_{0,n}(-2iz).
+  }
+  $$
+
+But, for the values of $z$ under consideration, the asymptotic
+expansion of $W_{0,n}(\pm 2 i z)$ is
+\begin{align*}
+  e^{\mp i z}
+  \left\{
+    1
+    \pm \frac{(4n^2 - 1^2)}{8iz}
+    + \frac{ (4n^2-1^2)(4n^2-3^2)}{2! (8iz)^2}
+    \pm \cdots
+  \right.
+  \\
+  \left.
+    + \frac{ (\pm 1)^r \thebrace{4n^1-1^2} \thebrace{4n^2-3^2} \cdots
+      \thebrace{4n^2 - (2r-1)^2}  }{r! (8iz)^r}
+    + O(z^{-r})
+    \right\},
+  \end{align*}
+  and therefore, combining the series, the asymptotic expansion of
+  $J_n(z)$, when $\absval{z}$ is large and $\absval{\arg z} < \pi$, is
+  \begin{align*}
+    TODO
+  \end{align*}
+  where $U_n(z)$, $-V_n(z)$ have been written in place of the series.
+
+  The reader will observe that if $n$ is half an odd integer these
+  series terminate and give the result of \hardsubsectionref{17}{2}{4}
+  example TODO.
+
+  %
+  % 369
+  %
+  Even when $z$ is not very large, the value of $J_n(z)$ can be
+  computed with great accuracy from this formula. Thus, for all
+  positive values of $z$ greater than $8$, the first three terms of
+  the asymptotic expansion give the value of $J_0(z)$ and $J_1(z)$ to
+  six places of decimals.
+
+  This asymptotic expansion was given by Poisson\footnote{TODO} (for
+  $n=0$) and by Jacobi\footnote{TODO} (for general integral values of
+  $n$) for real values of $z$.
+  Complex values of $z$ were considered by Hankel\footnote{TODO} and
+  several subsequent writers. The method of obtaining the expansion
+  here given is due to Barnes\footnote{TODO}.
+
+  Asymptotic expansions for $J_n(z)$ when the order $n$ is large have
+  been given by Debye TODO and Nicholson TODO.
+
+  An approximate formula for $J_n(nx)$ when $n$ is large and $0<x<1$,
+  namely
+  $$
+  \frac{ x^n \exp\thebrace{n \sqrt{1-x^2}}}{ (2\pi n)^{\half} (1-x^2)^{\frac{1}{4}} \thebrace{1 +
+      \sqrt{1 - x^2}}^n},
+  $$
+  was obtained by Carlini in 1817 in a memoir reprinted in Jacobi's
+  TODO.
+  The formula was also investigated by Laplace in 1827 in his TODO on
+  the hypothesis that $x$ is purely imaginary.
+
+  A more extended account of researches on Bessel functions of large
+  order is given by TODO.
 \end{document}
