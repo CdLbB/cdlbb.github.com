@@ -1378,4 +1378,81 @@ expansion of $W_{0,n}(\pm 2 i z)$ is
 
   A more extended account of researches on Bessel functions of large
   order is given by TODO.
+  \begin{wandwexample}
+    By suitably modifying Hankel's contour integral
+    (\hardsectionref{17}{3}), shew that, when
+    $\absval{\arg z} < \half \pi$ and
+    $\realpart(n+\half) > 0$,
+    \begin{align*}
+      J_n(z)
+      =
+      \frac{1}{\Gamma(n+\half) (2\pi z)^{\half}}
+      \left[
+        e^{i(z - \half n \pi - \frac{1}{4} \pi)}
+        \int_0^{\infty}
+        e^{-u}
+        u^{n-\half}
+        \theparen{1 + \frac{iu}{2z}}^{n-\half}
+        \dmeasure u
+      \right.
+      \\
+      \left.
+        +
+        e^{-i(z - \half n \pi - \frac{1}{4}\pi)}
+        \int_0^{\infty}
+        e^{-u}
+        u^{n-\half}
+        \theparen{1 - \frac{iu}{2z}}^{n-\half}
+        \dmeasure d
+        \right];
+      \end{align*}
+      and deduce the asymptotic expansion of $J_n(z)$ when
+      $\absval{z}$ is large and
+      $\absval{\arg z} < \half \pi$.
+
+      [Take the contour to be the rectangle whose corners are
+      $\pm 1$, $\pm 1 + iN$ the rectangle being indented at $\pm 1$,
+      and make $N \rightarrow \infty$; the integrand being
+      $(1-t^2)^{n-\half} e^{izt}$.]
+    \end{wandwexample}
+    \begin{wandwexample}
+      Shew that, when $\absval{\arg z} < \half \pi$ and
+      $\realpart(n+\half) > 0$,
+      $$
+      J_n(z)
+      =
+      \frac{2^{n+1} z^n}{\Gamma(n+\half) \pi^{\half}}
+      \int_0^{\half\pi}
+      e^{-2z\cot\phi}
+      \cos^{n-\half}\phi
+      \cosec^{2n+1}\phi
+      \sin\thebrace{z - (n-\half)\phi}
+      \dmeasure \phi.
+      $$
+      [Write $u = 2z\cot\phi$ in the preceding example.]l
+    \end{wandwexample}
+    \begin{wandwexample}
+      Shew that, if $\absval{\arg z} < \half \pi$ and
+      $\realpart(n+\half) > 0$, then
+      $$
+      A e^{iz} z^n
+      \int_0^{\infty}
+      v^{n-\half}
+      (1+iv)^{n-\half}
+      e^{-2vz}
+      \dmeasure v
+      +
+      B e^{-iz} z^n
+      \int_0^{\infty}
+      e^{n-\half}
+      (1-iv)^{n-\half}
+      e^{-2vz}
+      \dmeasure v
+      $$
+      is a solution of Bessel's equation.
+
+      Further, determine $A$ and $B$ so that this may represent
+      $J_n(z)$.
+      TODO:attribution
+    \end{wandwexample}
 \end{document}
