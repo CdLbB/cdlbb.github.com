@@ -1455,4 +1455,144 @@ expansion of $W_{0,n}(\pm 2 i z)$ is
       $J_n(z)$.
       TODO:attribution
     \end{wandwexample}
-\end{document}
+
+    \section{The second solution of Bessel's equation when the order
+      is an integer.}
+    We have seen in \hardsectionref{17}{2} that, when the order $n$ of
+    Bessel's differential equation is not an integer, the general
+    solution of the equation is
+    $$
+    \alpha J_n(z) + \beta J_{-n}(z),
+    $$
+    where $\alpha$ and $\beta$ are arbitrary constants.
+
+    % 
+    % 370
+    % 
+    When, however, $n$ is an integer, we have seen that
+    $$
+    J_n(z) = (-)^n J_{-n}(z),
+    $$
+    and consequently the two solutions $J_n(z)$ and $J_{-n}(z)$ are
+    not really distinct. We therefore require in this case to find
+    another particular solution of the differential equation, distinct
+    from $J_n(z)$ in order to have the general solution.
+
+    We shall now consider the function
+    $$
+    \hardY_n(z)
+    =
+    2 \pi e^{n \pi i}
+    \frac{J_n(z)\cos n\pi - J_{-n}(z)}{\sin 2n\pi},
+    $$
+    which is a solution of Bessel's equation when $2n$ is not an
+    integer.
+    The introduction of this function $\hardY_n(z)$ is due to
+    Hankel\footnote{TODO}.
+
+    When $n$ is an integer, $\hardY_n(z)$ is defined by the limiting
+    form of this equation, namely
+    \begin{align*}
+      \hardY_n(z)
+      =& \lim_{\eps\rightarrow 0}
+      2\pi e^{(n+\eps)\pi i} \frac{ J_{n+\eps}(z) \cos(n\pi+\eps\pi) -
+        J_{-n-\eps}(z)}{\sin 2(n+\eps)\pi}
+      \\
+      =& \lim_{\eps\rightarrow 0}
+      \frac{2\pi e^{n\pi i}}{\sin 2\eps\pi}
+      \thebrace{ J_{n+\eps}(z) \cdot(-)^n - J_{-n-\eps}(z)}
+      \\
+      =&
+      \lim_{\eps\rightarrow 0}
+      \eps^{-1}
+      \thebrace{ J_{n+\eps}(z) - (-)^n J_{-n-\eps}(z)}.
+    \end{align*}
+
+    To express $\hardY_n(z)$ in terms of $W_{k,m}$ functions, we have
+    recourse to the result of \hardsectionref{17}{5}, which gives
+    \begin{align*}
+      \hardY_n(z)
+      = \lim_{\eps\rightarrow 0}
+      \frac{\eps^{-1}}{ (2\pi z)^{\half}}
+      \left[
+        \thebrace{
+          e^{\half(n+\eps+\half)\pi i} W_{0,n+\eps}(2iz)
+          + e^{-\half(n+\eps+\half)\pi i} W_{0,n+\eps}(-2iz)
+        }
+      \right.
+      \\
+      \left.
+        - (-)^n
+        \thebrace{
+          e^{\half(-n-\eps+\half)\pi i} W_{0,n+\eps}(2iz)
+          + e^{-\half (-n-\eps+\half)\pi i} W_{0,n+\eps}(-2iz)
+        }
+      \right],
+    \end{align*}
+    remembering that $W_{k,m} = W_{k,-m}$.
+
+    Hence, since\footnote{TODO}
+    $\lim_{\eps\rightarrow 0} W_{0,n+\eps}(2iz) = W_{0,n}(2iz)$, we
+    have
+    $$
+    \hardY_n(z)
+    =
+    \theparen{ \frac{\pi}{2z} }^{\half}
+    \thebrace{
+      e^{(\half n + \frac{3}{4}) \pi i} W_{0,n}(2iz)
+      +
+      e^{-(\half n + \frac{3}{4})\pi i} W_{0,n}(-2iz)
+    }.
+    $$
+
+    This function ($n$ being an integer) is obviously a solution of
+    Bessel's equation; it is called a \emph{Bessel function of the
+      second kind}.
+
+    Another function (also called a function of the second kind) was
+    first used by TODO and by TODO; it is defined by the equation
+    $$
+    Y_n(z) = \frac{J_n(z) \cos n\pi - J_{-n}(z)}{\sin n\pi}
+    = \frac{\hardY_n(z) \cos n\pi}{\pi e^{n\pi i}},
+    $$
+    %
+    % 371
+    %
+    or by the limits of these expressions when $n$ is an integer. This
+    function which exists for \emph{all} values of $n$ is taken as the
+    canonical function of the second kind by TODO, and formulae
+    involving it are generally but not always) simpler than the
+    corresponding formulae involving Hankel's function.
+
+    The asymptotic expansion for $Y_n(z)$, corresponding to that of
+    \hardsectionref{17}{5} for $J_n(z)$, is that, when
+    $\absval{\arg z} < \pi$ and $n$ is an integer,
+    $$
+    Y_n(z)
+    \sim
+    \theparen{ \frac{2}{\pi z} }^{\half}
+    \thebracket{ \sin\theparen{z - \half n \pi - \frac{1}{4} \pi}
+      \cdot U_n(z)
+      + \cos\theparen{z - \half n \pi - \frac{1}{4}} \cdot V_n(z)
+    },
+    $$
+    where $U_n(z)$ and $V_n(z)$ are the asymptotic expansions defined
+    in \hardsectionref{17}{5}, their leading terms being $1$ and
+    $(4n^2-1)/8z$ respectively.
+    \begin{wandwexample}
+      Prove that
+      $$
+      \hardY_n(z)
+      =
+      \frac{dJ_n(z)}{dn}
+      -
+      (-)^n \frac{dJ_{-n}(z)}{dn},
+      $$
+      where $n$ is made an integer after differentiation.
+      TODO:attribution
+    \end{wandwexample}
+    \begin{wandwexample}
+      Shew that if $\hardY_n(z)$ be defined by the equation of example
+      TODO, it is a solution of Bessel's equation when $n$ is an integer.
+    \end{wandwexample}
+  \end{document}
