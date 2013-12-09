@@ -150,7 +150,7 @@ which is the condition for continuity at \\(z\\).
 
 [^delta]: This value of x satisfies the condition \\(| x | < \delta \\) whenever \\(2n - 1 > \log \delta^{-1}\\).
 
->Example 2. Shew that near \\(z=0\\) the series \\[\sum_{n=1}^{\infty} \frac{-2(1+z)^{n-1}}{\{1+(1+z)^{n-1}\}\{1+(1+z)^{n}\}}\\] is non-uniformly convergent and its sum is discontinuous. 
+>Example 2. Shew that near \\(z=0\\) the series \\[\sum_{n=1}^{\infty} \frac{-2z(1+z)^{n-1}}{\{1+(1+z)^{n-1}\}\{1+(1+z)^{n}\}}\\] is non-uniformly convergent and its sum is discontinuous. 
 >
 >The *n*th term can be written \\[\frac{1-(1+z)^{n}}{1+(1+z)^{n}}-\frac{1-(1+z)^{n-1}}{1+(1+z)^{n-1}},\\] so the sum of the first n terms is \\[\frac{1-(1+z)^{n}}{1+(1+z)^{n}}.\\] Thus, considering real values of \\(z\\) greater 
 than -1, it is seen that the sum to infinity is 1, 0, or  -1, according as \\(z\\) is negative, zero, or positive. There is thus a discontinuity at \\(z=0\\). This discontinuity is explained by the fact that the series is non-uniformly convergent near \\(z=0\\); for the remainder after *n* terms in the series when  \\(z\\) is positive is \\[\frac{-2}{1+(1+z)^{n}},\\] and, however great *n* may be, by taking \\(z=\frac{1}{n}\\), this can be made numerically greater than \\(\frac{2}{1+e},\\) which is not arbitrarily small. The series is therefore non-uniformly convergent near \\(z=0\\).
