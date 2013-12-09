@@ -1741,4 +1741,56 @@ expansion of $W_{0,n}(\pm 2 i z)$ is
     + 2 \thebrace{ J_2(z) - \half J_4(z) + \frac{1}{3} J_6(z) - \cdots  }.
     $$
   \end{wandwexample}
+
+\section{Bessel functions with purely imaginary argument.}
+The function\footnote{TODO}
+$$
+I_n(z)
+=
+i^{-n}
+J_n(iz)
+=
+\sum_{r=0}^{\infty}
+  \frac{(\half z)^{n+2r}}{r!(n+r)!}
+  $$
+  %
+  % 373
+  %
+  is of frequent occurrence in various branches of applied
+  mathematics; in these applications $z$ is usually positive.
+
+  The reader should have no difficulty in obtaining the following
+  formulae:
+  \begin{enumerate}
+    \item $I_{n-1}(z) - I_{n+1}(z) = \frac{2n}{z} I_n(z)$.
+    \item $\frac{d}{dz} \thebrace{z^n I_n(z)} = z^n I_{n-1}(z)$.
+    \item $\frac{d}{dz} \thebrace{z^{-n} I_n(z)} = z^{-n} I_{n+1}(z)$.
+    \item $\frac{d^2 I_n(z)}{dz^2} + \frac{1}{z} \frac{d I_n(z)}{dz} -
+      \theparen{1 + \frac{n^2}{z^2}} I_n(z) = 0$.
+    \item When $\realpart \theparen{n + \half} > 0$,
+      $$
+      I_n(z)
+      =
+      \frac{z^n}{2^n \Gamma(\half) \Gamma(n+\half)}
+      \int_0^{\pi}
+      \cosh (z\cos\phi) \sin^{2n} \phi \dmeasure \phi.
+      $$
+    \item When $-\frac{3}{2}\pi < \arg z < \half \pi$, the asymptotic
+      expansion of $I_n(z)$ is
+      \begin{align*}
+        I_n(z)
+        \sim
+        \frac{ e^z}{ (2\pi z)^{\half}}
+        \thebracket{1 + TODO}
+        \\
+        +
+        \frac{ e^{-(n+\half) \pi i} e^{-z}}{ (2\pi z)^{\half} }
+        \thebracket{TODO},
+      \end{align*}
+      the second series being negligible when $\absval{\arg z} < \half
+      \pi$. The result is easily seen to be valid over the extended
+      range $-\frac{3}{2} \pi < \arg z < \frac{3}{2} \pi$ is we write
+      $e^{\pm (n+\half)\pi i}$ for $e^{-(n+\half)\pi i}$, the upper or
+      lower sign being taken according as $\arg z$ is positive or negative.
+    \end{enumerate}
   \end{document}
