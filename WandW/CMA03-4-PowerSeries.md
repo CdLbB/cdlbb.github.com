@@ -40,18 +40,18 @@ Hence, by [§3.32,](CMA03-2-Uniformity.html#connexionofdiscontinuitywithnon-unif
 throughout the closed region formed by the interior and boundary of any 
 circle concentric with the circle of convergence and of smaller radius ([§2.6](CMA02-3-MoreSeries.html#powerseries)). 
 
-####3.71 Abel's theorem[^abelscircle] on continuity up to the circle of convergence. [abelstheoremoncontinuityuptothecircleofconvergence.] ####
+####3.71 Abel's theorem[^abelscircle,-1] on continuity up to the circle of convergence. [abelstheoremoncontinuityuptothecircleofconvergence.] ####
 
-[^abelscircle]: [*Journal für Math.* **i.** (1826)](http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0001), pp. 311-339, Theorem **iv.** Abel's proof employs directly the arguments by which the theorems of [§3.32](CMA03-2-Uniformity.html#connexionofdiscontinuitywithnon-uniformconvergence.) and [§3.35](CMA03-2-Uniformity.html#hardystestsforuniformconvergence.) are proved. In the case when \\(\\sum \left|\, a_n \,\right|\\) converges, the theorem is obvious from [§3.7](#3.7uniformityofconvergenceofpowerseries.).
+[^abelscircle,-1]: [*Journal für Math.* **i.** (1826)](http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0001), pp. 311-339, Theorem **iv.** Abel's proof employs directly the arguments by which the theorems of [§3.32](CMA03-2-Uniformity.html#connexionofdiscontinuitywithnon-uniformconvergence.) and [§3.35](CMA03-2-Uniformity.html#hardystestsforuniformconvergence.) are proved. In the case when \\(\\sum \left|\, a_n \,\right|\\) converges, the theorem is obvious from [§3.7](#3.7uniformityofconvergenceofpowerseries.).
 
 Let \\(\sum\limits_{n=0}^{\infty} a_n z^n\\) be a power series, whose radius of convergence is unity, and let it be such that \\(\sum\limits_{n=0}^{\infty} a_n \\)  converges; and let \\(0 \leq x \leq 1\\); then Abel's theorem asserts that \\(\lim\limits_{x \,\rightarrow 1} \left(\sum\limits_{n=0}^{\infty} a_n x^n \right)=\sum\limits_{n=0}^{\infty} a_n \\). 
 
 For, with the notation of [§3.35](CMA03-2-Uniformity.html#hardystestsforuniformconvergence.), the function \\(x^n\\)  satisfies the conditions laid on \\(u_n (x)\\), when \\(0 \leq x \leq 1\\); consequently \\(f(x) = \sum\limits_{n=0}^{\infty} a_n x^n\\)  converges *uniformly* throughout the range \\(0 \leq x \leq 1\\); it is therefore, by [§3.32](CMA03-2-Uniformity.html#connexionofdiscontinuitywithnon-uniformconvergence.), a continuous 
 function of *x* throughout the range, and so \\(\lim\limits_{x \, \rightarrow 0} f(x) =f(1)\\), which is the theorem stated. 
 
-#### 3.72 Abel's Theorem[^abelsproducts] on Multiplication of Series. [abelstheoremonmultiplicationofseries.] ####
+#### 3.72 Abel's Theorem[^abelsproducts,-1] on Multiplication of Series. [abelstheoremonmultiplicationofseries.] ####
 
-[^abelsproducts]: [*Journal für Math.* **i.** (1826)](http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0001), pp. 311-339, Theorem **vi.** This is Abel's original proof. In some text-books a more elaborate proof, by the use of Cesaro's sums ([§8.43](whereOwhere.html)), is given.
+[^abelsproducts,-1]: [*Journal für Math.* **i.** (1826)](http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0001), pp. 311-339, Theorem **vi.** This is Abel's original proof. In some text-books a more elaborate proof, by the use of Cesaro's sums ([§8.43](whereOwhere.html)), is given.
 
 This is a modification of the theorem of [§2.53](CMA02-3-MoreSeries.html#cauchymultiplication) for absolutely convergent 
 series. 
@@ -77,12 +77,12 @@ For, if not, let \\(a_m\\) be the first coefficient which does not vanish.
 
 Then \\(a_m +a_{m+1} z+a_{m+2} z^2 + \cdots\\) vanishes for all values of \\(z\\) (zero excepted) and converges absolutely when \\(\left| \,z\, \right| \leq r < r_1\\) ([§2.6](CMA02-3-MoreSeries.html#powerseries)); hence, if \\(s = a_{m+l} + a_{m+2} z +  \cdots \\), we have 
 \\[\left|\, s \, \right| \leq \sum_{n=1}^{\infty} \,\left|\, a_{m+n}  \right|\, r^{n-1},\\]
-and so we can find[^findposnumber,-8] a *positive number* \\( \delta \leq r \\) < r such that, whenever \\(\left| \, z \,\right| \leq r \\), 
+and so we can find[^findposnumber,-13] a *positive number* \\( \delta \leq r \\) < r such that, whenever \\(\left| \, z \,\right| \leq r \\), 
 \\[\left|\, a_m +a_{m+1} z+a_{m+2} z^2 + \cdots \right| \leq \frac{1}{2}\left|\,a_m \right|;\\]
 and then \\(\left|\,a_m + s\,\right|\geq \left|\, a_m \right|- \left|\,s\,\right| \geq \frac{1}{2} \left|\, a_m \right|\\), and so \\(\left|\,a_m + s\,\right| \neq 0 \\) when \\(\left| \, z \,\right| \leq r \\). 
 We have therefore arrived at a contradiction by supposing that some coefficient does not vanish. Therefore all the coefficients vanish. 
 
-[^findposnumber,-8]: It is sufficient to take \\(\delta\\) to be the smaller of the numbers \\(r\\) and \\(\frac{1}{2}\left|\,a_m \right| \div \sum\limits_{n=1}^{\infty} \,\left|\, a_{m+n}  \right|\, r^{n-1} \\).
+[^findposnumber,-13]: It is sufficient to take \\(\delta\\) to be the smaller of the numbers \\(r\\) and \\(\frac{1}{2}\left|\,a_m \right| \div \sum\limits_{n=1}^{\infty} \,\left|\, a_{m+n}  \right|\, r^{n-1} \\).
 
 >Corollary 1. We may 'equate corresponding coefficients' in two power series whose sums are equal throughout the region \\(\left|\,z\, \right|< \delta\\), where \\(\delta > 0\\). 
 
@@ -91,12 +91,12 @@ We have therefore arrived at a contradiction by supposing that some coefficient 
 
 ### References.###
 
-\\(\,\\)
+*Complex functions and uniformity.*
 :T. J. l'a. Bromwich, [*Theory of Infinite Series* (1908)](https://archive.org/details/anintroductiont00bromgoog), Ch. **vii.** 
 :E. Goursat, [*Cours d'Analyse*](https://archive.org/details/ed2coursdanalyse01gouruoft) (Paris, 1910, 1911) Chs. [**i**](https://archive.org/details/ed2coursdanalyse01gouruoft), [**xiv.**](https://archive.org/details/coursdanalysemat02gouruoft)
-:C. J. de la Vallée Poussin (Louvain and Paris, 1914), [*Cours d'Analyse Infinitésimale*](#a), 
+:C. J. de la Vallée Poussin (Louvain and Paris, 1914), [*Cours d'Analyse Infinitésimale*](https://archive.org/details/danalyseinfinitesi01pousrich), 
 Introduction and Ch. **viii.** 
-:G. H. Hardy, [*A course of Pure Mathematics* (1914)](#a), Ch. **v.** 
+:G. H. Hardy, [*A course of Pure Mathematics* (1914)](http://www.gutenberg.org/ebooks/38769), Ch. **v.** 
 :W. F. Osgood, [*Lehrbuch der Funktionentheorie* (Leipzig, 1912)](https://archive.org/details/lehrbuchderfunk01osgogoog), Chs. **ii, iii.** 
 :G. N. Watson, [*Complex Integration and Cauchy's Theorem* (Camb. Math. Tracts, 
 No. 15), (1914)](https://archive.org/details/complexintegrat00watsrich), Chs. **i, ii.** 

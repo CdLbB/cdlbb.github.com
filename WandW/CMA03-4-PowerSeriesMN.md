@@ -40,13 +40,13 @@ Hence, by [&#167;3.32,](CMA03-2-UniformityMN.html#connexionofdiscontinuitywithno
 throughout the closed region formed by the interior and boundary of any 
 circle concentric with the circle of convergence and of smaller radius ([&#167;2.6](CMA02-3-MoreSeriesMN.html#powerseries)). 
 
-####3.71 Abel's theorem<a class="marginmark" onClick="toggleHide('mn:1,-7');">&#91;1&#93;</a> on continuity up to the circle of convergence. [abelstheoremoncontinuityuptothecircleofconvergence.] ####
+####3.71 Abel's theorem<a class="marginmark" onClick="toggleHide('mn:1,-1');">&#91;1&#93;</a> on continuity up to the circle of convergence. [abelstheoremoncontinuityuptothecircleofconvergence.] ####
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:1,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;1&#93;</a>[*Journal f&uuml;r Math.* **i.** (1826)](http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0001), pp. 311-339, Theorem **iv.** Abel's proof employs directly the arguments by which the theorems of [&#167;3.32](CMA03-2-Uniformity.html#connexionofdiscontinuitywithnon-uniformconvergence.) and [&#167;3.35](CMA03-2-UniformityMN.html#hardystestsforuniformconvergence.) are proved. In the case when \\(\\sum \left|\, a_n \,\right|\\) converges, the theorem is obvious from [&#167;3.7](#3.7uniformityofconvergenceofpowerseries.).<a onClick="hideIt('mn:1,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:1,-1" style="margin-top: -1em; margin-bottom: -1em;"><a class="marginmark">&#91;1&#93;</a>[*Journal f&uuml;r Math.* **i.** (1826)](http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0001), pp. 311-339, Theorem **iv.** Abel's proof employs directly the arguments by which the theorems of [&#167;3.32](CMA03-2-Uniformity.html#connexionofdiscontinuitywithnon-uniformconvergence.) and [&#167;3.35](CMA03-2-UniformityMN.html#hardystestsforuniformconvergence.) are proved. In the case when \\(\\sum \left|\, a_n \,\right|\\) converges, the theorem is obvious from [&#167;3.7](#3.7uniformityofconvergenceofpowerseries.).<a onClick="hideIt('mn:1,-1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -59,13 +59,13 @@ Let \\(\sum\limits_{n=0}^{\infty} a_n z^n\\) be a power series, whose radius of 
 For, with the notation of [&#167;3.35](CMA03-2-Uniformity.html#hardystestsforuniformconvergence.), the function \\(x^n\\)  satisfies the conditions laid on \\(u_n (x)\\), when \\(0 \leq x \leq 1\\); consequently \\(f(x) = \sum\limits_{n=0}^{\infty} a_n x^n\\)  converges *uniformly* throughout the range \\(0 \leq x \leq 1\\); it is therefore, by [&#167;3.32](CMA03-2-UniformityMN.html#connexionofdiscontinuitywithnon-uniformconvergence.), a continuous 
 function of *x* throughout the range, and so \\(\lim\limits_{x \, \rightarrow 0} f(x) =f(1)\\), which is the theorem stated. 
 
-#### 3.72 Abel's Theorem<a class="marginmark" onClick="toggleHide('mn:2,-7');">&#91;2&#93;</a> on Multiplication of Series. [abelstheoremonmultiplicationofseries.] ####
+#### 3.72 Abel's Theorem<a class="marginmark" onClick="toggleHide('mn:2,-1');">&#91;2&#93;</a> on Multiplication of Series. [abelstheoremonmultiplicationofseries.] ####
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:2,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;2&#93;</a>[*Journal f&uuml;r Math.* **i.** (1826)](http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0001), pp. 311-339, Theorem **vi.** This is Abel's original proof. In some text-books a more elaborate proof, by the use of Cesaro's sums ([&#167;8.43](whereOwhere.html)), is given.<a onClick="hideIt('mn:2,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:2,-1" style="margin-top: -1em; margin-bottom: -1em;"><a class="marginmark">&#91;2&#93;</a>[*Journal f&uuml;r Math.* **i.** (1826)](http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0001), pp. 311-339, Theorem **vi.** This is Abel's original proof. In some text-books a more elaborate proof, by the use of Cesaro's sums ([&#167;8.43](whereOwhere.html)), is given.<a onClick="hideIt('mn:2,-1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -97,7 +97,7 @@ For, if not, let \\(a_m\\) be the first coefficient which does not vanish.
 
 Then \\(a_m +a_{m+1} z+a_{m+2} z^2 + \cdots\\) vanishes for all values of \\(z\\) (zero excepted) and converges absolutely when \\(\left| \,z\, \right| \leq r < r_1\\) ([&#167;2.6](CMA02-3-MoreSeriesMN.html#powerseries)); hence, if \\(s = a_{m+l} + a_{m+2} z +  \cdots \\), we have 
 \\[\left|\, s \, \right| \leq \sum_{n=1}^{\infty} \,\left|\, a_{m+n}  \right|\, r^{n-1},\\]
-and so we can find<a class="marginmark" onClick="toggleHide('mn:3,-8');">&#91;3&#93;</a> a *positive number* \\( \delta \leq r \\) < r such that, whenever \\(\left| \, z \,\right| \leq r \\), 
+and so we can find<a class="marginmark" onClick="toggleHide('mn:3,-13');">&#91;3&#93;</a> a *positive number* \\( \delta \leq r \\) < r such that, whenever \\(\left| \, z \,\right| \leq r \\), 
 \\[\left|\, a_m +a_{m+1} z+a_{m+2} z^2 + \cdots \right| \leq \frac{1}{2}\left|\,a_m \right|;\\]
 and then \\(\left|\,a_m + s\,\right|\geq \left|\, a_m \right|- \left|\,s\,\right| \geq \frac{1}{2} \left|\, a_m \right|\\), and so \\(\left|\,a_m + s\,\right| \neq 0 \\) when \\(\left| \, z \,\right| \leq r \\). 
 We have therefore arrived at a contradiction by supposing that some coefficient does not vanish. Therefore all the coefficients vanish. 
@@ -106,7 +106,7 @@ We have therefore arrived at a contradiction by supposing that some coefficient 
 
 
 
-<div markdown=1 class="marginnotes" id="mn:3,-8" style="margin-top: -8em; margin-bottom: -8em;"><a class="marginmark">&#91;3&#93;</a>It is sufficient to take \\(\delta\\) to be the smaller of the numbers \\(r\\) and \\(\frac{1}{2}\left|\,a_m \right| \div \sum\limits_{n=1}^{\infty} \,\left|\, a_{m+n}  \right|\, r^{n-1} \\).<a onClick="hideIt('mn:3,-8')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:3,-13" style="margin-top: -13em; margin-bottom: -13em;"><a class="marginmark">&#91;3&#93;</a>It is sufficient to take \\(\delta\\) to be the smaller of the numbers \\(r\\) and \\(\frac{1}{2}\left|\,a_m \right| \div \sum\limits_{n=1}^{\infty} \,\left|\, a_{m+n}  \right|\, r^{n-1} \\).<a onClick="hideIt('mn:3,-13')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -121,12 +121,12 @@ We have therefore arrived at a contradiction by supposing that some coefficient 
 
 ### References.###
 
-\\(\,\\)
+*Complex functions and uniformity.*
 :T. J. l'a. Bromwich, [*Theory of Infinite Series* (1908)](https://archive.org/details/anintroductiont00bromgoog), Ch. **vii.** 
 :E. Goursat, [*Cours d'Analyse*](https://archive.org/details/ed2coursdanalyse01gouruoft) (Paris, 1910, 1911) Chs. [**i**](https://archive.org/details/ed2coursdanalyse01gouruoft), [**xiv.**](https://archive.org/details/coursdanalysemat02gouruoft)
-:C. J. de la Vall&eacute;e Poussin (Louvain and Paris, 1914), [*Cours d'Analyse Infinit&eacute;simale*](#a), 
+:C. J. de la Vall&eacute;e Poussin (Louvain and Paris, 1914), [*Cours d'Analyse Infinit&eacute;simale*](https://archive.org/details/danalyseinfinitesi01pousrich), 
 Introduction and Ch. **viii.** 
-:G. H. Hardy, [*A course of Pure Mathematics* (1914)](#a), Ch. **v.** 
+:G. H. Hardy, [*A course of Pure Mathematics* (1914)](http://www.gutenberg.org/ebooks/38769), Ch. **v.** 
 :W. F. Osgood, [*Lehrbuch der Funktionentheorie* (Leipzig, 1912)](https://archive.org/details/lehrbuchderfunk01osgogoog), Chs. **ii, iii.** 
 :G. N. Watson, [*Complex Integration and Cauchy's Theorem* (Camb. Math. Tracts, 
 No. 15), (1914)](https://archive.org/details/complexintegrat00watsrich), Chs. **i, ii.** 
