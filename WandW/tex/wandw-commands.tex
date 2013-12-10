@@ -1,5 +1,7 @@
+\usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{amsthm}
+\usepackage{mathrsfs}
 
 % Use (A),(B),... for equations, not (1),(2),...
 \numberwithin{equation}{subsection}
@@ -38,6 +40,13 @@
 \theoremstyle{remark}
 \newtheorem{wandwexample}{Example}
 \numberwithin{wandwexample}{subsubsection}
+
+% Chapter 17 (Bessel functions)
+\newcommand{\besselFont}[1]{\mathscr{#1}}
+\newcommand{\besI}{\besselFont{I}}
+\newcommand{\besJ}{\besselFont{J}}
+\newcommand{\besK}{\besselFont{K}}
+\newcommand{\besY}{\besselFont{Y}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Names
