@@ -153,7 +153,7 @@ A simple curve is sometimes called a *closed one-dimensional region*; a simple c
 
 Let \\(f(z)\\) be a function of \\(z\\) defined at all points of a closed region (one- or two-dimensional) in the Argand diagram, and let \\(z_1\\) be a point of the region. 
 
-Then \\(f(z)\\)  is said to be continuous at \\(z_1\\) , if given any positive number \\(\epsilon\\), we can find a corresponding positive number \\(\eta\\) such that 
+Then \\(f(z)\\)  is said to be continuous at \\(z_1\\), if given any positive number \\(\epsilon\\), we can find a corresponding positive number \\(\eta\\) such that 
 \\[\left|\, f(z)-f(z_1)\,\right| < \epsilon, \\]
 whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the region. 
 
@@ -193,9 +193,9 @@ whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the regio
 	<li><a href="CMA03-2-Uniformity.html#discussionofaparticulardoubleseries.">A Particular Double Series</a></li>
 	<li><a href="CMA03-3-Heine-Borel.html#theconceptofuniformity.">The Concept of Uniformity</a></li>
 	<li><a href="CMA03-3-Heine-Borel.html#themodifiedheine-boreltheorem.">The Modified Heine-Borel Theorem</a></li>
-	<li><a href="CMA03-3-Heine-Borel.html#uniformconvergenceofpowerseries.">Uniform Convergence of Power Series</a></li>
-       <li><a href="CMA03-3-Heine-Borel.html#references">References</a></li>
-        <li><a href="CMA03-3-Heine-Borel.html#miscellaneousexamples">Miscellaneous Examples</a></li>
+	<li><a href="CMA03-4-PowerSeries.html#3.7uniformityofconvergenceofpowerseries.">Uniform Convergence of Power Series</a></li>
+       <li><a href="CMA03-4-PowerSeries.html#references.">References</a></li>
+        <li><a href="CMA03-4-PowerSeries.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
     </li>
     <li><a href="whereOwhere.html">The Theory of Riemann Integration</a></li>

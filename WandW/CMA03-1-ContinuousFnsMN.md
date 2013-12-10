@@ -28,7 +28,7 @@ HTML header:	<script type="text/javascript"
 
 ## CONTINUOUS FUNCTIONS AND UNIFORM CONVERGENCE ##
 
-### 3.1 The dependence of one complex number on another ###
+### 3.1 The dependence of one complex number on another [thedependenceofonecomplexnumberonanother]###
 
 The problems with which Analysis is mainly occupied relate to the *dependence* of one complex number on another. If \\(z\\) and \\(\zeta\\) are two complex numbers, so connected that, if \\(z\\) is given any one of a certain set of values, corresponding values of \\(\zeta\\) can be determined, e.g. if \\(\zeta\\) is the square of \\(z\\), or if \\(\zeta = 1\\) when \\(z\\) is real and \\(\zeta = 0\\) for all other values of \\(z\\), then \\(\zeta\\) is said to be a function of \\(z\\). 
 
@@ -86,7 +86,7 @@ This dependence must not be confused with the most important case of it, which w
 <div markdown=1 class="contenttext">
 
 
-### 3.2 Continuity of functions of real variables ###
+### 3.2 Continuity of functions of real variables [continuityoffunctionsofrealvariables]###
 
 The reader will have a general idea (derived from the graphical representation of functions of a real variable) as to what is meant by continuity. 
 
@@ -170,7 +170,7 @@ and \\(\left|\,h(x)-h(x_1) \,\right| < \epsilon \\); and the result stated is ob
 >[If \\(f(x)\\) be an increasing function, a section of rational numbers can be found such that, if \\(a\\), \\(A\\) be any members of its \\(L\\)-class and its \\(R\\)-class, \\(a < f(x + h)\\) for every positive value of \\(h\\), and \\(A \geq f(x + h)\\) for some positive value of \\(h\\). The number defined by this section is \\(f(x+0)\\).] 
 
 
-#### 3.21 Simple curves. Continua. ####
+#### 3.21 Simple curves. Continua. [simplecurves.continua.]####
 
 Let \\(x\\) and \\(y\\) be two real functions of a real variable \\(t\\) which are continuous 
 for every value of \\(t\\) such that \\(a \leq t\leq b\\). We denote the dependence of \\(x\\) and \\(y\\) 
@@ -229,11 +229,11 @@ A continuum formed by the interior of a simple curve is sometimes called an *ope
 
 A simple curve is sometimes called a *closed one-dimensional region*; a simple curve with its end-points omitted is then called an open one-dimensional region. 
 
-#### 3.22 Continuous functions of complex variables ####
+#### 3.22 Continuous functions of complex variables [continuousfunctionsofcomplexvariables]####
 
 Let \\(f(z)\\) be a function of \\(z\\) defined at all points of a closed region (one- or two-dimensional) in the Argand diagram, and let \\(z_1\\) be a point of the region. 
 
-Then \\(f(z)\\)  is said to be continuous at \\(z_1\\) , if given any positive number \\(\epsilon\\), we can find a corresponding positive number \\(\eta\\) such that 
+Then \\(f(z)\\)  is said to be continuous at \\(z_1\\), if given any positive number \\(\epsilon\\), we can find a corresponding positive number \\(\eta\\) such that 
 \\[\left|\, f(z)-f(z_1)\,\right| < \epsilon, \\]
 whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the region. 
 
@@ -273,9 +273,9 @@ whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the regio
 	<li><a href="CMA03-2-UniformityMN.html#discussionofaparticulardoubleseries.">A Particular Double Series</a></li>
 	<li><a href="CMA03-3-Heine-BorelMN.html#theconceptofuniformity.">The Concept of Uniformity</a></li>
 	<li><a href="CMA03-3-Heine-BorelMN.html#themodifiedheine-boreltheorem.">The Modified Heine-Borel Theorem</a></li>
-	<li><a href="CMA03-3-Heine-BorelMN.html#uniformconvergenceofpowerseries.">Uniform Convergence of Power Series</a></li>
-       <li><a href="CMA03-3-Heine-BorelMN.html#references">References</a></li>
-        <li><a href="CMA03-3-Heine-BorelMN.html#miscellaneousexamples">Miscellaneous Examples</a></li>
+	<li><a href="CMA03-4-PowerSeriesMN.html#3.7uniformityofconvergenceofpowerseries.">Uniform Convergence of Power Series</a></li>
+       <li><a href="CMA03-4-PowerSeriesMN.html#references.">References</a></li>
+        <li><a href="CMA03-4-PowerSeriesMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
     </li>
     <li><a href="whereOwhere.html">The Theory of Riemann Integration</a></li>

@@ -44,7 +44,7 @@ to consider uniformity of convergence of integrals and also uniformity of contin
 and <span class="math">\(z+\eta\)</span> is a point of the region. </p>
 
 <p>The function will be <em>uniformly</em> continuous if we can find a positive number <span class="math">\(\zeta\)</span> <em>independent</em> of <span class="math">\(z\)</span>, such that <span class="math">\(\zeta \leq \zeta_z\)</span> and <span class="math">\(\left|\, f(z +\eta )\right| < \epsilon\)</span> whenever <span class="math">\(0 < \eta< \zeta_z\)</span>
-and <span class="math">\(z+\eta\)</span> is a point of the region. , (in this case the set <span class="math">\((\zeta)_0\)</span> is the set of points whose moduli are less than <span class="math">\(\zeta\)</span>). </p>
+and <span class="math">\(z+\eta\)</span> is a point of the region, (in this case the set <span class="math">\((\zeta)_0\)</span> is the set of points whose moduli are less than <span class="math">\(\zeta\)</span>). </p>
 
 <p>We shall find later (<a href="#uniformityofcontinuity.">§3.61</a>) that continuity involves uniformity of continuity; this is
 in marked contradistinction to the fact that convergence does not involve uniformity
@@ -85,7 +85,7 @@ This process of bisection and selection gives an unending sequence of intervals
 
 <ol>
 <li>The length of <span class="math">\(s_n\)</span> is <span class="math">\(2^{-n} CD\)</span>.</li>
-<li>No point of <span class="math">\(s_{n+1}\)</span> is outside <span class="math">\(s_n\)</span> .</li>
+<li>No point of <span class="math">\(s_{n+1}\)</span> is outside <span class="math">\(s_n\)</span>.</li>
 <li>The interval <span class="math">\(s_n\)</span> does not satisfy condition (A).</li>
 </ol>
 
@@ -102,11 +102,11 @@ function <span class="math">\(f(x)\)</span> of a real variable <em>x</em> is con
 <p>For let <span class="math">\(\epsilon\)</span> be an arbitrary positive number; then, in virtue of the continuity of <span class="math">\(f(x)\)</span>, corresponding to any value of <em>x</em>, we can find a positive
 number <span class="math">\(\delta_x\)</span> depending on <em>x</em>, such that
 <span class="math">\[\left|\, f(x')-f(x) \right|< \frac{1}{4}\epsilon \]</span>
-for all values of <span class="math">\(x'\)</span> such that <span class="math">\(\left|\, x' - x \,\right| < \delta_x\)</span> . </p>
+for all values of <span class="math">\(x'\)</span> such that <span class="math">\(\left|\, x' - x \,\right| < \delta_x\)</span>. </p>
 
 <p>Then by <a href="#themodifiedheine-boreltheorem.">§3.6</a> we can divide the range <span class="math">\([a, b]\)</span> into a <em>finite</em> number of closed intervals with the property that in each interval there is a number <span class="math">\(x_1\)</span> such that <span class="math">\(\left|\, f(x') - f(x_1) \right| < \frac{1}{4}\epsilon\)</span>, whenever <span class="math">\(x'\)</span> lies in the interval in which <span class="math">\(x_1\)</span> lies. </p>
 
-<p>Let <span class="math">\(\delta_0\)</span> be the length of the smallest of these intervals; and let <span class="math">\(\xi, \, \xi'\)</span> be <em>any</em> two numbers in the closed range <span class="math">\([a, b]\)</span> such that <span class="math">\(\left| \xi - \xi' \right| < \delta_0\)</span> . Then <span class="math">\(\xi, \, \xi'\)</span> lie in the same or in adjacent intervals; if they lie in adjacent intervals let <span class="math">\(\xi_0\)</span> be the common end point. Then we can find numbers <span class="math">\(x_1, \, x_2\)</span> , one in each interval, such that
+<p>Let <span class="math">\(\delta_0\)</span> be the length of the smallest of these intervals; and let <span class="math">\(\xi, \, \xi'\)</span> be <em>any</em> two numbers in the closed range <span class="math">\([a, b]\)</span> such that <span class="math">\(\left| \xi - \xi' \right| < \delta_0\)</span>. Then <span class="math">\(\xi, \, \xi'\)</span> lie in the same or in adjacent intervals; if they lie in adjacent intervals let <span class="math">\(\xi_0\)</span> be the common end point. Then we can find numbers <span class="math">\(x_1, \, x_2\)</span>, one in each interval, such that
 <span class="math">\[
 \begin{align*}
 \left|\,f(\xi)-f(x_1)\right| < \frac{1}{4}\epsilon, \quad & \quad \left|\,f(\xi_0)-f(x_1)\right| < \frac{1}{4}\epsilon, \\
@@ -127,7 +127,7 @@ so that
 
 <p>In either case we have shewn that, for any number <span class="math">\(\xi\)</span> in the range, we have
 <span class="math">\[\left|\,f(\xi)-f(\xi+\zeta)\right|< \epsilon.\]</span>
-whenever <span class="math">\(\xi+\zeta\)</span> is in the range and <span class="math">\(-\zeta_0 < \zeta < \zeta_0\)</span> , where <span class="math">\(\zeta_0\)</span> is independent of <span class="math">\(\xi\)</span>.
+whenever <span class="math">\(\xi+\zeta\)</span> is in the range and <span class="math">\(-\zeta_0 < \zeta < \zeta_0\)</span>, where <span class="math">\(\zeta_0\)</span> is independent of <span class="math">\(\xi\)</span>.
 The <em>uniformity</em> of the continuity is therefore established. </p>
 
 <blockquote>
@@ -190,7 +190,7 @@ of <span class="math">\(\epsilon\)</span>, no matter how small, the lower bound 
 <span class="math">\[a \leq x_1 \leq x_2 \leq \cdots \leq x_n \leq b.\]</span></p>
 
 <p>Then
-<span class="math">\[\left|\, f(a) -f( x_1 ) \right| + \left|\, f(x_1) -f( x_2 ) \right| +  \cdots +\left|\, f(x_n) -f( b ) \right| + \]</span> is called the fluctuation of <span class="math">\(f(x)\)</span> in the range <span class="math">\([a, b]\)</span> for the set of subdivisions <span class="math">\(x_1, \, x_2, \, \cdots , \, x_n\)</span>. If the fluctuation have an upper bound <span class="math">\(F_a^{\,b}\)</span> , independent of <em>n</em>, for all choices of <span class="math">\(x_1, \, x_2, \, \cdots , \, x_n\)</span>, then <span class="math">\(f(x)\)</span> is said to have limited total fluctuation in the range
+<span class="math">\[\left|\, f(a) -f( x_1 ) \right| + \left|\, f(x_1) -f( x_2 ) \right| +  \cdots +\left|\, f(x_n) -f( b ) \right| + \]</span> is called the fluctuation of <span class="math">\(f(x)\)</span> in the range <span class="math">\([a, b]\)</span> for the set of subdivisions <span class="math">\(x_1, \, x_2, \, \cdots , \, x_n\)</span>. If the fluctuation have an upper bound <span class="math">\(F_a^{\,b}\)</span>, independent of <em>n</em>, for all choices of <span class="math">\(x_1, \, x_2, \, \cdots , \, x_n\)</span>, then <span class="math">\(f(x)\)</span> is said to have limited total fluctuation in the range
 <span class="math">\([a, b]\)</span>. <span class="math">\(F_a^{\,b}\)</span> is called the total fluctuation in the range. </p>
 
 <blockquote>
@@ -211,7 +211,7 @@ of <span class="math">\(\epsilon\)</span>, no matter how small, the lower bound 
 
 <p>[For <span class="math">\(\left|\,f(x')g(x') - f(x')g(x') \right|\)</span><span class="math">\(\;\leq \;\)</span><span class="math">\(\left|\,f(x')\right|\, \left|\,g(x') - g(x) \right|\)</span><span class="math">\(\;+\;\)</span><span class="math">\(\left|\,g(x)\right|\, \left|\,f(x') - f(x) \right|\)</span>
 and so the total fluctuation of <span class="math">\(f(x)g(x)\)</span> cannot exceed <span class="math">\(g F_a^{\, b} +f G_a^{\, b}\)</span>, where <span class="math">\(f,\, g\)</span> are the
-upper bounds of <span class="math">\(\left|\,f(x)\right|, \, \left|\,g(x)\right|\)</span> .] </p>
+upper bounds of <span class="math">\(\left|\,f(x)\right|, \, \left|\,g(x)\right|\)</span>.] </p>
 </blockquote>
 
 </div>
@@ -242,9 +242,9 @@ upper bounds of <span class="math">\(\left|\,f(x)\right|, \, \left|\,g(x)\right|
     <li><a href="CMA03-2-Uniformity.html#discussionofaparticulardoubleseries.">A Particular Double Series</a></li>
     <li class="current"><a href="#theconceptofuniformity.">The Concept of Uniformity</a></li>
     <li class="current"><a href="#themodifiedheine-boreltheorem.">The Modified Heine-Borel Theorem</a></li>
-    <li><a href="CMA03-4-PowerSeries.html#uniformconvergenceofpowerseries.">Uniform Convergence of Power Series</a></li>
-       <li><a href="CMA03-4-PowerSeries.html#references">References</a></li>
-        <li><a href="CMA03-4-PowerSeries.html#miscellaneousexamples">Miscellaneous Examples</a></li>
+    <li><a href="CMA03-4-PowerSeries.html#3.7uniformityofconvergenceofpowerseries.">Uniform Convergence of Power Series</a></li>
+       <li><a href="CMA03-4-PowerSeries.html#references.">References</a></li>
+        <li><a href="CMA03-4-PowerSeries.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
     </li>
     <li><a href="whereOwhere.html">The Theory of Riemann Integration</a></li>
@@ -356,11 +356,11 @@ upper bounds of <span class="math">\(\left|\,f(x)\right|, \, \left|\,g(x)\right|
 </div>
 
 <div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
-<p><a onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA04-1-Integration.html" style="float: right;">&#x25B6;</a></p>
+<p><a onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA03-4-PowerSeries.html" style="float: right;">&#x25B6;</a></p>
 </div>
 
 <div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
-<p><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA04-1-Integration.html" style="float: right;">&#x25B6;  </a></p>
+<p><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA03-4-PowerSeries.html" style="float: right;">&#x25B6;  </a></p>
 </div>
 
 <div class="footnotes">
@@ -420,7 +420,7 @@ upper bounds of <span class="math">\(\left|\,f(x)\right|, \, \left|\,g(x)\right|
 </li>
 
 <li id="fn:14">
-<p>The function is monotonic if <span class="math">\(\left.(\,f(x)-f(x')\,) \middle/ (x-x')\right.\)</span> is one-signed or zero for all pairs of different values of <span class="math">\(x\)</span> and <span class="math">\(x'\)</span> . <a href="#fnref:14" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p>The function is monotonic if <span class="math">\(\left.(\,f(x)-f(x')\,) \middle/ (x-x')\right.\)</span> is one-signed or zero for all pairs of different values of <span class="math">\(x\)</span> and <span class="math">\(x'\)</span>. <a href="#fnref:14" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:15">

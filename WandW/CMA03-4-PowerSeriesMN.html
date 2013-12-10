@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="latexinput" content="mmd-cambridge-header"/>
+	<title>A Course of Modern Analysis-PowerSeries 3-4</title>
+	<meta name="subtitle" content="An introduction to the general theory of
+infinite processes and analytic functions;
+with an account of the principal
+transcendental functions."/>
+	<meta name="author" content="E.T. Whittaker and G.N. Watson"/>
+	<meta name="editor" content="Eric Nitardy"/>
+	<meta name="date" content="Dec 4, 2013"/>
+	<meta name="titlefile" content="mmd-WandW-title"/>
+	<meta name="copyrightfile" content="mmd-WandW-copyright"/>
+	<meta name="test" content="And this is a new key-value pair"/>
+	<meta name="latexmode" content="memoir"/>
+	<meta name="latexinput" content="mmd-cambridge-begin-doc"/>
+	<meta name="latexfooter" content="mmd-cambridge-footer"/>
+	<link type="text/css" rel="stylesheet" href="css/documentation.css"/>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+<script type="text/javascript" src="js/showhide.js"></script>
+<script type="text/javascript" src="js/mathjaxend.js"></script>
+</head>
+<body>
+
+<div id="header"><h1><a href="CMA00-FrontMN.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
+<div id="content">
+<div class="contenttext">
+
+<h3 id="3.7uniformityofconvergenceofpowerseries.">3.7 Uniformity of convergence of power series.</h3>
+
+<p>Let the power series
+<span class="math">\[a_0+a_1z+ \cdots +a_nz^n+ \cdots\]</span>
+converge absolutely when <span class="math">\(z = z_0\)</span>. </p>
+
+<p>Then, if <span class="math">\(\left|\,z \,\right| \leq \left|\, z_0 \,\right|\)</span>,
+<span class="math">\[\left|a_n z^n \right| \leq \left|a_nz_0^n \right|.\]</span>
+But since <span class="math">\(\sum\limits_{n=0}^{\infty} \left|\,a_nz_0^n \right|\)</span> converges, it follows, by <a href="CMA03-2-UniformityMN.html#aconditionduetoweierstrassforuniformconvergence.">&#167;3.34</a>, that <span class="math">\(\sum\limits_{n=0}^{\infty} \left|\, a_nz^n \right|\)</span> converges uniformly with regard to the variable <span class="math">\(z\)</span> when <span class="math">\(\left|\,z \,\right| \leq \left|\,z_0 \, \right|\)</span>. </p>
+
+<p>Hence, by <a href="CMA03-2-UniformityMN.html#connexionofdiscontinuitywithnon-uniformconvergence.">&#167;3.32,</a> a power series is a continuous function of the variable
+throughout the closed region formed by the interior and boundary of any
+circle concentric with the circle of convergence and of smaller radius (<a href="CMA02-3-MoreSeriesMN.html#powerseries">&#167;2.6</a>). </p>
+
+<h4 id="abelstheoremoncontinuityuptothecircleofconvergence.">3.71 Abel&#8217;s theorem<a class="marginmark" onClick="toggleHide('mn:1,-7');">&#91;1&#93;</a> on continuity up to the circle of convergence.</h4>
+
+</div>
+<div class="marginnotes"  id="mn:1,-7"  style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;1&#93;</a><a href="http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0001"><em>Journal f&uuml;r Math.</em> <strong>i.</strong> (1826)</a>, pp. 311&#8211;339, Theorem <strong>iv.</strong> Abel&#8217;s proof employs directly the arguments by which the theorems of <a href="CMA03-2-Uniformity.html#connexionofdiscontinuitywithnon-uniformconvergence.">&#167;3.32</a> and <a href="CMA03-2-UniformityMN.html#hardystestsforuniformconvergence.">&#167;3.35</a> are proved. In the case when <span class="math">\(\\sum \left|\, a_n \,\right|\)</span> converges, the theorem is obvious from <a href="#3.7uniformityofconvergenceofpowerseries.">&#167;3.7</a>.<a onClick="hideIt('mn:1,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>Let <span class="math">\(\sum\limits_{n=0}^{\infty} a_n z^n\)</span> be a power series, whose radius of convergence is unity, and let it be such that <span class="math">\(\sum\limits_{n=0}^{\infty} a_n \)</span> converges; and let <span class="math">\(0 \leq x \leq 1\)</span>; then Abel&#8217;s theorem asserts that <span class="math">\(\lim\limits_{x \,\rightarrow 1} \left(\sum\limits_{n=0}^{\infty} a_n x^n \right)=\sum\limits_{n=0}^{\infty} a_n \)</span>. </p>
+
+<p>For, with the notation of <a href="CMA03-2-Uniformity.html#hardystestsforuniformconvergence.">&#167;3.35</a>, the function <span class="math">\(x^n\)</span> satisfies the conditions laid on <span class="math">\(u_n (x)\)</span>, when <span class="math">\(0 \leq x \leq 1\)</span>; consequently <span class="math">\(f(x) = \sum\limits_{n=0}^{\infty} a_n x^n\)</span> converges <em>uniformly</em> throughout the range <span class="math">\(0 \leq x \leq 1\)</span>; it is therefore, by <a href="CMA03-2-UniformityMN.html#connexionofdiscontinuitywithnon-uniformconvergence.">&#167;3.32</a>, a continuous
+function of <em>x</em> throughout the range, and so <span class="math">\(\lim\limits_{x \, \rightarrow 0} f(x) =f(1)\)</span>, which is the theorem stated. </p>
+
+<h4 id="abelstheoremonmultiplicationofseries.">3.72 Abel&#8217;s Theorem<a class="marginmark" onClick="toggleHide('mn:2,-7');">&#91;2&#93;</a> on Multiplication of Series.</h4>
+</div>
+<div class="marginnotes"  id="mn:2,-7"  style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;2&#93;</a><a href="http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0001"><em>Journal f&uuml;r Math.</em> <strong>i.</strong> (1826)</a>, pp. 311&#8211;339, Theorem <strong>vi.</strong> This is Abel&#8217;s original proof. In some text-books a more elaborate proof, by the use of Cesaro&#8217;s sums (<a href="whereOwhere.html">&#167;8.43</a>), is given.<a onClick="hideIt('mn:2,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>This is a modification of the theorem of <a href="CMA02-3-MoreSeriesMN.html#cauchymultiplication">&#167;2.53</a> for absolutely convergent
+series. </p>
+
+<p><em>Let <span class="math">\[c_n = a_0b_n + a_1b_{n-1}+ \cdots + a_nb_0.\]</span>
+Then the convergence of <span class="math">\(\sum\limits_{n=0}^{\infty} a_n,\: \sum\limits_{n=0}^{\infty} b_n \)</span> and <span class="math">\(\sum\limits_{n=0}^{\infty} c_n\)</span> is a sufficient condition that </em>
+<span class="math">\[\left(\sum\limits_{n=0}^{\infty} a_n \right) \left(\sum\limits_{n=0}^{\infty} b_n \right) = \sum\limits_{n=0}^{\infty} c_n.\]</span></p>
+
+<p>For, let
+<span class="math">\[A(x)=\sum\limits_{n=0}^{\infty} a_n x^n, \quad B(x)=\sum\limits_{n=0}^{\infty} b_n x^n, \quad C(x)=\sum\limits_{n=0}^{\infty} c_n x^n.\]</span>
+Then the series for <span class="math">\(A (x),\: B(x),\: C(x)\)</span> are absolutely convergent when
+<span class="math">\(\left|\, x\, \right| < 1\)</span>, (<a href="CMA02-3-MoreSeries.html#powerseries">&#167;2.6</a>); and consequently, by <a href="CMA02-3-MoreSeriesMN.html#cauchymultiplication">&#167;2.53</a>,
+<span class="math">\[A(x)=B(x)=C(x)\]</span>
+when <span class="math">\(0 < x < 1\)</span>; therefore, by <a href="CMA02-1-LimitsMN.html#monotonicex2">&#167;2.2 example 2</a>,
+<span class="math">\[\left\{ \lim_{x \rightarrow x-0} A(x)\right\}\left\{ \lim_{x \rightarrow x-0} B(x)\right\} = \left\{ \lim_{x \rightarrow x-0} C(x)\right\} \]</span>
+provided that these three limits exist; but, by <a href="#abelstheoremoncontinuityuptothecircleofconvergence.">&#167;3.71</a>, these three limits are <span class="math">\(\sum\limits_{n=0}^{\infty} a_n,\: \sum\limits_{n=0}^{\infty} b_n, \:\sum\limits_{n=0}^{\infty} c_n\)</span>; and the theorem is proved. </p>
+
+<h4 id="3.73powerserieswhichvanishidentically.">3.73 Power series which vanish identically.</h4>
+
+<p><em>If a convergent power series vanishes for all values of <span class="math">\(z\)</span> such that <span class="math">\(\left|\, z\,\right| < z_1\)</span>, where <span class="math">\(r_1 > 0\)</span>, then all the coefficients in the power series vanish.</em></p>
+
+<p>For, if not, let <span class="math">\(a_m\)</span> be the first coefficient which does not vanish. </p>
+
+<p>Then <span class="math">\(a_m +a_{m+1} z+a_{m+2} z^2 + \cdots\)</span> vanishes for all values of <span class="math">\(z\)</span> (zero excepted) and converges absolutely when <span class="math">\(\left| \,z\, \right| \leq r < r_1\)</span> (<a href="CMA02-3-MoreSeriesMN.html#powerseries">&#167;2.6</a>); hence, if <span class="math">\(s = a_{m+l} + a_{m+2} z +  \cdots \)</span>, we have
+<span class="math">\[\left|\, s \, \right| \leq \sum_{n=1}^{\infty} \,\left|\, a_{m+n}  \right|\, r^{n-1},\]</span>
+and so we can find<a class="marginmark" onClick="toggleHide('mn:3,-8');">&#91;3&#93;</a> a <em>positive number</em> <span class="math">\( \delta \leq r \)</span> &lt; r such that, whenever <span class="math">\(\left| \, z \,\right| \leq r \)</span>,
+<span class="math">\[\left|\, a_m +a_{m+1} z+a_{m+2} z^2 + \cdots \right| \leq \frac{1}{2}\left|\,a_m \right|;\]</span>
+and then <span class="math">\(\left|\,a_m + s\,\right|\geq \left|\, a_m \right|- \left|\,s\,\right| \geq \frac{1}{2} \left|\, a_m \right|\)</span>, and so <span class="math">\(\left|\,a_m + s\,\right| \neq 0 \)</span> when <span class="math">\(\left| \, z \,\right| \leq r \)</span>.
+We have therefore arrived at a contradiction by supposing that some coefficient does not vanish. Therefore all the coefficients vanish. </p>
+</div>
+<div class="marginnotes"  id="mn:3,-8"  style="margin-top: -8em; margin-bottom: -8em;"><a class="marginmark">&#91;3&#93;</a>It is sufficient to take <span class="math">\(\delta\)</span> to be the smaller of the numbers <span class="math">\(r\)</span> and <span class="math">\(\frac{1}{2}\left|\,a_m \right| \div \sum\limits_{n=1}^{\infty} \,\left|\, a_{m+n}  \right|\, r^{n-1} \)</span>.<a onClick="hideIt('mn:3,-8')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<blockquote>
+<p>Corollary 1. We may &#8216;equate corresponding coefficients&#8217; in two power series whose sums are equal throughout the region <span class="math">\(\left|\,z\, \right|< \delta\)</span>, where <span class="math">\(\delta > 0\)</span>. </p>
+</blockquote>
+
+<blockquote>
+<p>Corollary 2. We may also equate coefficients in two power series which are proved equal only when <span class="math">\(z\)</span> is real. </p>
+</blockquote>
+
+<h3 id="references.">References.</h3>
+
+<dl>
+<dt><span class="math">\(\,\)</span></dt>
+<dd>T. J. l&#8217;a. Bromwich, <a href="https://archive.org/details/anintroductiont00bromgoog"><em>Theory of Infinite Series</em> (1908)</a>, Ch. <strong>vii.</strong></dd>
+
+<dd>E. Goursat, <a href="https://archive.org/details/ed2coursdanalyse01gouruoft"><em>Cours d&#8217;Analyse</em></a> (Paris, 1910, 1911) Chs. <a href="https://archive.org/details/ed2coursdanalyse01gouruoft"><strong>i</strong></a>, <a href="https://archive.org/details/coursdanalysemat02gouruoft"><strong>xiv.</strong></a></dd>
+
+<dd>C. J. de la Vall&eacute;e Poussin (Louvain and Paris, 1914), <a href="#a"><em>Cours d&#8217;Analyse Infinit&eacute;simale</em></a>,
+Introduction and Ch. <strong>viii.</strong></dd>
+
+<dd>G. H. Hardy, <a href="#a"><em>A course of Pure Mathematics</em> (1914)</a>, Ch. <strong>v.</strong></dd>
+
+<dd>W. F. Osgood, <a href="https://archive.org/details/lehrbuchderfunk01osgogoog"><em>Lehrbuch der Funktionentheorie</em> (Leipzig, 1912)</a>, Chs. <strong>ii, iii.</strong></dd>
+
+<dd>G. N. Watson, <a href="https://archive.org/details/complexintegrat00watsrich"><em>Complex Integration and Cauchy&#8217;s Theorem</em> (Camb. Math. Tracts,
+No. 15), (1914)</a>, Chs. <strong>i, ii.</strong></dd>
+</dl>
+<div id="exercises">
+
+<h3 id="miscellaneousexamples.">Miscellaneous Examples.</h3>
+
+<ol>
+<li><p>Shew that the series <span class="math">\[\sum_{n=1}^{\infty}\frac{z^{n-1}}{(1-z^n)(1-z^{n+1})}\]</span> is equal to <span class="math">\(\displaystyle \frac{1}{(1-z)^2}\)</span> when <span class="math">\( \left|\, z\, \right| < 1\)</span> and is equal to <span class="math">\(\displaystyle \frac{1}{z(1-z)^2}\)</span> when <span class="math">\(\left|\, z\, \right| > 1\)</span>. Is this fact connected with the theory of uniform convergence ? </p></li>
+<li><p>Shew that the series <span class="math">\[2\sin \frac{1}{3z} + 4 \sin \frac{1}{9z} + \cdots + 2^n\sin \frac{1}{3^n z} + \cdots \]</span> converges absolutely for all values of <span class="math">\(z\)</span> (<span class="math">\(z = 0\)</span> excepted), but does not converge uniformly near <span class="math">\(z = 0\)</span>.</p></li>
+<li><p>If <span class="math">\[u_n(x)=-2(n-1)^2xe^{(n-1)^2 x^2} + 2n^2xe^{-n^2x^2},\]</span> shew that <span class="math">\(\sum\limits_{n=1}^{\infty} u_n(x)\)</span> does not converge uniformly near <span class="math">\(x=0\)</span>. (Math. Trip., 1907.)</p></li>
+<li><p>Shew that the series <span class="math">\(\displaystyle \frac{1}{\sqrt{1}} - \frac{1}{\sqrt{2}} + \frac{1}{\sqrt{3}} - \cdots\)</span> is convergent, but that its square (formed by Abel&#8217;s rule) <span class="math">\[\frac{1}{1} - \frac{2}{\sqrt{2}} +\left(\frac{2}{\sqrt{3}} + \frac{1}{2} \right) - \left(\frac{2}{\sqrt{4}} + \frac{2}{\sqrt{6}} \right) + \cdots\]</span> is divergent.</p></li>
+<li><p>If the convergent series <span class="math">\(\displaystyle s=\frac{1}{1^r}-\frac{1}{2^r}+\frac{1}{3^r}-\frac{1}{4^r}+ \cdots \;\;(r>0)\)</span> be multiplied by itself, the terms of the product being arranged as in Abel&#8217;s result, shew that the resulting series diverges if <span class="math">\(r \leq \frac{1}{2}\)</span> but converges to the sum <span class="math">\(s^2\)</span> if <span class="math">\(r > \frac{1}{2}\)</span>. (Cauchy and Cajori.) </p></li>
+<li><p>If the two conditionally convergent series <span class="math">\[\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^r}\,\text{ and }\, \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^s},\]</span> where <em>r</em> and <em>s</em> lie between 0 and 1, be multiplied together, and the product arranged as in Abel&#8217;s result, shew that the necessary and sufficient condition for the convergence of the resulting series is <span class="math">\(r + s > 1\)</span>. (Cajori.)</p></li>
+<li><p>Shew that if the series <span class="math">\(1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7} + \cdots \)</span> be multiplied by itself any number of times, the terms of the product being arranged as in Abel&#8217;s result, the resulting series converges. (Cajori.)</p></li>
+<li><p>Shew that the <em>q</em>th power of the series <span class="math">\[a_1\sin \theta+a_2 \sin 2\theta + \cdots + a_n \sin n\theta + \cdots\]</span> is convergent whenever <span class="math">\(q (1 - r)< 1\)</span>, <em>r</em> being the greatest number satisfying the relation <span class="math">\[a_n \leq n^{-r}\]</span> for all values of <em>n</em>.</p></li>
+<li><p>Shew that if <span class="math">\(\theta\)</span> is not equal to 0 or a multiple of <span class="math">\(2\pi\)</span>, and if <span class="math">\(u_0,\, u_1,\, u_2,\, \dots \)</span> be a sequence such that <span class="math">\(u_n \rightarrow 0\)</span> steadily, then the series <span class="math">\(\sum  u_n \cos(n\theta + \phi) \)</span> is convergent.
+Shew also that, if the limit of <span class="math">\(u_n\)</span> is not zero, but <span class="math">\(u_n\)</span> is still monotonic, the sum of the series is oscillatory if <span class="math">\(\left.\theta \middle/\pi \right.\)</span> is rational, but that, if <span class="math">\(\left.\theta \middle/\pi \right.\)</span> is irrational, the sum may have any value between certain bounds whose difference is <span class="math">\(a \csc \frac{1}{2}\theta\)</span>, where <span class="math">\(a= \lim\limits_{n \rightarrow \infty} u_n\)</span>. (Math. Trip., 1896.)</p></li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="footer">
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
+<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+</div>
+
+<div id="navunicont" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navfront');">FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
+  <ul>
+    <li class="more"><a onClick="hideIt('navunicont');showIt('navprocesses');"> more . . . </a></li>
+    <li><a href="CMA02-1-LimitsMN.html#thetheoryofconvergence">The Theory of Convergence</a></li>
+    <li><a href="CMA03-1-ContinuousFnsMN.html#continuousfunctionsanduniformconvergence">Continuity and Uniform Convergence</a>
+      <ul>
+        <li><a href="CMA03-1-ContinuousFnsMN.html#thedependenceofonecomplexnumberonanother">Functions of a Complex Variable</a></li>
+        <li><a href="CMA03-1-ContinuousFnsMN.html#continuityoffunctionsofrealvariables">Continuity of Functions of Real Variables</a></li>
+    <li><a href="CMA03-2-UniformityMN.html#seriesofvariableterms.uniformityofconvergence.">Uniformity of Convergence</a></li>
+    <li><a href="CMA03-2-UniformityMN.html#discussionofaparticulardoubleseries.">A Particular Double Series</a></li>
+    <li><a href="CMA03-3-Heine-BorelMN.html#theconceptofuniformity.">The Concept of Uniformity</a></li>
+    <li><a href="CMA03-3-Heine-BorelMN.html#themodifiedheine-boreltheorem.">The Modified Heine-Borel Theorem</a></li>
+    <li class="current"><a href="#3.7uniformityofconvergenceofpowerseries.">Uniform Convergence of Power Series</a></li>
+       <li class="current"><a href="#references.">References</a></li>
+        <li class="current"><a href="#miscellaneousexamples.">Miscellaneous Examples</a></li>
+      </ul>
+    </li>
+    <li><a href="whereOwhere.html">The Theory of Riemann Integration</a></li>
+    <li class="more"><a onClick="hideIt('navunicont');showIt('navprocesses');"> more . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navfront" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a>FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-FrontMN.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-FrontMN.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-FrontMN.html#preface">Preface</a></li>
+    <li><a href="CMA00-FrontMN.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navunicont');hideIt('navfront');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navprocesses" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
+<li class="part"><a>PROCESSES OF ANALYSIS</a>
+  <ul >
+    <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
+    <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
+     <li><a href="#" onClick="showIt('navunicont');hideIt('navprocesses');">Continuity and Uniform Convergence</a></li>
+     <li class="more current"><a onClick="showIt('navunicont');hideIt('navprocesses');"> you are here . . . </a></li>
+     <li><a href="whereOwhere.html">The Theory of Riemann Integration</a></li>
+     <li class="notdone"><a href="whereOwhere.html">The Properties of Analytic Functions</a></li>
+     <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navtranscendental" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
+<ul>
+    <li class="more current"><a onClick="showIt('navunicont');hideIt('navtranscendental');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
+  <ul>
+    <li class="notdone"><a href="whereOwhere.html">The Gamma Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Zeta Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Legendre Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Bessel Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Mathieu Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lam&eacute;&#8217;s Equation</a></li> 
+  </ul>
+  </li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navback" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navunicont');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a>BACKMATTER</a>
+  <ul >
+    <li ><a href="whereOwhere.html">Appendix</a></li>
+    <li ><a href="whereOwhere.html">Authors Quoted</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfixedleft" class="fixedBleft">
+<p><a href="CMA03-3-Heine-BorelMN.html">&#x25C0;</a></p>
+</div>
+
+<div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
+<p><a onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA04-1-IntegrationMN.html" style="float: right;">&#x25B6;</a></p>
+</div>
+
+<div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
+<p><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA04-1-IntegrationMN.html" style="float: right;">&#x25B6;    </a></p>
+</div>
+
+</body>
+</html>

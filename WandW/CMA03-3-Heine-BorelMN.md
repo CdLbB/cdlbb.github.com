@@ -26,7 +26,7 @@ HTML header:	<script type="text/javascript"
 <div markdown=1 id="content">
 <div markdown=1 class="contenttext">
 
-###3.5 The concept of uniformity. ###
+###3.5 The concept of uniformity. [theconceptofuniformity.]###
 
 There are processes other than that of summing a series in which the idea 
 of uniformity is of importance. 
@@ -42,13 +42,13 @@ Further, a function \\(f(z)\\) is continuous in a closed region if, given \\(\ep
 and \\(z+\eta\\) is a point of the region. 
 
 The function will be *uniformly* continuous if we can find a positive number \\(\zeta\\) *independent* of \\(z\\), such that \\(\zeta \leq \zeta_z\\) and  \\(\left|\, f(z +\eta )\right| < \epsilon\\) whenever \\(0 < \eta< \zeta_z\\) 
-and \\(z+\eta\\) is a point of the region. , (in this case the set \\((\zeta)_0\\)  is the set of points whose moduli are less than \\(\zeta\\)). 
+and \\(z+\eta\\) is a point of the region, (in this case the set \\((\zeta)_0\\)  is the set of points whose moduli are less than \\(\zeta\\)). 
 
 We shall find later ([&#167;3.61](#uniformityofcontinuity.)) that continuity involves uniformity of continuity; this is 
 in marked contradistinction to the fact that convergence does not involve uniformity 
 of convergence. 
 
-###3.6 The modified Heine-Borel theorem. ###
+###3.6 The modified Heine-Borel theorem. [themodifiedheine-boreltheorem.]###
 
 The following theorem is of great importance in connexion with properties 
 of uniformity; we give a proof for a one-dimensional closed region.<a class="marginmark" onClick="toggleHide('mn:1,-13');">&#91;1&#93;</a> 
@@ -154,7 +154,7 @@ This process of bisection and selection gives an unending sequence of intervals
 \\(s_0 , s_1, s_2 , \dots \\) such that:
 
 1. The length of \\(s_n\\) is \\(2^{-n} CD\\). 
-2. No point of \\(s_{n+1}\\) is outside \\(s_n\\) . 
+2. No point of \\(s_{n+1}\\) is outside \\(s_n\\). 
 3. The interval \\(s_n\\)  does not satisfy condition (A). 
 
 Let the distances of the end points of \\(s_n\\) from *C* be \\(x_n ,\, y_n \\); then 
@@ -186,7 +186,7 @@ In the two-dimensional form of the theorem<a class="marginmark" onClick="toggleH
 
 <div markdown=1 class="contenttext">
 
-####3.61 Uniformity of continuity.####
+####3.61 Uniformity of continuity.[uniformityofcontinuity.]####
 
 From the theorem just proved, it follows without difficulty that if a 
 function \\(f(x)\\) of a real variable *x* is continuous when \\(a \leq x \leq b\\), then \\(f(x)\\) is *uniformly* continuous<a class="marginmark" onClick="toggleHide('mn:9,-2');">&#91;9&#93;</a> throughout the range \\(a \leq x \leq b\\). 
@@ -206,11 +206,11 @@ function \\(f(x)\\) of a real variable *x* is continuous when \\(a \leq x \leq b
 For let \\(\epsilon\\) be an arbitrary positive number; then, in virtue of the continuity of \\(f(x)\\), corresponding to any value of *x*, we can find a positive 
 number \\(\delta_x\\) depending on *x*, such that 
 \\[\left|\, f(x')-f(x) \right|< \frac{1}{4}\epsilon \\] 
-for all values of \\(x'\\) such that \\(\left|\, x' - x \,\right| < \delta_x\\) . 
+for all values of \\(x'\\) such that \\(\left|\, x' - x \,\right| < \delta_x\\). 
 
 Then by [&#167;3.6](#themodifiedheine-boreltheorem.) we can divide the range \\([a, b]\\) into a *finite* number of closed intervals with the property that in each interval there is a number \\(x_1\\) such that \\(\left|\, f(x') - f(x_1) \right| < \frac{1}{4}\epsilon\\), whenever \\(x'\\) lies in the interval in which \\(x_1\\) lies. 
 
-Let \\(\delta_0\\) be the length of the smallest of these intervals; and let \\(\xi, \, \xi'\\) be *any* two numbers in the closed range \\([a, b]\\) such that \\(\left| \xi - \xi' \right| < \delta_0\\) . Then \\(\xi, \, \xi'\\) lie in the same or in adjacent intervals; if they lie in adjacent intervals let \\(\xi_0\\) be the common end point. Then we can find numbers \\(x_1, \, x_2\\) , one in each interval, such that
+Let \\(\delta_0\\) be the length of the smallest of these intervals; and let \\(\xi, \, \xi'\\) be *any* two numbers in the closed range \\([a, b]\\) such that \\(\left| \xi - \xi' \right| < \delta_0\\). Then \\(\xi, \, \xi'\\) lie in the same or in adjacent intervals; if they lie in adjacent intervals let \\(\xi_0\\) be the common end point. Then we can find numbers \\(x_1, \, x_2\\), one in each interval, such that
 \\[
 \begin{align*}
 \left|\,f(\xi)-f(x_1)\right| < \frac{1}{4}\epsilon, \quad & \quad \left|\,f(\xi_0)-f(x_1)\right| < \frac{1}{4}\epsilon, \\
@@ -231,7 +231,7 @@ If \\(\xi, \, \xi'\\) lie in the same interval, we can prove similarly that
 
 In either case we have shewn that, for any number \\(\xi\\)  in the range, we have 
 \\[\left|\,f(\xi)-f(\xi+\zeta)\right|< \epsilon.\\]
-whenever \\(\xi+\zeta\\) is in the range and \\(-\zeta_0 < \zeta < \zeta_0\\) , where \\(\zeta_0\\) is independent of \\(\xi\\). 
+whenever \\(\xi+\zeta\\) is in the range and \\(-\zeta_0 < \zeta < \zeta_0\\), where \\(\zeta_0\\) is independent of \\(\xi\\). 
 The *uniformity* of the continuity is therefore established. 
 
 >*Corollary* 1. From the two-dimensional form of the theorem of [&#167;3.6](#themodifiedheine-boreltheorem.) we can prove that a function of a complex variable, continuous at all points of a closed region of the Argand diagram, is uniformly continuous throughout that region. 
@@ -264,7 +264,7 @@ The *uniformity* of the continuity is therefore established.
 >
 >The corresponding theorem for functions of complex variables is left to the reader. 
 
-####3.62 A real function, of a real variable, continuous in a closed interval, attains its upper bound. ####
+####3.62 A real function, of a real variable, continuous in a closed interval, attains its upper bound. [arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.]####
 
 Let \\(f(x)\\) be a real continuous function of *x* when \\(a \leq x \leq b\\). Form a 
 section in which the *R*-class consists of those numbers  *r* such that \\(r > f(x)\\) for all values of *x* in the range \\([a, b]\\), and the *L*-class of all other numbers. 
@@ -291,7 +291,7 @@ range; but since \\(\left|\,f(x)-\alpha\right|\\) is continuous at all points of
 >*Corollary* 2. If \\(f(z)\\) be a function of a complex variable continuous in 
 a closed region, \\(\left|\, f(z) \right|\\) attains its upper bound. 
 
-####3.63 A real function, of a real variable, continuous in a closed interval, attains all values between its upper and lower bounds. ####
+####3.63 A real function, of a real variable, continuous in a closed interval, attains all values between its upper and lower bounds. [arealfunctionofarealvariablecontinuousinaclosedintervalattainsallvaluesbetweenitsupperandlowerbounds.]####
 
 Let \\(M,\, m\\) be the upper and lower bounds of \\(f(x)\\); then we can find numbers \\(\underline{x}, \,\overline{x}\\), by [&#167;3.62](#arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.), such that  \\(f(\overline{x}) = M,\,f(\underline{x}) = m\\); let \\(\mu\\) be any number such that \\(m < \mu < M\\). Given any positive number \\(\epsilon\\), we can (by [&#167;3.61](#uniformityofcontinuity.)) divide the range \\([\underline{x},\, \overline{x}]\\) into a finite number, *r*, of closed intervals such that 
 \\[\left|\,f(x_1^{(r)}) -f(x_2^{(r)}) \right| < \epsilon,\\] 
@@ -332,7 +332,7 @@ Let \\(f(x)\\) be a real bounded function, defined when \\(a \leq x \leq b\\). L
 \\[a \leq x_1 \leq x_2 \leq \cdots \leq x_n \leq b.\\]
  
 Then 
-\\[\left|\, f(a) -f( x_1 ) \right| + \left|\, f(x_1) -f( x_2 ) \right| +  \cdots +\left|\, f(x_n) -f( b ) \right| + \\] is called the fluctuation of \\(f(x)\\) in the range \\([a, b]\\) for the set of subdivisions \\(x_1, \, x_2, \, \cdots , \, x_n\\). If the fluctuation have an upper bound \\(F_a^{\,b}\\) , independent of *n*, for all choices of  \\(x_1, \, x_2, \, \cdots , \, x_n\\), then \\(f(x)\\) is said to have limited total fluctuation in the range 
+\\[\left|\, f(a) -f( x_1 ) \right| + \left|\, f(x_1) -f( x_2 ) \right| +  \cdots +\left|\, f(x_n) -f( b ) \right| + \\] is called the fluctuation of \\(f(x)\\) in the range \\([a, b]\\) for the set of subdivisions \\(x_1, \, x_2, \, \cdots , \, x_n\\). If the fluctuation have an upper bound \\(F_a^{\,b}\\), independent of *n*, for all choices of  \\(x_1, \, x_2, \, \cdots , \, x_n\\), then \\(f(x)\\) is said to have limited total fluctuation in the range 
 \\([a, b]\\).  \\(F_a^{\,b}\\)  is called the total fluctuation in the range. 
 
 >*Example* 1. If \\(f(x)\\) be monotonic<a class="marginmark" onClick="toggleHide('mn:14,-4');">&#91;14&#93;</a> in the range \\([a, b]\\), its total fluctuation in the range is \\(\left|\, f(a) -f(b ) \right|\\). 
@@ -341,7 +341,7 @@ Then
 
 
 
-<div markdown=1 class="marginnotes" id="mn:14,-4" style="margin-top: -4em; margin-bottom: -4em;"><a class="marginmark">&#91;14&#93;</a>The function is monotonic if \\(\left.(\,f(x)-f(x')\,) \middle/ (x-x')\right.\\) is one-signed or zero for all pairs of different values of \\(x\\) and \\(x'\\) .<a onClick="hideIt('mn:14,-4')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:14,-4" style="margin-top: -4em; margin-bottom: -4em;"><a class="marginmark">&#91;14&#93;</a>The function is monotonic if \\(\left.(\,f(x)-f(x')\,) \middle/ (x-x')\right.\\) is one-signed or zero for all pairs of different values of \\(x\\) and \\(x'\\).<a onClick="hideIt('mn:14,-4')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -371,7 +371,7 @@ Then
 >
 >[For \\(\left|\,f(x')g(x') - f(x')g(x') \right|\\)\\(\;\leq \;\\)\\(\left|\,f(x')\right|\, \left|\,g(x') - g(x) \right|\\)\\(\;+\;\\)\\(\left|\,g(x)\right|\, \left|\,f(x') - f(x) \right|\\)
 and so the total fluctuation of \\(f(x)g(x)\\) cannot exceed \\(g F_a^{\, b} +f G_a^{\, b}\\), where \\(f,\, g\\) are the 
-upper bounds of \\(\left|\,f(x)\right|, \, \left|\,g(x)\right|\\) .] 
+upper bounds of \\(\left|\,f(x)\right|, \, \left|\,g(x)\right|\\).] 
 
 
 </div>
@@ -408,9 +408,9 @@ upper bounds of \\(\left|\,f(x)\right|, \, \left|\,g(x)\right|\\) .]
 	<li><a href="CMA03-2-UniformityMN.html#discussionofaparticulardoubleseries.">A Particular Double Series</a></li>
 	<li class="current"><a href="#theconceptofuniformity.">The Concept of Uniformity</a></li>
 	<li class="current"><a href="#themodifiedheine-boreltheorem.">The Modified Heine-Borel Theorem</a></li>
-	<li><a href="CMA03-4-PowerSeriesMN.html#uniformconvergenceofpowerseries.">Uniform Convergence of Power Series</a></li>
-       <li><a href="CMA03-4-PowerSeriesMN.html#references">References</a></li>
-        <li><a href="CMA03-4-PowerSeriesMN.html#miscellaneousexamples">Miscellaneous Examples</a></li>
+	<li><a href="CMA03-4-PowerSeriesMN.html#3.7uniformityofconvergenceofpowerseries.">Uniform Convergence of Power Series</a></li>
+       <li><a href="CMA03-4-PowerSeriesMN.html#references.">References</a></li>
+        <li><a href="CMA03-4-PowerSeriesMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
     </li>
     <li><a href="whereOwhere.html">The Theory of Riemann Integration</a></li>
@@ -528,9 +528,9 @@ upper bounds of \\(\left|\,f(x)\right|, \, \left|\,g(x)\right|\\) .]
 </div>
 
 <div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
-<p><a onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA04-1-IntegrationMN.html" style="float: right;">&#x25B6;</a></p>
+<p><a onClick="showIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA03-4-PowerSeriesMN.html" style="float: right;">&#x25B6;</a></p>
 </div>
 
 <div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
-<p><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA04-1-IntegrationMN.html" style="float: right;">&#x25B6;	</a></p>
+<p><a onClick="hideIt('navunicont');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA03-4-PowerSeriesMN.html" style="float: right;">&#x25B6;	</a></p>
 </div>

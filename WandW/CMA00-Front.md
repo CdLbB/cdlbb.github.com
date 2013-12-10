@@ -231,8 +231,8 @@ April, 2012.
 	  <li>3.5 <a href="CMA03-3-Heine-Borel.html#theconceptofuniformity.">The Concept of Uniformity</a></li>
 	  <li>3.6 <a href="CMA03-3-Heine-Borel.html#themodifiedheine-boreltheorem.">The Modified Heine-Borel Theorem</a></li>
 	  <li>3.7 <a href="CMA03-4-PowerSeries.html#3.7uniformityofconvergenceofpowerseries.">Uniformity of Convergence of Power Series</a></li>
-         <li><a href="CMA03-4-PowerSeries.html#references">References</a>
-         <li><a href="CMA03-4-PowerSeries.html#miscellaneousexamples">Miscellaneous Examples</a></li>
+         <li><a href="CMA03-4-PowerSeries.html#references.">References</a>
+         <li><a href="CMA03-4-PowerSeries.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ol>
 </li>
     <li class="notdone"><a href="whereOwhere.html">The Theory of Reimann Integration</a></li>
