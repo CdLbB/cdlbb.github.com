@@ -25,7 +25,7 @@ HTML header:	<script type="text/javascript"
 <div markdown=1 id="content">
 <div markdown=1 class="contenttext">
 
-### 2.4 Effect of Changing the Order of Terms in a Series ###
+### 2.4 Effect of Changing the Order of Terms in a Series [effectofchangingtheorderoftermsinaseries]###
 
 In an ordinary sum the order of the terms is of no importance, for it can be varied without affecting the result of the addition. In an infinite series, however, this is no longer the case<a class="marginmark" onClick="toggleHide('mn:1,-7');">&#91;1&#93;</a>, as will appear from the following example.
 
@@ -69,7 +69,7 @@ and so the derangement of the terms of \\(S\\) has altered is sum.
 
 
 
-#### 2.41 The fundamental property of absolutely convergent series ####
+#### 2.41 The fundamental property of absolutely convergent series [thefundamentalpropertyofabsolutelyconvergentseries]####
 
 We shall shew that the sum of an absolutely convergent series is *not* affected by changing the order in which the terms occur.
 
@@ -239,7 +239,7 @@ And therefore, since \\(\lim\limits_{\nu \rightarrow \infty} S_{\mu,\nu}\\) exis
 \\[ \left|\, \sum_{p=1}^{\mu} S_p - S\,\right| \leq \epsilon , \textrm{ when } \mu > m ,\\]
 and so ([&#167;2.22](CMA02-1-LimitsMN.html#cauchy)) the sum by rows converges to \\(S\\). In like manner, the sum by columns converges to \\(S\\).
 
-#### 2.52 Absolutely convergent double series ####
+#### 2.52 Absolutely convergent double series [absolutelyconvergentdoubleseries]####
 
 We can prove the analogue of [&#167;2.41](#thefundamentalpropertyofabsolutelyconvergentseries) for double series, namely that *if the terms of an absolutely convergent double series are taken in any order as a simple series, their sum tends to the same limit, provided that every term occurs in the summation.*
 
@@ -406,7 +406,7 @@ whose radius of convergence is unity, converges or diverges at the point \\(z = 
 >Corollary. If \\((a_n)\\) be a sequence of positive terms such that \\(\lim(a_{n + 1} /a_n )\\) exists, this limit is equal to \\(\varliminf a^{1/n}\\). 
 
 
-#### 2.61 Convergence of series derived from a power-series ####
+#### 2.61 Convergence of series derived from a power-series [convergenceofseriesderivedfromapower-series]####
 
 Let 
 \\[a_0 + a_1 z + a_2 z^2 + a_3 z^3 + a_4 z^4 + \dots \\]
