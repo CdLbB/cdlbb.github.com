@@ -266,8 +266,7 @@ The *uniformity* of the continuity is therefore established.
 
 ####3.62 A real function, of a real variable, continuous in a closed interval, attains its upper bound. [arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.]####
 
-Let \\(f(x)\\) be a real continuous function of *x* when \\(a \leq x \leq b\\). Form a 
-section in which the *R*-class consists of those numbers  *r* such that \\(r > f(x)\\) for all values of *x* in the range \\([a, b]\\), and the *L*-class of all other numbers. 
+Let \\(f(x)\\) be a real continuous function of *x* when \\(a \leq x \leq b\\). Form a section in which the *R*-class consists of those numbers  *r* such that \\(r > f(x)\\) for all values of *x* in the range \\([a, b]\\), and the *L*-class of all other numbers. 
 This section defines a number \\(\alpha\\) such that \\(f(x) \leq \alpha\\), but, if \\(\delta\\) be *any* positive number, values of *x* in the range exist such that \\(f(x) > \alpha - \delta\\). Then \\(\alpha\\) is called the *upper bound*<a class="marginmark" onClick="toggleHide('mn:11,-4');">&#91;11&#93;</a> of \\(f(x)\\); and the theorem states that a number \\(x'\\) in the range can be found such that \\(f(x') = \alpha \\). 
 
 </div>
@@ -282,9 +281,7 @@ This section defines a number \\(\alpha\\) such that \\(f(x) \leq \alpha\\), but
 
 <div markdown=1 class="contenttext">
 
-For, no matter how small (\delta\\) may be, we can find values of *x* for which 
-\\(\left|\,f(x)-\alpha\right|^{-1} > \delta^{-1}\\); therefore \\(\left|\,f(x)-\alpha\right|^{-1}\\) is not bounded in the range; therefore ([&#167;3.61 *corollary* 2](#continuousisbounded)) it is not continuous at some point or points of the 
-range; but since \\(\left|\,f(x)-\alpha\right|\\) is continuous at all points of the range, its reciprocal is continuous at all points of the range ([&#167;3.2 example](CMA03-1-ContinuousFnsMN.html#continuousexamples)) except those points at which \\(f(x) = \alpha\\); therefore \\(f(x) = \alpha\\) at some point of the range; the theorem is therefore proved. 
+For, no matter how small \\(\delta\\) may be, we can find values of *x* for which \\(\left|\,f(x)-\alpha \,\right|^{-1} > \delta^{-1}\\); therefore \\(\left|\,f(x)-\alpha \,\right|^{-1}\\) is not bounded in the range; therefore ([&#167;3.61 *corollary* 2](#continuousisbounded)) it is not continuous at some point or points of the range; but since \\(\left|\,f(x)-\alpha \,\right|\\) is continuous at all points of the range, its reciprocal is continuous at all points of the range ([&#167;3.2 example](CMA03-1-ContinuousFnsMN.html#continuousexamples)) except those points at which \\(f(x) = \alpha\\); therefore \\(f(x) = \alpha\\) at some point of the range; the theorem is therefore proved. 
 
 >######*Corollary* 1. The lower bound of a continuous function may be defined in a similar manner; and a continuous function attains its lower bound. [attainslowerbound]######
 
