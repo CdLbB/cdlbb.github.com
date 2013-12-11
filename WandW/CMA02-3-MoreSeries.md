@@ -248,8 +248,9 @@ Therefore every term in the series \\(\sum\limits_{n=0}^{\infty} a_n z^n\\) is l
 \\[\sum_{n=0}^{\infty}M\left|\frac{z}{z_0}\right|^n ;\\]
 the series is therefore convergent; and so the power-series is *absolutely* convergent, as the series of moduli of its terms is a convergent series; the result stated is therefore established.
 
-Let \\(\varliminf \left|a_n \right|^{-1/n}=r\\); then, from [§2.35](CMA02-2-Series.html#cauchystest), \\(\sum\limits_{n=0}^{\infty} a_n z^n\\) converges absolutely when \\(\left|\,z\,\right|< r\\); if \\(\left|\,z\,\right|> r\\), \\(a_n z^n\\) does not tend to zero and so \\(\sum\limits_{n=0}^{\infty} a_n z^n\\) diverges ([§2.3](CMA02-2-Series.html#convergenceofaninfiniteseries)). 
-The circle \\(\left|\,z\,\right|=r\\), which includes all the values of z for which the power-series 
+Let \\(\varliminf \left|a_n \right|^{-1/n}=r\\); then, from [§2.35](CMA02-2-Series.html#cauchystest), 
+\\(\sum\limits_{n=0}^{\infty} a_n z^n\\) converges absolutely when \\(\left|\,z\,\right|< r\\); if \\(\left|\,z\,\right|> r\\), \\(a_n z^n\\) does not tend to zero and so \\(\sum\limits_{n=0}^{\infty} a_n z^n\\) diverges ([§2.3](CMA02-2-Series.html#convergenceofaninfiniteseries)). 
+The circle \\(\left|\,z\,\right|=r\\), which includes all the values of \\(z\\) for which the power-series 
 \\[a_0+a_1z+a_2z^2+a_3z^3+ \dots \\]
 converges[^CircleClarify,-3], is called the *circle of convergence* of the series. The radius of the circle is called the *radius of convergence*.
 
@@ -290,7 +291,8 @@ For let \\(z\\) be a point within the circle of convergence of the power-series;
 Then the terms of the series \\(\sum\limits_{n=1}^{\infty} n\, \left|\,a_n \,\right| \left|\,z \,\right|^{n-1}\\) are less than the corresponding terms of the series
 \\[ \frac{M}{r_1}\sum_{n=1}^{\infty}\frac{n\, \left|\,z \,\right|^{n-1}}{r_1^{\,n-1}} .\\]
 
-But this series converges, by [§2.36](CMA02-2-Series.html#ratiotest), since \\(\left|\,z \,\right| < r_1\\). Therefore, by [§2.34](CMA02-2-Series.html#thecomparisontheorem), the series 
+But this series converges, by [§2.36](CMA02-2-Series.html#ratiotest), 
+since \\(\left|\,z \,\right| < r_1\\). Therefore, by [§2.34](CMA02-2-Series.html#thecomparisontheorem), the series 
 \\[ \sum_{n=1}^{\infty} n\, \left|\,a_n \,\right| \left|\,z \,\right|^{n-1}\\]
 converges; that is, the series \\(\sum\limits_{n=1}^{\infty} n a_n z^{n-1}\\) converges absolutely for all points \\(z\\) situated within the circle of convergence of the original series \\(\sum\limits_{n=0}^{\infty} a_n z^{n}\\). When \\(\left|\,z \,\right|>r\\), \\(a_n z^n\\) does not tend to zero, and *a fortiori* \\(na_n z^{n}\\) does not tend to zero; and so the two series have the same circle of convergence. 
 

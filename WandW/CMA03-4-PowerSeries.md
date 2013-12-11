@@ -42,11 +42,12 @@ circle concentric with the circle of convergence and of smaller radius ([§2.6](
 
 ####3.71 Abel's theorem[^abelscircle,-1] on continuity up to the circle of convergence. [abelstheoremoncontinuityuptothecircleofconvergence.] ####
 
-[^abelscircle,-1]: [*Journal für Math.* **i.** (1826)](http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0001), pp. 311-339, Theorem **iv.** Abel's proof employs directly the arguments by which the theorems of [§3.32](CMA03-2-Uniformity.html#connexionofdiscontinuitywithnon-uniformconvergence.) and [§3.35](CMA03-2-Uniformity.html#hardystestsforuniformconvergence.) are proved. In the case when \\(\\sum \left|\, a_n \,\right|\\) converges, the theorem is obvious from [§3.7](#3.7uniformityofconvergenceofpowerseries.).
+[^abelscircle,-1]: [*Journal für Math.* **i.** (1826)](http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0001), pp. 311-339, Theorem **iv.** Abel's proof employs directly the arguments by which the theorems of [§3.32](CMA03-2-UniformityMN.html#connexionofdiscontinuitywithnon-uniformconvergence.) and [§3.35](CMA03-2-Uniformity.html#hardystestsforuniformconvergence.) are proved. In the case when \\(\sum \left|\, a_n \,\right|\\) converges, the theorem is obvious from [§3.7](#3.7uniformityofconvergenceofpowerseries.).
 
 Let \\(\sum\limits_{n=0}^{\infty} a_n z^n\\) be a power series, whose radius of convergence is unity, and let it be such that \\(\sum\limits_{n=0}^{\infty} a_n \\)  converges; and let \\(0 \leq x \leq 1\\); then Abel's theorem asserts that \\(\lim\limits_{x \,\rightarrow 1} \left(\sum\limits_{n=0}^{\infty} a_n x^n \right)=\sum\limits_{n=0}^{\infty} a_n \\). 
 
-For, with the notation of [§3.35](CMA03-2-Uniformity.html#hardystestsforuniformconvergence.), the function \\(x^n\\)  satisfies the conditions laid on \\(u_n (x)\\), when \\(0 \leq x \leq 1\\); consequently \\(f(x) = \sum\limits_{n=0}^{\infty} a_n x^n\\)  converges *uniformly* throughout the range \\(0 \leq x \leq 1\\); it is therefore, by [§3.32](CMA03-2-Uniformity.html#connexionofdiscontinuitywithnon-uniformconvergence.), a continuous 
+For, with the notation of [§3.35](CMA03-2-Uniformity.html#hardystestsforuniformconvergence.), 
+the function \\(x^n\\)  satisfies the conditions laid on \\(u_n (x)\\), when \\(0 \leq x \leq 1\\); consequently \\(f(x) = \sum\limits_{n=0}^{\infty} a_n x^n\\)  converges *uniformly* throughout the range \\(0 \leq x \leq 1\\); it is therefore, by [§3.32](CMA03-2-Uniformity.html#connexionofdiscontinuitywithnon-uniformconvergence.), a continuous 
 function of *x* throughout the range, and so \\(\lim\limits_{x \, \rightarrow 0} f(x) =f(1)\\), which is the theorem stated. 
 
 #### 3.72 Abel's Theorem[^abelsproducts,-1] on Multiplication of Series. [abelstheoremonmultiplicationofseries.] ####
@@ -63,7 +64,8 @@ Then the convergence of \\(\sum\limits_{n=0}^{\infty} a_n,\: \sum\limits_{n=0}^{
 For, let 
 \\[A(x)=\sum\limits_{n=0}^{\infty} a_n x^n, \quad B(x)=\sum\limits_{n=0}^{\infty} b_n x^n, \quad C(x)=\sum\limits_{n=0}^{\infty} c_n x^n.\\]
 Then the series for \\(A (x),\: B(x),\: C(x)\\) are absolutely convergent when 
-\\(\left|\, x\, \right| < 1\\), ([§2.6](CMA02-3-MoreSeries.html#powerseries)); and consequently, by [§2.53](CMA02-3-MoreSeries.html#cauchymultiplication), 
+\\(\left|\, x\, \right| < 1\\), ([§2.6](CMA02-3-MoreSeries.html#powerseries)); 
+and consequently, by [§2.53](CMA02-3-MoreSeries.html#cauchymultiplication), 
 \\[A(x)=B(x)=C(x)\\] 
 when \\(0 < x < 1\\); therefore, by [§2.2 example 2](CMA02-1-Limits.html#monotonicex2), 
 \\[\left\{ \lim_{x \rightarrow x-0} A(x)\right\}\left\{ \lim_{x \rightarrow x-0} B(x)\right\} = \left\{ \lim_{x \rightarrow x-0} C(x)\right\} \\] 
