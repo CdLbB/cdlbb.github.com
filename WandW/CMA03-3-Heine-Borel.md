@@ -65,7 +65,7 @@ each point P  of \\(CD\\),[^H-Bexamples,-13] we can determine a closed interval 
 *Then the line \\(CD\) can be divided into a finite number of closed intervals 
 \(J_1, J_2 , \dots , J_k,\\) such that each interval \\(J_r\\) contains at least one point  \\(P_r\\),[^endpointfix,-12] such that no point of \\(J_r\\) lies outside the interval \\(I (P_r )\\) associated (by means of the given law) with that point \\(P_r\\).[^H-Brefs,-2]* 
 
-[^endpointfix,-12]: *Editor's Note*: I removed an restriction on the choice of \\(P_{r}\\), "{not an end point)", which makes the claim false.  For an another statement of the modified Heine-Borel theorem see Verblunsky, [*Math. Proc. of the Camb. Phil. Soc.*, (1930)](http://dx.doi.org/10.1017/S0305004100016066).
+[^endpointfix,-12]: *Editor's Note*: I removed a restriction on the choice of \\(P_{r}\\), "{not an end point)", which makes the claim false.  For another statement of the modified Heine-Borel theorem see Verblunsky, [*Math. Proc. of the Camb. Phil. Soc.*, (1930)](http://dx.doi.org/10.1017/S0305004100016066).
 
 [^H-Brefs,-2]: This statement of the Heine-Borel theorem (which is sometimes called the Borel-Lebesgue theorem) is due to Baker, [Proc. London Math. Soc. (2) 1. (1904)](https://archive.org/details/proceedingslond23socigoog), p. 24. Hobson, [The Theory of Functions of a Real Variable (1907)](https://archive.org/details/theoryfunctions00hobsgoog), p. 87, points out that the theorem is practically given in Goursat's proof of Cauchy's theorem ([Trans. American Math. Soc. 1. (1900)](http://www.ams.org/journals/tran/1900-001-01/), p. 14); the ordinary form of the Heine-Borel theorem will be found in the treatise cited. 
 

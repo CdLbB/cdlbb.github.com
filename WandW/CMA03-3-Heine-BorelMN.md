@@ -99,7 +99,7 @@ each point P  of \\(CD\\),<a class="marginmark" onClick="toggleHide('mn:2,-13');
 
 
 
-<div markdown=1 class="marginnotes" id="mn:4,-12" style="margin-top: -12em; margin-bottom: -12em;"><a class="marginmark">&#91;4&#93;</a>*Editor's Note*: I removed an restriction on the choice of \\(P_{r}\\), "{not an end point)", which makes the claim false.  For an another statement of the modified Heine-Borel theorem see Verblunsky, [*Math. Proc. of the Camb. Phil. Soc.*, (1930)](http://dx.doi.org/10.1017/S0305004100016066).<a onClick="hideIt('mn:4,-12')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:4,-12" style="margin-top: -12em; margin-bottom: -12em;"><a class="marginmark">&#91;4&#93;</a>*Editor's Note*: I removed a restriction on the choice of \\(P_{r}\\), "{not an end point)", which makes the claim false.  For another statement of the modified Heine-Borel theorem see Verblunsky, [*Math. Proc. of the Camb. Phil. Soc.*, (1930)](http://dx.doi.org/10.1017/S0305004100016066).<a onClick="hideIt('mn:4,-12')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
