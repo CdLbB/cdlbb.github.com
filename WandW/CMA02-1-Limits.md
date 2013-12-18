@@ -36,7 +36,7 @@ HTML header:	<script type="text/javascript"
 
 Let \\(z_1, z_2, z_3, \dots\\) be an unending sequence of numbers, real or complex. Then, if a number \\(l\\) exists such that, corresponding to every positive[^zero] number \\(\epsilon\\), no matter how small, a number \\(n_0\\) can be found, such that
 \\[ \left|\, z_n-l \,\right| < \epsilon \\]
-for all values of \\(n\\) greater than \\(n_0\\),*the sequence \\((z_n)\\) is said to tend to the limit \\(l\\) as \\(n\\) tends to infinity.*
+for all values of \\(n\\) greater than \\(n_0\\), *the sequence \\((z_n)\\) is said to tend to the limit \\(l\\) as \\(n\\) tends to infinity.*
 
 [^zero]: The number zero is excluded from the class of positive numbers.
 
@@ -51,7 +51,7 @@ tends to infinity, is \\(l\\)’ are:
 If the sequence be such that, given an arbitrary number N (no matter how large), we can find \\(n_0\\) such that \\(\left|\,z_n\,\right| > N\\) for all values of \\(n\\) greater than \\(n_0\\), we say that ‘\\(\left|\, z_n \,\right|\\) tends to infinity as \\(n\\) tends to infinity’, and we write
 \\[ \left|\, z_n \,\right| \rightarrow \infty .\\]
 
-In the corresponding case when \\(-x_n>N\\) when \\(n> n_0\\) we say that \\(x_n \rightarrow \infty\\).
+In the corresponding case when \\(-x_n>N\\) when \\(n> n_0\\) we say that \\(x_n \rightarrow -\infty\\).
 
 If a sequence of real numbers does not tend to a limit or to \\(\infty\\) or to \\(-\infty\\), the sequence is said to *oscillate*.
 
