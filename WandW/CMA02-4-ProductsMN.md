@@ -26,7 +26,7 @@ HTML header:	<script type="text/javascript"
 <div markdown=1 id="content">
 <div markdown=1 class="contenttext">
 
-### 2.7 Infinite Products ###
+### 2.7 Infinite Products [infiniteproducts]###
 
 We next consider a class of limits, known as *infinite products*.
 
@@ -115,7 +115,7 @@ This establishes the result.<a class="marginmark" onClick="toggleHide('mn:3,-7')
 >
 >[For \\(\left(\sin \displaystyle{\frac{z}{n}}\right)\Big/\left(\displaystyle{\frac{z}{n}}\right)\\) can be written in the form \\(1-\displaystyle \frac{\lambda_n}{n^2}\\), where \\(\left|\,\lambda_n\,\right| < k \\) and \\(k\\) is independent of \\(n\\); and the series \\(\sum\limits_{n=1}^{\infty} \displaystyle \frac{\lambda_n}{n^2}\\) is absolutely convergent, as is seen on comparing it with \\(\sum\limits_{n=1}^{\infty} \displaystyle \frac{1}{n^2}\\) . The infinite product is therefore absolutely convergent.]
 
-#### 2.71. Some examples of infinite products ####
+#### 2.71. Some examples of infinite products [someexamplesofinfiniteproducts]####
 
 Consider the infinite product
 \\[\left(1-\frac{z^2}{\pi^2}\right)\left(1-\frac{z^2}{2^2\pi^2}\right)\left(1-\frac{z^2}{3^2\pi^2}\right) \dots ,\\]
@@ -211,7 +211,7 @@ The infinite product in this last form is therefore again absolutely convergent,
 >Since \\(\log 2=1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\frac{1}{5}- \dots\\), this shews that the given product is equal to
 >\\[e^{-\frac{z}{\pi} \log 2}\sin z .\\]
 
-### 2.8 Infinite Determinants ###
+### 2.8 Infinite Determinants [infinitedeterminants]###
 
 Infinite series and infinite products are not by any means the only known cases of limiting processes which can lead to intelligible results. The researches of G. W. Hill in the Lunar Theory<a class="marginmark" onClick="toggleHide('mn:4,-14');">&#91;4&#93;</a> brought into notice the possibilities of *infinite determinants*.<a class="marginmark" onClick="toggleHide('mn:5,+8');">&#91;5&#93;</a> 
 
@@ -253,7 +253,7 @@ is fixed and \\(i\\) takes all values), are said to form the *column* \\(k\\). A
 \\(A_{ik}\\), is called a diagonal or a non-diagonal element, according as \\(i = k\\) or \\(i \neq k\\). 
 The element \\(A_{0,\,0}\\) is called the *origin* of the determinant. 
 
-####  2.81. Convergence of an infinite determinant ####
+####  2.81. Convergence of an infinite determinant [convergenceofaninfinitedeterminant]####
 
 We shall now shew that *an infinite determinant converges, provided the product of the diagonal elements converges absolutely, and the sum of the non-diagonal elements converges absolutely.* 
 
@@ -284,7 +284,7 @@ Hence
 \\[\left|\, D_{m+p}-D_m \,\right| \leq \overline{P}_{m + p} - \overline{P}_m .\\]
 Therefore, since \\(P_m\\) tends to a limit as \\(m \rightarrow \infty\\), so also \\(D_m\\) tends to a limit. This establishes the proposition. 
 
-#### 2.82 The rearrangement theorem for convergent infinite determinants ####
+#### 2.82 The rearrangement theorem for convergent infinite determinants [therearrangementtheoremforconvergentinfinitedeterminants]####
 
 We shall now shew that *a determinant, of the convergent form already considered,<a class="marginmark" onClick="toggleHide('mn:6,-7');">&#91;6&#93;</a> remains convergent when the elements of any row are replaced by any set of elements whose moduli are all less than some fixed positive number.*
 
@@ -540,7 +540,7 @@ is equivalent to the equation
     <li><a href="#" onClick="showIt('navseries2');hideIt('navprocesses');">The Theory of Convergence</a></li>
      <li class="more current"><a onClick="showIt('navseries2');hideIt('navprocesses');"> you are here . . . </a></li>
      <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
-     <li class="notdone"><a href="whereOwhere.html">The Theory of Riemann Integration</a></li>
+     <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
      <li class="notdone"><a href="whereOwhere.html">The Properties of Analytic Functions</a></li>
      <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>

@@ -198,7 +198,7 @@ whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the regio
         <li><a href="CMA03-4-PowerSeries.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
     </li>
-    <li><a href="whereOwhere.html">The Theory of Riemann Integration</a></li>
+    <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
     <li class="more"><a onClick="hideIt('navunicont');showIt('navprocesses');"> more . . . </a></li>
   </ul>
 </li>
@@ -240,7 +240,7 @@ whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the regio
     <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
     <li><a href="CMA02-1-Limits.html">The Theory of Convergence</a></li>
      <li class="current"><a href="#" onClick="showIt('navunicont');hideIt('navprocesses');">Continuity and Uniform Convergence</a></li>
-     <li><a href="whereOwhere.html">The Theory of Riemann Integration</a></li>
+     <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
      <li class="notdone"><a href="whereOwhere.html">The Properties of Analytic Functions</a></li>
      <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>

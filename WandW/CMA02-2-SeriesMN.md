@@ -25,7 +25,7 @@ HTML header:	<script type="text/javascript"
 <div markdown=1 id="content">
 <div markdown=1 class="contenttext">
 
-### 2.3 Convergence of an Infinite Series ###
+### 2.3 Convergence of an Infinite Series [convergenceofaninfiniteseries]###
 
 Let \\(u_1, u_2, u_3, \dots, u_n, \dots \\) be a sequence of numbers, real or complex. Let the sum
 \\[ u_1 + u_2 +\,  \cdots + \, u_n \\]
@@ -178,7 +178,7 @@ Therefore \\(\left|\, \sum\limits_{n=m+1}^{m+p} a_n f_n  \,\right| \leq 2K f_{m+
 >*Example* 2. Shew that, if \\(f_n \rightarrow 0\\) steadily, \\(\sum\limits_{n=1}^{\infty} (-1)^n  f_n \cos n \theta \\) converges if \\(\theta\\) is real and not an odd multiple of \\(\pi\\), and \\(\sum\limits_{n=1}^{\infty} (-1)^n f_n \sin n \theta \\) converges for all real values of \\(\theta\\). [Write \\(\pi + \theta\\) for \\(\theta\\) in example 1.]
 
 
-#### 2.32 Absolute and conditional convergence ####
+#### 2.32 Absolute and conditional convergence [absoluteandconditionalconvergence]####
 
 In order that a series \\( \sum_{n=1}^{\infty}  u_n \\) of real or complex terms may converge, it is *sufficient* (but not necessary) that the series of moduli \\( \sum_{n=1}^{\infty}  \left|\, u_n \,\right|\\)  should converge. For, if \\(\sigma_{n,p} = \left|u_{n+1}\right|+\left|u_{n+2}\right|+ \cdots + \left|u_{n+p}\right| \\) and if \\( \sum_{n=1}^{\infty}  \left|\, u_n \,\right| \\) converges,
 we can find \\(n\\), corresponding to a given number \\(\epsilon\\), such that \\(\sigma_{n,p} < \epsilon\\) for all values of \\(p\\). But \\(\left|\, S_{n,p} \,\right|  < \sigma_{n,p}  < \epsilon\\), and so \\( \sum_{n=1}^{\infty}  u_n \\) converges.
@@ -234,7 +234,7 @@ If \\(s = 1\\), the series becomes
 which we have already shewn to be divergent; and when \\(s < 1\\), it is *a fortiori*
 divergent, since the effect of diminishing \\(s\\) is to increase the terms of the series. *The series \\(\sum\limits_{n=1}^{\infty} \displaystyle \, \frac{1}{n^s}\\)  is therefore divergent if \\(s \leq 1\\).*
 
-#### 2.34 The Comparison Theorem ####
+#### 2.34 The Comparison Theorem [thecomparisontheorem]####
 
 We shall now shew that *a series \\(u_1+u_2+u_3+ \dots\\) is absolutely convergent, provided that \\(\left|u_n\right|\\) is always less than \\(C \, \left|v_n\right|\\), where \\(C\\) is some number independent of \\(n\\), and \\(v_n\\) is the \\(n\\)th term of another series which is known to be absolutely convergent.*
 
@@ -421,7 +421,7 @@ As \\(\sum v_n\\) is convergent, \\(\sum \left|u_n\right|\\) is also convergent,
 >
 >*Example*. Investigate the convergence of \\(\sum\limits_{n=1}^{\infty} n^r \exp \left( -k \sum\limits_{m=1}^n \displaystyle \frac{1}{m}\right) \\), when \\(r > k\\) and when \\(r < k\\).
 
-#### 2.38 Convergence of the hypergeometric series ####
+#### 2.38 Convergence of the hypergeometric series [convergenceofthehypergeometricseries]####
 
 The theorems which have been given may be illustrated by a discussion of the convergence of the *hypergeometric series*
 \\[1+\frac{a \cdot b}{1 \cdot c}z+\frac{a(a+1)b(b+1)}{1 \cdot 2 \cdot c(c+1)}z^2+\frac{a(a+1)(a+2)b(b+1)(b+2)}{1 \cdot 2 \cdot 3 \cdot c(c+1)(c+2)}z^3+ \cdots \\]
@@ -602,7 +602,7 @@ Hence *when \\(\left|\,z\,\right|=1 \\), a sufficient condition<a class="marginm
     <li><a href="#" onClick="showIt('navlimits1');hideIt('navprocesses');">The Theory of Convergence</a></li>
     <li class="more current"><a onClick="showIt('navseries');hideIt('navprocesses');"> you are here . . . </a></li>
      <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
-     <li class="notdone"><a href="whereOwhere.html">The Theory of Riemann Integration</a></li>
+     <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
      <li class="notdone"><a href="whereOwhere.html">The Properties of Analytic Functions</a></li>
      <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>

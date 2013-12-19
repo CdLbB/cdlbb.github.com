@@ -26,7 +26,7 @@ HTML header:	<script type="text/javascript"
 
 ## Complex numbers ##
 
-### 1.1 Rational numbers ###
+### 1.1 Rational numbers [rationalnumbers]###
 
 The idea of a set of numbers is derived in the first instance from the consideration of the set of *positive*<a class="marginmark" onClick="toggleHide('mn:1,-14');">&#91;1&#93;</a> *integral numbers*, or *positive integers*; that is to say, the numbers \\(1, 2, 3, 4,\dots\\). Positive integers have many properties, which will be found in treatises on the Theory of Integral Numbers; but at a very early stage in the development of mathematics it was found that the operations of Subtraction and Division could only be performed among them subject to inconvenient restrictions; and consequently, in elementary Arithmetic, classes of numbers are constructed such that the operations of subtraction and division can always be performed among them.
 
@@ -287,7 +287,7 @@ It is found that algebraical operations, direct or inverse, when applied to comp
 >
 >Again, many of the most important theorems of modern analysis are not true if the numbers concerned are restricted to be real; thus, the theorem that every algebraic equation of degree n has n roots is true in general only when regarded as a theorem concerning complex numbers, Hamilton's quaternions furnish an example of a still further extension of the idea of number. A quaternion \\[ w+xi+yj + zk \\] is formed from four real numbers \\(w, x, y, z\\), and four number-units \\(1, i, j, k\\) in the same way that the ordinary complex number \\(x + iy\\) might be regarded as being formed from two real numbers \\(x, y\\), and two number-units \\(1, i\\). Quaternions however do not obey the commutative law of multiplication.
 
-### 1.4 The modulus of a complex number ###
+### 1.4 The modulus of a complex number [themodulusofacomplexnumber]###
 
 Let \\(x + iy\\) be a complex number, \\(x\\) and \\(y\\) being real numbers. Then the positive square root of \\(x^2+y^2\\) is called the *modulus* of \\((x + iy)\\), and is written
 \\[ \left|\, x + iy \,\right| .\\]
@@ -326,7 +326,7 @@ and therefore
 \end{align*} \\]
 *The modulus of the product of two complex numbers* (and hence, by induction, of any number of complex numbers) *is therefore equal to the product of their moduli.*
 
-### 1.5 The Argand diagram ###
+### 1.5 The Argand diagram [thearganddiagram]###
 
 We have seen that complex numbers may be represented in a geometrical diagram by taking rectangular axes \\(Ox\\), \\(Oy\\) in a plane. Then a point \\(P\\) whose coordinates referred to these axes are \\(x, y\\) may be regarded as representing the complex number \\(x + iy\\). In this way, to every point of the plane there corresponds some one complex number; and, conversely, to every possible complex number there corresponds one, and only one, point of the plane.
 
@@ -521,7 +521,7 @@ where \\(\mu\\) is the number of the constituent primes.  (Math. Trip. 1895.)
     <li  class="current"><a href="#complexnumbers" onClick="showIt('navcomplex');hideIt('navprocesses');">Complex Numbers</a></li>
     <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
      <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
-     <li class="notdone"><a href="whereOwhere.html">The Theory of Riemann Integration</a></li>
+     <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
      <li class="notdone"><a href="whereOwhere.html">The Properties of Analytic Functions</a></li>
      <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
