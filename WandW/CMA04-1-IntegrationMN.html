@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="latexinput" content="mmd-cambridge-header"/>
+	<title>A Course of Modern Analysis-Integration 4-1</title>
+	<meta name="subtitle" content="An introduction to the general theory of
+infinite processes and analytic functions;
+with an account of the principal
+transcendental functions."/>
+	<meta name="author" content="E.T. Whittaker and G.N. Watson"/>
+	<meta name="editor" content="Eric Nitardy"/>
+	<meta name="date" content="Dec 10, 2013"/>
+	<meta name="titlefile" content="mmd-WandW-title"/>
+	<meta name="copyrightfile" content="mmd-WandW-copyright"/>
+	<meta name="test" content="And this is a new key-value pair"/>
+	<meta name="latexmode" content="memoir"/>
+	<meta name="latexinput" content="mmd-cambridge-begin-doc"/>
+	<meta name="latexfooter" content="mmd-cambridge-footer"/>
+	<link type="text/css" rel="stylesheet" href="css/documentation.css"/>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+<script type="text/javascript" src="js/showhide.js"></script>
+<script type="text/javascript" src="js/mathjaxend.js"></script>
+</head>
+<body>
+
+<div id="header"><h1><a href="CMA00-FrontMN.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
+<div id="content">
+<div class="contenttext">
+
+<h2 id="thetheoryofriemannintegration">The Theory of Riemann Integration</h2>
+
+<h3 id="4.1theconceptofintegration.">4.1 The Concept of Integration.</h3>
+
+<p>The reader is doubtless familiar with the idea of integration as the
+operation inverse to that of differentiation; and he is equally well aware that the integral (in this sense) of a given elementary function is not always expressible in terms of elementary functions. In order therefore to give a definition of the integral of a function which shall be always available, even though it is not practicable to obtain a function of which the given function is the differential coefficient, we have recourse to the result that the integral<a class="marginmark" onClick="toggleHide('mn:1,-6');">&#91;1&#93;</a> of <span class="math">\(f(x)\)</span> between the limits <span class="math">\(a\)</span> and <span class="math">\(b\)</span> is the area bounded by the curve <span class="math">\(y =f(x)\)</span>, the axis of <em>x</em> and the ordinates <span class="math">\(x = a,\, x = b\)</span>. We proceed to frame a formal definition of integration with this idea as the starting-point. </p>
+
+</div>
+<div class="marginnotes"  id="mn:1,-6"  style="margin-top: -6em; margin-bottom: -6em;"><a class="marginmark">&#91;1&#93;</a>Defined as the (elementary) function whose differential coefficient is <span class="math">\(f(x)\)</span>.<a onClick="hideIt('mn:1,-6')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<h4 id="4.11upperandlowerintegrals.">4.11 Upper and lower integrals.<a class="marginmark" onClick="toggleHide('mn:2,-1');">&#91;2&#93;</a></h4>
+</div>
+<div class="marginnotes"  id="mn:2,-1"  style="margin-top: -1em; margin-bottom: -1em;"><a class="marginmark">&#91;2&#93;</a>The following procedure for establishing existence theorems concerning integrals is based on that given by Goursat, <a href="https://archive.org/details/ed2coursdanalyse01gouruoft"><em>Cours d&#8217; Analyse</em></a>, <strong>i.</strong> Ch. <strong>iv.</strong> The concepts of upper and lower integrals are due to Darboux, <a href="https://archive.org/details/annalesscientif20fragoog"><em>Ann. de I&#8217;Ecole norm. sup.</em></a> (2) <strong>iv.</strong> (1875), p. 64.<a onClick="hideIt('mn:2,-1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>Let <span class="math">\(f(x)\)</span> be a bounded function of x in the range <span class="math">\([a, b]\)</span>. Divide the interval at the points <span class="math">\(x_1, x_2 , \dots , x_{n-1}\)</span> <span class="math">\((a \leq x_1 \leq x_2 \cdots \leq x_{n-1}  \leq b)\)</span>. Let <em>U,</em> <em>L</em> be
+the bounds of <span class="math">\(f(x)\)</span> in the range <span class="math">\([a, b]\)</span>, and let <span class="math">\(U_r,\)</span> <span class="math">\(L_r\)</span> be the bounds of <span class="math">\(f(x)\)</span> in the range <span class="math">\([x_{r-1}, x_r]\)</span>, where <span class="math">\(x_0 = a, x_n = b\)</span>. </p>
+
+<p>Consider the sums<a class="marginmark" onClick="toggleHide('mn:3,-12');">&#91;3&#93;</a>
+<span class="math">\[S_n=U_1(x_1-a)+U_2(x_2-x_1)+ \cdots + U_n(b-x_{n-1}),\]</span>
+<span class="math">\[s_n=L_1(x_1-a)+L_2(x_2-x_1)+ \cdots + L_n(b-x_{n-1}).\]</span>
+Then
+<span class="math">\[U(b-a) \geq S_n \geq s_n \geq L(b-x_{n-1}).\]</span></p>
+</div>
+<div class="marginnotes"  id="mn:3,-12"  style="margin-top: -12em; margin-bottom: -12em;"><a class="marginmark">&#91;3&#93;</a>The reader will find a figure of great assistance in following the argument of this section. <span class="math">\(S_n\)</span> and <span class="math">\(s_n\)</span> represent the sums of the areas of a number of rectangles which are respectively greater and less than the area bounded by <span class="math">\(y=f(x)\)</span>, <span class="math">\(x=a\)</span>, <span class="math">\(x = b\)</span> and <span class="math">\(y = 0\)</span>, if this area be assumed to exist.<a onClick="hideIt('mn:3,-12')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>For a given <span class="math">\(n\)</span>, <span class="math">\(S_n\)</span> and <span class="math">\(s_n\)</span> are bounded functions of <span class="math">\(x_1, x_2 , \dots , x_{n-1}\)</span>. Let their lower and upper bounds<a class="marginmark" onClick="toggleHide('mn:4,-5');">&#91;4&#93;</a> respectively be <span class="math">\(\underline{S}_n\)</span>, <span class="math">\(\overline{s}_n\)</span>, so that <span class="math">\(\underline{S}_n\)</span>, <span class="math">\(\overline{s}_n\)</span> depend only on <em>n</em> and on the form of <span class="math">\(f(x)\)</span>, and not on the particular way of dividing the interval into <em>n</em> parts.</p>
+</div>
+<div class="marginnotes"  id="mn:4,-5"  style="margin-top: -5em; margin-bottom: -5em;"><a class="marginmark">&#91;4&#93;</a>The bounds of a function of <em>n</em> variables are defined in just the same manner as the bounds of a function of a single variable (<a href="CMA03-3-Heine-BorelMN.html#arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.">&#167;3.62</a>). <a onClick="hideIt('mn:4,-5')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>Let the lower and upper bounds of these functions of <em>n</em> be <em>S</em>, <em>s</em>. Then
+<span class="math">\[{S}_n \geq S, \quad {s}_n \leq s.\]</span>
+We proceed to shew that <span class="math">\(s\)</span> is <em>at most</em> equal to <span class="math">\(S\)</span>; i.e. <span class="math">\(S \geq s\)</span>. </p>
+
+<p>Let the intervals <span class="math">\([a, x_1], [x_1, x_2], \dots \)</span> be divided into smaller intervals by new points of subdivision, and let
+<span class="math">\[a, y_1, y_2, \dots ,  y_{k-1}, y_k (= x_1). y_{k+1}, \dots , y_{l-1}, y_l (= x_2), y_{l+1}, \dots , y_{m-1}, b \]</span>
+be the end points of the smaller intervals; let <span class="math">\(U_r'\)</span>, <span class="math">\(L_r '\)</span> be the bounds of <span class="math">\(f(x)\)</span> in the interval <span class="math">\([y_{r-1}, y_r ]\)</span>.</p>
+
+<p>Let <span class="math">\[T_m = \sum_{r=1}^m (y_r - y_{r-1}) U_r ', \quad t_m = \sum_{r=1}^m (y_r - y_{r-1}) L_r '.\]</span></p>
+
+<p>Since <span class="math">\(U_1 ', U_2 ', \dots , U_k '\)</span> do not exceed <span class="math">\(U_1\)</span>, it follows without difficulty that <span class="math">\(S_n \geq T_m \geq t_m \geq s_m\)</span>.</p>
+
+<p>Now consider the subdivision of <span class="math">\([a, b]\)</span> into intervals by the points
+<span class="math">\(x_1, x_2, \dots , x_{n-1}\)</span> and also the subdivision by a different set of points
+<span class="math">\(x_1', x_2', \dots , x_{n'-1}'\)</span>. Let <span class="math">\(S_{n'} ' ,\, s_{n'} '\)</span> be the sums for the second kind of subdivision which correspond to the sums <span class="math">\(S_n ,\, s_n\)</span> for the first kind of subdivision. Take <em>all</em> the points <span class="math">\(x_1, x_2, \dots , x_{n-1};\;x_1', x_2', \dots , x_{n'-1}'\)</span> as the points <span class="math">\(y_1 , y_2 , \dots , y_m\)</span>. </p>
+
+<p>Then <span class="math">\[S_n \geq T_m \geq t_m \geq s_n ,\]</span> and<br/>
+<span class="math">\[S_{n"} ' \geq T_m \geq t_m  \geq s_{n"} ' .\]</span></p>
+
+<p>Hence every expression of the type <span class="math">\(S_n\)</span> <em>exceeds</em> (or at least equals) every
+expression of the type <span class="math">\(s'_{n'}\)</span>; and therefore <span class="math">\(S\)</span> cannot be less than <span class="math">\(s\)</span>. </p>
+
+<p>[For it <span class="math">\(S < s\)</span> and <span class="math">\(s — S = 2\eta\)</span> we could find an <span class="math">\(S_n\)</span> and an <span class="math">\(s'_{n'}\)</span> such that <span class="math">\(S_n — S < \eta\)</span>, <span class="math">\(s — s'_{n'} < \eta\)</span> and so <span class="math">\(s'_{n'} > S_n\)</span>, which is impossible.] </p>
+
+<p>The bound <span class="math">\(S\)</span> is called the <em>upper</em> integral of <span class="math">\(f(x)\)</span>, and is written <span class="math">\( \displaystyle \overset{\;_—}{\int_{a}^{b}} f(x) \,dx\)</span>;
+<span class="math">\(s\)</span> is called the <em>lower</em> integral, and written <span class="math">\( \displaystyle \underset{\!\!\!\!\!^—}{\int_{a}^{b}} f(x) \,dx\)</span>. </p>
+
+<p>If <span class="math">\(S = s\)</span>, their common value is called the <em>integral</em> of <span class="math">\(f(x)\)</span> taken between
+the limits<a class="marginmark" onClick="toggleHide('mn:5,-3');">&#91;5&#93;</a> of integration
+<em>a</em> and <em>b</em>. </p>
+</div>
+<div class="marginnotes"  id="mn:5,-3"  style="margin-top: -3em; margin-bottom: -3em;"><a class="marginmark">&#91;5&#93;</a>&#8216;Extreme values&#8217; would be a more appropriate term but &#8216;limits&#8217; has the sanction of custom. &#8216;Termini&#8217; has been suggested by Lamb, <a href="http://archive.org/details/anelementarycou00lambgoog"><em>Infinitesimal Calculus</em> (1897)</a>, p. 209.<a onClick="hideIt('mn:5,-3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>The integral is written <span class="math">\(\displaystyle \int_a^b f(x)\, dx\)</span>. </p>
+
+<p>We define <span class="math">\(\displaystyle \int_b^a f(x) \,dx\)</span>, when <span class="math">\(a < b\)</span>, to mean <span class="math">\(\displaystyle -\!\int_a^b f(x) \,dx\)</span>. </p>
+
+<blockquote>
+<p><em>Example</em> 1. <span class="math">\(\int_a^b \{f(x) + \phi(x)\}\,dx=\)</span><span class="math">\(\int_a^b f(x)\, dx + \int_a^b \phi(x)\,dx\)</span>. </p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 2. By means of example 1, define the integral of a continuous complex function of a real variable. </p>
+</blockquote>
+
+<h4 id="4.12riemannsconditionofintegrability.">4.12 Riemann&#8217;s Condition of Integrability.<a class="marginmark" onClick="toggleHide('mn:6,-1');">&#91;6&#93;</a></h4>
+</div>
+<div class="marginnotes"  id="mn:6,-1"  style="margin-top: -1em; margin-bottom: -1em;"><a class="marginmark">&#91;6&#93;</a>Riemann (<a href="https://archive.org/details/bernhardriemann00webegoog"><em>Ges. Math. Werke</em></a>, p. 239) bases his definition of an integral on the limit of the sum occurring in <a href="#4.13ageneraltheoremonintegration.">&#167;4.13</a>; but it is then difficult to prove the uniqueness of the limit. A more general definition of integration (which is of very great importance in the modern theory of Functions of Real Variables) has been given by Lebesgue, <a href="https://archive.org/details/annalidimatemat01unkngoog"><em>Annali di Mat.</em> (3) <strong>vii.</strong> (1902)</a>, pp. 231&#8211;359. See also his <a href="https://archive.org/details/leonssurlint00lebeuoft"><em>Leçons sur l&#8217;int&eacute;gration</em></a> (Paris, 1904).<a onClick="hideIt('mn:6,-1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>A function is said to be &#8216;integrable in the sense of Riemann&#8217; if (with the
+notation of <a href="#4.11upperandlowerintegrals.">&#167;4.11</a>) <span class="math">\(S_n\)</span> and <span class="math">\(s_n\)</span> have a common limit (called the Riemann
+integral of the function) when the number of intervals <span class="math">\([x_{r-1}, x_r]\)</span> tends to
+infinity in such a way that the length of the longest of them tends to zero. </p>
+
+<p><em>The necessary and sufficient condition that a bounded function should be
+integrable is that <span class="math">\(S_n - s_n\)</span> should tend to zero when the number of intervals
+<span class="math">\([x_{r-1}, x_r]\)</span> tends to infinity in such a way that the length of the longest tends
+to zero.</em></p>
+
+<p>The condition is obviously necessary, for if <span class="math">\(S_n\)</span> and <span class="math">\(s_n\)</span> have a common limit
+<span class="math">\(S_n - s_n \rightarrow 0\)</span> as <span class="math">\(n \rightarrow  \infty\)</span>. And it is sufficient; for, since <span class="math">\(S_n \geq S \geq s \geq s_n\)</span>, it follows
+that if <span class="math">\(\lim \,(S_n - s_n) = 0\)</span>, then
+<span class="math">\[\lim S_n = \lim s_n = S = s.\]</span> </p>
+
+<blockquote>
+<p><em>Note</em>. A continuous function <span class="math">\(f(x)\)</span> is &#8216;integrable&#8217;. For, given, we can <span class="math">\(\epsilon\)</span> find <span class="math">\(\delta\)</span> such that <span class="math">\(\left|\,f(x') - f(x'') \,\right| < \left. \epsilon \middle/ (b-a) \right.\)</span> whenever <span class="math">\(\left|\,x'-x' ' \right| < \delta\)</span>. Take all the intervals <span class="math">\([x_{s-1}, x_s]\)</span> less than <span class="math">\(\delta\)</span>, and then <span class="math">\(U_s - L_s < \left. \epsilon\middle/(b — a)\right.\)</span> and so <span class="math">\(S
+_n - s_n < \epsilon\)</span>; therefore <span class="math">\(S_n - s_n \rightarrow 0\)</span> under the circumstances specified in the condition of integrability. </p>
+</blockquote>
+
+<blockquote>
+<p><em>Corollary</em>. If <span class="math">\(S_ n\)</span> and <span class="math">\(s_n\)</span> have the same limit <span class="math">\(S\)</span> for one mode of subdivision of <span class="math">\([a, b]\)</span> into intervals of the specified kind, the limits of <span class="math">\(S_n\)</span> and of <span class="math">\(s_n\)</span> for any other such mode of subdivision are both S. </p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 1. The product of two integrable functions is an integrable function. </p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 2. A function which is continuous except at a finite number of ordinary discontinuities is integrable. </p>
+
+<p>[If <span class="math">\(f(x)\)</span> have an ordinary discontinuity at <em>c</em>, enclose <em>c</em> in an interval of length <span class="math">\(\delta_1\)</span>; given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(\delta\)</span> so that <span class="math">\(\left|\, f(x') -f (x) \,\right| <  \epsilon\)</span> when <span class="math">\(\left|\, x' - x \,\right| < \delta\)</span> and <span class="math">\(x\)</span>, <span class="math">\(x'\)</span> are not in this interval. </p>
+
+<p>Then <span class="math">\(S_n-s_n \leq \epsilon (b-a-\delta_1)+k\delta_1\)</span>, where <em>k</em> is the greatest value of <span class="math">\(\left|\,f(x')-f(x)\,\right|\)</span>, when <span class="math">\(x\)</span>, <span class="math">\(x'\)</span> lie in the interval. </p>
+
+<p>When <span class="math">\(\delta_1 \rightarrow 0, \;  k \rightarrow \left | \,f(c + 0)- f(c-0) \,\right|\)</span>, and hence <span class="math">\(\lim\limits_{n \rightarrow \infty} (S_n -s_n ) = 0\)</span>.] </p>
+</blockquote>
+
+<blockquote>
+<p>Example 3. A function with limited total fluctuation and a finite number of ordinary discontinuities<a class="marginmark" onClick="toggleHide('mn:7,-2');">&#91;7&#93;</a> is integrable. (See <a href="CMA03-3-Heine-BorelMN.html#fluctuation">&#167;3.64 example 2</a>.) </p>
+</blockquote>
+</div>
+<div class="marginnotes"  id="mn:7,-2"  style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;7&#93;</a><em>Editor&#8217;s Note</em>: There is no need to assume a finite number of discontinuities. <em>Any</em> function with limited total fluctuation is Riemann integrable.<a onClick="hideIt('mn:7,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<h4 id="4.13ageneraltheoremonintegration.">4.13 A general theorem on integration.</h4>
+
+<p>Let <span class="math">\(f(x)\)</span> be integrable, and let <span class="math">\(\epsilon\)</span> be any positive number. Then it is
+possible to choose <span class="math">\(\delta\)</span> so that
+<span class="math">\[\left|\sum_{p=1}^n (x_p - x_{p-1}) f(x'_{p-1}) - \int_a^b f(x)\, dx \right| < \epsilon,\]</span>
+provided that
+<span class="math">\[x_p - x_{p-1} \leq \delta, \quad x_{p-1} \leq x'_{p-1} \leq x_p.\]</span></p>
+
+<p>To prove the theorem we observe that, given <span class="math">\(\epsilon\)</span>, we can choose the length
+of the longest interval, <span class="math">\(\delta\)</span>, so small that <span class="math">\(S_n - s_n < \epsilon\)</span>. </p>
+
+<p>Also <span class="math">\[S_n \geq \sum_{p=1}^n (x_p - x_{p-1}) f(x'_{p-1}) \geq s_n,\]</span>
+<span class="math">\[S_n \geq \int_a^b f(x) \,dx \geq s_n.\]</span>
+Therefore
+<span class="math">\[
+\begin{align*}
+\left|\sum_{p=1}^n (x_p - x_{p-1}) f(x'_{p-1}) - \int_a^b f(x)\, dx \right| &\leq S_n-s_n \\
+\\
+& < \epsilon.
+\end{align*}
+\]</span></p>
+
+<blockquote>
+<p>As an example<a class="marginmark" onClick="toggleHide('mn:8,-5');">&#91;8&#93;</a> of the evaluation of a definite integral directly from the theorem of this section consider <span class="math">\(\displaystyle \int_0^X \frac{1}{(1-x^2)^{\frac{1}{2}}}\)</span>, where <span class="math">\(X < 1\)</span>. </p>
+</blockquote>
+</div>
+<div class="marginnotes"  id="mn:8,-5"  style="margin-top: -5em; margin-bottom: -5em;"><a class="marginmark">&#91;8&#93;</a>Netto, <a href="https://archive.org/details/zeitschriftfrma45runggoog"><em>Zeitschrift f&uuml;r Math. und Phys.</em> <strong>xii.</strong>(1895)</a>, p. 184.<a onClick="hideIt('mn:8,-5')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<blockquote>
+<p>Take <span class="math">\(\delta= \displaystyle \frac{1}{p} \arcsin X\)</span> and let <span class="math">\(x_s = \sin s\delta\)</span>, <span class="math">\((0 < s\delta <  \frac{1}{2}\pi)\)</span>, so that
+ <span class="math">\[x_{s+1}-x_s = 2 \sin \textstyle\frac{1}{2} \delta \, \cos(s+\textstyle\frac{1}{2}) \delta < \delta\]</span>
+also let
+<span class="math">\[x'_s = \sin (s+\textstyle\frac{1}{2})\delta.\]</span></p>
+
+<p>Then
+<span class="math">\[
+\begin{align*}
+\sum_{s=1}^p \frac{x_s-x_{s-1}}{(1-x'^{2}_{s-1})^{\frac{1}{2}}} &= \sum_{s=1}^p \frac{\sin s\delta - \sin (s-1)\delta}{\cos (s- \textstyle\frac{1}{2})\delta } \\
+&=2p\sin\textstyle\frac{1}{2}\delta\\
+&=\arcsin X \left\{ \sin\textstyle\frac{1}{2}\delta \big/ (\textstyle\frac{1}{2} \delta)\right\}.
+\end{align*}
+\]</span></p>
+
+<p>By taking <span class="math">\(p\)</span> sufficiently large we can make
+<span class="math">\[\left|\, \int_0^X \frac{1}{(1-x^2)^{\frac{1}{2}}} - \sum_{s=1}^p \frac{x_s-x_{s-1}}{(1-x'^{2}_{s-1})^{\frac{1}{2}}} \, \right|\]</span>
+arbitrarily small. </p>
+
+<p>We can also make <span class="math">\[\arcsin X \, \left\{ \frac{\sin\frac{1}{2}\delta}{\frac{1}{2} \delta}-1 \right\}\]</span>
+arbitrarily small. </p>
+
+<p>That is, given an arbitrary number <span class="math">\(\epsilon\)</span>, we can make
+<span class="math">\[\left|\, \int_0^X \frac{1}{(1-x^2)^{\frac{1}{2}}} - \arcsin X \,\right | < \epsilon\]</span>
+by taking <span class="math">\(p\)</span> sufficiently large. But the expression now under consideration <em>does not
+depend on</em> <span class="math">\(p\)</span>; and therefore it must be zero; for if not we could take <span class="math">\(\epsilon\)</span> to be less than it, and we should have a contradiction. </p>
+
+<p>That is to say
+<span class="math">\[\int_0^X \frac{1}{(1-x^2)^{\frac{1}{2}}} = \arcsin X.\]</span></p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 1. Shew that
+<span class="math">\[\lim_{n \rightarrow \infty} \frac{1+ \cos\frac{x}{n} +\cos\frac{2x}{n}+ \cdots + \cos\frac{(n-1)x}{n} } {n} = \frac{\sin x}{x}.\]</span></p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 2. If <span class="math">\(f(x)\)</span> has ordinary discontinuities at the points <span class="math">\(a_1, a_2 , \dots , a_{\kappa}\)</span>, then
+ <span class="math">\[\int_a^b f(x) \, dx=\lim \left\{\int_a^{a_1-\delta_1}+\int_{a_1+\epsilon_1}^{a_1-\delta_2}+ \cdots + \int_{a+\epsilon_{\kappa}}^b f(x) \, dx\right\}\]</span>
+where the limit is taken by making <span class="math">\(\delta_1, \delta_2, \dots ,\delta_{\kappa}, \epsilon_1, \epsilon_2, \dots , \epsilon_{\kappa}\)</span> tend to <span class="math">\(+0\)</span> independently.</p>
+</blockquote>
+
+<blockquote>
+<h6 id="4.13example3"><em>Example</em> 3. If <span class="math">\(f(x)\)</span> is integrable when <span class="math">\(a_1 \leq x \leq b_1\)</span> and if, when <span class="math">\(a_1 \leq   a < b \leq b_1 \)</span>, we write <span class="math">\[\int_a^b f(x)\,dx =\phi(a,b),\]</span> and if <span class="math">\((b + 0)\)</span> exists, then <span class="math">\[\lim_{b \,\rightarrow \,+0}\frac{\phi(a,b+\delta)-\phi(a,b)}{\delta} =f(b+0).\]</span></h6>
+
+<p>Deduce that, if <span class="math">\(f(x)\)</span> is continuous at <em>a</em> and <em>b</em>,
+<span class="math">\[\frac{d}{da} \int_a^b f(x)\,dx =-f(a), \quad \frac{d}{db} \int_a^b f(x)\,dx =f(b).\]</span></p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 4. Prove by differentiation<a class="marginmark" onClick="toggleHide('mn:9,-9');">&#91;9&#93;</a> that, if <span class="math">\(\phi(x)\)</span> is a continuous function of <em>x</em> and <span class="math">\(\displaystyle \frac{dx}{dt}\)</span> a continuous function of <span class="math">\(t\)</span>, then
+<span class="math">\[\int_{\large x_{0}}^{\large x_{1}} \phi(x) \, dx =\int_{\large t_0}^{\large t_{1}} \phi(x) \frac{dx}{dt} dt.\]</span></p>
+</blockquote>
+</div>
+<div class="marginnotes"  id="mn:9,-9"  style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;9&#93;</a><em>Editor&#8217;s Note</em>: The wording of this example and the next suggests that Whittaker and Watson expect the reader to use the <a href="http://mathworld.wolfram.com/FirstFundamentalTheoremofCalculus.html">the first fundamental theorem of calculus</a>. However, it is possibly more enlightening to prove them using the theorem at the beginning of the section together with the <a href="CMA03-3-Heine-BorelMN.html#themodifiedheine-boreltheorem.">modified Heine-Borel theorem</a>.<a onClick="hideIt('mn:9,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<blockquote>
+<p><em>Example</em> 5. If <span class="math">\(f' (x)\)</span> and <span class="math">\(\phi'(x)\)</span> are continuous when <span class="math">\(a \leq x \leq b\)</span>, shew from example 3 that
+<span class="math">\[\int_a^b f'(x) \phi(x) \, dx + \int_a^b \phi'(x)f(x)\, dx = f(b)\phi(b)-f(a)\phi(a).\]</span></p>
+</blockquote>
+
+<blockquote>
+<h6 id="4.13example6">Example 6. If <span class="math">\(f(x)\)</span> is integrable in the range <span class="math">\([a, c]\)</span> and <span class="math">\(a \leq b \leq c\)</span>, shew that <span class="math">\(\displaystyle\int_a^b f(x)\,dx\)</span> is a continuous function of <span class="math">\(b\)</span>.</h6>
+</blockquote>
+
+<h4 id="4.14meanvaluetheorems.">4.14 Mean Value Theorems.</h4>
+
+<p>The two following general theorems are frequently useful. </p>
+
+<p>(I) Let <em>U</em> and <em>L</em> be the upper and lower bounds of the integrable function <span class="math">\(f(x)\)</span> in the range <span class="math">\([a, b]\)</span>. </p>
+
+<p>Then from the definition of an integral it is obvious that
+<span class="math">\[\int_a^b \left\{U-f(x)\right\} dx, \quad \int_a^b \left\{f(x)-L\right\} dx \]</span>
+are not negative; and so
+<span class="math">\[U(b-a) \geq  \int_a^b f(x)\,dx \geq L(b-a).\]</span> </p>
+
+<p>This is known as the <em>First Mean Value Theorem</em>. </p>
+
+<p>If <span class="math">\(f(x)\)</span> is <em>continuous</em> we can find a number <span class="math">\(\xi\)</span> such that <span class="math">\(a \leq \xi \leq b\)</span> and such that has any given value lying between <em>U</em> and <em>L</em> (<a href="CMA03-3-Heine-BorelMN.html#arealfunctionofarealvariablecontinuousinaclosedintervalattainsallvaluesbetweenitsupperandlowerbounds.">&#167;3.63</a>). Therefore we can find <span class="math">\(\xi\)</span> such that
+<span class="math">\[\int_a^b f(x) \, dx = (b-a)f(\xi).\]</span></p>
+
+<p>If <span class="math">\(F(x)\)</span> has a continuous differential coefficient <span class="math">\(F' (x)\)</span> in the range <span class="math">\([a, b]\)</span>, we have, on writing <span class="math">\(F' (x)\)</span> for <span class="math">\(f(x)\)</span>,
+<span class="math">\[F(b)-F(a) = (b-a)F'(\xi)\]</span>
+for some value of <span class="math">\(\xi\)</span> such that <span class="math">\(a \leq \xi \leq b\)</span>.<a class="marginmark" onClick="toggleHide('mn:10,-4');">&#91;10&#93;</a></p>
+</div>
+<div class="marginnotes"  id="mn:10,-4"  style="margin-top: -4em; margin-bottom: -4em;"><a class="marginmark">&#91;10&#93;</a><em>Editor&#8217;s Note</em>: Alternatively, let <span class="math">\(F(x)= \int_c^x f(\zeta)\, d\zeta\)</span> for <span class="math">\(a \leq c \leq b\)</span>. Then <span class="math">\(\int_a^b f(x) \, dx= F(b)-F(a)\)</span> and, from <a href="#4.13example3">&#167;4.13 example 3</a>, <span class="math">\(F'(x) = f(x)\)</span>. We would still need <a href="http://mathworld.wolfram.com/FirstFundamentalTheoremofCalculus.html">the first fundamental theorem of calculus</a> to show that <em>any</em> continuously differentiable function <span class="math">\(F(x)\)</span> can be written as <span class="math">\(\int_c^x f(\zeta)\, d\zeta\)</span> for some <span class="math">\(f(\zeta)\)</span>.<a onClick="hideIt('mn:10,-4')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<blockquote>
+<p><em>Example</em>. If <span class="math">\(f(x)\)</span> is continuous and <span class="math">\(\phi(x) \geq 0\)</span>, shew that <span class="math">\(\xi\)</span> can be found such that
+<span class="math">\[\int_a^b f(x)\phi(x) \, dx = f(\xi)\int_a^b \phi(x)\,dx.\]</span></p>
+</blockquote>
+</div>
+<div class="marginnotes"  id="mn:11,+5"  style="margin-top: +5em; margin-bottom: +5em;"><a class="marginmark">&#91;11&#93;</a><a href="http://gallica.bnf.fr/ark:/12148/bpt6k163938.image.langEN">Journal de Math. xiv. (1849)</a>, p. 249. The proof given is a modified form of an investigation due to Holder, <a href="http://gdz.sub.uni-goettingen.de/en/dms/loader/toc/?PPN=PPN252457072_1889">Gott. Nach. (1889)</a>, pp. 38&#8211;47.<a onClick="hideIt('mn:11,+5')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>(II) Let <span class="math">\(f(x)\)</span> and <span class="math">\(\phi(x)\)</span> be integrable in the range <span class="math">\([a, b]\)</span> and let <span class="math">\(\phi(x)\)</span> be a <em>positive decreasing</em> function of <em>x</em>. Then <em>Bonnet&#8217;s<a class="marginmark" onClick="toggleHide('mn:11,+5');">&#91;11&#93;</a> form of the Second Mean Value Theorem</em> is that a number <span class="math">\(\xi\)</span> exists such that <span class="math">\(a \leq \xi \leq b\)</span>, and
+<span class="math">\[\int_a^b f(x)\phi(x) \, dx = \phi(a) \int_a^{\xi} f(x)\,dx.\]</span>.</p>
+
+<p>For, with the notation of <a href="#4.1theconceptofintegration.">&#167;&#167;4.1&#8211;4.13</a>, consider the sum
+<span class="math">\[S= \sum_{s=1}^p (x_s-x_{s-1})\,f(x_{s-1})\,\phi(x_{s-1}) .\]</span>
+Writing <span class="math">\((x_s -x_{s-1} )f(x_{s -1} ) = a_{s-1}\)</span>, <span class="math">\(\phi(x_{s-1}) = \phi_{s-1}\)</span>, <span class="math">\(a_0 + a_1 + \dots + a_s = b_s\)</span>, we have
+<span class="math">\[S= \sum_{s=1}^{p-1} b_{s-1} (\phi_{s-1}-\phi_s) + b_{p-1}\phi_{p-1}.\]</span></p>
+
+<p>Each term in the summation is increased by writing <span class="math">\(\overline b\)</span> for <span class="math">\(b_{s-1} \)</span> and decreased by writing <span class="math">\(\underline b\)</span> for <span class="math">\(b_{s-1}\)</span>; if <span class="math">\(\overline b\)</span>,<span class="math">\(\underline b\)</span> be the greatest and least of <span class="math">\(b_0 , b_1, \dots , b_{p-1}\)</span>; and so <span class="math">\(\underline{b}\phi_0 \leq S \leq \overline{b}\phi_0\)</span>. Therefore <span class="math">\(S\)</span> lies between the greatest and least of the sums <span class="math">\(\phi(x_0)\sum\limits_{s=1}^m (x_s-x_{s-1})\,f(x_{s-1})\)</span> where <span class="math">\(m=1, 2, 3, \dots ,p\)</span>. But, given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(\delta\)</span> such that, when <span class="math">\(x_{s} - x_{s-1} < \delta\)</span>,
+<span class="math">\[\left |\, \sum _{s=1}^p (x_s-x_{s-1}) f(x_{s-1})\phi(x_{s-1}) - \int_{x_{\tiny {0}}}^{ x_ {p}} f(x) \phi(x)\, dx \, \right| < \epsilon, \]</span>
+<span class="math">\[\left|\, \phi(x_0) \sum_{s=1}^m(x_s-x_{s-1})f(x_{s-1}) - \phi(x_0) \int_{x_{\tiny {0}}}^{ x_ {p}} f(x) \, dx \, \right| < \epsilon,\]</span>
+and so, writing <em>a</em>, <em>b</em> for <span class="math">\(x_0\)</span>, <span class="math">\(x_p\)</span>, we find that <span class="math">\(\displaystyle  \int_a^b f(x) \phi(x)\, dx\)</span> lies between the upper and lower bounds of<a class="marginmark" onClick="toggleHide('mn:12,-7');">&#91;12&#93;</a> <span class="math">\(\displaystyle\phi(a) \int_{a}^{ \xi_1} f(x) \, dx\pm 2\epsilon\)</span>, where <span class="math">\(\xi_1\)</span> may take all values between <em>a</em> and <em>b</em>. Let <em>U</em> and <em>L</em> be the upper and lower bounds of <span class="math">\(\displaystyle\phi(a) \int_{a}^{ \xi_1} f(x) \, dx \)</span>. </p>
+</div>
+<div class="marginnotes"  id="mn:12,-7"  style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;12&#93;</a>By <a href="#4.13example6">&#167;4.13 example 6</a>, since <span class="math">\(f(x)\)</span> is bounded, <span class="math">\(int_a^{\xi_1}f(x)\,dx\)</span> is a continuous function of <span class="math">\(\xi_1\)</span>.<a onClick="hideIt('mn:12,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>Then <span class="math">\(U+2\epsilon \geq \displaystyle\int_{a}^{b} f(x)\phi(x) \, dx  \geq L- 2\epsilon\)</span> for <em>all</em> positive values of <span class="math">\(\epsilon\)</span>; therefore
+<span class="math">\[U\geq \int_{a}^{b} f(x)\phi(x) \, dx \geq L .\]</span></p>
+</div>
+<div class="marginnotes"  id="mn:13,+1"  style="margin-top: +1em; margin-bottom: +1em;"><a class="marginmark">&#91;13&#93;</a><em>Editor&#8217;s Note</em>: In this usage, the word <em>qua</em> means <em>functioning as a&#8230;</em> <a onClick="hideIt('mn:13,+1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>Since <span class="math">\(\displaystyle\phi(a) \int_{a}^{ \xi_1} f(x) \, dx\)</span> <em>qua</em><a class="marginmark" onClick="toggleHide('mn:13,+1');">&#91;13&#93;</a> function of <span class="math">\(\xi_1\)</span> takes all values between its upper and lower bounds, there is some value <span class="math">\(\xi\)</span>, say, of <span class="math">\(\xi_1\)</span> for which it is equal to <span class="math">\(\int_{a}^{b} f(x)\phi(x) \, dx \)</span>. This
+proves the Second Mean Value Theorem. </p>
+
+<blockquote>
+<p><em>Example</em>. By writing <span class="math">\(\left|\, \phi(x)-\phi(b)\, \right |\)</span> in place of <span class="math">\(\phi(x)\)</span> in Bonnet&#8217;s form of the mean value theorem, shew that if <span class="math">\(\phi(x)\)</span> is a monotonic function, then a number <span class="math">\(\xi\)</span> exists
+such that <span class="math">\(a \leq \xi \leq b\)</span> and
+<span class="math">\[\int_a^b f(x)\phi(x)\, dx = \phi(a) \int_a^{\xi} f(x) \, dx + \phi(b) \int_{\xi}^{b} f(x) \, dx. \]</span> (Du Bois Reymond.) </p>
+</blockquote>
+
+<h3 id="4.2differentiationofintegralscontainingaparameter.">4.2 Differentiation of integrals containing a parameter.</h3>
+
+<p>The equation<a class="marginmark" onClick="toggleHide('mn:14,-13');">&#91;14&#93;</a> <span class="math">\(\displaystyle \frac{d}{d\alpha}\int_a^b f(x, \alpha) \, dx = \int_a^b \frac{df}{d\alpha} \, dx\)</span> is true <em>if <span class="math">\(f(x, \alpha)\)</span> possesses a Riemann integral with respect to <span class="math">\(x\)</span> and <span class="math">\(f_{\alpha}\,  ( = \frac{df}{d\alpha})\)</span> is a continuous function of both<a class="marginmark" onClick="toggleHide('mn:15,-9');">&#91;15&#93;</a> of the variables <span class="math">\(x\)</span> and <span class="math">\(\alpha\)</span></em>. </p>
+</div>
+<div class="marginnotes"  id="mn:14,-13"  style="margin-top: -13em; margin-bottom: -13em;"><a class="marginmark">&#91;14&#93;</a>This formula was given by Leibniz, without specifying the restrictions laid on<span class="math">\(f(x, \alpha)\)</span>.<a onClick="hideIt('mn:14,-13')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+</div>
+<div class="marginnotes"  id="mn:15,-9"  style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;15&#93;</a><span class="math">\(\phi(x, y)\)</span> is defined to be a continuous function of <em>both</em> variables if, given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(\delta\)</span> such that <span class="math">\(\left| \,\phi(x', y') - \phi(x, y)\, \right| < \epsilon\)</span> whenever <span class="math">\(\{(x' - x)^2 + (y' - y)^2 \}^{\frac{1}{2}} < \delta\)</span>. It can be shewn by <a href="CMA03-3-Heine-BorelMN.html#themodifiedheine-boreltheorem.">&#167;3.6</a> that if <span class="math">\(\phi(x, y)\)</span> is a continuous function of both variables at all points of a closed region in a Cartesian diagram, it is <em>uniformly</em> continuous throughout the region (the proof is almost identical with that of <a href="CMA03-3-Heine-BorelMN.html#uniformityofcontinuity.">&#167;3.61</a>). It should be noticed that, if <span class="math">\(\phi(x, y)\)</span> is a continuous function of <em>each</em> variable, it is <em>not</em> necessarily a continuous function of both; as an example take <span class="math">\[\phi(x,y)=\frac{(x+y)^2}{x^2+y^2}, \quad \phi(0,0) = 1;\]</span> this is a continuous function of <em>x</em> and of <em>y</em> at <span class="math">\((0, 0)\)</span>, but not of both <em>x</em> and <em>y</em>.<a onClick="hideIt('mn:15,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>For
+<span class="math">\[\frac{d}{d\alpha}\int_a^b f(x,\alpha)\,dx = \lim_{h \rightarrow 0} \int_a^b \frac{f(x,\alpha+h)-f(x, \alpha)}{h} dx\]</span>
+if this limit exists. But, by the first mean value theorem, since <span class="math">\(f_{\alpha}\)</span> is a
+continuous function of <span class="math">\(\alpha\)</span>, the second integrand is <span class="math">\(f_{\alpha} (x, a + \theta h)\)</span>, where <span class="math">\(0 \leq \theta \leq 1\)</span>.</p>
+</div>
+<div class="marginnotes"  id="mn:16,+9"  style="margin-top: +9em; margin-bottom: +9em;"><a class="marginmark">&#91;16&#93;</a>It is obvious that it would have been sufficient to assume that <span class="math">\(f_{\alpha}\)</span> had a Riemann integral and was a continuous function of <span class="math">\(\alpha\)</span> (the continuity being uniform with respect to <em>x</em>), instead of assuming that <span class="math">\(f_{\alpha}\)</span> was a continuous function of both variables. This is actually done by Hobson, <a href="https://archive.org/details/theoryfunctions00hobsgoog"><em>Functions of a Real Variable</em></a>, p. 599.<a onClick="hideIt('mn:16,+9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>But, for any given <span class="math">\(\epsilon\)</span>, a number <span class="math">\(\delta\)</span> <em>independent</em> of <em>x</em> exists (since the continuity of <span class="math">\(f_{\alpha}\)</span> is uniform<a class="marginmark" onClick="toggleHide('mn:16,+9');">&#91;16&#93;</a> with respect to the variable <em>x</em>) such that
+<span class="math">\[\left|\, f_{\alpha}(x, \alpha') - f_{\alpha}(x, \alpha) \,\right| < \left. \epsilon \middle/ (b-a)\right. ,\]</span>
+whenever <span class="math">\(\left|\, \alpha' - \alpha \,\right| < \delta\)</span>. </p>
+
+<p>Taking <span class="math">\(\left| h \right| < \delta\)</span> we see that <span class="math">\(\left| \theta h \right| < \delta\)</span>, and so <em>whenever</em> <span class="math">\(\left| h \right| < \delta\)</span>,
+<span class="math">\[\left|\int_a^b \frac{f(x,\alpha+h)-f(x, \alpha)}{h} dx - \int_a^b f_{\alpha}(x, \alpha)\,dx \,\right|\]</span>
+<span class="math">\[
+\begin{align*} \qquad \qquad \qquad &\leq \int_a^b \left|\, f_{\alpha}(x, \alpha+\theta h) - f_{\alpha}(x, \alpha)\,\right|\, dx.\\
+\\
+& < \epsilon.
+\end{align*}
+\]</span> </p>
+
+<p>Therefore by the definition of a limit of a function (<a href="CMA03-1-ContinuousFnsMN.html#continuityoffunctionsofrealvariables">&#167;3.2</a>),
+<span class="math">\[\lim_{h \rightarrow 0} \int_a^b \frac{f(x,\alpha+h)-f(x, \alpha)}{h} dx\]</span>
+exists and is equal to <span class="math">\(\displaystyle \int_a^b f_{\alpha} \,dx\)</span>. </p>
+
+<blockquote>
+<p><em>Example</em> 1. If <span class="math">\(a, b\)</span> be not constants but functions of <span class="math">\(\alpha\)</span> with continuous differential coefficients, shew that
+<span class="math">\[\frac{d}{d\alpha}\int_a^b f(x, \alpha)\, dx = f(b, \alpha)\frac{db}{d\alpha}-f(a, \alpha)\frac{da}{d\alpha}+\int_a^b \frac{\partial f}{\partial \alpha} dx.\]</span></p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 2. If <span class="math">\(f(x, \alpha)\)</span> is a continuous function of both variables, <span class="math">\(\displaystyle \int_a^b  f(x, \alpha)\,dx\)</span> is a continuous function of <span class="math">\(\alpha\)</span>. </p>
+</blockquote>
+</div>
+</div>
+
+<div id="footer">
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
+<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+</div>
+
+<div id="navint" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navint');showIt('navfront');">FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navint');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
+  <ul>
+    <li class="more"><a onClick="hideIt('navint');showIt('navprocesses');"> more . . . </a></li>
+    <li><a href="CMA03-1-ContinuousFnsMN.html#continuousfunctionsanduniformconvergence">Continuity and Uniform Convergence</a></li>
+    <li><a href="#thetheoryofriemannintegration">The Theory of Riemann Integration</a>
+      <ul>
+        <li class="current"><a href="#4.1theconceptofintegration.">The Concept of Integration</a></li>
+        <li class="current"><a href="#4.2differentiationofintegralscontainingaparameter.">Differentiation of Integrals</a></li>
+    <li><a href="CMA04-2-InfiniteIntegralsMN.html#4.3doubleintegralsandrepeatedintegrals.">Double Integrals & Repeated Integrals</a></li>
+    <li><a href="CMA04-2-InfiniteIntegralsMN.html#4.4infiniteintegrals.">Infinite Integrals</a></li>
+    <li><a href="CMA04-3-ComplexIntMN.html#4.5improperintegrals.principalvalues.">Improper Integrals</a></li>
+    <li><a href="CMA04-3-ComplexIntMN.html#4.6complexintegration.">Complex Integration</a></li>
+    <li><a href="CMA04-3-ComplexIntMN.html#4.7integrationofinfiniteseries.">Integration of Infinite Series</a></li>
+        <li><a href="CMA04-3-ComplexIntMN.html#references.">References</a></li>
+        <li><a href="CMA04-3-ComplexIntMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
+      </ul>
+    </li>
+    <li><a href="whereOwhere.html">The Fundamental Properties of Analytic Functions</a></li>
+    <li class="more"><a onClick="hideIt('navint');showIt('navprocesses');"> more . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navint');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navint');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navfront" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a>FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-FrontMN.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-FrontMN.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-FrontMN.html#preface">Preface</a></li>
+    <li><a href="CMA00-FrontMN.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navint');hideIt('navfront');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navprocesses" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
+<li class="part"><a>PROCESSES OF ANALYSIS</a>
+  <ul >
+    <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
+    <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
+     <li><a href="#" onClick="showIt('navint');hideIt('navprocesses');">Continuity and Uniform Convergence</a></li>
+     <li><a href="#" onClick="showIt('navint');hideIt('navprocesses');">The Theory of Riemann Integration</a></li>
+     <li class="more current"><a onClick="showIt('navint');hideIt('navprocesses');"> you are here . . . </a></li>
+     <li class="notdone"><a href="whereOwhere.html">The Properties of Analytic Functions</a></li>
+     <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navtranscendental" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
+<ul>
+    <li class="more current"><a onClick="showIt('navint');hideIt('navtranscendental');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
+  <ul>
+    <li class="notdone"><a href="whereOwhere.html">The Gamma Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Zeta Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Legendre Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Bessel Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Mathieu Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lam&eacute;&#8217;s Equation</a></li> 
+  </ul>
+  </li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navback" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navint');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a>BACKMATTER</a>
+  <ul >
+    <li ><a href="whereOwhere.html">Appendix</a></li>
+    <li ><a href="whereOwhere.html">Authors Quoted</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfixedleft" class="fixedBleft">
+<p><a href="CMA03-4-PowerSeriesMN.html">&#x25C0;</a></p>
+</div>
+
+<div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
+<p><a onClick="showIt('navint');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA04-2-InfiniteIntegralsMN.html" style="float: right;">&#x25B6;</a></p>
+</div>
+
+<div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
+<p><a onClick="hideIt('navint');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA04-2-InfiniteIntegralsMN.html" style="float: right;">&#x25B6;  </a></p>
+</div>
+
+</body>
+</html>
