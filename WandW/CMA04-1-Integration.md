@@ -60,7 +60,7 @@ Let the lower and upper bounds of these functions of *n* be *S*, *s*. Then
 We proceed to shew that \\(s\\) is *at most* equal to \\(S\\); i.e. \\(S \geq s\\). 
 
 Let the intervals \\([a, x_1], [x_1, x_2], \dots \\) be divided into smaller intervals by new points of subdivision, and let 
-\\[a, y_1, y_2, \dots ,  y_{k-1}, y_k (= x_1). y_{k+1}, \dots , y_{l-1}, y_l (= x_2), y_{l+1}, \dots , y_{m-1}, b \\]
+\\[a, y_1, y_2, \dots ,  y_{k-1}, y_k (= x_1), y_{k+1}, \dots , y_{l-1}, y_l (= x_2), y_{l+1}, \dots , y_{m-1}, b \\]
 be the end points of the smaller intervals; let \\(U_r'\\), \\(L_r '\\) be the bounds of \\(f(x)\\) in the interval \\([y_{r-1}, y_r ]\\).
 
 Let \\[T_m = \sum_{r=1}^m (y_r - y_{r-1}) U_r ', \quad t_m = \sum_{r=1}^m (y_r - y_{r-1}) L_r '.\\]
@@ -228,7 +228,7 @@ are not negative; and so
 
 This is known as the *First Mean Value Theorem*. 
 
-If \\(f(x)\\) is *continuous* we can find a number \\(\xi\\) such that \\(a \leq \xi \leq b\\) and such that  has any given value lying between *U* and *L* ([§3.63](CMA03-3-Heine-Borel.html#arealfunctionofarealvariablecontinuousinaclosedintervalattainsallvaluesbetweenitsupperandlowerbounds.)). Therefore we can find \\(\xi\\) such that 
+If \\(f(x)\\) is *continuous* we can find a number \\(\xi\\) such that \\(a \leq \xi \leq b\\) and such that \\(f(\xi)\\) has any given value lying between *U* and *L* ([§3.63](CMA03-3-Heine-Borel.html#arealfunctionofarealvariablecontinuousinaclosedintervalattainsallvaluesbetweenitsupperandlowerbounds.)). Therefore we can find \\(\xi\\) such that 
 \\[\int_a^b f(x) \, dx = (b-a)f(\xi).\\]
 
 If \\(F(x)\\) has a continuous differential coefficient \\(F' (x)\\) in the range \\([a, b]\\), we have, on writing \\(F' (x)\\) for \\(f(x)\\), 
@@ -255,7 +255,7 @@ Each term in the summation is increased by writing \\(\overline b\\) for \\(b_{s
 \\[\left|\, \phi(x_0) \sum_{s=1}^m(x_s-x_{s-1})f(x_{s-1}) - \phi(x_0) \int_{x_{\tiny {0}}}^{ x_ {p}} f(x) \, dx \, \right| < \epsilon,\\]
 and so, writing *a*, *b* for \\(x_0\\), \\(x_p\\), we find that \\(\displaystyle  \int_a^b f(x) \phi(x)\, dx\\) lies between the upper and lower bounds of[^contint]  \\(\displaystyle\phi(a) \int_{a}^{ \xi_1} f(x) \, dx\pm 2\epsilon\\), where \\(\xi_1\\) may take all values between *a* and *b*. Let *U* and *L* be the upper and lower bounds of \\(\displaystyle\phi(a) \int_{a}^{ \xi_1} f(x) \, dx \\). 
 
-[^contint]: By [§4.13 example 6](#4.13example6), since \\(f(x)\\) is bounded, \\(int_a^{\xi_1}f(x)\,dx\\) is a continuous function of \\(\xi_1\\).
+[^contint]: By [§4.13 example 6](#4.13example6), since \\(f(x)\\) is bounded, \\(\int_a^{\xi_1}f(x)\,dx\\) is a continuous function of \\(\xi_1\\).
 
 Then \\(U+2\epsilon \geq \displaystyle\int_{a}^{b} f(x)\phi(x) \, dx  \geq L- 2\epsilon\\)  for *all* positive values of \\(\epsilon\\); therefore
 \\[U\geq \int_{a}^{b} f(x)\phi(x) \, dx \geq L .\\]
@@ -273,9 +273,9 @@ such that \\(a \leq \xi \leq b\\) and
 
 ###4.2 Differentiation of integrals containing a parameter. ###
 
-The equation[^leibniz,-13] \\(\displaystyle \frac{d}{d\alpha}\int_a^b f(x, \alpha) \, dx = \int_a^b \frac{df}{d\alpha} \, dx\\) is true *if \\(f(x, \alpha)\\) possesses a Riemann integral with respect to \\(x\\) and \\(f_{\alpha}\,  ( = \frac{df}{d\alpha})\\) is a continuous function of both[^both,-9] of the variables \\(x\\) and \\(\alpha\\)*. 
+The equation[^leibniz,-13] \\(\displaystyle \frac{d}{d\alpha}\int_a^b f(x, \alpha) \, dx = \int_a^b \frac{\partial f}{\partial \alpha} \, dx\\) is true *if \\(f(x, \alpha)\\) possesses a Riemann integral with respect to \\(x\\) and \\(f_{\alpha}\,  ( = \frac{\partial f}{\partial \alpha})\\) is a continuous function of both[^both,-9] of the variables \\(x\\) and \\(\alpha\\)*. 
 
-[^leibniz,-13]: This formula was given by Leibniz, without specifying the restrictions laid on\\(f(x, \alpha)\\).
+[^leibniz,-13]: This formula was given by Leibniz, without specifying the restrictions laid on \\(f(x, \alpha)\\).
 
 [^both,-9]: \\(\phi(x, y)\\) is defined to be a continuous function of *both* variables if, given \\(\epsilon\\), we can find \\(\delta\\) such that \\(\left| \,\phi(x', y') - \phi(x, y)\, \right| < \epsilon\\) whenever \\(\{(x' - x)^2 + (y' - y)^2 \}^{\frac{1}{2}} < \delta\\). It can be shewn by [§3.6](CMA03-3-Heine-BorelMN.html#themodifiedheine-boreltheorem.) that if \\(\phi(x, y)\\) is a continuous function of both variables at all points of a closed region in a Cartesian diagram, it is *uniformly* continuous throughout the region (the proof is almost identical with that of [§3.61](CMA03-3-Heine-Borel.html#uniformityofcontinuity.)). It should be noticed that, if \\(\phi(x, y)\\) is a continuous function of *each* variable, it is *not* necessarily a continuous function of both; as an example take \\[\phi(x,y)=\frac{(x+y)^2}{x^2+y^2}, \quad \phi(0,0) = 1;\\] this is a continuous function of *x* and of *y* at \\((0, 0)\\), but not of both *x* and *y*.
 
@@ -307,7 +307,7 @@ exists and is equal to \\(\displaystyle \int_a^b f_{\alpha} \,dx\\).
 >*Example* 1. If \\(a, b\\) be not constants but functions of \\(\alpha\\) with continuous differential coefficients, shew that
 >\\[\frac{d}{d\alpha}\int_a^b f(x, \alpha)\, dx = f(b, \alpha)\frac{db}{d\alpha}-f(a, \alpha)\frac{da}{d\alpha}+\int_a^b \frac{\partial f}{\partial \alpha} dx.\\]
 
->*Example* 2. If \\(f(x, \alpha)\\) is a continuous function of both variables, \\(\displaystyle \int_a^b  f(x, \alpha)\,dx\\) is a continuous function of \\(\alpha\\). 
+>######*Example* 2. If \\(f(x, \alpha)\\) is a continuous function of both variables, \\(\displaystyle \int_a^b  f(x, \alpha)\,dx\\) is a continuous function of \\(\alpha\\). [4.2example2]######
 
 </div>
 
@@ -388,7 +388,7 @@ exists and is equal to \\(\displaystyle \int_a^b f_{\alpha} \,dx\\).
   <ul >
     <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
     <li><a href="CMA02-1-Limits.html">The Theory of Convergence</a></li>
-     <li><a href="#" onClick="showIt('navint');hideIt('navprocesses');">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
      <li><a href="#" onClick="showIt('navint');hideIt('navprocesses');">The Theory of Riemann Integration</a></li>
      <li class="more current"><a onClick="showIt('navint');hideIt('navprocesses');"> you are here . . . </a></li>
      <li class="notdone"><a href="whereOwhere.html">The Properties of Analytic Functions</a></li>

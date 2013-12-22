@@ -54,7 +54,7 @@ Then
 We proceed to shew that <span class="math">\(s\)</span> is <em>at most</em> equal to <span class="math">\(S\)</span>; i.e. <span class="math">\(S \geq s\)</span>. </p>
 
 <p>Let the intervals <span class="math">\([a, x_1], [x_1, x_2], \dots \)</span> be divided into smaller intervals by new points of subdivision, and let
-<span class="math">\[a, y_1, y_2, \dots ,  y_{k-1}, y_k (= x_1). y_{k+1}, \dots , y_{l-1}, y_l (= x_2), y_{l+1}, \dots , y_{m-1}, b \]</span>
+<span class="math">\[a, y_1, y_2, \dots ,  y_{k-1}, y_k (= x_1), y_{k+1}, \dots , y_{l-1}, y_l (= x_2), y_{l+1}, \dots , y_{m-1}, b \]</span>
 be the end points of the smaller intervals; let <span class="math">\(U_r'\)</span>, <span class="math">\(L_r '\)</span> be the bounds of <span class="math">\(f(x)\)</span> in the interval <span class="math">\([y_{r-1}, y_r ]\)</span>.</p>
 
 <p>Let <span class="math">\[T_m = \sum_{r=1}^m (y_r - y_{r-1}) U_r ', \quad t_m = \sum_{r=1}^m (y_r - y_{r-1}) L_r '.\]</span></p>
@@ -238,7 +238,7 @@ are not negative; and so
 
 <p>This is known as the <em>First Mean Value Theorem</em>. </p>
 
-<p>If <span class="math">\(f(x)\)</span> is <em>continuous</em> we can find a number <span class="math">\(\xi\)</span> such that <span class="math">\(a \leq \xi \leq b\)</span> and such that has any given value lying between <em>U</em> and <em>L</em> (<a href="CMA03-3-Heine-Borel.html#arealfunctionofarealvariablecontinuousinaclosedintervalattainsallvaluesbetweenitsupperandlowerbounds.">§3.63</a>). Therefore we can find <span class="math">\(\xi\)</span> such that
+<p>If <span class="math">\(f(x)\)</span> is <em>continuous</em> we can find a number <span class="math">\(\xi\)</span> such that <span class="math">\(a \leq \xi \leq b\)</span> and such that <span class="math">\(f(\xi)\)</span> has any given value lying between <em>U</em> and <em>L</em> (<a href="CMA03-3-Heine-Borel.html#arealfunctionofarealvariablecontinuousinaclosedintervalattainsallvaluesbetweenitsupperandlowerbounds.">§3.63</a>). Therefore we can find <span class="math">\(\xi\)</span> such that
 <span class="math">\[\int_a^b f(x) \, dx = (b-a)f(\xi).\]</span></p>
 
 <p>If <span class="math">\(F(x)\)</span> has a continuous differential coefficient <span class="math">\(F' (x)\)</span> in the range <span class="math">\([a, b]\)</span>, we have, on writing <span class="math">\(F' (x)\)</span> for <span class="math">\(f(x)\)</span>,
@@ -277,7 +277,7 @@ such that <span class="math">\(a \leq \xi \leq b\)</span> and
 
 <h3 id="4.2differentiationofintegralscontainingaparameter.">4.2 Differentiation of integrals containing a parameter.</h3>
 
-<p>The equation<a href="#fn:14" id="fnref:14" title="see footnote" class="footnote">[14]</a> <span class="math">\(\displaystyle \frac{d}{d\alpha}\int_a^b f(x, \alpha) \, dx = \int_a^b \frac{df}{d\alpha} \, dx\)</span> is true <em>if <span class="math">\(f(x, \alpha)\)</span> possesses a Riemann integral with respect to <span class="math">\(x\)</span> and <span class="math">\(f_{\alpha}\,  ( = \frac{df}{d\alpha})\)</span> is a continuous function of both<a href="#fn:15" id="fnref:15" title="see footnote" class="footnote">[15]</a> of the variables <span class="math">\(x\)</span> and <span class="math">\(\alpha\)</span></em>. </p>
+<p>The equation<a href="#fn:14" id="fnref:14" title="see footnote" class="footnote">[14]</a> <span class="math">\(\displaystyle \frac{d}{d\alpha}\int_a^b f(x, \alpha) \, dx = \int_a^b \frac{\partial f}{\partial \alpha} \, dx\)</span> is true <em>if <span class="math">\(f(x, \alpha)\)</span> possesses a Riemann integral with respect to <span class="math">\(x\)</span> and <span class="math">\(f_{\alpha}\,  ( = \frac{\partial f}{\partial \alpha})\)</span> is a continuous function of both<a href="#fn:15" id="fnref:15" title="see footnote" class="footnote">[15]</a> of the variables <span class="math">\(x\)</span> and <span class="math">\(\alpha\)</span></em>. </p>
 
 <p>For
 <span class="math">\[\frac{d}{d\alpha}\int_a^b f(x,\alpha)\,dx = \lim_{h \rightarrow 0} \int_a^b \frac{f(x,\alpha+h)-f(x, \alpha)}{h} dx\]</span>
@@ -307,10 +307,10 @@ exists and is equal to <span class="math">\(\displaystyle \int_a^b f_{\alpha} \,
 </blockquote>
 
 <blockquote>
-<p><em>Example</em> 2. If <span class="math">\(f(x, \alpha)\)</span> is a continuous function of both variables, <span class="math">\(\displaystyle \int_a^b  f(x, \alpha)\,dx\)</span> is a continuous function of <span class="math">\(\alpha\)</span>. </p>
+<h6 id="4.2example2"><em>Example</em> 2. If <span class="math">\(f(x, \alpha)\)</span> is a continuous function of both variables, <span class="math">\(\displaystyle \int_a^b  f(x, \alpha)\,dx\)</span> is a continuous function of <span class="math">\(\alpha\)</span>.</h6>
 </blockquote>
 
-</div>
+<p></div></p>
 </div>
 
 <div id="footer">
@@ -382,7 +382,7 @@ exists and is equal to <span class="math">\(\displaystyle \int_a^b f_{\alpha} \,
   <ul >
     <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
     <li><a href="CMA02-1-Limits.html">The Theory of Convergence</a></li>
-     <li><a href="#" onClick="showIt('navint');hideIt('navprocesses');">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
      <li><a href="#" onClick="showIt('navint');hideIt('navprocesses');">The Theory of Riemann Integration</a></li>
      <li class="more current"><a onClick="showIt('navint');hideIt('navprocesses');"> you are here . . . </a></li>
      <li class="notdone"><a href="whereOwhere.html">The Properties of Analytic Functions</a></li>
@@ -508,7 +508,7 @@ exists and is equal to <span class="math">\(\displaystyle \int_a^b f_{\alpha} \,
 </li>
 
 <li id="fn:12">
-<p>By <a href="#4.13example6">§4.13 example 6</a>, since <span class="math">\(f(x)\)</span> is bounded, <span class="math">\(int_a^{\xi_1}f(x)\,dx\)</span> is a continuous function of <span class="math">\(\xi_1\)</span>. <a href="#fnref:12" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p>By <a href="#4.13example6">§4.13 example 6</a>, since <span class="math">\(f(x)\)</span> is bounded, <span class="math">\(\int_a^{\xi_1}f(x)\,dx\)</span> is a continuous function of <span class="math">\(\xi_1\)</span>. <a href="#fnref:12" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:13">
@@ -516,7 +516,7 @@ exists and is equal to <span class="math">\(\displaystyle \int_a^b f_{\alpha} \,
 </li>
 
 <li id="fn:14">
-<p>This formula was given by Leibniz, without specifying the restrictions laid on<span class="math">\(f(x, \alpha)\)</span>. <a href="#fnref:14" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p>This formula was given by Leibniz, without specifying the restrictions laid on <span class="math">\(f(x, \alpha)\)</span>. <a href="#fnref:14" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:15">
