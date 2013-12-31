@@ -260,7 +260,7 @@ and so, writing *a*, *b* for \\(x_0\\), \\(x_p\\), we find that \\(\displaystyle
 Then \\(U+2\epsilon \geq \displaystyle\int_{a}^{b} f(x)\phi(x) \, dx  \geq L- 2\epsilon\\)  for *all* positive values of \\(\epsilon\\); therefore
 \\[U\geq \int_{a}^{b} f(x)\phi(x) \, dx \geq L .\\]
 
-[^qua,+1]: *Editor's Note*: In this usage, the word *qua* means *functioning as a...* 
+[^qua,+1]: *Editor's Note*: In this usage, the word *qua* means *treated as a...* 
 
 Since \\(\displaystyle\phi(a) \int_{a}^{ \xi_1} f(x) \, dx\\) *qua*[^qua,+1] function of \\(\xi_1\\) takes all values between its upper and lower bounds, there is some value \\(\xi\\), say, of \\(\xi_1\\) for which it is equal to \\(\int_{a}^{b} f(x)\phi(x) \, dx \\). This 
 proves the Second Mean Value Theorem. 

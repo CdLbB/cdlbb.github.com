@@ -100,7 +100,7 @@ Let the lower and upper bounds of these functions of *n* be *S*, *s*. Then
 We proceed to shew that \\(s\\) is *at most* equal to \\(S\\); i.e. \\(S \geq s\\). 
 
 Let the intervals \\([a, x_1], [x_1, x_2], \dots \\) be divided into smaller intervals by new points of subdivision, and let 
-\\[a, y_1, y_2, \dots ,  y_{k-1}, y_k (= x_1). y_{k+1}, \dots , y_{l-1}, y_l (= x_2), y_{l+1}, \dots , y_{m-1}, b \\]
+\\[a, y_1, y_2, \dots ,  y_{k-1}, y_k (= x_1), y_{k+1}, \dots , y_{l-1}, y_l (= x_2), y_{l+1}, \dots , y_{m-1}, b \\]
 be the end points of the smaller intervals; let \\(U_r'\\), \\(L_r '\\) be the bounds of \\(f(x)\\) in the interval \\([y_{r-1}, y_r ]\\).
 
 Let \\[T_m = \sum_{r=1}^m (y_r - y_{r-1}) U_r ', \quad t_m = \sum_{r=1}^m (y_r - y_{r-1}) L_r '.\\]
@@ -318,7 +318,7 @@ are not negative; and so
 
 This is known as the *First Mean Value Theorem*. 
 
-If \\(f(x)\\) is *continuous* we can find a number \\(\xi\\) such that \\(a \leq \xi \leq b\\) and such that  has any given value lying between *U* and *L* ([&#167;3.63](CMA03-3-Heine-BorelMN.html#arealfunctionofarealvariablecontinuousinaclosedintervalattainsallvaluesbetweenitsupperandlowerbounds.)). Therefore we can find \\(\xi\\) such that 
+If \\(f(x)\\) is *continuous* we can find a number \\(\xi\\) such that \\(a \leq \xi \leq b\\) and such that \\(f(\xi)\\) has any given value lying between *U* and *L* ([&#167;3.63](CMA03-3-Heine-BorelMN.html#arealfunctionofarealvariablecontinuousinaclosedintervalattainsallvaluesbetweenitsupperandlowerbounds.)). Therefore we can find \\(\xi\\) such that 
 \\[\int_a^b f(x) \, dx = (b-a)f(\xi).\\]
 
 If \\(F(x)\\) has a continuous differential coefficient \\(F' (x)\\) in the range \\([a, b]\\), we have, on writing \\(F' (x)\\) for \\(f(x)\\), 
@@ -369,7 +369,7 @@ and so, writing *a*, *b* for \\(x_0\\), \\(x_p\\), we find that \\(\displaystyle
 
 
 
-<div markdown=1 class="marginnotes" id="mn:12,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;12&#93;</a>By [&#167;4.13 example 6](#4.13example6), since \\(f(x)\\) is bounded, \\(int_a^{\xi_1}f(x)\,dx\\) is a continuous function of \\(\xi_1\\).<a onClick="hideIt('mn:12,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:12,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;12&#93;</a>By [&#167;4.13 example 6](#4.13example6), since \\(f(x)\\) is bounded, \\(\int_a^{\xi_1}f(x)\,dx\\) is a continuous function of \\(\xi_1\\).<a onClick="hideIt('mn:12,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -384,7 +384,7 @@ Then \\(U+2\epsilon \geq \displaystyle\int_{a}^{b} f(x)\phi(x) \, dx  \geq L- 2\
 
 
 
-<div markdown=1 class="marginnotes" id="mn:13,+1" style="margin-top: +1em; margin-bottom: +1em;"><a class="marginmark">&#91;13&#93;</a>*Editor's Note*: In this usage, the word *qua* means *functioning as a...* <a onClick="hideIt('mn:13,+1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:13,+1" style="margin-top: +1em; margin-bottom: +1em;"><a class="marginmark">&#91;13&#93;</a>*Editor's Note*: In this usage, the word *qua* means *treated as a...* <a onClick="hideIt('mn:13,+1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -403,13 +403,13 @@ such that \\(a \leq \xi \leq b\\) and
 
 ###4.2 Differentiation of integrals containing a parameter. ###
 
-The equation<a class="marginmark" onClick="toggleHide('mn:14,-13');">&#91;14&#93;</a> \\(\displaystyle \frac{d}{d\alpha}\int_a^b f(x, \alpha) \, dx = \int_a^b \frac{df}{d\alpha} \, dx\\) is true *if \\(f(x, \alpha)\\) possesses a Riemann integral with respect to \\(x\\) and \\(f_{\alpha}\,  ( = \frac{df}{d\alpha})\\) is a continuous function of both<a class="marginmark" onClick="toggleHide('mn:15,-9');">&#91;15&#93;</a> of the variables \\(x\\) and \\(\alpha\\)*. 
+The equation<a class="marginmark" onClick="toggleHide('mn:14,-13');">&#91;14&#93;</a> \\(\displaystyle \frac{d}{d\alpha}\int_a^b f(x, \alpha) \, dx = \int_a^b \frac{\partial f}{\partial \alpha} \, dx\\) is true *if \\(f(x, \alpha)\\) possesses a Riemann integral with respect to \\(x\\) and \\(f_{\alpha}\,  ( = \frac{\partial f}{\partial \alpha})\\) is a continuous function of both<a class="marginmark" onClick="toggleHide('mn:15,-9');">&#91;15&#93;</a> of the variables \\(x\\) and \\(\alpha\\)*. 
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:14,-13" style="margin-top: -13em; margin-bottom: -13em;"><a class="marginmark">&#91;14&#93;</a>This formula was given by Leibniz, without specifying the restrictions laid on\\(f(x, \alpha)\\).<a onClick="hideIt('mn:14,-13')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:14,-13" style="margin-top: -13em; margin-bottom: -13em;"><a class="marginmark">&#91;14&#93;</a>This formula was given by Leibniz, without specifying the restrictions laid on \\(f(x, \alpha)\\).<a onClick="hideIt('mn:14,-13')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -467,7 +467,7 @@ exists and is equal to \\(\displaystyle \int_a^b f_{\alpha} \,dx\\).
 >*Example* 1. If \\(a, b\\) be not constants but functions of \\(\alpha\\) with continuous differential coefficients, shew that
 >\\[\frac{d}{d\alpha}\int_a^b f(x, \alpha)\, dx = f(b, \alpha)\frac{db}{d\alpha}-f(a, \alpha)\frac{da}{d\alpha}+\int_a^b \frac{\partial f}{\partial \alpha} dx.\\]
 
->*Example* 2. If \\(f(x, \alpha)\\) is a continuous function of both variables, \\(\displaystyle \int_a^b  f(x, \alpha)\,dx\\) is a continuous function of \\(\alpha\\). 
+>######*Example* 2. If \\(f(x, \alpha)\\) is a continuous function of both variables, \\(\displaystyle \int_a^b  f(x, \alpha)\,dx\\) is a continuous function of \\(\alpha\\). [4.2example2]######
 
 </div>
 
@@ -548,7 +548,7 @@ exists and is equal to \\(\displaystyle \int_a^b f_{\alpha} \,dx\\).
   <ul >
     <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
     <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
-     <li><a href="#" onClick="showIt('navint');hideIt('navprocesses');">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
      <li><a href="#" onClick="showIt('navint');hideIt('navprocesses');">The Theory of Riemann Integration</a></li>
      <li class="more current"><a onClick="showIt('navint');hideIt('navprocesses');"> you are here . . . </a></li>
      <li class="notdone"><a href="whereOwhere.html">The Properties of Analytic Functions</a></li>
