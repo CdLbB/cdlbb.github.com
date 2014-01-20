@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="latexinput" content="mmd-cambridge-header"/>
+	<title>A Course of Modern Analysis-ComplexIntegrals 4-3</title>
+	<meta name="subtitle" content="An introduction to the general theory of
+infinite processes and analytic functions;
+with an account of the principal
+transcendental functions."/>
+	<meta name="author" content="E.T. Whittaker and G.N. Watson"/>
+	<meta name="editor" content="Eric Nitardy"/>
+	<meta name="date" content="Jan 1, 2014"/>
+	<meta name="titlefile" content="mmd-WandW-title"/>
+	<meta name="copyrightfile" content="mmd-WandW-copyright"/>
+	<meta name="test" content="And this is a new key-value pair"/>
+	<meta name="latexmode" content="memoir"/>
+	<meta name="latexinput" content="mmd-cambridge-begin-doc"/>
+	<meta name="latexfooter" content="mmd-cambridge-footer"/>
+	<link type="text/css" rel="stylesheet" href="css/documentation.css"/>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+<script type="text/javascript" src="js/showhide.js"></script>
+<script type="text/javascript" src="js/mathjaxend.js"></script>
+</head>
+<body>
+
+<div id="header"><h1><a href="CMA00-FrontMN.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
+<div id="content">
+<div class="contenttext">
+
+<h3 id="4.5improperintegrals.principalvalues.">4.5 Improper integrals. Principal values.</h3>
+
+<p>If <span class="math">\(\left|\,f(x) \,\right| \rightarrow  \infty\)</span> as <span class="math">\(x  \rightarrow a+0\)</span>, then <span class="math">\(\lim\limits_{\delta \rightarrow +0} \displaystyle \int_{a+\delta}^b \!f(x)\, dx\)</span> may exist, and is written simply <span class="math">\( \int_a^b f(x)\, dx\)</span>; this limit is called an <em>improper integral</em>. </p>
+
+<p>If <span class="math">\(\left|\,f(x)\, \right| \rightarrow \infty\)</span> as <span class="math">\(x \rightarrow c\)</span>, where <span class="math">\(a < c < b\)</span>, then
+<span class="math">\[\lim_{\delta \rightarrow +0} \int_a^{c-\delta}  \!f(x)\, dx + \lim_{\delta' \rightarrow +0} \int_{c+\delta'}^b  f(x)\,dx\]</span>
+may exist; this is also written <span class="math">\( \int_a^b f(x)\, dx\)</span>, and is also called an improper integral; it might however happen that neither of these limits exists when
+<span class="math">\(\delta, \,\delta' \rightarrow 0\)</span> independently, but
+<span class="math">\[\lim_{\delta \rightarrow +0} \left\{ \int_a^{c-\delta} \!f(x)\,dx+\int_{c+\delta}^b f(x)\,dx \right\} \]</span>
+exists; this is called &#8216;Cauchy&#8217;s principal value of <span class="math">\( \int_a^b f(x)\, dx\)</span>&#8217; and is written for brevity <span class="math">\( P \int_a^b f(x)\, dx\)</span>. </p>
+
+<p>Results similar to those of <a href="CMA04-2-InfiniteIntegralsMN.html#4.4infiniteintegrals.">&#167;&#167;4.4&#8211;4.44</a> may be obtained for improper
+integrals. But all that is required in practice is (i) the idea of absolute
+convergence, (ii) the analogue of Bertrand&#8217;s test for convergence, (iii) the
+analogue of de la Vall&eacute;e Poussin&#8217;s test for uniformity of convergence. The
+construction of these is left to the reader, as is also the consideration
+of integrals in which the integrand has an infinite limit at more than one
+point of the range of integration.<a class="marginmark" onClick="toggleHide('mn:1,-2');">&#91;1&#93;</a> </p>
+
+</div>
+<div class="marginnotes"  id="mn:1,-2"  style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;1&#93;</a>For a detailed discussion of improper integrals, the reader is referred either to <a href="https://archive.org/details/theoryfunctions00hobsgoog">Hobson&#8217;s</a> or to <a href="https://archive.org/details/lecturesonthethe032088mbp">Pierpont&#8217;s <em>Functions of a Real Variable</em></a>. The connexion between infinite integrals and improper integrals is exhibited by Bromwich, <a href="https://archive.org/details/introductiontoth00bromuoft"><em>Infinite Series</em></a>, &#167;164.<a onClick="hideIt('mn:1,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<blockquote>
+<h6 id="4.5examples"><em>Examples</em>.</h6>
+
+<p><span class="math">\[
+\begin{align*}
+&(1) \quad  \int_0^\pi \! x^{-\frac{1}{2}} \cos x\, dx \,\text{ is an improper integral.} \\
+&(2) \quad  \int^1 \! x^{\lambda-1} (1-x)^{\mu-1} dx \, \text{ is an improper integral}\\  & \qquad \qquad \text{ if } 0 < \lambda < 1, \,0 < \mu <1. \\
+&(3) \quad P \int_0^2 \!\frac{x^{\alpha-1}}{1-x} dx \,\text{ is the principal value of an improper integral}\\ & \qquad \qquad  \text{when } 0 < \alpha <1.  
+\end{align*}
+\]</span></p>
+</blockquote>
+
+<h4 id="4.51theinversionoftheorderofintegrationofacertainrepeatedintegral.">4.51 The inversion of the order of integration of a certain repeated integral.</h4>
+
+<p>General conditions for the legitimacy of inverting the order of integration when the
+integrand is not continuous are difficult to obtain. </p>
+
+<p>The following is a good example of the difficulties to be overcome in inverting the
+order of integration in a repeated improper integral. </p>
+
+<p><em>Let <span class="math">\(f(x,y)\)</span> be a continuous function of both variables, and let <span class="math">\(0 < \lambda \leq 1\)</span>, <span class="math">\(0 < \mu \leq 1\)</span>, <span class="math">\(0 < \nu \leq 1\)</span>; then</em>
+<span class="math">\[
+\begin{align*}
+&\int_0^1 \!dx \left\{\int_0^{1-x} \!x^{\lambda-1} y^{\mu-1} (1 -x-y)^{\nu-1} f(x,y) \, dy \right\} \\
+& \qquad \qquad  = \int_0^1 \!dy \left\{\int_0^{1-y}  \! x^{\lambda-1} y^{\mu-1} (1-x-y)^{\nu-1} f(x,y) \, dx \right\}. 
+\end{align*}
+\]</span></p>
+
+<p>This integral, which was first employed by Dirichlet, is of importance in the theory of
+integral equations; the investigation which we shall give is due to W. A. Hurwitz.<a class="marginmark" onClick="toggleHide('mn:2,-1');">&#91;2&#93;</a></p>
+</div>
+<div class="marginnotes"  id="mn:2,-1"  style="margin-top: -1em; margin-bottom: -1em;"><a class="marginmark">&#91;2&#93;</a><a href="http://www.jstor.org/stable/i307112"><em>Annals of Mathematics</em>, <strong>ix.</strong> (1908)</a>, p. 183. <a onClick="hideIt('mn:2,-1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>Let <span class="math">\(x^{\lambda-1} y^{\mu-1} (1 - x -y)^{\nu-1}   f(x,y) = \phi(x,y)\)</span>; and let <em>M</em> be the upper bound of <span class="math">\(\left|\,f(x,y)\,\right|\)</span>. </p>
+
+<p>Let <span class="math">\(\delta\)</span> be any positive number less than <span class="math">\(\frac{1}{3}\)</span>. </p>
+
+<p>Draw the triangle whose sides are <span class="math">\(x = \delta\)</span>, <span class="math">\(y = \delta\)</span>, <span class="math">\(x+y = 1- \delta\)</span>; at all points on and inside
+this triangle <span class="math">\(\phi(x, y)\)</span> is continuous, and hence, by <a href="CMA04-2-InfiniteIntegralsMN.html#4.3corollary">&#167;4.3 corollary</a>,
+<span class="math">\[\int_\delta^{1-2\delta} \!dx \left\{\int_\delta^{1-x-\delta} \!\phi(x,y)\,dy \right\}=\int_\delta^{1-2\delta}\! dy \left\{\int_\delta^{1-y-\delta} \!\phi(x,y)\,dx \right\}.\]</span></p>
+
+<p>Now
+<span class="math">\[
+\begin{align*}
+&\int_\delta^{1-2\delta} \! dx \left\{\int_\delta^{1-x} \!\phi(x,y)\,dy \right\}\\
+&\qquad  =\int_\delta^{1-2\delta}\! dx \left\{\int_\delta^{1-x-\delta} \! \phi(x,y)\,dy \right\} + \int_\delta^{1-2\delta} \! I_1 \, dx + \int_\delta^{1-2\delta} \! I_2 \,dx,
+\end{align*}
+\]</span>
+where <span class="math">\[I_1= \int_0^\delta \!\phi(x,y)\,dy, \quad I_2= \int_{1-x-\delta}^{1-x} \!\phi(x,y)\,dy. \]</span></p>
+
+<p>But <span class="math">\[
+\begin{align*}
+\left|\, I_1 \,\right|&\leq \int_0^\delta \! M x^{\lambda-1} y^{\mu-1} (1-x-y)^{\nu-1} dy\\
+&\leq M x^{\lambda-1} (1-x-\delta)^{\nu-1} \int_0^\delta \! y^{\mu-1} dy,
+\end{align*}
+\]</span>
+since <span class="math">\[  (1-x-y)^{\nu-1} \leq (1-x-\delta)^{\nu-1}. \]</span> </p>
+</div>
+<div class="marginnotes"  id="mn:3,+1"  style="margin-top: +1em; margin-bottom: +1em;"><a class="marginmark">&#91;3&#93;</a><span class="math">\(\int_0^1 x_1^{\lambda-1} (1-x)^{\nu-1} dx_1= B (\lambda, \nu)\)</span> exists if <span class="math">\(\lambda > 0\)</span>, <span class="math">\(\nu > 0\)</span> (<a href="#4.5examples">&#167;4.5 example 2</a>). <a onClick="hideIt('mn:3,+1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>Therefore, writing <span class="math">\(x = (1 - \delta)x_1\)</span>, we have<a class="marginmark" onClick="toggleHide('mn:3,+1');">&#91;3&#93;</a>
+<span class="math">\[
+\begin{align*}
+\left|\,\int_0^{1-2\delta} \! I_1 \, dx\, \right| & \leq M \delta^\mu \mu^{-1}  \int_0^{1-\delta} \! x^{\lambda-1} (1-x-\delta)^{\nu-1} dx \\
+& \leq M \delta^\mu \mu^{-1} (1-\delta)^{\lambda+\nu-1} \int_0^1 \! x_1^{\lambda-1} (1-x_1)^{\nu-1} dx_1 \\
+& < M \delta^\mu \mu^{-1} (1-\delta)^{\lambda+\nu-1} B(\lambda,\nu) \rightarrow 0 \text{ as } \delta \rightarrow 0.
+\end{align*}
+\]</span> The reader will prove similarly that <span class="math">\(\int_\delta^{1-2\delta}I_2\, dx \rightarrow 0\)</span> as <span class="math">\(\delta \rightarrow 0\)</span>. </p>
+</div>
+<div class="marginnotes"  id="mn:4,+1"  style="margin-top: +1em; margin-bottom: +1em;"><a class="marginmark">&#91;4&#93;</a>The repeated integral exists, and is, in fact, absolutely convergent; for <span class="math">\[\int_0^{1-x}\! \left|\, x^{\lambda-1} y^{\mu-1} (1 -x-y)^{\nu-1} f(x,y)\,\right|\, dy\]</span><span class="math">\[ \qquad \quad  < Mx^{\lambda-1} (1-x)^{\lambda+\nu-1} \int_0^1\! s^{\mu-1} (1-s)^{\nu-1} ds,\]</span>writing <span class="math">\(y = (1 -x)s\)</span>; and <span class="math">\[ \int_0^1 \!Mx^{\lambda-1} (1-x)^{\lambda+\nu-1} \int_0^1\! s^{\mu-1} (1-s)^{\nu-1} ds \;\text{ exists.}\]</span> And since the integral exists, its value which is <span class="math">\(\lim\limits_{\delta,\,\epsilon \rightarrow 0} \int_\delta^{1-\epsilon}\)</span> may be written <span class="math">\(\lim\limits_{\delta \rightarrow 0} \int_\delta^{1-2\delta}\)</span>.<a onClick="hideIt('mn:4,+1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>Hence<a class="marginmark" onClick="toggleHide('mn:4,+1');">&#91;4&#93;</a> <span class="math">\[
+\begin{align*}
+\int_0^1 \! dx \left\{\int_\delta^{1-x} \! \phi(x,y)\,dy \right\} & =\lim_{\delta \rightarrow 0}\int_\delta^{1-2\delta} \! dx \left\{\int_\delta^{1-x} \!\phi(x,y)\,dy \right\}\\
+&  =\lim_{\delta \rightarrow 0}\int_\delta^{1-2\delta} \!dx \left\{\int_\delta^{1-x-\delta} \!\phi(x,y)\,dy \right\}\\
+& =\lim_{\delta \rightarrow 0}\int_\delta^{1-2\delta} \!dy \left\{\int_\delta^{1-y-\delta} \!\phi(x,y)\,dx \right\}.
+\end{align*}
+\]</span></p>
+
+<p>by what has been already proved; but, by a precisely similar piece of work, the last
+integral is
+<span class="math">\[\int_0^1\! dy \left\{\int_\delta^{1-y} \!\phi(x,y)\,dx \right\}.\]</span>
+We have consequently proved the theorem in question. </p>
+
+<blockquote>
+<p><em>Corollary</em>, Writing <span class="math">\(\xi = a + (b-a) x\)</span>, <span class="math">\(\eta = b-(b-a)y\)</span>, we see that, if <span class="math">\(\phi(\xi,\eta)\)</span> is continuous,
+<span class="math">\[\begin{align*}&\int_a^b \!d\xi \left\{\int_\xi^b \!(\xi-a)^{\lambda-1} (b-\eta)^{\mu-1} (\eta-\xi)^{\nu-1} \phi(\xi,\eta)\,d\eta \right\}\\
+&\qquad =\int_a^b \!d\eta \left\{\int_a^\eta \!(\xi-a)^{\lambda-1} (b-\eta)^{\mu-1} (\eta-\xi)^{\nu-1} \phi(\xi,\eta)\,d\xi \right\}\end{align*}\]</span>
+This is called Dirichlet&#8217;s formula. </p>
+</blockquote>
+
+<blockquote>
+<p>[Note. What are now called infinite and improper integrals were defined by Cauchy, <a href="http://gallica.bnf.fr/ark:/12148/bpt6k62404287"><em>Leçons sur le calc. inf.</em> 1823</a>, though the idea of infinite integrals seems to date from Maclaurin (1742). The test for convergence was employed by Chartier (1853). Stokes (1847) distinguished between &#8216;essentially&#8217; (absolutely) and non-essentially convergent integrals though he did not give a formal definition. Such a definition was given by Dirichlet in 1854 and 1858 (see his <a href="https://archive.org/details/glejeunedirichle00lejeuoft"><em>Vorlesungen</em>, 1904</a>, p. 39). In the early part of the nineteenth century improper integrals received more attention than infinite integrals,- probably because it was not fully realised that an infinite integral is really the <em>limit</em> of an integral.] </p>
+</blockquote>
+
+<h3 id="4.6complexintegration.">4.6 Complex integration.<a class="marginmark" onClick="toggleHide('mn:5,-2');">&#91;5&#93;</a></h3>
+</div>
+<div class="marginnotes"  id="mn:5,-2"  style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;5&#93;</a>A treatment of complex integration based on a different set of ideas and not making so many assumptions concerning the curve <em>AB</em> will be found in Watson&#8217;s <a href="https://archive.org/details/complexintegrat00watsrich"><em>Complex Integration and Cauchy&#8217;s Theorem</em></a>. <a onClick="hideIt('mn:5,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>Integration with regard to a real variable <em>x</em> may be regarded as integration
+along a particular path (namely part of the real axis) in the Argand diagram.
+Let <span class="math">\(f(z)\)</span>, <span class="math">\((= P + iQ)\)</span>, be a function of a complex variable <span class="math">\(z\)</span>, which is continuous along a simple curve <em>AB</em> in the Argand diagram. </p>
+
+<p>Let the equations of the curve be
+<span class="math">\[x = x (t),\quad  y = y(t) \quad (a \leq z \leq b).\]</span>
+Let <span class="math">\[x(a) + iy(a) = z_0 ,\quad x(b) + iy(b) = Z.\]</span>
+Then if <span class="math">\(x(t),\, y(t)\)</span> have continuous differential coefficients,<a class="marginmark" onClick="toggleHide('mn:6,-9');">&#91;6&#93;</a> we <em>define</em><a class="marginmark" onClick="toggleHide('mn:7,-5');">&#91;7&#93;</a>
+<span class="math">\(\int_{z_0}^Z  f(z)\, dz\)</span> taken along the simple curve <em>AB</em> to mean
+<span class="math">\[\int_a^b \! (P+iQ)\left(\frac{dx}{dt}+i\frac{dy}{dt}\right) dt.\]</span></p>
+</div>
+<div class="marginnotes"  id="mn:6,-9"  style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;6&#93;</a>This assumption will be made throughout the subsequent work.<a onClick="hideIt('mn:6,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+</div>
+<div class="marginnotes"  id="mn:7,-5"  style="margin-top: -5em; margin-bottom: -5em;"><a class="marginmark">&#91;7&#93;</a>Cp. <a href="CMA04-1-IntegrationMN.html#4.13example4">&#167;4.13 example 4</a>. <a onClick="hideIt('mn:7,-5')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>The &#8216;length&#8217; of the curve AB will be defined as <span class="math">\( {\normalsize\int}_{a}^b \!\sqrt{\left(\frac{dx}{dt}\right)^2+ \left(\frac{dx}{dt}\right)^2} \,dt. \)</span>
+It obviously exists if <span class="math">\(\frac{dx}{dt}\)</span>, <span class="math">\(\frac{dy}{dt}\)</span> are continuous; we have thus reduced the discussion of a complex integral to the discussion of four real integrals, viz.
+<span class="math">\[\int_a^b \!P\frac{dx}{dt}  dt, \quad \int_a^b \!P\frac{dy}{dt}  dt, \quad \int_a^b \!Q\frac{dx}{dt}  dt, \quad \int_a^b \!Q\frac{dy}{dt}  dt.\]</span></p>
+
+<p>By <a href="CMA04-1-IntegrationMN.html#4.13example4">&#167;4.13 example 4</a>, this definition is consistent with the definition of an integral when <em>AB</em> happens to be part of the real axis. </p>
+
+<blockquote>
+<p><em>Examples</em>. <span class="math">\(\int_{z_0}^Z  f(z)\, dz = -\int^{z_0}_Z  f(z)\, dz \)</span> the paths of integration being the same (but in opposite directions) in each integral.
+<span class="math">\[
+\begin{align*}
+&\int_{z_0}^Z   \!dz = Z-z_0 \\ \\
+&\int_{z_0}^Z  \! z \, dz = \int_a^b\left\{x\frac{dx}{dt}-y\frac{dy}{dt}+i\left(x\frac{dy}{dt} + y\frac{dx}{dt}\right)\right\} dt \\
+&\phantom{\int_{z_0}^Z  \!z \, dz}= \left[\frac{1}{2}x^2 - \frac{1}{2}y^2 +ixy \right]_{t=a}^{t=b} = \frac{1}{2}(Z^2 - z_0^2).
+\end{align*}
+\]</span></p>
+</blockquote>
+
+<h4 id="4.61thefundamentaltheoremofcomplexintegration.">4.61 The fundamental theorem of complex integration.</h4>
+
+<p>From <a href="CMA04-1-IntegrationMN.html#4.13ageneraltheoremonintegration.">&#167;4.13</a>, the reader will easily deduce the following theorem: </p>
+
+<p>Let a sequence of points be taken on a simple curve <span class="math">\(z_0 Z\)</span>; and let the first
+<em>n</em> of them, rearranged in order of magnitude of their parameters, be called
+<span class="math">\(z_1^{\,(n)}, \, z_2^{\,(n)}, \, , \dots , z_n^{\,(n)}\)</span> <span class="math">\((z_0^{\,(n)} = z_0, \, z_{n+1}^{\,(n)} = Z)\)</span>; let their parameters be <span class="math">\(t_1^{\,(n)}, \, t_2^{\,(n)}, \, , \dots , t_n^{\,(n)}\)</span>, and let the sequence be such that, given any number <span class="math">\(\delta\)</span>, we can find <span class="math">\(N\)</span> such
+that, when <span class="math">\(n > N\)</span>, <span class="math">\(t_{r+1}^{\,(n)}-t_r^{\,(n)} < \delta \)</span>, for <span class="math">\(r= 0, 1, 2, \dots , n\)</span>; let <span class="math">\(\zeta_r^{\,(n)}\)</span> be any point whose parameter lies between <span class="math">\(t_{r}^{\,(n)}, \,t_{r+1}^{\,(n)} \)</span>; then we can make
+<span class="math">\[\left|\, \sum_{r=0}^n \left(z_{r+1}^{\,(n)}- z_r^{\,(n)}\right) \, f\left(\zeta_r^{\,(n)}\right) - \int_{z_0}^Z \! f(z)\, dz \,\right|\]</span>
+arbitrarily small by taking <em>n</em> sufficiently large.<a class="marginmark" onClick="toggleHide('mn:8,-2');">&#91;8&#93;</a></p>
+</div>
+<div class="marginnotes"  id="mn:8,-2"  style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;8&#93;</a><em>Editor&#8217;s Note</em>: By taking <span class="math">\(\delta\)</span> sufficiently small, we make <span class="math">\(N\)</span> and <em>n</em> sufficiently large.<a onClick="hideIt('mn:8,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+</div>
+<div class="marginnotes"  id="mn:8,-2"  style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;8&#93;</a><em>Editor&#8217;s Note</em>: By taking <span class="math">\(\delta\)</span> sufficiently small, we make <span class="math">\(N\)</span> and <em>n</em> sufficiently large.<a onClick="hideIt('mn:8,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<h4 id="4.62anupperlimittothevalueofacomplexintegral.">4.62 An upper limit to the value of a complex integral.</h4>
+
+<p>Let <span class="math">\(M\)</span> be the upper bound of the continuous function <span class="math">\(\left|\,f(z)\,\right|\)</span> </p>
+
+<p>Then
+<span class="math">\[
+\begin{align*}
+\left|\,\int_{z_0}^Z \! f(z)\,dz\,\right| &\leq \int_a^b \! \left|\,f(z)\,\right|\, \left|\left(\frac{dx}{dt} +i\frac{dy}{dt}\right)\right|\,dt \\
+&\leq \int_a^b \!M \left\{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2 \right\}^{\frac{1}{2}} dt \\ \\
+& \leq Ml,
+\end{align*}
+\]</span>
+where <span class="math">\(l\)</span> is the &#8216;length&#8217; of the curve <span class="math">\(z_0 Z\)</span>. </p>
+
+<p>That is to say, <span class="math">\(\displaystyle \left|\,\int_{z_0}^Z \! f(z)\,dz\,\right|\)</span> cannot exceed <span class="math">\(Ml\)</span>. </p>
+
+<h3 id="4.7integrationofinfiniteseries.">4.7 Integration of infinite series.</h3>
+
+<p>We shall now shew that if <span class="math">\(S (z) = u_1(z) + u_2(z) + \cdots\)</span> is a uniformly con-
+vergent series of continuous functions of <span class="math">\(z\)</span>, for values of <span class="math">\(z\)</span> contained within
+some region, then the series
+<span class="math">\[\int_C \!u_1(z)\,dz + \int_C \!u_2(z)\,dz + \cdots ,\]</span>
+(where all the integrals are taken along some path <em>C</em> in the region) is convergent, and has for sum <span class="math">\(\displaystyle \int_C \! S(z) \,dz\)</span>. </p>
+
+<p>For, writing
+<span class="math">\[S (z) = u_1(z) + u_2(z) + \cdots + u_n(z) + R(z)\]</span>
+we have
+<span class="math">\[\int_C \!S(z)\, dz = \int_C \!u_1(z)\,dz +  \cdots +\int_C \!u_n(z)\,dz + \int_C \!R(z)\,dz.\]</span></p>
+
+<p>Now since the series is uniformly convergent, to every positive number <span class="math">\(\epsilon\)</span>
+there corresponds a number <span class="math">\(r\)</span> <em>independent</em> of <span class="math">\(z\)</span>, such that when <span class="math">\(n \geq r\)</span> have <span class="math">\(\left|\, R_n(z)\,\right| <   \epsilon\)</span>, for all values of <span class="math">\(z\)</span> in the region considered. </p>
+
+<p>Therefore if <span class="math">\(l\)</span> be the length of the path of integration, we have (<a href="#4.62anupperlimittothevalueofacomplexintegral.">&#167;4.62</a>)
+<span class="math">\[\left|\, \int_C \! R_n(z)\, dz \,\right| < \epsilon l .\]</span></p>
+
+<p>Therefore the modulus of the difference between <span class="math">\(\displaystyle \int_C \!S(z)\, dz\)</span> and <span class="math">\( \sum\limits_{m=1}^n \displaystyle \int_C \!u_m(z)\,dz\)</span> can be made less than any positive number, by giving <em>n</em> any sufficiently large value. This proves both that the series <span class="math">\( \sum\limits_{m=1}^n \displaystyle \int_C \!u_m(z)\,dz\)</span>
+convergent, and that its sum is <span class="math">\(\displaystyle \int_C \!S(z)\, dz\)</span>. </p>
+</div>
+<div class="marginnotes"  id="mn:9,+1"  style="margin-top: +1em; margin-bottom: +1em;"><a class="marginmark">&#91;9&#93;</a><span class="math">\(\dfrac{df(z)}{dz}\)</span> means <span class="math">\(\lim\limits_{h \rightarrow 0} \dfrac{f(z+h)-f(z)}{h}\)</span> where <span class="math">\(h \rightarrow 0\)</span> along a definite simple curve; this definition is modified slightly in <a href="whereOwhere.html">&#167;5.12</a> in the case when <span class="math">\(f(z)\)</span> is an <em>analytic</em> function.<a onClick="hideIt('mn:9,+1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<blockquote>
+<p>Corollary. As in <a href="CMA04-2-InfiniteIntegralsMN.html#4.44corollary">&#167;4.44 corollary</a>, it may be shewn that<a class="marginmark" onClick="toggleHide('mn:9,+1');">&#91;9&#93;</a>
+<span class="math">\[\frac{d}{dz}\sum_{n=0}^\infty u_n(z) = \sum_{n=0}^\infty \frac{d}{dz}u_n(z)  \]</span>
+if the series on the right converges uniformly and the series on the left is convergent. </p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 1. Consider the series
+<span class="math">\[\sum_{n=0}^\infty \frac{2x\{n(n+1) \sin^2 x^2-1\}\cos x^2}{\{1+n^2\sin^2 x^2\}\{1+(n+1)^2\sin^2x^2\}},\]</span>
+in which x is real. </p>
+
+<p>The nth term is
+<span class="math">\[\frac{2xn\cos x^2}{1+n^2\sin^2 x^2}-\frac{2x(n+1)\cos x^2}{1+(n+1)^2 \sin^2 x^2},\]</span>
+and the sum of n terms is therefore
+<span class="math">\[\frac{2x\cos x^2}{1+\sin^2 x^2}-\frac{2x(n+1)\cos x^2}{1+(n+1)^2 \sin^2 x^2}.\]</span></p>
+
+<p>Hence the series is absolutely convergent for all real values of <em>x</em> except <span class="math">\(\pm \sqrt{m\pi}\)</span> where <span class="math">\(m=1, 2, \dots\)</span>; but
+<span class="math">\[R_n(x)=\frac{2x(n+1)\cos x^2}{1+(n+1)^2 \sin^2 x^2},\]</span>
+and if <em>n</em> be any integer, by taking <span class="math">\(x=(n+1)^{-1}\)</span> this has the limit 2 as <span class="math">\(n \rightarrow \infty\)</span>. The series is therefore non-uniformly convergent near <span class="math">\(x=0\)</span>. </p>
+
+<p>Now the sum to infinity of the series is <span class="math">\(\displaystyle \frac{2x\cos x^2}{1+\sin^2 x^2}\)</span>, and so the integral from 0 to <em>x</em> of
+the sum of the series is <span class="math">\( \arctan\{\sin x^2\}\)</span>. On the other hand, the sum of the integrals from
+to <em>x</em> of the first <em>n</em> terms of the series is
+<span class="math">\[\arctan\{\sin x^2 \} - \arctan\{(n + 1) \sin x^2 \},\]</span>
+and as <span class="math">\(n \rightarrow \infty\)</span> this tends to <span class="math">\(\arctan\{\sin x^2 \} =\frac{1}{2}\pi\)</span>.</p>
+
+<p>Therefore the integral of the sum of the series differs from the sum of the integrals of the terms by <span class="math">\(\frac{1}{2}\pi\)</span>. </p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 2. Discuss, in a similar manner, the series
+<span class="math">\[\sum_{n=1}^\infty \frac{2 e^n x\{1-n(e-1)+e^{n+1}x^2\}}{n(n+1)(1+e^nx^2)(1+e^{n+1}x^2)}\]</span>
+for real values of <em>x</em>. </p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 3. Discuss the series
+<span class="math">\[u_1+u_2+u_3+ \cdots ,\]</span>
+where <span class="math">\[u_1=ze^{-z^2}, \quad u_n=nze^{-n z^2}-(n-1)ze^{-(n-1) z^2},\]</span>
+for real values of <span class="math">\(z\)</span>. </p>
+
+<p>The sum of the first <em>n</em> terms is <span class="math">\(nze^{-n z^2}\)</span>, so the sum to infinity is 0 for all real values of <span class="math">\(z\)</span>. Since the terms <span class="math">\(u_n\)</span> are real and ultimately all of the same sign, the convergence
+is absolute. </p>
+
+<p>In the series
+<span class="math">\[\int_0^z \!u_1 \,dz + \int_0^z \!u_2 \,dz + \int_0^z \!u_3 \,dz + \cdots ,\]</span>
+the sum of <em>n</em> terms is <span class="math">\(\frac{1}{2}(1-e^{-nz^2})\)</span>, and this tends to the limit <span class="math">\(\frac{1}{2}\)</span> as <em>n</em> tends to infinity; this
+is not equal to the integral from 0 to <span class="math">\(z\)</span> of the sum of the series <span class="math">\(\sum u_n\)</span>. </p>
+
+<p>The explanation of this discrepancy is to be found in the non-uniformity of the convergence near <span class="math">\(z = 0\)</span>, for the remainder after <span class="math">\(n\)</span> terms in the series <span class="math">\(u_1 + u_2 + \cdots \)</span> is <span class="math">\( -nze^{-nz^2}\)</span>;
+and by taking <span class="math">\(z=n^{-1}\)</span> we can make this equal to <span class="math">\( -e^{-\left. 1\right/ n }\)</span>, which is not arbitrarily small; the series is therefore non-uniformly convergent near <span class="math">\(z = 0\)</span>. </p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 4. Compare the values of
+<span class="math">\[\int_0^z \!\left\{ \sum_{n=1}^\infty \!u_n \right\} dz \, \text{ and }\,  \sum_{n=1}^\infty \int_0^z \!  u_n \, dz , \]</span>
+where
+<span class="math">\[u_n= \frac{2n^2z}{(1+n^2z^2) \log(n+1)} - \frac{2(n+1)^2z}{(1+(n+1)^2z^2) \log(n+2)}.\]</span>
+(Trinity, 1903.) </p>
+</blockquote>
+
+<h3 id="references.">REFERENCES.</h3>
+
+<dl>
+<dt><em>Integration</em></dt>
+<dd>G. F. B. Riemann, <a href="https://archive.org/details/bernhardriemann00webegoog"><em>Ges. Math. Werke</em></a>, pp. 239&#8211;241.</dd>
+
+<dd>P. G. Lejeune-Dirichlet, <a href="https://archive.org/details/glejeunedirichle00lejeuoft"><em>Vorlesungen</em>. (Brunswick, 1904.)</a></dd>
+
+<dd>G. F. Meyer, <a href="https://archive.org/details/vorlesungenberd00lejegoog"><em>Bestimmte Integrale</em>. (Leipzig, 1871.)</a></dd>
+
+<dd>E. Goursat, <a href="https://archive.org/details/ed2coursdanalyse01gouruoft"><em>Cours d&#8217;Analyse</em></a> (Paris, 1910, 1911) Chs. <a href="https://archive.org/details/ed2coursdanalyse01gouruoft"><strong>iv</strong></a>, <a href="https://archive.org/details/coursdanalysemat02gouruoft"><strong>xiv.</strong></a></dd>
+
+<dd>C. J. de la Vall&eacute;e Poussin (Louvain and Paris, 1914), <a href="https://archive.org/details/danalyseinfinitesi01pousrich"><em>Cours d&#8217;Analyse Infinit&eacute;simale</em></a>, Ch. <strong>vi.</strong></dd>
+
+<dd>E. W. Hobson, <a href="https://archive.org/details/theoryfunctions00hobsgoog"><em>Functions of a Real Variable</em> (1907)</a>, Ch. <strong>v.</strong></dd>
+
+<dd>T. J. l&#8217;a. Bromwich, <a href="https://archive.org/details/anintroductiont00bromgoog"><em>Theory of Infinite Series</em> (1908)</a>, Appendix <strong>iii.</strong></dd>
+</dl>
+<div id="exercises">
+
+<h3 id="miscellaneousexamples.">Miscellaneous Examples.</h3>
+
+<ol>
+<li><p>Shew that the integrals
+<span class="math">\[\int_0^\infty \!\sin(x^2)\, dx, \quad \int_0^\infty \!\cos(x^2 )\,dx,\quad \int_0^\infty \! x \,\exp(-x^6\sin^2x)\,dx\]</span>
+converge. (Dirichlet and Du Bois Reymond.) </p></li>
+<li><p>If <span class="math">\(\alpha\)</span> be real, the integral
+<span class="math">\[\int_0^\infty \!\frac{\cos(\alpha x)}{1+x^2} dx\]</span>
+is a continuous function of <span class="math">\(\alpha\)</span>. (Stokes.) </p></li>
+<li><p>Discuss the uniformity of the convergence of <span class="math">\(\displaystyle \int_0^\infty \! x\sin(x^3 - \alpha x) \,dx\)</span>.
+<span class="math">\[
+\begin{align*}
+\left[ \,\vphantom{\frac{\sin(x^3-\alpha x)}{x^3}}  3 \int \! x \sin(x^3-\alpha x)\,dx  =\right. & -\left(\frac{1}{x}+ \frac{\alpha}{3x^3 }\right) \cos (x^3-\alpha x )\\
+&\quad - \int \!\left(\frac{1}{x^2}+ \frac{\alpha}{x^4 }\right) \cos (x^3-\alpha x )\,dx\\
+&\qquad +\left. \frac{1}{3} \alpha^2 \int  \frac{\sin(x^3-\alpha x)}{x^3} dx \,\right]
+\end{align*}
+\]</span>
+(de la Vall&eacute;e Poussin.) </p></li>
+<li><p>Shew that <span class="math">\(\displaystyle \int_0^\infty \! \exp[-e^{i\alpha}(x^3-nx)]\, dx\)</span> converges uniformly in the range <span class="math">\(\left[ -\frac{1}{2}\pi, \, \frac{1}{2}\pi \,\right]\)</span> of values of <span class="math">\(\alpha\)</span>. (Stokes.) </p></li>
+<li><p>Discuss the convergence of <span class="math">\(\displaystyle \int_0^\infty \!\frac{x^\mu}{1+x^\nu \left|\, \sin x \,\right|^{\,p}} dx \)</span> when <span class="math">\(\mu\)</span>, <span class="math">\(\nu\)</span>, <span class="math">\(p\)</span> are positive.
+(<a href="http://books.google.com/books?id=Rpo_AQAAIAAJ">Hardy, <em>Messenger</em>, <strong>xxxi.</strong> (1902)</a>, p. 177.) </p></li>
+<li><p>Examine the convergence of the integrals
+<span class="math">\[\int_0^\infty \left(\frac{1}{x}-\frac{1}{2}e^{-x}+\frac{1}{1-e^x} \right)\frac{dx}{x}, \quad \int_0^\infty \frac{\sin(x+x^2)}{x^n} dx.\]</span>
+(<a href="https://archive.org/details/papersetinmathtr00cambrich">Math. Trip. 1914.</a>) </p></li>
+<li><p>Shew that <span class="math">\(\displaystyle \int_\pi^\infty \!\frac{dx}{x^2(\sin x)^{\frac{2}{3}}}\)</span> exists. </p></li>
+<li><p>Shew that <span class="math">\(\displaystyle \int_a^\infty \! x^{-n}e^{\sin x} \sin 2x \, dx\)</span> converges if <span class="math">\(a > 0\)</span>, <span class="math">\(n > 0\)</span>. (<a href="http://books.google.com/books?id=SrEQAQAAIAAJ">Math. Trip. 1908.</a>) </p></li>
+<li><p>If a series <span class="math">\(g(z) = \sum\limits_{\nu=0}^\infty (c_\nu - c_{\nu+1}) \sin (2\nu + 1) \pi z\)</span>, (in which <span class="math">\(c_0 =0\)</span>), converges uniformly in an interval, shew that <span class="math">\(g (z)\dfrac{\pi}{\sin \pi z}\)</span>. is the derivative of the series <span class="math">\(f(z) = \sum\limits_{\nu=1}^\infty \dfrac{c_\nu}{\nu} \sin 2 \nu \:\!\pi z\)</span>.<br/>
+(<a href="http://www.numdam.org/numdam-bin/browse?id=ASENS_1895_3_12_">Lerch, <em>Ann. de l&#8217;Ecole norm. sup.</em> (3) <strong>xii.</strong> (1895)</a>, p. 351.) </p></li>
+<li><p>Shew that <span class="math">\[ \int^\infty \int^\infty \cdots \int^\infty \!\!\frac{dx_1 dx_2 \dots\, dx_n}{(x_1^2+ x_2^2+ \cdots +x_n^2)^{\alpha}} \]</span> <span class="math">\[\text{and}\]</span> <span class="math">\[  \int^\infty \int^\infty \cdots \int^\infty \!\!\frac{dx_1 dx_2 \dots \, dx_n}{x_1^{\,\alpha} + x_2^{\,\beta} + \cdots + x_n^{\,\lambda}}\]</span> converge when <span class="math">\(\alpha > \frac{1}{2}n\)</span> and <span class="math">\(\alpha^{-1} + \beta^{-1} + \cdots  +\lambda^{-1} < 1\)</span> respectively. (Math. Trip. 1904.) </p></li>
+<li><p>If <span class="math">\(f(x,y)\)</span> be a continuous function of both <em>x</em> and <em>y</em> in the ranges <span class="math">\(a \leq x \leq b \)</span>, <span class="math">\(a \leq y \leq b\)</span> except that it has ordinary discontinuities at points on a finite number of curves, with
+continuously turning tangents, each of which meets any line parallel to the coordinate axes only a finite number of times, then <span class="math">\(\int _a^b \!f(x, y)\, dx\)</span> is a continuous function of <span class="math">\(y\)</span>. </p>
+
+<p>[Consider <span class="math">\(\displaystyle \int_a^{\alpha_1-\delta_1} + \int_{\alpha_1+\epsilon_1}^{\alpha_2-\delta_2} + \cdots + \int_{\alpha_n+\epsilon_n}^b \!\!\{ f(x, y+h)-f(x,y)\}\,dx \)</span>, where the numbers <span class="math">\(\delta_1,\, \delta_2,\, \dots \)</span> <span class="math">\(\epsilon_1,\, \epsilon_2,\, \dots \)</span> are so chosen as to exclude the discontinuities of <span class="math">\(f(x, y+h)\)</span> from the range of integration; <span class="math">\(\alpha_1,\, \alpha_2,\, \dots\)</span> being the discontinuities of <span class="math">\(f(x, y)\)</span>.] <span class="math">\(\phantom{}\)</span> (B&ouml;cher.) </p></li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="footer">
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
+<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+</div>
+
+<div id="navint" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navint');showIt('navfront');">FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navint');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
+  <ul>
+    <li class="more"><a onClick="hideIt('navint');showIt('navprocesses');"> more . . . </a></li>
+    <li><a href="CMA03-1-ContinuousFnsMN.html#continuousfunctionsanduniformconvergence">Continuity and Uniform Convergence</a></li>
+    <li><a href="CMA04-1-IntegrationMN.html#thetheoryofriemannintegration">The Theory of Riemann Integration</a>
+      <ul>
+        <li><a href="CMA04-1-IntegrationMN.html#4.1theconceptofintegration.">The Concept of Integration</a></li>
+        <li><a href="CMA04-1-IntegrationMN.html#4.2differentiationofintegralscontainingaparameter.">Differentiation of Integrals</a></li>
+    <li><a href="CMA04-2-InfiniteIntegralsMN.html#4.3doubleintegralsandrepeatedintegrals.">Double Integrals & Repeated Integrals</a></li>
+    <li><a href="CMA04-2-InfiniteIntegralsMN.html#4.4infiniteintegrals.">Infinite Integrals</a></li>
+    <li class="current"><a href="#4.5improperintegrals.principalvalues.">Improper Integrals</a></li>
+    <li class="current"><a href="#4.6complexintegration.">Complex Integration</a></li>
+    <li class="current"><a href="CMA04-3-ComplexIntMN.html#4.7integrationofinfiniteseries.">Integration of Infinite Series</a></li>
+        <li class="current"><a href="#references.">References</a></li>
+        <li class="current"><a href="#miscellaneousexamples.">Miscellaneous Examples</a></li>
+      </ul>
+    </li>
+    <li><a href="whereOwhere.html">The Fundamental Properties of Analytic Functions</a></li>
+    <li class="more"><a onClick="hideIt('navint');showIt('navprocesses');"> more . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navint');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navint');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navfront" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a>FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-FrontMN.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-FrontMN.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-FrontMN.html#preface">Preface</a></li>
+    <li><a href="CMA00-FrontMN.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navint');hideIt('navfront');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navprocesses" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
+<li class="part"><a>PROCESSES OF ANALYSIS</a>
+  <ul >
+    <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
+    <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
+     <li class="more current"><a onClick="showIt('navint');hideIt('navprocesses');"> you are here . . . </a></li>
+     <li class="notdone"><a href="CMA05-1-CauchysTheoremMN.html">The Properties of Analytic Functions</a></li>
+     <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navtranscendental" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
+<ul>
+    <li class="more current"><a onClick="showIt('navint');hideIt('navtranscendental');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
+  <ul>
+    <li class="notdone"><a href="whereOwhere.html">The Gamma Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Zeta Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Legendre Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Bessel Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Mathieu Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lam&eacute;&#8217;s Equation</a></li> 
+  </ul>
+  </li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navback" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navint');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a>BACKMATTER</a>
+  <ul >
+    <li ><a href="whereOwhere.html">Appendix</a></li>
+    <li ><a href="whereOwhere.html">Authors Quoted</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfixedleft" class="fixedBleft">
+<p><a href="CMA04-2-InfiniteIntegralsMN.html">&#x25C0;</a></p>
+</div>
+
+<div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
+<p><a onClick="showIt('navint');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA05-1-CauchysTheoremMN.html" style="float: right;">&#x25B6;</a></p>
+</div>
+
+<div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
+<p><a onClick="hideIt('navint');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA05-1-CauchysTheoremMN.html" style="float: right;">&#x25B6; </a></p>
+</div>
+
+</body>
+</html>
