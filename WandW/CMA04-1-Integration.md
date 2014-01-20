@@ -37,7 +37,7 @@ operation inverse to that of differentiation; and he is equally well aware that 
 
 ####4.11 Upper and lower integrals.[^exists,-1] [4.11upperandlowerintegrals.]####
 
-[^exists,-1]: The following procedure for establishing existence theorems concerning integrals is based on that given by Goursat, [*Cours d' Analyse*](https://archive.org/details/ed2coursdanalyse01gouruoft), **i.** Ch. **iv.** The concepts of upper and lower integrals are due to Darboux, [*Ann. de I'Ecole norm. sup.*](https://archive.org/details/annalesscientif20fragoog) (2) **iv.** (1875), p. 64.
+[^exists,-1]: The following procedure for establishing existence theorems concerning integrals is based on that given by Goursat, [*Cours d' Analyse*](https://archive.org/details/ed2coursdanalyse01gouruoft), **i.** Ch. **iv.** The concepts of upper and lower integrals are due to Darboux, [*Ann. de l'Ecole norm. sup.*](https://archive.org/details/annalesscientif20fragoog) (2) **iv.** (1875), p. 64.
 
 Let \\(f(x)\\) be a bounded function of x in the range \\([a, b]\\). Divide the interval at the points \\(x_1, x_2 , \dots , x_{n-1}\\)  \\((a \leq x_1 \leq x_2 \cdots \leq x_{n-1}  \leq b)\\). Let *U,* *L* be 
 the bounds of \\(f(x)\\) in the range \\([a, b]\\), and let \\(U_r,\\) \\(L_r\\) be the bounds of \\(f(x)\\) in the range \\([x_{r-1}, x_r]\\), where \\(x_0 = a, x_n = b\\). 
@@ -203,8 +203,7 @@ where the limit is taken by making \\(\delta_1, \delta_2, \dots ,\delta_{\kappa}
 >Deduce that, if \\(f(x)\\) is continuous at *a* and *b*,
 >\\[\frac{d}{da} \int_a^b f(x)\,dx =-f(a), \quad \frac{d}{db} \int_a^b f(x)\,dx =f(b).\\]
 
->*Example* 4. Prove by differentiation[^fundtheorem,-9]  that, if  \\(\phi(x)\\) is a continuous function of *x* and \\(\displaystyle \frac{dx}{dt}\\) a continuous function of \\(t\\), then 
-\\[\int_{\large x_{0}}^{\large x_{1}} \phi(x) \, dx =\int_{\large t_0}^{\large t_{1}} \phi(x) \frac{dx}{dt} dt.\\]
+>######*Example* 4. Prove by differentiation[^fundtheorem,-9]  that, if  \\(\phi(x)\\) is a continuous function of *x* and \\(\displaystyle \frac{dx}{dt}\\) a continuous function of \\(t\\), then \\[\int_{\large x_{0}}^{\large x_{1}} \phi(x) \, dx =\int_{\large t_0}^{\large t_{1}} \phi(x) \frac{dx}{dt} dt.\\] [4.13example4] ######
 
 [^fundtheorem,-9]: *Editor's Note*: The wording of this example and the next suggests that Whittaker and Watson expect the reader to use the [the first fundamental theorem of calculus](http://mathworld.wolfram.com/FirstFundamentalTheoremofCalculus.html). However, it is possibly more enlightening to prove them using the theorem at the beginning of the section together with the [modified Heine-Borel theorem](CMA03-3-Heine-Borel.html#themodifiedheine-boreltheorem.).
 

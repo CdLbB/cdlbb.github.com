@@ -51,7 +51,7 @@ operation inverse to that of differentiation; and he is equally well aware that 
 
 
 
-<div markdown=1 class="marginnotes" id="mn:2,-1" style="margin-top: -1em; margin-bottom: -1em;"><a class="marginmark">&#91;2&#93;</a>The following procedure for establishing existence theorems concerning integrals is based on that given by Goursat, [*Cours d' Analyse*](https://archive.org/details/ed2coursdanalyse01gouruoft), **i.** Ch. **iv.** The concepts of upper and lower integrals are due to Darboux, [*Ann. de I'Ecole norm. sup.*](https://archive.org/details/annalesscientif20fragoog) (2) **iv.** (1875), p. 64.<a onClick="hideIt('mn:2,-1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:2,-1" style="margin-top: -1em; margin-bottom: -1em;"><a class="marginmark">&#91;2&#93;</a>The following procedure for establishing existence theorems concerning integrals is based on that given by Goursat, [*Cours d' Analyse*](https://archive.org/details/ed2coursdanalyse01gouruoft), **i.** Ch. **iv.** The concepts of upper and lower integrals are due to Darboux, [*Ann. de l'Ecole norm. sup.*](https://archive.org/details/annalesscientif20fragoog) (2) **iv.** (1875), p. 64.<a onClick="hideIt('mn:2,-1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -283,8 +283,7 @@ where the limit is taken by making \\(\delta_1, \delta_2, \dots ,\delta_{\kappa}
 >Deduce that, if \\(f(x)\\) is continuous at *a* and *b*,
 >\\[\frac{d}{da} \int_a^b f(x)\,dx =-f(a), \quad \frac{d}{db} \int_a^b f(x)\,dx =f(b).\\]
 
->*Example* 4. Prove by differentiation<a class="marginmark" onClick="toggleHide('mn:9,-9');">&#91;9&#93;</a>  that, if  \\(\phi(x)\\) is a continuous function of *x* and \\(\displaystyle \frac{dx}{dt}\\) a continuous function of \\(t\\), then 
-\\[\int_{\large x_{0}}^{\large x_{1}} \phi(x) \, dx =\int_{\large t_0}^{\large t_{1}} \phi(x) \frac{dx}{dt} dt.\\]
+>######*Example* 4. Prove by differentiation<a class="marginmark" onClick="toggleHide('mn:9,-9');">&#91;9&#93;</a>  that, if  \\(\phi(x)\\) is a continuous function of *x* and \\(\displaystyle \frac{dx}{dt}\\) a continuous function of \\(t\\), then \\[\int_{\large x_{0}}^{\large x_{1}} \phi(x) \, dx =\int_{\large t_0}^{\large t_{1}} \phi(x) \frac{dx}{dt} dt.\\] [4.13example4] ######
 
 </div>
 

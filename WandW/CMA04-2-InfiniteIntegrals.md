@@ -84,8 +84,7 @@ and so, proceeding to the limit,
 >But \\[S=s=\int_a^b \int_\alpha^\beta f(x,y)(dxdy),\\] 
 and so one of the repeated integrals is equal to the double integral. Similarly the other repeated integral is equal to the double integral. 
 
->*Corollary*. If \\(f(x, y)\\) be a continuous function of both variables, 
-\\[\int_0^1 dx \left\{\int_0^{1-x}f(x,y)\,dy \right\}=\int_0^1 dy \left\{\int_0^{1-y}f(x,y)\,dx \right\}\\]
+>######*Corollary*. If \\(f(x, y)\\) be a continuous function of both variables, \\[\int_0^1 dx \left\{\int_0^{1-x}f(x,y)\,dy \right\}=\int_0^1 dy \left\{\int_0^{1-y}f(x,y)\,dx \right\}\\] [4.3corollary]######
 
 ###4.4 Infinite integrals.###
 
@@ -224,7 +223,7 @@ which is the condition for convergence.
 (I) *De la Vallée Poussin's test.[^osgoodpoussin,+3]* The reader will easily see by using the reasoning of [§3.34](CMA03-2-Uniformity.html#aconditionduetoweierstrassforuniformconvergence.) that \\(\int_a^\infty f(x,\alpha)\,dx\\) converges uniformly with regard to \\(\alpha\\) in a domain of values of \\(\alpha\\) if \\(\left| \, f(x,\alpha)\, \right| < \mu(x)\\), where \\(\mu(x)\\) is independent of \\(\alpha\\) and \\(\int_a^\infty \mu(x)\,dx\\) converges. 
 [For, choosing *X* so that \\(\int_{x'}^{x''} \mu(x)\,dx < \epsilon\\) when \\(x" > x' >X\\), we have   \\(\left|\,\int_{x'}^{x''} f(x,\alpha)\,dx\right| < \epsilon\\), and the choice of *X* is independent of \\(\alpha\\)] 
 
->Example. \\(\int_0^\infty x^{\alpha-1}e^{-x} dx\\) converges uniformly in any interval \\([A, B]\\) such that \\(1 \leq A \leq B\\). 
+>*Example*. \\(\int_0^\infty x^{\alpha-1}e^{-x} dx\\) converges uniformly in any interval \\([A, B]\\) such that \\(1 \leq A \leq B\\). 
 
 (II) *The method of change of variable.* 
 
@@ -267,8 +266,8 @@ whenever \\(\left|\,\alpha -\alpha' \, \right|< \delta\\).
 That is to say, given \\(\epsilon\\), we can find \\(\delta\\) independent of \\(\alpha\\), such that 
 \\[
 \begin{align*}
-\left|\,\int_a^\infty f(x,\alpha)\, dx - \int_a^\infty f(x,\alpha') \,dx\,\right| &\leq \left|\, \int_a^X \,f(x, \alpha) - f(x,\alpha') \, \right|\\
- & \quad + \left|\, \int_X^\infty f(x, \alpha') \, dx \, \right|+ \left|\, \int_X^\infty f(x, \alpha) \, dx \, \right|\\
+\left|\,\int_a^\infty \!f(x,\alpha)\, dx - \int_a^\infty \!f(x,\alpha') \,dx\,\right| &\leq \left|\, \int_a^X \!f(x, \alpha) - f(x,\alpha') \,dx\, \right|\\
+ & \quad + \left|\, \int_X^\infty \!f(x, \alpha') \, dx \, \right|+ \left|\, \int_X^\infty \!f(x, \alpha) \, dx \, \right|\\
 \\
 \\
 & < 3\epsilon
@@ -278,30 +277,30 @@ whenever \\(\left|\,\alpha -\alpha' \, \right|< \delta\\); and this is the condi
 
 (II) If \\(f (x, \alpha)\\) satisfies the same conditions as in (I), and if a lies in *S* 
 when \\(A \leq \alpha \leq B\\), then 
-\\[\int_A^B \left\{\int_a^\infty f(x,\alpha)\, dx \right\} d\alpha = \int_a^\infty \left\{\int_A^B f(x,\alpha)\, d\alpha \right\} dx.\\]
+\\[\int_A^B \left\{\int_a^\infty \!f(x,\alpha)\, dx \right\} d\alpha = \int_a^\infty \left\{\int_A^B \!f(x,\alpha)\, d\alpha \right\} dx.\\]
 
 For, by [§4.3](#4.3doubleintegralsandrepeatedintegrals.), 
-\\[\int_A^B \left\{\int_a^\xi f(x,\alpha)\, dx \right\} d\alpha = \int_a^\xi \left\{\int_A^B f(x,\alpha)\, d\alpha \right\} dx.\\]
+\\[\int_A^B \left\{\int_a^\xi \!f(x,\alpha)\, dx \right\} d\alpha = \int_a^\xi \left\{\int_A^B \!f(x,\alpha)\, d\alpha \right\} dx.\\]
 Therefore 
-\\[\left|\,\int_A^B \left\{\int_a^\infty f(x,\alpha)\, dx \right\} d\alpha - \int_a^\xi \left\{\int_A^B f(x,\alpha)\, d\alpha \right\} dx\,\right|\\]
+\\[\left|\,\int_A^B \left\{\int_a^\infty \!f(x,\alpha)\, dx \right\} d\alpha - \int_a^\xi \left\{\int_A^B \!f(x,\alpha)\, d\alpha \right\} dx\,\right|\\]
 \\[
 \begin{align*}
-\qquad \qquad \qquad \quad \qquad &=\left|\,\int_A^B \left\{\int_\xi^\infty f(x,\alpha)\, dx \right\} d\alpha\,\right| \\
+\qquad \qquad \qquad \quad \qquad &=\left|\,\int_A^B \left\{\int_\xi^\infty \!f(x,\alpha)\, dx \right\} d\alpha\,\right| \\
 &<\int_A^B \epsilon d\alpha < \epsilon (B-A)
 \end{align*}
 \\]
 for all sufficiently large values of \\(\xi\\). 
 
 But, from [§2.1](CMA02-1-Limits.html#limits) and [§4.41](#4.41infiniteintegralsofcontinuousfunctions.conditionsforconvergence.), this is the condition that 
-\\[\lim_{\xi \rightarrow \infty} \int_a^\xi \left\{\int_A^B f(x,\alpha)\, d\alpha \right\} dx\\]
+\\[\lim_{\xi \rightarrow \infty} \int_a^\xi \left\{\int_A^B \!f(x,\alpha)\, d\alpha \right\} dx\\]
 should exist, and be equal to 
-\\[\int_A^B \left\{\int_a^\infty f(x,\alpha)\, dx \right\} d \alpha.\\]
+\\[\int_A^B \left\{\int_a^\infty \!f(x,\alpha)\, dx \right\} d \alpha.\\]
 
->*Corollary*. The equation \\(\displaystyle \frac{d}{d\alpha} \int_a^\infty \phi(x,\alpha)\,dx  = \int_a^\infty \frac{\partial \phi}{\partial \alpha}dx\\) is true if the integral on the right converges uniformly and the integrand is a continuous function of both variables, when \\(x \geq \alpha\\) and \\(\alpha\\) lies in a domain *S*, and if the integral on the left is convergent. 
+>######*Corollary*. The equation \\(\displaystyle \frac{d}{d\alpha} \int_a^\infty \!\phi(x,\alpha)\,dx  = \int_a^\infty \!\frac{\partial \phi}{\partial \alpha}dx\\) is true if the integral on the right converges uniformly and the integrand is a continuous function of both variables, when \\(x \geq \alpha\\) and \\(\alpha\\) lies in a domain *S*, and if the integral on the left is convergent. [4.44corollary]######
 >
 >Let *A* be a point of *S*, and let \\(\frac{\partial \phi}{\partial \alpha}=f(x, \alpha)\\), so that, by [§4.13 example 3](CMA04-1-Integration.html#4.13example3), 
-\\[\int_A^\alpha f(x, \alpha')\,d\alpha' = \phi(x,\alpha)-\phi(x,A).\\] 
-Then \\( \int_a^\infty \left\{\int_A^\alpha f(x,\alpha')\, d\alpha' \right\} d x\\) converges, that is \\(\int_a^\infty \left\{ \phi(x,\alpha)-\phi(x,A) \right\}\\) converges, and therefore, since \\(\int_a^\infty f(x,\alpha)\,dx\\) converges, so does \\(\int_a^\infty f(x,A)\,dx\\).[^muddle,-4] 
+\\[\int_A^\alpha \!f(x, \alpha')\,d\alpha' = \phi(x,\alpha)-\phi(x,A).\\] 
+Then \\( \int_a^\infty \left\{\int_A^\alpha f(x,\alpha')\, d\alpha' \right\} d x\\) converges, that is \\(\int_a^\infty \left\{ \phi(x,\alpha)-\phi(x,A) \right\} dx\\) converges, and therefore, since \\(\int_a^\infty f(x,\alpha)\,dx\\) converges, so does \\(\int_a^\infty f(x,A)\,dx\\).[^muddle,-4] 
 
 [^muddle,-4]: *Editor's Note*: This sentence muddles the argument a bit. Since \\(\alpha\\) and *A* are in *S*, the premise of the theorem assumes that  \\(\int_a^\infty f(x,\alpha)\,dx\\) and \\(\int_a^\infty f(x,A)\,dx\\) converge. And \\( \int_a^\infty \left\{\int_A^\alpha f(x,\alpha')\, d\alpha' \right\} d x\\) converges either by implication or by [(I)](#4.44theoremsconcerninguniformlyconvergentinfiniteintegrals.) and [§4.2 example 2](CMA04-1-Integration.html#4.2example2).
 
@@ -310,7 +309,7 @@ Then \\( \int_a^\infty \left\{\int_A^\alpha f(x,\alpha')\, d\alpha' \right\} d x
 >\frac{d}{d\alpha}\left[\int_a^\infty \phi(x,\alpha)\, dx \right]&=\frac{d}{d\alpha}\left[\int_a^\infty \left\{\phi(x,\alpha)-\phi(x,A)\right\}\,dx\right] \\
 >&=\frac{d}{d\alpha}\left[\int_a^\infty \left\{\int_A^\alpha f(x,\alpha')\,d\alpha'\right\}\,dx\right] \\
 >&=\frac{d}{d\alpha} \int_A^\alpha \left\{\int_a^\infty f(x,\alpha')\,dx\right\}\,d\alpha' \\
->&=\int_a^\infty f(x,\alpha)\, dx = \int_a^\infty \frac{\partial \phi}{\partial \alpha},
+>&=\int_a^\infty f(x,\alpha)\, dx = \int_a^\infty \frac{\partial \phi}{\partial \alpha} dx,
 >\end{align*}
 >\\]
 which is the required result; the change of the order of the integrations has been justified above, and the differentiation of \\(\int_A^\alpha \\) with regard to \\(\alpha\\) is justified by [§4.44 (I)](#4.44theoremsconcerninguniformlyconvergentinfiniteintegrals.) and [§4.13 example 3](CMA04-1-Integration.html#4.13example3). 

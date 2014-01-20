@@ -86,8 +86,7 @@ and so one of the repeated integrals is equal to the double integral. Similarly 
 </blockquote>
 
 <blockquote>
-<p><em>Corollary</em>. If <span class="math">\(f(x, y)\)</span> be a continuous function of both variables,
-<span class="math">\[\int_0^1 dx \left\{\int_0^{1-x}f(x,y)\,dy \right\}=\int_0^1 dy \left\{\int_0^{1-y}f(x,y)\,dx \right\}\]</span></p>
+<h6 id="4.3corollary"><em>Corollary</em>. If <span class="math">\(f(x, y)\)</span> be a continuous function of both variables, <span class="math">\[\int_0^1 dx \left\{\int_0^{1-x}f(x,y)\,dy \right\}=\int_0^1 dy \left\{\int_0^{1-y}f(x,y)\,dx \right\}\]</span></h6>
 </blockquote>
 
 <h3 id="4.4infiniteintegrals.">4.4 Infinite integrals.</h3>
@@ -222,7 +221,7 @@ which is the condition for convergence. </p>
 [For, choosing <em>X</em> so that <span class="math">\(\int_{x'}^{x''} \mu(x)\,dx < \epsilon\)</span> when <span class="math">\(x" > x' >X\)</span>, we have <span class="math">\(\left|\,\int_{x'}^{x''} f(x,\alpha)\,dx\right| < \epsilon\)</span>, and the choice of <em>X</em> is independent of <span class="math">\(\alpha\)</span>] </p>
 
 <blockquote>
-<p>Example. <span class="math">\(\int_0^\infty x^{\alpha-1}e^{-x} dx\)</span> converges uniformly in any interval <span class="math">\([A, B]\)</span> such that <span class="math">\(1 \leq A \leq B\)</span>. </p>
+<p><em>Example</em>. <span class="math">\(\int_0^\infty x^{\alpha-1}e^{-x} dx\)</span> converges uniformly in any interval <span class="math">\([A, B]\)</span> such that <span class="math">\(1 \leq A \leq B\)</span>. </p>
 </blockquote>
 
 <p>(II) <em>The method of change of variable.</em> </p>
@@ -269,8 +268,8 @@ whenever <span class="math">\(\left|\,\alpha -\alpha' \, \right|< \delta\)</span
 <p>That is to say, given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(\delta\)</span> independent of <span class="math">\(\alpha\)</span>, such that
 <span class="math">\[
 \begin{align*}
-\left|\,\int_a^\infty f(x,\alpha)\, dx - \int_a^\infty f(x,\alpha') \,dx\,\right| &\leq \left|\, \int_a^X \,f(x, \alpha) - f(x,\alpha') \, \right|\\
- & \quad + \left|\, \int_X^\infty f(x, \alpha') \, dx \, \right|+ \left|\, \int_X^\infty f(x, \alpha) \, dx \, \right|\\
+\left|\,\int_a^\infty \!f(x,\alpha)\, dx - \int_a^\infty \!f(x,\alpha') \,dx\,\right| &\leq \left|\, \int_a^X \!f(x, \alpha) - f(x,\alpha') \,dx\, \right|\\
+ & \quad + \left|\, \int_X^\infty \!f(x, \alpha') \, dx \, \right|+ \left|\, \int_X^\infty \!f(x, \alpha) \, dx \, \right|\\
 \\
 \\
 & < 3\epsilon
@@ -280,31 +279,31 @@ whenever <span class="math">\(\left|\,\alpha -\alpha' \, \right|< \delta\)</span
 
 <p>(II) If <span class="math">\(f (x, \alpha)\)</span> satisfies the same conditions as in (I), and if a lies in <em>S</em>
 when <span class="math">\(A \leq \alpha \leq B\)</span>, then
-<span class="math">\[\int_A^B \left\{\int_a^\infty f(x,\alpha)\, dx \right\} d\alpha = \int_a^\infty \left\{\int_A^B f(x,\alpha)\, d\alpha \right\} dx.\]</span></p>
+<span class="math">\[\int_A^B \left\{\int_a^\infty \!f(x,\alpha)\, dx \right\} d\alpha = \int_a^\infty \left\{\int_A^B \!f(x,\alpha)\, d\alpha \right\} dx.\]</span></p>
 
 <p>For, by <a href="#4.3doubleintegralsandrepeatedintegrals.">§4.3</a>,
-<span class="math">\[\int_A^B \left\{\int_a^\xi f(x,\alpha)\, dx \right\} d\alpha = \int_a^\xi \left\{\int_A^B f(x,\alpha)\, d\alpha \right\} dx.\]</span>
+<span class="math">\[\int_A^B \left\{\int_a^\xi \!f(x,\alpha)\, dx \right\} d\alpha = \int_a^\xi \left\{\int_A^B \!f(x,\alpha)\, d\alpha \right\} dx.\]</span>
 Therefore
-<span class="math">\[\left|\,\int_A^B \left\{\int_a^\infty f(x,\alpha)\, dx \right\} d\alpha - \int_a^\xi \left\{\int_A^B f(x,\alpha)\, d\alpha \right\} dx\,\right|\]</span>
+<span class="math">\[\left|\,\int_A^B \left\{\int_a^\infty \!f(x,\alpha)\, dx \right\} d\alpha - \int_a^\xi \left\{\int_A^B \!f(x,\alpha)\, d\alpha \right\} dx\,\right|\]</span>
 <span class="math">\[
 \begin{align*}
-\qquad \qquad \qquad \quad \qquad &=\left|\,\int_A^B \left\{\int_\xi^\infty f(x,\alpha)\, dx \right\} d\alpha\,\right| \\
+\qquad \qquad \qquad \quad \qquad &=\left|\,\int_A^B \left\{\int_\xi^\infty \!f(x,\alpha)\, dx \right\} d\alpha\,\right| \\
 &<\int_A^B \epsilon d\alpha < \epsilon (B-A)
 \end{align*}
 \]</span>
 for all sufficiently large values of <span class="math">\(\xi\)</span>. </p>
 
 <p>But, from <a href="CMA02-1-Limits.html#limits">§2.1</a> and <a href="#4.41infiniteintegralsofcontinuousfunctions.conditionsforconvergence.">§4.41</a>, this is the condition that
-<span class="math">\[\lim_{\xi \rightarrow \infty} \int_a^\xi \left\{\int_A^B f(x,\alpha)\, d\alpha \right\} dx\]</span>
+<span class="math">\[\lim_{\xi \rightarrow \infty} \int_a^\xi \left\{\int_A^B \!f(x,\alpha)\, d\alpha \right\} dx\]</span>
 should exist, and be equal to
-<span class="math">\[\int_A^B \left\{\int_a^\infty f(x,\alpha)\, dx \right\} d \alpha.\]</span></p>
+<span class="math">\[\int_A^B \left\{\int_a^\infty \!f(x,\alpha)\, dx \right\} d \alpha.\]</span></p>
 
 <blockquote>
-<p><em>Corollary</em>. The equation <span class="math">\(\displaystyle \frac{d}{d\alpha} \int_a^\infty \phi(x,\alpha)\,dx  = \int_a^\infty \frac{\partial \phi}{\partial \alpha}dx\)</span> is true if the integral on the right converges uniformly and the integrand is a continuous function of both variables, when <span class="math">\(x \geq \alpha\)</span> and <span class="math">\(\alpha\)</span> lies in a domain <em>S</em>, and if the integral on the left is convergent. </p>
+<h6 id="4.44corollary"><em>Corollary</em>. The equation <span class="math">\(\displaystyle \frac{d}{d\alpha} \int_a^\infty \!\phi(x,\alpha)\,dx  = \int_a^\infty \!\frac{\partial \phi}{\partial \alpha}dx\)</span> is true if the integral on the right converges uniformly and the integrand is a continuous function of both variables, when <span class="math">\(x \geq \alpha\)</span> and <span class="math">\(\alpha\)</span> lies in a domain <em>S</em>, and if the integral on the left is convergent.</h6>
 
 <p>Let <em>A</em> be a point of <em>S</em>, and let <span class="math">\(\frac{\partial \phi}{\partial \alpha}=f(x, \alpha)\)</span>, so that, by <a href="CMA04-1-Integration.html#4.13example3">§4.13 example 3</a>,
-<span class="math">\[\int_A^\alpha f(x, \alpha')\,d\alpha' = \phi(x,\alpha)-\phi(x,A).\]</span>
-Then <span class="math">\( \int_a^\infty \left\{\int_A^\alpha f(x,\alpha')\, d\alpha' \right\} d x\)</span> converges, that is <span class="math">\(\int_a^\infty \left\{ \phi(x,\alpha)-\phi(x,A) \right\}\)</span> converges, and therefore, since <span class="math">\(\int_a^\infty f(x,\alpha)\,dx\)</span> converges, so does <span class="math">\(\int_a^\infty f(x,A)\,dx\)</span>.<a href="#fn:12" id="fnref:12" title="see footnote" class="footnote">[12]</a> </p>
+<span class="math">\[\int_A^\alpha \!f(x, \alpha')\,d\alpha' = \phi(x,\alpha)-\phi(x,A).\]</span>
+Then <span class="math">\( \int_a^\infty \left\{\int_A^\alpha f(x,\alpha')\, d\alpha' \right\} d x\)</span> converges, that is <span class="math">\(\int_a^\infty \left\{ \phi(x,\alpha)-\phi(x,A) \right\} dx\)</span> converges, and therefore, since <span class="math">\(\int_a^\infty f(x,\alpha)\,dx\)</span> converges, so does <span class="math">\(\int_a^\infty f(x,A)\,dx\)</span>.<a href="#fn:12" id="fnref:12" title="see footnote" class="footnote">[12]</a> </p>
 </blockquote>
 
 <blockquote>
@@ -313,7 +312,7 @@ Then <span class="math">\( \int_a^\infty \left\{\int_A^\alpha f(x,\alpha')\, d\a
 \frac{d}{d\alpha}\left[\int_a^\infty \phi(x,\alpha)\, dx \right]&=\frac{d}{d\alpha}\left[\int_a^\infty \left\{\phi(x,\alpha)-\phi(x,A)\right\}\,dx\right] \\
 &=\frac{d}{d\alpha}\left[\int_a^\infty \left\{\int_A^\alpha f(x,\alpha')\,d\alpha'\right\}\,dx\right] \\
 &=\frac{d}{d\alpha} \int_A^\alpha \left\{\int_a^\infty f(x,\alpha')\,dx\right\}\,d\alpha' \\
-&=\int_a^\infty f(x,\alpha)\, dx = \int_a^\infty \frac{\partial \phi}{\partial \alpha},
+&=\int_a^\infty f(x,\alpha)\, dx = \int_a^\infty \frac{\partial \phi}{\partial \alpha} dx,
 \end{align*}
 \]</span>
 which is the required result; the change of the order of the integrations has been justified above, and the differentiation of <span class="math">\(\int_A^\alpha \)</span> with regard to <span class="math">\(\alpha\)</span> is justified by <a href="#4.44theoremsconcerninguniformlyconvergentinfiniteintegrals.">§4.44 (I)</a> and <a href="CMA04-1-Integration.html#4.13example3">§4.13 example 3</a>. </p>
