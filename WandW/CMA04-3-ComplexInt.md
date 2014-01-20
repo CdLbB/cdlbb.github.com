@@ -16,7 +16,7 @@ latex input:	mmd-cambridge-begin-doc
 latex footer:	mmd-cambridge-footer
 CSS:	css/documentation.css
 HTML header:	<script type="text/javascript"
-	src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+	src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
 	<script type="text/javascript" src="js/showhide.js"></script>
 	<script type="text/javascript" src="js/mathjaxend.js"></script>
 
@@ -207,8 +207,7 @@ That is to say, \\(\displaystyle \left|\,\int_{z_0}^Z \! f(z)\,dz\,\right|\\) ca
 
 ###4.7 Integration of infinite series. ###
 
-We shall now shew that if \\(S (z) = u_1(z) + u_2(z) + \cdots\\) is a uniformly con- 
-vergent series of continuous functions of \\(z\\), for values of \\(z\\) contained within 
+We shall now shew that if \\(S (z) = u_1(z) + u_2(z) + \cdots\\) is a uniformly convergent series of continuous functions of \\(z\\), for values of \\(z\\) contained within 
 some region, then the series 
 \\[\int_C \!u_1(z)\,dz + \int_C \!u_2(z)\,dz + \cdots ,\\]
 (where all the integrals are taken along some path *C* in the region) is convergent, and has for sum \\(\displaystyle \int_C \! S(z) \,dz\\). 
