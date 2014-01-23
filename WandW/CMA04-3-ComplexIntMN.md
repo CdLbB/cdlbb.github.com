@@ -297,8 +297,7 @@ That is to say, \\(\displaystyle \left|\,\int_{z_0}^Z \! f(z)\,dz\,\right|\\) ca
 
 ###4.7 Integration of infinite series. ###
 
-We shall now shew that if \\(S (z) = u_1(z) + u_2(z) + \cdots\\) is a uniformly con- 
-vergent series of continuous functions of \\(z\\), for values of \\(z\\) contained within 
+We shall now shew that if \\(S (z) = u_1(z) + u_2(z) + \cdots\\) is a uniformly convergent series of continuous functions of \\(z\\), for values of \\(z\\) contained within 
 some region, then the series 
 \\[\int_C \!u_1(z)\,dz + \int_C \!u_2(z)\,dz + \cdots ,\\]
 (where all the integrals are taken along some path *C* in the region) is convergent, and has for sum \\(\displaystyle \int_C \! S(z) \,dz\\). 
@@ -592,9 +591,9 @@ continuously turning tangents, each of which meets any line parallel to the coor
 </div>
 
 <div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
-<p><a onClick="showIt('navint');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA05-1-CauchysTheoremMN.html" style="float: right;">&#x25B6;</a></p>
+<p><a onClick="showIt('navint');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA05-1-AnalyticFunctionsMN.html" style="float: right;">&#x25B6;</a></p>
 </div>
 
 <div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
-<p><a onClick="hideIt('navint');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA05-1-CauchysTheoremMN.html" style="float: right;">&#x25B6;	</a></p>
+<p><a onClick="hideIt('navint');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA05-1-AnalyticFunctionsMN.html" style="float: right;">&#x25B6;	</a></p>
 </div>
