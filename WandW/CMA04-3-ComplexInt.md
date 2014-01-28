@@ -160,7 +160,7 @@ It obviously exists if \\(\frac{dx}{dt}\\), \\(\frac{dy}{dt}\\)  are continuous;
 
 By [§4.13 example 4](CMA04-1-Integration.html#4.13example4), this definition is consistent with the definition of an integral when *AB* happens to be part of the real axis. 
 
->*Examples*. \\(\int_{z_0}^Z  f(z)\, dz = -\int^{z_0}_Z  f(z)\, dz \\) the paths of integration being the same (but in opposite directions) in each integral. 
+>######*Examples*. \\(\int_{z_0}^Z  f(z)\, dz = -\int^{z_0}_Z  f(z)\, dz \\) the paths of integration being the same (but in opposite directions) in each integral. [4.6examples]######
 >\\[
 >\begin{align*}
 >&\int_{z_0}^Z   \!dz = Z-z_0 \\ \\
@@ -228,7 +228,7 @@ Therefore if \\(l\\) be the length of the path of integration, we have ([§4.62]
 Therefore the modulus of the difference between \\(\displaystyle \int_C \!S(z)\, dz\\) and \\( \sum\limits_{m=1}^n \displaystyle \int_C \!u_m(z)\,dz\\)  can be made less than any positive number, by giving *n* any sufficiently large value. This proves both that the series \\( \sum\limits_{m=1}^n \displaystyle \int_C \!u_m(z)\,dz\\)
 convergent, and that its sum is \\(\displaystyle \int_C \!S(z)\, dz\\). 
 
-[^definediff,+1]: \\(\dfrac{df(z)}{dz}\\) means \\(\lim\limits_{h \rightarrow 0} \dfrac{f(z+h)-f(z)}{h}\\) where \\(h \rightarrow 0\\) along a definite simple curve; this definition is modified slightly in [§5.12](whereOwhere.html) in the case when \\(f(z)\\) is an *analytic* function.
+[^definediff,+1]: \\(\dfrac{df(z)}{dz}\\) means \\(\lim\limits_{h \rightarrow 0} \dfrac{f(z+h)-f(z)}{h}\\) where \\(h \rightarrow 0\\) along a definite simple curve; this definition is modified slightly in [§5.12](CMA05-1-AnalyticFunctions.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.) in the case when \\(f(z)\\) is an *analytic* function.
 
 >Corollary. As in [§4.44 corollary](CMA04-2-InfiniteIntegrals.html#4.44corollary), it may be shewn that[^definediff,+1] 
 \\[\frac{d}{dz}\sum_{n=0}^\infty u_n(z) = \sum_{n=0}^\infty \frac{d}{dz}u_n(z)  \\]

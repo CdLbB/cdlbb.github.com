@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="latexinput" content="mmd-cambridge-header"/>
+	<title>A Course of Modern Analysis-AnalyticFunctions 5-1</title>
+	<meta name="subtitle" content="An introduction to the general theory of
+infinite processes and analytic functions;
+with an account of the principal
+transcendental functions."/>
+	<meta name="author" content="E.T. Whittaker and G.N. Watson"/>
+	<meta name="editor" content="Eric Nitardy"/>
+	<meta name="date" content="Jan 20, 2014"/>
+	<meta name="titlefile" content="mmd-WandW-title"/>
+	<meta name="copyrightfile" content="mmd-WandW-copyright"/>
+	<meta name="test" content="And this is a new key-value pair"/>
+	<meta name="latexmode" content="memoir"/>
+	<meta name="latexinput" content="mmd-cambridge-begin-doc"/>
+	<meta name="latexfooter" content="mmd-cambridge-footer"/>
+	<link type="text/css" rel="stylesheet" href="css/documentation.css"/>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+<script type="text/javascript" src="js/showhide.js"></script>
+<script type="text/javascript" src="js/mathjaxend.js"></script>
+</head>
+<body>
+
+<div id="header"><h1><a href="CMA00-Front.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
+<div id="content">
+<div class="contenttext">
+
+<h3 id="5.2cauchystheoremontheintegralofafunctionroundacontour.">5.2 Cauchy&#8217;s theorem<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a> on the integral of a function round a contour.</h3>
+
+<p>A simple closed curve <span class="math">\(C\)</span> in the plane of the variable <span class="math">\(z\)</span> is often called a <em>contour</em>; if <span class="math">\(A\)</span>, <span class="math">\(B\)</span>, <span class="math">\(D\)</span> be points taken in order in the counter-clockwise sense along the arc of the contour, and if <span class="math">\(f(z)\)</span> be a one-valued continuous<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a> function of <span class="math">\(z\)</span> (not necessarily analytic) at all points on the arc, then the integral <span class="math">\[\int_{ABDA}\!\!\!f(z)\,dz\quad \text{or} \quad \int_{(C)} \!f(z)\,dz\]</span> taken round the contour, starting from the point <span class="math">\(A\)</span> and returning to <span class="math">\(A\)</span> again, is called <em>the integral of <span class="math">\(f(z)\)</span> taken along the contour</em>. Clearly the value of the integral taken along the contour is unaltered if some point in the contour other than <span class="math">\(A\)</span> is taken as the starting-point. </p>
+
+<p>We shall now prove a result due to Cauchy, which may be stated as
+follows. <em>If <span class="math">\(f(z)\)</span> is a function of <span class="math">\(z\)</span>, analytic at all points on<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a> and inside a contour <span class="math">\(C\)</span>, then</em>
+<span class="math">\[\int_{(C)} \!f(z)\,dz = 0.\]</span></p>
+
+<p>For divide up the interior of <span class="math">\(C\)</span> by lines parallel to the real and imaginary axes in the manner of <a href="CMA05-1-AnalyticFunctions.html#5.13anapplicationofthemodifiedheine-boreltheorem.">§5.13</a>; then the interior of <span class="math">\(C\)</span> is divided into a number of regions whose boundaries are squares <span class="math">\(C_1\)</span>, <span class="math">\(C_2, \dots \)</span>, <span class="math">\(C_M\)</span> and other regions whose boundaries <span class="math">\(D_1\)</span>, <span class="math">\(D_2, \dots \)</span>, <span class="math">\(D_N\)</span> are portions of sides of squares and parts of <span class="math">\(C\)</span>; consider
+<span class="math">\[\sum_{n=1}^M \int_{(C_n)} \! f(z)\,dz + \sum_{n=1}^N \int_{(D_n)} \! f(z)\,dz,\]</span>
+each of the paths of integration being taken counter-clockwise; in the
+complete sum each side of each square appears twice as a path of integration,
+and the integrals along it are taken in opposite directions and consequently
+cancel;<a href="#fn:4" id="fnref:4" title="see footnote" class="footnote">[4]</a> the only parts of the sum which survive are the integrals of <span class="math">\(f(z)\)</span> taken along a number of arcs which together make up <span class="math">\(C\)</span>, each arc being taken in the same sense as in <span class="math">\(\displaystyle \int_{(C)} \! f(z)\,dz\)</span>; these integrals therefore just make up <span class="math">\(\displaystyle\int_{(C)}\!  f(z)\,dz\)</span>. </p>
+
+<p>Now consider <span class="math">\(\displaystyle\int_{(C_n)} \! f(z)\,dz\)</span>. With the notation of <a href="CMA05-1-AnalyticFunctions.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.">§5.12</a>,
+<span class="math">\[\begin{align*}
+\int_{(C_n)}\!f(z) \,dz &= \int_{(C_n)}\!\left\{f(z_1)+(z-z_1)\,f'(z_1)+(z-z_1)v\right\} \,dz\\
+&=\left\{f(z_1)-z_1 f'(z_1)\right\}\int_{(C_n)}\!dz + f'(z_1)\int_{(C_n)}\!z\,dz + \int_{(C_n)}\!(z-z_1)v\,dz.
+\end{align*}\]</span>
+But
+<span class="math">\[\int_{(C_n)}\!dz=\left[z\right]_{C_n}=0, \quad \int_{(C_n)}\!z\,dz=\left[\frac{1}{2}z^2\right]_{C_n}=0,\]</span>
+by the <a href="CMA04-3-ComplexInt.html#4.6examples">examples of §4.6</a>, since the end points of <span class="math">\(C_n\)</span> coincide.</p>
+
+<p>Now let <span class="math">\(l_n\)</span> be the side of <span class="math">\(C_n\)</span> and <span class="math">\(A_n\)</span> the area of <span class="math">\(C_n\)</span>.</p>
+
+<p>Then, using <a href="CMA04-3-ComplexInt.html#4.62anupperlimittothevalueofacomplexintegral.">§4.62</a>, </p>
+
+<p><span class="math">\[\begin{align*}
+\left|\,\int_{(C_n)}\!f(z) \,dz \,\right| &= \left|\,\int_{(C_n)} \!(z-z')v\, dz\, \right| \leq \int_{(C_n)} \! \left|\,(z-z')v\, \right| \,\left|\, dz \, \right| \\
+&< \epsilon l_n \sqrt{2} \int_{(C_n)} \! \left|\, dz\,\right| = \epsilon l_n \sqrt{2} \cdot 4l_n = 4\epsilon A_n \sqrt{2}
+\end{align*}\]</span></p>
+
+<p>In like manner
+<span class="math">\[\begin{align*}
+\left|\,\int_{(D_n)}\!f(z) \,dz \,\right| & \leq \int_{(D_n)} \! \left|\,(z-z')v\, \right| \,\left|\, dz \, \right| \\
+& \leq  4\epsilon (A'_n+ l'_n\lambda_n )\sqrt{2}
+\end{align*}\]</span>
+where <span class="math">\(A'_n\)</span> is the area of the complete square of which <span class="math">\(D n\)</span> is part, <span class="math">\(l'_n\)</span> is the side of this square and <span class="math">\(\lambda_n\)</span> is the length of the part of <span class="math">\(C\)</span> which lies inside this
+square. Hence, if <span class="math">\(\lambda\)</span> be the whole length of <span class="math">\(C\)</span>, while <span class="math">\(l\)</span> is the side of a square which encloses all the squares <span class="math">\(C_n\)</span> and <span class="math">\(D_n\)</span>,
+<span class="math">\[\begin{align*}
+\left|\,\int_{(C)}\!f(z) \,dz \,\right|& \leq\sum_{n=1}^M\left|\,\int_{(C_n)}\!f(z) \,dz \,\right|+\sum_{n=1}^N\left|\,\int_{(D_n)}\!f(z) \,dz \,\right|\\
+&<4\epsilon \sqrt{2}\left\{\sum_{n=1}^M A_n + \sum_{n=1}^N A'_n +l\sum_{n=1}^N \lambda_n \right\}\\
+&< 4\epsilon \sqrt{2}(l^2 + l\lambda).
+\end{align*}\]</span>
+Now <span class="math">\(\epsilon\)</span> is arbitrarily small, and <span class="math">\(l\)</span>, <span class="math">\(\lambda\)</span>, and <span class="math">\(\int_{(C)} f(z)\,dz\)</span> are <em>independent of</em> <span class="math">\(\epsilon\)</span>. It therefore follows from this inequality that the only value which <span class="math">\(\int_{(C)} f(z)\,dz\)</span>
+can have is zero; and this is Cauchy&#8217;s result. </p>
+
+<blockquote>
+<p><em>Corollary</em> 1. If there are two paths <span class="math">\(z_0AZ\)</span> and <span class="math">\(z_0BZ\)</span> from <span class="math">\(z_0\)</span> to <span class="math">\(Z\)</span>, and if <span class="math">\(f(z)\)</span> is. a function of <span class="math">\(z\)</span> analytic at all points on these curves and throughout the domain enclosed by these two paths, then <span class="math">\(\int_{z_0}^Z f(z) \,dz\)</span> has the same value whether the path of integration is <span class="math">\(z_0AZ\)</span> or <span class="math">\(z_0BZ\)</span>. This follows from the fact that <span class="math">\(z_0AZBz_0\)</span> is a contour, and so the integral taken round it (which is the difference of the integrals along <span class="math">\(z_0AZ\)</span> and <span class="math">\(z_0BZ\)</span> ) is zero. Thus, if <span class="math">\(f(z)\)</span> be an analytic function of <span class="math">\(z\)</span>, the value of <span class="math">\(\int_{AB} f(z) \,dz\)</span> is to a certain extent independent of the choice of the arc AB, and depends only on the terminal points <em>A</em> and <em>B</em>. It must be borne in mind that <em>this is only the case when <span class="math">\(f(z)\)</span> is an analytic function</em> in the sense of <a href="CMA05-1-AnalyticFunctions.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.">§5.12</a>. </p>
+</blockquote>
+
+<blockquote>
+<h6 id="5.2corollary2"><em>Corollary</em> 2. Suppose that two simple closed curves <span class="math">\(C_0\)</span> and <span class="math">\(C_1\)</span> are given, such that <span class="math">\(C_0\)</span> completely encloses <span class="math">\(C_1\)</span>, as e.g. would be the case if <span class="math">\(C_0\)</span> and <span class="math">\(C_1\)</span> were confocal ellipses.</h6>
+
+<p>Suppose moreover that <span class="math">\(f(z)\)</span> is a function which is analytic<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a> at all points on <span class="math">\(C_0\)</span> and <span class="math">\(C_1\)</span>
+and throughout the ring-shaped region contained between <span class="math">\(C_0\)</span> and <span class="math">\(C_1\)</span>. Then by drawing a network of intersecting lines in this ring-shaped space, we can shew, exactly as in the theorem just proved, that <em>the integral</em>
+<span class="math">\[\int \! f(z)\,dz\]</span>
+<em>is zero, where the integration is taken round the whole boundary of the ring-shaped space; this boundary consisting of two curves <span class="math">\(C_0\)</span> and <span class="math">\(C_1\)</span>, the one described in the counter-clockwise direction and the other described in the clockwise direction.</em></p>
+</blockquote>
+
+<blockquote>
+<p><em>Corollary</em> 3. In general, if any connected region be given in the <span class="math">\(z\)</span>-plane, bounded by any number of simple closed curves <span class="math">\(C_0\)</span>, <span class="math">\(C_1\)</span>, <span class="math">\(C_2, \dots \)</span>, and if <span class="math">\(f(z)\)</span> be any function of <span class="math">\(z\)</span> which is analytic and one-valued everywhere in this region, <em>then</em>
+<span class="math">\[\int f(z)\,dz\]</span>
+<em>is zero, where the integral is taken round the whole boundary of the region; this boundary consisting of the curves <span class="math">\(C_0\)</span>, <span class="math">\(C_1\)</span>, <span class="math">\(C_2, \dots \)</span>, each described in such a sense that the region is kept
+either always on the right or always on the left of a person walking in the sense in question round the boundary.</em> </p>
+</blockquote>
+
+<p>An extension of Cauchy&#8217;s theorem <span class="math">\(\int f(z)\, dz=0\)</span>, to curves lying on a cone whose vertex is at the origin, has been made by Ravut {<a href="http://www.numdam.org/numdam-bin/browse?id=NAM_1897_3_16_"><em>Nouv. Annales de Math.</em> (3) <strong>xvi.</strong> (1897)</a>, pp. 365&#8211;7). Also, Morera (<a href="http://books.google.com/books?id=wvk3AQAAMAAJ"><em>Rend, del Ist. Lombardo</em>, <strong>xxii.</strong> (1889)</a>, p. 191) and Osgood (<a href="http://www.ams.org/journals/bull/1896-02-09/"><em>Bull. Amer. Math. Soc.</em> <strong>ii.</strong> (1896)</a>, pp. 296&#8211;302), have shewn that the property <span class="math">\(\int f(z)\, dz=0\)</span>
+may be taken as the property defining an analytic function, the other properties being deducible from it. (See <a href="CMA05-6-ManyValuedFunctions.html#miscellaneousexamples.">Miscellaneous Examples</a>, example 16.) </p>
+
+<blockquote>
+<p><em>Example</em>. A ring-shaped region is bounded by the two circles <span class="math">\(\left|\, z\,\right|  = 1\)</span> and <span class="math">\(\left|\, z\,\right|  = 2\)</span> in the <span class="math">\(z\)</span>-plane. Verify that the value of <span class="math">\(\displaystyle \int \frac{dz}{z}\)</span>, where the integral is taken round the boundary of this region, is zero. </p>
+
+<p>For the boundary consists of the circumference <span class="math">\(\left|\, z\,\right|  = 1\)</span>, described in the clockwise direction, together with the circumference <span class="math">\(\left|\, z\,\right|  = 2\)</span>, described in the counter-clockwise direction. Thus, if for points on the first circumference we write <span class="math">\(z = e^{i\theta}\)</span>, and for points on the second circumference we write <span class="math">\(z = 2e^{i\phi}\)</span>, then <span class="math">\(\theta\)</span> and <span class="math">\(\phi\)</span> are real, and the integral becomes
+<span class="math">\[\int_0^{-2\pi}\!\frac{ie^{i\theta}\,d\theta}{e^{i\theta}}+\int_0^{2\pi}\!\frac{ie^{i\phi}\,d\phi}{e^{i\phi}}=-2\pi i+2\pi i=0.\]</span> </p>
+</blockquote>
+
+<h4 id="5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.">5.21 The value of an analytic function at a point, expressed as an integral taken round a contour enclosing the point.</h4>
+
+<p>Let <span class="math">\(C\)</span> be a contour within and on which <span class="math">\(f(z)\)</span> is an analytic function of <span class="math">\(z\)</span>. Then, if <span class="math">\(a\)</span> be any point within the contour,
+<span class="math">\[\frac{f(z)}{z-a}\]</span>
+is a function of <span class="math">\(z\)</span>, which is analytic at all points within the contour <span class="math">\(C\)</span> except the point <span class="math">\(z = a\)</span>. </p>
+
+<p>Now, given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(\delta\)</span> such that
+<span class="math">\[\left|\,f(z)-f(a)-(z-a)f'(a)\,\right| \leq \epsilon\left|\,z-a\,\right|\]</span>
+whenever <span class="math">\(\left|\, z - a \,\right| < \delta\)</span>; with the point <span class="math">\(a\)</span> as centre describe a circle <span class="math">\(\gamma\)</span> of radius
+<span class="math">\(r < \delta\)</span>, <span class="math">\(r\)</span> being so small that lies wholly inside <span class="math">\(C\)</span>. </p>
+
+<p>Then in the space between <span class="math">\(\gamma\)</span> and <span class="math">\(C\)</span> <span class="math">\(\left. f(z)\middle/(z - a)\right.\)</span> is analytic, and so, by
+<a href="#5.2corollary2">§5.2 corollary 2</a>, we have
+<span class="math">\[\int_C \!\frac{f(z)\,dz}{z-a}=\int_\gamma \!\frac{f(z)\,dz}{z-a}.\]</span></p>
+
+<p>where <span class="math">\(\int_C\)</span> and <span class="math">\(\int_\gamma\)</span> denote integrals taken counter-clockwise along the curves <span class="math">\(C\)</span> and <span class="math">\(\gamma\)</span> respectively. </p>
+
+<p>But, since <span class="math">\(\left|\, z - a\,\right| < \delta\)</span> on <span class="math">\(\gamma\)</span>, we have
+<span class="math">\[\int_\gamma \!\frac{f(z)\,dz}{z-a}=\int_\gamma \!\frac{f(a)+(z-a)f'(a)+v(z-a)}{z-a}dz,\]</span>
+where <span class="math">\(\left|\, v\,\right| <  \epsilon\)</span>; and so
+<span class="math">\[\int_C \!\frac{f(z)\,dz}{z-a}=f(a)\!\int_\gamma \!\frac{dz}{z-a} + f'(a)\!\int_\gamma \!dz +\int_\gamma v\,dz.\]</span></p>
+
+<p>Now, if <span class="math">\(z\)</span> be on <span class="math">\(\gamma\)</span>, we may write
+<span class="math">\[z-a=re^{i\theta},\]</span>
+where <span class="math">\(r\)</span> is the radius of the circle <span class="math">\(\gamma\)</span>, and consequently
+<span class="math">\[\int_\gamma \!\frac{dz}{z-a}=\int_0^{2\pi} \! \frac{ire^{i\theta} \, d\theta}{re^{i\theta}} = i\!\int_0^{2\pi} \!d\theta = 2\pi i,\]</span>
+and
+<span class="math">\[\int_\gamma \! dz =\int_0^{2\pi} \! ire^{i\theta}\, d\theta = 0;\]</span>
+also, by <a href="CMA04-3-ComplexInt.html#4.62anupperlimittothevalueofacomplexintegral.">§4.62</a>,
+<span class="math">\[\left|\,\int_\gamma \! v\,dz \, \right| \leq \epsilon\,2\pi r.\]</span>
+Thus
+<span class="math">\[\left|\,\int_\gamma \! \frac{f(z)\,dz}{z-a} - 2\pi i f(a)\, \right| = \left|\,\int_\gamma \! \epsilon\,dz \, \right| \leq 2\pi r \epsilon.\]</span></p>
+
+<p>But the left-hand side is independent of <span class="math">\(\epsilon\)</span>, and so it must be zero, since <span class="math">\(\epsilon\)</span> is arbitrary; that is to say
+<span class="math">\[f(a) = \frac{1}{2\pi i }\! \int_C \! \frac{f(z)\,dz}{z-a}.\]</span></p>
+
+<p>This remarkable result expresses the value of a function <span class="math">\(f(z)\)</span>, (which is
+analytic on and inside <span class="math">\(C\)</span>) at any point <span class="math">\(a\)</span> <em>within</em> a contour <span class="math">\(C\)</span>, in terms of an integral which depends only on the value of <span class="math">\(f(z)\)</span> at points on the contour itself. </p>
+
+<blockquote>
+<p><em>Corollary</em>. If <span class="math">\(f(z)\)</span> is an analytic one-valued function of <span class="math">\(z\)</span> in a ring-shaped region bounded by two curves <span class="math">\(C\)</span> and <span class="math">\(C'\)</span>, and <span class="math">\(a\)</span> is a point in the region, then
+<span class="math">\[f(a) = \frac{1}{2\pi i }\! \int_C \! \frac{f(z)\,dz}{z-a}-\frac{1}{2\pi i }\! \int_{C'} \! \frac{f(z)\,dz}{z-a},\]</span>
+where <span class="math">\(C\)</span> is the outer of the curves and the integrals are taken counter-clockwise. </p>
+</blockquote>
+
+<h4 id="5.22thederivatesofananalyticfunction.">5.22 The derivates of an analytic function <span class="math">\(f(z)\)</span>.</h4>
+
+<p>The function <span class="math">\(f'(z)\)</span>, which is the limit of
+<span class="math">\[\frac{f(z + h)-f(z)}{h} \]</span>
+as <span class="math">\(h\)</span> tends to zero, is called the derivate of <span class="math">\(f(z)\)</span>. We shall now shew that
+<span class="math">\(f'(z)\)</span> <em>is itself an analytic function of <span class="math">\(z\)</span>, and consequently itself possesses a derivate.</em> </p>
+
+<p>For if <span class="math">\(C\)</span> be a contour surrounding the point <span class="math">\(a\)</span>, and situated entirely
+within the region in which <span class="math">\(f(z)\)</span> is analytic, we have
+<span class="math">\[\begin{align*}
+f'(a) &= \lim_{h \rightarrow 0} \frac{f(a+h)-f(a)}{h}\\ \\ \\
+&=\lim_{h \rightarrow 0} \frac{1}{2\pi i h}\left\{\int_C \! \frac{f(z) \, dz}{z-a-h} - \int_C \! \frac{f(z) \, dz}{z-a} \right\}\\ \\ \\
+&=\lim_{h \rightarrow 0} \frac{1}{2\pi i}\int_C  \frac{f(z) \, dz}{(z-a)(z-a-h)} \\ \\ \\
+&=\frac{1}{2\pi i}\int_C  \frac{f(z) \, dz}{(z-a)^2} + \lim_{h \rightarrow 0} \frac{h}{2\pi i}\int_C  \frac{f(z) \, dz}{(z-a)^2(z-a-h)}.
+\end{align*}\]</span></p>
+
+<p>Now, on <span class="math">\(C\)</span>, <span class="math">\(f(z)\)</span> is continuous and therefore bounded, and so is <span class="math">\((z - a)^{-2}\)</span>;
+while we can take <span class="math">\(\left|\, h\,\right|\)</span> less than the upper bound of <span class="math">\(\frac{1}{2}\left|\,z-a\,\right| \)</span>. </p>
+
+<p>Therefore <span class="math">\(\displaystyle \left|\,\frac{f(z)}{(z-a)^2(z-a-h)}\,\right|\)</span> is bounded; let its upper bound be <span class="math">\(K\)</span>.
+Then, if <span class="math">\(l\)</span> be the length of <span class="math">\(C\)</span>,
+<span class="math">\[\left|\,\lim_{h \rightarrow 0} \frac{1}{2\pi i}\int_C \frac{f(z)}{(z-a)^2(z-a-h)}\,\right|\leq \lim_{h \rightarrow 0 } \:\left|\,h\,\right|\,(2\pi)^{-1} K \,l = 0,\]</span>
+and consequently
+<span class="math">\[f'(z)=\frac{1}{2\pi i }\! \int_C  \frac{f(z)\,dz}{(z-a)^2},\]</span>
+a formula which expresses the value of the derivate of a function at a point
+as an integral taken along a contour enclosing the point. </p>
+
+<p>From this formula we have, if the points <span class="math">\(a\)</span> and <span class="math">\(a + h\)</span> are inside <span class="math">\(C\)</span>,
+<span class="math">\[\begin{align*}
+\frac{f'(a+h)-f'(a)}{h}&=\frac{1}{2\pi i }\int_C \!\frac{f(z)\, dz}{h}\left\{ \frac{1}{(z-a-h)^2} -  \frac{1}{(z-a)^2} \right\}\\ \\ \\
+&=\frac{1}{2\pi i }\int_C f(z)\, dz \frac{2\left(z-a-\frac{1}{2}h \right)}{(z-a-h)^2(z-a)^2}\\ \\ \\
+&=\frac{2}{2\pi i }\! \int_C  \frac{f(z)\,dz}{(z-a)^3}+h A_h,
+\end{align*}\]</span>
+and it is easily seen that <span class="math">\(A_h\)</span> is a bounded function of <span class="math">\(z\)</span> when <span class="math">\(\left|\, h \,\right| <  \frac{1}{2}\left|\, z -a\, \right|\)</span>. </p>
+
+<p>Therefore, as <span class="math">\(h\)</span> tends to zero, <span class="math">\(h^{-1}\{f'(a + h) - f'(a)\}\)</span> tends to a limit, namely
+<span class="math">\[\frac{2}{2\pi i }\! \int_C  \frac{f(z)\,dz}{(z-a)^3}.\]</span></p>
+
+<p>Since <span class="math">\(f'(a)\)</span> has a unique differential coefficient, it is an analytic function
+of <span class="math">\(a\)</span>; its derivate, which is represented by the expression just given, is
+denoted by <span class="math">\(f''(a)\)</span>, and is called the <em>second derivate</em> of <span class="math">\(f(a)\)</span>. </p>
+
+<p>Similarly it can be shewn that <span class="math">\(f''(a)\)</span> is an analytic function of <span class="math">\(a\)</span>, possessing a derivate equal to
+<span class="math">\[\frac{2\cdot 3}{2\pi i }\! \int_C \frac{f(z)\,dz}{(z-a)^4}.\]</span> </p>
+
+<p>this is denoted by <span class="math">\(f'''(a)\)</span>, and is called the <em>third derivate</em> of <span class="math">\(f(a)\)</span>. And in general an <span class="math">\(n\)</span>th derivate <span class="math">\(f^{(n)}(a)\)</span> of <span class="math">\(f(a)\)</span> exists, expressible by the integral
+<span class="math">\[\frac{n!}{2\pi i }\! \int_C \frac{f(z)\,dz}{(z-a)^{n+1}},\]</span>
+and having itself a derivate of the form
+<span class="math">\[\frac{(n+1)!}{2\pi i }\! \int_C \frac{f(z)\,dz}{(z-a)^{n+2}};\]</span>
+the reader will see that this can be proved by induction without difficulty. </p>
+
+<p>A function which possesses a first derivate with respect to the <em>complex</em>
+variable <span class="math">\(z\)</span> at all points of a closed two-dimensional region in the <span class="math">\(z\)</span>-plane therefore possesses derivates of all orders at all points <em>inside</em> the region. </p>
+
+<h4 id="5.23cauchysinequality.">5.23 Cauchy&#8217;s inequality for <span class="math">\(f^{(n)}(a)\)</span>.</h4>
+
+<p>Let <span class="math">\(f(z)\)</span> be analytic on and inside a circle with centre <span class="math">\(a\)</span> and radius <span class="math">\(r\)</span>. Let <span class="math">\(M\)</span> be the upper bound of <span class="math">\(f(z)\)</span> on the circle. Then, by <a href="CMA04-3-ComplexInt.html#4.62anupperlimittothevalueofacomplexintegral.">§4.62</a>,
+<span class="math">\[\left|\, f^{(n)}(a)\,\right| \leq \frac{n!}{2\pi  }\! \int_C \! \frac{M}{r^{n+1}}\left|\,dz\,\right|\]</span>
+<span class="math">\[\leq \frac{M \cdot n!}{r^n}.\]</span></p>
+
+<blockquote>
+<p><em>Example</em>. If <span class="math">\(f(z)\)</span> is analytic, <span class="math">\(z=x +iy\)</span> and <span class="math">\( \nabla^2=\dfrac{\partial^2}{\partial x^2}+\dfrac{\partial^2}{\partial y^2}\)</span>, shew that<br/>
+<span class="math">\[\nabla^2 \log \left|\,f(z)\,\right| = 0; \text{ and } \nabla^2  \left|\,f(z)\,\right| > 0\]</span>
+unless <span class="math">\(f(z) =0 \)</span> or <span class="math">\(f'(z) = 0\)</span>.<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a> (Trinity, 1910.) </p>
+</blockquote>
+
+</div>
+</div>
+
+<div id="footer">
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
+<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+</div>
+
+<div id="navcauchy" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navfront');">FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
+  <ul>
+    <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
+    <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
+    <li><a onClick="hideIt('navcauchy');showIt('navfundprop');">The Properties of Analytic Functions</a>
+      <ul>
+        <li><a href="CMA05-1-AnalyticFunctions.html#5.1apropertyoftheelementaryfunctions.">A Property of Elementary Functions</a>
+        <li class="current"><a href="#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy's Theorem</a>
+          <ul>
+    <li><a href="#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.">A function's value as a contour integral</a>
+              <li  class="current"><a href="#5.22thederivatesofananalyticfunction.">The derivates of an analytic function</a>
+              <li  class="current"><a href="#5.23cauchysinequality.">Cauchy's inequality for <span class="math">\(\,f^{(n)}(a)\)</span></a>
+          </ul>
+        </li>
+    <li><a href="CMA05-3-TaylorsTheorem.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Uniformly Convergent Analytic Functions</a></li>
+    <li><a href="CMA05-3-TaylorsTheorem.html#5.4taylorstheorem.">Taylor's Theorem</a></li>
+    <li><a href="CMA05-4-AnalyticContinuation.html#5.5theprocessofcontinuation.">Analytic Continuation</a></li>
+       <li class="more"><a onClick="hideIt('navcauchy');showIt('navfundprop');"> more . . . </a></li>
+      </ul>
+    </li>
+    <li><a href="whereOwhere.html">The Theory of Residues</a></li>
+    <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navfundprop" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navfundprop');showIt('navfront');">FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfundprop');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
+  <ul>
+    <li class="more"><a onClick="hideIt('navfundprop');showIt('navprocesses');"> more . . . </a></li>
+    <li><a href="CMA04-1-Integration.html#thetheoryofriemannintegration">The Theory of Riemann Integration</a></li>
+    <li><a href="CMA05-1-AnalyticFunctions.html#thefundamentalpropertiesofanalyticfunctions">The Properties of Analytic Functions</a>
+      <ul>
+        <li><a href="CMA05-1-AnalyticFunctions.html#5.1apropertyoftheelementaryfunctions.">A Property of Elementary Functions</a></li>
+        <li class="current"><a onClick="hideIt('navfundprop');showIt('navcauchy');">Cauchy's Theorem</a></li>
+    <li><a href="CMA05-3-TaylorsTheorem.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Uniformly Convergent Analytic Functions</a></li>
+    <li><a href="CMA05-3-TaylorsTheorem.html#5.4taylorstheorem.">Taylor's Theorem</a></li>
+    <li><a href="CMA05-4-AnalyticContinuation.html#5.5theprocessofcontinuation.">Analytic Continuation</a></li>
+    <li><a href="CMA05-5-LaurentsTheorem.html#5.6laurentstheorem.">Laurent's Theorem</a></li>
+    <li><a href="CMA05-6-ManyValuedFunctions.html#5.7manyvaluedfunctions.">Many-valued Functions</a></li>
+        <li><a href="CMA05-6-ManyValuedFunctions.html#references.">References</a></li>
+        <li><a href="CMA05-6-ManyValuedFunctions.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
+      </ul>
+    </li>
+    <li><a href="whereOwhere.html">The Theory of Residues</a></li>
+    <li class="more"><a onClick="hideIt('navfundprop');showIt('navprocesses');"> more . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfundprop');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfundprop');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navfront" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a>FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-Front.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-Front.html#preface">Preface</a></li>
+    <li><a href="CMA00-Front.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navfront');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navprocesses" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
+<li class="part"><a>PROCESSES OF ANALYSIS</a>
+  <ul >
+    <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
+    <li><a href="CMA02-1-Limits.html">The Theory of Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
+     <li><a href="CMA05-1-AnalyticFunctions">The Properties of Analytic Functions</a></li>
+     <li class="more current"><a onClick="showIt('navcauchy');hideIt('navprocesses');"> you are here . . . </a></li>
+     <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navtranscendental" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navtranscendental');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
+  <ul>
+    <li class="notdone"><a href="whereOwhere.html">The Gamma Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Zeta Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Legendre Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Bessel Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Mathieu Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
+  </ul>
+  </li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navback" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a>BACKMATTER</a>
+  <ul >
+    <li ><a href="whereOwhere.html">Appendix</a></li>
+    <li ><a href="whereOwhere.html">Authors Quoted</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfixedleft" class="fixedBleft">
+<p><a href="CMA05-1-AnalyticFunctions.html">&#x25C0;</a></p>
+</div>
+
+<div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
+<p><a onClick="showIt('navcauchy');hideIt('navfundprop');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA05-2-CauchysTheorem.html" style="float: right;">&#x25B6;</a></p>
+</div>
+
+<div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
+<p><a onClick="hideIt('navcauchy');hideIt('navfundprop');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA05-2-CauchysTheorem.html" style="float: right;">&#x25B6;  </a></p>
+</div>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p><a href="https://archive.org/details/mmoiresurlesin00cauc"><em>Mémoire sur les intégrales definies prises entre des limites imaginaires</em> (1825)</a>. The proof here given is that due to Goursat, <a href="http://www.ams.org/journals/tran/1900-001-01/home.html"><em>Trans. American Math. Soc.</em> <strong>i.</strong> (1900)</a>, p. 14. <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:2">
+<p>It is sufficient for <span class="math">\(f(z)\)</span> to be continuous when variations of <span class="math">\(z\)</span> <em>along the arc only</em> are considered. <a href="#fnref:2" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:3">
+<p>It is not necessary that <span class="math">\(f(z)\)</span> should be analytic <em>on</em> <span class="math">\(C\)</span> (it is sufficient that it be continuous on and inside <span class="math">\(C\)</span>), but if <span class="math">\(f(z)\)</span> is not analytic on <span class="math">\(C\)</span>, the theorem is much harder to prove. This proof merely assumes that <span class="math">\(f'(z)\)</span> <em>exists</em> at all points on and inside <span class="math">\(C\)</span>. Earlier proofs made more extended assumptions; thus Cauchy&#8217;s proof assumed the <em>continuity</em> of <span class="math">\(f'(z)\)</span>. Riemann&#8217;s proof made an equivalent assumption. Goursat&#8217;s first proof assumed that <span class="math">\(f(z)\)</span> was <em>uniformly</em> differentiable throughout <span class="math">\(C\)</span>. <br><br> <em>Editor&#8217;s Note</em>: For those like me who find the first sentence of the above footnote ambiguously worded, I am sure it is intended to claim that it is sufficient for <span class="math">\(f(z)\)</span> to be analytic <em>inside</em> <span class="math">\(C\)</span> and continuous <em>on and inside</em> <span class="math">\(C\)</span>. <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:4">
+<p>See <a href="CMA04-3-ComplexInt.html#4.6examples">§4.6, example</a>.  <a href="#fnref:4" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:5">
+<p>The phrase &#8216;analytic throughout a region&#8217; implies one-valuedness (<a href="CMA05-1-AnalyticFunctions.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.">§5.12</a>); that is to say that after <span class="math">\(z\)</span> has described a closed path surrounding <span class="math">\(C_0\)</span>, <span class="math">\(f(z)\)</span> has returned to its initial value. A function such as log <span class="math">\(z\)</span> considered in the region <span class="math">\(1 \leq  \left|\, z\,\right| \leq 2\)</span> will be said to be &#8216;analytic at all points of the region.&#8217;  <a href="#fnref:5" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:6">
+<p><em>Editor&#8217;s Note</em>: The either part of this example can be used to prove the <a href="http://mathworld.wolfram.com/MaximumModulusPrinciple.html"><em>maximum modulus principle</em></a>.  <a href="#fnref:6" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+
+</body>
+</html>

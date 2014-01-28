@@ -230,7 +230,7 @@ It obviously exists if \\(\frac{dx}{dt}\\), \\(\frac{dy}{dt}\\)  are continuous;
 
 By [&#167;4.13 example 4](CMA04-1-IntegrationMN.html#4.13example4), this definition is consistent with the definition of an integral when *AB* happens to be part of the real axis. 
 
->*Examples*. \\(\int_{z_0}^Z  f(z)\, dz = -\int^{z_0}_Z  f(z)\, dz \\) the paths of integration being the same (but in opposite directions) in each integral. 
+>######*Examples*. \\(\int_{z_0}^Z  f(z)\, dz = -\int^{z_0}_Z  f(z)\, dz \\) the paths of integration being the same (but in opposite directions) in each integral. [4.6examples]######
 >\\[
 >\begin{align*}
 >&\int_{z_0}^Z   \!dz = Z-z_0 \\ \\
@@ -322,7 +322,7 @@ convergent, and that its sum is \\(\displaystyle \int_C \!S(z)\, dz\\).
 
 
 
-<div markdown=1 class="marginnotes" id="mn:9,+1" style="margin-top: +1em; margin-bottom: +1em;"><a class="marginmark">&#91;9&#93;</a>\\(\dfrac{df(z)}{dz}\\) means \\(\lim\limits_{h \rightarrow 0} \dfrac{f(z+h)-f(z)}{h}\\) where \\(h \rightarrow 0\\) along a definite simple curve; this definition is modified slightly in [&#167;5.12](whereOwhere.html) in the case when \\(f(z)\\) is an *analytic* function.<a onClick="hideIt('mn:9,+1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:9,+1" style="margin-top: +1em; margin-bottom: +1em;"><a class="marginmark">&#91;9&#93;</a>\\(\dfrac{df(z)}{dz}\\) means \\(\lim\limits_{h \rightarrow 0} \dfrac{f(z+h)-f(z)}{h}\\) where \\(h \rightarrow 0\\) along a definite simple curve; this definition is modified slightly in [&#167;5.12](CMA05-1-AnalyticFunctionsMN.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.) in the case when \\(f(z)\\) is an *analytic* function.<a onClick="hideIt('mn:9,+1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 

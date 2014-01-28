@@ -29,7 +29,7 @@ HTML header:	<script type="text/javascript"
 
 ###5.1 A Property of the elementary functions.###
 
-[^analyticfuncyions,+3]: The reader will observe that this is not the sense in which the term function is defined ([§3.1](CMA03-1-ContinuousFns.html#thedependenceofonecomplexnumberonanother)) in this work. Thus e.g. \\(x - iy\\) and \\(\left| \,z\,  \right|\\) are functions of \\(z \,( = x + iy)\\) in the sense of [§3.1](CMA03-1-ContinuousFnsMN.html#thedependenceofonecomplexnumberonanother), but are not elementary functions of the type under consideration.
+[^analyticfuncyions,+3]: The reader will observe that this is not the sense in which the term function is defined ([§3.1](CMA03-1-ContinuousFnsMN.html#thedependenceofonecomplexnumberonanother)) in this work. Thus e.g. \\(x - iy\\) and \\(\left| \,z\,  \right|\\) are functions of \\(z \,( = x + iy)\\) in the sense of [§3.1](CMA03-1-ContinuousFns.html#thedependenceofonecomplexnumberonanother), but are not elementary functions of the type under consideration.
 
 The reader will be already familiar with the term *elementary function*, as 
 used (in text-books on Algebra, Trigonometry, and the Differential Calculus) 
@@ -89,7 +89,7 @@ function of \\(z\\) defined uniquely at all points of the region. Let \\(z\\), \
 which is *monogenic* or *analytic*[^analytic,-1] at the point. If the function is analytic and *one-valued* at all points of the region, we say that the function is *analytic 
 throughout the region.*[^onevalued,+2] 
 
-[^onevalued,+2]: See [§5.2 cor. 2](CMA05-2-CauchysTheorem.html#), footnote.
+[^onevalued,+2]: See [§5.2 cor. 2](CMA05-2-CauchysTheorem.html#5.2corollary2), footnote.
 
 We shall frequently use the word 'function' alone to denote an analytic 
 function, as the functions studied in this work will be almost exclusively 

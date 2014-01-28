@@ -33,7 +33,7 @@ HTML header:	<script type="text/javascript"
 
 
 
-<div markdown=1 class="marginnotes" id="mn:1,+3" style="margin-top: +3em; margin-bottom: +3em;"><a class="marginmark">&#91;1&#93;</a>The reader will observe that this is not the sense in which the term function is defined ([&#167;3.1](CMA03-1-ContinuousFns.html#thedependenceofonecomplexnumberonanother)) in this work. Thus e.g. \\(x - iy\\) and \\(\left| \,z\,  \right|\\) are functions of \\(z \,( = x + iy)\\) in the sense of [&#167;3.1](CMA03-1-ContinuousFnsMNMN.html#thedependenceofonecomplexnumberonanother), but are not elementary functions of the type under consideration.<a onClick="hideIt('mn:1,+3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:1,+3" style="margin-top: +3em; margin-bottom: +3em;"><a class="marginmark">&#91;1&#93;</a>The reader will observe that this is not the sense in which the term function is defined ([&#167;3.1](CMA03-1-ContinuousFnsMN.html#thedependenceofonecomplexnumberonanother)) in this work. Thus e.g. \\(x - iy\\) and \\(\left| \,z\,  \right|\\) are functions of \\(z \,( = x + iy)\\) in the sense of [&#167;3.1](CMA03-1-ContinuousFnsMN.html#thedependenceofonecomplexnumberonanother), but are not elementary functions of the type under consideration.<a onClick="hideIt('mn:1,+3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -123,7 +123,7 @@ throughout the region.*<a class="marginmark" onClick="toggleHide('mn:4,+2');">&#
 
 
 
-<div markdown=1 class="marginnotes" id="mn:4,+2" style="margin-top: +2em; margin-bottom: +2em;"><a class="marginmark">&#91;4&#93;</a>See [&#167;5.2 cor. 2](CMA05-2-CauchysTheoremMN.html#), footnote.<a onClick="hideIt('mn:4,+2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:4,+2" style="margin-top: +2em; margin-bottom: +2em;"><a class="marginmark">&#91;4&#93;</a>See [&#167;5.2 cor. 2](CMA05-2-CauchysTheoremMN.html#5.2corollary2), footnote.<a onClick="hideIt('mn:4,+2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
