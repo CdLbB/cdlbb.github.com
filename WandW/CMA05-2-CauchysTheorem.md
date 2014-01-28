@@ -1,12 +1,12 @@
 latex input:	mmd-cambridge-header
-Title:	A Course of Modern Analysis-AnalyticFunctions 5-1 
+Title:	A Course of Modern Analysis-CauchysTheorem 5-2 
 Subtitle:	An introduction to the general theory of
 	infinite processes and analytic functions;
 	with an account of the principal
 	transcendental functions.
 Author:	E.T. Whittaker and G.N. Watson
 Editor:	Eric Nitardy
-Date:	Jan 20, 2014
+Date:	Jan 25, 2014
 Title File:	mmd-WandW-title
 Copyright File:	mmd-WandW-copyright
 Test:	And this is a new key-value pair
@@ -138,7 +138,7 @@ and
 also, by [§4.62](CMA04-3-ComplexInt.html#4.62anupperlimittothevalueofacomplexintegral.),
 \\[\left|\,\int_\gamma \! v\,dz \, \right| \leq \epsilon\,2\pi r.\\] 
 Thus 
-\\[\left|\,\int_\gamma \! \frac{f(z)\,dz}{z-a} - 2\pi i f(a)\, \right| = \left|\,\int_\gamma \! \epsilon\,dz \, \right| \leq 2\pi r \epsilon.\\]
+\\[\left|\,\int_\gamma \! \frac{f(z)\,dz}{z-a} - 2\pi i f(a)\, \right| = \left|\,\int_\gamma \! v\,dz \, \right| \leq 2\pi r \epsilon.\\]
 
 But the left-hand side is independent of \\(\epsilon\\), and so it must be zero, since \\(\epsilon\\) is arbitrary; that is to say 
 \\[f(a) = \frac{1}{2\pi i }\! \int_C \! \frac{f(z)\,dz}{z-a}.\\]
