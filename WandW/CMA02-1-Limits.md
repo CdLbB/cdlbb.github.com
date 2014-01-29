@@ -277,7 +277,7 @@ Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is 
     <li  class="current"><a href="#" onClick="showIt('navlimits1');hideIt('navprocesses');">The Theory of Convergence</a></li>
      <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
      <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
-     <li class="notdone"><a href="whereOwhere.html">The Properties of Analytic Functions</a></li>
+     <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
      <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
