@@ -252,7 +252,7 @@ April, 2012.
      <ol>
           <li>5.1 <a href="CMA05-1-AnalyticFunctions.html#5.1apropertyoftheelementaryfunctions.">A Property of Elementary Functions</a></li>
 	  <li>5.2 <a href="CMA05-2-CauchysTheorem.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy's Theorem on Contour Integrals</a></li>
-	  <li>5.3 <a href="CMA05-3-TaylorsTheorem.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Uniformly Convergent Analytic Functions</a></li>
+	  <li>5.3 <a href="CMA05-3-TaylorsTheorem.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Analytic Functions as Uniformly Convergent Series</a></li>
 	  <li>5.4 <a href="CMA05-3-TaylorsTheorem.html#5.4taylorstheorem.">Taylor's Theorem</a></li>
 	  <li>5.5 <a href="CMA05-4-AnalyticContinuation.html#5.5theprocessofcontinuation.">The Process of Continuation</a></li>
 	  <li>5.6 <a href="CMA05-5-LaurentsTheorem.html#5.6laurentstheorem.">Laurent's Theorem</a></li>

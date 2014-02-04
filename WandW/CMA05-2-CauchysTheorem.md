@@ -207,14 +207,16 @@ variable \\(z\\) at all points of a closed two-dimensional region in the \\(z\\)
 ####5.23 Cauchy's inequality for \\(f^{(n)}(a)\\). [5.23cauchysinequality.]####
 
 Let \\(f(z)\\) be analytic on and inside a circle with centre \\(a\\) and radius \\(r\\). Let \\(M\\) be the upper bound of \\(f(z)\\) on the circle. Then, by [§4.62](CMA04-3-ComplexInt.html#4.62anupperlimittothevalueofacomplexintegral.), 
-\\[\left|\, f^{(n)}(a)\,\right| \leq \frac{n!}{2\pi  }\! \int_C \! \frac{M}{r^{n+1}}\left|\,dz\,\right|\\]
-\\[\leq \frac{M \cdot n!}{r^n}.\\]
+\\[\begin{align*}
+\left|\, f^{(n)}(a)\,\right| &\leq \frac{n!}{2\pi  }\! \int_C \! \frac{M}{r^{n+1}}\left|\,dz\,\right|\\
+\\ &\leq \frac{M \cdot n!}{r^n}.
+\end{align*}\\]
  
 >*Example*. If \\(f(z)\\) is analytic, \\(z=x +iy\\) and \\( \nabla^2=\dfrac{\partial^2}{\partial x^2}+\dfrac{\partial^2}{\partial y^2}\\), shew that  
 >\\[\nabla^2 \log \left|\,f(z)\,\right| = 0; \text{ and } \nabla^2  \left|\,f(z)\,\right| > 0\\] 
 unless \\(f(z) =0 \\) or \\(f'(z) = 0\\).[^maxmodulus,-3] (Trinity, 1910.) 
 
-[^maxmodulus,-3]: *Editor's Note*: The either part of this example can be used to prove the [*maximum modulus principle*](http://mathworld.wolfram.com/MaximumModulusPrinciple.html). 
+[^maxmodulus,-3]: *Editor's Note*: Either part of this example can be used to prove the [*maximum modulus principle*](http://mathworld.wolfram.com/MaximumModulusPrinciple.html). 
 
 
 </div>
@@ -240,7 +242,7 @@ unless \\(f(z) =0 \\) or \\(f'(z) = 0\\).[^maxmodulus,-3] (Trinity, 1910.)
   <ul>
     <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
     <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
-    <li><a onClick="hideIt('navcauchy');showIt('navfundprop');">The Properties of Analytic Functions</a>
+    <li><a href="CMA05-1-AnalyticFunctions.html#thefundamentalpropertiesofanalyticfunctions">The Properties of Analytic Functions</a>
       <ul>
         <li><a href="CMA05-1-AnalyticFunctions.html#5.1apropertyoftheelementaryfunctions.">A Property of Elementary Functions</a>
         <li class="current"><a href="#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy's Theorem</a>
@@ -250,10 +252,13 @@ unless \\(f(z) =0 \\) or \\(f'(z) = 0\\).[^maxmodulus,-3] (Trinity, 1910.)
               <li  class="current"><a href="#5.23cauchysinequality.">Cauchy's inequality for <span class="math">\(\,f^{(n)}(a)\)</span></a>
           </ul>
         </li>
-	<li><a href="CMA05-3-TaylorsTheorem.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Uniformly Convergent Analytic Functions</a></li>
+	<li><a href="CMA05-3-TaylorsTheorem.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Analytic Functions as Uniformly Convergent Series</a></li>
 	<li><a href="CMA05-3-TaylorsTheorem.html#5.4taylorstheorem.">Taylor's Theorem</a></li>
 	<li><a href="CMA05-4-AnalyticContinuation.html#5.5theprocessofcontinuation.">Analytic Continuation</a></li>
-       <li class="more"><a onClick="hideIt('navcauchy');showIt('navfundprop');"> more . . . </a></li>
+       <li><a href="CMA05-5-LaurentsTheorem.html#5.6laurentstheorem.">Laurent's Theorem</a></li>
+	<li><a href="CMA05-6-ManyValuedFunctions.html#5.7manyvaluedfunctions.">Many-valued Functions</a></li>
+        <li><a href="CMA05-6-ManyValuedFunctions.html#references.">References</a></li>
+        <li><a href="CMA05-6-ManyValuedFunctions.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
     </li>
     <li><a href="whereOwhere.html">The Theory of Residues</a></li>
@@ -265,41 +270,6 @@ unless \\(f(z) =0 \\) or \\(f'(z) = 0\\).[^maxmodulus,-3] (Trinity, 1910.)
 </ul>
 </div>
 
-
-
-<div id="navfundprop" class="navigation" style="visibility:hidden;" >
-<h2 id="contents">Contents</h2>
-<ul>
-<li class="part"><a onClick="hideIt('navfundprop');showIt('navfront');">FRONTMATTER</a>
-  <ul>
-    <li><a href="CMA00-Front.html#contents">Table of Contents</a></li>
-  </ul>
-</li>
-<li class="part"><a onClick="hideIt('navfundprop');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
-  <ul>
-    <li class="more"><a onClick="hideIt('navfundprop');showIt('navprocesses');"> more . . . </a></li>
-    <li><a href="CMA04-1-Integration.html#thetheoryofriemannintegration">The Theory of Riemann Integration</a></li>
-    <li><a href="CMA05-1-AnalyticFunctions.html#thefundamentalpropertiesofanalyticfunctions">The Properties of Analytic Functions</a>
-      <ul>
-        <li><a href="CMA05-1-AnalyticFunctions.html#5.1apropertyoftheelementaryfunctions.">A Property of Elementary Functions</a></li>
-        <li class="current"><a onClick="hideIt('navfundprop');showIt('navcauchy');">Cauchy's Theorem</a></li>
-	<li><a href="CMA05-3-TaylorsTheorem.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Uniformly Convergent Analytic Functions</a></li>
-	<li><a href="CMA05-3-TaylorsTheorem.html#5.4taylorstheorem.">Taylor's Theorem</a></li>
-	<li><a href="CMA05-4-AnalyticContinuation.html#5.5theprocessofcontinuation.">Analytic Continuation</a></li>
-	<li><a href="CMA05-5-LaurentsTheorem.html#5.6laurentstheorem.">Laurent's Theorem</a></li>
-	<li><a href="CMA05-6-ManyValuedFunctions.html#5.7manyvaluedfunctions.">Many-valued Functions</a></li>
-        <li><a href="CMA05-6-ManyValuedFunctions.html#references.">References</a></li>
-        <li><a href="CMA05-6-ManyValuedFunctions.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
-      </ul>
-    </li>
-    <li><a href="whereOwhere.html">The Theory of Residues</a></li>
-    <li class="more"><a onClick="hideIt('navfundprop');showIt('navprocesses');"> more . . . </a></li>
-  </ul>
-</li>
-<li class="part"><a onClick="hideIt('navfundprop');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navfundprop');showIt('navback');">BACKMATTER</a></li>
-</ul>
-</div>
 
 
 <div id="navfront" class="navigation" style="visibility:hidden;" >
@@ -335,7 +305,7 @@ unless \\(f(z) =0 \\) or \\(f'(z) = 0\\).[^maxmodulus,-3] (Trinity, 1910.)
     <li><a href="CMA02-1-Limits.html">The Theory of Convergence</a></li>
      <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
      <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
-     <li><a href="CMA05-1-AnalyticFunctions">The Properties of Analytic Functions</a></li>
+     <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
      <li class="more current"><a onClick="showIt('navcauchy');hideIt('navprocesses');"> you are here . . . </a></li>
      <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
@@ -407,9 +377,9 @@ unless \\(f(z) =0 \\) or \\(f'(z) = 0\\).[^maxmodulus,-3] (Trinity, 1910.)
 </div>
 
 <div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
-<p><a onClick="showIt('navcauchy');hideIt('navfundprop');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA05-2-CauchysTheorem.html" style="float: right;">&#x25B6;</a></p>
+<p><a onClick="showIt('navcauchy');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA05-3-TaylorsTheorem.html" style="float: right;">&#x25B6;</a></p>
 </div>
 
 <div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
-<p><a onClick="hideIt('navcauchy');hideIt('navfundprop');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA05-2-CauchysTheorem.html" style="float: right;">&#x25B6;	</a></p>
+<p><a onClick="hideIt('navcauchy');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA05-3-TaylorsTheorem.html" style="float: right;">&#x25B6;	</a></p>
 </div>

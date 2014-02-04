@@ -302,7 +302,7 @@ April, 2012.
      <ol>
           <li>5.1 <a href="CMA05-1-AnalyticFunctionsMN.html#5.1apropertyoftheelementaryfunctions.">A Property of Elementary Functions</a></li>
 	  <li>5.2 <a href="CMA05-2-CauchysTheoremMN.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy's Theorem on Contour Integrals</a></li>
-	  <li>5.3 <a href="CMA05-3-TaylorsTheoremMN.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Uniformly Convergent Analytic Functions</a></li>
+	  <li>5.3 <a href="CMA05-3-TaylorsTheoremMN.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Analytic Functions as Uniformly Convergent Series</a></li>
 	  <li>5.4 <a href="CMA05-3-TaylorsTheoremMN.html#5.4taylorstheorem.">Taylor's Theorem</a></li>
 	  <li>5.5 <a href="CMA05-4-AnalyticContinuationMN.html#5.5theprocessofcontinuation.">The Process of Continuation</a></li>
 	  <li>5.6 <a href="CMA05-5-LaurentsTheoremMN.html#5.6laurentstheorem.">Laurent's Theorem</a></li>
@@ -384,7 +384,7 @@ April, 2012.
     <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
      <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
      <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
-     <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
+     <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
      <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>

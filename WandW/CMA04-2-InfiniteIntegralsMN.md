@@ -16,7 +16,7 @@ latex input:	mmd-cambridge-begin-doc
 latex footer:	mmd-cambridge-footer
 CSS:	css/documentation.css
 HTML header:	<script type="text/javascript"
-	src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+	src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
 	<script type="text/javascript" src="js/showhide.js"></script>
 	<script type="text/javascript" src="js/mathjaxend.js"></script>
 
@@ -294,7 +294,7 @@ which is the condition for convergence.
 >*Example *2.  \\(\displaystyle \int_0^\infty x^{-1} \sin (x^3- ax) \,dx\\) converges. 
  
 
-#####4.431 Tests for uniformity of convergence of an infinite integral.<a class="marginmark" onClick="toggleHide('mn:9,-3');">&#91;9&#93;</a> #####
+#####4.431 Tests for uniformity of convergence of an infinite integral.<a class="marginmark" onClick="toggleHide('mn:9,-3');">&#91;9&#93;</a> [4.431testsforuniformityofconvergenceofaninfiniteintegral.]#####
 
 </div>
 

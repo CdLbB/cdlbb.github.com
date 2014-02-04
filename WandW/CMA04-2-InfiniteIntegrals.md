@@ -214,7 +214,7 @@ which is the condition for convergence.
 >*Example *2.  \\(\displaystyle \int_0^\infty x^{-1} \sin (x^3- ax) \,dx\\) converges. 
  
 
-#####4.431 Tests for uniformity of convergence of an infinite integral.[^poussin,-3] #####
+#####4.431 Tests for uniformity of convergence of an infinite integral.[^poussin,-3] [4.431testsforuniformityofconvergenceofaninfiniteintegral.]#####
 
 [^poussin,-3]: The results of this section and of [§4.44](#4.44theoremsconcerninguniformlyconvergentinfiniteintegrals.) are due to de la Vallée Poussin, [*Ann. de la Soc. Scientifique de Bruxelles*, **xvi.** (1892)](http://books.google.com/books?id=fKMAAAAAYAAJ), pp. 150-180. 
 

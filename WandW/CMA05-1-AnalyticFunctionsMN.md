@@ -47,7 +47,7 @@ to denote certain analytical expressions<a class="marginmark" onClick="toggleHid
 symbols involved therein being those of elementary algebra together with 
 exponentials, logarithms and the trigonometrical functions; examples of such 
 expressions are 
-\\[z^2,\quad e^z, \quad log z, \quad \arcsin z^{\frac{3}{2}}.\\] 
+\\[z^2,\quad e^z, \quad \log z, \quad \arcsin z^{\frac{3}{2}}.\\] 
 Such combinations of the elementary functions of analysis have in common 
 a remarkable property, which will now be investigated. 
 
@@ -219,7 +219,7 @@ is satisfied by all points \\(z'\\) inside or on the boundary of that part.
   <ul>
     <li class="more"><a onClick="hideIt('navaprop');showIt('navprocesses');"> more . . . </a></li>
     <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
-    <li><a onClick="hideIt('navaprop');showIt('navfundprop');">The Properties of Analytic Functions</a>
+    <li><a href="#thefundamentalpropertiesofanalyticfunctions">The Properties of Analytic Functions</a>
       <ul>
 	<li class="current"><a href="#5.1apropertyoftheelementaryfunctions.">A Property of Elementary Functions</a>
           <ul>
@@ -229,10 +229,13 @@ is satisfied by all points \\(z'\\) inside or on the boundary of that part.
           </ul>
        </li>
         <li><a href="CMA05-2-CauchysTheoremMN.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy's Theorem</a></li>
-	<li><a href="CMA05-3-TaylorsTheoremMN.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Uniformly Convergent Analytic Functions</a></li>
+	<li><a href="CMA05-3-TaylorsTheoremMN.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Analytic Functions as Uniformly Convergent Series</a></li>
 	<li><a href="CMA05-3-TaylorsTheoremMN.html#5.4taylorstheorem.">Taylor's Theorem</a></li>
 	<li><a href="CMA05-4-AnalyticContinuationMN.html#5.5theprocessofcontinuation.">Analytic Continuation</a></li>
-       <li class="more"><a onClick="hideIt('navaprop');showIt('navfundprop');"> more . . . </a></li>
+       <li><a href="CMA05-5-LaurentsTheoremMN.html#5.6laurentstheorem.">Laurent's Theorem</a></li>
+	<li><a href="CMA05-6-ManyValuedFunctionsMN.html#5.7manyvaluedfunctions.">Many-valued Functions</a></li>
+        <li><a href="CMA05-6-ManyValuedFunctionsMN.html#references.">References</a></li>
+        <li><a href="CMA05-6-ManyValuedFunctionsMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
     </li>
     <li><a href="whereOwhere.html">The Theory of Residues</a></li>
@@ -244,41 +247,6 @@ is satisfied by all points \\(z'\\) inside or on the boundary of that part.
 </ul>
 </div>
 
-
-
-<div id="navfundprop" class="navigation" style="visibility:hidden;" >
-<h2 id="contents">Contents</h2>
-<ul>
-<li class="part"><a onClick="hideIt('navfundprop');showIt('navfront');">FRONTMATTER</a>
-  <ul>
-    <li><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
-  </ul>
-</li>
-<li class="part"><a onClick="hideIt('navfundprop');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
-  <ul>
-    <li class="more"><a onClick="hideIt('navfundprop');showIt('navprocesses');"> more . . . </a></li>
-    <li><a href="CMA04-1-IntegrationMN.html#thetheoryofriemannintegration">The Theory of Riemann Integration</a></li>
-    <li><a href="CMA05-1-AnalyticFunctionsMN.html#thefundamentalpropertiesofanalyticfunctions">The Properties of Analytic Functions</a>
-      <ul>
-        <li class="current"><a onClick="hideIt('navfundprop');showIt('navaprop');">A Property of Elementary Functions</a></li>
-        <li><a href="CMA05-2-CauchysTheoremMN.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy's Theorem</a></li>
-	<li><a href="CMA05-3-TaylorsTheoremMN.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Uniformly Convergent Analytic Functions</a></li>
-	<li><a href="CMA05-3-TaylorsTheoremMN.html#5.4taylorstheorem.">Taylor's Theorem</a></li>
-	<li><a href="CMA05-4-AnalyticContinuationMN.html#5.5theprocessofcontinuation.">Analytic Continuation</a></li>
-	<li><a href="CMA05-5-LaurentsTheoremMN.html#5.6laurentstheorem.">Laurent's Theorem</a></li>
-	<li><a href="CMA05-6-ManyValuedFunctionsMN.html#5.7manyvaluedfunctions.">Many-valued Functions</a></li>
-        <li><a href="CMA05-6-ManyValuedFunctionsMN.html#references.">References</a></li>
-        <li><a href="CMA05-6-ManyValuedFunctionsMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
-      </ul>
-    </li>
-    <li><a href="whereOwhere.html">The Theory of Residues</a></li>
-    <li class="more"><a onClick="hideIt('navfundprop');showIt('navprocesses');"> more . . . </a></li>
-  </ul>
-</li>
-<li class="part"><a onClick="hideIt('navfundprop');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navfundprop');showIt('navback');">BACKMATTER</a></li>
-</ul>
-</div>
 
 
 <div id="navfront" class="navigation" style="visibility:hidden;" >
@@ -314,7 +282,7 @@ is satisfied by all points \\(z'\\) inside or on the boundary of that part.
     <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
      <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
      <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
-     <li><a href="CMA05-1-AnalyticFunctions">The Properties of Analytic Functions</a></li>
+     <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
      <li class="more current"><a onClick="showIt('navaprop');hideIt('navprocesses');"> you are here . . . </a></li>
      <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
@@ -386,9 +354,9 @@ is satisfied by all points \\(z'\\) inside or on the boundary of that part.
 </div>
 
 <div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
-<p><a onClick="showIt('navaprop');hideIt('navfundprop');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA05-2-CauchysTheoremMN.html" style="float: right;">&#x25B6;</a></p>
+<p><a onClick="showIt('navaprop');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA05-2-CauchysTheoremMN.html" style="float: right;">&#x25B6;</a></p>
 </div>
 
 <div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
-<p><a onClick="hideIt('navaprop');hideIt('navfundprop');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA05-2-CauchysTheoremMN.html" style="float: right;">&#x25B6;	</a></p>
+<p><a onClick="hideIt('navaprop');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA05-2-CauchysTheoremMN.html" style="float: right;">&#x25B6;	</a></p>
 </div>
