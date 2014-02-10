@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="latexinput" content="mmd-cambridge-header"/>
+	<title>A Course of Modern Analysis-AnalyticContinuation 5-4</title>
+	<meta name="subtitle" content="An introduction to the general theory of
+infinite processes and analytic functions;
+with an account of the principal
+transcendental functions."/>
+	<meta name="author" content="E.T. Whittaker and G.N. Watson"/>
+	<meta name="editor" content="Eric Nitardy"/>
+	<meta name="date" content="Feb 4, 2014"/>
+	<meta name="titlefile" content="mmd-WandW-title"/>
+	<meta name="copyrightfile" content="mmd-WandW-copyright"/>
+	<meta name="test" content="And this is a new key-value pair"/>
+	<meta name="latexmode" content="memoir"/>
+	<meta name="latexinput" content="mmd-cambridge-begin-doc"/>
+	<meta name="latexfooter" content="mmd-cambridge-footer"/>
+	<link type="text/css" rel="stylesheet" href="css/documentation.css"/>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+<script type="text/javascript" src="js/showhide.js"></script>
+<script type="text/javascript" src="js/mathjaxend.js"></script>
+</head>
+<body>
+
+<div id="header"><h1><a href="CMA00-Front.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
+<div id="content">
+<div class="contenttext">
+
+<h3 id="5.5theprocessofcontinuation.">5.5 The Process of Continuation.</h3>
+
+<p>Near every point <span class="math">\(P\)</span>, <span class="math">\(z_0\)</span>, in the neighbourhood of which a function <span class="math">\(f(z)\)</span> is analytic, we have seen that an expansion exists for the function as a series of ascending positive integral powers of <span class="math">\((z - z_0)\)</span>, the coefficients in which involve the successive derivates of the function at <span class="math">\(z_0\)</span>. </p>
+
+<p>Now let <span class="math">\(A\)</span> be the singularity of <span class="math">\(f(z)\)</span> which is nearest to <span class="math">\(P\)</span>. Then the circle within which this expansion is valid has <span class="math">\(P\)</span> for centre and <span class="math">\(PA\)</span> for radius. </p>
+
+<p>Suppose that we are merely given the values of a function at all points of
+the circumference of a circle slightly smaller than the circle of convergence
+and concentric with it together with the condition that the function is to be
+analytic throughout the interior of the larger circle. Then the preceding
+theorems enable us to find its value at all points <em>within</em> the smaller circle
+and to determine the coefficients in the Taylor series proceeding in powers
+of <span class="math">\(z - z_0\)</span>. The question arises, Is it possible to define the function at points <em>outside</em> the circle in such a way that the function is analytic throughout
+a larger domain than the interior of the circle? </p>
+
+<p>In other words, <em>given a power series which converges and represents a
+function only at points within a circle, to define by means of it the values
+of the function at points outside the circle</em>. </p>
+
+<p>For this purpose choose any point <span class="math">\(P_1\)</span> within the circle, not on the line
+<span class="math">\(PA\)</span>. We know the value of the function and all its derivates at <span class="math">\(P_1\)</span>, from the series, and so we can form the Taylor series (for the same function)
+with <span class="math">\(P_1\)</span> as origin, which will define a function analytic throughout some
+circle of centre <span class="math">\(P_1\)</span>. Now this circle will extend as far as the singularity<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a> which is nearest to <span class="math">\(P_1\)</span>, which may or may not be <span class="math">\(A\)</span>; but in either case, this new circle will usually<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a> lie partly outside the old circle of convergence, and <em>for points in the region which is included in the new circle but not in the old circle, the new series may be used to define the values of the function, although the old series failed to do so.</em></p>
+
+<p>Similarly we can take any other point <span class="math">\(P_2\)</span>, in the region for which the
+values of the function are now known, and form the Taylor series with <span class="math">\(P_2\)</span> as origin, which will in general enable us to define the function at other points, at which its values were not previously known; and so on. </p>
+
+<p>This process is called <em>continuation</em><a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a>. By means of it, starting from a representation of a function by any one power series we can find any number of other power series, which between them define the value of the function at all points of a domain, any point of which can be reached from <span class="math">\(P\)</span> without passing through a singularity of the function;<a href="#fn:4" id="fnref:4" title="see footnote" class="footnote">[4]</a> and the aggregate of all the power series thus obtained<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a> constitutes the analytical expression of the function. </p>
+
+<p>It is important to know whether continuation by two different paths <span class="math">\(PBQ\)</span>, <span class="math">\(PB'Q\)</span> will give the same final power series; it will be seen that this is the case, if the function have no singularity inside the closed curve <span class="math">\(PBQB'P\)</span>, in the following way: Let <span class="math">\(P_1\)</span> be any point on <span class="math">\(PBQ\)</span>, inside the circle <span class="math">\(C\)</span> with centre <span class="math">\(P\)</span>; obtain the continuation of the function
+with <span class="math">\(P_1\)</span> as origin, and let it converge inside a circle <span class="math">\(C_1\)</span>; let <span class="math">\(P_1'\)</span> be any point inside both circles and also inside the curve <span class="math">\(PBQB'P\)</span>; let <span class="math">\(S\)</span>, <span class="math">\(S_1\)</span>, <span class="math">\(S_1'\)</span> be the power series with <span class="math">\(P\)</span>, <span class="math">\(P_1\)</span>, <span class="math">\(P_1'\)</span> as origins; then <span class="math">\(S_1 \equiv  S_1'\)</span><a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a> over a certain domain which will contain <span class="math">\(P_1\)</span>, if <span class="math">\(P_1'\)</span> be taken sufficiently near <span class="math">\(P_1\)</span>; and hence <span class="math">\(S_1\)</span> will be the continuation of <span class="math">\(S_1'\)</span>; for if <span class="math">\(T_1\)</span> were the continuation of <span class="math">\(S_1'\)</span>, we have <span class="math">\(T_1 \equiv  S_1\)</span> over a domain containing <span class="math">\(P_1\)</span>, and so (<a href="CMA03-4-PowerSeries.html#3.73powerserieswhichvanishidentically.">§3.73</a>) corresponding coefficients in <span class="math">\(S_1\)</span> and <span class="math">\(T_1\)</span> are the same. By carrying out such a process a sufficient number of times, we deform the path <span class="math">\(PBQ\)</span> into the path <span class="math">\(PB'Q\)</span> if no singular point is inside <span class="math">\(PBQB'P\)</span>. The reader will convince himself by drawing a figure that the process can be carried out in a finite number of steps. </p>
+
+<blockquote>
+<p><em>Example</em>. The series
+<span class="math">\[\frac{1}{\alpha}+\frac{z}{\alpha^2}+\frac{z^2}{\alpha^3}=\frac{z^3}{\alpha^4}+ \cdots\]</span>
+represents the function
+<span class="math">\[f(z) = \frac{1}{\alpha - z}\]</span>
+only for points <span class="math">\(z\)</span> within the circle <span class="math">\(\left|\, z \,\right| = \left|\, \alpha \,\right|\)</span>.</p>
+
+<p>But any number of other power series exist, of the type
+<span class="math">\[\frac{1}{\alpha-b}+ \frac{z-b}{(\alpha-b)^2}+\frac{(z-b)^2}{(\alpha-b)^3}+\frac{(z-b)^3}{(\alpha-b)^4} + \cdots ;\]</span>
+if <span class="math">\(\left. b\middle/ a\right.\)</span> is not real and positive these converge at points inside a circle which is partly
+inside and partly outside <span class="math">\(\left|\, z \,\right| = \left|\, \alpha \,\right|\)</span>; these series represent this same function at points
+outside this circle. </p>
+</blockquote>
+
+<h5 id="5.501onfunctionstowhichthecontinuation-processcannotbeapplied.">5.501 On functions to which the continuation-process cannot be applied.</h5>
+
+<p>It is not always possible to carry out the process of continuation. Take as an example the function <span class="math">\(f(z)\)</span> defined by the power series
+<span class="math">\[f(z) = 1+z^2 + z^4 + z^8 + z^{16} +...+ z^{2^n} + \cdots , \]</span>
+which clearly converges in the interior of a circle whose radius is unity and whose centre is at the origin. </p>
+
+<p>Now it is obvious that, as <span class="math">\(z \rightarrow 1-0\)</span>, <span class="math">\(f(z) \rightarrow +\infty\)</span>; the point <span class="math">\(+1\)</span> is therefore a singularity of <span class="math">\(f(z)\)</span>. </p>
+
+<p>But <span class="math">\[f(z) = z^2 +f(z^2),\]</span>
+and if <span class="math">\(z^2 \rightarrow 1-0\)</span>, <span class="math">\(f(z^2) \rightarrow \infty\)</span> and so <span class="math">\(f(z) \rightarrow \infty\)</span>, and hence the points for which <span class="math">\(z^2 =1\)</span> are
+singularities of <span class="math">\(f(z)\)</span>; the point <span class="math">\(z= - 1\)</span> is therefore also a singularity of <span class="math">\(f(z)\)</span>. </p>
+
+<p>Similarly since <span class="math">\[f(z)=z^2 +z^4+f(z^4),\]</span>
+we see that if <span class="math">\(z\)</span> is such that <span class="math">\(z^4 = 1\)</span>, then <span class="math">\(z\)</span> is a singularity of <span class="math">\(f(z)\)</span>; and, in general, any root of any of the equations
+<span class="math">\[z^2 = 1, \;z^4 = 1,\; z^8 = 1,\; z^{16} = 1, \;\dots ,\]</span>
+is a singularity of <span class="math">\(f(z)\)</span>. But these points all lie on the circle <span class="math">\(\left|\, z \,\right| = 1\)</span>; and in any arc of this circle, however small, there are an unlimited number of them. The attempt to carry out the process of continuation will therefore be frustrated by the existence of this
+unbroken front of singularities, beyond which it is impossible to pass. </p>
+
+<p>In such a case the function <span class="math">\(f(z)\)</span> <em>cannot be continued at all</em> to points <span class="math">\(z\)</span> situated outside the circle <span class="math">\(\left|\, z \,\right| = 1\)</span>; such a function is called a <em>lacunary function</em>, and the circle is said to be a <em>limiting circle</em> for the function.<a href="#fn:7" id="fnref:7" title="see footnote" class="footnote">[7]</a> </p>
+
+<h4 id="5.51theidentityoftwofunctions.">5.51 The identity of two functions.</h4>
+
+<p>The two series
+<span class="math">\[1 + z + z^2 + z^3 + \cdots\]</span>
+and <span class="math">\[ -1 +(z - 2) - (z - 2)^2 + (z - 2)^3 - (z - 2)^4 + \cdots\]</span>
+do not both converge for any value of <span class="math">\(z\)</span>, and are distinct expansions.
+Nevertheless, we generally say that they represent <em>the same function</em>, on the
+strength of the fact that they can both be represented by the same rational expression <span class="math">\(\dfrac{1}{1-z}\)</span>. </p>
+
+<p>This raises the question of the <em>identity</em> of two functions. When can two
+<em>different</em> expansions be said to represent the <em>same</em> function? </p>
+
+<p>We might define a function (after Weierstrass), by means of the last
+article, as consisting of one power series together with all the other power
+series which can be derived from it by the process of continuation. Two
+different analytical expressions will then define the same function, if they
+represent power series derivable from each other by continuation. </p>
+
+<p>Since if a function is analytic (in the sense of Cauchy, <a href="CMA05-1-AnalyticFunctions.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.">§5.12</a>) at and near
+a point it can be expanded into a Taylor&#8217;s series, and since a convergent
+power series has a unique differential coefficient (<a href="CMA05-3-TaylorsTheorem.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">§5.3</a>), it follows that the
+definition of Weierstrass is really equivalent to that of Cauchy.<a href="#fn:8" id="fnref:8" title="see footnote" class="footnote">[8]</a></p>
+
+<p>It is important to observe that <em>the limit of a combination of analytic
+functions can represent different analytic functions in different parts of the
+plane.</em> This can be seen by considering the series
+<span class="math">\[\frac{1}{2}\left(z+\frac{1}{z}\right) + \sum_{n-1}^\infty \left(z-\frac{1}{z}\right)\left(\frac{1}{1+z^n}-\frac{1}{z+z^{n-1}}\right).\]</span></p>
+
+<p>The sum of the first <span class="math">\(n + 1\)</span> terms of this series is
+<span class="math">\[\frac{1}{z}+\left(z-\frac{1}{z}\right)\frac{1}{1+z^n}.\]</span>
+The series therefore converges for all values of <span class="math">\(z\)</span> (zero excepted) not on the
+circle <span class="math">\(\left|\, z\, \right| = 1\)</span>. Put, as <span class="math">\(n \rightarrow \infty\)</span>, <span class="math">\(\left|\, z^n\, \right| \rightarrow 0\)</span> or <span class="math">\(\left|\, z^n\, \right| \rightarrow \infty\)</span> according as <span class="math">\(\left|\, z\, \right|\)</span> is less
+or greater than unity; hence we see that the sum to infinity of the series is
+<span class="math">\(z\)</span> when <span class="math">\(\left|\, z\, \right|< 1\)</span>, and <span class="math">\(\dfrac{1}{z}\)</span> when <span class="math">\(\left|\, z\, \right| > 1\)</span>. <em>This series therefore represents one function at points in the interior of the circle <span class="math">\(\left|\, z\, \right| = 1\)</span>, and an entirely different function at points outside the same circle.</em> The reader will see from <a href="CMA05-3-TaylorsTheorem.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">§5.3</a>
+that this result is connected with the non-uniformity of the convergence of
+the series near <span class="math">\(\left|\, z\, \right|= 1\)</span>. </p>
+
+<blockquote>
+<p>It has been shewn by Borel<a href="#fn:9" id="fnref:9" title="see footnote" class="footnote">[9]</a> that if a region <span class="math">\(C\)</span> is taken and a set of points <span class="math">\(S\)</span> such that points of the set <span class="math">\(S\)</span> are arbitrarily near every point of <span class="math">\(C\)</span>, it may be possible to define
+a function which has a unique differential coefficient (i.e. is monogenic) at all points
+of <span class="math">\(C\)</span> which do not belong to <span class="math">\(S\)</span>; but the function is not analytic in <span class="math">\(C\)</span> in the sense of Weierstrass. </p>
+
+<p>Such a function is
+<span class="math">\[f(z) \equiv \sum_{n=1}^\infty \sum_{p=0}^n \sum_{q=0}^n \frac{\exp(-\exp n^4)}{z-\left.(p+qi)\middle/n\right.}.\]</span></p>
+</blockquote>
+</div>
+</div>
+
+<div id="footer">
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
+<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+</div>
+
+<div id="navcauchy" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navfront');">FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
+  <ul>
+    <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
+    <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
+    <li><a href="CMA05-1-AnalyticFunctions.html#thefundamentalpropertiesofanalyticfunctions">The Properties of Analytic Functions</a>
+      <ul>
+        <li><a href="CMA05-1-AnalyticFunctions.html#5.1apropertyoftheelementaryfunctions.">A Property of Elementary Functions</a>
+        <li><a href="CMA05-2-CauchysTheorem.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy's Theorem</a></li>
+        <li><a href="CMA05-3-TaylorsTheorem.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Analytic Functions as Uniformly Convergent Series</a></li>
+    <li><a href="CMA05-3-TaylorsTheorem.html#5.4taylorstheorem.">Taylor's Theorem</a></li>
+    <li class="current"><a href="#5.5theprocessofcontinuation.">Analytic Continuation</a>
+       <ul>
+           <li ><a href="#5.501onfunctionstowhichthecontinuation-processcannotbeapplied.">Functions that are not continuable</a>
+              <li><a href="#5.51theidentityoftwofunctions.">The identity of two functions</a>
+          </ul>
+        </li>
+    <li><a href="CMA05-5-LaurentsTheorem.html#5.6Laurentstheorem.">Laurent's Theorem</a></li>
+       <li><a href="CMA05-6-ManyValuedFunctions.html#5.7manyvaluedfunctions.">Many-valued Functions</a></li>
+        <li><a href="CMA05-6-ManyValuedFunctions.html#references.">References</a></li>
+        <li><a href="CMA05-6-ManyValuedFunctions.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
+      </ul>
+    </li>
+    <li><a href="whereOwhere.html">The Theory of Residues</a></li>
+    <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navfront" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a>FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-Front.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-Front.html#preface">Preface</a></li>
+    <li><a href="CMA00-Front.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navfront');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navprocesses" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
+<li class="part"><a>PROCESSES OF ANALYSIS</a>
+  <ul >
+    <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
+    <li><a href="CMA02-1-Limits.html">The Theory of Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
+     <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
+     <li class="more current"><a onClick="showIt('navcauchy');hideIt('navprocesses');"> you are here . . . </a></li>
+     <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navtranscendental" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navtranscendental');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
+  <ul>
+    <li class="notdone"><a href="whereOwhere.html">The Gamma Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Zeta Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Legendre Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Bessel Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Mathieu Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
+  </ul>
+  </li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navback" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a>BACKMATTER</a>
+  <ul >
+    <li ><a href="whereOwhere.html">Appendix</a></li>
+    <li ><a href="whereOwhere.html">Authors Quoted</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfixedleft" class="fixedBleft">
+<p><a href="CMA05-3-TaylorsTheorem.html">&#x25C0;</a></p>
+</div>
+
+<div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
+<p><a onClick="showIt('navcauchy');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA05-5-LaurentsTheorem.html" style="float: right;">&#x25B6;</a></p>
+</div>
+
+<div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
+<p><a onClick="hideIt('navcauchy');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA05-5-LaurentsTheorem.html" style="float: right;">&#x25B6;   </a></p>
+</div>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p>Of the function defined by the new series.  <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:2">
+<p>The word &#8216;usually&#8217; must be taken as referring to the cases which are likely to come under the reader&#8217;s notice while studying the less advanced parts of the subject. <a href="#fnref:2" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:3">
+<p>French, <em>prolongement</em>; German, <em>Fortsetzung</em>.<br><br> <em>Editor&#8217;s Note</em>: In modern terminology, <em>analytic continuation</em>. <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:4">
+<p><em>Editor&#8217;s Note</em>: Any point of an open, path-connected set can be reached in this way. Whittaker and Watson refer to such a set as a <em>continuum</em> (<a href="CMA03-1-ContinuousFns.html#simplecurves.continua.">§3.21</a>). <a href="#fnref:4" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:5">
+<p>Such an aggregate of power series has been obtained for various functions by M. J. M. Hill, by purely algebraical processes, <a href="https://archive.org/details/proceedingslond04socigoog"><em>Proc. London Math. Soc.</em> <strong>xxxv.</strong> (1903)</a>, pp. 388&#8211;416. <a href="#fnref:5" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:6">
+<p>Since each is equal to <span class="math">\(S\)</span>. <a href="#fnref:6" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:7">
+<p><em>Editor&#8217;s Note</em>: The term <em>lacunary</em> refers to the increasingly large gaps in the power series, which give rise to the limiting circle. (See Mandelbrojt, <a href="SingularitiesOfFunctionsDefinedByTaylorsSeries.pdf"><em>Researches on the Singularities of Functions Defined by Taylor&#8217;s Series</em></a> (1927), Chs. <a href="http://scholarship.rice.edu/bitstream/handle/1911/8511/article_RI144261.pdf"><strong>v.</strong></a>, <a href="http://scholarship.rice.edu/bitstream/handle/1911/8518/article_RI144339.pdf"><strong>xii.</strong></a>) <a href="#fnref:7" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:8">
+<p><em>Editor&#8217;s Note</em>: The definitions are equivalent provided, in Cauchy&#8217;s definition, we call <span class="math">\(f(z)\)</span> analytic at <span class="math">\(a\)</span> if it is differentiable <em>in an open set</em> containing <span class="math">\(a\)</span>.  <a href="#fnref:8" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:9">
+<p><a href="http://quod.lib.umich.edu/u/umhistmath/AAG4063.0001.001/"><em>Proc. Math. Congress, Cambridge</em> (1912)</a>, <strong>i.</strong> pp. 137&#8211;138. <a href="https://archive.org/details/leonssurlesfon00boreuoft"><em>Leçons sur les fonctions monogènes</em></a> (1917). The functions are not monogenic strictly in the sense of <a href="CMA05-1-AnalyticFunctions.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.">§5.12</a> because, in the example quoted, in working out <span class="math">\(\left.\{f(z + h)-f(z)\}\middle/ h\right.\)</span>, it must be supposed that <span class="math">\(\mathfrak{Re}(z + h)\)</span> and <span class="math">\(\mathfrak{Im}(z + h)\)</span> are not both rational fractions.  <a href="#fnref:9" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+
+</body>
+</html>
