@@ -129,7 +129,7 @@ can have is zero; and this is Cauchy's result.
 
 
 
-<div markdown=1 class="marginnotes" id="mn:5,+6" style="margin-top: +6em; margin-bottom: +6em;"><a class="marginmark">&#91;5&#93;</a>The phrase 'analytic throughout a region' implies one-valuedness ([&#167;5.12](CMA05-1-AnalyticFunctionsMN.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.)); that is to say that after \\(z\\) has described a closed path surrounding \\(C_0\\), \\(f(z)\\) has returned to its initial value. A function such as log \\(z\\) considered in the region \\(1 \leq  \left|\, z\,\right| \leq 2\\) will be said to be 'analytic at all points of the region.' <a onClick="hideIt('mn:5,+6')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:5,+6" style="margin-top: +6em; margin-bottom: +6em;"><a class="marginmark">&#91;5&#93;</a>The phrase 'analytic throughout a region' implies one-valuedness ([&#167;5.12](CMA05-1-AnalyticFunctionsMN.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.)); that is to say that after \\(z\\) has described a closed path surrounding \\(C_0\\), \\(f(z)\\) has returned to its initial value. A many-valued function such as log \\(z\\) considered in the region \\(1 \leq  \left|\, z\,\right| \leq 2\\) will be said to be 'analytic at all points of the region.' <a onClick="hideIt('mn:5,+6')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -196,9 +196,7 @@ But the left-hand side is independent of \\(\epsilon\\), and so it must be zero,
 This remarkable result expresses the value of a function \\(f(z)\\), (which is 
 analytic on and inside \\(C\\)) at any point \\(a\\) *within* a contour \\(C\\), in terms of an integral which depends only on the value of \\(f(z)\\) at points on the contour itself. 
 
->*Corollary*. If \\(f(z)\\) is an analytic one-valued function of \\(z\\) in a ring-shaped region bounded by two curves \\(C\\) and \\(C'\\), and \\(a\\) is a point in the region, then 
-\\[f(a) = \frac{1}{2\pi i }\! \int_C \! \frac{f(z)\,dz}{z-a}-\frac{1}{2\pi i }\! \int_{C'} \! \frac{f(z)\,dz}{z-a},\\]
-where \\(C\\) is the outer of the curves and the integrals are taken counter-clockwise. 
+>######*Corollary*. If \\(f(z)\\) is an analytic one-valued function of \\(z\\) in a ring-shaped region bounded by two curves \\(C\\) and \\(C'\\), and \\(a\\) is a point in the region, then \\[f(a) = \frac{1}{2\pi i }\! \int_C \! \frac{f(z)\,dz}{z-a}-\frac{1}{2\pi i }\! \int_{C'} \! \frac{f(z)\,dz}{z-a},\\] where \\(C\\) is the outer of the curves and the integrals are taken counter-clockwise. [5.21corollary]######
 
 ####5.22 The derivates of an analytic function \\(f(z)\\).[5.22thederivatesofananalyticfunction.]#### 
 

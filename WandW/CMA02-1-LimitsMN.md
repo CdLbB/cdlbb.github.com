@@ -78,7 +78,7 @@ tends to infinity, is \\(l\\)&rsquo; are:
 
 [Leathem]: http://www.archive.org/details/volumesurfaceint00leatuoft
 
-If the sequence be such that, given an arbitrary number N (no matter how large), we can find \\(n_0\\) such that \\(\left|\,z_n\,\right| > N\\) for all values of \\(n\\) greater than \\(n_0\\), we say that &lsquo;\\(\left|\, z_n \,\right|\\) tends to infinity as \\(n\\) tends to infinity&rsquo;, and we write
+If the sequence be such that, given an arbitrary number \\(N\\) (no matter how large), we can find \\(n_0\\) such that \\(\left|\,z_n\,\right| > N\\) for all values of \\(n\\) greater than \\(n_0\\), we say that &lsquo;\\(\left|\, z_n \,\right|\\) tends to infinity as \\(n\\) tends to infinity&rsquo;, and we write
 \\[ \left|\, z_n \,\right| \rightarrow \infty .\\]
 
 In the corresponding case when \\(-x_n>N\\) when \\(n> n_0\\) we say that \\(x_n \rightarrow -\infty\\).
@@ -367,7 +367,7 @@ Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is 
     <li  class="current"><a href="#" onClick="showIt('navlimits1');hideIt('navprocesses');">The Theory of Convergence</a></li>
      <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
      <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
-     <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
+     <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
      <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>

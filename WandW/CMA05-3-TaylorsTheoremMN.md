@@ -140,7 +140,7 @@ is analytic at all points on and inside *C*. Let \\(z = a + h\\) be any point in
 \\[=\frac{1}{2\pi i}\! \int_C \! f(z)\, dz\left\{\frac{1}{z-a}+\frac{h}{(z-a)^2}+\cdots +\frac{h^n}{(z-a)^{n+1}}+\frac{h^{n+1}}{(z-a)^{n+1}(z-a-h)}\right\}\\]
 \\[=f(a)+hf'(a)+\frac{h^2}{2!}f''(a)+ \cdots +\frac{h^n}{n!}f^{(n)}(a)+\frac{1}{2\pi i}\!\int_C \frac{h^{n+1}f(z)\,dz}{(z-a)^{n+1}(z-a-h)}. \\]
 
-But when \\(z\\) is on *C*, the modulus of \\(\dfrac{f(z)}{z-a-h}\\) is continuous, and so, by [&#167;3.61 cor. (ii)](CMA03-3-Heine-BorelMN.html#continuousisbounded), will not exceed some finite number \\(M\\). 
+######But when \\(z\\) is on *C*, the modulus of \\(\dfrac{f(z)}{z-a-h}\\) is continuous, and so, by [&#167;3.61 cor. (ii)](CMA03-3-Heine-BorelMN.html#continuousisbounded), will not exceed some finite number \\(M\\). [5.4termvanishes]######
 
 Therefore, by [&#167;4.62](CMA04-3-ComplexIntMN.html#4.62anupperlimittothevalueofacomplexintegral.), 
 \\[\left|\,\frac{1}{2\pi i}\!\int_C \frac{h^{n+1}f(z)\,dz}{(z-a)^{n+1}(z-a-h)}\,\right| \leq \frac{M \cdot 2\pi R}{2\pi}\left( \frac{\left|\,h\,\right|}{R}\right)^{n+1},\\]

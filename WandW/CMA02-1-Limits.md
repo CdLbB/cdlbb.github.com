@@ -48,7 +48,7 @@ tends to infinity, is \\(l\\)’ are:
 
 [Leathem]: http://www.archive.org/details/volumesurfaceint00leatuoft
 
-If the sequence be such that, given an arbitrary number N (no matter how large), we can find \\(n_0\\) such that \\(\left|\,z_n\,\right| > N\\) for all values of \\(n\\) greater than \\(n_0\\), we say that ‘\\(\left|\, z_n \,\right|\\) tends to infinity as \\(n\\) tends to infinity’, and we write
+If the sequence be such that, given an arbitrary number \\(N\\) (no matter how large), we can find \\(n_0\\) such that \\(\left|\,z_n\,\right| > N\\) for all values of \\(n\\) greater than \\(n_0\\), we say that ‘\\(\left|\, z_n \,\right|\\) tends to infinity as \\(n\\) tends to infinity’, and we write
 \\[ \left|\, z_n \,\right| \rightarrow \infty .\\]
 
 In the corresponding case when \\(-x_n>N\\) when \\(n> n_0\\) we say that \\(x_n \rightarrow -\infty\\).

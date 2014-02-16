@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="latexinput" content="mmd-cambridge-header"/>
+	<title>A Course of Modern Analysis-LaurentsTheorem 5-5</title>
+	<meta name="subtitle" content="An introduction to the general theory of
+infinite processes and analytic functions;
+with an account of the principal
+transcendental functions."/>
+	<meta name="author" content="E.T. Whittaker and G.N. Watson"/>
+	<meta name="editor" content="Eric Nitardy"/>
+	<meta name="date" content="Feb 10, 2014"/>
+	<meta name="titlefile" content="mmd-WandW-title"/>
+	<meta name="copyrightfile" content="mmd-WandW-copyright"/>
+	<meta name="test" content="And this is a new key-value pair"/>
+	<meta name="latexmode" content="memoir"/>
+	<meta name="latexinput" content="mmd-cambridge-begin-doc"/>
+	<meta name="latexfooter" content="mmd-cambridge-footer"/>
+	<link type="text/css" rel="stylesheet" href="css/documentation.css"/>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+<script type="text/javascript" src="js/showhide.js"></script>
+<script type="text/javascript" src="js/mathjaxend.js"></script>
+</head>
+<body>
+
+<div id="header"><h1><a href="CMA00-FrontMN.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
+<div id="content">
+<div class="contenttext">
+
+<h3 id="5.6laurentstheorem.">5.6 Laurent&#8217;s Theorem.</h3>
+
+<p>A very important theorem was published in 1843 by Laurent;<a class="marginmark" onClick="toggleHide('mn:1,-3');">&#91;1&#93;</a> it relates to expansions of functions to which Taylor&#8217;s Theorem cannot be applied. </p>
+
+</div>
+<div class="marginnotes"  id="mn:1,-3"  style="margin-top: -3em; margin-bottom: -3em;"><a class="marginmark">&#91;1&#93;</a><a href="http://gallica.bnf.fr/ark:/12148/bpt6k2976b"><em>Comptes Rendus</em>, <strong>xvii.</strong> (1843)</a>, pp. 348&#8211;349.<a onClick="hideIt('mn:1,-3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+</div>
+<div class="marginnotes"  id="mn:2,+5"  style="margin-top: +5em; margin-bottom: +5em;"><a class="marginmark">&#91;2&#93;</a>See <a href="CMA05-2-CauchysTheoremMN.html#5.2corollary2">&#167;5.2 corollary 2</a>, footnote. <a onClick="hideIt('mn:2,+5')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>Let <span class="math">\(C\)</span> and <span class="math">\(C'\)</span> be two concentric circles of centre <span class="math">\(a\)</span>, of which <span class="math">\(C'\)</span> is the inner; and let <span class="math">\(f(z)\)</span> be a function which is analytic at all points on <span class="math">\(C\)</span> and <span class="math">\(C'\)</span> and throughout the annulus<a class="marginmark" onClick="toggleHide('mn:2,+5');">&#91;2&#93;</a> between <span class="math">\(C\)</span> and <span class="math">\(C'\)</span>. Let <span class="math">\(a + h\)</span> be any point in this
+ring-shaped space. Then we have (<a href="CMA05-2-CauchysTheoremMN.html#5.21corollary">&#167;5.21 corollary</a>)
+<span class="math">\[f(a+h)=\frac{1}{2\pi i}\! \int_C \frac{f(z)}{z-a-h} dz - \frac{1}{2\pi i}\! \int_{C'} \frac{f(z)}{z-a-h} dz,\]</span>
+where the integrals are supposed taken in the positive or counter-clockwise
+direction round the circles. </p>
+
+<p>This can be written
+<span class="math">\[\begin{align*}
+&f(a+h)=\\ \\
+&\quad \frac{1}{2\pi i}\! \int_C \! f(z)\left\{\frac{1}{z-a}+\frac{h}{(z-a)^2}+\cdots +\frac{h^n}{(z-a)^{n+1}}+\frac{h^{n+1}}{(z-a)^{n+1}(z-a-h)}\right\}\, dz\\ \\
+&\qquad +\frac{1}{2\pi i}\! \int_{C'} \! f(z)\left\{\frac{1}{h}+\frac{z-a}{h^2}+\cdots +\frac{(z-a)^n}{h^{n+1}}+\frac{(z-a)^{n+1}}{h^{n+1}(z-a-h)}\right\}\, dz.
+\end{align*}\]</span>
+We find, as <a href="CMA05-3-TaylorsTheoremMN.html#5.4termvanishes">in the proof of Taylor&#8217;s Theorem</a>, that
+<span class="math">\[\int_C \frac{f(z)\,h^{n+1}dz}{(z-a)^{n+1}(z-a-h)}\; \text{and} \; \int_{C'} \frac{f(z)\,(z-a)^{n+1}dz}{h^{n+1}(z-a-h)}\]</span>
+tend to zero as <span class="math">\(n \rightarrow \infty\)</span>; and thus we have
+<span class="math">\[f(a+h)= a_0+a_1h+a_2h^2+ \cdots +\frac{b_1}{h}+\frac{b_2}{h}+ \cdots,\]</span>
+where<a class="marginmark" onClick="toggleHide('mn:3,-2');">&#91;3&#93;</a> <span class="math">\(\displaystyle a_n =  \frac{1}{2\pi i}\! \int_C \frac{f(z)\,dz}{(z-a)^{n+1}}\)</span>, and <span class="math">\(\displaystyle  b_n = \frac{1}{2\pi i}\! \int_{C'} \!(z-a)^{n-1}f(z)\,dz\)</span>. </p>
+</div>
+<div class="marginnotes"  id="mn:3,-2"  style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;3&#93;</a>We cannot write <span class="math">\(a_n =\left.f^{(n)}(a)\middle/n!\right.\)</span> as in Taylor&#8217;s Theorem since <span class="math">\(f(z)\)</span> is not necessarily analytic inside <span class="math">\(C'\)</span>. <a onClick="hideIt('mn:3,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>This result is <em>Laurent&#8217;s Theorem</em>; changing the notation, it can be
+expressed in the following form : <em>If <span class="math">\(f(z)\)</span> be analytic on the concentric circles <span class="math">\(C\)</span> and <span class="math">\(C'\)</span> of centre <span class="math">\(a\)</span>, and throughout&#8217; the annulus between them, then at any point <span class="math">\(z\)</span> of the annulus <span class="math">\(f(z)\)</span> can be expanded in the form</em>
+<span class="math">\[f(z) = a_0 + a_1(z - a) + a_2 (z - a)^2 + \cdots + \frac{b_1}{(z-a)} + \frac{b_2}{(z-a)^2} + \cdots, \]</span>
+<em>where</em> <span class="math">\(\displaystyle a_n =  \frac{1}{2\pi i}\! \int_C \frac{f(t)\,dt}{(t-a)^{n+1}}\)</span>,
+<em>and</em> <span class="math">\(\displaystyle  b_n = \frac{1}{2\pi i}\! \int_{C'} \!(t-a)^{n-1}f(t)\,dt\)</span>. </p>
+
+<p>An important case of Laurent&#8217;s Theorem arises when there is only one
+singularity within the inner circle <span class="math">\(C'\)</span>, namely at the centre <span class="math">\(a\)</span>. In this case the circle <span class="math">\(C'\)</span> can be taken as small as we please, and so Laurent&#8217;s expansion is valid for all points in the interior of the circle <span class="math">\(C\)</span>, except the centre <span class="math">\(a\)</span>. </p>
+
+<blockquote>
+<p><em>Example</em> 1. Prove that
+<span class="math">\[\begin{align*}
+e^{\frac{x}{2}\left(z-\frac{1}{z}\right)} =& J_0 (x)+zJ_1 (x) + z^2 J_2 (x) + \cdots +z^n J_n (x) + \cdots \\
+& \quad -\frac{1}{z} J_1 (x)+\frac{1}{z^2} J_2 (x)- \cdots +\frac{(-1)^n}{z^n} J_n (x) + \cdots, 
+\end{align*}\]</span>
+where <span class="math">\[J_n(x) = \frac{1}{2\pi}\!\int_0^{2\pi} \! \cos(n\theta - x sin \theta ) \,d\theta.\]</span> </p>
+
+<p>[For the function of <span class="math">\(z\)</span> under consideration is analytic in any domain which does not
+include the point <span class="math">\(z=0\)</span>; and so by Laurent&#8217;s Theorem,
+<span class="math">\[e^{\frac{x}{2}\left(z-\frac{1}{z}\right)} =a_0 + a_1z + a_2 z^2 + \cdots + \frac{b_1}{z} + \frac{b_2}{z^2} + \cdots,\]</span>
+where <span class="math">\(\displaystyle a_n =  \frac{1}{2\pi i}\! \int_C e^{\frac{x}{2}\left(z-\frac{1}{z}\right)}\frac{dz}{z^{n+1}}\)</span>, and <span class="math">\(\displaystyle  b_n = \frac{1}{2\pi i}\! \int_{C'} \!e^{\frac{x}{2}\left(z-\frac{1}{z}\right)}z^{n-1}\,dz\)</span>.
+and where <span class="math">\(C\)</span> and <span class="math">\(C'\)</span> are any circles with the origin as centre. Taking <span class="math">\(C\)</span> to be the circle of radius unity, and writing <span class="math">\(z = e^{i\theta}\)</span>, we have
+<span class="math">\[a_n = \frac{1}{2\pi i}\!\int_0^{2\pi}\! e^{i\sin\theta}\, e^{-n\theta}i \,d\theta = \frac{1}{2\pi}\!\int_0^{2\pi}\! \cos(n\theta-x \sin\theta)\,d\theta, \]</span>
+since <span class="math">\( \int_0^{2\pi}\! \cos(n\theta-x \sin\theta)\,d\theta\)</span> vanishes, as may be seen by writing <span class="math">\(2\pi-\phi\)</span> for <span class="math">\(\theta\)</span>. Thus <span class="math">\(a_n=J_n(x)\)</span>, and <span class="math">\(b_n=(-1)^n J_n(x)\)</span> since the function expanded is unaltered if <span class="math">\(- z^{-1}\)</span> be written
+for <span class="math">\(z\)</span>, so that <span class="math">\(b_n =(-1)^n J_n(x)\)</span>, and the proof is complete.] </p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 2. Shew that, in the annulus defined by <span class="math">\(\left|\,a\,\right| < \left|\,z\,\right| < \left|\,b\,\right|\)</span>, the function
+<span class="math">\[\left\{\frac{bz}{(z-a)(b-z)}\right\}^{\frac{1}{2}}\]</span>
+can be expanded in the form
+<span class="math">\[S_0+\sum_{n-1}^\infty S_n \left(\frac{a^n}{z^n}+ \frac{z^n}{b^n} \right),\]</span>
+where <span class="math">\[S_n=\sum_{l=0}^\infty \frac{1 \cdot 3 \cdots (2l-1)\cdot 1 \cdot 3 \cdots (2l+2n-1)}{2^{2l+n}\, l! \,(l+n)!} \left(\frac{a}{b}\right)^l.\]</span> </p>
+
+<p>The function is one-valued and analytic in the annulus (see <a href="CMA05-6-ManyValuedFunctionsMN.html#5.7manyvaluedfunctions.">&#167;5.7</a>), for the branch-points <span class="math">\(0\)</span>, <span class="math">\(a\)</span> neutralise each other, and so, by Laurent&#8217;s Theorem, if <em>C</em> denote the circle <span class="math">\(\left|\, z \,\right|=r\)</span>, where <span class="math">\(\left|\, a\,\right| < r < \left|\, b\, \right|\)</span>, the coefficient of <span class="math">\(z^n\)</span> in the required expansion is
+<span class="math">\[\frac{1}{2\pi i}\! \int_C \frac{dz}{z^{n+1}}\left\{\frac{bz}{(z-a)(b-z)}\right\}^{\frac{1}{2}}. \]</span> </p>
+
+<p>Putting <span class="math">\(z = re^{i\theta}\)</span>, this becomes
+<span class="math">\[\frac{1}{2\pi}\!\int_0^{2\pi} \! e^{-ni\theta}r^{-n}\,d\theta \, \left(1-\frac{r}{b}e^{i\theta}\right)^{-\frac{1}{2}}\left(1-\frac{a}{r}e^{-i\theta}\right)^{-\frac{1}{2}},\]</span> or
+<span class="math">\[\frac{1}{2\pi}\!\int_0^{2\pi} \! e^{-ni\theta}r^{-n}\,d\theta \,\sum_{k=0}^\infty \frac{1 \cdot 3 \cdots (2k-1)}{2^k \, k!}\frac{r^k e^{k i \theta}}{b^k}\sum_{l=0}^\infty \frac{1 \cdot 3 \cdots (2l-1)}{2^l \, l!}\frac{a^l e^{-l i \theta}}{r^l},\]</span>
+the series being absolutely convergent and uniformly convergent with regard to <span class="math">\(\theta\)</span>.</p>
+
+<p>The only terms which give integrals different from zero are those for which <span class="math">\(k = l + n\)</span>. So the coefficient of <span class="math">\(z^n\)</span> is
+<span class="math">\[\frac{1}{2\pi}\!\int_0^{2\pi} \! d\theta \, \sum_{l=0}^\infty \frac{1 \cdot 3 \cdots (2l-1)}{2^l\, l!} \frac{1 \cdot 3 \cdots (2l+2n-1)}{2^{l+n}\, (l+n)!} \frac{a^l}{b^{l+n}} = \frac{S_n}{b^n},\]</span>
+Similarly it can be shewn that the coefficient of <span class="math">\(\dfrac{1}{z^n}\)</span> is <span class="math">\(S_n a^n\)</span>. </p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 3. Shew that
+<span class="math">\[e^{uz+v/z} = a_0+a_1z+a_2z^2+ \cdots + \frac{b_1}{z}+\frac{b_2}{z^2}+ \cdots ,\]</span>
+where
+<span class="math">\[a_n = \frac{1}{2\pi}\! \int_0^{2\pi} \! e^{(u+v)\cos\theta} \cos \{(u-v)\sin \theta -n\theta\} \, d\theta,\]</span>
+and
+<span class="math">\[b_n = \frac{1}{2\pi}\! \int _0^{2\pi}\! e^{(u+v)\cos\theta} \cos \{(v-u)\sin \theta -n\theta\} \, d\theta.\]</span></p>
+</blockquote>
+
+<h4 id="5.61thenatureofthesingularitiesofone-valuedfunctions.">5.61 The nature of the singularities of one-valued functions.</h4>
+
+<p>Consider first a function <span class="math">\(f(z)\)</span> which is analytic throughout a closed
+region <em>S</em>, except at a single point a inside the region. </p>
+
+<p>Let it be possible to define a function <span class="math">\(\phi(z)\)</span> such that </p>
+
+<ol>
+<li><span class="math">\(\phi(z)\)</span> is analytic throughout <em>S</em>,</li>
+<li>when <span class="math">\(z\neq a\)</span>, <span class="math">\( f (z) = \phi(z) + \frac{B_1}{z-a} + \frac{B_2}{(z-a)^2}+ \cdots  + \frac{B_n}{(z-a)^n}.\)</span></li>
+</ol>
+
+<p>Then <span class="math">\(f(z)\)</span> is said to have a <em>&#8216;pole of order <span class="math">\(n\)</span> at <span class="math">\(a\)</span>&#8217;</em>; and the terms <span class="math">\(\frac{B_1}{z-a} + \frac{B_2}{(z-a)^2}+ \cdots  + \frac{B_n}{(z-a)^n}.\)</span> are called the <em>principal part of</em> <span class="math">\(f(z)\)</span> near <span class="math">\(a\)</span>.
+By the definition of a singularity (<a href="CMA05-1-AnalyticFunctionsMN.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.">&#167;5.12</a>) a pole is a singularity. If <span class="math">\(n = 1\)</span>,
+the singularity is called a <em>simple</em> pole. </p>
+
+<p>Any singularity of a one-valued function other than a pole is called an
+<em>essential singularity</em>. </p>
+
+<p>If the essential singularity, <span class="math">\(a\)</span>, is isolated (i.e. if a region, of which <span class="math">\(a\)</span> is an interior point, can be found containing no singularities other than <span class="math">\(a\)</span>), then a Laurent expansion can be found, in ascending and descending powers of a valid when <span class="math">\(\Delta > \left|\, z - a\, \right| > \delta\)</span>, where <span class="math">\(\Delta\)</span> depends on the other singularities of the
+function, and <span class="math">\(\delta\)</span> is arbitrarily small. Hence the &#8216;principal part&#8217; of a function near an isolated essential singularity consists of an infinite series. </p>
+
+<p>It should be noted that a pole is, by definition, an isolated singularity, so
+that all singularities which are not isolated (e.g. the limiting point of a
+sequence of poles) are essential singularities. </p>
+
+<blockquote>
+<p>There does not exist, in general, an expansion of a function valid near a non-isolated singularity in the way that Laurent&#8217;s expansion is valid near an isolated singularity. </p>
+</blockquote>
+
+<blockquote>
+<p><em>Corollary</em>. If <span class="math">\(f(z)\)</span> has a pole of order <span class="math">\(n\)</span> at <span class="math">\(a\)</span>, and <span class="math">\(\psi(z) = (z-a)^n f(z)\)</span> <span class="math">\((z \neq a)\)</span>,
+<span class="math">\(\psi(a) = \lim\limits_{z \rightarrow 0}\, (z - a)^n f(z)\)</span>, then <span class="math">\(\psi(z)\)</span> is analytic at <span class="math">\(a\)</span>. </p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 1. A function is not bounded near an isolated essential singularity.</p>
+
+<p>[Prove that if the function were bounded near <span class="math">\(z = a\)</span>, the coefficients of negative powers of <span class="math">\(z - a\)</span> would all vanish.] </p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 2. Find the singularities of the function <span class="math">\(\displaystyle \left.e^{\,\left.e \middle/(z-a)\right.}\middle/\{e^{\,\left.z \middle/a\right.}-1\}\right.\)</span>. </p>
+
+<p>At <span class="math">\(z = 0\)</span>, the numerator is analytic, and the denominator has a simple zero. Hence the function has a simple pole at <span class="math">\(z=0\)</span>. </p>
+
+<p>Similarly there is a simple pole at each of the points <span class="math">\(2n\pi ia\)</span> <span class="math">\((n= \pm 1,\, \pm 2,\, \pm 3, \dots )\)</span>; the denominator is analytic and does not vanish for other values of <span class="math">\(z\)</span>. </p>
+
+<p>At <span class="math">\(z = a\)</span>, the numerator has an isolated singularity, so Laurent&#8217;s Theorem is applicable, and the coefficients in the Laurent expansion may be obtained from the quotient
+<span class="math">\[\frac{1+\dfrac{e}{z-a}+\dfrac{e^2}{2!(z-a)^2}+ \cdots }{e \left(1+\dfrac{z-a}{a}+\cdots\right)-1},\]</span>
+which gives an expansion involving all positive and negative powers of <span class="math">\((z - a)\)</span>. So there is
+an essential singularity at <span class="math">\(z = a\)</span>. </p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 3. Shew that the function defined by the series
+<span class="math">\[\sum_{n=1}^\infty \frac{nz^{n-1}\{(1-n^{-1})^n -1\}}{(z^n-1)\{z^n-(1+n^{-1})^n\}}\]</span>
+has simple poles at the points <span class="math">\(z=(1+n^{-1}) \,e^{\left.2k i\pi \middle/ n\right.}\)</span>, <span class="math">\((k = 0, 1, 2, \dots , n -1\)</span>; <span class="math">\(\,n=1, 2, 3, \dots )\)</span>.
+(Math. Trip. 1899.) </p>
+</blockquote>
+
+<h4 id="5.62thepointatinfinity.">5.62 The &#8216;point at infinity.&#8217;</h4>
+
+<p>The behaviour of a function <span class="math">\(f(z)\)</span> as <span class="math">\(\left|\, z\, \right| \rightarrow \infty\)</span> can be treated in a similar way to its behaviour as <span class="math">\(z\)</span> tends to a finite limit. </p>
+
+<p>If we write <span class="math">\(z = \dfrac{1}{z'}\)</span>, so that large values of <span class="math">\(z\)</span> are represented by small values of <span class="math">\(z'\)</span> in the <span class="math">\(z'\)</span>-plane, there is a one-one correspondence between <span class="math">\(z\)</span> and <span class="math">\(z'\)</span>, provided that neither is zero; and to make the correspondence
+complete it is sometimes convenient to say that when <span class="math">\(z'\)</span> is the origin, <span class="math">\(z\)</span> is the &#8216;point at infinity.&#8217; But the reader must be careful to observe that this is <em>not</em> a definite point, and any proposition about it is really a proposition
+concerning the point <span class="math">\(z' = 0\)</span>. </p>
+
+<p>Let <span class="math">\(f(z) = \phi(z')\)</span>. Then <span class="math">\(\phi(z')\)</span> is not defined at <span class="math">\(z' = 0\)</span>, but its behaviour near <span class="math">\(z' =0\)</span> is determined by its Taylor (or Laurent) expansion in powers of <span class="math">\(z'\)</span>; and we define <span class="math">\(\phi(0)\)</span> as <span class="math">\(\lim_{\:\!z' \rightarrow 0} \phi(z')\)</span> if that limit exists. For instance the function <span class="math">\(\phi(z')\)</span> may have a zero of order m at the point <span class="math">\(z' = 0\)</span>; in this
+case the Taylor expansion of <span class="math">\(\phi(z')\)</span> will be of the form
+<span class="math">\[Az'^m+ Bz'^{m+1}+C z'^{m+2} + \cdots ,\]</span>
+and so the expansion of <span class="math">\(f(z)\)</span> valid for sufficiently large values of <span class="math">\(\left|\, z\, \right|\)</span> will be of the form
+<span class="math">\[f(z)= \frac{A}{z^m}+\frac{B}{z^{m+1}}+\frac{C}{z^{m+2}}+ \cdots .\]</span>
+In this case, <span class="math">\(f(z)\)</span> is said to have a <em>zero of order m at &#8216;infinity&#8217;.</em> </p>
+
+<p>Again, the function <span class="math">\(\phi(z)\)</span> may have a pole of order <em>m</em> at the point <span class="math">\(z' = 0\)</span>; in this case
+<span class="math">\[\phi(z') =  \frac{A}{z'^m}+\frac{B}{z'^{m-1}}+\frac{C}{z'^{m-2}}+ \cdots \frac{L}{z'}+M+Nz'+Pz'^2+ \cdots ,\]</span>
+and so, for sufficiently large values of <span class="math">\(\left|\, z\, \right|\)</span>, <span class="math">\(f(z)\)</span> can be expanded in the form
+<span class="math">\[f(z) = Az^m+ Bz^{m-1}+C z^{m-2} + \cdots Lz+ M+ \frac{N}{z}+\frac{P}{z^2}+ \cdots.\]</span>
+In this case, <span class="math">\(f(z)\)</span> is said to have a <em>pole of order m at &#8216;infinity&#8217;.</em></p>
+
+<p>Similarly <span class="math">\(f(z)\)</span> is said to have an <em>essential singularity</em> at infinity, if <span class="math">\(\phi(z')\)</span> has an essential singularity at the point <span class="math">\(z' = 0\)</span>. Thus the function <span class="math">\(e^z\)</span> has an essential singularity at infinity, since the function <span class="math">\(e^{\left.1\middle/z'\right.}\)</span> or
+<span class="math">\[1+\frac{1}{z'}+\frac{1}{2!z'^2} + \frac{1}{3!z'^3}+\cdots\]</span>
+has an essential singularity at <span class="math">\(z' = 0\)</span>. </p>
+
+<blockquote>
+<p><em>Example</em>. Discuss the function represented by the series
+<span class="math">\[\sum_{n=0}^\infty \frac{1}{n!} \frac{1}{1+\alpha^{2n}z^2},\qquad (\alpha > 1).\]</span>
+The function represented by this series has singularities at <span class="math">\(z = \dfrac{i}{\alpha^n}\)</span> and <span class="math">\(z = -\dfrac{i}{\alpha^n}\)</span>,
+<span class="math">\((n = 1,\, 2,\, 3, \dots)\)</span>, since at each of these points the denominator of one of the terms in the series is zero. These singularities are on the imaginary axis, and have <span class="math">\(z=0\)</span> as a limiting point; so no Taylor or Laurent expansion can be formed for the function valid throughout any region of which the origin is an interior point. </p>
+
+<p>For values of <span class="math">\(z\)</span>, other than these singularities, the series converges absolutely, since the limit of the ratio of the <span class="math">\((n + 1)\)</span>th term to the <span class="math">\(n\)</span>th is <span class="math">\(\lim\limits_{n \rightarrow 0} (n+ 1)^{-1} \alpha^{-2} = 0\)</span>. The function is an even function of <span class="math">\(z\)</span> (i.e. is unchanged if the sign of <span class="math">\(z\)</span> be changed), tends to zero as
+<span class="math">\(\left|\,z\,\right| \rightarrow \infty\)</span>, and is analytic on and outside a circle <em>C</em> of radius greater than unity and centre at the origin. So, for points outside this circle, it can be expanded in the form
+<span class="math">\[\frac{b_2}{z^2}+\frac{b_4}{z^4}+\frac{b_6}{z^6}+ \cdots ,\]</span>
+where, by Laurent&#8217;s Theorem,
+<span class="math">\[b_{2k}=\frac{1}{2\pi i}\!\int_C \! z^{2k-1} \sum_{n=0}^\infty \frac{1}{n!}\,\frac{\alpha^{-2n}}{\alpha^{-2n}+z^2} \,dz. \]</span>
+Now
+<span class="math">\[\sum_{n=0}^\infty \frac{\alpha^{-2n}z^{2k-1}}{n!\,(a^{-2n}+z^2)}=\sum_{n=0}^\infty \sum_{m=0}^\infty \frac{z^{2k-3}\alpha^{-2n}}{n!}(-1)^m\alpha^{-2nm}z^{-2m}.\]</span></p>
+
+<p>This double series converges absolutely when <span class="math">\(\left|\,z\,\right| > 1\)</span>,<a class="marginmark" onClick="toggleHide('mn:4,-3');">&#91;4&#93;</a> and if it be rearranged in powers of <span class="math">\(z\)</span> it converges uniformly.</p>
+</blockquote>
+</div>
+<div class="marginnotes"  id="mn:4,-3"  style="margin-top: -3em; margin-bottom: -3em;"><a class="marginmark">&#91;4&#93;</a><em>Editor&#8217;s Note</em>: Using Cauchy&rsquo;s theorem on the multiplication of series (<a href="CMA02-3-MoreSeriesMN.html#cauchymultiplication">&#167;2.53</a>), we can show that the series is absolutely convergent for <span class="math">\(\left|\,z\,\right|> \dfrac{1}{\alpha}\)</span>.<a onClick="hideIt('mn:4,-3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<blockquote>
+<p>Since the coefficient of <span class="math">\(z^{-1}\)</span> is <span class="math">\(\sum\limits_{n=0}^\infty\dfrac{(-1)^{k-1}\alpha^{-2kn}}{n!}\)</span>; and the only term which furnishes a non-zero integral is the term in <span class="math">\(z^{-1}\)</span>, we have
+<span class="math">\[\begin{align*}
+b_{2k} &= \frac{1}{2\pi i}\!\int_C \sum_{n=0}^\infty \frac{(-1)^{k-1} \alpha^{-2kn}}{n!} \frac{dz}{z}\\
+\\ &= \sum_{n=0}^\infty \frac{(-1)^{k-1}}{n!\,\alpha^{2kn}}\\
+\\ &= (-1)^{k-1}\frac{1}{e^{\alpha^{2k}}}.
+\end{align*}\]</span></p>
+
+<p>Therefore, when <span class="math">\(\left|\, z\, \right| > 1\)</span>, the function can be expanded in the form
+<span class="math">\[\frac{e^{\left.1\middle/\alpha^2\right.}}{z^2} - \frac{e^{\left.1\middle/\alpha^4\right.}}{z^4} + \frac{e^{\left.1\middle/\alpha^6\right.}}{z^6} - \cdots .\]</span></p>
+
+<p>The function has a zero of the second order at infinity, since the expansion begins with a term in <span class="math">\( z^{-2}\)</span>. </p>
+</blockquote>
+
+<h4 id="5.63liouvillestheorem.">5.63 Liouville&#8217;s Theorem.<a class="marginmark" onClick="toggleHide('mn:5,-1');">&#91;5&#93;</a></h4>
+</div>
+<div class="marginnotes"  id="mn:5,-1"  style="margin-top: -1em; margin-bottom: -1em;"><a class="marginmark">&#91;5&#93;</a>This theorem, which is really due to Cauchy, <a href="http://gallica.bnf.fr/ark:/12148/bpt6k2978z"><em>Comptes Rendus</em>, <strong>xix.</strong> (1844)</a>, pp. 1377, 1378, was given this name by Borchardt, <a href="http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0088"><em>Journal f&uuml;r Math.</em> <strong>lxxxviii.</strong> (1880)</a>, pp. 277&#8211;310, who heard it in Liouville&#8217;s lectures in 1847. <a onClick="hideIt('mn:5,-1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p><em>Let <span class="math">\(f(z)\)</span> be analytic for all values of <span class="math">\(z\)</span> and let <span class="math">\(\left|\,f(z)\,\right| < K\)</span> for all values of <span class="math">\(z\)</span>, where <span class="math">\(K\)</span> is a constant (so that <span class="math">\(\left|\,f(z)\,\right|\)</span> is bounded as <span class="math">\(z \rightarrow \infty\)</span>). Then
+<span class="math">\(f(z)\)</span> is a constant.</em></p>
+
+<p>Let <span class="math">\(z\)</span>, <span class="math">\(z'\)</span> be any two points and let <em>C</em> be a contour such that <span class="math">\(z\)</span>, <span class="math">\(z'\)</span> are inside it. Then, by <a href="CMA05-2-CauchysTheoremMN.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.">&#167;5.21</a>,
+<span class="math">\[f(z')-f(z) = \frac{1}{2\pi i}\!\int_C \left\{\frac{1}{\zeta-z'} - \frac{1}{\zeta-z}\right\}\, f(\zeta)\, d\zeta;\]</span>
+take <em>C</em> to be a circle whose centre is <span class="math">\(z\)</span> and whose radius is <span class="math">\(\rho \geq 2\, \left|\, z' - z \,\right|\)</span>; on <em>C</em> write <span class="math">\(\zeta = z + \rho e^{i\theta}\)</span>; since <span class="math">\(\left|\,\zeta-z'\,\right| \geq \frac{1}{2}\rho\)</span> when <span class="math">\(\zeta\)</span> is on <em>C</em> it follows from <a href="CMA04-3-ComplexIntMN.html#4.62anupperlimittothevalueofacomplexintegral.">&#167;4.62</a>
+that
+<span class="math">\[\left|\,f(z')-f(z)\,\right| = \left|\,\frac{1}{2\pi}\!\int_C \frac{z'-z}{(\zeta-z')(\zeta-z)} \,f(\zeta)\,d\zeta \,\right|\]</span>
+<span class="math">\[< \frac{1}{2\pi}\!\int_0^{2\pi} \! \frac{\left|\,z'-z\,\right|\,K}{\frac{1}{2}\rho} d\theta\]</span>
+<span class="math">\[=2\,\left|\,z'-z\,\right|\,K\,\rho^{-1}.\]</span>
+Make <span class="math">\(\rho \rightarrow \infty\)</span>, keeping <span class="math">\(z\)</span> and <span class="math">\(z'\)</span> fixed; then it is obvious that <span class="math">\(f(z') -f(z) = 0\)</span>; that is to say, <span class="math">\(f(z)\)</span> is constant. </p>
+
+<blockquote>
+<p>As will be seen in the next article, and again frequently in the latter half of this volume (Chapters <a href="whereOwhere.html"><strong>xx</strong></a>, <a href="whereOwhere.html"><strong>xxi</strong></a> and <a href="whereOwhere.html"><strong>xxii</strong></a>), Liouville&#8217;s theorem furnishes short and convenient proofs of some of the most important results in Analysis. </p>
+</blockquote>
+
+<h4 id="5.64functionswithnoessentialsingularities.">5.64 Functions with no essential singularities.</h4>
+
+<p>We shall now shew that <em>the only one-valued functions which have no
+singularities, except poles, at any point (including <span class="math">\(\infty\)</span>) are rational functions.</em></p>
+</div>
+<div class="marginnotes"  id="mn:6,+2"  style="margin-top: +2em; margin-bottom: +2em;"><a class="marginmark">&#91;6&#93;</a><em>Editor&#8217;s Note</em>: Before we may assume that there are <span class="math">\(k\)</span> singularities in the plane, we need to show that there are <em>not</em> an infinite number of singularities. <br><br>If there were an infinite number singularities, we may use the Bolzano-Weierstrass theorem (<a href="CMA02-1-LimitsMN.html#bolzanosection">&#167;2.21</a>) to show there would be either a limit-point among these singularities (and, thus, an essential singularity in the plane) or there would be an essential singularity at infinity.<a onClick="hideIt('mn:6,+2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>For let <span class="math">\(f(z)\)</span> be such a function; let its singularities in the finite part
+of the plane be at the points <span class="math">\(c_1,\,\)</span><span class="math">\(c_2,  \cdots, \,c_k\)</span>;<a class="marginmark" onClick="toggleHide('mn:6,+2');">&#91;6&#93;</a> and let the principal part (<a href="#5.61thenatureofthesingularitiesofone-valuedfunctions.">&#167;5.61</a>)
+of its expansion at the pole <span class="math">\(c_r\)</span> be
+<span class="math">\[\frac{\alpha_{r,1}}{z-c_r}+\frac{\alpha_{r,2}}{(z-c_r)^2}+ \cdots + \frac{\alpha_{r,n_r}}{(z-c_r)^{n_r}}.\]</span></p>
+
+<p>Let the principal part of its expansion at the pole at infinity be
+<span class="math">\[\alpha_1 z+ \alpha_2 z^2 + \cdots + \alpha_n z^n;\]</span>
+if there is not a pole at infinity, then all the coefficients in this expansion will be zero. </p>
+
+<p>Now the function
+<span class="math">\[f(z)-\sum_{r=1}^k \left\{\frac{\alpha_{r,1}}{z-c_r}+\frac{\alpha_{r,2}}{(z-c_r)^2}+ \cdots + \frac{\alpha_{r,n_r}}{(z-c_r)^{n_r}}\right\}-\alpha_1 z- \alpha_2 z^2 - \cdots - \alpha_n z^n\]</span></p>
+
+<p>has clearly no singularities at the points <span class="math">\(c_1,\,\)</span><span class="math">\(c_2,  \cdots, \,c_k\)</span>, or at infinity; it is therefore analytic everywhere and is bounded as <span class="math">\(\left|\,z \, \right| \rightarrow \infty\)</span>, and so, by
+Liouville&#8217;s Theorem, is a constant; that is,
+<span class="math">\[f(z)=C+\alpha_1 z+ \alpha_2 z^2 + \cdots + \alpha_n z^n+\sum_{r=1}^k \left\{\frac{\alpha_{r,1}}{z-c_r}+\frac{\alpha_{r,2}}{(z-c_r)^2}+ \cdots + \frac{\alpha_{r,n_r}}{(z-c_r)^{n_r}}\right\},\]</span>
+where <span class="math">\(C\)</span> is constant; <span class="math">\(f(z)\)</span> is therefore a rational function, and the theorem is established. </p>
+
+<p>It is evident from Liouville&#8217;s theorem (combined with <a href="CMA03-3-Heine-BorelMN.html#continuousisbounded">&#167;3.61 corollary (ii)</a>)
+that a function which is analytic everywhere (including <span class="math">\(\infty\)</span>) is merely a constant. Functions which are analytic everywhere <em>except</em> at <span class="math">\(\infty\)</span> are of considerable importance; they are known as <em>integral functions.</em><a class="marginmark" onClick="toggleHide('mn:7,-9');">&#91;7&#93;</a> Examples of such functions are <span class="math">\(e^z\)</span>, <span class="math">\(\sin z\)</span>, <span class="math">\(e^{ e^{\large {z}}}\)</span>. From <a href="CMA05-3-TaylorsTheoremMN.html#5.4taylorstheorem.">&#167;5.4</a> it is apparent that there is no finite radius of convergence of a Taylor&#8217;s series which represents an integral function; and from the result of this section it is evident that all integral functions (except mere polynomials) have essential singularities at <span class="math">\(\infty\)</span>. </p>
+</div>
+<div class="marginnotes"  id="mn:7,-9"  style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;7&#93;</a>French, <em>fonction entiere</em>; German, <em>ganze Funktion</em>. <br><em>Editor&#8217;s Note</em>: Modern terminology, <em>entire function.</em> <a onClick="hideIt('mn:7,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+</div>
+</div>
+
+<div id="footer">
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
+<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+</div>
+
+<div id="navcauchy" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navfront');">FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
+  <ul>
+    <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
+    <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
+    <li><a href="CMA05-1-AnalyticFunctionsMN.html#thefundamentalpropertiesofanalyticfunctions">The Properties of Analytic Functions</a>
+      <ul>
+        <li><a href="CMA05-1-AnalyticFunctionsMN.html#5.1apropertyoftheelementaryfunctions.">A Property of Elementary Functions</a>
+        <li><a href="CMA05-2-CauchysTheoremMN.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy's Theorem</a></li>
+        <li><a href="CMA05-3-TaylorsTheoremMN.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Analytic Functions as Uniformly Convergent Series</a></li>
+    <li><a href="CMA05-3-TaylorsTheoremMN.html#5.4taylorstheorem.">Taylor's Theorem</a></li>
+    <li><a href="CMA05-4-AnalyticContinuationMN.html#5.5theprocessofcontinuation.">Analytic Continuation</a></li>
+    <li class="current"><a href="#5.6laurentstheorem.">Laurent's Theorem</a>
+       <ul>
+           <li ><a href="#5.61thenatureofthesingularitiesofone-valuedfunctions.">The singularities of one-valued functions</a>
+              <li><a href="#5.62thepointatinfinity.">The point at infinity</a>
+              <li><a href="#5.63liouvillestheorem.">Liouville's theorem</a>
+              <li><a href="#5.64functionswithnoessentialsingularities.">Functions with no essential singularities</a>
+          </ul>
+       </li>
+       <li><a href="CMA05-6-ManyValuedFunctionsMN.html#5.7manyvaluedfunctions.">Many-valued Functions</a></li>
+        <li><a href="CMA05-6-ManyValuedFunctionsMN.html#references.">References</a></li>
+        <li><a href="CMA05-6-ManyValuedFunctionsMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
+      </ul>
+    </li>
+    <li><a href="whereOwhere.html">The Theory of Residues</a></li>
+    <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navfront" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a>FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-FrontMN.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-FrontMN.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-FrontMN.html#preface">Preface</a></li>
+    <li><a href="CMA00-FrontMN.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navfront');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navprocesses" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
+<li class="part"><a>PROCESSES OF ANALYSIS</a>
+  <ul >
+    <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
+    <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
+     <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
+     <li class="more current"><a onClick="showIt('navcauchy');hideIt('navprocesses');"> you are here . . . </a></li>
+     <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navtranscendental" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navtranscendental');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
+  <ul>
+    <li class="notdone"><a href="whereOwhere.html">The Gamma Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Zeta Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Legendre Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Bessel Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Mathieu Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lam&eacute;&#8217;s Equation</a></li> 
+  </ul>
+  </li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navback" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a>BACKMATTER</a>
+  <ul >
+    <li ><a href="whereOwhere.html">Appendix</a></li>
+    <li ><a href="whereOwhere.html">Authors Quoted</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfixedleft" class="fixedBleft">
+<p><a href="CMA05-4-AnalyticContinuationMN.html">&#x25C0;</a></p>
+</div>
+
+<div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
+<p><a onClick="showIt('navcauchy');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA05-6-ManyValuedFunctionsMN.html" style="float: right;">&#x25B6;</a></p>
+</div>
+
+<div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
+<p><a onClick="hideIt('navcauchy');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA05-6-ManyValuedFunctionsMN.html" style="float: right;">&#x25B6; </a></p>
+</div>
+
+</body>
+</html>

@@ -85,7 +85,7 @@ can have is zero; and this is Cauchy's result.
 
 >*Corollary* 1. If there are two paths \\(z_0AZ\\) and \\(z_0BZ\\) from \\(z_0\\) to \\(Z\\), and if \\(f(z)\\) is. a function of \\(z\\) analytic at all points on these curves and throughout the domain enclosed by these two paths, then \\(\int_{z_0}^Z f(z) \,dz\\) has the same value whether the path of integration is \\(z_0AZ\\) or \\(z_0BZ\\). This follows from the fact that \\(z_0AZBz_0\\) is a contour, and so the integral taken round it (which is the difference of the integrals along \\(z_0AZ\\) and \\(z_0BZ\\) ) is zero. Thus, if \\(f(z)\\) be an analytic function of \\(z\\), the value of \\(\int_{AB} f(z) \,dz\\) is to a certain extent independent of the choice of the arc AB, and depends only on the terminal points *A* and *B*. It must be borne in mind that *this is only the case when \\(f(z)\\) is an analytic function* in the sense of [§5.12](CMA05-1-AnalyticFunctions.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.). 
 
-[^onevalued,+6]: The phrase 'analytic throughout a region' implies one-valuedness ([§5.12](CMA05-1-AnalyticFunctions.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.)); that is to say that after \\(z\\) has described a closed path surrounding \\(C_0\\), \\(f(z)\\) has returned to its initial value. A function such as log \\(z\\) considered in the region \\(1 \leq  \left|\, z\,\right| \leq 2\\) will be said to be 'analytic at all points of the region.' 
+[^onevalued,+6]: The phrase 'analytic throughout a region' implies one-valuedness ([§5.12](CMA05-1-AnalyticFunctions.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.)); that is to say that after \\(z\\) has described a closed path surrounding \\(C_0\\), \\(f(z)\\) has returned to its initial value. A many-valued function such as log \\(z\\) considered in the region \\(1 \leq  \left|\, z\,\right| \leq 2\\) will be said to be 'analytic at all points of the region.' 
 
 >######*Corollary* 2. Suppose that two simple closed curves \\(C_0\\) and \\(C_1\\) are given, such that \\(C_0\\) completely encloses \\(C_1\\), as e.g. would be the case if \\(C_0\\) and \\(C_1\\) were confocal ellipses. [5.2corollary2]######
 >
@@ -146,9 +146,7 @@ But the left-hand side is independent of \\(\epsilon\\), and so it must be zero,
 This remarkable result expresses the value of a function \\(f(z)\\), (which is 
 analytic on and inside \\(C\\)) at any point \\(a\\) *within* a contour \\(C\\), in terms of an integral which depends only on the value of \\(f(z)\\) at points on the contour itself. 
 
->*Corollary*. If \\(f(z)\\) is an analytic one-valued function of \\(z\\) in a ring-shaped region bounded by two curves \\(C\\) and \\(C'\\), and \\(a\\) is a point in the region, then 
-\\[f(a) = \frac{1}{2\pi i }\! \int_C \! \frac{f(z)\,dz}{z-a}-\frac{1}{2\pi i }\! \int_{C'} \! \frac{f(z)\,dz}{z-a},\\]
-where \\(C\\) is the outer of the curves and the integrals are taken counter-clockwise. 
+>######*Corollary*. If \\(f(z)\\) is an analytic one-valued function of \\(z\\) in a ring-shaped region bounded by two curves \\(C\\) and \\(C'\\), and \\(a\\) is a point in the region, then \\[f(a) = \frac{1}{2\pi i }\! \int_C \! \frac{f(z)\,dz}{z-a}-\frac{1}{2\pi i }\! \int_{C'} \! \frac{f(z)\,dz}{z-a},\\] where \\(C\\) is the outer of the curves and the integrals are taken counter-clockwise. [5.21corollary]######
 
 ####5.22 The derivates of an analytic function \\(f(z)\\).[5.22thederivatesofananalyticfunction.]#### 
 
