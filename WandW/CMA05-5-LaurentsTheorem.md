@@ -254,7 +254,7 @@ where \\(C\\) is constant; \\(f(z)\\) is therefore a rational function, and the 
 It is evident from Liouville's theorem (combined with [§3.61 corollary (ii)](CMA03-3-Heine-Borel.html#continuousisbounded)) 
 that a function which is analytic everywhere (including \\(\infty\\)) is merely a constant. Functions which are analytic everywhere *except* at \\(\infty\\) are of considerable importance; they are known as *integral functions.*[^entire,-9] Examples of such functions are \\(e^z\\), \\(\sin z\\), \\(e^{ e^{\large {z}}}\\). From [§5.4](CMA05-3-TaylorsTheorem.html#5.4taylorstheorem.) it is apparent that there is no finite radius of convergence of a Taylor's series which represents an integral function; and from the result of this section it is evident that all integral functions (except mere polynomials) have essential singularities at \\(\infty\\). 
 
-[^entire,-9]: French, *fonction entiere*; German, *ganze Funktion*. <br>*Editor's Note*: Modern terminology, *entire function.* 
+[^entire,-9]: French, *fonction entière*; German, *ganze Funktion*. <br>*Editor's Note*: Modern terminology, *entire function.* 
 
 
 
@@ -295,7 +295,7 @@ that a function which is analytic everywhere (including \\(\infty\\)) is merely 
               <li><a href="#5.64functionswithnoessentialsingularities.">Functions with no essential singularities</a>
           </ul>
        </li>
-       <li><a href="CMA05-6-ManyValuedFunctions.html#5.7manyvaluedfunctions.">Many-valued Functions</a></li>
+       <li><a href="CMA05-6-ManyValuedFunctions.html#5.7many-valuedfunctions.">Many-valued Functions</a></li>
         <li><a href="CMA05-6-ManyValuedFunctions.html#references.">References</a></li>
         <li><a href="CMA05-6-ManyValuedFunctions.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>

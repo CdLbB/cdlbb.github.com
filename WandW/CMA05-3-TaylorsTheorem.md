@@ -189,7 +189,7 @@ If \\(0 \leq t \leq 1\\), we have
 \\[\frac{d}{dt} \left\{\sum_{m=1}^{n-1} \frac{h^m}{m!} (1-t)^m f^{(m)}(a+th)\right\}= \frac{h^n (1-t)^{n-1}}{(n-1)!} f^{(n)}(a+th)-hf'(a+th).\\]
 
 Integrating this between the limits 0 and 1, we have 
-\\[f(a + h) =f(a) +\sum_{m=1}^{n-1}\frac{h^n}{m!} f^{(m)}(a)+ \int_0^1 \! \frac{h^n(1-t)^{n-1}}{(n-1)!} f^{(n)}(a+th)\, dt.\\] 
+\\[f(a + h) =f(a) +\sum_{m=1}^{n-1}\frac{h^m}{m!} f^{(m)}(a)+ \int_0^1 \! \frac{h^n(1-t)^{n-1}}{(n-1)!} f^{(n)}(a+th)\, dt.\\] 
 
 Let \\[R_n=\frac{h^n}{(n-1)!}\!\int _0^1 \! (1-t)^{n-1} f^{(n)}(a+th)\,dt;\\]
 and let \\(p\\) be a positive integer such that \\(p \leq n\\). 
@@ -252,7 +252,7 @@ if \\(f'(x)\\) is continuous when \\(a \leq x \leq a+h\\); this result is usuall
         </li>
 	<li><a href="CMA05-4-AnalyticContinuation.html#5.5theprocessofcontinuation.">Analytic Continuation</a></li>
 	<li><a href="CMA05-4-AnalyticContinuation.html#5.6Laurentstheorem.">Laurent's Theorem</a></li>
-       <li><a href="CMA05-6-ManyValuedFunctions.html#5.7manyvaluedfunctions.">Many-valued Functions</a></li>
+       <li><a href="CMA05-6-ManyValuedFunctions.html#5.7many-valuedfunctions.">Many-valued Functions</a></li>
         <li><a href="CMA05-6-ManyValuedFunctions.html#references.">References</a></li>
         <li><a href="CMA05-6-ManyValuedFunctions.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>

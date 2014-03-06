@@ -256,7 +256,7 @@ April, 2012.
 	  <li>5.4 <a href="CMA05-3-TaylorsTheorem.html#5.4taylorstheorem.">Taylor's Theorem</a></li>
 	  <li>5.5 <a href="CMA05-4-AnalyticContinuation.html#5.5theprocessofcontinuation.">The Process of Continuation</a></li>
 	  <li>5.6 <a href="CMA05-5-LaurentsTheorem.html#5.6laurentstheorem.">Laurent's Theorem</a></li>
-	  <li>5.7 <a href="CMA05-6-ManyValuedFunctions.html#5.7manyvaluedfunctions.">Many-valued Functions</a></li>
+	  <li>5.7 <a href="CMA05-6-ManyValuedFunctions.html#5.7many-valuedfunctions.">Many-valued Functions</a></li>
          <li><a href="CMA05-6-ManyValuedFunctions.html#references.">References</a>
          <li><a href="CMA05-6-ManyValuedFunctions.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
         </ol>

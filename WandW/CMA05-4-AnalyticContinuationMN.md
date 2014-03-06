@@ -279,7 +279,7 @@ of \\(C\\) which do not belong to \\(S\\); but the function is not analytic in \
           </ul>
         </li>
 	<li><a href="CMA05-5-LaurentsTheoremMN.html#5.6Laurentstheorem.">Laurent's Theorem</a></li>
-       <li><a href="CMA05-6-ManyValuedFunctionsMN.html#5.7manyvaluedfunctions.">Many-valued Functions</a></li>
+       <li><a href="CMA05-6-ManyValuedFunctionsMN.html#5.7many-valuedfunctions.">Many-valued Functions</a></li>
         <li><a href="CMA05-6-ManyValuedFunctionsMN.html#references.">References</a></li>
         <li><a href="CMA05-6-ManyValuedFunctionsMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>

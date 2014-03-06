@@ -318,7 +318,7 @@ that a function which is analytic everywhere (including \\(\infty\\)) is merely 
 
 
 
-<div markdown=1 class="marginnotes" id="mn:7,-9" style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;7&#93;</a>French, *fonction entiere*; German, *ganze Funktion*. <br>*Editor's Note*: Modern terminology, *entire function.* <a onClick="hideIt('mn:7,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:7,-9" style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;7&#93;</a>French, *fonction enti&egrave;re*; German, *ganze Funktion*. <br>*Editor's Note*: Modern terminology, *entire function.* <a onClick="hideIt('mn:7,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -365,7 +365,7 @@ that a function which is analytic everywhere (including \\(\infty\\)) is merely 
               <li><a href="#5.64functionswithnoessentialsingularities.">Functions with no essential singularities</a>
           </ul>
        </li>
-       <li><a href="CMA05-6-ManyValuedFunctionsMN.html#5.7manyvaluedfunctions.">Many-valued Functions</a></li>
+       <li><a href="CMA05-6-ManyValuedFunctionsMN.html#5.7many-valuedfunctions.">Many-valued Functions</a></li>
         <li><a href="CMA05-6-ManyValuedFunctionsMN.html#references.">References</a></li>
         <li><a href="CMA05-6-ManyValuedFunctionsMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>

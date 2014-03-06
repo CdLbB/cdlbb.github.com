@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="latexinput" content="mmd-cambridge-header"/>
+	<title>A Course of Modern Analysis-ManyValuedFunctions 5-6</title>
+	<meta name="subtitle" content="An introduction to the general theory of
+infinite processes and analytic functions;
+with an account of the principal
+transcendental functions."/>
+	<meta name="author" content="E.T. Whittaker and G.N. Watson"/>
+	<meta name="editor" content="Eric Nitardy"/>
+	<meta name="date" content="Feb 16, 2014"/>
+	<meta name="titlefile" content="mmd-WandW-title"/>
+	<meta name="copyrightfile" content="mmd-WandW-copyright"/>
+	<meta name="test" content="And this is a new key-value pair"/>
+	<meta name="latexmode" content="memoir"/>
+	<meta name="latexinput" content="mmd-cambridge-begin-doc"/>
+	<meta name="latexfooter" content="mmd-cambridge-footer"/>
+	<link type="text/css" rel="stylesheet" href="css/documentation.css"/>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+<script type="text/javascript" src="js/showhide.js"></script>
+<script type="text/javascript" src="js/mathjaxend.js"></script>
+</head>
+<body>
+
+<div id="header"><h1><a href="CMA00-FrontMN.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
+<div id="content">
+<div class="contenttext">
+
+<h3 id="5.7many-valuedfunctions.">5.7 Many-valued functions.</h3>
+
+<p>In all the previous work, the functions under consideration have had a
+unique value (or limit) corresponding to each value (other than singularities)
+of <span class="math">\(z\)</span>. </p>
+
+<p>But functions may be defined which have more than one value for each
+value of <span class="math">\(z\)</span>; thus if <span class="math">\(z = r (\cos \theta + i \sin \theta)\)</span>, the function <span class="math">\(z^\frac{1}{2}\)</span> has the two values
+<span class="math">\[r^\frac{1}{2} \left\{\cos \frac{1}{2}\theta + i \sin \frac{1}{2}\theta \right\},\quad r^\frac{1}{2} \left\{\cos \frac{1}{2}(\theta+2\pi) + i \sin \frac{1}{2}(\theta+2\pi) \right\};\]</span>
+and the function <span class="math">\(\arctan x\)</span> (<span class="math">\(x\)</span> real) has an unlimited number of values, viz. <span class="math">\(\arctan x + n\pi\)</span>, where <span class="math">\(-\frac{1}{2}\pi < \arctan x < \frac{1}{2}\pi\)</span> it and <span class="math">\(n\)</span> is any integer; further
+examples of many-valued functions are <span class="math">\(\log z\)</span>, <span class="math">\(z^{-\frac{5}{3}}\)</span>, <span class="math">\(\sin (z^\frac{1}{2})\)</span>. </p>
+
+<p>Either of the two functions which <span class="math">\(z^\frac{1}{2}\)</span> represents is, however, analytic except at <span class="math">\(z = 0\)</span>, and we can apply to them the theorems of this chapter; and the two functions are called &#8216;<em>branches</em> of the many-valued function <span class="math">\(z^\frac{1}{2}\)</span>&#8217;. There will be certain points in general at which two or more branches coincide or at which one branch has an infinite limit; these points are called &#8216;branch-points&#8217;. Thus <span class="math">\(z^\frac{1}{2}\)</span> has a branch-point at O; and, if we consider the change in <span class="math">\(z^\frac{1}{2}\)</span> as <span class="math">\(z\)</span> describes a circle counter-clockwise round O, we see that <span class="math">\(\theta\)</span> increases by <span class="math">\(2\pi\)</span>, <span class="math">\(r\)</span> remains unchanged, and <em>either branch of the function passes over into the other branch.</em> This will be found to be a general characteristic of branch-points. It is not the purpose of this book to give a full discussion of the properties of many-valued functions, as we shall always have to consider particular branches of functions in regions not containing branch-
+points, so that there will be comparatively little difficulty in seeing whether or not Cauchy&#8217;s Theorem may be applied. </p>
+
+<p>Thus we cannot apply Cauchy&#8217;s Theorem to such a function as <span class="math">\(z^\frac{3}{2}\)</span> when the path of integration is a circle surrounding the origin; but it is permissible to apply it to one of the branches of <span class="math">\(z^\frac{3}{2}\)</span> when the path of integration is like that shewn in <a href="whereOwhere.html">&#167;6.24</a>, for throughout the contour and its interior the function has a single definite value. </p>
+
+</div>
+<div class="marginnotes"  id="mn:1,+2"  style="margin-top: +2em; margin-bottom: +2em;"><a class="marginmark">&#91;1&#93;</a><em>Editor&#8217;s Note</em>: Presumably, <span class="math">\(a^z\)</span> is defined as <span class="math">\(e^{z\log a}\)</span>.<a onClick="hideIt('mn:1,+2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<blockquote>
+<p><em>Example</em>. Prove that if the different values of <span class="math">\(a^z\)</span>, corresponding to a given value of <span class="math">\(z\)</span>,<a class="marginmark" onClick="toggleHide('mn:1,+2');">&#91;1&#93;</a> are represented on an Argand diagram, the representative points will be the vertices of an equiangular polygon inscribed in an equiangular spiral, the angle of the spiral being independent of <span class="math">\(a\)</span>. <br>
+(Math. Trip. 1899.) </p>
+</blockquote>
+
+<blockquote>
+<p>The idea of the different branches of a function helps us to understand such a paradox
+as the following. </p>
+
+<p>Consider the function <span class="math">\[y=x^x,\]</span>
+for which <span class="math">\[\frac{dy}{dx}=x^x ( 1 + \log x).\]</span>
+When <em>x</em> is negative and real, <span class="math">\(\dfrac{dy}{dx}\)</span> is not real. But if <em>x</em> is negative and of the form <span class="math">\(\dfrac{p}{2q+1}\)</span> (where <em>p</em> and <em>q</em> are positive or negative integers), <span class="math">\(y\)</span> is real. </p>
+
+<p>If therefore we draw the real curve <span class="math">\[y=x^x,\]</span>
+we have for negative values of <em>x</em> a set of conjugate points, one point corresponding to each rational value of <em>x</em> with an odd denominator; and then we might think of proceeding to form the tangent as the limit of the chord, just as if the curve were continuous; and
+thus <span class="math">\(\dfrac{dy}{dx}\)</span>, when derived from the inclination of the tangent to the axis of <em>x</em>, would appear to be real. The question thus arises, Why does the ordinary process of differentiation
+give a non-real value for <span class="math">\(\dfrac{dy}{dx}\,\)</span>? </p>
+
+<p>The explanation is, that these conjugate points do not all arise from the same <em>branch</em> of the function <span class="math">\(y = x^x\)</span>. We have in fact
+<span class="math">\[y=e^{x\log x+2k\pi i x},\]</span>
+where <em>k</em> is any integer. To each value of <em>k</em> corresponds one branch of the function <span class="math">\(y\)</span>. Now in order to get a real value of <span class="math">\(y\)</span> when <em>x</em> is negative, we have to choose a suitable value for <em>k</em>: and <em>this value of k varies as we go from one conjugate point to an adjacent one.</em> So the conjugate points do not represent values of <span class="math">\(y\)</span> arising from the same branch of the function <span class="math">\(y=x^x\)</span>, and consequently we cannot expect the value of <span class="math">\(\,\dfrac{dy}{dx}\)</span> when evaluated for a definite branch to be given by the tangent of the inclination to the axis of <em>x</em> of the line joining two arbitrarily close members of the series of conjugate points. </p>
+</blockquote>
+
+<h3 id="references.">REFERENCES.</h3>
+
+<dl>
+<dt><nbsp></dt>
+<dd>E. Goursat, <a href="https://archive.org/details/coursdanalysemat02gouruoft"><em>Cours d&#8217;Analyse</em></a> (Paris, 1911) Chs. <strong>xiv.</strong> and <strong>xvi.</strong></dd>
+
+<dd>J. Hadamard, <a href="http://babel.hathitrust.org/cgi/pt?id=uc1.$b529256"><em>La S&eacute;rie de Taylor et son prolongement analytique</em></a> (Scientia, 1901).</dd>
+
+<dd>E. Lindel&ouml;f, <a href="http://www.gutenberg.org/ebooks/29781"><em>Le Calcul des R&eacute;sidus</em></a> (Paris, 1905).</dd>
+
+<dd>C. J. de la Vall&eacute;e Poussin, <a href="https://archive.org/details/danalyseinfinitesi01pousrich"><em>Cours d&#8217;Analyse Infinit&eacute;simale,</em> <strong>i.</strong></a> (Louvain and Paris, 1914), Ch. <strong>x.</strong></dd>
+
+<dd>E. Borel, <a href="http://books.google.com/books?id=8C0PAAAAIAAJ"><em>Leçons sur les Fonctions Enti&egrave;res</em></a> (Paris, 1900).</dd>
+
+<dd>G. N. Watson, <a href="https://archive.org/details/complexintegrat00watsrich"><em>Complex Integration and Cauchy&#8217;s Theorem</em></a> (Camb. Math. Tracts,
+No. 15, 1914).</dd>
+</dl>
+</div>
+<div class="marginnotes"  id="mn:2,+82"  style="margin-top: +82em; margin-bottom: +82em;"><a class="marginmark">&#91;2&#93;</a>The results of examples 5, 6 and 7 are special cases of formulae contained in Jacobi&#8217;s dissertation (Berlin, 1825) published in his <a href="https://archive.org/details/gesammeltewerke01weiegoog"><em>Ges. Werke</em>, <strong>iii.</strong> (1884)</a>, pp. 1&#8211;44. Jacobi&#8217;s formulae were generalised by Scheibner, <a href="http://babel.hathitrust.org/cgi/pt?id=mdp.39015064506119"><em>Leipziger Berichte</em>, <strong>xlv.</strong> (1893)</a>, pp. 432&#8211;443.<a onClick="hideIt('mn:2,+82')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+<div id="exercises">
+
+<h3 id="miscellaneousexamples.">Miscellaneous Examples.</h3>
+
+<ol>
+<li><p>Obtain the expansion
+<span class="math">\[f(z)=f(a)+2\left\{\frac{z-a}{2}f'\left(\frac{z+a}{2}\right)+\frac{(z-a)^3}{2^3\, 3!}f'''\left(\frac{z+a}{2}\right) +\frac{(z-a)^5}{2^5 \,5!}f^{(5)}\left(\frac{z+a}{2}\right)+\cdots \right\}, \]</span>
+and determine the circumstances and range of its validity. </p></li>
+<li><p>Obtain, under suitable circumstances, the expansion <span class="math">\[\begin{align*}
+f(z)= &f(a)+\frac{z-a}{m}\left[f'\left(a+\frac{z-a}{2m}\right)+f'\left(a+\frac{3(z-a)}{2m}\right)+ \cdots f'\left(a+\frac{(2m-1)(z-a)}{2m}\right)\right] \\
+&+\frac{2}{3!}\left(\frac{z-a}{2m}\right)^3\left[f'''\left(a+\frac{z-a}{2m}\right)+f'''\left(a+\frac{3(z-a)}{2m}\right)+ \cdots f'''\left(a+\frac{(2m-1)(z-a)}{2m}\right)\right] \\
+&+\frac{2}{5!}\left(\frac{z-a}{2m}\right)^5\left[f^{(5)}\left(a+\frac{z-a}{2m}\right)+f^{(5)}\left(a+\frac{3(z-a)}{2m}\right)+ \cdots f^{(5)}\left(a+\frac{(2m-1)(z-a)}{2m}\right)\right]
+\end{align*}\]</span>
+ (Corey, <a href="http://www.jstor.org/stable/i307096"><em>Ann. of Math.</em> (2), <strong>i.</strong> (1900)</a>, p. 77.) </p></li>
+<li><p>Shew that for the series
+<span class="math">\[\sum_{n=0}^\infty \frac{1}{z^n+z^{-n}},\]</span>
+the region of convergence consists of two distinct areas, namely outside and inside a circle of radius unity, and that in each of these the series represents one function and represents it completely. <br>
+(Weierstrass, <a href="http://www.biodiversitylibrary.org/item/111870#page/797"><em>Berliner Monatsberichte</em>, 1880</a>, p. 729; <a href="https://archive.org/details/mathematischewer02weieuoft"><em>Ges. Werke</em>, <strong>ii.</strong> (1895)</a>, p. 227.) </p></li>
+<li><p>Shew that the function
+<span class="math">\[\sum_{n=0}^\infty z^{n!}\]</span>
+tends to infinity as <span class="math">\(z \rightarrow \exp(2\pi i \left.p\middle/m!\right.)\)</span> along the radius through the point; where <em>m</em> is any
+integer and <em>p</em> takes the values 0, 1, 2, <span class="math">\(\dots (m ! -1)\)</span>.
+<br><br>
+Deduce that the function cannot be continued beyond the unit circle. <br>
+(Lerch, <a href="http://www.biodiversitylibrary.org/item/135256#page/649"><em>Sitz. B&ouml;hm. Acad.</em>, 1885&#8211;6</a>, pp. 571&#8211;582.) </p></li>
+<li><p>Shew that, if <span class="math">\(z^2-1\)</span> is not a positive real number, then
+<span class="math">\[\begin{align*}
+(1-z^2)^{-\frac{1}{2}}=1&+\frac{1}{2}z^2+\frac{1\cdot 3}{2 \cdot 4}z^2+ \cdots  +\frac{1\cdot 3\cdots (2n-1)}{2\cdot 4 \cdots 2n}z^{2n}\\ \\
+&+\frac{3\cdot  5 \cdots (2n+1)}{2\cdot 4\cdots 2n}(1-z^2)^{-\frac{1}{2}}\!\int_0^z \! t^{2n+1}(1-t^2)^{-\frac{1}{2}}\,dt.
+\end{align*}\]</span>
+(Jacobi and Scheibner.) </p></li>
+<li><p>Shew that, if <span class="math">\(z - 1\)</span> is not a positive real number, then
+<span class="math">\[\begin{align*}
+(1-z)^{-m}=1&+\frac{m}{1}z+\frac{m\,(m+1)}{2!}z^2+ \cdots +\frac{m\,(m+1)\cdots (m+n-1)}{n!}z^n\\
+\\&+\frac{m\,(m+1)\cdots (m+n)}{n!}(1-z)^{-m}\!\int_0^z \! t^{\:\!n}(1-t)^{m-1}\,dt.
+\end{align*}\]</span>
+(Jacobi and Scheibner.) </p></li>
+<li><p>Shew that, if <span class="math">\(z\)</span> and <span class="math">\(1 - z\)</span> are not negative real numbers, then
+<span class="math">\[\begin{align*}
+(1-z^2)^{-\frac{1}{2}}\!\int_0^z \! t^m (1-&t^2)^{-\frac{1}{2}}\,dt=\frac{z^{m+1}}{m+1}\left\{1+\frac{m+2}{m+3}z^2+ \cdots +\frac{(m+2)\cdots(m+2n-2)}{(m+3) \cdots (m+2n-1)}z^{2n-2}\right\}\\
+\\ &+(1-z^2)^{-\frac{1}{2}}\frac{(m+2)(m+4)\cdots(m+2n)}{(m+1)(m+3) \cdots (m+2n-1)}\int_0^z \! t^{\:\!m+2n} (1-t^2)^{-\frac{1}{2}}\,dt.
+\end{align*}\]</span>
+(Jacobi and Scheibner.<a class="marginmark" onClick="toggleHide('mn:2,+82');">&#91;2&#93;</a>)</p></li>
+<li><p>If, in the expansion of <span class="math">\((a + a_1z + a_2 z^2)^m\)</span> by the multinomial theorem, the remainder after <em>n</em> terms be denoted by <span class="math">\(R_n(z)\)</span>, so that
+<span class="math">\[(a+a_1 z + a_2 z^2 )^{m}=A_0 + A_1 z + A_2 z^2 +\cdots + A_{n-1} z^{n-1} + R_n (z),\]</span>
+shew that
+<span class="math">\[R_n (z)=(a+a_1 z + a_2 z^2)^m \!\int_0^z \! \frac{naA_nt^{n-1}+(2m-n+1)a_2A_{n-1}t^n}{(a+a_1 t + a_2 t^2)^{m+1}} dt.\]</span>
+(Scheibner.) </p></li>
+<li><p>If <span class="math">\[(a+a_1 z + a_2 z^2)^{-m-1} \!\int_0^z \! (a+a_1 t + a_2 t^2)^m\, dt\]</span>
+be expanded in ascending powers of <span class="math">\(z\)</span> in the form
+<span class="math">\[A_1 z+A_2 z^2+\cdots ,\]</span>
+shew that the remainder after <span class="math">\(n - 1\)</span> terms is
+<span class="math">\[(a+a_1 z + a_2 z^2)^{-m-1} \!\int_0^z \! (a+a_1 t + a_2 t^2)^m \{na_n A_n -(2m + n + 1) a_2A_{n-1}t\}\, t^{n-1}\,dt.\]</span>
+(Scheibner.) </p></li>
+<li><p>Shew that the series
+<span class="math">\[\sum_{n=0}^\infty \{1+\lambda_n(z)e^z\}\frac{d^n\phi(z)}{dz^n},\]</span>
+where <span class="math">\[\lambda_n(z)=-1+z-\frac{z^2}{2!}+\frac{z^3}{3!}- \cdots (-1)^n\frac{z^n}{n!},\]</span>
+and where <span class="math">\(\phi(z)\)</span> is analytic near <span class="math">\(z=0\)</span>, is convergent near the point <span class="math">\(z=0\)</span>; and shew that if the sum of the series be denoted by <span class="math">\(f(z)\)</span>, then <span class="math">\(f(z)\)</span> satisfies the differential equation
+<span class="math">\[f'(z)=f(z)-\phi(z).\]</span>
+(Pincherle, <a href="http://babel.hathitrust.org/cgi/pt?id=njp.32101077264388;view=1up;seq=33"><em>Rend. dei Lincei</em> (5), <strong>v.</strong> (1896)</a>, p. 27.) </p></li>
+<li><p>Shew that the arithmetic mean of the squares of the moduli of all the values of the series <span class="math">\(\sum\limits_{n=0}^\infty a_n z^n\)</span> on a circle <span class="math">\(\left|\,z\,\right|=r\)</span>, situated within its circle of convergence, is equal to the sum of the squares of the moduli of the separate terms. <br>
+(Gutzmer, <a href="http://www.digizeitschriften.de/dms/toc/?PPN=PPN235181684_0032"><em>Math. Ann.</em> <strong>xxxii.</strong> (1888)</a>, pp. 596&#8211;600.) </p></li>
+<li><p>Shew that the series
+<span class="math">\[\sum_{m=1}^\infty e^{-2(\alpha m)^{1/2}}z^{m-1}\]</span>
+converges when <span class="math">\(\left|\, z\,\right|  < 1\)</span>; and that, when <span class="math">\(\alpha > 0\)</span>, the function which it represents can also
+be represented when <span class="math">\(\left|\, z\,\right|  < 1\)</span> by the integral
+<span class="math">\[\left(\frac{\alpha}{\pi}\right)^{\frac{1}{2}} \!\int_0^\infty \! \frac{e^{-\left.\alpha\middle/x\right.}}{e^x-z\vphantom{x^{\frac{-}{.}}}}\, \frac{dx}{x^{\left.3\middle/2\right.}}\]</span>
+and that it has no singularities except at the point <span class="math">\(z=1\)</span>.<br>
+(Lerch, <a href="http://books.google.com/books?id=h005AQAAMAAJ"><em>Monatshefte f&uuml;r Math. und Phys.</em> <strong>viii.</strong> (1897)</a>, pp. 187&#8211;192.) </p></li>
+<li><p>Shew that the series
+<span class="math">\[\frac{2}{\pi}(z+z^{-1})+\frac{2}{\pi}\sum\left\{\frac{z}{(1-2\nu-2\nu^{\:\!\prime}zi)(2\nu+2\nu^{\:\!\prime}zi)^2}+\frac{z^{-1}}{(1-2\nu-2\nu^{\:\!\prime}z^{-1}i)(2\nu+2\nu^{\:\!\prime}z^{-1}i)^2}\right\},\]</span>
+in which the summation extends over all integral values of <span class="math">\(\nu\)</span>, <span class="math">\(\nu^{\:\!\prime}\)</span>, except the combination <span class="math">\((\nu = 0,\, \nu^{\:\!\prime} = 0)\)</span>, converges absolutely for all values of <span class="math">\(z\)</span> except purely imaginary values; and that its sum is +1 or &#8211;1, according as the real part of <span class="math">\(z\)</span> is positive or negative. <br>
+(Weierstrass, <a href="http://biodiversitylibrary.org/page/36277988#page/803"><em>Berliner Monatsberichte</em>, 1880</a>, p. 735.) </p></li>
+<li><p>Shew that <span class="math">\(\sin\left\{u\left(z+\dfrac{1}{z}\right)\right\}\)</span> can be expanded in a series of the type
+<span class="math">\[a_0 + a_l z + a_2 z^2 + \cdots + \frac{b_1}{z} + \frac{b_2}{z^2} + \cdots ,\]</span>
+in which the coefficients, both of <span class="math">\(z^n\)</span> and of <span class="math">\(z^{-n}\)</span>, are
+<span class="math">\[\frac{1}{2\pi}\!\int_0^{2\pi} \! \sin(2u \cos\theta) \cos n\theta \, d\theta.\]</span> </p></li>
+<li><p>If <span class="math">\[f(z)=\sum_{n=1}^\infty \frac{z^2}{n^2z^2+a^2},\]</span>
+shew that <span class="math">\(f(z)\)</span> is finite and continuous for all real values of <span class="math">\(z\)</span>, but cannot be expanded as a Maclaurin&#8217;s series in ascending powers of <span class="math">\(z\)</span>; and explain this apparent anomaly. <br><br>
+[For other cases of failure of Maclaurin&#8217;s theorem, see a posthumous memoir by Cell&eacute;rier, <a href="https://archive.org/details/s2bulletindessci14fran"><em>Bull. des Sci. Math.</em> (2), <strong>xiv.</strong> (1890)</a>, pp. 142&#8211;160; Lerch, <a href="http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0103"><em>Journal f&uuml;r Math.</em> <strong>ciii.</strong> (1888)</a>,
+pp. 126&#8211;138; Pringsheim, <a href="http://www.digizeitschriften.de/dms/toc/?PPN=PPN235181684_0042"><em>Math. Ann.</em> <strong>xlii.</strong> (1893)</a>, pp. 153&#8211;184; and Du Bois Reymond, <a href="https://archive.org/details/sitzungsbericht259klasgoog"><em>M&uuml;nchener Sitzungsberichte</em>, <strong>vi.</strong> (1876)</a>, p. 235.] </p></li>
+<li><p>If <span class="math">\(f(z)\)</span> be a continuous one-valued function of <span class="math">\(z\)</span> throughout a two-dimensional region, and if
+<span class="math">\[\int_C   f (z)\, dz = 0\]</span>
+for all closed contours <em>C</em> lying inside the region, then <span class="math">\(f(z)\)</span> is an analytic function of <span class="math">\(z\)</span> throughout the interior of the region. <br><br>
+[Let <span class="math">\(a\)</span> be any point of the region and let
+<span class="math">\[F(z)=\int_a^z \! f(z) \, dz.\]</span>
+It follows from the data that <span class="math">\(F(z)\)</span> has the unique derivate <span class="math">\(f(z)\)</span>. Hence <span class="math">\(F(z)\)</span> is analytic (<a href="CMA05-1-AnalyticFunctionsMN.html#5.1apropertyoftheelementaryfunctions.">&#167;5.1</a>)
+ and so (<a href="CMA05-2-CauchysTheoremMN.html#5.22thederivatesofananalyticfunction.">&#167;5.22</a>) its derivate <span class="math">\(f(z)\)</span> is also analytic. This important converse of Cauchy&#8217;s theorem is due to Morera, <a href="http://books.google.com/books?id=wvk3AQAAMAAJ"><em>Rendiconti del R. Ist. Lombardo (Milano)</em>, <strong>xxii.</strong> (1889)</a>, p. 191.] </p></li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="footer">
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
+<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+</div>
+
+<div id="navcauchy" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navfront');">FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
+  <ul>
+    <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
+    <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
+    <li><a href="CMA05-1-AnalyticFunctionsMN.html#thefundamentalpropertiesofanalyticfunctions">The Properties of Analytic Functions</a>
+      <ul>
+        <li><a href="CMA05-1-AnalyticFunctionsMN.html#5.1apropertyoftheelementaryfunctions.">A Property of Elementary Functions</a>
+        <li><a href="CMA05-2-CauchysTheoremMN.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy's Theorem</a></li>
+        <li><a href="CMA05-3-TaylorsTheoremMN.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Analytic Functions as Uniformly Convergent Series</a></li>
+    <li><a href="CMA05-3-TaylorsTheoremMN.html#5.4taylorstheorem.">Taylor's Theorem</a></li>
+    <li><a href="CMA05-4-AnalyticContinuationMN.html#5.5theprocessofcontinuation.">Analytic Continuation</a></li>
+    <li><a href="CMA05-5-LaurentsTheoremMN.html#5.6laurentstheorem.">Laurent's Theorem</a></li>
+       <li class="current"><a href="#5.7many-valuedfunctions.">Many-valued Functions</a></li>
+        <li class="current"><a href="#references.">References</a></li>
+        <li class="current"><a href="#miscellaneousexamples.">Miscellaneous Examples</a></li>
+      </ul>
+    </li>
+    <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
+    <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navfront" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a>FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-FrontMN.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-FrontMN.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-FrontMN.html#preface">Preface</a></li>
+    <li><a href="CMA00-FrontMN.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navfront');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navprocesses" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
+<li class="part"><a>PROCESSES OF ANALYSIS</a>
+  <ul >
+    <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
+    <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
+     <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
+     <li class="more current"><a onClick="showIt('navcauchy');hideIt('navprocesses');"> you are here . . . </a></li>
+     <li class="notdone"><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navtranscendental" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navtranscendental');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
+  <ul>
+    <li class="notdone"><a href="whereOwhere.html">The Gamma Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Zeta Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Legendre Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Bessel Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Mathieu Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lam&eacute;&#8217;s Equation</a></li> 
+  </ul>
+  </li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navback" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a>BACKMATTER</a>
+  <ul >
+    <li ><a href="whereOwhere.html">Appendix</a></li>
+    <li ><a href="whereOwhere.html">Authors Quoted</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfixedleft" class="fixedBleft">
+<p><a href="CMA05-5-LaurentsTheoremMN.html">&#x25C0;</a></p>
+</div>
+
+<div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
+<p><a onClick="showIt('navcauchy');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA06-1-ResiduesMN.html" style="float: right;">&#x25B6;</a></p>
+</div>
+
+<div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
+<p><a onClick="hideIt('navcauchy');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA06-1-ResiduesMN.html" style="float: right;">&#x25B6;    </a></p>
+</div>
+
+</body>
+</html>
