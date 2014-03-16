@@ -527,13 +527,7 @@ max-width: 1200px;
     text-indent: -1.3em;
     }
 
-/* Ordered List (ol li) for main content */
 
-.contenttext ol
-    {
-    margin: 0 0 0 0;
-    line-height: 1.5;
-    }
 
 /** Future (W3C Working Draft) support for parentheses
 
@@ -544,13 +538,47 @@ max-width: 1200px;
 **/       
        
        
-.contenttext ol li
+/**.contenttext ol li
     {
     display: list-item;
     list-style-type: lower-roman;
     margin-left: 0em;
     }
     
+Approach below is from:
+http://stackoverflow.com/questions/1632005/ordered-list-html-lower-alpha-with-right-parentheses
+http://www.456bereastreet.com/archive/201105/styling_ordered_list_numbers/
+
+**/
+
+/* Ordered List (ol li) for main content */
+
+.contenttext ol
+    {
+    margin: 0 0 0 0;
+    line-height: 1.5;
+    list-style-type: none;
+    position: relative;
+
+    padding:2px 2.2em;
+    counter-reset: list;
+    }
+
+}
+.contenttext ol  li {
+  list-style-type: none;
+  
+  
+}
+
+.contenttext ol  li:before {
+  content: "("counter(list, lower-roman) ") ";
+  counter-increment: list;
+  position: absolute;
+  text-indent: -1.7em;
+  
+    
+}    
     
 /* Ordered List (ol li) for exercises */
         
