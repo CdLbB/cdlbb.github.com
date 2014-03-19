@@ -25,6 +25,7 @@ HTML header:	<script type="text/javascript"
 
 <div markdown=1 id="content">
 <div markdown=1 class="contenttext">
+<div markdown=1 class="listroman">
 
 ###5.7  Many-valued functions. ###
 
@@ -78,7 +79,10 @@ No. 15, 1914).
 
 [^jacobi,+82]: The results of examples 5, 6 and 7 are special cases of formulae contained in Jacobi's dissertation (Berlin, 1825) published in his [*Ges. Werke*, **iii.** (1884)](https://archive.org/details/gesammeltewerke01weiegoog), pp. 1-44. Jacobi's formulae were generalised by Scheibner, [*Leipziger Berichte*, **xlv.** (1893)](http://babel.hathitrust.org/cgi/pt?id=mdp.39015064506119), pp. 432-443.
 
+</div>
+
 <div markdown=1 id="exercises">
+
 
 ###Miscellaneous Examples. ###
 
@@ -104,7 +108,7 @@ the region of convergence consists of two distinct areas, namely outside and ins
 tends to infinity as \\(z \rightarrow \exp(2\pi i \left.p\middle/m!\right.)\\) along the radius through the point; where *m* is any 
 integer and *p* takes the values 0, 1, 2, \\(\dots (m ! -1)\\). 
 <br><br>
-Deduce that the function cannot be continued beyond the unit circle. <br>
+Deduce that the function cannot be continued beyond the unit circle. \\(\vphantom{\\ 3\\}\\)<br>
 (Lerch, [*Sitz. Böhm. Acad.*, 1885-6](http://www.biodiversitylibrary.org/item/135256#page/649), pp. 571-582.) 
 
 5. Shew that, if \\(z^2-1\\) is not a positive real number, then 
@@ -150,7 +154,7 @@ and where \\(\phi(z)\\) is analytic near \\(z=0\\), is convergent near the point
 \\[f'(z)=f(z)-\phi(z).\\]
 (Pincherle, [*Rend. dei Lincei* (5), **v.** (1896)](http://babel.hathitrust.org/cgi/pt?id=njp.32101077264388;view=1up;seq=33), p. 27.) 
 
-11. Shew that the arithmetic mean of the squares of the moduli of all the values of the series \\(\sum\limits_{n=0}^\infty a_n z^n\\) on a circle \\(\left|\,z\,\right|=r\\), situated within its circle of convergence, is equal to the sum of the squares of the moduli of the separate terms. <br>
+11. Shew that the arithmetic mean of the squares of the moduli of all the values of the series \\(\sum\limits_{n=0}^\infty a_n z^n\\) on a circle \\(\left|\,z\,\right|=r\\), situated within its circle of convergence, is equal to the sum of the squares of the moduli of the separate terms. <br><br>
 (Gutzmer, [*Math. Ann.* **xxxii.** (1888)](http://www.digizeitschriften.de/dms/toc/?PPN=PPN235181684_0032), pp. 596-600.) 
 
 12. Shew that the series 
@@ -158,12 +162,12 @@ and where \\(\phi(z)\\) is analytic near \\(z=0\\), is convergent near the point
 converges when \\(\left|\, z\,\right|  < 1\\); and that, when \\(\alpha > 0\\), the function which it represents can also 
 be represented when \\(\left|\, z\,\right|  < 1\\) by the integral 
 \\[\left(\frac{\alpha}{\pi}\right)^{\frac{1}{2}} \!\int_0^\infty \! \frac{e^{-\left.\alpha\middle/x\right.}}{e^x-z\vphantom{x^{\frac{-}{.}}}}\, \frac{dx}{x^{\left.3\middle/2\right.}}\\]
-and that it has no singularities except at the point \\(z=1\\).<br> 
+and that it has no singularities except at the point \\(z=1\\).\\(\vphantom{\\ 3\\}\\)<br>
 (Lerch, [*Monatshefte für Math. und Phys.* **viii.** (1897)](http://books.google.com/books?id=h005AQAAMAAJ), pp. 187-192.) 
 
 13. Shew that the series 
 \\[\frac{2}{\pi}(z+z^{-1})+\frac{2}{\pi}\sum\left\{\frac{z}{(1-2\nu-2\nu^{\:\!\prime}zi)(2\nu+2\nu^{\:\!\prime}zi)^2}+\frac{z^{-1}}{(1-2\nu-2\nu^{\:\!\prime}z^{-1}i)(2\nu+2\nu^{\:\!\prime}z^{-1}i)^2}\right\},\\]
-in which the summation extends over all integral values of \\(\nu\\), \\(\nu^{\:\!\prime}\\), except the combination \\((\nu = 0,\, \nu^{\:\!\prime} = 0)\\), converges absolutely for all values of \\(z\\) except purely imaginary values; and that its sum is +1 or -1, according as the real part of \\(z\\) is positive or negative. <br>
+in which the summation extends over all integral values of \\(\nu\\), \\(\nu^{\:\!\prime}\\), except the combination \\((\nu = 0,\, \nu^{\:\!\prime} = 0)\\), converges absolutely for all values of \\(z\\) except purely imaginary values; and that its sum is +1 or -1, according as the real part of \\(z\\) is positive or negative. <br><br>
 (Weierstrass, [*Berliner Monatsberichte*, 1880](http://biodiversitylibrary.org/page/36277988#page/803), p. 735.) 
 
 14. Shew that \\(\sin\left\{u\left(z+\dfrac{1}{z}\right)\right\}\\)  can be expanded in a series of the type 
@@ -184,10 +188,11 @@ for all closed contours *C* lying inside the region, then \\(f(z)\\) is an analy
 It follows from the data that \\(F(z)\\) has the unique derivate \\(f(z)\\). Hence \\(F(z)\\) is analytic ([§5.1](CMA05-1-AnalyticFunctions.html#5.1apropertyoftheelementaryfunctions.))
  and so ([§5.22](CMA05-2-CauchysTheorem.html#5.22thederivatesofananalyticfunction.)) its derivate \\(f(z)\\) is also analytic. This important converse of Cauchy's theorem is due to Morera, [*Rendiconti del R. Ist. Lombardo (Milano)*, **xxii.** (1889)](http://books.google.com/books?id=wvk3AQAAMAAJ), p. 191.] 
 
-</div>
-</div>
-</div>
 
+
+</div>
+</div>
+</div>
 
 
 <div id="footer">

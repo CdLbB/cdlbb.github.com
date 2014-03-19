@@ -25,6 +25,7 @@ HTML header:	<script type="text/javascript"
 
 <div markdown=1 id="content">
 <div markdown=1 class="contenttext">
+<div markdown=1 class="listroman">
 
 [^memoir,+0]: [*Mémoire sur les intégrales definies prises entre des limites imaginaires* (1825)](https://archive.org/details/mmoiresurlesin00cauc). The proof here given is that due to Goursat, [*Trans. American Math. Soc.* **i.** (1900)](http://www.ams.org/journals/tran/1900-001-01/home.html), p. 14.
  
@@ -94,10 +95,7 @@ and throughout the ring-shaped region contained between \\(C_0\\) and \\(C_1\\).
 \\[\int \! f(z)\,dz\\]
 *is zero, where the integration is taken round the whole boundary of the ring-shaped space; this boundary consisting of two curves \\(C_0\\) and \\(C_1\\), the one described in the counter-clockwise direction and the other described in the clockwise direction.*
 
->*Corollary* 3. In general, if any connected region be given in the \\(z\\)-plane, bounded by any number of simple closed curves \\(C_0\\), \\(C_1\\), \\(C_2, \dots \\), and if \\(f(z)\\) be any function of \\(z\\) which is analytic and one-valued everywhere in this region, *then* 
-\\[\int f(z)\,dz\\]
-*is zero, where the integral is taken round the whole boundary of the region; this boundary consisting of the curves \\(C_0\\), \\(C_1\\), \\(C_2, \dots \\), each described in such a sense that the region is kept 
-either always on the right or always on the left of a person walking in the sense in question round the boundary.* 
+>######*Corollary* 3. In general, if any connected region be given in the \\(z\\)-plane, bounded by any number of simple closed curves \\(C_0\\), \\(C_1\\), \\(C_2, \dots \\), and if \\(f(z)\\) be any function of \\(z\\) which is analytic and one-valued everywhere in this region, *then* \\[\int f(z)\,dz\\] *is zero, where the integral is taken round the whole boundary of the region; this boundary consisting of the curves \\(C_0\\), \\(C_1\\), \\(C_2, \dots \\), each described in such a sense that the region is kept either always on the right or always on the left of a person walking in the sense in question round the boundary.* [5.2corollary3] ######
 
 An extension of Cauchy's theorem \\(\int f(z)\, dz=0\\), to curves lying on a cone whose vertex is at the origin, has been made by Ravut {[*Nouv. Annales de Math.* (3) **xvi.** (1897)](http://www.numdam.org/numdam-bin/browse?id=NAM_1897_3_16_), pp. 365-7). Also, Morera ([*Rend, del Ist. Lombardo*, **xxii.** (1889)](http://books.google.com/books?id=wvk3AQAAMAAJ), p. 191) and Osgood ([*Bull. Amer. Math. Soc.* **ii.** (1896)](http://www.ams.org/journals/bull/1896-02-09/), pp. 296-302), have shewn that the property \\(\int f(z)\, dz=0\\)
 may be taken as the property defining an analytic function, the other properties being deducible from it. (See [Miscellaneous Examples](CMA05-6-ManyValuedFunctions.html#miscellaneousexamples.), example 16.) 
@@ -221,6 +219,7 @@ unless \\(f(z) =0 \\) or \\(f'(z) = 0\\).[^maxmodulus,-3] (Trinity, 1910.)
 
 </div>
 
+</div>
 
 
 <div id="footer">
