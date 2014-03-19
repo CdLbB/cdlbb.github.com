@@ -537,13 +537,15 @@ max-width: 1200px;
     }
 **/       
        
-       
-/**.contenttext ol li
+
+/**       
+div#content ol li
     {
     display: list-item;
     list-style-type: lower-roman;
     margin-left: 0em;
     }
+
     
 Approach below is from:
 http://stackoverflow.com/questions/1632005/ordered-list-html-lower-alpha-with-right-parentheses
@@ -553,36 +555,40 @@ http://www.456bereastreet.com/archive/201105/styling_ordered_list_numbers/
 
 /* Ordered List (ol li) for main content */
 
-.contenttext ol
+.listroman ol
     {
     margin: 0 0 0 0;
     line-height: 1.5;
     list-style-type: none;
     position: relative;
 
-    padding:2px 2.2em;
+    padding-left: 2.5em;
+    *text-indent: -2.5em;
     counter-reset: list;
     }
 
 }
-.contenttext ol  li {
+.listroman ol  li {
   list-style-type: none;
-  
+  *padding-left: 5em;
+  *text-indent: -2.3em;
+  position: relative;
   
 }
 
-.contenttext ol  li:before {
+.listroman ol  li:before {
   content: "("counter(list, lower-roman) ") ";
   counter-increment: list;
   position: absolute;
-  text-indent: -1.7em;
+  margin-left: -1.9em;
+  *text-indent: -1.9em;
   
     
 }    
     
 /* Ordered List (ol li) for exercises */
         
-div#exercises ol  
+div#exercises  ol  
     {
     margin-top: 1.5em;
     font-size: 0.9em;
@@ -593,7 +599,7 @@ div#exercises ol
     line-height: 1.5;
     }
     
-div#exercises ol li
+div#exercises  ol li
     {
     list-style-type: decimal;
     *padding-bottom: 0.5em;
@@ -726,6 +732,12 @@ div#exercises ol li
     background-color: #fff385;/*red: #d20a0a , #e20f0f later  #e21f0f #ee2222 ffbbbb now light amber*/
     color: black;
     }   
+
+.navigation ul li.uncurrent a, .navigation ul li.part ul li.uncurrent a
+    {
+    background-color: #f4df40;
+    color: black;
+    }  
     
 .navigation ul li a:hover, .navigation ul li a:active, .navigation ul li.part a:hover, .navigation ul li.part a:active
     {
@@ -733,7 +745,7 @@ div#exercises ol li
     color: white;
     }
     
-.navigation ul li.current a:hover, .navigation ul li.current a:active, .navigation ul li.part ul li.current a:hover, .navigation ul li.part ul li.current a:active, .navigation ul li.part ul li.toc a:hover, .navigation ul li.part ul li.toc a:active
+.navigation ul li.current a:hover, .navigation ul li.current a:active, .navigation ul li.part ul li.current a:hover, .navigation ul li.part ul li.current a:active, .navigation ul li.part ul li.toc a:hover, .navigation ul li.part ul li.toc a:active,ul li.uncurrent  a:active, .navigation ul li.part ul li.uncurrent  a:active
     {
     background-color: #66ba58; /* green was #ffaa00 */
     color: white;
