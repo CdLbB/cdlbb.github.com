@@ -24,6 +24,7 @@ HTML header:	<script type="text/javascript"
 <div markdown=1 id="content">
 <div markdown=1 class="contenttext">
 
+
 ## Complex numbers ##
 
 ### 1.1 Rational numbers [rationalnumbers]###
@@ -73,8 +74,12 @@ The geometrical property of points on a line which suggested the starting point 
 Following up this idea, Dedekind considered rules by which a separation[^greeks,-10] or *section* of *all* rational numbers into two classes can be made, these classes
 (which will be called the \\(L\\)-class and the \\(R\\)-class, or the left class and the right class) being such that they possess the following properties:
 
+<div markdown=1 class="listroman">
+
 1. At least one member of each class exists.
 2. Every member of the \\(L\\)-class is less than every member of the \\(R\\)-class.
+
+</div>
 
 [^greeks,-10]: This procedure formed the basis of the treatment of irrational numbers by the Greek mathematicians in the sixth and fifth centuries B.C. The advance made by Dedekind consisted in observing that a purely *arithmetical* theory could be built up on it.
 
@@ -86,15 +91,17 @@ Then this section is such that the \\(R\\)-class has no least member and the \\(
 and \\( \displaystyle \; y= \frac{x(x^2+6)}{3x^2+2} \\), 
 then \\( \displaystyle \; y-x= \frac{2x(2-x^2)}{3x^2+2} \\)
 and \\( \displaystyle \; y^2-2= \frac{x(x^2-2)^3}{(3x^2+2)^2}, \\) 
-so \\(x^2\\), \\(y^2\\) and \\(2\\) are in order of magnitude; and therefore given any member \\(x\\) of the \\(L\\)-class, we can always find a greater member of the \\(L\\)-class, or given any member \\(x' \\) of the \\(R\\)-class, we can always find a smaller member of the \\(R\\)-class, such numbers being, for instance, \\(y\\) and \\(y' \\), where \\(y' \\) is the same function of \\(x' \\) as \\(y\\) of \\(x\\).
+so \\(x^2\\), \\(y^2\\) and \\(2\\) are in order of magnitude; and therefore given any member \\(x\\) of the \\(L\\)-class, we can always find a greater member of the \\(L\\)-class, or given any member \\(x' \\) of the \\(R\\)-class, we can always find a smaller member of the \\(R\\)-class, such numbers being, for instance, \\(y\\) and \\(y' \\), where \\(y' \\) is the same function of \\(x' \\) as \\(y\\) of \\(x\\).[^dedekindfns,-8]
  
-If a section is made in which the \\(R\\)-class has a least member \\(A_2\\), or if the \\(L\\)-class has a greatest member \\(A_1\\), the section determines a *rational-real* number, which it is convenient to denote by the *same*[^sameSym,-10] symbol \\(A_2\\) or \\(A_1\\).
- 
-[^sameSym,-10]:This causes no confusion in practice.
+[^dedekindfns,-8]: *Editor's Note*: For more on this and related functions see Bogomolny, [*On Dedekind cuts*](http://www.cut-the-knot.org/proofs/Whittaker.shtml).
 
-If a section is made, such that the \\(R\\)-class has no least member and the \\(L\\)-class has no greatest member, *the section determines an irrational-real number*.[^russellsL,-12]
+If a section is made in which the \\(R\\)-class has a least member \\(A_2\\), or if the \\(L\\)-class has a greatest member \\(A_1\\), the section determines a *rational-real* number, which it is convenient to denote by the *same*[^sameSym,-8] symbol \\(A_2\\) or \\(A_1\\).
  
-[^russellsL,-12]:[B. A. W. Russell][russell] defines the class of real numbers as *actually being* the class of all \\(L\\)-classes the class of real numbers whose \\(L\\)-classes have a greatest member corresponds to the class of rational numbers, and though the rational-real number \\(x\\) which corresponds to a rational number \\(x\\) is conceptually distinct from it, no confusion arises from denoting both by the same symbol.
+[^sameSym,-8]:This causes no confusion in practice.
+
+If a section is made, such that the \\(R\\)-class has no least member and the \\(L\\)-class has no greatest member, *the section determines an irrational-real number*.[^russellsL,-10]
+ 
+[^russellsL,-10]:[B. A. W. Russell][russell] defines the class of real numbers as *actually being* the class of all \\(L\\)-classes the class of real numbers whose \\(L\\)-classes have a greatest member corresponds to the class of rational numbers, and though the rational-real number \\(x\\) which corresponds to a rational number \\(x\\) is conceptually distinct from it, no confusion arises from denoting both by the same symbol.
 
 [russell]: http://onlinebooks.library.upenn.edu/webbin/book/lookupid?key=olbp32608
  
@@ -114,7 +121,7 @@ Then the *sum* (written  \\(\alpha + \beta\\)) of two real numbers \\(\alpha\\) 
 >
 >If every rational number belongs either to the class \\((A_1+B_1)\\) or to the class \\((A_2+B_2)\\), then the classes \\((A_1+B_1), (A_2+B_2)\\) define an irrational number.[^assumeIrrational] If one rational number \\(x\\) exists belonging to neither class, then the \\(L\\)-class formed by \\(x\\) and \\((A_1+B_1)\\) and the \\(R\\)-class \\((A_2+B_2)\\) define the rational-real number x. In either case, the number defined is called the sum \\(\alpha + \beta\\).
 
-[^assumeIrrational]: *Editor's Note:* This claim does not always hold if \\(\alpha\\) and \\(\beta\\) are both rational, but then the sum is clearly rational. If we assume at least one of \\(\alpha\\) and \\(\beta\\) are irrational, this and the succeeding claim are true.
+[^assumeIrrational]: *Editor's Note*: This claim does not always hold if \\(\alpha\\) and \\(\beta\\) are both rational, but then the sum is clearly rational. If we assume at least one of \\(\alpha\\) and \\(\beta\\) are irrational, this and the succeeding claim are true.
 
 >The difference \\(\alpha - \beta\\) of two real numbers is defined by the \\(L\\)-class \\((A_1-B_2)\\) and the \\(R\\)-class \\((A_2-B_1)\\).
 >
@@ -212,7 +219,7 @@ We have seen that complex numbers may be represented in a geometrical diagram by
 
 The complex number \\(x + iy\\) may be denoted by a single letter \\(z\\).[^realandimg] The point \\(P\\) is then called the *representative point* of the number \\(z\\); we shall also speak of the number \\(z\\) as being the *affix* of the point \\(P\\).
 
-[^realandimg]: It is convenient to call \\(x\\) and \\(y\\) the *real* and *imaginary* parts of \\(z\\) respectively. We frequently write \\(x = R(z), y = I(z)\\).
+[^realandimg]: It is convenient to call \\(x\\) and \\(y\\) the *real* and *imaginary* parts of \\(z\\) respectively. We frequently write \\(x = \mathfrak{Re}(z)\\), \\(y = \mathfrak{Im}(z)\\).
 
 If we denote\\( (x^2+y^2)^{\frac{1}{2}}\\) by \\(r\\) and choose \\(\theta\\) so that \\(r \cos \theta = x, r \sin \theta =y\\), then \\(r\\) and \\(\theta\\) are clearly the radius vector and vectorial angle of the point \\(P\\), referred to the origin and axis \\(Ox\\).
 
@@ -276,6 +283,7 @@ measured by the product of the radii vectores of \\(P_1\\) and \\(P_2\\), and a 
 [Theorie]: http://books.google.com/books?id=MkttAAAAMAAJ
 [Vorlesungen2]: http://ebooks.library.cornell.edu/cgi/t/text/text-idx?c=math;cc=math;view=toc;subview=short;idno=02860003
 [Pure]: http://www.gutenberg.org/ebooks/38769
+
 
 
 <div markdown=1 id="exercises">
@@ -373,7 +381,7 @@ where \\(\mu\\) is the number of the constituent primes.  (Math. Trip. 1895.)
      <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
      <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
      <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
-     <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
+     <li><a href="CMA06-1-Residues.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>

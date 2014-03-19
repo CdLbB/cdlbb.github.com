@@ -24,6 +24,7 @@ HTML header:	<script type="text/javascript"
 <div markdown=1 id="content">
 <div markdown=1 class="contenttext">
 
+
 ## Complex numbers ##
 
 ### 1.1 Rational numbers [rationalnumbers]###
@@ -123,8 +124,12 @@ The geometrical property of points on a line which suggested the starting point 
 Following up this idea, Dedekind considered rules by which a separation<a class="marginmark" onClick="toggleHide('mn:6,-10');">&#91;6&#93;</a> or *section* of *all* rational numbers into two classes can be made, these classes
 (which will be called the \\(L\\)-class and the \\(R\\)-class, or the left class and the right class) being such that they possess the following properties:
 
+<div markdown=1 class="listroman">
+
 1. At least one member of each class exists.
 2. Every member of the \\(L\\)-class is less than every member of the \\(R\\)-class.
+
+</div>
 
 </div>
 
@@ -156,15 +161,13 @@ Then this section is such that the \\(R\\)-class has no least member and the \\(
 and \\( \displaystyle \; y= \frac{x(x^2+6)}{3x^2+2} \\), 
 then \\( \displaystyle \; y-x= \frac{2x(2-x^2)}{3x^2+2} \\)
 and \\( \displaystyle \; y^2-2= \frac{x(x^2-2)^3}{(3x^2+2)^2}, \\) 
-so \\(x^2\\), \\(y^2\\) and \\(2\\) are in order of magnitude; and therefore given any member \\(x\\) of the \\(L\\)-class, we can always find a greater member of the \\(L\\)-class, or given any member \\(x' \\) of the \\(R\\)-class, we can always find a smaller member of the \\(R\\)-class, such numbers being, for instance, \\(y\\) and \\(y' \\), where \\(y' \\) is the same function of \\(x' \\) as \\(y\\) of \\(x\\).
- 
-If a section is made in which the \\(R\\)-class has a least member \\(A_2\\), or if the \\(L\\)-class has a greatest member \\(A_1\\), the section determines a *rational-real* number, which it is convenient to denote by the *same*<a class="marginmark" onClick="toggleHide('mn:8,-10');">&#91;8&#93;</a> symbol \\(A_2\\) or \\(A_1\\).
+so \\(x^2\\), \\(y^2\\) and \\(2\\) are in order of magnitude; and therefore given any member \\(x\\) of the \\(L\\)-class, we can always find a greater member of the \\(L\\)-class, or given any member \\(x' \\) of the \\(R\\)-class, we can always find a smaller member of the \\(R\\)-class, such numbers being, for instance, \\(y\\) and \\(y' \\), where \\(y' \\) is the same function of \\(x' \\) as \\(y\\) of \\(x\\).<a class="marginmark" onClick="toggleHide('mn:8,-8');">&#91;8&#93;</a>
  
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:8,-10" style="margin-top: -10em; margin-bottom: -10em;"><a class="marginmark">&#91;8&#93;</a>This causes no confusion in practice.<a onClick="hideIt('mn:8,-10')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:8,-8" style="margin-top: -8em; margin-bottom: -8em;"><a class="marginmark">&#91;8&#93;</a>*Editor's Note*: For more on this and related functions see Bogomolny, [*On Dedekind cuts*](http://www.cut-the-knot.org/proofs/Whittaker.shtml).<a onClick="hideIt('mn:8,-8')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -172,13 +175,27 @@ If a section is made in which the \\(R\\)-class has a least member \\(A_2\\), or
 
 <div markdown=1 class="contenttext">
 
-If a section is made, such that the \\(R\\)-class has no least member and the \\(L\\)-class has no greatest member, *the section determines an irrational-real number*.<a class="marginmark" onClick="toggleHide('mn:9,-12');">&#91;9&#93;</a>
+If a section is made in which the \\(R\\)-class has a least member \\(A_2\\), or if the \\(L\\)-class has a greatest member \\(A_1\\), the section determines a *rational-real* number, which it is convenient to denote by the *same*<a class="marginmark" onClick="toggleHide('mn:9,-8');">&#91;9&#93;</a> symbol \\(A_2\\) or \\(A_1\\).
  
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:9,-12" style="margin-top: -12em; margin-bottom: -12em;"><a class="marginmark">&#91;9&#93;</a>[B. A. W. Russell][russell] defines the class of real numbers as *actually being* the class of all \\(L\\)-classes the class of real numbers whose \\(L\\)-classes have a greatest member corresponds to the class of rational numbers, and though the rational-real number \\(x\\) which corresponds to a rational number \\(x\\) is conceptually distinct from it, no confusion arises from denoting both by the same symbol.<a onClick="hideIt('mn:9,-12')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:9,-8" style="margin-top: -8em; margin-bottom: -8em;"><a class="marginmark">&#91;9&#93;</a>This causes no confusion in practice.<a onClick="hideIt('mn:9,-8')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+
+</div>
+
+
+
+<div markdown=1 class="contenttext">
+
+If a section is made, such that the \\(R\\)-class has no least member and the \\(L\\)-class has no greatest member, *the section determines an irrational-real number*.<a class="marginmark" onClick="toggleHide('mn:10,-10');">&#91;10&#93;</a>
+ 
+</div>
+
+
+
+<div markdown=1 class="marginnotes" id="mn:10,-10" style="margin-top: -10em; margin-bottom: -10em;"><a class="marginmark">&#91;10&#93;</a>[B. A. W. Russell][russell] defines the class of real numbers as *actually being* the class of all \\(L\\)-classes the class of real numbers whose \\(L\\)-classes have a greatest member corresponds to the class of rational numbers, and though the rational-real number \\(x\\) which corresponds to a rational number \\(x\\) is conceptually distinct from it, no confusion arises from denoting both by the same symbol.<a onClick="hideIt('mn:10,-10')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -188,13 +205,13 @@ If a section is made, such that the \\(R\\)-class has no least member and the \\
 
 [russell]: http://onlinebooks.library.upenn.edu/webbin/book/lookupid?key=olbp32608
  
-If \\(x\\), \\(y\\) are real numbers (defined by sections) we say that \\(x\\) is greater than \\(y\\) if the \\(L\\)-class defining \\(x\\) contains at least two<a class="marginmark" onClick="toggleHide('mn:10,+2');">&#91;10&#93;</a> members of the \\(R\\)-class defining \\(y\\).
+If \\(x\\), \\(y\\) are real numbers (defined by sections) we say that \\(x\\) is greater than \\(y\\) if the \\(L\\)-class defining \\(x\\) contains at least two<a class="marginmark" onClick="toggleHide('mn:11,+2');">&#91;11&#93;</a> members of the \\(R\\)-class defining \\(y\\).
  
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:10,+2" style="margin-top: +2em; margin-bottom: +2em;"><a class="marginmark">&#91;10&#93;</a>If the classes had only one member in common, that member might be the greatest member of the \\(L\\)-class of \\(x\\) and the least member of the \\(R\\)-class of \\(y\\).<a onClick="hideIt('mn:10,+2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:11,+2" style="margin-top: +2em; margin-bottom: +2em;"><a class="marginmark">&#91;11&#93;</a>If the classes had only one member in common, that member might be the greatest member of the \\(L\\)-class of \\(x\\) and the least member of the \\(R\\)-class of \\(y\\).<a onClick="hideIt('mn:11,+2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -212,13 +229,13 @@ Then the *sum* (written  \\(\alpha + \beta\\)) of two real numbers \\(\alpha\\) 
 >
 >But \\(c_2 + d_2 \geq y, \; c_1+d_1 \leq x\\), and therefore \\(c_2+d_2-c_1-d_1 \geq y-x;\\) we have therefore arrived at a contradiction by supposing that two rational numbers \\(x,y\\) exist belonging neither to \\((A_1+B_1)\\) nor to \\((A_2+B_2)\\).
 >
->If every rational number belongs either to the class \\((A_1+B_1)\\) or to the class \\((A_2+B_2)\\), then the classes \\((A_1+B_1), (A_2+B_2)\\) define an irrational number.<a class="marginmark" onClick="toggleHide('mn:11,-7');">&#91;11&#93;</a> If one rational number \\(x\\) exists belonging to neither class, then the \\(L\\)-class formed by \\(x\\) and \\((A_1+B_1)\\) and the \\(R\\)-class \\((A_2+B_2)\\) define the rational-real number x. In either case, the number defined is called the sum \\(\alpha + \beta\\).
+>If every rational number belongs either to the class \\((A_1+B_1)\\) or to the class \\((A_2+B_2)\\), then the classes \\((A_1+B_1), (A_2+B_2)\\) define an irrational number.<a class="marginmark" onClick="toggleHide('mn:12,-7');">&#91;12&#93;</a> If one rational number \\(x\\) exists belonging to neither class, then the \\(L\\)-class formed by \\(x\\) and \\((A_1+B_1)\\) and the \\(R\\)-class \\((A_2+B_2)\\) define the rational-real number x. In either case, the number defined is called the sum \\(\alpha + \beta\\).
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:11,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;11&#93;</a>*Editor's Note:* This claim does not always hold if \\(\alpha\\) and \\(\beta\\) are both rational, but then the sum is clearly rational. If we assume at least one of \\(\alpha\\) and \\(\beta\\) are irrational, this and the succeeding claim are true.<a onClick="hideIt('mn:11,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:12,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;12&#93;</a>*Editor's Note*: This claim does not always hold if \\(\alpha\\) and \\(\beta\\) are both rational, but then the sum is clearly rational. If we assume at least one of \\(\alpha\\) and \\(\beta\\) are irrational, this and the succeeding claim are true.<a onClick="hideIt('mn:12,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -238,14 +255,14 @@ The aggregate of rational-real and irrational-real numbers is called the aggrega
 
 ### 1.3 Complex numbers [complexnumberssection] ###
 
-We have seen that a real number may be visualised as a displacement along a definite straight line. If, however, \\(P\\) and \\(Q\\) are any two points in a plane, the displacement \\(\overline{PQ}\\) needs two real numbers for its specification; for instance, the differences of the coordinates of \\(P\\) and \\(Q\\) referred to fixed rectangular axes. If the coordinates of \\(P\\) be \\((\zeta, \eta)\\) and those of \\(Q\\) \\((\zeta+x,\eta+y)\\), the displacement \\(\overline{PQ}\\) may be described by the symbol \\([x, y]\\). We are thus led to consider the association of real numbers in ordered<a class="marginmark" onClick="toggleHide('mn:12,-12');">&#91;12&#93;</a> pairs. The natural definition of the sum of two displacements \\([x, y], \, [x' , y' ]\\) is the displacement which is the result of the successive applications of the two displacements it is therefore convenient to define the sum of two number-pairs by the equation
+We have seen that a real number may be visualised as a displacement along a definite straight line. If, however, \\(P\\) and \\(Q\\) are any two points in a plane, the displacement \\(\overline{PQ}\\) needs two real numbers for its specification; for instance, the differences of the coordinates of \\(P\\) and \\(Q\\) referred to fixed rectangular axes. If the coordinates of \\(P\\) be \\((\zeta, \eta)\\) and those of \\(Q\\) \\((\zeta+x,\eta+y)\\), the displacement \\(\overline{PQ}\\) may be described by the symbol \\([x, y]\\). We are thus led to consider the association of real numbers in ordered<a class="marginmark" onClick="toggleHide('mn:13,-12');">&#91;13&#93;</a> pairs. The natural definition of the sum of two displacements \\([x, y], \, [x' , y' ]\\) is the displacement which is the result of the successive applications of the two displacements it is therefore convenient to define the sum of two number-pairs by the equation
 \\[ [x, y] + [x' , y' ]=[x + x' , y + y' ]. \\]
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:12,-12" style="margin-top: -12em; margin-bottom: -12em;"><a class="marginmark">&#91;12&#93;</a>The order of the two terms distinguishes the ordered number-pair \\([x, y]\\) from the ordered number-pair \\([y, x]\\).<a onClick="hideIt('mn:12,-12')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:13,-12" style="margin-top: -12em; margin-bottom: -12em;"><a class="marginmark">&#91;13&#93;</a>The order of the two terms distinguishes the ordered number-pair \\([x, y]\\) from the ordered number-pair \\([y, x]\\).<a onClick="hideIt('mn:13,-12')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -330,13 +347,13 @@ and therefore
 
 We have seen that complex numbers may be represented in a geometrical diagram by taking rectangular axes \\(Ox\\), \\(Oy\\) in a plane. Then a point \\(P\\) whose coordinates referred to these axes are \\(x, y\\) may be regarded as representing the complex number \\(x + iy\\). In this way, to every point of the plane there corresponds some one complex number; and, conversely, to every possible complex number there corresponds one, and only one, point of the plane.
 
-The complex number \\(x + iy\\) may be denoted by a single letter \\(z\\).<a class="marginmark" onClick="toggleHide('mn:13,-7');">&#91;13&#93;</a> The point \\(P\\) is then called the *representative point* of the number \\(z\\); we shall also speak of the number \\(z\\) as being the *affix* of the point \\(P\\).
+The complex number \\(x + iy\\) may be denoted by a single letter \\(z\\).<a class="marginmark" onClick="toggleHide('mn:14,-7');">&#91;14&#93;</a> The point \\(P\\) is then called the *representative point* of the number \\(z\\); we shall also speak of the number \\(z\\) as being the *affix* of the point \\(P\\).
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:13,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;13&#93;</a>It is convenient to call \\(x\\) and \\(y\\) the *real* and *imaginary* parts of \\(z\\) respectively. We frequently write \\(x = R(z), y = I(z)\\).<a onClick="hideIt('mn:13,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:14,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;14&#93;</a>It is convenient to call \\(x\\) and \\(y\\) the *real* and *imaginary* parts of \\(z\\) respectively. We frequently write \\(x = \mathfrak{Re}(z)\\), \\(y = \mathfrak{Im}(z)\\).<a onClick="hideIt('mn:14,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -346,13 +363,13 @@ The complex number \\(x + iy\\) may be denoted by a single letter \\(z\\).<a cla
 
 If we denote\\( (x^2+y^2)^{\frac{1}{2}}\\) by \\(r\\) and choose \\(\theta\\) so that \\(r \cos \theta = x, r \sin \theta =y\\), then \\(r\\) and \\(\theta\\) are clearly the radius vector and vectorial angle of the point \\(P\\), referred to the origin and axis \\(Ox\\).
 
-The representation of complex numbers thus afforded is often called the *Argand diagram*.<a class="marginmark" onClick="toggleHide('mn:14,-7');">&#91;14&#93;</a>
+The representation of complex numbers thus afforded is often called the *Argand diagram*.<a class="marginmark" onClick="toggleHide('mn:15,-7');">&#91;15&#93;</a>
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:14,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;14&#93;</a>[J. E. Argand][argand] published it in 1806; it had however previously been used by Gauss, and by Caspar Wessel, who discussed it in [a memoir presented to the Danish Academy][wessel] in 1797 and published by that Society in 1798--9.<a onClick="hideIt('mn:14,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:15,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;15&#93;</a>[J. E. Argand][argand] published it in 1806; it had however previously been used by Gauss, and by Caspar Wessel, who discussed it in [a memoir presented to the Danish Academy][wessel] in 1797 and published by that Society in 1798--9.<a onClick="hideIt('mn:15,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -367,13 +384,13 @@ By the definition already given, it is evident that \\(r\\) is the modulus of \\
 
 We write \\[ \theta=  \arg z. \\]
 
-From geometrical considerations, it appears that (although the modulus of a complex number is unique) the argument is not unique;<a class="marginmark" onClick="toggleHide('mn:15,-9');">&#91;15&#93;</a> if \\(\theta\\)  be a value of the argument, the other values of the argument are comprised in the expression \\(2n \pi+\theta\\) where \\(n\\) is any integer, not zero. The *principal* value of \\(\arg z\\) is that which satisfies the inequality \\(-\pi < \arg z \leq \pi\\).
+From geometrical considerations, it appears that (although the modulus of a complex number is unique) the argument is not unique;<a class="marginmark" onClick="toggleHide('mn:16,-9');">&#91;16&#93;</a> if \\(\theta\\)  be a value of the argument, the other values of the argument are comprised in the expression \\(2n \pi+\theta\\) where \\(n\\) is any integer, not zero. The *principal* value of \\(\arg z\\) is that which satisfies the inequality \\(-\pi < \arg z \leq \pi\\).
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:15,-9" style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;15&#93;</a>See the Appendix, [&#167;A.521][].<a onClick="hideIt('mn:15,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:16,-9" style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;16&#93;</a>See the Appendix, [&#167;A.521][].<a onClick="hideIt('mn:16,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -426,6 +443,7 @@ measured by the product of the radii vectores of \\(P_1\\) and \\(P_2\\), and a 
 [Theorie]: http://books.google.com/books?id=MkttAAAAMAAJ
 [Vorlesungen2]: http://ebooks.library.cornell.edu/cgi/t/text/text-idx?c=math;cc=math;view=toc;subview=short;idno=02860003
 [Pure]: http://www.gutenberg.org/ebooks/38769
+
 
 
 <div markdown=1 id="exercises">
@@ -522,8 +540,8 @@ where \\(\mu\\) is the number of the constituent primes.  (Math. Trip. 1895.)
     <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
      <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
      <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
-     <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
-     <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
+     <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
+     <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
