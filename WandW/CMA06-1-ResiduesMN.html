@@ -25,7 +25,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
 </head>
 <body>
 
-<div id="header"><h1><a href="CMA00-Front.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
+<div id="header"><h1><a href="CMA00-FrontMN.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
 <div id="content">
 <div class="contenttext">
 
@@ -49,8 +49,13 @@ where <span class="math">\(\phi(z)\)</span> is analytic near and at <span class=
 <p>The coefficient <span class="math">\(a_{-1}\)</span> in this expansion is called the <em>residue</em> of the
 function <span class="math">\(f(z)\)</span> relative to the pole <span class="math">\(a\)</span>.</p>
 
+</div>
+<div class="marginnotes"  id="mn:1,+3"  style="margin-top: +3em; margin-bottom: +3em;"><a class="marginmark">&#91;1&#93;</a>The existence of such a circle is implied in the definition of a pole as an isolated singularity.<a onClick="hideIt('mn:1,+3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
 <p>Consider now the value of the integral <span class="math">\(\int_{\alpha} f(z) \, d z\)</span>, where the path of
-integration is a circle <span class="math">\(\alpha\)</span>,<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a> whose centre is the point <span class="math">\(a\)</span> and whose radius <span class="math">\(\rho\)</span> is so small that <span class="math">\(\phi(z)\)</span> is analytic inside and on the circle.</p>
+integration is a circle <span class="math">\(\alpha\)</span>,<a class="marginmark" onClick="toggleHide('mn:1,+3');">&#91;1&#93;</a> whose centre is the point <span class="math">\(a\)</span> and whose radius <span class="math">\(\rho\)</span> is so small that <span class="math">\(\phi(z)\)</span> is analytic inside and on the circle.</p>
 
 <p>We have
 <span class="math">\[
@@ -63,7 +68,7 @@ a_{r}
 \int_{\alpha}\! \phi(z) \, d z.
 \]</span></p>
 
-<p>Now <span class="math">\(\displaystyle \int_{\alpha}\! \phi(z) \, d z = 0\)</span> by <a href="CMA05-2-CauchysTheorem.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">§5.2</a>;
+<p>Now <span class="math">\(\displaystyle \int_{\alpha}\! \phi(z) \, d z = 0\)</span> by <a href="CMA05-2-CauchysTheoremMN.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">&#167;5.2</a>;
 and (putting <span class="math">\(z-a = \rho e^{i\theta}\)</span>) we have, if <span class="math">\(r \neq 1\)</span>,
 <span class="math">\[\begin{align*}
 \int_{\alpha}\! \frac{ \, d z}{ (z-a)^{r} }
@@ -107,7 +112,7 @@ so small that their respective centres are the only singularities
 inside or on each circle; then the function <span class="math">\(f(z)\)</span> is analytic in the
 closed region bounded by <span class="math">\(C\)</span>, <span class="math">\(\alpha\)</span>, <span class="math">\(\beta\)</span>, <span class="math">\(\gamma,\ldots\)</span>.</p>
 
-<p>Hence, by <a href="CMA05-2-CauchysTheorem.html#5.2corollary3">§5.2 corollary 3</a>,
+<p>Hence, by <a href="CMA05-2-CauchysTheoremMN.html#5.2corollary3">&#167;5.2 corollary 3</a>,
 <span class="math">\[\begin{align*}
   \int_{C} f(z) \, d z
   =&
@@ -128,7 +133,7 @@ closed region bounded by <span class="math">\(C\)</span>, <span class="math">\(\
 where <span class="math">\(\sum R\)</span> denotes the sum of the residues of the function <span class="math">\(f(z)\)</span> at
 those of its poles which are situated within the contour <span class="math">\(C\)</span>.</em></p>
 
-<p>This is an extension of the theorem of <a href="CMA05-2-CauchysTheorem.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.">§5.21</a>.</p>
+<p>This is an extension of the theorem of <a href="CMA05-2-CauchysTheoremMN.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.">&#167;5.21</a>.</p>
 
 <blockquote>
 <p><strong>Note.</strong> If <span class="math">\(a\)</span> is a <em>simple</em> pole of <span class="math">\(f(z)\)</span> the residue of <span class="math">\(f(z)\)</span> at that pole is <span class="math">\(\lim\limits_{z\rightarrow a} \, (z-a)\, f(z)\)</span>.</p>
@@ -136,7 +141,7 @@ those of its poles which are situated within the contour <span class="math">\(C\
 
 <h3 id="6.2theevaluationofdefiniteintegrals.">6.2 The evaluation of definite integrals.</h3>
 
-<p>We shall now apply the result of <a href="#6.1residues.">§6.1</a> to evaluating
+<p>We shall now apply the result of <a href="#6.1residues.">&#167;6.1</a> to evaluating
 various classes of definite integrals; the methods to be employed in
 any particular case may usually be seen from the following typical
 examples.</p>
@@ -159,7 +164,7 @@ the integral takes the form <span class="math">\(\int_{C} S(z) \, d z\)</span>, 
 is a rational function of <span class="math">\(z\)</span> finite on the path of integration <span class="math">\(C\)</span>, the
 circle of radius unity whose centre is the origin.</p>
 
-<p>Therefore, by <a href="#6.1residues.">§6.1</a>, <em>the integral is equal to
+<p>Therefore, by <a href="#6.1residues.">&#167;6.1</a>, <em>the integral is equal to
  <span class="math">\(2\pi i\)</span> times the sum of the residues of <span class="math">\(S(z)\)</span> at those of its
  poles which are inside that circle.</em></p>
 
@@ -251,9 +256,13 @@ where <span class="math">\(Q(z)\)</span> is a function such that </p>
 <li>It is analytic when the imaginary part of <span class="math">\(z\)</span> is positive or zero (except at a finite number of poles).</li>
 <li>It has no poles on the real axis and</li>
 <li>As <span class="math">\(\left|\, z \,\right|\rightarrow\infty\)</span>, <span class="math">\(zQ(z) \rightarrow 0\)</span> uniformly for all values of <span class="math">\(\arg z\)</span> such that <span class="math">\(0 \leq \arg z \leq \pi\)</span>; provided that</li>
-<li>When <span class="math">\(x\)</span> is real, <span class="math">\(x Q(x) \rightarrow 0\)</span>, as <span class="math">\(x \rightarrow \pm\infty\)</span>, in such a way that <span class="math">\(\int_{0}^{\infty} Q(x) \, d x\)</span> and <span class="math">\(\int_{-\infty}^{0} Q(x) \, d x\)</span> both converge.<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a></li>
+<li>When <span class="math">\(x\)</span> is real, <span class="math">\(x Q(x) \rightarrow 0\)</span>, as <span class="math">\(x \rightarrow \pm\infty\)</span>, in such a way that <span class="math">\(\int_{0}^{\infty} Q(x) \, d x\)</span> and <span class="math">\(\int_{-\infty}^{0} Q(x) \, d x\)</span> both converge.<a class="marginmark" onClick="toggleHide('mn:2,-1');">&#91;2&#93;</a></li>
 </ol>
 </div>
+</div>
+<div class="marginnotes"  id="mn:2,-1"  style="margin-top: -1em; margin-bottom: -1em;"><a class="marginmark">&#91;2&#93;</a>The condition <span class="math">\(x Q(x)\rightarrow 0\)</span> is not in itself sufficient to secure the convergence of <span class="math">\(\int^{\infty} Q(x) \, d x\)</span>; consider <span class="math">\(Q(x) = (x \log x)^{-1}\)</span>.<a onClick="hideIt('mn:2,-1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
 
 <p>Given <span class="math">\(\epsilon\)</span>, we can choose <span class="math">\(\rho_{0}\)</span> (independent of <span class="math">\(\arg z\)</span>) such
 that <span class="math">\(\left|\, z Q(z) \,\right| < \left.\epsilon\middle/\pi\right.\)</span> whenever
@@ -264,9 +273,13 @@ consisting of the part of the real axis joining the points <span class="math">\(
 (where <span class="math">\(\rho > \rho_{0}\)</span>) and a semicircle <span class="math">\(\Gamma\)</span>, of radius <span class="math">\(\rho\)</span>,
 having its centre at the origin, above the real axis.</p>
 
-<p>Then, by <a href="#6.1residues.">§6.1</a>, <span class="math">\(\int_{C} Q(z) \, d z = 2 \pi i
+<p>Then, by <a href="#6.1residues.">&#167;6.1</a>, <span class="math">\(\int_{C} Q(z) \, d z = 2 \pi i
 \sum R\)</span>, where <span class="math">\(\sum R\)</span> denotes the sum of the residues of <span class="math">\(Q(z)\)</span> at
-its poles above the real axis.<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a></p>
+its poles above the real axis.<a class="marginmark" onClick="toggleHide('mn:3,-1');">&#91;3&#93;</a></p>
+</div>
+<div class="marginnotes"  id="mn:3,-1"  style="margin-top: -1em; margin-bottom: -1em;"><a class="marginmark">&#91;3&#93;</a>Assume <span class="math">\(\rho\)</span> is sufficiently large that <span class="math">\(Q(z)\)</span> has no poles above the real axis outside the contour.<a onClick="hideIt('mn:3,-1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
 
 <p>Therefore
 <span class="math">\[
@@ -295,7 +308,7 @@ its poles above the real axis.<a href="#fn:3" id="fnref:3" title="see footnote" 
   \\ \\ \\
   &= \epsilon
 \end{align*} \]</span>
-by <a href="CMA04-3-ComplexInt.html#4.62anupperlimittothevalueofacomplexintegral.">§4.62</a>.</p>
+by <a href="CMA04-3-ComplexIntMN.html#4.62anupperlimittothevalueofacomplexintegral.">&#167;4.62</a>.</p>
 
 <p>Hence
 <span class="math">\[
@@ -371,7 +384,7 @@ x^{2}} \, d x = 2 \lambda^{-\frac{1}{2}} e^{-\lambda a^{2}}
 <h5 id="6.221certaininfiniteintegralsinvolvingsinesandcosines.">6.221 Certain infinite integrals involving sines and cosines.</h5>
 
 <p>If <span class="math">\(Q(z)\)</span> satisfies the conditions (i), (ii) and (iii) of
-<a href="#6.22theevaluationofcertaintypesofintegralstakenbetweenthelimits-inftyandinfty.">§6.22</a>, and <span class="math">\(m > 0\)</span>,
+<a href="#6.22theevaluationofcertaintypesofintegralstakenbetweenthelimits-inftyandinfty.">&#167;6.22</a>, and <span class="math">\(m > 0\)</span>,
 then <span class="math">\(Q(z) e^{miz}\)</span> also satisfies those conditions.</p>
 
 <p>Hence
@@ -393,9 +406,13 @@ in the upper half plane; and so </p>
 </ol>
 </div>
 
-<h5 id="6.222jordanslemma.">6.222 Jordan&#8217;s lemma.<a href="#fn:4" id="fnref:4" title="see footnote" class="footnote">[4]</a></h5>
+<h5 id="6.222jordanslemma.">6.222 Jordan&#8217;s lemma.<a class="marginmark" onClick="toggleHide('mn:4,-0');">&#91;4&#93;</a></h5>
+</div>
+<div class="marginnotes"  id="mn:4,-0"  style="margin-top: -0em; margin-bottom: -0em;"><a class="marginmark">&#91;4&#93;</a>Jordan, <a href="https://archive.org/details/coursdanalysede02jordgoog"><em>Cours d&#8217;Analyse</em>, <strong>ii.</strong> (1894)</a>, pp. 285, 286.<a onClick="hideIt('mn:4,-0')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
 
-<p>The results of <a href="#6.221certaininfiniteintegralsinvolvingsinesandcosines.">§6.221</a> are true if <span class="math">\(Q(z)\)</span> be
+<p>The results of <a href="#6.221certaininfiniteintegralsinvolvingsinesandcosines.">&#167;6.221</a> are true if <span class="math">\(Q(z)\)</span> be
 subject to the less stringent condition <span class="math">\(Q(z) \rightarrow 0\)</span> uniformly
 when
 <span class="math">\(O \leq \arg z \leq \pi\)</span> as <span class="math">\(\left|\, z \,\right| \rightarrow \infty\)</span> in
@@ -441,8 +458,12 @@ But <span class="math">\(\left|\,  e^{mi\rho\cos\theta}  \,\right| = 1\)</span>,
   (\left.2\epsilon\middle/\pi\right.)
   \int_{0}^{\frac{1}{2}\pi}\! \rho e^{-m\rho\sin\theta} \, d\theta.
 \end{align*} \]</span></p>
+</div>
+<div class="marginnotes"  id="mn:5,+2"  style="margin-top: +2em; margin-bottom: +2em;"><a class="marginmark">&#91;5&#93;</a>This inequality appears obvious when we draw the graphs <span class="math">\(y = \sin x\)</span>, <span class="math">\(y = \left.2x\middle/\pi\right.\)</span>; it may be proved by shewing that <span class="math">\((\left.\sin\theta)\middle/\theta\right.\)</span> decreases as <span class="math">\(\theta\)</span> increases from <span class="math">\(0\)</span> to <span class="math">\(\frac{1}{2}\pi\)</span>.<a onClick="hideIt('mn:5,+2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
 
-<p>Now <span class="math">\(\sin\theta \geq \left.2\theta\middle/\pi\right.\)</span>, when <span class="math">\(0 \leq \theta \leq \frac{1}{2}\pi\)</span>,<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a> and so
+<p>Now <span class="math">\(\sin\theta \geq \left.2\theta\middle/\pi\right.\)</span>, when <span class="math">\(0 \leq \theta \leq \frac{1}{2}\pi\)</span>,<a class="marginmark" onClick="toggleHide('mn:5,+2');">&#91;5&#93;</a> and so
 <span class="math">\[\begin{align*}
   \left|\,  \int_{\Gamma} e^{miz} Q(z) \, d z  \,\right|
   <&
@@ -487,7 +508,7 @@ and, making <span class="math">\(\rho\rightarrow\infty\)</span>, we see at once 
 =
 2 \pi i \sum R',
 \]</span>
-which is the result corresponding to the result of <a href="#6.221certaininfiniteintegralsinvolvingsinesandcosines.">§6.221</a>.</p>
+which is the result corresponding to the result of <a href="#6.221certaininfiniteintegralsinvolvingsinesandcosines.">&#167;6.221</a>.</p>
 
 <blockquote>
 <p><em>Example</em> 1.
@@ -604,13 +625,13 @@ since <span class="math">\(t^{-1} (1 - e^{-t}) \rightarrow 1\)</span> as <span c
 <ul>
 <li class="part"><a onClick="hideIt('navcauchy');showIt('navfront');">FRONTMATTER</a>
   <ul>
-    <li><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+    <li><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navcauchy');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
   <ul>
     <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
-    <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
+    <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
     <li><a href="#thetheoryofresiduesbrapplicationtotheevaluationofdefinitenbspintegrals">The Theory of Residues</a>
       <ul>
         <li class="current"><a href="#6.1residues.">Residues</a>
@@ -624,10 +645,10 @@ since <span class="math">\(t^{-1} (1 - e^{-t}) \rightarrow 1\)</span> as <span c
               <li  class="uncurrent"><a href="CMA06-2-CauchysIntegral.htm#6.24evaluationofrationalintegrals">Evaluation of <span class="math">\(\int_0^\infty x^{\alpha-1}Q(z)\, dx\)</span>.</a> </li>
           </ul>
        </li>
-        <li><a href="CMA06-2-CauchysIntegral.html#6.3cauchysintegral.">Cauchy&#8217;s Integral</a></li>
-    <li><a href="CMA06-3-ConnexionTwixtZeros.html#6.4Connexionbetweenthezerosofafunctionandthezerosofitsderivate.">Connexion between a Function&#8217;s Zeros  and its Derivate&#8217;s Zeros.</a></li>
-        <li><a href="CMA06-3-ConnexionTwixtZeros.html#references.">References</a></li>
-        <li><a href="CMA06-3-ConnexionTwixtZeros.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
+        <li><a href="CMA06-2-CauchysIntegralMN.html#6.3cauchysintegral.">Cauchy&#8217;s Integral</a></li>
+    <li><a href="CMA06-3-ConnexionTwixtZerosMN.html#6.4Connexionbetweenthezerosofafunctionandthezerosofitsderivate.">Connexion between a Function&#8217;s Zeros  and its Derivate&#8217;s Zeros.</a></li>
+        <li><a href="CMA06-3-ConnexionTwixtZerosMN.html#references.">References</a></li>
+        <li><a href="CMA06-3-ConnexionTwixtZerosMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
     </li>
     <li><a href="CMA07-1-ExpansionOfFunctions">Expanding Functions in Infinite Series</a></li>
@@ -648,11 +669,11 @@ since <span class="math">\(t^{-1} (1 - e^{-t}) \rightarrow 1\)</span> as <span c
 <ul>
 <li class="part"><a>FRONTMATTER</a>
   <ul>
-    <li><a href="CMA00-Front.html#acourseof">Title Page</a></li>
-    <li><a href="CMA00-Front.html#cambridgeuniversitypress">Copyright</a></li>
-    <li><a href="CMA00-Front.html#preface">Preface</a></li>
-    <li><a href="CMA00-Front.html#editorsnote">Editor&#8217;s Note</a></li>
-    <li class="toc"><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+    <li><a href="CMA00-FrontMN.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-FrontMN.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-FrontMN.html#preface">Preface</a></li>
+    <li><a href="CMA00-FrontMN.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
@@ -671,12 +692,12 @@ since <span class="math">\(t^{-1} (1 - e^{-t}) \rightarrow 1\)</span> as <span c
 <li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
 <li class="part"><a>PROCESSES OF ANALYSIS</a>
   <ul >
-    <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
-    <li><a href="CMA02-1-Limits.html">The Theory of Convergence</a></li>
-     <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
-     <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
-     <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
-      <li><a href="CMA06-1-Residues.html">The Theory of Residues</a></li>
+    <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
+    <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
+     <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
+      <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
      <li class="more current"><a onClick="showIt('navcauchy');hideIt('navprocesses');"> you are here . . . </a></li>
      <li class="notdone"><a href="CMA07-1-ExpansionOfFunctions">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
@@ -712,7 +733,7 @@ since <span class="math">\(t^{-1} (1 - e^{-t}) \rightarrow 1\)</span> as <span c
     <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
     <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
     <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
-    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lam&eacute;&#8217;s Equation</a></li> 
   </ul>
   </li>
 <li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
@@ -739,44 +760,16 @@ since <span class="math">\(t^{-1} (1 - e^{-t}) \rightarrow 1\)</span> as <span c
 </div>
 
 <div id="navfixedleft" class="fixedBleft">
-<p><a href="CMA05-6-ManyValuedFunctions.html">&#x25C0;</a></p>
+<p><a href="CMA05-6-ManyValuedFunctionsMN.html">&#x25C0;</a></p>
 </div>
 
 <div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
-<p><a onClick="hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');showIt('navcauchy');" style="float: left;">&#x25A4;</a> <a href="CMA06-2-CauchysIntegral.html" style="float: right;">&#x25B6;</a></p>
+<p><a onClick="hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');showIt('navcauchy');" style="float: left;">&#x25A4;</a> <a href="CMA06-2-CauchysIntegralMN.html" style="float: right;">&#x25B6;</a></p>
 </div>
 
 <div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;" >
-<p><a onClick="hideIt('navcauchy');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA06-2-CauchysIntegral.html" style="float: right;">&#x25B6;   </a></p>
+<p><a onClick="hideIt('navcauchy');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA06-2-CauchysIntegralMN.html" style="float: right;">&#x25B6; </a></p>
 </div>
-
-<div class="footnotes">
-<hr />
-<ol>
-
-<li id="fn:1">
-<p>The existence of such a circle is implied in the definition of a pole as an isolated singularity. <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
-</li>
-
-<li id="fn:2">
-<p>The condition <span class="math">\(x Q(x)\rightarrow 0\)</span> is not in itself sufficient to secure the convergence of <span class="math">\(\int^{\infty} Q(x) \, d x\)</span>; consider <span class="math">\(Q(x) = (x \log x)^{-1}\)</span>. <a href="#fnref:2" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
-</li>
-
-<li id="fn:3">
-<p>Assume <span class="math">\(\rho\)</span> is sufficiently large that <span class="math">\(Q(z)\)</span> has no poles above the real axis outside the contour. <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
-</li>
-
-<li id="fn:4">
-<p>Jordan, <a href="https://archive.org/details/coursdanalysede02jordgoog"><em>Cours d&#8217;Analyse</em>, <strong>ii.</strong> (1894)</a>, pp. 285, 286. <a href="#fnref:4" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
-</li>
-
-<li id="fn:5">
-<p>This inequality appears obvious when we draw the graphs <span class="math">\(y = \sin x\)</span>, <span class="math">\(y = \left.2x\middle/\pi\right.\)</span>; it may be proved by shewing that <span class="math">\((\left.\sin\theta)\middle/\theta\right.\)</span> decreases as <span class="math">\(\theta\)</span> increases from <span class="math">\(0\)</span> to <span class="math">\(\frac{1}{2}\pi\)</span>. <a href="#fnref:5" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
-</li>
-
-</ol>
-</div>
-
 
 </body>
 </html>

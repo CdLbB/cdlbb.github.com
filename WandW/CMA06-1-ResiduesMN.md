@@ -21,7 +21,7 @@ HTML header:	<script type="text/javascript"
 	<script type="text/javascript" src="js/mathjaxend.js"></script>
 
 
-<div id="header"><h1><a href="CMA00-Front.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
+<div id="header"><h1><a href="CMA00-FrontMN.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
 
 <div markdown=1 id="content">
 <div markdown=1 class="contenttext">
@@ -47,10 +47,20 @@ where \\(\phi(z)\\) is analytic near and at \\(a\\), is true near \\(a\\).
 The coefficient \\(a_{-1}\\) in this expansion is called the *residue* of the
 function \\(f(z)\\) relative to the pole \\(a\\).
 
-[^circleexists,+3]: The existence of such a circle is implied in the definition of a pole as an isolated singularity.
+</div>
+
+
+
+<div markdown=1 class="marginnotes" id="mn:1,+3" style="margin-top: +3em; margin-bottom: +3em;"><a class="marginmark">&#91;1&#93;</a>The existence of such a circle is implied in the definition of a pole as an isolated singularity.<a onClick="hideIt('mn:1,+3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+
+</div>
+
+
+
+<div markdown=1 class="contenttext">
 
 Consider now the value of the integral \\(\int_{\alpha} f(z) \, d z\\), where the path of
-integration is a circle \\(\alpha\\),[^circleexists,+3] whose centre is the point \\(a\\) and whose radius \\(\rho\\) is so small that \\(\phi(z)\\) is analytic inside and on the circle.
+integration is a circle \\(\alpha\\),<a class="marginmark" onClick="toggleHide('mn:1,+3');">&#91;1&#93;</a> whose centre is the point \\(a\\) and whose radius \\(\rho\\) is so small that \\(\phi(z)\\) is analytic inside and on the circle.
 
 We have
 \\[
@@ -63,7 +73,7 @@ a_{r}
 \int_{\alpha}\! \phi(z) \, d z.
 \\]
 
-Now \\(\displaystyle \int_{\alpha}\! \phi(z) \, d z = 0\\) by [§5.2](CMA05-2-CauchysTheorem.html#5.2cauchystheoremontheintegralofafunctionroundacontour.);
+Now \\(\displaystyle \int_{\alpha}\! \phi(z) \, d z = 0\\) by [&#167;5.2](CMA05-2-CauchysTheoremMN.html#5.2cauchystheoremontheintegralofafunctionroundacontour.);
 and (putting \\(z-a = \rho e^{i\theta}\\)) we have, if \\(r \neq 1\\),
 \\[\begin{align*}
 \int_{\alpha}\! \frac{ \, d z}{ (z-a)^{r} }
@@ -108,7 +118,7 @@ inside or on each circle; then the function \\(f(z)\\) is analytic in the
 closed region bounded by \\(C\\), \\(\alpha\\), \\(\beta\\), \\(\gamma,\ldots\\).
 
 
-Hence, by [§5.2 corollary 3](CMA05-2-CauchysTheorem.html#5.2corollary3), 
+Hence, by [&#167;5.2 corollary 3](CMA05-2-CauchysTheoremMN.html#5.2corollary3), 
 \\[\begin{align*}
   \int_{C} f(z) \, d z
   =&
@@ -129,14 +139,14 @@ Thus we have the *theorem of residues*, namely that
 where \\(\sum R\\) denotes the sum of the residues of the function \\(f(z)\\) at
 those of its poles which are situated within the contour \\(C\\).*
 
-This is an extension of the theorem of [§5.21](CMA05-2-CauchysTheorem.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.).
+This is an extension of the theorem of [&#167;5.21](CMA05-2-CauchysTheoremMN.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.).
 
 >**Note.** If \\(a\\) is a *simple* pole of \\(f(z)\\) the residue of \\(f(z)\\) at that pole is \\(\lim\limits_{z\rightarrow a} \, (z-a)\, f(z)\\).
 
 
 ###6.2 The evaluation of definite integrals.###
 
-We shall now apply the result of [§6.1](#6.1residues.) to evaluating
+We shall now apply the result of [&#167;6.1](#6.1residues.) to evaluating
 various classes of definite integrals; the methods to be employed in
 any particular case may usually be seen from the following typical
 examples.
@@ -160,7 +170,7 @@ the integral takes the form \\(\int_{C} S(z) \, d z\\), where \\(S(z)\\)
 is a rational function of \\(z\\) finite on the path of integration \\(C\\), the
 circle of radius unity whose centre is the origin.
 
-Therefore, by [§6.1](#6.1residues.), *the integral is equal to
+Therefore, by [&#167;6.1](#6.1residues.), *the integral is equal to
   \\(2\pi i\\) times the sum of the residues of \\(S(z)\\) at those of its
   poles which are inside that circle.*
 
@@ -246,12 +256,22 @@ where \\(Q(z)\\) is a function such that
 1. It is analytic when the imaginary part of \\(z\\) is positive or zero (except at a finite number of poles). 
 2. It has no poles on the real axis and 
 3. As \\(\left|\, z \,\right|\rightarrow\infty\\), \\(zQ(z) \rightarrow 0\\) uniformly for all values of \\(\arg z\\) such that \\(0 \leq \arg z \leq \pi\\); provided that
-4.  When \\(x\\) is real, \\(x Q(x) \rightarrow 0\\), as \\(x \rightarrow \pm\infty\\), in such a way that \\(\int_{0}^{\infty} Q(x) \, d x\\) and \\(\int_{-\infty}^{0} Q(x) \, d x\\) both converge.[^convergence,-1]
+4.  When \\(x\\) is real, \\(x Q(x) \rightarrow 0\\), as \\(x \rightarrow \pm\infty\\), in such a way that \\(\int_{0}^{\infty} Q(x) \, d x\\) and \\(\int_{-\infty}^{0} Q(x) \, d x\\) both converge.<a class="marginmark" onClick="toggleHide('mn:2,-1');">&#91;2&#93;</a>
 
 </div>
 
 
-[^convergence,-1]: The condition  \\(x Q(x)\rightarrow 0\\) is not in itself sufficient to secure the  convergence of \\(\int^{\infty} Q(x) \, d x\\); consider \\(Q(x) = (x \log x)^{-1}\\).
+</div>
+
+
+
+<div markdown=1 class="marginnotes" id="mn:2,-1" style="margin-top: -1em; margin-bottom: -1em;"><a class="marginmark">&#91;2&#93;</a>The condition  \\(x Q(x)\rightarrow 0\\) is not in itself sufficient to secure the  convergence of \\(\int^{\infty} Q(x) \, d x\\); consider \\(Q(x) = (x \log x)^{-1}\\).<a onClick="hideIt('mn:2,-1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+
+</div>
+
+
+
+<div markdown=1 class="contenttext">
 
 Given \\(\epsilon\\), we can choose \\(\rho_{0}\\) (independent of \\(\arg z\\)) such
 that \\(\left|\, z Q(z) \,\right| < \left.\epsilon\middle/\pi\right.\\) whenever
@@ -262,11 +282,21 @@ consisting of the part of the real axis joining the points \\(\pm\rho\\)
 (where \\(\rho > \rho_{0}\\)) and a semicircle \\(\Gamma\\), of radius \\(\rho\\),
 having its centre at the origin, above the real axis.
 
-Then, by [§6.1](#6.1residues.), \\(\int_{C} Q(z) \, d z = 2 \pi i
+Then, by [&#167;6.1](#6.1residues.), \\(\int_{C} Q(z) \, d z = 2 \pi i
 \sum R\\), where \\(\sum R\\) denotes the sum of the residues of \\(Q(z)\\) at
-its poles above the real axis.[^allpoles,-1]
+its poles above the real axis.<a class="marginmark" onClick="toggleHide('mn:3,-1');">&#91;3&#93;</a>
 
-[^allpoles,-1]: Assume \\(\rho\\) is sufficiently large that \\(Q(z)\\) has no poles above the real axis outside the contour.
+</div>
+
+
+
+<div markdown=1 class="marginnotes" id="mn:3,-1" style="margin-top: -1em; margin-bottom: -1em;"><a class="marginmark">&#91;3&#93;</a>Assume \\(\rho\\) is sufficiently large that \\(Q(z)\\) has no poles above the real axis outside the contour.<a onClick="hideIt('mn:3,-1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+
+</div>
+
+
+
+<div markdown=1 class="contenttext">
 
 Therefore
 \\[
@@ -295,7 +325,7 @@ In the last integral write \\(z = \rho e^{i\theta}\\), and then
   \\ \\ \\
   &= \epsilon
 \end{align*} \\]
-by [§4.62](CMA04-3-ComplexInt.html#4.62anupperlimittothevalueofacomplexintegral.).
+by [&#167;4.62](CMA04-3-ComplexIntMN.html#4.62anupperlimittothevalueofacomplexintegral.).
 
 Hence
 \\[
@@ -367,7 +397,7 @@ x^{2}} \, d x = 2 \lambda^{-\frac{1}{2}} e^{-\lambda a^{2}}
 
 
 If \\(Q(z)\\) satisfies the conditions (i), (ii) and (iii) of
-[§6.22](#6.22theevaluationofcertaintypesofintegralstakenbetweenthelimits-inftyandinfty.), and \\(m > 0\\),
+[&#167;6.22](#6.22theevaluationofcertaintypesofintegralstakenbetweenthelimits-inftyandinfty.), and \\(m > 0\\),
 then \\(Q(z) e^{miz}\\) also satisfies those conditions.
 
 Hence
@@ -390,11 +420,21 @@ in the upper half plane; and so
 
 </div>
 
-#####6.222 Jordan's lemma.[^jordan,-0] [6.222jordanslemma.]#####
+#####6.222 Jordan's lemma.<a class="marginmark" onClick="toggleHide('mn:4,-0');">&#91;4&#93;</a> [6.222jordanslemma.]#####
 
-[^jordan,-0]: Jordan, [*Cours d'Analyse*, **ii.** (1894)](https://archive.org/details/coursdanalysede02jordgoog), pp. 285, 286.
+</div>
 
-The results of [§6.221](#6.221certaininfiniteintegralsinvolvingsinesandcosines.) are true if \\(Q(z)\\) be
+
+
+<div markdown=1 class="marginnotes" id="mn:4,-0" style="margin-top: -0em; margin-bottom: -0em;"><a class="marginmark">&#91;4&#93;</a>Jordan, [*Cours d'Analyse*, **ii.** (1894)](https://archive.org/details/coursdanalysede02jordgoog), pp. 285, 286.<a onClick="hideIt('mn:4,-0')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+
+</div>
+
+
+
+<div markdown=1 class="contenttext">
+
+The results of [&#167;6.221](#6.221certaininfiniteintegralsinvolvingsinesandcosines.) are true if \\(Q(z)\\) be
 subject to the less stringent condition \\(Q(z) \rightarrow 0\\) uniformly
 when
 \\(O \leq \arg z \leq \pi\\) as \\(\left|\, z \,\right| \rightarrow \infty\\) in
@@ -441,9 +481,19 @@ But \\(\left|\,  e^{mi\rho\cos\theta}  \,\right| = 1\\), and so
   \int_{0}^{\frac{1}{2}\pi}\! \rho e^{-m\rho\sin\theta} \, d\theta.
 \end{align*} \\]
 
-[^sineabove,+2]: This inequality appears obvious when we draw the graphs \\(y = \sin x\\), \\(y = \left.2x\middle/\pi\right.\\); it may be proved by shewing that \\((\left.\sin\theta)\middle/\theta\right.\\) decreases as  \\(\theta\\) increases from \\(0\\) to \\(\frac{1}{2}\pi\\).
+</div>
 
-Now \\(\sin\theta \geq \left.2\theta\middle/\pi\right.\\), when \\(0 \leq \theta \leq \frac{1}{2}\pi\\),[^sineabove,+2] and so
+
+
+<div markdown=1 class="marginnotes" id="mn:5,+2" style="margin-top: +2em; margin-bottom: +2em;"><a class="marginmark">&#91;5&#93;</a>This inequality appears obvious when we draw the graphs \\(y = \sin x\\), \\(y = \left.2x\middle/\pi\right.\\); it may be proved by shewing that \\((\left.\sin\theta)\middle/\theta\right.\\) decreases as  \\(\theta\\) increases from \\(0\\) to \\(\frac{1}{2}\pi\\).<a onClick="hideIt('mn:5,+2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+
+</div>
+
+
+
+<div markdown=1 class="contenttext">
+
+Now \\(\sin\theta \geq \left.2\theta\middle/\pi\right.\\), when \\(0 \leq \theta \leq \frac{1}{2}\pi\\),<a class="marginmark" onClick="toggleHide('mn:5,+2');">&#91;5&#93;</a> and so
 \\[\begin{align*}
   \left|\,  \int_{\Gamma} e^{miz} Q(z) \, d z  \,\right|
   <&
@@ -490,7 +540,7 @@ and, making \\(\rho\rightarrow\infty\\), we see at once that
 =
 2 \pi i \sum R',
 \\]
-which is the result corresponding to the result of [§6.221](#6.221certaininfiniteintegralsinvolvingsinesandcosines.).
+which is the result corresponding to the result of [&#167;6.221](#6.221certaininfiniteintegralsinvolvingsinesandcosines.).
 
 >*Example* 1.
   Shew that, if \\(a > 0\\), then
@@ -602,13 +652,13 @@ since \\(t^{-1} (1 - e^{-t}) \rightarrow 1\\) as \\(t \rightarrow 0.\\)]
 <ul>
 <li class="part"><a onClick="hideIt('navcauchy');showIt('navfront');">FRONTMATTER</a>
   <ul>
-    <li><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+    <li><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navcauchy');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
   <ul>
     <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
-    <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
+    <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
     <li><a href="#thetheoryofresiduesbrapplicationtotheevaluationofdefinitenbspintegrals">The Theory of Residues</a>
       <ul>
         <li class="current"><a href="#6.1residues.">Residues</a>
@@ -622,10 +672,10 @@ since \\(t^{-1} (1 - e^{-t}) \rightarrow 1\\) as \\(t \rightarrow 0.\\)]
               <li  class="uncurrent"><a href="CMA06-2-CauchysIntegral.htm#6.24evaluationofrationalintegrals">Evaluation of <span class="math">\(\int_0^\infty x^{\alpha-1}Q(z)\, dx\)</span>.</a> </li>
           </ul>
        </li>
-        <li><a href="CMA06-2-CauchysIntegral.html#6.3cauchysintegral.">Cauchy&#8217;s Integral</a></li>
-	<li><a href="CMA06-3-ConnexionTwixtZeros.html#6.4Connexionbetweenthezerosofafunctionandthezerosofitsderivate.">Connexion between a Function&#8217;s Zeros  and its Derivate&#8217;s Zeros.</a></li>
-        <li><a href="CMA06-3-ConnexionTwixtZeros.html#references.">References</a></li>
-        <li><a href="CMA06-3-ConnexionTwixtZeros.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
+        <li><a href="CMA06-2-CauchysIntegralMN.html#6.3cauchysintegral.">Cauchy&#8217;s Integral</a></li>
+	<li><a href="CMA06-3-ConnexionTwixtZerosMN.html#6.4Connexionbetweenthezerosofafunctionandthezerosofitsderivate.">Connexion between a Function&#8217;s Zeros  and its Derivate&#8217;s Zeros.</a></li>
+        <li><a href="CMA06-3-ConnexionTwixtZerosMN.html#references.">References</a></li>
+        <li><a href="CMA06-3-ConnexionTwixtZerosMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
     </li>
     <li><a href="CMA07-1-ExpansionOfFunctions">Expanding Functions in Infinite Series</a></li>
@@ -647,11 +697,11 @@ since \\(t^{-1} (1 - e^{-t}) \rightarrow 1\\) as \\(t \rightarrow 0.\\)]
 <ul>
 <li class="part"><a>FRONTMATTER</a>
   <ul>
-    <li><a href="CMA00-Front.html#acourseof">Title Page</a></li>
-    <li><a href="CMA00-Front.html#cambridgeuniversitypress">Copyright</a></li>
-    <li><a href="CMA00-Front.html#preface">Preface</a></li>
-    <li><a href="CMA00-Front.html#editorsnote">Editor&#8217;s Note</a></li>
-    <li class="toc"><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+    <li><a href="CMA00-FrontMN.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-FrontMN.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-FrontMN.html#preface">Preface</a></li>
+    <li><a href="CMA00-FrontMN.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
@@ -671,12 +721,12 @@ since \\(t^{-1} (1 - e^{-t}) \rightarrow 1\\) as \\(t \rightarrow 0.\\)]
 <li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
 <li class="part"><a>PROCESSES OF ANALYSIS</a>
   <ul >
-    <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
-    <li><a href="CMA02-1-Limits.html">The Theory of Convergence</a></li>
-     <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
-     <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
-     <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
-      <li><a href="CMA06-1-Residues.html">The Theory of Residues</a></li>
+    <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
+    <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
+     <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
+      <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
      <li class="more current"><a onClick="showIt('navcauchy');hideIt('navprocesses');"> you are here . . . </a></li>
      <li class="notdone"><a href="CMA07-1-ExpansionOfFunctions">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
@@ -713,7 +763,7 @@ since \\(t^{-1} (1 - e^{-t}) \rightarrow 1\\) as \\(t \rightarrow 0.\\)]
     <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
     <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
     <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
-    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lam&eacute;&#8217;s Equation</a></li> 
   </ul>
   </li>
 <li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
@@ -743,13 +793,13 @@ since \\(t^{-1} (1 - e^{-t}) \rightarrow 1\\) as \\(t \rightarrow 0.\\)]
 
 
 <div id="navfixedleft" class="fixedBleft">
-<p><a href="CMA05-6-ManyValuedFunctions.html">&#x25C0;</a></p>
+<p><a href="CMA05-6-ManyValuedFunctionsMN.html">&#x25C0;</a></p>
 </div>
 
 <div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
-<p><a onClick="hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');showIt('navcauchy');" style="float: left;">&#x25A4;</a> <a href="CMA06-2-CauchysIntegral.html" style="float: right;">&#x25B6;</a></p>
+<p><a onClick="hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');showIt('navcauchy');" style="float: left;">&#x25A4;</a> <a href="CMA06-2-CauchysIntegralMN.html" style="float: right;">&#x25B6;</a></p>
 </div>
 
 <div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;" >
-<p><a onClick="hideIt('navcauchy');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA06-2-CauchysIntegral.html" style="float: right;">&#x25B6;	</a></p>
+<p><a onClick="hideIt('navcauchy');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA06-2-CauchysIntegralMN.html" style="float: right;">&#x25B6;	</a></p>
 </div>
