@@ -621,11 +621,11 @@ div#exercises  ol li
  
 .navigation
     {
-    font-family: "Gill Sans", "Gill Sans Std", "Gill Sans MT", Verdana, "Bitstream Vera Sans", sans-serif;
+    font-family: "Gill Sans", "Gill Sans Std", "Trebuchet MS", "Gill Sans MT", Verdana, "Bitstream Vera Sans", sans-serif;
     font-weight: normal;
     position:fixed;
     right: 0ex;
-    bottom:0em;
+    top:0em;
     width:  17em; 
 /*scroll min ht: 18.3 to 18.65em, but 17em smallest, BEFORE SCROLL: 17.9em */
     height: 100%;   
