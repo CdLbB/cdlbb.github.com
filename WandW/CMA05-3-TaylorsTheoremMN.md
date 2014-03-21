@@ -28,11 +28,11 @@ HTML header:	<script type="text/javascript"
 
 ###5.3 Analytic functions represented by uniformly convergent series.####
 
-Let \\(\sum\limits_{n=0}^\infty f_n(z)\\) be a series such that (i) it converges uniformly along a contour *C*, (ii) \\(f_n (z)\\) is analytic throughout *C* and its interior. 
+Let \\(\sum\limits_{n=0}^\infty f_n(z)\\) be a series such that (i) it converges uniformly along a contour \\(C\\), (ii) \\(f_n (z)\\) is analytic throughout \\(C\\) and its interior. 
 
-Then \\(\sum\limits_{n=0}^\infty f_n(z)\\)  converges, and the sum of the series is an analytic function throughout *C* and its interior. 
+Then \\(\sum\limits_{n=0}^\infty f_n(z)\\)  converges, and the sum of the series is an analytic function throughout \\(C\\) and its interior. 
 
-For let \\(a\\) be any point inside *C*; on *C*, let \\(\sum\limits_{n=0}^\infty f_n(z)=\Phi(z)\\). 
+For let \\(a\\) be any point inside \\(C\\); on \\(C\\), let \\(\sum\limits_{n=0}^\infty f_n(z)=\Phi(z)\\). 
 
 Then
 \\[\begin{align*}
@@ -40,13 +40,13 @@ Then
 \\&=\sum_{n=0}^\infty \left\{\frac{1}{2\pi i}\!\int_C \frac{f_n(z)}{z-a} dz \right\}, 
 \end{align*}\\]
 by [&#167;4.7](CMA04-3-ComplexIntMN.html#4.7integrationofinfiniteseries.).<a class="marginmark" onClick="toggleHide('mn:1,-7');">&#91;1&#93;</a> But this last series,
-by [&#167;5.21](CMA05-2-CauchysTheoremMN.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.), is \\(\sum\limits_{n=0}^\infty f_n(a)\\); the series under consideration therefore converges at all points inside *C*; let its sum inside *C* (as well as on *C*) be called \\(\Phi(z)\\). Then the function is analytic if it has a unique differential coefficient at all points inside *C*. 
+by [&#167;5.21](CMA05-2-CauchysTheoremMN.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.), is \\(\sum\limits_{n=0}^\infty f_n(a)\\); the series under consideration therefore converges at all points inside \\(C\\); let its sum inside \\(C\\) (as well as on \\(C\\)) be called \\(\Phi(z)\\). Then the function is analytic if it has a unique differential coefficient at all points inside \\(C\\). 
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:1,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;1&#93;</a>Since \\(\left|\, z - a \, \right|^{-1}\\)  is bounded when \\(a\\) is fixed and \\(z\\) is on *C*, the uniformity of the convergence of \\(\sum\limits_{n=0}^\infty \left. f_n(z) \middle/ (z-a) \right.\\) follows from that of \\(\sum\limits_{n=0}^\infty f_n(z)\\). <a onClick="hideIt('mn:1,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:1,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;1&#93;</a>Since \\(\left|\, z - a \, \right|^{-1}\\)  is bounded when \\(a\\) is fixed and \\(z\\) is on \\(C\\), the uniformity of the convergence of \\(\sum\limits_{n=0}^\infty \left. f_n(z) \middle/ (z-a) \right.\\) follows from that of \\(\sum\limits_{n=0}^\infty f_n(z)\\). <a onClick="hideIt('mn:1,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -54,11 +54,11 @@ by [&#167;5.21](CMA05-2-CauchysTheoremMN.html#5.21thevalueofananalyticfunctionat
 
 <div markdown=1 class="contenttext">
 
-But if \\(a\\) and \\(a + h\\) be inside *C*, 
+But if \\(a\\) and \\(a + h\\) be inside \\(C\\), 
 \\[\frac{\Phi(a+h)-\Phi(a)}{h} = \frac{1}{2\pi i}\!\int_C \frac{\Phi(z)\,dz}{(z-a)(z-a-h)},\\]
 and hence, as in [&#167;5.22](CMA05-2-CauchysTheoremMN.html#5.22thederivatesofananalyticfunction.), \\(\lim\limits_{h \rightarrow 0} \left[\left\{\Phi(a+h)-\Phi(a)\right\}h^{-1}\right]\\) exists and is equal to 
 \\[ \frac{1}{2\pi i}\!\int_C \frac{\Phi(z)\,dz}{(z-a)^2};\\]
-and therefore \\(\Phi(z)\\) is analytic inside *C*. Further, by 
+and therefore \\(\Phi(z)\\) is analytic inside \\(C\\). Further, by 
 transforming the last integral in the same way as we transformed the first 
 one, we see that \\(\Phi'(a)=\sum\limits_{n=0}^\infty f'(a)\\), so that \\(\sum\limits_{n=0}^\infty f(a)\\) may be 'differentiated term by term.' 
 
@@ -82,11 +82,15 @@ one, we see that \\(\Phi'(a)=\sum\limits_{n=0}^\infty f'(a)\\), so that \\(\sum\
 
 ####5.31 Analytic functions represented by integrals.#### 
 
-Let \\(f(t, z)\\) satisfy the following conditions when \\(t\\) lies on a certain path of integration \\([a, b]\\) and \\(z\\) is any point of a region *S*: 
+Let \\(f(t, z)\\) satisfy the following conditions when \\(t\\) lies on a certain path of integration \\([a, b]\\) and \\(z\\) is any point of a region \\(S\\): 
+
+<div markdown=1 class="listroman">
 
 1.  \\(f\\) and \\(\dfrac{\partial f}{\partial z}\\) are continuous functions of \\(t\\). 
 2. \\(f\\) is an analytic function of \\(z\\).
 3.  The continuity of \\(\dfrac{\partial f}{\partial z}\\) *qua*<a class="marginmark" onClick="toggleHide('mn:3,-3');">&#91;3&#93;</a> function of \\(z\\) is uniform with respect to the variable \\(t\\). 
+
+</div>
 
 </div>
 
@@ -105,12 +109,16 @@ unique derivate \\[\int_a^b\! \frac{\partial f(t,z)}{\partial z}dt.\\]
 
 ####5.32 Analytic functions represented by infinite integrals.####
 
-From [&#167;4.44 (II) corollary](CMA04-2-InfiniteIntegralsMN.html#4.44corollary), it follows that \\(\int_a^\infty \! f(t,z)\, dt\\) is an analytic function of \\(z\\) at all points of a region *S* if 
+From [&#167;4.44 (II) corollary](CMA04-2-InfiniteIntegralsMN.html#4.44corollary), it follows that \\(\int_a^\infty \! f(t,z)\, dt\\) is an analytic function of \\(z\\) at all points of a region \\(S\\) if 
+
+<div markdown=1 class="listroman">
 
 1. the integral converges,
-2. \\(f(t, z)\\) is an analytic function of \\(z\\) when \\(t\\) is on the path of integration and \\(z\\) is on *S*,
+2. \\(f(t, z)\\) is an analytic function of \\(z\\) when \\(t\\) is on the path of integration and \\(z\\) is on \\(S\\),
 3.  \\(\dfrac{\partial f(t,z)}{\partial z}\\)is a continuous function of both variables,
-4.  \\(\displaystyle \int_a^\infty \!\frac{\partial f(t,z)}{\partial z}dt\\) converges uniformly throughout *S*. 
+4.  \\(\displaystyle \int_a^\infty \!\frac{\partial f(t,z)}{\partial z}dt\\) converges uniformly throughout \\(S\\). 
+
+</div>
 
 For if these conditions are satisfied, \\(\int_a^\infty f(t, z) \,dt\\) has the unique derivate \\[\int_a^\infty\! \frac{\partial f(t,z)}{\partial z}dt.\\]
 
@@ -134,17 +142,17 @@ function of \\(z\\) when \\(\mathfrak{Re}(z) \geq r_1 > r\\). [Condition (iv) is
 <div markdown=1 class="contenttext">
 
 Consider a function \\(f(z)\\), which is analytic in the neighbourhood of a 
-point \\(z = a\\). Let *C* be a circle with \\(a\\) as centre in the \\(z\\)-plane, which does not have any singular point of the function \\(f(z)\\) on or inside it; so that \\(f(z)\\) 
-is analytic at all points on and inside *C*. Let \\(z = a + h\\) be any point inside the circle *C*. Then, by [&#167;5.21](CMA05-2-CauchysTheoremMN.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.), we have 
+point \\(z = a\\). Let \\(C\\) be a circle with \\(a\\) as centre in the \\(z\\)-plane, which does not have any singular point of the function \\(f(z)\\) on or inside it; so that \\(f(z)\\) 
+is analytic at all points on and inside \\(C\\). Let \\(z = a + h\\) be any point inside the circle \\(C\\). Then, by [&#167;5.21](CMA05-2-CauchysTheoremMN.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.), we have 
 \\[f(a+h)=\frac{1}{2\pi i}\! \int_C \frac{f(z)\, dz}{z-a-h}\\]
 \\[=\frac{1}{2\pi i}\! \int_C \! f(z)\, dz\left\{\frac{1}{z-a}+\frac{h}{(z-a)^2}+\cdots +\frac{h^n}{(z-a)^{n+1}}+\frac{h^{n+1}}{(z-a)^{n+1}(z-a-h)}\right\}\\]
 \\[=f(a)+hf'(a)+\frac{h^2}{2!}f''(a)+ \cdots +\frac{h^n}{n!}f^{(n)}(a)+\frac{1}{2\pi i}\!\int_C \frac{h^{n+1}f(z)\,dz}{(z-a)^{n+1}(z-a-h)}. \\]
 
-######But when \\(z\\) is on *C*, the modulus of \\(\dfrac{f(z)}{z-a-h}\\) is continuous, and so, by [&#167;3.61 cor. (ii)](CMA03-3-Heine-BorelMN.html#continuousisbounded), will not exceed some finite number \\(M\\). [5.4termvanishes]######
+######But when \\(z\\) is on \\(C\\), the modulus of \\(\dfrac{f(z)}{z-a-h}\\) is continuous, and so, by [&#167;3.61 cor. (ii)](CMA03-3-Heine-BorelMN.html#continuousisbounded), will not exceed some finite number \\(M\\). [5.4termvanishes]######
 
 Therefore, by [&#167;4.62](CMA04-3-ComplexIntMN.html#4.62anupperlimittothevalueofacomplexintegral.), 
 \\[\left|\,\frac{1}{2\pi i}\!\int_C \frac{h^{n+1}f(z)\,dz}{(z-a)^{n+1}(z-a-h)}\,\right| \leq \frac{M \cdot 2\pi R}{2\pi}\left( \frac{\left|\,h\,\right|}{R}\right)^{n+1},\\]
-where \\(R\\) is the radius of the circle *C*, so that \\(2\pi R\\) is the length of the path of integration in the last integral, and \\(R = \left|\,z — a\,\right|\\) for points \\(z\\) on the circumference of *C*. 
+where \\(R\\) is the radius of the circle \\(C\\), so that \\(2\pi R\\) is the length of the path of integration in the last integral, and \\(R = \left|\,z — a\,\right|\\) for points \\(z\\) on the circumference of \\(C\\). 
 
 The right-hand side of the last inequality tends to zero as \\(n \rightarrow \infty\\). We 
 have therefore 
@@ -162,9 +170,9 @@ used.
 
 If \\(f(a) = 0\\), the function \\(f(z)\\) is said to have a *zero* at the point \\(z = a\\). If at such a point \\(f'(a)\\) is different from zero, the zero of \\(f(a)\\) is said to be *simple*; if, however,\\(\,f'(a)\\),\\(\, f''(a), \dots ,\, f^{(n-1)}(a)\\) are all zero, so that the Taylor's expansion of \\(f(z)\\) at \\(z = a\\) begins with a term in \\((z - a)^n\\), then the function \\(f(z)\\) is said to have a *zero of the n*th *order* at the point \\(z = a\\). 
 
->*Example* 1. Find the function \\(f(z)\\), which is analytic throughout the circle *C* and its interior, whose centre is at the origin and whose radius is unity, and has the value 
+>*Example* 1. Find the function \\(f(z)\\), which is analytic throughout the circle \\(C\\) and its interior, whose centre is at the origin and whose radius is unity, and has the value 
 \\[\frac{\alpha-\cos \theta}{\alpha^2-2\alpha \cos \theta + 1}+i\frac{\sin \theta}{\alpha^2-2\alpha \cos \theta + 1}\\] 
-(where \\(\alpha > 1\\) and \\(\theta\\) is the vectorial angle) at points on the circumference of *C*. 
+(where \\(\alpha > 1\\) and \\(\theta\\) is the vectorial angle) at points on the circumference of \\(C\\). 
 >
 >[We have 
 >\\[\begin{align*}
@@ -194,7 +202,7 @@ or \\(f(z) = (a - z)^{-1}\\) for all points within the circle.
 >*Example* 2. Prove that the arithmetic mean of all values of \\(z^{-n} \sum\limits_{v=0}^\infty  a_\nu z^{\nu}\\), for points \\(z\\) on 
 the circumference of the circle \\(\left|\, z\,\right| = 1\\), is \\(a_n\\), if \\(\sum a_\nu z^\nu\\) is analytic throughout the circle and its interior.
 >
- [Let \\(\sum\limits_{\nu=0}^\infty a_\nu z^\nu = f(z)\\), so that \\(a_\nu=\dfrac{f^{(n)}(0)}{n!}\\). Then, writing \\(z = e^{i\theta}\\), and calling *C* the circle \\(\left|\, z\,\right| = 1\\), <br><br>
+ [Let \\(\sum\limits_{\nu=0}^\infty a_\nu z^\nu = f(z)\\), so that \\(a_\nu=\dfrac{f^{(n)}(0)}{n!}\\). Then, writing \\(z = e^{i\theta}\\), and calling \\(C\\) the circle \\(\left|\, z\,\right| = 1\\), <br><br>
 \\(\displaystyle \frac{1}{2 \pi}\!\int_0^{2\pi} \! \frac{f(z)\,d\theta}{z^n} = \frac{1}{2 \pi i}\!\int_C \frac{f(z)\,dz}{z^{n+1}}=\frac{f^{(n)}(0)}{n!}=a_n. \\)]
 
 >*Example* 3. Let \\(f(z) = z^r\\); then \\(f(z + h)\\) is an analytic function of \\(h\\) when \\(\left|\, h\,\right| < \left|\, z\, \right|\\) for all values of \\(r\\); and so \\[(z + h)^r =z^r + rz^{r-1} h  + \frac{r(r-1)}{2}z^{r-2}h^2  + \cdots,\\] this series converging when \\(\left|\, h\,\right| < \left|\, z\, \right|\\). This is the binomial theorem. 
@@ -206,7 +214,7 @@ the form
 |:-----|-------|-------:|
 | \\(\quad\\)	| \\[ \begin{equation}1 + h P_1(z) + h^2 P_2(z) + h^3 P_3(z) + \cdots ,  \end{equation} \\]	| \\(\qquad\\) (A) \\(\quad\\)	|  
 > 
-(where \\(P_n(z)\\) is easily seen to be a polynomial of degree *n* in \\(z\\)), then this series converges so long as \\(z\\) is in the interior of an ellipse whose foci are the points \\(z=1\\) and \\(z= -1\\), and whose semi-major axis is \\(\frac{1}{2}(h+h^{-1}) \\).
+(where \\(P_n(z)\\) is easily seen to be a polynomial of degree \\(n\\) in \\(z\\)), then this series converges so long as \\(z\\) is in the interior of an ellipse whose foci are the points \\(z=1\\) and \\(z= -1\\), and whose semi-major axis is \\(\frac{1}{2}(h+h^{-1}) \\).
 > 
 >Let the series be first regarded as a function of \\(h\\). It is a power series in \\(h\\), and therefore converges so long as the point \\(h\\) lies within a circle in the \\(h\\)-plane. The centre 
 of this circle is the point \\(h=0\\), and its circumference will be such as to pass through that singularity of \\((1+2zh+h^2)^{-\frac{1}{2}}\\) which is nearest to \\(h = 0\\). 
@@ -256,11 +264,11 @@ and let \\(p\\) be a positive integer such that \\(p \leq n\\).
 
 Then \\[R_n=\frac{h^n}{(n-1)!}\!\int _0^1 \! (1-t)^{p-1}(1-t)^{n-p} f^{(n)}(a+th)\,dt.\\]
 
-Let *U*, *L*  be the upper and lower bounds of \\((1-t)^{n-p} f^{(n)}(a+th)\\). 
+Let \\(U\\), \\(L\\)  be the upper and lower bounds of \\((1-t)^{n-p} f^{(n)}(a+th)\\). 
 Then 
 \\[\int_0^1 \!L(1-t)^{p-1}\,dt < \int_0^1 \! (1-t)^{p-1}(1-t)^{n-p} f^{(n)}(a+th)\,dt < \int_0^1 \!U(1-t)^{p-1}\,dt.\\]
 
-Since \\((1-t)^{n-p} f^{(n)}(a+th)\\) is a continuous function it passes through all values between *U* and *L*, and hence we can find \\(\theta \\) such that \\(0 \leq \theta \leq 1 \\), and 
+Since \\((1-t)^{n-p} f^{(n)}(a+th)\\) is a continuous function it passes through all values between \\(U\\) and \\(L\\), and hence we can find \\(\theta \\) such that \\(0 \leq \theta \leq 1 \\), and 
 \\[\int _0^1 \! (1-t)^{n-1} f^{(n)}(a+th)\,dt = p^{-1}(1-\theta)^{n-p}f^{(n)}(a+\theta h).\\]
 Therefore \\[R_n = \frac{h^n}{(n-1)! p}(1-\theta)^{n-p}f^{(n)}(a+ \theta h). \\]
 
@@ -298,31 +306,35 @@ if \\(f'(x)\\) is continuous when \\(a \leq x \leq a+h\\); this result is usuall
     <li><a href="CMA05-1-AnalyticFunctionsMN.html#thefundamentalpropertiesofanalyticfunctions">The Properties of Analytic Functions</a>
       <ul>
         <li><a href="CMA05-1-AnalyticFunctionsMN.html#5.1apropertyoftheelementaryfunctions.">A Property of Elementary Functions</a>
-        <li><a href="CMA05-2-CauchysTheoremMN.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy's Theorem</a></li>
+        <li><a href="CMA05-2-CauchysTheoremMN.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy&#8217;s Theorem</a></li>
         <li class="current"><a href="#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Analytic Functions as Uniformly Convergent Series</a>
           <ul>
 	<li><a href="#5.31analyticfunctionsrepresentedbyintegrals.">Analytic functions as integrals</a>
               <li  class="current"><a href="#5.32analyticfunctionsrepresentedbyinfiniteintegrals.">Analytic functions as infinite integrals</a>
           </ul>
         </li>
-	<li class="current"><a href="#5.4taylorstheorem.">Taylor's Theorem</a>
+	<li class="current"><a href="#5.4taylorstheorem.">Taylor&#8217;s Theorem</a>
           <ul>
-	<li><a href="#5.41formsoftheremainderintaylorsseries."> Forms of the remainder in Taylor's series</a>
+	<li><a href="#5.41formsoftheremainderintaylorsseries."> Forms of the remainder in Taylor&#8217;s series</a>
           </ul>
         </li>
 	<li><a href="CMA05-4-AnalyticContinuationMN.html#5.5theprocessofcontinuation.">Analytic Continuation</a></li>
-	<li><a href="CMA05-4-AnalyticContinuationMN.html#5.6Laurentstheorem.">Laurent's Theorem</a></li>
+	<li><a href="CMA05-4-AnalyticContinuationMN.html#5.6Laurentstheorem.">Laurent&#8217;s Theorem</a></li>
        <li><a href="CMA05-6-ManyValuedFunctionsMN.html#5.7many-valuedfunctions.">Many-valued Functions</a></li>
         <li><a href="CMA05-6-ManyValuedFunctionsMN.html#references.">References</a></li>
         <li><a href="CMA05-6-ManyValuedFunctionsMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
     </li>
-    <li><a href="whereOwhere.html">The Theory of Residues</a></li>
+    <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
     <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navcauchy');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a> 
+   <ul >
+    <li ><a href="Appendix-I-LogrithmAndExponential">Appendix</a></li>
+  </ul>
+</li>
 </ul>
 </div>
 
@@ -362,7 +374,7 @@ if \\(f'(x)\\) is continuous when \\(a \leq x \leq a+h\\); this result is usuall
      <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
      <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
      <li class="more current"><a onClick="showIt('navcauchy');hideIt('navprocesses');"> you are here . . . </a></li>
-     <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
+     <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
