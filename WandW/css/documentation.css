@@ -326,7 +326,7 @@ div#header h1
     text-align: left;
     width: 62%;
     *font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
-    font-family: 'Gill Sans', 'Gill Sans Std', 'Gill Sans MT', Verdana, 'Bitstream Vera Sans', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans Std', 'Trebuchet MS', 'Gill Sans MT', Verdana, 'Bitstream Vera Sans', sans-serif;
     color: white;
     }
 
@@ -340,7 +340,7 @@ div#header h2
     font-weight: 200;
     width: 70%;
     *font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-family: 'Gill Sans', 'Gill Sans Std', 'Gill Sans MT', Verdana, 'Bitstream Vera Sans', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans Std', 'Trebuchet MS', 'Gill Sans MT', Verdana, 'Bitstream Vera Sans', sans-serif;
     color: white;
     border-bottom:none;
     }
@@ -375,7 +375,7 @@ div#footer h3
     font-weight: 200;
     *width: 70%;
     *font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-family: 'Gill Sans', 'Gill Sans Std', 'Gill Sans MT', Verdana, 'Bitstream Vera Sans', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans Std', 'Trebuchet MS', 'Gill Sans MT', Verdana, 'Bitstream Vera Sans', sans-serif;
     color: white;
     border-bottom:none;
     }
@@ -391,7 +391,7 @@ div#footer h4
     font-weight: 200;
     *width: 90%;
     *font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-family: 'Gill Sans', 'Gill Sans Std', 'Gill Sans MT', Verdana, 'Bitstream Vera Sans', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans Std', 'Trebuchet MS', 'Gill Sans MT', Verdana, 'Bitstream Vera Sans', sans-serif;
     color: white;
     border-bottom:none;
     }
