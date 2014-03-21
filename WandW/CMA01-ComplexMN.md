@@ -87,7 +87,7 @@ It is not part of the scheme of this work to discuss the construction of the cla
 
 <div markdown=1 class="contenttext">
 
-[Hobson]: http://books.google.com/books?id=PxgPAAAAIAAJ&oe=UTF-8
+[Hobson]: https://archive.org/details/theoryfunctions00hobsgoog
 [&#167;1.3]: #complexnumberssection
 
 >The extension of the idea of number, which has just been described, was not effected without some opposition from the more conservative mathematicians. In the latter half of the eighteenth century, Maseres (1731--1824) and Frend (1757--1841) published works on Algebra, Trigonometry, etc., in which the use of negative numbers was disallowed, although Descartes had used them unrestrictedly more than a hundred years before.
@@ -116,7 +116,7 @@ All the rational numbers can thus be represented by points on the line, but the 
 The geometrical property of points on a line which suggested the starting point of the arithmetical theory of irrationals was that, if all points of a line are separated into two classes such that every point of the first class is on the right of every point of the second class, there exists one and only one point at which the line is thus severed.
 
 [dedkindnum]: http://books.google.com/books?id=PywPAAAAIAAJ
-[dantscher]: http://projecteuclid.org/DPubS?service=UI&version=1.0&verb=Display&handle=euclid.bams/1183420506
+[dantscher]: http://books.google.com/books/about/Vorlesungen_&uuml;ber_die_Weierstrassche_The.html?id=IJkAAAAAMAAJ
 [tweddle]: http://www.springerlink.com/content/vq2h61935387m837/
 [EditorNote]: CMA00-FrontMN.html#editorsnote
 [cantor]: http://www.digizeitschriften.de/dms/toc/?PPN=PPN235181684_0005
@@ -390,7 +390,7 @@ From geometrical considerations, it appears that (although the modulus of a comp
 
 
 
-<div markdown=1 class="marginnotes" id="mn:16,-9" style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;16&#93;</a>See the Appendix, [&#167;A.521][].<a onClick="hideIt('mn:16,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:16,-9" style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;16&#93;</a>See the Appendix, [&#167;A.521](Appendix-II-TrigonometricalFunctions#5.21theprincipalsolutionofthetrigonometricalequations.).<a onClick="hideIt('mn:16,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -398,7 +398,6 @@ From geometrical considerations, it appears that (although the modulus of a comp
 
 <div markdown=1 class="contenttext">
 
-[&#167;A.521]: http:/whereOwhere.html
 
 If \\(P_1\\) and \\(P_2\\) are the representative points corresponding to values \\(z_1\\) and \\(z_2\\) respectively of \\(z\\), then the point which represents the value \\(z_1 +z_2\\) is clearly the terminus of a line drawn from \\(P_1\\), equal and parallel to that which joins the origin to \\(P_2\\).
 
@@ -431,7 +430,7 @@ measured by the product of the radii vectores of \\(P_1\\) and \\(P_2\\), and a 
 :T. J. I&rsquo;a. Bromwich, [*Theory of Infinite Series*][Infinite] (1908), Appendix **I.**
 
 [Stetigkeit]: http://books.google.com/books?id=PywPAAAAIAAJ
-[Vorlesungen1]: http://projecteuclid.org/DPubS?service=UI&version=1.0&verb=Display&handle=euclid.bams/1183420506
+[Vorlesungen1]: http://books.google.com/books/about/Vorlesungen_&uuml;ber_die_Weierstrassche_The.html?id=IJkAAAAAMAAJ
 [Functions]: http://archive.org/details/theoryfunctions00hobsgoog
 [Infinite]: http://www.archive.org/details/introductiontoth00bromuoft
 
@@ -460,7 +459,7 @@ measured by the product of the radii vectores of \\(P_1\\) and \\(P_2\\), and a 
 \\[ \sum  \cos p \theta=0 \\]
 when \\(p\\) is a positive integer less than \\(\displaystyle \frac{n}{a b c \dots k}\\), where \\(a, b, c, \dots k\\) are the different constituent primes of \\(n\\); and that, when \\(\displaystyle p=\frac{n}{a b c \dots k}\\),
 \\[  \sum  \cos p \theta=\frac{(-1)^\mu \, n}{a b c \dots k} \\]
-where \\(\mu\\) is the number of the constituent primes.  (Math. Trip. 1895.)
+where \\(\mu\\) is the number of the constituent primes.\\(\vphantom{\\ 3\\}\\)<br>  (Math. Trip. 1895.)
 
 </div>
 
@@ -489,7 +488,7 @@ where \\(\mu\\) is the number of the constituent primes.  (Math. Trip. 1895.)
     <li><a href="#complexnumbers">Complex Numbers</a>
       <ul>
         <li  class="current"><a href="#rationalnumbers">Rational numbers</a></li>
-        <li  class="current"><a href="#dedekind">Dedekind's theory of irrational numbers</a></li>
+        <li  class="current"><a href="#dedekind">Dedekind&#8217;s theory of irrational numbers</a></li>
         <li  class="current"><a href="#complexnumberssection">Complex numbers</a></li>
         <li  class="current"><a href="#themodulusofacomplexnumber">The modulus of a complex number</a></li>
         <li  class="current"><a href="#thearganddiagram">The Argand diagram</a></li>
@@ -502,7 +501,11 @@ where \\(\mu\\) is the number of the constituent primes.  (Math. Trip. 1895.)
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navcomplex');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navcomplex');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navcomplex');showIt('navback');">BACKMATTER</a> 
+   <ul >
+    <li ><a href="Appendix-I-LogrithmAndExponential">Appendix</a></li>
+  </ul>
+</li>
 </ul>
 </div>
 
