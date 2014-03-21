@@ -26,6 +26,7 @@ HTML header:	<script type="text/javascript"
 <div markdown=1 id="content">
 <div markdown=1 class="contenttext">
 
+
 </div>
 
 
@@ -123,7 +124,7 @@ square. Hence, if \\(\lambda\\) be the whole length of \\(C\\), while \\(l\\) is
 Now \\(\epsilon\\) is arbitrarily small, and \\(l\\), \\(\lambda\\), and \\(\int_{(C)} f(z)\,dz\\) are *independent of* \\(\epsilon\\). It therefore follows from this inequality that the only value which \\(\int_{(C)} f(z)\,dz\\) 
 can have is zero; and this is Cauchy's result. 
 
->*Corollary* 1. If there are two paths \\(z_0AZ\\) and \\(z_0BZ\\) from \\(z_0\\) to \\(Z\\), and if \\(f(z)\\) is. a function of \\(z\\) analytic at all points on these curves and throughout the domain enclosed by these two paths, then \\(\int_{z_0}^Z f(z) \,dz\\) has the same value whether the path of integration is \\(z_0AZ\\) or \\(z_0BZ\\). This follows from the fact that \\(z_0AZBz_0\\) is a contour, and so the integral taken round it (which is the difference of the integrals along \\(z_0AZ\\) and \\(z_0BZ\\) ) is zero. Thus, if \\(f(z)\\) be an analytic function of \\(z\\), the value of \\(\int_{AB} f(z) \,dz\\) is to a certain extent independent of the choice of the arc AB, and depends only on the terminal points *A* and *B*. It must be borne in mind that *this is only the case when \\(f(z)\\) is an analytic function* in the sense of [&#167;5.12](CMA05-1-AnalyticFunctionsMN.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.). 
+>*Corollary* 1. If there are two paths \\(z_0AZ\\) and \\(z_0BZ\\) from \\(z_0\\) to \\(Z\\), and if \\(f(z)\\) is. a function of \\(z\\) analytic at all points on these curves and throughout the domain enclosed by these two paths, then \\(\int_{z_0}^Z f(z) \,dz\\) has the same value whether the path of integration is \\(z_0AZ\\) or \\(z_0BZ\\). This follows from the fact that \\(z_0AZBz_0\\) is a contour, and so the integral taken round it (which is the difference of the integrals along \\(z_0AZ\\) and \\(z_0BZ\\) ) is zero. Thus, if \\(f(z)\\) be an analytic function of \\(z\\), the value of \\(\int_{AB} f(z) \,dz\\) is to a certain extent independent of the choice of the arc \\(AB\\), and depends only on the terminal points \\(A\\) and \\(B\\). It must be borne in mind that *this is only the case when \\(f(z)\\) is an analytic function* in the sense of [&#167;5.12](CMA05-1-AnalyticFunctionsMN.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.). 
 
 </div>
 
@@ -144,10 +145,7 @@ and throughout the ring-shaped region contained between \\(C_0\\) and \\(C_1\\).
 \\[\int \! f(z)\,dz\\]
 *is zero, where the integration is taken round the whole boundary of the ring-shaped space; this boundary consisting of two curves \\(C_0\\) and \\(C_1\\), the one described in the counter-clockwise direction and the other described in the clockwise direction.*
 
->*Corollary* 3. In general, if any connected region be given in the \\(z\\)-plane, bounded by any number of simple closed curves \\(C_0\\), \\(C_1\\), \\(C_2, \dots \\), and if \\(f(z)\\) be any function of \\(z\\) which is analytic and one-valued everywhere in this region, *then* 
-\\[\int f(z)\,dz\\]
-*is zero, where the integral is taken round the whole boundary of the region; this boundary consisting of the curves \\(C_0\\), \\(C_1\\), \\(C_2, \dots \\), each described in such a sense that the region is kept 
-either always on the right or always on the left of a person walking in the sense in question round the boundary.* 
+>######*Corollary* 3. In general, if any connected region be given in the \\(z\\)-plane, bounded by any number of simple closed curves \\(C_0\\), \\(C_1\\), \\(C_2, \dots \\), and if \\(f(z)\\) be any function of \\(z\\) which is analytic and one-valued everywhere in this region, *then* \\[\int f(z)\,dz\\] *is zero, where the integral is taken round the whole boundary of the region; this boundary consisting of the curves \\(C_0\\), \\(C_1\\), \\(C_2, \dots \\), each described in such a sense that the region is kept either always on the right or always on the left of a person walking in the sense in question round the boundary.* [5.2corollary3] ######
 
 An extension of Cauchy's theorem \\(\int f(z)\, dz=0\\), to curves lying on a cone whose vertex is at the origin, has been made by Ravut {[*Nouv. Annales de Math.* (3) **xvi.** (1897)](http://www.numdam.org/numdam-bin/browse?id=NAM_1897_3_16_), pp. 365-7). Also, Morera ([*Rend, del Ist. Lombardo*, **xxii.** (1889)](http://books.google.com/books?id=wvk3AQAAMAAJ), p. 191) and Osgood ([*Bull. Amer. Math. Soc.* **ii.** (1896)](http://www.ams.org/journals/bull/1896-02-09/), pp. 296-302), have shewn that the property \\(\int f(z)\, dz=0\\)
 may be taken as the property defining an analytic function, the other properties being deducible from it. (See [Miscellaneous Examples](CMA05-6-ManyValuedFunctionsMN.html#miscellaneousexamples.), example 16.) 
@@ -303,28 +301,32 @@ unless \\(f(z) =0 \\) or \\(f'(z) = 0\\).<a class="marginmark" onClick="toggleHi
     <li><a href="CMA05-1-AnalyticFunctionsMN.html#thefundamentalpropertiesofanalyticfunctions">The Properties of Analytic Functions</a>
       <ul>
         <li><a href="CMA05-1-AnalyticFunctionsMN.html#5.1apropertyoftheelementaryfunctions.">A Property of Elementary Functions</a>
-        <li class="current"><a href="#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy's Theorem</a>
+        <li class="current"><a href="#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy&#8217;s Theorem</a>
           <ul>
-	<li><a href="#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.">A function's value as a contour integral</a>
+	<li><a href="#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.">A function&#8217;s value as a contour integral</a>
               <li  class="current"><a href="#5.22thederivatesofananalyticfunction.">The derivates of an analytic function</a>
-              <li  class="current"><a href="#5.23cauchysinequality.">Cauchy's inequality for <span class="math">\(\,f^{(n)}(a)\)</span></a>
+              <li  class="current"><a href="#5.23cauchysinequality.">Cauchy&#8217;s inequality for <span class="math">\(\,f^{(n)}(a)\)</span></a>
           </ul>
         </li>
 	<li><a href="CMA05-3-TaylorsTheoremMN.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Analytic Functions as Uniformly Convergent Series</a></li>
-	<li><a href="CMA05-3-TaylorsTheoremMN.html#5.4taylorstheorem.">Taylor's Theorem</a></li>
+	<li><a href="CMA05-3-TaylorsTheoremMN.html#5.4taylorstheorem.">Taylor&#8217;s Theorem</a></li>
 	<li><a href="CMA05-4-AnalyticContinuationMN.html#5.5theprocessofcontinuation.">Analytic Continuation</a></li>
-       <li><a href="CMA05-5-LaurentsTheoremMN.html#5.6laurentstheorem.">Laurent's Theorem</a></li>
+       <li><a href="CMA05-5-LaurentsTheoremMN.html#5.6laurentstheorem.">Laurent&#8217;s Theorem</a></li>
 	<li><a href="CMA05-6-ManyValuedFunctionsMN.html#5.7many-valuedfunctions.">Many-valued Functions</a></li>
         <li><a href="CMA05-6-ManyValuedFunctionsMN.html#references.">References</a></li>
         <li><a href="CMA05-6-ManyValuedFunctionsMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
     </li>
-    <li><a href="whereOwhere.html">The Theory of Residues</a></li>
+    <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
     <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navcauchy');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a> 
+   <ul >
+    <li ><a href="Appendix-I-LogrithmAndExponential">Appendix</a></li>
+  </ul>
+</li>
 </ul>
 </div>
 
