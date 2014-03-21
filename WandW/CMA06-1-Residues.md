@@ -634,7 +634,7 @@ since \\(t^{-1} (1 - e^{-t}) \rightarrow 1\\) as \\(t \rightarrow 0.\\)]
 </li>
 <li class="part"><a onClick="hideIt('navcauchy');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a> 
- <ul >
+  <ul >
     <li ><a href="Appendix-I-LogrithmAndExponential">Appendix</a></li>
   </ul>
 </li>
