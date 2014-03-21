@@ -85,7 +85,7 @@ can be expanded in the form
 \\[S_0+\sum_{n-1}^\infty S_n \left(\frac{a^n}{z^n}+ \frac{z^n}{b^n} \right),\\]
 where \\[S_n=\sum_{l=0}^\infty \frac{1 \cdot 3 \cdots (2l-1)\cdot 1 \cdot 3 \cdots (2l+2n-1)}{2^{2l+n}\, l! \,(l+n)!} \left(\frac{a}{b}\right)^l.\\] 
 >
->The function is one-valued and analytic in the annulus (see [§5.7](CMA05-6-ManyValuedFunctions.html#5.7manyvaluedfunctions.)), for the branch-points \\(0\\), \\(a\\) neutralise each other, and so, by Laurent's Theorem, if *C* denote the circle \\(\left|\, z \,\right|=r\\), where \\(\left|\, a\,\right| < r < \left|\, b\, \right|\\), the coefficient of \\(z^n\\) in the required expansion is 
+>The function is one-valued and analytic in the annulus (see [§5.7](CMA05-6-ManyValuedFunctions.html#5.7manyvaluedfunctions.)), for the branch-points \\(0\\), \\(a\\) neutralise each other, and so, by Laurent's Theorem, if \\(C\\) denote the circle \\(\left|\, z \,\right|=r\\), where \\(\left|\, a\,\right| < r < \left|\, b\, \right|\\), the coefficient of \\(z^n\\) in the required expansion is 
 \\[\frac{1}{2\pi i}\! \int_C \frac{dz}{z^{n+1}}\left\{\frac{bz}{(z-a)(b-z)}\right\}^{\frac{1}{2}}. \\] 
 >
 >Putting \\(z = re^{i\theta}\\), this becomes 
@@ -109,12 +109,16 @@ and
 ####5.61 The nature of the singularities of one-valued functions. ####
 
 Consider first a function \\(f(z)\\) which is analytic throughout a closed 
-region *S*, except at a single point a inside the region. 
+region \\(S\\), except at a single point a inside the region. 
 
 Let it be possible to define a function \\(\phi(z)\\) such that 
 
-1.  \\(\phi(z)\\) is analytic throughout *S*,
+<div markdown=1 class="listroman">
+
+1.  \\(\phi(z)\\) is analytic throughout \\(S\\),
 2.  when \\(z\neq a\\), \\( f (z) = \phi(z) + \frac{B_1}{z-a} + \frac{B_2}{(z-a)^2}+ \cdots  + \frac{B_n}{(z-a)^n}.\\)
+
+</div>
 
 Then \\(f(z)\\) is said to have a *'pole of order \\(n\\) at \\(a\\)'*; and the terms \\(\frac{B_1}{z-a} + \frac{B_2}{(z-a)^2}+ \cdots  + \frac{B_n}{(z-a)^n}.\\) are called the *principal part of* \\(f(z)\\) near \\(a\\). 
 By the definition of a singularity ([§5.12](CMA05-1-AnalyticFunctions.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.)) a pole is a singularity. If \\(n = 1\\), 
@@ -170,7 +174,7 @@ and so the expansion of \\(f(z)\\) valid for sufficiently large values of \\(\le
 \\[f(z)= \frac{A}{z^m}+\frac{B}{z^{m+1}}+\frac{C}{z^{m+2}}+ \cdots .\\]
 In this case, \\(f(z)\\) is said to have a *zero of order m at 'infinity'.* 
 
-Again, the function \\(\phi(z)\\) may have a pole of order *m* at the point \\(z' = 0\\); in this case 
+Again, the function \\(\phi(z)\\) may have a pole of order \\(m\\) at the point \\(z' = 0\\); in this case 
 \\[\phi(z') =  \frac{A}{z'^m}+\frac{B}{z'^{m-1}}+\frac{C}{z'^{m-2}}+ \cdots \frac{L}{z'}+M+Nz'+Pz'^2+ \cdots ,\\]
 and so, for sufficiently large values of \\(\left|\, z\, \right|\\), \\(f(z)\\) can be expanded in the form 
 \\[f(z) = Az^m+ Bz^{m-1}+C z^{m-2} + \cdots Lz+ M+ \frac{N}{z}+\frac{P}{z^2}+ \cdots.\\]
@@ -186,7 +190,7 @@ The function represented by this series has singularities at \\(z = \dfrac{i}{\a
 \\((n = 1,\, 2,\, 3, \dots)\\), since at each of these points the denominator of one of the terms in the series is zero. These singularities are on the imaginary axis, and have \\(z=0\\) as a limiting point; so no Taylor or Laurent expansion can be formed for the function valid throughout any region of which the origin is an interior point. 
 >
 >For values of \\(z\\), other than these singularities, the series converges absolutely, since the limit of the ratio of the \\((n + 1)\\)th term to the \\(n\\)th is \\(\lim\limits_{n \rightarrow 0} (n+ 1)^{-1} \alpha^{-2} = 0\\). The function is an even function of \\(z\\) (i.e. is unchanged if the sign of \\(z\\) be changed), tends to zero as 
-\\(\left|\,z\,\right| \rightarrow \infty\\), and is analytic on and outside a circle *C* of radius greater than unity and centre at the origin. So, for points outside this circle, it can be expanded in the form 
+\\(\left|\,z\,\right| \rightarrow \infty\\), and is analytic on and outside a circle \\(C\\) of radius greater than unity and centre at the origin. So, for points outside this circle, it can be expanded in the form 
 \\[\frac{b_2}{z^2}+\frac{b_4}{z^4}+\frac{b_6}{z^6}+ \cdots ,\\]
 where, by Laurent's Theorem, 
 \\[b_{2k}=\frac{1}{2\pi i}\!\int_C \! z^{2k-1} \sum_{n=0}^\infty \frac{1}{n!}\,\frac{\alpha^{-2n}}{\alpha^{-2n}+z^2} \,dz. \\]
@@ -216,9 +220,9 @@ Now
 *Let \\(f(z)\\) be analytic for all values of \\(z\\) and let \\(\left|\,f(z)\,\right| < K\\) for all values of \\(z\\), where \\(K\\) is a constant (so that \\(\left|\,f(z)\,\right|\\) is bounded as \\(z \rightarrow \infty\\)). Then 
 \\(f(z)\\) is a constant.*
 
-Let \\(z\\), \\(z'\\) be any two points and let *C* be a contour such that \\(z\\), \\(z'\\) are inside it. Then, by [§5.21](CMA05-2-CauchysTheorem.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.), 
+Let \\(z\\), \\(z'\\) be any two points and let \\(C\\) be a contour such that \\(z\\), \\(z'\\) are inside it. Then, by [§5.21](CMA05-2-CauchysTheorem.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.), 
 \\[f(z')-f(z) = \frac{1}{2\pi i}\!\int_C \left\{\frac{1}{\zeta-z'} - \frac{1}{\zeta-z}\right\}\, f(\zeta)\, d\zeta;\\]
-take *C* to be a circle whose centre is \\(z\\) and whose radius is \\(\rho \geq 2\, \left|\, z' - z \,\right|\\); on *C* write \\(\zeta = z + \rho e^{i\theta}\\); since \\(\left|\,\zeta-z'\,\right| \geq \frac{1}{2}\rho\\) when \\(\zeta\\) is on *C* it follows from [§4.62](CMA04-3-ComplexInt.html#4.62anupperlimittothevalueofacomplexintegral.) 
+take \\(C\\) to be a circle whose centre is \\(z\\) and whose radius is \\(\rho \geq 2\, \left|\, z' - z \,\right|\\); on \\(C\\) write \\(\zeta = z + \rho e^{i\theta}\\); since \\(\left|\,\zeta-z'\,\right| \geq \frac{1}{2}\rho\\) when \\(\zeta\\) is on \\(C\\) it follows from [§4.62](CMA04-3-ComplexInt.html#4.62anupperlimittothevalueofacomplexintegral.) 
 that 
 \\[\left|\,f(z')-f(z)\,\right| = \left|\,\frac{1}{2\pi}\!\int_C \frac{z'-z}{(\zeta-z')(\zeta-z)} \,f(\zeta)\,d\zeta \,\right|\\]
 \\[< \frac{1}{2\pi}\!\int_0^{2\pi} \! \frac{\left|\,z'-z\,\right|\,K}{\frac{1}{2}\rho} d\theta\\]
@@ -283,15 +287,15 @@ that a function which is analytic everywhere (including \\(\infty\\)) is merely 
     <li><a href="CMA05-1-AnalyticFunctions.html#thefundamentalpropertiesofanalyticfunctions">The Properties of Analytic Functions</a>
       <ul>
         <li><a href="CMA05-1-AnalyticFunctions.html#5.1apropertyoftheelementaryfunctions.">A Property of Elementary Functions</a>
-        <li><a href="CMA05-2-CauchysTheorem.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy's Theorem</a></li>
+        <li><a href="CMA05-2-CauchysTheorem.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy&#8217;s Theorem</a></li>
         <li><a href="CMA05-3-TaylorsTheorem.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Analytic Functions as Uniformly Convergent Series</a></li>
-	<li><a href="CMA05-3-TaylorsTheorem.html#5.4taylorstheorem.">Taylor's Theorem</a></li>
+	<li><a href="CMA05-3-TaylorsTheorem.html#5.4taylorstheorem.">Taylor&#8217;s Theorem</a></li>
 	<li><a href="CMA05-4-AnalyticContinuation.html#5.5theprocessofcontinuation.">Analytic Continuation</a></li>
-	<li class="current"><a href="#5.6laurentstheorem.">Laurent's Theorem</a>
+	<li class="current"><a href="#5.6laurentstheorem.">Laurent&#8217;s Theorem</a>
 	   <ul>
 	       <li ><a href="#5.61thenatureofthesingularitiesofone-valuedfunctions.">The singularities of one-valued functions</a>
               <li><a href="#5.62thepointatinfinity.">The point at infinity</a>
-              <li><a href="#5.63liouvillestheorem.">Liouville's theorem</a>
+              <li><a href="#5.63liouvillestheorem.">Liouville&#8217;s theorem</a>
               <li><a href="#5.64functionswithnoessentialsingularities.">Functions with no essential singularities</a>
           </ul>
        </li>
@@ -300,12 +304,16 @@ that a function which is analytic everywhere (including \\(\infty\\)) is merely 
         <li><a href="CMA05-6-ManyValuedFunctions.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
     </li>
-    <li><a href="whereOwhere.html">The Theory of Residues</a></li>
+    <li><a href="CMA06-1-Residues.html">The Theory of Residues</a></li>
     <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navcauchy');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a> 
+   <ul >
+    <li ><a href="Appendix-I-LogrithmAndExponential">Appendix</a></li>
+  </ul>
+</li>
 </ul>
 </div>
 
@@ -345,7 +353,7 @@ that a function which is analytic everywhere (including \\(\infty\\)) is merely 
      <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
      <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
      <li class="more current"><a onClick="showIt('navcauchy');hideIt('navprocesses');"> you are here . . . </a></li>
-     <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
+     <li><a href="CMA06-1-Residues.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
