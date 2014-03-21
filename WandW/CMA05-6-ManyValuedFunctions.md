@@ -25,7 +25,7 @@ HTML header:	<script type="text/javascript"
 
 <div markdown=1 id="content">
 <div markdown=1 class="contenttext">
-<div markdown=1 class="listroman">
+
 
 ###5.7  Many-valued functions. ###
 
@@ -54,16 +54,16 @@ as the following.
 >
 >Consider the function \\[y=x^x,\\] 
 for which  \\[\frac{dy}{dx}=x^x ( 1 + \log x).\\] 
-When *x* is negative and real, \\(\dfrac{dy}{dx}\\) is not real. But if *x* is negative and of the form \\(\dfrac{p}{2q+1}\\) (where *p* and *q* are positive or negative integers), \\(y\\) is real. 
+When \\(x\\) is negative and real, \\(\dfrac{dy}{dx}\\) is not real. But if \\(x\\) is negative and of the form \\(\dfrac{p}{2q+1}\\) (where *p* and *q* are positive or negative integers), \\(y\\) is real. 
 >
 >If therefore we draw the real curve \\[y=x^x,\\]
-we have for negative values of *x* a set of conjugate points, one point corresponding to each rational value of *x* with an odd denominator; and then we might think of proceeding to form the tangent as the limit of the chord, just as if the curve were continuous; and 
-thus \\(\dfrac{dy}{dx}\\), when derived from the inclination of the tangent to the axis of *x*, would appear to be real. The question thus arises, Why does the ordinary process of differentiation 
+we have for negative values of \\(x\\) a set of conjugate points, one point corresponding to each rational value of \\(x\\) with an odd denominator; and then we might think of proceeding to form the tangent as the limit of the chord, just as if the curve were continuous; and 
+thus \\(\dfrac{dy}{dx}\\), when derived from the inclination of the tangent to the axis of \\(x\\), would appear to be real. The question thus arises, Why does the ordinary process of differentiation 
 give a non-real value for \\(\dfrac{dy}{dx}\,\\)? 
 >
 >The explanation is, that these conjugate points do not all arise from the same *branch* of the function \\(y = x^x\\). We have in fact 
 \\[y=e^{x\log x+2k\pi i x},\\]
-where *k* is any integer. To each value of *k* corresponds one branch of the function \\(y\\). Now in order to get a real value of \\(y\\) when *x* is negative, we have to choose a suitable value for *k*: and *this value of k varies as we go from one conjugate point to an adjacent one.* So the conjugate points do not represent values of \\(y\\) arising from the same branch of the function \\(y=x^x\\), and consequently we cannot expect the value of \\(\,\dfrac{dy}{dx}\\) when evaluated for a definite branch to be given by the tangent of the inclination to the axis of *x* of the line joining two arbitrarily close members of the series of conjugate points. 
+where *k* is any integer. To each value of *k* corresponds one branch of the function \\(y\\). Now in order to get a real value of \\(y\\) when \\(x\\) is negative, we have to choose a suitable value for *k*: and *this value of k varies as we go from one conjugate point to an adjacent one.* So the conjugate points do not represent values of \\(y\\) arising from the same branch of the function \\(y=x^x\\), and consequently we cannot expect the value of \\(\,\dfrac{dy}{dx}\\) when evaluated for a definite branch to be given by the tangent of the inclination to the axis of \\(x\\) of the line joining two arbitrarily close members of the series of conjugate points. 
 
 ### REFERENCES. ###
 
@@ -79,7 +79,6 @@ No. 15, 1914).
 
 [^jacobi,+82]: The results of examples 5, 6 and 7 are special cases of formulae contained in Jacobi's dissertation (Berlin, 1825) published in his [*Ges. Werke*, **iii.** (1884)](https://archive.org/details/gesammeltewerke01weiegoog), pp. 1-44. Jacobi's formulae were generalised by Scheibner, [*Leipziger Berichte*, **xlv.** (1893)](http://babel.hathitrust.org/cgi/pt?id=mdp.39015064506119), pp. 432-443.
 
-</div>
 
 <div markdown=1 id="exercises">
 
@@ -100,7 +99,7 @@ f(z)= &f(a)+\frac{z-a}{m}\left[f'\left(a+\frac{z-a}{2m}\right)+f'\left(a+\frac{3
 
 3. Shew that for the series 
 \\[\sum_{n=0}^\infty \frac{1}{z^n+z^{-n}},\\]
-the region of convergence consists of two distinct areas, namely outside and inside a circle of radius unity, and that in each of these the series represents one function and represents it completely. <br>
+the region of convergence consists of two distinct areas, namely outside and inside a circle of radius unity, and that in each of these the series represents one function and represents it completely. \\(\vphantom{\\ 3\\}\\)<br>
 (Weierstrass, [*Berliner Monatsberichte*, 1880](http://www.biodiversitylibrary.org/item/111870#page/797), p. 729; [*Ges. Werke*, **ii.** (1895)](https://archive.org/details/mathematischewer02weieuoft), p. 227.) 
 
 4. Shew that the function 
@@ -154,7 +153,7 @@ and where \\(\phi(z)\\) is analytic near \\(z=0\\), is convergent near the point
 \\[f'(z)=f(z)-\phi(z).\\]
 (Pincherle, [*Rend. dei Lincei* (5), **v.** (1896)](http://babel.hathitrust.org/cgi/pt?id=njp.32101077264388;view=1up;seq=33), p. 27.) 
 
-11. Shew that the arithmetic mean of the squares of the moduli of all the values of the series \\(\sum\limits_{n=0}^\infty a_n z^n\\) on a circle \\(\left|\,z\,\right|=r\\), situated within its circle of convergence, is equal to the sum of the squares of the moduli of the separate terms. <br><br>
+11. Shew that the arithmetic mean of the squares of the moduli of all the values of the series \\(\sum\limits_{n=0}^\infty a_n z^n\\) on a circle \\(\left|\,z\,\right|=r\\), situated within its circle of convergence, is equal to the sum of the squares of the moduli of the separate terms.\\(\vphantom{\\ 3\\}\\)<br>
 (Gutzmer, [*Math. Ann.* **xxxii.** (1888)](http://www.digizeitschriften.de/dms/toc/?PPN=PPN235181684_0032), pp. 596-600.) 
 
 12. Shew that the series 
@@ -167,7 +166,7 @@ and that it has no singularities except at the point \\(z=1\\).\\(\vphantom{\\ 3
 
 13. Shew that the series 
 \\[\frac{2}{\pi}(z+z^{-1})+\frac{2}{\pi}\sum\left\{\frac{z}{(1-2\nu-2\nu^{\:\!\prime}zi)(2\nu+2\nu^{\:\!\prime}zi)^2}+\frac{z^{-1}}{(1-2\nu-2\nu^{\:\!\prime}z^{-1}i)(2\nu+2\nu^{\:\!\prime}z^{-1}i)^2}\right\},\\]
-in which the summation extends over all integral values of \\(\nu\\), \\(\nu^{\:\!\prime}\\), except the combination \\((\nu = 0,\, \nu^{\:\!\prime} = 0)\\), converges absolutely for all values of \\(z\\) except purely imaginary values; and that its sum is +1 or -1, according as the real part of \\(z\\) is positive or negative. <br><br>
+in which the summation extends over all integral values of \\(\nu\\), \\(\nu^{\:\!\prime}\\), except the combination \\((\nu = 0,\, \nu^{\:\!\prime} = 0)\\), converges absolutely for all values of \\(z\\) except purely imaginary values; and that its sum is +1 or -1, according as the real part of \\(z\\) is positive or negative. \\(\vphantom{\\ 3\\}\\)<br>
 (Weierstrass, [*Berliner Monatsberichte*, 1880](http://biodiversitylibrary.org/page/36277988#page/803), p. 735.) 
 
 14. Shew that \\(\sin\left\{u\left(z+\dfrac{1}{z}\right)\right\}\\)  can be expanded in a series of the type 
@@ -182,7 +181,7 @@ pp. 126-138; Pringsheim, [*Math. Ann.* **xlii.** (1893)](http://www.digizeitschr
 
 16. If \\(f(z)\\) be a continuous one-valued function of \\(z\\) throughout a two-dimensional region, and if 
 \\[\int_C   f (z)\, dz = 0\\] 
-for all closed contours *C* lying inside the region, then \\(f(z)\\) is an analytic function of \\(z\\) throughout the interior of the region. <br><br>
+for all closed contours \\(C\\) lying inside the region, then \\(f(z)\\) is an analytic function of \\(z\\) throughout the interior of the region. <br><br>
 [Let \\(a\\) be any point of the region and let 
 \\[F(z)=\int_a^z \! f(z) \, dz.\\]
 It follows from the data that \\(F(z)\\) has the unique derivate \\(f(z)\\). Hence \\(F(z)\\) is analytic ([§5.1](CMA05-1-AnalyticFunctions.html#5.1apropertyoftheelementaryfunctions.))
@@ -215,11 +214,11 @@ It follows from the data that \\(F(z)\\) has the unique derivate \\(f(z)\\). Hen
     <li><a href="CMA05-1-AnalyticFunctions.html#thefundamentalpropertiesofanalyticfunctions">The Properties of Analytic Functions</a>
       <ul>
         <li><a href="CMA05-1-AnalyticFunctions.html#5.1apropertyoftheelementaryfunctions.">A Property of Elementary Functions</a>
-        <li><a href="CMA05-2-CauchysTheorem.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy's Theorem</a></li>
+        <li><a href="CMA05-2-CauchysTheorem.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy&#8217;s Theorem</a></li>
         <li><a href="CMA05-3-TaylorsTheorem.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Analytic Functions as Uniformly Convergent Series</a></li>
-	<li><a href="CMA05-3-TaylorsTheorem.html#5.4taylorstheorem.">Taylor's Theorem</a></li>
+	<li><a href="CMA05-3-TaylorsTheorem.html#5.4taylorstheorem.">Taylor&#8217;s Theorem</a></li>
 	<li><a href="CMA05-4-AnalyticContinuation.html#5.5theprocessofcontinuation.">Analytic Continuation</a></li>
-	<li><a href="CMA05-5-LaurentsTheorem.html#5.6laurentstheorem.">Laurent's Theorem</a></li>
+	<li><a href="CMA05-5-LaurentsTheorem.html#5.6laurentstheorem.">Laurent&#8217;s Theorem</a></li>
        <li class="current"><a href="#5.7many-valuedfunctions.">Many-valued Functions</a></li>
         <li class="current"><a href="#references.">References</a></li>
         <li class="current"><a href="#miscellaneousexamples.">Miscellaneous Examples</a></li>
@@ -230,7 +229,11 @@ It follows from the data that \\(F(z)\\) has the unique derivate \\(f(z)\\). Hen
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navcauchy');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a> 
+   <ul >
+    <li ><a href="Appendix-I-LogrithmAndExponential">Appendix</a></li>
+  </ul>
+</li>
 </ul>
 </div>
 
