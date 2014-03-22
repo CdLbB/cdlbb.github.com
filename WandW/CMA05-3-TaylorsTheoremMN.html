@@ -31,11 +31,11 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
 
 <h3 id="5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">5.3 Analytic functions represented by uniformly convergent series.</h3>
 
-<p>Let <span class="math">\(\sum\limits_{n=0}^\infty f_n(z)\)</span> be a series such that (i) it converges uniformly along a contour <em>C</em>, (ii) <span class="math">\(f_n (z)\)</span> is analytic throughout <em>C</em> and its interior. </p>
+<p>Let <span class="math">\(\sum\limits_{n=0}^\infty f_n(z)\)</span> be a series such that (i) it converges uniformly along a contour <span class="math">\(C\)</span>, (ii) <span class="math">\(f_n (z)\)</span> is analytic throughout <span class="math">\(C\)</span> and its interior. </p>
 
-<p>Then <span class="math">\(\sum\limits_{n=0}^\infty f_n(z)\)</span> converges, and the sum of the series is an analytic function throughout <em>C</em> and its interior. </p>
+<p>Then <span class="math">\(\sum\limits_{n=0}^\infty f_n(z)\)</span> converges, and the sum of the series is an analytic function throughout <span class="math">\(C\)</span> and its interior. </p>
 
-<p>For let <span class="math">\(a\)</span> be any point inside <em>C</em>; on <em>C</em>, let <span class="math">\(\sum\limits_{n=0}^\infty f_n(z)=\Phi(z)\)</span>. </p>
+<p>For let <span class="math">\(a\)</span> be any point inside <span class="math">\(C\)</span>; on <span class="math">\(C\)</span>, let <span class="math">\(\sum\limits_{n=0}^\infty f_n(z)=\Phi(z)\)</span>. </p>
 
 <p>Then
 <span class="math">\[\begin{align*}
@@ -43,18 +43,18 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
 \\&=\sum_{n=0}^\infty \left\{\frac{1}{2\pi i}\!\int_C \frac{f_n(z)}{z-a} dz \right\}, 
 \end{align*}\]</span>
 by <a href="CMA04-3-ComplexIntMN.html#4.7integrationofinfiniteseries.">&#167;4.7</a>.<a class="marginmark" onClick="toggleHide('mn:1,-7');">&#91;1&#93;</a> But this last series,
-by <a href="CMA05-2-CauchysTheoremMN.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.">&#167;5.21</a>, is <span class="math">\(\sum\limits_{n=0}^\infty f_n(a)\)</span>; the series under consideration therefore converges at all points inside <em>C</em>; let its sum inside <em>C</em> (as well as on <em>C</em>) be called <span class="math">\(\Phi(z)\)</span>. Then the function is analytic if it has a unique differential coefficient at all points inside <em>C</em>. </p>
+by <a href="CMA05-2-CauchysTheoremMN.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.">&#167;5.21</a>, is <span class="math">\(\sum\limits_{n=0}^\infty f_n(a)\)</span>; the series under consideration therefore converges at all points inside <span class="math">\(C\)</span>; let its sum inside <span class="math">\(C\)</span> (as well as on <span class="math">\(C\)</span>) be called <span class="math">\(\Phi(z)\)</span>. Then the function is analytic if it has a unique differential coefficient at all points inside <span class="math">\(C\)</span>. </p>
 
 </div>
-<div class="marginnotes"  id="mn:1,-7"  style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;1&#93;</a>Since <span class="math">\(\left|\, z - a \, \right|^{-1}\)</span> is bounded when <span class="math">\(a\)</span> is fixed and <span class="math">\(z\)</span> is on <em>C</em>, the uniformity of the convergence of <span class="math">\(\sum\limits_{n=0}^\infty \left. f_n(z) \middle/ (z-a) \right.\)</span> follows from that of <span class="math">\(\sum\limits_{n=0}^\infty f_n(z)\)</span>. <a onClick="hideIt('mn:1,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div class="marginnotes"  id="mn:1,-7"  style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;1&#93;</a>Since <span class="math">\(\left|\, z - a \, \right|^{-1}\)</span> is bounded when <span class="math">\(a\)</span> is fixed and <span class="math">\(z\)</span> is on <span class="math">\(C\)</span>, the uniformity of the convergence of <span class="math">\(\sum\limits_{n=0}^\infty \left. f_n(z) \middle/ (z-a) \right.\)</span> follows from that of <span class="math">\(\sum\limits_{n=0}^\infty f_n(z)\)</span>. <a onClick="hideIt('mn:1,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
 <div class="contenttext">
 
-<p>But if <span class="math">\(a\)</span> and <span class="math">\(a + h\)</span> be inside <em>C</em>,
+<p>But if <span class="math">\(a\)</span> and <span class="math">\(a + h\)</span> be inside <span class="math">\(C\)</span>,
 <span class="math">\[\frac{\Phi(a+h)-\Phi(a)}{h} = \frac{1}{2\pi i}\!\int_C \frac{\Phi(z)\,dz}{(z-a)(z-a-h)},\]</span>
 and hence, as in <a href="CMA05-2-CauchysTheoremMN.html#5.22thederivatesofananalyticfunction.">&#167;5.22</a>, <span class="math">\(\lim\limits_{h \rightarrow 0} \left[\left\{\Phi(a+h)-\Phi(a)\right\}h^{-1}\right]\)</span> exists and is equal to
 <span class="math">\[ \frac{1}{2\pi i}\!\int_C \frac{\Phi(z)\,dz}{(z-a)^2};\]</span>
-and therefore <span class="math">\(\Phi(z)\)</span> is analytic inside <em>C</em>. Further, by
+and therefore <span class="math">\(\Phi(z)\)</span> is analytic inside <span class="math">\(C\)</span>. Further, by
 transforming the last integral in the same way as we transformed the first
 one, we see that <span class="math">\(\Phi'(a)=\sum\limits_{n=0}^\infty f'(a)\)</span>, so that <span class="math">\(\sum\limits_{n=0}^\infty f(a)\)</span> may be &#8216;differentiated term by term.&#8217; </p>
 
@@ -76,13 +76,15 @@ one, we see that <span class="math">\(\Phi'(a)=\sum\limits_{n=0}^\infty f'(a)\)<
 
 <h4 id="5.31analyticfunctionsrepresentedbyintegrals.">5.31 Analytic functions represented by integrals.</h4>
 
-<p>Let <span class="math">\(f(t, z)\)</span> satisfy the following conditions when <span class="math">\(t\)</span> lies on a certain path of integration <span class="math">\([a, b]\)</span> and <span class="math">\(z\)</span> is any point of a region <em>S</em>: </p>
+<p>Let <span class="math">\(f(t, z)\)</span> satisfy the following conditions when <span class="math">\(t\)</span> lies on a certain path of integration <span class="math">\([a, b]\)</span> and <span class="math">\(z\)</span> is any point of a region <span class="math">\(S\)</span>: </p>
+<div class="listroman">
 
 <ol>
 <li><span class="math">\(f\)</span> and <span class="math">\(\dfrac{\partial f}{\partial z}\)</span> are continuous functions of <span class="math">\(t\)</span>.</li>
 <li><span class="math">\(f\)</span> is an analytic function of <span class="math">\(z\)</span>.</li>
 <li>The continuity of <span class="math">\(\dfrac{\partial f}{\partial z}\)</span> <em>qua</em><a class="marginmark" onClick="toggleHide('mn:3,-3');">&#91;3&#93;</a> function of <span class="math">\(z\)</span> is uniform with respect to the variable <span class="math">\(t\)</span>.</li>
 </ol>
+</div>
 </div>
 <div class="marginnotes"  id="mn:3,-3"  style="margin-top: -3em; margin-bottom: -3em;"><a class="marginmark">&#91;3&#93;</a><em>Editor&#8217;s Note</em>: In this usage, the word <em>qua</em> means <em>treated as &#8230;</em><a onClick="hideIt('mn:3,-3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
@@ -93,14 +95,16 @@ unique derivate <span class="math">\[\int_a^b\! \frac{\partial f(t,z)}{\partial 
 
 <h4 id="5.32analyticfunctionsrepresentedbyinfiniteintegrals.">5.32 Analytic functions represented by infinite integrals.</h4>
 
-<p>From <a href="CMA04-2-InfiniteIntegralsMN.html#4.44corollary">&#167;4.44 (II) corollary</a>, it follows that <span class="math">\(\int_a^\infty \! f(t,z)\, dt\)</span> is an analytic function of <span class="math">\(z\)</span> at all points of a region <em>S</em> if </p>
+<p>From <a href="CMA04-2-InfiniteIntegralsMN.html#4.44corollary">&#167;4.44 (II) corollary</a>, it follows that <span class="math">\(\int_a^\infty \! f(t,z)\, dt\)</span> is an analytic function of <span class="math">\(z\)</span> at all points of a region <span class="math">\(S\)</span> if </p>
+<div class="listroman">
 
 <ol>
 <li>the integral converges,</li>
-<li><span class="math">\(f(t, z)\)</span> is an analytic function of <span class="math">\(z\)</span> when <span class="math">\(t\)</span> is on the path of integration and <span class="math">\(z\)</span> is on <em>S</em>,</li>
+<li><span class="math">\(f(t, z)\)</span> is an analytic function of <span class="math">\(z\)</span> when <span class="math">\(t\)</span> is on the path of integration and <span class="math">\(z\)</span> is on <span class="math">\(S\)</span>,</li>
 <li><span class="math">\(\dfrac{\partial f(t,z)}{\partial z}\)</span>is a continuous function of both variables,</li>
-<li><span class="math">\(\displaystyle \int_a^\infty \!\frac{\partial f(t,z)}{\partial z}dt\)</span> converges uniformly throughout <em>S</em>.</li>
+<li><span class="math">\(\displaystyle \int_a^\infty \!\frac{\partial f(t,z)}{\partial z}dt\)</span> converges uniformly throughout <span class="math">\(S\)</span>.</li>
 </ol>
+</div>
 
 <p>For if these conditions are satisfied, <span class="math">\(\int_a^\infty f(t, z) \,dt\)</span> has the unique derivate <span class="math">\[\int_a^\infty\! \frac{\partial f(t,z)}{\partial z}dt.\]</span></p>
 
@@ -117,17 +121,17 @@ function of <span class="math">\(z\)</span> when <span class="math">\(\mathfrak{
 <div class="contenttext">
 
 <p>Consider a function <span class="math">\(f(z)\)</span>, which is analytic in the neighbourhood of a
-point <span class="math">\(z = a\)</span>. Let <em>C</em> be a circle with <span class="math">\(a\)</span> as centre in the <span class="math">\(z\)</span>-plane, which does not have any singular point of the function <span class="math">\(f(z)\)</span> on or inside it; so that <span class="math">\(f(z)\)</span>
-is analytic at all points on and inside <em>C</em>. Let <span class="math">\(z = a + h\)</span> be any point inside the circle <em>C</em>. Then, by <a href="CMA05-2-CauchysTheoremMN.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.">&#167;5.21</a>, we have
+point <span class="math">\(z = a\)</span>. Let <span class="math">\(C\)</span> be a circle with <span class="math">\(a\)</span> as centre in the <span class="math">\(z\)</span>-plane, which does not have any singular point of the function <span class="math">\(f(z)\)</span> on or inside it; so that <span class="math">\(f(z)\)</span>
+is analytic at all points on and inside <span class="math">\(C\)</span>. Let <span class="math">\(z = a + h\)</span> be any point inside the circle <span class="math">\(C\)</span>. Then, by <a href="CMA05-2-CauchysTheoremMN.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.">&#167;5.21</a>, we have
 <span class="math">\[f(a+h)=\frac{1}{2\pi i}\! \int_C \frac{f(z)\, dz}{z-a-h}\]</span>
 <span class="math">\[=\frac{1}{2\pi i}\! \int_C \! f(z)\, dz\left\{\frac{1}{z-a}+\frac{h}{(z-a)^2}+\cdots +\frac{h^n}{(z-a)^{n+1}}+\frac{h^{n+1}}{(z-a)^{n+1}(z-a-h)}\right\}\]</span>
 <span class="math">\[=f(a)+hf'(a)+\frac{h^2}{2!}f''(a)+ \cdots +\frac{h^n}{n!}f^{(n)}(a)+\frac{1}{2\pi i}\!\int_C \frac{h^{n+1}f(z)\,dz}{(z-a)^{n+1}(z-a-h)}. \]</span></p>
 
-<h6 id="5.4termvanishes">But when <span class="math">\(z\)</span> is on <em>C</em>, the modulus of <span class="math">\(\dfrac{f(z)}{z-a-h}\)</span> is continuous, and so, by <a href="CMA03-3-Heine-BorelMN.html#continuousisbounded">&#167;3.61 cor. (ii)</a>, will not exceed some finite number <span class="math">\(M\)</span>.</h6>
+<h6 id="5.4termvanishes">But when <span class="math">\(z\)</span> is on <span class="math">\(C\)</span>, the modulus of <span class="math">\(\dfrac{f(z)}{z-a-h}\)</span> is continuous, and so, by <a href="CMA03-3-Heine-BorelMN.html#continuousisbounded">&#167;3.61 cor. (ii)</a>, will not exceed some finite number <span class="math">\(M\)</span>.</h6>
 
 <p>Therefore, by <a href="CMA04-3-ComplexIntMN.html#4.62anupperlimittothevalueofacomplexintegral.">&#167;4.62</a>,
 <span class="math">\[\left|\,\frac{1}{2\pi i}\!\int_C \frac{h^{n+1}f(z)\,dz}{(z-a)^{n+1}(z-a-h)}\,\right| \leq \frac{M \cdot 2\pi R}{2\pi}\left( \frac{\left|\,h\,\right|}{R}\right)^{n+1},\]</span>
-where <span class="math">\(R\)</span> is the radius of the circle <em>C</em>, so that <span class="math">\(2\pi R\)</span> is the length of the path of integration in the last integral, and <span class="math">\(R = \left|\,z — a\,\right|\)</span> for points <span class="math">\(z\)</span> on the circumference of <em>C</em>. </p>
+where <span class="math">\(R\)</span> is the radius of the circle <span class="math">\(C\)</span>, so that <span class="math">\(2\pi R\)</span> is the length of the path of integration in the last integral, and <span class="math">\(R = \left|\,z — a\,\right|\)</span> for points <span class="math">\(z\)</span> on the circumference of <span class="math">\(C\)</span>. </p>
 
 <p>The right-hand side of the last inequality tends to zero as <span class="math">\(n \rightarrow \infty\)</span>. We
 have therefore
@@ -146,9 +150,9 @@ used. </p>
 <p>If <span class="math">\(f(a) = 0\)</span>, the function <span class="math">\(f(z)\)</span> is said to have a <em>zero</em> at the point <span class="math">\(z = a\)</span>. If at such a point <span class="math">\(f'(a)\)</span> is different from zero, the zero of <span class="math">\(f(a)\)</span> is said to be <em>simple</em>; if, however,<span class="math">\(\,f'(a)\)</span>,<span class="math">\(\, f''(a), \dots ,\, f^{(n-1)}(a)\)</span> are all zero, so that the Taylor&#8217;s expansion of <span class="math">\(f(z)\)</span> at <span class="math">\(z = a\)</span> begins with a term in <span class="math">\((z - a)^n\)</span>, then the function <span class="math">\(f(z)\)</span> is said to have a <em>zero of the n</em>th <em>order</em> at the point <span class="math">\(z = a\)</span>. </p>
 
 <blockquote>
-<p><em>Example</em> 1. Find the function <span class="math">\(f(z)\)</span>, which is analytic throughout the circle <em>C</em> and its interior, whose centre is at the origin and whose radius is unity, and has the value
+<p><em>Example</em> 1. Find the function <span class="math">\(f(z)\)</span>, which is analytic throughout the circle <span class="math">\(C\)</span> and its interior, whose centre is at the origin and whose radius is unity, and has the value
 <span class="math">\[\frac{\alpha-\cos \theta}{\alpha^2-2\alpha \cos \theta + 1}+i\frac{\sin \theta}{\alpha^2-2\alpha \cos \theta + 1}\]</span>
-(where <span class="math">\(\alpha > 1\)</span> and <span class="math">\(\theta\)</span> is the vectorial angle) at points on the circumference of <em>C</em>. </p>
+(where <span class="math">\(\alpha > 1\)</span> and <span class="math">\(\theta\)</span> is the vectorial angle) at points on the circumference of <span class="math">\(C\)</span>. </p>
 
 <p>[We have
 <span class="math">\[\begin{align*}
@@ -172,7 +176,7 @@ or <span class="math">\(f(z) = (a - z)^{-1}\)</span> for all points within the c
 <p><em>Example</em> 2. Prove that the arithmetic mean of all values of <span class="math">\(z^{-n} \sum\limits_{v=0}^\infty  a_\nu z^{\nu}\)</span>, for points <span class="math">\(z\)</span> on
 the circumference of the circle <span class="math">\(\left|\, z\,\right| = 1\)</span>, is <span class="math">\(a_n\)</span>, if <span class="math">\(\sum a_\nu z^\nu\)</span> is analytic throughout the circle and its interior.</p>
 
-<p>[Let <span class="math">\(\sum\limits_{\nu=0}^\infty a_\nu z^\nu = f(z)\)</span>, so that <span class="math">\(a_\nu=\dfrac{f^{(n)}(0)}{n!}\)</span>. Then, writing <span class="math">\(z = e^{i\theta}\)</span>, and calling <em>C</em> the circle <span class="math">\(\left|\, z\,\right| = 1\)</span>, <br><br>
+<p>[Let <span class="math">\(\sum\limits_{\nu=0}^\infty a_\nu z^\nu = f(z)\)</span>, so that <span class="math">\(a_\nu=\dfrac{f^{(n)}(0)}{n!}\)</span>. Then, writing <span class="math">\(z = e^{i\theta}\)</span>, and calling <span class="math">\(C\)</span> the circle <span class="math">\(\left|\, z\,\right| = 1\)</span>, <br><br>
 <span class="math">\(\displaystyle \frac{1}{2 \pi}\!\int_0^{2\pi} \! \frac{f(z)\,d\theta}{z^n} = \frac{1}{2 \pi i}\!\int_C \frac{f(z)\,dz}{z^{n+1}}=\frac{f^{(n)}(0)}{n!}=a_n. \)</span>]</p>
 </blockquote>
 
@@ -208,7 +212,7 @@ the form </p>
 </tbody>
 </table>
 
-<p>(where <span class="math">\(P_n(z)\)</span> is easily seen to be a polynomial of degree <em>n</em> in <span class="math">\(z\)</span>), then this series converges so long as <span class="math">\(z\)</span> is in the interior of an ellipse whose foci are the points <span class="math">\(z=1\)</span> and <span class="math">\(z= -1\)</span>, and whose semi-major axis is <span class="math">\(\frac{1}{2}(h+h^{-1}) \)</span>.</p>
+<p>(where <span class="math">\(P_n(z)\)</span> is easily seen to be a polynomial of degree <span class="math">\(n\)</span> in <span class="math">\(z\)</span>), then this series converges so long as <span class="math">\(z\)</span> is in the interior of an ellipse whose foci are the points <span class="math">\(z=1\)</span> and <span class="math">\(z= -1\)</span>, and whose semi-major axis is <span class="math">\(\frac{1}{2}(h+h^{-1}) \)</span>.</p>
 
 <p>Let the series be first regarded as a function of <span class="math">\(h\)</span>. It is a power series in <span class="math">\(h\)</span>, and therefore converges so long as the point <span class="math">\(h\)</span> lies within a circle in the <span class="math">\(h\)</span>-plane. The centre
 of this circle is the point <span class="math">\(h=0\)</span>, and its circumference will be such as to pass through that singularity of <span class="math">\((1+2zh+h^2)^{-\frac{1}{2}}\)</span> which is nearest to <span class="math">\(h = 0\)</span>. </p>
@@ -251,11 +255,11 @@ and let <span class="math">\(p\)</span> be a positive integer such that <span cl
 
 <p>Then <span class="math">\[R_n=\frac{h^n}{(n-1)!}\!\int _0^1 \! (1-t)^{p-1}(1-t)^{n-p} f^{(n)}(a+th)\,dt.\]</span></p>
 
-<p>Let <em>U</em>, <em>L</em> be the upper and lower bounds of <span class="math">\((1-t)^{n-p} f^{(n)}(a+th)\)</span>.
+<p>Let <span class="math">\(U\)</span>, <span class="math">\(L\)</span> be the upper and lower bounds of <span class="math">\((1-t)^{n-p} f^{(n)}(a+th)\)</span>.
 Then
 <span class="math">\[\int_0^1 \!L(1-t)^{p-1}\,dt < \int_0^1 \! (1-t)^{p-1}(1-t)^{n-p} f^{(n)}(a+th)\,dt < \int_0^1 \!U(1-t)^{p-1}\,dt.\]</span></p>
 
-<p>Since <span class="math">\((1-t)^{n-p} f^{(n)}(a+th)\)</span> is a continuous function it passes through all values between <em>U</em> and <em>L</em>, and hence we can find <span class="math">\(\theta \)</span> such that <span class="math">\(0 \leq \theta \leq 1 \)</span>, and
+<p>Since <span class="math">\((1-t)^{n-p} f^{(n)}(a+th)\)</span> is a continuous function it passes through all values between <span class="math">\(U\)</span> and <span class="math">\(L\)</span>, and hence we can find <span class="math">\(\theta \)</span> such that <span class="math">\(0 \leq \theta \leq 1 \)</span>, and
 <span class="math">\[\int _0^1 \! (1-t)^{n-1} f^{(n)}(a+th)\,dt = p^{-1}(1-\theta)^{n-p}f^{(n)}(a+\theta h).\]</span>
 Therefore <span class="math">\[R_n = \frac{h^n}{(n-1)! p}(1-\theta)^{n-p}f^{(n)}(a+ \theta h). \]</span></p>
 
@@ -291,31 +295,35 @@ if <span class="math">\(f'(x)\)</span> is continuous when <span class="math">\(a
     <li><a href="CMA05-1-AnalyticFunctionsMN.html#thefundamentalpropertiesofanalyticfunctions">The Properties of Analytic Functions</a>
       <ul>
         <li><a href="CMA05-1-AnalyticFunctionsMN.html#5.1apropertyoftheelementaryfunctions.">A Property of Elementary Functions</a>
-        <li><a href="CMA05-2-CauchysTheoremMN.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy's Theorem</a></li>
+        <li><a href="CMA05-2-CauchysTheoremMN.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy&#8217;s Theorem</a></li>
         <li class="current"><a href="#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Analytic Functions as Uniformly Convergent Series</a>
           <ul>
     <li><a href="#5.31analyticfunctionsrepresentedbyintegrals.">Analytic functions as integrals</a>
               <li  class="current"><a href="#5.32analyticfunctionsrepresentedbyinfiniteintegrals.">Analytic functions as infinite integrals</a>
           </ul>
         </li>
-    <li class="current"><a href="#5.4taylorstheorem.">Taylor's Theorem</a>
+    <li class="current"><a href="#5.4taylorstheorem.">Taylor&#8217;s Theorem</a>
           <ul>
-    <li><a href="#5.41formsoftheremainderintaylorsseries."> Forms of the remainder in Taylor's series</a>
+    <li><a href="#5.41formsoftheremainderintaylorsseries."> Forms of the remainder in Taylor&#8217;s series</a>
           </ul>
         </li>
     <li><a href="CMA05-4-AnalyticContinuationMN.html#5.5theprocessofcontinuation.">Analytic Continuation</a></li>
-    <li><a href="CMA05-4-AnalyticContinuationMN.html#5.6Laurentstheorem.">Laurent's Theorem</a></li>
+    <li><a href="CMA05-4-AnalyticContinuationMN.html#5.6Laurentstheorem.">Laurent&#8217;s Theorem</a></li>
        <li><a href="CMA05-6-ManyValuedFunctionsMN.html#5.7many-valuedfunctions.">Many-valued Functions</a></li>
         <li><a href="CMA05-6-ManyValuedFunctionsMN.html#references.">References</a></li>
         <li><a href="CMA05-6-ManyValuedFunctionsMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
     </li>
-    <li><a href="whereOwhere.html">The Theory of Residues</a></li>
+    <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
     <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navcauchy');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a> 
+   <ul >
+    <li ><a href="Appendix-I-LogrithmAndExponential">Appendix</a></li>
+  </ul>
+</li>
 </ul>
 </div>
 
@@ -353,7 +361,7 @@ if <span class="math">\(f'(x)\)</span> is continuous when <span class="math">\(a
      <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
      <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
      <li class="more current"><a onClick="showIt('navcauchy');hideIt('navprocesses');"> you are here . . . </a></li>
-     <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
+     <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>

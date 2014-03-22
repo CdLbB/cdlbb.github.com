@@ -98,7 +98,7 @@ can be expanded in the form
 <span class="math">\[S_0+\sum_{n-1}^\infty S_n \left(\frac{a^n}{z^n}+ \frac{z^n}{b^n} \right),\]</span>
 where <span class="math">\[S_n=\sum_{l=0}^\infty \frac{1 \cdot 3 \cdots (2l-1)\cdot 1 \cdot 3 \cdots (2l+2n-1)}{2^{2l+n}\, l! \,(l+n)!} \left(\frac{a}{b}\right)^l.\]</span> </p>
 
-<p>The function is one-valued and analytic in the annulus (see <a href="CMA05-6-ManyValuedFunctionsMN.html#5.7manyvaluedfunctions.">&#167;5.7</a>), for the branch-points <span class="math">\(0\)</span>, <span class="math">\(a\)</span> neutralise each other, and so, by Laurent&#8217;s Theorem, if <em>C</em> denote the circle <span class="math">\(\left|\, z \,\right|=r\)</span>, where <span class="math">\(\left|\, a\,\right| < r < \left|\, b\, \right|\)</span>, the coefficient of <span class="math">\(z^n\)</span> in the required expansion is
+<p>The function is one-valued and analytic in the annulus (see <a href="CMA05-6-ManyValuedFunctionsMN.html#5.7manyvaluedfunctions.">&#167;5.7</a>), for the branch-points <span class="math">\(0\)</span>, <span class="math">\(a\)</span> neutralise each other, and so, by Laurent&#8217;s Theorem, if <span class="math">\(C\)</span> denote the circle <span class="math">\(\left|\, z \,\right|=r\)</span>, where <span class="math">\(\left|\, a\,\right| < r < \left|\, b\, \right|\)</span>, the coefficient of <span class="math">\(z^n\)</span> in the required expansion is
 <span class="math">\[\frac{1}{2\pi i}\! \int_C \frac{dz}{z^{n+1}}\left\{\frac{bz}{(z-a)(b-z)}\right\}^{\frac{1}{2}}. \]</span> </p>
 
 <p>Putting <span class="math">\(z = re^{i\theta}\)</span>, this becomes
@@ -123,14 +123,16 @@ and
 <h4 id="5.61thenatureofthesingularitiesofone-valuedfunctions.">5.61 The nature of the singularities of one-valued functions.</h4>
 
 <p>Consider first a function <span class="math">\(f(z)\)</span> which is analytic throughout a closed
-region <em>S</em>, except at a single point a inside the region. </p>
+region <span class="math">\(S\)</span>, except at a single point a inside the region. </p>
 
 <p>Let it be possible to define a function <span class="math">\(\phi(z)\)</span> such that </p>
+<div class="listroman">
 
 <ol>
-<li><span class="math">\(\phi(z)\)</span> is analytic throughout <em>S</em>,</li>
+<li><span class="math">\(\phi(z)\)</span> is analytic throughout <span class="math">\(S\)</span>,</li>
 <li>when <span class="math">\(z\neq a\)</span>, <span class="math">\( f (z) = \phi(z) + \frac{B_1}{z-a} + \frac{B_2}{(z-a)^2}+ \cdots  + \frac{B_n}{(z-a)^n}.\)</span></li>
 </ol>
+</div>
 
 <p>Then <span class="math">\(f(z)\)</span> is said to have a <em>&#8216;pole of order <span class="math">\(n\)</span> at <span class="math">\(a\)</span>&#8217;</em>; and the terms <span class="math">\(\frac{B_1}{z-a} + \frac{B_2}{(z-a)^2}+ \cdots  + \frac{B_n}{(z-a)^n}.\)</span> are called the <em>principal part of</em> <span class="math">\(f(z)\)</span> near <span class="math">\(a\)</span>.
 By the definition of a singularity (<a href="CMA05-1-AnalyticFunctionsMN.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.">&#167;5.12</a>) a pole is a singularity. If <span class="math">\(n = 1\)</span>,
@@ -196,7 +198,7 @@ and so the expansion of <span class="math">\(f(z)\)</span> valid for sufficientl
 <span class="math">\[f(z)= \frac{A}{z^m}+\frac{B}{z^{m+1}}+\frac{C}{z^{m+2}}+ \cdots .\]</span>
 In this case, <span class="math">\(f(z)\)</span> is said to have a <em>zero of order m at &#8216;infinity&#8217;.</em> </p>
 
-<p>Again, the function <span class="math">\(\phi(z)\)</span> may have a pole of order <em>m</em> at the point <span class="math">\(z' = 0\)</span>; in this case
+<p>Again, the function <span class="math">\(\phi(z)\)</span> may have a pole of order <span class="math">\(m\)</span> at the point <span class="math">\(z' = 0\)</span>; in this case
 <span class="math">\[\phi(z') =  \frac{A}{z'^m}+\frac{B}{z'^{m-1}}+\frac{C}{z'^{m-2}}+ \cdots \frac{L}{z'}+M+Nz'+Pz'^2+ \cdots ,\]</span>
 and so, for sufficiently large values of <span class="math">\(\left|\, z\, \right|\)</span>, <span class="math">\(f(z)\)</span> can be expanded in the form
 <span class="math">\[f(z) = Az^m+ Bz^{m-1}+C z^{m-2} + \cdots Lz+ M+ \frac{N}{z}+\frac{P}{z^2}+ \cdots.\]</span>
@@ -213,7 +215,7 @@ The function represented by this series has singularities at <span class="math">
 <span class="math">\((n = 1,\, 2,\, 3, \dots)\)</span>, since at each of these points the denominator of one of the terms in the series is zero. These singularities are on the imaginary axis, and have <span class="math">\(z=0\)</span> as a limiting point; so no Taylor or Laurent expansion can be formed for the function valid throughout any region of which the origin is an interior point. </p>
 
 <p>For values of <span class="math">\(z\)</span>, other than these singularities, the series converges absolutely, since the limit of the ratio of the <span class="math">\((n + 1)\)</span>th term to the <span class="math">\(n\)</span>th is <span class="math">\(\lim\limits_{n \rightarrow 0} (n+ 1)^{-1} \alpha^{-2} = 0\)</span>. The function is an even function of <span class="math">\(z\)</span> (i.e. is unchanged if the sign of <span class="math">\(z\)</span> be changed), tends to zero as
-<span class="math">\(\left|\,z\,\right| \rightarrow \infty\)</span>, and is analytic on and outside a circle <em>C</em> of radius greater than unity and centre at the origin. So, for points outside this circle, it can be expanded in the form
+<span class="math">\(\left|\,z\,\right| \rightarrow \infty\)</span>, and is analytic on and outside a circle <span class="math">\(C\)</span> of radius greater than unity and centre at the origin. So, for points outside this circle, it can be expanded in the form
 <span class="math">\[\frac{b_2}{z^2}+\frac{b_4}{z^4}+\frac{b_6}{z^6}+ \cdots ,\]</span>
 where, by Laurent&#8217;s Theorem,
 <span class="math">\[b_{2k}=\frac{1}{2\pi i}\!\int_C \! z^{2k-1} \sum_{n=0}^\infty \frac{1}{n!}\,\frac{\alpha^{-2n}}{\alpha^{-2n}+z^2} \,dz. \]</span>
@@ -250,9 +252,9 @@ Now
 <p><em>Let <span class="math">\(f(z)\)</span> be analytic for all values of <span class="math">\(z\)</span> and let <span class="math">\(\left|\,f(z)\,\right| < K\)</span> for all values of <span class="math">\(z\)</span>, where <span class="math">\(K\)</span> is a constant (so that <span class="math">\(\left|\,f(z)\,\right|\)</span> is bounded as <span class="math">\(z \rightarrow \infty\)</span>). Then
 <span class="math">\(f(z)\)</span> is a constant.</em></p>
 
-<p>Let <span class="math">\(z\)</span>, <span class="math">\(z'\)</span> be any two points and let <em>C</em> be a contour such that <span class="math">\(z\)</span>, <span class="math">\(z'\)</span> are inside it. Then, by <a href="CMA05-2-CauchysTheoremMN.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.">&#167;5.21</a>,
+<p>Let <span class="math">\(z\)</span>, <span class="math">\(z'\)</span> be any two points and let <span class="math">\(C\)</span> be a contour such that <span class="math">\(z\)</span>, <span class="math">\(z'\)</span> are inside it. Then, by <a href="CMA05-2-CauchysTheoremMN.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.">&#167;5.21</a>,
 <span class="math">\[f(z')-f(z) = \frac{1}{2\pi i}\!\int_C \left\{\frac{1}{\zeta-z'} - \frac{1}{\zeta-z}\right\}\, f(\zeta)\, d\zeta;\]</span>
-take <em>C</em> to be a circle whose centre is <span class="math">\(z\)</span> and whose radius is <span class="math">\(\rho \geq 2\, \left|\, z' - z \,\right|\)</span>; on <em>C</em> write <span class="math">\(\zeta = z + \rho e^{i\theta}\)</span>; since <span class="math">\(\left|\,\zeta-z'\,\right| \geq \frac{1}{2}\rho\)</span> when <span class="math">\(\zeta\)</span> is on <em>C</em> it follows from <a href="CMA04-3-ComplexIntMN.html#4.62anupperlimittothevalueofacomplexintegral.">&#167;4.62</a>
+take <span class="math">\(C\)</span> to be a circle whose centre is <span class="math">\(z\)</span> and whose radius is <span class="math">\(\rho \geq 2\, \left|\, z' - z \,\right|\)</span>; on <span class="math">\(C\)</span> write <span class="math">\(\zeta = z + \rho e^{i\theta}\)</span>; since <span class="math">\(\left|\,\zeta-z'\,\right| \geq \frac{1}{2}\rho\)</span> when <span class="math">\(\zeta\)</span> is on <span class="math">\(C\)</span> it follows from <a href="CMA04-3-ComplexIntMN.html#4.62anupperlimittothevalueofacomplexintegral.">&#167;4.62</a>
 that
 <span class="math">\[\left|\,f(z')-f(z)\,\right| = \left|\,\frac{1}{2\pi}\!\int_C \frac{z'-z}{(\zeta-z')(\zeta-z)} \,f(\zeta)\,d\zeta \,\right|\]</span>
 <span class="math">\[< \frac{1}{2\pi}\!\int_0^{2\pi} \! \frac{\left|\,z'-z\,\right|\,K}{\frac{1}{2}\rho} d\theta\]</span>
@@ -318,15 +320,15 @@ that a function which is analytic everywhere (including <span class="math">\(\in
     <li><a href="CMA05-1-AnalyticFunctionsMN.html#thefundamentalpropertiesofanalyticfunctions">The Properties of Analytic Functions</a>
       <ul>
         <li><a href="CMA05-1-AnalyticFunctionsMN.html#5.1apropertyoftheelementaryfunctions.">A Property of Elementary Functions</a>
-        <li><a href="CMA05-2-CauchysTheoremMN.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy's Theorem</a></li>
+        <li><a href="CMA05-2-CauchysTheoremMN.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy&#8217;s Theorem</a></li>
         <li><a href="CMA05-3-TaylorsTheoremMN.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Analytic Functions as Uniformly Convergent Series</a></li>
-    <li><a href="CMA05-3-TaylorsTheoremMN.html#5.4taylorstheorem.">Taylor's Theorem</a></li>
+    <li><a href="CMA05-3-TaylorsTheoremMN.html#5.4taylorstheorem.">Taylor&#8217;s Theorem</a></li>
     <li><a href="CMA05-4-AnalyticContinuationMN.html#5.5theprocessofcontinuation.">Analytic Continuation</a></li>
-    <li class="current"><a href="#5.6laurentstheorem.">Laurent's Theorem</a>
+    <li class="current"><a href="#5.6laurentstheorem.">Laurent&#8217;s Theorem</a>
        <ul>
            <li ><a href="#5.61thenatureofthesingularitiesofone-valuedfunctions.">The singularities of one-valued functions</a>
               <li><a href="#5.62thepointatinfinity.">The point at infinity</a>
-              <li><a href="#5.63liouvillestheorem.">Liouville's theorem</a>
+              <li><a href="#5.63liouvillestheorem.">Liouville&#8217;s theorem</a>
               <li><a href="#5.64functionswithnoessentialsingularities.">Functions with no essential singularities</a>
           </ul>
        </li>
@@ -335,12 +337,16 @@ that a function which is analytic everywhere (including <span class="math">\(\in
         <li><a href="CMA05-6-ManyValuedFunctionsMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
     </li>
-    <li><a href="whereOwhere.html">The Theory of Residues</a></li>
+    <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
     <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navcauchy');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a> 
+   <ul >
+    <li ><a href="Appendix-I-LogrithmAndExponential">Appendix</a></li>
+  </ul>
+</li>
 </ul>
 </div>
 
@@ -378,7 +384,7 @@ that a function which is analytic everywhere (including <span class="math">\(\in
      <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
      <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
      <li class="more current"><a onClick="showIt('navcauchy');hideIt('navprocesses');"> you are here . . . </a></li>
-     <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
+     <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
