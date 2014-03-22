@@ -82,7 +82,7 @@ The property does not hold good at *any* point for the function \\( \left|\,z\,\
 
 The property considered in [§5.11](#5.11occasionalfailureoftheproperty.) will be taken as the basis of the definition of an *analytic function*, which may be stated as follows. 
 
-[^analytic,-1]: The words 'regular' and 'holomorphic' are sometimes used. A distinction has been made by Borel between 'monogenic' and 'analytic' functions in the case of functions with an infinite number of singularities. See [§5.51](CMA05-4-AnalyticContinuation.html#). <br><br>*Editor's Note*: Modern usage is slightly different: a complex function is *analytic, holomorphic (or regular) at a point \\(z\\)* if it is differentiable in a open neighborhood of \\(z\\) and is *holomorphic on set S* if it is holomorphic at every point of an open set containing *S*.
+[^analytic,-1]: The words 'regular' and 'holomorphic' are sometimes used. A distinction has been made by Borel between 'monogenic' and 'analytic' functions in the case of functions with an infinite number of singularities. See [§5.51](CMA05-4-AnalyticContinuation.html#). <br><br>*Editor's Note*: Modern usage is slightly different: a complex function is *analytic, holomorphic (or regular) at a point \\(z\\)* if it is differentiable in a open neighborhood of \\(z\\) and is *holomorphic on set \\(S\\)* if it is holomorphic at every point of an open set containing \\(S\\).
 
 Let a two-dimensional region in the \\(z\\)-plane be given; and let \\(u\\) be a 
 function of \\(z\\) defined uniquely at all points of the region. Let \\(z\\), \\(z + \delta z\\) be values of the variable \\(z\\) at two points, and \\(u\\), \\(u + \delta u\\) the corresponding values of \\(u\\). Then, if, at any point \\(z\\) within the area, \\(\dfrac{\delta u}{\delta z}\\) tends to a limit when \\(\delta x \rightarrow 0\\), \\(\delta y \rightarrow 0\\), independently (where \\(\delta z = \delta x + i\delta y\\)), \\(u\\) is said to be a function of \\(z\\) 
@@ -174,26 +174,30 @@ is satisfied by all points \\(z'\\) inside or on the boundary of that part.
 	<li class="current"><a href="#5.1apropertyoftheelementaryfunctions.">A Property of Elementary Functions</a>
           <ul>
               <li  class="current"><a href="#5.11occasionalfailureoftheproperty.">Occasional failure of the property</a>
-              <li  class="current"><a href="#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.">Cauchy's definition of an analytic function</a>
+              <li  class="current"><a href="#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.">Cauchy&#8217;s definition of an analytic function</a>
               <li  class="current"><a href="#5.13anapplicationofthemodifiedheine-boreltheorem.">An application of the Heine-Borel theorem</a>
           </ul>
        </li>
-        <li><a href="CMA05-2-CauchysTheorem.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy's Theorem</a></li>
+        <li><a href="CMA05-2-CauchysTheorem.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy&#8217;s Theorem</a></li>
 	<li><a href="CMA05-3-TaylorsTheorem.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Analytic Functions as Uniformly Convergent Series</a></li>
-	<li><a href="CMA05-3-TaylorsTheorem.html#5.4taylorstheorem.">Taylor's Theorem</a></li>
+	<li><a href="CMA05-3-TaylorsTheorem.html#5.4taylorstheorem.">Taylor&#8217;s Theorem</a></li>
 	<li><a href="CMA05-4-AnalyticContinuation.html#5.5theprocessofcontinuation.">Analytic Continuation</a></li>
-       <li><a href="CMA05-5-LaurentsTheorem.html#5.6laurentstheorem.">Laurent's Theorem</a></li>
+       <li><a href="CMA05-5-LaurentsTheorem.html#5.6laurentstheorem.">Laurent&#8217;s Theorem</a></li>
 	<li><a href="CMA05-6-ManyValuedFunctions.html#5.7many-valuedfunctions.">Many-valued Functions</a></li>
         <li><a href="CMA05-6-ManyValuedFunctions.html#references.">References</a></li>
         <li><a href="CMA05-6-ManyValuedFunctions.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
     </li>
-    <li><a href="whereOwhere.html">The Theory of Residues</a></li>
+    <li><a href="CMA06-1-Residues.html">The Theory of Residues</a></li>
     <li class="more"><a onClick="hideIt('navaprop');showIt('navprocesses');"> more . . . </a></li>
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navaprop');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navaprop');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navaprop');showIt('navback');">BACKMATTER</a> 
+   <ul >
+    <li ><a href="Appendix-I-LogrithmAndExponential">Appendix</a></li>
+  </ul>
+</li>
 </ul>
 </div>
 
@@ -234,7 +238,7 @@ is satisfied by all points \\(z'\\) inside or on the boundary of that part.
      <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
      <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
      <li class="more current"><a onClick="showIt('navaprop');hideIt('navprocesses');"> you are here . . . </a></li>
-     <li class="notdone"><a href="whereOwhere.html">The Theory of Residues</a></li>
+     <li><a href="CMA06-1-Residues.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
