@@ -334,7 +334,7 @@ Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is 
 <li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a>BACKMATTER</a>
   <ul >
-    <li ><a href="whereOwhere.html">Appendix</a></li>
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
     <li ><a href="whereOwhere.html">Authors Quoted</a></li>
   </ul>
 </li>

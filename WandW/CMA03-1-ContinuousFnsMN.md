@@ -378,7 +378,7 @@ whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the regio
 <li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a>BACKMATTER</a>
   <ul >
-    <li ><a href="whereOwhere.html">Appendix</a></li>
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponentialMN.html">Appendix</a></li>
     <li ><a href="whereOwhere.html">Authors Quoted</a></li>
   </ul>
 </li>

@@ -462,7 +462,7 @@ which is the required result; the change of the order of the integrations has be
 <li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a>BACKMATTER</a>
   <ul >
-    <li ><a href="whereOwhere.html">Appendix</a></li>
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
     <li ><a href="whereOwhere.html">Authors Quoted</a></li>
   </ul>
 </li>

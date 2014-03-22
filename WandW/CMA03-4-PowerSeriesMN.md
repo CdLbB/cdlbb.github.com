@@ -298,7 +298,7 @@ Shew also that, if the limit of \\(u_n\\) is not zero, but \\(u_n\\) is still mo
 <li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a>BACKMATTER</a>
   <ul >
-    <li ><a href="whereOwhere.html">Appendix</a></li>
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponentialMN.html">Appendix</a></li>
     <li ><a href="whereOwhere.html">Authors Quoted</a></li>
   </ul>
 </li>

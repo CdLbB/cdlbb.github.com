@@ -236,7 +236,7 @@ We write \\[ \theta=  \arg z. \\]
 
 From geometrical considerations, it appears that (although the modulus of a complex number is unique) the argument is not unique;[^nonunique,-9] if \\(\theta\\)  be a value of the argument, the other values of the argument are comprised in the expression \\(2n \pi+\theta\\) where \\(n\\) is any integer, not zero. The *principal* value of \\(\arg z\\) is that which satisfies the inequality \\(-\pi < \arg z \leq \pi\\).
 
-[^nonunique,-9]: See the Appendix, [§A.521](Appendix-II-TrigonometricalFunctions#5.21theprincipalsolutionofthetrigonometricalequations.).
+[^nonunique,-9]: See the Appendix, [§A.521](CMA24-Appendix-II-TrigonometricalFunctions.html#5.21theprincipalsolutionofthetrigonometricalequations.).
 
 
 If \\(P_1\\) and \\(P_2\\) are the representative points corresponding to values \\(z_1\\) and \\(z_2\\) respectively of \\(z\\), then the point which represents the value \\(z_1 +z_2\\) is clearly the terminus of a line drawn from \\(P_1\\), equal and parallel to that which joins the origin to \\(P_2\\).
@@ -343,7 +343,7 @@ where \\(\mu\\) is the number of the constituent primes.\\(\vphantom{\\ 3\\}\\)<
 <li class="part"><a onClick="hideIt('navcomplex');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a onClick="hideIt('navcomplex');showIt('navback');">BACKMATTER</a> 
    <ul >
-    <li ><a href="Appendix-I-LogrithmAndExponential">Appendix</a></li>
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
   </ul>
 </li>
 </ul>
@@ -440,7 +440,7 @@ where \\(\mu\\) is the number of the constituent primes.\\(\vphantom{\\ 3\\}\\)<
 <li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a>BACKMATTER</a>
   <ul >
-    <li ><a href="whereOwhere.html">Appendix</a></li>
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
     <li ><a href="whereOwhere.html">Authors Quoted</a></li>
   </ul>
 </li>

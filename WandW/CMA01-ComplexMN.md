@@ -390,7 +390,7 @@ From geometrical considerations, it appears that (although the modulus of a comp
 
 
 
-<div markdown=1 class="marginnotes" id="mn:16,-9" style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;16&#93;</a>See the Appendix, [&#167;A.521](Appendix-II-TrigonometricalFunctions#5.21theprincipalsolutionofthetrigonometricalequations.).<a onClick="hideIt('mn:16,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:16,-9" style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;16&#93;</a>See the Appendix, [&#167;A.521](CMA24-Appendix-II-TrigonometricalFunctionsMN.html#5.21theprincipalsolutionofthetrigonometricalequations.).<a onClick="hideIt('mn:16,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -503,7 +503,7 @@ where \\(\mu\\) is the number of the constituent primes.\\(\vphantom{\\ 3\\}\\)<
 <li class="part"><a onClick="hideIt('navcomplex');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a onClick="hideIt('navcomplex');showIt('navback');">BACKMATTER</a> 
    <ul >
-    <li ><a href="Appendix-I-LogrithmAndExponential">Appendix</a></li>
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponentialMN.html">Appendix</a></li>
   </ul>
 </li>
 </ul>
@@ -600,7 +600,7 @@ where \\(\mu\\) is the number of the constituent primes.\\(\vphantom{\\ 3\\}\\)<
 <li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a>BACKMATTER</a>
   <ul >
-    <li ><a href="whereOwhere.html">Appendix</a></li>
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponentialMN.html">Appendix</a></li>
     <li ><a href="whereOwhere.html">Authors Quoted</a></li>
   </ul>
 </li>
