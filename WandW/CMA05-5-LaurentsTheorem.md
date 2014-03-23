@@ -310,7 +310,7 @@ that a function which is analytic everywhere (including \\(\infty\\)) is merely 
 </li>
 <li class="part"><a onClick="hideIt('navcauchy');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a> 
-   <ul >
+  <ul >
     <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
   </ul>
 </li>

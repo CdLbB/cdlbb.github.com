@@ -133,7 +133,7 @@ We have consequently proved the theorem in question.
 >&\qquad =\int_a^b \!d\eta \left\{\int_a^\eta \!(\xi-a)^{\lambda-1} (b-\eta)^{\mu-1} (\eta-\xi)^{\nu-1} \phi(\xi,\eta)\,d\xi \right\}\end{align*}\\]
 This is called Dirichlet's formula. 
 
->[Note. What are now called infinite and improper integrals were defined by Cauchy, [*Leçons sur le calc. inf.* 1823](http://gallica.bnf.fr/ark:/12148/bpt6k62404287), though the idea of infinite integrals seems to date from Maclaurin (1742). The test for convergence was employed by Chartier (1853). Stokes (1847) distinguished between 'essentially' (absolutely) and non-essentially convergent integrals though he did not give a formal definition. Such a definition was given by Dirichlet in 1854 and 1858 (see his [*Vorlesungen*, 1904](https://archive.org/details/glejeunedirichle00lejeuoft), p. 39). In the early part of the nineteenth century improper integrals received more attention than infinite integrals,- probably because it was not fully realised that an infinite integral is really the *limit* of an integral.] 
+>[**Note**. What are now called infinite and improper integrals were defined by Cauchy, [*Leçons sur le calc. inf.* 1823](http://gallica.bnf.fr/ark:/12148/bpt6k62404287), though the idea of infinite integrals seems to date from Maclaurin (1742). The test for convergence was employed by Chartier (1853). Stokes (1847) distinguished between 'essentially' (absolutely) and non-essentially convergent integrals though he did not give a formal definition. Such a definition was given by Dirichlet in 1854 and 1858 (see his [*Vorlesungen*, 1904](https://archive.org/details/glejeunedirichle00lejeuoft), p. 39). In the early part of the nineteenth century improper integrals received more attention than infinite integrals,- probably because it was not fully realised that an infinite integral is really the *limit* of an integral.] 
 
 ###4.6 Complex integration.[^watson,-2][4.6complexintegration.]### 
 
@@ -298,11 +298,13 @@ where
 
 1. Shew that the integrals 
 \\[\int_0^\infty \!\sin(x^2)\, dx, \quad \int_0^\infty \!\cos(x^2 )\,dx,\quad \int_0^\infty \! x \,\exp(-x^6\sin^2x)\,dx\\]
-converge. (Dirichlet and Du Bois Reymond.) 
+converge. \\(\vphantom{\\ 3\\}\\)<br>
+(Dirichlet and Du Bois Reymond.) 
 
 2. If \\(\alpha\\) be real, the integral 
 \\[\int_0^\infty \!\frac{\cos(\alpha x)}{1+x^2} dx\\]
-is a continuous function of \\(\alpha\\). (Stokes.) 
+is a continuous function of \\(\alpha\\). \\(\vphantom{\\ 3\\}\\)<br>
+(Stokes.) 
 
 3. Discuss the uniformity of the convergence of \\(\displaystyle \int_0^\infty \! x\sin(x^3 - \alpha x) \,dx\\). 
 \\[
@@ -314,27 +316,32 @@ is a continuous function of \\(\alpha\\). (Stokes.)
 \\]
 (de la Vallée Poussin.) 
 
-4. Shew that \\(\displaystyle \int_0^\infty \! \exp[-e^{i\alpha}(x^3-nx)]\, dx\\) converges uniformly in the range \\(\left[ -\frac{1}{2}\pi, \, \frac{1}{2}\pi \,\right]\\) of values of \\(\alpha\\). (Stokes.) 
+4. Shew that \\(\displaystyle \int_0^\infty \! \exp[-e^{i\alpha}(x^3-nx)]\, dx\\) converges uniformly in the range \\(\left[ -\frac{1}{2}\pi, \, \frac{1}{2}\pi \,\right]\\) of values of \\(\alpha\\). \\(\vphantom{\\ 3\\}\\)<br>
+(Stokes.) 
 
-5. Discuss the convergence of \\(\displaystyle \int_0^\infty \!\frac{x^\mu}{1+x^\nu \left|\, \sin x \,\right|^{\,p}} dx \\) when \\(\mu\\), \\(\nu\\), \\(p\\) are positive. 
+5. Discuss the convergence of \\(\displaystyle \int_0^\infty \!\frac{x^\mu}{1+x^\nu \left|\, \sin x \,\right|^{\,p}} dx \\) when \\(\mu\\), \\(\nu\\), \\(p\\) are positive. \\(\vphantom{\\ 3\\}\\)<br>
 ([Hardy, *Messenger*, **xxxi.** (1902)](http://books.google.com/books?id=Rpo_AQAAIAAJ), p. 177.) 
 
 6. Examine the convergence of the integrals 
-\\[\int_0^\infty \left(\frac{1}{x}-\frac{1}{2}e^{-x}+\frac{1}{1-e^x} \right)\frac{dx}{x}, \quad \int_0^\infty \frac{\sin(x+x^2)}{x^n} dx.\\]
+\\[\int_0^\infty \left(\frac{1}{x}-\frac{1}{2}e^{-x}+\frac{1}{1-e^x} \right)\frac{dx}{x}, \quad \int_0^\infty \frac{\sin(x+x^2)}{x^n} dx.\\] 
 ([Math. Trip. 1914.](https://archive.org/details/papersetinmathtr00cambrich)) 
 
 7. Shew that \\(\displaystyle \int_\pi^\infty \!\frac{dx}{x^2(\sin x)^{\frac{2}{3}}}\\) exists. 
 
-8. Shew that \\(\displaystyle \int_a^\infty \! x^{-n}e^{\sin x} \sin 2x \, dx\\) converges if \\(a > 0\\), \\(n > 0\\). ([Math. Trip. 1908.](http://books.google.com/books?id=SrEQAQAAIAAJ)) 
+8. Shew that \\(\displaystyle \int_a^\infty \! x^{-n}e^{\sin x} \sin 2x \, dx\\) converges if \\(a > 0\\), \\(n > 0\\). \\(\vphantom{\\ 3\\}\\)<br>
+([Math. Trip. 1908.](http://books.google.com/books?id=SrEQAQAAIAAJ)) 
 
-9. If a series  \\(g(z) = \sum\limits_{\nu=0}^\infty (c_\nu - c_{\nu+1}) \sin (2\nu + 1) \pi z\\), (in which \\(c_0 =0\\)), converges uniformly in an interval, shew that \\(g (z)\dfrac{\pi}{\sin \pi z}\\). is the derivative of the series \\(f(z) = \sum\limits_{\nu=1}^\infty \dfrac{c_\nu}{\nu} \sin 2 \nu \:\!\pi z\\).  
+9. If a series  \\(g(z) = \sum\limits_{\nu=0}^\infty (c_\nu - c_{\nu+1}) \sin (2\nu + 1) \pi z\\), (in which \\(c_0 =0\\)), converges uniformly in an interval, shew that \\(g (z)\dfrac{\pi}{\sin \pi z}\\). is the derivative of the series \\(f(z) = \sum\limits_{\nu=1}^\infty \dfrac{c_\nu}{\nu} \sin 2 \nu \:\!\pi z\\).  \\(\vphantom{\\ 3\\}\\)<br>
 ([Lerch, *Ann. de l'Ecole norm. sup.* (3) **xii.** (1895)](http://www.numdam.org/numdam-bin/browse?id=ASENS_1895_3_12_), p. 351.) 
 
-10.  Shew that \\[ \int^\infty \int^\infty \cdots \int^\infty \!\!\frac{dx_1 dx_2 \dots\, dx_n}{(x_1^2+ x_2^2+ \cdots +x_n^2)^{\alpha}} \\]  \\[\text{and}\\]  \\[  \int^\infty \int^\infty \cdots \int^\infty \!\!\frac{dx_1 dx_2 \dots \, dx_n}{x_1^{\,\alpha} + x_2^{\,\beta} + \cdots + x_n^{\,\lambda}}\\] converge when \\(\alpha > \frac{1}{2}n\\) and \\(\alpha^{-1} + \beta^{-1} + \cdots  +\lambda^{-1} < 1\\) respectively. (Math. Trip. 1904.) 
+10.  Shew that \\[ \int^\infty \int^\infty \cdots \int^\infty \!\!\frac{dx_1 dx_2 \dots\, dx_n}{(x_1^2+ x_2^2+ \cdots +x_n^2)^{\alpha}} \\]  \\[\text{and}\\]  \\[  \int^\infty \int^\infty \cdots \int^\infty \!\!\frac{dx_1 dx_2 \dots \, dx_n}{x_1^{\,\alpha} + x_2^{\,\beta} + \cdots + x_n^{\,\lambda}}\\] converge when \\(\alpha > \frac{1}{2}n\\) and \\(\alpha^{-1} + \beta^{-1} + \cdots  +\lambda^{-1} < 1\\) respectively. \\(\vphantom{\\ 3\\}\\)<br>
+(Math. Trip. 1904.) 
+
 11.  If \\(f(x,y)\\) be a continuous function of both \\(x\\) and \\(y\\) in the ranges \\(a \leq x \leq b \\), \\(a \leq y \leq b\\) except that it has ordinary discontinuities at points on a finite number of curves, with 
 continuously turning tangents, each of which meets any line parallel to the coordinate axes only a finite number of times, then \\(\int _a^b \!f(x, y)\, dx\\) is a continuous function of \\(y\\). 
 
-     [Consider \\(\displaystyle \int_a^{\alpha_1-\delta_1} + \int_{\alpha_1+\epsilon_1}^{\alpha_2-\delta_2} + \cdots + \int_{\alpha_n+\epsilon_n}^b \!\!\{ f(x, y+h)-f(x,y)\}\,dx \\), where the numbers \\(\delta_1,\, \delta_2,\, \dots \\) \\(\epsilon_1,\, \epsilon_2,\, \dots \\) are so chosen as to exclude the discontinuities of \\(f(x, y+h)\\) from the range of integration; \\(\alpha_1,\, \alpha_2,\, \dots\\) being the discontinuities of \\(f(x, y)\\).]  \\(\phantom{}\\) (Böcher.) 
+     [Consider \\(\displaystyle \int_a^{\alpha_1-\delta_1} + \int_{\alpha_1+\epsilon_1}^{\alpha_2-\delta_2} + \cdots + \int_{\alpha_n+\epsilon_n}^b \!\!\{ f(x, y+h)-f(x,y)\}\,dx \\), where the numbers \\(\delta_1,\, \delta_2,\, \dots \\) \\(\epsilon_1,\, \epsilon_2,\, \dots \\) are so chosen as to exclude the discontinuities of \\(f(x, y+h)\\) from the range of integration; \\(\alpha_1,\, \alpha_2,\, \dots\\) being the discontinuities of \\(f(x, y)\\).]  \\(\vphantom{\\ 3\\}\\)<br>
+ (Böcher.) 
 
 </div>
 
@@ -369,8 +376,17 @@ continuously turning tangents, each of which meets any line parallel to the coor
         <li><a href="CMA04-1-Integration.html#4.2differentiationofintegralscontainingaparameter.">Differentiation of Integrals</a></li>
 	<li><a href="CMA04-2-InfiniteIntegrals.html#4.3doubleintegralsandrepeatedintegrals.">Double Integrals & Repeated Integrals</a></li>
 	<li><a href="CMA04-2-InfiniteIntegrals.html#4.4infiniteintegrals.">Infinite Integrals</a></li>
-	<li class="current"><a href="#4.5improperintegrals.principalvalues.">Improper Integrals</a></li>
-	<li class="current"><a href="#4.6complexintegration.">Complex Integration</a></li>
+	<li class="current"><a href="#4.5improperintegrals.principalvalues.">Improper Integrals</a>
+	  <ul>
+	      <li ><a href="#4.51theinversionoftheorderofintegrationofacertainrepeatedintegral.">Inverting of the order of integration of a certain repeated integral</a>
+          </ul>
+       </li>
+	<li class="current"><a href="#4.6complexintegration.">Complex Integration</a>
+	  <ul>
+	      <li ><a href="#4.61thefundamentaltheoremofcomplexintegration.">The fundamental theorem of complex integration</a>
+              <li><a href="#4.62anupperlimittothevalueofacomplexintegral.">An upper bound for a complex integral</a>
+          </ul>
+       </li>
 	<li class="current"><a href="CMA04-3-ComplexInt.html#4.7integrationofinfiniteseries.">Integration of Infinite Series</a></li>
         <li class="current"><a href="#references.">References</a></li>
         <li class="current"><a href="#miscellaneousexamples.">Miscellaneous Examples</a></li>
@@ -381,7 +397,11 @@ continuously turning tangents, each of which meets any line parallel to the coor
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navint');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navint');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navint');showIt('navback');">BACKMATTER</a> 
+   <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+  </ul>
+</li>
 </ul>
 </div>
 

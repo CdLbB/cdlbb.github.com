@@ -16,7 +16,7 @@ latex input:	mmd-cambridge-begin-doc
 latex footer:	mmd-cambridge-footer
 CSS:	css/documentation.css
 HTML header:	<script type="text/javascript"
-	src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+	src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
 	<script type="text/javascript" src="js/showhide.js"></script>
 	<script type="text/javascript" src="js/mathjaxend.js"></script>
 
@@ -117,7 +117,7 @@ The condition is obviously necessary, for if \\(S_n\\) and \\(s_n\\) have a comm
 that if \\(\lim \,(S_n - s_n) = 0\\), then 
 \\[\lim S_n = \lim s_n = S = s.\\] 
 
->*Note*. A continuous function \\(f(x)\\) is 'integrable'. For, given, we can \\(\epsilon\\) find \\(\delta\\) such that \\(\left|\,f(x') - f(x'') \,\right| < \left. \epsilon \middle/ (b-a) \right.\\) whenever \\(\left|\,x'-x' ' \right| < \delta\\). Take all the intervals \\([x_{s-1}, x_s]\\) less than \\(\delta\\), and then \\(U_s - L_s < \left. \epsilon\middle/(b — a)\right.\\) and so \\(S
+>**Note**. A continuous function \\(f(x)\\) is 'integrable'. For, given, we can \\(\epsilon\\) find \\(\delta\\) such that \\(\left|\,f(x') - f(x'') \,\right| < \left. \epsilon \middle/ (b-a) \right.\\) whenever \\(\left|\,x'-x' ' \right| < \delta\\). Take all the intervals \\([x_{s-1}, x_s]\\) less than \\(\delta\\), and then \\(U_s - L_s < \left. \epsilon\middle/(b — a)\right.\\) and so \\(S
 _n - s_n < \epsilon\\); therefore \\(S_n - s_n \rightarrow 0\\) under the circumstances specified in the condition of integrability. 
 
 >*Corollary*. If \\(S_ n\\) and \\(s_n\\) have the same limit \\(S\\) for one mode of subdivision of \\([a, b]\\) into intervals of the specified kind, the limits of \\(S_n\\) and of \\(s_n\\) for any other such mode of subdivision are both S. 
@@ -335,7 +335,14 @@ exists and is equal to \\(\displaystyle \int_a^b f_{\alpha} \,dx\\).
     <li><a href="CMA03-1-ContinuousFns.html#continuousfunctionsanduniformconvergence">Continuity and Uniform Convergence</a></li>
     <li><a href="#thetheoryofriemannintegration">The Theory of Riemann Integration</a>
       <ul>
-        <li class="current"><a href="#4.1theconceptofintegration.">The Concept of Integration</a></li>
+        <li class="current"><a href="#4.1theconceptofintegration.">The Concept of Integration</a>
+	   <ul>
+	      <li ><a href="#4.11upperandlowerintegrals.">Upper and lower integrals</a>
+              <li><a href="#4.12riemannsconditionofintegrability.">Riemann&#8217;s Condition of Integrability</a>
+              <li><a href="#4.13ageneraltheoremonintegration.">A general theorem on integration</a>
+              <li><a href="#4.14meanvaluetheorems.">Mean Value Theorems</a>
+           </ul>
+        </li>
         <li class="current"><a href="#4.2differentiationofintegralscontainingaparameter.">Differentiation of Integrals</a></li>
 	<li><a href="CMA04-2-InfiniteIntegrals.html#4.3doubleintegralsandrepeatedintegrals.">Double Integrals & Repeated Integrals</a></li>
 	<li><a href="CMA04-2-InfiniteIntegrals.html#4.4infiniteintegrals.">Infinite Integrals</a></li>
@@ -351,7 +358,11 @@ exists and is equal to \\(\displaystyle \int_a^b f_{\alpha} \,dx\\).
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navint');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navint');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navint');showIt('navback');">BACKMATTER</a> 
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+  </ul>
+</li>
 </ul>
 </div>
 

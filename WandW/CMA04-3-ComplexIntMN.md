@@ -97,7 +97,7 @@ integral equations; the investigation which we shall give is due to W. A. Hurwit
 
 <div markdown=1 class="contenttext">
 
-Let \\(x^{\lambda-1} y^{\mu-1} (1 - x -y)^{\nu-1}   f(x,y) = \phi(x,y)\\); and let *M* be the upper bound of \\(\left|\,f(x,y)\,\right|\\). 
+Let \\(x^{\lambda-1} y^{\mu-1} (1 - x -y)^{\nu-1}   f(x,y) = \phi(x,y)\\); and let \\(M\\) be the upper bound of \\(\left|\,f(x,y)\,\right|\\). 
 
 Let \\(\delta\\) be any positive number less than \\(\frac{1}{3}\\). 
 
@@ -173,7 +173,7 @@ We have consequently proved the theorem in question.
 >&\qquad =\int_a^b \!d\eta \left\{\int_a^\eta \!(\xi-a)^{\lambda-1} (b-\eta)^{\mu-1} (\eta-\xi)^{\nu-1} \phi(\xi,\eta)\,d\xi \right\}\end{align*}\\]
 This is called Dirichlet's formula. 
 
->[Note. What are now called infinite and improper integrals were defined by Cauchy, [*Leçons sur le calc. inf.* 1823](http://gallica.bnf.fr/ark:/12148/bpt6k62404287), though the idea of infinite integrals seems to date from Maclaurin (1742). The test for convergence was employed by Chartier (1853). Stokes (1847) distinguished between 'essentially' (absolutely) and non-essentially convergent integrals though he did not give a formal definition. Such a definition was given by Dirichlet in 1854 and 1858 (see his [*Vorlesungen*, 1904](https://archive.org/details/glejeunedirichle00lejeuoft), p. 39). In the early part of the nineteenth century improper integrals received more attention than infinite integrals,- probably because it was not fully realised that an infinite integral is really the *limit* of an integral.] 
+>[**Note**. What are now called infinite and improper integrals were defined by Cauchy, [*Leçons sur le calc. inf.* 1823](http://gallica.bnf.fr/ark:/12148/bpt6k62404287), though the idea of infinite integrals seems to date from Maclaurin (1742). The test for convergence was employed by Chartier (1853). Stokes (1847) distinguished between 'essentially' (absolutely) and non-essentially convergent integrals though he did not give a formal definition. Such a definition was given by Dirichlet in 1854 and 1858 (see his [*Vorlesungen*, 1904](https://archive.org/details/glejeunedirichle00lejeuoft), p. 39). In the early part of the nineteenth century improper integrals received more attention than infinite integrals,- probably because it was not fully realised that an infinite integral is really the *limit* of an integral.] 
 
 ###4.6 Complex integration.<a class="marginmark" onClick="toggleHide('mn:5,-2');">&#91;5&#93;</a>[4.6complexintegration.]### 
 
@@ -189,7 +189,7 @@ This is called Dirichlet's formula.
 
 <div markdown=1 class="contenttext">
 
-Integration with regard to a real variable *x* may be regarded as integration 
+Integration with regard to a real variable \\(x\\) may be regarded as integration 
 along a particular path (namely part of the real axis) in the Argand diagram. 
 Let \\(f(z)\\), \\((= P + iQ)\\), be a function of a complex variable \\(z\\), which is continuous  along a simple curve *AB* in the Argand diagram. 
 
@@ -245,17 +245,17 @@ By [&#167;4.13 example 4](CMA04-1-IntegrationMN.html#4.13example4), this definit
 From [&#167;4.13](CMA04-1-IntegrationMN.html#4.13ageneraltheoremonintegration.), the reader will easily deduce the following theorem: 
 
 Let a sequence of points be taken on a simple curve \\(z_0 Z\\); and let the first 
-*n* of them, rearranged in order of magnitude of their parameters, be called 
+\\(n\\) of them, rearranged in order of magnitude of their parameters, be called 
 \\(z_1^{\,(n)}, \, z_2^{\,(n)}, \, , \dots , z_n^{\,(n)}\\) \\((z_0^{\,(n)} = z_0, \, z_{n+1}^{\,(n)} = Z)\\);  let their parameters be \\(t_1^{\,(n)}, \, t_2^{\,(n)}, \, , \dots , t_n^{\,(n)}\\), and let the sequence be such that, given any number \\(\delta\\), we can find \\(N\\) such 
 that, when \\(n > N\\), \\(t_{r+1}^{\,(n)}-t_r^{\,(n)} < \delta \\), for \\(r= 0, 1, 2, \dots , n\\); let \\(\zeta_r^{\,(n)}\\) be any point whose parameter lies between \\(t_{r}^{\,(n)}, \,t_{r+1}^{\,(n)} \\); then we can make 
 \\[\left|\, \sum_{r=0}^n \left(z_{r+1}^{\,(n)}- z_r^{\,(n)}\right) \, f\left(\zeta_r^{\,(n)}\right) - \int_{z_0}^Z \! f(z)\, dz \,\right|\\]
-arbitrarily small by taking *n* sufficiently large.<a class="marginmark" onClick="toggleHide('mn:8,-2');">&#91;8&#93;</a>
+arbitrarily small by taking \\(n\\) sufficiently large.<a class="marginmark" onClick="toggleHide('mn:8,-2');">&#91;8&#93;</a>
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:8,-2" style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;8&#93;</a>*Editor's Note*:  By taking \\(\delta\\)  sufficiently small, we make \\(N\\) and *n* sufficiently large.<a onClick="hideIt('mn:8,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:8,-2" style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;8&#93;</a>*Editor's Note*:  By taking \\(\delta\\)  sufficiently small, we make \\(N\\) and \\(n\\) sufficiently large.<a onClick="hideIt('mn:8,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -267,7 +267,7 @@ arbitrarily small by taking *n* sufficiently large.<a class="marginmark" onClick
 
 
 
-<div markdown=1 class="marginnotes" id="mn:8,-2" style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;8&#93;</a>*Editor's Note*:  By taking \\(\delta\\)  sufficiently small, we make \\(N\\) and *n* sufficiently large.<a onClick="hideIt('mn:8,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:8,-2" style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;8&#93;</a>*Editor's Note*:  By taking \\(\delta\\)  sufficiently small, we make \\(N\\) and \\(n\\) sufficiently large.<a onClick="hideIt('mn:8,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -300,7 +300,7 @@ That is to say, \\(\displaystyle \left|\,\int_{z_0}^Z \! f(z)\,dz\,\right|\\) ca
 We shall now shew that if \\(S (z) = u_1(z) + u_2(z) + \cdots\\) is a uniformly convergent series of continuous functions of \\(z\\), for values of \\(z\\) contained within 
 some region, then the series 
 \\[\int_C \!u_1(z)\,dz + \int_C \!u_2(z)\,dz + \cdots ,\\]
-(where all the integrals are taken along some path *C* in the region) is convergent, and has for sum \\(\displaystyle \int_C \! S(z) \,dz\\). 
+(where all the integrals are taken along some path \\(C\\) in the region) is convergent, and has for sum \\(\displaystyle \int_C \! S(z) \,dz\\). 
 
 
 For, writing 
@@ -315,7 +315,7 @@ Therefore if \\(l\\) be the length of the path of integration, we have ([&#167;4
 \\[\left|\, \int_C \! R_n(z)\, dz \,\right| < \epsilon l .\\]
 
 
-Therefore the modulus of the difference between \\(\displaystyle \int_C \!S(z)\, dz\\) and \\( \sum\limits_{m=1}^n \displaystyle \int_C \!u_m(z)\,dz\\)  can be made less than any positive number, by giving *n* any sufficiently large value. This proves both that the series \\( \sum\limits_{m=1}^n \displaystyle \int_C \!u_m(z)\,dz\\)
+Therefore the modulus of the difference between \\(\displaystyle \int_C \!S(z)\, dz\\) and \\( \sum\limits_{m=1}^n \displaystyle \int_C \!u_m(z)\,dz\\)  can be made less than any positive number, by giving \\(n\\) any sufficiently large value. This proves both that the series \\( \sum\limits_{m=1}^n \displaystyle \int_C \!u_m(z)\,dz\\)
 convergent, and that its sum is \\(\displaystyle \int_C \!S(z)\, dz\\). 
 
 </div>
@@ -336,20 +336,20 @@ if the series on the right converges uniformly and the series on the left is con
 
 >*Example* 1. Consider the series 
 >\\[\sum_{n=0}^\infty \frac{2x\{n(n+1) \sin^2 x^2-1\}\cos x^2}{\{1+n^2\sin^2 x^2\}\{1+(n+1)^2\sin^2x^2\}},\\]
-in which x is real. 
+in which \\(x\\) is real. 
 >
 >The nth term is
 >\\[\frac{2xn\cos x^2}{1+n^2\sin^2 x^2}-\frac{2x(n+1)\cos x^2}{1+(n+1)^2 \sin^2 x^2},\\]
-and the sum of n terms is therefore 
+and the sum of \\(n\\) terms is therefore 
 >\\[\frac{2x\cos x^2}{1+\sin^2 x^2}-\frac{2x(n+1)\cos x^2}{1+(n+1)^2 \sin^2 x^2}.\\]
 >
->Hence the series is absolutely convergent for all real values of *x* except \\(\pm \sqrt{m\pi}\\) where \\(m=1, 2, \dots\\); but 
+>Hence the series is absolutely convergent for all real values of \\(x\\) except \\(\pm \sqrt{m\pi}\\) where \\(m=1, 2, \dots\\); but 
 >\\[R_n(x)=\frac{2x(n+1)\cos x^2}{1+(n+1)^2 \sin^2 x^2},\\]
-and if *n* be any integer, by taking \\(x=(n+1)^{-1}\\) this has the limit 2 as \\(n \rightarrow \infty\\). The series is therefore non-uniformly convergent near \\(x=0\\). 
+and if \\(n\\) be any integer, by taking \\(x=(n+1)^{-1}\\) this has the limit 2 as \\(n \rightarrow \infty\\). The series is therefore non-uniformly convergent near \\(x=0\\). 
 >
->Now the sum to infinity of the series is \\(\displaystyle \frac{2x\cos x^2}{1+\sin^2 x^2}\\), and so the integral from 0 to *x* of 
+>Now the sum to infinity of the series is \\(\displaystyle \frac{2x\cos x^2}{1+\sin^2 x^2}\\), and so the integral from 0 to \\(x\\) of 
 the sum of the series is  \\( \arctan\{\sin x^2\}\\). On the other hand, the sum of the integrals from 
-to *x* of the first *n* terms of the series is 
+to \\(x\\) of the first \\(n\\) terms of the series is 
 \\[\arctan\{\sin x^2 \} - \arctan\{(n + 1) \sin x^2 \},\\] 
 and as \\(n \rightarrow \infty\\) this tends to \\(\arctan\{\sin x^2 \} =\frac{1}{2}\pi\\).
 > 
@@ -357,19 +357,19 @@ and as \\(n \rightarrow \infty\\) this tends to \\(\arctan\{\sin x^2 \} =\frac{1
 
 >*Example* 2. Discuss, in a similar manner, the series 
 >\\[\sum_{n=1}^\infty \frac{2 e^n x\{1-n(e-1)+e^{n+1}x^2\}}{n(n+1)(1+e^nx^2)(1+e^{n+1}x^2)}\\]
->for real values of *x*. 
+>for real values of \\(x\\). 
 
 >*Example* 3. Discuss the series 
 >\\[u_1+u_2+u_3+ \cdots ,\\]
 where  \\[u_1=ze^{-z^2}, \quad u_n=nze^{-n z^2}-(n-1)ze^{-(n-1) z^2},\\] 
 for real values of \\(z\\). 
 >
->The sum of the first *n* terms is \\(nze^{-n z^2}\\), so the sum to infinity is 0 for all real values of \\(z\\). Since the terms \\(u_n\\) are real and ultimately all of the same sign, the convergence 
+>The sum of the first \\(n\\) terms is \\(nze^{-n z^2}\\), so the sum to infinity is 0 for all real values of \\(z\\). Since the terms \\(u_n\\) are real and ultimately all of the same sign, the convergence 
 is absolute. 
 >
 >In the series 
 >\\[\int_0^z \!u_1 \,dz + \int_0^z \!u_2 \,dz + \int_0^z \!u_3 \,dz + \cdots ,\\]
-the sum of *n* terms is \\(\frac{1}{2}(1-e^{-nz^2})\\), and this tends to the limit \\(\frac{1}{2}\\) as *n* tends to infinity; this 
+the sum of \\(n\\) terms is \\(\frac{1}{2}(1-e^{-nz^2})\\), and this tends to the limit \\(\frac{1}{2}\\) as \\(n\\) tends to infinity; this 
 is not equal to the integral from 0 to \\(z\\) of the sum of the series \\(\sum u_n\\). 
 >
 >The explanation of this discrepancy is to be found in the non-uniformity of the convergence near \\(z = 0\\), for the remainder after \\(n\\) terms in the series \\(u_1 + u_2 + \cdots \\) is \\( -nze^{-nz^2}\\); 
@@ -398,11 +398,13 @@ where
 
 1. Shew that the integrals 
 \\[\int_0^\infty \!\sin(x^2)\, dx, \quad \int_0^\infty \!\cos(x^2 )\,dx,\quad \int_0^\infty \! x \,\exp(-x^6\sin^2x)\,dx\\]
-converge. (Dirichlet and Du Bois Reymond.) 
+converge. \\(\vphantom{\\ 3\\}\\)<br>
+(Dirichlet and Du Bois Reymond.) 
 
 2. If \\(\alpha\\) be real, the integral 
 \\[\int_0^\infty \!\frac{\cos(\alpha x)}{1+x^2} dx\\]
-is a continuous function of \\(\alpha\\). (Stokes.) 
+is a continuous function of \\(\alpha\\). \\(\vphantom{\\ 3\\}\\)<br>
+(Stokes.) 
 
 3. Discuss the uniformity of the convergence of \\(\displaystyle \int_0^\infty \! x\sin(x^3 - \alpha x) \,dx\\). 
 \\[
@@ -414,27 +416,32 @@ is a continuous function of \\(\alpha\\). (Stokes.)
 \\]
 (de la Vall&eacute;e Poussin.) 
 
-4. Shew that \\(\displaystyle \int_0^\infty \! \exp[-e^{i\alpha}(x^3-nx)]\, dx\\) converges uniformly in the range \\(\left[ -\frac{1}{2}\pi, \, \frac{1}{2}\pi \,\right]\\) of values of \\(\alpha\\). (Stokes.) 
+4. Shew that \\(\displaystyle \int_0^\infty \! \exp[-e^{i\alpha}(x^3-nx)]\, dx\\) converges uniformly in the range \\(\left[ -\frac{1}{2}\pi, \, \frac{1}{2}\pi \,\right]\\) of values of \\(\alpha\\). \\(\vphantom{\\ 3\\}\\)<br>
+(Stokes.) 
 
-5. Discuss the convergence of \\(\displaystyle \int_0^\infty \!\frac{x^\mu}{1+x^\nu \left|\, \sin x \,\right|^{\,p}} dx \\) when \\(\mu\\), \\(\nu\\), \\(p\\) are positive. 
+5. Discuss the convergence of \\(\displaystyle \int_0^\infty \!\frac{x^\mu}{1+x^\nu \left|\, \sin x \,\right|^{\,p}} dx \\) when \\(\mu\\), \\(\nu\\), \\(p\\) are positive. \\(\vphantom{\\ 3\\}\\)<br>
 ([Hardy, *Messenger*, **xxxi.** (1902)](http://books.google.com/books?id=Rpo_AQAAIAAJ), p. 177.) 
 
 6. Examine the convergence of the integrals 
-\\[\int_0^\infty \left(\frac{1}{x}-\frac{1}{2}e^{-x}+\frac{1}{1-e^x} \right)\frac{dx}{x}, \quad \int_0^\infty \frac{\sin(x+x^2)}{x^n} dx.\\]
+\\[\int_0^\infty \left(\frac{1}{x}-\frac{1}{2}e^{-x}+\frac{1}{1-e^x} \right)\frac{dx}{x}, \quad \int_0^\infty \frac{\sin(x+x^2)}{x^n} dx.\\] 
 ([Math. Trip. 1914.](https://archive.org/details/papersetinmathtr00cambrich)) 
 
 7. Shew that \\(\displaystyle \int_\pi^\infty \!\frac{dx}{x^2(\sin x)^{\frac{2}{3}}}\\) exists. 
 
-8. Shew that \\(\displaystyle \int_a^\infty \! x^{-n}e^{\sin x} \sin 2x \, dx\\) converges if \\(a > 0\\), \\(n > 0\\). ([Math. Trip. 1908.](http://books.google.com/books?id=SrEQAQAAIAAJ)) 
+8. Shew that \\(\displaystyle \int_a^\infty \! x^{-n}e^{\sin x} \sin 2x \, dx\\) converges if \\(a > 0\\), \\(n > 0\\). \\(\vphantom{\\ 3\\}\\)<br>
+([Math. Trip. 1908.](http://books.google.com/books?id=SrEQAQAAIAAJ)) 
 
-9. If a series  \\(g(z) = \sum\limits_{\nu=0}^\infty (c_\nu - c_{\nu+1}) \sin (2\nu + 1) \pi z\\), (in which \\(c_0 =0\\)), converges uniformly in an interval, shew that \\(g (z)\dfrac{\pi}{\sin \pi z}\\). is the derivative of the series \\(f(z) = \sum\limits_{\nu=1}^\infty \dfrac{c_\nu}{\nu} \sin 2 \nu \:\!\pi z\\).  
+9. If a series  \\(g(z) = \sum\limits_{\nu=0}^\infty (c_\nu - c_{\nu+1}) \sin (2\nu + 1) \pi z\\), (in which \\(c_0 =0\\)), converges uniformly in an interval, shew that \\(g (z)\dfrac{\pi}{\sin \pi z}\\). is the derivative of the series \\(f(z) = \sum\limits_{\nu=1}^\infty \dfrac{c_\nu}{\nu} \sin 2 \nu \:\!\pi z\\).  \\(\vphantom{\\ 3\\}\\)<br>
 ([Lerch, *Ann. de l'Ecole norm. sup.* (3) **xii.** (1895)](http://www.numdam.org/numdam-bin/browse?id=ASENS_1895_3_12_), p. 351.) 
 
-10.  Shew that \\[ \int^\infty \int^\infty \cdots \int^\infty \!\!\frac{dx_1 dx_2 \dots\, dx_n}{(x_1^2+ x_2^2+ \cdots +x_n^2)^{\alpha}} \\]  \\[\text{and}\\]  \\[  \int^\infty \int^\infty \cdots \int^\infty \!\!\frac{dx_1 dx_2 \dots \, dx_n}{x_1^{\,\alpha} + x_2^{\,\beta} + \cdots + x_n^{\,\lambda}}\\] converge when \\(\alpha > \frac{1}{2}n\\) and \\(\alpha^{-1} + \beta^{-1} + \cdots  +\lambda^{-1} < 1\\) respectively. (Math. Trip. 1904.) 
-11.  If \\(f(x,y)\\) be a continuous function of both *x* and *y* in the ranges \\(a \leq x \leq b \\), \\(a \leq y \leq b\\) except that it has ordinary discontinuities at points on a finite number of curves, with 
+10.  Shew that \\[ \int^\infty \int^\infty \cdots \int^\infty \!\!\frac{dx_1 dx_2 \dots\, dx_n}{(x_1^2+ x_2^2+ \cdots +x_n^2)^{\alpha}} \\]  \\[\text{and}\\]  \\[  \int^\infty \int^\infty \cdots \int^\infty \!\!\frac{dx_1 dx_2 \dots \, dx_n}{x_1^{\,\alpha} + x_2^{\,\beta} + \cdots + x_n^{\,\lambda}}\\] converge when \\(\alpha > \frac{1}{2}n\\) and \\(\alpha^{-1} + \beta^{-1} + \cdots  +\lambda^{-1} < 1\\) respectively. \\(\vphantom{\\ 3\\}\\)<br>
+(Math. Trip. 1904.) 
+
+11.  If \\(f(x,y)\\) be a continuous function of both \\(x\\) and \\(y\\) in the ranges \\(a \leq x \leq b \\), \\(a \leq y \leq b\\) except that it has ordinary discontinuities at points on a finite number of curves, with 
 continuously turning tangents, each of which meets any line parallel to the coordinate axes only a finite number of times, then \\(\int _a^b \!f(x, y)\, dx\\) is a continuous function of \\(y\\). 
 
-     [Consider \\(\displaystyle \int_a^{\alpha_1-\delta_1} + \int_{\alpha_1+\epsilon_1}^{\alpha_2-\delta_2} + \cdots + \int_{\alpha_n+\epsilon_n}^b \!\!\{ f(x, y+h)-f(x,y)\}\,dx \\), where the numbers \\(\delta_1,\, \delta_2,\, \dots \\) \\(\epsilon_1,\, \epsilon_2,\, \dots \\) are so chosen as to exclude the discontinuities of \\(f(x, y+h)\\) from the range of integration; \\(\alpha_1,\, \alpha_2,\, \dots\\) being the discontinuities of \\(f(x, y)\\).]  \\(\phantom{}\\) (B&ouml;cher.) 
+     [Consider \\(\displaystyle \int_a^{\alpha_1-\delta_1} + \int_{\alpha_1+\epsilon_1}^{\alpha_2-\delta_2} + \cdots + \int_{\alpha_n+\epsilon_n}^b \!\!\{ f(x, y+h)-f(x,y)\}\,dx \\), where the numbers \\(\delta_1,\, \delta_2,\, \dots \\) \\(\epsilon_1,\, \epsilon_2,\, \dots \\) are so chosen as to exclude the discontinuities of \\(f(x, y+h)\\) from the range of integration; \\(\alpha_1,\, \alpha_2,\, \dots\\) being the discontinuities of \\(f(x, y)\\).]  \\(\vphantom{\\ 3\\}\\)<br>
+ (B&ouml;cher.) 
 
 </div>
 
@@ -469,8 +476,17 @@ continuously turning tangents, each of which meets any line parallel to the coor
         <li><a href="CMA04-1-IntegrationMN.html#4.2differentiationofintegralscontainingaparameter.">Differentiation of Integrals</a></li>
 	<li><a href="CMA04-2-InfiniteIntegralsMN.html#4.3doubleintegralsandrepeatedintegrals.">Double Integrals & Repeated Integrals</a></li>
 	<li><a href="CMA04-2-InfiniteIntegralsMN.html#4.4infiniteintegrals.">Infinite Integrals</a></li>
-	<li class="current"><a href="#4.5improperintegrals.principalvalues.">Improper Integrals</a></li>
-	<li class="current"><a href="#4.6complexintegration.">Complex Integration</a></li>
+	<li class="current"><a href="#4.5improperintegrals.principalvalues.">Improper Integrals</a>
+	  <ul>
+	      <li ><a href="#4.51theinversionoftheorderofintegrationofacertainrepeatedintegral.">Inverting of the order of integration of a certain repeated integral</a>
+          </ul>
+       </li>
+	<li class="current"><a href="#4.6complexintegration.">Complex Integration</a>
+	  <ul>
+	      <li ><a href="#4.61thefundamentaltheoremofcomplexintegration.">The fundamental theorem of complex integration</a>
+              <li><a href="#4.62anupperlimittothevalueofacomplexintegral.">An upper bound for a complex integral</a>
+          </ul>
+       </li>
 	<li class="current"><a href="CMA04-3-ComplexIntMN.html#4.7integrationofinfiniteseries.">Integration of Infinite Series</a></li>
         <li class="current"><a href="#references.">References</a></li>
         <li class="current"><a href="#miscellaneousexamples.">Miscellaneous Examples</a></li>
@@ -481,7 +497,11 @@ continuously turning tangents, each of which meets any line parallel to the coor
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navint');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navint');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navint');showIt('navback');">BACKMATTER</a> 
+   <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponentialMN.html">Appendix</a></li>
+  </ul>
+</li>
 </ul>
 </div>
 
@@ -521,7 +541,7 @@ continuously turning tangents, each of which meets any line parallel to the coor
      <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
      <li class="more current"><a onClick="showIt('navint');hideIt('navprocesses');"> you are here . . . </a></li>
      <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
-     <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
+      <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>

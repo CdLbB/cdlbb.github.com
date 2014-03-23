@@ -16,7 +16,7 @@ latex input:	mmd-cambridge-begin-doc
 latex footer:	mmd-cambridge-footer
 CSS:	css/documentation.css
 HTML header:	<script type="text/javascript"
-	src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+	src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
 	<script type="text/javascript" src="js/showhide.js"></script>
 	<script type="text/javascript" src="js/mathjaxend.js"></script>
 
@@ -353,7 +353,15 @@ which is the required result; the change of the order of the integrations has be
         <li><a href="CMA04-1-Integration.html#4.1theconceptofintegration.">The Concept of Integration</a></li>
         <li><a href="CMA04-1-Integration.html#4.2differentiationofintegralscontainingaparameter.">Differentiation of Integrals</a></li>
 	<li class="current"><a href="#4.3doubleintegralsandrepeatedintegrals.">Double Integrals & Repeated Integrals</a></li>
-	<li class="current"><a href="#4.4infiniteintegrals.">Infinite Integrals</a></li>
+	<li class="current"><a href="#4.4infiniteintegrals.">Infinite Integrals</a>
+	  <ul>
+	       <li ><a href="#4.41infiniteintegralsofcontinuousfunctions.conditionsforconvergence.">Infinite integrals of continuous functions</a>
+              <li><a href="#4.42uniformityofconvergenceofaninfiniteintegral.">Uniform convergence of infinite integrals</a>
+              <li><a href="#4.43testsfortheconvergenceofaninfiniteintegral.">Convergence tests for infinite integrals</a>
+              <li><a href="#4.431testsforuniformityofconvergenceofaninfiniteintegral.">Tests for uniformity of convergence</a>
+              <li><a href="#4.44theoremsconcerninguniformlyconvergentinfiniteintegrals.">Theorems for uniformly convergent infinite integrals</a>
+          </ul>
+       </li>
 	<li><a href="CMA04-3-ComplexInt.html#4.5improperintegrals.principalvalues.">Improper Integrals</a></li>
 	<li><a href="CMA04-3-ComplexInt.html#4.6complexintegration.">Complex Integration</a></li>
 	<li><a href="CMA04-3-ComplexInt.html#4.7integrationofinfiniteseries.">Integration of Infinite Series</a></li>
@@ -366,7 +374,11 @@ which is the required result; the change of the order of the integrations has be
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navint');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navint');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navint');showIt('navback');">BACKMATTER</a> 
+   <ul >
+      <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+   </ul>
+</li>
 </ul>
 </div>
 

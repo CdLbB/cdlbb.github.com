@@ -31,7 +31,7 @@ HTML header:	<script type="text/javascript"
 ### 4.1 The Concept of Integration. ###
 
 The reader is doubtless familiar with the idea of integration as the 
-operation inverse to that of differentiation; and he is equally well aware that the integral (in this sense) of a given elementary function is not always expressible in terms of elementary functions. In order therefore to give a definition of the integral of a function which shall be always available, even though it is not practicable to obtain a function of which the given function is the differential coefficient, we have recourse to the result that the integral<a class="marginmark" onClick="toggleHide('mn:1,-6');">&#91;1&#93;</a> of \\(f(x)\\) between the limits \\(a\\) and \\(b\\) is the area bounded by the curve \\(y =f(x)\\), the axis of *x* and the ordinates \\(x = a,\, x = b\\). We proceed to frame a formal definition of integration with this idea as the starting-point. 
+operation inverse to that of differentiation; and he is equally well aware that the integral (in this sense) of a given elementary function is not always expressible in terms of elementary functions. In order therefore to give a definition of the integral of a function which shall be always available, even though it is not practicable to obtain a function of which the given function is the differential coefficient, we have recourse to the result that the integral<a class="marginmark" onClick="toggleHide('mn:1,-6');">&#91;1&#93;</a> of \\(f(x)\\) between the limits \\(a\\) and \\(b\\) is the area bounded by the curve \\(y =f(x)\\), the axis of \\(x\\) and the ordinates \\(x = a,\, x = b\\). We proceed to frame a formal definition of integration with this idea as the starting-point. 
 
 </div>
 
@@ -59,7 +59,7 @@ operation inverse to that of differentiation; and he is equally well aware that 
 
 <div markdown=1 class="contenttext">
 
-Let \\(f(x)\\) be a bounded function of x in the range \\([a, b]\\). Divide the interval at the points \\(x_1, x_2 , \dots , x_{n-1}\\)  \\((a \leq x_1 \leq x_2 \cdots \leq x_{n-1}  \leq b)\\). Let *U,* *L* be 
+Let \\(f(x)\\) be a bounded function of \\(x\\) in the range \\([a, b]\\). Divide the interval at the points \\(x_1, x_2 , \dots , x_{n-1}\\)  \\((a \leq x_1 \leq x_2 \cdots \leq x_{n-1}  \leq b)\\). Let \\(U\\), \\(L\\) be 
 the bounds of \\(f(x)\\) in the range \\([a, b]\\), and let \\(U_r,\\) \\(L_r\\) be the bounds of \\(f(x)\\) in the range \\([x_{r-1}, x_r]\\), where \\(x_0 = a, x_n = b\\). 
 
 Consider the sums<a class="marginmark" onClick="toggleHide('mn:3,-12');">&#91;3&#93;</a>
@@ -81,13 +81,13 @@ Then
 <div markdown=1 class="contenttext">
 
 
-For a given \\(n\\), \\(S_n\\) and \\(s_n\\) are bounded functions of \\(x_1, x_2 , \dots , x_{n-1}\\). Let their lower and upper bounds<a class="marginmark" onClick="toggleHide('mn:4,-5');">&#91;4&#93;</a> respectively be \\(\underline{S}_n\\), \\(\overline{s}_n\\), so that \\(\underline{S}_n\\), \\(\overline{s}_n\\) depend only on *n* and on the form of \\(f(x)\\), and not on the particular way of dividing the interval into *n* parts.
+For a given \\(n\\), \\(S_n\\) and \\(s_n\\) are bounded functions of \\(x_1, x_2 , \dots , x_{n-1}\\). Let their lower and upper bounds<a class="marginmark" onClick="toggleHide('mn:4,-5');">&#91;4&#93;</a> respectively be \\(\underline{S}_n\\), \\(\overline{s}_n\\), so that \\(\underline{S}_n\\), \\(\overline{s}_n\\) depend only on \\(n\\) and on the form of \\(f(x)\\), and not on the particular way of dividing the interval into \\(n\\) parts.
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:4,-5" style="margin-top: -5em; margin-bottom: -5em;"><a class="marginmark">&#91;4&#93;</a>The bounds of a function of *n* variables are defined in just the same manner as the bounds of a function of a single variable ([&#167;3.62](CMA03-3-Heine-BorelMN.html#arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.)). <a onClick="hideIt('mn:4,-5')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:4,-5" style="margin-top: -5em; margin-bottom: -5em;"><a class="marginmark">&#91;4&#93;</a>The bounds of a function of \\(n\\) variables are defined in just the same manner as the bounds of a function of a single variable ([&#167;3.62](CMA03-3-Heine-BorelMN.html#arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.)). <a onClick="hideIt('mn:4,-5')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -95,7 +95,7 @@ For a given \\(n\\), \\(S_n\\) and \\(s_n\\) are bounded functions of \\(x_1, x_
 
 <div markdown=1 class="contenttext">
 
-Let the lower and upper bounds of these functions of *n* be *S*, *s*. Then 
+Let the lower and upper bounds of these functions of \\(n\\) be \\(S\\), \\(s\\). Then 
 \\[{S}_n \geq S, \quad {s}_n \leq s.\\]
 We proceed to shew that \\(s\\) is *at most* equal to \\(S\\); i.e. \\(S \geq s\\). 
 
@@ -125,7 +125,7 @@ The bound \\(S\\) is called the *upper* integral of \\(f(x)\\), and is written \
 
 If \\(S = s\\), their common value is called the *integral* of \\(f(x)\\) taken between 
 the limits<a class="marginmark" onClick="toggleHide('mn:5,-3');">&#91;5&#93;</a> of integration 
-*a* and *b*. 
+\\(a\\) and \\(b\\). 
 
 </div>
 
@@ -177,7 +177,7 @@ The condition is obviously necessary, for if \\(S_n\\) and \\(s_n\\) have a comm
 that if \\(\lim \,(S_n - s_n) = 0\\), then 
 \\[\lim S_n = \lim s_n = S = s.\\] 
 
->*Note*. A continuous function \\(f(x)\\) is 'integrable'. For, given, we can \\(\epsilon\\) find \\(\delta\\) such that \\(\left|\,f(x') - f(x'') \,\right| < \left. \epsilon \middle/ (b-a) \right.\\) whenever \\(\left|\,x'-x' ' \right| < \delta\\). Take all the intervals \\([x_{s-1}, x_s]\\) less than \\(\delta\\), and then \\(U_s - L_s < \left. \epsilon\middle/(b — a)\right.\\) and so \\(S
+>**Note**. A continuous function \\(f(x)\\) is 'integrable'. For, given, we can \\(\epsilon\\) find \\(\delta\\) such that \\(\left|\,f(x') - f(x'') \,\right| < \left. \epsilon \middle/ (b-a) \right.\\) whenever \\(\left|\,x'-x' ' \right| < \delta\\). Take all the intervals \\([x_{s-1}, x_s]\\) less than \\(\delta\\), and then \\(U_s - L_s < \left. \epsilon\middle/(b — a)\right.\\) and so \\(S
 _n - s_n < \epsilon\\); therefore \\(S_n - s_n \rightarrow 0\\) under the circumstances specified in the condition of integrability. 
 
 >*Corollary*. If \\(S_ n\\) and \\(s_n\\) have the same limit \\(S\\) for one mode of subdivision of \\([a, b]\\) into intervals of the specified kind, the limits of \\(S_n\\) and of \\(s_n\\) for any other such mode of subdivision are both S. 
@@ -186,9 +186,9 @@ _n - s_n < \epsilon\\); therefore \\(S_n - s_n \rightarrow 0\\) under the circum
 
 >*Example* 2. A function which is continuous except at a finite number of ordinary discontinuities is integrable. 
 >
->[If \\(f(x)\\) have an ordinary discontinuity at *c*, enclose *c* in an interval of length \\(\delta_1\\); given \\(\epsilon\\), we can find \\(\delta\\) so that \\(\left|\, f(x') -f (x) \,\right| <  \epsilon\\) when \\(\left|\, x' - x \,\right| < \delta\\) and \\(x\\), \\(x'\\) are not in this interval. 
+>[If \\(f(x)\\) have an ordinary discontinuity at \\(c\\), enclose \\(c\\) in an interval of length \\(\delta_1\\); given \\(\epsilon\\), we can find \\(\delta\\) so that \\(\left|\, f(x') -f (x) \,\right| <  \epsilon\\) when \\(\left|\, x' - x \,\right| < \delta\\) and \\(x\\), \\(x'\\) are not in this interval. 
 >
->Then \\(S_n-s_n \leq \epsilon (b-a-\delta_1)+k\delta_1\\), where *k* is the greatest value of \\(\left|\,f(x')-f(x)\,\right|\\), when \\(x\\), \\(x'\\) lie in the interval. 
+>Then \\(S_n-s_n \leq \epsilon (b-a-\delta_1)+k\delta_1\\), where \\(k\\) is the greatest value of \\(\left|\,f(x')-f(x)\,\right|\\), when \\(x\\), \\(x'\\) lie in the interval. 
 >
 >When \\(\delta_1 \rightarrow 0, \;  k \rightarrow \left | \,f(c + 0)- f(c-0) \,\right|\\), and hence \\(\lim\limits_{n \rightarrow \infty} (S_n -s_n ) = 0\\).] 
 
@@ -280,10 +280,10 @@ where the limit is taken by making \\(\delta_1, \delta_2, \dots ,\delta_{\kappa}
 
 >######*Example* 3. If \\(f(x)\\) is integrable when \\(a_1 \leq x \leq b_1\\) and if, when \\(a_1 \leq   a < b \leq b_1 \\), we write \\[\int_a^b f(x)\,dx =\phi(a,b),\\] and if \\((b + 0)\\) exists, then \\[\lim_{b \,\rightarrow \,+0}\frac{\phi(a,b+\delta)-\phi(a,b)}{\delta} =f(b+0).\\][4.13example3]######
 >
->Deduce that, if \\(f(x)\\) is continuous at *a* and *b*,
+>Deduce that, if \\(f(x)\\) is continuous at \\(a\\) and \\(b\\),
 >\\[\frac{d}{da} \int_a^b f(x)\,dx =-f(a), \quad \frac{d}{db} \int_a^b f(x)\,dx =f(b).\\]
 
->######*Example* 4. Prove by differentiation<a class="marginmark" onClick="toggleHide('mn:9,-9');">&#91;9&#93;</a>  that, if  \\(\phi(x)\\) is a continuous function of *x* and \\(\displaystyle \frac{dx}{dt}\\) a continuous function of \\(t\\), then \\[\int_{\large x_{0}}^{\large x_{1}} \phi(x) \, dx =\int_{\large t_0}^{\large t_{1}} \phi(x) \frac{dx}{dt} dt.\\] [4.13example4] ######
+>######*Example* 4. Prove by differentiation<a class="marginmark" onClick="toggleHide('mn:9,-9');">&#91;9&#93;</a>  that, if  \\(\phi(x)\\) is a continuous function of \\(x\\) and \\(\displaystyle \frac{dx}{dt}\\) a continuous function of \\(t\\), then \\[\int_{\large x_{0}}^{\large x_{1}} \phi(x) \, dx =\int_{\large t_0}^{\large t_{1}} \phi(x) \frac{dx}{dt} dt.\\] [4.13example4] ######
 
 </div>
 
@@ -308,7 +308,7 @@ where the limit is taken by making \\(\delta_1, \delta_2, \dots ,\delta_{\kappa}
 
 The two following general theorems are frequently useful. 
 
-(I) Let *U* and *L* be the upper and lower bounds of the integrable function \\(f(x)\\) in the range \\([a, b]\\). 
+(I) Let \\(U\\) and \\(L\\) be the upper and lower bounds of the integrable function \\(f(x)\\) in the range \\([a, b]\\). 
 
 Then from the definition of an integral it is obvious that 
 \\[\int_a^b \left\{U-f(x)\right\} dx, \quad \int_a^b \left\{f(x)-L\right\} dx \\]
@@ -317,7 +317,7 @@ are not negative; and so
 
 This is known as the *First Mean Value Theorem*. 
 
-If \\(f(x)\\) is *continuous* we can find a number \\(\xi\\) such that \\(a \leq \xi \leq b\\) and such that \\(f(\xi)\\) has any given value lying between *U* and *L* ([&#167;3.63](CMA03-3-Heine-BorelMN.html#arealfunctionofarealvariablecontinuousinaclosedintervalattainsallvaluesbetweenitsupperandlowerbounds.)). Therefore we can find \\(\xi\\) such that 
+If \\(f(x)\\) is *continuous* we can find a number \\(\xi\\) such that \\(a \leq \xi \leq b\\) and such that \\(f(\xi)\\) has any given value lying between \\(U\\) and \\(L\\) ([&#167;3.63](CMA03-3-Heine-BorelMN.html#arealfunctionofarealvariablecontinuousinaclosedintervalattainsallvaluesbetweenitsupperandlowerbounds.)). Therefore we can find \\(\xi\\) such that 
 \\[\int_a^b f(x) \, dx = (b-a)f(\xi).\\]
 
 If \\(F(x)\\) has a continuous differential coefficient \\(F' (x)\\) in the range \\([a, b]\\), we have, on writing \\(F' (x)\\) for \\(f(x)\\), 
@@ -351,7 +351,7 @@ for some value of \\(\xi\\) such that \\(a \leq \xi \leq b\\).<a class="marginma
 
 <div markdown=1 class="contenttext">
 
-(II) Let \\(f(x)\\) and \\(\phi(x)\\) be integrable in the range \\([a, b]\\) and let \\(\phi(x)\\) be a *positive decreasing* function of *x*. Then *Bonnet's<a class="marginmark" onClick="toggleHide('mn:11,+5');">&#91;11&#93;</a> form of the Second Mean Value Theorem* is that a number \\(\xi\\) exists such that \\(a \leq \xi \leq b\\), and 
+(II) Let \\(f(x)\\) and \\(\phi(x)\\) be integrable in the range \\([a, b]\\) and let \\(\phi(x)\\) be a *positive decreasing* function of \\(x\\). Then *Bonnet's<a class="marginmark" onClick="toggleHide('mn:11,+5');">&#91;11&#93;</a> form of the Second Mean Value Theorem* is that a number \\(\xi\\) exists such that \\(a \leq \xi \leq b\\), and 
 \\[\int_a^b f(x)\phi(x) \, dx = \phi(a) \int_a^{\xi} f(x)\,dx.\\].
 
 For, with the notation of [&#167;&#167;4.1-4.13](#4.1theconceptofintegration.), consider the sum 
@@ -362,7 +362,7 @@ Writing \\((x_s -x_{s-1} )f(x_{s -1} ) = a_{s-1}\\), \\(\phi(x_{s-1}) = \phi_{s-
 Each term in the summation is increased by writing \\(\overline b\\) for \\(b_{s-1} \\) and decreased by writing \\(\underline b\\) for \\(b_{s-1}\\); if \\(\overline b\\),\\(\underline b\\) be the greatest and least of \\(b_0 , b_1, \dots , b_{p-1}\\); and so \\(\underline{b}\phi_0 \leq S \leq \overline{b}\phi_0\\). Therefore \\(S\\) lies between the greatest and least of the sums \\(\phi(x_0)\sum\limits_{s=1}^m (x_s-x_{s-1})\,f(x_{s-1})\\) where \\(m=1, 2, 3, \dots ,p\\). But, given \\(\epsilon\\), we can find \\(\delta\\) such that, when \\(x_{s} - x_{s-1} < \delta\\), 
 \\[\left |\, \sum _{s=1}^p (x_s-x_{s-1}) f(x_{s-1})\phi(x_{s-1}) - \int_{x_{\tiny {0}}}^{ x_ {p}} f(x) \phi(x)\, dx \, \right| < \epsilon, \\]
 \\[\left|\, \phi(x_0) \sum_{s=1}^m(x_s-x_{s-1})f(x_{s-1}) - \phi(x_0) \int_{x_{\tiny {0}}}^{ x_ {p}} f(x) \, dx \, \right| < \epsilon,\\]
-and so, writing *a*, *b* for \\(x_0\\), \\(x_p\\), we find that \\(\displaystyle  \int_a^b f(x) \phi(x)\, dx\\) lies between the upper and lower bounds of<a class="marginmark" onClick="toggleHide('mn:12,-7');">&#91;12&#93;</a>  \\(\displaystyle\phi(a) \int_{a}^{ \xi_1} f(x) \, dx\pm 2\epsilon\\), where \\(\xi_1\\) may take all values between *a* and *b*. Let *U* and *L* be the upper and lower bounds of \\(\displaystyle\phi(a) \int_{a}^{ \xi_1} f(x) \, dx \\). 
+and so, writing \\(a\\), \\(b\\) for \\(x_0\\), \\(x_p\\), we find that \\(\displaystyle  \int_a^b f(x) \phi(x)\, dx\\) lies between the upper and lower bounds of<a class="marginmark" onClick="toggleHide('mn:12,-7');">&#91;12&#93;</a>  \\(\displaystyle\phi(a) \int_{a}^{ \xi_1} f(x) \, dx\pm 2\epsilon\\), where \\(\xi_1\\) may take all values between \\(a\\) and \\(b\\). Let \\(U\\) and \\(L\\) be the upper and lower bounds of \\(\displaystyle\phi(a) \int_{a}^{ \xi_1} f(x) \, dx \\). 
 
 </div>
 
@@ -420,7 +420,7 @@ The equation<a class="marginmark" onClick="toggleHide('mn:14,-13');">&#91;14&#93
 
 
 
-<div markdown=1 class="marginnotes" id="mn:15,-9" style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;15&#93;</a>\\(\phi(x, y)\\) is defined to be a continuous function of *both* variables if, given \\(\epsilon\\), we can find \\(\delta\\) such that \\(\left| \,\phi(x', y') - \phi(x, y)\, \right| < \epsilon\\) whenever \\(\{(x' - x)^2 + (y' - y)^2 \}^{\frac{1}{2}} < \delta\\). It can be shewn by [&#167;3.6](CMA03-3-Heine-BorelMN.html#themodifiedheine-boreltheorem.) that if \\(\phi(x, y)\\) is a continuous function of both variables at all points of a closed region in a Cartesian diagram, it is *uniformly* continuous throughout the region (the proof is almost identical with that of [&#167;3.61](CMA03-3-Heine-BorelMN.html#uniformityofcontinuity.)). It should be noticed that, if \\(\phi(x, y)\\) is a continuous function of *each* variable, it is *not* necessarily a continuous function of both; as an example take \\[\phi(x,y)=\frac{(x+y)^2}{x^2+y^2}, \quad \phi(0,0) = 1;\\] this is a continuous function of *x* and of *y* at \\((0, 0)\\), but not of both *x* and *y*.<a onClick="hideIt('mn:15,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:15,-9" style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;15&#93;</a>\\(\phi(x, y)\\) is defined to be a continuous function of *both* variables if, given \\(\epsilon\\), we can find \\(\delta\\) such that \\(\left| \,\phi(x', y') - \phi(x, y)\, \right| < \epsilon\\) whenever \\(\{(x' - x)^2 + (y' - y)^2 \}^{\frac{1}{2}} < \delta\\). It can be shewn by [&#167;3.6](CMA03-3-Heine-BorelMN.html#themodifiedheine-boreltheorem.) that if \\(\phi(x, y)\\) is a continuous function of both variables at all points of a closed region in a Cartesian diagram, it is *uniformly* continuous throughout the region (the proof is almost identical with that of [&#167;3.61](CMA03-3-Heine-BorelMN.html#uniformityofcontinuity.)). It should be noticed that, if \\(\phi(x, y)\\) is a continuous function of *each* variable, it is *not* necessarily a continuous function of both; as an example take \\[\phi(x,y)=\frac{(x+y)^2}{x^2+y^2}, \quad \phi(0,0) = 1;\\] this is a continuous function of \\(x\\) and of \\(y\\) at \\((0, 0)\\), but not of both \\(x\\) and \\(y\\).<a onClick="hideIt('mn:15,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -437,7 +437,7 @@ continuous function of \\(\alpha\\), the second integrand is \\(f_{\alpha} (x, a
 
 
 
-<div markdown=1 class="marginnotes" id="mn:16,+9" style="margin-top: +9em; margin-bottom: +9em;"><a class="marginmark">&#91;16&#93;</a>It is obvious that it would have been sufficient to assume that \\(f_{\alpha}\\) had a Riemann integral and was a continuous function of \\(\alpha\\) (the continuity being uniform with respect to *x*), instead of assuming that \\(f_{\alpha}\\)  was a continuous function of both variables. This is actually done by Hobson, [*Functions of a Real Variable*](https://archive.org/details/theoryfunctions00hobsgoog), p. 599.<a onClick="hideIt('mn:16,+9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:16,+9" style="margin-top: +9em; margin-bottom: +9em;"><a class="marginmark">&#91;16&#93;</a>It is obvious that it would have been sufficient to assume that \\(f_{\alpha}\\) had a Riemann integral and was a continuous function of \\(\alpha\\) (the continuity being uniform with respect to \\(x\\)), instead of assuming that \\(f_{\alpha}\\)  was a continuous function of both variables. This is actually done by Hobson, [*Functions of a Real Variable*](https://archive.org/details/theoryfunctions00hobsgoog), p. 599.<a onClick="hideIt('mn:16,+9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -445,7 +445,7 @@ continuous function of \\(\alpha\\), the second integrand is \\(f_{\alpha} (x, a
 
 <div markdown=1 class="contenttext">
 
-But, for any given \\(\epsilon\\), a number \\(\delta\\) *independent* of *x* exists (since the continuity of \\(f_{\alpha}\\) is uniform<a class="marginmark" onClick="toggleHide('mn:16,+9');">&#91;16&#93;</a> with respect to the variable *x*) such that 
+But, for any given \\(\epsilon\\), a number \\(\delta\\) *independent* of \\(x\\) exists (since the continuity of \\(f_{\alpha}\\) is uniform<a class="marginmark" onClick="toggleHide('mn:16,+9');">&#91;16&#93;</a> with respect to the variable \\(x\\)) such that 
 \\[\left|\, f_{\alpha}(x, \alpha') - f_{\alpha}(x, \alpha) \,\right| < \left. \epsilon \middle/ (b-a)\right. ,\\] 
 whenever \\(\left|\, \alpha' - \alpha \,\right| < \delta\\). 
 
@@ -495,7 +495,14 @@ exists and is equal to \\(\displaystyle \int_a^b f_{\alpha} \,dx\\).
     <li><a href="CMA03-1-ContinuousFnsMN.html#continuousfunctionsanduniformconvergence">Continuity and Uniform Convergence</a></li>
     <li><a href="#thetheoryofriemannintegration">The Theory of Riemann Integration</a>
       <ul>
-        <li class="current"><a href="#4.1theconceptofintegration.">The Concept of Integration</a></li>
+        <li class="current"><a href="#4.1theconceptofintegration.">The Concept of Integration</a>
+	   <ul>
+	      <li ><a href="#4.11upperandlowerintegrals.">Upper and lower integrals</a>
+              <li><a href="#4.12riemannsconditionofintegrability.">Riemann&#8217;s Condition of Integrability</a>
+              <li><a href="#4.13ageneraltheoremonintegration.">A general theorem on integration</a>
+              <li><a href="#4.14meanvaluetheorems.">Mean Value Theorems</a>
+           </ul>
+        </li>
         <li class="current"><a href="#4.2differentiationofintegralscontainingaparameter.">Differentiation of Integrals</a></li>
 	<li><a href="CMA04-2-InfiniteIntegralsMN.html#4.3doubleintegralsandrepeatedintegrals.">Double Integrals & Repeated Integrals</a></li>
 	<li><a href="CMA04-2-InfiniteIntegralsMN.html#4.4infiniteintegrals.">Infinite Integrals</a></li>
@@ -511,7 +518,11 @@ exists and is equal to \\(\displaystyle \int_a^b f_{\alpha} \,dx\\).
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navint');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navint');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navint');showIt('navback');">BACKMATTER</a> 
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponentialMN.html">Appendix</a></li>
+  </ul>
+</li>
 </ul>
 </div>
 
@@ -551,7 +562,7 @@ exists and is equal to \\(\displaystyle \int_a^b f_{\alpha} \,dx\\).
      <li><a href="#" onClick="showIt('navint');hideIt('navprocesses');">The Theory of Riemann Integration</a></li>
      <li class="more current"><a onClick="showIt('navint');hideIt('navprocesses');"> you are here . . . </a></li>
      <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
-     <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
+      <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
