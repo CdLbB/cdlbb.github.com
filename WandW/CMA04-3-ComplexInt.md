@@ -77,7 +77,7 @@ integral equations; the investigation which we shall give is due to W. A. Hurwit
 
 [^hurwitz,-1]: [*Annals of Mathematics*, **ix.** (1908)](http://www.jstor.org/stable/i307112), p. 183. 
 
-Let \\(x^{\lambda-1} y^{\mu-1} (1 - x -y)^{\nu-1}   f(x,y) = \phi(x,y)\\); and let *M* be the upper bound of \\(\left|\,f(x,y)\,\right|\\). 
+Let \\(x^{\lambda-1} y^{\mu-1} (1 - x -y)^{\nu-1}   f(x,y) = \phi(x,y)\\); and let \\(M\\) be the upper bound of \\(\left|\,f(x,y)\,\right|\\). 
 
 Let \\(\delta\\) be any positive number less than \\(\frac{1}{3}\\). 
 
@@ -139,7 +139,7 @@ This is called Dirichlet's formula.
 
 [^watson,-2]: A treatment of complex integration based on a different set of ideas and not making so many assumptions concerning the curve *AB* will be found in Watson's [*Complex Integration and Cauchy's Theorem*](https://archive.org/details/complexintegrat00watsrich). 
 
-Integration with regard to a real variable *x* may be regarded as integration 
+Integration with regard to a real variable \\(x\\) may be regarded as integration 
 along a particular path (namely part of the real axis) in the Argand diagram. 
 Let \\(f(z)\\), \\((= P + iQ)\\), be a function of a complex variable \\(z\\), which is continuous  along a simple curve *AB* in the Argand diagram. 
 
@@ -175,15 +175,15 @@ By [§4.13 example 4](CMA04-1-Integration.html#4.13example4), this definition is
 From [§4.13](CMA04-1-Integration.html#4.13ageneraltheoremonintegration.), the reader will easily deduce the following theorem: 
 
 Let a sequence of points be taken on a simple curve \\(z_0 Z\\); and let the first 
-*n* of them, rearranged in order of magnitude of their parameters, be called 
+\\(n\\) of them, rearranged in order of magnitude of their parameters, be called 
 \\(z_1^{\,(n)}, \, z_2^{\,(n)}, \, , \dots , z_n^{\,(n)}\\) \\((z_0^{\,(n)} = z_0, \, z_{n+1}^{\,(n)} = Z)\\);  let their parameters be \\(t_1^{\,(n)}, \, t_2^{\,(n)}, \, , \dots , t_n^{\,(n)}\\), and let the sequence be such that, given any number \\(\delta\\), we can find \\(N\\) such 
 that, when \\(n > N\\), \\(t_{r+1}^{\,(n)}-t_r^{\,(n)} < \delta \\), for \\(r= 0, 1, 2, \dots , n\\); let \\(\zeta_r^{\,(n)}\\) be any point whose parameter lies between \\(t_{r}^{\,(n)}, \,t_{r+1}^{\,(n)} \\); then we can make 
 \\[\left|\, \sum_{r=0}^n \left(z_{r+1}^{\,(n)}- z_r^{\,(n)}\right) \, f\left(\zeta_r^{\,(n)}\right) - \int_{z_0}^Z \! f(z)\, dz \,\right|\\]
-arbitrarily small by taking *n* sufficiently large.[^delta,-2]
+arbitrarily small by taking \\(n\\) sufficiently large.[^delta,-2]
 
-[^delta,-2]: *Editor's Note*:  By taking \\(\delta\\)  sufficiently small, we make \\(N\\) and *n* sufficiently large.
+[^delta,-2]: *Editor's Note*:  By taking \\(\delta\\)  sufficiently small, we make \\(N\\) and \\(n\\) sufficiently large.
 
-[^delta,-2]: *Editor's Note*:  By taking \\(\delta\\)  sufficiently small, we make \\(N\\) and *n* sufficiently large.
+[^delta,-2]: *Editor's Note*:  By taking \\(\delta\\)  sufficiently small, we make \\(N\\) and \\(n\\) sufficiently large.
 
 ####4.62 An upper limit to the value of a complex integral.####
 
@@ -210,7 +210,7 @@ That is to say, \\(\displaystyle \left|\,\int_{z_0}^Z \! f(z)\,dz\,\right|\\) ca
 We shall now shew that if \\(S (z) = u_1(z) + u_2(z) + \cdots\\) is a uniformly convergent series of continuous functions of \\(z\\), for values of \\(z\\) contained within 
 some region, then the series 
 \\[\int_C \!u_1(z)\,dz + \int_C \!u_2(z)\,dz + \cdots ,\\]
-(where all the integrals are taken along some path *C* in the region) is convergent, and has for sum \\(\displaystyle \int_C \! S(z) \,dz\\). 
+(where all the integrals are taken along some path \\(C\\) in the region) is convergent, and has for sum \\(\displaystyle \int_C \! S(z) \,dz\\). 
 
 
 For, writing 
@@ -225,7 +225,7 @@ Therefore if \\(l\\) be the length of the path of integration, we have ([§4.62]
 \\[\left|\, \int_C \! R_n(z)\, dz \,\right| < \epsilon l .\\]
 
 
-Therefore the modulus of the difference between \\(\displaystyle \int_C \!S(z)\, dz\\) and \\( \sum\limits_{m=1}^n \displaystyle \int_C \!u_m(z)\,dz\\)  can be made less than any positive number, by giving *n* any sufficiently large value. This proves both that the series \\( \sum\limits_{m=1}^n \displaystyle \int_C \!u_m(z)\,dz\\)
+Therefore the modulus of the difference between \\(\displaystyle \int_C \!S(z)\, dz\\) and \\( \sum\limits_{m=1}^n \displaystyle \int_C \!u_m(z)\,dz\\)  can be made less than any positive number, by giving \\(n\\) any sufficiently large value. This proves both that the series \\( \sum\limits_{m=1}^n \displaystyle \int_C \!u_m(z)\,dz\\)
 convergent, and that its sum is \\(\displaystyle \int_C \!S(z)\, dz\\). 
 
 [^definediff,+1]: \\(\dfrac{df(z)}{dz}\\) means \\(\lim\limits_{h \rightarrow 0} \dfrac{f(z+h)-f(z)}{h}\\) where \\(h \rightarrow 0\\) along a definite simple curve; this definition is modified slightly in [§5.12](CMA05-1-AnalyticFunctions.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.) in the case when \\(f(z)\\) is an *analytic* function.
@@ -236,20 +236,20 @@ if the series on the right converges uniformly and the series on the left is con
 
 >*Example* 1. Consider the series 
 >\\[\sum_{n=0}^\infty \frac{2x\{n(n+1) \sin^2 x^2-1\}\cos x^2}{\{1+n^2\sin^2 x^2\}\{1+(n+1)^2\sin^2x^2\}},\\]
-in which x is real. 
+in which \\(x\\) is real. 
 >
 >The nth term is
 >\\[\frac{2xn\cos x^2}{1+n^2\sin^2 x^2}-\frac{2x(n+1)\cos x^2}{1+(n+1)^2 \sin^2 x^2},\\]
-and the sum of n terms is therefore 
+and the sum of \\(n\\) terms is therefore 
 >\\[\frac{2x\cos x^2}{1+\sin^2 x^2}-\frac{2x(n+1)\cos x^2}{1+(n+1)^2 \sin^2 x^2}.\\]
 >
->Hence the series is absolutely convergent for all real values of *x* except \\(\pm \sqrt{m\pi}\\) where \\(m=1, 2, \dots\\); but 
+>Hence the series is absolutely convergent for all real values of \\(x\\) except \\(\pm \sqrt{m\pi}\\) where \\(m=1, 2, \dots\\); but 
 >\\[R_n(x)=\frac{2x(n+1)\cos x^2}{1+(n+1)^2 \sin^2 x^2},\\]
-and if *n* be any integer, by taking \\(x=(n+1)^{-1}\\) this has the limit 2 as \\(n \rightarrow \infty\\). The series is therefore non-uniformly convergent near \\(x=0\\). 
+and if \\(n\\) be any integer, by taking \\(x=(n+1)^{-1}\\) this has the limit 2 as \\(n \rightarrow \infty\\). The series is therefore non-uniformly convergent near \\(x=0\\). 
 >
->Now the sum to infinity of the series is \\(\displaystyle \frac{2x\cos x^2}{1+\sin^2 x^2}\\), and so the integral from 0 to *x* of 
+>Now the sum to infinity of the series is \\(\displaystyle \frac{2x\cos x^2}{1+\sin^2 x^2}\\), and so the integral from 0 to \\(x\\) of 
 the sum of the series is  \\( \arctan\{\sin x^2\}\\). On the other hand, the sum of the integrals from 
-to *x* of the first *n* terms of the series is 
+to \\(x\\) of the first \\(n\\) terms of the series is 
 \\[\arctan\{\sin x^2 \} - \arctan\{(n + 1) \sin x^2 \},\\] 
 and as \\(n \rightarrow \infty\\) this tends to \\(\arctan\{\sin x^2 \} =\frac{1}{2}\pi\\).
 > 
@@ -257,19 +257,19 @@ and as \\(n \rightarrow \infty\\) this tends to \\(\arctan\{\sin x^2 \} =\frac{1
 
 >*Example* 2. Discuss, in a similar manner, the series 
 >\\[\sum_{n=1}^\infty \frac{2 e^n x\{1-n(e-1)+e^{n+1}x^2\}}{n(n+1)(1+e^nx^2)(1+e^{n+1}x^2)}\\]
->for real values of *x*. 
+>for real values of \\(x\\). 
 
 >*Example* 3. Discuss the series 
 >\\[u_1+u_2+u_3+ \cdots ,\\]
 where  \\[u_1=ze^{-z^2}, \quad u_n=nze^{-n z^2}-(n-1)ze^{-(n-1) z^2},\\] 
 for real values of \\(z\\). 
 >
->The sum of the first *n* terms is \\(nze^{-n z^2}\\), so the sum to infinity is 0 for all real values of \\(z\\). Since the terms \\(u_n\\) are real and ultimately all of the same sign, the convergence 
+>The sum of the first \\(n\\) terms is \\(nze^{-n z^2}\\), so the sum to infinity is 0 for all real values of \\(z\\). Since the terms \\(u_n\\) are real and ultimately all of the same sign, the convergence 
 is absolute. 
 >
 >In the series 
 >\\[\int_0^z \!u_1 \,dz + \int_0^z \!u_2 \,dz + \int_0^z \!u_3 \,dz + \cdots ,\\]
-the sum of *n* terms is \\(\frac{1}{2}(1-e^{-nz^2})\\), and this tends to the limit \\(\frac{1}{2}\\) as *n* tends to infinity; this 
+the sum of \\(n\\) terms is \\(\frac{1}{2}(1-e^{-nz^2})\\), and this tends to the limit \\(\frac{1}{2}\\) as \\(n\\) tends to infinity; this 
 is not equal to the integral from 0 to \\(z\\) of the sum of the series \\(\sum u_n\\). 
 >
 >The explanation of this discrepancy is to be found in the non-uniformity of the convergence near \\(z = 0\\), for the remainder after \\(n\\) terms in the series \\(u_1 + u_2 + \cdots \\) is \\( -nze^{-nz^2}\\); 
@@ -331,7 +331,7 @@ is a continuous function of \\(\alpha\\). (Stokes.)
 ([Lerch, *Ann. de l'Ecole norm. sup.* (3) **xii.** (1895)](http://www.numdam.org/numdam-bin/browse?id=ASENS_1895_3_12_), p. 351.) 
 
 10.  Shew that \\[ \int^\infty \int^\infty \cdots \int^\infty \!\!\frac{dx_1 dx_2 \dots\, dx_n}{(x_1^2+ x_2^2+ \cdots +x_n^2)^{\alpha}} \\]  \\[\text{and}\\]  \\[  \int^\infty \int^\infty \cdots \int^\infty \!\!\frac{dx_1 dx_2 \dots \, dx_n}{x_1^{\,\alpha} + x_2^{\,\beta} + \cdots + x_n^{\,\lambda}}\\] converge when \\(\alpha > \frac{1}{2}n\\) and \\(\alpha^{-1} + \beta^{-1} + \cdots  +\lambda^{-1} < 1\\) respectively. (Math. Trip. 1904.) 
-11.  If \\(f(x,y)\\) be a continuous function of both *x* and *y* in the ranges \\(a \leq x \leq b \\), \\(a \leq y \leq b\\) except that it has ordinary discontinuities at points on a finite number of curves, with 
+11.  If \\(f(x,y)\\) be a continuous function of both \\(x\\) and \\(y\\) in the ranges \\(a \leq x \leq b \\), \\(a \leq y \leq b\\) except that it has ordinary discontinuities at points on a finite number of curves, with 
 continuously turning tangents, each of which meets any line parallel to the coordinate axes only a finite number of times, then \\(\int _a^b \!f(x, y)\, dx\\) is a continuous function of \\(y\\). 
 
      [Consider \\(\displaystyle \int_a^{\alpha_1-\delta_1} + \int_{\alpha_1+\epsilon_1}^{\alpha_2-\delta_2} + \cdots + \int_{\alpha_n+\epsilon_n}^b \!\!\{ f(x, y+h)-f(x,y)\}\,dx \\), where the numbers \\(\delta_1,\, \delta_2,\, \dots \\) \\(\epsilon_1,\, \epsilon_2,\, \dots \\) are so chosen as to exclude the discontinuities of \\(f(x, y+h)\\) from the range of integration; \\(\alpha_1,\, \alpha_2,\, \dots\\) being the discontinuities of \\(f(x, y)\\).]  \\(\phantom{}\\) (Böcher.) 

@@ -28,7 +28,7 @@ HTML header:	<script type="text/javascript"
 
 ### 4.3 Double integrals and repeated integrals.### 
 
-Let \\(f(x, y)\\) be a function which is continuous with regard to both of the variables *x* and *y*, when \\(a \leq x \leq b\\), \\(\alpha \leq y \leq \beta\\). 
+Let \\(f(x, y)\\) be a function which is continuous with regard to both of the variables \\(x\\) and \\(y\\), when \\(a \leq x \leq b\\), \\(\alpha \leq y \leq \beta\\). 
 
 By [§4.2 example 2](CMA04-1-Integration.html#4.2example2), it is clear[^clearly] that 
 \\[\int_a^b \left\{\int_\alpha^\beta f(x,y)\, dy \right\}dx=\int_\alpha^\beta \left\{\int_a^b f(x,y)\, dx \right\}dy\\]
@@ -39,7 +39,7 @@ both exist. These are called *repeated integrals*.
 Also, as in [§3.62](CMA03-3-Heine-Borel.html#arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.), \\(f(x, y)\\), being a continuous function of both variables, 
 attains its upper and lower bounds. 
 
-Consider the range of values of *x* and *y* to be the points inside and on a 
+Consider the range of values of \\(x\\) and \\(y\\) to be the points inside and on a 
 rectangle in a Cartesian diagram; divide it into \\(n\nu\\) rectangles by lines parallel 
 to the axes. 
 
@@ -61,16 +61,16 @@ Also, from the uniformity of the continuity of \\(f(x, y)\\), given \\(\epsilon\
 And then \\[(S_{n,\nu}-s_{n,\nu} < \epsilon (b — a) (\beta — \alpha),\\] 
 and so \\[(S-s < \epsilon (b — a) (\beta — \alpha).\\]
 
-But *S* and \\(s\\) are *independent* of \\(\epsilon\\), and so \\(S = s\\). 
+But \\(S\\) and \\(s\\) are *independent* of \\(\epsilon\\), and so \\(S = s\\). 
 
-The common value of *S* and *s* is called the *double integral* of \\(f(x, y)\\) and 
+The common value of \\(S\\) and \\(s\\) is called the *double integral* of \\(f(x, y)\\) and 
 is written 
 \\[\int_a^b \int_\alpha^\beta f(x,y)(dxdy).\\]
 
 >It is easy to shew that the repeated integrals and the double integral are all equal when \\(f(x, y)\\) is a continuous function of both variables. 
 >
 >For let \\(\Upsilon_m,\,  \Lambda_m\\) be the upper and lower bounds of \\[\int_\alpha^\beta f(x,y)\, dy\\]
- as *x* varies between \\(x_{m-1}\\) and \\(x_m\\).
+ as \\(x\\) varies between \\(x_{m-1}\\) and \\(x_m\\).
 >
 >Then \\[\sum_{m=1}^n \Upsilon_m (x_{m}-x_{m-1}) \geq  \int_a^b \left\{\int_\alpha^\beta f(x,y)\, dy \right\}dx \geq \sum_{m=1}^n \Lambda_m (x_{m}-x_{m-1}) \\]
 >But[^upperbound] \\[\sum_{\mu=1}^\nu U_{m,\mu} (y_{m}-y_{m-1}) \geq \Upsilon_m \geq \Lambda_m \geq \sum_{\mu=1}^\nu L_{\,m,\mu} (y_{m}-y_{m-1}).\\]
@@ -104,16 +104,16 @@ question is called an *infinite integral*.[^hardy,-2]
 
 Similarly we define \\( \int_{-\infty}^b f(x)\,dx\\) to mean \\(\lim\limits_{a \rightarrow -\infty} \int_a^b  f(x)\,dx\\), if this limit exists; and 
 \\( \int_{-\infty}^\infty f(x)\,dx\\) is defined as \\( \int_{-\infty}^a f(x)\,dx + \int_{a}^\infty f(x)\,dx\\). In this last definition, the choice 
-of *a* is a matter of indifference. 
+of \\(a\\) is a matter of indifference. 
 
 ####4.41 Infinite integrals of continuous functions. Conditions for convergence. ####
 
-A necessary and sufficient condition for the convergence of \\(\int_a^\infty f(x)\,dx\\) is that, corresponding to any positive number \\(\epsilon\\), a positive number *X* should exist such that \\(\left|\int_{x'}^{x' '} f(x)\,dx\right| < \epsilon\\) 
+A necessary and sufficient condition for the convergence of \\(\int_a^\infty f(x)\,dx\\) is that, corresponding to any positive number \\(\epsilon\\), a positive number \\(X\\) should exist such that \\(\left|\int_{x'}^{x' '} f(x)\,dx\right| < \epsilon\\) 
  whenever \\(x'' \geq x' \geq X\\). 
 
-The condition is obviously necessary; to prove that it is sufficient, suppose it is satisfied; then, if \\(n \geq X - a \\) and *n* be a positive integer and \\(S_n = \int_a^{a+n} f(x)\,dx\\), we have
+The condition is obviously necessary; to prove that it is sufficient, suppose it is satisfied; then, if \\(n \geq X - a \\) and \\(n\\) be a positive integer and \\(S_n = \int_a^{a+n} f(x)\,dx\\), we have
 \\[\left|\, S_{n+p} - S_n \right| < \epsilon.\\] 
-Hence, by [§2.22](CMA02-1-Limits.html#cauchy), \\(S_n\\) tends to a limit, *S*; and then, if \\(\xi > a + n\\), 
+Hence, by [§2.22](CMA02-1-Limits.html#cauchy), \\(S_n\\) tends to a limit, \\(S\\); and then, if \\(\xi > a + n\\), 
 \\[
 \begin{align*}
 \left|\,S - \int_a^\xi f(x)\,dx \,\right| &\leq  \left|\,S - \int_a^{a+n} f(x)\,dx \, \right|+\left|\int_{a+n}^\xi f(x)\,dx \,\right|\\
@@ -127,13 +127,13 @@ and so \\(\lim\limits_{\xi \rightarrow \infty}\int_a^\xi f(x)\, dx = S\\); so th
 ####4.42 Uniformity of convergence of an infinite integral.####
 
 The integral \\(\int_a^\infty f(x, \alpha)\, dx\\) is said to converge uniformly with regard to \\(\alpha\\) in a given domain of values of \\(\alpha\\) if, corresponding to an arbitrary positive 
-number \\(\epsilon\\), there exists a number *X* *independent* of \\(\alpha\\) such that 
+number \\(\epsilon\\), there exists a number \\(X\\) *independent* of \\(\alpha\\) such that 
 \\[\left|\,\int_{x'}^\infty f(x,\alpha)\,dx \,\right| < \epsilon.\\]
 for all values of a in the domain and all values of \\(x' \geq X\\). 
 
 The reader will see without difficulty on comparing [§2.22](CMA02-1-Limits.html#cauchy) 
 and [§3.31](CMA03-2-Uniformity.html#ontheconditionforuniformityofconvergence.) with 
-[§4.41](#4.41infiniteintegralsofcontinuousfunctions.conditionsforconvergence.) that a necessary and sufficient condition that \\(\int_a^\infty f(x, \alpha)\, dx\\) should converge uniformly in a given domain is that, corresponding to any positive number \\(\epsilon\\), there exists a number *X* independent of a such that 
+[§4.41](#4.41infiniteintegralsofcontinuousfunctions.conditionsforconvergence.) that a necessary and sufficient condition that \\(\int_a^\infty f(x, \alpha)\, dx\\) should converge uniformly in a given domain is that, corresponding to any positive number \\(\epsilon\\), there exists a number \\(X\\) independent of a such that 
 \\[\left|\,\int_{x'}^{x''} f(x,\alpha)\,dx \,\right| < \epsilon.\\] 
 for all values of \\(\alpha\\) in the domain whenever \\(x'' \geq x' \geq X\\). 
 
@@ -160,7 +160,7 @@ converges absolutely.
  &\hphantom{f(x) = 0} \qquad\qquad \,\text{ when}\quad n+1-(n+1)^{-2} \leq x \leq n+1,
 \end{align*}
 \\] 
-where *n* takes all integral values. 
+where \\(n\\) takes all integral values. 
 >
 >For \\(\int_0^\xi f(x)\,dx\\) increases with \\(\xi\\) and \\(\int_n^{n+1} f(x)\,dx=\frac{1}{6}(n + 1)^{-2}\\); whence it follows without difficulty that \\(\int_a^\infty f(x)\,dx\\) converges. But when \\(x=n+1-\frac{1}{2}(n + 1)^{-2}\\),  \\(f(x) = \frac{1}{4}\\); and so \\(f(x)\\) does not tend to zero.] 
 
@@ -196,7 +196,7 @@ If \\(f(x) \rightarrow 0 \\) steadily as \\(x \rightarrow \infty\\) and if  \\(\
 then \\( \int_a^x f(x)\phi(x)\,dx \\) is convergent. 
 
 For if the upper bound of  \\(\left| \int_a^x \phi(x)\,dx \right|\\) 
-be *A*, we can choose *X* such that \\(f(x) < \left.\epsilon \middle/2A\right.\\) 
+be \\(A\\), we can choose \\(X\\) such that \\(f(x) < \left.\epsilon \middle/2A\right.\\) 
 when \\(x\geq X\\); and then by the second mean value theorem, when \\(x'' \geq x' \geq X\\), we have 
 \\[
 \begin{align*}
@@ -221,7 +221,7 @@ which is the condition for convergence.
 [^osgoodpoussin,+3]: This name is due to Osgood. 
 
 (I) *De la Vallée Poussin's test.[^osgoodpoussin,+3]* The reader will easily see by using the reasoning of [§3.34](CMA03-2-Uniformity.html#aconditionduetoweierstrassforuniformconvergence.) that \\(\int_a^\infty f(x,\alpha)\,dx\\) converges uniformly with regard to \\(\alpha\\) in a domain of values of \\(\alpha\\) if \\(\left| \, f(x,\alpha)\, \right| < \mu(x)\\), where \\(\mu(x)\\) is independent of \\(\alpha\\) and \\(\int_a^\infty \mu(x)\,dx\\) converges. 
-[For, choosing *X* so that \\(\int_{x'}^{x''} \mu(x)\,dx < \epsilon\\) when \\(x" > x' >X\\), we have   \\(\left|\,\int_{x'}^{x''} f(x,\alpha)\,dx\right| < \epsilon\\), and the choice of *X* is independent of \\(\alpha\\)] 
+[For, choosing \\(X\\) so that \\(\int_{x'}^{x''} \mu(x)\,dx < \epsilon\\) when \\(x" > x' >X\\), we have   \\(\left|\,\int_{x'}^{x''} f(x,\alpha)\,dx\right| < \epsilon\\), and the choice of \\(X\\) is independent of \\(\alpha\\)] 
 
 >*Example*. \\(\int_0^\infty x^{\alpha-1}e^{-x} dx\\) converges uniformly in any interval \\([A, B]\\) such that \\(1 \leq A \leq B\\). 
 
@@ -231,12 +231,12 @@ This may be illustrated by an example.
 
 >Consider \\(\displaystyle \int_0^\infty \frac{\sin \alpha x}{x} dx \\) where \\(\alpha\\) is real.  We have \\[\int_{x'}^{x''} \frac{\sin \alpha x}{x} dx=\int_{\alpha x'}^{\alpha x''} \frac{\sin y}{y} dy. \\]
 >
->Since \\(\displaystyle \int_0^\infty \frac{\sin y}{y} dy \\) converges we can find *Y* such that \\(\displaystyle  \int_{y'}^{y''} \frac{\sin \alpha y}{y} dy\\) when \\(y" \geq y' \geq Y\\). So  \\(\displaystyle \left| \int_{x'}^{x''} \frac{\sin \alpha x }{x}dx\, \right| < \epsilon\\) whenever \\(\left|\, ax' \right | > Y\\); if \\(\left|\, \alpha \,\right| \geq \delta > 0\\), we therefore get \\[\displaystyle \left| \int_{x'}^{x''} \frac{\sin \alpha x }{x}dx\, \right| < \epsilon\\]when \\(x'' >  x' > X= \left.Y\right/\delta\\); and this choice of *X* is independent of \\(\alpha\\). So the convergence is 
+>Since \\(\displaystyle \int_0^\infty \frac{\sin y}{y} dy \\) converges we can find \\(Y\\) such that \\(\displaystyle  \int_{y'}^{y''} \frac{\sin \alpha y}{y} dy\\) when \\(y" \geq y' \geq Y\\). So  \\(\displaystyle \left| \int_{x'}^{x''} \frac{\sin \alpha x }{x}dx\, \right| < \epsilon\\) whenever \\(\left|\, ax' \right | > Y\\); if \\(\left|\, \alpha \,\right| \geq \delta > 0\\), we therefore get \\[\displaystyle \left| \int_{x'}^{x''} \frac{\sin \alpha x }{x}dx\, \right| < \epsilon\\]when \\(x'' >  x' > X= \left.Y\right/\delta\\); and this choice of \\(X\\) is independent of \\(\alpha\\). So the convergence is 
 uniform when \\(\alpha  \geq \delta > 0\\), and when \\(\alpha  \leq -\delta < 0\\),. 
 
 >*Example*. \\(\displaystyle \int_1^\infty \left\{\int_0^\alpha \sin (\beta^2 x^3)\, d\beta \right\}  dx\\) is uniformly convergent in any range of real values of \\(\alpha\\). (de la Vallée Poussin.) 
 >
->[ Write \\(\beta^2x^3 = z\\) and observe that \\( \left|\int_0^{\alpha^2 x^3} z^{-\frac{1}{2}}\sin z\, dz \, \right|\\) does not exceed a constant independent of \\(\alpha\\) and *x* since \\(\int_0^\infty z^{-\frac{1}{2}}\sin z\, dz\\) converges.] 
+>[ Write \\(\beta^2x^3 = z\\) and observe that \\( \left|\int_0^{\alpha^2 x^3} z^{-\frac{1}{2}}\sin z\, dz \, \right|\\) does not exceed a constant independent of \\(\alpha\\) and \\(x\\) since \\(\int_0^\infty z^{-\frac{1}{2}}\sin z\, dz\\) converges.] 
 
 
 (III) *The method of integration by parts.*
@@ -252,14 +252,14 @@ both of the latter integrals converge uniformly in any closed domain of real val
 
 ####4.44 Theorems concerning uniformly convergent infinite integrals.####
 
-(I) *Let \\(\int_a^\infty f(x, \alpha) \,dx\\) converge uniformly when \\(\alpha\\) lies in a domain *S*.
-Then, if \\(f(x, \alpha)\\) is a continuous function of both variables when \\(x \geq a\\) and \\(\alpha\\) lies in *S*, \\(\int_a^\infty f(x, a)\,dx\\) is a continuous function[^stokes,-4] of \\(\alpha\\).* 
+(I) *Let \\(\int_a^\infty f(x, \alpha) \,dx\\) converge uniformly when \\(\alpha\\) lies in a domain \\(S\\).
+Then, if \\(f(x, \alpha)\\) is a continuous function of both variables when \\(x \geq a\\) and \\(\alpha\\) lies in \\(S\\), \\(\int_a^\infty f(x, a)\,dx\\) is a continuous function[^stokes,-4] of \\(\alpha\\).* 
 
 [^stokes,-4]: This result is due to Stokes. His statement is that the integral is a continuous function of \\(\alpha\\) if it does not 'converge infinitely slowly'.
 
-For, given \\(\epsilon\\), we can find *X* *independent of* \\(\alpha\\), such that \\(\left|\int_\xi^\infty f(x, \alpha) \,dx \right| < \epsilon \\) whenever \\(\xi \geq X\\)
+For, given \\(\epsilon\\), we can find \\(X\\) *independent of* \\(\alpha\\), such that \\(\left|\int_\xi^\infty f(x, \alpha) \,dx \right| < \epsilon \\) whenever \\(\xi \geq X\\)
 
-Also we can find \\(\delta\\) *independent of x and* \\(\alpha\\), such that 
+Also we can find \\(\delta\\) *independent of \\(x\\) and* \\(\alpha\\), such that 
 \\[\left|\,f(x, \alpha) - f(x,\alpha') \, \right| < \left. \epsilon \middle/ (X- \alpha)\right. \\] 
 whenever \\(\left|\,\alpha -\alpha' \, \right|< \delta\\). 
 
@@ -275,7 +275,7 @@ That is to say, given \\(\epsilon\\), we can find \\(\delta\\) independent of \\
 \\]
 whenever \\(\left|\,\alpha -\alpha' \, \right|< \delta\\); and this is the condition for continuity. 
 
-(II) If \\(f (x, \alpha)\\) satisfies the same conditions as in (I), and if a lies in *S* 
+(II) If \\(f (x, \alpha)\\) satisfies the same conditions as in (I), and if a lies in \\(S\\) 
 when \\(A \leq \alpha \leq B\\), then 
 \\[\int_A^B \left\{\int_a^\infty \!f(x,\alpha)\, dx \right\} d\alpha = \int_a^\infty \left\{\int_A^B \!f(x,\alpha)\, d\alpha \right\} dx.\\]
 
@@ -296,13 +296,13 @@ But, from [§2.1](CMA02-1-Limits.html#limits) and [§4.41](#4.41infiniteintegral
 should exist, and be equal to 
 \\[\int_A^B \left\{\int_a^\infty \!f(x,\alpha)\, dx \right\} d \alpha.\\]
 
->######*Corollary*. The equation \\(\displaystyle \frac{d}{d\alpha} \int_a^\infty \!\phi(x,\alpha)\,dx  = \int_a^\infty \!\frac{\partial \phi}{\partial \alpha}dx\\) is true if the integral on the right converges uniformly and the integrand is a continuous function of both variables, when \\(x \geq \alpha\\) and \\(\alpha\\) lies in a domain *S*, and if the integral on the left is convergent. [4.44corollary]######
+>######*Corollary*. The equation \\(\displaystyle \frac{d}{d\alpha} \int_a^\infty \!\phi(x,\alpha)\,dx  = \int_a^\infty \!\frac{\partial \phi}{\partial \alpha}dx\\) is true if the integral on the right converges uniformly and the integrand is a continuous function of both variables, when \\(x \geq \alpha\\) and \\(\alpha\\) lies in a domain \\(S\\), and if the integral on the left is convergent. [4.44corollary]######
 >
->Let *A* be a point of *S*, and let \\(\frac{\partial \phi}{\partial \alpha}=f(x, \alpha)\\), so that, by [§4.13 example 3](CMA04-1-Integration.html#4.13example3), 
+>Let \\(A\\) be a point of \\(S\\), and let \\(\frac{\partial \phi}{\partial \alpha}=f(x, \alpha)\\), so that, by [§4.13 example 3](CMA04-1-Integration.html#4.13example3), 
 \\[\int_A^\alpha \!f(x, \alpha')\,d\alpha' = \phi(x,\alpha)-\phi(x,A).\\] 
 Then \\( \int_a^\infty \left\{\int_A^\alpha f(x,\alpha')\, d\alpha' \right\} d x\\) converges, that is \\(\int_a^\infty \left\{ \phi(x,\alpha)-\phi(x,A) \right\} dx\\) converges, and therefore, since \\(\int_a^\infty f(x,\alpha)\,dx\\) converges, so does \\(\int_a^\infty f(x,A)\,dx\\).[^muddle,-4] 
 
-[^muddle,-4]: *Editor's Note*: This sentence muddles the argument a bit. Since \\(\alpha\\) and *A* are in *S*, the premise of the theorem assumes that  \\(\int_a^\infty f(x,\alpha)\,dx\\) and \\(\int_a^\infty f(x,A)\,dx\\) converge. And \\( \int_a^\infty \left\{\int_A^\alpha f(x,\alpha')\, d\alpha' \right\} d x\\) converges either by implication or by [(I)](#4.44theoremsconcerninguniformlyconvergentinfiniteintegrals.) and [§4.2 example 2](CMA04-1-Integration.html#4.2example2).
+[^muddle,-4]: *Editor's Note*: This sentence muddles the argument a bit. Since \\(\alpha\\) and \\(A\\) are in \\(S\\), the premise of the theorem assumes that  \\(\int_a^\infty f(x,\alpha)\,dx\\) and \\(\int_a^\infty f(x,A)\,dx\\) converge. And \\( \int_a^\infty \left\{\int_A^\alpha f(x,\alpha')\, d\alpha' \right\} d x\\) converges either by implication or by [(I)](#4.44theoremsconcerninguniformlyconvergentinfiniteintegrals.) and [§4.2 example 2](CMA04-1-Integration.html#4.2example2).
 
 >Then \\[
 >\begin{align*}
