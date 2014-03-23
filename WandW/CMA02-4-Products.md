@@ -47,7 +47,7 @@ and[^ExpContinuous,-15]
 \\[\exp\{\lim_{m \rightarrow \infty}u_m\}=\lim_{m \rightarrow \infty}\{ \exp u_m\}\\]
 if the former limit exists; hence a sufficient condition that the product should converge is that \\(\sum\limits_{n=1}^{\infty} \log (1 + a_n )\\) should converge when the logarithms have their principal values. If this series of logarithms converges absolutely, the convergence of the product is said to be *absolute*. 
 
-[^ExpContinuous,-15]: See the Appendix, [§A.2](whereOwhere.html), (where it is shown that \\(f(z)=e^{\,z}\,\\) is continuous, *editor's note*).
+[^ExpContinuous,-15]: See the Appendix, [§A.2](CMA24-Appendix-I-LogrithmAndExponential.html#a.2theexponentialfunctionexpz.), (where it is shown that \\(f(z)=e^{\,z}\,\\) is continuous, *editor's note*).
 
 The condition for absolute convergence is given by the following theorem: *in order that the infinite product
 \\[\Pi = (1+a_1)(1+a_2)(1+a_3) \dots , \\]
