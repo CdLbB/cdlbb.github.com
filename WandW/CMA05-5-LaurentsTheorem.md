@@ -167,18 +167,18 @@ If we write \\(z = \dfrac{1}{z'}\\), so that large values of \\(z\\) are represe
 complete it is sometimes convenient to say that when \\(z'\\) is the origin, \\(z\\) is the 'point at infinity.' But the reader must be careful to observe that this is *not* a definite point, and any proposition about it is really a proposition 
 concerning the point \\(z' = 0\\). 
 
-Let \\(f(z) = \phi(z')\\). Then \\(\phi(z')\\) is not defined at \\(z' = 0\\), but its behaviour near \\(z' =0\\) is determined by its Taylor (or Laurent) expansion in powers of \\(z'\\); and we define \\(\phi(0)\\) as \\(\lim_{\:\!z' \rightarrow 0} \phi(z')\\) if that limit exists. For instance the function \\(\phi(z')\\) may have a zero of order m at the point \\(z' = 0\\); in this 
+Let \\(f(z) = \phi(z')\\). Then \\(\phi(z')\\) is not defined at \\(z' = 0\\), but its behaviour near \\(z' =0\\) is determined by its Taylor (or Laurent) expansion in powers of \\(z'\\); and we define \\(\phi(0)\\) as \\(\lim_{\:\!z' \rightarrow 0} \phi(z')\\) if that limit exists. For instance the function \\(\phi(z')\\) may have a zero of order \\(m\\) at the point \\(z' = 0\\); in this 
 case the Taylor expansion of \\(\phi(z')\\) will be of the form 
 \\[Az'^m+ Bz'^{m+1}+C z'^{m+2} + \cdots ,\\]
 and so the expansion of \\(f(z)\\) valid for sufficiently large values of \\(\left|\, z\, \right|\\) will be of the form 
 \\[f(z)= \frac{A}{z^m}+\frac{B}{z^{m+1}}+\frac{C}{z^{m+2}}+ \cdots .\\]
-In this case, \\(f(z)\\) is said to have a *zero of order m at 'infinity'.* 
+In this case, \\(f(z)\\) is said to have a *zero of order \\(m\\) at 'infinity'.* 
 
 Again, the function \\(\phi(z)\\) may have a pole of order \\(m\\) at the point \\(z' = 0\\); in this case 
 \\[\phi(z') =  \frac{A}{z'^m}+\frac{B}{z'^{m-1}}+\frac{C}{z'^{m-2}}+ \cdots \frac{L}{z'}+M+Nz'+Pz'^2+ \cdots ,\\]
 and so, for sufficiently large values of \\(\left|\, z\, \right|\\), \\(f(z)\\) can be expanded in the form 
 \\[f(z) = Az^m+ Bz^{m-1}+C z^{m-2} + \cdots Lz+ M+ \frac{N}{z}+\frac{P}{z^2}+ \cdots.\\]
-In this case, \\(f(z)\\) is said to have a *pole of order m at 'infinity'.*
+In this case, \\(f(z)\\) is said to have a *pole of order \\(m\\) at 'infinity'.*
  
 Similarly \\(f(z)\\) is said to have an *essential singularity* at infinity, if \\(\phi(z')\\) has an essential singularity at the point \\(z' = 0\\). Thus the function \\(e^z\\) has an essential singularity at infinity, since the function \\(e^{\left.1\middle/z'\right.}\\) or 
 \\[1+\frac{1}{z'}+\frac{1}{2!z'^2} + \frac{1}{3!z'^3}+\cdots\\]

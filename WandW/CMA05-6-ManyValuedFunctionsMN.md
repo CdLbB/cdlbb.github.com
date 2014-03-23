@@ -64,7 +64,7 @@ as the following.
 >
 >Consider the function \\[y=x^x,\\] 
 for which  \\[\frac{dy}{dx}=x^x ( 1 + \log x).\\] 
-When \\(x\\) is negative and real, \\(\dfrac{dy}{dx}\\) is not real. But if \\(x\\) is negative and of the form \\(\dfrac{p}{2q+1}\\) (where *p* and *q* are positive or negative integers), \\(y\\) is real. 
+When \\(x\\) is negative and real, \\(\dfrac{dy}{dx}\\) is not real. But if \\(x\\) is negative and of the form \\(\dfrac{p}{2q+1}\\) (where \\(p\\) and \\(q\\) are positive or negative integers), \\(y\\) is real. 
 >
 >If therefore we draw the real curve \\[y=x^x,\\]
 we have for negative values of \\(x\\) a set of conjugate points, one point corresponding to each rational value of \\(x\\) with an odd denominator; and then we might think of proceeding to form the tangent as the limit of the chord, just as if the curve were continuous; and 
@@ -73,7 +73,7 @@ give a non-real value for \\(\dfrac{dy}{dx}\,\\)?
 >
 >The explanation is, that these conjugate points do not all arise from the same *branch* of the function \\(y = x^x\\). We have in fact 
 \\[y=e^{x\log x+2k\pi i x},\\]
-where *k* is any integer. To each value of *k* corresponds one branch of the function \\(y\\). Now in order to get a real value of \\(y\\) when \\(x\\) is negative, we have to choose a suitable value for *k*: and *this value of k varies as we go from one conjugate point to an adjacent one.* So the conjugate points do not represent values of \\(y\\) arising from the same branch of the function \\(y=x^x\\), and consequently we cannot expect the value of \\(\,\dfrac{dy}{dx}\\) when evaluated for a definite branch to be given by the tangent of the inclination to the axis of \\(x\\) of the line joining two arbitrarily close members of the series of conjugate points. 
+where \\(k\\) is any integer. To each value of \\(k\\) corresponds one branch of the function \\(y\\). Now in order to get a real value of \\(y\\) when \\(x\\) is negative, we have to choose a suitable value for \\(k\\): and *this value of \\(k\\) varies as we go from one conjugate point to an adjacent one.* So the conjugate points do not represent values of \\(y\\) arising from the same branch of the function \\(y=x^x\\), and consequently we cannot expect the value of \\(\,\dfrac{dy}{dx}\\) when evaluated for a definite branch to be given by the tangent of the inclination to the axis of \\(x\\) of the line joining two arbitrarily close members of the series of conjugate points. 
 
 ### REFERENCES. ###
 
@@ -124,8 +124,8 @@ the region of convergence consists of two distinct areas, namely outside and ins
 
 4. Shew that the function 
 \\[\sum_{n=0}^\infty z^{n!}\\]
-tends to infinity as \\(z \rightarrow \exp(2\pi i \left.p\middle/m!\right.)\\) along the radius through the point; where *m* is any 
-integer and *p* takes the values 0, 1, 2, \\(\dots (m ! -1)\\). 
+tends to infinity as \\(z \rightarrow \exp(2\pi i \left.p\middle/m!\right.)\\) along the radius through the point; where \\(m\\) is any 
+integer and \\(p\\) takes the values 0, 1, 2, \\(\dots (m ! -1)\\). 
 <br><br>
 Deduce that the function cannot be continued beyond the unit circle. \\(\vphantom{\\ 3\\}\\)<br>
 (Lerch, [*Sitz. B&ouml;hm. Acad.*, 1885-6](http://www.biodiversitylibrary.org/item/135256#page/649), pp. 571-582.) 
@@ -153,7 +153,7 @@ Deduce that the function cannot be continued beyond the unit circle. \\(\vphanto
 \end{align*}\\]
 (Jacobi and Scheibner.<a class="marginmark" onClick="toggleHide('mn:2,+82');">&#91;2&#93;</a>)
 
-8. If, in the expansion of \\((a + a_1z + a_2 z^2)^m\\)  by the multinomial theorem, the remainder after *n* terms be denoted by \\(R_n(z)\\), so that 
+8. If, in the expansion of \\((a + a_1z + a_2 z^2)^m\\)  by the multinomial theorem, the remainder after \\(n\\) terms be denoted by \\(R_n(z)\\), so that 
 \\[(a+a_1 z + a_2 z^2 )^{m}=A_0 + A_1 z + A_2 z^2 +\cdots + A_{n-1} z^{n-1} + R_n (z),\\] 
 shew that 
 \\[R_n (z)=(a+a_1 z + a_2 z^2)^m \!\int_0^z \! \frac{naA_nt^{n-1}+(2m-n+1)a_2A_{n-1}t^n}{(a+a_1 t + a_2 t^2)^{m+1}} dt.\\]
