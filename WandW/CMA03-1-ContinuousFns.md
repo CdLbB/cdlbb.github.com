@@ -129,8 +129,12 @@ the simple curve is said to be *closed*.
 A two-dimensional continuum is a set of points in a plane possessing the 
 following two properties : 
 
+<div markdown=1 class="listroman">
+
 1. If \\((x, y)\\) be the Cartesian coordinates of any point of it, a positive number \\(\delta\\) (depending on \\(x\\) and \\(y\\)) can be found such that every point whose distance from (x, y) is less than \\(\delta\\) belongs to the set. 
 2. Any two points of the set can be joined by a simple curve consisting entirely of points of the set.[^OpenConnected] 
+
+</div>
 
 [^OpenConnected]: *Editor's Note*: In modern terminology, the first property asserts the set is *open*. The second property asserts that the set is *path-connected*. Most authors use the term *domain* for a non-empty open path-connected set of complex numbers. Whittaker and Watson use that term a bit differently.
 
@@ -188,7 +192,12 @@ whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the regio
     <li><a href="#continuousfunctionsanduniformconvergence">Continuity and Uniform Convergence</a>
       <ul>
         <li  class="current"><a href="#thedependenceofonecomplexnumberonanother">Functions of a Complex Variable</a></li>
-        <li  class="current"><a href="#continuityoffunctionsofrealvariables">Continuity of Functions of Real Variables</a></li>
+        <li  class="current"><a href="#continuityoffunctionsofrealvariables">Continuity of Functions of Real Variables</a>
+	   <ul>
+	       <li ><a href="#simplecurves.continua.">Simple curves and Continua</a>
+               <li><a href="#continuousfunctionsofcomplexvariables">Continuous functions of complex variables</a>
+           </ul>
+        </li>
 	<li><a href="CMA03-2-Uniformity.html#convergenceofaninfiniteseries">Uniformity of Convergence</a></li>
 	<li><a href="CMA03-2-Uniformity.html#discussionofaparticulardoubleseries.">A Particular Double Series</a></li>
 	<li><a href="CMA03-3-Heine-Borel.html#theconceptofuniformity.">The Concept of Uniformity</a></li>
@@ -203,7 +212,11 @@ whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the regio
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navunicont');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navunicont');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navback');">BACKMATTER</a> 
+   <ul >
+     <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+  </ul>
+</li>
 </ul>
 </div>
 

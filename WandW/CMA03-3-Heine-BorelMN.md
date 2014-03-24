@@ -66,7 +66,7 @@ of uniformity; we give a proof for a one-dimensional closed region.<a class="mar
 <div markdown=1 class="contenttext">
 
 *Given (i) a straight' line \\(CD\\) and (ii) a law by which, corresponding to 
-each point P  of \\(CD\\),<a class="marginmark" onClick="toggleHide('mn:2,-13');">&#91;2&#93;</a> we can determine a closed interval \\(I (P)\\) of \\(CD\\), P being an interior<a class="marginmark" onClick="toggleHide('mn:3,-8');">&#91;3&#93;</a> point of \\(I (P)\\).* 
+each point \\(P\\)  of \\(CD\\),<a class="marginmark" onClick="toggleHide('mn:2,-13');">&#91;2&#93;</a> we can determine a closed interval \\(I (P)\\) of \\(CD\\), \\(P\\) being an interior<a class="marginmark" onClick="toggleHide('mn:3,-8');">&#91;3&#93;</a> point of \\(I (P)\\).* 
 
 </div>
 
@@ -84,7 +84,7 @@ each point P  of \\(CD\\),<a class="marginmark" onClick="toggleHide('mn:2,-13');
 
 
 
-<div markdown=1 class="marginnotes" id="mn:3,-8" style="margin-top: -8em; margin-bottom: -8em;"><a class="marginmark">&#91;3&#93;</a>Except when *P* is at *C* or *D*, when it is an end point. <a onClick="hideIt('mn:3,-8')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:3,-8" style="margin-top: -8em; margin-bottom: -8em;"><a class="marginmark">&#91;3&#93;</a>Except when \\(p\\) is at \\(C\\) or \\(D\\), when it is an end point. <a onClick="hideIt('mn:3,-8')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -151,16 +151,21 @@ one of the bisected portions of \\(CD\\) does not satisfy condition (B). Take th
 one which does not (if neither satisfies condition (B) take the left-hand one); 
 bisect it and select that bisected part which does not satisfy condition (B). 
 This process of bisection and selection gives an unending sequence of intervals 
-\\(s_0 , s_1, s_2 , \dots \\) such that:
+\\(s_0\\), \\(s_1\\), \\(s_2 , \dots \\) such that:
+
+<div markdown=1 class="listroman">
 
 1. The length of \\(s_n\\) is \\(2^{-n} CD\\). 
 2. No point of \\(s_{n+1}\\) is outside \\(s_n\\). 
 3. The interval \\(s_n\\)  does not satisfy condition (A). 
 
-Let the distances of the end points of \\(s_n\\) from *C* be \\(x_n ,\, y_n \\); then 
-\\(x_n  \leq x_{n+1} < y_{n+1} \leq y_n\\). Therefore, by [&#167;2.2](CMA02-1-LimitsMN.html#thelimitofanincreasingsequence), \\(x_n\\) and \\(y_n\\) have limits; and, by the condition (i) above, these limits are the same, say \\(\xi\\); let *Q* be the point whose distance from is \\(\xi\\). But, by hypothesis, there is a number \\(\delta_Q\\) such that every point of \\(CD\\), whose distance from *Q* is less than \\(\delta_Q\\), is a point of the associated interval \\(I (Q)\\). Choose *n* so large that \\(2^{ -n} CD< \delta_Q\\); then *Q* is an internal point or end point of \\(s_n\\) and the distance of every point of \\(s_n\\) from *Q* is less than \\(\delta_Q\\). And therefore the interval \\(s_n\\) satisfies condition (A), which is contrary to condition (iii) above. The hypothesis that the process of bisecting intervals does not terminate therefore involves a contradiction; therefore the process does terminate and the theorem is proved. 
+</div>
 
-In the two-dimensional form of the theorem<a class="marginmark" onClick="toggleHide('mn:7,-9');">&#91;7&#93;</a>, the interval \\(CD\\) is replaced by a closed two-dimensional region, the interval \\(I(P)\\) by a circle<a class="marginmark" onClick="toggleHide('mn:8,+1');">&#91;8&#93;</a> with centre *P*, and the interval \\(J_r\\) by a square with sides parallel to the axes. 
+
+Let the distances of the end points of \\(s_n\\) from \\(C\\) be \\(x_n ,\, y_n \\); then 
+\\(x_n  \leq x_{n+1} < y_{n+1} \leq y_n\\). Therefore, by [&#167;2.2](CMA02-1-LimitsMN.html#thelimitofanincreasingsequence), \\(x_n\\) and \\(y_n\\) have limits; and, by the condition (i) above, these limits are the same, say \\(\xi\\); let \\(Q\\) be the point whose distance from is \\(\xi\\). But, by hypothesis, there is a number \\(\delta_Q\\) such that every point of \\(CD\\), whose distance from \\(Q\\) is less than \\(\delta_Q\\), is a point of the associated interval \\(I (Q)\\). Choose \\(n\\) so large that \\(2^{ -n} CD< \delta_Q\\); then \\(Q\\) is an internal point or end point of \\(s_n\\) and the distance of every point of \\(s_n\\) from \\(Q\\) is less than \\(\delta_Q\\). And therefore the interval \\(s_n\\) satisfies condition (A), which is contrary to condition (iii) above. The hypothesis that the process of bisecting intervals does not terminate therefore involves a contradiction; therefore the process does terminate and the theorem is proved. 
+
+In the two-dimensional form of the theorem<a class="marginmark" onClick="toggleHide('mn:7,-9');">&#91;7&#93;</a>, the interval \\(CD\\) is replaced by a closed two-dimensional region, the interval \\(I(P)\\) by a circle<a class="marginmark" onClick="toggleHide('mn:8,+1');">&#91;8&#93;</a> with centre \\(p\\), and the interval \\(J_r\\) by a square with sides parallel to the axes. 
 
 </div>
 
@@ -189,7 +194,7 @@ In the two-dimensional form of the theorem<a class="marginmark" onClick="toggleH
 ####3.61 Uniformity of continuity.[uniformityofcontinuity.]####
 
 From the theorem just proved, it follows without difficulty that if a 
-function \\(f(x)\\) of a real variable *x* is continuous when \\(a \leq x \leq b\\), then \\(f(x)\\) is *uniformly* continuous<a class="marginmark" onClick="toggleHide('mn:9,-2');">&#91;9&#93;</a> throughout the range \\(a \leq x \leq b\\). 
+function \\(f(x)\\) of a real variable \\(x\\) is continuous when \\(a \leq x \leq b\\), then \\(f(x)\\) is *uniformly* continuous<a class="marginmark" onClick="toggleHide('mn:9,-2');">&#91;9&#93;</a> throughout the range \\(a \leq x \leq b\\). 
 
 </div>
 
@@ -203,8 +208,8 @@ function \\(f(x)\\) of a real variable *x* is continuous when \\(a \leq x \leq b
 
 <div markdown=1 class="contenttext">
 
-For let \\(\epsilon\\) be an arbitrary positive number; then, in virtue of the continuity of \\(f(x)\\), corresponding to any value of *x*, we can find a positive 
-number \\(\delta_x\\) depending on *x*, such that 
+For let \\(\epsilon\\) be an arbitrary positive number; then, in virtue of the continuity of \\(f(x)\\), corresponding to any value of \\(x\\), we can find a positive 
+number \\(\delta_x\\) depending on \\(x\\), such that 
 \\[\left|\, f(x')-f(x) \right|< \frac{1}{4}\epsilon \\] 
 for all values of \\(x'\\) such that \\(\left|\, x' - x \,\right| < \delta_x\\). 
 
@@ -236,7 +241,7 @@ The *uniformity* of the continuity is therefore established.
 
 >*Corollary* 1. From the two-dimensional form of the theorem of [&#167;3.6](#themodifiedheine-boreltheorem.) we can prove that a function of a complex variable, continuous at all points of a closed region of the Argand diagram, is uniformly continuous throughout that region. 
 
->######*Corollary* 2. A function \\(f(x))\\) which is continuous throughout the range \\(a \leq x \leq b\\) is *bounded* in the range; that is to say we can find a number *k* independent of *x* such that \\(\left|\,f(x)\right| < k\\) for all points *x* in the range.  [continuousisbounded]######
+>######*Corollary* 2. A function \\(f(x))\\) which is continuous throughout the range \\(a \leq x \leq b\\) is *bounded* in the range; that is to say we can find a number \\(k\\) independent of \\(x\\) such that \\(\left|\,f(x)\right| < k\\) for all points \\(x\\) in the range.  [continuousisbounded]######
 
 </div>
 
@@ -250,9 +255,9 @@ The *uniformity* of the continuity is therefore established.
 
 <div markdown=1 class="contenttext">
 
->[Let *n* be the number of parts into which the range \\([a, b]\\)  is divided<a class="marginmark" onClick="toggleHide('mn:10,+2');">&#91;10&#93;</a> 
+>[Let \\(n\\) be the number of parts into which the range \\([a, b]\\)  is divided<a class="marginmark" onClick="toggleHide('mn:10,+2');">&#91;10&#93;</a> 
 >
->Let \\(a,\, \xi_1,\, \xi_2, \dots ,\,\xi_{n-1},\, b\\) be their end points ; then if *x* be any point of the *r*th interval we can find numbers \\(x_1,\,x_2,\, \dots ,\,x_n\\) such that 
+>Let \\(a,\, \xi_1,\, \xi_2, \dots ,\,\xi_{n-1},\, b\\) be their end points ; then if \\(x\\) be any point of the \\(r\\)th interval we can find numbers \\(x_1,\,x_2,\, \dots ,\,x_n\\) such that 
 >\\[\left|\, f(a) - f(x_1) \right| < \frac{1}{4}\epsilon, \quad \left|\, f(x_1) - f(\xi_1) \right| < \frac{1}{4}\epsilon, \\]
 >\\[\left|\, f(\xi_1) - f(x_2) \right| < \frac{1}{4}\epsilon, \quad \left|\, f(x_2) - f(\xi_2) \right| < \frac{1}{4}\epsilon, \\]
 >\\[\cdots\\]
@@ -260,14 +265,14 @@ The *uniformity* of the continuity is therefore established.
 >
 >Therefore \\(\left|\,f(a)—f(x) \right|< \frac{1}{2}r \epsilon \\), and so
 >\\[\left|\,f(x)\right| < \left|\,f(a) \right|+\frac{1}{2}r \epsilon,\\] 
->which is the required result, since the right-hand side is independent of *x*.] 
+>which is the required result, since the right-hand side is independent of \\(x\\).] 
 >
 >The corresponding theorem for functions of complex variables is left to the reader. 
 
 ####3.62 A real function, of a real variable, continuous in a closed interval, attains its upper bound. [arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.]####
 
-Let \\(f(x)\\) be a real continuous function of *x* when \\(a \leq x \leq b\\). Form a section in which the *R*-class consists of those numbers  *r* such that \\(r > f(x)\\) for all values of *x* in the range \\([a, b]\\), and the *L*-class of all other numbers. 
-This section defines a number \\(\alpha\\) such that \\(f(x) \leq \alpha\\), but, if \\(\delta\\) be *any* positive number, values of *x* in the range exist such that \\(f(x) > \alpha - \delta\\). Then \\(\alpha\\) is called the *upper bound*<a class="marginmark" onClick="toggleHide('mn:11,-4');">&#91;11&#93;</a> of \\(f(x)\\); and the theorem states that a number \\(x'\\) in the range can be found such that \\(f(x') = \alpha \\). 
+Let \\(f(x)\\) be a real continuous function of \\(x\\) when \\(a \leq x \leq b\\). Form a section in which the \\(R\\)-class consists of those numbers  \\(r\\) such that \\(r > f(x)\\) for all values of \\(x\\) in the range \\([a, b]\\), and the \\(L\\)-class of all other numbers. 
+This section defines a number \\(\alpha\\) such that \\(f(x) \leq \alpha\\), but, if \\(\delta\\) be *any* positive number, values of \\(x\\) in the range exist such that \\(f(x) > \alpha - \delta\\). Then \\(\alpha\\) is called the *upper bound*<a class="marginmark" onClick="toggleHide('mn:11,-4');">&#91;11&#93;</a> of \\(f(x)\\); and the theorem states that a number \\(x'\\) in the range can be found such that \\(f(x') = \alpha \\). 
 
 </div>
 
@@ -281,7 +286,7 @@ This section defines a number \\(\alpha\\) such that \\(f(x) \leq \alpha\\), but
 
 <div markdown=1 class="contenttext">
 
-For, no matter how small \\(\delta\\) may be, we can find values of *x* for which \\(\left|\,f(x)-\alpha \,\right|^{-1} > \delta^{-1}\\); therefore \\(\left|\,f(x)-\alpha \,\right|^{-1}\\) is not bounded in the range; therefore ([&#167;3.61 *corollary* 2](#continuousisbounded)) it is not continuous at some point or points of the range; but since \\(\left|\,f(x)-\alpha \,\right|\\) is continuous at all points of the range, its reciprocal is continuous at all points of the range ([&#167;3.2 example](CMA03-1-ContinuousFnsMN.html#continuousexamples)) except those points at which \\(f(x) = \alpha\\); therefore \\(f(x) = \alpha\\) at some point of the range; the theorem is therefore proved. 
+For, no matter how small \\(\delta\\) may be, we can find values of \\(x\\) for which \\(\left|\,f(x)-\alpha \,\right|^{-1} > \delta^{-1}\\); therefore \\(\left|\,f(x)-\alpha \,\right|^{-1}\\) is not bounded in the range; therefore ([&#167;3.61 *corollary* 2](#continuousisbounded)) it is not continuous at some point or points of the range; but since \\(\left|\,f(x)-\alpha \,\right|\\) is continuous at all points of the range, its reciprocal is continuous at all points of the range ([&#167;3.2 example](CMA03-1-ContinuousFnsMN.html#continuousexamples)) except those points at which \\(f(x) = \alpha\\); therefore \\(f(x) = \alpha\\) at some point of the range; the theorem is therefore proved. 
 
 >######*Corollary* 1. The lower bound of a continuous function may be defined in a similar manner; and a continuous function attains its lower bound. [attainslowerbound]######
 
@@ -290,9 +295,9 @@ a closed region, \\(\left|\, f(z) \right|\\) attains its upper bound.
 
 ####3.63 A real function, of a real variable, continuous in a closed interval, attains all values between its upper and lower bounds. [arealfunctionofarealvariablecontinuousinaclosedintervalattainsallvaluesbetweenitsupperandlowerbounds.]####
 
-Let \\(M,\, m\\) be the upper and lower bounds of \\(f(x)\\); then we can find numbers \\(\underline{x}, \,\overline{x}\\), by [&#167;3.62](#arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.), such that  \\(f(\overline{x}) = M,\,f(\underline{x}) = m\\); let \\(\mu\\) be any number such that \\(m < \mu < M\\). Given any positive number \\(\epsilon\\), we can (by [&#167;3.61](#uniformityofcontinuity.)) divide the range \\([\underline{x},\, \overline{x}]\\) into a finite number, *r*, of closed intervals such that 
+Let \\(M,\, m\\) be the upper and lower bounds of \\(f(x)\\); then we can find numbers \\(\underline{x}, \,\overline{x}\\), by [&#167;3.62](#arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.), such that  \\(f(\overline{x}) = M,\,f(\underline{x}) = m\\); let \\(\mu\\) be any number such that \\(m < \mu < M\\). Given any positive number \\(\epsilon\\), we can (by [&#167;3.61](#uniformityofcontinuity.)) divide the range \\([\underline{x},\, \overline{x}]\\) into a finite number, \\(r\\), of closed intervals such that 
 \\[\left|\,f(x_1^{(r)}) -f(x_2^{(r)}) \right| < \epsilon,\\] 
-where \\(x_1^{(r)}, \, x_2^{(r)}\\) are any points of the *r*th interval; take \\(x_1^{(r)}, \, x_2^{(r)}\\) to be the end points of the interval; then there is at least one of the intervals for which \\(f(x_1^{(r)})-\mu, \:  f(x_2^{(r)})-\mu\\)  have opposite signs;<a class="marginmark" onClick="toggleHide('mn:12,-10');">&#91;12&#93;</a> and since 
+where \\(x_1^{(r)}, \, x_2^{(r)}\\) are any points of the \\(r\\)th interval; take \\(x_1^{(r)}, \, x_2^{(r)}\\) to be the end points of the interval; then there is at least one of the intervals for which \\(f(x_1^{(r)})-\mu, \:  f(x_2^{(r)})-\mu\\)  have opposite signs;<a class="marginmark" onClick="toggleHide('mn:12,-10');">&#91;12&#93;</a> and since 
 \\[\left|\{f(x_1^{(r)})-\mu\} - \{f(x_2^{(r)})-\mu\} \right| < \epsilon,\\] 
 it follows that \\[\left|\,f(x_1^{(r)}) - \mu\right| < \epsilon.\\]
 
@@ -309,7 +314,7 @@ it follows that \\[\left|\,f(x_1^{(r)}) - \mu\right| < \epsilon.\\]
 <div markdown=1 class="contenttext">
 
 Since we can find a number \\(x_1^{(r)}\\) to satisfy this inequality for all values 
-of \\(\epsilon\\), no matter how small, the lower bound of the function \\(\left|\,f(x) - \mu\right| \\) is zero; since this is a continuous function of *x*, it follows from [&#167;3.62 cor. 1](#attainslowerbound) that \\(f(x) - \mu\\) vanishes for some value of *x*. 
+of \\(\epsilon\\), no matter how small, the lower bound of the function \\(\left|\,f(x) - \mu\right| \\) is zero; since this is a continuous function of \\(x\\), it follows from [&#167;3.62 cor. 1](#attainslowerbound) that \\(f(x) - \mu\\) vanishes for some value of \\(x\\). 
 
 ####3.64 The fluctuation of a function of a real variable.<a class="marginmark" onClick="toggleHide('mn:13,-1');">&#91;13&#93;</a> [fluctuation]####
 
@@ -329,7 +334,7 @@ Let \\(f(x)\\) be a real bounded function, defined when \\(a \leq x \leq b\\). L
 \\[a \leq x_1 \leq x_2 \leq \cdots \leq x_n \leq b.\\]
  
 Then 
-\\[\left|\, f(a) -f( x_1 ) \right| + \left|\, f(x_1) -f( x_2 ) \right| +  \cdots +\left|\, f(x_n) -f( b ) \right| + \\] is called the fluctuation of \\(f(x)\\) in the range \\([a, b]\\) for the set of subdivisions \\(x_1, \, x_2, \, \cdots , \, x_n\\). If the fluctuation have an upper bound \\(F_a^{\,b}\\), independent of *n*, for all choices of  \\(x_1, \, x_2, \, \cdots , \, x_n\\), then \\(f(x)\\) is said to have limited total fluctuation in the range 
+\\[\left|\, f(a) -f( x_1 ) \right| + \left|\, f(x_1) -f( x_2 ) \right| +  \cdots +\left|\, f(x_n) -f( b ) \right| + \\] is called the fluctuation of \\(f(x)\\) in the range \\([a, b]\\) for the set of subdivisions \\(x_1, \, x_2, \, \cdots , \, x_n\\). If the fluctuation have an upper bound \\(F_a^{\,b}\\), independent of \\(n\\), for all choices of  \\(x_1, \, x_2, \, \cdots , \, x_n\\), then \\(f(x)\\) is said to have limited total fluctuation in the range 
 \\([a, b]\\).  \\(F_a^{\,b}\\)  is called the total fluctuation in the range. 
 
 >*Example* 1. If \\(f(x)\\) be monotonic<a class="marginmark" onClick="toggleHide('mn:14,-4');">&#91;14&#93;</a> in the range \\([a, b]\\), its total fluctuation in the range is \\(\left|\, f(a) -f(b ) \right|\\). 
@@ -404,7 +409,14 @@ upper bounds of \\(\left|\,f(x)\right|, \, \left|\,g(x)\right|\\).]
 	<li><a href="CMA03-2-UniformityMN.html#seriesofvariableterms.uniformityofconvergence.">Uniformity of Convergence</a></li>
 	<li><a href="CMA03-2-UniformityMN.html#discussionofaparticulardoubleseries.">A Particular Double Series</a></li>
 	<li class="current"><a href="#theconceptofuniformity.">The Concept of Uniformity</a></li>
-	<li class="current"><a href="#themodifiedheine-boreltheorem.">The Modified Heine-Borel Theorem</a></li>
+	<li class="current"><a href="#themodifiedheine-boreltheorem.">The Modified Heine-Borel Theorem</a>
+	   <ul>
+	       <li ><a href="#uniformityofcontinuity.">Uniformity of continuity</a>
+              <li><a href="#arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.">The extreme value theorem</a>
+              <li><a href="#arealfunctionofarealvariablecontinuousinaclosedintervalattainsallvaluesbetweenitsupperandlowerbounds.">The intermediate value theorem</a>
+              <li><a href="#fluctuation">The fluctuation of a function</a>
+          </ul>
+       </li>
 	<li><a href="CMA03-4-PowerSeriesMN.html#3.7uniformityofconvergenceofpowerseries.">Uniform Convergence of Power Series</a></li>
        <li><a href="CMA03-4-PowerSeriesMN.html#references.">References</a></li>
         <li><a href="CMA03-4-PowerSeriesMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
@@ -415,7 +427,11 @@ upper bounds of \\(\left|\,f(x)\right|, \, \left|\,g(x)\right|\\).]
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navunicont');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navunicont');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navback');">BACKMATTER</a> 
+   <ul >
+     <li ><a href="CMA24-Appendix-I-LogrithmAndExponentialMN.html">Appendix</a></li>
+   </ul>
+</li>
 </ul>
 </div>
 
@@ -454,8 +470,8 @@ upper bounds of \\(\left|\,f(x)\right|, \, \left|\,g(x)\right|\\).]
      <li><a href="#" onClick="showIt('navunicont');hideIt('navprocesses');">Continuity and Uniform Convergence</a></li>
      <li class="more current"><a onClick="showIt('navunicont');hideIt('navprocesses');"> you are here . . . </a></li>
      <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
-     <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
-     <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
+     <li><a href="CMA05-1-AnalyticFunctionsMN.htmll">The Properties of Analytic Functions</a></li>
+      <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>

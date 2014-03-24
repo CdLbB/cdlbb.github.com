@@ -61,13 +61,13 @@ of uniformity; we give a proof for a one-dimensional closed region.<a class="mar
 <div class="contenttext">
 
 <p><em>Given (i) a straight&#8217; line <span class="math">\(CD\)</span> and (ii) a law by which, corresponding to
-each point P of <span class="math">\(CD\)</span>,<a class="marginmark" onClick="toggleHide('mn:2,-13');">&#91;2&#93;</a> we can determine a closed interval <span class="math">\(I (P)\)</span> of <span class="math">\(CD\)</span>, P being an interior<a class="marginmark" onClick="toggleHide('mn:3,-8');">&#91;3&#93;</a> point of <span class="math">\(I (P)\)</span>.</em> </p>
+each point <span class="math">\(P\)</span> of <span class="math">\(CD\)</span>,<a class="marginmark" onClick="toggleHide('mn:2,-13');">&#91;2&#93;</a> we can determine a closed interval <span class="math">\(I (P)\)</span> of <span class="math">\(CD\)</span>, <span class="math">\(P\)</span> being an interior<a class="marginmark" onClick="toggleHide('mn:3,-8');">&#91;3&#93;</a> point of <span class="math">\(I (P)\)</span>.</em> </p>
 </div>
 <div class="marginnotes"  id="mn:2,-13"  style="margin-top: -13em; margin-bottom: -13em;"><a class="marginmark">&#91;2&#93;</a>Examples of such laws associating intervals with points will be found in &#167;&#167; <a href="#uniformityofcontinuity.">3.61</a>, <a href="whereOwhere.html">5.13</a>. <a onClick="hideIt('mn:2,-13')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
 <div class="contenttext">
 </div>
-<div class="marginnotes"  id="mn:3,-8"  style="margin-top: -8em; margin-bottom: -8em;"><a class="marginmark">&#91;3&#93;</a>Except when <em>P</em> is at <em>C</em> or <em>D</em>, when it is an end point. <a onClick="hideIt('mn:3,-8')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div class="marginnotes"  id="mn:3,-8"  style="margin-top: -8em; margin-bottom: -8em;"><a class="marginmark">&#91;3&#93;</a>Except when <span class="math">\(p\)</span> is at <span class="math">\(C\)</span> or <span class="math">\(D\)</span>, when it is an end point. <a onClick="hideIt('mn:3,-8')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
 <div class="contenttext">
 
@@ -106,18 +106,20 @@ one of the bisected portions of <span class="math">\(CD\)</span> does not satisf
 one which does not (if neither satisfies condition (B) take the left-hand one);
 bisect it and select that bisected part which does not satisfy condition (B).
 This process of bisection and selection gives an unending sequence of intervals
-<span class="math">\(s_0 , s_1, s_2 , \dots \)</span> such that:</p>
+<span class="math">\(s_0\)</span>, <span class="math">\(s_1\)</span>, <span class="math">\(s_2 , \dots \)</span> such that:</p>
+<div class="listroman">
 
 <ol>
 <li>The length of <span class="math">\(s_n\)</span> is <span class="math">\(2^{-n} CD\)</span>.</li>
 <li>No point of <span class="math">\(s_{n+1}\)</span> is outside <span class="math">\(s_n\)</span>.</li>
 <li>The interval <span class="math">\(s_n\)</span> does not satisfy condition (A).</li>
 </ol>
+</div>
 
-<p>Let the distances of the end points of <span class="math">\(s_n\)</span> from <em>C</em> be <span class="math">\(x_n ,\, y_n \)</span>; then
-<span class="math">\(x_n  \leq x_{n+1} < y_{n+1} \leq y_n\)</span>. Therefore, by <a href="CMA02-1-LimitsMN.html#thelimitofanincreasingsequence">&#167;2.2</a>, <span class="math">\(x_n\)</span> and <span class="math">\(y_n\)</span> have limits; and, by the condition (i) above, these limits are the same, say <span class="math">\(\xi\)</span>; let <em>Q</em> be the point whose distance from is <span class="math">\(\xi\)</span>. But, by hypothesis, there is a number <span class="math">\(\delta_Q\)</span> such that every point of <span class="math">\(CD\)</span>, whose distance from <em>Q</em> is less than <span class="math">\(\delta_Q\)</span>, is a point of the associated interval <span class="math">\(I (Q)\)</span>. Choose <em>n</em> so large that <span class="math">\(2^{ -n} CD< \delta_Q\)</span>; then <em>Q</em> is an internal point or end point of <span class="math">\(s_n\)</span> and the distance of every point of <span class="math">\(s_n\)</span> from <em>Q</em> is less than <span class="math">\(\delta_Q\)</span>. And therefore the interval <span class="math">\(s_n\)</span> satisfies condition (A), which is contrary to condition (iii) above. The hypothesis that the process of bisecting intervals does not terminate therefore involves a contradiction; therefore the process does terminate and the theorem is proved. </p>
+<p>Let the distances of the end points of <span class="math">\(s_n\)</span> from <span class="math">\(C\)</span> be <span class="math">\(x_n ,\, y_n \)</span>; then
+<span class="math">\(x_n  \leq x_{n+1} < y_{n+1} \leq y_n\)</span>. Therefore, by <a href="CMA02-1-LimitsMN.html#thelimitofanincreasingsequence">&#167;2.2</a>, <span class="math">\(x_n\)</span> and <span class="math">\(y_n\)</span> have limits; and, by the condition (i) above, these limits are the same, say <span class="math">\(\xi\)</span>; let <span class="math">\(Q\)</span> be the point whose distance from is <span class="math">\(\xi\)</span>. But, by hypothesis, there is a number <span class="math">\(\delta_Q\)</span> such that every point of <span class="math">\(CD\)</span>, whose distance from <span class="math">\(Q\)</span> is less than <span class="math">\(\delta_Q\)</span>, is a point of the associated interval <span class="math">\(I (Q)\)</span>. Choose <span class="math">\(n\)</span> so large that <span class="math">\(2^{ -n} CD< \delta_Q\)</span>; then <span class="math">\(Q\)</span> is an internal point or end point of <span class="math">\(s_n\)</span> and the distance of every point of <span class="math">\(s_n\)</span> from <span class="math">\(Q\)</span> is less than <span class="math">\(\delta_Q\)</span>. And therefore the interval <span class="math">\(s_n\)</span> satisfies condition (A), which is contrary to condition (iii) above. The hypothesis that the process of bisecting intervals does not terminate therefore involves a contradiction; therefore the process does terminate and the theorem is proved. </p>
 
-<p>In the two-dimensional form of the theorem<a class="marginmark" onClick="toggleHide('mn:7,-9');">&#91;7&#93;</a>, the interval <span class="math">\(CD\)</span> is replaced by a closed two-dimensional region, the interval <span class="math">\(I(P)\)</span> by a circle<a class="marginmark" onClick="toggleHide('mn:8,+1');">&#91;8&#93;</a> with centre <em>P</em>, and the interval <span class="math">\(J_r\)</span> by a square with sides parallel to the axes. </p>
+<p>In the two-dimensional form of the theorem<a class="marginmark" onClick="toggleHide('mn:7,-9');">&#91;7&#93;</a>, the interval <span class="math">\(CD\)</span> is replaced by a closed two-dimensional region, the interval <span class="math">\(I(P)\)</span> by a circle<a class="marginmark" onClick="toggleHide('mn:8,+1');">&#91;8&#93;</a> with centre <span class="math">\(p\)</span>, and the interval <span class="math">\(J_r\)</span> by a square with sides parallel to the axes. </p>
 </div>
 <div class="marginnotes"  id="mn:7,-9"  style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;7&#93;</a>The reader will see that a proof may be constructed on similar lines by drawing a square circumscribing the region and carrying out a process of dividing squares into four equal squares. <a onClick="hideIt('mn:7,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
@@ -130,14 +132,14 @@ This process of bisection and selection gives an unending sequence of intervals
 <h4 id="uniformityofcontinuity.">3.61 Uniformity of continuity.</h4>
 
 <p>From the theorem just proved, it follows without difficulty that if a
-function <span class="math">\(f(x)\)</span> of a real variable <em>x</em> is continuous when <span class="math">\(a \leq x \leq b\)</span>, then <span class="math">\(f(x)\)</span> is <em>uniformly</em> continuous<a class="marginmark" onClick="toggleHide('mn:9,-2');">&#91;9&#93;</a> throughout the range <span class="math">\(a \leq x \leq b\)</span>. </p>
+function <span class="math">\(f(x)\)</span> of a real variable <span class="math">\(x\)</span> is continuous when <span class="math">\(a \leq x \leq b\)</span>, then <span class="math">\(f(x)\)</span> is <em>uniformly</em> continuous<a class="marginmark" onClick="toggleHide('mn:9,-2');">&#91;9&#93;</a> throughout the range <span class="math">\(a \leq x \leq b\)</span>. </p>
 </div>
 <div class="marginnotes"  id="mn:9,-2"  style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;9&#93;</a>This result is due to Heine; see <a href="http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0071"><em>Journal f&uuml;r Math.</em> <strong>lxxi.</strong> (1870)</a>, p. 361, and <a href="http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0074"><strong>lxxiv.</strong> (1872)</a>, p. 188.<a onClick="hideIt('mn:9,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
 <div class="contenttext">
 
-<p>For let <span class="math">\(\epsilon\)</span> be an arbitrary positive number; then, in virtue of the continuity of <span class="math">\(f(x)\)</span>, corresponding to any value of <em>x</em>, we can find a positive
-number <span class="math">\(\delta_x\)</span> depending on <em>x</em>, such that
+<p>For let <span class="math">\(\epsilon\)</span> be an arbitrary positive number; then, in virtue of the continuity of <span class="math">\(f(x)\)</span>, corresponding to any value of <span class="math">\(x\)</span>, we can find a positive
+number <span class="math">\(\delta_x\)</span> depending on <span class="math">\(x\)</span>, such that
 <span class="math">\[\left|\, f(x')-f(x) \right|< \frac{1}{4}\epsilon \]</span>
 for all values of <span class="math">\(x'\)</span> such that <span class="math">\(\left|\, x' - x \,\right| < \delta_x\)</span>. </p>
 
@@ -172,7 +174,7 @@ The <em>uniformity</em> of the continuity is therefore established. </p>
 </blockquote>
 
 <blockquote>
-<h6 id="continuousisbounded"><em>Corollary</em> 2. A function <span class="math">\(f(x))\)</span> which is continuous throughout the range <span class="math">\(a \leq x \leq b\)</span> is <em>bounded</em> in the range; that is to say we can find a number <em>k</em> independent of <em>x</em> such that <span class="math">\(\left|\,f(x)\right| < k\)</span> for all points <em>x</em> in the range.</h6>
+<h6 id="continuousisbounded"><em>Corollary</em> 2. A function <span class="math">\(f(x))\)</span> which is continuous throughout the range <span class="math">\(a \leq x \leq b\)</span> is <em>bounded</em> in the range; that is to say we can find a number <span class="math">\(k\)</span> independent of <span class="math">\(x\)</span> such that <span class="math">\(\left|\,f(x)\right| < k\)</span> for all points <span class="math">\(x\)</span> in the range.</h6>
 </blockquote>
 </div>
 <div class="marginnotes"  id="mn:10,+2"  style="margin-top: +2em; margin-bottom: +2em;"><a class="marginmark">&#91;10&#93;</a><em>Editor&#8217;s Note</em>: As above, the closed range <span class="math">\([a,b]\)</span> is divided so that in each interval there is a number <span class="math">\(x_1\)</span> such that <span class="math">\(\left|\, f(x') - f(x_1) \right| < \frac{1}{4}\epsilon\)</span>, whenever <span class="math">\(x'\)</span> lies in the interval in which <span class="math">\(x_1\)</span> lies. <a onClick="hideIt('mn:10,+2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
@@ -180,9 +182,9 @@ The <em>uniformity</em> of the continuity is therefore established. </p>
 <div class="contenttext">
 
 <blockquote>
-<p>[Let <em>n</em> be the number of parts into which the range <span class="math">\([a, b]\)</span> is divided<a class="marginmark" onClick="toggleHide('mn:10,+2');">&#91;10&#93;</a> </p>
+<p>[Let <span class="math">\(n\)</span> be the number of parts into which the range <span class="math">\([a, b]\)</span> is divided<a class="marginmark" onClick="toggleHide('mn:10,+2');">&#91;10&#93;</a> </p>
 
-<p>Let <span class="math">\(a,\, \xi_1,\, \xi_2, \dots ,\,\xi_{n-1},\, b\)</span> be their end points ; then if <em>x</em> be any point of the <em>r</em>th interval we can find numbers <span class="math">\(x_1,\,x_2,\, \dots ,\,x_n\)</span> such that
+<p>Let <span class="math">\(a,\, \xi_1,\, \xi_2, \dots ,\,\xi_{n-1},\, b\)</span> be their end points ; then if <span class="math">\(x\)</span> be any point of the <span class="math">\(r\)</span>th interval we can find numbers <span class="math">\(x_1,\,x_2,\, \dots ,\,x_n\)</span> such that
 <span class="math">\[\left|\, f(a) - f(x_1) \right| < \frac{1}{4}\epsilon, \quad \left|\, f(x_1) - f(\xi_1) \right| < \frac{1}{4}\epsilon, \]</span>
 <span class="math">\[\left|\, f(\xi_1) - f(x_2) \right| < \frac{1}{4}\epsilon, \quad \left|\, f(x_2) - f(\xi_2) \right| < \frac{1}{4}\epsilon, \]</span>
 <span class="math">\[\cdots\]</span>
@@ -190,21 +192,21 @@ The <em>uniformity</em> of the continuity is therefore established. </p>
 
 <p>Therefore <span class="math">\(\left|\,f(a)—f(x) \right|< \frac{1}{2}r \epsilon \)</span>, and so
 <span class="math">\[\left|\,f(x)\right| < \left|\,f(a) \right|+\frac{1}{2}r \epsilon,\]</span>
-which is the required result, since the right-hand side is independent of <em>x</em>.] </p>
+which is the required result, since the right-hand side is independent of <span class="math">\(x\)</span>.] </p>
 
 <p>The corresponding theorem for functions of complex variables is left to the reader. </p>
 </blockquote>
 
 <h4 id="arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.">3.62 A real function, of a real variable, continuous in a closed interval, attains its upper bound.</h4>
 
-<p>Let <span class="math">\(f(x)\)</span> be a real continuous function of <em>x</em> when <span class="math">\(a \leq x \leq b\)</span>. Form a section in which the <em>R</em>-class consists of those numbers <em>r</em> such that <span class="math">\(r > f(x)\)</span> for all values of <em>x</em> in the range <span class="math">\([a, b]\)</span>, and the <em>L</em>-class of all other numbers.
-This section defines a number <span class="math">\(\alpha\)</span> such that <span class="math">\(f(x) \leq \alpha\)</span>, but, if <span class="math">\(\delta\)</span> be <em>any</em> positive number, values of <em>x</em> in the range exist such that <span class="math">\(f(x) > \alpha - \delta\)</span>. Then <span class="math">\(\alpha\)</span> is called the <em>upper bound</em><a class="marginmark" onClick="toggleHide('mn:11,-4');">&#91;11&#93;</a> of <span class="math">\(f(x)\)</span>; and the theorem states that a number <span class="math">\(x'\)</span> in the range can be found such that <span class="math">\(f(x') = \alpha \)</span>. </p>
+<p>Let <span class="math">\(f(x)\)</span> be a real continuous function of <span class="math">\(x\)</span> when <span class="math">\(a \leq x \leq b\)</span>. Form a section in which the <span class="math">\(R\)</span>-class consists of those numbers <span class="math">\(r\)</span> such that <span class="math">\(r > f(x)\)</span> for all values of <span class="math">\(x\)</span> in the range <span class="math">\([a, b]\)</span>, and the <span class="math">\(L\)</span>-class of all other numbers.
+This section defines a number <span class="math">\(\alpha\)</span> such that <span class="math">\(f(x) \leq \alpha\)</span>, but, if <span class="math">\(\delta\)</span> be <em>any</em> positive number, values of <span class="math">\(x\)</span> in the range exist such that <span class="math">\(f(x) > \alpha - \delta\)</span>. Then <span class="math">\(\alpha\)</span> is called the <em>upper bound</em><a class="marginmark" onClick="toggleHide('mn:11,-4');">&#91;11&#93;</a> of <span class="math">\(f(x)\)</span>; and the theorem states that a number <span class="math">\(x'\)</span> in the range can be found such that <span class="math">\(f(x') = \alpha \)</span>. </p>
 </div>
 <div class="marginnotes"  id="mn:11,-4"  style="margin-top: -4em; margin-bottom: -4em;"><a class="marginmark">&#91;11&#93;</a><em>Editor&#8217;s Note</em>: In more modern terms, the least upper bound.<a onClick="hideIt('mn:11,-4')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
 <div class="contenttext">
 
-<p>For, no matter how small <span class="math">\(\delta\)</span> may be, we can find values of <em>x</em> for which <span class="math">\(\left|\,f(x)-\alpha \,\right|^{-1} > \delta^{-1}\)</span>; therefore <span class="math">\(\left|\,f(x)-\alpha \,\right|^{-1}\)</span> is not bounded in the range; therefore (<a href="#continuousisbounded">&#167;3.61 <em>corollary</em> 2</a>) it is not continuous at some point or points of the range; but since <span class="math">\(\left|\,f(x)-\alpha \,\right|\)</span> is continuous at all points of the range, its reciprocal is continuous at all points of the range (<a href="CMA03-1-ContinuousFnsMN.html#continuousexamples">&#167;3.2 example</a>) except those points at which <span class="math">\(f(x) = \alpha\)</span>; therefore <span class="math">\(f(x) = \alpha\)</span> at some point of the range; the theorem is therefore proved. </p>
+<p>For, no matter how small <span class="math">\(\delta\)</span> may be, we can find values of <span class="math">\(x\)</span> for which <span class="math">\(\left|\,f(x)-\alpha \,\right|^{-1} > \delta^{-1}\)</span>; therefore <span class="math">\(\left|\,f(x)-\alpha \,\right|^{-1}\)</span> is not bounded in the range; therefore (<a href="#continuousisbounded">&#167;3.61 <em>corollary</em> 2</a>) it is not continuous at some point or points of the range; but since <span class="math">\(\left|\,f(x)-\alpha \,\right|\)</span> is continuous at all points of the range, its reciprocal is continuous at all points of the range (<a href="CMA03-1-ContinuousFnsMN.html#continuousexamples">&#167;3.2 example</a>) except those points at which <span class="math">\(f(x) = \alpha\)</span>; therefore <span class="math">\(f(x) = \alpha\)</span> at some point of the range; the theorem is therefore proved. </p>
 
 <blockquote>
 <h6 id="attainslowerbound"><em>Corollary</em> 1. The lower bound of a continuous function may be defined in a similar manner; and a continuous function attains its lower bound.</h6>
@@ -217,9 +219,9 @@ a closed region, <span class="math">\(\left|\, f(z) \right|\)</span> attains its
 
 <h4 id="arealfunctionofarealvariablecontinuousinaclosedintervalattainsallvaluesbetweenitsupperandlowerbounds.">3.63 A real function, of a real variable, continuous in a closed interval, attains all values between its upper and lower bounds.</h4>
 
-<p>Let <span class="math">\(M,\, m\)</span> be the upper and lower bounds of <span class="math">\(f(x)\)</span>; then we can find numbers <span class="math">\(\underline{x}, \,\overline{x}\)</span>, by <a href="#arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.">&#167;3.62</a>, such that <span class="math">\(f(\overline{x}) = M,\,f(\underline{x}) = m\)</span>; let <span class="math">\(\mu\)</span> be any number such that <span class="math">\(m < \mu < M\)</span>. Given any positive number <span class="math">\(\epsilon\)</span>, we can (by <a href="#uniformityofcontinuity.">&#167;3.61</a>) divide the range <span class="math">\([\underline{x},\, \overline{x}]\)</span> into a finite number, <em>r</em>, of closed intervals such that
+<p>Let <span class="math">\(M,\, m\)</span> be the upper and lower bounds of <span class="math">\(f(x)\)</span>; then we can find numbers <span class="math">\(\underline{x}, \,\overline{x}\)</span>, by <a href="#arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.">&#167;3.62</a>, such that <span class="math">\(f(\overline{x}) = M,\,f(\underline{x}) = m\)</span>; let <span class="math">\(\mu\)</span> be any number such that <span class="math">\(m < \mu < M\)</span>. Given any positive number <span class="math">\(\epsilon\)</span>, we can (by <a href="#uniformityofcontinuity.">&#167;3.61</a>) divide the range <span class="math">\([\underline{x},\, \overline{x}]\)</span> into a finite number, <span class="math">\(r\)</span>, of closed intervals such that
 <span class="math">\[\left|\,f(x_1^{(r)}) -f(x_2^{(r)}) \right| < \epsilon,\]</span>
-where <span class="math">\(x_1^{(r)}, \, x_2^{(r)}\)</span> are any points of the <em>r</em>th interval; take <span class="math">\(x_1^{(r)}, \, x_2^{(r)}\)</span> to be the end points of the interval; then there is at least one of the intervals for which <span class="math">\(f(x_1^{(r)})-\mu, \:  f(x_2^{(r)})-\mu\)</span> have opposite signs;<a class="marginmark" onClick="toggleHide('mn:12,-10');">&#91;12&#93;</a> and since
+where <span class="math">\(x_1^{(r)}, \, x_2^{(r)}\)</span> are any points of the <span class="math">\(r\)</span>th interval; take <span class="math">\(x_1^{(r)}, \, x_2^{(r)}\)</span> to be the end points of the interval; then there is at least one of the intervals for which <span class="math">\(f(x_1^{(r)})-\mu, \:  f(x_2^{(r)})-\mu\)</span> have opposite signs;<a class="marginmark" onClick="toggleHide('mn:12,-10');">&#91;12&#93;</a> and since
 <span class="math">\[\left|\{f(x_1^{(r)})-\mu\} - \{f(x_2^{(r)})-\mu\} \right| < \epsilon,\]</span>
 it follows that <span class="math">\[\left|\,f(x_1^{(r)}) - \mu\right| < \epsilon.\]</span></p>
 </div>
@@ -228,7 +230,7 @@ it follows that <span class="math">\[\left|\,f(x_1^{(r)}) - \mu\right| < \epsilo
 <div class="contenttext">
 
 <p>Since we can find a number <span class="math">\(x_1^{(r)}\)</span> to satisfy this inequality for all values
-of <span class="math">\(\epsilon\)</span>, no matter how small, the lower bound of the function <span class="math">\(\left|\,f(x) - \mu\right| \)</span> is zero; since this is a continuous function of <em>x</em>, it follows from <a href="#attainslowerbound">&#167;3.62 cor. 1</a> that <span class="math">\(f(x) - \mu\)</span> vanishes for some value of <em>x</em>. </p>
+of <span class="math">\(\epsilon\)</span>, no matter how small, the lower bound of the function <span class="math">\(\left|\,f(x) - \mu\right| \)</span> is zero; since this is a continuous function of <span class="math">\(x\)</span>, it follows from <a href="#attainslowerbound">&#167;3.62 cor. 1</a> that <span class="math">\(f(x) - \mu\)</span> vanishes for some value of <span class="math">\(x\)</span>. </p>
 
 <h4 id="fluctuation">3.64 The fluctuation of a function of a real variable.<a class="marginmark" onClick="toggleHide('mn:13,-1');">&#91;13&#93;</a></h4>
 </div>
@@ -240,7 +242,7 @@ of <span class="math">\(\epsilon\)</span>, no matter how small, the lower bound 
 <span class="math">\[a \leq x_1 \leq x_2 \leq \cdots \leq x_n \leq b.\]</span></p>
 
 <p>Then
-<span class="math">\[\left|\, f(a) -f( x_1 ) \right| + \left|\, f(x_1) -f( x_2 ) \right| +  \cdots +\left|\, f(x_n) -f( b ) \right| + \]</span> is called the fluctuation of <span class="math">\(f(x)\)</span> in the range <span class="math">\([a, b]\)</span> for the set of subdivisions <span class="math">\(x_1, \, x_2, \, \cdots , \, x_n\)</span>. If the fluctuation have an upper bound <span class="math">\(F_a^{\,b}\)</span>, independent of <em>n</em>, for all choices of <span class="math">\(x_1, \, x_2, \, \cdots , \, x_n\)</span>, then <span class="math">\(f(x)\)</span> is said to have limited total fluctuation in the range
+<span class="math">\[\left|\, f(a) -f( x_1 ) \right| + \left|\, f(x_1) -f( x_2 ) \right| +  \cdots +\left|\, f(x_n) -f( b ) \right| + \]</span> is called the fluctuation of <span class="math">\(f(x)\)</span> in the range <span class="math">\([a, b]\)</span> for the set of subdivisions <span class="math">\(x_1, \, x_2, \, \cdots , \, x_n\)</span>. If the fluctuation have an upper bound <span class="math">\(F_a^{\,b}\)</span>, independent of <span class="math">\(n\)</span>, for all choices of <span class="math">\(x_1, \, x_2, \, \cdots , \, x_n\)</span>, then <span class="math">\(f(x)\)</span> is said to have limited total fluctuation in the range
 <span class="math">\([a, b]\)</span>. <span class="math">\(F_a^{\,b}\)</span> is called the total fluctuation in the range. </p>
 
 <blockquote>
@@ -298,7 +300,14 @@ upper bounds of <span class="math">\(\left|\,f(x)\right|, \, \left|\,g(x)\right|
     <li><a href="CMA03-2-UniformityMN.html#seriesofvariableterms.uniformityofconvergence.">Uniformity of Convergence</a></li>
     <li><a href="CMA03-2-UniformityMN.html#discussionofaparticulardoubleseries.">A Particular Double Series</a></li>
     <li class="current"><a href="#theconceptofuniformity.">The Concept of Uniformity</a></li>
-    <li class="current"><a href="#themodifiedheine-boreltheorem.">The Modified Heine-Borel Theorem</a></li>
+    <li class="current"><a href="#themodifiedheine-boreltheorem.">The Modified Heine-Borel Theorem</a>
+       <ul>
+           <li ><a href="#uniformityofcontinuity.">Uniformity of continuity</a>
+              <li><a href="#arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.">The extreme value theorem</a>
+              <li><a href="#arealfunctionofarealvariablecontinuousinaclosedintervalattainsallvaluesbetweenitsupperandlowerbounds.">The intermediate value theorem</a>
+              <li><a href="#fluctuation">The fluctuation of a function</a>
+          </ul>
+       </li>
     <li><a href="CMA03-4-PowerSeriesMN.html#3.7uniformityofconvergenceofpowerseries.">Uniform Convergence of Power Series</a></li>
        <li><a href="CMA03-4-PowerSeriesMN.html#references.">References</a></li>
         <li><a href="CMA03-4-PowerSeriesMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
@@ -309,7 +318,11 @@ upper bounds of <span class="math">\(\left|\,f(x)\right|, \, \left|\,g(x)\right|
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navunicont');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navunicont');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navback');">BACKMATTER</a> 
+   <ul >
+     <li ><a href="CMA24-Appendix-I-LogrithmAndExponentialMN.html">Appendix</a></li>
+   </ul>
+</li>
 </ul>
 </div>
 
@@ -346,8 +359,8 @@ upper bounds of <span class="math">\(\left|\,f(x)\right|, \, \left|\,g(x)\right|
      <li><a href="#" onClick="showIt('navunicont');hideIt('navprocesses');">Continuity and Uniform Convergence</a></li>
      <li class="more current"><a onClick="showIt('navunicont');hideIt('navprocesses');"> you are here . . . </a></li>
      <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
-     <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
-     <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
+     <li><a href="CMA05-1-AnalyticFunctionsMN.htmll">The Properties of Analytic Functions</a></li>
+      <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>

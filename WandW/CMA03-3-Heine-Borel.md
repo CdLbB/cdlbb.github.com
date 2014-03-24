@@ -91,11 +91,16 @@ one of the bisected portions of \\(CD\\) does not satisfy condition (B). Take th
 one which does not (if neither satisfies condition (B) take the left-hand one); 
 bisect it and select that bisected part which does not satisfy condition (B). 
 This process of bisection and selection gives an unending sequence of intervals 
-\\(s_0 , s_1, s_2 , \dots \\) such that:
+\\(s_0\\), \\(s_1\\), \\(s_2 , \dots \\) such that:
+
+<div markdown=1 class="listroman">
 
 1. The length of \\(s_n\\) is \\(2^{-n} CD\\). 
 2. No point of \\(s_{n+1}\\) is outside \\(s_n\\). 
 3. The interval \\(s_n\\)  does not satisfy condition (A). 
+
+</div>
+
 
 Let the distances of the end points of \\(s_n\\) from \\(C\\) be \\(x_n ,\, y_n \\); then 
 \\(x_n  \leq x_{n+1} < y_{n+1} \leq y_n\\). Therefore, by [§2.2](CMA02-1-Limits.html#thelimitofanincreasingsequence), \\(x_n\\) and \\(y_n\\) have limits; and, by the condition (i) above, these limits are the same, say \\(\xi\\); let \\(Q\\) be the point whose distance from is \\(\xi\\). But, by hypothesis, there is a number \\(\delta_Q\\) such that every point of \\(CD\\), whose distance from \\(Q\\) is less than \\(\delta_Q\\), is a point of the associated interval \\(I (Q)\\). Choose \\(n\\) so large that \\(2^{ -n} CD< \delta_Q\\); then \\(Q\\) is an internal point or end point of \\(s_n\\) and the distance of every point of \\(s_n\\) from \\(Q\\) is less than \\(\delta_Q\\). And therefore the interval \\(s_n\\) satisfies condition (A), which is contrary to condition (iii) above. The hypothesis that the process of bisecting intervals does not terminate therefore involves a contradiction; therefore the process does terminate and the theorem is proved. 
@@ -254,7 +259,14 @@ upper bounds of \\(\left|\,f(x)\right|, \, \left|\,g(x)\right|\\).]
 	<li><a href="CMA03-2-Uniformity.html#seriesofvariableterms.uniformityofconvergence.">Uniformity of Convergence</a></li>
 	<li><a href="CMA03-2-Uniformity.html#discussionofaparticulardoubleseries.">A Particular Double Series</a></li>
 	<li class="current"><a href="#theconceptofuniformity.">The Concept of Uniformity</a></li>
-	<li class="current"><a href="#themodifiedheine-boreltheorem.">The Modified Heine-Borel Theorem</a></li>
+	<li class="current"><a href="#themodifiedheine-boreltheorem.">The Modified Heine-Borel Theorem</a>
+	   <ul>
+	       <li ><a href="#uniformityofcontinuity.">Uniformity of continuity</a>
+              <li><a href="#arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.">The extreme value theorem</a>
+              <li><a href="#arealfunctionofarealvariablecontinuousinaclosedintervalattainsallvaluesbetweenitsupperandlowerbounds.">The intermediate value theorem</a>
+              <li><a href="#fluctuation">The fluctuation of a function</a>
+          </ul>
+       </li>
 	<li><a href="CMA03-4-PowerSeries.html#3.7uniformityofconvergenceofpowerseries.">Uniform Convergence of Power Series</a></li>
        <li><a href="CMA03-4-PowerSeries.html#references.">References</a></li>
         <li><a href="CMA03-4-PowerSeries.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
@@ -265,7 +277,11 @@ upper bounds of \\(\left|\,f(x)\right|, \, \left|\,g(x)\right|\\).]
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navunicont');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navunicont');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navback');">BACKMATTER</a> 
+   <ul >
+     <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+   </ul>
+</li>
 </ul>
 </div>
 

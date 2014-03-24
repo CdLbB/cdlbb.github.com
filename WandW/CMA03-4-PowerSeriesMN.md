@@ -58,9 +58,9 @@ Let \\(\sum\limits_{n=0}^{\infty} a_n z^n\\) be a power series, whose radius of 
 
 For, with the notation of [&#167;3.35](CMA03-2-UniformityMN.html#hardystestsforuniformconvergence.), 
 the function \\(x^n\\)  satisfies the conditions laid on \\(u_n (x)\\), when \\(0 \leq x \leq 1\\); consequently \\(f(x) = \sum\limits_{n=0}^{\infty} a_n x^n\\)  converges *uniformly* throughout the range \\(0 \leq x \leq 1\\); it is therefore, by [&#167;3.32](CMA03-2-UniformityMN.html#connexionofdiscontinuitywithnon-uniformconvergence.), a continuous 
-function of *x* throughout the range, and so \\(\lim\limits_{x \, \rightarrow 0} f(x) =f(1)\\), which is the theorem stated. 
+function of \\(x\\) throughout the range, and so \\(\lim\limits_{x \, \rightarrow 0} f(x) =f(1)\\), which is the theorem stated. 
 
-#### 3.72 Abel's Theorem<a class="marginmark" onClick="toggleHide('mn:2,-1');">&#91;2&#93;</a> on Multiplication of Series. [abelstheoremonmultiplicationofseries.] ####
+#### 3.72 Abel's theorem<a class="marginmark" onClick="toggleHide('mn:2,-1');">&#91;2&#93;</a> on multiplication of series. [abelstheoremonmultiplicationofseries.] ####
 
 </div>
 
@@ -141,20 +141,25 @@ No. 15), (1914)](https://archive.org/details/complexintegrat00watsrich), Chs. **
 
 2. Shew that the series \\[2\sin \frac{1}{3z} + 4 \sin \frac{1}{9z} + \cdots + 2^n\sin \frac{1}{3^n z} + \cdots \\] converges absolutely for all values of \\(z\\) (\\(z = 0\\) excepted), but does not converge uniformly near \\(z = 0\\).
 
-3.  If \\[u_n(x)=-2(n-1)^2xe^{(n-1)^2 x^2} + 2n^2xe^{-n^2x^2},\\] shew that \\(\sum\limits_{n=1}^{\infty} u_n(x)\\) does not converge uniformly near \\(x=0\\). (Math. Trip., 1907.)
+3.  If \\[u_n(x)=-2(n-1)^2xe^{(n-1)^2 x^2} + 2n^2xe^{-n^2x^2},\\] shew that \\(\sum\limits_{n=1}^{\infty} u_n(x)\\) does not converge uniformly near \\(x=0\\). \\(\vphantom{\\ 3\\}\\)<br>
+(Math. Trip., 1907.)
 
 4.  Shew that the series \\(\displaystyle \frac{1}{\sqrt{1}} - \frac{1}{\sqrt{2}} + \frac{1}{\sqrt{3}} - \cdots\\) is convergent, but that its square (formed by Abel's rule) \\[\frac{1}{1} - \frac{2}{\sqrt{2}} +\left(\frac{2}{\sqrt{3}} + \frac{1}{2} \right) - \left(\frac{2}{\sqrt{4}} + \frac{2}{\sqrt{6}} \right) + \cdots\\] is divergent.
 
-5.  If the convergent series \\(\displaystyle s=\frac{1}{1^r}-\frac{1}{2^r}+\frac{1}{3^r}-\frac{1}{4^r}+ \cdots \;\;(r>0)\\) be multiplied by itself, the terms of the product being arranged as in Abel's result, shew that the resulting series diverges if \\(r \leq \frac{1}{2}\\) but converges to the sum \\(s^2\\) if \\(r > \frac{1}{2}\\). (Cauchy and Cajori.) 
+5.  If the convergent series \\(\displaystyle s=\frac{1}{1^r}-\frac{1}{2^r}+\frac{1}{3^r}-\frac{1}{4^r}+ \cdots \;\;(r>0)\\) be multiplied by itself, the terms of the product being arranged as in Abel's result, shew that the resulting series diverges if \\(r \leq \frac{1}{2}\\) but converges to the sum \\(s^2\\) if \\(r > \frac{1}{2}\\). \\(\vphantom{\\ 3\\}\\)<br>
+(Cauchy and Cajori.) 
 
-6.   If the two conditionally convergent series \\[\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^r}\,\text{ and }\, \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^s},\\] where *r* and *s* lie between 0 and 1, be multiplied together, and the product arranged as in Abel's result, shew that the necessary and sufficient condition for the convergence of the resulting series is \\(r + s > 1\\). (Cajori.)
+6.   If the two conditionally convergent series \\[\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^r}\,\text{ and }\, \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^s},\\] where \\(r\\) and \\(s\\) lie between 0 and 1, be multiplied together, and the product arranged as in Abel's result, shew that the necessary and sufficient condition for the convergence of the resulting series is \\(r + s > 1\\). \\(\vphantom{\\ 3\\}\\)<br>
+(Cajori.)
 
-7.   Shew that if the series \\(1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7} + \cdots \\) be multiplied by itself any number of times, the terms of the product being arranged as in Abel's result, the resulting series converges. (Cajori.)
+7.   Shew that if the series \\(1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7} + \cdots \\) be multiplied by itself any number of times, the terms of the product being arranged as in Abel's result, the resulting series converges. \\(\vphantom{\\ 3\\}\\)<br>
+(Cajori.)
 
-8.   Shew that the *q*th power of the series \\[a_1\sin \theta+a_2 \sin 2\theta + \cdots + a_n \sin n\theta + \cdots\\] is convergent whenever \\(q (1 - r)< 1\\), *r* being the greatest number satisfying the relation \\[a_n \leq n^{-r}\\] for all values of *n*.
+8.   Shew that the \\(q\\)th power of the series \\[a_1\sin \theta+a_2 \sin 2\theta + \cdots + a_n \sin n\theta + \cdots\\] is convergent whenever \\(q (1 - r)< 1\\), \\(r\\) being the greatest number satisfying the relation \\[a_n \leq n^{-r}\\] for all values of \\(n\\).
 
 9.   Shew that if \\(\theta\\) is not equal to 0 or a multiple of \\(2\pi\\), and if \\(u_0,\, u_1,\, u_2,\, \dots \\) be a sequence such that \\(u_n \rightarrow 0\\) steadily, then the series \\(\sum  u_n \cos(n\theta + \phi) \\) is convergent. 
-Shew also that, if the limit of \\(u_n\\) is not zero, but \\(u_n\\) is still monotonic, the sum of the series is oscillatory if \\(\left.\theta \middle/\pi \right.\\)  is rational, but that, if \\(\left.\theta \middle/\pi \right.\\) is irrational, the sum may have any value between certain bounds whose difference is \\(a \csc \frac{1}{2}\theta\\), where \\(a= \lim\limits_{n \rightarrow \infty} u_n\\). (Math. Trip., 1896.)
+Shew also that, if the limit of \\(u_n\\) is not zero, but \\(u_n\\) is still monotonic, the sum of the series is oscillatory if \\(\left.\theta \middle/\pi \right.\\)  is rational, but that, if \\(\left.\theta \middle/\pi \right.\\) is irrational, the sum may have any value between certain bounds whose difference is \\(a \csc \frac{1}{2}\theta\\), where \\(a= \lim\limits_{n \rightarrow \infty} u_n\\). \\(\vphantom{\\ 3\\}\\)<br>
+(Math. Trip., 1896.)
 
 
 </div>
@@ -192,7 +197,13 @@ Shew also that, if the limit of \\(u_n\\) is not zero, but \\(u_n\\) is still mo
 	<li><a href="CMA03-2-UniformityMN.html#discussionofaparticulardoubleseries.">A Particular Double Series</a></li>
 	<li><a href="CMA03-3-Heine-BorelMN.html#theconceptofuniformity.">The Concept of Uniformity</a></li>
 	<li><a href="CMA03-3-Heine-BorelMN.html#themodifiedheine-boreltheorem.">The Modified Heine-Borel Theorem</a></li>
-	<li class="current"><a href="#3.7uniformityofconvergenceofpowerseries.">Uniform Convergence of Power Series</a></li>
+	<li class="current"><a href="#3.7uniformityofconvergenceofpowerseries.">Uniform Convergence of Power Series</a>
+	   <ul>
+	       <li ><a href="#abelstheoremoncontinuityuptothecircleofconvergence.">Abel&#8217;s theorem on continuity up to the circle of convergence</a>
+              <li><a href="#abelstheoremonmultiplicationofseries.">Abel&#8217;s theorem on multiplication of series</a>
+              <li><a href="#3.73powerserieswhichvanishidentically.">Power series which vanish identically</a>
+          </ul>
+       </li>
        <li class="current"><a href="#references.">References</a></li>
         <li class="current"><a href="#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
@@ -202,7 +213,11 @@ Shew also that, if the limit of \\(u_n\\) is not zero, but \\(u_n\\) is still mo
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navunicont');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navunicont');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navback');">BACKMATTER</a> 
+   <ul >
+     <li ><a href="CMA24-Appendix-I-LogrithmAndExponentialMN.html">Appendix</a></li>
+   </ul>
+</li>
 </ul>
 </div>
 
@@ -241,8 +256,8 @@ Shew also that, if the limit of \\(u_n\\) is not zero, but \\(u_n\\) is still mo
      <li><a href="#" onClick="showIt('navunicont');hideIt('navprocesses');">Continuity and Uniform Convergence</a></li>
      <li class="more current"><a onClick="showIt('navunicont');hideIt('navprocesses');"> you are here . . . </a></li>
      <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
-     <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
-     <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
+     <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
+      <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>

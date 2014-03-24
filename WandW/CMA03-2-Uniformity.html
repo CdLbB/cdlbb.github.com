@@ -33,7 +33,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
 
 <p>Consider the series
 <span class="math">\[x^2 + \frac{x^2}{1+x^2}+ \frac{x^2}{(1+x^2)^2}+  \dots +\frac{x^2}{(1+x^2)^n}+ \dots .\]</span>
-This series converges absolutely (<a href="CMA02-2-Series.html#geometricseries">§2.33</a>) for all real values of <em>x</em>. </p>
+This series converges absolutely (<a href="CMA02-2-Series.html#geometricseries">§2.33</a>) for all real values of <span class="math">\(x\)</span>. </p>
 
 <p>If <span class="math">\(S_n (x)\)</span> be the sum of <span class="math">\(n\)</span> terms, then
 <span class="math">\[S_n(x)=1+x^2-\frac{1}{(1+x^2)^{n-1}} ;\]</span>
@@ -90,9 +90,9 @@ is discontinuous at <span class="math">\(x=0\)</span> and the series is non-unif
 
 <p>The value of <span class="math">\(R_n(x) = S(x)-S_n (x)\)</span> is <span class="math">\(\displaystyle{\frac{1}{nx+1}}\)</span> if <span class="math">\(x \neq 0\)</span>,; so when <span class="math">\()x\)</span> is small, say <span class="math">\(x=\)</span>one-hundred-millionth, the remainder after a million terms is <span class="math">\(\frac{1}{\frac{1}{100}+1}\)</span> or <span class="math">\(1-\frac{1}{101}\)</span> so the first million terms of the series do not contribute one per cent, of the sum. And in general, to make <span class="math">\(\displaystyle{\frac{1}{nx+1}}<\epsilon\)</span>, it is necessary to take <span class="math">\[n>\frac{1}{x}\left( \frac{1}{\epsilon}-1\right).\]</span></p>
 
-<p>Corresponding to a given <span class="math">\(\epsilon\)</span>, no number <span class="math">\(N\)</span> exists, independent of <em>x</em>, such that <span class="math">\(n < N\)</span> for
-all values of <em>x</em> in any interval including <span class="math">\(x=0\)</span>; for by taking <em>x</em> sufficiently small we can
-make <span class="math">\(n\)</span> greater than any number <span class="math">\(N\)</span> which is independent of <em>x</em>. There is therefore non-uniform convergence near <span class="math">\(x = 0.\)</span> </p>
+<p>Corresponding to a given <span class="math">\(\epsilon\)</span>, no number <span class="math">\(N\)</span> exists, independent of <span class="math">\(x\)</span>, such that <span class="math">\(n < N\)</span> for
+all values of <span class="math">\(x\)</span> in any interval including <span class="math">\(x=0\)</span>; for by taking <span class="math">\(x\)</span> sufficiently small we can
+make <span class="math">\(n\)</span> greater than any number <span class="math">\(N\)</span> which is independent of <span class="math">\(x\)</span>. There is therefore non-uniform convergence near <span class="math">\(x = 0.\)</span> </p>
 </blockquote>
 
 <blockquote>
@@ -103,11 +103,11 @@ make <span class="math">\(n\)</span> greater than any number <span class="math">
 
 <p>[Note. In this example the sum of the series is not discontinuous at <span class="math">\(x=0\)</span>.]</p>
 
-<p>But (taking <span class="math">\(\epsilon <\frac{1}{2}\)</span> and <span class="math">\(x \neq 0\)</span> ), <span class="math">\(\left|\, R_n (x) \,\right| <\epsilon \)</span> if&#8217; <span class="math">\(\epsilon^{-1}(n+1)\,|x| < 1+(n+1)^2 x^2\)</span>; i.e. if <span class="math">\(n+1>\frac{1}{2}\{\epsilon^{-1}+\sqrt{\epsilon^{-2}-4}\,\}\,|x|^{-1}\)</span> or <span class="math">\(n+1<\frac{1}{2}\{\epsilon^{-1}-\sqrt{\epsilon^{-2}-4}\,\}\,|x|^{-1}\)</span>.<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a></p>
+<p>But (taking <span class="math">\(\epsilon <\frac{1}{2}\)</span> and <span class="math">\(x \neq 0\)</span> ), <span class="math">\(\left|\, R_n (x) \,\right| <\epsilon \)</span> if&#8217; <span class="math">\(\epsilon^{-1}(n+1)\,\left|\,x\,\right| < 1+(n+1)^2 x^2\)</span>; i.e. if <span class="math">\(n+1>\frac{1}{2}\{\epsilon^{-1}+\sqrt{\epsilon^{-2}-4}\,\}\,\left|\,x\,\right|^{-1}\)</span> or <span class="math">\(n+1<\frac{1}{2}\{\epsilon^{-1}-\sqrt{\epsilon^{-2}-4}\,\}\,\left|\,x\,\right|^{-1}\)</span>.<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a></p>
 </blockquote>
 
 <blockquote>
-<p>Now it is not the case that the second inequality is satisfied for all values of n <em>greater</em> than a certain value and for all values of <em>x</em>; and the first inequality gives a value of <span class="math">\(n(x)\)</span> which tends to infinity as <span class="math">\(x \rightarrow 0 \)</span>; so that, corresponding to any interval containing the point <span class="math">\(x=0\)</span>, there is no number <span class="math">\(N\)</span> <em>independent of x</em>. The series, therefore, is non-uniformly convergent near <span class="math">\(x=0\)</span>. </p>
+<p>Now it is not the case that the second inequality is satisfied for all values of <span class="math">\(n\)</span> <em>greater</em> than a certain value and for all values of <span class="math">\(x\)</span>; and the first inequality gives a value of <span class="math">\(n(x)\)</span> which tends to infinity as <span class="math">\(x \rightarrow 0 \)</span>; so that, corresponding to any interval containing the point <span class="math">\(x=0\)</span>, there is no number <span class="math">\(N\)</span> <em>independent of x</em>. The series, therefore, is non-uniformly convergent near <span class="math">\(x=0\)</span>. </p>
 
 <p>The reader will observe that <span class="math">\(n(x)\)</span> is discontinuous at <span class="math">\(x = 0\)</span>; for <span class="math">\(n(x) \rightarrow \infty\)</span> as <span class="math">\(x \rightarrow 0 \)</span>, but <span class="math">\(n(0)=0\)</span>.</p>
 </blockquote>
@@ -138,7 +138,7 @@ which is the condition for continuity at <span class="math">\(z\)</span>.</p>
 <blockquote>
 <p>Example 1. Shew that near <span class="math">\(x = 0\)</span> the series <span class="math">\[u_1 (x) + u_2 (x) + u_3 (x)+ \cdots,\]</span> <span class="math">\[\text{where}  \qquad u_1(x) = x,\quad u_n (x) = x^{\frac{1}{2n - 1}} - x^{\frac{1}{2n - 3}}, \]</span> and real values of <span class="math">\(x\)</span> are concerned, is discontinuous and non-uniformly convergent.</p>
 
-<p>In this example it is convenient to take a slightly different form of the test; we shall shew that, given an arbitrarily small number <span class="math">\(\epsilon\)</span>, it is possible to choose values of <span class="math">\(x\)</span>, as small as we please, depending on n in such a way that <span class="math">\(\left|\, R_n (x) \,\right|\)</span> is not less than <span class="math">\(\epsilon\)</span> for any value of <span class="math">\(n\)</span>, no matter how large. The reader will easily see that the existence of such values of <span class="math">\(x\)</span> is inconsistent with the condition for uniformity of convergence. </p>
+<p>In this example it is convenient to take a slightly different form of the test; we shall shew that, given an arbitrarily small number <span class="math">\(\epsilon\)</span>, it is possible to choose values of <span class="math">\(x\)</span>, as small as we please, depending on <span class="math">\(n\)</span> in such a way that <span class="math">\(\left|\, R_n (x) \,\right|\)</span> is not less than <span class="math">\(\epsilon\)</span> for any value of <span class="math">\(n\)</span>, no matter how large. The reader will easily see that the existence of such values of <span class="math">\(x\)</span> is inconsistent with the condition for uniformity of convergence. </p>
 
 <p>The value of <span class="math">\(S_n (x)\)</span> is <span class="math">\(x^{\frac{1}{2n - 1}}\)</span>; as <span class="math">\(n\)</span> tends to infinity, <span class="math">\(S_n (x)\)</span> tends to 1, 0, or &#8211;1, according as <span class="math">\(x\)</span> is positive, zero, or negative. The series is therefore absolutely convergent for all values of <span class="math">\(x\)</span>, and has a discontinuity at <span class="math">\(x=0\)</span>. </p>
 
@@ -148,8 +148,8 @@ which is the condition for continuity at <span class="math">\(z\)</span>.</p>
 <blockquote>
 <p>Example 2. Shew that near <span class="math">\(z=0\)</span> the series <span class="math">\[\sum_{n=1}^{\infty} \frac{-2z(1+z)^{n-1}}{\{1+(1+z)^{n-1}\}\{1+(1+z)^{n}\}}\]</span> is non-uniformly convergent and its sum is discontinuous. </p>
 
-<p>The <em>n</em>th term can be written <span class="math">\[\frac{1-(1+z)^{n}}{1+(1+z)^{n}}-\frac{1-(1+z)^{n-1}}{1+(1+z)^{n-1}},\]</span> so the sum of the first n terms is <span class="math">\[\frac{1-(1+z)^{n}}{1+(1+z)^{n}}.\]</span> Thus, considering real values of <span class="math">\(z\)</span> greater
-than &#8211;1, it is seen that the sum to infinity is 1, 0, or &#8211;1, according as <span class="math">\(z\)</span> is negative, zero, or positive. There is thus a discontinuity at <span class="math">\(z=0\)</span>. This discontinuity is explained by the fact that the series is non-uniformly convergent near <span class="math">\(z=0\)</span>; for the remainder after <em>n</em> terms in the series when <span class="math">\(z\)</span> is positive is <span class="math">\[\frac{-2}{1+(1+z)^{n}},\]</span> and, however great <em>n</em> may be, by taking <span class="math">\(z=\frac{1}{n}\)</span>, this can be made numerically greater than <span class="math">\(\frac{2}{1+e},\)</span> which is not arbitrarily small. The series is therefore non-uniformly convergent near <span class="math">\(z=0\)</span>.</p>
+<p>The <span class="math">\(n\)</span>th term can be written <span class="math">\[\frac{1-(1+z)^{n}}{1+(1+z)^{n}}-\frac{1-(1+z)^{n-1}}{1+(1+z)^{n-1}},\]</span> so the sum of the first <span class="math">\(n\)</span> terms is <span class="math">\[\frac{1-(1+z)^{n}}{1+(1+z)^{n}}.\]</span> Thus, considering real values of <span class="math">\(z\)</span> greater
+than &#8211;1, it is seen that the sum to infinity is 1, 0, or &#8211;1, according as <span class="math">\(z\)</span> is negative, zero, or positive. There is thus a discontinuity at <span class="math">\(z=0\)</span>. This discontinuity is explained by the fact that the series is non-uniformly convergent near <span class="math">\(z=0\)</span>; for the remainder after <span class="math">\(n\)</span> terms in the series when <span class="math">\(z\)</span> is positive is <span class="math">\[\frac{-2}{1+(1+z)^{n}},\]</span> and, however great <span class="math">\(n\)</span> may be, by taking <span class="math">\(z=\frac{1}{n}\)</span>, this can be made numerically greater than <span class="math">\(\frac{2}{1+e},\)</span> which is not arbitrarily small. The series is therefore non-uniformly convergent near <span class="math">\(z=0\)</span>.</p>
 </blockquote>
 
 <h4 id="thedistinctionbetweenabsoluteanduniformconvergence.">3.33 The distinction between absolute and uniform convergence.</h4>
@@ -161,8 +161,8 @@ the series of moduli is
 which is divergent, so the series is only <em>conditionally convergent</em>; but for all
 real values of <span class="math">\(z\)</span>, the terms of the series are alternately positive and negative
 and numerically decreasing, so the sum of the series lies between the sum of
-its first <em>n</em> terms and of its first <span class="math">\((n + 1)\)</span> terms, and so the remainder after
-<em>n</em> terms is numerically less than the <em>n</em>th term. Thus we only need take a
+its first <span class="math">\(n\)</span> terms and of its first <span class="math">\((n + 1)\)</span> terms, and so the remainder after
+<span class="math">\(n\)</span> terms is numerically less than the <span class="math">\(n\)</span>th term. Thus we only need take a
 finite number (independent of <span class="math">\(z\)</span>,) of terms in order to ensure that for all real
 values of <span class="math">\(z\)</span>, the remainder is less than any assigned number <span class="math">\(\epsilon\)</span> and so the series is <em>uniformly</em> convergent.</p>
 
@@ -182,11 +182,11 @@ of a series may be enunciated as follows: </p>
 <span class="math">\[S=u_1(z)+u_2(z)+u_3(z)+ \cdots\]</span>
 are respectively less than the corresponding terms in a convergent series of positive terms
 <span class="math">\[T=M_1 + M_2 + M_3 + \cdots ,\]</span>
-where <span class="math">\(M_n\)</span> is <em>independent of</em> <span class="math">\(z\)</span>, then the series <em>S</em> is uniformly convergent in this region. This follows from the fact that, the series <span class="math">\(T\)</span> being convergent,
-it is always possible to choose <em>n</em> so that the remainder after the first <em>n</em> terms
-of <span class="math">\(T\)</span>, and therefore the modulus of the remainder after the first <em>n</em> terms
-of <em>S</em>, is less than an assigned positive number <span class="math">\(\epsilon\)</span>; and since the value of <em>n</em>
-thus found is independent of <span class="math">\(z\)</span>, it follows (<a href="#ontheconditionforuniformityofconvergence.">§3.31</a>) that the series <em>S</em> is uniformly convergent; by <a href="CMA02-2-Series.html#thecomparisontheorem">§2.34</a>, the series <em>S</em> also converges absolutely. </p>
+where <span class="math">\(M_n\)</span> is <em>independent of</em> <span class="math">\(z\)</span>, then the series <span class="math">\(S\)</span> is uniformly convergent in this region. This follows from the fact that, the series <span class="math">\(T\)</span> being convergent,
+it is always possible to choose <span class="math">\(n\)</span> so that the remainder after the first <span class="math">\(n\)</span> terms
+of <span class="math">\(T\)</span>, and therefore the modulus of the remainder after the first <span class="math">\(n\)</span> terms
+of <span class="math">\(S\)</span>, is less than an assigned positive number <span class="math">\(\epsilon\)</span>; and since the value of <span class="math">\(n\)</span>
+thus found is independent of <span class="math">\(z\)</span>, it follows (<a href="#ontheconditionforuniformityofconvergence.">§3.31</a>) that the series <span class="math">\(S\)</span> is uniformly convergent; by <a href="CMA02-2-Series.html#thecomparisontheorem">§2.34</a>, the series <span class="math">\(S\)</span> also converges absolutely. </p>
 
 <blockquote>
 <p>Example. The series
@@ -195,16 +195,16 @@ thus found is independent of <span class="math">\(z\)</span>, it follows (<a hre
 whose terms are positive constants. </p>
 </blockquote>
 
-<h5 id="uniformityofconvergenceofinfiniteproducts.">3.341. Uniformity of convergence of infinite products.<a href="#fn:9" id="fnref:9" title="see footnote" class="footnote">[9]</a></h5>
+<h5 id="uniformityofconvergenceofinfiniteproducts.">3.341 Uniformity of convergence of infinite products.<a href="#fn:9" id="fnref:9" title="see footnote" class="footnote">[9]</a></h5>
 
-<p>A convergent product <span class="math">\(\prod\limits_{n=1}^\infty \{1+u_n(z)\}\)</span> is said to converge uniformly in a domain of values of <span class="math">\(z\)</span> if, given <span class="math">\(\epsilon,\)</span> we can find <em>m</em> <em>independent of</em> <span class="math">\(z\)</span> such that
+<p>A convergent product <span class="math">\(\prod\limits_{n=1}^\infty \{1+u_n(z)\}\)</span> is said to converge uniformly in a domain of values of <span class="math">\(z\)</span> if, given <span class="math">\(\epsilon,\)</span> we can find <span class="math">\(m\)</span> <em>independent of</em> <span class="math">\(z\)</span> such that
 <span class="math">\[\left|\,\prod\limits_{n=1}^{m+p} \{1+u_n(z)\}-\prod\limits_{n=1}^m \{1+u_n(z)\} \,\right| < \epsilon\]</span>
-for all positive integral values of <em>p</em>. </p>
+for all positive integral values of <span class="math">\(p\)</span>. </p>
 
 <p>The only condition for uniformity of convergence which will be used in this work
 is that the product converges uniformly if <span class="math">\(\left|\, u_n (z) \,\right| < M_n\)</span> where <span class="math">\(M_n\)</span> is independent of <span class="math">\(z\)</span> and <span class="math">\(\sum\limits_{n=1}^\infty M_n\)</span> converges. </p>
 
-<p>To prove the validity of the condition we observe that <span class="math">\(\prod\limits_{n=1}^\infty (1+M_n)\)</span> converges (<a href="CMA02-4-Products.html#infiniteproducts">§2.7</a>), and so we can choose <em>m</em> such that
+<p>To prove the validity of the condition we observe that <span class="math">\(\prod\limits_{n=1}^\infty (1+M_n)\)</span> converges (<a href="CMA02-4-Products.html#infiniteproducts">§2.7</a>), and so we can choose <span class="math">\(m\)</span> such that
 <span class="math">\[\prod\limits_{n=1}^{m+p} \{1+M_n\}-\prod\limits_{n=1}^m \{1+M_n\}  < \epsilon ;\]</span>
  and then we have
 <span class="math">\[
@@ -217,20 +217,20 @@ is that the product converges uniformly if <span class="math">\(\left|\, u_n (z)
  & < \epsilon ,
 \end{align*}
 \]</span>
-and the choice of <em>m</em> is independent of <span class="math">\(z\)</span>. </p>
+and the choice of <span class="math">\(m\)</span> is independent of <span class="math">\(z\)</span>. </p>
 
 <h4 id="hardystestsforuniformconvergence.">3.35. Hardy&#8217;s Tests for Uniform Convergence.<a href="#fn:10" id="fnref:10" title="see footnote" class="footnote">[10]</a></h4>
 
-<p>The reader will see, from <a href="CMA02-2-Series.html#dirichlet">§2.31</a>, that if, in a given domain, <span class="math">\(\left|\,\sum_{n=1}^p a_b(z)\,\right| < k\)</span> where <span class="math">\( a_n (z)\)</span> is real and <em>k</em> is finite and independent of <em>p</em> and (z), and if <span class="math">\(f_n (z) \geq f_{n + 1} (z)\)</span> and <span class="math">\( f_n(z) \rightarrow 0\)</span> <em>uniformly</em> as <span class="math">\( n \rightarrow \infty\)</span>, then <span class="math">\(\sum\limits_{n=1}^\infty a_n(z) \, f_n(z)\)</span> converges uniformly. </p>
+<p>The reader will see, from <a href="CMA02-2-Series.html#dirichlet">§2.31</a>, that if, in a given domain, <span class="math">\(\left|\,\sum_{n=1}^p a_b(z)\,\right| < k\)</span> where <span class="math">\( a_n (z)\)</span> is real and <span class="math">\(k\)</span> is finite and independent of <span class="math">\(p\)</span> and (z), and if <span class="math">\(f_n (z) \geq f_{n + 1} (z)\)</span> and <span class="math">\( f_n(z) \rightarrow 0\)</span> <em>uniformly</em> as <span class="math">\( n \rightarrow \infty\)</span>, then <span class="math">\(\sum\limits_{n=1}^\infty a_n(z) \, f_n(z)\)</span> converges uniformly. </p>
 
 <p>Also that if
 <span class="math">\[k \geq u_n(z) \geq u_{n-1}(z) \geq 0 \]</span>
-where <em>k</em> is <em>independent</em> of <span class="math">\(z\)</span> and <span class="math">\( \sum\limits_{n=1}^\infty a_n (z)\)</span> converges uniformly, then <span class="math">\( \sum\limits_{n=1}^\infty a_n (z)\,u_n (z)\)</span> converges uniformly. [To prove the latter, observe that <em>m</em> can be found such that
+where <span class="math">\(k\)</span> is <em>independent</em> of <span class="math">\(z\)</span> and <span class="math">\( \sum\limits_{n=1}^\infty a_n (z)\)</span> converges uniformly, then <span class="math">\( \sum\limits_{n=1}^\infty a_n (z)\,u_n (z)\)</span> converges uniformly. [To prove the latter, observe that <span class="math">\(m\)</span> can be found such that
 <span class="math">\[
  a_{m+1}(z), \; a_{m+1}(z)+a_{m+2}(z), \cdots , \; a_{m+1}(z)+a_{m+2}(z)+ \cdots+ a_{m+p}(z) \]</span>
 are numerically less than <span class="math">\( \left.\epsilon \middle/ k\right.\)</span>; and therefore (<a href="CMA02-2-Series.html#abelsinequality.">§2.301</a>)
 <span class="math">\[\left|\,\sum_{n=m+1}^{m+p} a_n(z)u_n(z)\,\right| < \frac{\epsilon u_{m+1}}{k} < \epsilon.\]</span>
-and the choice of <span class="math">\(\epsilon\)</span> and <em>m</em> to is independent of <span class="math">\(z\)</span>.]</p>
+and the choice of <span class="math">\(\epsilon\)</span> and <span class="math">\(m\)</span> to is independent of <span class="math">\(z\)</span>.]</p>
 
 <blockquote>
 <p><em>Example</em> 1. Shew that, if <span class="math">\(\delta >0\)</span>, the series
@@ -243,7 +243,7 @@ by writing <span class="math">\(\theta +\pi\)</span> for <span class="math">\(\p
 </blockquote>
 
 <blockquote>
-<p><em>Example</em> 2. If, when <span class="math">\( a < x < b\)</span>, <span class="math">\(\omega_n (x) < k_1\)</span> and <span class="math">\(\sum\limits_{n=1}^\infty \left|\, \omega_{n+1}(x)-\omega_n(x) \, \right| < k_2\)</span>, where <span class="math">\(k_1, \, k_2\)</span> are independent of <em>n</em> and <em>x</em>, and if <span class="math">\(\sum\limits_{n=1}^\infty a_n\)</span> is a convergent series independent of <em>x</em>, then <span class="math">\(\sum\limits_{n=1}^\infty a_n \omega_n(x)\)</span> converges uniformly when <span class="math">\( a < x < b\)</span>. (Hardy.) </p>
+<p><em>Example</em> 2. If, when <span class="math">\( a < x < b\)</span>, <span class="math">\(\omega_n (x) < k_1\)</span> and <span class="math">\(\sum\limits_{n=1}^\infty \left|\, \omega_{n+1}(x)-\omega_n(x) \, \right| < k_2\)</span>, where <span class="math">\(k_1, \, k_2\)</span> are independent of <span class="math">\(n\)</span> and <span class="math">\(x\)</span>, and if <span class="math">\(\sum\limits_{n=1}^\infty a_n\)</span> is a convergent series independent of <span class="math">\(x\)</span>, then <span class="math">\(\sum\limits_{n=1}^\infty a_n \omega_n(x)\)</span> converges uniformly when <span class="math">\( a < x < b\)</span>. <br>(Hardy.) </p>
 
 <p>[For we can choose m, independent of x, such that <span class="math">\(\left|\, \sum_{n=m+1}^{m+p} a_n \,\right| < \epsilon\)</span> and then, by <a href="CMA02-2-Series.html#abelcorollary">§2.301 corollary</a>, we have <span class="math">\(\left|\, \sum_{n=m+1}^{m+p} a_n \omega_n (x) \,\right| < (k_1+k+2)\epsilon.\)</span> ]</p>
 </blockquote>
@@ -254,13 +254,13 @@ by writing <span class="math">\(\theta +\pi\)</span> for <span class="math">\(\p
 
 <p>The series
 <span class="math">\[\sum\limits_{m,\,n} \frac{1}{(z+2m\omega_1+2n\omega_2)^\alpha},\]</span>
- in which the summation extends over all positive and negative integral and zero values of <em>m</em> and <em>n</em>, is of great importance in the theory of Elliptic Functions. At each of the points
-<span class="math">\(z = - 2m\omega_1-2n\omega_2\)</span> the series does not exist. It can be shewn that the series converges absolutely for all other values of <span class="math">\( z\)</span> if <span class="math">\(a > 2\)</span>, and the convergence is uniform for those values of <span class="math">\(z\)</span> such that <span class="math">\(\left|\,z+2m\omega_1+2n\omega_2 \,\right| \geq \delta\)</span> for all integral values of <em>m</em> and <em>n</em>, where <span class="math">\(\delta\)</span> is an arbitrary positive number. </p>
+ in which the summation extends over all positive and negative integral and zero values of <span class="math">\(m\)</span> and <span class="math">\(n\)</span>, is of great importance in the theory of Elliptic Functions. At each of the points
+<span class="math">\(z = - 2m\omega_1-2n\omega_2\)</span> the series does not exist. It can be shewn that the series converges absolutely for all other values of <span class="math">\( z\)</span> if <span class="math">\(a > 2\)</span>, and the convergence is uniform for those values of <span class="math">\(z\)</span> such that <span class="math">\(\left|\,z+2m\omega_1+2n\omega_2 \,\right| \geq \delta\)</span> for all integral values of <span class="math">\(m\)</span> and <span class="math">\(n\)</span>, where <span class="math">\(\delta\)</span> is an arbitrary positive number. </p>
 
-<p>Let <span class="math">\(\sum^\prime_{m,\,n}\)</span> denote a summation for all integral values of <em>m</em> and <em>n</em>, the term for
+<p>Let <span class="math">\(\sum^\prime_{m,\,n}\)</span> denote a summation for all integral values of <span class="math">\(m\)</span> and <span class="math">\(n\)</span>, the term for
 which <span class="math">\(m = n = 0\)</span> being omitted. </p>
 
-<p>Now, if <em>m</em> and <em>n</em> are not both zero, and if <span class="math">\(\left|\,z+2m\omega_1+2n\omega_2 \,\right| \geq \delta > 0\)</span> for all integral values of <em>m</em> and <em>n</em>, then we can find a positive number <span class="math">\(C\)</span>. depending on <span class="math">\(\delta\)</span> but not on <span class="math">\( z\)</span>, such that
+<p>Now, if <span class="math">\(m\)</span> and <span class="math">\(n\)</span> are not both zero, and if <span class="math">\(\left|\,z+2m\omega_1+2n\omega_2 \,\right| \geq \delta > 0\)</span> for all integral values of <span class="math">\(m\)</span> and <span class="math">\(n\)</span>, then we can find a positive number <span class="math">\(C\)</span>. depending on <span class="math">\(\delta\)</span> but not on <span class="math">\( z\)</span>, such that
 <span class="math">\[\left| \, \frac{1}{(z+2m\omega_1+2n\omega_2)^\alpha} \,\right| < C\,\left| \, \frac{1}{(2m\omega_1+2n\omega_2)^\alpha} \,\right|.\]</span></p>
 
 <p>Consequently, by <a href="#aconditionduetoweierstrassforuniformconvergence.">§3.34</a>, the given series is absolutely and uniformly<a href="#fn:11" id="fnref:11" title="see footnote" class="footnote">[11]</a> convergent in the domain considered if
@@ -276,9 +276,9 @@ This converges if the series
 <span class="math">\[\sum_{m,\,n}' \frac{1}{(m^2+n^2)^{\frac{1}{2}\alpha}}\]</span>
 converges; for the quotient of corresponding terms is
 <span class="math">\[\left\{\frac{(\alpha_1+\alpha_2 \mu)^2+(\beta_1+\beta_2 \mu)^2}{1+\mu^2} \right\}^{\frac{1}{2}\alpha}\]</span>
-where <span class="math">\(\mu = n \left/m \right.\)</span>. This expression, <em>qua</em><a href="#fn:12" id="fnref:12" title="see footnote" class="footnote">[12]</a> function of a continuous real variable <span class="math">\(\mu\)</span>, can be proved to have a positive minimum<a href="#fn:13" id="fnref:13" title="see footnote" class="footnote">[13]</a> (not zero) since <span class="math">\(\alpha_1\beta_2-\alpha_2\beta_1 \neq 0\)</span> and so the quotient is always greater than a positive number K (independent <span class="math">\(\mu\)</span>).<a href="#fn:14" id="fnref:14" title="see footnote" class="footnote">[14]</a> </p>
+where <span class="math">\(\mu = n \left/m \right.\)</span>. This expression, <em>qua</em><a href="#fn:12" id="fnref:12" title="see footnote" class="footnote">[12]</a> function of a continuous real variable <span class="math">\(\mu\)</span>, can be proved to have a positive minimum<a href="#fn:13" id="fnref:13" title="see footnote" class="footnote">[13]</a> (not zero) since <span class="math">\(\alpha_1\beta_2-\alpha_2\beta_1 \neq 0\)</span> and so the quotient is always greater than a positive number <span class="math">\(K\)</span> (independent <span class="math">\(\mu\)</span>).<a href="#fn:14" id="fnref:14" title="see footnote" class="footnote">[14]</a> </p>
 
-<p>We have therefore only to study the convergence of the series <em>S</em>. Let
+<p>We have therefore only to study the convergence of the series <span class="math">\(S\)</span>. Let
 <span class="math">\[
 \begin{align*}
 S_{p,\,q} &=\sum_{m=-p}^p {\sum_{n=-q}^q}\!^\prime \frac{1}{(m^2+n^2)^{\frac{1}{2}\alpha}} \\
@@ -292,13 +292,13 @@ But
 <span class="math">\[\sum_{n=0}^{m-1}\frac{1}{(m^2+n^2)^{\frac{1}{2}\alpha}} < \frac{m}{(m^2)^{\frac{1}{2}\alpha}}=\frac{1}{m^{\alpha-1}}.\]</span>
 Therefore
 <span class="math">\[\frac{1}{4} S = \sum_{m=1}^\infty \frac{1}{2^{\frac{1}{2}\alpha}m^\alpha}+\sum_{m=1}^\infty \frac{1}{m^{\alpha-1}}+\sum_{n=1}^\infty \frac{1}{m^{\alpha-1}}.\]</span>
-But these last series are known to be convergent if <span class="math">\(a -1 > 1\)</span>. So the series <em>S</em>
+But these last series are known to be convergent if <span class="math">\(a -1 > 1\)</span>. So the series <span class="math">\(S\)</span>
 is convergent if <span class="math">\(a > 2\)</span>. The original series is therefore absolutely and uniformly convergent, when <span class="math">\(a > 2\)</span>, for the specified range of values of <span class="math">\(z\)</span>. </p>
 
 <blockquote>
 <p><em>Example</em>. Prove that the series
 <span class="math">\[\sum \frac{1}{(m_1^2+m_2^2+ \cdots +m_r^2)^\mu}\]</span>
-in which the summation extends over all positive and negative integral values and zero values of <span class="math">\(m_1,\, m_2, \dots ,\,m_r,\)</span> except the set of simultaneous zero values, is absolutely convergent if <span class="math">\(\mu < \frac{1}{2}r\)</span>. (Eisenstein, <a href="http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0035"><em>Journal für Math.</em>, <strong>xxxv</strong>. </a>) </p>
+in which the summation extends over all positive and negative integral values and zero values of <span class="math">\(m_1,\, m_2, \dots ,\,m_r,\)</span> except the set of simultaneous zero values, is absolutely convergent if <span class="math">\(\mu < \frac{1}{2}r\)</span>. <br>(Eisenstein, <a href="http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0035"><em>Journal für Math.</em>, <strong>xxxv</strong>. </a>) </p>
 </blockquote>
 
 </div>
@@ -325,7 +325,16 @@ in which the summation extends over all positive and negative integral values an
       <ul>
         <li><a href="CMA03-1-ContinuousFns.html#thedependenceofonecomplexnumberonanother">Functions of a Complex Variable</a></li>
         <li><a href="CMA03-1-ContinuousFns.html#continuityoffunctionsofrealvariables">Continuity of Functions of Real Variables</a></li>
-    <li class="current"><a href="#seriesofvariableterms.uniformityofconvergence.">Uniformity of Convergence</a></li>
+    <li class="current"><a href="#seriesofvariableterms.uniformityofconvergence.">Uniformity of Convergence</a>
+       <ul>
+           <li ><a href="#ontheconditionforuniformityofconvergence.">The condition for uniformity of convergence</a>
+               <li><a href="#connexionofdiscontinuitywithnon-uniformconvergence.">Discontinuity and non-uniform convergence</a>
+               <li><a href="#thedistinctionbetweenabsoluteanduniformconvergence.">Absolute versus uniform convergence</a>
+               <li><a href="#aconditionduetoweierstrassforuniformconvergence.">Weierstrass&#8217;s condition for uniform convergence</a>
+               <li><a href="#uniformityofconvergenceofinfiniteproducts.">Uniform convergence of infinite products</a>
+               <li><a href="#hardystestsforuniformconvergence.">Hardy&#8217;s tests for uniform convergence</a>
+           </ul>
+       </li>
     <li class="current"><a href="#discussionofaparticulardoubleseries.">A Particular Double Series</a></li>
     <li><a href="CMA03-3-Heine-Borel.html#theconceptofuniformity.">The Concept of Uniformity</a></li>
     <li><a href="CMA03-3-Heine-Borel.html#themodifiedheine-boreltheorem.">The Modified Heine-Borel Theorem</a></li>
@@ -339,7 +348,11 @@ in which the summation extends over all positive and negative integral values an
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navunicont');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navunicont');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navback');">BACKMATTER</a> 
+   <ul >
+     <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+   </ul>
+</li>
 </ul>
 </div>
 
@@ -475,11 +488,11 @@ in which the summation extends over all positive and negative integral values an
 </li>
 
 <li id="fn:6">
-<p><em>Editor&#8217;s Note</em>: Rewrite <span class="math">\(\epsilon^{-1}(n+1)\,|x| < 1+(n+1)^2 x^2\)</span> as <span class="math">\((n+1)^2 x^2-\epsilon^{-1}(n+1)\,|x| + 1>0\)</span>, thinking of the left hand side as a quadratic in <span class="math">\((n+1)\,|x|\)</span>, and solve. <a href="#fnref:6" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p><em>Editor&#8217;s Note</em>: Rewrite <span class="math">\(\epsilon^{-1}(n+1)\,\left|\,x\,\right| < 1+(n+1)^2 x^2\)</span> as <span class="math">\((n+1)^2 x^2-\epsilon^{-1}(n+1)\,\left|\,x\,\right| + 1>0\)</span>, thinking of the left hand side as a quadratic in <span class="math">\((n+1)\,\left|\,x\,\right|\)</span>, and solve. <a href="#fnref:6" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:7">
-<p>This value of x satisfies the condition <span class="math">\(| x | < \delta \)</span> whenever <span class="math">\(2n - 1 > \log \delta^{-1}\)</span>. <a href="#fnref:7" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p>This value of x satisfies the condition <span class="math">\(\left|\,x\,\right| < \delta \)</span> whenever <span class="math">\(2n - 1 > \log \delta^{-1}\)</span>. <a href="#fnref:7" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:8">

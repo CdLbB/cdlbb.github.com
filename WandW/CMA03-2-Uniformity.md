@@ -198,7 +198,7 @@ thus found is independent of \\(z\\), it follows ([§3.31](#ontheconditionforuni
 \\[1 +\frac{1}{2^2} +\frac{1}{3^2} + \cdots ,\\]
 whose terms are positive constants. 
 
-#####3.341. Uniformity of convergence of infinite products.[^uniproduct,-2] [uniformityofconvergenceofinfiniteproducts.]#####
+#####3.341 Uniformity of convergence of infinite products.[^uniproduct,-2] [uniformityofconvergenceofinfiniteproducts.]#####
 
 [^uniproduct,-2]: The definition is, effectively, that given by Osgood, [*Funktionentheorie*](https://archive.org/details/lehrbuchderfunk01osgogoog), p. 462. The condition here given for uniformity of convergence is also established in that work.
 
@@ -247,7 +247,7 @@ converge uniformly in the range \\(\delta < \theta < 2\pi-\delta\\).
 \\[\sum_{n=1}^\infty \frac{ (-1)^n\cos n\theta}{n}, \quad \sum_{n=1}^\infty \frac{ (-1)^n\sin n\theta}{n}.\\]
 by writing \\(\theta +\pi\\) for \\(\pi\\). 
 
->*Example* 2. If, when \\( a < x < b\\), \\(\omega_n (x) < k_1\\) and \\(\sum\limits_{n=1}^\infty \left|\, \omega_{n+1}(x)-\omega_n(x) \, \right| < k_2\\), where  \\(k_1, \, k_2\\) are independent of \\(n\\) and \\(x\\), and if \\(\sum\limits_{n=1}^\infty a_n\\) is a convergent series independent of \\(x\\), then \\(\sum\limits_{n=1}^\infty a_n \omega_n(x)\\) converges uniformly when \\( a < x < b\\).  (Hardy.) 
+>*Example* 2. If, when \\( a < x < b\\), \\(\omega_n (x) < k_1\\) and \\(\sum\limits_{n=1}^\infty \left|\, \omega_{n+1}(x)-\omega_n(x) \, \right| < k_2\\), where  \\(k_1, \, k_2\\) are independent of \\(n\\) and \\(x\\), and if \\(\sum\limits_{n=1}^\infty a_n\\) is a convergent series independent of \\(x\\), then \\(\sum\limits_{n=1}^\infty a_n \omega_n(x)\\) converges uniformly when \\( a < x < b\\).  <br>(Hardy.) 
 >
 >[For we can choose m, independent of x, such that \\(\left|\, \sum_{n=m+1}^{m+p} a_n \,\right| < \epsilon\\) and then, by [§2.301 corollary](CMA02-2-Series.html#abelcorollary), we have \\(\left|\, \sum_{n=m+1}^{m+p} a_n \omega_n (x) \,\right| < (k_1+k+2)\epsilon.\\) ]
 
@@ -309,7 +309,7 @@ is convergent if \\(a > 2\\). The original series is therefore absolutely and un
 
 >*Example*. Prove that the series 
 \\[\sum \frac{1}{(m_1^2+m_2^2+ \cdots +m_r^2)^\mu}\\]
-in which the summation extends over all positive and negative integral values and zero values of \\(m_1,\, m_2, \dots ,\,m_r,\\)  except the set of simultaneous zero values, is absolutely convergent if \\(\mu < \frac{1}{2}r\\). (Eisenstein, [*Journal für Math.*,  **xxxv**. ](http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0035)) 
+in which the summation extends over all positive and negative integral values and zero values of \\(m_1,\, m_2, \dots ,\,m_r,\\)  except the set of simultaneous zero values, is absolutely convergent if \\(\mu < \frac{1}{2}r\\). <br>(Eisenstein, [*Journal für Math.*,  **xxxv**. ](http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0035)) 
 
 </div>
 
@@ -341,7 +341,16 @@ in which the summation extends over all positive and negative integral values an
       <ul>
         <li><a href="CMA03-1-ContinuousFns.html#thedependenceofonecomplexnumberonanother">Functions of a Complex Variable</a></li>
         <li><a href="CMA03-1-ContinuousFns.html#continuityoffunctionsofrealvariables">Continuity of Functions of Real Variables</a></li>
-	<li class="current"><a href="#seriesofvariableterms.uniformityofconvergence.">Uniformity of Convergence</a></li>
+	<li class="current"><a href="#seriesofvariableterms.uniformityofconvergence.">Uniformity of Convergence</a>
+	   <ul>
+	       <li ><a href="#ontheconditionforuniformityofconvergence.">The condition for uniformity of convergence</a>
+               <li><a href="#connexionofdiscontinuitywithnon-uniformconvergence.">Discontinuity and non-uniform convergence</a>
+               <li><a href="#thedistinctionbetweenabsoluteanduniformconvergence.">Absolute versus uniform convergence</a>
+               <li><a href="#aconditionduetoweierstrassforuniformconvergence.">Weierstrass&#8217;s condition for uniform convergence</a>
+               <li><a href="#uniformityofconvergenceofinfiniteproducts.">Uniform convergence of infinite products</a>
+               <li><a href="#hardystestsforuniformconvergence.">Hardy&#8217;s tests for uniform convergence</a>
+           </ul>
+       </li>
 	<li class="current"><a href="#discussionofaparticulardoubleseries.">A Particular Double Series</a></li>
 	<li><a href="CMA03-3-Heine-Borel.html#theconceptofuniformity.">The Concept of Uniformity</a></li>
 	<li><a href="CMA03-3-Heine-Borel.html#themodifiedheine-boreltheorem.">The Modified Heine-Borel Theorem</a></li>
@@ -355,7 +364,11 @@ in which the summation extends over all positive and negative integral values an
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navunicont');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navunicont');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navback');">BACKMATTER</a> 
+   <ul >
+     <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+   </ul>
+</li>
 </ul>
 </div>
 

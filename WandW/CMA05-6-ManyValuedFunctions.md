@@ -231,8 +231,8 @@ It follows from the data that \\(F(z)\\) has the unique derivate \\(f(z)\\). Hen
 <li class="part"><a onClick="hideIt('navcauchy');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a> 
    <ul >
-    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
-  </ul>
+     <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+   </ul>
 </li>
 </ul>
 </div>

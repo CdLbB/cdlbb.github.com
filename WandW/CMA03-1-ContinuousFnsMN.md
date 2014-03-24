@@ -189,8 +189,12 @@ the simple curve is said to be *closed*.
 A two-dimensional continuum is a set of points in a plane possessing the 
 following two properties : 
 
+<div markdown=1 class="listroman">
+
 1. If \\((x, y)\\) be the Cartesian coordinates of any point of it, a positive number \\(\delta\\) (depending on \\(x\\) and \\(y\\)) can be found such that every point whose distance from (x, y) is less than \\(\delta\\) belongs to the set. 
 2. Any two points of the set can be joined by a simple curve consisting entirely of points of the set.<a class="marginmark" onClick="toggleHide('mn:7,-7');">&#91;7&#93;</a> 
+
+</div>
 
 </div>
 
@@ -204,7 +208,7 @@ following two properties :
 
 <div markdown=1 class="contenttext">
 
->Example. The points for which \\(x^2+y^2 < 1\\) form a continuum. For if P be any point inside the unit circle such that \\(OP=r < 1\\), we may take \\(\delta=1— r\\); and any two points inside the circle may be joined by a straight line lying wholly inside the circle. 
+>Example. The points for which \\(x^2+y^2 < 1\\) form a continuum. For if \\(P\\) be any point inside the unit circle such that \\(OP=r < 1\\), we may take \\(\delta=1— r\\); and any two points inside the circle may be joined by a straight line lying wholly inside the circle. 
 
 The following two theorems will be assumed in this work;<a class="marginmark" onClick="toggleHide('mn:8,-7');">&#91;8&#93;</a> simple cases of them appear obvious from geometrical intuitions and, generally, theorems of a similar nature will be taken for granted, as formal proofs are usually extremely long and difficult. 
 
@@ -268,7 +272,12 @@ whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the regio
     <li><a href="#continuousfunctionsanduniformconvergence">Continuity and Uniform Convergence</a>
       <ul>
         <li  class="current"><a href="#thedependenceofonecomplexnumberonanother">Functions of a Complex Variable</a></li>
-        <li  class="current"><a href="#continuityoffunctionsofrealvariables">Continuity of Functions of Real Variables</a></li>
+        <li  class="current"><a href="#continuityoffunctionsofrealvariables">Continuity of Functions of Real Variables</a>
+	   <ul>
+	       <li ><a href="#simplecurves.continua.">Simple curves and Continua</a>
+               <li><a href="#continuousfunctionsofcomplexvariables">Continuous functions of complex variables</a>
+           </ul>
+        </li>
 	<li><a href="CMA03-2-UniformityMN.html#convergenceofaninfiniteseries">Uniformity of Convergence</a></li>
 	<li><a href="CMA03-2-UniformityMN.html#discussionofaparticulardoubleseries.">A Particular Double Series</a></li>
 	<li><a href="CMA03-3-Heine-BorelMN.html#theconceptofuniformity.">The Concept of Uniformity</a></li>
@@ -283,7 +292,11 @@ whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the regio
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navunicont');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navunicont');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navunicont');showIt('navback');">BACKMATTER</a> 
+   <ul >
+     <li ><a href="CMA24-Appendix-I-LogrithmAndExponentialMN.html">Appendix</a></li>
+  </ul>
+</li>
 </ul>
 </div>
 
@@ -321,8 +334,8 @@ whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the regio
     <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
      <li class="current"><a href="#" onClick="showIt('navunicont');hideIt('navprocesses');">Continuity and Uniform Convergence</a></li>
      <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
-     <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
-     <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
+     <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
+      <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
