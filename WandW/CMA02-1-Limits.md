@@ -74,9 +74,12 @@ Let \\((x_n)\\) be a sequence of real numbers such that \\(x_{n+1} \geq x_n\\) f
 
 Let \\(x\\) be any rational-real number; then either:
 
+<div markdown=1 class="listroman">
+
 1. \\(x_n \geq x\\) for all values of \\(n\\) greater than some number \\(n_0\\) depending on the value of \\(x\\).
 2. \\(x_n < x\\) for every value of \\(n\\).
 
+</div>
 
 If (ii) is not the case for *any* value of \\(x\\) (no matter how large), then \\(x_n \rightarrow \infty\\).
 

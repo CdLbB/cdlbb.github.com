@@ -35,7 +35,7 @@ Then, if \\(S_n\\) tends to a limit \\(S\\) as \\(n\\) tends to infinity, the in
 \\[ u_1 + u_2 + u_3 + u_4 + \,  \cdots  \\]
 is said to *be convergent*, or to *converge to the sum \\(S\\)*. In other cases, the infinite series is said to be *divergent*. When the series converges, the expression \\(S - S_n\\), which is the sum of the series
 \\[ u_{n+1} + u_{n+2} + u_{n+3} +  \,  \cdots  \\]
-is called the *remainder after n terms*, and is frequently denoted by the symbol \\(R_n\\).
+is called the *remainder after \\(n\\) terms*, and is frequently denoted by the symbol \\(R_n\\).
 
 The sum \\[ u_{n+1} + u_{n+2}  +  \,  \cdots \, + u_{n+p} \\] will be denoted by \\(S_{n,p}\\).
 

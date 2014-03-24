@@ -172,7 +172,7 @@ It is found that algebraical operations, direct or inverse, when applied to comp
 
 >The introduction of the complex number has led to many important developments in mathematics. Functions which, when real variables only are considered, appear as essentially distinct, are seen to be connected when complex variables are introduced: thus the circular functions are found to be expressible in terms of exponential functions of a complex argument, by the equations \\[ \cos x= \frac{1}{2}(e^{ix} + e^{-ix}), \quad \sin x= \frac{1}{2}(e^{ix} - e^{-ix}). \\]
 >
->Again, many of the most important theorems of modern analysis are not true if the numbers concerned are restricted to be real; thus, the theorem that every algebraic equation of degree n has n roots is true in general only when regarded as a theorem concerning complex numbers, Hamilton's quaternions furnish an example of a still further extension of the idea of number. A quaternion \\[ w+xi+yj + zk \\] is formed from four real numbers \\(w, x, y, z\\), and four number-units \\(1, i, j, k\\) in the same way that the ordinary complex number \\(x + iy\\) might be regarded as being formed from two real numbers \\(x, y\\), and two number-units \\(1, i\\). Quaternions however do not obey the commutative law of multiplication.
+>Again, many of the most important theorems of modern analysis are not true if the numbers concerned are restricted to be real; thus, the theorem that every algebraic equation of degree \\(n\\) has \\(n\\) roots is true in general only when regarded as a theorem concerning complex numbers, Hamilton's quaternions furnish an example of a still further extension of the idea of number. A quaternion \\[ w+xi+yj + zk \\] is formed from four real numbers \\(w, x, y, z\\), and four number-units \\(1, i, j, k\\) in the same way that the ordinary complex number \\(x + iy\\) might be regarded as being formed from two real numbers \\(x, y\\), and two number-units \\(1, i\\). Quaternions however do not obey the commutative law of multiplication.
 
 ### 1.4 The modulus of a complex number [themodulusofacomplexnumber]###
 
@@ -221,7 +221,7 @@ The complex number \\(x + iy\\) may be denoted by a single letter \\(z\\).[^real
 
 [^realandimg]: It is convenient to call \\(x\\) and \\(y\\) the *real* and *imaginary* parts of \\(z\\) respectively. We frequently write \\(x = \mathfrak{Re}(z)\\), \\(y = \mathfrak{Im}(z)\\).
 
-If we denote\\( (x^2+y^2)^{\frac{1}{2}}\\) by \\(r\\) and choose \\(\theta\\) so that \\(r \cos \theta = x, r \sin \theta =y\\), then \\(r\\) and \\(\theta\\) are clearly the radius vector and vectorial angle of the point \\(P\\), referred to the origin and axis \\(Ox\\).
+If we denote\\( (x^2+y^2)^{\frac{1}{2}}\\) by \\(r\\) and choose \\(\theta\\) so that \\(r \cos \theta = x\\), \\(r \sin \theta =y\\), then \\(r\\) and \\(\theta\\) are clearly the radius vector and vectorial angle of the point \\(P\\), referred to the origin and axis \\(Ox\\).
 
 The representation of complex numbers thus afforded is often called the *Argand diagram*.[^argandnote]
 
