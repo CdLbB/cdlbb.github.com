@@ -48,7 +48,7 @@ Let \\(\sum\limits_{n=0}^{\infty} a_n z^n\\) be a power series, whose radius of 
 
 For, with the notation of [§3.35](CMA03-2-Uniformity.html#hardystestsforuniformconvergence.), 
 the function \\(x^n\\)  satisfies the conditions laid on \\(u_n (x)\\), when \\(0 \leq x \leq 1\\); consequently \\(f(x) = \sum\limits_{n=0}^{\infty} a_n x^n\\)  converges *uniformly* throughout the range \\(0 \leq x \leq 1\\); it is therefore, by [§3.32](CMA03-2-Uniformity.html#connexionofdiscontinuitywithnon-uniformconvergence.), a continuous 
-function of *x* throughout the range, and so \\(\lim\limits_{x \, \rightarrow 0} f(x) =f(1)\\), which is the theorem stated. 
+function of \\(x\\) throughout the range, and so \\(\lim\limits_{x \, \rightarrow 0} f(x) =f(1)\\), which is the theorem stated. 
 
 #### 3.72 Abel's Theorem[^abelsproducts,-1] on Multiplication of Series. [abelstheoremonmultiplicationofseries.] ####
 
@@ -117,11 +117,11 @@ No. 15), (1914)](https://archive.org/details/complexintegrat00watsrich), Chs. **
 
 5.  If the convergent series \\(\displaystyle s=\frac{1}{1^r}-\frac{1}{2^r}+\frac{1}{3^r}-\frac{1}{4^r}+ \cdots \;\;(r>0)\\) be multiplied by itself, the terms of the product being arranged as in Abel's result, shew that the resulting series diverges if \\(r \leq \frac{1}{2}\\) but converges to the sum \\(s^2\\) if \\(r > \frac{1}{2}\\). (Cauchy and Cajori.) 
 
-6.   If the two conditionally convergent series \\[\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^r}\,\text{ and }\, \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^s},\\] where *r* and *s* lie between 0 and 1, be multiplied together, and the product arranged as in Abel's result, shew that the necessary and sufficient condition for the convergence of the resulting series is \\(r + s > 1\\). (Cajori.)
+6.   If the two conditionally convergent series \\[\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^r}\,\text{ and }\, \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^s},\\] where \\(r\\) and \\(s\\) lie between 0 and 1, be multiplied together, and the product arranged as in Abel's result, shew that the necessary and sufficient condition for the convergence of the resulting series is \\(r + s > 1\\). (Cajori.)
 
 7.   Shew that if the series \\(1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7} + \cdots \\) be multiplied by itself any number of times, the terms of the product being arranged as in Abel's result, the resulting series converges. (Cajori.)
 
-8.   Shew that the *q*th power of the series \\[a_1\sin \theta+a_2 \sin 2\theta + \cdots + a_n \sin n\theta + \cdots\\] is convergent whenever \\(q (1 - r)< 1\\), *r* being the greatest number satisfying the relation \\[a_n \leq n^{-r}\\] for all values of *n*.
+8.   Shew that the \\(q\\)th power of the series \\[a_1\sin \theta+a_2 \sin 2\theta + \cdots + a_n \sin n\theta + \cdots\\] is convergent whenever \\(q (1 - r)< 1\\), \\(r\\) being the greatest number satisfying the relation \\[a_n \leq n^{-r}\\] for all values of \\(n\\).
 
 9.   Shew that if \\(\theta\\) is not equal to 0 or a multiple of \\(2\pi\\), and if \\(u_0,\, u_1,\, u_2,\, \dots \\) be a sequence such that \\(u_n \rightarrow 0\\) steadily, then the series \\(\sum  u_n \cos(n\theta + \phi) \\) is convergent. 
 Shew also that, if the limit of \\(u_n\\) is not zero, but \\(u_n\\) is still monotonic, the sum of the series is oscillatory if \\(\left.\theta \middle/\pi \right.\\)  is rational, but that, if \\(\left.\theta \middle/\pi \right.\\) is irrational, the sum may have any value between certain bounds whose difference is \\(a \csc \frac{1}{2}\theta\\), where \\(a= \lim\limits_{n \rightarrow \infty} u_n\\). (Math. Trip., 1896.)

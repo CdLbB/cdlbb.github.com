@@ -134,7 +134,7 @@ following two properties :
 
 [^OpenConnected]: *Editor's Note*: In modern terminology, the first property asserts the set is *open*. The second property asserts that the set is *path-connected*. Most authors use the term *domain* for a non-empty open path-connected set of complex numbers. Whittaker and Watson use that term a bit differently.
 
->Example. The points for which \\(x^2+y^2 < 1\\) form a continuum. For if P be any point inside the unit circle such that \\(OP=r < 1\\), we may take \\(\delta=1— r\\); and any two points inside the circle may be joined by a straight line lying wholly inside the circle. 
+>Example. The points for which \\(x^2+y^2 < 1\\) form a continuum. For if \\(P\\) be any point inside the unit circle such that \\(OP=r < 1\\), we may take \\(\delta=1— r\\); and any two points inside the circle may be joined by a straight line lying wholly inside the circle. 
 
 The following two theorems will be assumed in this work;[^Proofs] simple cases of them appear obvious from geometrical intuitions and, generally, theorems of a similar nature will be taken for granted, as formal proofs are usually extremely long and difficult. 
 
