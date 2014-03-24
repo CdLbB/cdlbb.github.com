@@ -383,8 +383,7 @@ rational function.
 \\]
 
 >*Example* 3. By integrating \\(\int e^{-\lambda z^{2}} \, d z\\) round a
-parallelogram whose corners are \\(-R, R, R + ai, -R + ai\\) and making \\(R
-\rightarrow \infty\\), shew that, if \\(\lambda > 0\\), then
+parallelogram whose corners are \\(-R\\), \\(R\\), \\(R + ai\\), \\(-R + ai\\) and making \\(R \rightarrow \infty\\), shew that, if \\(\lambda > 0\\), then
   \\[
   \int_{-\infty}^{\infty}\! e^{-\lambda x^{2}} \cos (2\lambda a x)
 \, d x = e^{-\lambda a^{2}} \int_{-\infty}^{\infty}\! e^{-\lambda
@@ -416,7 +415,7 @@ in the upper half plane; and so
 
 1. If \\(Q(x)\\) is an even function, i.e. if \\(Q (- x) = Q (x)\\), \\[  \int_{0}^{\infty} Q(x) \cos(mx) \, d x = \pi i \sum R'.  \\]
 
-2. If Q (x) is an odd function,\\[  \int_{0}^{\infty} Q(x) \sin(mx) \, d x =  \pi \sum R'.  \\]
+2. If \\(Q(x)\\) is an odd function,\\[  \int_{0}^{\infty} Q(x) \sin(mx) \, d x =  \pi \sum R'.  \\]
 
 </div>
 
@@ -684,7 +683,7 @@ since \\(t^{-1} (1 - e^{-t}) \rightarrow 1\\) as \\(t \rightarrow 0.\\)]
 </li>
 <li class="part"><a onClick="hideIt('navcauchy');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a> 
- <ul >
+  <ul >
     <li ><a href="CMA24-Appendix-I-LogrithmAndExponentialMN.html">Appendix</a></li>
   </ul>
 </li>
