@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="latexinput" content="mmd-cambridge-header"/>
+	<title>A Course of Modern Analysis-CauchysIntegral 6-2</title>
+	<meta name="subtitle" content="An introduction to the general theory of
+infinite processes and analytic functions;
+with an account of the principal
+transcendental functions."/>
+	<meta name="author" content="E.T. Whittaker and G.N. Watson"/>
+	<meta name="editor" content="Eric Nitardy"/>
+	<meta name="date" content="Mar 6, 2014"/>
+	<meta name="titlefile" content="mmd-WandW-title"/>
+	<meta name="copyrightfile" content="mmd-WandW-copyright"/>
+	<meta name="test" content="And this is a new key-value pair"/>
+	<meta name="latexmode" content="memoir"/>
+	<meta name="latexinput" content="mmd-cambridge-begin-doc"/>
+	<meta name="latexfooter" content="mmd-cambridge-footer"/>
+	<link type="text/css" rel="stylesheet" href="css/documentation.css"/>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+<script type="text/javascript" src="js/showhide.js"></script>
+<script type="text/javascript" src="js/mathjaxend.js"></script>
+</head>
+<body>
+
+<div id="header"><h1><a href="CMA00-Front.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
+<div id="content">
+<div class="contenttext">
+
+<h4 id="6.23principalvaluesofintegrals.">6.23 Principal values of integrals.</h4>
+
+<p>It was assumed in <a href="CMA06-1-Residues.html#6.22theevaluationofcertaintypesofintegralstakenbetweenthelimits-inftyandinfty.">§6.22</a>, <a href="CMA06-1-Residues.html#6.221certaininfiniteintegralsinvolvingsinesandcosines.">§6.221</a>, <a href="CMA06-1-Residues.html#6.222jordanslemma.">§6.222</a> that the function <span class="math">\(Q(x)\)</span> had no
+poles on the real axis; if the function has a finite number of <em>simple</em>
+poles on the real axis, we can obtain theorems corresponding to those
+already obtained, except that the integrals are all principal values
+(<a href="CMA04-3-ComplexInt.html#4.5improperintegrals.principalvalues.">§4.5</a>) and <span class="math">\(\sum R\)</span> has to be replaced by
+<span class="math">\(\sum R + \frac{1}{2} \sum R_{0}\)</span>, where <span class="math">\(\sum R_{0}\)</span> means the
+sum of the residues at the poles on the real axis. To obtain this
+result we see that, instead of the former contour, we have to take as
+contour a circle of radius <span class="math">\(\rho\)</span> and the portions of the real axis joining
+the points
+<span class="math">\[
+-\rho, \ a-\delta_{1},
+\ \ 
+a+\delta_{1}, \ b-\delta_{2},
+\ \  
+b+\delta_{2}, \ c-\delta_{3},
+\; \ldots
+\]</span>
+and small semicircles above the real axis of radii
+<span class="math">\(\delta_{1}\)</span>, <span class="math">\(\delta_{2},\ldots\)</span> with centres <span class="math">\(a\)</span>, <span class="math">\(b\)</span>, <span class="math">\(c, \ldots\)</span> where <span class="math">\(a\)</span>, <span class="math">\(b\)</span>, <span class="math">\(c, \ldots\)</span> are the poles of <span class="math">\(Q(z)\)</span> on the real axis; and then we have to make <span class="math">\(\delta_{1}, \delta_{2}, \ldots \rightarrow 0\)</span>;
+call these semicircles <span class="math">\(\gamma_{1}\)</span>, <span class="math">\(\gamma_{2},\ldots\)</span>.
+Then instead of the equation
+<span class="math">\[
+\int_{-\rho}^{\rho} Q(z) \,dz
++
+\int_{\Gamma} Q(z) \,dz
+=
+2 \pi i \sum R,
+\]</span>
+we get
+<span class="math">\[
+P \int_{-\rho}^{\rho} Q(z) \,dz
++
+\sum_{n}
+\lim_{\delta_{n} \rightarrow 0}
+\int_{\gamma_{n}} Q(z) \,dz
++
+\int_{\Gamma} Q(z) \,dz
+=
+2 \pi i \sum R.
+\]</span></p>
+
+<p>Let <span class="math">\(a'\)</span> be the residue of <span class="math">\(Q(z)\)</span> at <span class="math">\(a\)</span>; then writing
+<span class="math">\(z = a + \delta_{1} e^{i\theta}\)</span> on <span class="math">\(\gamma_{1}\)</span> we get
+<span class="math">\[
+\int_{\gamma_{1}} Q(z) \,dz
+=
+\int_{\pi}^{0}
+Q(a + \delta_{1} e^{i\theta})\,
+\delta_{1} e^{i\theta} i \,d\theta.
+\]</span>
+But <span class="math">\(Q(a + \delta_{1} e^{i\theta}) \rightarrow a'\)</span>
+uniformly as <span class="math">\(\delta_{1} \rightarrow 0\)</span>; and therefore
+<span class="math">\(
+\lim\limits_{\delta_{1} \rightarrow 0} \int_{\gamma_{1}} Q(z) \,dz
+=
+- \pi i a'
+\)</span>;
+we thus get
+<span class="math">\[
+P \int_{-\rho}^{\rho} Q(z) \,dz
++
+\int_{\Gamma} Q(z) \,dz
+=
+2 \pi i \sum R
++
+\pi i \sum R_{0},
+\]</span>
+and hence, using the arguments of <a href="CMA06-1-Residues.html#6.22theevaluationofcertaintypesofintegralstakenbetweenthelimits-inftyandinfty.">§6.22</a>, we get
+<span class="math">\[
+P \int_{-\infty}^{\infty} Q(x) \,dx
+=
+2 \pi i \left( \sum R + \frac{1}{2} \sum R_{0} \right).
+\]</span></p>
+
+<p>The reader will see at once that the theorems of <a href="CMA06-1-Residues.html#6.221certaininfiniteintegralsinvolvingsinesandcosines.">§6.221</a>, <a href="CMA06-1-Residues.html#6.222jordanslemma.">§6.222</a> have precisely similar generalisations.</p>
+
+<p>The process employed above of inserting arcs of small circles so as to
+diminish the area of the contour is called <em>indenting</em> the contour.</p>
+
+<h4 id="6.24evaluationofintegralsoftheformint_0inftyxa-1qxdx.">6.24 Evaluation of integrals of the form <span class="math">\(\int_{0}^{\infty} x^{a-1} Q(x) \,dx.\)</span></h4>
+
+<p>Let <span class="math">\(Q(x)\)</span> be a rational function of <span class="math">\(x\)</span> such that it has no poles on the
+positive part of the real axis and <span class="math">\(x^{a} Q(x) \rightarrow 0\)</span> both when <span class="math">\(x \rightarrow 0\)</span> and when <span class="math">\(x \rightarrow \infty\)</span>. </p>
+
+<p>Consider <span class="math">\(\int (-z)^{a-1} Q(z) \,dz\)</span> taken round the contour
+<span class="math">\(C\)</span> shewn in figure 1, consisting of the arcs of circles of
+radii <span class="math">\(\rho\)</span>, <span class="math">\(\delta\)</span> and the straight lines joining their end points;
+<span class="math">\((-z)^{a-1}\)</span> is
+to be interpreted as
+<span class="math">\[
+\exp \left\{ ( a-1) \log (- z) \right\}
+\]</span>
+and
+<span class="math">\[
+\log (-z) = \log \left|\,z\,\right| + \arg (-z),
+\]</span>
+where
+<span class="math">\[
+-\pi \leq \arg (-z) \leq \pi; %TODO:is overlap correct?
+\]</span>
+with these conventions the integrand is one-valued and analytic on and
+within the contour save at the poles of <span class="math">\(Q(z)\)</span>.</p>
+
+<figure>
+<img src="W&WIllustration1.svg" alt="Figure 1: Contour C for \(\int_C (-z)^{a-1} Q(z) \,dz\\). " id="fig_1" title="Contour C." />
+<figcaption>Figure 1: Contour C for <span class="math">\(\int_C (-z)^{a-1} Q(z) \,dz\)</span>. </figcaption></figure>
+
+<p>Hence, if <span class="math">\(\sum r\)</span> denote the sum of the residues of <span class="math">\((-z)^{a-1} Q(z)\)</span>
+at all its poles,
+<span class="math">\[
+\int_{C} (-z)^{a-1} Q(z) \,dz = 2 \pi i \sum r.
+\]</span></p>
+
+<p>On the small circle write <span class="math">\(-z = \delta e^{i\theta}\)</span>, and the integral
+along it becomes
+<span class="math">\(- \int_{\pi}^{-\pi} (-z)^{a} Q(z) i \,d\theta\)</span>,
+which tends to zero as <span class="math">\(\delta \rightarrow 0\)</span>.</p>
+
+<p>On the large semicircle write <span class="math">\(-z = \rho e^{i\theta}\)</span>, and the
+integral along it becomes <span class="math">\(- \int_{-\pi}^{\pi} (-z)^{n} Q(z) i
+\,d\theta\)</span>, which tends to zero as <span class="math">\(\rho \rightarrow \infty\)</span>.</p>
+
+<p>On one of the lines we write <span class="math">\(-z = x e^{\pi i}\)</span> on the other
+<span class="math">\(-z = x e^{-\pi i}\)</span> and <span class="math">\((-z)^{a-1}\)</span> becomes <span class="math">\(x^{a-1} e^{\pm (a-1) \;\!\pi i}\)</span>.</p>
+
+<p>Hence
+<span class="math">\[
+\lim_{\delta\rightarrow 0,\ \rho\rightarrow\infty}
+\int_{\delta}^{\rho}
+\left\{
+  x^{a-1} e^{-(a-1)\pi i} Q(x)
+  -
+  x^{a-1} e^{(a-1)\pi i} Q(x)
+\right\}
+\,dx
+=
+2 \pi i \sum r;
+\]</span>
+and therefore
+<span class="math">\[
+\int_{0}^{\infty} x^{a-1} Q(x) \,dx
+=
+\pi \, \mathrm{cosec}(a\pi) \sum r.
+\]</span></p>
+
+<blockquote>
+<p><em>Corollary</em>. If <span class="math">\(Q(x)\)</span> have a number of simple poles on the positive
+part of the real axis, it may be shewn by indenting the contour that
+<span class="math">\[
+P \int_{0}^{\infty} x^{a-1} Q(x) \,dx
+=
+\pi \, \mathrm{cosec} (a\pi) \sum r
+-
+\pi \cot (1\pi) \sum r',
+\]</span>
+where <span class="math">\(\sum r'\)</span> is the sum of the residues of <span class="math">\(z^{a-1} Q(z)\)</span> at these poles.</p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 1. If <span class="math">\(0 < a < 1\)</span>,
+<span class="math">\[
+\int_{0}^{\infty} \frac{x^{a-1}}{1+x} \,dx
+=
+\pi \, \mathrm{cosec}\;\! a\pi,
+\quad
+P \int_{0}^{\infty} \frac{x^{a-1}}{1+x} \,dx
+=
+\pi \cot a\pi
+\]</span></p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 2. If <span class="math">\(\,0 < z < 1\)</span> and <span class="math">\(-\pi < a < \pi\)</span>,
+ <span class="math">\[
+  \int_{0}^{\infty} \frac{t^{\:\!z-1}}{ t+e^{ia} } \,dt
+  =
+  \frac{ \pi e^{i(z-1)\:\! a}}{\sin \pi z}.
+  \]</span>
+(Minding.)</p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 3. Shew that, if <span class="math">\(- 1 < z < 3\)</span>, then
+ <span class="math">\[
+  \int_{0}^{\infty} \frac{ x^{z} }{ (1+x^{2})^{2} } \,dx
+  =
+  \frac{ \pi (1-z) }{ 4 \cos \frac{1}{2}\pi z}.
+  \]</span>
+\end{wandwexample}
+\begin{wandwexample}
+ Shew that, if <span class="math">\(-1 < p < 1\)</span> and <span class="math">\(-\pi < \lambda < \pi\)</span>, then
+ <span class="math">\[
+  \int_{0}^{\infty}
+  \frac{ x^{-p} \,dx }{ 1 + 2x \cos\lambda + x^{2} }
+  =
+  \frac{\pi}{\sin p\pi} \frac{\sin p\lambda}{\sin \lambda}.
+  \]</span>
+ \addexamplecitation{Euler.}
+\end{wandwexample}
+\Section{6}{3}{Cauchy&#8217;s integral.}
+We shall next discuss a class of contour-integrals which are
+sometimes found useful in analytical investigations.</p>
+</blockquote>
+
+<p>Let <span class="math">\(C\)</span> be a contour in the <span class="math">\(z\)</span>-plane, and let <span class="math">\(f(z)\)</span> be a function
+analytic inside and on <span class="math">\(C\)</span>. Let <span class="math">\(\phi(z)\)</span> be another function which is
+analytic inside and on <span class="math">\(G\)</span> except at a finite number of poles; let the
+zeros of <span class="math">\(\phi(z)\)</span> in the interior\footnote{<span class="math">\(\phi(z)\)</span> must not have
+ any zeros or poles on <span class="math">\(C\)</span>.} of <span class="math">\(C\)</span> be <span class="math">\(a_{1},a_{2},\ldots\)</span>, and let
+their degrees of multiplicity be <span class="math">\(r_{1},r_{2},\ldots\)</span>; and let its
+poles in the interior of <span class="math">\(C\)</span> be <span class="math">\(b_{1},b_{2},\ldots\)</span>, and let their
+degrees of multiplicity be <span class="math">\(s_{1},s_{2},\ldots\)</span>.</p>
+
+<p>Then, by the fundamental theorem of residues,
+<span class="math">\( \frac{1}{2\pi i} \int_{C} f(z) \frac{\phi'(z)}{\phi(z)} \,dz \)</span>
+is equal to the sum of the residues of
+<span class="math">\(f(z) \frac{\phi'(z)}{\phi(z)}\)</span>
+at its poles inside <span class="math">\(C\)</span>.</p>
+
+<p>Now
+<span class="math">\(f(z) \frac{\phi'(z)}{\phi(z)}\)</span>
+can have singularities only at the poles and zeros of <span class="math">\(\phi(z)\)</span>.
+Near one of the zeros, say <span class="math">\(a_{1}\)</span>, we have
+<span class="math">\[
+\phi(z)
+=
+A (z-a_{1})^{r_{1}}
++ B (z-a_{1})^{r_{1}+1}
++ \cdots.
+\]</span></p>
+
+<p>Therefore
+<span class="math">\[
+\phi'(z)
+=
+A r_{1} (z-a_{1})^{r_{1}-1}
++ B (r_{1}+1) (z-a_{1})^{r_{1}}
++ \cdots,
+\]</span>
+and
+<span class="math">\[
+f(z) = f(a_{1}) + (z-a_{1}) f'(a_{1}) + \cdots.
+\]</span></p>
+
+<p>Therefore
+<span class="math">\(
+\left\{f(z) \frac{\phi'(z)}{\phi(z)}
+  -
+  \frac{ r_{1} f(a_{1}) }{ z - a_{1} }
+\right\}
+\)</span> is analytic at <span class="math">\(a_{1}\)</span>.</p>
+
+<p>Thus the residue of <span class="math">\(f(z) \frac{\phi'(z)}{\phi(z)}\)</span>, at the point
+<span class="math">\(z=a_{1}\)</span>, is <span class="math">\(r_{1} f(a_{1})\)</span>.</p>
+
+<p>Similarly the residue at <span class="math">\(z=b_{1}\)</span> is
+<span class="math">\(-s_{1} f(b_{1})\)</span>; for near <span class="math">\(z=b_{1}\)</span>, we have
+<span class="math">\[
+\phi(z)
+=
+C (z-b_{1})^{-s_{1}}
++ D (z-b_{1})^{-s_{1} + 1}
++ \cdots,
+\]</span>
+and
+<span class="math">\[
+f(z)
+=
+f(b_{1})
++ (z - b_{1}) f'(b_{1})
++ \cdots,
+\]</span>
+so
+<span class="math">\(
+f(z) \frac{ \phi'(z) }{\phi(z)}
++
+\frac{ s_{1} f(b_{1}) }{ z-b_{1} }
+\)</span>
+is analytic at <span class="math">\(b_{1}\)</span>.</p>
+
+<p>Hence
+<span class="math">\[
+\frac{1}{2\pi i}
+\int_{C} f(z) \frac{ \phi'(z) }{\phi(z)} \,dz
+=
+\sum r_{1} f(a_{1})
+-
+\sum s_{1} f(b_{1}),
+\]</span>
+the summations being extended over all the zeros and poles of
+<span class="math">\(\phi(z)\)</span>.</p>
+
+<p>\Subsection{6}{3}{1}{The number of roots of an equation contained
+ within a contour.\index{Roots of an equation, number of!(inside a contour)}}
+The result of the preceding paragraph can be at once applied to find
+how many roots of an equation <span class="math">\(\phi(z) = 0\)</span> lie within a contour <span class="math">\(C\)</span>.</p>
+
+<p>For, on putting <span class="math">\(f(z) = 1\)</span> in the preceding result, we obtain the
+result that
+<span class="math">\[
+\frac{1}{2\pi i}
+\int_{C} \frac{ \phi'(z) }{\phi(z)} \,dz
+\]</span>
+is equal to the excess of the number of zeros over the number of poles
+of <span class="math">\(\phi(z)\)</span> contained in the interior of <span class="math">\(C\)</span>, each pole and zero
+being reckoned according to its degree of multiplicity.</p>
+
+<p>%
+% 120
+%
+\begin{wandwexample}
+ Shew that a polynomial <span class="math">\(\phi(z)\)</span> of degree <span class="math">\(m\)</span> has <span class="math">\(m\)</span> roots.
+ \index{Equation of degree <span class="math">\(m\)</span> has <span class="math">\(m\)</span> roots}\index{Roots of an
+ equation!number of}</p>
+
+<p>Let
+<span class="math">\[
+\phi(z)
+=
+a_{0} z^{m} + a_{1} z^{m-1} + \cdots + a_{m},
+\quad
+(a_{0} \neq 0).
+\]</span>
+Then
+<span class="math">\[
+\frac{ \phi'(z) }{ \phi(z) }
+=
+\frac{ m a_{m}z^{m-1} + \cdots + a_{m-1} }{ a_{0}z^{m} + \cdots a_{m}}.
+\]</span>
+Consequently, for large values of <span class="math">\(\left|\,z\,\right|\)</span>,
+<span class="math">\[
+\frac{ \phi'(z) }{ \phi(z) }
+=
+\frac{m}{z} + O\left( \frac{1}{z^{2}} \right)
+\]</span>
+Thus, if <span class="math">\(C\)</span> be a circle of radius <span class="math">\(\rho\)</span> whose centre is at the origin, we
+have
+<span class="math">\[
+\frac{1}{2 \pi i} \int_{C} \frac{\phi'(z)}{\phi(z)} \,dz
+=
+\frac{m}{2 \pi i} \int_{C} \frac{ \,dz }{z}
++
+\frac{1}{2 \pi i} \int_{C} O\left( \frac{1}{z^{2}} \right) \,dz
+=
+m + \frac{1}{2 \pi i} \int_{C} O\left( \frac{1}{z^{2}} \right) \,dz.
+\]</span></p>
+
+<p>But, as in \hardsectionref{6}{2}{2},
+<span class="math">\[
+\int_{C} O\left( \frac{1}{z^{2}} \right) \,dz
+\rightarrow
+0
+\]</span>
+as <span class="math">\(\rho\rightarrow\infty\)</span>; and hence as <span class="math">\(\phi(z)\)</span> has no poles in the
+interior of <span class="math">\(C\)</span>, the total number of zeros of <span class="math">\(\phi(z)\)</span> is
+<span class="math">\[
+\lim_{\rho\rightarrow\infty}
+\frac{1}{2\pi i}
+\int_{C} \frac{ \phi'(z) }{\phi(z)} \,dz
+=
+m.
+\]</span>
+\end{wandwexample}
+If at all points of a contour <span class="math">\(C\)</span> the inequality
+<span class="math">\[
+\left|\, a_{k} z^{k} \,\right|
+>
+\left|\,
+  a_{0}
+  + a_{1} z
+  + \cdots
+  + a_{k-1} z^{k-1}
+  + a_{k+1} z^{k+1}
+  + \cdots
+  + a_{m} z^{m}
+\,\right|
+\]</span>
+is satisfied, then the contour contains <span class="math">\(k\)</span> roots of the equation
+<span class="math">\[
+a_{m} z^{m} + a_{m-1} z^{m-1} + \cdots a_{1} z + a_{0} = 0.
+\]</span></p>
+
+<p>For write
+<span class="math">\[
+f(z)
+=
+a_{m} z^{m} + a_{m-1} z^{m-1} + \cdots a_{1} z + a_{0}.
+\]</span></p>
+
+<p>Then
+<span class="math">\[\begin{align*}
+  f(z)
+  &=
+  a_{k} z^{k}
+  \left( 1 +
+    \frac{ a_{m}z^{m}
+      + \cdots
+      + a_{k+1}z^{k+1}
+      + a_{k-1}z^{k-1}
+      + \cdots
+      + a_{0}
+    }{ a_{k} z^{k} }
+  \right)
+  \\
+  &= a_{k} z^{k} (1 + U),
+\end{align*}\]</span>
+where <span class="math">\(\left|\,U\,\right| \leq a \leq 1\)</span> on the contour, <span class="math">\(a\)</span> being
+independent\footnote{<span class="math">\(\left|\,U\,\right|\)</span> is a continuous function of <span class="math">\(z\)</span> on
+ <span class="math">\(C\)</span>, and so <em>attains</em> its upper bound
+ (\hardsubsectionref{3}{6}{2}). Hence its upper bound <span class="math">\(a\)</span> must be
+ less than <span class="math">\(1\)</span>.} of <span class="math">\(z\)</span>.</p>
+
+<p>Therefore the number of roots of <span class="math">\(f(z)\)</span> contained in <span class="math">\(C\)</span>
+<span class="math">\[
+= \frac{1}{2 \pi i} \int_{C} \frac{f'(z)}{f(z)} \,dz
+= \frac{1}{2 \pi i}
+\int_{C} \left( \frac{k}{z}
+  + \frac{1}{1+U} \frac{ d U }{ d z }
+\right) \,dz
+\]</span></p>
+
+<p>But <span class="math">\(\int_{C} \frac{d z}{z} = 2 \pi i\)</span>; and, since <span class="math">\(\left|\,U\,\right| < 1\)</span>,
+we can expand <span class="math">\((1 + U)^{-1}\)</span> in the uniformly convergent series
+<span class="math">\[
+1 - U + U^{2} - U^{3} + \cdots,
+\]</span>
+so
+<span class="math">\[
+\int_{C} \frac{1}{1+U} \frac{d U}{d z} \,dz
+=
+\left[
+  [U - \frac{1}{2} U^{2} + \frac{1}{3} U^{3} - \cdots]
+\right]_{C}
+=
+0.
+\]</span></p>
+
+<p>Therefore the number of roots contained in <span class="math">\(C\)</span> is equal to <span class="math">\(k\)</span>.
+\begin{wandwexample}
+Find how many roots of the equation
+<span class="math">\[
+z^{6} + 6z + 10 = 0
+\]</span>
+lie in each quadrant of the Argand diagram.
+\addexamplecitation{Clare, 1900.}
+\end{wandwexample}
+%
+% 121
+%</p>
+</div>
+</div>
+
+<div id="footer">
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a><br><span style="font-size:63%;">Based on a transcription by </span><a href="https://github.com/bwignall/Whittaker-and-Watson"><span style="font-size:74%;">Brian Wignall.</span></a></h3>
+<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+</div>
+
+<div id="navcauchy" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navfront');">FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
+  <ul>
+    <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
+    <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
+    <li><a href="#thetheoryofresiduesbrapplicationtotheevaluationofdefinitenbspintegrals">The Theory of Residues</a>
+      <ul>
+        <li class="current"><a href="#6.1residues.">Residues</a>
+        <li class="current"><a href="#6.2theevaluationofdefiniteintegrals.">The Evaluation of Definite Integrals</a>
+          <ul>
+         <li><a href="#6.21theevaluationoftheintegralsofcertainperiodicfunctionstakenbetweenthelimits0and2pi.">Evaluation of Certain Periodic Integrals</a> </li>
+              <li><a href="#6.22theevaluationofcertaintypesofintegralstakenbetweenthelimits-inftyandinfty.">Evaluation of Certain Infinite Integrals</a></li>
+          <li><a href="#6.221certaininfiniteintegralsinvolvingsinesandcosines.">Evaluation of Integrals with Sines & Cosines</a></li>
+              <li><a href="#6.222jordanslemma.">Jordan&#8217;s Lemma</a></li>
+              <li  class="uncurrent"><a href="CMA06-2-CauchysIntegral.htm#6.23principalvaluesofintegrals.">Principal Values of Integrals</a> </li>
+              <li  class="uncurrent"><a href="CMA06-2-CauchysIntegral.htm#6.24evaluationofrationalintegrals">Evaluation of <span class="math">\(\int_0^\infty x^{\alpha-1}Q(z)\, dx\)</span>.</a> </li>
+          </ul>
+       </li>
+        <li><a href="CMA06-2-CauchysIntegral.html#6.3cauchysintegral.">Cauchy&#8217;s Integral</a></li>
+    <li><a href="CMA06-3-ConnexionTwixtZeros.html#6.4Connexionbetweenthezerosofafunctionandthezerosofitsderivate.">Connexion between a Function&#8217;s Zeros  and its Derivate&#8217;s Zeros.</a></li>
+        <li><a href="CMA06-3-ConnexionTwixtZeros.html#references.">References</a></li>
+        <li><a href="CMA06-3-ConnexionTwixtZeros.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
+      </ul>
+    </li>
+    <li><a href="CMA07-1-ExpansionOfFunctions">Expanding Functions in Infinite Series</a></li>
+    <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a> 
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfront" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a>FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-Front.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-Front.html#preface">Preface</a></li>
+    <li><a href="CMA00-Front.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navfront');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navprocesses" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
+<li class="part"><a>PROCESSES OF ANALYSIS</a>
+  <ul >
+    <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
+    <li><a href="CMA02-1-Limits.html">The Theory of Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
+     <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
+      <li><a href="CMA06-1-Residues.html">The Theory of Residues</a></li>
+     <li class="more current"><a onClick="showIt('navcauchy');hideIt('navprocesses');"> you are here . . . </a></li>
+     <li class="notdone"><a href="CMA07-1-ExpansionOfFunctions">Expanding Functions in Infinite Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navtranscendental" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navtranscendental');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
+  <ul>
+    <li class="notdone"><a href="whereOwhere.html">The Gamma Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Zeta Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Legendre Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Bessel Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Mathieu Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
+  </ul>
+  </li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navback" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a>BACKMATTER</a>
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+    <li ><a href="whereOwhere.html">Authors Quoted</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfixedleft" class="fixedBleft">
+<p><a href="CMA05-6-ManyValuedFunctions.html">&#x25C0;</a></p>
+</div>
+
+<div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
+<p><a onClick="hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');showIt('navcauchy');" style="float: left;">&#x25A4;</a> <a href="CMA06-2-CauchysIntegral.html" style="float: right;">&#x25B6;</a></p>
+</div>
+
+<div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;" >
+<p><a onClick="hideIt('navcauchy');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA06-2-CauchysIntegral.html" style="float: right;">&#x25B6;   </a></p>
+</div>
+
+</body>
+</html>
