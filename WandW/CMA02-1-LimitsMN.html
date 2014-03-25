@@ -38,7 +38,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
 </div>
 <div class="contenttext">
 
-<p>Let <span class="math">\(z_1, z_2, z_3, \dots\)</span> be an unending sequence of numbers, real or complex. Then, if a number <span class="math">\(l\)</span> exists such that, corresponding to every positive<a class="marginmark" onClick="toggleHide('mn:2,-7');">&#91;2&#93;</a> number <span class="math">\(\epsilon\)</span>, no matter how small, a number <span class="math">\(n_0\)</span> can be found, such that
+<p>Let <span class="math">\(z_1\)</span>, <span class="math">\(z_2\)</span>, <span class="math">\(z_3, \dots\)</span> be an unending sequence of numbers, real or complex. Then, if a number <span class="math">\(l\)</span> exists such that, corresponding to every positive<a class="marginmark" onClick="toggleHide('mn:2,-7');">&#91;2&#93;</a> number <span class="math">\(\epsilon\)</span>, no matter how small, a number <span class="math">\(n_0\)</span> can be found, such that
 <span class="math">\[ \left|\, z_n-l \,\right| < \epsilon \]</span>
 for all values of <span class="math">\(n\)</span> greater than <span class="math">\(n_0\)</span>, <em>the sequence <span class="math">\((z_n)\)</span> is said to tend to the limit <span class="math">\(l\)</span> as <span class="math">\(n\)</span> tends to infinity.</em></p>
 </div>
@@ -69,7 +69,7 @@ thus
 <span class="math">\[ \frac{15n +19}{1 + n^3} = O \left (\frac{1}{n^2} \right ) \]</span>
 If <span class="math">\(\lim(\zeta_n\left/z_n \right.) = 0\)</span>, we write <span class="math">\(\zeta_n = o(z_n)\)</span>.</p>
 </div>
-<div class="marginnotes"  id="mn:4,-12"  style="margin-top: -12em; margin-bottom: -12em;"><a class="marginmark">&#91;4&#93;</a>This notation is due to Bachmann, <a href="http://books.google.com/books?id=0iMCAAAAYAAJ"><em>Zahlentheorie</em> (1894)</a>, p. 401, and Landau, <a href="http://www.archive.org/details/handbuchderlehre01landuoft"><em>Primzahlen</em>, <strong>I.</strong> (1909)</a>, p. 61.<a onClick="hideIt('mn:4,-12')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div class="marginnotes"  id="mn:4,-12"  style="margin-top: -12em; margin-bottom: -12em;"><a class="marginmark">&#91;4&#93;</a>This notation is due to Bachmann, <a href="http://books.google.com/books?id=0iMCAAAAYAAJ"><em>Zahlentheorie</em> (1894)</a>, p. 401, and Landau, <a href="http://www.archive.org/details/handbuchderlehre01landuoft"><em>Primzahlen</em>, <strong>I.</strong> (1909)</a>, p. 59.<a onClick="hideIt('mn:4,-12')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
 <div class="contenttext">
 
@@ -78,11 +78,13 @@ If <span class="math">\(\lim(\zeta_n\left/z_n \right.) = 0\)</span>, we write <s
 <p>Let <span class="math">\((x_n)\)</span> be a sequence of real numbers such that <span class="math">\(x_{n+1} \geq x_n\)</span> for all values of <span class="math">\(n\)</span>; then <em>the sequence tends to a limit or else tends to infinity</em> (and so it does not oscillate).</p>
 
 <p>Let <span class="math">\(x\)</span> be any rational-real number; then either:</p>
+<div class="listroman">
 
 <ol>
 <li><span class="math">\(x_n \geq x\)</span> for all values of <span class="math">\(n\)</span> greater than some number <span class="math">\(n_0\)</span> depending on the value of <span class="math">\(x\)</span>.</li>
 <li><span class="math">\(x_n < x\)</span> for every value of <span class="math">\(n\)</span>.</li>
 </ol>
+</div>
 
 <p>If (ii) is not the case for <em>any</em> value of <span class="math">\(x\)</span> (no matter how large), then <span class="math">\(x_n \rightarrow \infty\)</span>.</p>
 
@@ -103,10 +105,12 @@ Therefore <span class="math">\(x_n \rightarrow \alpha \)</span>.<a class="margin
 
 <blockquote>
 <h6 id="monotonicex1"><em>Example</em> 1. If <span class="math">\(\lim z_n = l, \; \lim z'_n = l'\)</span>, then <span class="math">\(\lim(z_n + z'_n) = l + l'\)</span>. For, given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(n\)</span> and <span class="math">\(n'\)</span> such that</h6>
+<div class="listroman">
 
 <ol>
 <li>when <span class="math">\(m > n, \;  \left|\, z_m - l \,\right| < \frac{1}{2} \epsilon ,\)</span></li>
-<li>when <span class="math">\(m > n', \;  \left|\, z'_m- l' \,\right| < \frac{1}{2} \epsilon .\)</span></li>
+<li>when <span class="math">\(m > n', \;  \left|\, z'_m- l' \,\right| < \frac{1}{2} \epsilon .\)</span>
+</div></li>
 </ol>
 
 <p>Let <span class="math">\(n_1\)</span> be the greater of <span class="math">\(n\)</span> and <span class="math">\(n'\)</span>; then, when <span class="math">\(m>n_1\)</span>,
@@ -116,11 +120,13 @@ and this is the condition that <span class="math">\(\lim (z_n + z'_m)= l + l'\)<
 
 <blockquote>
 <h6 id="monotonicex2"><em>Example</em> 2. Prove similarly that</h6>
+<div class="listroman">
 
 <ol>
 <li><span class="math">\(\lim (z_n - z'_n) = l - l',\)</span></li>
 <li><span class="math">\( \lim (z_n z'_n) = l \, l',\)</span></li>
-<li>and, if <span class="math">\( l' \neq 0 , \;  \lim (z_n \left/ z'_n \right.) = \left. l \right/ l'.\)</span></li>
+<li>and, if <span class="math">\( l' \neq 0 , \;  \lim (z_n \left/ z'_n \right.) = \left. l \right/ l'.\)</span>
+</div></li>
 </ol>
 </blockquote>
 
@@ -165,7 +171,7 @@ The &#8216;least of the limits&#8217;, <span class="math">\(L\)</span>, of the s
 </div>
 <div class="contenttext">
 
-<p>We shall now shew that the necessary and sufficient condition for the existence of a limiting value of a sequence of numbers <span class="math">\(z_1, z_2, z_3, \dots\)</span> is that, <em>corresponding to any given positive number <span class="math">\(\epsilon\)</span>, however small, it shall be possible to find a number <span class="math">\(n\)</span> such that
+<p>We shall now shew that the necessary and sufficient condition for the existence of a limiting value of a sequence of numbers <span class="math">\(z_1\)</span>, <span class="math">\(z_2\)</span>, <span class="math">\(z_3, \dots\)</span> is that, <em>corresponding to any given positive number <span class="math">\(\epsilon\)</span>, however small, it shall be possible to find a number <span class="math">\(n\)</span> such that
 <span class="math">\[ \left|\, z_{n+p}-z_n \,\right| < \epsilon \]</span>
 for all positive integral values of <span class="math">\(p\)</span>.</em> This result is one of the most important and fundamental theorems of analysis. It is sometimes called the <em>Principle of Convergence</em>.</p>
 
@@ -194,9 +200,9 @@ for all positive integral values of <span class="math">\(p\)</span>.</p>
 
 <p>Let the value of <span class="math">\(n\)</span>, corresponding to the <span class="math">\(\epsilon\)</span> equaling <span class="math">\(1\)</span>, be <span class="math">\(m\)</span>.</p>
 
-<p>Let <span class="math">\(\lambda_1\)</span>, <span class="math">\(\rho_1\)</span> be the least and greatest of <span class="math">\(x_1, x_2, \dots , x_m\)</span>; then
+<p>Let <span class="math">\(\lambda_1\)</span>, <span class="math">\(\rho_1\)</span> be the least and greatest of <span class="math">\(x_1\)</span>, <span class="math">\(x_2,\, \dots , x_m\)</span>; then
 <span class="math">\[  \lambda_1 -1 < x_n < \rho_1 +1 , \]</span>
-for all values of <span class="math">\(n\)</span>; write <span class="math">\(\lambda_1 -1=\lambda , \; \rho_1 +1=\rho \)</span>.</p>
+for all values of <span class="math">\(n\)</span>; write <span class="math">\(\lambda_1 -1=\lambda\)</span>, <span class="math">\( \rho_1 +1=\rho \)</span>.</p>
 
 <p>Then, for all values of <span class="math">\(n\)</span>, <span class="math">\(\lambda < x_n < \rho\)</span>. <em>Therefore by the theorem of</em> <a href="#bolzanosection">&#167;2.21</a>, <em>the sequence <span class="math">\((x_n)\)</span> has at least one limit-point <span class="math">\(G\)</span></em>.</p>
 
@@ -235,8 +241,18 @@ for all values of <span class="math">\(n\)</span>; write <span class="math">\(\l
     <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
     <li><a href="#thetheoryofconvergence">The Theory of Convergence</a>
       <ul>
-        <li  class="current"><a href="#limits">The Definition of the Limit of a Sequence</a></li>
-        <li  class="current"><a href="#thelimitofanincreasingsequence">The Limit of an Increasing Sequence</a></li>
+        <li  class="current"><a href="#limits">The Definition of the Limit of a Sequence</a>
+       <ul>
+           <li ><a href="#definitionofthephraseoftheorderof">Definition of the phrase &lsquo;of the order of&rsquo;</a>
+          </ul>
+       </li>
+        <li  class="current"><a href="#thelimitofanincreasingsequence">The Limit of an Increasing Sequence</a>
+       <ul>
+           <li ><a href="#bolzanosection">The Bolzano-Weierstrass theorem</a>
+              <li><a href="#definitionofthegreatestofthelimits">Definition of &lsquo;the greatest of the limits&rsquo;</a>
+              <li><a href="#cauchy">Cauchy&#8217;s theorem on the existence of a limit</a>
+          </ul>
+       </li>
     <li><a href="CMA02-2-SeriesMN.html#convergenceofaninfiniteseries">Convergence of an Infinite Series</a></li>
     <li><a href="CMA02-3-MoreSeriesMN.html#effectofchangingtheorderoftermsinaseries">Changing the Order of the Terms in a Series</a></li>
     <li><a href="CMA02-3-MoreSeriesMN.html#doubleseries">Double Series</a></li>
@@ -252,7 +268,11 @@ for all values of <span class="math">\(n\)</span>; write <span class="math">\(\l
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navlimits1');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navlimits1');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navlimits1');showIt('navback');">BACKMATTER</a> 
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponentialMN.html">Appendix</a></li>
+  </ul>
+</li>
 </ul>
 </div>
 
@@ -289,7 +309,7 @@ for all values of <span class="math">\(n\)</span>; write <span class="math">\(\l
      <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
      <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
      <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
-     <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
+      <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
