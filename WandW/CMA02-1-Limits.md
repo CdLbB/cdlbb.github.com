@@ -34,7 +34,7 @@ HTML header:	<script type="text/javascript"
 
 [johnwallis]: http://catalog.hathitrust.org/Record/009285660
 
-Let \\(z_1, z_2, z_3, \dots\\) be an unending sequence of numbers, real or complex. Then, if a number \\(l\\) exists such that, corresponding to every positive[^zero] number \\(\epsilon\\), no matter how small, a number \\(n_0\\) can be found, such that
+Let \\(z_1\\), \\(z_2\\), \\(z_3, \dots\\) be an unending sequence of numbers, real or complex. Then, if a number \\(l\\) exists such that, corresponding to every positive[^zero] number \\(\epsilon\\), no matter how small, a number \\(n_0\\) can be found, such that
 \\[ \left|\, z_n-l \,\right| < \epsilon \\]
 for all values of \\(n\\) greater than \\(n_0\\), *the sequence \\((z_n)\\) is said to tend to the limit \\(l\\) as \\(n\\) tends to infinity.*
 
@@ -63,7 +63,7 @@ thus
 \\[ \frac{15n +19}{1 + n^3} = O \left (\frac{1}{n^2} \right ) \\]
 If \\(\lim(\zeta_n\left/z_n \right.) = 0\\), we write \\(\zeta_n = o(z_n)\\).
 
-[^Onotation,-12]: This notation is due to Bachmann, [*Zahlentheorie* (1894)][bachmann], p. 401, and Landau, [*Primzahlen*, **I.** (1909)][landau], p. 61.
+[^Onotation,-12]: This notation is due to Bachmann, [*Zahlentheorie* (1894)][bachmann], p. 401, and Landau, [*Primzahlen*, **I.** (1909)][landau], p. 59.
 
 [bachmann]: http://books.google.com/books?id=0iMCAAAAYAAJ
 [landau]: http://www.archive.org/details/handbuchderlehre01landuoft
@@ -96,19 +96,23 @@ Therefore \\(x_n \rightarrow \alpha \\).[^ignoringRat]
 >
 
 >######*Example* 1. If \\(\lim z_n = l, \; \lim z'_n = l'\\), then \\(\lim(z_n + z'_n) = l + l'\\). For, given \\(\epsilon\\), we can find \\(n\\) and \\(n'\\) such that [monotonicex1]######
+><div markdown=1 class="listroman">
 >
 >1. when \\(m > n, \;  \left|\, z_m - l \,\right| < \frac{1}{2} \epsilon ,\\)
 >2. when \\(m > n', \;  \left|\, z'_m- l' \,\right| < \frac{1}{2} \epsilon .\\)
+></div>
 >
 >Let \\(n_1\\) be the greater of \\(n\\) and \\(n'\\); then, when \\(m>n_1\\),
 >\\[ \left|\, (z_m + z'_m) - (l + l') \,\right| \leq \left|\, (z_n - l) \,\right| + \left|\, (z'_m - l') \,\right| < \epsilon ; \\]
 >and this is the condition that \\(\lim (z_n + z'_m)= l + l'\\).
 
 >######*Example* 2. Prove similarly that [monotonicex2]######
+><div markdown=1 class="listroman">
 >
 >1.  \\(\lim (z_n - z'_n) = l - l',\\)
 >2.  \\( \lim (z_n z'_n) = l \, l',\\)
 >3. and, if \\( l' \neq 0 , \;  \lim (z_n \left/ z'_n \right.) = \left. l \right/ l'.\\)
+></div>
 
 
 >######*Example* 3. If \\( 0 < x < 1\\),  \\(x^n \rightarrow 0\\). For if \\(x = (1+a)^{-1}\\), \\(a > 0\\) and \\[ 0 < x^n =\frac{1}{(1+a)^n} <\frac{1}{1+na} \\] by the binomial theorem for a positive integral index. [monotonicex3]######
@@ -147,7 +151,7 @@ The 'least of the limits', \\(L\\), of the sequence (written \\(\displaystyle \v
 
 [^CauchySource,+0]: [*Analyse Algébrique*](http://www.archive.org/details/coursdanalysedel00cauc) (1821)}, p. 125.
 
-We shall now shew that the necessary and sufficient condition for the existence of a limiting value of a sequence of numbers \\(z_1, z_2, z_3, \dots\\) is that, *corresponding to any given positive number \\(\epsilon\\), however small, it shall be possible to find a number \\(n\\) such that
+We shall now shew that the necessary and sufficient condition for the existence of a limiting value of a sequence of numbers \\(z_1\\), \\(z_2\\), \\(z_3, \dots\\) is that, *corresponding to any given positive number \\(\epsilon\\), however small, it shall be possible to find a number \\(n\\) such that
 \\[ \left|\, z_{n+p}-z_n \,\right| < \epsilon \\]
 for all positive integral values of \\(p\\).* This result is one of the most important and fundamental theorems of analysis. It is sometimes called the *Principle of Convergence*.
 
@@ -174,9 +178,9 @@ for all positive integral values of \\(p\\).
 
 Let the value of \\(n\\), corresponding to the \\(\epsilon\\) equaling \\(1\\), be \\(m\\).
 
-Let \\(\lambda_1\\), \\(\rho_1\\) be the least and greatest of \\(x_1, x_2, \dots , x_m\\); then
+Let \\(\lambda_1\\), \\(\rho_1\\) be the least and greatest of \\(x_1\\), \\(x_2,\, \dots , x_m\\); then
 \\[  \lambda_1 -1 < x_n < \rho_1 +1 , \\]
-for all values of \\(n\\); write \\(\lambda_1 -1=\lambda , \; \rho_1 +1=\rho \\).
+for all values of \\(n\\); write \\(\lambda_1 -1=\lambda\\), \\( \rho_1 +1=\rho \\).
 
 Then, for all values of \\(n\\), \\(\lambda < x_n < \rho\\). *Therefore by the theorem of* [§2.21](#bolzanosection), *the sequence \\((x_n)\\) has at least one limit-point \\(G\\)*.
 
@@ -225,8 +229,18 @@ Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is 
     <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
     <li><a href="#thetheoryofconvergence">The Theory of Convergence</a>
       <ul>
-        <li  class="current"><a href="#limits">The Definition of the Limit of a Sequence</a></li>
-        <li  class="current"><a href="#thelimitofanincreasingsequence">The Limit of an Increasing Sequence</a></li>
+        <li  class="current"><a href="#limits">The Definition of the Limit of a Sequence</a>
+	   <ul>
+	       <li ><a href="#definitionofthephraseoftheorderof">Definition of the phrase ‘of the order of’</a>
+          </ul>
+       </li>
+        <li  class="current"><a href="#thelimitofanincreasingsequence">The Limit of an Increasing Sequence</a>
+	   <ul>
+	       <li ><a href="#bolzanosection">The Bolzano-Weierstrass theorem</a>
+              <li><a href="#definitionofthegreatestofthelimits">Definition of ‘the greatest of the limits’</a>
+              <li><a href="#cauchy">Cauchy&#8217;s theorem on the existence of a limit</a>
+          </ul>
+       </li>
 	<li><a href="CMA02-2-Series.html#convergenceofaninfiniteseries">Convergence of an Infinite Series</a></li>
 	<li><a href="CMA02-3-MoreSeries.html#effectofchangingtheorderoftermsinaseries">Changing the Order of the Terms in a Series</a></li>
 	<li><a href="CMA02-3-MoreSeries.html#doubleseries">Double Series</a></li>
@@ -242,7 +256,11 @@ Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is 
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navlimits1');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navlimits1');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navlimits1');showIt('navback');">BACKMATTER</a> 
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+  </ul>
+</li>
 </ul>
 </div>
 

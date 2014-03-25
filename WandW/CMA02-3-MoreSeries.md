@@ -29,7 +29,7 @@ HTML header:	<script type="text/javascript"
 
 In an ordinary sum the order of the terms is of no importance, for it can be varied without affecting the result of the addition. In an infinite series, however, this is no longer the case[^reorder], as will appear from the following example.
 
-[^reorder]: We say that the series \\(\sum_{n=1}^{\infty}v_n\\) consists of the terms of \\(\sum_{n=1}^{\infty}u_n\\) in a different order if a law is given by which corresponding to each positive integer \\(p\\) we can find one (and only one) integer \\(q\\) and *visa versa*, and \\(v_q\\) is taken equal to \\(u_p\\). The result of this section was noticed by Dirichlet, [*Berliner Abh.* (1837)](http://archive.org/details/abhandlungenderk1837deut), p. 48, [*Journal de Math.* **iv.** (1839)](http://portail.mathdoc.fr/JMPA/afficher_notice.php?id=JMPA_1839_1_4_A35_0), p. 397. See also Cauchy, [*Résumés analytiques*](http://archive.org/details/reumeanalytique00caucgoog) (Turin, 1833), p. 57.
+[^reorder]: We say that the series \\(\sum_{n=1}^{\infty}v_n\\) consists of the terms of \\(\sum_{n=1}^{\infty}u_n\\) in a different order if a law is given by which corresponding to each positive integer \\(p\\) we can find one (and only one) integer \\(q\\) and *visa versa*, and \\(v_q\\) is taken equal to \\(u_p\\). The result of this section was noticed by Dirichlet, [*Berliner Abh.* (1837)](http://archive.org/details/abhandlungenderk1837deut), p. 48, [*Journal de Math.* **iv.** (1839)](http://portail.mathdoc.fr/JMPA/afficher_notice.php?id=JMPA_1839_1_4_A35_0), p. 396. See also Cauchy, [*Résumés analytiques*](http://archive.org/details/reumeanalytique00caucgoog) (Turin, 1833), p. 57.
 
 Let
 \\[\textstyle \sum = 1+\frac{1}{3}-\frac{1}{2}+\frac{1}{5}+\frac{1}{7}-\frac{1}{4}+\frac{1}{9}+\frac{1}{11}-\frac{1}{6}+ \dots\\]
@@ -55,7 +55,7 @@ and so the derangement of the terms of \\(S\\) has altered is sum.
 
 >*Example*. If in the series
 >\\[1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4} + \dots \\]
->the order of the terms be altered, so that the ratio of the positive terms to the negative terms in the first \\(n\\) terms is ultimately \\(a^2\\), shew that the sum of the series will become \\(\log(2a)\\). (Manning.)
+>the order of the terms be altered, so that the ratio of the positive terms to the negative terms in the first \\(n\\) terms is ultimately \\(a^2\\), shew that the sum of the series will become \\(\log(2a)\\). <br> (Manning.)
 
 
 
@@ -192,7 +192,7 @@ therefore \\(\left|\,S-t_{n}\,\right| <\epsilon\\); and, corresponding to any gi
 
 #### 2.53 Cauchy's theorem on the multiplication of absolutely convergent series[^CauchyMsource,+0][cauchymultiplication] ####
 
-[^CauchyMsource,+0]: [*Analyse Algébrique*](http://www.archive.org/details/coursdanalysedel00cauc), Note **vii**.
+[^CauchyMsource,+0]: [*Analyse Algébrique*](http://www.archive.org/details/coursdanalysedel00cauc), Note **vii**, pp. 537-547. 
 
 We shall now shew that *if two series 
 \\[S=u_1+u_2+u_3+ \dots \\]
@@ -235,7 +235,7 @@ their sum converges to \\(ST\\).
 
 A series of the type 
 \\[a_0+a_1z+a_2z^2+a_3z^3+ \dots ,\\]
-in which the coefficients \\(a_0,\, a_1,\, a_2,\, a_3, \dots\\) are independent of \\(z\\), is called a *series proceeding according to ascending powers of \\(z\\)*, or briefly a *power-series*. 
+in which the coefficients \\(a_0\\), \\(a_1\\), \\(a_2\\), \\(a_3, \dots\\) are independent of \\(z\\), is called a *series proceeding according to ascending powers of \\(z\\)*, or briefly a *power-series*. 
 
 We shall now shew that if a power-series converges for any value \\(z_0\\) of \\(z\\), it will be absolutely convergent for all values of \\(z\\) whose representative points are within a circle which passes through \\(z_0\\) and has its centre at the origin. 
 
@@ -329,9 +329,23 @@ converges; that is, the series \\(\sum\limits_{n=1}^{\infty} n a_n z^{n-1}\\) co
         <li><a href="CMA02-1-Limits.html#limits">The Definition of the Limit of a Sequence</a></li>
         <li><a href="CMA02-1-Limits.html#thelimitofanincreasingsequence">The Limit of an Increasing Sequence</a></li>
 	<li><a href="CMA02-2-Series.html#convergenceofaninfiniteseries">Convergence of an Infinite Series</a></li>
-	<li class="current"><a href="#effectofchangingtheorderoftermsinaseries">Changing the Order of the Terms in a Series</a></li>
-	<li class="current"><a href="#doubleseries">Double Series</a></li>
-	<li class="current"><a href="#powerseries">Power Series</a></li>
+	<li class="current"><a href="#effectofchangingtheorderoftermsinaseries">Changing the Order of the Terms in a Series</a>
+	   <ul>
+	       <li ><a href="#thefundamentalpropertyofabsolutelyconvergentseries">The fundamental property of absolutely convergent series</a>
+          </ul>
+       </li>
+	<li class="current"><a href="#doubleseries">Double Series</a>
+	   <ul>
+	       <li ><a href="#methodsofsummingdoubleseries">Methods of summing double series</a>
+              <li><a href="#absolutelyconvergentdoubleseries">Absolutely convergent double series</a>
+              <li><a href="#cauchymultiplication">Multiplication of absolutely convergent series</a>
+          </ul>
+       </li>
+	<li class="current"><a href="#powerseries">Power Series</a>
+	   <ul>
+	       <li ><a href="#convergenceofseriesderivedfromapower-series">Convergence of series derived from a power-series</a>
+          </ul>
+       </li>
 	<li><a href="CMA02-4-Products.html#infiniteproducts">Infinite Products</a></li>
 	<li><a href="CMA02-4-Products.html#infinitedeterminants">Infinite Determinants</a></li>
        <li><a href="CMA02-4-Products.html#references">References</a></li>
@@ -343,7 +357,11 @@ converges; that is, the series \\(\sum\limits_{n=1}^{\infty} n a_n z^{n-1}\\) co
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navseries2');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navseries2');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navseries2');showIt('navback');">BACKMATTER</a> 
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+  </ul>
+</li>
 </ul>
 </div>
 

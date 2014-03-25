@@ -38,7 +38,7 @@ be denoted by <span class="math">\(S_n\)</span>.</p>
 <span class="math">\[ u_1 + u_2 + u_3 + u_4 + \,  \cdots  \]</span>
 is said to <em>be convergent</em>, or to <em>converge to the sum <span class="math">\(S\)</span></em>. In other cases, the infinite series is said to be <em>divergent</em>. When the series converges, the expression <span class="math">\(S - S_n\)</span>, which is the sum of the series
 <span class="math">\[ u_{n+1} + u_{n+2} + u_{n+3} +  \,  \cdots  \]</span>
-is called the <em>remainder after n terms</em>, and is frequently denoted by the symbol <span class="math">\(R_n\)</span>.</p>
+is called the <em>remainder after <span class="math">\(n\)</span> terms</em>, and is frequently denoted by the symbol <span class="math">\(R_n\)</span>.</p>
 
 <p>The sum <span class="math">\[ u_{n+1} + u_{n+2}  +  \,  \cdots \, + u_{n+p} \]</span> will be denoted by <span class="math">\(S_{n,p}\)</span>.</p>
 
@@ -131,7 +131,7 @@ and so, summing and using <a href="CMA01-Complex.html#themodulusofacomplexnumber
 <span class="math">\[ \left|\, \sum\limits_{n=1}^m a_n f_n \,\right|  \leq A f_1.\]</span></p>
 
 <blockquote>
-<h6 id="abelcorollary"><em>Corollary.</em> If <span class="math">\(a_1, a_2, \dots \; w_1, w_2, \dots \,\)</span> are any numbers, real or complex, <span class="math">\[ \left|\, \sum\limits_{n=1}^m a_n w_n \,\right|  \leq A \left \{ \sum\limits_{n=1}^m \left|\, w_n - w_{n+1} \,\right|+\left|\,w_m \,\right| \right \} , \]</span> where A is the greatest of the sums <span class="math">\(\left|\, \sum\limits_{n=1}^m a_n  \,\right|\)</span>, <span class="math">\((p = 1, 2, ... m)\)</span>. (Hardy.)</h6>
+<h6 id="abelcorollary"><em>Corollary.</em> If <span class="math">\(a_1, a_2, \dots \; w_1, w_2, \dots \,\)</span> are any numbers, real or complex, <span class="math">\[ \left|\, \sum\limits_{n=1}^m a_n w_n \,\right|  \leq A \left \{ \sum\limits_{n=1}^m \left|\, w_n - w_{n+1} \,\right|+\left|\,w_m \,\right| \right \} , \]</span> where A is the greatest of the sums <span class="math">\(\left|\, \sum\limits_{n=1}^m a_n  \,\right|\)</span>, <span class="math">\((p = 1, 2, ... m)\)</span>. <span class="math">\(\vphantom{\\ 3\\}\)</span><br>(Hardy.)</h6>
 </blockquote>
 
 <h4 id="dirichlet">2.31 Dirichlet&#8217;s test for convergence.<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a></h4>
@@ -253,13 +253,13 @@ which by <a href="#geometricseries">§2.33</a> is absolutely convergent. The giv
 <span class="math">\[ \textrm{where} \qquad z_n=e^{ni}, \quad (1,2,3, \dots) \]</span>
 is convergent for all values of <span class="math">\(z\)</span>, which are not on the circle <span class="math">\(\left|\,z\,\right|=1\)</span>.</p>
 
-<p>The geometric representation of complex numbers is helpful in discussing a question of this kind. Let values of the complex number <span class="math">\(z\)</span> be represented on a plane; then the numbers <span class="math">\(z_1, z_2, z_3, \dots\)</span> will give a sequence of points which lie on the circumference of the circle whose centre is the origin and whose radius is unity; and it can be shewn that every point on the circle is a limit-point (<a href="CMA02-1-Limits.html#bolzanosection">§2.21</a>) of the points <span class="math">\(z\)</span>.<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a></p>
+<p>The geometric representation of complex numbers is helpful in discussing a question of this kind. Let values of the complex number <span class="math">\(z\)</span> be represented on a plane; then the numbers <span class="math">\(z_1\)</span>, <span class="math">\(z_2\)</span>, <span class="math">\(z_3, \dots\)</span> will give a sequence of points which lie on the circumference of the circle whose centre is the origin and whose radius is unity; and it can be shewn that every point on the circle is a limit-point (<a href="CMA02-1-Limits.html#bolzanosection">§2.21</a>) of the points <span class="math">\(z\)</span>.<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a></p>
 </blockquote>
 
 <blockquote>
 <p>For these special values <span class="math">\(z_n\)</span> of <span class="math">\(z\)</span> , the given series does not exist, since the denominator of the <span class="math">\(n\)</span>th term vanishes when <span class="math">\(z=z_n\)</span>. For simplicity we do not discuss the series for any point <span class="math">\(z\)</span> situated on the circumference of the circle of radius unity.</p>
 
-<p>Suppose now that <span class="math">\(\left|\,z\,\right| \neq 1 \)</span>. Then for all values of <span class="math">\(n, \, \left|\,z-z_n\,\right| \geq \left|\,\{1-\left|\,z\,\right|\,\}\,\right|>c^{-1}\)</span>, for some value of <span class="math">\(c\)</span>; so the moduli of the terms of the given series are less than the corresponding terms of the series
+<p>Suppose now that <span class="math">\(\left|\,z\,\right| \neq 1 \)</span>. Then for all values of <span class="math">\(n\)</span>, <span class="math">\(\left|\,z-z_n\,\right| \geq \left|\,\{1-\left|\,z\,\right|\,\}\,\right|>c^{-1}\)</span>, for some value of <span class="math">\(c\)</span>; so the moduli of the terms of the given series are less than the corresponding terms of the series
 <span class="math">\[ \frac{c}{1^2}+\frac{c}{2^2}+\frac{c}{3^2}+\frac{c}{4^2}+\dots ,\]</span>
 which is known to be absolutely convergent. The given series is therefore absolutely convergent for all values of z, except those which are on the circle <span class="math">\(\left|\,z\,\right|=1\)</span>.</p>
 
@@ -274,7 +274,7 @@ converges absolutely for all values of <span class="math">\(z\)</span>.</p>
 <p>Since <span class="math">\(\displaystyle \lim_{n \rightarrow \infty} 3^n \sin (\left. z\right/3^n) = z\)</span>,<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a> we can find a number <span class="math">\(k\)</span>, <em>independent of <span class="math">\(n\)</span></em> (but depending on <span class="math">\(z\)</span> ), such that <span class="math">\(\left|\,3^n \sin (\left. z\right/3^n)\,\right|>k \,\)</span>; and therefore
 <span class="math">\[ \left|\,2^n \sin \frac{z}{3^n} \,\right| < k \left (\frac{2}{3}\right )^n .\]</span></p>
 
-<p>Since <span class="math">\( \sum\limits_{n=1}^{\infty} k \left (\frac{2}{3}\right )^n \)</span>converges, the given series converges absolutely.</p>
+<p>Since <span class="math">\( \sum\limits_{n=1}^{\infty} k \left (\frac{2}{3}\right )^n \)</span> converges, the given series converges absolutely.</p>
 </blockquote>
 
 <h4 id="cauchystest">2.35 Cauchy&#8217;s test for absolute convergence<a href="#fn:7" id="fnref:7" title="see footnote" class="footnote">[7]</a></h4>
@@ -417,49 +417,22 @@ Then we have
 <li class="part"><a onClick="hideIt('navseries');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
   <ul>
     <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
-    <li><a onClick="hideIt('navseries');showIt('navlimits1');">The Theory of Convergence</a>
+    <li><a href="CMA02-1-Limits.html#thetheoryofconvergence">The Theory of Convergence</a>
       <ul>
-        <li class="more"><a onClick="hideIt('navseries');showIt('navlimits1');"> more . . . </a></li>
+        <li><a href="CMA02-1-Limits.html#limits">The Definition of the Limit of a Sequence</a></li>
+        <li><a href="CMA02-1-Limits.html#thelimitofanincreasingsequence">The Limit of an Increasing Sequence</a></li>      
     <li class="current"><a href="#convergenceofaninfiniteseries">Convergence of an Infinite Series</a>
           <ul>
-              <li  class="current"><a href="#dirichlet">Dirichlet's test for convergence</a>
+              <li  class="current"><a href="#dirichlet">Dirichlet&#8217;s test for convergence</a>
               <li  class="current"><a href="#absoluteandconditionalconvergence">Absolute and conditional convergence</a>
               <li  class="current"><a href="#geometricseries">The geometric series, and the p-series</a>
               <li  class="current"><a href="#thecomparisontheorem">The comparison theorem</a>
-              <li  class="current"><a href="#cauchystest">Cauchy's test for absolute convergence</a>
-              <li  class="current"><a href="#ratiotest">D'Alembert's ratio test for absolute convergence</a>
+              <li  class="current"><a href="#cauchystest">Cauchy&#8217;s test for absolute convergence</a>
+              <li  class="current"><a href="#ratiotest">D&#8217;Alembert&#8217;s ratio test for absolute convergence</a>
               <li  class="current"><a href="#generaltheorem">Series for which the ratio test fails</a>
  <li  class="current"><a href="#convergenceofthehypergeometricseries">Convergence of the hypergeometric series</a>
           </ul>
        </li>
-       <li class="more"><a onClick="hideIt('navseries');showIt('navlimits1');"> more . . . </a></li>
-      </ul>
-    </li>
-    <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
-    <li class="more"><a onClick="hideIt('navseries');showIt('navprocesses');"> more . . . </a></li>
-  </ul>
-</li>
-<li class="part"><a onClick="hideIt('navseries');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navseries');showIt('navback');">BACKMATTER</a></li>
-</ul>
-</div>
-
-<div id="navlimits1" class="navigation" style="visibility:hidden;" >
-<h2 id="contents">Contents</h2>
-<ul>
-<li class="part"><a onClick="hideIt('navlimits1');showIt('navfront');">FRONTMATTER</a>
-  <ul>
-    <li><a href="CMA00-Front.html#contents">Table of Contents</a></li>
-  </ul>
-</li>
-<li class="part"><a onClick="hideIt('navlimits1');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
-  <ul>
-    <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
-    <li><a href="CMA02-1-Limits.html#thetheoryofconvergence">The Theory of Convergence</a>
-      <ul>
-        <li><a href="CMA02-1-Limits.html#limits">The Definition of the Limit of a Sequence</a></li>
-        <li><a href="CMA02-1-Limits.html#thelimitofanincreasingsequence">The Limit of an Increasing Sequence</a></li>
-    <li class="current"><a onClick="showIt('navseries');hideIt('navlimits1');">Convergence of an Infinite Series</a></li>
     <li><a href="CMA02-3-MoreSeries.html#effectofchangingtheorderoftermsinaseries">Changing the Order of the Terms in a Series</a></li>
     <li><a href="CMA02-3-MoreSeries.html#doubleseries">Double Series</a></li>
     <li><a href="CMA02-3-MoreSeries.html#powerseries">Power Series</a></li>
@@ -470,11 +443,15 @@ Then we have
       </ul>
     </li>
     <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
-    <li class="more"><a onClick="hideIt('navlimits1');showIt('navprocesses');"> more . . . </a></li>
+    <li class="more"><a onClick="hideIt('navseries');showIt('navprocesses');"> more . . . </a></li>
   </ul>
 </li>
-<li class="part"><a onClick="hideIt('navlimits1');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navlimits1');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navseries');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navseries');showIt('navback');">BACKMATTER</a> 
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+  </ul>
+</li>
 </ul>
 </div>
 
@@ -507,7 +484,7 @@ Then we have
 <li class="part"><a>PROCESSES OF ANALYSIS</a>
   <ul >
     <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
-    <li><a href="#" onClick="showIt('navlimits1');hideIt('navprocesses');">The Theory of Convergence</a></li>
+    <li><a  href="CMA02-1-Limits.html">The Theory of Convergence</a></li>
     <li class="more current"><a onClick="showIt('navseries');hideIt('navprocesses');"> you are here . . . </a></li>
      <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
      <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
@@ -578,11 +555,11 @@ Then we have
 </div>
 
 <div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
-<p><a onClick="showIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA02-3-MoreSeries.html" style="float: right;">&#x25B6;</a></p>
+<p><a onClick="showIt('navseries');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA02-3-MoreSeries.html" style="float: right;">&#x25B6;</a></p>
 </div>
 
 <div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
-<p><a onClick="hideIt('navseries');hideIt('navlimits1');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA02-3-MoreSeries.html" style="float: right;">&#x25B6;   </a></p>
+<p><a onClick="hideIt('navseries');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA02-3-MoreSeries.html" style="float: right;">&#x25B6;    </a></p>
 </div>
 
 <div class="footnotes">

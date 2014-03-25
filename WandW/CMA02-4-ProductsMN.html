@@ -33,7 +33,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
 
 <p>We next consider a class of limits, known as <em>infinite products</em>.</p>
 
-<p>Let <span class="math">\(1+a_1 , 1 + a_2 , 1 + a_3 , \dots \)</span> be a sequence such that none of its members
+<p>Let <span class="math">\(1+a_1 ,\, 1 + a_2 ,\, 1 + a_3 , \dots \)</span> be a sequence such that none of its members
 vanish. If, as <span class="math">\(n \rightarrow \infty\)</span>, the product
 <span class="math">\[(1+a_1)(1+a_2)(1+a_3) \dots (1+a_n)\]</span>
 (which we denote by <span class="math">\(\Pi_n)\)</span> tends to a definite limit other than zero, this limit is called the value of the infinite product
@@ -53,7 +53,7 @@ and<a class="marginmark" onClick="toggleHide('mn:2,-15');">&#91;2&#93;</a>
 <span class="math">\[\exp\{\lim_{m \rightarrow \infty}u_m\}=\lim_{m \rightarrow \infty}\{ \exp u_m\}\]</span>
 if the former limit exists; hence a sufficient condition that the product should converge is that <span class="math">\(\sum\limits_{n=1}^{\infty} \log (1 + a_n )\)</span> should converge when the logarithms have their principal values. If this series of logarithms converges absolutely, the convergence of the product is said to be <em>absolute</em>. </p>
 </div>
-<div class="marginnotes"  id="mn:2,-15"  style="margin-top: -15em; margin-bottom: -15em;"><a class="marginmark">&#91;2&#93;</a>See the Appendix, <a href="whereOwhere.html">&#167;A.2</a>, (where it is shown that <span class="math">\(f(z)=e^{\,z}\,\)</span> is continuous, <em>editor&#8217;s note</em>).<a onClick="hideIt('mn:2,-15')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div class="marginnotes"  id="mn:2,-15"  style="margin-top: -15em; margin-bottom: -15em;"><a class="marginmark">&#91;2&#93;</a>See the Appendix, <a href="CMA24-Appendix-I-LogrithmAndExponentialMN.html#a.2theexponentialfunctionexpz.">&#167;A.2</a>, (where it is shown that <span class="math">\(f(z)=e^{\,z}\,\)</span> is continuous, <em>editor&#8217;s note</em>).<a onClick="hideIt('mn:2,-15')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
 <div class="contenttext">
 
@@ -74,7 +74,7 @@ is absolutely convergent or not. </p>
        &< \frac{1}{2^2}+\frac{1}{2^3}+ \dots =\frac{1}{2}.
 \end{align*}
 \]</span>
-And thence, when n &gt; m, <span class="math">\(\frac{1}{2} \leq \left| \frac{\log(1+a_n)}{a_n}\right| \leq \frac{3}{2}\)</span>;
+And thence, when <span class="math">\(n > m\)</span>, <span class="math">\(\frac{1}{2} \leq \left| \frac{\log(1+a_n)}{a_n}\right| \leq \frac{3}{2}\)</span>;
 therefore, by the comparison theorem, the absolute convergence of <span class="math">\(\sum \log(1 + a_n )\)</span> entails that of <span class="math">\(\sum a_n\)</span> and conversely, provided that <span class="math">\(a_n \neq - 1\)</span> for any value of <span class="math">\(n\)</span>.
 This establishes the result.<a class="marginmark" onClick="toggleHide('mn:3,-7');">&#91;3&#93;</a></p>
 </div>
@@ -294,7 +294,8 @@ which is sufficient to establish the result stated. </p>
 \right | \]</span>
 is that the series
 <span class="math">\[\alpha_1 \beta_1+\alpha_2 \beta_2+\alpha_3 \beta_3+ \dots \]</span>
-shall be absolutely convergent. (von Koch.)</p>
+shall be absolutely convergent. <span class="math">\(\vphantom{\\ 3\\}\)</span><br>
+(von Koch.)</p>
 </blockquote>
 
 <h3 id="references">References</h3>
@@ -326,15 +327,15 @@ shall be absolutely convergent. (von Koch.)</p>
 <h3 id="miscellaneousexamples">Miscellaneous Examples</h3>
 
 <ol>
-<li>Evaluate <span class="math">\(\lim\limits_{n \rightarrow \infty} (e^{-na}n^b)\)</span>, <span class="math">\((\lim\limits_{n \rightarrow \infty} (n^{-a} \log n) \)</span> when <span class="math">\(a>0\)</span>, <span class="math">\(b>0\)</span>.</li>
-<li>Investigate the convergence of
-<span class="math">\[\sum_{n=1}^{\infty} \left\{1-n\log \frac{2n +1}{2n-1} \right\} .\]</span> (Trinity, 1904.)</li>
-<li>Investigate the convergence of
-<span class="math">\[\sum_{n=1}^{\infty} \left\{\frac{1 \cdot 3 \cdots (2n-1)}{2 \cdot 4 \cdots (2n)}\; \frac{4n+3}{2n+2} \right \}^2 .\]</span> (Peterhouse, 1906.)</li>
-<li>Find the range of values of <span class="math">\(z\)</span> for which the series
+<li><p>Evaluate <span class="math">\(\lim\limits_{n \rightarrow \infty} (e^{-na}n^b)\)</span>, <span class="math">\((\lim\limits_{n \rightarrow \infty} (n^{-a} \log n) \)</span> when <span class="math">\(a>0\)</span>, <span class="math">\(b>0\)</span>. </p></li>
+<li><p>Investigate the convergence of
+<span class="math">\[\sum_{n=1}^{\infty} \left\{1-n\log \frac{2n +1}{2n-1} \right\} .\]</span> (Trinity, 1904.)</p></li>
+<li><p>Investigate the convergence of
+<span class="math">\[\sum_{n=1}^{\infty} \left\{\frac{1 \cdot 3 \cdots (2n-1)}{2 \cdot 4 \cdots (2n)}\; \frac{4n+3}{2n+2} \right \}^2 .\]</span> (Peterhouse, 1906.)</p></li>
+<li><p>Find the range of values of <span class="math">\(z\)</span> for which the series
 <span class="math">\[2\sin^2 z - 4\sin^4 z+ 8 \sin^6 z - \dots +(-1)^{n+1} 2^n \sin^{2n} z+ \dots .\]</span>
-is convergent.</li>
-<li>Shew that the series
+is convergent.</p></li>
+<li><p>Shew that the series
 <span class="math">\[\frac{1}{z}-\frac{1}{z+1}+\frac{1}{z+2}-\frac{1}{z+3}+ \dots \]</span>
 is conditionally convergent, except for certain, exceptional values of <span class="math">\(z\)</span>; but that the series
 <span class="math">\[
@@ -343,63 +344,67 @@ is conditionally convergent, except for certain, exceptional values of <span cla
  & \dots  -\frac{1}{z+2p +q-1}+\frac{1}{z+2p+q}+ \dots ,
 \end{align*}
 \]</span>
-in which <span class="math">\((p + q)\)</span> negative terms always follow <span class="math">\(p\)</span> positive terms, is divergent. (Simon.)</li>
-<li>Shew that
-<span class="math">\[\textstyle 1-\frac{1}{2}-\frac{1}{4}+\frac{1}{3}-\frac{1}{6}-\frac{1}{8}+\frac{1}{5}- \dots =\frac{1}{2}\log2 .\]</span></li>
-<li>Shew that the series
+in which <span class="math">\((p + q)\)</span> negative terms always follow <span class="math">\(p\)</span> positive terms, is divergent.<span class="math">\(\vphantom{\\ 3\\}\)</span><br>(Simon.) </p></li>
+<li><p>Shew that
+<span class="math">\[\textstyle 1-\frac{1}{2}-\frac{1}{4}+\frac{1}{3}-\frac{1}{6}-\frac{1}{8}+\frac{1}{5}- \dots =\frac{1}{2}\log2 .\]</span></p></li>
+<li><p>Shew that the series
 <span class="math">\[\qquad \frac{1}{1^{\alpha}}+\frac{1}{2^{\beta}}+\frac{1}{3^{\alpha}}+\frac{1}{4^{\beta}}+ \dots \qquad (1<\alpha<\beta)\]</span>
 is convergent, although
-<span class="math">\[u_{2n+1}/u_{2n} \rightarrow \infty .\]</span> (Ces&agrave;ro.)</li>
-<li>Shew that the series
+<span class="math">\[u_{2n+1}/u_{2n} \rightarrow \infty .\]</span> (Ces&agrave;ro.)</p></li>
+<li><p>Shew that the series
 <span class="math">\[\qquad \alpha+\beta^2+\alpha^3+\beta^4+ \dots \qquad (0<\alpha <\beta<1)\]</span>
 is convergent, although
-<span class="math">\[u_{2n}/u_{2n-1} \rightarrow \infty .\]</span> (Ces&agrave;ro.)</li>
-<li>Shew that the series
+<span class="math">\[u_{2n}/u_{2n-1} \rightarrow \infty .\]</span> (Ces&agrave;ro.)</p></li>
+<li><p>Shew that the series
 <span class="math">\[\sum_{n=1}^{\infty}\frac{n z^{n-1}\{(1+n^{-1})^n-1\}}{(z^n-1)\{z^n-(1+n^{-1})\}}\]</span>
 converges absolutely for all values of <span class="math">\(z\)</span>, except the values
 <span class="math">\[z=\left(1+\frac{a}{m}\right)e^{2k\pi/m}\]</span>
-<span class="math">\[(a=0,1;\; k=0,1, \dots,m-1; \; m=1,2,3, \dots) .\]</span></li>
-<li>Shew that, when <span class="math">\(s>1\)</span>,
+<span class="math">\[(a=0,1;\; k=0,1, \dots,m-1; \; m=1,2,3, \dots) .\]</span></p></li>
+<li><p>Shew that, when <span class="math">\(s>1\)</span>,
 <span class="math">\[\sum_{n=1}^{\infty}\frac{1}{n^s}=\frac{1}{s-1}+\sum_{n=1}^{\infty}\left[\frac{1}{n^s}+\frac{1}{s-1}\left\{\frac{1}{(n+1)^{s-1}}-\frac{1}{n^{s-1}}\right\}\right] ,\]</span>
-and shew that the series on the right converges when <span class="math">\(0 < s < 1\)</span>.
-(de la Vallee Poussin, M&eacute;m. de l&#8217;Acad. de Belgique, LIII. (1896), no. 6.)</li>
-<li>In the series whose general term is
+and shew that the series on the right converges when <span class="math">\(0 < s < 1\)</span>.<span class="math">\(\vphantom{\\ 3\\}\)</span><br>
+(de la Vallee Poussin, M&eacute;m. de l&#8217;Acad. de Belgique, LIII. (1896), no. 6.) </p></li>
+<li><p>In the series whose general term is
 <span class="math">\[\qquad u_n=q^{n-\nu}x^{\frac{1}{2}\nu(\nu+1)} , \qquad (0 < q < 1 < x)\]</span>
 where <span class="math">\(\nu\)</span> denotes the number of digits in the expression of <span class="math">\(n\)</span> in the ordinary decimal scale
 of notation, shew that
 <span class="math">\[\lim_{n \rightarrow \infty} u_n^{\, 1/n} = q ,\]</span>
-and that the series is convergent, although <span class="math">\(\varlimsup u_{n+1}/u_n = \infty .\)</span></li>
-<li>Shew that the series<br/>
+and that the series is convergent, although <span class="math">\(\varlimsup u_{n+1}/u_n = \infty .\)</span></p></li>
+<li><p>Shew that the series<br/>
 <span class="math">\[q_1+q_1^2+q_2^3+q_1^4+q_2^5+q_3^6+q_1^7+ \dots ,\]</span>
 where
 <span class="math">\[\qquad \qquad q_n=q^{1+(4/n)}, \qquad (0 < q < 1)\]</span>
 is convergent, although the ratio of the <span class="math">\((n=1)\)</span>th term to the <span class="math">\(n\)</span>th is greater than unity
-when <span class="math">\(n\)</span> is not a triangular number. (Ces&agrave;ro.)</li>
-<li>Shew that the series
+when <span class="math">\(n\)</span> is not a triangular number.<span class="math">\(\vphantom{\\ 3\\}\)</span><br>
+(Ces&agrave;ro.)</p></li>
+<li><p>Shew that the series
 <span class="math">\[\sum_{n=0}^{\infty} \frac{e^{2\pi \,nix}}{(w+n)^s} ,\]</span>
-where <span class="math">\(w\)</span> is real, <span class="math">\(s\)</span> and <span class="math">\(x\)</span> are complex, and where <span class="math">\((w+n)^s\)</span> is understood to mean <span class="math">\(e^{s\log(w+n)}\)</span>, the logarithm being taken in its arithmetic sense, is convergent for all values of <span class="math">\(s\)</span>, when <span class="math">\(I(x)\)</span> is positive, and is convergent for values of <span class="math">\(s\)</span> whose real part is positive, when <span class="math">\(x\)</span> is real and not an integer.</li>
-<li>If <span class="math">\(u_n > 0\)</span>, shew that, if <span class="math">\(\sum u_n\)</span> converges, then <span class="math">\(\varliminf\limits_{\,n \rightarrow \infty} nu_n =0\)</span>, and that, if in addition <span class="math">\(u_{n} \geq u_{n+1}\)</span>, then <span class="math">\(\lim\limits_{\,n \rightarrow \infty} nu_n =0\)</span>.</li>
-<li>If <span class="math">\[\qquad a_{m\,n}= \frac{m-n}{2^{m+n}}\;\frac{(m+n-1)!}{m! \; n!} , \qquad (m,\,n > 0)\]</span>
+where <span class="math">\(w\)</span> is real, <span class="math">\(s\)</span> and <span class="math">\(x\)</span> are complex, and where <span class="math">\((w+n)^s\)</span> is understood to mean <span class="math">\(e^{s\log(w+n)}\)</span>, the logarithm being taken in its arithmetic sense, is convergent for all values of <span class="math">\(s\)</span>, when <span class="math">\(I(x)\)</span> is positive, and is convergent for values of <span class="math">\(s\)</span> whose real part is positive, when <span class="math">\(x\)</span> is real and not an integer. </p></li>
+<li><p>If <span class="math">\(u_n > 0\)</span>, shew that, if <span class="math">\(\sum u_n\)</span> converges, then <span class="math">\(\varliminf\limits_{\,n \rightarrow \infty} nu_n =0\)</span>, and that, if in addition <span class="math">\(u_{n} \geq u_{n+1}\)</span>, then <span class="math">\(\lim\limits_{\,n \rightarrow \infty} nu_n =0\)</span>.</p></li>
+<li><p>If <span class="math">\[\qquad a_{m\,n}= \frac{m-n}{2^{m+n}}\;\frac{(m+n-1)!}{m! \; n!} , \qquad (m,\,n > 0)\]</span>
 <span class="math">\[a_{m \,0}=2^{-m}, \quad a_{0 \, n}=-2^{-n}, \quad a_{0\,0}=0 ,\]</span>
 shew that
-<span class="math">\[\sum_{m=0}^{\infty}\left(\sum_{n=0}^{\infty} a_{m\, n} \right)=-1, \quad \sum_{n=0}^{\infty}\left(\sum_{m=0}^{\infty} a_{m\, n} \right)=1 .\]</span></li>
-<li>By converting the series
+<span class="math">\[\sum_{m=0}^{\infty}\left(\sum_{n=0}^{\infty} a_{m\, n} \right)=-1, \quad \sum_{n=0}^{\infty}\left(\sum_{m=0}^{\infty} a_{m\, n} \right)=1 .\]</span></p></li>
+<li><p>By converting the series
 <span class="math">\[1+\frac{8q}{1-q}+\frac{16q^2}{1+q^2}+\frac{24q^3}{1-q^3}+ \dots ,\]</span>
 (in which <span class="math">\(\left|\,q\,\right| <1\)</span>), into a double series, shew that it is equal to
-<span class="math">\[1+\frac{8q}{(1-q)^2}+\frac{8q^2}{(1+q^2)^2}+\frac{8q^3}{(1-q^3)^2}+ \dots .\]</span></li>
-<li>Assuming that
+<span class="math">\[1+\frac{8q}{(1-q)^2}+\frac{8q^2}{(1+q^2)^2}+\frac{8q^3}{(1-q^3)^2}+ \dots .\]</span></p></li>
+<li><p>Assuming that
 <span class="math">\[\sin z= z \prod_{z=1}^{\infty} \left( 1-\frac{z^2}{r^2 \pi^2}\right) ,\]</span>
 shew that if <span class="math">\(m \rightarrow \infty\)</span> and <span class="math">\(n \rightarrow \infty\)</span> in such a way that <span class="math">\(\lim (m/n) = k\)</span>, where <span class="math">\(k\)</span> is finite, then
-<span class="math">\[ \lim \sum_{\substack{r=\,-n\\r \, \neq \, 0}}^{m}\left(1+\frac{z}{r \pi}\right)=k^{\,z / \pi} \frac{\sin z}{z} .\]</span> (Math. Trip., 1904.)</li>
-<li>If <span class="math">\(u_0=u_1=u_2=0\)</span>, and if, when <span class="math">\(n >1\)</span>,
+<span class="math">\[ \lim \sum_{\substack{r=\,-n\\r \, \neq \, 0}}^{m}\left(1+\frac{z}{r \pi}\right)=k^{\,z / \pi} \frac{\sin z}{z} .\]</span>
+(Math. Trip., 1904.)</p></li>
+<li><p>If <span class="math">\(u_0=u_1=u_2=0\)</span>, and if, when <span class="math">\(n >1\)</span>,
 <span class="math">\[u_{2n-1}=-\frac{1}{\sqrt{n}}, \quad u_{2n}=\frac{1}{\sqrt{n}}+\frac{1}{n}+\frac{1}{n\sqrt{n}} ,\]</span>
-then <span class="math">\(\prod\limits_{n=0}^{\infty} (1+u_n)\)</span> converges, though <span class="math">\(\sum\limits_{n=0}^{\infty} u_n\)</span> and <span class="math">\(\sum\limits_{n=0}^{\infty} u_n^{2}\)</span> are divergent. (Math. Trip., 1906.)</li>
-<li>Prove that
+then <span class="math">\(\prod\limits_{n=0}^{\infty} (1+u_n)\)</span> converges, though <span class="math">\(\sum\limits_{n=0}^{\infty} u_n\)</span> and <span class="math">\(\sum\limits_{n=0}^{\infty} u_n^{2}\)</span> are divergent.<span class="math">\(\vphantom{\\ 3\\}\)</span><br>
+(Math. Trip., 1906.) </p></li>
+<li><p>Prove that
 <span class="math">\[\prod_{n=1}^{\infty}\left\{\left(1-\frac{z}{n}\right)^{n^k} \exp \left(\sum_{m=1}^{k+1} \frac{n^{k-m} z^m}{m} \right) \right\} ,\]</span>
-where <span class="math">\(k\)</span> is any positive integer, converges absolutely for all values of <span class="math">\(z\)</span>.</li>
-<li>If <span class="math">\(\sum\limits_{n=1}^{\infty}a_n\)</span>
-be a conditionally convergent series of real terms, then <span class="math">\(\prod\limits_{n=1}^{\infty}(1+a_n)\)</span> converges (but not absolutely) or diverges to zero according as <span class="math">\(\sum\limits_{n=1}^{\infty} a_n^2 \)</span> converges or diverges. (Cauchy.)</li>
-<li>Let <span class="math">\(\sum\limits_{n=1}^{\infty} \theta_n\)</span> be an absolutely convergent series. Shew that the infinite determinant
+where <span class="math">\(k\)</span> is any positive integer, converges absolutely for all values of <span class="math">\(z\)</span>.</p></li>
+<li><p>If <span class="math">\(\sum\limits_{n=1}^{\infty}a_n\)</span>
+be a conditionally convergent series of real terms, then <span class="math">\(\prod\limits_{n=1}^{\infty}(1+a_n)\)</span> converges (but not absolutely) or diverges to zero according as <span class="math">\(\sum\limits_{n=1}^{\infty} a_n^2 \)</span> converges or diverges.<span class="math">\(\vphantom{\\ 3\\}\)</span><br>
+(Cauchy.)</p></li>
+<li><p>Let <span class="math">\(\sum\limits_{n=1}^{\infty} \theta_n\)</span> be an absolutely convergent series. Shew that the infinite determinant
 <span class="math">\[\Delta( c)=\left|
 \begin{array}{ccccccccc}
 && \vdots&\vdots&\vdots&\vdots&\vdots&& \\
@@ -414,7 +419,7 @@ be a conditionally convergent series of real terms, then <span class="math">\(\p
 converges; and shew that the equation
 <span class="math">\[\Delta( c)=0\]</span>
 is equivalent to the equation
-<span class="math">\[\sin^2 \textstyle \frac{1}{2} \pi c = \Delta(0)\,\sin^2 \frac{1}{2} \pi \, \theta_0^{\,\frac{1}{2}} .\]</span> (Hill; see <a href="whereOwhere.html">&#167;19.42</a>.)</li>
+<span class="math">\[\sin^2 \textstyle \frac{1}{2} \pi c = \Delta(0)\,\sin^2 \frac{1}{2} \pi \, \theta_0^{\,\frac{1}{2}} .\]</span> (Hill; see <a href="whereOwhere.html">&#167;19.42</a>.)</p></li>
 </ol>
 </div>
 </div>
@@ -444,8 +449,17 @@ is equivalent to the equation
     <li><a href="CMA02-3-MoreSeriesMN.html#effectofchangingtheorderoftermsinaseries">Changing the Order of the Terms in a Series</a></li>
     <li><a href="CMA02-3-MoreSeriesMN.html#doubleseries">Double Series</a></li>
     <li><a href="CMA02-3-MoreSeriesMN.html#powerseries">Power Series</a></li>
-    <li class="current"><a href="#infiniteproducts">Infinite Products</a></li>
-    <li class="current"><a href="#infinitedeterminants">Infinite Determinants</a></li>
+    <li class="current"><a href="#infiniteproducts">Infinite Products</a>
+       <ul>
+           <li ><a href="#someexamplesofinfiniteproducts">Some examples of infinite products</a>
+          </ul>
+       </li>
+    <li class="current"><a href="#infinitedeterminants">Infinite Determinants</a>
+       <ul>
+           <li ><a href="#convergenceofaninfinitedeterminant">Convergence of an infinite determinant</a>
+              <li><a href="#therearrangementtheoremforconvergentinfinitedeterminants">Rearrangement theorem for convergent infinite determinants</a>
+          </ul>
+       </li>
        <li class="current"><a href="#references">References</a></li>
         <li class="current"><a href="#miscellaneousexamples">Miscellaneous Examples</a></li>
       </ul>
@@ -455,7 +469,11 @@ is equivalent to the equation
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navseries2');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navseries2');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navseries2');showIt('navback');">BACKMATTER</a> 
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponentialMN.html">Appendix</a></li>
+  </ul>
+</li>
 </ul>
 </div>
 
@@ -493,7 +511,7 @@ is equivalent to the equation
      <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
      <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
      <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
-     <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
+      <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>

@@ -119,7 +119,7 @@ Then the *sum* (written  \\(\alpha + \beta\\)) of two real numbers \\(\alpha\\) 
 >
 >But \\(c_2 + d_2 \geq y, \; c_1+d_1 \leq x\\), and therefore \\(c_2+d_2-c_1-d_1 \geq y-x;\\) we have therefore arrived at a contradiction by supposing that two rational numbers \\(x,y\\) exist belonging neither to \\((A_1+B_1)\\) nor to \\((A_2+B_2)\\).
 >
->If every rational number belongs either to the class \\((A_1+B_1)\\) or to the class \\((A_2+B_2)\\), then the classes \\((A_1+B_1), (A_2+B_2)\\) define an irrational number.[^assumeIrrational] If one rational number \\(x\\) exists belonging to neither class, then the \\(L\\)-class formed by \\(x\\) and \\((A_1+B_1)\\) and the \\(R\\)-class \\((A_2+B_2)\\) define the rational-real number x. In either case, the number defined is called the sum \\(\alpha + \beta\\).
+>If every rational number belongs either to the class \\((A_1+B_1)\\) or to the class \\((A_2+B_2)\\), then the classes \\((A_1+B_1)\\), \\(A_2+B_2)\\) define an irrational number.[^assumeIrrational] If one rational number \\(x\\) exists belonging to neither class, then the \\(L\\)-class formed by \\(x\\) and \\((A_1+B_1)\\) and the \\(R\\)-class \\((A_2+B_2)\\) define the rational-real number x. In either case, the number defined is called the sum \\(\alpha + \beta\\).
 
 [^assumeIrrational]: *Editor's Note*: This claim does not always hold if \\(\alpha\\) and \\(\beta\\) are both rational, but then the sum is clearly rational. If we assume at least one of \\(\alpha\\) and \\(\beta\\) are irrational, this and the succeeding claim are true.
 
@@ -172,7 +172,7 @@ It is found that algebraical operations, direct or inverse, when applied to comp
 
 >The introduction of the complex number has led to many important developments in mathematics. Functions which, when real variables only are considered, appear as essentially distinct, are seen to be connected when complex variables are introduced: thus the circular functions are found to be expressible in terms of exponential functions of a complex argument, by the equations \\[ \cos x= \frac{1}{2}(e^{ix} + e^{-ix}), \quad \sin x= \frac{1}{2}(e^{ix} - e^{-ix}). \\]
 >
->Again, many of the most important theorems of modern analysis are not true if the numbers concerned are restricted to be real; thus, the theorem that every algebraic equation of degree \\(n\\) has \\(n\\) roots is true in general only when regarded as a theorem concerning complex numbers, Hamilton's quaternions furnish an example of a still further extension of the idea of number. A quaternion \\[ w+xi+yj + zk \\] is formed from four real numbers \\(w, x, y, z\\), and four number-units \\(1, i, j, k\\) in the same way that the ordinary complex number \\(x + iy\\) might be regarded as being formed from two real numbers \\(x, y\\), and two number-units \\(1, i\\). Quaternions however do not obey the commutative law of multiplication.
+>Again, many of the most important theorems of modern analysis are not true if the numbers concerned are restricted to be real; thus, the theorem that every algebraic equation of degree \\(n\\) has \\(n\\) roots is true in general only when regarded as a theorem concerning complex numbers, Hamilton's quaternions furnish an example of a still further extension of the idea of number. A quaternion \\[ w+xi+yj + zk \\] is formed from four real numbers \\(w\\), \\(x\\), \\(y,\\) \\(z\\), and four number-units \\(1\\), \\(i\\), \\(j\\), \\(k\\) in the same way that the ordinary complex number \\(x + iy\\) might be regarded as being formed from two real numbers \\(x, y\\), and two number-units \\(1\\), \\(i\\). Quaternions however do not obey the commutative law of multiplication.
 
 ### 1.4 The modulus of a complex number [themodulusofacomplexnumber]###
 
@@ -215,7 +215,7 @@ and therefore
 
 ### 1.5 The Argand diagram [thearganddiagram]###
 
-We have seen that complex numbers may be represented in a geometrical diagram by taking rectangular axes \\(Ox\\), \\(Oy\\) in a plane. Then a point \\(P\\) whose coordinates referred to these axes are \\(x, y\\) may be regarded as representing the complex number \\(x + iy\\). In this way, to every point of the plane there corresponds some one complex number; and, conversely, to every possible complex number there corresponds one, and only one, point of the plane.
+We have seen that complex numbers may be represented in a geometrical diagram by taking rectangular axes \\(Ox\\), \\(Oy\\) in a plane. Then a point \\(P\\) whose coordinates referred to these axes are \\(x,\, y\\) may be regarded as representing the complex number \\(x + iy\\). In this way, to every point of the plane there corresponds some one complex number; and, conversely, to every possible complex number there corresponds one, and only one, point of the plane.
 
 The complex number \\(x + iy\\) may be denoted by a single letter \\(z\\).[^realandimg] The point \\(P\\) is then called the *representative point* of the number \\(z\\); we shall also speak of the number \\(z\\) as being the *affix* of the point \\(P\\).
 
@@ -295,9 +295,9 @@ measured by the product of the radii vectores of \\(P_1\\) and \\(P_2\\), and a 
 \\[ 2 + i, \quad  4 + 4i, \quad  6 + 9i, \quad  8+16i, \quad  10 + 25i. \\]
 3. Determine the \\(n\\)th roots of unity by aid of the Argand diagram; and shew that the number of primitive roots (roots the powers of each of which give all the roots) is the number of integers (including unity) less than \\(n\\) and prime to it.
 
-    Prove that if \\(\theta_1, \theta_2, \theta_3, \dots \\) are the arguments of the primitive roots, 
+    Prove that if \\(\theta_1,\, \theta_2,\, \theta_3, \dots \\) are the arguments of the primitive roots, 
 \\[ \sum  \cos p \theta=0 \\]
-when \\(p\\) is a positive integer less than \\(\displaystyle \frac{n}{a b c \dots k}\\), where \\(a, b, c, \dots k\\) are the different constituent primes of \\(n\\); and that, when \\(\displaystyle p=\frac{n}{a b c \dots k}\\),
+when \\(p\\) is a positive integer less than \\(\displaystyle \frac{n}{a b c \dots k}\\), where \\(a,\, b,\, c, \dots, k\\) are the different constituent primes of \\(n\\); and that, when \\(\displaystyle p=\frac{n}{a b c \dots k}\\),
 \\[  \sum  \cos p \theta=\frac{(-1)^\mu \, n}{a b c \dots k} \\]
 where \\(\mu\\) is the number of the constituent primes.\\(\vphantom{\\ 3\\}\\)<br>  (Math. Trip. 1895.)
 

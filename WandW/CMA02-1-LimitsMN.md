@@ -44,7 +44,7 @@ HTML header:	<script type="text/javascript"
 
 [johnwallis]: http://catalog.hathitrust.org/Record/009285660
 
-Let \\(z_1, z_2, z_3, \dots\\) be an unending sequence of numbers, real or complex. Then, if a number \\(l\\) exists such that, corresponding to every positive<a class="marginmark" onClick="toggleHide('mn:2,-7');">&#91;2&#93;</a> number \\(\epsilon\\), no matter how small, a number \\(n_0\\) can be found, such that
+Let \\(z_1\\), \\(z_2\\), \\(z_3, \dots\\) be an unending sequence of numbers, real or complex. Then, if a number \\(l\\) exists such that, corresponding to every positive<a class="marginmark" onClick="toggleHide('mn:2,-7');">&#91;2&#93;</a> number \\(\epsilon\\), no matter how small, a number \\(n_0\\) can be found, such that
 \\[ \left|\, z_n-l \,\right| < \epsilon \\]
 for all values of \\(n\\) greater than \\(n_0\\), *the sequence \\((z_n)\\) is said to tend to the limit \\(l\\) as \\(n\\) tends to infinity.*
 
@@ -97,7 +97,7 @@ If \\(\lim(\zeta_n\left/z_n \right.) = 0\\), we write \\(\zeta_n = o(z_n)\\).
 
 
 
-<div markdown=1 class="marginnotes" id="mn:4,-12" style="margin-top: -12em; margin-bottom: -12em;"><a class="marginmark">&#91;4&#93;</a>This notation is due to Bachmann, [*Zahlentheorie* (1894)][bachmann], p. 401, and Landau, [*Primzahlen*, **I.** (1909)][landau], p. 61.<a onClick="hideIt('mn:4,-12')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:4,-12" style="margin-top: -12em; margin-bottom: -12em;"><a class="marginmark">&#91;4&#93;</a>This notation is due to Bachmann, [*Zahlentheorie* (1894)][bachmann], p. 401, and Landau, [*Primzahlen*, **I.** (1909)][landau], p. 59.<a onClick="hideIt('mn:4,-12')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -114,9 +114,12 @@ Let \\((x_n)\\) be a sequence of real numbers such that \\(x_{n+1} \geq x_n\\) f
 
 Let \\(x\\) be any rational-real number; then either:
 
+<div markdown=1 class="listroman">
+
 1. \\(x_n \geq x\\) for all values of \\(n\\) greater than some number \\(n_0\\) depending on the value of \\(x\\).
 2. \\(x_n < x\\) for every value of \\(n\\).
 
+</div>
 
 If (ii) is not the case for *any* value of \\(x\\) (no matter how large), then \\(x_n \rightarrow \infty\\).
 
@@ -143,19 +146,23 @@ Therefore \\(x_n \rightarrow \alpha \\).<a class="marginmark" onClick="toggleHid
 >
 
 >######*Example* 1. If \\(\lim z_n = l, \; \lim z'_n = l'\\), then \\(\lim(z_n + z'_n) = l + l'\\). For, given \\(\epsilon\\), we can find \\(n\\) and \\(n'\\) such that [monotonicex1]######
+><div markdown=1 class="listroman">
 >
 >1. when \\(m > n, \;  \left|\, z_m - l \,\right| < \frac{1}{2} \epsilon ,\\)
 >2. when \\(m > n', \;  \left|\, z'_m- l' \,\right| < \frac{1}{2} \epsilon .\\)
+></div>
 >
 >Let \\(n_1\\) be the greater of \\(n\\) and \\(n'\\); then, when \\(m>n_1\\),
 >\\[ \left|\, (z_m + z'_m) - (l + l') \,\right| \leq \left|\, (z_n - l) \,\right| + \left|\, (z'_m - l') \,\right| < \epsilon ; \\]
 >and this is the condition that \\(\lim (z_n + z'_m)= l + l'\\).
 
 >######*Example* 2. Prove similarly that [monotonicex2]######
+><div markdown=1 class="listroman">
 >
 >1.  \\(\lim (z_n - z'_n) = l - l',\\)
 >2.  \\( \lim (z_n z'_n) = l \, l',\\)
 >3. and, if \\( l' \neq 0 , \;  \lim (z_n \left/ z'_n \right.) = \left. l \right/ l'.\\)
+></div>
 
 
 >######*Example* 3. If \\( 0 < x < 1\\),  \\(x^n \rightarrow 0\\). For if \\(x = (1+a)^{-1}\\), \\(a > 0\\) and \\[ 0 < x^n =\frac{1}{(1+a)^n} <\frac{1}{1+na} \\] by the binomial theorem for a positive integral index. [monotonicex3]######
@@ -224,7 +231,7 @@ The 'least of the limits', \\(L\\), of the sequence (written \\(\displaystyle \v
 
 <div markdown=1 class="contenttext">
 
-We shall now shew that the necessary and sufficient condition for the existence of a limiting value of a sequence of numbers \\(z_1, z_2, z_3, \dots\\) is that, *corresponding to any given positive number \\(\epsilon\\), however small, it shall be possible to find a number \\(n\\) such that
+We shall now shew that the necessary and sufficient condition for the existence of a limiting value of a sequence of numbers \\(z_1\\), \\(z_2\\), \\(z_3, \dots\\) is that, *corresponding to any given positive number \\(\epsilon\\), however small, it shall be possible to find a number \\(n\\) such that
 \\[ \left|\, z_{n+p}-z_n \,\right| < \epsilon \\]
 for all positive integral values of \\(p\\).* This result is one of the most important and fundamental theorems of analysis. It is sometimes called the *Principle of Convergence*.
 
@@ -261,9 +268,9 @@ for all positive integral values of \\(p\\).
 
 Let the value of \\(n\\), corresponding to the \\(\epsilon\\) equaling \\(1\\), be \\(m\\).
 
-Let \\(\lambda_1\\), \\(\rho_1\\) be the least and greatest of \\(x_1, x_2, \dots , x_m\\); then
+Let \\(\lambda_1\\), \\(\rho_1\\) be the least and greatest of \\(x_1\\), \\(x_2,\, \dots , x_m\\); then
 \\[  \lambda_1 -1 < x_n < \rho_1 +1 , \\]
-for all values of \\(n\\); write \\(\lambda_1 -1=\lambda , \; \rho_1 +1=\rho \\).
+for all values of \\(n\\); write \\(\lambda_1 -1=\lambda\\), \\( \rho_1 +1=\rho \\).
 
 Then, for all values of \\(n\\), \\(\lambda < x_n < \rho\\). *Therefore by the theorem of* [&#167;2.21](#bolzanosection), *the sequence \\((x_n)\\) has at least one limit-point \\(G\\)*.
 
@@ -312,8 +319,18 @@ Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is 
     <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
     <li><a href="#thetheoryofconvergence">The Theory of Convergence</a>
       <ul>
-        <li  class="current"><a href="#limits">The Definition of the Limit of a Sequence</a></li>
-        <li  class="current"><a href="#thelimitofanincreasingsequence">The Limit of an Increasing Sequence</a></li>
+        <li  class="current"><a href="#limits">The Definition of the Limit of a Sequence</a>
+	   <ul>
+	       <li ><a href="#definitionofthephraseoftheorderof">Definition of the phrase &lsquo;of the order of&rsquo;</a>
+          </ul>
+       </li>
+        <li  class="current"><a href="#thelimitofanincreasingsequence">The Limit of an Increasing Sequence</a>
+	   <ul>
+	       <li ><a href="#bolzanosection">The Bolzano-Weierstrass theorem</a>
+              <li><a href="#definitionofthegreatestofthelimits">Definition of &lsquo;the greatest of the limits&rsquo;</a>
+              <li><a href="#cauchy">Cauchy&#8217;s theorem on the existence of a limit</a>
+          </ul>
+       </li>
 	<li><a href="CMA02-2-SeriesMN.html#convergenceofaninfiniteseries">Convergence of an Infinite Series</a></li>
 	<li><a href="CMA02-3-MoreSeriesMN.html#effectofchangingtheorderoftermsinaseries">Changing the Order of the Terms in a Series</a></li>
 	<li><a href="CMA02-3-MoreSeriesMN.html#doubleseries">Double Series</a></li>
@@ -329,7 +346,11 @@ Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is 
   </ul>
 </li>
 <li class="part"><a onClick="hideIt('navlimits1');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
-<li class="part"><a onClick="hideIt('navlimits1');showIt('navback');">BACKMATTER</a></li>
+<li class="part"><a onClick="hideIt('navlimits1');showIt('navback');">BACKMATTER</a> 
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponentialMN.html">Appendix</a></li>
+  </ul>
+</li>
 </ul>
 </div>
 
@@ -368,7 +389,7 @@ Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is 
      <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
      <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
      <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
-     <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
+      <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
      <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
