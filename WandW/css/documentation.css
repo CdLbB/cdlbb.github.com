@@ -526,7 +526,20 @@ max-width: 1200px;
     display: block;
     text-indent: -1.3em;
     }
-
+    
+    
+.contenttext img
+    {
+    width: 100%;
+    max-width: 500px;
+    min-width: 300px;
+    }    
+    
+.contenttext figcaption
+    {
+    margin-left: 15%;
+    margin-right: 15%;
+    }
 
 
 /** Future (W3C Working Draft) support for parentheses

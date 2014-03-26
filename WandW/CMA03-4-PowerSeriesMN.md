@@ -158,7 +158,7 @@ No. 15), (1914)](https://archive.org/details/complexintegrat00watsrich), Chs. **
 8.   Shew that the \\(q\\)th power of the series \\[a_1\sin \theta+a_2 \sin 2\theta + \cdots + a_n \sin n\theta + \cdots\\] is convergent whenever \\(q (1 - r)< 1\\), \\(r\\) being the greatest number satisfying the relation \\[a_n \leq n^{-r}\\] for all values of \\(n\\).
 
 9.   Shew that if \\(\theta\\) is not equal to 0 or a multiple of \\(2\pi\\), and if \\(u_0,\, u_1,\, u_2,\, \dots \\) be a sequence such that \\(u_n \rightarrow 0\\) steadily, then the series \\(\sum  u_n \cos(n\theta + \phi) \\) is convergent. 
-Shew also that, if the limit of \\(u_n\\) is not zero, but \\(u_n\\) is still monotonic, the sum of the series is oscillatory if \\(\left.\theta \middle/\pi \right.\\)  is rational, but that, if \\(\left.\theta \middle/\pi \right.\\) is irrational, the sum may have any value between certain bounds whose difference is \\(a \csc \frac{1}{2}\theta\\), where \\(a= \lim\limits_{n \rightarrow \infty} u_n\\). \\(\vphantom{\\ 3\\}\\)<br>
+Shew also that, if the limit of \\(u_n\\) is not zero, but \\(u_n\\) is still monotonic, the sum of the series is oscillatory if \\(\left.\theta \middle/\pi \right.\\)  is rational, but that, if \\(\left.\theta \middle/\pi \right.\\) is irrational, the sum may have any value between certain bounds whose difference is \\(a \,\mathrm{cosec} \frac{1}{2}\theta\\), where \\(a= \lim\limits_{n \rightarrow \infty} u_n\\). \\(\vphantom{\\ 3\\}\\)<br>
 (Math. Trip., 1896.)
 
 

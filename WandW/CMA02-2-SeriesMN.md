@@ -171,7 +171,7 @@ Therefore \\(\left|\, \sum\limits_{n=m+1}^{m+p} a_n f_n  \,\right| \leq 2K f_{m+
 
 
 
->*Example* 1. Shew that if \\(0 < \theta < 2 \pi\\), \\(\left|\, \sum\limits_{n=1}^p  \sin n \theta \,\right| < \csc \frac{1}{2} \theta \\); and deduce that, if \\(f_n \rightarrow 0\\) steadily, \\(\sum\limits_{n=1}^{\infty}  f_n \sin n \theta \\) converges for all real values of \\(\theta\\), and that \\(\sum\limits_{n=1}^{\infty}  f_n \cos n \theta \\) converges if \\(\theta\\) is not an even multiple of \\(\pi\\).
+>*Example* 1. Shew that if \\(0 < \theta < 2 \pi\\), \\(\left|\, \sum\limits_{n=1}^p  \sin n \theta \,\right| < \,\!\mathrm{cosec} \frac{1}{2} \theta \\); and deduce that, if \\(f_n \rightarrow 0\\) steadily, \\(\sum\limits_{n=1}^{\infty}  f_n \sin n \theta \\) converges for all real values of \\(\theta\\), and that \\(\sum\limits_{n=1}^{\infty}  f_n \cos n \theta \\) converges if \\(\theta\\) is not an even multiple of \\(\pi\\).
 
 
 

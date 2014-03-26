@@ -617,8 +617,8 @@ since \\(t^{-1} (1 - e^{-t}) \rightarrow 1\\) as \\(t \rightarrow 0.\\)]
               <li><a href="#6.22theevaluationofcertaintypesofintegralstakenbetweenthelimits-inftyandinfty.">Evaluation of Certain Infinite Integrals</a></li>
 	      <li><a href="#6.221certaininfiniteintegralsinvolvingsinesandcosines.">Evaluation of Integrals with Sines & Cosines</a></li>
               <li><a href="#6.222jordanslemma.">Jordan&#8217;s Lemma</a></li>
-              <li  class="uncurrent"><a href="CMA06-2-CauchysIntegral.htm#6.23principalvaluesofintegrals.">Principal Values of Integrals</a> </li>
-              <li  class="uncurrent"><a href="CMA06-2-CauchysIntegral.htm#6.24evaluationofrationalintegrals">Evaluation of <span class="math">\(\int_0^\infty x^{\alpha-1}Q(z)\, dx\)</span>.</a> </li>
+              <li  class="uncurrent"><a href="CMA06-2-CauchysIntegral.html#6.23principalvaluesofintegrals.">Principal Values of Integrals</a> </li>
+              <li  class="uncurrent"><a href="CMA06-2-CauchysIntegral.html#6.24evaluationofintegralsoftheform.">Evaluation of <span class="math">\(\int_0^\infty x^{\alpha-1}Q(z)\, dx\)</span>.</a> </li>
           </ul>
        </li>
         <li><a href="CMA06-2-CauchysIntegral.html#6.3cauchysintegral.">Cauchy&#8217;s Integral</a></li>
