@@ -26,7 +26,7 @@ HTML header:	<script type="text/javascript"
 <div markdown=1 id="content">
 <div markdown=1 class="contenttext">
 
-### 6.4 Connexion between the&nbsp;zeros of a&nbsp;function and the&nbsp;zeros of&nbsp;its&nbsp;derivative. ###
+### 6.4 Connexion between the&nbsp;zeros of a&nbsp;function and the&nbsp;zeros of&nbsp;its&nbsp;derivative. [6.4connexionbetweenthezerosofafunctionandthezerosofitsderivate.] ###
 
 </div>
 
@@ -429,10 +429,10 @@ Hence, by putting \\(t = 1\\) shew that
       <ul>
         <li><a href="CMA06-1-ResiduesMN.html#6.1residues.">Residues</a>
         <li><a href="CMA06-1-ResiduesMN.html#6.2theevaluationofdefiniteintegrals.">The Evaluation of Definite Integrals</a></li>
-        <li><a href="#6.3cauchysintegral.">Cauchy&#8217;s Integral</a></li>
-	<li class="current"><a href="CMA06-3-ConnexionTwixtZerosMN.html#6.4Connexionbetweenthezerosofafunctionandthezerosofitsderivate.">Connexion between a Function&#8217;s Zeros  and its Derivate&#8217;s Zeros.</a></li>
-        <li class="current"><a href="CMA06-3-ConnexionTwixtZerosMN.html#references.">References</a></li>
-        <li class="current"><a href="CMA06-3-ConnexionTwixtZerosMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
+        <li><a href="CMA06-2-CauchysIntegralMN.html#6.3cauchysintegral.">Cauchy&#8217;s Integral</a></li>
+	<li class="current"><a href="#6.4connexionbetweenthezerosofafunctionandthezerosofitsderivate.">Connexion between a Function&#8217;s Zeros  and its Derivate&#8217;s Zeros.</a></li>
+        <li class="current"><a href="#references.">References</a></li>
+        <li class="current"><a href="#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
     </li>
     <li><a href="CMA07-1-ExpansionOfFunctionsMN.html">Expanding Functions in Infinite Series</a></li>

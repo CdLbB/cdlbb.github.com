@@ -502,7 +502,7 @@ lie in each quadrant of the Argand diagram.\\(\vphantom{\\ 3\\}\\)<br>
 	     <li><a href="#6.31thenumberofrootsofanequationcontainedwithinacontour.">Counting the roots of an equation</a> </li>
           </ul>
        </li>
-	<li><a href="CMA06-3-ConnexionTwixtZeros.html#6.4Connexionbetweenthezerosofafunctionandthezerosofitsderivate.">Connexion between a Function&#8217;s Zeros  and its Derivate&#8217;s Zeros.</a></li>
+	<li><a href="CMA06-3-ConnexionTwixtZeros.html#6.4connexionbetweenthezerosofafunctionandthezerosofitsderivate.">Connexion between a Function&#8217;s Zeros  and its Derivate&#8217;s Zeros.</a></li>
         <li><a href="CMA06-3-ConnexionTwixtZeros.html#references.">References</a></li>
         <li><a href="CMA06-3-ConnexionTwixtZeros.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
