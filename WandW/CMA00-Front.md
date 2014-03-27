@@ -200,7 +200,7 @@ April, 2012.
     <li  class="current"><a href="CMA01-Complex.html#complexnumbers">Complex Numbers &nbsp;&nbsp;  <strong>(pp.&nbsp;3-10)</strong></a>
       <ol>
         <li>1.1 <a href="CMA01-Complex.html#rationalnumbers">Rational numbers</a></li>
-        <li>1.2 <a href="CMA01-Complex.html#dedekind">Dedekind's theory of irrational numbers</a></li>
+        <li>1.2 <a href="CMA01-Complex.html#dedekind">Dedekind&#8217;s theory of irrational numbers</a></li>
         <li>1.3 <a href="CMA01-Complex.html#complexnumberssection">Complex numbers</a></li>
         <li>1.4 <a href="CMA01-Complex.html#themodulusofacomplexnumber">The modulus of a complex number</a></li>
         <li>1.5 <a href="CMA01-Complex.html#thearganddiagram">The Argand diagram</a></li>
@@ -251,18 +251,27 @@ April, 2012.
      <li class="notdone"><a href="CMA05-1-AnalyticFunctions.html">The Fundamental Properties of Analytic&nbsp;Functions &nbsp;&nbsp;  <strong>(pp.&nbsp;82-110)</strong></a>
      <ol>
           <li>5.1 <a href="CMA05-1-AnalyticFunctions.html#5.1apropertyoftheelementaryfunctions.">A Property of Elementary Functions</a></li>
-	  <li>5.2 <a href="CMA05-2-CauchysTheorem.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy's Theorem on Contour Integrals</a></li>
+	  <li>5.2 <a href="CMA05-2-CauchysTheorem.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy&#8217;s Theorem on Contour Integrals</a></li>
 	  <li>5.3 <a href="CMA05-3-TaylorsTheorem.html#5.3analyticfunctionsrepresentedbyuniformlyconvergentseries.">Analytic Functions as Uniformly Convergent Series</a></li>
-	  <li>5.4 <a href="CMA05-3-TaylorsTheorem.html#5.4taylorstheorem.">Taylor's Theorem</a></li>
+	  <li>5.4 <a href="CMA05-3-TaylorsTheorem.html#5.4taylorstheorem.">Taylor&#8217;s Theorem</a></li>
 	  <li>5.5 <a href="CMA05-4-AnalyticContinuation.html#5.5theprocessofcontinuation.">The Process of Continuation</a></li>
-	  <li>5.6 <a href="CMA05-5-LaurentsTheorem.html#5.6laurentstheorem.">Laurent's Theorem</a></li>
+	  <li>5.6 <a href="CMA05-5-LaurentsTheorem.html#5.6laurentstheorem.">Laurent&#8217;s Theorem</a></li>
 	  <li>5.7 <a href="CMA05-6-ManyValuedFunctions.html#5.7many-valuedfunctions.">Many-valued Functions</a></li>
          <li><a href="CMA05-6-ManyValuedFunctions.html#references.">References</a>
          <li><a href="CMA05-6-ManyValuedFunctions.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
         </ol>
      </li>
-     <li><a href="CMA06-1-Residues.html">The Theory of Residues</a></li>
-    <li class="notdone"><a href="whereOwhere.html">The Expansion of Functions in Infinite&nbsp;Series</a></li>
+     <li><a href="CMA06-1-Residues.html">The Theory of Residues &nbsp;&nbsp;  <strong>(pp.&nbsp;111-124)</strong></a>
+     <ol>
+          <li>6.1 <a href="CMA06-1-Residues.html#6.1residues.">Residues</a></li>
+	  <li>6.2 <a href="CMA06-1-Residues.html#6.2theevaluationofdefiniteintegrals.">The Evaluation of Definite Integrals</a></li>
+	  <li>6.3 <a href="CMA06-2-CauchysIntegral.html#6.3cauchysintegral.">Cauchy&#8217;s Integral</a></li>
+	  <li>6.4 <a href="CMA06-3-ConnexionTwixtZeros.html#6.4connexionbetweenthezerosofafunctionandthezerosofitsderivate.">Connecting a Function&#8217;s Zeros  &amp; its Derivate&#8217;s Zeros</a></li>
+         <li><a href="CMA06-3-ConnexionTwixtZeros.html#references.">References</a>
+         <li><a href="CMA06-3-ConnexionTwixtZeros.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
+        </ol>
+     </li>
+    <li><a href="CMA07-1-ExpansionOfFunctions.html">The Expansion of Functions in Infinite&nbsp;Series</a></li>
     <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summable&nbsp;Series</a></li>
     <li class="notdone"><a href="whereOwhere.html">Fourier Series and Trigonometrical&nbsp;Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>

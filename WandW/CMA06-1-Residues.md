@@ -615,7 +615,7 @@ since \\(t^{-1} (1 - e^{-t}) \rightarrow 1\\) as \\(t \rightarrow 0.\\)]
           </ul>
        </li>
         <li><a href="CMA06-2-CauchysIntegral.html#6.3cauchysintegral.">Cauchy&#8217;s Integral</a></li>
-	<li><a href="CMA06-3-ConnexionTwixtZeros.html#6.4connexionbetweenthezerosofafunctionandthezerosofitsderivate.">Connexion between a Function&#8217;s Zeros  and its Derivate&#8217;s Zeros.</a></li>
+	<li><a href="CMA06-3-ConnexionTwixtZeros.html#6.4connexionbetweenthezerosofafunctionandthezerosofitsderivate.">Connexion between a Function&#8217;s Zeros  and its Derivate&#8217;s Zeros</a></li>
         <li><a href="CMA06-3-ConnexionTwixtZeros.html#references.">References</a></li>
         <li><a href="CMA06-3-ConnexionTwixtZeros.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
