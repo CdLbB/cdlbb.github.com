@@ -527,7 +527,7 @@ lie in each quadrant of the Argand diagram.\\(\vphantom{\\ 3\\}\\)<br>
         <li><a href="CMA06-3-ConnexionTwixtZerosMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
     </li>
-    <li><a href="CMA07-1-ExpansionOfFunctions">Expanding Functions in Infinite Series</a></li>
+    <li><a href="CMA07-1-ExpansionOfFunctionsMN.html">Expanding Functions in Infinite Series</a></li>
     <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
   </ul>
 </li>
@@ -577,7 +577,7 @@ lie in each quadrant of the Argand diagram.\\(\vphantom{\\ 3\\}\\)<br>
      <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
       <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
      <li class="more current"><a onClick="showIt('navcauchy');hideIt('navprocesses');"> you are here . . . </a></li>
-     <li class="notdone"><a href="CMA07-1-ExpansionOfFunctions">Expanding Functions in Infinite Series</a></li>
+     <li class="notdone"><a href="CMA07-1-ExpansionOfFunctionsMN.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>

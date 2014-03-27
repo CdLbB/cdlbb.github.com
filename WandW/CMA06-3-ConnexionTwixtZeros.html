@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="latexinput" content="mmd-cambridge-header"/>
+	<title>A Course of Modern Analysis-ConnexionTwixtZeros 6-3</title>
+	<meta name="subtitle" content="An introduction to the general theory of
+infinite processes and analytic functions;
+with an account of the principal
+transcendental functions."/>
+	<meta name="author" content="E.T. Whittaker and G.N. Watson"/>
+	<meta name="editor" content="Eric Nitardy"/>
+	<meta name="date" content="Mar 26, 2014"/>
+	<meta name="titlefile" content="mmd-WandW-title"/>
+	<meta name="copyrightfile" content="mmd-WandW-copyright"/>
+	<meta name="test" content="And this is a new key-value pair"/>
+	<meta name="latexmode" content="memoir"/>
+	<meta name="latexinput" content="mmd-cambridge-begin-doc"/>
+	<meta name="latexfooter" content="mmd-cambridge-footer"/>
+	<link type="text/css" rel="stylesheet" href="css/documentation.css"/>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+<script type="text/javascript" src="js/showhide.js"></script>
+<script type="text/javascript" src="js/mathjaxend.js"></script>
+</head>
+<body>
+
+<div id="header"><h1><a href="CMA00-Front.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
+<div id="content">
+<div class="contenttext">
+
+<h3 id="6.4connexionbetweenthenbspzerosofanbspfunctionandthenbspzerosofnbspitsnbspderivative.">6.4 Connexion between the&nbsp;zeros of a&nbsp;function and the&nbsp;zeros of&nbsp;its&nbsp;derivative.</h3>
+
+<p>Macdonald has shewn<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a> that <em>if <span class="math">\(f(z)\)</span> be a function of <span class="math">\(z\)</span> analytic throughout the interior of a single closed contour <span class="math">\(C\)</span>, defined
+by the equation <span class="math">\(\left| \,f(z)\, \right| = M\)</span>, where <span class="math">\(M\)</span> is a constant, then the number of zeros of <span class="math">\(f(z)\)</span> in this region exceeds the number of zeros of
+the derived function <span class="math">\(f'(z)\)</span> in the same region by unity.</em></p>
+
+<p>On <span class="math">\(C\)</span> let <span class="math">\(f(z) = M e^{i\theta}\)</span>; then at points on <span class="math">\(C\)</span>
+<span class="math">\[
+f'(z) = M e^{i\theta} i \frac{d \theta}{d z},
+\quad
+f''(z)
+=
+M e^{i\theta}
+\left\{
+  i \frac{ d^{2}\! \theta }{ d z^{2} }  -
+  \left(  \frac{d \theta}{d z} \right)^{2}
+\right\}.
+\]</span></p>
+
+<p>Hence, by <a href="CMA06-2-CauchysIntegral.html#6.31thenumberofrootsofanequationcontainedwithinacontour.">§6.31</a>, the excess of the number of zeros
+of <span class="math">\(f(z)\)</span> over the number of zeros of <span class="math">\(f'(z)\)</span>
+inside <span class="math">\(C\:\!\)</span><a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a> is
+<span class="math">\[
+\frac{1}{2\pi i}
+\int_{C} \frac{ f'(z) }{f(z)} \, dz
+-
+\frac{1}{2\pi i}
+\int_{C} \frac{ f''(z) }{ f'(z) } \, dz
+=
+-\frac{1}{2 \pi i}
+\int_{C} \left(
+  \left.
+    \frac{ d^{2}\! \theta }{ d z^{2} }
+  \right/
+  \frac{d\theta}{d z}
+  \right) \, dz.
+\]</span>
+Let <span class="math">\(s\)</span> be the arc of <span class="math">\(C\)</span> measured from a fixed point and let <span class="math">\(\psi\)</span>
+be the angle the tangent to <span class="math">\(C\)</span> makes with <span class="math">\(Ox\)</span>; then
+<span class="math">\[\begin{align*}
+-\frac{1}{2 \pi i}
+\int_{C} \left(
+  \left.
+    \frac{ d^{2}\! \theta }{ d z^{2} }
+  \right/
+  \frac{d\theta}{d z}
+  \right) \, dz
+  &=
+  - \frac{1}{2 \pi i}
+  \left[ \log \frac{d\theta}{d z} \right]_{C}
+  \\
+  &=
+  - \frac{1}{2 \pi i}
+  \left[
+    \log \frac{d\theta}{d s}
+    -
+    \log \frac{d z}{d s}
+  \right]_{C}
+  .
+\end{align*}\]</span>
+Now <span class="math">\(\log \dfrac{d \theta}{d s}\)</span> is purely real and its initial
+value is the same as its final value; and
+<span class="math">\(\log \dfrac{d z}{d s} = i \psi\)</span>; hence the excess of the number of
+zeros of <span class="math">\(f(z)\)</span> over the number of zeros of
+<span class="math">\(f'(z)\)</span> is the change in <span class="math">\(\left.\psi\middle/2\pi\right.\)</span> in describing the curve <span class="math">\(C\)</span>; and it is
+obvious<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a> that if <span class="math">\(C\)</span> is any
+ordinary curve, <span class="math">\(\psi\)</span> increases by <span class="math">\(2\pi\)</span> as the point of contact of
+the tangent describes the curve <span class="math">\(C\)</span>; this gives the required result.</p>
+
+<blockquote>
+<p><em>Example</em> 1. Deduce from Macdonald&#8217;s result the theorem that a
+ polynomial of degree <span class="math">\(n\)</span> has <span class="math">\(n\)</span> zeros.</p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 2. Deduce from Macdonald&#8217;s result that if a function <span class="math">\(f(z)\)</span>,
+ analytic for real values of <span class="math">\(z\)</span>, has all its coefficients real, and all
+ its zeros real and different, then between two consecutive zeros of
+ <span class="math">\(f(z)\)</span> there is one zero and one only of <span class="math">\(f'(z)\)</span>.</p>
+</blockquote>
+
+<h3 id="references.">REFERENCES.</h3>
+
+<dl>
+<dt><nbsp></dt>
+<dd>M. C. Jordan, <a href="https://archive.org/details/coursdanalysede00jordgoog"><em>Cours d&#8217;Analyse</em>, <strong>ii.</strong></a> (Paris, 1894), Ch. <strong>vi.</strong></dd>
+
+<dd>E. Goursat, <a href="https://archive.org/details/coursdanalysemat02gouruoft"><em>Cours d&#8217;Analyse</em></a> (Paris, 1911), Ch. <strong>xiv.</strong></dd>
+
+<dd>E. Lindelöf, <a href="http://www.gutenberg.org/ebooks/29781"><em>Le Calcul des Résidus</em></a> (Paris, 1905), Ch. <strong>ii.</strong></dd>
+</dl>
+<div id="exercises">
+
+<h3 id="miscellaneousexamples.">Miscellaneous Examples.</h3>
+
+<ol>
+<li><p>A function <span class="math">\(\phi(z)\)</span> is zero when <span class="math">\(z=0\)</span>, and is real when <span class="math">\(z\)</span> is real, and is analytic when <span class="math">\(\left| \,z\, \right| \leq 1\)</span>; if <span class="math">\(f(x,y)\)</span> is the coefficient of <span class="math">\(i\)</span> in <span class="math">\(\phi(x + iy)\)</span>, prove that if <span class="math">\(-1 < x < 1\)</span>, <span class="math">\[
+  \int_{0}^{2\pi}\!
+  \frac{x \sin\theta }{ 1 - 2x\cos\theta + x^{2}}\,
+  f(\cos\theta, \sin\theta)
+  \, d\theta
+  =
+  \pi \:\! \phi(x).
+  \]</span>
+ (Trinity, 1898.)</p></li>
+<li><p>By integrating <span class="math">\(\dfrac{e^{\pm ai\:\!z}}{e^{2\pi\:\! z}-1}\)</span> round a contour formed by the rectangle whose corners are <span class="math">\(0\)</span>, <span class="math">\(R\)</span>, <span class="math">\(R+i\)</span>, <span class="math">\(i\)</span> (the rectangle being indented at <span class="math">\(0\)</span> and <span class="math">\(i\)</span>) and making <span class="math">\(R\rightarrow\infty\)</span>, shew that
+<span class="math">\[ 
+  \int_{0}^{\infty}\!
+  \frac{ \sin ax }{e^{2 \pi \:\! x} - 1}
+  \, dx
+  =
+  \frac{1}{4}
+  \frac{ e^{a} + 1 }{ e^{a} - 1 }- 
+  \frac{1}{2a}.
+  \]</span>
+ (Legendre.)</p></li>
+<li><p>By integrating <span class="math">\(\log (-z) Q(z)\)</span> round the contour of
+ <a href="CMA06-2-CauchysIntegralMN.html#6.24evaluationofintegralsoftheform.">§6.24</a>, where <span class="math">\(Q(z)\)</span> is a rational function such
+ that <span class="math">\(z Q(z) \rightarrow 0\)</span> as <span class="math">\(\left| \,z\, \right| \rightarrow 0\)</span> and as
+ <span class="math">\(\left| \,z\, \right| \rightarrow \infty\)</span>, shew that if <span class="math">\(Q(z)\)</span> has no poles
+ on the positive part of the real axis,
+ <span class="math">\(\int_{0}^{\infty} Q(x) \, dx\)</span> is equal to minus
+ the sum of the residues of <span class="math">\(\log(-z) Q(z)\)</span> at the poles of
+ <span class="math">\(Q(z)\)</span>; where the imaginary part of <span class="math">\(\log(-z)\)</span> lies between <span class="math">\(\pm\pi\)</span>.</p></li>
+<li><p>Shew that, if <span class="math">\(a > 0, b > 0\)</span>,
+ <span class="math">\[
+  \int_{0}^{\infty}\!
+  e^{a \cos bx} \sin (a \sin bx) \frac{\, dx}{x}
+  =
+  \frac{1}{2} \pi \left( e^{a} - 1 \right).
+  \]</span></p></li>
+<li><p>Shew that
+ <span class="math">\[
+  \int_{0}^{\frac{1}{2}\pi}\!
+  \frac{a \sin 2x}{1 - 2a \cos 2x + a^{2}}
+  x \, dx
+ \, = \;
+  \left\{\begin{array}{@{}ll@{}}
+  \,\frac{1}{4} \pi \log (1+a), & (-1 < a < 1) \\
+  \\
+  \,\frac{1}{4} \pi \log (1+a^{-1}), & (a^{2} > 1). \\
+\end{array}\right.
+  \]</span>
+(Cauchy.)</p></li>
+<li><p>Shew that
+ <span class="math">\[
+  \int_{0}^{\infty}\!
+  \frac{\sin \phi_{1}x}{x}
+  \frac{\sin \phi_{2}x}{x}
+  \cdots
+  \frac{\sin \phi_{n}x}{x}
+  \cos a_{1} x
+  \cdots
+  \cos a_{m}\:\! x
+  \frac{ \sin ax }{x}
+  \, dx
+  =
+  \frac{\pi}{2} \phi_{1} \phi_{2} \cdots \phi_{n},
+  \]</span>
+ if <span class="math">\(\phi_{1}, \phi_{2}, \ldots \phi_{n}\)</span>, <span class="math">\(a_{1}, a_{2}, \ldots a_{m}\)</span> be real and <span class="math">\(a\)</span> be positive and <span class="math">\[  a >  \left| \,\phi_{1}\, \right| + \left| \,\phi_{2}\, \right|  +\cdots + \left| \,\phi_{n}\, \right|+ \left| \,a_{1}\, \right| + \cdots  + \left| \,a_{m}\, \right|. \]</span>
+ (Stormer, <a href="https://archive.org/details/actamathematica19upps"><em>Acta Math.</em>, <strong>xix.</strong> (1885)</a>, pp. 341&#8211;350.) </p></li>
+<li><p>If a point <span class="math">\(z\)</span> describes a circle <span class="math">\(C\)</span> of centre <span class="math">\(a\)</span>, and if
+ <span class="math">\(f(z)\)</span> be analytic throughout <span class="math">\(C\)</span> and its interior except at a
+ number of poles inside <span class="math">\(C\)</span>, then the point <span class="math">\(u=f(z)\)</span> will
+ describe a closed curve <span class="math">\(\gamma\)</span> in the <span class="math">\(u\)</span>-plane.
+ Shew that if to each element of <span class="math">\(\gamma\)</span> be attributed
+ a mass proportional to the corresponding element of <span class="math">\(C\)</span>, the centre of
+ gravity of <span class="math">\(\gamma\)</span> is the
+ point <span class="math">\(r\)</span>, where <span class="math">\(r\)</span> is the sum of the residues of
+ <span class="math">\(\dfrac{f(z)}{z-a}\)</span> at its poles in the interior of <span class="math">\(C\)</span>.<span class="math">\(\vphantom{\\ 3\\}\)</span><br>
+(Amigues, <a href="http://www.numdam.org/numdam-bin/browse?id=NAM_1893_3_12_"><em>Nouv. Ann. de Math.</em> (3), <strong>xii.</strong> (1893)</a>, pp. 142&#8211;148.)</p></li>
+<li><p>Shew that
+ <span class="math">\[
+  \int_{-\infty}^{\infty}\!
+  \frac{\, dx}{ (x^{2}+b^{2}) (x^{2}+a^{2})^{2} }
+  =
+  \frac{\pi (2a+b)}{ 2a^{3}b(a+b)^{2}}.
+  \]</span></p></li>
+<li><p>Shew that
+ <span class="math">\[
+  \int_{0}^{\infty}\!
+  \frac{\, dx}{(a+bx^{2})^{n}}
+  =
+  \frac{\pi}{ 2^{n} b^{\left.1\middle/2\right.} }
+  \frac{1 \cdot 3 \cdots (2n-3)}{1 \cdot 2 \cdots (n-1)\vphantom{b^2}}
+  \frac{1}{ a^{n \:\! -\:\!\left.1\middle/2\right.} }.
+  \]</span></p></li>
+<li><p>If <span class="math">\(F_{n}(z)= \prod\limits_{m=1}^{n-1} \prod\limits_{p=1}^{n-1} (1-z^{mp})\)</span>, shew that the series
+ <span class="math">\[
+  f(z)
+  = - \sum_{n=2}^{\infty}
+  \frac{F_{n}(zn^{-1})}{ (z^{n}n^{-n} -1) n^{n-1} }
+  \]</span>
+ is an analytic function when <span class="math">\(z\)</span> is not a root of any of the equations
+ <span class="math">\(z^{n} = n^{n}\)</span>; and that the sum of the residues of <span class="math">\(f(z)\)</span> contained in the ring-shaped space included between two circles whose centres are at the origin, one having a small radius and the other having a radius between <span class="math">\(n\)</span> and <span class="math">\(n + 1\)</span>, is equal to the number of prime numbers less than <span class="math">\(n + 1\)</span>.<span class="math">\(\vphantom{\\ 3\\}\)</span><br>(Laurent, <a href="http://www.numdam.org/numdam-bin/browse?id=NAM_1899_3_18_"><em>Nouv. Ann. de Math.</em> (3), <strong>xviii.</strong> (1899)</a>, pp.
+ 234&#8211;241.)</p></li>
+<li><p>If <span class="math">\(A\)</span> and <span class="math">\(B\)</span> represent on the Argand diagram two given roots (real or imaginary) of the equation <span class="math">\(f(z) = 0\)</span> of degree <span class="math">\(n\)</span>, with real or imaginary coefficients, shew that there is at least one root of the equation <span class="math">\(f'(z) = 0\)</span> within a circle whose centre is the middle point of <span class="math">\(AB\)</span> and whose radius is <span class="math">\(\frac{1}{2} AB \cot \dfrac{\pi}{n}\)</span>.<span class="math">\(\vphantom{\\ 3\\}\)</span><br>
+(Grace, <a href="https://archive.org/details/proceedingscamb13socigoog"><em>Proc. Camb. Phil. Soc.</em>, <strong>xi.</strong> (1902)</a>, pp. 352&#8211;357.)</p></li>
+<li><p>Shew that, if <span class="math">\(0<\nu<1\)</span>,
+ <span class="math">\[
+  \frac{e^{2\pi\:\! i \nu x}}{1 - e^{2\pi\:\! i x}}
+  =
+  \frac{1}{2\pi i}
+  \lim_{n\rightarrow\infty}
+  \sum_{k=-n}^{n} \frac{e^{2k\:\!\nu\pi\:\! i}}{k-x}.
+  \]</span>
+ [Consider
+ <span class="math">\(\displaystyle
+  \int \frac{e^{(2\nu-1)\:\! z \pi\:\! i}}{\sin \pi z}
+  \frac{\, dz}{z-x}
+  \)</span>
+ round a circle of radius <span class="math">\(n+\frac{1}{2}\)</span>; and make <span class="math">\(n\rightarrow\infty\)</span>.]<span class="math">\(\vphantom{\\ 3\\}\)</span><br>
+ (Kronecker, <a href="http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0105"><em>Journal für Math.</em>, cv. (1889)</a>, pp. 157&#8211;159, 345&#8211;354.)</p></li>
+<li><p>Shew that, if <span class="math">\(m > 0\)</span>, then
+ <span class="math">\[\begin{align*}
+&  \int_{0}^{\infty}\!
+\frac{\sin^{n} mt}{t^{\:\!n}} \, dt    \\    =
+&\frac{\pi m^{n-1}}{2^{n} (n-1)!}
+\left(
+  n^{n-1}    -
+  \frac{n}{1} (n-2)^{n-1}     +
+  \frac{n(n-1)}{2} (n-4)^{n-1}     -
+  \frac{n(n-1)(n-2)}{3!} (n-6)^{n-1}      +
+  \cdots
+\right).
+  \end{align*}\]</span>
+ Discuss the discontinuity of the integral at <span class="math">\(m = 0\)</span>.</p></li>
+<li><p>If <span class="math">\(A + B + C + \cdots = 0\)</span> and <span class="math">\(a\)</span>, <span class="math">\(b\)</span>, <span class="math">\(c, \ldots\)</span> are positive, shew that
+ <span class="math">\[
+  \int_{0}^{\infty}\!
+  \frac{A \cos ax + B \cos bx + \cdots + K \cos kx}{x}
+  \, dx
+  =
+  -A \log a  -B \log b  - \cdots  -K \log k.
+  \]</span>
+(Wolstenholme.)</p></li>
+<li><p>By considering
+ <span class="math">\( \displaystyle
+  \int \frac{e^{x\:\! (k+ti)}}{k+t\:\! i} \, dt
+  \)</span>
+ taken round a rectangle indented at the origin, shew
+ that, if <span class="math">\(k > 0\)</span>,
+ <span class="math">\[
+  i \lim_{\rho\rightarrow\infty}
+  \int_{-\rho}^{\rho}\!
+  \frac{e^{x\:\! (k+ti)}}{k+t i} \, dt
+  =
+  \pi i  +  \lim_{\rho\rightarrow\infty}  P \int_{-\rho}^{\rho}\! \frac{e^{\:\! x t i}}{t} \, dt,
+  \]</span>
+ and hence deduce, by using the contour of
+ <a href="CMA06-1-Residues.html#6.222example2">§6.222 example 2</a>, or its reflexion in the real axis (according as <span class="math">\(x \geq 0\)</span> or <span class="math">\(x < 0\)</span>), that
+ <span class="math">\[
+  \lim_{\rho\rightarrow\infty}
+  \frac{1}{\pi}
+  \int_{-\rho}^{\rho}\!
+  \frac{e^{x\:\! (k+ti)}}{k+ti} \, dt
+  =
+  2,\, , 1,\, \textrm{or } 0,
+  \]</span>
+ according as <span class="math">\(x>0\)</span>, <span class="math">\(x = 0\)</span>, or <span class="math">\(x < 0\)</span>.<br>
+ [This integral is known as Cauchy&#8217;s discontinuous factor.]</p></li>
+<li><p>Shew that, if <span class="math">\(\,0 < a < 2\)</span>, <span class="math">\(b > 0\)</span>, <span class="math">\(r > 0\)</span>, then
+ <span class="math">\[
+  \int_{0}^{\infty}\!
+  x^{a-1}
+  \sin (\tfrac{1}{2} a\pi - bx )
+  \frac{r \, dx}{x^{2} + r^{2}}
+  =
+  \frac{1}{2} \pi r^{\:\! a-1} e^{-br}.
+  \]</span></p></li>
+<li><p>Let <span class="math">\(t>0\)</span> and let
+ <span class="math">\( \displaystyle
+  \sum_{n=-\infty}^{\infty}
+  e^{-n^{2} \pi\:\! t}
+  =
+  \psi(t).
+  \)</span><br>
+By considering
+ <span class="math">\( \displaystyle
+  \int \! \frac{e^{-z^{2} \pi\:\! t}}{e^{2\pi\:\! i z} - 1} \, dz
+  \)</span>
+ round a rectangle whose corners are
+ <span class="math">\(\pm (N+\frac{1}{2}) \pm i\)</span>, where <span class="math">\(N\)</span> is an integer,
+ and making <span class="math">\(N \rightarrow \infty\)</span>, shew that
+ <span class="math">\[
+  \psi(t)
+  =
+  \int_{-\infty - i}^{\infty - i}
+  \frac{e^{-z^{2} \pi\:\! t}}{e^{2\pi\:\! i z} - 1} \, dz  -
+  \int_{-\infty + i}^{\infty + i}
+  \frac{e^{-z^{2} \pi\:\! t}}{e^{2\pi\:\! i z} - 1} \, dz.
+  \]</span>
+By expanding these integrands in powers of
+ <span class="math">\(e^{-2\pi\:\! i z}, e^{2\pi\:\! i z}\)</span>
+ respectively
+ and integrating term-by-term, deduce from <a href="CMA06-1-Residues.html#6.22example3">§6.22 example 3</a> that
+ <span class="math">\[
+  \psi(t)
+  =
+  \frac{1}{ \sqrt{\pi t} }
+  \psi(1/t)
+  \int_{-\infty}^{\infty}\! e^{-x^{2}} \, dx.
+  \]</span>
+Hence, by putting <span class="math">\(t = 1\)</span> shew that
+ <span class="math">\[
+  \psi(t) = t^{-\frac{1}{2}} \psi(\left.1\middle/t\right.).
+  \]</span>
+(This result is due to Poisson, <a href="http://gallica.bnf.fr/ark:/12148/bpt6k433675h.image"><em>Journal de l&#8217;Ecole polytechnique</em>, <strong>xii</strong>.
+ (cahier <strong>xix</strong>), (1823)</a>, p. 420; see also Jacobi, <a href="http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0036"><em>Journal für Math.</em>,
+ <strong>xxxvi.</strong> (1848)</a>, p. 109 [<a href="https://archive.org/details/gesammelwerk02jacorich"><em>Ges. Werke</em>, <strong>ii.</strong></a> (1882), p. 188].)</p></li>
+<li><p>Shew that, if <span class="math">\(t>0\)</span>,
+ <span class="math">\[
+  \sum_{-\infty}^{\infty}
+  e^{-n^{2} \pi t - 2 n \pi\:\! a t}
+  =
+  t^{-\frac{1}{2}}
+  e^{\pi\:\! a^{2} t}
+  \left\{
+1    +
+2
+\sum_{n=1}^{\infty}
+e^{-n^{2} \left.\pi\middle/t\right.} \cos 2n\pi a
+  \right\}.
+  \]</span>
+(Poisson, <a href="http://gallica.bnf.fr/ark:/12148/bpt6k3221x.image.langEN."><em>Mem. de l&#8217;Acad. des Sci.</em> <strong>vi.</strong> (1823)</a>, p. 592; Jacobi, <a href="http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0003"><em>Journal für Math.</em>, <strong>iii.</strong> (1828)</a>, pp. 403&#8211;404 [<a href="https://archive.org/details/gesammelwerke01jacorich"><em>Ges. Werke</em>, <strong>i.</strong></a> (1881), pp.
+ 264&#8211;265]; and Landsberg, <a href="http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0111"><em>Journal für Math.</em> <strong>cxi.</strong> (1893)</a>, pp. 234&#8211;253; see also <a href="whereOwhere.html">§21.51</a>.)</p></li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="footer">
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a><br><span style="font-size:63%;">Based on a transcription by </span><a href="https://github.com/bwignall/Whittaker-and-Watson"><span style="font-size:74%;">Brian Wignall.</span></a></h3>
+<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+</div>
+
+<div id="navcauchy" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navfront');">FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
+  <ul>
+    <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
+    <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
+    <li><a href="CMA06-1-Residues.html#thetheoryofresiduesbrapplicationtotheevaluationofdefinitenbspintegrals">The Theory of Residues</a>
+      <ul>
+        <li><a href="CMA06-1-Residues.html#6.1residues.">Residues</a>
+        <li><a href="CMA06-1-Residues.html#6.2theevaluationofdefiniteintegrals.">The Evaluation of Definite Integrals</a></li>
+        <li><a href="#6.3cauchysintegral.">Cauchy&#8217;s Integral</a></li>
+    <li class="current"><a href="CMA06-3-ConnexionTwixtZeros.html#6.4Connexionbetweenthezerosofafunctionandthezerosofitsderivate.">Connexion between a Function&#8217;s Zeros  and its Derivate&#8217;s Zeros.</a></li>
+        <li class="current"><a href="CMA06-3-ConnexionTwixtZeros.html#references.">References</a></li>
+        <li class="current"><a href="CMA06-3-ConnexionTwixtZeros.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
+      </ul>
+    </li>
+    <li><a href="CMA07-1-ExpansionOfFunctions.html">Expanding Functions in Infinite Series</a></li>
+    <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a> 
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfront" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a>FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-Front.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-Front.html#preface">Preface</a></li>
+    <li><a href="CMA00-Front.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navfront');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navprocesses" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
+<li class="part"><a>PROCESSES OF ANALYSIS</a>
+  <ul >
+    <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
+    <li><a href="CMA02-1-Limits.html">The Theory of Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
+     <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
+      <li><a href="CMA06-1-Residues.html">The Theory of Residues</a></li>
+     <li class="more current"><a onClick="showIt('navcauchy');hideIt('navprocesses');"> you are here . . . </a></li>
+     <li><a href="CMA07-1-ExpansionOfFunctions.html">Expanding Functions in Infinite Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navtranscendental" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navtranscendental');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
+  <ul>
+    <li class="notdone"><a href="whereOwhere.html">The Gamma Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Zeta Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Legendre Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Bessel Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Mathieu Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
+  </ul>
+  </li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navback" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a>BACKMATTER</a>
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+    <li ><a href="whereOwhere.html">Authors Quoted</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfixedleft" class="fixedBleft">
+<p><a href="CMA06-2-CauchysIntegral.html">&#x25C0;</a></p>
+</div>
+
+<div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
+<p><a onClick="hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');showIt('navcauchy');" style="float: left;">&#x25A4;</a> <a href="CMA07-1-ExpansionOfFunctions.html" style="float: right;">&#x25B6;</a></p>
+</div>
+
+<div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;" >
+<p><a onClick="hideIt('navcauchy');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA07-1-ExpansionOfFunctions.html" style="float: right;">&#x25B6;  </a></p>
+</div>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p><a href="https://archive.org/details/proceedingslond20socigoog"><em>Proc. London Math. Soc.</em> <strong>xxix.</strong> (1898)</a>, pp. 576, 577. <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:2">
+<p><span class="math">\(f'(z)\)</span> does not vanish on <span class="math">\(C\)</span> unless <span class="math">\(C\)</span> has a node or other singular point; for, if <span class="math">\(f = \phi + i\psi\)</span>, where <span class="math">\(\phi\)</span> and <span class="math">\(\psi\)</span> are real, since <span class="math">\(i \dfrac{\partial f}{\partial x} = \dfrac{\partial f}{\partial y}\)</span>, it follows that if <span class="math">\(f'(z) = 0\)</span> at any point, then <span class="math">\(\dfrac{\partial \phi}{\partial x},  \dfrac{\partial \phi}{\partial y},  \dfrac{\partial \psi}{\partial x}, \dfrac{\partial \psi}{\partial y}\)</span> all vanish; and these are sufficient conditions for a singular point on <span class="math">\(\phi^{2} + \psi^{2} = M^{2}\)</span>. <a href="#fnref:2" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:3">
+<p>For a formal proof, see <a href="http://babel.hathitrust.org/cgi/pt?id=njp.32101044953782;view=1up;seq=7"><em>Proc. London Math. Soc.</em> (2), <strong>xv.</strong> (1916)</a>, pp. 227&#8211;242. <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+
+</body>
+</html>

@@ -382,14 +382,7 @@ rational function.
 \frac{\pi}{ 16 a^{3/2} b^{5/2}}.
 \\]
 
->*Example* 3. By integrating \\(\int e^{-\lambda z^{2}} \, d z\\) round a
-parallelogram whose corners are \\(-R\\), \\(R\\), \\(R + ai\\), \\(-R + ai\\) and making \\(R \rightarrow \infty\\), shew that, if \\(\lambda > 0\\), then
-  \\[
-  \int_{-\infty}^{\infty}\! e^{-\lambda x^{2}} \cos (2\lambda a x)
-\, d x = e^{-\lambda a^{2}} \int_{-\infty}^{\infty}\! e^{-\lambda
-x^{2}} \, d x = 2 \lambda^{-\frac{1}{2}} e^{-\lambda a^{2}}
-\int_{0}^{\infty}\! e^{-x^{2}} \, d x.
-  \\]
+>######*Example* 3. By integrating \\(\int e^{-\lambda z^{2}} \, d z\\) round a parallelogram whose corners are \\(-R\\), \\(R\\), \\(R + ai\\), \\(-R + ai\\) and making \\(R \rightarrow \infty\\), shew that, if \\(\lambda > 0\\), then  \\[  \int_{-\infty}^{\infty}\! e^{-\lambda x^{2}} \cos (2\lambda a x) \, d x = e^{-\lambda a^{2}}\int_{-\infty}^{\infty}\! e^{-\lambda x^{2}} \, d x = 2 \lambda^{-\frac{1}{2}} e^{-\lambda a^{2}}\int_{0}^{\infty}\! e^{-x^{2}} \, d x.  \\] [6.22example3]######
 
 
 ##### 6.221 Certain infinite integrals involving sines and cosines. #####
@@ -677,7 +670,7 @@ since \\(t^{-1} (1 - e^{-t}) \rightarrow 1\\) as \\(t \rightarrow 0.\\)]
         <li><a href="CMA06-3-ConnexionTwixtZerosMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
     </li>
-    <li><a href="CMA07-1-ExpansionOfFunctions">Expanding Functions in Infinite Series</a></li>
+    <li><a href="CMA07-1-ExpansionOfFunctionsMN.html">Expanding Functions in Infinite Series</a></li>
     <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
   </ul>
 </li>
@@ -727,7 +720,7 @@ since \\(t^{-1} (1 - e^{-t}) \rightarrow 1\\) as \\(t \rightarrow 0.\\)]
      <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
       <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
      <li class="more current"><a onClick="showIt('navcauchy');hideIt('navprocesses');"> you are here . . . </a></li>
-     <li class="notdone"><a href="CMA07-1-ExpansionOfFunctions">Expanding Functions in Infinite Series</a></li>
+     <li class="notdone"><a href="CMA07-1-ExpansionOfFunctionsMN.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
