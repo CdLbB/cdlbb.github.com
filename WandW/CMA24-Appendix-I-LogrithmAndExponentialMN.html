@@ -3,14 +3,14 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="latexinput" content="mmd-cambridge-header"/>
-	<title>A Course of Modern Analysis-404 page</title>
+	<title>A Course of Modern Analysis-Appendix-I-LogrithmAndExponential</title>
 	<meta name="subtitle" content="An introduction to the general theory of
 infinite processes and analytic functions;
 with an account of the principal
 transcendental functions."/>
 	<meta name="author" content="E.T. Whittaker and G.N. Watson"/>
 	<meta name="editor" content="Eric Nitardy"/>
-	<meta name="date" content="May 29, 2012"/>
+	<meta name="date" content="Mar 27, 2014"/>
 	<meta name="titlefile" content="mmd-WandW-title"/>
 	<meta name="copyrightfile" content="mmd-WandW-copyright"/>
 	<meta name="test" content="And this is a new key-value pair"/>
@@ -18,17 +18,425 @@ transcendental functions."/>
 	<meta name="latexinput" content="mmd-cambridge-begin-doc"/>
 	<meta name="latexfooter" content="mmd-cambridge-footer"/>
 	<link type="text/css" rel="stylesheet" href="css/documentation.css"/>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+<script type="text/javascript" src="js/showhide.js"></script>
+<script type="text/javascript" src="js/mathjaxend.js"></script>
 </head>
 <body>
 
-<div id="header"><h1><a href="CMA00-Front.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
+<div id="header"><h1><a href="CMA00-FrontMN.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
 <div id="content">
 <div class="contenttext">
 
-<h2 id="pagenotfound">Page not Found</h2>
+<h1 id="appendix">Appendix</h1>
 
-<p>This portion of the book is not yet finished. The book is growing gradually. Try the link again in a couple months.</p>
+<h2 id="theelementarytranscendentalfunctions">The Elementary Transcendental Functions</h2>
+
+<h3 id="a.1oncertainresultsassumedinchaptersi--iv.">A.1 On certain results assumed in Chapters <strong>i&#8211;iv.</strong></h3>
+
+<p>It was convenient, in the first four chapters of this work, to assume some of the
+properties of the elementary transcendental functions, namely the exponential, logarithmic and circular functions; it was also convenient to make use of a number of results which the reader would be prepared to accept intuitively by reason of his familiarity with the geometrical representation of complex numbers by means of points in a plane. </p>
+
+<p>To take two instances, (i) it was assumed (<a href="CMA02-4-ProductsMN.html#infiniteproducts">&#167;2.7</a>) that lim <span class="math">\((\exp z) = \exp (\lim z)\)</span>, and (ii) the geometrical concept of an angle in the Argand diagram made it appear plausible that the argument of a complex number was a many-valued function, possessing the property that any two of its values differed by an integer multiple of <span class="math">\(2\pi\)</span>. </p>
+
 </div>
+<div class="marginnotes"  id="mn:1,+0"  style="margin-top: +0em; margin-bottom: +0em;"><a class="marginmark">&#91;1&#93;</a>It is not our object to give any account of the foundations of geometry in this work. They are investigated by various writers, such as Whitehead, <a href="https://archive.org/details/axiomsofprojecti00whituoft"><em>Axioms of Projective Geometry</em></a> (Cambridge Math. Tracts, no. 4, 1906) and Mathews, <a href="https://archive.org/details/projectivegeomet00mathuoft"><em>Projective Geometry</em></a> (London, 1914). A perusal of Chapters <strong>i</strong>, <strong>xx</strong>, <strong>xxii</strong> and <strong>xxv</strong> of the latter work will convince the reader that it is even more laborious to develop geometry in a logical manner, from the minimum number of axioms, than it is to evolve the theory of the circular functions by purely analytical methods. A complete account of the elements both of arithmetic and of geometry has been given by Whitehead and Russell, <a href="http://onlinebooks.library.upenn.edu/webbin/book/lookupid?key=olbp32608"><em>Principia Mathematica</em></a> (1910&#8211;1913). <a onClick="hideIt('mn:1,+0')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>The assumption of results of the first type was clearly illogical; it was also illogical to base arithmetical results on geometrical reasoning. For, in order to put the foundations of geometry on a satisfactory basis, it is not only desirable to employ the axioms of arithmetic, but it is also necessary to utilise a further set of axioms of a more definitely geometrical character, concerning properties of points, straight lines and planes.<a class="marginmark" onClick="toggleHide('mn:1,+0');">&#91;1&#93;</a> And, further, the arithmetical theory of the logarithm of a complex number appears to be a necessary preliminary to the development of a logical theory of angles. </p>
+
+<p>Apart from this, it seems unsatisfactory to the aesthetic taste of the mathematician to employ one branch of mathematics as an essential constituent in the structure of another; particularly when the former has, to some extent, a material basis whereas the latter is of a purely abstract nature.<a class="marginmark" onClick="toggleHide('mn:2,-1');">&#91;2&#93;</a></p>
+</div>
+<div class="marginnotes"  id="mn:2,-1"  style="margin-top: -1em; margin-bottom: -1em;"><a class="marginmark">&#91;2&#93;</a>Cf. Merz, <a href="https://archive.org/details/historyofeuropea02merziala"><em>History of European Thought in the Nineteenth Century</em>, <strong>ii.</strong></a> (London, 1903), p. 631 (note 2) and p. 707 (note 1), where a letter from Weierstrass to Schwarz is quoted. See also Sylvester, <a href="http://www.biodiversitylibrary.org/item/121146#page/7/mode/1up"><em>Phil. Mag.</em> (5), <strong>ii.</strong> (1876)</a>, p. 291 [<a href="https://archive.org/details/TheCollectedMathematicalPapersOfJamesJosephSylvesterVolumeIii"><em>Math. Papers</em>, <strong>iii.</strong></a> (1909), p. 50]. <a onClick="hideIt('mn:2,-1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>The reasons for pursuing the somewhat illogical and unaesthetic procedure, adopted in the earlier part of this work, were, firstly, that the properties of the elementary transcendental functions were required gradually in the course of <a href="CMA02-1-LimitsMN.html">Chapter <strong>ii</strong></a>, and it seemed undesirable that the course of a general development of the various infinite processes should be frequently interrupted in order to prove theorems (with which the reader was, in all probability, already familiar) concerning a single particular function; and, secondly, that (in connexion with the assumption of results based on geometrical considerations)
+a purely arithmetical mode of development of Chapters <strong>i&#8211;iv</strong>, deriving no help or illustrations from geometrical processes, would have very greatly increased the difficulties of the reader unacquainted with the methods and the spirit of the analyst. </p>
+
+<h4 id="a.11summaryoftheappendix.">A.11 Summary of the Appendix.</h4>
+
+<p>The general course of the Appendix is as follows: </p>
+
+<p>In <a href="#a.2theexponentialfunction.">&#167;&#167;A.2&#8211;A.22</a>, the exponential function is defined by a power series. From this definition, combined with results contained in <a href="CMA02-1-LimitsMN.html">Chapter <strong>ii</strong></a>, are derived the elementary
+properties (apart from the periodic properties) of this function. It is then easy to deduce corresponding properties of logarithms of positive numbers (<a href="#a.3logarithmsofpositivenumbers.">&#167;&#167;A.3&#8211;A.33</a>). </p>
+
+<p>Next, the sine and cosine are defined by power series from which follows the connexion of these functions with the exponential function. A brief sketch of the manner in which the formulae of elementary trigonometry may be derived is then given (<a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.4thedefinitionofthesineandcosine.">&#167;&#167;A.4&#8211;A.42</a>). </p>
+
+<p>The results thus obtained render it possible to discuss the periodicity of the exponential and circular functions by <em>purely arithmetical methods</em> (<a href="CMA24-Appendix-II-TrigonometricalFunctions.html#a.5theperiodicityoftheexponentialfunction.">&#167;A.5</a>, <a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.51thesolutionoftheequation">&#167;A.51</a>). </p>
+
+<p>In <a href="CMA24-Appendix-II-TrigonometricalFunctions.html#a.52thesolutionofapairoftrigonometricalequations.">&#167;&#167;A.52&#8211;A.522</a>, we consider, substantially, the continuity of the inverse circular functions. When these functions have been investigated, the theory of logarithms of complex numbers (<a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.6logarithmsofcomplexnumbers.">&#167;A.6</a>) presents no further difficulty. </p>
+
+<p>Finally, in <a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.7theanalyticaldefinitionofanangle.">&#167;A.7</a>, it is shewn that an angle, defined in a purely analytical manner, possesses properties which are consistent with the ordinary concept of an angle, based on our experience of the material world. </p>
+</div>
+<div class="marginnotes"  id="mn:3,+0"  style="margin-top: +0em; margin-bottom: +0em;"><a class="marginmark">&#91;3&#93;</a>In writing the Appendix, frequent reference has been made to the article on Algebraic Analysis in the <a href="https://archive.org/details/n3encyklopdieder02akaduoft"><em>Encyklop&auml;die der Math. Wissenschaften</em></a> by Pringsheim and Faber, to the same article translated and revised by Molk for the <a href="http://gallica.bnf.fr/ark:/12148/bpt6k202581m"><em>Encyclop&eacute;die des Sciences Math.</em></a>, and to Tannery, <a href="http://gallica.bnf.fr/ark:/12148/bpt6k995905"><em>Introduction &agrave; la Th&eacute;orie des Fonctions d&#8217;une Variable</em></a> (Paris, 1904). <a onClick="hideIt('mn:3,+0')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>It will be obvious to the reader that we do not profess to give a complete account of the elementary transcendental functions, but we have confined ourselves to a brief sketch of the logical foundations of the theory<a class="marginmark" onClick="toggleHide('mn:3,+0');">&#91;3&#93;</a>. The developments have been given by writers of various treatises, such as Hobson, <a href="https://archive.org/details/treatiseonplanet00hobs"><em>Plane Trigonometry</em></a>; Hardy, <a href="http://www.gutenberg.org/ebooks/38769"><em>A course of Pure Mathematics</em></a>; and Bromwich, <a href="https://archive.org/details/introductiontoth00bromuoft"><em>Theory of Infinite Series</em></a>. </p>
+
+<h4 id="a.12alogicalorderfordevelopmentoftheelementsofanalysis.">A.12 A logical order for development of the elements of Analysis.</h4>
+</div>
+<div class="marginnotes"  id="mn:4,+5"  style="margin-top: +5em; margin-bottom: +5em;"><a class="marginmark">&#91;4&#93;</a>The properties of the argument (or phase) of a complex number are not required in the text before <a href="CMA05-1-AnalyticFunctionsMN.html">Chapter <strong>v</strong></a>. <a onClick="hideIt('mn:4,+5')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>The reader will find it instructive to read Chapters <strong>i&#8211;iv</strong> and the Appendix a second time in the following order: </p>
+
+<ul>
+<li><a href="CMA01-Complex.html">Chapter <strong>i</strong></a> (omitting all of <a href="CMA01-ComplexMN.html#thearganddiagram">&#167;l.5</a> except the first two paragraphs).<a class="marginmark" onClick="toggleHide('mn:4,+5');">&#91;4&#93;</a></li>
+<li><a href="CMA02-1-Limits.html">Chapter <strong>ii</strong></a> to the end of <a href="CMA02-3-MoreSeriesMN.html#convergenceofseriesderivedfromapower-series">&#167;2.61</a> (omitting the examples in &#167;&#167;2.31&#8211;2.61).</li>
+<li><a href="CMA03-1-ContinuousFns.html">Chapter <strong>iii</strong></a> to the end of <a href="CMA03-2-Uniformity.html#aconditionduetoweierstrassforuniformconvergence.">&#167;3.34</a> and <a href="CMA03-3-Heine-BorelMN.html#theconceptofuniformity.">&#167;&#167;3.5&#8211;3.73</a>.</li>
+<li>The Appendix, <a href="#a.2theexponentialfunction.">&#167;&#167;A.2&#8211;A.6</a> (omitting <a href="#a.32differentiationofthelogarithm.">&#167;A32</a>, <a href="#a.33theexpansionoflog.">&#167;A.33</a>).</li>
+<li>Chapter <strong>ii</strong>, the examples of <a href="CMA02-2-SeriesMN.html#dirichlet">&#167;&#167;2.31&#8211;2.61</a>.</li>
+<li>Chapter <strong>iii</strong>, <a href="CMA03-2-UniformityMN.html#uniformityofconvergenceofinfiniteproducts.">&#167;&#167;3.341&#8211;3.4</a>.</li>
+<li><a href="CMA04-1-Integration.html">Chapter <strong>iv</strong></a>, inserting <a href="#a.32differentiationofthelogarithm.">&#167;A.32</a>, <a href="#a.33theexpansionoflog.">&#167;A.33</a>, <a href="CMA24-#a.7theanalyticaldefinitionofanangle.">&#167;A.7</a> after <a href="CMA04-1-IntegrationMN.html#4.13ageneraltheoremonintegration.">&#167;4.13</a>.</li>
+<li>Chapter <strong>ii</strong>, <a href="CMA02-4-ProductsMN.html#infiniteproducts">&#167;&#167;2.7&#8211;2.82</a>.</li>
+</ul>
+</div>
+<div class="marginnotes"  id="mn:5,-1"  style="margin-top: -1em; margin-bottom: -1em;"><a class="marginmark">&#91;5&#93;</a>E.g. &#8216;a point&#8217; for &#8216;an ordered number-pair&#8217;, &#8216;the circle of unit radius with centre at the origin&#8217; for &#8216;the set of ordered number-pairs <span class="math">\((x, y)\)</span> which satisfy the condition <span class="math">\(x^2 + y^2 =1\)</span>&#8217;, &#8216;the points of a straight line&#8217; for &#8216;the set of ordered number-pairs <span class="math">\((x, y)\)</span> which satisfy a relation of the type <span class="math">\(Ax + By + C= 0\)</span>&#8217;, and so on. <a onClick="hideIt('mn:5,-1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>The reader could thus be convinced that (in that order) it is possible to elaborate a purely arithmetical development of the subject, in which the graphic and familiar language of geometry is to be regarded as merely conventional.<a class="marginmark" onClick="toggleHide('mn:5,-1');">&#91;5&#93;</a> </p>
+
+<h3 id="a.2theexponentialfunction.">A.2 The exponential function, <span class="math">\(\exp z\)</span>.</h3>
+</div>
+<div class="marginnotes"  id="mn:6,+3"  style="margin-top: +3em; margin-bottom: +3em;"><a class="marginmark">&#91;6&#93;</a>It was formerly customary to define <span class="math">\(\exp z\)</span> as <span class="math">\(\lim\limits_{n \rightarrow \infty} \left( 1 + \dfrac{z}{n} \right)^n\)</span>, cf. Cauchy, <a href="https://archive.org/details/coursdanalysede00caucgoog"><em>Cours d&#8217;Analyse</em>, <strong>i</strong></a>, p. 167. Cauchy (<em>ibid.</em> pp. 168, 309) also derived the properties of the function from the series, but his investigation when <span class="math">\(z\)</span> is not rational is incomplete. See also Schl&ouml;milch, <a href="https://archive.org/details/handbuchderalgeb00schl"><em>Handbuch der alg. Analysis</em></a> (1889), pp. 29, 178, 246. Hardy has pointed out (<a href="http://books.google.com/books?id=o7YKAAAAYAAJ"><em>Math. Gazette</em>, <strong>iii.</strong></a> p. 284) that the limit definition has many disadvantages. <a onClick="hideIt('mn:6,+3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>The exponential function, of a complex variable <span class="math">\(z\)</span>, is defined by the series<a class="marginmark" onClick="toggleHide('mn:6,+3');">&#91;6&#93;</a>
+<span class="math">\[\exp z = 1+ \frac{z}{1!}+\frac{z^2}{2!}+\frac{z^3}{3!}+ \cdots = 1+\sum_{n=1}^\infty \frac{z^n}{n!}.\]</span>
+This series converges absolutely for all values of <span class="math">\(z\)</span> (real and complex) by D&#8217;Alembert&#8217;s ratio test (<a href="CMA02-2-SeriesMN.html#ratiotest">&#167;2.36</a>) since <span class="math">\(\lim\limits_{n\rightarrow \infty} \left|\, (\left.z\middle/n\right.) \,\right| = 0 < 1\)</span>; so the definition is valid for all values of <span class="math">\(z\)</span>. </p>
+
+<p>Further, the series converges uniformly throughout any bounded domain of values of <span class="math">\(z\)</span>; for, if the domain be such that <span class="math">\(\left|\, z \,\right| \leq  R\)</span> when <span class="math">\(z\)</span> is in the domain, then
+<span class="math">\[\left|\,(\left.z^n\middle/n!\right.)\,\right| \leq \left.R^{\:\!n}\middle/n!\right.,\]</span>
+and the uniformity of the convergence is a consequence of the test of Weierstrass (<a href="CMA03-2-UniformityMN.html#aconditionduetoweierstrassforuniformconvergence.">&#167;3.34</a>), by reason of the convergence of the series <span class="math">\(1+\sum\limits_{n=1}^\infty \dfrac{R^{\:\!n}}{n!}\)</span>, in which the terms are independent of <span class="math">\(z\)</span>. </p>
+
+<p>Moreover, since, for any fixed value of <span class="math">\(n\)</span>, <span class="math">\(\left.z^n\middle/n!\right.\)</span> is a continuous function of <span class="math">\(z\)</span>, it follows from <a href="CMA03-2-UniformityMN.html#connexionofdiscontinuitywithnon-uniformconvergence.">&#167;3.32</a> that the exponential function is continuous for all values of <span class="math">\(z\)</span>; and hence
+(cf. <a href="CMA03-1-ContinuousFnsMN.html#continuityoffunctionsofrealvariables">&#167;3.2</a>), if <span class="math">\(z\)</span> be a variable which tends to the limit <span class="math">\(\zeta\)</span>, we have
+<span class="math">\[\lim_{z \rightarrow \zeta} \exp z= \exp \zeta.\]</span> </p>
+
+<h4 id="a.21theaddition-theoremfortheexponentialfunctionanditsconsequences.">A.21 The addition-theorem for the exponential function, and its consequences.</h4>
+</div>
+<div class="marginnotes"  id="mn:7,+2"  style="margin-top: +2em; margin-bottom: +2em;"><a class="marginmark">&#91;7&#93;</a>The reader will at once verify that the general term in the product series is <span class="math">\[\left.\left(z_1^n+ {n \choose 1} z_1^{n-1}z_2+{n \choose 2}z_1^{n-2}z_2^2+ \cdots +z_2^n\right)\middle/n!\right.\]</span> <span class="math">\[ =\left. (z_1 + z_2)^n\middle/n!\right.\]</span><a onClick="hideIt('mn:7,+2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>From Cauchy&#8217;s theorem on multiplication of absolutely convergent series (<a href="CMA02-3-MoreSeriesMNMN.html#cauchymultiplication">&#167;2.53</a>), it
+follows that<a class="marginmark" onClick="toggleHide('mn:7,+2');">&#91;7&#93;</a>
+<span class="math">\[\begin{align*}
+(\exp z_1)(\exp z_2) &= \left(1+ \frac{z_1}{1!}+\frac{z_1^2}{2!}+ \cdots \right)\left(1+ \frac{z_2}{1!}+\frac{z_2^2}{2!}+ \cdots \right) \\
+&=1+ \frac{z_1+z_2}{1!}+\frac{z_1^2+2z_1z_2+z_2^2}{2!}+ \cdots \\ \\
+&=\exp(z_1 + z_2),
+\end{align*}\]</span>
+so that <span class="math">\(\exp (z_1 + z_2 )\)</span> can be expressed in terms of exponential functions of <span class="math">\(z_1\)</span> and of <span class="math">\(z_2\)</span> by the formula
+<span class="math">\[\exp(z_1 + z_2) = (\exp z_1)(\exp z_2). \]</span>
+This result is known as the <em>addition-theorem</em> for the exponential function. From it, we see by induction that
+<span class="math">\[(\exp z_1) (\exp z_2 ) \cdots (\exp z_n ) = \exp (z_1 + z_2 + \cdots + z_n), \]</span>
+and, in particular,
+<span class="math">\[\{\exp z\} \{\exp (-z)\} = \exp 0 = 1.\]</span> </p>
+
+<p>From the last equation, it is apparent that there is no value of <span class="math">\(z\)</span> for which <span class="math">\(\exp z= 0\)</span>; for, if there were such a value of <span class="math">\(z\)</span>, since <span class="math">\(\exp(-z)\)</span> would exist for this value of <span class="math">\(z\)</span>, we should have <span class="math">\(0=1\)</span>. </p>
+
+<p>It also follows that, when <span class="math">\(x\)</span> is real, <span class="math">\(\exp x > 0\)</span>; for, from the series definition, <span class="math">\(\exp x \geq 1\)</span>
+when <span class="math">\(x \geq 0\)</span>; and, when <span class="math">\(x \leq 0\)</span>, <span class="math">\(\exp x = \left.1\middle/\exp( - x)\right. >  0\)</span>. </p>
+
+<p>Further, <span class="math">\(\exp x\)</span> is an <em>increasing</em> function of the real variable <span class="math">\(x\)</span>; for, if <span class="math">\(k > 0\)</span>,
+<span class="math">\[\exp (x + k) - \exp x = \{\exp x \} \{\exp k - 1\} > 0,\]</span>
+because <span class="math">\(\exp x > 0\)</span> and <span class="math">\(\exp k > 1\)</span>. </p>
+
+<p>Also, since
+<span class="math">\[\left.\{\exp h-1\}\middle/h\right. = 1+\left(\left.h\middle/2!\right.\right) + \left(\left.h^2\middle/3!\right.\right) + \cdots ,\]</span>
+and the series on the right is seen (by the methods of <a href="#a.2theexponentialfunction.">&#167;A.2</a>) to be continuous for all values of <span class="math">\(h\)</span>, we have
+<span class="math">\[\lim_{h \rightarrow 0}\, \left.\{\exp h - 1\}\middle/h\right. = 1, \]</span>
+and so
+<span class="math">\[\frac{d \exp z}{dz} = \lim_{h \rightarrow 0}\frac{\exp(z+h) - h}{h} = \exp z.\]</span></p>
+
+<h4 id="a.22variouspropertiesoftheexponentialfunction.">A.22 Various properties of the exponential function.</h4>
+
+<p>Returning to the formula <span class="math">\((\exp z_1) (\exp z_2 ) \cdots (\exp z_n ) = \exp (z_1 + z_2 + \cdots + z_n)\)</span>, we see that, when <span class="math">\(n\)</span> is a positive integer,
+<span class="math">\[(\exp z)^n = \exp(nz),\]</span>
+and
+<span class="math">\[(\exp z)^{-n} = \left.1\middle/(\exp z)^n \right. = \left.1\middle/\exp (nz) \right. = \exp ( - nz).\]</span>
+In particular, taking <span class="math">\(z =1\)</span> and writing <span class="math">\(e\)</span> in place of <span class="math">\(\exp 1 = 2.71828 \dots\)</span>, we see that, when <span class="math">\(m\)</span> is an integer, positive or negative,
+<span class="math">\[e^m = \exp m = 1 + \left(\left.m^\vphantom{1}\middle/1!\right.\right) + \left(\left.m^2\middle/2!\right.\right) + \cdots .\]</span></p>
+
+<p>Also, if <span class="math">\(\mu\)</span> be any rational number (<span class="math">\(\mu=\left.p\middle/q\right.\)</span>, where <span class="math">\(p\)</span> and <span class="math">\(q\)</span> are integers, <span class="math">\(q\)</span> being positive)
+<span class="math">\[(\exp \mu)^q = \exp \mu q = \exp p = e^p , \]</span>
+so that the <span class="math">\(q\)</span>th. power of <span class="math">\(\exp \mu\)</span> is <span class="math">\(e^p\)</span>; that is to say, <span class="math">\(\exp \mu\)</span> is a value of <span class="math">\(e^{\:\!\left.p\middle/q\right.} = e^\mu\)</span>, and it is obviously (<a href="#a.21theaddition-theoremfortheexponentialfunctionanditsconsequences.">&#167;A.21</a>) the real positive value. </p>
+
+<p>If <span class="math">\(x\)</span> be an irrational-real number, (defined by a section in which <span class="math">\(\alpha_1\)</span> and <span class="math">\(\alpha_2\)</span> are typical members of the <span class="math">\(L\)</span>-class and the <span class="math">\(R\)</span>-class respectively), the <em>irrational</em> power <span class="math">\(e^x\)</span> is most
+simply <em>defined</em> as <span class="math">\(\exp x\)</span>; we thus have, for all real values of <span class="math">\(x\)</span>, rational and irrational,
+<span class="math">\[e^x = 1+\frac{x}{1!}+\frac{x^2}{2!}+ \cdots , \]</span>
+an equation first given by Newton.<a class="marginmark" onClick="toggleHide('mn:8,-6');">&#91;8&#93;</a> </p>
+</div>
+<div class="marginnotes"  id="mn:8,-6"  style="margin-top: -6em; margin-bottom: -6em;"><a class="marginmark">&#91;8&#93;</a><a href="http://www.e-rara.ch/zut/content/pageview/637329"><em>De Analysi per aequat. num. term. inf.</em></a> (written before 1669, but not published till 1711); it was also given both by Newton and by Leibniz in letters to Oldenburg in 1676; it was first published by Wallis in 1685 in his <a href="http://www.e-rara.ch/doi/10.3931/e-rara-8842"><em>A Treatise of Algebra</em></a>, p. 343. The equation when <span class="math">\(x\)</span> is irrational, was explicitly stated by Schl&ouml;milch, <a href="https://archive.org/details/handbuchderalgeb00schl"><em>Handbuch der alg. Analysis</em></a> (1889), p. 182, <a onClick="hideIt('mn:8,-6')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>It is, therefore, legitimate to write <span class="math">\(e^x\)</span> for <span class="math">\(\exp x\)</span> when <span class="math">\(x\)</span> is real, and it is customary to write <span class="math">\(e^z\)</span> for <span class="math">\(\exp z\)</span> when <span class="math">\(z\)</span> is complex. The function <span class="math">\(e^z\)</span> (which, of course, must not be
+regarded as being a power of <span class="math">\(e\)</span>), thus defined, is subject to the ordinary laws of indices, viz.
+<span class="math">\[e^{z} e^{\zeta} = e^{z+\zeta}, \quad e^{-z} = \left. 1\middle/ e^{z} \right. .\]</span></p>
+
+<blockquote>
+<p>[<strong>Note.</strong> Tannery, <a href="http://gallica.bnf.fr/ark:/12148/bpt6k99501q"><em>Lecons d&#8217;Algebre et d&#8217;Analyse,</em> <strong>i.</strong></a> (1906), p. 45, practically defines <span class="math">\(e^x\)</span>,.
+when <span class="math">\(x\)</span> is irrational, as the <em>only</em> number <span class="math">\(X\)</span> such that <span class="math">\(e^{\alpha_1} \leq X \leq e^{a_2}\)</span>, for every <span class="math">\(\alpha_1\)</span> and <span class="math">\(\alpha_2\)</span>.
+From the definition we have given it is easily seen that such a <em>unique</em> number exists. For <span class="math">\(\exp x \,(= X)\)</span> satisfies the inequality, and if <span class="math">\(X' \,(\neq X)\)</span> also did so, then
+<span class="math">\[\exp \alpha_2 - \exp \alpha_1 = e^{\alpha_2}-e^{\alpha_1} \geq \left|\, X'-X \,\right|,\]</span>
+so that, since the exponential function is. continuous, <span class="math">\(\alpha_2 -\alpha_1\)</span> cannot be chosen arbitrarily small, and so <span class="math">\((\alpha_1 , \alpha_2 )\)</span> does not define a section.] </p>
+</blockquote>
+
+<h3 id="a.3logarithmsofpositivenumbers.">A.3 Logarithms of positive numbers.<a class="marginmark" onClick="toggleHide('mn:9,-0');">&#91;9&#93;</a></h3>
+</div>
+<div class="marginnotes"  id="mn:9,-0"  style="margin-top: -0em; margin-bottom: -0em;"><a class="marginmark">&#91;9&#93;</a>Many mathematicians define the Logarithm by the integral formula given in <a href="#a.32differentiationofthelogarithm.">&#167;A.32</a>. The reader should consult a memoir by Hurwitz (<a href="http://www.digizeitschriften.de/dms/toc/?PPN=PPN235181684_0070"><em>Math. Ann.</em> <strong>lxx.</strong> (1911)</a>, pp. 33&#8211;47) on the foundations of the theory of the logarithm. <a onClick="hideIt('mn:9,-0')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>It has been seen (<a href="#a.2theexponentialfunction.">&#167;A.2</a>, <a href="#a.21theaddition-theoremfortheexponentialfunctionanditsconsequences.">&#167;A.21</a>) that, when <span class="math">\(x\)</span> is real, <span class="math">\(\exp x\)</span> is a positive continuous increasing function of <span class="math">\(x\)</span>, and obviously <span class="math">\(\exp x \rightarrow +\infty\)</span> as <span class="math">\(x \rightarrow +\infty\)</span>, while
+<span class="math">\[\exp x =\left.1\middle/\exp(-x)\right. \rightarrow -\infty.\]</span> </p>
+
+<p>If, then, <span class="math">\(a\)</span> be any positive number, it follows from <a href="CMA03-3-Heine-BorelMN.html#arealfunctionofarealvariablecontinuousinaclosedintervalattainsallvaluesbetweenitsupperandlowerbounds.">&#167;3.63</a> that the equation in <span class="math">\(x\)</span>,
+<span class="math">\[\exp x = a,\]</span>
+has one real root and only one. This root (which is, of course, a function of <span class="math">\(a\)</span>) will be written <span class="math">\(\log_e a\)</span> or simply <span class="math">\(\log a\)</span>;<a class="marginmark" onClick="toggleHide('mn:10,-3');">&#91;10&#93;</a> it is called the <em>Logarithm of the positive number <span class="math">\(a\)</span></em>. </p>
+</div>
+<div class="marginnotes"  id="mn:10,-3"  style="margin-top: -3em; margin-bottom: -3em;"><a class="marginmark">&#91;10&#93;</a>This is in agreement with the notation of most text-books, in which <span class="math">\(\log\)</span> denotes the principal value (see <a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.6logarithmsofcomplexnumbers.">&#167;A.6</a>) of the logarithm of a complex number. <a onClick="hideIt('mn:10,-3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>Since a one-one correspondence has been established between <span class="math">\(x\)</span> and <span class="math">\(a\)</span>, and since <span class="math">\(a\)</span> is an increasing function of <span class="math">\(x\)</span>, <span class="math">\(x\)</span> must be an increasing function of <span class="math">\(a\)</span>; that is to say, the Logarithm is an increasing function. </p>
+
+<blockquote>
+<p><em>Example</em>. Deduce from <a href="#a.21theaddition-theoremfortheexponentialfunctionanditsconsequences.">&#167;A.21</a> that <span class="math">\(\log a + \log b = \log ab\)</span>. </p>
+</blockquote>
+
+<h4 id="a.31thecontinuityofthelogarithm.">A.31 The continuity of the Logarithm.</h4>
+
+<p>It will now be shewn that, when <span class="math">\(a\)</span> is positive, <span class="math">\(\log a\)</span> is a continuous function of <span class="math">\(a\)</span>. </p>
+
+<p>Let <span class="math">\[\log a= x, \quad  \log (a + h)=x + k,\]</span>
+so that
+<span class="math">\[e^x = a,\quad e^{x + k} = a + h, \quad  1 + (\left.h\middle/ a\right.) = e^k .\]</span> </p>
+
+<p>First suppose that <span class="math">\(h > 0\)</span>, so that <span class="math">\(k > 0\)</span>, and then
+<span class="math">\[1 + (\left.h\middle/ a\right.) = l + k+\frac{1}{2}k^2 + \cdots > 1+ k,\]</span>
+and so <span class="math">\[0 < k <\left.h\middle/ a\right. ,\]</span>
+that is to say <span class="math">\[0 < \log (a + h) - \log a < \left.h\middle/ a\right. . \]</span></p>
+
+<p>Hence, <span class="math">\(h\)</span> being positive, <span class="math">\(\log (a + h) - \log a\)</span> can be made arbitrarily small by taking <span class="math">\(h\)</span> sufficiently small. </p>
+
+<p>Next, suppose that <span class="math">\(h < 0\)</span>, so that <span class="math">\(k < 0\)</span>, and then <span class="math">\(\left.a\middle/(a + h)\right. = e^{-k}\)</span>.
+Hence (taking <span class="math">\(0 < -h < \frac{1}{2}a\)</span>, as is obviously permissible) we get
+<span class="math">\[\left.a\middle/(a + h)\right.  = 1 + (-k) + \frac{1}{2}k^2 + \cdots > 1 - k, \]</span>
+and so
+<span class="math">\[-k < -1 + \left.a\middle/(a + h)\right. = -\left.h\middle/(a + h)\right. <-2\left.h\middle/a\right. .\]</span> </p>
+
+<p>Therefore, whether <span class="math">\(h\)</span> be positive or negative, if <span class="math">\(\epsilon\)</span> be an arbitrary positive number and if <span class="math">\(\left|\,h\,\right|\)</span> be taken less than both <span class="math">\(\frac{1}{2}a\)</span> and <span class="math">\(\frac{1}{2}a\epsilon\)</span>, we have
+<span class="math">\[\left|\, \log (a + h) - \log a \,\right| < \epsilon, \]</span>
+and so the condition for continuity (<a href="CMA03-1-ContinuousFnsMN.html#continuityoffunctionsofrealvariables">&#167;3.2</a>) is satisfied. </p>
+
+<h4 id="a.32differentiationofthelogarithm.">A.32 Differentiation of the Logarithm.</h4>
+
+<p>Retaining the notation of <a href="#a.31thecontinuityofthelogarithm.">&#167;A.31</a>, we see, from results there proved, that, if <span class="math">\(h \rightarrow 0\)</span>
+(<span class="math">\(a\)</span> being fixed), then also <span class="math">\(k \rightarrow 0\)</span>. Therefore, when <span class="math">\(a > 0\)</span>,
+<span class="math">\[\frac{d \log a}{da} = \lim_{k \rightarrow 0} \frac{k}{e^{x+k} -e^x} = \frac{1}{e^k} = a. \]</span></p>
+
+<p>Since <span class="math">\(\log 1 = 0\)</span>, we have, by <a href="CMA04-1-IntegrationMN.html#4.13example3">&#167;4.13 example 3</a>,
+<span class="math">\[\log a = \int _1^a \! t^{-1} \,dt.\]</span></p>
+
+<h4 id="a.33theexpansionoflog.">A.33 The expansion of <span class="math">\(\:\!\log (1 + a)\)</span> in powers of <span class="math">\(a\)</span>.</h4>
+
+<p>From <a href="#a.32differentiationofthelogarithm.">&#167;A.32</a> we have
+<span class="math">\[\begin{align*}
+\log(1+a) &= \int _0^a \! (1+ t)^{-1} \,dt \\
+&=\int _0^a \! \{1-t+t^2- \cdots +(-1)^{n-1}t^{n-1}+(-1)^n t^n (1+t)^{-1} \}\,dt \\
+&=a-\frac{1}{2}a^2+\frac{1}{3}t^3- \cdots +(-1)^{n-1}\frac{1}{n}a^n +R_n, 
+\end{align*}\]</span>
+where <span class="math">\[R_n = (-1)^n \int_0^a \! t^n (1+t)^{-1}\,dt.\]</span> </p>
+
+<p>Now, if <span class="math">\(-1 < a < 1\)</span>, we have
+<span class="math">\[\begin{align*}
+\left|\,R_n\,\right|&\leq \int_0^{\left|\,a\,\right|} \! t^n (1-\left|\,a\,\right|)^{-1}dt \\
+&= \left|\,a\,\right|^{n+1}\{(n+1)(1-\left|\,a\,\right|)\}^{-1} \\ \\
+& \rightarrow 0\, \text{ as } \, n \rightarrow \infty .
+\end{align*}\]</span></p>
+</div>
+<div class="marginnotes"  id="mn:11,+1"  style="margin-top: +1em; margin-bottom: +1em;"><a class="marginmark">&#91;11&#93;</a>This method of obtaining the Logarithmic expansion is, in effect, due to Wallis, <a href="http://rstl.royalsocietypublishing.org/content/3/33-44.toc"><em>Phil. Trans.</em> <strong>iii.</strong> (1668)</a>, p. 754. <a onClick="hideIt('mn:11,+1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>Hence, when <span class="math">\(-1 < a < 1\)</span>, <span class="math">\(\log(1 + a)\)</span> can be expanded into the convergent series<a class="marginmark" onClick="toggleHide('mn:11,+1');">&#91;11&#93;</a>
+<span class="math">\[\log(1-a) = a-\frac{1}{2}a^2+\frac{1}{3}t^3- \cdots = \sum_{n=1}^\infty (-1)^{n-1} \left.a^n\middle/n\right. .\]</span>
+If <span class="math">\(a = +1\)</span>,
+<span class="math">\[\left|\,R_n\,\right|=\int_0^1 \! t^n (1+t)^{-1} dt < \int_0^1 \! t^n \,dt =(n+1)^{-1} \rightarrow 0\, \text{ as } \, n \rightarrow \infty, \]</span>
+so the expansion is valid when <span class="math">\(a= + 1\)</span>; it is not valid when <span class="math">\(a = -1\)</span>. </p>
+
+<blockquote>
+<p><em>Example</em>. Shew that <span class="math">\(\lim\limits_{n \rightarrow \infty} \left(1 + \dfrac{1}{n}\right)^n =e\)</span>. </p>
+
+<p>[We have <span class="math">\(\displaystyle \lim_{n \rightarrow \infty} n \log\left(1 + \dfrac{1}{n}\right) = \lim_{n \rightarrow \infty} \left(1-\frac{1}{2n}+\frac{1}{3n^2}- \cdots \right) = 1,\)</span>
+and the result required follows from the result of <a href="#a.2theexponentialfunction.">&#167;A.2</a> that <span class="math">\(\lim\limits_{z \rightarrow \zeta}  e^z = e^\zeta\)</span>.] </p>
+</blockquote>
+</div>
+</div>
+
+<div id="footer">
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
+<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+</div>
+
+<div id="navfront" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a>FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-FrontMN.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-FrontMN.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-FrontMN.html#preface">Preface</a></li>
+    <li><a href="CMA00-FrontMN.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a>
+    <ul >
+       <li><a onClick="showIt('navback');hideIt('navfront');">Appendix</a> 
+<ul>
+    <li class="more current"><a onClick="showIt('navback');hideIt('navfront');"> you are here . . . </a></li>
+  </ul>
+</li>
+       <li><a href="whereOwhere.html">Authors Quoted</a></li>
+    </ul>
+</li>
+</ul>
+</div>
+
+<div id="navprocesses" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
+<li class="part"><a>PROCESSES OF ANALYSIS</a>
+  <ul >
+    <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
+    <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
+     <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
+     <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a>
+    <ul >
+       <li><a onClick="showIt('navback');hideIt('navprocesses');">Appendix</a> 
+<ul>
+    <li class="more current"><a onClick="showIt('navback');hideIt('navprocesses');"> you are here . . . </a></li>
+  </ul>
+</li>
+       <li><a href="whereOwhere.html">Authors Quoted</a></li>
+    </ul>
+</li>
+</ul>
+</div>
+
+<div id="navtranscendental" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a></li>
+<li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
+  <ul>
+    <li class="notdone"><a href="whereOwhere.html">The Gamma Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Zeta Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Legendre Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Bessel Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Mathieu Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lam&eacute;&#8217;s Equation</a></li> 
+  </ul>
+  </li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a>
+    <ul >
+       <li><a onClick="showIt('navback');hideIt('navtranscendental');">Appendix</a> 
+<ul>
+    <li class="more current"><a onClick="showIt('navback');hideIt('navtranscendental');"> you are here . . . </a></li>
+  </ul>
+</li>
+       <li><a href="whereOwhere.html">Authors Quoted</a></li>
+    </ul>
+</li>
+</ul>
+</div>
+
+<div id="navback" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a></li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a>BACKMATTER</a>
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponentialMN.html">Appendix</a>
+  <ul>
+    <li  class="current"><a href="#a.1oncertainresultsassumedinchaptersi--iv.">Certain results assumed in chapters <strong>i–iv</strong></a>
+  <ul>
+    <li><a href="#a.11summaryoftheappendix.">Summary of the Appendix</a></li>
+    <li><a href="#a.12alogicalorderfordevelopmentoftheelementsofanalysis.">A logical order for development of Analysis</a></li>
+  </ul>
+</li>
+    <li  class="current"><a href="#a.2theexponentialfunction.">The exponential function, <span class="math">\(\exp z\)</span></a>
+  <ul>
+    <li><a href="#a.21theaddition-theoremfortheexponentialfunctionanditsconsequences.">An addition-theorem for the exponential</a></li>
+    <li><a href="#a.22variouspropertiesoftheexponentialfunction.">Properties of the exponential function</a></li>
+  </ul>
+</li>
+    <li  class="current"><a href="#a.3logarithmsofpositivenumbers.">Logarithms of positive numbers.</a>
+  <ul>
+    <li><a href="#a.31thecontinuityofthelogarithm.">The continuity of the logarithm</a></li>
+    <li><a href="#a.32differentiationofthelogarithm.">Differentiation of the logarithm</a></li>
+    <li><a href="#a.33theexpansionoflog.">The expansion of <span class="math">\(\:\!\log (1 + a)\)</span></span></a></li>
+  </ul>
+</li>
+    <li><a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.4thedefinitionofthesineandcosine.)">The definition of the sine and cosine</a></li>
+    <li><a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.5theperiodicityoftheexponentialfunction.">The periodicity of the exponential function</a></li>
+    <li><a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.6logarithmsofcomplexnumbers.">Logarithms of complex numbers</a></li>
+    <li><a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.7theanalyticaldefinitionofanangle.">The analytical definition of an angle</a></li>
+  </ul>
+</li>
+    <li ><a href="whereOwhere.html">Authors Quoted</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfixedleft" class="fixedBleft">
+<p><a href="whereOwhere.html">&#x25C0;</a></p>
+</div>
+
+<div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
+<p><a onClick="showIt('navback');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html" style="float: right;">&#x25B6;</a></p>
+</div>
+
+<div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
+<p><a onClick="hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html" style="float: right;">&#x25B6;  </a></p>
 </div>
 
 </body>

@@ -48,6 +48,10 @@ All found
 1. [One suggestion (for visualizing complex functions) (made by Lie and Weierstrass) is to use a doubly-manifold system of lines in the quadruply-manifold totality of lines in three-dimensional space.](CMA03-1-ContinuousFns.html#thedependenceofonecomplexnumberonanother)
 2. [Cauchy shewed that if a real function f(x), of a real variable x, satisfies the precise definition (of continuity), then it also satisfies what we have called the popular definition; …. But the converse is not true, as was shewn by Darboux.](CMA03-1-ContinuousFns.html#continuityoffunctionsofrealvariables) 
 
+*Appendix* 
+
+1. In footnote to " ... an equation first given by Newton."  it says the series definition of \\(e^x\\)  [was also given both by Newton and by Leibniz in letters to Oldenburg in 1676.](CMA24-Appendix-I-LogrithmAndExponential.html#a.22variouspropertiesoftheexponentialfunction.) 
+
 W&W have given references for some examples, but many of these references are almost useless, like (Cauchy.). There are some, like (Trinity, 1904.), (Peterhouse, 1906.), or  (Math. Trip., 1906.), which appear to reference specific college exams. I have found no on-line source for these, however.
 
 ### Unresolved Examples ###
