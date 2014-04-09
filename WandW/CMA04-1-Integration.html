@@ -34,12 +34,12 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
 <h3 id="4.1theconceptofintegration.">4.1 The Concept of Integration.</h3>
 
 <p>The reader is doubtless familiar with the idea of integration as the
-operation inverse to that of differentiation; and he is equally well aware that the integral (in this sense) of a given elementary function is not always expressible in terms of elementary functions. In order therefore to give a definition of the integral of a function which shall be always available, even though it is not practicable to obtain a function of which the given function is the differential coefficient, we have recourse to the result that the integral<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a> of <span class="math">\(f(x)\)</span> between the limits <span class="math">\(a\)</span> and <span class="math">\(b\)</span> is the area bounded by the curve <span class="math">\(y =f(x)\)</span>, the axis of <span class="math">\(x\)</span> and the ordinates <span class="math">\(x = a,\, x = b\)</span>. We proceed to frame a formal definition of integration with this idea as the starting-point. </p>
+operation inverse to that of differentiation and is equally well aware that the integral (in this sense) of a given elementary function is not always expressible in terms of elementary functions. In order therefore to give a definition of the integral of a function which shall be always available, even though it is not practicable to obtain a function of which the given function is the differential coefficient, we have recourse to the result that the integral<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a> of <span class="math">\(f(x)\)</span> between the limits <span class="math">\(a\)</span> and <span class="math">\(b\)</span> is the area bounded by the curve <span class="math">\(y =f(x)\)</span>, the axis of <span class="math">\(x\)</span> and the ordinates <span class="math">\(x = a,\, x = b\)</span>. We proceed to frame a formal definition of integration with this idea as the starting-point. </p>
 
 <h4 id="4.11upperandlowerintegrals.">4.11 Upper and lower integrals.<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a></h4>
 
 <p>Let <span class="math">\(f(x)\)</span> be a bounded function of <span class="math">\(x\)</span> in the range <span class="math">\([a, b]\)</span>. Divide the interval at the points <span class="math">\(x_1, x_2 , \dots , x_{n-1}\)</span> <span class="math">\((a \leq x_1 \leq x_2 \cdots \leq x_{n-1}  \leq b)\)</span>. Let <span class="math">\(U\)</span>, <span class="math">\(L\)</span> be
-the bounds of <span class="math">\(f(x)\)</span> in the range <span class="math">\([a, b]\)</span>, and let <span class="math">\(U_r,\)</span> <span class="math">\(L_r\)</span> be the bounds of <span class="math">\(f(x)\)</span> in the range <span class="math">\([x_{r-1}, x_r]\)</span>, where <span class="math">\(x_0 = a, x_n = b\)</span>. </p>
+the bounds of <span class="math">\(f(x)\)</span> in the range <span class="math">\([a, b]\)</span>, and let <span class="math">\(U_r,\)</span> <span class="math">\(L_r\)</span> be the bounds of <span class="math">\(f(x)\)</span> in the range <span class="math">\([x_{r-1}, x_r]\)</span>, where <span class="math">\(x_0 = a\)</span>, <span class="math">\(x_n = b\)</span>. </p>
 
 <p>Consider the sums<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a>
 <span class="math">\[S_n=U_1(x_1-a)+U_2(x_2-x_1)+ \cdots + U_n(b-x_{n-1}),\]</span>
@@ -65,24 +65,26 @@ be the end points of the smaller intervals; let <span class="math">\(U_r'\)</spa
 <span class="math">\(x_1, x_2, \dots , x_{n-1}\)</span> and also the subdivision by a different set of points
 <span class="math">\(x_1', x_2', \dots , x_{n'-1}'\)</span>. Let <span class="math">\(S_{n'} ' ,\, s_{n'} '\)</span> be the sums for the second kind of subdivision which correspond to the sums <span class="math">\(S_n ,\, s_n\)</span> for the first kind of subdivision. Take <em>all</em> the points <span class="math">\(x_1, x_2, \dots , x_{n-1};\;x_1', x_2', \dots , x_{n'-1}'\)</span> as the points <span class="math">\(y_1 , y_2 , \dots , y_m\)</span>. </p>
 
-<p>Then <span class="math">\[S_n \geq T_m \geq t_m \geq s_n ,\]</span> and<br/>
-<span class="math">\[S_{n"} ' \geq T_m \geq t_m  \geq s_{n"} ' .\]</span></p>
+<p>Then <span class="math">\[\begin{align*}
+&S_n \geq T_m \geq t_m \geq s_n ,&\\ \\
+\text{ and }\qquad&S_{n'} ' \geq T_m \geq t_m  \geq s_{n'} ' .
+\end{align*}\]</span></p>
 
 <p>Hence every expression of the type <span class="math">\(S_n\)</span> <em>exceeds</em> (or at least equals) every
 expression of the type <span class="math">\(s'_{n'}\)</span>; and therefore <span class="math">\(S\)</span> cannot be less than <span class="math">\(s\)</span>. </p>
 
 <p>[For it <span class="math">\(S < s\)</span> and <span class="math">\(s — S = 2\eta\)</span> we could find an <span class="math">\(S_n\)</span> and an <span class="math">\(s'_{n'}\)</span> such that <span class="math">\(S_n — S < \eta\)</span>, <span class="math">\(s — s'_{n'} < \eta\)</span> and so <span class="math">\(s'_{n'} > S_n\)</span>, which is impossible.] </p>
 
-<p>The bound <span class="math">\(S\)</span> is called the <em>upper</em> integral of <span class="math">\(f(x)\)</span>, and is written <span class="math">\( \displaystyle \overset{\;_—}{\int_{a}^{b}} f(x) \,dx\)</span>;
-<span class="math">\(s\)</span> is called the <em>lower</em> integral, and written <span class="math">\( \displaystyle \underset{\!\!\!\!\!^—}{\int_{a}^{b}} f(x) \,dx\)</span>. </p>
+<p>The bound <span class="math">\(S\)</span> is called the <em>upper</em> integral of <span class="math">\(f(x)\)</span>, and is written <span class="math">\( \displaystyle \overset{\;_—}{\int_{a}^{b}}\! f(x) \,dx\)</span>;
+<span class="math">\(s\)</span> is called the <em>lower</em> integral, and written <span class="math">\( \displaystyle \underset{\!\!\!\!\!^—}{\int_{a}^{b}}\! f(x) \,dx\)</span>. </p>
 
 <p>If <span class="math">\(S = s\)</span>, their common value is called the <em>integral</em> of <span class="math">\(f(x)\)</span> taken between
 the limits<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a> of integration
 <span class="math">\(a\)</span> and <span class="math">\(b\)</span>. </p>
 
-<p>The integral is written <span class="math">\(\displaystyle \int_a^b f(x)\, dx\)</span>. </p>
+<p>The integral is written <span class="math">\(\displaystyle \int_a^b \! f(x)\, dx\)</span>. </p>
 
-<p>We define <span class="math">\(\displaystyle \int_b^a f(x) \,dx\)</span>, when <span class="math">\(a < b\)</span>, to mean <span class="math">\(\displaystyle -\!\int_a^b f(x) \,dx\)</span>. </p>
+<p>We define <span class="math">\(\displaystyle \int_b^a \! f(x) \,dx\)</span>, when <span class="math">\(a < b\)</span>, to mean <span class="math">\(\displaystyle -\!\int_a^b \! f(x) \,dx\)</span>. </p>
 
 <blockquote>
 <p><em>Example</em> 1. <span class="math">\(\int_a^b \{f(x) + \phi(x)\}\,dx=\)</span><span class="math">\(\int_a^b f(x)\, dx + \int_a^b \phi(x)\,dx\)</span>. </p>
@@ -95,8 +97,8 @@ the limits<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]
 <h4 id="4.12riemannsconditionofintegrability.">4.12 Riemann&#8217;s Condition of Integrability.<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a></h4>
 
 <p>A function is said to be &#8216;integrable in the sense of Riemann&#8217; if (with the
-notation of <a href="#4.11upperandlowerintegrals.">§4.11</a>) <span class="math">\(S_n\)</span> and <span class="math">\(s_n\)</span> have a common limit (called the Riemann
-integral of the function) when the number of intervals <span class="math">\([x_{r-1}, x_r]\)</span> tends to
+notation of <a href="#4.11upperandlowerintegrals.">§4.11</a>) <span class="math">\(S_n\)</span> and <span class="math">\(s_n\)</span> have a common limit (called the <em>Riemann
+integral</em> of the function) when the number of intervals <span class="math">\([x_{r-1}, x_r]\)</span> tends to
 infinity in such a way that the length of the longest of them tends to zero. </p>
 
 <p><em>The necessary and sufficient condition that a bounded function should be
@@ -140,7 +142,7 @@ _n - s_n < \epsilon\)</span>; therefore <span class="math">\(S_n - s_n \rightarr
 
 <p>Let <span class="math">\(f(x)\)</span> be integrable, and let <span class="math">\(\epsilon\)</span> be any positive number. Then it is
 possible to choose <span class="math">\(\delta\)</span> so that
-<span class="math">\[\left|\sum_{p=1}^n (x_p - x_{p-1}) f(x'_{p-1}) - \int_a^b f(x)\, dx \right| < \epsilon,\]</span>
+<span class="math">\[\left|\sum_{p=1}^n (x_p - x_{p-1}) f(x'_{p-1}) - \int_a^b \! f(x)\, dx \right| < \epsilon,\]</span>
 provided that
 <span class="math">\[x_p - x_{p-1} \leq \delta, \quad x_{p-1} \leq x'_{p-1} \leq x_p.\]</span></p>
 
@@ -148,25 +150,26 @@ provided that
 of the longest interval, <span class="math">\(\delta\)</span>, so small that <span class="math">\(S_n - s_n < \epsilon\)</span>. </p>
 
 <p>Also <span class="math">\[S_n \geq \sum_{p=1}^n (x_p - x_{p-1}) f(x'_{p-1}) \geq s_n,\]</span>
-<span class="math">\[S_n \geq \int_a^b f(x) \,dx \geq s_n.\]</span>
+<span class="math">\[S_n \geq \int_a^b \! f(x) \,dx \geq s_n.\]</span>
 Therefore
 <span class="math">\[
 \begin{align*}
-\left|\sum_{p=1}^n (x_p - x_{p-1}) f(x'_{p-1}) - \int_a^b f(x)\, dx \right| &\leq S_n-s_n \\
-\\
+\left|\sum_{p=1}^n (x_p - x_{p-1}) f(x'_{p-1}) - \int_a^b \! f(x)\, dx \right| &\leq S_n-s_n \\
+\\ \\
 & < \epsilon.
 \end{align*}
 \]</span></p>
 
 <blockquote>
-<p>As an example<a href="#fn:8" id="fnref:8" title="see footnote" class="footnote">[8]</a> of the evaluation of a definite integral directly from the theorem of this section consider <span class="math">\(\displaystyle \int_0^X \frac{1}{(1-x^2)^{\frac{1}{2}}}\)</span>, where <span class="math">\(X < 1\)</span>. </p>
+<h6 id="4.13example0">As an example<a href="#fn:8" id="fnref:8" title="see footnote" class="footnote">[8]</a> of the evaluation of a definite integral directly from the theorem of this section consider <span class="math">\(\displaystyle \int_0^X \! \frac{dx}{(1-x^2)^{\frac{1}{2}}}\)</span>, where <span class="math">\(X < 1\)</span>.</h6>
 </blockquote>
 
 <blockquote>
 <p>Take <span class="math">\(\delta= \displaystyle \frac{1}{p} \arcsin X\)</span> and let <span class="math">\(x_s = \sin s\delta\)</span>, <span class="math">\((0 < s\delta <  \frac{1}{2}\pi)\)</span>, so that
- <span class="math">\[x_{s+1}-x_s = 2 \sin \textstyle\frac{1}{2} \delta \, \cos(s+\textstyle\frac{1}{2}) \delta < \delta\]</span>
-also let
-<span class="math">\[x'_s = \sin (s+\textstyle\frac{1}{2})\delta.\]</span></p>
+ <span class="math">\[\begin{align*}
+x_{s+1}-x_s &= 2 \sin \textstyle\frac{1}{2} \delta \, \cos(s+\textstyle\frac{1}{2}) \delta < \delta\\ 
+\text{ also let } \quad\qquad\qquad x'_s &= \sin (s+\textstyle\frac{1}{2})\delta.
+\end{align*}\]</span></p>
 
 <p>Then
 <span class="math">\[
@@ -178,19 +181,19 @@ also let
 \]</span></p>
 
 <p>By taking <span class="math">\(p\)</span> sufficiently large we can make
-<span class="math">\[\left|\, \int_0^X \frac{1}{(1-x^2)^{\frac{1}{2}}} - \sum_{s=1}^p \frac{x_s-x_{s-1}}{(1-x'^{2}_{s-1})^{\frac{1}{2}}} \, \right|\]</span>
+<span class="math">\[\left|\, \int_0^X \! \frac{dx}{(1-x^2)^{\frac{1}{2}}} - \sum_{s=1}^p \frac{x_s-x_{s-1}}{(1-x'^{2}_{s-1})^{\frac{1}{2}}} \, \right|\]</span>
 arbitrarily small. </p>
 
 <p>We can also make <span class="math">\[\arcsin X \, \left\{ \frac{\sin\frac{1}{2}\delta}{\frac{1}{2} \delta}-1 \right\}\]</span>
 arbitrarily small. </p>
 
 <p>That is, given an arbitrary number <span class="math">\(\epsilon\)</span>, we can make
-<span class="math">\[\left|\, \int_0^X \frac{1}{(1-x^2)^{\frac{1}{2}}} - \arcsin X \,\right | < \epsilon\]</span>
+<span class="math">\[\left|\, \int_0^X \! \frac{dx}{(1-x^2)^{\frac{1}{2}}} - \arcsin X \,\right | < \epsilon\]</span>
 by taking <span class="math">\(p\)</span> sufficiently large. But the expression now under consideration <em>does not
 depend on</em> <span class="math">\(p\)</span>; and therefore it must be zero; for if not we could take <span class="math">\(\epsilon\)</span> to be less than it, and we should have a contradiction. </p>
 
 <p>That is to say
-<span class="math">\[\int_0^X \frac{1}{(1-x^2)^{\frac{1}{2}}} = \arcsin X.\]</span></p>
+<span class="math">\[\int_0^X \! \frac{dx}{(1-x^2)^{\frac{1}{2}}} = \arcsin X.\]</span></p>
 </blockquote>
 
 <blockquote>
@@ -200,28 +203,28 @@ depend on</em> <span class="math">\(p\)</span>; and therefore it must be zero; f
 
 <blockquote>
 <p><em>Example</em> 2. If <span class="math">\(f(x)\)</span> has ordinary discontinuities at the points <span class="math">\(a_1, a_2 , \dots , a_{\kappa}\)</span>, then
- <span class="math">\[\int_a^b f(x) \, dx=\lim \left\{\int_a^{a_1-\delta_1}+\int_{a_1+\epsilon_1}^{a_1-\delta_2}+ \cdots + \int_{a+\epsilon_{\kappa}}^b f(x) \, dx\right\}\]</span>
+ <span class="math">\[\int_a^b \! f(x) \, dx=\lim \left\{\int_a^{a_1-\delta_1}\! +\int_{a_1+\epsilon_1}^{a_1-\delta_2}\! + \cdots + \int_{a+\epsilon_{\kappa}}^b \! f(x) \, dx\right\}\]</span>
 where the limit is taken by making <span class="math">\(\delta_1, \delta_2, \dots ,\delta_{\kappa}, \epsilon_1, \epsilon_2, \dots , \epsilon_{\kappa}\)</span> tend to <span class="math">\(+0\)</span> independently.</p>
 </blockquote>
 
 <blockquote>
-<h6 id="4.13example3"><em>Example</em> 3. If <span class="math">\(f(x)\)</span> is integrable when <span class="math">\(a_1 \leq x \leq b_1\)</span> and if, when <span class="math">\(a_1 \leq   a < b \leq b_1 \)</span>, we write <span class="math">\[\int_a^b f(x)\,dx =\phi(a,b),\]</span> and if <span class="math">\((b + 0)\)</span> exists, then <span class="math">\[\lim_{b \,\rightarrow \,+0}\frac{\phi(a,b+\delta)-\phi(a,b)}{\delta} =f(b+0).\]</span></h6>
+<h6 id="4.13example3"><em>Example</em> 3. If <span class="math">\(f(x)\)</span> is integrable when <span class="math">\(a_1 \leq x \leq b_1\)</span> and if, when <span class="math">\(a_1 \leq   a < b \leq b_1 \)</span>, we write <span class="math">\[\int_a^b \! f(x)\,dx =\phi(a,b),\]</span> and if <span class="math">\((b + 0)\)</span> exists, then <span class="math">\[\lim_{\delta \,\rightarrow \,+0}\frac{\phi(a,b+\delta)-\phi(a,b)}{\delta} =f(b+0).\]</span></h6>
 
 <p>Deduce that, if <span class="math">\(f(x)\)</span> is continuous at <span class="math">\(a\)</span> and <span class="math">\(b\)</span>,
-<span class="math">\[\frac{d}{da} \int_a^b f(x)\,dx =-f(a), \quad \frac{d}{db} \int_a^b f(x)\,dx =f(b).\]</span></p>
+<span class="math">\[\frac{d}{da} \int_a^b \! f(x)\,dx =-f(a), \quad \frac{d}{db} \int_a^b \! f(x)\,dx =f(b).\]</span></p>
 </blockquote>
 
 <blockquote>
-<h6 id="4.13example4"><em>Example</em> 4. Prove by differentiation<a href="#fn:9" id="fnref:9" title="see footnote" class="footnote">[9]</a> that, if <span class="math">\(\phi(x)\)</span> is a continuous function of <span class="math">\(x\)</span> and <span class="math">\(\displaystyle \frac{dx}{dt}\)</span> a continuous function of <span class="math">\(t\)</span>, then <span class="math">\[\int_{\large x_{0}}^{\large x_{1}} \phi(x) \, dx =\int_{\large t_0}^{\large t_{1}} \phi(x) \frac{dx}{dt} dt.\]</span></h6>
+<h6 id="4.13example4"><em>Example</em> 4. Prove by differentiation<a href="#fn:9" id="fnref:9" title="see footnote" class="footnote">[9]</a> that, if <span class="math">\(\phi(x)\)</span> is a continuous function of <span class="math">\(x\)</span> and <span class="math">\(\displaystyle \frac{dx}{dt}\)</span> a continuous function of <span class="math">\(t\)</span>, then <span class="math">\[\int_{\large x_{0}}^{\large x_{1}} \! \phi(x) \, dx =\int_{\large t_0}^{\large t_{1}} \! \phi(x) \frac{dx}{dt} dt.\]</span></h6>
 </blockquote>
 
 <blockquote>
 <p><em>Example</em> 5. If <span class="math">\(f' (x)\)</span> and <span class="math">\(\phi'(x)\)</span> are continuous when <span class="math">\(a \leq x \leq b\)</span>, shew from example 3 that
-<span class="math">\[\int_a^b f'(x) \phi(x) \, dx + \int_a^b \phi'(x)f(x)\, dx = f(b)\phi(b)-f(a)\phi(a).\]</span></p>
+<span class="math">\[\int_a^b \! f'(x) \phi(x) \, dx + \int_a^b \!\phi'(x)f(x)\, dx = f(b)\phi(b)-f(a)\phi(a).\]</span></p>
 </blockquote>
 
 <blockquote>
-<h6 id="4.13example6">Example 6. If <span class="math">\(f(x)\)</span> is integrable in the range <span class="math">\([a, c]\)</span> and <span class="math">\(a \leq b \leq c\)</span>, shew that <span class="math">\(\displaystyle\int_a^b f(x)\,dx\)</span> is a continuous function of <span class="math">\(b\)</span>.</h6>
+<h6 id="4.13example6">Example 6. If <span class="math">\(f(x)\)</span> is integrable in the range <span class="math">\([a, c]\)</span> and <span class="math">\(a \leq b \leq c\)</span>, shew that <span class="math">\(\displaystyle\int_a^b \! f(x)\,dx\)</span> is a continuous function of <span class="math">\(b\)</span>.</h6>
 </blockquote>
 
 <h4 id="4.14meanvaluetheorems.">4.14 Mean Value Theorems.</h4>
@@ -231,14 +234,14 @@ where the limit is taken by making <span class="math">\(\delta_1, \delta_2, \dot
 <p>(I) Let <span class="math">\(U\)</span> and <span class="math">\(L\)</span> be the upper and lower bounds of the integrable function <span class="math">\(f(x)\)</span> in the range <span class="math">\([a, b]\)</span>. </p>
 
 <p>Then from the definition of an integral it is obvious that
-<span class="math">\[\int_a^b \left\{U-f(x)\right\} dx, \quad \int_a^b \left\{f(x)-L\right\} dx \]</span>
+<span class="math">\[\int_a^b \!\left\{U-f(x)\right\} dx, \quad \int_a^b \!\left\{f(x)-L\right\} dx \]</span>
 are not negative; and so
-<span class="math">\[U(b-a) \geq  \int_a^b f(x)\,dx \geq L(b-a).\]</span> </p>
+<span class="math">\[U(b-a) \geq  \int_a^b \! f(x)\,dx \geq L(b-a).\]</span> </p>
 
 <p>This is known as the <em>First Mean Value Theorem</em>. </p>
 
 <p>If <span class="math">\(f(x)\)</span> is <em>continuous</em> we can find a number <span class="math">\(\xi\)</span> such that <span class="math">\(a \leq \xi \leq b\)</span> and such that <span class="math">\(f(\xi)\)</span> has any given value lying between <span class="math">\(U\)</span> and <span class="math">\(L\)</span> (<a href="CMA03-3-Heine-Borel.html#arealfunctionofarealvariablecontinuousinaclosedintervalattainsallvaluesbetweenitsupperandlowerbounds.">§3.63</a>). Therefore we can find <span class="math">\(\xi\)</span> such that
-<span class="math">\[\int_a^b f(x) \, dx = (b-a)f(\xi).\]</span></p>
+<span class="math">\[\int_a^b \! f(x) \, dx = (b-a)f(\xi).\]</span></p>
 
 <p>If <span class="math">\(F(x)\)</span> has a continuous differential coefficient <span class="math">\(F' (x)\)</span> in the range <span class="math">\([a, b]\)</span>, we have, on writing <span class="math">\(F' (x)\)</span> for <span class="math">\(f(x)\)</span>,
 <span class="math">\[F(b)-F(a) = (b-a)F'(\xi)\]</span>
@@ -246,40 +249,40 @@ for some value of <span class="math">\(\xi\)</span> such that <span class="math"
 
 <blockquote>
 <p><em>Example</em>. If <span class="math">\(f(x)\)</span> is continuous and <span class="math">\(\phi(x) \geq 0\)</span>, shew that <span class="math">\(\xi\)</span> can be found such that
-<span class="math">\[\int_a^b f(x)\phi(x) \, dx = f(\xi)\int_a^b \phi(x)\,dx.\]</span></p>
+<span class="math">\[\phantom{x}\int_a^b \! f(x)\phi(x) \, dx = f(\xi)\!\int_a^b \!\phi(x)\,dx.\]</span></p>
 </blockquote>
 
 <p>(II) Let <span class="math">\(f(x)\)</span> and <span class="math">\(\phi(x)\)</span> be integrable in the range <span class="math">\([a, b]\)</span> and let <span class="math">\(\phi(x)\)</span> be a <em>positive decreasing</em> function of <span class="math">\(x\)</span>. Then <em>Bonnet&#8217;s<a href="#fn:11" id="fnref:11" title="see footnote" class="footnote">[11]</a> form of the Second Mean Value Theorem</em> is that a number <span class="math">\(\xi\)</span> exists such that <span class="math">\(a \leq \xi \leq b\)</span>, and
-<span class="math">\[\int_a^b f(x)\phi(x) \, dx = \phi(a) \int_a^{\xi} f(x)\,dx.\]</span>.</p>
+<span class="math">\[\int_a^b \! f(x)\phi(x) \, dx = \phi(a) \!\int_a^{\xi} \! f(x)\,dx.\]</span>.</p>
 
 <p>For, with the notation of <a href="#4.1theconceptofintegration.">§§4.1&#8211;4.13</a>, consider the sum
 <span class="math">\[S= \sum_{s=1}^p (x_s-x_{s-1})\,f(x_{s-1})\,\phi(x_{s-1}) .\]</span>
-Writing <span class="math">\((x_s -x_{s-1} )f(x_{s -1} ) = a_{s-1}\)</span>, <span class="math">\(\phi(x_{s-1}) = \phi_{s-1}\)</span>, <span class="math">\(a_0 + a_1 + \dots + a_s = b_s\)</span>, we have
+Writing <span class="math">\((x_s -x_{s-1} )\,f(x_{s -1} ) = a_{s-1}\)</span>, <span class="math">\(\phi(x_{s-1}) = \phi_{s-1}\)</span>, <span class="math">\(a_0 + a_1 + \dots + a_s = b_s\)</span>, we have
 <span class="math">\[S= \sum_{s=1}^{p-1} b_{s-1} (\phi_{s-1}-\phi_s) + b_{p-1}\phi_{p-1}.\]</span></p>
 
-<p>Each term in the summation is increased by writing <span class="math">\(\overline b\)</span> for <span class="math">\(b_{s-1} \)</span> and decreased by writing <span class="math">\(\underline b\)</span> for <span class="math">\(b_{s-1}\)</span>; if <span class="math">\(\overline b\)</span>,<span class="math">\(\underline b\)</span> be the greatest and least of <span class="math">\(b_0 , b_1, \dots , b_{p-1}\)</span>; and so <span class="math">\(\underline{b}\phi_0 \leq S \leq \overline{b}\phi_0\)</span>. Therefore <span class="math">\(S\)</span> lies between the greatest and least of the sums <span class="math">\(\phi(x_0)\sum\limits_{s=1}^m (x_s-x_{s-1})\,f(x_{s-1})\)</span> where <span class="math">\(m=1, 2, 3, \dots ,p\)</span>. But, given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(\delta\)</span> such that, when <span class="math">\(x_{s} - x_{s-1} < \delta\)</span>,
-<span class="math">\[\left |\, \sum _{s=1}^p (x_s-x_{s-1}) f(x_{s-1})\phi(x_{s-1}) - \int_{x_{\tiny {0}}}^{ x_ {p}} f(x) \phi(x)\, dx \, \right| < \epsilon, \]</span>
-<span class="math">\[\left|\, \phi(x_0) \sum_{s=1}^m(x_s-x_{s-1})f(x_{s-1}) - \phi(x_0) \int_{x_{\tiny {0}}}^{ x_ {p}} f(x) \, dx \, \right| < \epsilon,\]</span>
-and so, writing <span class="math">\(a\)</span>, <span class="math">\(b\)</span> for <span class="math">\(x_0\)</span>, <span class="math">\(x_p\)</span>, we find that <span class="math">\(\displaystyle  \int_a^b f(x) \phi(x)\, dx\)</span> lies between the upper and lower bounds of<a href="#fn:12" id="fnref:12" title="see footnote" class="footnote">[12]</a> <span class="math">\(\displaystyle\phi(a) \int_{a}^{ \xi_1} f(x) \, dx\pm 2\epsilon\)</span>, where <span class="math">\(\xi_1\)</span> may take all values between <span class="math">\(a\)</span> and <span class="math">\(b\)</span>. Let <span class="math">\(U\)</span> and <span class="math">\(L\)</span> be the upper and lower bounds of <span class="math">\(\displaystyle\phi(a) \int_{a}^{ \xi_1} f(x) \, dx \)</span>. </p>
+<p>Each term in the summation is increased by writing <span class="math">\(\overline b\)</span> for <span class="math">\(b_{s-1} \)</span> and decreased by writing <span class="math">\(\underline b\)</span> for <span class="math">\(b_{s-1}\)</span>, if <span class="math">\(\overline b\)</span>, <span class="math">\(\underline b\)</span> be the greatest and least of <span class="math">\(b_0\)</span>, <span class="math">\(b_1, \dots , b_{p-1}\)</span>; and so <span class="math">\(\underline{b}\phi_0 \leq S \leq \overline{b}\phi_0\)</span>. Therefore <span class="math">\(S\)</span> lies between the greatest and least of the sums <span class="math">\(\phi(x_0)\sum\limits_{s=1}^m (x_s-x_{s-1})\,f(x_{s-1})\)</span> where <span class="math">\(m=1, 2, 3, \dots ,p\)</span>. But, given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(\delta\)</span> such that, when <span class="math">\(x_{s} - x_{s-1} < \delta\)</span>,
+<span class="math">\[\left |\, \sum _{s=1}^p (x_s-x_{s-1}) f(x_{s-1})\phi(x_{s-1}) - \int_{x_{\tiny {0}}}^{ x_ {p}} \! f(x) \phi(x)\, dx \, \right| < \epsilon, \]</span>
+<span class="math">\[\left|\, \phi(x_0) \sum_{s=1}^m(x_s-x_{s-1})f(x_{s-1}) - \phi(x_0) \!\int_{x_{\tiny {0}}}^{ x_ {m}} \! f(x) \, dx \, \right| < \epsilon,\]</span>
+and so, writing <span class="math">\(a\)</span>, <span class="math">\(b\)</span> for <span class="math">\(x_0\)</span>, <span class="math">\(x_p\)</span>, we find that <span class="math">\(\displaystyle  \int_a^b \! f(x) \phi(x)\, dx\)</span> lies between the upper and lower bounds of<a href="#fn:12" id="fnref:12" title="see footnote" class="footnote">[12]</a> <span class="math">\(\displaystyle\phi(a)\! \int_{a}^{ \xi_1}\! f(x) \, dx\pm 2\epsilon\)</span>, where <span class="math">\(\xi_1\)</span> may take all values between <span class="math">\(a\)</span> and <span class="math">\(b\)</span>. Let <span class="math">\(U\)</span> and <span class="math">\(L\)</span> be the upper and lower bounds of <span class="math">\(\displaystyle\phi(a) \!\int_{a}^{ \xi_1}\! f(x) \, dx \)</span>. </p>
 
-<p>Then <span class="math">\(U+2\epsilon \geq \displaystyle\int_{a}^{b} f(x)\phi(x) \, dx  \geq L- 2\epsilon\)</span> for <em>all</em> positive values of <span class="math">\(\epsilon\)</span>; therefore
-<span class="math">\[U\geq \int_{a}^{b} f(x)\phi(x) \, dx \geq L .\]</span></p>
+<p>Then <span class="math">\(U+2\epsilon \geq \displaystyle\int_{a}^{b}\! f(x)\phi(x) \, dx  \geq L- 2\epsilon\)</span> for <em>all</em> positive values of <span class="math">\(\epsilon\)</span>; therefore
+<span class="math">\[U\geq \int_{a}^{b}\! f(x)\phi(x) \, dx \geq L .\]</span></p>
 
-<p>Since <span class="math">\(\displaystyle\phi(a) \int_{a}^{ \xi_1} f(x) \, dx\)</span> <em>qua</em><a href="#fn:13" id="fnref:13" title="see footnote" class="footnote">[13]</a> function of <span class="math">\(\xi_1\)</span> takes all values between its upper and lower bounds, there is some value <span class="math">\(\xi\)</span>, say, of <span class="math">\(\xi_1\)</span> for which it is equal to <span class="math">\(\int_{a}^{b} f(x)\phi(x) \, dx \)</span>. This
+<p>Since <span class="math">\(\displaystyle\phi(a) \int_{a}^{ \xi_1}\! f(x) \, dx\)</span> <em>qua</em><a href="#fn:13" id="fnref:13" title="see footnote" class="footnote">[13]</a> function of <span class="math">\(\xi_1\)</span> takes all values between its upper and lower bounds, there is some value <span class="math">\(\xi\)</span>, say, of <span class="math">\(\xi_1\)</span> for which it is equal to <span class="math">\(\int_{a}^{b} f(x)\phi(x) \, dx \)</span>. This
 proves the Second Mean Value Theorem. </p>
 
 <blockquote>
 <p><em>Example</em>. By writing <span class="math">\(\left|\, \phi(x)-\phi(b)\, \right |\)</span> in place of <span class="math">\(\phi(x)\)</span> in Bonnet&#8217;s form of the mean value theorem, shew that if <span class="math">\(\phi(x)\)</span> is a monotonic function, then a number <span class="math">\(\xi\)</span> exists
 such that <span class="math">\(a \leq \xi \leq b\)</span> and
-<span class="math">\[\int_a^b f(x)\phi(x)\, dx = \phi(a) \int_a^{\xi} f(x) \, dx + \phi(b) \int_{\xi}^{b} f(x) \, dx. \]</span> (Du Bois Reymond.) </p>
+<span class="math">\[\int_a^b \! f(x)\phi(x)\, dx = \phi(a) \!\int_a^{\xi}\! f(x) \, dx + \phi(b) \!\int_{\xi}^{b}\! f(x) \, dx. \]</span> (Du Bois Reymond.) </p>
 </blockquote>
 
 <h3 id="4.2differentiationofintegralscontainingaparameter.">4.2 Differentiation of integrals containing a parameter.</h3>
 
-<p>The equation<a href="#fn:14" id="fnref:14" title="see footnote" class="footnote">[14]</a> <span class="math">\(\displaystyle \frac{d}{d\alpha}\int_a^b f(x, \alpha) \, dx = \int_a^b \frac{\partial f}{\partial \alpha} \, dx\)</span> is true <em>if <span class="math">\(f(x, \alpha)\)</span> possesses a Riemann integral with respect to <span class="math">\(x\)</span> and <span class="math">\(f_{\alpha}\,  ( = \frac{\partial f}{\partial \alpha})\)</span> is a continuous function of both<a href="#fn:15" id="fnref:15" title="see footnote" class="footnote">[15]</a> of the variables <span class="math">\(x\)</span> and <span class="math">\(\alpha\)</span></em>. </p>
+<p>The equation<a href="#fn:14" id="fnref:14" title="see footnote" class="footnote">[14]</a> <span class="math">\(\displaystyle \frac{d}{d\alpha}\int_a^b \! f(x, \alpha) \, dx = \int_a^b \!\frac{\partial f}{\partial \alpha} \, dx\)</span> is true <em>if <span class="math">\(f(x, \alpha)\)</span> possesses a Riemann integral with respect to <span class="math">\(x\)</span> and <span class="math">\(f_{\alpha}\,  ( = \frac{\partial f}{\partial \alpha})\)</span> is a continuous function of both<a href="#fn:15" id="fnref:15" title="see footnote" class="footnote">[15]</a> of the variables <span class="math">\(x\)</span> and <span class="math">\(\alpha\)</span></em>. </p>
 
 <p>For
-<span class="math">\[\frac{d}{d\alpha}\int_a^b f(x,\alpha)\,dx = \lim_{h \rightarrow 0} \int_a^b \frac{f(x,\alpha+h)-f(x, \alpha)}{h} dx\]</span>
+<span class="math">\[\frac{d}{d\alpha}\int_a^b \! f(x,\alpha)\,dx = \lim_{h \rightarrow 0} \int_a^b \frac{f(x,\alpha+h)-f(x, \alpha)}{h} dx\]</span>
 if this limit exists. But, by the first mean value theorem, since <span class="math">\(f_{\alpha}\)</span> is a
 continuous function of <span class="math">\(\alpha\)</span>, the second integrand is <span class="math">\(f_{\alpha} (x, a + \theta h)\)</span>, where <span class="math">\(0 \leq \theta \leq 1\)</span>.</p>
 
@@ -288,9 +291,9 @@ continuous function of <span class="math">\(\alpha\)</span>, the second integran
 whenever <span class="math">\(\left|\, \alpha' - \alpha \,\right| < \delta\)</span>. </p>
 
 <p>Taking <span class="math">\(\left| h \right| < \delta\)</span> we see that <span class="math">\(\left| \theta h \right| < \delta\)</span>, and so <em>whenever</em> <span class="math">\(\left| h \right| < \delta\)</span>,
-<span class="math">\[\left|\int_a^b \frac{f(x,\alpha+h)-f(x, \alpha)}{h} dx - \int_a^b f_{\alpha}(x, \alpha)\,dx \,\right|\]</span>
+<span class="math">\[\left|\int_a^b \frac{f(x,\alpha+h)-f(x, \alpha)}{h} dx - \int_a^b \! f_{\alpha}(x, \alpha)\,dx \,\right|\]</span>
 <span class="math">\[
-\begin{align*} \qquad \qquad \qquad &\leq \int_a^b \left|\, f_{\alpha}(x, \alpha+\theta h) - f_{\alpha}(x, \alpha)\,\right|\, dx.\\
+\begin{align*} \qquad \qquad \qquad &\leq \int_a^b \!\left|\, f_{\alpha}(x, \alpha+\theta h) - f_{\alpha}(x, \alpha)\,\right|\, dx.\\
 \\
 & < \epsilon.
 \end{align*}
@@ -298,23 +301,24 @@ whenever <span class="math">\(\left|\, \alpha' - \alpha \,\right| < \delta\)</sp
 
 <p>Therefore by the definition of a limit of a function (<a href="CMA03-1-ContinuousFns.html#continuityoffunctionsofrealvariables">§3.2</a>),
 <span class="math">\[\lim_{h \rightarrow 0} \int_a^b \frac{f(x,\alpha+h)-f(x, \alpha)}{h} dx\]</span>
-exists and is equal to <span class="math">\(\displaystyle \int_a^b f_{\alpha} \,dx\)</span>. </p>
+exists and is equal to <span class="math">\(\displaystyle \int_a^b \! f_{\alpha} \,dx\)</span>. </p>
 
 <blockquote>
 <p><em>Example</em> 1. If <span class="math">\(a, b\)</span> be not constants but functions of <span class="math">\(\alpha\)</span> with continuous differential coefficients, shew that
-<span class="math">\[\frac{d}{d\alpha}\int_a^b f(x, \alpha)\, dx = f(b, \alpha)\frac{db}{d\alpha}-f(a, \alpha)\frac{da}{d\alpha}+\int_a^b \frac{\partial f}{\partial \alpha} dx.\]</span></p>
+<span class="math">\[\frac{d}{d\alpha}\int_a^b \! f(x, \alpha)\, dx = f(b, \alpha)\frac{db}{d\alpha}-f(a, \alpha)\frac{da}{d\alpha}+\int_a^b \! \frac{\partial f}{\partial \alpha} dx.\]</span></p>
 </blockquote>
 
 <blockquote>
-<h6 id="4.2example2"><em>Example</em> 2. If <span class="math">\(f(x, \alpha)\)</span> is a continuous function of both variables, <span class="math">\(\displaystyle \int_a^b  f(x, \alpha)\,dx\)</span> is a continuous function of <span class="math">\(\alpha\)</span>.</h6>
+<h6 id="4.2example2"><em>Example</em> 2. If <span class="math">\(f(x, \alpha)\)</span> is a continuous function of both variables, <span class="math">\(\displaystyle \int_a^b \!  f(x, \alpha)\,dx\)</span> is a continuous function of <span class="math">\(\alpha\)</span>.</h6>
 </blockquote>
 
 </div>
 </div>
 
 <div id="footer">
-<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
-<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/"> GitHub.</a></h3>
+<h4>All content is either in the public domain or licensed under <a href="http://creativecommons.org/licenses/by/3.0/us/">a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h4>Feel free report typos and other issues on <span style="font-weight: 400;"><a href="https://github.com/CdLbB/cdlbb.github.com/tree/master/WandW">GitHub</a></span> or by email at <span style="font-weight: 400;"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#110;&#x69;&#x74;&#104;&#x61;&#114;&#100;&#x74;&#x40;&#x75;&#x77;&#46;&#101;&#x64;&#x75;">&#x6e;&#x69;&#116;&#x68;&#x61;&#114;&#100;&#x74;&#x40;&#117;&#119;&#x2e;&#101;&#x64;&#x75;</a></span>.</h4>
 </div>
 
 <div id="navint" class="navigation" style="visibility:hidden;" >
@@ -510,7 +514,7 @@ exists and is equal to <span class="math">\(\displaystyle \int_a^b f_{\alpha} \,
 </li>
 
 <li id="fn:10">
-<p><em>Editor&#8217;s Note</em>: Alternatively, let <span class="math">\(F(x)= \int_c^x f(\zeta)\, d\zeta\)</span> for <span class="math">\(a \leq c \leq b\)</span>. Then <span class="math">\(\int_a^b f(x) \, dx= F(b)-F(a)\)</span> and, from <a href="#4.13example3">§4.13 example 3</a>, <span class="math">\(F'(x) = f(x)\)</span>. We would still need <a href="http://mathworld.wolfram.com/FirstFundamentalTheoremofCalculus.html">the first fundamental theorem of calculus</a> to show that <em>any</em> continuously differentiable function <span class="math">\(F(x)\)</span> can be written as <span class="math">\(\int_c^x f(\zeta)\, d\zeta\)</span> for some <span class="math">\(f(\zeta)\)</span>. <a href="#fnref:10" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p><em>Editor&#8217;s Note</em>: Alternatively, let <span class="math">\(F(x)= \int_c^x f(\zeta)\, d\zeta+K\)</span> for <span class="math">\(a \leq c \leq b\)</span>. Then <span class="math">\(\int_a^b f(x) \, dx= F(b)-F(a)\)</span> and, from <a href="#4.13example3">§4.13 example 3</a>, <span class="math">\(F'(x) = f(x)\)</span>. We would still need <a href="http://mathworld.wolfram.com/FirstFundamentalTheoremofCalculus.html">the first fundamental theorem of calculus</a> to show that <em>any</em> continuously differentiable function <span class="math">\(F(x)\)</span> can be written as <span class="math">\(\int_c^x f(\zeta)\, d\zeta + K\)</span> for some <span class="math">\(f\)</span>. <a href="#fnref:10" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:11">

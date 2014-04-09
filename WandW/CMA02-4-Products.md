@@ -35,19 +35,19 @@ vanish. If, as \\(n \rightarrow \infty\\), the product
 \\[(1+a_1)(1+a_2)(1+a_3) \dots (1+a_n)\\]
 (which we denote by \\(\Pi_n)\\) tends to a definite limit other than zero, this limit is called the value of the infinite product
 \\[\Pi = (1+a_1)(1+a_2)(1+a_3) \dots , \\]
-and the product is said to be *convergent*.[^WallisProduct] It is almost obvious that a *necessary* condition for convergence is that \\(\lim a_n = 0\\), since \\(\lim \Pi_{n-1}=\lim \Pi_n \neq 0\\).
+and the product is said to be *convergent*.[^WallisProduct,-4] It is almost obvious that a *necessary* condition for convergence is that \\(\lim a_n = 0\\), since \\(\lim \Pi_{n-1}=\lim \Pi_n \neq 0\\).
 
-[^WallisProduct]: The convergence of the product in which \\(a_{n-1}=-1/n^2\,\\) was investigated by Wallis as early as 1655.
+[^WallisProduct,-4]: The convergence of the product in which \\(a_{n-1}=\left.-1\middle/n^2\right.\,\\) was investigated by Wallis as early as 1655.
 
 The limit of the product is written \\(\prod\limits_{n=1}^{\infty} (1+a_n)\\).
 
+[^ExpContinuous,+8]: See the Appendix, [§A.2](CMA24-Appendix-I-LogrithmAndExponential.html#a.2theexponentialfunction.), (where it is shown that \\(f(z)=e^{\,z}\,\\) is continuous, *editor's note*).
+
 Now
 \\[\prod_{n=1}^{m} (1+a_n)=\exp\left\{\sum_{n=1}^{m} \log(1+a_n)\right\} ,\\]
-and[^ExpContinuous,-15]
+and[^ExpContinuous,+8]
 \\[\exp\{\lim_{m \rightarrow \infty}u_m\}=\lim_{m \rightarrow \infty}\{ \exp u_m\}\\]
 if the former limit exists; hence a sufficient condition that the product should converge is that \\(\sum\limits_{n=1}^{\infty} \log (1 + a_n )\\) should converge when the logarithms have their principal values. If this series of logarithms converges absolutely, the convergence of the product is said to be *absolute*. 
-
-[^ExpContinuous,-15]: See the Appendix, [§A.2](CMA24-Appendix-I-LogrithmAndExponential.html#a.2theexponentialfunctionexpz.), (where it is shown that \\(f(z)=e^{\,z}\,\\) is continuous, *editor's note*).
 
 The condition for absolute convergence is given by the following theorem: *in order that the infinite product
 \\[\Pi = (1+a_1)(1+a_2)(1+a_3) \dots , \\]
@@ -68,19 +68,19 @@ Now, since \\(\lim a_n = 0\\), we can find \\(m\\) such that, when \\(n > m\\), 
 \\]
 And thence, when \\(n > m\\), \\(\frac{1}{2} \leq \left| \frac{\log(1+a_n)}{a_n}\right| \leq \frac{3}{2}\\);
 therefore, by the comparison theorem, the absolute convergence of \\(\sum \log(1 + a_n )\\) entails that of \\(\sum a_n\\) and conversely, provided that \\(a_n \neq - 1\\) for any value of \\(n\\). 
-This establishes the result.[^ProductNoLog]
+This establishes the result.[^ProductNoLog,-5]
 
-[^ProductNoLog]: A discussion of the convergence of infinite products, in which the results are obtained without making use of the logarithmic function, is given by Pringsheim, [*Math. Ann.* **xxxiii.** (1889)](http://www.digizeitschriften.de/dms/toc/?PPN=PPN235181684_0033), pp. 119-154, and also by Bromwich, [*Infinite Series*](http://archive.org/details/introductiontoth00bromuoft), Ch. **VI.**
+[^ProductNoLog,-5]: A discussion of the convergence of infinite products, in which the results are obtained without making use of the logarithmic function, is given by Pringsheim, [*Math. Ann.* **xxxiii.** (1889)](http://www.digizeitschriften.de/dms/toc/?PPN=PPN235181684_0033), pp. 119-154, and also by Bromwich, [*Infinite Series*](http://archive.org/details/introductiontoth00bromuoft), Ch. **VI.**
 
 >If, in a product, a finite number of factors vanish, and if, when these are suppressed, the resulting product converges, the original product is said to *converge* to zero. But such a product as \\(\prod_{n=2}^{\infty} (1-n^{-1})\\) is said to *diverge* to zero. 
 
 
->*Corollary*. Since, if \\(S_n \rightarrow l\\), \\(exp (S_n ) \rightarrow exp(l)\\), it follows from [§2.41](CMA02-3-MoreSeries.html#thefundamentalpropertyofabsolutelyconvergentseries) that the factors of an absolutely convergent product can be deranged without affecting the value of the product. 
+>*Corollary*. Since, if \\(S_n \rightarrow l\\), \\(\exp (S_n ) \rightarrow \exp(l)\\), it follows from [§2.41](CMA02-3-MoreSeries.html#thefundamentalpropertyofabsolutelyconvergentseries) that the factors of an absolutely convergent product can be deranged without affecting the value of the product. 
 
 >*Example* 1. Shew that if \\(\prod_{n=1}^{\infty}(1+a_n)\\) converges, so does \\(\sum_{n=1}^{\infty} \log(1+a_n)\\), if the logarithms have their principal values. 
 
 >*Example* 2. Shew that the infinite product 
->\\[\left(\frac{\sin z}{z}\right)\left(\frac{\sin \frac{1}{2} z}{ \frac{1}{2}z}\right)\left(\frac{\sin \frac{1}{3}z}{\frac{1}{3}z}\right)\left(\frac{\sin \frac{1}{4}z}{\frac{1}{4}z}\right)\\] 
+>\\[\left(\frac{\sin z}{z}\right)\left(\frac{\sin \frac{1}{2} z}{ \frac{1}{2}z}\right)\left(\frac{\sin \frac{1}{3}z}{\frac{1}{3}z}\right)\left(\frac{\sin \frac{1}{4}z}{\frac{1}{4}z}\right)\cdots \\] 
 >is absolutely convergent for all values of \\(z\\). 
 >
 >[For \\(\left(\sin \displaystyle{\frac{z}{n}}\right)\Big/\left(\displaystyle{\frac{z}{n}}\right)\\) can be written in the form \\(1-\displaystyle \frac{\lambda_n}{n^2}\\), where \\(\left|\,\lambda_n\,\right| < k \\) and \\(k\\) is independent of \\(n\\); and the series \\(\sum\limits_{n=1}^{\infty} \displaystyle \frac{\lambda_n}{n^2}\\) is absolutely convergent, as is seen on comparing it with \\(\sum\limits_{n=1}^{\infty} \displaystyle \frac{1}{n^2}\\) . The infinite product is therefore absolutely convergent.]
@@ -102,7 +102,7 @@ But this series is only conditionally convergent, since its series of moduli
 is divergent. In this form therefore the infinite product is not absolutely convergent, and so, if the order of the factors \\(\left(1\pm \displaystyle\frac{z}{n\pi}\right)\\) is deranged, there is a risk of altering the value of the product. 
 
 Lastly, let the same product be written in the form 
-\\[\left\{\left(1-\frac{z}{\pi}\right)e^{\frac{z}{\pi}}\right\}\left\{\left(1+\frac{z}{\pi}\right)e^{-\frac{z}{\pi}}\right\}\left\{\left(1-\frac{z}{2\pi}\right)e^{\frac{z}{2\pi}}\right\}\left\{\left(1+\frac{z}{2\pi}\right)e^{-\frac{z}{2\pi}}\right\} \dots .\\]
+\\[\left\{\left(1-\frac{z}{\pi}\right)e^{\frac{z}{\pi}}\right\}\left\{\left(1+\frac{z}{\pi}\right)e^{-\frac{z}{\pi}}\right\}\left\{\left(1-\frac{z}{2\pi}\right)e^{\frac{z}{2\pi}}\right\}\left\{\left(1+\frac{z}{2\pi}\right)e^{-\frac{z}{2\pi}}\right\} \dots ,\\]
 in which each of the expressions 
 \\[\left(1\pm \frac{z}{m\pi}\right)e^{\mp \frac{z}{m\pi}}\\]
 is counted as a single factor of the infinite product. The absolute convergence of this product depends on that of the series of which the \\((2m-1)\\)th and \\((2m)\\)th terms are
@@ -129,7 +129,7 @@ The infinite product in this last form is therefore again absolutely convergent,
 >But \\(\sum\limits_{n=1}^{\infty} \displaystyle \frac{1}{n^2}\\) converges, and so, by [§2.34](CMA02-2-Series.html#thecomparisontheorem), \\(\sum\limits_{n=1}^{\infty} \displaystyle \left\{\left(1-\frac{z}{c+n}\right)e^{\frac{z}{n}}-1\right\} .\\) converges absolutely, and therefore the product converges absolutely. 
  
 
->*Example* 2. Shew that \\(\prod\limits_{n=2}^{\infty}\left\{1-\left(1-\frac{1}{n}\right)^{-n} z^{-n}\right\}\\) converges for all points \\(z\\) situated outside a circle whose centre is the origin and radius unity.
+>*Example* 2. Shew that \\(\prod\limits_{n=2}^{\infty}\left\{1-\left(1-\dfrac{1}{n}\right)^{-n} z^{-n}\right\}\\) converges for all points \\(z\\) situated outside a circle whose centre is the origin and radius unity.
 >
 > For the infinite product is absolutely convergent provided that the series 
 >\\[\sum\limits_{n=2}^{\infty}\left(1-\frac{1}{n}\right)^{-n} z^{-n}\\]
@@ -138,10 +138,10 @@ The infinite product in this last form is therefore again absolutely convergent,
 
 
 >*Example* 3. Shew that
->\\[\frac{1\cdot2\cdot 3 \cdots (m-1)}{(z+1)(z+2)(z+3) \cdots (z+m-1)} m^z\\]
->tends to a finite limit as \\(m \rightarrow \infty\\) , unless\\(z\\) is a negative integer. 
+>\\[\frac{1\cdot2\cdot 3 \cdots (m-1)}{(z+1)(z+2)(z+3) \cdots (z+m-1)} m^{\:\! z}\\]
+>tends to a finite limit as \\(m \rightarrow \infty\\), unless \\(z\\) is a negative integer. 
 >
->For the expression can be written as a product of which the \\(n\\)th. factor is 
+>For the expression can be written as a product of which the \\(n\\)th factor is 
 >\\[
 >\begin{align*}
 >\frac{n}{z+n}\left(\frac{n+1}{n}\right)^z&=\left(1+\frac{1}{n}\right)^z\left(1+\frac{z}{n}\right)^{-1}\\
@@ -154,7 +154,7 @@ The infinite product in this last form is therefore again absolutely convergent,
 
 >*Example* 4. Prove that
 >\\[z\left(1-\frac{z}{\pi}\right)\left(1-\frac{z}{2\pi}\right)\left(1+\frac{z}{\pi}\right)\left(1-\frac{z}{3\pi}\right)\left(1-\frac{z}{4\pi}\right)\left(1+\frac{z}{2\pi}\right) \dots\\]
->\\[=e^{-\frac{z}{\pi}\log 2}sin z .\\]
+>\\[=e^{-\frac{z}{\pi}\log 2}\sin z .\\]
 >For the given product
 >\\[
 >\begin{align*}
@@ -165,7 +165,7 @@ The infinite product in this last form is therefore again absolutely convergent,
 >\qquad & \qquad \\
 >\qquad & \qquad \\
 >=\lim_{k \rightarrow \infty} &e^{ \frac{z}{\pi}\left(-1-\frac{1}{2}+1-\frac{1}{3}-\frac{1}{4}+\frac{1}{2}- \cdots -\frac{1}{2k-1}-\frac{1}{2k}+\frac{1}{k}\right) }\times \cdots \\
->\cdots& \times \left\{ z \left(1-\frac{z}{\pi}\right)e^{\frac{z}{\pi}}\right\}\left\{\left(1-\frac{z}{2\pi}\right)e^{\frac{z}{2\pi}}\right\}\left\{ z \left(1+\frac{z}{\pi}\right)e^{-\frac{z}{\pi}}\right\} \times\cdots \\
+>\cdots& \times \left\{ z \left(1-\frac{z}{\pi}\right)e^{\frac{z}{\pi}}\right\}\left\{\left(1-\frac{z}{2\pi}\right)e^{\frac{z}{2\pi}}\right\}\left\{ \left(1+\frac{z}{\pi}\right)e^{-\frac{z}{\pi}}\right\} \times\cdots \\
 >\cdots& \times   \left\{ \left(1-\frac{z}{(2k-1)\pi}\right)e^{\frac{z}{(2k-1)\pi}}\right\}\left\{ \left(1-\frac{z}{2k\pi}\right)e^{\frac{z}{2k\pi}}\right\}\left\{\left(1+\frac{z}{k\pi}\right)e^{-\frac{z}{k\pi}}\right\} \\
 >\qquad & \qquad \\
 >\qquad & \qquad \\
@@ -175,7 +175,7 @@ The infinite product in this last form is therefore again absolutely convergent,
 >\end{align*}
 >\\]
 >since the product whose factors are 
->\\[\left(1+\mp\frac{z}{m\pi}\right)e^{\pm\frac{z}{m\pi}}\\]
+>\\[\left(1\mp\frac{z}{m\pi}\right)e^{\pm\frac{z}{m\pi}}\\]
 >is *absolutely* convergent, and so the order of its factors can be altered. 
 >
 >Since \\(\log 2=1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\frac{1}{5}- \dots\\), this shews that the given product is equal to
@@ -183,12 +183,11 @@ The infinite product in this last form is therefore again absolutely convergent,
 
 ### 2.8 Infinite Determinants [infinitedeterminants]###
 
-Infinite series and infinite products are not by any means the only known cases of limiting processes which can lead to intelligible results. The researches of G. W. Hill in the Lunar Theory[^Hill,-14] brought into notice the possibilities of *infinite determinants*.[^NotHill,+8] 
+[^Hill,-4]: Reprinted in [*Acta Mathematica*, **viii.** (1886)](http://archive.org/details/actamathematica09lefgoog), pp. 1-36. Infinite determinants had previously occurred in the researches of Fürstenau on the algebraic equation of the 7th degree, [*Darstellung der reellen Wurzeln algebraischer Gleichungen durch Determinanten der Coeffizienten*](http://books.google.com/books?id=w6_btgAACAAJ) (Marburg, 1860). Special types of infinite determinants (known as continuants) occur in the theory of infinite continued fractions; see Sylvester, [*Math. Papers*, **I**](http://archive.org/details/collectedmathem01sylvrich), p. 504 and [**III**](http://quod.lib.umich.edu/u/umhistmath/AAS8085.0003.001/271?rgn=full+text;view=pdf), p. 249
 
-[^Hill,-14]: Reprinted in [*Acta Mathematica*, **viii.** (1886)](http://archive.org/details/actamathematica09lefgoog), pp. 1-36. Infinite determinants had previously occurred in the researches of Fürstenau on the algebraic equation of the 7th degree, *Darstellung der reellen Wurzeln algebraischer Gleichungen durch Determinanten der Coeffizienten* (Marburg, 1860). Special types of infinite determinants (known as continuants) occur in the theory of infinite continued fractions; see Sylvester, [*Math. Papers*, **I**](http://archive.org/details/collectedmathem01sylvrich), p. 504 and [**III**](http://quod.lib.umich.edu/u/umhistmath/AAS8085.0003.001/271?rgn=full+text;view=pdf), p. 249
+Infinite series and infinite products are not by any means the only known cases of limiting processes which can lead to intelligible results. The researches of G. W. Hill in the Lunar Theory[^Hill,-4] brought into notice the possibilities of *infinite determinants*.[^NotHill,+7] 
 
-[^NotHill,+8]: The actual investigation of the convergence is due not to Hill but to Poincare, [*Bull. de la Soc. Math. de France*, **xiv.** (1886)](http://www.numdam.org/numdam-bin/browse?id=BSMF_1886__14_), p. 87. We shall follow the exposition given by H. von Koch, [*Acta Math.*, **xvi.** (1892)](http://archive.org/details/actamathematica20lefgoog), p. 217. 
-
+[^NotHill,+7]: The actual investigation of the convergence is due not to Hill but to Poincare, [*Bull. de la Soc. Math. de France*, **xiv.** (1886)](http://www.numdam.org/numdam-bin/browse?id=BSMF_1886__14_), p. 87. We shall follow the exposition given by H. von Koch, [*Acta Math.*, **xvi.** (1892)](http://archive.org/details/actamathematica20lefgoog), p. 217. 
 
 Let \\(A_{ik}\\) be defined for all integer values (positive and negative) of \\(i\\), \\(k\\), and denote by 
 \\[D_m=[A_{ik}]_{i,k \,=\, -m, \dots ,+m}\\]
@@ -212,9 +211,9 @@ and let the non-diagonal elements be denoted by \\(a_{ik}\\), \\(i \neq k\\), so
 \\[ \left |
 \begin{array}{ccccccc}
 &     & \vdots & \vdots & \vdots &  & \\
-&\cdots & 1+ a_{-1\,-1}&a_{-1 0}&a_{-1 1}&\cdots & \\
-&\cdots &a_{0\,-1}& 1+ a_{0 0}&a_{0 1}&\cdots & \\
-&\cdots &a_{1\,-1}&a_{1 0}& 1+ a_{1 1}&\cdots & \\
+&\cdots & 1+ a_{\:\! -1\,-1}&a_{\:\! -1 \:\! 0}&a_{\:\! -1 \:\!  1}&\cdots & \\
+&\cdots &a_{\:\! 0\,-1}& 1+ a_{\:\! 0 \:\! 0}&a_{\:\! 0 \:\! 1}&\cdots & \\
+&\cdots &a_{1\,-1}&a_{1\:\!  0}& 1+ a_{1 \:\! 1}&\cdots & \\
 &     & \vdots & \vdots & \vdots &  &
 \end{array}
 \right | \\]
@@ -246,7 +245,7 @@ of the row through the origin with the elements
 \\[\dots ,\mu_{ -m},  \dots ,\mu_{0}, \dots ,\mu_{m}, \dots \\]
 which satisfy the inequality
 \\[\left|\, \mu_r \,\right| < \mu ,\\]
-where \\(\mu\\) is a positive number; and let the new value of \\(D_m\\) be denoted by \\(D\,'_{\!m}\\). Moreover, denote by \\(\overline{P}\,'_{\!m}\\) and \\(\overline{P}\,' \\) the products obtained by suppressing in \\(\overline{P}_m\\) and \\(\overline{P}\\) the factor corresponding to the (row) index zero; we see that no terms of \\(D\,'_m\\) can have a greater modulus than the corresponding term in the expansion of \\(\mu \overline{P}\,'\\); and consequently, reasoning as in the last article, we have
+where \\(\mu\\) is a positive number; and let the new value of \\(D_m\\) be denoted by \\(D\,'_{\!m}\\). Moreover, denote by \\(\overline{P}\,'_{\!m}\\) and \\(\overline{P}\,' \\) the products obtained by suppressing in \\(\overline{P}_m\\) and \\(\overline{P}\\) the factor corresponding to the (row) index zero; we see that no terms of \\(D\,'_m\\) can have a greater modulus than the corresponding term in the expansion of \\(\mu \overline{P}\,'_{\!m}\\); and consequently, reasoning as in the last article, we have
 \\[\left|\, D\,'_{\!m+p}-D\,'_{\!m} \,\right| \leq \overline{P}\,'_{\!m + p} - \overline{P}\,'_{\!m} .\\]
 which is sufficient to establish the result stated. 
 
@@ -276,7 +275,7 @@ shall be absolutely convergent. \\(\vphantom{\\ 3\\}\\)<br>
 
 *Convergent series.*
 :A. Pringsheim, [*Math. Ann.* **xxxv.** (1890)][PConvergence], pp. 297-394.
-:T. J. I'a. Bromwich, [*Theory of Infinite Series*][InfiniteSeries] (1919), Chs. **II, III, IV.**
+:T. J. I'a. Bromwich, [*Theory of Infinite Series*][InfiniteSeries] (1908), Chs. **II, III, IV.**
 
 [PConvergence]: http://www.digizeitschriften.de/dms/toc/?PPN=PPN235181684_0035
 
@@ -305,15 +304,15 @@ shall be absolutely convergent. \\(\vphantom{\\ 3\\}\\)<br>
 
 ### Miscellaneous Examples ###
 
-1. Evaluate \\(\lim\limits_{n \rightarrow \infty} (e^{-na}n^b)\\), \\((\lim\limits_{n \rightarrow \infty} (n^{-a} \log n) \\) when \\(a>0\\), \\(b>0\\). 
+1. Evaluate \\(\lim\limits_{n \rightarrow \infty} (e^{-na}n^b)\\), \\(\lim\limits_{n \rightarrow \infty} (n^{-a} \log n) \\) when \\(a>0\\), \\(b>0\\). 
 
 2. Investigate the convergence of 
 \\[\sum_{n=1}^{\infty} \left\{1-n\log \frac{2n +1}{2n-1} \right\} .\\] (Trinity, 1904.)
 
 3. Investigate the convergence of 
-\\[\sum_{n=1}^{\infty} \left\{\frac{1 \cdot 3 \cdots (2n-1)}{2 \cdot 4 \cdots (2n)}\; \frac{4n+3}{2n+2} \right \}^2 .\\] (Peterhouse, 1906.)
+\\[\sum_{n=1}^{\infty} \left\{\frac{1 \cdot 3 \cdots (2n-1)}{2 \cdot 4 \cdots (2n)}\cdot\frac{4n+3}{2n+2} \right \}^2 .\\] (Peterhouse, 1906.)
 4. Find the range of values of \\(z\\) for which the series 
-\\[2\sin^2 z - 4\sin^4 z+ 8 \sin^6 z - \dots +(-1)^{n+1} 2^n \sin^{2n} z+ \dots .\\]
+\\[2\sin^2 z - 4\sin^4 z+ 8 \sin^6 z - \dots +(-1)^{n+1} 2^n \sin^{2n} z+ \dots \\]
 is convergent.
 
 5. Shew that the series
@@ -333,57 +332,59 @@ in which \\((p + q)\\) negative terms always follow \\(p\\) positive terms, is d
 7. Shew that the series
 \\[\qquad \frac{1}{1^{\alpha}}+\frac{1}{2^{\beta}}+\frac{1}{3^{\alpha}}+\frac{1}{4^{\beta}}+ \dots \qquad (1<\alpha<\beta)\\]
 is convergent, although
-\\[u_{2n+1}/u_{2n} \rightarrow \infty .\\] (Cesàro.)
+\\[\left.u_{2n+1}\middle/u_{2n}\right. \rightarrow \infty .\\] (Cesàro.)
 
 8. Shew that the series
 \\[\qquad \alpha+\beta^2+\alpha^3+\beta^4+ \dots \qquad (0<\alpha <\beta<1)\\]
 is convergent, although
-\\[u_{2n}/u_{2n-1} \rightarrow \infty .\\] (Cesàro.)
+\\[\left.u_{2n}\middle/u_{2n-1}\right. \rightarrow \infty .\\] (Cesàro.)
 
 9. Shew that the series
 \\[\sum_{n=1}^{\infty}\frac{n z^{n-1}\{(1+n^{-1})^n-1\}}{(z^n-1)\{z^n-(1+n^{-1})\}}\\]
 converges absolutely for all values of \\(z\\), except the values 
-\\[z=\left(1+\frac{a}{m}\right)e^{2k\pi/m}\\]
+\\[z=\left(1+\frac{a}{m}\right)e^{\left.2k\pi\:\! i\middle/m\right.}\\]
 \\[(a=0,1;\; k=0,1, \dots,m-1; \; m=1,2,3, \dots) .\\]
 
 10. Shew that, when \\(s>1\\),
 \\[\sum_{n=1}^{\infty}\frac{1}{n^s}=\frac{1}{s-1}+\sum_{n=1}^{\infty}\left[\frac{1}{n^s}+\frac{1}{s-1}\left\{\frac{1}{(n+1)^{s-1}}-\frac{1}{n^{s-1}}\right\}\right] ,\\]
-and shew that the series on the right converges when \\(0 < s < 1\\).\\(\vphantom{\\ 3\\}\\)<br>
+and shew that the series on the right also converges when \\(0 < s < 1\\).\\(\vphantom{\\ 3\\}\\)<br>
 (de la Vallee Poussin, Mém. de l'Acad. de Belgique, LIII. (1896), no. 6.) 
 
 11. In the series whose general term is
-\\[\qquad u_n=q^{n-\nu}x^{\frac{1}{2}\nu(\nu+1)} , \qquad (0 < q < 1 < x)\\]
+\\[\qquad u_n=q^{n-\nu}x^{\frac{1}{2}\nu\:\!(\nu+1)} , \qquad (0 < q < 1 < x)\\]
 where \\(\nu\\) denotes the number of digits in the expression of \\(n\\) in the ordinary decimal scale 
 of notation, shew that
-\\[\lim_{n \rightarrow \infty} u_n^{\, 1/n} = q ,\\]
-and that the series is convergent, although \\(\varlimsup u_{n+1}/u_n = \infty .\\)
+\\[\lim_{n \rightarrow \infty} u_n^{\, \left.1\middle/n\right.} = q ,\\]
+and that the series is convergent, although \\(\varlimsup\limits_{n \rightarrow \infty} \left.u_{n+1}\middle/u_n\right. = \infty .\\)
 
 12. Shew that the series  
 \\[q_1+q_1^2+q_2^3+q_1^4+q_2^5+q_3^6+q_1^7+ \dots ,\\]
 where
-\\[\qquad \qquad q_n=q^{1+(4/n)}, \qquad (0 < q < 1)\\]
-is convergent, although the ratio of the \\((n=1)\\)th term to the \\(n\\)th is greater than unity 
+\\[\qquad \qquad q_n=q^{1+(\left.4\middle/n\right.)}, \qquad (0 < q < 1)\\]
+is convergent, although the ratio of the \\((n+1)\\)th term to the \\(n\\)th is greater than unity 
 when \\(n\\) is not a triangular number.\\(\vphantom{\\ 3\\}\\)<br>
 (Cesàro.)
 
 13. Shew that the series
 \\[\sum_{n=0}^{\infty} \frac{e^{2\pi \,nix}}{(w+n)^s} ,\\]
-where \\(w\\) is real, \\(s\\) and \\(x\\) are complex, and where \\((w+n)^s\\) is understood to mean \\(e^{s\log(w+n)}\\), the logarithm being taken in its arithmetic sense, is convergent for all values of \\(s\\), when \\(I(x)\\) is positive, and is convergent for values of \\(s\\) whose real part is positive, when \\(x\\) is real and not an integer. 
+where \\(w\\) is real, and where \\((w+n)^s\\) is understood to mean \\(e^{s\log(w+n)}\\), the logarithm being taken in its arithmetic sense, is convergent for all values of \\(s\\), when \\(\mathfrak{Im}(x)\\) is positive, and is convergent for values of \\(s\\) whose real part is positive, when \\(x\\) is real and not an integer. 
 14. If \\(u_n > 0\\), shew that, if \\(\sum u_n\\) converges, then \\(\varliminf\limits_{\,n \rightarrow \infty} nu_n =0\\), and that, if in addition \\(u_{n} \geq u_{n+1}\\), then \\(\lim\limits_{\,n \rightarrow \infty} nu_n =0\\).
 
-15. If \\[\qquad a_{m\,n}= \frac{m-n}{2^{m+n}}\;\frac{(m+n-1)!}{m! \; n!} , \qquad (m,\,n > 0)\\]
+15. If \\[\qquad a_{m\,n}= \frac{m-n}{2^{m+n}}\cdot\frac{(m+n-1)!}{m! \; n!} , \qquad (m,\,n > 0)\\]
 \\[a_{m \,0}=2^{-m}, \quad a_{0 \, n}=-2^{-n}, \quad a_{0\,0}=0 ,\\]
 shew that
 \\[\sum_{m=0}^{\infty}\left(\sum_{n=0}^{\infty} a_{m\, n} \right)=-1, \quad \sum_{n=0}^{\infty}\left(\sum_{m=0}^{\infty} a_{m\, n} \right)=1 .\\]
+(Trinity, 1904.)
 
 16. By converting the series
 \\[1+\frac{8q}{1-q}+\frac{16q^2}{1+q^2}+\frac{24q^3}{1-q^3}+ \dots ,\\]
 (in which \\(\left|\,q\,\right| <1\\)), into a double series, shew that it is equal to
 \\[1+\frac{8q}{(1-q)^2}+\frac{8q^2}{(1+q^2)^2}+\frac{8q^3}{(1-q^3)^2}+ \dots .\\]
+(Jacobi.)
 
 17. Assuming that
-\\[\sin z= z \prod_{z=1}^{\infty} \left( 1-\frac{z^2}{r^2 \pi^2}\right) ,\\]
-shew that if \\(m \rightarrow \infty\\) and \\(n \rightarrow \infty\\) in such a way that \\(\lim (m/n) = k\\), where \\(k\\) is finite, then 
+\\[\sin z= z \prod_{r=1}^{\infty} \left( 1-\frac{z^2}{r^2 \pi^2}\right) ,\\]
+shew that if \\(m \rightarrow \infty\\) and \\(n \rightarrow \infty\\) in such a way that \\(\lim\, (\left.m\middle/n\right.) = k\\), where \\(k\\) is finite, then 
 \\[ \lim \sum_{\substack{r=\,-n\\r \, \neq \, 0}}^{m}\left(1+\frac{z}{r \pi}\right)=k^{\,z / \pi} \frac{\sin z}{z} .\\]
 (Math. Trip., 1904.)
 
@@ -427,8 +428,9 @@ is equivalent to the equation
 
 
 <div id="footer">
-<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
-<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/"> GitHub.</a></h3>
+<h4>All content is either in the public domain or licensed under <a href="http://creativecommons.org/licenses/by/3.0/us/">a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h4>Feel free report typos and other issues on <span style="font-weight: 400;"><a href="https://github.com/CdLbB/cdlbb.github.com/tree/master/WandW">GitHub</a></span> or by email at <span style="font-weight: 400;"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#110;&#x69;&#x74;&#104;&#x61;&#114;&#100;&#x74;&#x40;&#x75;&#x77;&#46;&#101;&#x64;&#x75;">&#x6e;&#x69;&#116;&#x68;&#x61;&#114;&#100;&#x74;&#x40;&#117;&#119;&#x2e;&#101;&#x64;&#x75;</a></span>.</h4>
 </div>
 
 

@@ -65,7 +65,7 @@ properties (apart from the periodic properties) of this function. It is then eas
 
 <p>Next, the sine and cosine are defined by power series from which follows the connexion of these functions with the exponential function. A brief sketch of the manner in which the formulae of elementary trigonometry may be derived is then given (<a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.4thedefinitionofthesineandcosine.">&#167;&#167;A.4&#8211;A.42</a>). </p>
 
-<p>The results thus obtained render it possible to discuss the periodicity of the exponential and circular functions by <em>purely arithmetical methods</em> (<a href="CMA24-Appendix-II-TrigonometricalFunctions.html#a.5theperiodicityoftheexponentialfunction.">&#167;A.5</a>, <a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.51thesolutionoftheequation">&#167;A.51</a>). </p>
+<p>The results thus obtained render it possible to discuss the periodicity of the exponential and circular functions by <em>purely arithmetical methods</em> (<a href="CMA24-Appendix-II-TrigonometricalFunctions.html#a.5theperiodicityoftheexponentialfunction.">&#167;A.5</a>, <a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.51thesolutionoftheequation.">&#167;A.51</a>). </p>
 
 <p>In <a href="CMA24-Appendix-II-TrigonometricalFunctions.html#a.52thesolutionofapairoftrigonometricalequations.">&#167;&#167;A.52&#8211;A.522</a>, we consider, substantially, the continuity of the inverse circular functions. When these functions have been investigated, the theory of logarithms of complex numbers (<a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.6logarithmsofcomplexnumbers.">&#167;A.6</a>) presents no further difficulty. </p>
 
@@ -92,7 +92,7 @@ properties (apart from the periodic properties) of this function. It is then eas
 <li>The Appendix, <a href="#a.2theexponentialfunction.">&#167;&#167;A.2&#8211;A.6</a> (omitting <a href="#a.32differentiationofthelogarithm.">&#167;A32</a>, <a href="#a.33theexpansionoflog.">&#167;A.33</a>).</li>
 <li>Chapter <strong>ii</strong>, the examples of <a href="CMA02-2-SeriesMN.html#dirichlet">&#167;&#167;2.31&#8211;2.61</a>.</li>
 <li>Chapter <strong>iii</strong>, <a href="CMA03-2-UniformityMN.html#uniformityofconvergenceofinfiniteproducts.">&#167;&#167;3.341&#8211;3.4</a>.</li>
-<li><a href="CMA04-1-Integration.html">Chapter <strong>iv</strong></a>, inserting <a href="#a.32differentiationofthelogarithm.">&#167;A.32</a>, <a href="#a.33theexpansionoflog.">&#167;A.33</a>, <a href="CMA24-#a.7theanalyticaldefinitionofanangle.">&#167;A.7</a> after <a href="CMA04-1-IntegrationMN.html#4.13ageneraltheoremonintegration.">&#167;4.13</a>.</li>
+<li><a href="CMA04-1-Integration.html">Chapter <strong>iv</strong></a>, inserting <a href="#a.32differentiationofthelogarithm.">&#167;A.32</a>, <a href="#a.33theexpansionoflog.">&#167;A.33</a>, <a href="CMA24-Appendix-II-TrigonometricalFunctions.html#a.7theanalyticaldefinitionofanangle.">&#167;A.7</a> after <a href="CMA04-1-IntegrationMN.html#4.13ageneraltheoremonintegration.">&#167;4.13</a>.</li>
 <li>Chapter <strong>ii</strong>, <a href="CMA02-4-ProductsMN.html#infiniteproducts">&#167;&#167;2.7&#8211;2.82</a>.</li>
 </ul>
 </div>
@@ -154,7 +154,7 @@ because <span class="math">\(\exp x > 0\)</span> and <span class="math">\(\exp k
 and the series on the right is seen (by the methods of <a href="#a.2theexponentialfunction.">&#167;A.2</a>) to be continuous for all values of <span class="math">\(h\)</span>, we have
 <span class="math">\[\lim_{h \rightarrow 0}\, \left.\{\exp h - 1\}\middle/h\right. = 1, \]</span>
 and so
-<span class="math">\[\frac{d \exp z}{dz} = \lim_{h \rightarrow 0}\frac{\exp(z+h) - h}{h} = \exp z.\]</span></p>
+<span class="math">\[\frac{d \exp z}{dz} = \lim_{h \rightarrow 0}\frac{\exp(z+h) - \exp z}{h} = \exp z.\]</span></p>
 
 <h4 id="a.22variouspropertiesoftheexponentialfunction.">A.22 Various properties of the exponential function.</h4>
 
@@ -169,10 +169,7 @@ In particular, taking <span class="math">\(z =1\)</span> and writing <span class
 <span class="math">\[(\exp \mu)^q = \exp \mu q = \exp p = e^p , \]</span>
 so that the <span class="math">\(q\)</span>th. power of <span class="math">\(\exp \mu\)</span> is <span class="math">\(e^p\)</span>; that is to say, <span class="math">\(\exp \mu\)</span> is a value of <span class="math">\(e^{\:\!\left.p\middle/q\right.} = e^\mu\)</span>, and it is obviously (<a href="#a.21theaddition-theoremfortheexponentialfunctionanditsconsequences.">&#167;A.21</a>) the real positive value. </p>
 
-<p>If <span class="math">\(x\)</span> be an irrational-real number, (defined by a section in which <span class="math">\(\alpha_1\)</span> and <span class="math">\(\alpha_2\)</span> are typical members of the <span class="math">\(L\)</span>-class and the <span class="math">\(R\)</span>-class respectively), the <em>irrational</em> power <span class="math">\(e^x\)</span> is most
-simply <em>defined</em> as <span class="math">\(\exp x\)</span>; we thus have, for all real values of <span class="math">\(x\)</span>, rational and irrational,
-<span class="math">\[e^x = 1+\frac{x}{1!}+\frac{x^2}{2!}+ \cdots , \]</span>
-an equation first given by Newton.<a class="marginmark" onClick="toggleHide('mn:8,-6');">&#91;8&#93;</a> </p>
+<h6 id="a.22footnote">If <span class="math">\(x\)</span> be an irrational-real number, (defined by a section in which <span class="math">\(\alpha_1\)</span> and <span class="math">\(\alpha_2\)</span> are typical members of the <span class="math">\(L\)</span>-class and the <span class="math">\(R\)</span>-class respectively), the <em>irrational</em> power <span class="math">\(e^x\)</span> is most simply <em>defined</em> as <span class="math">\(\exp x\)</span>; we thus have, for all real values of <span class="math">\(x\)</span>, rational and irrational, <span class="math">\[e^x = 1+\frac{x}{1!}+\frac{x^2}{2!}+ \cdots , \]</span> an equation first given by Newton.<a class="marginmark" onClick="toggleHide('mn:8,-6');">&#91;8&#93;</a></h6>
 </div>
 <div class="marginnotes"  id="mn:8,-6"  style="margin-top: -6em; margin-bottom: -6em;"><a class="marginmark">&#91;8&#93;</a><a href="http://www.e-rara.ch/zut/content/pageview/637329"><em>De Analysi per aequat. num. term. inf.</em></a> (written before 1669, but not published till 1711); it was also given both by Newton and by Leibniz in letters to Oldenburg in 1676; it was first published by Wallis in 1685 in his <a href="http://www.e-rara.ch/doi/10.3931/e-rara-8842"><em>A Treatise of Algebra</em></a>, p. 343. The equation when <span class="math">\(x\)</span> is irrational, was explicitly stated by Schl&ouml;milch, <a href="https://archive.org/details/handbuchderalgeb00schl"><em>Handbuch der alg. Analysis</em></a> (1889), p. 182, <a onClick="hideIt('mn:8,-6')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
@@ -183,7 +180,7 @@ regarded as being a power of <span class="math">\(e\)</span>), thus defined, is 
 <span class="math">\[e^{z} e^{\zeta} = e^{z+\zeta}, \quad e^{-z} = \left. 1\middle/ e^{z} \right. .\]</span></p>
 
 <blockquote>
-<p>[<strong>Note.</strong> Tannery, <a href="http://gallica.bnf.fr/ark:/12148/bpt6k99501q"><em>Lecons d&#8217;Algebre et d&#8217;Analyse,</em> <strong>i.</strong></a> (1906), p. 45, practically defines <span class="math">\(e^x\)</span>,.
+<p>[<strong>Note.</strong> Tannery, <a href="http://gallica.bnf.fr/ark:/12148/bpt6k99501q"><em>Lecons d&#8217;Algebre et d&#8217;Analyse,</em> <strong>i.</strong></a> (1906), p. 45, practically defines <span class="math">\(e^x\)</span>,
 when <span class="math">\(x\)</span> is irrational, as the <em>only</em> number <span class="math">\(X\)</span> such that <span class="math">\(e^{\alpha_1} \leq X \leq e^{a_2}\)</span>, for every <span class="math">\(\alpha_1\)</span> and <span class="math">\(\alpha_2\)</span>.
 From the definition we have given it is easily seen that such a <em>unique</em> number exists. For <span class="math">\(\exp x \,(= X)\)</span> satisfies the inequality, and if <span class="math">\(X' \,(\neq X)\)</span> also did so, then
 <span class="math">\[\exp \alpha_2 - \exp \alpha_1 = e^{\alpha_2}-e^{\alpha_1} \geq \left|\, X'-X \,\right|,\]</span>
@@ -197,36 +194,36 @@ so that, since the exponential function is. continuous, <span class="math">\(\al
 <div class="contenttext">
 
 <p>It has been seen (<a href="#a.2theexponentialfunction.">&#167;A.2</a>, <a href="#a.21theaddition-theoremfortheexponentialfunctionanditsconsequences.">&#167;A.21</a>) that, when <span class="math">\(x\)</span> is real, <span class="math">\(\exp x\)</span> is a positive continuous increasing function of <span class="math">\(x\)</span>, and obviously <span class="math">\(\exp x \rightarrow +\infty\)</span> as <span class="math">\(x \rightarrow +\infty\)</span>, while
-<span class="math">\[\exp x =\left.1\middle/\exp(-x)\right. \rightarrow -\infty.\]</span> </p>
+<span class="math">\[\exp x =\left.1\middle/\exp(-x)\right. \rightarrow 0\, \text{ as }\, x\rightarrow -\infty.\]</span> </p>
 
 <p>If, then, <span class="math">\(a\)</span> be any positive number, it follows from <a href="CMA03-3-Heine-BorelMN.html#arealfunctionofarealvariablecontinuousinaclosedintervalattainsallvaluesbetweenitsupperandlowerbounds.">&#167;3.63</a> that the equation in <span class="math">\(x\)</span>,
 <span class="math">\[\exp x = a,\]</span>
-has one real root and only one. This root (which is, of course, a function of <span class="math">\(a\)</span>) will be written <span class="math">\(\log_e a\)</span> or simply <span class="math">\(\log a\)</span>;<a class="marginmark" onClick="toggleHide('mn:10,-3');">&#91;10&#93;</a> it is called the <em>Logarithm of the positive number <span class="math">\(a\)</span></em>. </p>
+has one real root and only one. This root (which is, of course, a function of <span class="math">\(a\)</span>) will be written <span class="math">\(\mathrm{Log}_e\:\! a\)</span> or simply <span class="math">\(\mathrm{Log}\, a\)</span>;<a class="marginmark" onClick="toggleHide('mn:10,-3');">&#91;10&#93;</a> it is called the <em>Logarithm of the positive number <span class="math">\(a\)</span></em>. </p>
 </div>
-<div class="marginnotes"  id="mn:10,-3"  style="margin-top: -3em; margin-bottom: -3em;"><a class="marginmark">&#91;10&#93;</a>This is in agreement with the notation of most text-books, in which <span class="math">\(\log\)</span> denotes the principal value (see <a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.6logarithmsofcomplexnumbers.">&#167;A.6</a>) of the logarithm of a complex number. <a onClick="hideIt('mn:10,-3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div class="marginnotes"  id="mn:10,-3"  style="margin-top: -3em; margin-bottom: -3em;"><a class="marginmark">&#91;10&#93;</a>This is in agreement with the notation of most text-books, in which <span class="math">\(\mathrm{Log}\)</span> denotes the principal value (see <a href="CMA24-Appendix-II-TrigonometricalFunctions.html#a.6logarithmsofcomplexnumbers.">&#167;A.6</a>) of the logarithm of a complex number. <br><br><em>Editor&#8217;s Note</em>: For the time being, Whittaker and Watson are using the capital &#8216;L&#8217; <span class="math">\(\mathrm{Log}\, x\)</span> to refer to the logarithm of the of the positive real number <span class="math">\(x\)</span> to distinguish it from the <span class="math">\(\log z\)</span> the logarithm of the non-zero complex number <span class="math">\(z\)</span>, which they will define in <a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.6logarithmsofcomplexnumbers.">&#167;A.6</a>. At that point, we can reconsider <span class="math">\(\mathrm{Log}\, z\)</span> as the principal value of <span class="math">\(\log z\)</span>.<a onClick="hideIt('mn:10,-3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
 <div class="contenttext">
 
 <p>Since a one-one correspondence has been established between <span class="math">\(x\)</span> and <span class="math">\(a\)</span>, and since <span class="math">\(a\)</span> is an increasing function of <span class="math">\(x\)</span>, <span class="math">\(x\)</span> must be an increasing function of <span class="math">\(a\)</span>; that is to say, the Logarithm is an increasing function. </p>
 
 <blockquote>
-<p><em>Example</em>. Deduce from <a href="#a.21theaddition-theoremfortheexponentialfunctionanditsconsequences.">&#167;A.21</a> that <span class="math">\(\log a + \log b = \log ab\)</span>. </p>
+<p><em>Example</em>. Deduce from <a href="#a.21theaddition-theoremfortheexponentialfunctionanditsconsequences.">&#167;A.21</a> that <span class="math">\(\mathrm{Log}\, a + \mathrm{Log}\, b = \mathrm{Log}\, ab\)</span>. </p>
 </blockquote>
 
 <h4 id="a.31thecontinuityofthelogarithm.">A.31 The continuity of the Logarithm.</h4>
 
-<p>It will now be shewn that, when <span class="math">\(a\)</span> is positive, <span class="math">\(\log a\)</span> is a continuous function of <span class="math">\(a\)</span>. </p>
+<p>It will now be shewn that, when <span class="math">\(a\)</span> is positive, <span class="math">\(\mathrm{Log}\, a\)</span> is a continuous function of <span class="math">\(a\)</span>. </p>
 
-<p>Let <span class="math">\[\log a= x, \quad  \log (a + h)=x + k,\]</span>
+<p>Let <span class="math">\[\mathrm{Log}\, a= x, \quad  \mathrm{Log} (a + h)=x + k,\]</span>
 so that
 <span class="math">\[e^x = a,\quad e^{x + k} = a + h, \quad  1 + (\left.h\middle/ a\right.) = e^k .\]</span> </p>
 
 <p>First suppose that <span class="math">\(h > 0\)</span>, so that <span class="math">\(k > 0\)</span>, and then
 <span class="math">\[1 + (\left.h\middle/ a\right.) = l + k+\frac{1}{2}k^2 + \cdots > 1+ k,\]</span>
 and so <span class="math">\[0 < k <\left.h\middle/ a\right. ,\]</span>
-that is to say <span class="math">\[0 < \log (a + h) - \log a < \left.h\middle/ a\right. . \]</span></p>
+that is to say <span class="math">\[0 < \mathrm{Log} (a + h) - \mathrm{Log}\, a < \left.h\middle/ a\right. . \]</span></p>
 
-<p>Hence, <span class="math">\(h\)</span> being positive, <span class="math">\(\log (a + h) - \log a\)</span> can be made arbitrarily small by taking <span class="math">\(h\)</span> sufficiently small. </p>
+<p>Hence, <span class="math">\(h\)</span> being positive, <span class="math">\(\mathrm{Log} (a + h) - \mathrm{Log}\, a\)</span> can be made arbitrarily small by taking <span class="math">\(h\)</span> sufficiently small. </p>
 
 <p>Next, suppose that <span class="math">\(h < 0\)</span>, so that <span class="math">\(k < 0\)</span>, and then <span class="math">\(\left.a\middle/(a + h)\right. = e^{-k}\)</span>.
 Hence (taking <span class="math">\(0 < -h < \frac{1}{2}a\)</span>, as is obviously permissible) we get
@@ -235,23 +232,22 @@ and so
 <span class="math">\[-k < -1 + \left.a\middle/(a + h)\right. = -\left.h\middle/(a + h)\right. <-2\left.h\middle/a\right. .\]</span> </p>
 
 <p>Therefore, whether <span class="math">\(h\)</span> be positive or negative, if <span class="math">\(\epsilon\)</span> be an arbitrary positive number and if <span class="math">\(\left|\,h\,\right|\)</span> be taken less than both <span class="math">\(\frac{1}{2}a\)</span> and <span class="math">\(\frac{1}{2}a\epsilon\)</span>, we have
-<span class="math">\[\left|\, \log (a + h) - \log a \,\right| < \epsilon, \]</span>
+<span class="math">\[\left|\, \mathrm{Log} (a + h) - \mathrm{Log}\, a \,\right| < \epsilon, \]</span>
 and so the condition for continuity (<a href="CMA03-1-ContinuousFnsMN.html#continuityoffunctionsofrealvariables">&#167;3.2</a>) is satisfied. </p>
 
 <h4 id="a.32differentiationofthelogarithm.">A.32 Differentiation of the Logarithm.</h4>
 
-<p>Retaining the notation of <a href="#a.31thecontinuityofthelogarithm.">&#167;A.31</a>, we see, from results there proved, that, if <span class="math">\(h \rightarrow 0\)</span>
-(<span class="math">\(a\)</span> being fixed), then also <span class="math">\(k \rightarrow 0\)</span>. Therefore, when <span class="math">\(a > 0\)</span>,
-<span class="math">\[\frac{d \log a}{da} = \lim_{k \rightarrow 0} \frac{k}{e^{x+k} -e^x} = \frac{1}{e^k} = a. \]</span></p>
+<p>Retaining the notation of <a href="#a.31thecontinuityofthelogarithm.">&#167;A.31</a>, we see, from results there proved, that, if <span class="math">\(h \rightarrow 0\)</span> (<span class="math">\(a\)</span> being fixed), then also <span class="math">\(k \rightarrow 0\)</span>. Therefore, when <span class="math">\(a > 0\)</span>,
+<span class="math">\[\frac{d\:\! \mathrm{Log}\, a}{da} = \lim_{k \rightarrow 0} \frac{k}{e^{x+k} -e^x} = \frac{1}{e^x} = \frac{1}{a}. \]</span></p>
 
-<p>Since <span class="math">\(\log 1 = 0\)</span>, we have, by <a href="CMA04-1-IntegrationMN.html#4.13example3">&#167;4.13 example 3</a>,
-<span class="math">\[\log a = \int _1^a \! t^{-1} \,dt.\]</span></p>
+<p>Since <span class="math">\(\mathrm{Log}\, 1 = 0\)</span>, we have, by <a href="CMA04-1-IntegrationMN.html#4.13example3">&#167;4.13 example 3</a>,
+<span class="math">\[\mathrm{Log}\, a = \int _1^a \! t^{-1} \,dt.\]</span></p>
 
-<h4 id="a.33theexpansionoflog.">A.33 The expansion of <span class="math">\(\:\!\log (1 + a)\)</span> in powers of <span class="math">\(a\)</span>.</h4>
+<h4 id="a.33theexpansionoflog.">A.33 The expansion of <span class="math">\(\:\!\mathrm{Log} (1 + a)\)</span> in powers of <span class="math">\(a\)</span>.</h4>
 
 <p>From <a href="#a.32differentiationofthelogarithm.">&#167;A.32</a> we have
 <span class="math">\[\begin{align*}
-\log(1+a) &= \int _0^a \! (1+ t)^{-1} \,dt \\
+\mathrm{Log}(1+a) &= \int _0^a \! (1+ t)^{-1} \,dt \\
 &=\int _0^a \! \{1-t+t^2- \cdots +(-1)^{n-1}t^{n-1}+(-1)^n t^n (1+t)^{-1} \}\,dt \\
 &=a-\frac{1}{2}a^2+\frac{1}{3}t^3- \cdots +(-1)^{n-1}\frac{1}{n}a^n +R_n, 
 \end{align*}\]</span>
@@ -268,8 +264,8 @@ where <span class="math">\[R_n = (-1)^n \int_0^a \! t^n (1+t)^{-1}\,dt.\]</span>
 </div>
 <div class="contenttext">
 
-<p>Hence, when <span class="math">\(-1 < a < 1\)</span>, <span class="math">\(\log(1 + a)\)</span> can be expanded into the convergent series<a class="marginmark" onClick="toggleHide('mn:11,+1');">&#91;11&#93;</a>
-<span class="math">\[\log(1-a) = a-\frac{1}{2}a^2+\frac{1}{3}t^3- \cdots = \sum_{n=1}^\infty (-1)^{n-1} \left.a^n\middle/n\right. .\]</span>
+<p>Hence, when <span class="math">\(-1 < a < 1\)</span>, <span class="math">\(\mathrm{Log}(1 + a)\)</span> can be expanded into the convergent series<a class="marginmark" onClick="toggleHide('mn:11,+1');">&#91;11&#93;</a>
+<span class="math">\[\mathrm{Log}(1+a) = a-\frac{1}{2}a^2+\frac{1}{3}a^3- \cdots = \sum_{n=1}^\infty (-1)^{n-1} \left.a^n\middle/n\right. .\]</span>
 If <span class="math">\(a = +1\)</span>,
 <span class="math">\[\left|\,R_n\,\right|=\int_0^1 \! t^n (1+t)^{-1} dt < \int_0^1 \! t^n \,dt =(n+1)^{-1} \rightarrow 0\, \text{ as } \, n \rightarrow \infty, \]</span>
 so the expansion is valid when <span class="math">\(a= + 1\)</span>; it is not valid when <span class="math">\(a = -1\)</span>. </p>
@@ -277,7 +273,7 @@ so the expansion is valid when <span class="math">\(a= + 1\)</span>; it is not v
 <blockquote>
 <p><em>Example</em>. Shew that <span class="math">\(\lim\limits_{n \rightarrow \infty} \left(1 + \dfrac{1}{n}\right)^n =e\)</span>. </p>
 
-<p>[We have <span class="math">\(\displaystyle \lim_{n \rightarrow \infty} n \log\left(1 + \dfrac{1}{n}\right) = \lim_{n \rightarrow \infty} \left(1-\frac{1}{2n}+\frac{1}{3n^2}- \cdots \right) = 1,\)</span>
+<p>[We have <span class="math">\(\displaystyle \lim_{n \rightarrow \infty} n\, \mathrm{Log}\left(1 + \dfrac{1}{n}\right) = \lim_{n \rightarrow \infty} \left(1-\frac{1}{2n}+\frac{1}{3n^2}- \cdots \right) = 1,\)</span>
 and the result required follows from the result of <a href="#a.2theexponentialfunction.">&#167;A.2</a> that <span class="math">\(\lim\limits_{z \rightarrow \zeta}  e^z = e^\zeta\)</span>.] </p>
 </blockquote>
 </div>
@@ -408,14 +404,14 @@ and the result required follows from the result of <a href="#a.2theexponentialfu
     <li><a href="#a.22variouspropertiesoftheexponentialfunction.">Properties of the exponential function</a></li>
   </ul>
 </li>
-    <li  class="current"><a href="#a.3logarithmsofpositivenumbers.">Logarithms of positive numbers.</a>
+    <li  class="current"><a href="#a.3logarithmsofpositivenumbers.">Logarithms of positive numbers</a>
   <ul>
-    <li><a href="#a.31thecontinuityofthelogarithm.">The continuity of the logarithm</a></li>
-    <li><a href="#a.32differentiationofthelogarithm.">Differentiation of the logarithm</a></li>
-    <li><a href="#a.33theexpansionoflog.">The expansion of <span class="math">\(\:\!\log (1 + a)\)</span></span></a></li>
+    <li><a href="#a.31thecontinuityofthelogarithm.">The continuity of the Logarithm</a></li>
+    <li><a href="#a.32differentiationofthelogarithm.">Differentiation of the Logarithm</a></li>
+    <li><a href="#a.33theexpansionoflog.">The expansion of <span class="math">\(\:\!\mathrm{Log} (1 + a)\)</span></span></a></li>
   </ul>
 </li>
-    <li><a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.4thedefinitionofthesineandcosine.)">The definition of the sine and cosine</a></li>
+    <li><a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.4thedefinitionofthesineandcosine.">The definition of the sine and cosine</a></li>
     <li><a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.5theperiodicityoftheexponentialfunction.">The periodicity of the exponential function</a></li>
     <li><a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.6logarithmsofcomplexnumbers.">Logarithms of complex numbers</a></li>
     <li><a href="CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.7theanalyticaldefinitionofanangle.">The analytical definition of an angle</a></li>
