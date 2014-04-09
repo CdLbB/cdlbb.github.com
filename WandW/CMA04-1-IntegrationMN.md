@@ -120,10 +120,10 @@ Then \\[\begin{align*}
 Hence every expression of the type \\(S_n\\) *exceeds* (or at least equals) every 
 expression of the type \\(s'_{n'}\\); and therefore \\(S\\) cannot be less than \\(s\\). 
 
-[For it \\(S < s\\) and \\(s — S = 2\eta\\) we could find an \\(S_n\\) and an \\(s'_{n'}\\)  such that \\(S_n — S < \eta\\), \\(s — s'_{n'} < \eta\\) and so \\(s'_{n'} > S_n\\), which is impossible.] 
+[For it \\(S < s\\) and \\(s - S = 2\eta\\) we could find an \\(S_n\\) and an \\(s'_{n'}\\)  such that \\(S_n - S < \eta\\), \\(s - s'_{n'} < \eta\\) and so \\(s'_{n'} > S_n\\), which is impossible.] 
 
-The bound \\(S\\) is called the *upper* integral of \\(f(x)\\), and is written \\( \displaystyle \overset{\;_—}{\int_{a}^{b}}\! f(x) \,dx\\); 
-\\(s\\) is called the *lower* integral, and written \\( \displaystyle \underset{\!\!\!\!\!^—}{\int_{a}^{b}}\! f(x) \,dx\\). 
+The bound \\(S\\) is called the *upper* integral of \\(f(x)\\), and is written \\( \displaystyle \overset{\;_{\Large—}}{\int_{a}^{b}}\! f(x) \,dx\\); 
+\\(s\\) is called the *lower* integral, and written \\( \displaystyle \underset{\!\!\!\!\!^{\Large—}}{\int_{a}^{b}}\! f(x) \,dx\\). 
 
 If \\(S = s\\), their common value is called the *integral* of \\(f(x)\\) taken between 
 the limits<a class="marginmark" onClick="toggleHide('mn:5,-3');">&#91;5&#93;</a> of integration 
@@ -179,7 +179,7 @@ The condition is obviously necessary, for if \\(S_n\\) and \\(s_n\\) have a comm
 that if \\(\lim \,(S_n - s_n) = 0\\), then 
 \\[\lim S_n = \lim s_n = S = s.\\] 
 
->**Note**. A continuous function \\(f(x)\\) is 'integrable'. For, given, we can \\(\epsilon\\) find \\(\delta\\) such that \\(\left|\,f(x') - f(x'') \,\right| < \left. \epsilon \middle/ (b-a) \right.\\) whenever \\(\left|\,x'-x' ' \right| < \delta\\). Take all the intervals \\([x_{s-1}, x_s]\\) less than \\(\delta\\), and then \\(U_s - L_s < \left. \epsilon\middle/(b — a)\right.\\) and so \\(S
+>**Note**. A continuous function \\(f(x)\\) is 'integrable'. For, given, we can \\(\epsilon\\) find \\(\delta\\) such that \\(\left|\,f(x') - f(x'') \,\right| < \left. \epsilon \middle/ (b-a) \right.\\) whenever \\(\left|\,x'-x' ' \right| < \delta\\). Take all the intervals \\([x_{s-1}, x_s]\\) less than \\(\delta\\), and then \\(U_s - L_s < \left. \epsilon\middle/(b - a)\right.\\) and so \\(S
 _n - s_n < \epsilon\\); therefore \\(S_n - s_n \rightarrow 0\\) under the circumstances specified in the condition of integrability. 
 
 >*Corollary*. If \\(S_ n\\) and \\(s_n\\) have the same limit \\(S\\) for one mode of subdivision of \\([a, b]\\) into intervals of the specified kind, the limits of \\(S_n\\) and of \\(s_n\\) for any other such mode of subdivision are both S. 
@@ -394,7 +394,7 @@ Then \\(U+2\epsilon \geq \displaystyle\int_{a}^{b}\! f(x)\phi(x) \, dx  \geq L- 
 
 <div markdown=1 class="contenttext">
 
-Since \\(\displaystyle\phi(a) \int_{a}^{ \xi_1}\! f(x) \, dx\\) *qua*<a class="marginmark" onClick="toggleHide('mn:13,+1');">&#91;13&#93;</a> function of \\(\xi_1\\) takes all values between its upper and lower bounds, there is some value \\(\xi\\), say, of \\(\xi_1\\) for which it is equal to \\(\int_{a}^{b} f(x)\phi(x) \, dx \\). This 
+Since \\(\displaystyle\phi(a)\! \int_{a}^{ \xi_1}\! f(x) \, dx\\) *qua*<a class="marginmark" onClick="toggleHide('mn:13,+1');">&#91;13&#93;</a> function of \\(\xi_1\\) takes all values between its upper and lower bounds, there is some value \\(\xi\\), say, of \\(\xi_1\\) for which it is equal to \\(\int_{a}^{b} f(x)\phi(x) \, dx \\). This 
 proves the Second Mean Value Theorem. 
 
 
