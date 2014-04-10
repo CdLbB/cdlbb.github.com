@@ -166,8 +166,17 @@ This effort has just begun: I have only the first two chapters finished as of th
 
 Eric Nitardy
 
-
 April, 2012.
+
+<br>
+
+Imagining that the this effort would be finished by early 2014 was wildly too optimistic. At the moment, I have completed  chapters one through six and the appendix, have begun work on chapter seven, and am proceeding at about a chapter every month and a half. Whether that rate continues, we shall see.
+
+I am grateful to Brian Wignall for the use of portions of [his standard Latex transcription of Whittaker and Watson](https://github.com/bwignall/Whittaker-and-Watson).
+
+Eric Nitardy
+
+April, 2014.
 
 <br>
 

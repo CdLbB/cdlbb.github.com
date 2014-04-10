@@ -16,7 +16,7 @@ latex input:	mmd-cambridge-begin-doc
 latex footer:	mmd-cambridge-footer
 CSS:	css/documentation.css
 
-<div id="header"><h1>A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
+<div id="header"><h1><a href="CMA00-FrontMN.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
 
 <div markdown=1 id="content">
 <div markdown=1 class="contenttext">
@@ -47,6 +47,10 @@ All found
 
 1. [One suggestion (for visualizing complex functions) (made by Lie and Weierstrass) is to use a doubly-manifold system of lines in the quadruply-manifold totality of lines in three-dimensional space.](CMA03-1-ContinuousFnsMN.html#thedependenceofonecomplexnumberonanother)
 2. [Cauchy shewed that if a real function f(x), of a real variable x, satisfies the precise definition (of continuity), then it also satisfies what we have called the popular definition; …. But the converse is not true, as was shewn by Darboux.](CMA03-1-ContinuousFnsMN.html#continuityoffunctionsofrealvariables) 
+
+*Chapter 4.*
+
+1. The formula for differentiation of  integrals containing a parameter [was given by Leibniz, without specifying the restrictions laid on f(x,α).](CMA04-1-IntegrationMN.html#4.2differentiationofintegralscontainingaparameter.) (in marginnote).
 
 *Appendix* 
 
