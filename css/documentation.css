@@ -1,5 +1,6 @@
 
 
+
 html 
     {
 	margin: 0; 
@@ -8,7 +9,7 @@ html
 
 body 
     {
-    font-family: Baskerville, "Baskerville old face", Garamond, "Hoefler Text", Cochin,  "Times New Roman", serif;  
+    font-family: Baskerville, Garamond, "Baskerville old face", "Hoefler Text", Cochin,  "Times New Roman", serif;  
     color: black;
     background-color: white;
     padding: 0px;
@@ -76,9 +77,10 @@ h1, h2, h3, h4, h5 /*  h6  */
 h1 {
     font-size: 2.3em; 
     font-weight: bold;    
-    line-height: 1.3em;
-    text-align: center;
-    letter-spacing: .1em;
+    line-height: .3em;
+    padding-top: 0.3em;
+    text-align: left;
+    letter-spacing: .045em;
     }
 
 
@@ -525,14 +527,21 @@ max-width: 1200px;
     display: block;
     text-indent: -1.3em;
     }
-
-/* Ordered List (ol li) for main content */
-
-.contenttext ol
+    
+    
+.contenttext img
     {
-    margin: 0 0 0 0;
-    line-height: 1.5;
+    width: 100%;
+    max-width: 500px;
+    min-width: 300px;
+    }    
+    
+.contenttext figcaption
+    {
+    margin-left: 15%;
+    margin-right: 15%;
     }
+
 
 /** Future (W3C Working Draft) support for parentheses
 
@@ -542,18 +551,58 @@ max-width: 1200px;
     }
 **/       
        
-       
-.contenttext ol li
+
+/**       
+div#content ol li
     {
     display: list-item;
     list-style-type: lower-roman;
     margin-left: 0em;
     }
+
     
+Approach below is from:
+http://stackoverflow.com/questions/1632005/ordered-list-html-lower-alpha-with-right-parentheses
+http://www.456bereastreet.com/archive/201105/styling_ordered_list_numbers/
+
+**/
+
+/* Ordered List (ol li) for main content */
+
+.listroman ol
+    {
+    margin: 0 0 0 0;
+    line-height: 1.5;
+    list-style-type: none;
+    position: relative;
+
+    padding-left: 2.5em;
+    *text-indent: -2.5em;
+    counter-reset: list;
+    }
+
+}
+.listroman ol  li {
+  list-style-type: none;
+  *padding-left: 5em;
+  *text-indent: -2.3em;
+  position: relative;
+  
+}
+
+.listroman ol  li:before {
+  content: "("counter(list, lower-roman) ") ";
+  counter-increment: list;
+  position: absolute;
+  margin-left: -1.9em;
+  *text-indent: -1.9em;
+  
+    
+}    
     
 /* Ordered List (ol li) for exercises */
         
-div#exercises ol  
+div#exercises  ol  
     {
     margin-top: 1.5em;
     font-size: 0.9em;
@@ -564,7 +613,7 @@ div#exercises ol
     line-height: 1.5;
     }
     
-div#exercises ol li
+div#exercises  ol li
     {
     list-style-type: decimal;
     *padding-bottom: 0.5em;
@@ -590,7 +639,7 @@ div#exercises ol li
     font-weight: normal;
     position:fixed;
     right: 0ex;
-    bottom:0em;
+    top:0em;
     width:  17em; 
 /*scroll min ht: 18.3 to 18.65em, but 17em smallest, BEFORE SCROLL: 17.9em */
     height: 100%;   
@@ -681,38 +730,44 @@ div#exercises ol li
 
 .navigation ul li.part a
     {
-    background-color: #e8a900; /* dark grey green: #28aa24 later #55bb44 #bb3a2b now dark amber */
+    background-color: #eebe40; /* dark grey green: #28aa24 later #55bb44 #bb3a2b now dark amber */
     color: black;
     }
 
 .navigation ul li.part ul li a 
     {
-    background-color: #f0d400; /* light grey green: #55bb44 ee6666 medium amber */
+    background-color: #f4df40; /* light grey green: #55bb44 ee6666 medium amber */
     color: black;
     }
     
 
 .navigation ul li.current a, .navigation ul li.part ul li.current a
     {
-    background-color: #ffee66;/*red: #d20a0a , #e20f0f later  #e21f0f #ee2222 ffbbbb now light amber*/
+    background-color: #fff385;/*red: #d20a0a , #e20f0f later  #e21f0f #ee2222 ffbbbb now light amber*/
     color: black;
     }   
+
+.navigation ul li.uncurrent a, .navigation ul li.part ul li.uncurrent a
+    {
+    background-color: #f4df40;
+    color: black;
+    }  
     
 .navigation ul li a:hover, .navigation ul li a:active, .navigation ul li.part a:hover, .navigation ul li.part a:active
     {
-    background-color: #50b040;/*green*/
+    background-color: #66ba58;/*green*/
     color: white;
     }
     
-.navigation ul li.current a:hover, .navigation ul li.current a:active, .navigation ul li.part ul li.current a:hover, .navigation ul li.part ul li.current a:active, .navigation ul li.part ul li.toc a:hover, .navigation ul li.part ul li.toc a:active
+.navigation ul li.current a:hover, .navigation ul li.current a:active, .navigation ul li.part ul li.current a:hover, .navigation ul li.part ul li.current a:active, .navigation ul li.part ul li.toc a:hover, .navigation ul li.part ul li.toc a:active,ul li.uncurrent  a:active, .navigation ul li.part ul li.uncurrent  a:active
     {
-    background-color: #50b040; /* green was #ffaa00 */
+    background-color: #66ba58; /* green was #ffaa00 */
     color: white;
     }
     
 .navigation ul li.notdone a, .navigation ul li.part ul li.notdone a
     {
-    background-color: #555555;/*grey*/
+    background-color: #909090;/*grey*/
     }    
 
 .navigation ul li.toc a, .navigation ul li.part ul li.toc a
