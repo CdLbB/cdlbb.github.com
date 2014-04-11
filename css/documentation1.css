@@ -11,6 +11,7 @@ body
 div.maxwrapper
     {   
     max-width:1000px;
+    margin-top: 1.4em;
     }
     
 
@@ -19,14 +20,15 @@ div#header
     position: relative;
     top: 0;
     left: 0;
-    margin:0;
+    margin-top: -.5em;
+    min-height: 95px;
     *background-color: /* #5b2100; */
     *height: 60px;
     width: 100%;
     
     text-align: left;
-    padding-top: .56em; /* base: 1em=18px */
-    padding-bottom: .1em;
+    padding-top: 0.1em; /* base: 1em=18px */
+    padding-bottom: 1.3em;
     padding-left: 0;
     display: block;
     }
@@ -37,14 +39,13 @@ div#header h1
     {
     *display: inline;
     text-transform: uppercase;
-    margin: 0;
     padding 0;
     font-size: 1.8em; /*base: 1em=18px, now: 1em=34px */
     font-weight: normal;
     line-height: 1.1em;
     letter-spacing: .05em;
-    margin-top: .6em;
-    margin-left:25%;
+    margin-top: 0;
+    margin-left: 25%;
     padding-left: 0em;
     text-align: left;
     *width: 72%;
@@ -64,7 +65,6 @@ div#header h2
     font-size: .9em;
     font-weight: 200;
     *width: 70%;
-    *font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-family: 'Gill Sans', 'Gill Sans Std', 'Gill Sans MT', Verdana, 'Bitstream Vera Sans', sans-serif;
     color: white;
     border-bottom:none;
@@ -73,7 +73,7 @@ div#header h2
 .floatheader
     {
     float: left;
-    margin-top: 1em;    
+    margin-top: .5em;    
     margin-right: 0.5em;
     margin-left: 0em;
     margin-bottom: 2.0em;
@@ -98,7 +98,7 @@ div#header h2
 
 h2, h3, h4, h5
     {
-    *margin: 0;
+    margin-top: 1em;
     margin-left:25%;
     padding-left: 2em;
     padding-bottom:0;
@@ -141,6 +141,7 @@ p
 blockquote
     {
     *margin-left: 25%;
+    margin-top: -1em;
     padding-left: 4em;
     }
 
