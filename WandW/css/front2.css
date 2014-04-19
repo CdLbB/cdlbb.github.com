@@ -230,6 +230,23 @@ div#contentfront
     list-style: none;
     text-indent: 0;
     }
+    
+.toc ol li, .toc ol li ol, .toc ol li ol li, .toc ol h3, .toc ul, .toc ul li 
+    {
+    font-size: medium;	    
+    }
+
+@media print { 
+hr
+	{
+	visibility: hidden;
+	}
+	
+.toc ol li, .toc ol li ol, .toc ol li ol li, .toc ol h3, .toc ul, .toc ul li 
+    {
+    font-size: small;	    
+    }	
+}
 
 /**END************ M A I N   C O N T E N T **********END**/
 
