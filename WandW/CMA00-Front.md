@@ -71,7 +71,7 @@ HTML header:	<script type="text/javascript"
 </div>
 
 <br>
-<br>
+<br><br>
 
 ---------------------------	
 
@@ -81,7 +81,7 @@ HTML header:	<script type="text/javascript"
 <div markdown=1 id="copyright">
 
 
-<br><br>
+<br><br><br><br><br><br>
 
 #### CAMBRIDGE UNIVERSITY PRESS ####
 
@@ -123,7 +123,7 @@ HTML header:	<script type="text/javascript"
 
 </div>
 
-<br>
+<br><br><br><br>
 
 ------------------------
 
@@ -168,7 +168,6 @@ Eric Nitardy
 
 April, 2012.
 
-<br>
 
 Imagining that the this effort would be finished by early 2014 was wildly too optimistic. At the moment, I have completed  chapters one through six and the appendix, have begun work on chapter seven, and am proceeding at about a chapter every month and a half. Whether that rate continues, we shall see.
 
@@ -193,7 +192,7 @@ April, 2014.
 
 
 <div class="contenttext">
-
+<div class="toc">
 <h2 id="contents">Contents</h2>
 
   <ul>
@@ -308,6 +307,8 @@ April, 2014.
   </ul>
 </ul>
 <br>
+
+</div>
 
 </div>
 

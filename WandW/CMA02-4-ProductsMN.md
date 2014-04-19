@@ -217,7 +217,7 @@ The infinite product in this last form is therefore again absolutely convergent,
 
 
 
-<div markdown=1 class="marginnotes" id="mn:4,-4" style="margin-top: -4em; margin-bottom: -4em;"><a class="marginmark">&#91;4&#93;</a>Reprinted in [*Acta Mathematica*, **viii.** (1886)](http://archive.org/details/actamathematica09lefgoog), pp. 1-36. Infinite determinants had previously occurred in the researches of F&uuml;rstenau on the algebraic equation of the 7th degree, [*Darstellung der reellen Wurzeln algebraischer Gleichungen durch Determinanten der Coeffizienten*](http://books.google.com/books?id=w6_btgAACAAJ) (Marburg, 1860). Special types of infinite determinants (known as continuants) occur in the theory of infinite continued fractions; see Sylvester, [*Math. Papers*, **I**](http://archive.org/details/collectedmathem01sylvrich), p. 504 and [**III**](http://quod.lib.umich.edu/u/umhistmath/AAS8085.0003.001/271?rgn=full+text;view=pdf), p. 249<a onClick="hideIt('mn:4,-4')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:4,-5" style="margin-top: -5em; margin-bottom: -5em;"><a class="marginmark">&#91;4&#93;</a>Reprinted in [*Acta Mathematica*, **viii.** (1886)](http://archive.org/details/actamathematica09lefgoog), pp. 1-36. Infinite determinants had previously occurred in the researches of F&uuml;rstenau on the algebraic equation of the 7th degree, [*Darstellung der reellen Wurzeln algebraischer Gleichungen durch Determinanten der Coeffizienten*](http://books.google.com/books?id=w6_btgAACAAJ) (Marburg, 1860). Special types of infinite determinants (known as continuants) occur in the theory of infinite continued fractions; see Sylvester, [*Math. Papers*, **I**](http://archive.org/details/collectedmathem01sylvrich), p. 504 and [**III**](http://quod.lib.umich.edu/u/umhistmath/AAS8085.0003.001/271?rgn=full+text;view=pdf), p. 249<a onClick="hideIt('mn:4,-5')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -225,7 +225,7 @@ The infinite product in this last form is therefore again absolutely convergent,
 
 <div markdown=1 class="contenttext">
 
-Infinite series and infinite products are not by any means the only known cases of limiting processes which can lead to intelligible results. The researches of G. W. Hill in the Lunar Theory<a class="marginmark" onClick="toggleHide('mn:4,-4');">&#91;4&#93;</a> brought into notice the possibilities of *infinite determinants*.<a class="marginmark" onClick="toggleHide('mn:5,+7');">&#91;5&#93;</a> 
+Infinite series and infinite products are not by any means the only known cases of limiting processes which can lead to intelligible results. The researches of G. W. Hill in the Lunar Theory<a class="marginmark" onClick="toggleHide('mn:4,-5');">&#91;4&#93;</a> brought into notice the possibilities of *infinite determinants*.<a class="marginmark" onClick="toggleHide('mn:5,+7');">&#91;5&#93;</a> 
 
 </div>
 
