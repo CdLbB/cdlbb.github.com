@@ -802,11 +802,79 @@ div#exercises  ol li
 	padding: 1ex;
 }
 
+@media print { 
+html 
+    {
+    margin-top: 1,2em;
+	margin-left: 1.25em; 
+    }
+    
+body
+    {
+    font-size: medium;
+    }
+    
+div#header
+    {
+	visibility: hidden;
+	margin-top: 0;
+	margin-bottom:  0;
+	padding-top: 0;
+	padding-bottom:  0;
+	height: 0;
+    }
+
+div#footer
+    {
+	visibility: hidden;
+	height: 0;
+    }
+    
+.marginnotes  {
+    visibility: visible;
+    page-break-inside: avoid;
+    }
+    
+h1,h2,h3,h4,h5
+	{ 
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    }
+    
+hr
+	{
+	page-break-after: avoid;
+	}
+
+li
+	{
+    page-break-inside: avoid;
+	}
+
+.contenttext
+    {
+    margin-right: 21%;
+    }
+    
+.fixedBright
+    {
+	visibility: hidden;
+	height: 0;
+    }
+    
+.fixedBleft
+    {
+	visibility: hidden;
+	height: 0;
+    }
+}
+
 
 @media screen {  /* hide from IE3 */
 	a[href]:hover { color: #dd7722 } /* old #ee7700 */
     a[onClick]:hover { color: #dd7722 } /* old #ee7700 */
 }
+
 
 
 
