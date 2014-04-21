@@ -66,7 +66,8 @@ these results are known as *the addition-theorems* for \\(\sin z\\) and \\(\cos 
 It may also be proved, by using Euler's equations, that 
 \\[\sin^2 z + \cos^2 z=1.\\] 
 
-By means of this result, \\(\sin(z_1 + z_2 )\\) can be expressed as an algebraic function of \\(\sin z_1\\) and \\(\sin z_2\\), while \\(\cos (z_1 + z_2 )\\) can similarly be expressed as an algebraic function of \\(\cos z_1\\) and \\(\cos z_2\\); so the addition-formulae may be regarded as addition-theorems in the strict sense (cf. [§20.3](whereOwhere.html), [§22.732 note](whereOwhere.html)). 
+By means of this result, \\(\sin(z_1 + z_2 )\\) can be expressed as an algebraic function of \\(\sin z_1\\) and \\(\sin z_2\\), while \\(\cos (z_1 + z_2 )\\) can similarly be expressed as an algebraic function of \\(\cos z_1\\) and \\(\cos z_2\\); so the addition-formulae may be regarded as addition-theorems in the strict sense (cf. [§20.3](whereOwhere.html), 
+[§22.732 note](whereOwhere.html)). 
 
 By differentiating Euler's equations, it is obvious that 
 \\[\frac{d \sin z}{dz} = \cos z, \quad \frac{d \cos z}{dz} = -\sin z.\\]
@@ -260,9 +261,12 @@ so that \\(\eta\\) must be a value of \\(\arg z\\).
 The logarithm of a complex number is consequently a many-valued function, and it can be expressed in terms of more elementary functions by the equation 
 \\[\log z = \mathrm{Log} \left|\, z \,\right| + i \arg z.\\] 
 
-The continuity of \\(\log z\\) (when \\(z \neq 0\\)) follows from [§A.31](CMA24-Appendix-I-LogrithmAndExponential.html#a.31thecontinuityofthelogarithm.) and [§A.522](CMA24-Appendix-II-TrigonometricalFunctions.html#a.522thecontinuityoftheargumentofacomplexvariable.), since \\(\left|\, z \,\right|\\) is a continuous function of \\(z\\). 
+The continuity of \\(\log z\\) (when \\(z \neq 0\\)) follows from [§A.31](CMA24-Appendix-I-LogrithmAndExponential.html#a.31thecontinuityofthelogarithm.) 
+and [§A.522](CMA24-Appendix-II-TrigonometricalFunctions.html#a.522thecontinuityoftheargumentofacomplexvariable.), since \\(\left|\, z \,\right|\\) is a continuous function of \\(z\\). 
 
-The differential coefficient of any particular branch of \\(\log z\\) ([§5.7](CMA05-6-ManyValuedFunctions.html#5.7many-valuedfunctions.)) may be determined as in [§A.32](CMA24-Appendix-I-LogrithmAndExponential.html#a.32differentiationofthelogarithm.); and the expansion of [§A.33](CMA24-Appendix-I-LogrithmAndExponential.html#a.33theexpansionoflog.) may be established for \\(\log (1 + a)\\) when \\(\left|\, a \,\right| < 1\\). 
+The differential coefficient of any particular branch of \\(\log z\\) ([§5.7](CMA05-6-ManyValuedFunctions.html#5.7many-valuedfunctions.)) 
+may be determined as in [§A.32](CMA24-Appendix-I-LogrithmAndExponential.html#a.32differentiationofthelogarithm.); 
+and the expansion of [§A.33](CMA24-Appendix-I-LogrithmAndExponential.html#a.33theexpansionoflog.) may be established for \\(\log (1 + a)\\) when \\(\left|\, a \,\right| < 1\\). 
 
 >*Corollary*. If \\(\alpha^{\:\!z}\\) be defined to mean \\(e^{\:\!z \log \alpha}\\), \\(\alpha^{\:\!z}\\) is a continuous function of \\(z\\) and of \\(\alpha\\) when \\(\alpha  \neq 0\\). 
 

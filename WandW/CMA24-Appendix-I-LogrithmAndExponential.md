@@ -57,9 +57,11 @@ properties (apart from the periodic properties) of this function. It is then eas
 
 Next, the sine and cosine are defined by power series from which follows the connexion of these functions with the exponential function. A brief sketch of the manner in which the formulae of elementary trigonometry may be derived is then given ([§§A.4--A.42](CMA24-Appendix-II-TrigonometricalFunctions.html#a.4thedefinitionofthesineandcosine.)). 
 
-The results thus obtained render it possible to discuss the periodicity of the exponential and circular functions by *purely arithmetical methods* ([§A.5](CMA24-Appendix-II-TrigonometricalFunctions.html#a.5theperiodicityoftheexponentialfunction.), [§A.51](CMA24-Appendix-II-TrigonometricalFunctions.html#a.51thesolutionoftheequation.)). 
+The results thus obtained render it possible to discuss the periodicity of the exponential and circular functions by *purely arithmetical methods* ([§A.5](CMA24-Appendix-II-TrigonometricalFunctions.html#a.5theperiodicityoftheexponentialfunction.), 
+[§A.51](CMA24-Appendix-II-TrigonometricalFunctions.html#a.51thesolutionoftheequation.)). 
 
-In [§§A.52--A.522](CMA24-Appendix-II-TrigonometricalFunctions.html#a.52thesolutionofapairoftrigonometricalequations.), we consider, substantially, the continuity of the inverse circular functions. When these functions have been investigated, the theory of logarithms of complex numbers ([§A.6](CMA24-Appendix-II-TrigonometricalFunctions.html#a.6logarithmsofcomplexnumbers.)) presents no further difficulty. 
+In [§§A.52--A.522](CMA24-Appendix-II-TrigonometricalFunctions.html#a.52thesolutionofapairoftrigonometricalequations.), we consider, substantially, the continuity of the inverse circular functions. 
+When these functions have been investigated, the theory of logarithms of complex numbers ([§A.6](CMA24-Appendix-II-TrigonometricalFunctions.html#a.6logarithmsofcomplexnumbers.)) presents no further difficulty. 
 
 Finally, in [§A.7](CMA24-Appendix-II-TrigonometricalFunctions.html#a.7theanalyticaldefinitionofanangle.), it is shewn that an angle, defined in a purely analytical manner, possesses properties which are consistent with the ordinary concept of an angle, based on our experience of the material world. 
 
@@ -75,13 +77,23 @@ It will be obvious to the reader that we do not profess to give a complete accou
 
 The reader will find it instructive to read Chapters **i--iv** and the Appendix a second time in the following order: 
 
-+ [Chapter **i**](CMA01-Complex.html) (omitting all of [§l.5](CMA01-Complex.html#thearganddiagram) except the first two paragraphs).[^omittingargument,+5] 
-+ [Chapter **ii**](CMA02-1-Limits.html) to the end of [§2.61](CMA02-3-MoreSeries.html#convergenceofseriesderivedfromapower-series) (omitting the examples in §§2.31--2.61). 
-+ [Chapter **iii**](CMA03-1-ContinuousFns.html) to the end of [§3.34](CMA03-2-Uniformity.html#aconditionduetoweierstrassforuniformconvergence.) and [§§3.5--3.73](CMA03-3-Heine-Borel.html#theconceptofuniformity.). 
-+ The Appendix, [§§A.2--A.6](#a.2theexponentialfunction.) (omitting [§A32](#a.32differentiationofthelogarithm.), [§A.33](#a.33theexpansionoflog.)). 
++ [Chapter **i**](CMA01-Complex.html)
+ (omitting all of [§l.5](CMA01-Complex.html#thearganddiagram) except the first two paragraphs).[^omittingargument,+5] 
++ [Chapter **ii**](CMA02-1-Limits.html) 
+to the end of [§2.61](CMA02-3-MoreSeries.html#convergenceofseriesderivedfromapower-series) (omitting the examples in §§2.31--2.61). 
++ [Chapter **iii**](CMA03-1-ContinuousFns.html) 
+to the end of [§3.34](CMA03-2-Uniformity.html#aconditionduetoweierstrassforuniformconvergence.) 
+and [§§3.5--3.73](CMA03-3-Heine-Borel.html#theconceptofuniformity.). 
++ The Appendix, [§§A.2--A.6](#a.2theexponentialfunction.) 
+(omitting [§A32](#a.32differentiationofthelogarithm.), 
+[§A.33](#a.33theexpansionoflog.)). 
 + Chapter **ii**, the examples of [§§2.31--2.61](CMA02-2-Series.html#dirichlet). 
 + Chapter **iii**, [§§3.341--3.4](CMA03-2-Uniformity.html#uniformityofconvergenceofinfiniteproducts.). 
-+ [Chapter **iv**](CMA04-1-Integration.html), inserting [§A.32](#a.32differentiationofthelogarithm.), [§A.33](#a.33theexpansionoflog.), [§A.7](CMA24-Appendix-II-TrigonometricalFunctions.html#a.7theanalyticaldefinitionofanangle.) after [§4.13](CMA04-1-Integration.html#4.13ageneraltheoremonintegration.). 
++ [Chapter **iv**](CMA04-1-Integration.html), 
+inserting [§A.32](#a.32differentiationofthelogarithm.), 
+[§A.33](#a.33theexpansionoflog.), 
+[§A.7](CMA24-Appendix-II-TrigonometricalFunctions.html#a.7theanalyticaldefinitionofanangle.) 
+after [§4.13](CMA04-1-Integration.html#4.13ageneraltheoremonintegration.). 
 + Chapter **ii**, [§§2.7--2.82](CMA02-4-Products.html#infiniteproducts). 
 
 [^purealgebra,-1]: E.g. 'a point' for 'an ordered number-pair', 'the circle of unit radius with centre at the origin' for 'the set of ordered number-pairs \\((x, y)\\) which satisfy the condition \\(x^2 + y^2 =1\\)', 'the points of a straight line' for 'the set of ordered number-pairs \\((x, y)\\) which satisfy a relation of the type \\(Ax + By + C= 0\\)', and so on. 
@@ -111,7 +123,7 @@ Moreover, since, for any fixed value of \\(n\\), \\(\left.z^n\middle/n!\right.\\
 [^binomial,+2]: The reader will at once verify that the general term in the product series is \\[\left.\left(z_1^n+ {n \choose 1} z_1^{n-1}z_2+{n \choose 2}z_1^{n-2}z_2^2+ \cdots +z_2^n\right)\middle/n!\right.\\] \\[ =\left. (z_1 + z_2)^n\middle/n!\right.\\]
 
 
-From Cauchy's theorem on multiplication of absolutely convergent series ([§2.53](CMA02-3-MoreSeriesMN.html#cauchymultiplication)), it 
+From Cauchy's theorem on multiplication of absolutely convergent series ([§2.53](CMA02-3-MoreSeries.html#cauchymultiplication)), it 
 follows that[^binomial,+2] 
 \\[\begin{align*}
 (\exp z_1)(\exp z_2) &= \left(1+ \frac{z_1}{1!}+\frac{z_1^2}{2!}+ \cdots \right)\left(1+ \frac{z_2}{1!}+\frac{z_2^2}{2!}+ \cdots \right) \\
@@ -180,7 +192,7 @@ If, then, \\(a\\) be any positive number, it follows from [§3.63](CMA03-3-Heine
 \\[\exp x = a,\\] 
 has one real root and only one. This root (which is, of course, a function of \\(a\\)) will be written \\(\mathrm{Log}_e\:\! a\\) or simply \\(\mathrm{Log}\, a\\);[^definelog,-3] it is called the *Logarithm of the positive number \\(a\\)*. 
 
-[^definelog,-3]: This is in agreement with the notation of most text-books, in which \\(\mathrm{Log}\\) denotes the principal value (see [§A.6](CMA24-Appendix-II-TrigonometricalFunctions.html#a.6logarithmsofcomplexnumbers.)) of the logarithm of a complex number.  <br><br>*Editor's Note*: For the time being, Whittaker and Watson are using the capital 'L' \\(\mathrm{Log}\, x\\) to refer to the logarithm of the of the positive real number \\(x\\) to distinguish it from the \\(\log z\\) the logarithm of the non-zero complex number \\(z\\), which they will define in [§A.6](CMA24-Appendix-II-TrigonometricalFunctions.html#a.6logarithmsofcomplexnumbers.). At that point, we can reconsider \\(\mathrm{Log}\, z\\) as the principal value of \\(\log z\\).
+[^definelog,-3]: This is in agreement with the notation of most text-books, in which \\(\mathrm{Log}\\) denotes the principal value (see [§A.6](CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.6logarithmsofcomplexnumbers.)) of the logarithm of a complex number.  <br><br>*Editor's Note*: For the time being, Whittaker and Watson are using the capital 'L' \\(\mathrm{Log}\, x\\) to refer to the logarithm of the of the positive real number \\(x\\) to distinguish it from the \\(\log z\\) the logarithm of the non-zero complex number \\(z\\), which they will define in [§A.6](CMA24-Appendix-II-TrigonometricalFunctions.html#a.6logarithmsofcomplexnumbers.). At that point, we can reconsider \\(\mathrm{Log}\, z\\) as the principal value of \\(\log z\\).
 
 Since a one-one correspondence has been established between \\(x\\) and \\(a\\), and since \\(a\\) is an increasing function of \\(x\\), \\(x\\) must be an increasing function of \\(a\\); that is to say, the Logarithm is an increasing function. 
 
