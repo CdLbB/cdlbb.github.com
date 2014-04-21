@@ -34,7 +34,7 @@ HTML header:	<script type="text/javascript"
 
 
 
-<div markdown=1 class="marginnotes" id="mn:1,+0" style="margin-top: +0em; margin-bottom: +0em;"><a class="marginmark">&#91;1&#93;</a>A definition equivalent to this was first given by John Wallis in 1655. [[*Opera*, **I** (1695)][johnwallis]. p. 382.]<a onClick="hideIt('mn:1,+0')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:1,+0" style="margin-top: +0em; margin-bottom: +0em;"><a class="marginmark">&#91;1&#93;</a>A definition equivalent to this was first given by John Wallis in 1655. [[*Opera*, **I**][johnwallis] (1695). p. 382.]<a onClick="hideIt('mn:1,+0')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -62,7 +62,7 @@ for all values of \\(n\\) greater than \\(n_0\\), *the sequence \\((z_n)\\) is s
 
 Symbolic forms of the statement<a class="marginmark" onClick="toggleHide('mn:3,-7');">&#91;3&#93;</a> &lsquo;the limit of the sequence \\((z_n)\\), as \\(n\\)
 tends to infinity, is \\(l\\)&rsquo; are:
-\\[ \lim_{n \rightarrow \infty} z_n= l, \quad \lim z_n = l, \quad z_n \rightarrow l \textit{ as } n \rightarrow \infty . \\]
+\\[ \lim_{n \rightarrow \infty} z_n= l, \quad \lim z_n = l, \quad z_n \rightarrow l \,\text{ as }\, n \rightarrow \infty . \\]
 
 </div>
 
@@ -88,16 +88,16 @@ If a sequence of real numbers does not tend to a limit or to \\(\infty\\) or to 
 #### 2.11 Definition of the phrase 'of the order of' [definitionofthephraseoftheorderof]####
 
 If \\((\zeta_n)\\) and \\((z_n)\\) are two sequences such that a number \\(n_0\\) exists such that \\(\left|\,(\zeta_n \left/z_n \right.)\,\right| < K\\) whenever \\(n > n_0\\), where \\(K\\) is *independent of \\(n\\)*, we say that \\(\zeta_n\\) is &lsquo;of the order of&rsquo; \\(z_n\\), and we write<a class="marginmark" onClick="toggleHide('mn:4,-12');">&#91;4&#93;</a>
-\\[ \zeta_n = O(z_n) \\]
+\\[ \zeta_n = O(z_n); \\]
 thus 
-\\[ \frac{15n +19}{1 + n^3} = O \left (\frac{1}{n^2} \right ) \\]
+\\[ \frac{15n +19}{1 + n^3} = O \left (\frac{1}{n^2} \right ). \\]
 If \\(\lim(\zeta_n\left/z_n \right.) = 0\\), we write \\(\zeta_n = o(z_n)\\).
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:4,-12" style="margin-top: -12em; margin-bottom: -12em;"><a class="marginmark">&#91;4&#93;</a>This notation is due to Bachmann, [*Zahlentheorie* (1894)][bachmann], p. 401, and Landau, [*Primzahlen*, **I.** (1909)][landau], p. 59.<a onClick="hideIt('mn:4,-12')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:4,-12" style="margin-top: -12em; margin-bottom: -12em;"><a class="marginmark">&#91;4&#93;</a>This notation is due to Bachmann, [*Zahlentheorie*][bachmann] (1894), p. 401, and Landau, [*Primzahlen*, **I.**][landau] (1909), p. 59.<a onClick="hideIt('mn:4,-12')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -112,16 +112,16 @@ If \\(\lim(\zeta_n\left/z_n \right.) = 0\\), we write \\(\zeta_n = o(z_n)\\).
 
 Let \\((x_n)\\) be a sequence of real numbers such that \\(x_{n+1} \geq x_n\\) for all values of \\(n\\); then *the sequence tends to a limit or else tends to infinity* (and so it does not oscillate).
 
-Let \\(x\\) be any rational-real number; then either:
-
 <div markdown=1 class="listroman">
+
+Let \\(x\\) be any rational-real number; then either:
 
 1. \\(x_n \geq x\\) for all values of \\(n\\) greater than some number \\(n_0\\) depending on the value of \\(x\\).
 2. \\(x_n < x\\) for every value of \\(n\\).
 
-</div>
-
 If (ii) is not the case for *any* value of \\(x\\) (no matter how large), then \\(x_n \rightarrow \infty\\).
+
+</div>
 
 But if values of \\(x\\) exist for which (ii) holds, we can divide the rational numbers into two classes, the \\(L\\)-class consisting of those rational numbers \\(x\\) for which (i) holds and the \\(R\\)-class of those rational numbers \\(x\\) for which (ii) holds. This section defines a real number \\(\alpha\\), rational or irrational.
 
@@ -134,7 +134,7 @@ Therefore \\(x_n \rightarrow \alpha \\).<a class="marginmark" onClick="toggleHid
 
 
 
-<div markdown=1 class="marginnotes" id="mn:5,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;5&#93;</a>*Editor's Note:* We seem to be ignoring the possibility that \\(\alpha - \frac{1}{2}\epsilon\\) is irrational. Nonetheless, since \\( \alpha> \alpha- \frac{1}{2}\epsilon\\), there are rationals in the \\(L\\)-class of \\(\alpha\\) that are larger than \\(\alpha - \frac{1}{2}\epsilon\\), say, \\(r = \alpha-\epsilon_1 \\). Since \\( \epsilon_1<\frac{1}{2}\epsilon\\), using \\( \epsilon_1 \\) in place of \\( \frac{1}{2}\epsilon\\) will let this argument work.<a onClick="hideIt('mn:5,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:5,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;5&#93;</a>*Editor's Note:* Since Whittaker and Watson define the \\(L\\)-class and \\(R\\)-class as sets of rational numbers, we cannot ignore the possibility that \\(\alpha - \frac{1}{2}\epsilon\\) is irrational. Nonetheless, since \\( \alpha> \alpha- \frac{1}{2}\epsilon\\), there are rationals in the \\(L\\)-class of \\(\alpha\\) that are larger than \\(\alpha - \frac{1}{2}\epsilon\\), say, \\(r = \alpha-\epsilon_1 \\). Since \\( \epsilon_1<\frac{1}{2}\epsilon\\), using \\( \epsilon_1 \\) in place of \\( \frac{1}{2}\epsilon\\) will let this argument work.<a onClick="hideIt('mn:5,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -145,29 +145,27 @@ Therefore \\(x_n \rightarrow \alpha \\).<a class="marginmark" onClick="toggleHid
 >*Corollary.* A decreasing sequence tends to a limit or to \\(-\infty\\)
 >
 
->######*Example* 1. If \\(\lim z_n = l, \; \lim z'_n = l'\\), then \\(\lim(z_n + z'_n) = l + l'\\). For, given \\(\epsilon\\), we can find \\(n\\) and \\(n'\\) such that [monotonicex1]######
+>######*Example* 1. If \\(\lim z_n = l, \; \lim z'_n = l'\\), then \\(\lim\:\!(z_n + z'_n) = l + l'\\). For, given \\(\epsilon\\), we can find \\(n\\) and \\(n'\\) such that [monotonicex1]######
 ><div markdown=1 class="listroman">
 >
 >1. when \\(m > n, \;  \left|\, z_m - l \,\right| < \frac{1}{2} \epsilon ,\\)
 >2. when \\(m > n', \;  \left|\, z'_m- l' \,\right| < \frac{1}{2} \epsilon .\\)
-></div>
 >
 >Let \\(n_1\\) be the greater of \\(n\\) and \\(n'\\); then, when \\(m>n_1\\),
+></div>
 >\\[ \left|\, (z_m + z'_m) - (l + l') \,\right| \leq \left|\, (z_n - l) \,\right| + \left|\, (z'_m - l') \,\right| < \epsilon ; \\]
->and this is the condition that \\(\lim (z_n + z'_m)= l + l'\\).
+>and this is the condition that \\(\lim \:\!(z_n + z'_m)= l + l'\\).
 
 >######*Example* 2. Prove similarly that [monotonicex2]######
 ><div markdown=1 class="listroman">
 >
->1.  \\(\lim (z_n - z'_n) = l - l',\\)
->2.  \\( \lim (z_n z'_n) = l \, l',\\)
->3. and, if \\( l' \neq 0 , \;  \lim (z_n \left/ z'_n \right.) = \left. l \right/ l'.\\)
+>1.  \\(\lim \:\!(z_n - z'_n) = l - l',\\)
+>2.  \\( \lim \:\!(z_n z'_n) = l \, l',\\)
+>3. and, if \\( l' \neq 0 , \;  \lim \:\!(z_n \left/ z'_n \right.) = \left. l \right/ l'.\\)
 ></div>
 
 
->######*Example* 3. If \\( 0 < x < 1\\),  \\(x^n \rightarrow 0\\). For if \\(x = (1+a)^{-1}\\), \\(a > 0\\) and \\[ 0 < x^n =\frac{1}{(1+a)^n} <\frac{1}{1+na} \\] by the binomial theorem for a positive integral index. [monotonicex3]######
->
->And it is obvious that, given a positive number \\(\epsilon\\), we can choose \\(n_0\\) such that \\((1 + na)^{-1} < \epsilon \\) when \\(n > n_0\\); and so \\(x^n \rightarrow 0\\).
+>######*Example* 3. If \\( 0 < x < 1\\),  \\(x^n \rightarrow 0\\). For if \\(x = (1+a)^{-1}\\), \\(a > 0\\) and \\[ 0 < x^n =\frac{1}{(1+a)^n} <\frac{1}{1+na}, \\] by the binomial theorem for a positive integral index. And it is obvious that, given a positive number \\(\epsilon\\), we can choose \\(n_0\\) such that \\((1 + na)^{-1} < \epsilon \\) when \\(n > n_0\\); and so \\(x^n \rightarrow 0\\). [monotonicex3]######
 
 #### 2.21 Limit-points and the Bolzano-Weierstrass theorem<a class="marginmark" onClick="toggleHide('mn:6,+0');">&#91;6&#93;</a>[bolzanosection] ####
 
@@ -187,7 +185,7 @@ Therefore \\(x_n \rightarrow \alpha \\).<a class="marginmark" onClick="toggleHid
 
 Let \\((x_n)\\) be a sequence of real numbers. if any number \\(G\\) exists such that, for every positive value of \\(\epsilon\\), no matter how small, an unlimited number of terms of the sequence can be found such that
 \\[ G - \epsilon < x_n  < G + \epsilon, \\]
-then \\(G\\) is called a limit-point, or cluster-point, of the sequence.
+then \\(G\\) is called a *limit-point*, or *cluster-point*, of the sequence.
 
 Bolzano's theorem is that, *if \\(\lambda \leq x_n \leq \rho\\), where \\(\lambda\\), \\(\rho\\) are independent of \\(n\\), then the sequence \\((x_n)\\) has at least one limit-point.*
 
@@ -223,7 +221,7 @@ The 'least of the limits', \\(L\\), of the sequence (written \\(\displaystyle \v
 
 
 
-<div markdown=1 class="marginnotes" id="mn:8,+0" style="margin-top: +0em; margin-bottom: +0em;"><a class="marginmark">&#91;8&#93;</a>[*Analyse Alg&eacute;brique*](http://www.archive.org/details/coursdanalysedel00cauc) (1821)}, p. 125.<a onClick="hideIt('mn:8,+0')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:8,+0" style="margin-top: +0em; margin-bottom: +0em;"><a class="marginmark">&#91;8&#93;</a>[*Analyse Alg&eacute;brique*](http://www.archive.org/details/coursdanalysedel00cauc) (1821), p. 125.<a onClick="hideIt('mn:8,+0')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -235,7 +233,7 @@ We shall now shew that the necessary and sufficient condition for the existence 
 \\[ \left|\, z_{n+p}-z_n \,\right| < \epsilon \\]
 for all positive integral values of \\(p\\).* This result is one of the most important and fundamental theorems of analysis. It is sometimes called the *Principle of Convergence*.
 
-First, we have to shew that this condition is *necessary*, i.e. that it is satisfied whenever a limit exists. Suppose then that a limit \\(l\\) exists; then (&#167;[2.1](#limits)) corresponding to any positive number \\(\epsilon\\), however small, an integer \\(n\\) can be chosen such that
+First, we have to shew that this condition is *necessary*, i.e. that it is satisfied whenever a limit exists. Suppose then that a limit \\(l\\) exists; then ([&#167;2.1](#limits)) corresponding to any positive number \\(\epsilon\\), however small, an integer \\(n\\) can be chosen such that
 \\[ \textstyle \left|\, z_n - l \,\right| < \frac{1}{2} \epsilon, \quad \left|\, z_{n+p} - l \,\right| < \frac{1}{2} \epsilon , \\]
 for all positive values of \\(p\\); therefore
 \\[
@@ -248,13 +246,13 @@ which shews the *necessity* of the condition
 \\[  \left|\,  z_{n+p} - z_n \,\right| < \epsilon , \\]
 and thus establishes the first half of the theorem.
 
-Secondly, we have to prove<a class="marginmark" onClick="toggleHide('mn:9,-7');">&#91;9&#93;</a> that this condition is *sufficient*, i.e. that if it is satisfied, then a limit exists. 
+Secondly, we have to prove<a class="marginmark" onClick="toggleHide('mn:9,-4');">&#91;9&#93;</a> that this condition is *sufficient*, i.e. that if it is satisfied, then a limit exists. 
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:9,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;9&#93;</a>This proof is given by Stolz and Gmeiner, [*Theoretische Arithmetik*](http://books.google.com/books?id=MesGAAAAYAAJ), **II.** (1902)}, p. 144.<a onClick="hideIt('mn:9,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:9,-4" style="margin-top: -4em; margin-bottom: -4em;"><a class="marginmark">&#91;9&#93;</a>This proof is given by Stolz and Gmeiner, [*Theoretische Arithmetik*, **ii.**](http://books.google.com/books?id=MesGAAAAYAAJ) (1902), p. 144.<a onClick="hideIt('mn:9,-4')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -278,12 +276,11 @@ Further, there cannot be more than one limit-point; for if there were two, \\(G\
 \\[ \left|\, G - x_{n+q} \,\right| < \epsilon, \quad  \left|\, H - x_{n+r} \,\right| < \epsilon . \\]
 
 Then \\( \left|\, G - x_{n+q} \,\right| + \left|\, x_{n+q} - x_n \,\right| + \left|\, x_n - x_{n+r} \,\right| + \left|\, H - x_{n+r} \,\right| < 4 \epsilon \\).
-
 But, by [&#167;1.4][themodulusofacomplexnumber], the sum on the left is greater than or equal to \\(\left|\, G - H \,\right|\\).
 
 [themodulusofacomplexnumber]: CMA01-ComplexMN.html#themodulusofacomplexnumber
 
-Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is only one limit-point. Hence there are only a finite number of terms of the sequence outside the interval \\((G - \delta, G + \delta)\\), where \\(\delta\\) is an arbitrary positive number; for, if there were an unlimited number of such terms, these would have a limit-point which would be a limit-point of the given sequence and which would not coincide with \\(G\\); and therefore \\(G\\) is the limit of \\((x_n)\\).
+Therefore \\(G - H < 4\epsilon\\), which is contrary to hypothesis; so there is only one limit-point. Hence there are only a finite number of terms of the sequence outside the interval \\((G - \delta, G + \delta)\\), where \\(\delta\\) is an arbitrary positive number; for, if there were an unlimited number of such terms, these would have a limit-point which would be a limit-point of the given sequence and which would not coincide with \\(G\\); *and therefore \\(G\\) is the limit of \\((x_n)\\).*
 
 (II) Now let the sequence \\((z_n)\\) of real or complex numbers satisfy Cauchy's condition; and let \\(z_n = x_n -  i y_n\\), where \\(x_n\\) and \\(y_n\\) are real; then for all values of \\(n\\) and \\(p\\)
 \\[ \left|\, x_{n+p} - x_n \,\right| \leq \left|\, z_{n+p} - z_n \,\right|, \quad \left|\, y_{n+p} - y_n \,\right| \leq \left|\, z_{n+p} - z_n \,\right|. \\]
