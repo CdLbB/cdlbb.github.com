@@ -805,13 +805,15 @@ div#exercises  ol li
 @media print { 
 html 
     {
-    margin-top: 1,2em;
-	margin-left: 1.25em; 
+    margin-top: 1.2em;
+	margin-left: .70em; 
     }
     
 body
     {
     font-size: medium;
+    margin-bottom: 0em;
+    padding-bottom: 0em;    
     }
     
 div#header
@@ -835,10 +837,10 @@ div#footer
     page-break-inside: avoid;
     }
     
-h1,h2,h3,h4,h5
+h1, h2, h3, h4, h5
 	{ 
-    page-break-after: avoid;
     page-break-inside: avoid;
+    page-break-after: avoid;
     }
     
 hr
