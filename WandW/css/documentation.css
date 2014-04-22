@@ -45,7 +45,7 @@ strong
     *text-transform: uppercase;
     font-variant: small-caps;
     letter-spacing: .1em;
-    font-size:0.95em
+    font-size:0.95em;
     
     }
     
@@ -806,7 +806,7 @@ div#exercises  ol li
 html 
     {
     margin-top: 1.2em;
-	margin-left: .70em; 
+	margin-left: .75em; 
     }
     
 body
@@ -830,6 +830,12 @@ div#footer
     {
 	visibility: hidden;
 	height: 0;
+    }
+    
+.contenttext p 
+    {
+    widows: 3;
+    orphans: 3;
     }
     
 .marginnotes  {
