@@ -805,31 +805,25 @@ div#exercises  ol li
 @media print { 
 html 
     {
-    margin-top: 1.2em;
+    margin-top: 0em;
 	margin-left: .75em; 
     }
     
 body
     {
-    font-size: medium;
+    font-size: 16px;
     margin-bottom: 0em;
     padding-bottom: 0em;    
     }
     
 div#header
     {
-	visibility: hidden;
-	margin-top: 0;
-	margin-bottom:  0;
-	padding-top: 0;
-	padding-bottom:  0;
-	height: 0;
+	display: none;
     }
 
 div#footer
     {
-	visibility: hidden;
-	height: 0;
+	display: none;
     }
     
 .contenttext p 
@@ -866,15 +860,19 @@ li
     
 .fixedBright
     {
-	visibility: hidden;
-	height: 0;
+	display: none;
     }
     
 .fixedBleft
     {
-	visibility: hidden;
-	height: 0;
+	display: none;
     }
+    
+.navigation
+        {
+	display: none;
+    }
+    
 }
 
 

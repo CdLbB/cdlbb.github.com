@@ -229,6 +229,8 @@ April, 2014.
 
 <br>
 
+<div markdown=1 class="notes">
+
 ----------------------------
 
 #### Construction Notes ####
@@ -237,6 +239,8 @@ April, 2014.
 + [Unresolved Examples](ConstructionNotesMN.html#unresolvedexamples)
 
 ----------------------------
+
+</div>
 
 </div>
 
