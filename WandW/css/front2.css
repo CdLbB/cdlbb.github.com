@@ -238,14 +238,25 @@ div#contentfront
 
 @media print { 
 hr
-	{
-	visibility: hidden;
-	}
+    {
+	display: none;
+    }
+    
+.notes
+    {
+	display: none;
+    }
 	
 .toc ol li, .toc ol li ol, .toc ol li ol li, .toc ol h3, .toc ul, .toc ul li 
     {
-    font-size: small;	    
-    }	
+    font-size: 13px;	    
+    }
+
+.toc
+    { 
+    page-break-before: always;
+    }
+    	
 }
 
 /**END************ M A I N   C O N T E N T **********END**/
