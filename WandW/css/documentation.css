@@ -807,7 +807,7 @@ html
     
 body
     {
-    font-size: 12pt;
+    font-size: 12pt !important;
     margin-bottom: 0em;
     padding-bottom: 0em;    
     }
