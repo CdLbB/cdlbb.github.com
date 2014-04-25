@@ -297,7 +297,6 @@ div#header
     position: relative;
     top: 0;
     left: 0;
-    margin;0;
     background-color: #002148;
     *height: 60px;
     width: 100%;
@@ -317,7 +316,6 @@ div#header img
 div#header h1
     {
     margin: 0;
-    padding 0;
     font-size: 1.89em; /*base: 1em=18px, now: 1em=34px */
     font-weight: normal;
     line-height: 1.1em;
@@ -352,7 +350,6 @@ div#footer
     position: relative;
     top: 0;
     left: 0px;
-    margin;0;
     margin-bottom: 1.5em;
     margin-top: 3em;
     background-color: #002148;
@@ -470,7 +467,6 @@ text-decoration: none;
     {
     margin: 0.5em;
     padding: 0;
-    text-indent: 0.5em:
     }
 
 
@@ -581,7 +577,7 @@ http://www.456bereastreet.com/archive/201105/styling_ordered_list_numbers/
     counter-reset: list;
     }
 
-}
+
 .listroman ol  li {
   list-style-type: none;
   *padding-left: 5em;
