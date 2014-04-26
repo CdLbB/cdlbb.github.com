@@ -1,6 +1,6 @@
 This is a transcription for the web of *A Course of Modern Analysis* by E. T. Whittaker and G. N. Watson (1920) 3rd. Edition, commonly referred to as ‘Whittaker and Watson’.  
 
-For more details, see the [Frontmatter](CMA00-FrontMN.html).
+For more details, see the [Frontmatter](http://cdlbb.github.io/WandW/CMA00-FrontMN.html).
 
 #### License ####
 
