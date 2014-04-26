@@ -285,10 +285,10 @@ where \\(\mu = n \left/m \right.\\). This expression, *qua*[^qua,-14] function o
 
 [^qua,-14]: *Editor's Note*: In this usage, the word *qua* means *functioning as a...* 
 
-[^Minimum,-10]: The reader will find no difficulty in verifying this statement; the minimum value in question is given by \\[\begin{align*}K^{2/\alpha}=\frac{1}{2}&\left[ \,\alpha_1^2+\alpha_2^2+\beta_1^2+\beta_2^2 \right.\\&-\left\{(\alpha_1-\beta_2)^2+(\alpha_2+\beta_1)^2\right\}^{1/2} \\&\times \left.\left\{(\alpha_1+\beta_2)^2+(\alpha_2-\beta_1)^2\right\}^{1/2}\right].\end{align*}\\]
+[^Minimum,-10]: The reader will find no difficulty in verifying this statement; the minimum value in question is given by \\[\begin{align*}K^{2/\alpha}&=\frac{1}{2}\left[ \,\alpha_1^2+\alpha_2^2+\beta_1^2+\beta_2^2 \right.\\&-\left\{(\alpha_1-\beta_2)^2+(\alpha_2+\beta_1)^2\right\}^{1/2} \\&\times \left.\left\{(\alpha_1+\beta_2)^2+(\alpha_2-\beta_1)^2\right\}^{1/2}\right].\end{align*}\\]
 
 
-[^clarify,+5]: *Editor's Note*: For clarity's sake, we just demonstrated that \\[\frac{1}{(m^2+n^2)^{\frac{1}{2}\alpha}} \geq \frac{K}{\{(\alpha_1 m+\alpha_2 n)^2+(\beta_1 m+\beta_2 n)^2\}^{\frac{1}{2}\alpha}}.\\]
+[^clarify,+5]: *Editor's Note*: For clarity's sake, we just demonstrated that \\[\begin{align*}&\frac{1}{(m^2+n^2)^{\frac{1}{2}\alpha}} \geq\\&\frac{K}{\{(\alpha_1 m+\alpha_2 n)^2+(\beta_1 m+\beta_2 n)^2\}^{\frac{1}{2}\alpha}}.\end{align*}\\]
 
 We have therefore only to study the convergence of the series \\(S\\). Let 
 \\[

@@ -409,7 +409,7 @@ where \\(\mu = n \left/m \right.\\). This expression, *qua*<a class="marginmark"
 
 
 
-<div markdown=1 class="marginnotes" id="mn:13,-10" style="margin-top: -10em; margin-bottom: -10em;"><a class="marginmark">&#91;13&#93;</a>The reader will find no difficulty in verifying this statement; the minimum value in question is given by \\[\begin{align*}K^{2/\alpha}=\frac{1}{2}&\left[ \,\alpha_1^2+\alpha_2^2+\beta_1^2+\beta_2^2 \right.\\&-\left\{(\alpha_1-\beta_2)^2+(\alpha_2+\beta_1)^2\right\}^{1/2} \\&\times \left.\left\{(\alpha_1+\beta_2)^2+(\alpha_2-\beta_1)^2\right\}^{1/2}\right].\end{align*}\\]<a onClick="hideIt('mn:13,-10')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:13,-10" style="margin-top: -10em; margin-bottom: -10em;"><a class="marginmark">&#91;13&#93;</a>The reader will find no difficulty in verifying this statement; the minimum value in question is given by \\[\begin{align*}K^{2/\alpha}&=\frac{1}{2}\left[ \,\alpha_1^2+\alpha_2^2+\beta_1^2+\beta_2^2 \right.\\&-\left\{(\alpha_1-\beta_2)^2+(\alpha_2+\beta_1)^2\right\}^{1/2} \\&\times \left.\left\{(\alpha_1+\beta_2)^2+(\alpha_2-\beta_1)^2\right\}^{1/2}\right].\end{align*}\\]<a onClick="hideIt('mn:13,-10')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -422,7 +422,7 @@ where \\(\mu = n \left/m \right.\\). This expression, *qua*<a class="marginmark"
 
 
 
-<div markdown=1 class="marginnotes" id="mn:14,+5" style="margin-top: +5em; margin-bottom: +5em;"><a class="marginmark">&#91;14&#93;</a>*Editor's Note*: For clarity's sake, we just demonstrated that \\[\frac{1}{(m^2+n^2)^{\frac{1}{2}\alpha}} \geq \frac{K}{\{(\alpha_1 m+\alpha_2 n)^2+(\beta_1 m+\beta_2 n)^2\}^{\frac{1}{2}\alpha}}.\\]<a onClick="hideIt('mn:14,+5')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:14,+5" style="margin-top: +5em; margin-bottom: +5em;"><a class="marginmark">&#91;14&#93;</a>*Editor's Note*: For clarity's sake, we just demonstrated that \\[\begin{align*}&\frac{1}{(m^2+n^2)^{\frac{1}{2}\alpha}} \geq\\&\frac{K}{\{(\alpha_1 m+\alpha_2 n)^2+(\beta_1 m+\beta_2 n)^2\}^{\frac{1}{2}\alpha}}.\end{align*}\\]<a onClick="hideIt('mn:14,+5')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
