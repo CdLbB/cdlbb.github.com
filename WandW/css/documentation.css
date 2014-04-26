@@ -808,6 +808,7 @@ html
 body
     {
     font-size: 12pt;
+    background: none;
     margin-bottom: 0em;
     padding-bottom: 0em;    
     }
@@ -820,6 +821,11 @@ div#header
 div#footer
     {
 	display: none;
+    }
+    
+.contenttext
+    {
+    margin-right: 21%;
     }
     
 .contenttext p 
@@ -849,10 +855,6 @@ li
     page-break-inside: avoid;
 	}
 
-.contenttext
-    {
-    margin-right: 21%;
-    }
     
 .fixedBright
     {
