@@ -823,6 +823,7 @@ div#footer
 	display: none;
     }
     
+    
 .contenttext
     {
     margin-right: 21%;
@@ -836,7 +837,12 @@ div#footer
     
 .marginnotes  {
     visibility: visible;
-    page-break-inside: avoid;
+    *page-break-inside: avoid;
+    }
+    
+.marginnotes p
+    {
+    *page-break-inside: avoid;
     }
     
 h1, h2, h3, h4, h5

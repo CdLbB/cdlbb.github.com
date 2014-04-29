@@ -82,7 +82,6 @@ HTML header:	<script type="text/javascript"
 
 
 <br><br><br><br><br><br>
-
 #### CAMBRIDGE UNIVERSITY PRESS ####
 
 #### C. F. CLAY, Manager ####
@@ -119,11 +118,13 @@ HTML header:	<script type="text/javascript"
 
 *Third Edition* 1920
 
-</div>
-
-</div>
 
 <br><br><br><br>
+
+</div>
+
+</div>
+
 
 ------------------------
 
