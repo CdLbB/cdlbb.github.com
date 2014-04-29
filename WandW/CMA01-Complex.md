@@ -73,7 +73,9 @@ The geometrical property of points on a line which suggested the starting point 
 [EditorNote]: CMA00-Front.html#editorsnote
 [cantor]: http://www.digizeitschriften.de/dms/toc/?PPN=PPN235181684_0005
 
-Following up this idea, Dedekind considered rules by which a separation[^greeks,-9] or *section* of *all* rational numbers into two classes can be made, these classes
+[^greeks,-0]: This procedure formed the basis of the treatment of irrational numbers by the Greek mathematicians in the sixth and fifth centuries B.C. The advance made by Dedekind consisted in observing that a purely *arithmetical* theory could be built up on it.
+
+Following up this idea, Dedekind considered rules by which a separation[^greeks,-0] or *section* of *all* rational numbers into two classes can be made, these classes
 (which will be called the \\(L\\)-class and the \\(R\\)-class, or the left class and the right class) being such that they possess the following properties:
 
 <div markdown=1 class="listroman">
@@ -82,8 +84,6 @@ Following up this idea, Dedekind considered rules by which a separation[^greeks,
 2. Every member of the \\(L\\)-class is less than every member of the \\(R\\)-class.
 
 </div>
-
-[^greeks,-9]: This procedure formed the basis of the treatment of irrational numbers by the Greek mathematicians in the sixth and fifth centuries B.C. The advance made by Dedekind consisted in observing that a purely *arithmetical* theory could be built up on it.
 
 It is obvious that such a section is made by any rational number \\(x\\); and \\(x\\) is either the greatest number of the \\(L\\)-class or the least number of the \\(R\\)-class. But sections can be made in which no rational number \\(x\\) plays this part. Thus, since there is no rational number[^NoSQRT,-8] whose square is \\(2\\), it is easy to see that we may form a section in which the \\(R\\)-class consists of the positive rational numbers whose squares exceed \\(2\\), and the \\(L\\)-class consists of all other rational numbers.
  
@@ -386,7 +386,7 @@ where \\(\mu\\) is the number of the constituent primes.\\(\vphantom{\\ 3\\}\\)<
      <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
      <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
      <li><a href="CMA06-1-Residues.html">The Theory of Residues</a></li>
-     <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
+     <li><a href="CMA07-1-ExpansionOfFunctions.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>

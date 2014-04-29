@@ -123,7 +123,19 @@ The geometrical property of points on a line which suggested the starting point 
 [EditorNote]: CMA00-FrontMN.html#editorsnote
 [cantor]: http://www.digizeitschriften.de/dms/toc/?PPN=PPN235181684_0005
 
-Following up this idea, Dedekind considered rules by which a separation<a class="marginmark" onClick="toggleHide('mn:6,-9');">&#91;6&#93;</a> or *section* of *all* rational numbers into two classes can be made, these classes
+</div>
+
+
+
+<div markdown=1 class="marginnotes" id="mn:6,-0" style="margin-top: -0em; margin-bottom: -0em;"><a class="marginmark">&#91;6&#93;</a>This procedure formed the basis of the treatment of irrational numbers by the Greek mathematicians in the sixth and fifth centuries B.C. The advance made by Dedekind consisted in observing that a purely *arithmetical* theory could be built up on it.<a onClick="hideIt('mn:6,-0')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+
+</div>
+
+
+
+<div markdown=1 class="contenttext">
+
+Following up this idea, Dedekind considered rules by which a separation<a class="marginmark" onClick="toggleHide('mn:6,-0');">&#91;6&#93;</a> or *section* of *all* rational numbers into two classes can be made, these classes
 (which will be called the \\(L\\)-class and the \\(R\\)-class, or the left class and the right class) being such that they possess the following properties:
 
 <div markdown=1 class="listroman">
@@ -132,18 +144,6 @@ Following up this idea, Dedekind considered rules by which a separation<a class=
 2. Every member of the \\(L\\)-class is less than every member of the \\(R\\)-class.
 
 </div>
-
-</div>
-
-
-
-<div markdown=1 class="marginnotes" id="mn:6,-9" style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;6&#93;</a>This procedure formed the basis of the treatment of irrational numbers by the Greek mathematicians in the sixth and fifth centuries B.C. The advance made by Dedekind consisted in observing that a purely *arithmetical* theory could be built up on it.<a onClick="hideIt('mn:6,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
-
-</div>
-
-
-
-<div markdown=1 class="contenttext">
 
 It is obvious that such a section is made by any rational number \\(x\\); and \\(x\\) is either the greatest number of the \\(L\\)-class or the least number of the \\(R\\)-class. But sections can be made in which no rational number \\(x\\) plays this part. Thus, since there is no rational number<a class="marginmark" onClick="toggleHide('mn:7,-8');">&#91;7&#93;</a> whose square is \\(2\\), it is easy to see that we may form a section in which the \\(R\\)-class consists of the positive rational numbers whose squares exceed \\(2\\), and the \\(L\\)-class consists of all other rational numbers.
  
@@ -546,7 +546,7 @@ where \\(\mu\\) is the number of the constituent primes.\\(\vphantom{\\ 3\\}\\)<
      <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
      <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
      <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
-     <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
+     <li><a href="CMA07-1-ExpansionOfFunctionsMN.html">Expanding Functions in Infinite Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
