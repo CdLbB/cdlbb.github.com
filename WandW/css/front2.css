@@ -148,6 +148,7 @@ div#copyright table
 div#copyright p
     {
     font-size: 0.8em;
+    line-height: 1,2;
     }
 
 /**END************ C O P Y R I G H T   P A G E **********END**/
@@ -241,6 +242,17 @@ hr
 	display: none;
     }
     
+div#titlepage
+    {
+
+    }
+
+div#copyright
+    {
+	page-break-before: always;
+	page-break-after: always;
+    }
+    
 .notes
     {
 	display: none;
@@ -248,7 +260,7 @@ hr
 	
 .toc ol li, .toc ol li ol, .toc ol li ol li, .toc ol h3, .toc ul, .toc ul li 
     {
-    font-size: 10pt;	    
+    font-size: 13px;	    
     }
 
 .toc
