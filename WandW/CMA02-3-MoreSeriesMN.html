@@ -39,9 +39,9 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
 <div class="contenttext">
 
 <p>Let
-<span class="math">\[\textstyle \sum = 1+\frac{1}{3}-\frac{1}{2}+\frac{1}{5}+\frac{1}{7}-\frac{1}{4}+\frac{1}{9}+\frac{1}{11}-\frac{1}{6}+ \dots\]</span>
+<span class="math">\[\textstyle \sum = 1+\frac{1}{3}-\frac{1}{2}+\frac{1}{5}+\frac{1}{7}-\frac{1}{4}+\frac{1}{9}+\frac{1}{11}-\frac{1}{6}+ \dots ,\]</span>
 and
-<span class="math">\[\textstyle S = 1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\frac{1}{5}-\frac{1}{6}+\frac{1}{7}-\frac{1}{8}+ \dots\]</span>
+<span class="math">\[\textstyle S = 1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\frac{1}{5}-\frac{1}{6}+\frac{1}{7}-\frac{1}{8}+ \dots ,\]</span>
 and let <span class="math">\(\sum_n\)</span> and <span class="math">\(S_n\)</span> denote the sums of their first <span class="math">\(n\)</span> terms. These infinite series are formed of the same terms, but the order of the terms is different, and so <span class="math">\(\sum_n\)</span> and <span class="math">\(S_n\)</span> are quite distinct functions of <span class="math">\(n\)</span>.</p>
 
 <p>Let
@@ -75,14 +75,14 @@ the order of the terms be altered, so that the ratio of the positive terms to th
 be an absolutely convergent series, and let <span class="math">\(S'\)</span> be a series formed by the same terms in a different order.</p>
 
 <p>Let <span class="math">\(\epsilon\)</span> be an arbitrary positive number, and let <span class="math">\(n\)</span> be chosen so that
-<span class="math">\[ \left|u_{n+1}\right|+\left|u_{n+2}\right|+\dots +\left|u_{n+p}\right| < \frac{1}{2}\epsilon\]</span>
+<span class="math">\[ \left|\:\! u_{n+1}\right|+\left|\:\! u_{n+2}\right|+\dots +\left|\:\! u_{n+p}\right| < \frac{1}{2}\epsilon\]</span>
 for all values of <span class="math">\(p\)</span>.</p>
 
-<p>Suppose that in order to obtain the first <span class="math">\(n\)</span> terms of <span class="math">\(S\)</span> we have to take <span class="math">\(m\)</span> terms of <span class="math">\(S'\)</span>; then if <span class="math">\(k>m\)</span>,
+<p>Suppose that in order to obtain the first <span class="math">\(n\)</span> terms of <span class="math">\(S\)</span> we have to take <span class="math">\(m\)</span> terms of <span class="math">\(S'\!\)</span>; then if <span class="math">\(k > m\)</span>,
 so that
-<span class="math">\[S_k\!'=S_n + \textrm{ terms of }S\textrm{ with indices greater than n,}\]</span>
+<span class="math">\[S_k\!'=S_n + \textrm{ terms of }S\textrm{ with indices greater than } n,\]</span>
 so that
-<span class="math">\[S_k\!'-S=S_n-S + \textrm{ terms of }S\textrm{ with indices greater than n,}\]</span></p>
+<span class="math">\[S_k\!'-S=S_n-S + \textrm{ terms of }S\textrm{ with indices greater than } n,\]</span></p>
 
 <p>Now the modulus of the sum of any number of terms of <span class="math">\(S\)</span> with indices greater than <span class="math">\(n\)</span> does not exceed the sum of their moduli, and therefore is less
 than <span class="math">\( \frac{1}{2}\epsilon \)</span>.</p>
@@ -92,7 +92,7 @@ than <span class="math">\( \frac{1}{2}\epsilon \)</span>.</p>
 But
 <span class="math">\[
 \begin{align*}
- \left|\,S_n-S\,\right| &\leq \lim_{p \rightarrow \infty} \{ \left|\,u_{n+1}\,\right|+\left|\,u_{n+2}\,\right|+\dots +\left|\,u_{n+p}\,\right| \} \\
+ \left|\,S_n-S\,\right| &\leq \lim_{p \rightarrow \infty} \left\{ \left|\,u_{n+1}\,\right|+\left|\,u_{n+2}\,\right|+\dots +\left|\,u_{n+p}\,\right| \right\} \\
    &\leq  \frac{1}{2}\epsilon .
 \end{align*}
 \]</span>
@@ -100,7 +100,7 @@ Therefore given <span class="math">\(\epsilon\)</span> we can find <span class="
 <span class="math">\[\left|\,S_k\!'-S\,\right| < \epsilon \]</span>
 when <span class="math">\(k > m\)</span>; therefore <span class="math">\(S_m\!' \rightarrow S\)</span>, which is the required result.</p>
 
-<p>If a series of real terms converges, but not absolutely, and if <span class="math">\(S_p\)</span> be the sum of the first <span class="math">\(p\)</span> positive terms, and if <span class="math">\(\sigma_n\)</span> be the sum of the first <span class="math">\(n\)</span> negative terms, then <span class="math">\(S_p \rightarrow \infty,\, \sigma_n \rightarrow \infty\)</span>; and <span class="math">\(\lim (S_p +\sigma_n)\)</span> does not exist unless we are given some relation between <span class="math">\(p\)</span> and <span class="math">\(n\)</span>. It has, in fact, been shewn by Riemann that it is possible, by choosing a suitable relation, to make <span class="math">\(\lim (S_p +\sigma_n)\)</span> equal to <em>any</em> given real number<a class="marginmark" onClick="toggleHide('mn:2,-4');">&#91;2&#93;</a>.</p>
+<p>If a series of real terms converges, but not absolutely, and if <span class="math">\(S_p\)</span> be the sum of the first <span class="math">\(p\)</span> positive terms, and if <span class="math">\(\sigma_n\)</span> be the sum of the first <span class="math">\(n\)</span> negative terms, then <span class="math">\(S_p \rightarrow \infty\)</span>, <span class="math">\(\sigma_n \rightarrow -\infty\)</span>; and <span class="math">\(\lim \:\! (S_p +\sigma_n)\)</span> does not exist unless we are given some relation between <span class="math">\(p\)</span> and <span class="math">\(n\)</span>. It has, in fact, been shewn by Riemann that it is possible, by choosing a suitable relation, to make <span class="math">\(\lim (S_p +\sigma_n)\)</span> equal to <em>any</em> given real number<a class="marginmark" onClick="toggleHide('mn:2,-4');">&#91;2&#93;</a>.</p>
 </div>
 <div class="marginnotes"  id="mn:2,-4"  style="margin-top: -4em; margin-bottom: -4em;"><a class="marginmark">&#91;2&#93;</a><a href="http://archive.org/details/bernhardriemann00webegoog"><em>Ges. Werke</em></a>, p. 221.<a onClick="hideIt('mn:2,-4')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
@@ -112,7 +112,7 @@ when <span class="math">\(k > m\)</span>; therefore <span class="math">\(S_m\!' 
 </div>
 <div class="contenttext">
 
-<p>Let <span class="math">\(u_{m,n}\)</span> be a number determinate for all positive integral values of <span class="math">\(m\)</span> and <span class="math">\(n\)</span>; consider the array
+<p>Let <span class="math">\(u_{m,\:\! n}\)</span> be a number determinate for all positive integral values of <span class="math">\(m\)</span> and <span class="math">\(n\)</span>; consider the array
 <span class="math">\[
 \begin{array}{cccc}
 u_{1,1}&u_{1,2}&u_{1,3}& \cdots \\
@@ -122,38 +122,38 @@ u_{3,1}&u_{3,2}&u_{3,3}& \cdots \\
 \end{array}
 \]</span>
 Let the sum of the terms inside the rectangle, formed by the first
-<span class="math">\(m\)</span> rows of the first <span class="math">\(n\)</span> columns of this array of terms, be denoted by <span class="math">\(S_{m,n}\)</span>. </p>
+<span class="math">\(m\)</span> rows of the first <span class="math">\(n\)</span> columns of this array of terms, be denoted by <span class="math">\(S_{m,\:\! n}\)</span>. </p>
 
 <p>If a number <span class="math">\(S\)</span> exists such that, given any arbitrary positive number <span class="math">\(\epsilon\)</span>, it is possible to find integers <span class="math">\(m\)</span> and <span class="math">\(n\)</span> such that
-<span class="math">\[\left|\,S_{\mu, \nu}-S\,\right| < \epsilon\]</span>
+<span class="math">\[\left|\,S_{\mu, \:\! \nu}-S\,\right| < \epsilon\]</span>
 whenever both <span class="math">\(\mu > m\)</span> and <span class="math">\(\nu > n\)</span>, we say<a class="marginmark" onClick="toggleHide('mn:4,-7');">&#91;4&#93;</a> that the <em>double series of which the
-general element is <span class="math">\(u_{\mu, \nu}\)</span> converges to the sum <span class="math">\(S\)</span></em>, and we write
-<span class="math">\[\lim_{\mu \rightarrow \infty,\, \nu \rightarrow \infty}S_{\mu, \nu}=S . \]</span></p>
+general element is <span class="math">\(u_{\mu, \:\! \nu}\)</span> converges to the sum <span class="math">\(S\)</span></em>, and we write
+<span class="math">\[\lim_{\mu \rightarrow \infty,\, \nu \rightarrow \infty}S_{\mu, \:\! \nu}=S . \]</span></p>
 </div>
 <div class="marginnotes"  id="mn:4,-7"  style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;4&#93;</a>This definition is practically due to Cauchy, <a href="http://www.archive.org/details/coursdanalysedel00cauc"><em>Analyse Alg&eacute;brique</em></a>, p. 540.<a onClick="hideIt('mn:4,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
 <div class="contenttext">
 
-<p>If the double series, of which the general element is <span class="math">\(\left|u_{\mu, \nu}\right|\)</span>, is convergent, we say that the given double series is <em>absolutely convergent</em>.</p>
+<p>If the double series, of which the general element is <span class="math">\(\left|\:\! u_{\mu, \:\! \nu}\right|\)</span>, is convergent, we say that the given double series is <em>absolutely convergent</em>.</p>
 
-<p>Since <span class="math">\(u_{\mu, \nu}=(S_{\mu, \nu}-S_{\mu, \nu-1})-(S_{\mu-1, \nu}-S_{\mu-1, \nu-1}) \)</span>, it is easily seen that, if
+<p>Since <span class="math">\(u_{\mu, \:\! \nu}=(S_{\mu, \:\! \nu}-S_{\mu, \:\! \nu-1})-(S_{\mu-1, \:\! \nu}-S_{\mu-1, \:\! \nu-1}) \)</span>, it is easily seen that, if
 the double series is convergent, then
-<span class="math">\[\lim_{\mu \rightarrow \infty,\, \nu \rightarrow \infty}u_{\mu, \nu}=0 . \]</span></p>
+<span class="math">\[\lim_{\mu \rightarrow \infty,\, \nu \rightarrow \infty}u_{\mu, \:\! \nu}=0 . \]</span></p>
 
-<p><em>Stolz&#8217; necessary and sufficient condition for convergence</em>.<a class="marginmark" onClick="toggleHide('mn:5,-20');">&#91;5&#93;</a> A condition for convergence which is obviously necessary (see <a href="CMA02-1-LimitsMN.html#cauchy">&#167;2.22</a>) is that, given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(m\)</span> and <span class="math">\(n\)</span> such that <span class="math">\(\left|S_{\mu+\rho, \nu+\sigma}-S_{\mu, \nu}\right| < \epsilon\)</span> whenever <span class="math">\(\mu > m\)</span> and <span class="math">\(\nu > n\)</span> and
-<span class="math">\(\rho,\sigma\)</span> may take any of the values <span class="math">\(0, 1, 2, \dots\)</span>. The condition is also sufficient; for, suppose it satisfied; then, when <span class="math">\(\mu>m+n\)</span>, <span class="math">\[ \left|\,S_{\mu+\rho, \mu+\rho}-S_{\mu, \mu}\,\right| < \epsilon .\]</span>
-Therefore, by <a href="CMA02-1-LimitsMN.html#cauchy">&#167;2.22</a>, <span class="math">\(S_{u,u}\)</span> has a limit <span class="math">\(S\)</span>; and then making <span class="math">\(\rho\)</span> and <span class="math">\(\sigma\)</span> tend to infinity in such a way that <span class="math">\(\mu+\rho=\nu+\sigma\)</span>, we see that <span class="math">\(\left|\,S_{\mu, \nu}-S\,\right| < \epsilon\)</span> whenever <span class="math">\(\mu > m\)</span> and <span class="math">\(\nu > n\)</span>; that is to say, the double series converges.<a class="marginmark" onClick="toggleHide('mn:6,-7');">&#91;6&#93;</a></p>
+<p><em>Stolz&#8217; necessary and sufficient condition for convergence</em>.<a class="marginmark" onClick="toggleHide('mn:5,-20');">&#91;5&#93;</a> A condition for convergence which is obviously necessary (see <a href="CMA02-1-LimitsMN.html#cauchy">&#167;2.22</a>) is that, given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(m\)</span> and <span class="math">\(n\)</span> such that <span class="math">\(\left|S_{\mu+\rho, \:\! \nu+\sigma}-S_{\mu, \:\! \nu}\right| < \epsilon\)</span> whenever <span class="math">\(\mu > m\)</span> and <span class="math">\(\nu > n\)</span> and
+<span class="math">\(\rho\)</span>, <span class="math">\(\sigma\)</span> may take <em>any</em> of the values <span class="math">\(0, 1, 2, \dots\)</span>. The condition is also sufficient; for, suppose it satisfied; then, when <span class="math">\(\mu > m+n\)</span>, <span class="math">\[ \left|\,S_{\mu+\rho, \:\! \mu+\rho}-S_{\mu, \:\! \mu}\,\right| < \epsilon .\]</span>
+Therefore, by <a href="CMA02-1-LimitsMN.html#cauchy">&#167;2.22</a>, <span class="math">\(S_{u,\:\! u}\)</span> has a limit <span class="math">\(S\)</span>; and then making <span class="math">\(\rho\)</span> and <span class="math">\(\sigma\)</span> tend to infinity in such a way that <span class="math">\(\mu+\rho=\nu+\sigma\)</span>, we see that <span class="math">\(\left|\,S_{\mu, \:\! \nu}-S\,\right| < \epsilon\)</span> whenever <span class="math">\(\mu > m\)</span> and <span class="math">\(\nu > n\)</span>; that is to say, the double series converges.<a class="marginmark" onClick="toggleHide('mn:6,-7');">&#91;6&#93;</a></p>
 </div>
 <div class="marginnotes"  id="mn:5,-20"  style="margin-top: -20em; margin-bottom: -20em;"><a class="marginmark">&#91;5&#93;</a>This condition, stated by Stolz, <a href="http://www.digizeitschriften.de/dms/toc/?PPN=PPN235181684_0024"><em>Math. Ann.</em> <strong>xxiv.</strong> (1884)</a>, pp. 157&#8211;171, appears to have been first proved by Pringsheim.<a onClick="hideIt('mn:5,-20')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
 <div class="contenttext">
 </div>
-<div class="marginnotes"  id="mn:6,-7"  style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;6&#93;</a><em>Editor&#8217;s Note:</em> Breaking up <span class="math">\(\left|\,S_{\mu, \nu}-S\,\right| < \epsilon\)</span> into <span class="math">\(\left|\,S_{\mu, \nu}-S_{\mu+\rho,\nu+\sigma }\,\right| < \frac{1}{2} \epsilon\)</span> and <span class="math">\(\left|\,S_{\mu+\rho,\nu+\sigma }-S\,\right| < \frac{1}{2}  \epsilon\)</span>, where <span class="math">\(\mu+\rho=\nu+\sigma\)</span>, would make this argument clearer.<a onClick="hideIt('mn:6,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div class="marginnotes"  id="mn:6,-7"  style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;6&#93;</a><em>Editor&#8217;s Note:</em> Breaking up <span class="math">\(\left|\,S_{\mu, \:\! \nu}-S\,\right| < \epsilon\)</span> into <span class="math">\(\left|\,S_{\mu, \:\! \nu}-S_{\mu+\rho,\:\! \nu+\sigma }\,\right| < \frac{1}{2} \epsilon\)</span> and <span class="math">\(\left|\,S_{\mu+\rho,\:\! \nu+\sigma }-S\,\right| < \frac{1}{2}  \epsilon\)</span>, where <span class="math">\(\mu+\rho=\nu+\sigma\)</span>, would make this argument clearer.<a onClick="hideIt('mn:6,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
 <div class="contenttext">
 
 <blockquote>
-<p><em>Corollary</em>. An absolutely convergent double series is convergent. For if the double series converges absolutely and if <span class="math">\(t_{\, m,n}\)</span> be the sum of <span class="math">\(m\)</span> rows of <span class="math">\(n\)</span> columns of the series of moduli, then, given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(\mu\)</span> such that, when <span class="math">\(p>m>\mu\)</span> and <span class="math">\(q>n>\mu\)</span>, <span class="math">\(t_{\, p,q}-t_{\, m,n} < \epsilon\)</span>. But <span class="math">\(\left|\,S_{p,q}-S_{m,n}\,\right| \leq  t_{\, p,q}-t_{\, m,n} \)</span> and so <span class="math">\(\left|\,S_{p,q}-S_{m,n}\,\right| < \epsilon\)</span> when <span class="math">\(p>m>\mu\)</span>, <span class="math">\(q>n>\mu\)</span>; and this is the condition that the double series should converge. </p>
+<p><em>Corollary</em>. An absolutely convergent double series is convergent. For if the double series converges absolutely and if <span class="math">\(t_{\:\!  m,\:\! n}\)</span> be the sum of <span class="math">\(m\)</span> rows of <span class="math">\(n\)</span> columns of the series of moduli, then, given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(\mu\)</span> such that, when <span class="math">\(p>m>\mu\)</span> and <span class="math">\(q > n >\mu\)</span>, <span class="math">\(t_{\:\!  p,\:\! q}-t_{\:\!  m,\:\! n} < \epsilon\)</span>. But <span class="math">\(\left|\,S_{p,\:\! q}-S_{m,\:\! n}\,\right| \leq  t_{\:\!  p,\:\! q}-t_{\:\!  m,\:\! n} \)</span> and so <span class="math">\(\left|\,S_{p,\:\! q}-S_{m,\:\! n}\,\right| < \epsilon\)</span> when <span class="math">\(p > m > \mu\)</span>, <span class="math">\(q > n> \mu\)</span>; and this is the condition that the double series should converge. </p>
 </blockquote>
 
 <h4 id="methodsofsummingdoubleseries">2.51 Methods of summing double series<a class="marginmark" onClick="toggleHide('mn:7,+0');">&#91;7&#93;</a></h4>
@@ -162,9 +162,9 @@ Therefore, by <a href="CMA02-1-LimitsMN.html#cauchy">&#167;2.22</a>, <span class
 </div>
 <div class="contenttext">
 
-<p>Let us suppose that <span class="math">\(\sum\limits_{\nu=1}^{\infty} u_{\mu,\nu}\)</span>, converges to the sum <span class="math">\(S_{\mu}\)</span>. Then <span class="math">\(\sum\limits_{\nu=1}^{\infty} S_{\mu}\)</span> is called the <em>sum by rows</em> of the double series; that is to say, the sum by rows is <span class="math">\(\sum\limits_{\mu=1}^{\infty} \left(\sum\limits_{\nu=1}^{\infty} u_{\mu,\nu} \right)\)</span>. Similarly, the sum by columns is defined as <span class="math">\(\sum\limits_{\nu=1}^{\infty} \left(\sum\limits_{\mu=1}^{\infty} u_{\mu,\nu} \right)\)</span>.
+<p>Let us suppose that <span class="math">\(\sum\limits_{\nu=1}^{\infty} u_{\mu,\:\! \nu}\)</span>, converges to the sum <span class="math">\(S_{\mu}\)</span>. Then <span class="math">\(\sum\limits_{\mu=1}^{\infty} S_{\mu}\)</span> is called the <em>sum by rows</em> of the double series; that is to say, the sum by rows is <span class="math">\(\sum\limits_{\mu=1}^{\infty} \left(\sum\limits_{\nu=1}^{\infty} u_{\mu,\:\! \nu} \right)\)</span>. Similarly, the <em>sum by columns</em> is defined as <span class="math">\(\sum\limits_{\nu=1}^{\infty} \left(\sum\limits_{\mu=1}^{\infty} u_{\mu,\:\! \nu} \right)\)</span>.
 That these two sums are not necessarily the same is shewn by the example
-<span class="math">\[S_{\mu, \nu}= \frac{\mu-\nu}{\mu+\nu},\]</span>
+<span class="math">\[S_{\mu, \:\! \nu}= \frac{\mu-\nu}{\mu+\nu},\]</span>
 in which the sum by rows is <span class="math">\(-1\)</span>, the sum by columns is <span class="math">\(+1\)</span>; and <span class="math">\(S\)</span> does not exist. </p>
 
 <p><strong><em>PRINGSHEIM&#8217;S THEOREM</em></strong>: <em>If <span class="math">\(S\)</span> exists and the sums by rows and columns exist, then each of these sums is equal to <span class="math">\(S\)</span>.</em><a class="marginmark" onClick="toggleHide('mn:8,-2');">&#91;8&#93;</a></p>
@@ -174,36 +174,36 @@ in which the sum by rows is <span class="math">\(-1\)</span>, the sum by columns
 <div class="contenttext">
 
 <p>For since <span class="math">\(S\)</span> exists, then we can find <span class="math">\(m\)</span> such that
-<span class="math">\[\left|\,S_{\mu,\nu}-S\,\right| < \epsilon, \textrm{ if } \mu>m, \, \nu>m .\]</span>
-And therefore, since <span class="math">\(\lim\limits_{\nu \rightarrow \infty} S_{\mu,\nu}\)</span> exists, <span class="math">\(\left|\, (\lim\limits_{\nu \rightarrow \infty} S_{\mu,\nu})-S \,\right| \leq \epsilon\)</span>; that is to say,
+<span class="math">\[\left|\,S_{\mu,\:\! \nu}-S\,\right| < \epsilon, \textrm{ if } \mu>m, \, \nu>m .\]</span>
+And therefore, since <span class="math">\(\lim\limits_{\nu \rightarrow \infty} S_{\mu,\:\! \nu}\)</span> exists, <span class="math">\(\left|\, (\lim\limits_{\nu \rightarrow \infty} S_{\mu,\:\! \nu})-S \,\right| \leq \epsilon\)</span>; that is to say,
 <span class="math">\[ \left|\, \sum_{p=1}^{\mu} S_p - S\,\right| \leq \epsilon , \textrm{ when } \mu > m ,\]</span>
 and so (<a href="CMA02-1-LimitsMN.html#cauchy">&#167;2.22</a>) the sum by rows converges to <span class="math">\(S\)</span>. In like manner, the sum by columns converges to <span class="math">\(S\)</span>.</p>
 
 <h4 id="absolutelyconvergentdoubleseries">2.52 Absolutely convergent double series</h4>
 
-<p>We can prove the analogue of <a href="#thefundamentalpropertyofabsolutelyconvergentseries">&#167;2.41</a> for double series, namely that <em>if the terms of an absolutely convergent double series are taken in any order as a simple series, their sum tends to the same limit, provided that every term occurs in the summation.</em></p>
+<p>We can prove the analogue of <a href="#thefundamentalpropertyofabsolutelyconvergentseries">&#167;2.41</a> for double series, namely that <em>if the terms of an absolutely convergent double series are taken in <strong><em>any</em></strong> order as a simple series, their sum tends to the same limit, provided that every term occurs in the summation.</em></p>
 
-<p>Let <span class="math">\(\sigma_{\,\mu,\nu}\)</span> be the sum of the rectangle of <span class="math">\(\mu\)</span> rows and <span class="math">\(\nu\)</span> columns of the double series whose general element is <span class="math">\(\left|u_{\,\mu,\nu} \right|\)</span>; and let the sum of this double series be <span class="math">\(\sigma\)</span>.<a class="marginmark" onClick="toggleHide('mn:9,-7');">&#91;9&#93;</a> Then given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(m\)</span> and <span class="math">\(n\)</span> such that <span class="math">\(\sigma - \sigma_{\,\mu,\nu} < \frac{1}{2}\epsilon\)</span> whenever both <span class="math">\(\mu>m\)</span> and <span class="math">\(\nu>n\)</span>. </p>
+<p>Let <span class="math">\(\sigma_{\:\! \mu,\:\! \nu}\)</span> be the sum of the rectangle of <span class="math">\(\mu\)</span> rows and <span class="math">\(\nu\)</span> columns of the double series whose general element is <span class="math">\(\left|\:\! u_{ \mu,\:\! \nu} \right|\)</span>; and let the sum of this double series be <span class="math">\(\sigma\)</span>.<a class="marginmark" onClick="toggleHide('mn:9,-7');">&#91;9&#93;</a> Then given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(m\)</span> and <span class="math">\(n\)</span> such that <span class="math">\(\sigma - \sigma_{\:\! \mu,\:\! \nu} < \frac{1}{2}\epsilon\)</span> whenever both <span class="math">\(\mu > m\)</span> and <span class="math">\(\nu > n\)</span>. </p>
 </div>
-<div class="marginnotes"  id="mn:9,-7"  style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;9&#93;</a><em>Editor&#8217;s Note:</em> Also let <span class="math">\(S_{\,\mu,\nu}\)</span> be the sum of the rectangle of <span class="math">\(\mu\)</span> rows and <span class="math">\(\nu\)</span> columns of the double series whose general element is <span class="math">\(u_{\,\mu,\nu} \)</span>, and let the sum of this double series be <span class="math">\(S\)</span>.<a onClick="hideIt('mn:9,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div class="marginnotes"  id="mn:9,-7"  style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;9&#93;</a><em>Editor&#8217;s Note:</em> Also let <span class="math">\(S_{\,\mu,\:\! \nu}\)</span> be the sum of the rectangle of <span class="math">\(\mu\)</span> rows and <span class="math">\(\nu\)</span> columns of the double series whose general element is <span class="math">\(u_{\,\mu,\:\! \nu} \)</span>, and let the sum of this double series be <span class="math">\(S\)</span>.<a onClick="hideIt('mn:9,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
 <div class="contenttext">
 
-<p>Now suppose that it is necessary to take <span class="math">\(N\)</span> terms of the deranged series (in the order in which the terms are taken) in order to include all the terms of <span class="math">\(S_{M+1, M+1}\)</span>, and let the sum of these terms be <span class="math">\(t_{ N}\)</span>.</p>
+<p>Now suppose that it is necessary to take <span class="math">\(N\)</span> terms of the deranged series (in the order in which the terms are taken) in order to include all the terms of <span class="math">\(S_{M+1, \:\! M+1}\)</span>, and let the sum of these terms be <span class="math">\(t_{ \:\! N}\)</span>.</p>
 
-<p>Then <span class="math">\(t_{N}-S_{M+1,M+1}\)</span> consists of a sum of terms of the type <span class="math">\(u_{p,q}\)</span> in which
+<p>Then <span class="math">\(t_{\:\! N}-S_{M+1,\:\! M+1}\)</span> consists of a sum of terms of the type <span class="math">\(u_{p,\:\! q}\)</span> in which
 <span class="math">\(p > m\)</span>, <span class="math">\( q >n\)</span> whenever <span class="math">\(M > m\)</span> and <span class="math">\(M > n\)</span>; and therefore
- <span class="math">\[\left|\,t_{ N}-S_{M+1,M+1}\,\right| \leq \sigma - \sigma_{\,M+1,M+1} <  \frac{1}{2}\epsilon .\]</span></p>
+ <span class="math">\[\left|\,t_{ \:\! N}-S_{M+1,\:\! M+1}\,\right| \leq \sigma - \sigma_{\:\! M+1,\:\! M+1} <  \frac{1}{2}\epsilon .\]</span></p>
 
-<p>Also, <span class="math">\(S-S_{M+1,M+1}\)</span> consists of terms <span class="math">\(u_{p,q}\)</span> in which <span class="math">\(p > m\)</span>, <span class="math">\( q >n\)</span>; therefore
-<span class="math">\[\left|\,S-S_{M+1,M+1}\,\right| \leq \sigma - \sigma_{\,M+1,M+1} <  \frac{1}{2}\epsilon ;\]</span>
-therefore <span class="math">\(\left|\,S-t_{n}\,\right| <\epsilon\)</span>; and, corresponding to any given number <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(N\)</span>; and therefore <span class="math">\(t_{N} \rightarrow S\)</span>.</p>
+<p>Also, <span class="math">\(S-S_{M+1,\:\! M+1}\)</span> consists of terms <span class="math">\(u_{p,\:\! q}\)</span> in which <span class="math">\(p > m\)</span>, <span class="math">\( q >n\)</span>; therefore
+<span class="math">\[\left|\,S-S_{M+1,\:\! M+1}\,\right| \leq \sigma - \sigma_{\:\! M+1,\:\! M+1} <  \frac{1}{2}\epsilon ;\]</span>
+therefore <span class="math">\(\left|\,S-t_{\:\! n}\,\right| <\epsilon\)</span>; and, corresponding to any given number <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(\:\! N\)</span>; and therefore <span class="math">\(t_{\:\! N} \rightarrow S\)</span>.</p>
 
 <blockquote>
-<p><em>Example</em> 1. Prove that in an absolutely convergent double series, <span class="math">\(\sum\limits_{n=1}^{\infty} u_{m,n}\)</span> exists, and thence that the sums by rows and columns respectively converge to <span class="math">\(S\)</span>.</p>
+<p><em>Example</em> 1. Prove that in an absolutely convergent double series, <span class="math">\(\sum\limits_{n=1}^{\infty} u_{m,\:\! n}\)</span> exists, and thence that the sums by rows and columns respectively converge to <span class="math">\(S\)</span>.</p>
 
-<p>[Let the sum of <span class="math">\(\mu\)</span> rows of <span class="math">\(\nu\)</span> columns of the series of moduli be <span class="math">\(t_{\mu,\nu}\)</span>, and let <span class="math">\(t\)</span> be the sum of the series of moduli. Then <span class="math">\(\sum\limits_{\nu=1}^{\infty} \left| \,u_{\mu,\nu}\,\right| < t\)</span>, and so <span class="math">\(\sum\limits_{\nu=1}^{\infty}  u_{\mu,\nu}\)</span> converges; let its sum be <span class="math">\(b_{\mu}\)</span>; then
-<span class="math">\[\left|\, b_1 \,\right|+\left|\, b_2 \,\right|+ \dots +\left|\, b_{\mu}\, \right| \leq \lim_{\nu \rightarrow \infty} t_{\, \mu,\nu}\leq t ,\]</span>
+<p>[Let the sum of <span class="math">\(\mu\)</span> rows of <span class="math">\(\nu\)</span> columns of the series of moduli be <span class="math">\(t_{\mu,\:\! \nu}\)</span>, and let <span class="math">\(t\)</span> be the sum of the series of moduli. Then <span class="math">\(\sum\limits_{\nu=1}^{\infty} \left| \,u_{\mu,\:\! \nu}\,\right| < t\)</span>, and so <span class="math">\(\sum\limits_{\nu=1}^{\infty}  u_{\mu,\:\! \nu}\)</span> converges; let its sum be <span class="math">\(b_{\mu}\)</span>; then
+<span class="math">\[\left|\, b_1 \,\right|+\left|\, b_2 \,\right|+ \dots +\left|\, b_{\mu}\, \right| \leq \lim_{\nu \rightarrow \infty} t_{\, \mu,\:\! \nu}\leq t ,\]</span>
 and so <span class="math">\(\sum_{\mu=1}^{\infty} b_{\mu}\)</span> converges absolutely. Therefore the sum by rows of the double series exists, and similarly the sum by columns exists; and the required result then follows from Pringsheim&#8217;s theorem.] </p>
 </blockquote>
 
@@ -220,22 +220,22 @@ this series converges to <span class="math">\(S\)</span>.</p>
 <div class="contenttext">
 
 <p>We shall now shew that <em>if two series
-<span class="math">\[S=u_1+u_2+u_3+ \dots \]</span>
+<span class="math">\[S=u_1+u_2+u_3+ \dots \qquad\]</span>
 and
-<span class="math">\[T=v_1+v_2+v_3+ \dots \]</span>
+<span class="math">\[T=v_1+v_2+v_3+ \dots \qquad \]</span>
 are absolutely convergent, then the series
-<span class="math">\[P=u_1v_1+u_2v_1+u_1v_2+ \dots ,\]</span>
+<span class="math">\[\;\; P=u_1v_1+u_2v_1+u_1v_2+ \dots ,\]</span>
 formed by the products of their terms, written in any order, is absolutely convergent, and has for sum <span class="math">\(ST\)</span>.</em></p>
 
 <p>Let
-<span class="math">\[S_n=u_1+u_2+u_3+ \dots +u_n \]</span>
-<span class="math">\[T_n=v_1+v_2+v_3+ \dots +v_n .\]</span>
+<span class="math">\[S_n=u_1+u_2+u_3+ \dots +u_n \\
+T_n=v_1+v_2+v_3+ \dots +v_n .\]</span>
 Then
-<span class="math">\[ST=\lim S_n \lim T_n=\lim(S_n T_n)\]</span>
+<span class="math">\[\;\;  ST=\lim S_n \lim T_n=\lim(S_n T_n)\]</span>
 by <a href="CMA02-1-LimitsMN.html#monotonicex2">example 2 of &#167;2.2</a>. Now
 <span class="math">\[
 \begin{array}{ccc}
-S_nT_n=&&u_1v_1+u_2v_1+ \dots +u_nv_1 \\
+\qquad S_nT_n=&&u_1v_1+u_2v_1+ \dots +u_nv_1 \\
            &+&u_1v_2+u_2v_2+ \dots +u_nv_2 \\
            &\vdots& \quad \vdots \\
           &+&u_1v_n+u_2v_n+ \dots +u_nv_n .\\
@@ -243,8 +243,8 @@ S_nT_n=&&u_1v_1+u_2v_1+ \dots +u_nv_1 \\
 \]</span></p>
 
 <p>But this double series is absolutely convergent; for if these terms are replaced by their moduli, the result is <span class="math">\(\sigma_n \tau_n\)</span>, where
-<span class="math">\[\sigma_n= \left|u_1 \right|+ \left|u_2 \right|+ \dots +  \left|u_n \right|\]</span>
-<span class="math">\[\tau_n= \left|v_1 \right|+ \left|v_2 \right|+ \dots +  \left|v_n \right|\]</span>
+<span class="math">\[\sigma_n= \left|\:\! u_1 \right|+ \left|\:\! u_2 \right|+ \dots +  \left|\:\! u_n \right|, \\
+\\ \tau_n= \left|\:\! v_1 \right|+ \left|\:\! v_2 \right|+ \dots +  \left|\:\! v_n \right|,\]</span>
 and <span class="math">\(\sigma_n \tau_n\)</span> is known to have a limit. Therefore, by <a href="#absolutelyconvergentdoubleseries">&#167;2.52</a>, if the elements of
 the double series, of which the general term is <span class="math">\(u_m v_n\)</span>, be taken in any order,
 their sum converges to <span class="math">\(ST\)</span>.</p>
@@ -266,36 +266,36 @@ and rearranging according to powers of <span class="math">\(z\)</span>, converge
 <span class="math">\[a_0+a_1z+a_2z^2+a_3z^3+ \dots ,\]</span>
 in which the coefficients <span class="math">\(a_0\)</span>, <span class="math">\(a_1\)</span>, <span class="math">\(a_2\)</span>, <span class="math">\(a_3, \dots\)</span> are independent of <span class="math">\(z\)</span>, is called a <em>series proceeding according to ascending powers of <span class="math">\(z\)</span></em>, or briefly a <em>power-series</em>. </p>
 
-<p>We shall now shew that if a power-series converges for any value <span class="math">\(z_0\)</span> of <span class="math">\(z\)</span>, it will be absolutely convergent for all values of <span class="math">\(z\)</span> whose representative points are within a circle which passes through <span class="math">\(z_0\)</span> and has its centre at the origin. </p>
+<p>We shall now shew that <em>if a power-series converges for any value <span class="math">\(z_0\)</span> of <span class="math">\(z\)</span>, it will be absolutely convergent for all values of <span class="math">\(z\)</span> whose representative points are within a circle which passes through <span class="math">\(z_0\)</span> and has its centre at the origin.</em> </p>
 
 <p>For, if <span class="math">\(z\)</span> be such a point, we have <span class="math">\(\left|\,z \,\right|< \left|\,z_0 \,\right|\)</span>. Now, since <span class="math">\(\sum\limits_{n=0}^{\infty} a_n z_0^{\, n}\)</span> converges, <span class="math">\( a_n z_0^{\, n}\)</span> must tend to zero as <span class="math">\( n \rightarrow \infty \)</span>, and so we can find <span class="math">\(M\)</span> (independent of <span class="math">\(n\)</span>) such that
 <span class="math">\[\left|\,a_n z_0^n \,\right| < M .\]</span>
 Thus
 <span class="math">\[\left|\,a_n z^n \,\right| < M\left|\frac{z}{z_0}\right|^n .\]</span></p>
 
-<p>Therefore every term in the series <span class="math">\(\sum\limits_{n=0}^{\infty} a_n z^n\)</span> is less than the corresponding term in the convergent geometric series
-<span class="math">\[\sum_{n=0}^{\infty}M\left|\frac{z}{z_0}\right|^n ;\]</span>
+<p>Therefore every term in the series <span class="math">\(\sum\limits_{n=0}^{\infty} \left|\,a_n z^n \,\right|\)</span> is less than the corresponding term in the convergent geometric series
+<span class="math">\[\sum_{n=0}^{\infty}M\:\! \left|\frac{z}{z_0}\right|^n ;\]</span>
 the series is therefore convergent; and so the power-series is <em>absolutely</em> convergent, as the series of moduli of its terms is a convergent series; the result stated is therefore established.</p>
 
-<p>Let <span class="math">\(\varliminf \left|a_n \right|^{-1/n}=r\)</span>; then, from <a href="CMA02-2-SeriesMN.html#cauchystest">&#167;2.35</a>,
+<p>Let <span class="math">\(\varliminf \left|\:\! a_n \right|^{-1/n}=r\)</span>; then, from <a href="CMA02-2-SeriesMN.html#cauchystest">&#167;2.35</a>,
 <span class="math">\(\sum\limits_{n=0}^{\infty} a_n z^n\)</span> converges absolutely when <span class="math">\(\left|\,z\,\right|< r\)</span>; if <span class="math">\(\left|\,z\,\right|> r\)</span>, <span class="math">\(a_n z^n\)</span> does not tend to zero and so <span class="math">\(\sum\limits_{n=0}^{\infty} a_n z^n\)</span> diverges (<a href="CMA02-2-SeriesMN.html#convergenceofaninfiniteseries">&#167;2.3</a>).
 The circle <span class="math">\(\left|\,z\,\right|=r\)</span>, which includes all the values of <span class="math">\(z\)</span> for which the power-series
 <span class="math">\[a_0+a_1z+a_2z^2+a_3z^3+ \dots \]</span>
 converges<a class="marginmark" onClick="toggleHide('mn:12,-3');">&#91;12&#93;</a>, is called the <em>circle of convergence</em> of the series. The radius of the circle is called the <em>radius of convergence</em>.</p>
 </div>
-<div class="marginnotes"  id="mn:12,-3"  style="margin-top: -3em; margin-bottom: -3em;"><a class="marginmark">&#91;12&#93;</a><em>Editor&#8217;s Note</em>: More precisely, all such <span class="math">\(z\)</span> are either on or inside the circle <span class="math">\(\left|\,z\,\right|=r\)</span>. <a onClick="hideIt('mn:12,-3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div class="marginnotes"  id="mn:12,-3"  style="margin-top: -3em; margin-bottom: -3em;"><a class="marginmark">&#91;12&#93;</a><em>Editor&#8217;s Note</em>: All such <span class="math">\(z\)</span> are either on or inside the circle <span class="math">\(\left|\,z\,\right|=r\)</span>. <a onClick="hideIt('mn:12,-3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
 <div class="contenttext">
 
 <blockquote>
-<p>In practice there is usually a simpler way of finding <span class="math">\(r\)</span>, derived from d&#8217;Alembert&#8217;s test (<a href="CMA02-2-SeriesMN.html#ratiotest">&#167;2.36</a>); <span class="math">\(r\)</span> is <span class="math">\(\lim (a_n /a_{n + 1})\)</span> if this limit exists. </p>
+<p>In practice there is usually a simpler way of finding <span class="math">\(r\)</span>, derived from d&#8217;Alembert&#8217;s test (<a href="CMA02-2-SeriesMN.html#ratiotest">&#167;2.36</a>); <span class="math">\(r\)</span> is <span class="math">\(\lim \:\! \left(a_n \middle/a_{n + 1}\right)\)</span> if this limit exists. </p>
 </blockquote>
 
 <p>A power-series may converge for all values of the variable, as happens, for instance, in the case of the series<a class="marginmark" onClick="toggleHide('mn:13,-12');">&#91;13&#93;</a>
 <span class="math">\[z-\frac{z^3}{3!}+\frac{z^5}{5!}- \dots ,\]</span>
-which represents the function <span class="math">\(\sin z\)</span>; in this case the series converges over the whole 2-plane. </p>
+which represents the function <span class="math">\(\sin z\)</span>; in this case the series converges over the whole <span class="math">\(z\)</span>-plane. </p>
 </div>
-<div class="marginnotes"  id="mn:13,-12"  style="margin-top: -12em; margin-bottom: -12em;"><a class="marginmark">&#91;13&#93;</a>The series for <span class="math">\(e^z\)</span> , <span class="math">\(\sin z\)</span>, <span class="math">\(\cos z\)</span> and the fundamental properties of these functions and of <span class="math">\(\log z\)</span> will be assumed throughout. A brief account of the theory of the functions is given in the Appendix. <a onClick="hideIt('mn:13,-12')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div class="marginnotes"  id="mn:13,-12"  style="margin-top: -12em; margin-bottom: -12em;"><a class="marginmark">&#91;13&#93;</a>The series for <span class="math">\(e^z\)</span> , <span class="math">\(\sin z\)</span>, <span class="math">\(\cos z\)</span> and the fundamental properties of these functions and of <span class="math">\(\log z\)</span> will be assumed throughout. A brief account of the theory of the functions is given in the <a href="CMA24-Appendix-I-LogrithmAndExponentialMN.html#a.11summaryoftheappendix.">Appendix</a>. <a onClick="hideIt('mn:13,-12')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
 <div class="contenttext">
 
@@ -306,11 +306,11 @@ we have
 which, for all values of <span class="math">\(n\)</span> after some fixed value, is greater than unity when <span class="math">\(z\)</span> has any value different from zero. The series converges therefore only at the point <span class="math">\(z = 0\)</span>, and the radius of its circle of convergence vanishes. </p>
 
 <p>A power-series may or may not converge for points which are actually on the periphery of the circle; thus the series
-<span class="math">\[1+\frac{z}{1^s}+\frac{z}{2^s}+\frac{z}{3^s}+\frac{z}{4^s}+ \dots ,\]</span>
+<span class="math">\[1+\frac{z}{1^s}+\frac{z^2}{2^s}+\frac{z^3}{3^s}+\frac{z^4}{4^s}+ \dots ,\]</span>
 whose radius of convergence is unity, converges or diverges at the point <span class="math">\(z = 1\)</span> according as <span class="math">\(s\)</span> is greater or not greater than unity, as was seen in <a href="CMA02-2-SeriesMN.html#geometricseries">&#167;2.33</a>.</p>
 
 <blockquote>
-<p>Corollary. If <span class="math">\((a_n)\)</span> be a sequence of positive terms such that <span class="math">\(\lim(a_{n + 1} /a_n )\)</span> exists, this limit is equal to <span class="math">\(\varliminf a^{1/n}\)</span>. </p>
+<p><em>Corollary</em>. If <span class="math">\((a_n)\)</span> be a sequence of positive terms such that <span class="math">\(\lim \:\! \left(a_{n + 1} \middle/a_n \right)\)</span> exists, this limit is equal to <span class="math">\(\varliminf a_n^{\left.1\middle/n\right.}\)</span>. </p>
 </blockquote>
 
 <h4 id="convergenceofseriesderivedfromapower-series">2.61 Convergence of series derived from a power-series</h4>
@@ -339,8 +339,9 @@ converges; that is, the series <span class="math">\(\sum\limits_{n=1}^{\infty} n
 </div>
 
 <div id="footer">
-<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
-<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/"> GitHub.</a></h3>
+<h4>All content is either in the public domain or licensed under <a href="http://creativecommons.org/licenses/by/3.0/us/">a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h4>Feel free report typos and other issues on <span style="font-weight: 400;"><a href="https://github.com/CdLbB/cdlbb.github.com/tree/master/WandW">GitHub</a></span> or by email at <span style="font-weight: 400;"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#110;&#x69;&#x74;&#104;&#x61;&#114;&#100;&#x74;&#x40;&#x75;&#x77;&#46;&#101;&#x64;&#x75;">&#x6e;&#x69;&#116;&#x68;&#x61;&#114;&#100;&#x74;&#x40;&#117;&#119;&#x2e;&#101;&#x64;&#x75;</a></span>.</h4>
 </div>
 
 <div id="navseries2" class="navigation" style="visibility:hidden;" >

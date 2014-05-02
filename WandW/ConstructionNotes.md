@@ -38,6 +38,10 @@ All found
 3. [the expressions convergent and divergent were introduced by James Gregory, Professor of Mathematics at Edinburgh, in the same year (1668).](CMA02-2-Series.html#convergenceofaninfiniteseries) 
 3. [he (Newton) investigated the convergence of hypergeometric series in 1704.](CMA02-2-Series.html#convergenceofaninfiniteseries)
 4.  [It (the Bolzano-Weierstrass theorem) seems to have been known to Cauchy.](CMA02-1-Limits.html#bolzanosection)
+5.  *Example*. If in the series
+>\\[1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4} + \dots \\]
+>the order of the terms be altered, so that the ratio of the positive terms to the negative terms in the first \\(n\\) terms is ultimately \\(a^2\\), shew that the sum of the series will become \\(\log(2a)\\). <br> [(Manning.)](CMA02-3-MoreSeries.html#effectofchangingtheorderoftermsinaseries)
+
 5.  [These methods (of summing double series) are due to Cauchy.](CMA02-3-MoreSeries.html#methodsofsummingdoubleseries)
 6.  [The convergence of the product in which a_{n−1}=−1/n^2 was investigated by Wallis as early as 1655.](CMA02-4-Products.html#infiniteproducts)
 7.  [Infinite determinants had previously occurred in the researches of F&uuml;rstenau on the algebraic equation of the 7th degree, Darstellung der reellen Wurzeln algebraischer Gleichungen durch Determinanten der Coeffizienten (Marburg, 1860).](CMA02-4-Products.html#infinitedeterminants)
