@@ -34,11 +34,11 @@ The problems with which Analysis is mainly occupied relate to the *dependence* o
 
 This dependence must not be confused with the most important case of it, which will be explained later under the title of *analytic functionality*. 
 
->If \\(f\\) is a real function of a real variable \\(z\\), then the relation between \\(f\\) and \\(z\\), which may be written
+>If \\(\zeta\\) is a real function of a real variable \\(z\\), then the relation between \\(\zeta\\) and \\(z\\), which may be written
 >\\[\zeta =f(z),\\]
 >can be visualised by a curve in a plane, namely the locus of a point whose coordinates referred to rectangular axes in the plane are \\((z, \zeta)\\). No such simple and convenient geometrical method can be found for visualising an equation
 >\\[\zeta =f(z),\\]
->considered as defining the dependence of one complex number \\(\zeta=\xi+i\eta\\) on another complex number \\(z=x+iy\\). A representation strictly analogous to the one already given for real variables would require four-dimensional space, since the number of variables \\(\xi, \eta, x,y\\) is now four.
+>considered as defining the dependence of one complex number \\(\zeta=\xi+i\eta\\) on another complex number \\(z=x+iy\\). A representation strictly analogous to the one already given for real variables would require four-dimensional space, since the number of variables \\(\xi,\, \eta,\, x,\, y\\) is now four.
 >
 >One suggestion (made by Lie and Weierstrass) is to use a doubly-manifold system of lines in the quadruply-manifold totality of lines in three-dimensional space.<a class="marginmark" onClick="toggleHide('mn:1,-5');">&#91;1&#93;</a>
 
@@ -58,8 +58,8 @@ This dependence must not be confused with the most important case of it, which w
 >\\[\xi=\xi(x,y), \; \eta=\eta(x,y).\\] 
 >
 >A third suggestion, due to Heffter<a class="marginmark" onClick="toggleHide('mn:2,-14');">&#91;2&#93;</a> is to write 
->\\[\zeta=re^{i\theta} ,\\]
->then draw the surface \\(r = r(x, y)\\) — which may be called the *modular-surface* of the function — and on it to- express the values of \\(\theta\\) by surface-markings. It might be possible to modify this suggestion in various ways by representing \\(\theta\\) by curves drawn on the surface \\(r=r(x,y)\\).<a class="marginmark" onClick="toggleHide('mn:3,-9');">&#91;3&#93;</a>
+>\\[\zeta=re^{i\theta} \! ,\\]
+>then draw the surface \\(r = r(x, y)\\) — which may be called the *modular-surface* of the function — and on it to express the values of \\(\theta\\) by surface-markings. It might be possible to modify this suggestion in various ways by representing \\(\theta\\) by curves drawn on the surface \\(r=r(x,y)\\).<a class="marginmark" onClick="toggleHide('mn:3,-9');">&#91;3&#93;</a>
 
 </div>
 
@@ -77,7 +77,7 @@ This dependence must not be confused with the most important case of it, which w
 
 
 
-<div markdown=1 class="marginnotes" id="mn:3,-9" style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;3&#93;</a>*Editor's Note*: Heffter's approach is equivalent to the common practice of coloring the graph of a modular surface to indicate \\(\theta\\). Following Whittaker and Watson's suggestion, we can use lines or boundaries to denote specific \\(\theta\\) values, which improves the readability of such colored graphs. Other ways of visualizing complex functions are discussed in Hans Lundmark's  [*Visualizing complex analytic functions using domain coloring*](http://www.mai.liu.se/~halun/complex/domain_coloring-unicode.html) and [*Visualizations on the Complex Plane*](http://zeus.nyf.hu/~kovacsz/VOCP.pdf) by Jan Hubi&ccaron;ka, Zoltán Kovács, and Zoltán Kovács. <a onClick="hideIt('mn:3,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:3,-9" style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;3&#93;</a>*Editor's Note*: Heffter's approach is similar to the common practice of coloring the graph of a modular-surface to indicate \\(\theta\\). Following Whittaker and Watson's suggestion, we might use lines or boundaries to denote specific \\(\theta\\) values, which improves the readability of such colored graphs. Alternatively, we might trace paths on the modular-surface pointing in the direction of \\(\theta\\). Yet, other ways of visualizing complex functions are discussed in Hans Lundmark's  [*Visualizing complex analytic functions using domain coloring*](http://www.mai.liu.se/~halun/complex/domain_coloring-unicode.html) and [*Visualizations on the Complex Plane*](http://zeus.nyf.hu/~kovacsz/VOCP.pdf) by Jan Hubi&ccaron;ka, Zoltán Kovács, and Zoltán Kovács. <a onClick="hideIt('mn:3,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -98,21 +98,33 @@ Let \\(x_1\\) be such that \\(a\leq x_1\leq b\\). If there exists a number \\(l\
 \\[\left|\,f(x)-l \,\right| < \epsilon ,\\]
 whenever \\(\left|\, x-x_1  \right| < \eta\\), \\(x\neq x_1\\), and \\(a\leq x\leq b\\), then \\(l\\) is called the limit of \\(f(x)\\) as \\(x \rightarrow x_1\\).
 
-It may happen that we can find a number \\(l_+\\)(even when \\(l\\) does not exist) such that \\(\left|\,f(x)-l \,\right| < \epsilon\\) when \\(x_1 < x < x_1 +\eta\\). We call \\(l_+\\) the limit of \\(f(x)\\) when \\(x\\) approaches \\(x_1\\) from the right and denote it by \\(f(x_1 + 0)\\); in a similar 
+It may happen that we can find a number \\(l_+\\)(even when \\(l\\) does not exist) such that \\(\left|\,f(x)-l_+ \,\right| < \epsilon\\) when \\(x_1 < x < x_1 +\eta\\). We call \\(l_+\\) the limit of \\(f(x)\\) when \\(x\\) approaches \\(x_1\\) from the right and denote it by \\(f(x_1 + 0)\\); in a similar 
 manner we define \\(f(x_1 - 0)\\) if it exists. 
 
 
-If \\(f(x_1 + 0),\, f(x), f(x_1 - 0)\\)  all exist and are equal, we say that \\(f(x)\\) is 
+If \\(f(x_1 + 0),\, f(x_1), f(x_1 - 0)\\)  all exist and are equal, we say that \\(f(x)\\) is 
 *continuous* at \\(x_1\\); so that if \\(f(x)\\) is 
 continuous at \\(x_1\\), then, given \\(\epsilon\\), we can find \\(\eta\\) such that 
-\\[\left|\,f(x)-l \,\right| < \epsilon ,\\]
-whenever \\(\left|\, x-x_1  \right| < \eta\\) and \\(a\leq x\leq b\\).<a class="marginmark" onClick="toggleHide('mn:4,-3');">&#91;4&#93;</a> 
+\\[\left|\,f(x)-f(x_1) \,\right| < \epsilon ,\\]
+whenever \\(\left|\, x-x_1  \right| < \eta\\) and \\(a\leq x\leq b\\).<a class="marginmark" onClick="toggleHide('mn:4,-4');">&#91;4&#93;</a> 
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:4,-3" style="margin-top: -3em; margin-bottom: -3em;"><a class="marginmark">&#91;4&#93;</a>*Editor's Note*: Continuity at the end points \\(a\\) or \\(b\\) only requires one of the one-sided limits to exist.<a onClick="hideIt('mn:4,-3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:4,-4" style="margin-top: -4em; margin-bottom: -4em;"><a class="marginmark">&#91;4&#93;</a>*Editor's Note*: Continuity at the end points \\(a\\) or \\(b\\) only requires one of the one-sided limits to exist.<a onClick="hideIt('mn:4,-4')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+
+</div>
+
+
+
+<div markdown=1 class="contenttext">
+
+</div>
+
+
+
+<div markdown=1 class="marginnotes" id="mn:5,+3" style="margin-top: +3em; margin-bottom: +3em;"><a class="marginmark">&#91;5&#93;</a>If a function is said to have ordinary discontinuities at certain points of an interval it is implied that it is continuous at all other points of the interval. <a onClick="hideIt('mn:5,+3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -121,20 +133,8 @@ whenever \\(\left|\, x-x_1  \right| < \eta\\) and \\(a\leq x\leq b\\).<a class="
 <div markdown=1 class="contenttext">
 
 If \\(l_+\\) and \\(l_-\\) exist but are unequal,\\(f(x)\\) is said to have an *ordinary 
-discontinuity*<a class="marginmark" onClick="toggleHide('mn:5,-3');">&#91;5&#93;</a> at \\(x_1\\); and if  \\(l_+ = l_- \neq f(x_1)\\), \\(f(x)\\) is said to have a *removable 
+discontinuity*<a class="marginmark" onClick="toggleHide('mn:5,+3');">&#91;5&#93;</a> at \\(x_1\\); and if  \\(l_+ = l_- \neq f(x_1)\\), \\(f(x)\\) is said to have a *removable 
 discontinuity* at \\(x_1\\).
-
-</div>
-
-
-
-<div markdown=1 class="marginnotes" id="mn:5,-3" style="margin-top: -3em; margin-bottom: -3em;"><a class="marginmark">&#91;5&#93;</a>If a function is said to have ordinary discontinuities at certain points of an interval it is implied that it is continuous at all other points of the interval. <a onClick="hideIt('mn:5,-3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
-
-</div>
-
-
-
-<div markdown=1 class="contenttext">
 
 If \\(f(x)\\) is a complex function of a real variable, and if \\(f(x) = g(x)+ih (x)\\) 
 where \\(g (x)\\) and \\(h (x)\\) are real, the continuity of \\(f(x)\\) at \\(x_1\\) implies the continuity of \\(g(x)\\) and of \\(h(x)\\). For when \\(\left|\,f(x)-f(x_1) \,\right| < \epsilon \\), then \\(\left|\,g(x)-g(x_1) \,\right| < \epsilon \\)
@@ -165,7 +165,7 @@ and \\(\left|\,h(x)-h(x_1) \,\right| < \epsilon \\); and the result stated is ob
 >
 >It can then be proved that \\(f(x)\\)  depends continuously on \\(x\\) near \\(x=0\\), in the sense of the popular definition, but is not continuous at \\(x=0\\) in the sense of the precise definition. 
 
->######*Example* 2. If \\(f(x)\\) be defined and be an increasing function in the range \\((a, b)\\), the limits \\(f(x\pm0)\\) exist at all points in the interior of the range. [limitsexample]######
+>######*Example* 2. If \\(f(x)\\) be defined and be an increasing function in the range \\([a, b]\\), the limits \\(f(x\pm0)\\) exist at all points in the interior of the range. [limitsexample]######
 >
 >[If \\(f(x)\\) be an increasing function, a section of rational numbers can be found such that, if \\(a\\), \\(A\\) be any members of its \\(L\\)-class and its \\(R\\)-class, \\(a < f(x + h)\\) for every positive value of \\(h\\), and \\(A \geq f(x + h)\\) for some positive value of \\(h\\). The number defined by this section is \\(f(x+0)\\).] 
 
@@ -183,24 +183,11 @@ of \\(t\\)  is called a *simple curve*. If
 \\[x(a) = x (b),\quad y(a) = y (b),\\] 
 the simple curve is said to be *closed*. 
 
->*Example* 1. The circle \\(x^2 +y^2 =1\\) is a simple closed curve; for we may write
->\\[\qquad x=\sin t, \quad y=\cos t. \qquad (0 \leq t \leq 2\pi)\\]
-
-A two-dimensional continuum is a set of points in a plane possessing the 
-following two properties : 
-
-<div markdown=1 class="listroman">
-
-1. If \\((x, y)\\) be the Cartesian coordinates of any point of it, a positive number \\(\delta\\) (depending on \\(x\\) and \\(y\\)) can be found such that every point whose distance from (x, y) is less than \\(\delta\\) belongs to the set. 
-2. Any two points of the set can be joined by a simple curve consisting entirely of points of the set.<a class="marginmark" onClick="toggleHide('mn:7,-7');">&#91;7&#93;</a> 
-
-</div>
-
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:7,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;7&#93;</a>*Editor's Note*: In modern terminology, the first property asserts the set is *open*. The second property asserts that the set is *path-connected*. Most authors use the term *domain* for a non-empty open path-connected set of complex numbers. Whittaker and Watson use that term a bit differently.<a onClick="hideIt('mn:7,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:7,+2" style="margin-top: +2em; margin-bottom: +2em;"><a class="marginmark">&#91;7&#93;</a>For a proof that the sine and cosine are continuous functions, see the *Appendix* [&#167;A.41](CMA24-Appendix-II-TrigonometricalFunctionsMN.html#a.41thefundamentalpropertiesofsinandcos.).<a onClick="hideIt('mn:7,+2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -208,15 +195,40 @@ following two properties :
 
 <div markdown=1 class="contenttext">
 
->Example. The points for which \\(x^2+y^2 < 1\\) form a continuum. For if \\(P\\) be any point inside the unit circle such that \\(OP=r < 1\\), we may take \\(\delta=1— r\\); and any two points inside the circle may be joined by a straight line lying wholly inside the circle. 
+>*Example* 1. The circle \\(x^2 +y^2 =1\\) is a simple closed curve; for we may write<a class="marginmark" onClick="toggleHide('mn:7,+2');">&#91;7&#93;</a>
+>\\[\qquad x=\sin t, \quad y=\cos t. \qquad (0 \leq t \leq 2\pi)\\]
 
-The following two theorems will be assumed in this work;<a class="marginmark" onClick="toggleHide('mn:8,-7');">&#91;8&#93;</a> simple cases of them appear obvious from geometrical intuitions and, generally, theorems of a similar nature will be taken for granted, as formal proofs are usually extremely long and difficult. 
+A *two-dimensional continuum* is a set of points in a plane possessing the 
+following two properties : 
+
+<div markdown=1 class="listroman">
+
+1. If \\((x, y)\\) be the Cartesian coordinates of any point of it, a *positive* number \\(\delta\\) (depending on \\(x\\) and \\(y\\)) can be found such that every point whose distance from \\((x, y)\\) is less than \\(\delta\\) belongs to the set. 
+2. Any two points of the set can be joined by a simple curve consisting entirely of points of the set.<a class="marginmark" onClick="toggleHide('mn:8,-7');">&#91;8&#93;</a> 
+
+</div>
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:8,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;8&#93;</a>Formal proofs will be found in Watson's [*Complex Integration and Cauchy's Theorem.* (Cambridge Math. Tracts, No. 15.)](http://archive.org/details/complexintegrat00watsrich)<a onClick="hideIt('mn:8,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:8,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;8&#93;</a>*Editor's Note*: In modern terminology, the first property asserts the set is *open*. The second property asserts that the set is *path-connected*. Most authors use the term *domain* for a non-empty open path-connected set of complex numbers. Whittaker and Watson use that term a bit differently.<a onClick="hideIt('mn:8,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+
+</div>
+
+
+
+<div markdown=1 class="contenttext">
+
+>*Example* 2. The points for which \\(x^2+y^2 < 1\\) form a continuum. For if \\(P\\) be any point inside the unit circle such that \\(OP=r < 1\\), we may take \\(\delta=1— r\\); and any two points inside the circle may be joined by a straight line lying wholly inside the circle. 
+
+The following two theorems will be assumed in this work;<a class="marginmark" onClick="toggleHide('mn:9,-7');">&#91;9&#93;</a> simple cases of them appear obvious from geometrical intuitions and, generally, theorems of a similar nature will be taken for granted, as formal proofs are usually extremely long and difficult. 
+
+</div>
+
+
+
+<div markdown=1 class="marginnotes" id="mn:9,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;9&#93;</a>Formal proofs will be found in Watson's [*Complex Integration and Cauchy's Theorem.* (Cambridge Math. Tracts, No. 15.)](http://archive.org/details/complexintegrat00watsrich)<a onClick="hideIt('mn:9,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -231,7 +243,7 @@ The following two theorems will be assumed in this work;<a class="marginmark" on
 A continuum formed by the interior of a simple curve is sometimes called an *open two-dimensional region*, or briefly an *open region*, and the curve is called its *boundary*; such a continuum with its boundary is then called a 
 *closed two-dimensional region*, or briefly a *closed region* or *domain*. 
 
-A simple curve is sometimes called a *closed one-dimensional region*; a simple curve with its end-points omitted is then called an open one-dimensional region. 
+A simple curve is sometimes called a *closed one-dimensional region*; a simple curve with its end-points omitted is then called an *open one-dimensional region*. 
 
 #### 3.22 Continuous functions of complex variables [continuousfunctionsofcomplexvariables]####
 
@@ -251,8 +263,9 @@ whenever \\(\left|\, z-z_1\right| < \eta \\) and \\(z\\) is a point of the regio
 
 
 <div id="footer">
-<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
-<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/"> GitHub.</a></h3>
+<h4>All content is either in the public domain or licensed under <a href="http://creativecommons.org/licenses/by/3.0/us/">a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h4>Feel free report typos and other issues on <span style="font-weight: 400;"><a href="https://github.com/CdLbB/cdlbb.github.com/tree/master/WandW">GitHub</a></span> or by email at <span style="font-weight: 400;"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#110;&#x69;&#x74;&#104;&#x61;&#114;&#100;&#x74;&#x40;&#x75;&#x77;&#46;&#101;&#x64;&#x75;">&#x6e;&#x69;&#116;&#x68;&#x61;&#114;&#100;&#x74;&#x40;&#117;&#119;&#x2e;&#101;&#x64;&#x75;</a></span>.</h4>
 </div>
 
 
