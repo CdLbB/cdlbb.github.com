@@ -25,7 +25,7 @@ HTML header:	<script type="text/javascript"
 
 <div markdown=1 id="content">
 <div markdown=1 class="contenttext">
-# Appendix #
+# Appendix: #
 
 ##The Elementary Transcendental Functions ##
 

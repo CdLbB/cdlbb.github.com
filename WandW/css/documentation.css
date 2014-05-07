@@ -75,12 +75,13 @@ h1, h2, h3, h4, h5 /*  h6  */
 
 
 h1 {
-    font-size: 2.3em; 
-    font-weight: bold;    
+    font-family: Baskerville, Garamond, "Baskerville old face", "Hoefler Text", Cochin,  "Times New Roman", serif;
+    font-size: 2.5em; 
+    font-style: italic;    
     line-height: .3em;
     padding-top: 0.3em;
     text-align: left;
-    letter-spacing: .045em;
+    letter-spacing: .02em;
     }
 
 
