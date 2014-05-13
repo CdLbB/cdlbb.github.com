@@ -39,20 +39,20 @@ and so
 but \\(S_n (0) = 0\\), and therefore \\(\lim\limits_{n \rightarrow \infty} S_n (0) = 0\\). 
 
 Consequently, although the series is an absolutely convergent series of 
-continuous functions of \\(x\\), the sum is a discontinuous function of \\(x\\). We naturally enquire the reason of this rather remarkable phenomenon, which was investigated in 1841-1848 by Stokes[^Stokes,-12], Seidel[^Seidel,-6] and Weierstrass[^Weierstrass,-0], who shewed that it cannot occur except in connexion with another phenomenon, that of *non-uniform* convergence, which will now be explained. 
+continuous functions of \\(x\\), the sum is a discontinuous function of \\(x\\). We naturally enquire the reason of this rather remarkable phenomenon, which was investigated in 1841--1848 by Stokes[^Stokes,-12], Seidel[^Seidel,-6] and Weierstrass[^Weierstrass,-0], who shewed that it cannot occur except in connexion with another phenomenon, that of *non-uniform* convergence, which will now be explained. 
 
-[^Stokes,-12]: [*Camb. Phil. Trans*, **viii**. (1847)](http://archive.org/details/transactionsofca08camb), pp. 533-583. [*Collected Papers*, **i**](http://archive.org/details/mathphyspapers01stokrich). pp. 236-313.] 
+[^Stokes,-12]: [*Camb. Phil. Trans*, **viii**. (1847)](http://archive.org/details/transactionsofca08camb), pp. 533-583. [[*Collected Papers*, **i**](http://archive.org/details/mathphyspapers01stokrich). pp. 236-313.] 
 
 [^Seidel,-6]: [*Münchener Abhandlungen*, **v**. (1848)](http://archive.org/details/abhandlungenderk05wiss), p. 381. 
 
 [^Weierstrass,-0]: [*Ges. Math. Werke*, **i**](http://archive.org/details/mathematischewer01weieuoft). pp. 67, 75. 
 
-Let the functions \\(u_1(z), u_2(z), \dots \\) be defined at all points of a closed region of the Argand diagram. Let 
+Let the functions \\(u_1(z),\, u_2(z), \dots \\) be defined at all points of a closed region of the Argand diagram. Let 
 \\[S_n(x)=u_1(z)+u_2(z)+ \dots +u_n(z) .\\]
 
-The condition that the series \\(\sum\limits_{n=1}^{\infty} u_n (z)\\) should converge for any particular value of \\(z\\) is that, given \\(\epsilon\\), a number \\(n\\) should exist such that
+The condition that the series \\(\sum\limits_{n=1}^{\infty} u_n (z)\\) should *converge* for any particular value of \\(z\\) is that, given \\(\epsilon\\), a number \\(n\\) should exist such that
 \\[\left|\,S_{n+p}(z) - S_n(z) \,\right| < \epsilon\\]
-for all positive values of \\(p\\), the value of \\(n\\) of course depending on \\(\epsilon\\). 
+for *all* positive values of \\(p\\), the value of \\(n\\) of course depending on \\(\epsilon\\). 
 
 Let \\(n\\) have the smallest integer value for which the condition is satisfied. This integer will *in general* depend on the particular value of \\(z\\) which has been selected for consideration. We denote this dependence by writing \\(n(z)\\) in place of \\(n\\). Now it *may happen* that we can find a number \\(N\\), *independent of* \\(z\\), Such that 
 \\[n(x) < N\\]
@@ -66,35 +66,35 @@ If no such number \\(N\\) exists, the convergence is said to be non-uniform.[^Un
 
 Uniformity of convergence is thus a property depending on a whole *set* of values of \\(z\\), whereas previously we have considered the convergence of a series for various particular values of \\(z\\), the convergence for each value being considered *without reference to the other values*. 
 
-We define the phrase 'uniformity of convergence near a point \\(z\\)' to mean that there is a definite positive number \\(\delta\\) such that the series converges uniformly in the domain common to the circle \\(\left|\, z — z_1  \right | \leq \delta\\)  and the region in which the series converges.
+We define the phrase 'uniformity of convergence *near* a point \\(z\\)' to mean that there is a definite positive number \\(\delta\\) such that the series converges uniformly in the domain common to the circle \\(\left|\, z - z_1  \right | \leq \delta\\)  and the region in which the series converges.
 
 #### 3.31 On the condition for uniformity of convergence.[^Remainder,-2][ontheconditionforuniformityofconvergence.] ####
 
-[^Remainder,-2]: This section shews that it is indifferent whether uniformity of convergence is defined by means of the partial remainder \\(R_{n,p}(z)\\) or by \\(R_n (z)\\). Writers differ in the definition taken as fundamental.
+[^Remainder,-2]: This section shews that it is indifferent whether uniformity of convergence is defined by means of the partial remainder \\(R_{n,\:\! p}(z)\\) or by \\(R_n (z)\\). Writers differ in the definition taken as fundamental.
 
-If \\(R_{n,\, p}(z) = u_{n+1} (z) + u_{n+2} (z)+ \dots + u_{n+p} (z)\\), we have seen that the necessary and sufficient condition that \\(\sum_{n=1}^{\infty}u_n (z)\\) should converge uniformly in a region is that, given any positive number \\(\epsilon\\), it should be possible to 
+If \\(R_{n, \:\!  p}(z) = u_{n+1} (z) + u_{n+2} (z)+ \dots + u_{n+p} (z)\\), we have seen that the necessary and sufficient condition that \\(\sum_{n=1}^{\infty}u_n (z)\\) should converge uniformly in a region is that, given any positive number \\(\epsilon\\), it should be possible to 
 choose \\(N\\) *independent of* \\(z\\) (but depending on \\(\epsilon\\)) such that 
-\\[\left|\, R_{N,p}(z)\,\right| < \epsilon\\]
+\\[\left|\, R_{N, \:\! p}(z)\,\right| < \epsilon\\]
 for *all* positive integral values of \\(p\\). 
 
 If the condition is satisfied, by [§2.22](CMA02-1-Limits.html#cauchy), \\(S_n (z)\\) tends to a limit, \\(S(z)\\), say for each value of \\(z\\) under consideration; and then, since \\(\epsilon\\) is *independent of* \\(p\\), 
-\\[\left|\,  \lim_{p \rightarrow \infty} R_{N,\,p} (z) \,\right|	 \leq \epsilon ,\\] 
+\\[\left|\,  \lim_{p \rightarrow \infty} R_{N, \:\! p} (z) \,\right|	 \leq \epsilon ,\\] 
 and therefore, when \\(n > N\\), 
-\\[S(z)-S_n(z)=  \lim_{p \rightarrow \infty} R_{N,\,p} (z)-R_{N,\, n-N}(z) ,\\]
+\\[S(z)-S_n(z)=  \lim_{p \rightarrow \infty} R_{N, \:\! p} (z)-R_{N, \:\! n-N}(z) ,\\]
 and so
 \\[\left|\, S(z)-S_n(z)\,\right| < 2\epsilon .\\]
 
 Thus (writing \\(\frac{1}{2} \epsilon\\) for \\(\epsilon\\) ) a *necessary* condition for uniformity of convergence is that \\(\left|\,S(z) - S_n (z) \,\right| < \epsilon,\\) whenever \\(n>N\\) and \\(N\\) is *independent* of \\(z\\); the 
-condition is also sufficient; for if it is satisfied it follows as in [§2.22(I)](CMA02-1-Limits.html#cauchy1) 
-that \\(\left|\, R_{N,p} (z)\, \right| < 2e\\), which, by definition, is the condition for uniformity.
+condition is also *sufficient*; for if it is satisfied it follows as in [§2.22(I)](CMA02-1-Limits.html#cauchy1) 
+that \\(\left|\, R_{N,\:\! p} (z)\, \right| < 2\epsilon\\), which, by definition, is the condition for uniformity.
 
 >*Example* 1. Shew that, if \\(x\\) be real, the sum of the series 
-\\[\frac{x}{1(x+1)}+\frac{x}{(x+1)(2x+1)}+ \cdots +\frac{x}{((n-1)x+1)(nx+1)}+ \cdots\\]
+\\[\frac{x}{1(x+1)}+\frac{x}{(x+1)(2x+1)}+ \cdots +\frac{x}{[(n-1)x+1](nx+1)}+ \cdots\\]
 is discontinuous at \\(x=0\\) and the series is non-uniformly convergent near \\(x=0.\\) 
 >
->The sum of the first \\(n\\) terms is easily seen to be \\(\displaystyle{1-\frac{1}{nx+1}}\\); so when \\(x=0\\) the sum is; when \\(x \neq 0\\), the sum is 1. 
+>The sum of the first \\(n\\) terms is easily seen to be \\(\displaystyle{1-\frac{1}{nx+1}}\\); so when \\(x=0\\) the sum is \\(0\\); when \\(x \neq 0\\), the sum is \\(1\\). 
 >
->The value of \\(R_n(x) = S(x)-S_n (x)\\) is \\(\displaystyle{\frac{1}{nx+1}}\\) if \\(x \neq 0\\),; so when \\()x\\) is small, say \\(x=\\)one-hundred-millionth, the remainder after a million terms is \\(\frac{1}{\frac{1}{100}+1}\\) or \\(1-\frac{1}{101}\\) so the first million terms of the series do not contribute one per cent, of the sum. And in general, to make \\(\displaystyle{\frac{1}{nx+1}}<\epsilon\\), it is necessary to take  \\[n>\frac{1}{x}\left( \frac{1}{\epsilon}-1\right).\\]
+>The value of \\(R_n(x) = S(x)-S_n (x)\\) is \\(\displaystyle{\frac{1}{nx+1}}\\) if \\(x \neq 0\\); so when \\(x\\) is small, say \\(x=\\)one-hundred-millionth, the remainder after a million terms is \\(\frac{1}{\frac{1}{100}+1}\\) or \\(1-\frac{1}{101}\\), so the first million terms of the series do not contribute one percent of the sum. And in general, to make \\(\displaystyle{\frac{1}{nx+1}}<\epsilon\\), it is necessary to take  \\[n>\frac{1}{x}\left( \frac{1}{\epsilon}-1\right).\\]
 >
 >Corresponding to a given \\(\epsilon\\), no number \\(N\\) exists, independent of \\(x\\), such that \\(n < N\\) for 
 all values of \\(x\\) in any interval including \\(x=0\\); for by taking \\(x\\) sufficiently small we can 
@@ -105,7 +105,7 @@ make \\(n\\) greater than any number \\(N\\) which is independent of \\(x\\). Th
 >
 >The \\(n\\)th term can be written \\(\: \displaystyle \frac{nx}{1+n^2x^2} - \frac{(n+1)x}{1+(n+1)^2x^2}, \: \\)  so \\(\:  \displaystyle S(x) =\frac{x}{1+x^2},\: \\)  and \\[R_n(x)=\frac{(n+1)x}{1+(n+1)^2x^2}.\\]
 >
->[Note. In this example the sum of the series is not discontinuous at \\(x=0\\).]
+>[**Note**. In this example the sum of the series is not discontinuous at \\(x=0\\).]
 > 
 >But (taking \\(\epsilon <\frac{1}{2}\\) and \\(x \neq 0\\) ), \\(\left|\, R_n (x) \,\right| <\epsilon \\)  if' \\(\epsilon^{-1}(n+1)\,\left|\,x\,\right| < 1+(n+1)^2 x^2\\); i.e. if \\(n+1>\frac{1}{2}\{\epsilon^{-1}+\sqrt{\epsilon^{-2}-4}\,\}\,\left|\,x\,\right|^{-1}\\) or \\(n+1<\frac{1}{2}\{\epsilon^{-1}-\sqrt{\epsilon^{-2}-4}\,\}\,\left|\,x\,\right|^{-1}\\).[^Quadratic,-2]
 
@@ -125,7 +125,7 @@ function of \\(z\\)  at all points of the domain.*
 
 For let the series be \\(f(z) = u_1 (z) + u_2 (z) + \cdots + u_n (z)+ \cdots = S_n (z) + R_n (z)\\), where \\(R_n (z)\\) is the remainder after \\(n\\) terms. 
 
-Since the series is uniformly convergent, given any positive number \\(\epsilon\\), we can find a corresponding integer \\(n\\)  *independent of* \\(z\\), such that \\(\left| R_n (z) \right| < \frac{1}{3} \epsilon \\)  for all values of \\(z\\)  within the domain. 
+Since the series is uniformly convergent, given any positive number \\(\epsilon\\), we can find a corresponding integer \\(n\\)  *independent of* \\(z\\), such that \\(\left|\,  R_n (z) \,\right| < \frac{1}{3} \epsilon \\)  for all values of \\(z\\)  within the domain. 
 
 Now \\(n\\) and \\(\epsilon\\)  being thus fixed, we can, on account of the continuity of \\(S_n(z)\\), find a positive number \\(\eta\\) such that 
 \\[ \left|\, S_n(z)-S_n (z')\,\right|<  \frac{1}{3}\epsilon,\\] whenever \\(\left|\, z — z' \, \right|  < \eta\\). 
@@ -133,22 +133,22 @@ Now \\(n\\) and \\(\epsilon\\)  being thus fixed, we can, on account of the cont
 We have then 
 \\[
 \begin{align*}
-\left|\,f(z)-f(z')\, \right|& \leq \left|\,S_n(z)-S_n(z') \, \right|+ \left|\,R_n(z)-R_n(z') \, \right|\\
-& \leq \left|\,S_n(z)-S_n(z') \, \right|+ \left|\,R_n(z) \,\right|+ \left|\,R_n(z') \, \right|\\
+\left|\,f(z)-f(z')\, \right|& \leq \left|\,S_n(z)-S_n(z') \, \right|+ \left|\,R_n(z)-R_n(z') \, \right|\\ \\
+& \leq \left|\,S_n(z)-S_n(z') \, \right|+ \left|\,R_n(z) \,\right|+ \left|\,R_n(z') \, \right|\\ \\
  & < \epsilon ,
 \end{align*}
 \\]
 which is the condition for continuity at \\(z\\).
 
->Example 1. Shew that near \\(x = 0\\) the series \\[u_1 (x) + u_2 (x) + u_3 (x)+ \cdots,\\]  \\[\text{where}  \qquad u_1(x) = x,\quad u_n (x) = x^{\frac{1}{2n - 1}} - x^{\frac{1}{2n - 3}}, \\] and real values of \\(x\\) are concerned, is discontinuous and non-uniformly convergent.
+>Example 1. Shew that near \\(x = 0\\) the series \\[u_1 (x) + u_2 (x) + u_3 (x)+ \cdots,\\]  \\[\text{where}  \qquad u_1(x) = x,\quad u_n (x) = x^{\left.1\middle/(2n - 1)\right.} - x^{\left.1\middle/(2n - 3)\right.}, \\] and real values of \\(x\\) are concerned, is discontinuous and non-uniformly convergent.
 > 
->In this example it is convenient to take a slightly different form of the test; we shall shew that, given an arbitrarily small number \\(\epsilon\\), it is possible to choose values of \\(x\\), as small as we please, depending on \\(n\\) in such a way that \\(\left|\, R_n (x) \,\right|\\) is not less than \\(\epsilon\\) for any value of \\(n\\), no matter how large. The reader will easily see that the existence of such values of \\(x\\) is inconsistent with the condition for uniformity of convergence. 
+>In this example it is convenient to take a slightly different form of the test; we shall shew that, given an arbitrarily small number \\(\epsilon\\), it is possible to choose values of \\(x\\), as small as we please, depending on \\(n\\) in such a way that \\(\left|\, R_n (x) \,\right|\\) is *not* less than \\(\epsilon\\) for any value of \\(n\\), no matter how large. The reader will easily see that the existence of such values of \\(x\\) is inconsistent with the condition for uniformity of convergence. 
 >
->The value of \\(S_n (x)\\) is \\(x^{\frac{1}{2n - 1}}\\); as \\(n\\) tends to infinity, \\(S_n (x)\\) tends to 1, 0, or -1, according as \\(x\\) is positive, zero, or negative. The series is therefore absolutely convergent for all values of \\(x\\), and has a discontinuity at \\(x=0\\). 
+>The value of \\(S_n (x)\\) is \\(x^{\left.1\middle/(2n - 1)\right.}\\); as \\(n\\) tends to infinity, \\(S_n (x)\\) tends to \\(1\\), \\(0\\), or \\(-1\\), according as \\(x\\) is positive, zero, or negative. The series is therefore absolutely convergent for all values of \\(x\\), and has a discontinuity at \\(x=0\\). 
 >
->In this series \\(R_n (x) = 1 - x^{\frac{1}{2n - 1}},\: (x > 0)\\); however great \\(n\\) may be, by taking[^delta] \\(x = \epsilon^{-(2n - 1)}\\) we can cause this remainder to take the value \\(1-\epsilon^{-1}\\), which is not arbitrarily small. The series is therefore non-uniformly convergent near \\(x=0\\). 
+>In this series \\(R_n (x) = 1 - x^{\left.1\middle/(2n - 1)\right.}\\), \\((x > 0)\\); however great \\(n\\) may be, by taking[^delta] \\(x = \epsilon^{-(2n - 1)}\\) we can cause this remainder to take the value \\(1-\epsilon^{-1}\\), which is not arbitrarily small. The series is therefore non-uniformly convergent near \\(x=0\\). 
 
-[^delta]: This value of x satisfies the condition \\(\left|\,x\,\right| < \delta \\) whenever \\(2n - 1 > \log \delta^{-1}\\).
+[^delta]: This value of \\(x\\) satisfies the condition \\(\left|\,x\,\right| < \delta \\) whenever \\(2n - 1 > \log \delta^{\:\! -1}\\).
 
 >Example 2. Shew that near \\(z=0\\) the series \\[\sum_{n=1}^{\infty} \frac{-2z(1+z)^{n-1}}{\{1+(1+z)^{n-1}\}\{1+(1+z)^{n}\}}\\] is non-uniformly convergent and its sum is discontinuous. 
 >
@@ -157,10 +157,10 @@ than -1, it is seen that the sum to infinity is 1, 0, or  -1, according as \\(z\
 
 ####3.33 The distinction between absolute and uniform convergence. [thedistinctionbetweenabsoluteanduniformconvergence.]####
 
-The uniform convergence of a series in a domain does not necessitate its *absolute* convergence at any points of the domain, nor conversely. Thus the series \\(\sum \frac{z^2}{1+z^2}\\), converges *absolutely*, but (near \\(z = 0\\)) not *uniformly*; while in the case of the series 
+The *uniform* convergence of a series in a domain does not necessitate its *absolute* convergence at any points of the domain, nor conversely. Thus the series \\(\sum \frac{z^2}{1+z^2}\\), converges *absolutely*, but (near \\(z = 0\\)) not *uniformly*; while in the case of the series 
 \\[\sum_{n=1}^\infty \frac{(-1)^{n-1}}{z^2+n},\\]
 the series of moduli is 
-\\[\sum_{n=1}^\infty \frac{1}{\left|\, n+z^2 \,\right|}\\]
+\\[\sum_{n=1}^\infty \frac{1}{\left|\, n+z^2 \,\right|},\\]
 which is divergent, so the series is only *conditionally convergent*; but for all 
 real values of \\(z\\), the terms of the series are alternately positive and negative 
 and numerically decreasing, so the sum of the series lies between the sum of 
@@ -193,7 +193,7 @@ of \\(T\\), and therefore the modulus of the remainder after the first \\(n\\) t
 of \\(S\\), is less than an assigned positive number \\(\epsilon\\); and since the value of \\(n\\) 
 thus found is independent of \\(z\\), it follows ([§3.31](#ontheconditionforuniformityofconvergence.)) that the series \\(S\\) is uniformly convergent; by [§2.34](CMA02-2-Series.html#thecomparisontheorem), the series \\(S\\) also converges absolutely. 
 
->Example. The series 
+>*Example*. The series 
 \\[\cos z +\frac{1}{2^2}\cos^2 z +\frac{1}{3^2}\cos^3 z + \cdots\\] convergent for all real values of \\(z\\), because the moduli of its terms are not greater than the corresponding terms of the convergent series 
 \\[1 +\frac{1}{2^2} +\frac{1}{3^2} + \cdots ,\\]
 whose terms are positive constants. 
@@ -218,7 +218,7 @@ To prove the validity of the condition we observe that \\(\prod\limits_{n=1}^\in
 \\[
 \begin{align*} 
 \qquad \qquad \quad &  =\left|\, \prod\limits_{n=1}^m \{1+u_n(z)\} \left[ \,\prod\limits_{n=m+1}^{m+p} \{1+u_n(z)\}-1 \,\right] \,\right|\\
-& \leq \left|\, \prod\limits_{n=1}^m \{1+M_n\} \left[ \,\prod\limits_{n=m+1}^{m+p} \{1+M_n\}-1 \,\right] \,\right|\\
+& \leq \, \prod\limits_{n=1}^m \{1+M_n\} \left[ \,\prod\limits_{n=m+1}^{m+p} \{1+M_n\}-1 \,\right] \\ \\ \\
  & < \epsilon ,
 \end{align*}
 \\]
@@ -228,28 +228,28 @@ and the choice of \\(m\\) is independent of \\(z\\).
 
 [^hardy,-2]: [*Proc. London Math. Soc.* (2)  **iv.** (1907)](https://archive.org/details/proceedingslond07socigoog), pp. 247-265. These results, which are generalisations of Abel's theorem ([§3.71](CMA03-4-PowerSeries.html#abelstheoremoncontinuityuptothecircleofconvergence.), below), though well known, do not appear to have been published before 1907. From their resemblance to the tests of Dirichlet and Abel for convergence, Bromwich proposes to call them Dirichlet's and Abel's tests respectively.
 
-The reader will see, from [§2.31](CMA02-2-Series.html#dirichlet), that if, in a given domain, \\(\left|\,\sum_{n=1}^p a_b(z)\,\right| < k\\) where \\( a_n (z)\\) is real and \\(k\\) is finite and independent of \\(p\\) and \(z\), and if \\(f_n (z) \geq f_{n + 1} (z)\\) and \\( f_n(z) \rightarrow 0\\) *uniformly* as \\( n \rightarrow \infty\\), then \\(\sum\limits_{n=1}^\infty a_n(z) \, f_n(z)\\) converges uniformly. 
+The reader will see, from [§2.31](CMA02-2-Series.html#dirichlet), that if, in a given domain, \\(\left|\,\sum_{n=1}^p a_b(z)\,\right| < k\\) where \\( a_n (z)\\) is real and \\(k\\) is finite and independent of \\(p\\) and \\(z\\), and if \\(f_n (z) \geq f_{n + 1} (z)\\) and \\( f_n(z) \rightarrow 0\\) *uniformly* as \\( n \rightarrow \infty\\), then \\(\sum\limits_{n=1}^\infty a_n(z) \, f_n(z)\\) converges uniformly. 
 
 Also that if 
-\\[k \geq u_n(z) \geq u_{n-1}(z) \geq 0 \\] 
+\\[k \geq u_n(z) \geq u_{n+1}(z) \geq 0 ,\\] 
 where \\(k\\) is *independent* of \\(z\\) and \\( \sum\limits_{n=1}^\infty a_n (z)\\) converges uniformly, then \\( \sum\limits_{n=1}^\infty a_n (z)\,u_n (z)\\) converges uniformly. [To prove the latter, observe that \\(m\\) can be found such that 
 \\[
  a_{m+1}(z), \; a_{m+1}(z)+a_{m+2}(z), \cdots , \; a_{m+1}(z)+a_{m+2}(z)+ \cdots+ a_{m+p}(z) \\]
 are numerically less than \\( \left.\epsilon \middle/ k\right.\\); and therefore ([§2.301](CMA02-2-Series.html#abelsinequality.)) 
-\\[\left|\,\sum_{n=m+1}^{m+p} a_n(z)u_n(z)\,\right| < \frac{\epsilon u_{m+1}}{k} < \epsilon.\\]
+\\[\left|\,\sum_{n=m+1}^{m+p} a_n(z)\:\! u_n(z)\,\right| < \frac{\epsilon u_{m+1}(z)}{k} < \epsilon ,\\]
 and the choice of \\(\epsilon\\) and \\(m\\) to is independent of \\(z\\).]
 
 >*Example* 1. Shew that, if \\(\delta >0\\), the series 
 \\[\sum_{n=1}^\infty \frac{\cos n\theta}{n}, \quad \sum_{n=1}^\infty \frac{\sin n\theta}{n}\\]
-converge uniformly in the range \\(\delta < \theta < 2\pi-\delta\\).
+converge uniformly in the range \\(\delta \leq \theta \leq 2\pi-\delta\\).
 >
 >Obtain the corresponding result for the series 
 \\[\sum_{n=1}^\infty \frac{ (-1)^n\cos n\theta}{n}, \quad \sum_{n=1}^\infty \frac{ (-1)^n\sin n\theta}{n}.\\]
 by writing \\(\theta +\pi\\) for \\(\pi\\). 
 
->*Example* 2. If, when \\( a < x < b\\), \\(\omega_n (x) < k_1\\) and \\(\sum\limits_{n=1}^\infty \left|\, \omega_{n+1}(x)-\omega_n(x) \, \right| < k_2\\), where  \\(k_1, \, k_2\\) are independent of \\(n\\) and \\(x\\), and if \\(\sum\limits_{n=1}^\infty a_n\\) is a convergent series independent of \\(x\\), then \\(\sum\limits_{n=1}^\infty a_n \omega_n(x)\\) converges uniformly when \\( a < x < b\\).  <br>(Hardy.) 
+>*Example* 2. If, when \\( a \leq x \leq b\\), \\(\left|\,\omega_n (x)\, \right| < k_1\\) and \\(\sum\limits_{n=1}^\infty \left|\, \omega_{n+1}(x)-\omega_n(x) \, \right| < k_2\\), where  \\(k_1, \, k_2\\) are independent of \\(n\\) and \\(x\\), and if \\(\sum\limits_{n=1}^\infty a_n\\) is a convergent series independent of \\(x\\), then \\(\sum\limits_{n=1}^\infty a_n \:\!\omega_n(x)\\) converges uniformly when \\( a \leq x \leq b\\).  <br>(Hardy.) 
 >
->[For we can choose m, independent of x, such that \\(\left|\, \sum_{n=m+1}^{m+p} a_n \,\right| < \epsilon\\) and then, by [§2.301 corollary](CMA02-2-Series.html#abelcorollary), we have \\(\left|\, \sum_{n=m+1}^{m+p} a_n \omega_n (x) \,\right| < (k_1+k+2)\epsilon.\\) ]
+>[For we can choose \\(m\\), independent of \\(x\\), such that \\(\left|\, \sum_{n=m+1}^{m+p} a_n \,\right| < \epsilon\\) and then, by [§2.301 corollary](CMA02-2-Series.html#abelcorollary), we have \\(\left|\, \sum_{n=m+1}^{m+p} a_n \:\!\omega_n (x) \,\right| < (k_1+k_2)\epsilon.\\) ]
 
 ###3.4. Discussion of a particular double series. [discussionofaparticulardoubleseries.]###
 
@@ -258,7 +258,7 @@ Let \\(\omega_1\\) and \\(\omega_2\\)  be any constants whose ratio is not purel
 The series
 \\[\sum\limits_{m,\,n} \frac{1}{(z+2m\omega_1+2n\omega_2)^\alpha},\\]
  in which the summation extends over all positive and negative integral and zero values of \\(m\\) and \\(n\\), is of great importance in the theory of Elliptic Functions. At each of the points 
-\\(z = - 2m\omega_1-2n\omega_2\\) the series does not exist. It can be shewn that the series converges absolutely for all other values of \\( z\\) if \\(a > 2\\), and the convergence is uniform for those values of \\(z\\) such that \\(\left|\,z+2m\omega_1+2n\omega_2 \,\right| \geq \delta\\) for all integral values of \\(m\\) and \\(n\\), where \\(\delta\\) is an arbitrary positive number. 
+\\(z = - 2m\omega_1-2n\omega_2\\) the series does not exist. It can be shewn that the series converges absolutely for all other values of \\( z\\) if \\(\alpha > 2\\), and the convergence is uniform for those values of \\(z\\) such that \\(\left|\,z+2m\omega_1+2n\omega_2 \,\right| \geq \delta\\) for all integral values of \\(m\\) and \\(n\\), where \\(\delta\\) is an arbitrary positive number. 
 
 Let \\(\sum^\prime_{m,\,n}\\) denote a summation for all integral values of \\(m\\) and \\(n\\), the term for 
 which \\(m = n = 0\\) being omitted. 
@@ -276,11 +276,11 @@ To discuss the convergence of the latter series, let
 \\[\omega_1=\alpha_1+i\beta_1, \quad \omega_2=\alpha_2+i\beta_2,\\] 
 where \\(\alpha_1,\,\alpha_2,\;\beta_1, \,\beta_2\\) are real. Since \\(\\\omega_1 \left/ \omega_2 \right.\\) is not real, \\(\alpha_1\beta_2-\alpha_2\beta_1 \neq 0\\). Then 
 the series is 
-\\[\sum_{m,\,n}' \frac{1}{\{(\alpha_1 m+\alpha_2 n)^2+(\beta_1 m+\beta_2 n)^2\}^{\frac{1}{2}\alpha}}.\\]
+\\[\sum_{m,\,n}' \frac{1}{\{(\alpha_1 m+\alpha_2 n)^2+(\beta_1 m+\beta_2 n)^2\}^{\left.\alpha\middle/2\right.}}.\\]
 This converges if the series 
-\\[\sum_{m,\,n}' \frac{1}{(m^2+n^2)^{\frac{1}{2}\alpha}}\\]
+\\[\sum_{m,\,n}' \frac{1}{(m^2+n^2)^{\left.\alpha\middle/2\right.}}\\]
 converges; for the quotient of corresponding terms is 
-\\[\left\{\frac{(\alpha_1+\alpha_2 \mu)^2+(\beta_1+\beta_2 \mu)^2}{1+\mu^2} \right\}^{\frac{1}{2}\alpha}\\]
+\\[\left\{\frac{(\alpha_1+\alpha_2 \mu)^2+(\beta_1+\beta_2 \mu)^2}{1+\mu^2} \right\}^{\left.\alpha\middle/2\right.}\\]
 where \\(\mu = n \left/m \right.\\). This expression, *qua*[^qua,-14] function of a continuous real variable \\(\mu\\), can be proved to have a positive minimum[^Minimum,-10] (not zero) since \\(\alpha_1\beta_2-\alpha_2\beta_1 \neq 0\\) and so the quotient is always greater than a positive number \\(K\\) (independent \\(\mu\\)).[^clarify,+5] 
 
 [^qua,-14]: *Editor's Note*: In this usage, the word *qua* means *functioning as a...* 
@@ -293,23 +293,23 @@ where \\(\mu = n \left/m \right.\\). This expression, *qua*[^qua,-14] function o
 We have therefore only to study the convergence of the series \\(S\\). Let 
 \\[
 \begin{align*}
-S_{p,\,q} &=\sum_{m=-p}^p {\sum_{n=-q}^q}\!^\prime \frac{1}{(m^2+n^2)^{\frac{1}{2}\alpha}} \\
-& \leq 4 \sum_{m=0}^p {\sum_{n=0\;}^q}\!^\prime\frac{1}{(m^2+n^2)^{\frac{1}{2}\alpha}}. 
+S_{p,\,q} &=\sum_{m=-p}^p {\sum_{n=-q}^q}\!^\prime \frac{1}{(m^2+n^2)^{\left.\alpha\middle/2\right.}} \\
+& \leq 4 \sum_{m=0}^p {\sum_{n=0\;}^q}\!^\prime\frac{1}{(m^2+n^2)^{\left.\alpha\middle/2\right.}}. 
 \end{align*}
 \\]
 
 Separating \\(S_{p,\,q}\\) into the terms for which \\(m = n\\), \\(m > n\\), and \\(m < n\\), respectively, we have
-\\[\frac{1}{4} S_{p,\,q} = \sum_{m=1}^p \frac{1}{(2m^2)^{\frac{1}{2}\alpha}}+\sum_{m=1}^p \sum_{n=0}^{m-1}\frac{1}{(m^2+n^2)^{\frac{1}{2}\alpha}}+\sum_{n=1}^p \sum_{m=0}^{n-1}\frac{1}{(m^2+n^2)^{\frac{1}{2}\alpha}}.\\]
+\\[\frac{1}{4} S_{p,\,q} = \sum_{m=1}^p \frac{1}{(2m^2)^{\left.\alpha\middle/2\right.}}+\sum_{m=1}^p \sum_{n=0}^{m-1}\frac{1}{(m^2+n^2)^{\left.\alpha\middle/2\right.}}+\sum_{n=1}^p \sum_{m=0}^{n-1}\frac{1}{(m^2+n^2)^{\left.\alpha\middle/2\right.}}.\\]
 But
-\\[\sum_{n=0}^{m-1}\frac{1}{(m^2+n^2)^{\frac{1}{2}\alpha}} < \frac{m}{(m^2)^{\frac{1}{2}\alpha}}=\frac{1}{m^{\alpha-1}}.\\]
+\\[\sum_{n=0}^{m-1}\frac{1}{(m^2+n^2)^{\left.\alpha\middle/2\right.}} < \frac{m}{(m^2)^{\left.\alpha\middle/2\right.}}=\frac{1}{m^{\alpha-1}}.\\]
 Therefore
-\\[\frac{1}{4} S = \sum_{m=1}^\infty \frac{1}{2^{\frac{1}{2}\alpha}m^\alpha}+\sum_{m=1}^\infty \frac{1}{m^{\alpha-1}}+\sum_{n=1}^\infty \frac{1}{m^{\alpha-1}}.\\]
-But these last series are known to be convergent if \\(a -1 > 1\\). So the series \\(S\\) 
-is convergent if \\(a > 2\\). The original series is therefore absolutely and uniformly convergent, when \\(a > 2\\), for the specified range of values of \\(z\\). 
+\\[\frac{1}{4} S \leq \sum_{m=1}^\infty \frac{1}{2^{\left.\alpha\middle/2\right.}m^\alpha}+\sum_{m=1}^\infty \frac{1}{m^{\alpha-1}}+\sum_{n=1}^\infty \frac{1}{m^{\alpha-1}}.\\]
+But these last series are known to be convergent if \\(\alpha -1 > 1\\). So the series \\(S\\) 
+is convergent if \\(\alpha > 2\\). The original series is therefore absolutely and uniformly convergent, when \\(\alpha > 2\\), for the specified range of values of \\(z\\). 
 
 >*Example*. Prove that the series 
 \\[\sum \frac{1}{(m_1^2+m_2^2+ \cdots +m_r^2)^\mu}\\]
-in which the summation extends over all positive and negative integral values and zero values of \\(m_1,\, m_2, \dots ,\,m_r,\\)  except the set of simultaneous zero values, is absolutely convergent if \\(\mu < \frac{1}{2}r\\). <br>(Eisenstein, [*Journal für Math.*,  **xxxv**. ](http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0035)) 
+in which the summation extends over all positive and negative integral values and zero values of \\(m_1,\, m_2, \dots ,\,m_r,\\)  except the set of simultaneous zero values, is absolutely convergent if \\(\mu > \frac{1}{2}r\\). <br>(Eisenstein, [*Journal für Math.*,  **xxxv**. ](http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0035)) 
 
 </div>
 
@@ -319,8 +319,9 @@ in which the summation extends over all positive and negative integral values an
 
 
 <div id="footer">
-<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
-<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/"> GitHub.</a></h3>
+<h4>All content is either in the public domain or licensed under <a href="http://creativecommons.org/licenses/by/3.0/us/">a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h4>Feel free report typos and other issues on <span style="font-weight: 400;"><a href="https://github.com/CdLbB/cdlbb.github.com/tree/master/WandW">GitHub</a></span> or by email at <span style="font-weight: 400;"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#110;&#x69;&#x74;&#104;&#x61;&#114;&#100;&#x74;&#x40;&#x75;&#x77;&#46;&#101;&#x64;&#x75;">&#x6e;&#x69;&#116;&#x68;&#x61;&#114;&#100;&#x74;&#x40;&#117;&#119;&#x2e;&#101;&#x64;&#x75;</a></span>.</h4>
 </div>
 
 
