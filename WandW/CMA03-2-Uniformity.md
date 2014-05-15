@@ -224,7 +224,7 @@ To prove the validity of the condition we observe that \\(\prod\limits_{n=1}^\in
 \\]
 and the choice of \\(m\\) is independent of \\(z\\). 
 
-#### 3.35. Hardy's Tests for Uniform Convergence.[^hardy,-2] [hardystestsforuniformconvergence.]####
+#### 3.35 Hardy's Tests for Uniform Convergence.[^hardy,-2] [hardystestsforuniformconvergence.]####
 
 [^hardy,-2]: [*Proc. London Math. Soc.* (2)  **iv.** (1907)](https://archive.org/details/proceedingslond07socigoog), pp. 247-265. These results, which are generalisations of Abel's theorem ([§3.71](CMA03-4-PowerSeries.html#abelstheoremoncontinuityuptothecircleofconvergence.), below), though well known, do not appear to have been published before 1907. From their resemblance to the tests of Dirichlet and Abel for convergence, Bromwich proposes to call them Dirichlet's and Abel's tests respectively.
 
@@ -251,7 +251,7 @@ by writing \\(\theta +\pi\\) for \\(\pi\\).
 >
 >[For we can choose \\(m\\), independent of \\(x\\), such that \\(\left|\, \sum_{n=m+1}^{m+p} a_n \,\right| < \epsilon\\) and then, by [§2.301 corollary](CMA02-2-Series.html#abelcorollary), we have \\(\left|\, \sum_{n=m+1}^{m+p} a_n \:\!\omega_n (x) \,\right| < (k_1+k_2)\epsilon.\\) ]
 
-###3.4. Discussion of a particular double series. [discussionofaparticulardoubleseries.]###
+###3.4 Discussion of a particular double series. [discussionofaparticulardoubleseries.]###
 
 Let \\(\omega_1\\) and \\(\omega_2\\)  be any constants whose ratio is not purely real; and let \\(\alpha\\)  be positive. 
 

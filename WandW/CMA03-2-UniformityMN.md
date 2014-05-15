@@ -314,7 +314,7 @@ To prove the validity of the condition we observe that \\(\prod\limits_{n=1}^\in
 \\]
 and the choice of \\(m\\) is independent of \\(z\\). 
 
-#### 3.35. Hardy's Tests for Uniform Convergence.<a class="marginmark" onClick="toggleHide('mn:10,-2');">&#91;10&#93;</a> [hardystestsforuniformconvergence.]####
+#### 3.35 Hardy's Tests for Uniform Convergence.<a class="marginmark" onClick="toggleHide('mn:10,-2');">&#91;10&#93;</a> [hardystestsforuniformconvergence.]####
 
 </div>
 
@@ -351,7 +351,7 @@ by writing \\(\theta +\pi\\) for \\(\pi\\).
 >
 >[For we can choose \\(m\\), independent of \\(x\\), such that \\(\left|\, \sum_{n=m+1}^{m+p} a_n \,\right| < \epsilon\\) and then, by [&#167;2.301 corollary](CMA02-2-SeriesMN.html#abelcorollary), we have \\(\left|\, \sum_{n=m+1}^{m+p} a_n \:\!\omega_n (x) \,\right| < (k_1+k_2)\epsilon.\\) ]
 
-###3.4. Discussion of a particular double series. [discussionofaparticulardoubleseries.]###
+###3.4 Discussion of a particular double series. [discussionofaparticulardoubleseries.]###
 
 Let \\(\omega_1\\) and \\(\omega_2\\)  be any constants whose ratio is not purely real; and let \\(\alpha\\)  be positive. 
 

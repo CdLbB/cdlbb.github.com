@@ -32,17 +32,17 @@ There are processes other than that of summing a series in which the idea
 of uniformity is of importance. 
 
 Let \\(\epsilon\\)  be an arbitrary positive number; and let \\(f(z, \zeta)\\) be a function of 
-two variables \\(z\\) and \\(\zeta\\), which, for each point \\(z\\) of a closed region, satisfies the inequality \\(\left|\,f(z, \zeta) \right| < \epsilon\\) when \\(\zeta\\) is given any one of a certain set of values which will be denoted by \\((\zeta_z)\\); the particular set of values of course depends on the particular value of \\(\zeta\\) under consideration. If a set \\((\zeta)_0\\) can be found such that every member of the set \\((\zeta)_0\\)  is a member of all the sets \\((\zeta_z)\\), the function \\(f(z, f)\\)  is said to satisfy the inequality *uniformly* for all points \\(z\\) of the region. And if a function \\( \phi(z) \\) possesses some property, for every positive value of \\(\epsilon\\), in virtue of the inequality \\(\left|\,f(z, \zeta) \right| < \epsilon,\;  \phi(z)\\) is then said to *possess the property uniformly.* 
+two variables \\(z\\) and \\(\zeta\\), which, for each point \\(z\\) of a closed region, satisfies the inequality \\(\left|\,f(z, \zeta) \,\right| < \epsilon\\) when \\(\zeta\\) is given any one of a certain set of values which will be denoted by \\((\zeta_z)\\); the particular set of values of course depends on the particular value of \\(z\\) under consideration. If a set \\((\zeta)_0\\) can be found such that every member of the set \\((\zeta)_0\\)  is a member of all the sets \\((\zeta_z)\\), the function \\(f(z, f)\\)  is said to satisfy the inequality *uniformly* for all points \\(z\\) of the region. And if a function \\( \phi(z) \\) possesses some property, for every positive value of \\(\epsilon\\), in virtue of the inequality \\(\left|\,f(z, \zeta) \,\right| < \epsilon,\;  \phi(z)\\) is then said to *possess the property uniformly.* 
 
 
 In addition to the uniformity of convergence of series and products, we shall have 
-to consider uniformity of convergence of integrals and also uniformity of continuity; thus a series is uniformly convergent when \\(\left|R_n(z)\right|< \epsilon,\; n ( = \zeta) \\) assuming integer values independent of \\(z\\) only. 
+to consider uniformity of convergence of integrals and also uniformity of continuity; thus a series is uniformly convergent when \\(\left|\,R_n(z)\,\right|< \epsilon,\; n ( = \zeta) \\) assuming integer values independent of \\(z\\) only. 
 
-Further, a function \\(f(z)\\) is continuous in a closed region if, given \\(\epsilon\\), we can find a positive number \\(\zeta_z\\) such that \\(\left|\, f(z +\eta )\right| < \epsilon\\) whenever \\(0 < \eta < \zeta\\) 
-and \\(z+\eta\\) is a point of the region. 
+Further, a function \\(f(z)\\) is continuous in a closed region if, given \\(\epsilon\\), we can find a positive number \\(\eta_z\\) such that \\(\left|\, f(z +\zeta )\,\right| < \epsilon\\) whenever \\(0 < \left|\,\zeta\,\right| < \eta_z\\) 
+and \\(z+\zeta\\) is a point of the region. 
 
-The function will be *uniformly* continuous if we can find a positive number \\(\zeta\\) *independent* of \\(z\\), such that \\(\zeta \leq \zeta_z\\) and  \\(\left|\, f(z +\eta )\right| < \epsilon\\) whenever \\(0 < \eta< \zeta_z\\) 
-and \\(z+\eta\\) is a point of the region, (in this case the set \\((\zeta)_0\\)  is the set of points whose moduli are less than \\(\zeta\\)). 
+The function will be *uniformly* continuous if we can find a positive number \\(\eta\\) *independent* of \\(z\\), such that \\(\eta < \eta_z\\) and  \\(\left|\, f(z +\zeta )\,\right| < \epsilon\\) whenever \\(0 < \left|\,\zeta\,\right|< \eta\\) 
+and \\(z+\zeta\\) is a point of the region, (in this case the set \\((\zeta)_0\\)  is the set of points whose moduli are less than \\(\eta\\)). 
 
 We shall find later ([&#167;3.61](#uniformityofcontinuity.)) that continuity involves uniformity of continuity; this is 
 in marked contradistinction to the fact that convergence does not involve uniformity 
@@ -65,14 +65,26 @@ of uniformity; we give a proof for a one-dimensional closed region.<a class="mar
 
 <div markdown=1 class="contenttext">
 
-*Given (i) a straight' line \\(CD\\) and (ii) a law by which, corresponding to 
-each point \\(P\\)  of \\(CD\\),<a class="marginmark" onClick="toggleHide('mn:2,-13');">&#91;2&#93;</a> we can determine a closed interval \\(I (P)\\) of \\(CD\\), \\(P\\) being an interior<a class="marginmark" onClick="toggleHide('mn:3,-8');">&#91;3&#93;</a> point of \\(I (P)\\).* 
+</div>
+
+
+
+<div markdown=1 class="marginnotes" id="mn:2,-6" style="margin-top: -6em; margin-bottom: -6em;"><a class="marginmark">&#91;2&#93;</a>Examples of such laws associating intervals with points will be found in &#167;&#167; [3.61](#uniformityofcontinuity.), [5.13](CMA05-1-AnalyticFunctionsMN.html#5.13anapplicationofthemodifiedheine-boreltheorem.). <a onClick="hideIt('mn:2,-6')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:2,-13" style="margin-top: -13em; margin-bottom: -13em;"><a class="marginmark">&#91;2&#93;</a>Examples of such laws associating intervals with points will be found in &#167;&#167; [3.61](#uniformityofcontinuity.), [5.13](whereOwhere.html). <a onClick="hideIt('mn:2,-13')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="contenttext">
+
+*Given (i) a straight line \\(CD\\) and (ii) a law by which, corresponding to 
+each point \\(P\\)  of \\(CD\\),<a class="marginmark" onClick="toggleHide('mn:2,-6');">&#91;2&#93;</a> we can determine a closed interval \\(I (P)\\) of \\(CD\\), \\(P\\) being an interior<a class="marginmark" onClick="toggleHide('mn:3,-6');">&#91;3&#93;</a> point of \\(I (P)\\).* 
+
+</div>
+
+
+
+<div markdown=1 class="marginnotes" id="mn:3,-6" style="margin-top: -6em; margin-bottom: -6em;"><a class="marginmark">&#91;3&#93;</a>Except when \\(P\\) is at \\(C\\) or \\(D\\), when it is an end point. <a onClick="hideIt('mn:3,-6')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -84,7 +96,7 @@ each point \\(P\\)  of \\(CD\\),<a class="marginmark" onClick="toggleHide('mn:2,
 
 
 
-<div markdown=1 class="marginnotes" id="mn:3,-8" style="margin-top: -8em; margin-bottom: -8em;"><a class="marginmark">&#91;3&#93;</a>Except when \\(p\\) is at \\(C\\) or \\(D\\), when it is an end point. <a onClick="hideIt('mn:3,-8')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:4,-3" style="margin-top: -3em; margin-bottom: -3em;"><a class="marginmark">&#91;4&#93;</a>*Editor's Note*: I removed a restriction on the choice of \\(P_{r}\:\!\\), "(not an end point)", which makes the claim false.  For another statement of the modified Heine-Borel theorem see Verblunsky, [*Math. Proc. of the Camb. Phil. Soc.*, (1930)](http://dx.doi.org/10.1017/S0305004100016066).<a onClick="hideIt('mn:4,-3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -93,25 +105,13 @@ each point \\(P\\)  of \\(CD\\),<a class="marginmark" onClick="toggleHide('mn:2,
 <div markdown=1 class="contenttext">
 
 *Then the line \\(CD\) can be divided into a finite number of closed intervals 
-\(J_1, J_2 , \dots , J_k,\\) such that each interval \\(J_r\\) contains at least one point  \\(P_r\\),<a class="marginmark" onClick="toggleHide('mn:4,-12');">&#91;4&#93;</a> such that no point of \\(J_r\\) lies outside the interval \\(I (P_r )\\) associated (by means of the given law) with that point \\(P_r\\).<a class="marginmark" onClick="toggleHide('mn:5,-2');">&#91;5&#93;</a>* 
+\(J_1, J_2 , \dots , J_k,\\) such that each interval \\(J_r\\) contains at least one point  \\(P_r\\),<a class="marginmark" onClick="toggleHide('mn:4,-3');">&#91;4&#93;</a> such that no point of \\(J_r\\) lies outside the interval \\(I (P_r )\\) associated (by means of the given law) with that point \\(P_r\\).<a class="marginmark" onClick="toggleHide('mn:5,-0');">&#91;5&#93;</a>* 
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:4,-12" style="margin-top: -12em; margin-bottom: -12em;"><a class="marginmark">&#91;4&#93;</a>*Editor's Note*: I removed a restriction on the choice of \\(P_{r}\\), "{not an end point)", which makes the claim false.  For another statement of the modified Heine-Borel theorem see Verblunsky, [*Math. Proc. of the Camb. Phil. Soc.*, (1930)](http://dx.doi.org/10.1017/S0305004100016066).<a onClick="hideIt('mn:4,-12')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
-
-</div>
-
-
-
-<div markdown=1 class="contenttext">
-
-</div>
-
-
-
-<div markdown=1 class="marginnotes" id="mn:5,-2" style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;5&#93;</a>This statement of the Heine-Borel theorem (which is sometimes called the Borel-Lebesgue theorem) is due to Baker, [Proc. London Math. Soc. (2) 1. (1904)](https://archive.org/details/proceedingslond23socigoog), p. 24. Hobson, [The Theory of Functions of a Real Variable (1907)](https://archive.org/details/theoryfunctions00hobsgoog), p. 87, points out that the theorem is practically given in Goursat's proof of Cauchy's theorem ([Trans. American Math. Soc. 1. (1900)](http://www.ams.org/journals/tran/1900-001-01/), p. 14); the ordinary form of the Heine-Borel theorem will be found in the treatise cited. <a onClick="hideIt('mn:5,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:5,-0" style="margin-top: -0em; margin-bottom: -0em;"><a class="marginmark">&#91;5&#93;</a>This statement of the Heine-Borel theorem (which is sometimes called the Borel-Lebesgue theorem) is due to Baker, [Proc. London Math. Soc. (2) 1. (1904)](https://archive.org/details/proceedingslond23socigoog), p. 24. Hobson, [The Theory of Functions of a Real Variable (1907)](https://archive.org/details/theoryfunctions00hobsgoog), p. 87, points out that the theorem is practically given in Goursat's proof of Cauchy's theorem ([Trans. American Math. Soc. 1. (1900)](http://www.ams.org/journals/tran/1900-001-01/), p. 14); the ordinary form of the Heine-Borel theorem will be found in the [treatise cited](https://archive.org/details/complexintegrat00watsrich). <a onClick="hideIt('mn:5,-0')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -124,13 +124,16 @@ interval, and will be said to satisfy condition (A).
 
 If \\(CD\\) satisfies condition (A), what is required is proved. If not, bisect \\(CD\\); 
 if either or both of the intervals into which \\(CD\\) is divided is not suitable, 
-bisect it or them<a class="marginmark" onClick="toggleHide('mn:6,+2');">&#91;6&#93;</a>.
+bisect it or them<a class="marginmark" onClick="toggleHide('mn:6,+1');">&#91;6&#93;</a>.
+
+This process of bisecting intervals which are not suitable either will 
+terminate or it will not. If it does terminate, the theorem is proved, for \\(CD\\) will have been divided into suitable intervals. 
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:6,+2" style="margin-top: +2em; margin-bottom: +2em;"><a class="marginmark">&#91;6&#93;</a>A suitable interval is not to be bisected; for one of the parts into which it is divided might not be suitable.<a onClick="hideIt('mn:6,+2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:6,+1" style="margin-top: +1em; margin-bottom: +1em;"><a class="marginmark">&#91;6&#93;</a>A suitable interval is not to be bisected; for one of the parts into which it is divided might not be suitable.<a onClick="hideIt('mn:6,+1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -138,12 +141,8 @@ bisect it or them<a class="marginmark" onClick="toggleHide('mn:6,+2');">&#91;6&#
 
 <div markdown=1 class="contenttext">
 
-This process of bisecting intervals which are not suitable either will 
-terminate or it will not. If it does terminate, the theorem is proved, for \\(CD\\) 
-will have been divided into suitable intervals. 
-
 Suppose that the process does not terminate; and let an interval, which 
-can be divided into suitable intervals by the process of bisection just described, 
+*can* be divided into suitable intervals by the process of bisection just described, 
 be said to satisfy condition (B). 
 
 Then, by hypothesis, \\(CD\\) does not satisfy condition (B); therefore at least 
@@ -215,7 +214,7 @@ for all values of \\(x'\\) such that \\(\left|\, x' - x \,\right| < \delta_x\\).
 
 Then by [&#167;3.6](#themodifiedheine-boreltheorem.) we can divide the range \\([a, b]\\) into a *finite* number of closed intervals with the property that in each interval there is a number \\(x_1\\) such that \\(\left|\, f(x') - f(x_1) \right| < \frac{1}{4}\epsilon\\), whenever \\(x'\\) lies in the interval in which \\(x_1\\) lies. 
 
-Let \\(\delta_0\\) be the length of the smallest of these intervals; and let \\(\xi, \, \xi'\\) be *any* two numbers in the closed range \\([a, b]\\) such that \\(\left| \xi - \xi' \right| < \delta_0\\). Then \\(\xi, \, \xi'\\) lie in the same or in adjacent intervals; if they lie in adjacent intervals let \\(\xi_0\\) be the common end point. Then we can find numbers \\(x_1, \, x_2\\), one in each interval, such that
+Let \\(\delta_0\\) be the length of the smallest of these intervals; and let \\(\xi, \, \xi'\\) be *any* two numbers in the closed range \\([a, b]\\) such that \\(\left|\, \xi - \xi' \,\right| < \delta_0\\). Then \\(\xi, \, \xi'\\) lie in the same or in adjacent intervals; if they lie in adjacent intervals let \\(\xi_0\\) be the common end point. Then we can find numbers \\(x_1, \, x_2\\), one in each interval, such that
 \\[
 \begin{align*}
 \left|\,f(\xi)-f(x_1)\right| < \frac{1}{4}\epsilon, \quad & \quad \left|\,f(\xi_0)-f(x_1)\right| < \frac{1}{4}\epsilon, \\
@@ -226,7 +225,7 @@ so that
 \\[
 \begin{align*}
 \left|\,f(\xi)-f(\xi')\right|=& \left|\left\{\,f(\xi)-f(x_1)\right\}-\left\{\,f(\xi_0)-f(x_1)\right\}\right.\\
-&\left.+\left\{\,f(\xi_0)-f(x_2)\right\}-\left\{\,f(\xi')-f(x_2)\right\}\right|\\
+&\left.+\left\{\,f(\xi_0)-f(x_2)\right\}-\left\{\,f(\xi')-f(x_2)\right\}\right|\\ \\
 < & \epsilon.
 \end{align*}
 \\]
@@ -234,14 +233,14 @@ so that
 If \\(\xi, \, \xi'\\) lie in the same interval, we can prove similarly that 
 \\[\left|\,f(\xi)-f(\xi')\right|< \frac{1}{2}\epsilon.\\]
 
-In either case we have shewn that, for any number \\(\xi\\)  in the range, we have 
+In either case we have shewn that, for *any* number \\(\xi\\)  in the range, we have 
 \\[\left|\,f(\xi)-f(\xi+\zeta)\right|< \epsilon.\\]
-whenever \\(\xi+\zeta\\) is in the range and \\(-\zeta_0 < \zeta < \zeta_0\\), where \\(\zeta_0\\) is independent of \\(\xi\\). 
+whenever \\(\xi+\zeta\\) is in the range and \\(-\delta_0 < \zeta < \delta_0\\), where \\(\delta_0\\) is *independent of* \\(\xi\\). 
 The *uniformity* of the continuity is therefore established. 
 
 >*Corollary* 1. From the two-dimensional form of the theorem of [&#167;3.6](#themodifiedheine-boreltheorem.) we can prove that a function of a complex variable, continuous at all points of a closed region of the Argand diagram, is uniformly continuous throughout that region. 
 
->######*Corollary* 2. A function \\(f(x))\\) which is continuous throughout the range \\(a \leq x \leq b\\) is *bounded* in the range; that is to say we can find a number \\(k\\) independent of \\(x\\) such that \\(\left|\,f(x)\right| < k\\) for all points \\(x\\) in the range.  [continuousisbounded]######
+>######*Corollary* 2. A function \\(f(x)\\) which is continuous throughout the range \\(a \leq x \leq b\\) is *bounded* in the range; that is to say we can find a number \\(\kappa\\) independent of \\(x\\) such that \\(\left|\,f(x)\right| < \kappa\\) for all points \\(x\\) in the range.  [continuousisbounded]######
 
 </div>
 
@@ -263,8 +262,8 @@ The *uniformity* of the continuity is therefore established.
 >\\[\cdots\\]
 >\\[\left|\, f(\xi_{r-1}) - f(x_r) \right| < \frac{1}{4}\epsilon, \quad \left|\, f(x_r) - f(x) \right| < \frac{1}{4}\epsilon, \\]
 >
->Therefore \\(\left|\,f(a)—f(x) \right|< \frac{1}{2}r \epsilon \\), and so
->\\[\left|\,f(x)\right| < \left|\,f(a) \right|+\frac{1}{2}r \epsilon,\\] 
+>Therefore \\(\left|\,f(a) - f(x) \right|< \frac{1}{2}r \epsilon \leq \frac{1}{2}n \epsilon\\), and so
+>\\[\left|\,f(x)\right| < \left|\,f(a) \right|+\frac{1}{2}n \epsilon,\\] 
 >which is the required result, since the right-hand side is independent of \\(x\\).] 
 >
 >The corresponding theorem for functions of complex variables is left to the reader. 
@@ -286,7 +285,7 @@ This section defines a number \\(\alpha\\) such that \\(f(x) \leq \alpha\\), but
 
 <div markdown=1 class="contenttext">
 
-For, no matter how small \\(\delta\\) may be, we can find values of \\(x\\) for which \\(\left|\,f(x)-\alpha \,\right|^{-1} > \delta^{-1}\\); therefore \\(\left|\,f(x)-\alpha \,\right|^{-1}\\) is not bounded in the range; therefore ([&#167;3.61 *corollary* 2](#continuousisbounded)) it is not continuous at some point or points of the range; but since \\(\left|\,f(x)-\alpha \,\right|\\) is continuous at all points of the range, its reciprocal is continuous at all points of the range ([&#167;3.2 example](CMA03-1-ContinuousFnsMN.html#continuousexamples)) except those points at which \\(f(x) = \alpha\\); therefore \\(f(x) = \alpha\\) at some point of the range; the theorem is therefore proved. 
+For, no matter how small \\(\delta\\) may be, we can find values of \\(x\\) for which \\(\left|\,f(x)-\alpha \,\right|^{\:\!-1} > \delta^{-1}\\); therefore \\(\left|\,f(x)-\alpha \,\right|^{-1}\\) is not bounded in the range; therefore ([&#167;3.61 *corollary* 2](#continuousisbounded)) it is not continuous at some point or points of the range; but since \\(\left|\,f(x)-\alpha \,\right|\\) is continuous at all points of the range, its reciprocal is continuous at all points of the range ([&#167;3.2 example](CMA03-1-ContinuousFnsMN.html#continuousexamples)) except those points at which \\(f(x) = \alpha\\); therefore \\(f(x) = \alpha\\) at some point of the range; the theorem is therefore proved. 
 
 >######*Corollary* 1. The lower bound of a continuous function may be defined in a similar manner; and a continuous function attains its lower bound. [attainslowerbound]######
 
@@ -295,9 +294,9 @@ a closed region, \\(\left|\, f(z) \right|\\) attains its upper bound.
 
 ####3.63 A real function, of a real variable, continuous in a closed interval, attains all values between its upper and lower bounds. [arealfunctionofarealvariablecontinuousinaclosedintervalattainsallvaluesbetweenitsupperandlowerbounds.]####
 
-Let \\(M,\, m\\) be the upper and lower bounds of \\(f(x)\\); then we can find numbers \\(\underline{x}, \,\overline{x}\\), by [&#167;3.62](#arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.), such that  \\(f(\overline{x}) = M,\,f(\underline{x}) = m\\); let \\(\mu\\) be any number such that \\(m < \mu < M\\). Given any positive number \\(\epsilon\\), we can (by [&#167;3.61](#uniformityofcontinuity.)) divide the range \\([\underline{x},\, \overline{x}]\\) into a finite number, \\(r\\), of closed intervals such that 
+Let \\(M,\, m\\) be the upper and lower bounds of \\(f(x)\\); then we can find numbers \\(\underline{x}, \,\overline{x}\\), by [&#167;3.62](#arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.), such that  \\(f(\overline{x}) = M,\,f(\underline{x}) = m\\); let \\(\mu\\) be any number such that \\(m < \mu < M\\). Given any positive number \\(\epsilon\\), we can (by [&#167;3.61](#uniformityofcontinuity.)) divide the range \\([\underline{x},\, \overline{x}]\\) into a *finite* number, \\(r\\), of closed intervals such that 
 \\[\left|\,f(x_1^{(r)}) -f(x_2^{(r)}) \right| < \epsilon,\\] 
-where \\(x_1^{(r)}, \, x_2^{(r)}\\) are any points of the \\(r\\)th interval; take \\(x_1^{(r)}, \, x_2^{(r)}\\) to be the end points of the interval; then there is at least one of the intervals for which \\(f(x_1^{(r)})-\mu, \:  f(x_2^{(r)})-\mu\\)  have opposite signs;<a class="marginmark" onClick="toggleHide('mn:12,-10');">&#91;12&#93;</a> and since 
+where \\(x_1^{(r)}, \, x_2^{(r)}\\) are any points of the \\(r\\)th interval; take \\(x_1^{(r)}, \, x_2^{(r)}\\) to be the end points of the interval; then there is at least one of the intervals for which \\(f(x_1^{(r)})-\mu, \:  f(x_2^{(r)})-\mu\\)  have opposite signs;<a class="marginmark" onClick="toggleHide('mn:12,-13');">&#91;12&#93;</a> and since 
 \\[\left|\{f(x_1^{(r)})-\mu\} - \{f(x_2^{(r)})-\mu\} \right| < \epsilon,\\] 
 it follows that \\[\left|\,f(x_1^{(r)}) - \mu\right| < \epsilon.\\]
 
@@ -305,7 +304,7 @@ it follows that \\[\left|\,f(x_1^{(r)}) - \mu\right| < \epsilon.\\]
 
 
 
-<div markdown=1 class="marginnotes" id="mn:12,-10" style="margin-top: -10em; margin-bottom: -10em;"><a class="marginmark">&#91;12&#93;</a>*Editor's Note*: Or one of the two expressions could be zero instead, but the argument works in that event as well.<a onClick="hideIt('mn:12,-10')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:12,-13" style="margin-top: -13em; margin-bottom: -13em;"><a class="marginmark">&#91;12&#93;</a>*Editor's Note*: Or one of the two expressions could be zero instead, but the argument works in that event as well.<a onClick="hideIt('mn:12,-13')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -334,31 +333,16 @@ Let \\(f(x)\\) be a real bounded function, defined when \\(a \leq x \leq b\\). L
 \\[a \leq x_1 \leq x_2 \leq \cdots \leq x_n \leq b.\\]
  
 Then 
-\\[\left|\, f(a) -f( x_1 ) \right| + \left|\, f(x_1) -f( x_2 ) \right| +  \cdots +\left|\, f(x_n) -f( b ) \right| + \\] is called the fluctuation of \\(f(x)\\) in the range \\([a, b]\\) for the set of subdivisions \\(x_1, \, x_2, \, \cdots , \, x_n\\). If the fluctuation have an upper bound \\(F_a^{\,b}\\), independent of \\(n\\), for all choices of  \\(x_1, \, x_2, \, \cdots , \, x_n\\), then \\(f(x)\\) is said to have limited total fluctuation in the range 
-\\([a, b]\\).  \\(F_a^{\,b}\\)  is called the total fluctuation in the range. 
+\\[\left|\, f(a) -f( x_1 ) \right| + \left|\, f(x_1) -f( x_2 ) \right| +  \cdots +\left|\, f(x_n) -f( b ) \right|  \\] is called the *fluctuation* of \\(f(x)\\) in the range \\([a, b]\\) for the set of subdivisions \\(x_1, \, x_2, \, \cdots , \, x_n\\). If the fluctuation have an upper bound \\(F_a^{\,b}\\), independent of \\(n\\), for all choices of  \\(x_1, \, x_2, \, \cdots , \, x_n\\), then \\(f(x)\\) is said to have *limited* total *fluctuation* in the range 
+\\([a, b]\\).  \\(F_a^{\,b}\\)  is called the *total fluctuation* in the range. 
 
->*Example* 1. If \\(f(x)\\) be monotonic<a class="marginmark" onClick="toggleHide('mn:14,-4');">&#91;14&#93;</a> in the range \\([a, b]\\), its total fluctuation in the range is \\(\left|\, f(a) -f(b ) \right|\\). 
-
-</div>
-
-
-
-<div markdown=1 class="marginnotes" id="mn:14,-4" style="margin-top: -4em; margin-bottom: -4em;"><a class="marginmark">&#91;14&#93;</a>The function is monotonic if \\(\left.(\,f(x)-f(x')\,) \middle/ (x-x')\right.\\) is one-signed or zero for all pairs of different values of \\(x\\) and \\(x'\\).<a onClick="hideIt('mn:14,-4')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+>*Example* 1. If \\(f(x)\\) be monotonic<a class="marginmark" onClick="toggleHide('mn:14,-5');">&#91;14&#93;</a> in the range \\([a, b]\\), its total fluctuation in the range is \\(\left|\, f(a) -f(b ) \right|\\). 
 
 </div>
 
 
 
-<div markdown=1 class="contenttext">
-
->Example 2. A function with limited total fluctuation can be expressed as the difference of two positive increasing monotonic functions. 
->[These functions may be taken to be \\( \frac{1}{2}\{ F_a^{\,x} +f(x) \}, \: \frac{1}{2}\{ F_a^{\,x} - f(x) \}\\).] <a class="marginmark" onClick="toggleHide('mn:15,-2');">&#91;15&#93;</a>
-
-</div>
-
-
-
-<div markdown=1 class="marginnotes" id="mn:15,-2" style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;15&#93;</a>*Editor's Note*: Both these functions need not be positive. In some cases, only one is. However, one can add the upper bound of \\(\left|\,f(x)\right|\\) over the interval to each function, and they will both become positive.<a onClick="hideIt('mn:15,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:14,-5" style="margin-top: -5em; margin-bottom: -5em;"><a class="marginmark">&#91;14&#93;</a>The function is monotonic if \\(\left.(\,f(x)-f(x')\,) \middle/ (x-x')\right.\\) is one-signed or zero for all pairs of different values of \\(x\\) and \\(x'\\).<a onClick="hideIt('mn:14,-5')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -366,10 +350,25 @@ Then
 
 <div markdown=1 class="contenttext">
 
->Example 3. If \\(f(x)\\) have limited total fluctuation in the range \\([a, b]\\), then the limits \\(f(x \pm 0)\\) exist at all points in the interior of the range. [[See &#167;3.2 example 2.](CMA03-1-ContinuousFnsMN.html#limitsexample)] 
+>*Example* 2. A function with limited total fluctuation can be expressed as the difference of two positive increasing monotonic functions. 
+>[These functions may be taken to be \\( \frac{1}{2}\{ F_a^{\,x} +f(x) \}, \: \frac{1}{2}\{ F_a^{\,x} - f(x) \}\\).] <a class="marginmark" onClick="toggleHide('mn:15,-5');">&#91;15&#93;</a>
+
+</div>
 
 
->Example 4. If \\(f(x),\, g(x)\\) have limited total fluctuation in the range \\([a, b]\\) so has \\(f(x)g(x)\\).
+
+<div markdown=1 class="marginnotes" id="mn:15,-5" style="margin-top: -5em; margin-bottom: -5em;"><a class="marginmark">&#91;15&#93;</a>*Editor's Note*: Both these functions need not be positive. In some cases, only one is. However, one can add the upper bound of \\(\left|\,f(x)\right|\\) over the interval to each function, and they will both become positive.<a onClick="hideIt('mn:15,-5')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+
+</div>
+
+
+
+<div markdown=1 class="contenttext">
+
+>*Example* 3. If \\(f(x)\\) have limited total fluctuation in the range \\([a, b]\\), then the limits \\(f(x \pm 0)\\) exist at all points in the interior of the range. [[See &#167;3.2 example 2.](CMA03-1-ContinuousFnsMN.html#limitsexample)] 
+
+
+>*Example* 4. If \\(f(x),\, g(x)\\) have limited total fluctuation in the range \\([a, b]\\) so has \\(f(x)g(x)\\).
 >
 >[For \\(\left|\,f(x')g(x') - f(x')g(x') \right|\\)\\(\;\leq \;\\)\\(\left|\,f(x')\right|\, \left|\,g(x') - g(x) \right|\\)\\(\;+\;\\)\\(\left|\,g(x)\right|\, \left|\,f(x') - f(x) \right|\\)
 and so the total fluctuation of \\(f(x)g(x)\\) cannot exceed \\(g F_a^{\, b} +f G_a^{\, b}\\), where \\(f,\, g\\) are the 
@@ -384,8 +383,9 @@ upper bounds of \\(\left|\,f(x)\right|, \, \left|\,g(x)\right|\\).]
 
 
 <div id="footer">
-<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
-<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/"> GitHub.</a></h3>
+<h4>All content is either in the public domain or licensed under <a href="http://creativecommons.org/licenses/by/3.0/us/">a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h4>Feel free report typos and other issues on <span style="font-weight: 400;"><a href="https://github.com/CdLbB/cdlbb.github.com/tree/master/WandW">GitHub</a></span> or by email at <span style="font-weight: 400;"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#110;&#x69;&#x74;&#104;&#x61;&#114;&#100;&#x74;&#x40;&#x75;&#x77;&#46;&#101;&#x64;&#x75;">&#x6e;&#x69;&#116;&#x68;&#x61;&#114;&#100;&#x74;&#x40;&#117;&#119;&#x2e;&#101;&#x64;&#x75;</a></span>.</h4>
 </div>
 
 
