@@ -33,11 +33,9 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
 
 <p>Let the power series
 <span class="math">\[a_0+a_1z+ \cdots +a_nz^n+ \cdots\]</span>
-converge absolutely when <span class="math">\(z = z_0\)</span>. </p>
-
-<p>Then, if <span class="math">\(\left|\,z \,\right| \leq \left|\, z_0 \,\right|\)</span>,
-<span class="math">\[\left|a_n z^n \right| \leq \left|a_nz_0^n \right|.\]</span>
-But since <span class="math">\(\sum\limits_{n=0}^{\infty} \left|\,a_nz_0^n \right|\)</span> converges, it follows, by <a href="CMA03-2-Uniformity.html#aconditionduetoweierstrassforuniformconvergence.">§3.34</a>, that <span class="math">\(\sum\limits_{n=0}^{\infty} \left|\, a_nz^n \right|\)</span> converges uniformly with regard to the variable <span class="math">\(z\)</span> when <span class="math">\(\left|\,z \,\right| \leq \left|\,z_0 \, \right|\)</span>. </p>
+converge absolutely when <span class="math">\(z = z_0\)</span>. Then, if <span class="math">\(\left|\,z \,\right| \leq \left|\, z_0 \,\right|\)</span>,
+<span class="math">\[\left|\, a_n z^n \,\right| \leq \left|\, a_nz_0^n \,\right|.\]</span>
+But since <span class="math">\(\sum\limits_{n=0}^{\infty} \left|\,a_nz_0^n \,\right|\)</span> converges, it follows, by <a href="CMA03-2-Uniformity.html#aconditionduetoweierstrassforuniformconvergence.">§3.34</a>, that <span class="math">\(\sum\limits_{n=0}^{\infty} \left|\, a_nz^n \,\right|\)</span> converges uniformly with regard to the variable <span class="math">\(z\)</span> when <span class="math">\(\left|\,z \,\right| \leq \left|\,z_0 \, \right|\)</span>. </p>
 
 <p>Hence, by <a href="CMA03-2-Uniformity.html#connexionofdiscontinuitywithnon-uniformconvergence.">§3.32,</a> a power series is a continuous function of the variable
 throughout the closed region formed by the interior and boundary of any
@@ -45,11 +43,11 @@ circle concentric with the circle of convergence and of smaller radius (<a href=
 
 <h4 id="abelstheoremoncontinuityuptothecircleofconvergence.">3.71 Abel&#8217;s theorem<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a> on continuity up to the circle of convergence.</h4>
 
-<p>Let <span class="math">\(\sum\limits_{n=0}^{\infty} a_n z^n\)</span> be a power series, whose radius of convergence is unity, and let it be such that <span class="math">\(\sum\limits_{n=0}^{\infty} a_n \)</span> converges; and let <span class="math">\(0 \leq x \leq 1\)</span>; then Abel&#8217;s theorem asserts that <span class="math">\(\lim\limits_{x \,\rightarrow 1} \left(\sum\limits_{n=0}^{\infty} a_n x^n \right)=\sum\limits_{n=0}^{\infty} a_n \)</span>. </p>
+<p>Let <span class="math">\(\sum\limits_{n=0}^{\infty} a_n z^n\)</span> be a power series, whose radius of convergence is unity, and let it be such that <span class="math">\(\sum\limits_{n=0}^{\infty} a_n \)</span> converges; and let <span class="math">\(0 \leq x \leq 1\)</span>; then Abel&#8217;s theorem asserts that <span class="math">\(\lim\limits_{x \rightarrow 1-0} \left(\sum\limits_{n=0}^{\infty} a_n x^n \right)=\sum\limits_{n=0}^{\infty} a_n \)</span>. </p>
 
 <p>For, with the notation of <a href="CMA03-2-Uniformity.html#hardystestsforuniformconvergence.">§3.35</a>,
 the function <span class="math">\(x^n\)</span> satisfies the conditions laid on <span class="math">\(u_n (x)\)</span>, when <span class="math">\(0 \leq x \leq 1\)</span>; consequently <span class="math">\(f(x) = \sum\limits_{n=0}^{\infty} a_n x^n\)</span> converges <em>uniformly</em> throughout the range <span class="math">\(0 \leq x \leq 1\)</span>; it is therefore, by <a href="CMA03-2-Uniformity.html#connexionofdiscontinuitywithnon-uniformconvergence.">§3.32</a>, a continuous
-function of <span class="math">\(x\)</span> throughout the range, and so <span class="math">\(\lim\limits_{x \, \rightarrow 0} f(x) =f(1)\)</span>, which is the theorem stated. </p>
+function of <span class="math">\(x\)</span> throughout the range, and so <span class="math">\(\lim\limits_{x \, \rightarrow 1-0} f(x) =f(1)\)</span>, which is the theorem stated. </p>
 
 <h4 id="abelstheoremonmultiplicationofseries.">3.72 Abel&#8217;s theorem<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a> on multiplication of series.</h4>
 
@@ -65,30 +63,30 @@ Then the convergence of <span class="math">\(\sum\limits_{n=0}^{\infty} a_n,\: \
 Then the series for <span class="math">\(A (x),\: B(x),\: C(x)\)</span> are absolutely convergent when
 <span class="math">\(\left|\, x\, \right| < 1\)</span>, (<a href="CMA02-3-MoreSeries.html#powerseries">§2.6</a>);
 and consequently, by <a href="CMA02-3-MoreSeries.html#cauchymultiplication">§2.53</a>,
-<span class="math">\[A(x)=B(x)=C(x)\]</span>
+<span class="math">\[A(x)\, B(x)=C(x)\]</span>
 when <span class="math">\(0 < x < 1\)</span>; therefore, by <a href="CMA02-1-Limits.html#monotonicex2">§2.2 example 2</a>,
-<span class="math">\[\left\{ \lim_{x \rightarrow x-0} A(x)\right\}\left\{ \lim_{x \rightarrow x-0} B(x)\right\} = \left\{ \lim_{x \rightarrow x-0} C(x)\right\} \]</span>
+<span class="math">\[\left\{ \lim_{x \rightarrow 1-0} A(x)\right\}\left\{ \lim_{x \rightarrow 1-0} B(x)\right\} = \left\{ \lim_{x \rightarrow 1-0} C(x)\right\} \]</span>
 provided that these three limits exist; but, by <a href="#abelstheoremoncontinuityuptothecircleofconvergence.">§3.71</a>, these three limits are <span class="math">\(\sum\limits_{n=0}^{\infty} a_n,\: \sum\limits_{n=0}^{\infty} b_n, \:\sum\limits_{n=0}^{\infty} c_n\)</span>; and the theorem is proved. </p>
 
 <h4 id="3.73powerserieswhichvanishidentically.">3.73 Power series which vanish identically.</h4>
 
-<p><em>If a convergent power series vanishes for all values of <span class="math">\(z\)</span> such that <span class="math">\(\left|\, z\,\right| < z_1\)</span>, where <span class="math">\(r_1 > 0\)</span>, then all the coefficients in the power series vanish.</em></p>
+<p><em>If a convergent power series vanishes for all values of <span class="math">\(z\)</span> such that <span class="math">\(\left|\, z\,\right| < r_{\:\! 1}\)</span>, where <span class="math">\(r_{\:\! 1} > 0\)</span>, then all the coefficients in the power series vanish.</em></p>
 
 <p>For, if not, let <span class="math">\(a_m\)</span> be the first coefficient which does not vanish. </p>
 
-<p>Then <span class="math">\(a_m +a_{m+1} z+a_{m+2} z^2 + \cdots\)</span> vanishes for all values of <span class="math">\(z\)</span> (zero excepted) and converges absolutely when <span class="math">\(\left| \,z\, \right| \leq r < r_1\)</span> (<a href="CMA02-3-MoreSeries.html#powerseries">§2.6</a>); hence, if <span class="math">\(s = a_{m+l} + a_{m+2} z +  \cdots \)</span>, we have
+<p>Then <span class="math">\(a_m +a_{m+1} z+a_{m+2} z^2 + \cdots\)</span> vanishes for all values of <span class="math">\(z\)</span> (zero excepted) and converges absolutely when <span class="math">\(\left| \,z\, \right| \leq r < r_1\)</span> (<a href="CMA02-3-MoreSeries.html#powerseries">§2.6</a>); hence, if <span class="math">\(s = a_{m+1} + a_{m+2} z +  \cdots \)</span>, we have
 <span class="math">\[\left|\, s \, \right| \leq \sum_{n=1}^{\infty} \,\left|\, a_{m+n}  \right|\, r^{n-1},\]</span>
-and so we can find<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a> a <em>positive number</em> <span class="math">\( \delta \leq r \)</span> &lt; r such that, whenever <span class="math">\(\left| \, z \,\right| \leq r \)</span>,
-<span class="math">\[\left|\, a_m +a_{m+1} z+a_{m+2} z^2 + \cdots \right| \leq \frac{1}{2}\left|\,a_m \right|;\]</span>
-and then <span class="math">\(\left|\,a_m + s\,\right|\geq \left|\, a_m \right|- \left|\,s\,\right| \geq \frac{1}{2} \left|\, a_m \right|\)</span>, and so <span class="math">\(\left|\,a_m + s\,\right| \neq 0 \)</span> when <span class="math">\(\left| \, z \,\right| \leq r \)</span>.
+and so we can find<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a> a <em>positive number</em> <span class="math">\( \delta \leq r \)</span> such that, whenever <span class="math">\(\left| \, z \,\right| \leq \delta \)</span>,
+<span class="math">\[\left|\,s z \,\right|=\left|\, a_{m+1} z+a_{m+2} z^2 + \cdots \,\right| \leq \frac{1}{2}\left|\,a_m \right|;\]</span>
+and then <span class="math">\(\left|\,a_m + sz\,\right|\geq \left|\, a_m \right|- \left|\,sz\,\right| \geq \frac{1}{2} \left|\, a_m \right|\)</span>, and so <span class="math">\(\left|\,a_m + sz\,\right| \neq 0 \)</span> when <span class="math">\(\left| \, z \,\right| \leq \delta\)</span>.
 We have therefore arrived at a contradiction by supposing that some coefficient does not vanish. Therefore all the coefficients vanish. </p>
 
 <blockquote>
-<p>Corollary 1. We may &#8216;equate corresponding coefficients&#8217; in two power series whose sums are equal throughout the region <span class="math">\(\left|\,z\, \right|< \delta\)</span>, where <span class="math">\(\delta > 0\)</span>. </p>
+<p><em>Corollary</em> 1. We may &#8216;equate corresponding coefficients&#8217; in two power series whose sums are equal throughout the region <span class="math">\(\left|\,z\, \right|< \delta\)</span>, where <span class="math">\(\delta > 0\)</span>. </p>
 </blockquote>
 
 <blockquote>
-<p>Corollary 2. We may also equate coefficients in two power series which are proved equal only when <span class="math">\(z\)</span> is real. </p>
+<p><em>Corollary</em> 2. We may also equate coefficients in two power series which are proved equal only when <span class="math">\(z\)</span> is real. </p>
 </blockquote>
 
 <h3 id="references.">References.</h3>
@@ -116,17 +114,17 @@ No. 15), (1914)</a>, Chs. <strong>i, ii.</strong></dd>
 <ol>
 <li><p>Shew that the series <span class="math">\[\sum_{n=1}^{\infty}\frac{z^{n-1}}{(1-z^n)(1-z^{n+1})}\]</span> is equal to <span class="math">\(\displaystyle \frac{1}{(1-z)^2}\)</span> when <span class="math">\( \left|\, z\, \right| < 1\)</span> and is equal to <span class="math">\(\displaystyle \frac{1}{z(1-z)^2}\)</span> when <span class="math">\(\left|\, z\, \right| > 1\)</span>. Is this fact connected with the theory of uniform convergence ? </p></li>
 <li><p>Shew that the series <span class="math">\[2\sin \frac{1}{3z} + 4 \sin \frac{1}{9z} + \cdots + 2^n\sin \frac{1}{3^n z} + \cdots \]</span> converges absolutely for all values of <span class="math">\(z\)</span> (<span class="math">\(z = 0\)</span> excepted), but does not converge uniformly near <span class="math">\(z = 0\)</span>.</p></li>
-<li><p>If <span class="math">\[u_n(x)=-2(n-1)^2xe^{(n-1)^2 x^2} + 2n^2xe^{-n^2x^2},\]</span> shew that <span class="math">\(\sum\limits_{n=1}^{\infty} u_n(x)\)</span> does not converge uniformly near <span class="math">\(x=0\)</span>. <span class="math">\(\vphantom{\\ 3\\}\)</span><br>
+<li><p>If <span class="math">\[u_n(x)=-2(n-1)^2xe^{-(n-1)^2 x^2} + 2n^2xe^{-n^2x^2},\]</span> shew that <span class="math">\(\sum\limits_{n=1}^{\infty} u_n(x)\)</span> does not converge uniformly near <span class="math">\(x=0\)</span>. <span class="math">\(\vphantom{\\ 3\\}\)</span><br>
 (Math. Trip., 1907.)</p></li>
 <li><p>Shew that the series <span class="math">\(\displaystyle \frac{1}{\sqrt{1}} - \frac{1}{\sqrt{2}} + \frac{1}{\sqrt{3}} - \cdots\)</span> is convergent, but that its square (formed by Abel&#8217;s rule) <span class="math">\[\frac{1}{1} - \frac{2}{\sqrt{2}} +\left(\frac{2}{\sqrt{3}} + \frac{1}{2} \right) - \left(\frac{2}{\sqrt{4}} + \frac{2}{\sqrt{6}} \right) + \cdots\]</span> is divergent.</p></li>
-<li><p>If the convergent series <span class="math">\(\displaystyle s=\frac{1}{1^r}-\frac{1}{2^r}+\frac{1}{3^r}-\frac{1}{4^r}+ \cdots \;\;(r>0)\)</span> be multiplied by itself, the terms of the product being arranged as in Abel&#8217;s result, shew that the resulting series diverges if <span class="math">\(r \leq \frac{1}{2}\)</span> but converges to the sum <span class="math">\(s^2\)</span> if <span class="math">\(r > \frac{1}{2}\)</span>. <span class="math">\(\vphantom{\\ 3\\}\)</span><br>
+<li><p>If the convergent series <span class="math">\(\displaystyle s=\frac{1}{1^r}-\frac{1}{2^r}+\frac{1}{3^r}-\frac{1}{4^r}+ \cdots \;\;(r>0)\:\!\)</span> be multiplied by itself, the terms of the product being arranged as in Abel&#8217;s result, shew that the resulting series diverges if <span class="math">\(r \leq \frac{1}{2}\)</span> but converges to the sum <span class="math">\(s^2\)</span> if <span class="math">\(r > \frac{1}{2}\)</span>. <span class="math">\(\vphantom{\\ 3\\}\)</span><br>
 (Cauchy and Cajori.) </p></li>
 <li><p>If the two conditionally convergent series <span class="math">\[\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^r}\,\text{ and }\, \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^s},\]</span> where <span class="math">\(r\)</span> and <span class="math">\(s\)</span> lie between 0 and 1, be multiplied together, and the product arranged as in Abel&#8217;s result, shew that the necessary and sufficient condition for the convergence of the resulting series is <span class="math">\(r + s > 1\)</span>. <span class="math">\(\vphantom{\\ 3\\}\)</span><br>
 (Cajori.)</p></li>
 <li><p>Shew that if the series <span class="math">\(1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7} + \cdots \)</span> be multiplied by itself any number of times, the terms of the product being arranged as in Abel&#8217;s result, the resulting series converges. <span class="math">\(\vphantom{\\ 3\\}\)</span><br>
 (Cajori.)</p></li>
 <li><p>Shew that the <span class="math">\(q\)</span>th power of the series <span class="math">\[a_1\sin \theta+a_2 \sin 2\theta + \cdots + a_n \sin n\theta + \cdots\]</span> is convergent whenever <span class="math">\(q (1 - r)< 1\)</span>, <span class="math">\(r\)</span> being the greatest number satisfying the relation <span class="math">\[a_n \leq n^{-r}\]</span> for all values of <span class="math">\(n\)</span>.</p></li>
-<li><p>Shew that if <span class="math">\(\theta\)</span> is not equal to 0 or a multiple of <span class="math">\(2\pi\)</span>, and if <span class="math">\(u_0,\, u_1,\, u_2,\, \dots \)</span> be a sequence such that <span class="math">\(u_n \rightarrow 0\)</span> steadily, then the series <span class="math">\(\sum  u_n \cos(n\theta + \phi) \)</span> is convergent.
+<li><p>Shew that if <span class="math">\(\theta\)</span> is not equal to 0 or a multiple of <span class="math">\(2\pi\)</span>, and if <span class="math">\(u_0,\, u_1,\, u_2,\, \dots \)</span> be a sequence such that <span class="math">\(u_n \rightarrow 0\)</span> steadily, then the series <span class="math">\(\sum  u_n \cos(n\theta + \phi) \)</span> is convergent. <br><br>
 Shew also that, if the limit of <span class="math">\(u_n\)</span> is not zero, but <span class="math">\(u_n\)</span> is still monotonic, the sum of the series is oscillatory if <span class="math">\(\left.\theta \middle/\pi \right.\)</span> is rational, but that, if <span class="math">\(\left.\theta \middle/\pi \right.\)</span> is irrational, the sum may have any value between certain bounds whose difference is <span class="math">\(a \,\mathrm{cosec} \frac{1}{2}\theta\)</span>, where <span class="math">\(a= \lim\limits_{n \rightarrow \infty} u_n\)</span>. <span class="math">\(\vphantom{\\ 3\\}\)</span><br>
 (Math. Trip., 1896.)</p></li>
 </ol>
@@ -136,8 +134,9 @@ Shew also that, if the limit of <span class="math">\(u_n\)</span> is not zero, b
 </div>
 
 <div id="footer">
-<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
-<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/"> GitHub.</a></h3>
+<h4>All content is either in the public domain or licensed under <a href="http://creativecommons.org/licenses/by/3.0/us/">a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h4>Feel free report typos and other issues on <span style="font-weight: 400;"><a href="https://github.com/CdLbB/cdlbb.github.com/tree/master/WandW">GitHub</a></span> or by email at <span style="font-weight: 400;"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#110;&#x69;&#x74;&#104;&#x61;&#114;&#100;&#x74;&#x40;&#x75;&#x77;&#46;&#101;&#x64;&#x75;">&#x6e;&#x69;&#116;&#x68;&#x61;&#114;&#100;&#x74;&#x40;&#117;&#119;&#x2e;&#101;&#x64;&#x75;</a></span>.</h4>
 </div>
 
 <div id="navunicont" class="navigation" style="visibility:hidden;" >
