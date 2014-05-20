@@ -154,10 +154,7 @@ sequence of poles) are essential singularities.
 which gives an expansion involving all positive and negative powers of \\((z - a)\\). So there is 
 an essential singularity at \\(z = a\\). 
 
->*Example* 3. Shew that the function defined by the series 
->\\[\sum_{n=1}^\infty \frac{nz^{n-1}\{(1-n^{-1})^n -1\}}{(z^n-1)\{z^n-(1+n^{-1})^n\}}\\]
-has simple poles at the points \\(z=(1+n^{-1}) \,e^{\left.2k i\pi \middle/ n\right.}\\), \\((k = 0, 1, 2, \dots , n -1\\); \\(\,n=1, 2, 3, \dots )\\). 
-(Math. Trip. 1899.) 
+>######*Example* 3. Shew that the function defined by the series \\[\sum_{n=1}^\infty \frac{nz^{n-1}\{(1-n^{-1})^n -1\}}{(z^n-1)\{z^n-(1+n^{-1})^n\}}\\] has simple poles at the points \\(z=(1+n^{-1}) \,e^{\left.2k i\pi \middle/ n\right.}\\), \\((k = 0, 1, 2, \dots , n -1\\); \\(\,n=1, 2, 3, \dots )\\). (See [Ch. 2, miscellaneous example 9](CMA02-4-Products.html#chap2misc9).) <br>(Math. Trip. 1899.) [5.61example3] ######
 
 ####5.62 The 'point at infinity.' ####
 

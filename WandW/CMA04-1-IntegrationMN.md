@@ -31,7 +31,7 @@ HTML header:	<script type="text/javascript"
 ### 4.1 The Concept of Integration. ###
 
 The reader is doubtless familiar with the idea of integration as the 
-operation inverse to that of differentiation and is equally well aware that the integral (in this sense) of a given elementary function is not always expressible in terms of elementary functions. In order therefore to give a definition of the integral of a function which shall be always available, even though it is not practicable to obtain a function of which the given function is the differential coefficient, we have recourse to the result that the integral<a class="marginmark" onClick="toggleHide('mn:1,-6');">&#91;1&#93;</a> of \\(f(x)\\) between the limits \\(a\\) and \\(b\\) is the area bounded by the curve \\(y =f(x)\\), the axis of \\(x\\) and the ordinates \\(x = a,\, x = b\\). We proceed to frame a formal definition of integration with this idea as the starting-point. 
+operation inverse to that of differentiation and is equally well aware that the integral (in this sense) of a given elementary function is not always expressible in terms of elementary functions. In order therefore to give a definition of the integral of a function which shall be always available, even though it is not practicable to obtain a function of which the given function is the differential coefficient, we have recourse to the result that the integral<a class="marginmark" onClick="toggleHide('mn:1,-6');">&#91;1&#93;</a> of \\(f(x)\\) between the limits \\(a\\) and \\(b\\) is the area bounded by the curve \\(y =f(x)\\), the axis of \\(x\\) and the ordinates \\(x = a\\), \\(x = b\\). We proceed to frame a formal definition of integration with this idea as the starting-point. 
 
 </div>
 
@@ -66,7 +66,7 @@ Consider the sums<a class="marginmark" onClick="toggleHide('mn:3,-12');">&#91;3&
 \\[S_n=U_1(x_1-a)+U_2(x_2-x_1)+ \cdots + U_n(b-x_{n-1}),\\]
 \\[s_n=L_1(x_1-a)+L_2(x_2-x_1)+ \cdots + L_n(b-x_{n-1}).\\]
 Then
-\\[U(b-a) \geq S_n \geq s_n \geq L(b-x_{n-1}).\\]
+\\[U\:\! (b-a) \geq S_n \geq s_n \geq L\:\! (b-a).\\]
 
 </div>
 
@@ -105,7 +105,7 @@ be the end points of the smaller intervals; let \\(U_r'\\), \\(L_r '\\) be the b
 
 Let \\[T_m = \sum_{r=1}^m (y_r - y_{r-1}) U_r ', \quad t_m = \sum_{r=1}^m (y_r - y_{r-1}) L_r '.\\]
 
- Since \\(U_1 ', U_2 ', \dots , U_k '\\) do not exceed \\(U_1\\), it follows without difficulty that \\(S_n \geq T_m \geq t_m \geq s_m\\).
+ Since \\(U_1 ', U_2 ', \dots , U_k '\\) do not exceed \\(U_1\\), it follows without difficulty that \\(S_n \geq T_m \geq t_m \geq s_n\\).
 
 Now consider the subdivision of \\([a, b]\\) into intervals by the points 
 \\(x_1, x_2, \dots , x_{n-1}\\) and also the subdivision by a different set of points 
@@ -179,7 +179,7 @@ The condition is obviously necessary, for if \\(S_n\\) and \\(s_n\\) have a comm
 that if \\(\lim \,(S_n - s_n) = 0\\), then 
 \\[\lim S_n = \lim s_n = S = s.\\] 
 
->**Note**. A continuous function \\(f(x)\\) is 'integrable'. For, given, we can \\(\epsilon\\) find \\(\delta\\) such that \\(\left|\,f(x') - f(x'') \,\right| < \left. \epsilon \middle/ (b-a) \right.\\) whenever \\(\left|\,x'-x' ' \right| < \delta\\). Take all the intervals \\([x_{s-1}, x_s]\\) less than \\(\delta\\), and then \\(U_s - L_s < \left. \epsilon\middle/(b - a)\right.\\) and so \\(S
+>**Note**. A continuous function \\(f(x)\\) is 'integrable'. For, given \\(\epsilon\\), we can  find a \\(\delta\\) such that \\(\left|\,f(x') - f(x'') \,\right| < \left. \epsilon \middle/ (b-a) \right.\\) whenever \\(\left|\,x'-x' ' \right| < \delta\\). Take all the intervals \\([x_{s-1}, x_s]\\) less than \\(\delta\\), and then \\(U_s - L_s < \left. \epsilon\middle/(b - a)\right.\\) and so \\(S
 _n - s_n < \epsilon\\); therefore \\(S_n - s_n \rightarrow 0\\) under the circumstances specified in the condition of integrability. 
 
 >*Corollary*. If \\(S_ n\\) and \\(s_n\\) have the same limit \\(S\\) for one mode of subdivision of \\([a, b]\\) into intervals of the specified kind, the limits of \\(S_n\\) and of \\(s_n\\) for any other such mode of subdivision are both S. 
@@ -194,13 +194,13 @@ _n - s_n < \epsilon\\); therefore \\(S_n - s_n \rightarrow 0\\) under the circum
 >
 >When \\(\delta_1 \rightarrow 0, \;  k \rightarrow \left | \,f(c + 0)- f(c-0) \,\right|\\), and hence \\(\lim\limits_{n \rightarrow \infty} (S_n -s_n ) = 0\\).] 
 
->Example 3. A function with limited total fluctuation and a finite number of ordinary discontinuities<a class="marginmark" onClick="toggleHide('mn:7,-2');">&#91;7&#93;</a> is integrable. (See [&#167;3.64 example 2](CMA03-3-Heine-BorelMN.html#fluctuation).) 
+>Example 3. A function with limited total fluctuation and a finite number of ordinary discontinuities<a class="marginmark" onClick="toggleHide('mn:7,-3');">&#91;7&#93;</a> is integrable. (See [&#167;3.64 example 2](CMA03-3-Heine-BorelMN.html#fluctuation).) 
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:7,-2" style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;7&#93;</a>*Editor's Note*: There is no need to assume a finite number of discontinuities. *Any* function with limited total fluctuation is Riemann integrable.<a onClick="hideIt('mn:7,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:7,-3" style="margin-top: -3em; margin-bottom: -3em;"><a class="marginmark">&#91;7&#93;</a>*Editor's Note*: There is no need to assume a finite number of discontinuities. *Any* function with limited total fluctuation is Riemann integrable.<a onClick="hideIt('mn:7,-3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -212,7 +212,7 @@ _n - s_n < \epsilon\\); therefore \\(S_n - s_n \rightarrow 0\\) under the circum
 
 Let \\(f(x)\\) be integrable, and let \\(\epsilon\\) be any positive number. Then it is 
 possible to choose \\(\delta\\) so that 
-\\[\left|\sum_{p=1}^n (x_p - x_{p-1}) f(x'_{p-1}) - \int_a^b \! f(x)\, dx \right| < \epsilon,\\]
+\\[\left|\,\sum_{p=1}^n (x_p - x_{p-1}) f(x'_{p-1}) - \int_a^b \! f(x)\, dx \,\right| < \epsilon,\\]
 provided that
 \\[x_p - x_{p-1} \leq \delta, \quad x_{p-1} \leq x'_{p-1} \leq x_p.\\]
 
@@ -224,7 +224,7 @@ Also \\[S_n \geq \sum_{p=1}^n (x_p - x_{p-1}) f(x'_{p-1}) \geq s_n,\\]
 Therefore 
 \\[
 \begin{align*}
-\left|\sum_{p=1}^n (x_p - x_{p-1}) f(x'_{p-1}) - \int_a^b \! f(x)\, dx \right| &\leq S_n-s_n \\
+\left|\,\sum_{p=1}^n (x_p - x_{p-1}) f(x'_{p-1}) - \int_a^b \! f(x)\, dx \,\right| &\leq S_n-s_n \\
 \\ \\
 & < \epsilon.
 \end{align*}
@@ -246,7 +246,7 @@ Therefore
 
 >Take \\(\delta= \displaystyle \frac{1}{p} \arcsin X\\) and let \\(x_s = \sin s\delta\\), \\((0 < s\delta <  \frac{1}{2}\pi)\\), so that 
  \\[\begin{align*}
-x_{s+1}-x_s &= 2 \sin \textstyle\frac{1}{2} \delta \, \cos(s+\textstyle\frac{1}{2}) \delta < \delta\\ 
+x_{s+1}-x_s &= 2 \sin \textstyle\frac{1}{2} \delta \, \cos(s+\textstyle\frac{1}{2}) \delta < \delta ;\\ 
 \text{ also let } \quad\qquad\qquad x'_s &= \sin (s+\textstyle\frac{1}{2})\delta.
 \end{align*}\\]
 >
@@ -279,7 +279,7 @@ depend on* \\(p\\); and therefore it must be zero; for if not we could take \\(\
 
 >*Example* 2. If \\(f(x)\\) has ordinary discontinuities at the points \\(a_1, a_2 , \dots , a_{\kappa}\\), then 
  \\[\int_a^b \! f(x) \, dx=\lim \left\{\int_a^{a_1-\delta_1}\! +\int_{a_1+\epsilon_1}^{a_1-\delta_2}\! + \cdots + \int_{a+\epsilon_{\kappa}}^b \! f(x) \, dx\right\}\\]
-where the limit is taken by making \\(\delta_1, \delta_2, \dots ,\delta_{\kappa}, \epsilon_1, \epsilon_2, \dots , \epsilon_{\kappa}\\) tend to \\(+0\\) independently.
+where the limit is taken by making \\(\delta_1, \delta_2, \dots ,\delta_{\kappa}\\), \\(\epsilon_1, \epsilon_2, \dots , \epsilon_{\kappa}\\) tend to \\(+0\\) independently.
 
 >######*Example* 3. If \\(f(x)\\) is integrable when \\(a_1 \leq x \leq b_1\\) and if, when \\(a_1 \leq   a < b \leq b_1 \\), we write \\[\int_a^b \! f(x)\,dx =\phi(a,b),\\] and if \\((b + 0)\\) exists, then \\[\lim_{\delta \,\rightarrow \,+0}\frac{\phi(a,b+\delta)-\phi(a,b)}{\delta} =f(b+0).\\][4.13example3]######
 >
@@ -300,7 +300,7 @@ where the limit is taken by making \\(\delta_1, \delta_2, \dots ,\delta_{\kappa}
 
 <div markdown=1 class="contenttext">
 
->*Example* 5. If \\(f' (x)\\) and \\(\phi'(x)\\) are continuous when \\(a \leq x \leq b\\), shew from example 3 that
+>*Example* 5. If \\(f' (x)\\) and \\(\phi'(x)\\) are continuous when \\(a \leq x \leq b\\), shew from [example 3](#4.13example3) that
 >\\[\int_a^b \! f'(x) \phi(x) \, dx + \int_a^b \!\phi'(x)f(x)\, dx = f(b)\phi(b)-f(a)\phi(a).\\]
 
 
@@ -453,7 +453,7 @@ But, for any given \\(\epsilon\\), a number \\(\delta\\) *independent* of \\(x\\
 whenever \\(\left|\, \alpha' - \alpha \,\right| < \delta\\). 
 
 
-Taking \\(\left| h \right| < \delta\\) we see that \\(\left| \theta h \right| < \delta\\), and so *whenever* \\(\left| h \right| < \delta\\), 
+Taking \\(\left|\, h \,\right| < \delta\\) we see that \\(\left| \,\theta h \,\right| < \delta\\), and so *whenever* \\(\left|\, h \,\right| < \delta\\), 
 \\[\left|\int_a^b \frac{f(x,\alpha+h)-f(x, \alpha)}{h} dx - \int_a^b \! f_{\alpha}(x, \alpha)\,dx \,\right|\\]
 \\[
 \begin{align*} \qquad \qquad \qquad &\leq \int_a^b \!\left|\, f_{\alpha}(x, \alpha+\theta h) - f_{\alpha}(x, \alpha)\,\right|\, dx.\\

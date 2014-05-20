@@ -34,7 +34,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
 <h3 id="4.1theconceptofintegration.">4.1 The Concept of Integration.</h3>
 
 <p>The reader is doubtless familiar with the idea of integration as the
-operation inverse to that of differentiation and is equally well aware that the integral (in this sense) of a given elementary function is not always expressible in terms of elementary functions. In order therefore to give a definition of the integral of a function which shall be always available, even though it is not practicable to obtain a function of which the given function is the differential coefficient, we have recourse to the result that the integral<a class="marginmark" onClick="toggleHide('mn:1,-6');">&#91;1&#93;</a> of <span class="math">\(f(x)\)</span> between the limits <span class="math">\(a\)</span> and <span class="math">\(b\)</span> is the area bounded by the curve <span class="math">\(y =f(x)\)</span>, the axis of <span class="math">\(x\)</span> and the ordinates <span class="math">\(x = a,\, x = b\)</span>. We proceed to frame a formal definition of integration with this idea as the starting-point. </p>
+operation inverse to that of differentiation and is equally well aware that the integral (in this sense) of a given elementary function is not always expressible in terms of elementary functions. In order therefore to give a definition of the integral of a function which shall be always available, even though it is not practicable to obtain a function of which the given function is the differential coefficient, we have recourse to the result that the integral<a class="marginmark" onClick="toggleHide('mn:1,-6');">&#91;1&#93;</a> of <span class="math">\(f(x)\)</span> between the limits <span class="math">\(a\)</span> and <span class="math">\(b\)</span> is the area bounded by the curve <span class="math">\(y =f(x)\)</span>, the axis of <span class="math">\(x\)</span> and the ordinates <span class="math">\(x = a\)</span>, <span class="math">\(x = b\)</span>. We proceed to frame a formal definition of integration with this idea as the starting-point. </p>
 
 </div>
 <div class="marginnotes"  id="mn:1,-6"  style="margin-top: -6em; margin-bottom: -6em;"><a class="marginmark">&#91;1&#93;</a>Defined as the (elementary) function whose differential coefficient is <span class="math">\(f(x)\)</span>.<a onClick="hideIt('mn:1,-6')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
@@ -54,7 +54,7 @@ the bounds of <span class="math">\(f(x)\)</span> in the range <span class="math"
 <span class="math">\[S_n=U_1(x_1-a)+U_2(x_2-x_1)+ \cdots + U_n(b-x_{n-1}),\]</span>
 <span class="math">\[s_n=L_1(x_1-a)+L_2(x_2-x_1)+ \cdots + L_n(b-x_{n-1}).\]</span>
 Then
-<span class="math">\[U(b-a) \geq S_n \geq s_n \geq L(b-x_{n-1}).\]</span></p>
+<span class="math">\[U\:\! (b-a) \geq S_n \geq s_n \geq L\:\! (b-a).\]</span></p>
 </div>
 <div class="marginnotes"  id="mn:3,-12"  style="margin-top: -12em; margin-bottom: -12em;"><a class="marginmark">&#91;3&#93;</a>The reader will find a figure of great assistance in following the argument of this section. <span class="math">\(S_n\)</span> and <span class="math">\(s_n\)</span> represent the sums of the areas of a number of rectangles which are respectively greater and less than the area bounded by <span class="math">\(y=f(x)\)</span>, <span class="math">\(x=a\)</span>, <span class="math">\(x = b\)</span> and <span class="math">\(y = 0\)</span>, if this area be assumed to exist.<a onClick="hideIt('mn:3,-12')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
@@ -76,7 +76,7 @@ be the end points of the smaller intervals; let <span class="math">\(U_r'\)</spa
 
 <p>Let <span class="math">\[T_m = \sum_{r=1}^m (y_r - y_{r-1}) U_r ', \quad t_m = \sum_{r=1}^m (y_r - y_{r-1}) L_r '.\]</span></p>
 
-<p>Since <span class="math">\(U_1 ', U_2 ', \dots , U_k '\)</span> do not exceed <span class="math">\(U_1\)</span>, it follows without difficulty that <span class="math">\(S_n \geq T_m \geq t_m \geq s_m\)</span>.</p>
+<p>Since <span class="math">\(U_1 ', U_2 ', \dots , U_k '\)</span> do not exceed <span class="math">\(U_1\)</span>, it follows without difficulty that <span class="math">\(S_n \geq T_m \geq t_m \geq s_n\)</span>.</p>
 
 <p>Now consider the subdivision of <span class="math">\([a, b]\)</span> into intervals by the points
 <span class="math">\(x_1, x_2, \dots , x_{n-1}\)</span> and also the subdivision by a different set of points
@@ -137,7 +137,7 @@ that if <span class="math">\(\lim \,(S_n - s_n) = 0\)</span>, then
 <span class="math">\[\lim S_n = \lim s_n = S = s.\]</span> </p>
 
 <blockquote>
-<p><strong>Note</strong>. A continuous function <span class="math">\(f(x)\)</span> is &#8216;integrable&#8217;. For, given, we can <span class="math">\(\epsilon\)</span> find <span class="math">\(\delta\)</span> such that <span class="math">\(\left|\,f(x') - f(x'') \,\right| < \left. \epsilon \middle/ (b-a) \right.\)</span> whenever <span class="math">\(\left|\,x'-x' ' \right| < \delta\)</span>. Take all the intervals <span class="math">\([x_{s-1}, x_s]\)</span> less than <span class="math">\(\delta\)</span>, and then <span class="math">\(U_s - L_s < \left. \epsilon\middle/(b - a)\right.\)</span> and so <span class="math">\(S
+<p><strong>Note</strong>. A continuous function <span class="math">\(f(x)\)</span> is &#8216;integrable&#8217;. For, given <span class="math">\(\epsilon\)</span>, we can find a <span class="math">\(\delta\)</span> such that <span class="math">\(\left|\,f(x') - f(x'') \,\right| < \left. \epsilon \middle/ (b-a) \right.\)</span> whenever <span class="math">\(\left|\,x'-x' ' \right| < \delta\)</span>. Take all the intervals <span class="math">\([x_{s-1}, x_s]\)</span> less than <span class="math">\(\delta\)</span>, and then <span class="math">\(U_s - L_s < \left. \epsilon\middle/(b - a)\right.\)</span> and so <span class="math">\(S
 _n - s_n < \epsilon\)</span>; therefore <span class="math">\(S_n - s_n \rightarrow 0\)</span> under the circumstances specified in the condition of integrability. </p>
 </blockquote>
 
@@ -160,10 +160,10 @@ _n - s_n < \epsilon\)</span>; therefore <span class="math">\(S_n - s_n \rightarr
 </blockquote>
 
 <blockquote>
-<p>Example 3. A function with limited total fluctuation and a finite number of ordinary discontinuities<a class="marginmark" onClick="toggleHide('mn:7,-2');">&#91;7&#93;</a> is integrable. (See <a href="CMA03-3-Heine-BorelMN.html#fluctuation">&#167;3.64 example 2</a>.) </p>
+<p>Example 3. A function with limited total fluctuation and a finite number of ordinary discontinuities<a class="marginmark" onClick="toggleHide('mn:7,-3');">&#91;7&#93;</a> is integrable. (See <a href="CMA03-3-Heine-BorelMN.html#fluctuation">&#167;3.64 example 2</a>.) </p>
 </blockquote>
 </div>
-<div class="marginnotes"  id="mn:7,-2"  style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;7&#93;</a><em>Editor&#8217;s Note</em>: There is no need to assume a finite number of discontinuities. <em>Any</em> function with limited total fluctuation is Riemann integrable.<a onClick="hideIt('mn:7,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div class="marginnotes"  id="mn:7,-3"  style="margin-top: -3em; margin-bottom: -3em;"><a class="marginmark">&#91;7&#93;</a><em>Editor&#8217;s Note</em>: There is no need to assume a finite number of discontinuities. <em>Any</em> function with limited total fluctuation is Riemann integrable.<a onClick="hideIt('mn:7,-3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
 <div class="contenttext">
 
@@ -171,7 +171,7 @@ _n - s_n < \epsilon\)</span>; therefore <span class="math">\(S_n - s_n \rightarr
 
 <p>Let <span class="math">\(f(x)\)</span> be integrable, and let <span class="math">\(\epsilon\)</span> be any positive number. Then it is
 possible to choose <span class="math">\(\delta\)</span> so that
-<span class="math">\[\left|\sum_{p=1}^n (x_p - x_{p-1}) f(x'_{p-1}) - \int_a^b \! f(x)\, dx \right| < \epsilon,\]</span>
+<span class="math">\[\left|\,\sum_{p=1}^n (x_p - x_{p-1}) f(x'_{p-1}) - \int_a^b \! f(x)\, dx \,\right| < \epsilon,\]</span>
 provided that
 <span class="math">\[x_p - x_{p-1} \leq \delta, \quad x_{p-1} \leq x'_{p-1} \leq x_p.\]</span></p>
 
@@ -183,7 +183,7 @@ of the longest interval, <span class="math">\(\delta\)</span>, so small that <sp
 Therefore
 <span class="math">\[
 \begin{align*}
-\left|\sum_{p=1}^n (x_p - x_{p-1}) f(x'_{p-1}) - \int_a^b \! f(x)\, dx \right| &\leq S_n-s_n \\
+\left|\,\sum_{p=1}^n (x_p - x_{p-1}) f(x'_{p-1}) - \int_a^b \! f(x)\, dx \,\right| &\leq S_n-s_n \\
 \\ \\
 & < \epsilon.
 \end{align*}
@@ -200,7 +200,7 @@ Therefore
 <blockquote>
 <p>Take <span class="math">\(\delta= \displaystyle \frac{1}{p} \arcsin X\)</span> and let <span class="math">\(x_s = \sin s\delta\)</span>, <span class="math">\((0 < s\delta <  \frac{1}{2}\pi)\)</span>, so that
  <span class="math">\[\begin{align*}
-x_{s+1}-x_s &= 2 \sin \textstyle\frac{1}{2} \delta \, \cos(s+\textstyle\frac{1}{2}) \delta < \delta\\ 
+x_{s+1}-x_s &= 2 \sin \textstyle\frac{1}{2} \delta \, \cos(s+\textstyle\frac{1}{2}) \delta < \delta ;\\ 
 \text{ also let } \quad\qquad\qquad x'_s &= \sin (s+\textstyle\frac{1}{2})\delta.
 \end{align*}\]</span></p>
 
@@ -237,7 +237,7 @@ depend on</em> <span class="math">\(p\)</span>; and therefore it must be zero; f
 <blockquote>
 <p><em>Example</em> 2. If <span class="math">\(f(x)\)</span> has ordinary discontinuities at the points <span class="math">\(a_1, a_2 , \dots , a_{\kappa}\)</span>, then
  <span class="math">\[\int_a^b \! f(x) \, dx=\lim \left\{\int_a^{a_1-\delta_1}\! +\int_{a_1+\epsilon_1}^{a_1-\delta_2}\! + \cdots + \int_{a+\epsilon_{\kappa}}^b \! f(x) \, dx\right\}\]</span>
-where the limit is taken by making <span class="math">\(\delta_1, \delta_2, \dots ,\delta_{\kappa}, \epsilon_1, \epsilon_2, \dots , \epsilon_{\kappa}\)</span> tend to <span class="math">\(+0\)</span> independently.</p>
+where the limit is taken by making <span class="math">\(\delta_1, \delta_2, \dots ,\delta_{\kappa}\)</span>, <span class="math">\(\epsilon_1, \epsilon_2, \dots , \epsilon_{\kappa}\)</span> tend to <span class="math">\(+0\)</span> independently.</p>
 </blockquote>
 
 <blockquote>
@@ -256,7 +256,7 @@ where the limit is taken by making <span class="math">\(\delta_1, \delta_2, \dot
 <div class="contenttext">
 
 <blockquote>
-<p><em>Example</em> 5. If <span class="math">\(f' (x)\)</span> and <span class="math">\(\phi'(x)\)</span> are continuous when <span class="math">\(a \leq x \leq b\)</span>, shew from example 3 that
+<p><em>Example</em> 5. If <span class="math">\(f' (x)\)</span> and <span class="math">\(\phi'(x)\)</span> are continuous when <span class="math">\(a \leq x \leq b\)</span>, shew from <a href="#4.13example3">example 3</a> that
 <span class="math">\[\int_a^b \! f'(x) \phi(x) \, dx + \int_a^b \!\phi'(x)f(x)\, dx = f(b)\phi(b)-f(a)\phi(a).\]</span></p>
 </blockquote>
 
@@ -355,7 +355,7 @@ continuous function of <span class="math">\(\alpha\)</span>, the second integran
 <span class="math">\[\left|\, f_{\alpha}(x, \alpha') - f_{\alpha}(x, \alpha) \,\right| < \left. \epsilon \middle/ (b-a)\right. ,\]</span>
 whenever <span class="math">\(\left|\, \alpha' - \alpha \,\right| < \delta\)</span>. </p>
 
-<p>Taking <span class="math">\(\left| h \right| < \delta\)</span> we see that <span class="math">\(\left| \theta h \right| < \delta\)</span>, and so <em>whenever</em> <span class="math">\(\left| h \right| < \delta\)</span>,
+<p>Taking <span class="math">\(\left|\, h \,\right| < \delta\)</span> we see that <span class="math">\(\left| \,\theta h \,\right| < \delta\)</span>, and so <em>whenever</em> <span class="math">\(\left|\, h \,\right| < \delta\)</span>,
 <span class="math">\[\left|\int_a^b \frac{f(x,\alpha+h)-f(x, \alpha)}{h} dx - \int_a^b \! f_{\alpha}(x, \alpha)\,dx \,\right|\]</span>
 <span class="math">\[
 \begin{align*} \qquad \qquad \qquad &\leq \int_a^b \!\left|\, f_{\alpha}(x, \alpha+\theta h) - f_{\alpha}(x, \alpha)\,\right|\, dx.\\

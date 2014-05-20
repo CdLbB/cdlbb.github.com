@@ -199,7 +199,7 @@ The elements \\(A_{ii}\\), (where \\(i\\) takes all values), are said to form th
 diagonal* of the determinant \\(D\\); the elements \\(A_{ik}\\), (where \\(i\\) is fixed and \\(k\\) 
 takes all values), are said to form the *row* \\(i\\); and the elements \\(A_{ik}\\), (where \\(k\\) 
 is fixed and \\(i\\) takes all values), are said to form the *column* \\(k\\). Any element 
-\\(A_{ik}\\), is called a diagonal or a non-diagonal element, according as \\(i = k\\) or \\(i \neq k\\). 
+\\(A_{ik}\\), is called a *diagonal* or a *non-diagonal element*, according as \\(i = k\\) or \\(i \neq k\\). 
 The element \\(A_{0,\,0}\\) is called the *origin* of the determinant. 
 
 ####  2.81. Convergence of an infinite determinant [convergenceofaninfinitedeterminant]####
@@ -246,7 +246,7 @@ of the row through the origin with the elements
 which satisfy the inequality
 \\[\left|\, \mu_r \,\right| < \mu ,\\]
 where \\(\mu\\) is a positive number; and let the new value of \\(D_m\\) be denoted by \\(D\,'_{\!m}\\). Moreover, denote by \\(\overline{P}\,'_{\!m}\\) and \\(\overline{P}\,' \\) the products obtained by suppressing in \\(\overline{P}_m\\) and \\(\overline{P}\\) the factor corresponding to the (row) index zero; we see that no terms of \\(D\,'_m\\) can have a greater modulus than the corresponding term in the expansion of \\(\mu \overline{P}\,'_{\!m}\\); and consequently, reasoning as in the last article, we have
-\\[\left|\, D\,'_{\!m+p}-D\,'_{\!m} \,\right| \leq \overline{P}\,'_{\!m + p} - \overline{P}\,'_{\!m} .\\]
+\\[\left|\, D\,'_{\!m+p}-D\,'_{\!m} \,\right| \leq \mu\overline{P}\,'_{\!m + p} - \mu\overline{P}\,'_{\!m} .\\]
 which is sufficient to establish the result stated. 
 
 >*Example*. Shew that the necessary and sufficient condition for the absolute convergence of the infinite determinant 
@@ -275,7 +275,7 @@ shall be absolutely convergent. \\(\vphantom{\\ 3\\}\\)<br>
 
 *Convergent series.*
 :A. Pringsheim, [*Math. Ann.* **xxxv.** (1890)][PConvergence], pp. 297-394.
-:T. J. I'a. Bromwich, [*Theory of Infinite Series*][InfiniteSeries] (1908), Chs. **II, III, IV.**
+:T. J. I'a. Bromwich, [*Theory of Infinite Series*][InfiniteSeries] (1908), Chs. **ii, iii, iv.**
 
 [PConvergence]: http://www.digizeitschriften.de/dms/toc/?PPN=PPN235181684_0035
 
@@ -339,11 +339,7 @@ is convergent, although
 is convergent, although
 \\[\left.u_{2n}\middle/u_{2n-1}\right. \rightarrow \infty .\\] (Cesàro.)
 
-9. Shew that the series
-\\[\sum_{n=1}^{\infty}\frac{n z^{n-1}\{(1+n^{-1})^n-1\}}{(z^n-1)\{z^n-(1+n^{-1})\}}\\]
-converges absolutely for all values of \\(z\\), except the values 
-\\[z=\left(1+\frac{a}{m}\right)e^{\left.2k\pi\:\! i\middle/m\right.}\\]
-\\[(a=0,1;\; k=0,1, \dots,m-1; \; m=1,2,3, \dots) .\\]
+9. ######Shew that the series \\[\sum_{n=1}^{\infty}\frac{n z^{n-1}\{(1+n^{-1})^n-1\}}{(z^n-1)\{z^n-(1+n^{-1})^{n}\}}\\] converges absolutely for all values of \\(z\\), except the values \\[z=\left(1+\frac{a}{m}\right)e^{\left.2k\pi\:\! i\middle/m\right.}\\] \\[(a=0,1;\; k=0,1, \dots,m-1; \; m=1,2,3, \dots) .\\] (See [§5.61 example 3](CMA05-5-LaurentsTheorem.html#5.61example3).) [chap2misc9]######
 
 10. Shew that, when \\(s>1\\),
 \\[\sum_{n=1}^{\infty}\frac{1}{n^s}=\frac{1}{s-1}+\sum_{n=1}^{\infty}\left[\frac{1}{n^s}+\frac{1}{s-1}\left\{\frac{1}{(n+1)^{s-1}}-\frac{1}{n^{s-1}}\right\}\right] ,\\]
@@ -351,7 +347,7 @@ and shew that the series on the right also converges when \\(0 < s < 1\\).\\(\vp
 (de la Vallee Poussin, Mém. de l'Acad. de Belgique, LIII. (1896), no. 6.) 
 
 11. In the series whose general term is
-\\[\qquad u_n=q^{n-\nu}x^{\frac{1}{2}\nu\:\!(\nu+1)} , \qquad (0 < q < 1 < x)\\]
+\\[\qquad u_n=q^{n-\nu}\:\! x^{\frac{1}{2}\nu\:\!(\nu+1)} , \qquad (0 < q < 1 < x)\\]
 where \\(\nu\\) denotes the number of digits in the expression of \\(n\\) in the ordinary decimal scale 
 of notation, shew that
 \\[\lim_{n \rightarrow \infty} u_n^{\, \left.1\middle/n\right.} = q ,\\]
@@ -385,7 +381,7 @@ shew that
 17. Assuming that
 \\[\sin z= z \prod_{r=1}^{\infty} \left( 1-\frac{z^2}{r^2 \pi^2}\right) ,\\]
 shew that if \\(m \rightarrow \infty\\) and \\(n \rightarrow \infty\\) in such a way that \\(\lim\, (\left.m\middle/n\right.) = k\\), where \\(k\\) is finite, then 
-\\[ \lim \sum_{\substack{r=\,-n\\r \, \neq \, 0}}^{m}\left(1+\frac{z}{r \pi}\right)=k^{\,z / \pi} \frac{\sin z}{z} .\\]
+\\[ \lim \prod_{\substack{r=\,-n\\r \, \neq \, 0}}^{m}\left(1+\frac{z}{r \pi}\right)=k^{\,z / \pi} \frac{\sin z}{z} .\\]
 (Math. Trip., 1904.)
 
 18. If \\(u_0=u_1=u_2=0\\), and if, when \\(n >1\\),
@@ -394,7 +390,7 @@ then \\(\prod\limits_{n=0}^{\infty} (1+u_n)\\) converges, though  \\(\sum\limits
 (Math. Trip., 1906.) 
 
 19. Prove that
-\\[\prod_{n=1}^{\infty}\left\{\left(1-\frac{z}{n}\right)^{n^k} \exp \left(\sum_{m=1}^{k+1} \frac{n^{k-m} z^m}{m} \right) \right\} ,\\]
+\\[\prod_{n=1}^{\infty}\left\{\left(1-\frac{z}{n}\right)^{n^k} \exp \left(\sum_{m=1}^{k+1} \frac{n^{k-m} \:\! z^m}{m} \right) \right\} ,\\]
 where \\(k\\) is any positive integer, converges absolutely for all values of \\(z\\).
 
 20. If \\(\sum\limits_{n=1}^{\infty}a_n\\)
