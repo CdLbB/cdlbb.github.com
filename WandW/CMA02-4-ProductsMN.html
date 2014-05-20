@@ -226,7 +226,7 @@ is <em>convergent</em> and has the value <span class="math">\(D\)</span>. If the
 diagonal</em> of the determinant <span class="math">\(D\)</span>; the elements <span class="math">\(A_{ik}\)</span>, (where <span class="math">\(i\)</span> is fixed and <span class="math">\(k\)</span>
 takes all values), are said to form the <em>row</em> <span class="math">\(i\)</span>; and the elements <span class="math">\(A_{ik}\)</span>, (where <span class="math">\(k\)</span>
 is fixed and <span class="math">\(i\)</span> takes all values), are said to form the <em>column</em> <span class="math">\(k\)</span>. Any element
-<span class="math">\(A_{ik}\)</span>, is called a diagonal or a non-diagonal element, according as <span class="math">\(i = k\)</span> or <span class="math">\(i \neq k\)</span>.
+<span class="math">\(A_{ik}\)</span>, is called a <em>diagonal</em> or a <em>non-diagonal element</em>, according as <span class="math">\(i = k\)</span> or <span class="math">\(i \neq k\)</span>.
 The element <span class="math">\(A_{0,\,0}\)</span> is called the <em>origin</em> of the determinant. </p>
 
 <h4 id="convergenceofaninfinitedeterminant">2.81. Convergence of an infinite determinant</h4>
@@ -275,7 +275,7 @@ of the row through the origin with the elements
 which satisfy the inequality
 <span class="math">\[\left|\, \mu_r \,\right| < \mu ,\]</span>
 where <span class="math">\(\mu\)</span> is a positive number; and let the new value of <span class="math">\(D_m\)</span> be denoted by <span class="math">\(D\,'_{\!m}\)</span>. Moreover, denote by <span class="math">\(\overline{P}\,'_{\!m}\)</span> and <span class="math">\(\overline{P}\,' \)</span> the products obtained by suppressing in <span class="math">\(\overline{P}_m\)</span> and <span class="math">\(\overline{P}\)</span> the factor corresponding to the (row) index zero; we see that no terms of <span class="math">\(D\,'_m\)</span> can have a greater modulus than the corresponding term in the expansion of <span class="math">\(\mu \overline{P}\,'_{\!m}\)</span>; and consequently, reasoning as in the last article, we have
-<span class="math">\[\left|\, D\,'_{\!m+p}-D\,'_{\!m} \,\right| \leq \overline{P}\,'_{\!m + p} - \overline{P}\,'_{\!m} .\]</span>
+<span class="math">\[\left|\, D\,'_{\!m+p}-D\,'_{\!m} \,\right| \leq \mu\overline{P}\,'_{\!m + p} - \mu\overline{P}\,'_{\!m} .\]</span>
 which is sufficient to establish the result stated. </p>
 
 <blockquote>
@@ -304,7 +304,7 @@ shall be absolutely convergent. <span class="math">\(\vphantom{\\ 3\\}\)</span><
 <dt><em>Convergent series.</em></dt>
 <dd>A. Pringsheim, <a href="http://www.digizeitschriften.de/dms/toc/?PPN=PPN235181684_0035"><em>Math. Ann.</em> <strong>xxxv.</strong> (1890)</a>, pp. 297&#8211;394.</dd>
 
-<dd>T. J. I&#8217;a. Bromwich, <a href="http://archive.org/details/introductiontoth00bromuoft"><em>Theory of Infinite Series</em></a> (1908), Chs. <strong>II, III, IV.</strong></dd>
+<dd>T. J. I&#8217;a. Bromwich, <a href="http://archive.org/details/introductiontoth00bromuoft"><em>Theory of Infinite Series</em></a> (1908), Chs. <strong>ii, iii, iv.</strong></dd>
 </dl>
 
 <dl>
@@ -355,17 +355,13 @@ is convergent, although
 <span class="math">\[\qquad \alpha+\beta^2+\alpha^3+\beta^4+ \dots \qquad (0<\alpha <\beta<1)\]</span>
 is convergent, although
 <span class="math">\[\left.u_{2n}\middle/u_{2n-1}\right. \rightarrow \infty .\]</span> (Ces&agrave;ro.)</p></li>
-<li><p>Shew that the series
-<span class="math">\[\sum_{n=1}^{\infty}\frac{n z^{n-1}\{(1+n^{-1})^n-1\}}{(z^n-1)\{z^n-(1+n^{-1})\}}\]</span>
-converges absolutely for all values of <span class="math">\(z\)</span>, except the values
-<span class="math">\[z=\left(1+\frac{a}{m}\right)e^{\left.2k\pi\:\! i\middle/m\right.}\]</span>
-<span class="math">\[(a=0,1;\; k=0,1, \dots,m-1; \; m=1,2,3, \dots) .\]</span></p></li>
+<li><h6 id="chap2misc9">Shew that the series <span class="math">\[\sum_{n=1}^{\infty}\frac{n z^{n-1}\{(1+n^{-1})^n-1\}}{(z^n-1)\{z^n-(1+n^{-1})^{n}\}}\]</span> converges absolutely for all values of <span class="math">\(z\)</span>, except the values <span class="math">\[z=\left(1+\frac{a}{m}\right)e^{\left.2k\pi\:\! i\middle/m\right.}\]</span> <span class="math">\[(a=0,1;\; k=0,1, \dots,m-1; \; m=1,2,3, \dots) .\]</span> (See <a href="CMA05-5-LaurentsTheoremMN.html#5.61example3">&#167;5.61 example 3</a>.)</h6></li>
 <li><p>Shew that, when <span class="math">\(s>1\)</span>,
 <span class="math">\[\sum_{n=1}^{\infty}\frac{1}{n^s}=\frac{1}{s-1}+\sum_{n=1}^{\infty}\left[\frac{1}{n^s}+\frac{1}{s-1}\left\{\frac{1}{(n+1)^{s-1}}-\frac{1}{n^{s-1}}\right\}\right] ,\]</span>
 and shew that the series on the right also converges when <span class="math">\(0 < s < 1\)</span>.<span class="math">\(\vphantom{\\ 3\\}\)</span><br>
 (de la Vallee Poussin, M&eacute;m. de l&#8217;Acad. de Belgique, LIII. (1896), no. 6.) </p></li>
 <li><p>In the series whose general term is
-<span class="math">\[\qquad u_n=q^{n-\nu}x^{\frac{1}{2}\nu\:\!(\nu+1)} , \qquad (0 < q < 1 < x)\]</span>
+<span class="math">\[\qquad u_n=q^{n-\nu}\:\! x^{\frac{1}{2}\nu\:\!(\nu+1)} , \qquad (0 < q < 1 < x)\]</span>
 where <span class="math">\(\nu\)</span> denotes the number of digits in the expression of <span class="math">\(n\)</span> in the ordinary decimal scale
 of notation, shew that
 <span class="math">\[\lim_{n \rightarrow \infty} u_n^{\, \left.1\middle/n\right.} = q ,\]</span>
@@ -394,14 +390,14 @@ shew that
 <li><p>Assuming that
 <span class="math">\[\sin z= z \prod_{r=1}^{\infty} \left( 1-\frac{z^2}{r^2 \pi^2}\right) ,\]</span>
 shew that if <span class="math">\(m \rightarrow \infty\)</span> and <span class="math">\(n \rightarrow \infty\)</span> in such a way that <span class="math">\(\lim\, (\left.m\middle/n\right.) = k\)</span>, where <span class="math">\(k\)</span> is finite, then
-<span class="math">\[ \lim \sum_{\substack{r=\,-n\\r \, \neq \, 0}}^{m}\left(1+\frac{z}{r \pi}\right)=k^{\,z / \pi} \frac{\sin z}{z} .\]</span>
+<span class="math">\[ \lim \prod_{\substack{r=\,-n\\r \, \neq \, 0}}^{m}\left(1+\frac{z}{r \pi}\right)=k^{\,z / \pi} \frac{\sin z}{z} .\]</span>
 (Math. Trip., 1904.)</p></li>
 <li><p>If <span class="math">\(u_0=u_1=u_2=0\)</span>, and if, when <span class="math">\(n >1\)</span>,
 <span class="math">\[u_{2n-1}=-\frac{1}{\sqrt{n}}, \quad u_{2n}=\frac{1}{\sqrt{n}}+\frac{1}{n}+\frac{1}{n\sqrt{n}} ,\]</span>
 then <span class="math">\(\prod\limits_{n=0}^{\infty} (1+u_n)\)</span> converges, though <span class="math">\(\sum\limits_{n=0}^{\infty} u_n\)</span> and <span class="math">\(\sum\limits_{n=0}^{\infty} u_n^{2}\)</span> are divergent.<span class="math">\(\vphantom{\\ 3\\}\)</span><br>
 (Math. Trip., 1906.) </p></li>
 <li><p>Prove that
-<span class="math">\[\prod_{n=1}^{\infty}\left\{\left(1-\frac{z}{n}\right)^{n^k} \exp \left(\sum_{m=1}^{k+1} \frac{n^{k-m} z^m}{m} \right) \right\} ,\]</span>
+<span class="math">\[\prod_{n=1}^{\infty}\left\{\left(1-\frac{z}{n}\right)^{n^k} \exp \left(\sum_{m=1}^{k+1} \frac{n^{k-m} \:\! z^m}{m} \right) \right\} ,\]</span>
 where <span class="math">\(k\)</span> is any positive integer, converges absolutely for all values of <span class="math">\(z\)</span>.</p></li>
 <li><p>If <span class="math">\(\sum\limits_{n=1}^{\infty}a_n\)</span>
 be a conditionally convergent series of real terms, then <span class="math">\(\prod\limits_{n=1}^{\infty}(1+a_n)\)</span> converges (but not absolutely) or diverges to zero according as <span class="math">\(\sum\limits_{n=1}^{\infty} a_n^2 \)</span> converges or diverges.<span class="math">\(\vphantom{\\ 3\\}\)</span><br>
