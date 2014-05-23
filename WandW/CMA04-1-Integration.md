@@ -275,41 +275,41 @@ such that \\(a \leq \xi \leq b\\) and
 
 ###4.2 Differentiation of integrals containing a parameter. ###
 
-The equation[^leibniz,-13] \\(\displaystyle \frac{d}{d\alpha}\int_a^b \! f(x, \alpha) \, dx = \int_a^b \!\frac{\partial f}{\partial \alpha} \, dx\\) is true *if \\(f(x, \alpha)\\) possesses a Riemann integral with respect to \\(x\\) and \\(f_{\alpha}\,  ( = \frac{\partial f}{\partial \alpha})\\) is a continuous function of both[^both,-8] of the variables \\(x\\) and \\(\alpha\\)*. 
+The equation[^leibniz,-13] \\(\displaystyle \frac{d}{d\boldsymbol{\alpha}}\int_a^b \! f(x, \boldsymbol{\alpha}) \, dx = \int_a^b \!\frac{\partial f}{\partial \boldsymbol{\alpha}} \, dx\\) is true *if \\(f(x, \boldsymbol{\alpha})\\) possesses a Riemann integral with respect to \\(x\\) and \\(f_{\boldsymbol{\alpha}}\,  ( = \frac{\partial f}{\partial \boldsymbol{\alpha}})\\) is a continuous function of both[^both,-8] of the variables \\(x\\) and \\(\boldsymbol{\alpha}\\)*. 
 
-[^leibniz,-13]: This formula was given by Leibniz, without specifying the restrictions laid on \\(f(x, \alpha)\\).
+[^leibniz,-13]: This formula was given by Leibniz, without specifying the restrictions laid on \\(f(x, \boldsymbol{\alpha})\\).
 
 [^both,-8]: \\(\phi(x, y)\\) is defined to be a continuous function of *both* variables if, given \\(\epsilon\\), we can find \\(\delta\\) such that \\(\left| \,\phi(x', y') - \phi(x, y)\, \right| < \epsilon\\) whenever \\(\{(x' - x)^2 + (y' - y)^2 \}^{\frac{1}{2}} < \delta\\). It can be shewn by [§3.6](CMA03-3-Heine-BorelMN.html#themodifiedheine-boreltheorem.) that if \\(\phi(x, y)\\) is a continuous function of both variables at all points of a closed region in a Cartesian diagram, it is *uniformly* continuous throughout the region (the proof is almost identical with that of [§3.61](CMA03-3-Heine-Borel.html#uniformityofcontinuity.)). It should be noticed that, if \\(\phi(x, y)\\) is a continuous function of *each* variable, it is *not* necessarily a continuous function of both; as an example take \\[\phi(x,y)=\frac{(x+y)^2}{x^2+y^2}, \quad \phi(0,0) = 1;\\] this is a continuous function of \\(x\\) and of \\(y\\) at \\((0, 0)\\), but not of both \\(x\\) and \\(y\\).
 
 For 
-\\[\frac{d}{d\alpha}\int_a^b \! f(x,\alpha)\,dx = \lim_{h \rightarrow 0} \int_a^b \frac{f(x,\alpha+h)-f(x, \alpha)}{h} dx\\]
-if this limit exists. But, by the first mean value theorem, since \\(f_{\alpha}\\) is a 
-continuous function of \\(\alpha\\), the second integrand is \\(f_{\alpha} (x, a + \theta h)\\), where \\(0 \leq \theta \leq 1\\).
+\\[\frac{d}{d\boldsymbol{\alpha}}\int_a^b \! f(x,\boldsymbol{\alpha})\,dx = \lim_{h \rightarrow 0} \int_a^b \frac{f(x,\boldsymbol{\alpha}+h)-f(x, \boldsymbol{\alpha})}{h} dx\\]
+if this limit exists. But, by the first mean value theorem, since \\(f_{\boldsymbol{\alpha}}\\) is a 
+continuous function of \\(\boldsymbol{\alpha}\\), the second integrand is \\(f_{\boldsymbol{\alpha}} (x, a + \theta h)\\), where \\(0 \leq \theta \leq 1\\).
 
-[^hobsonsway,+9]: It is obvious that it would have been sufficient to assume that \\(f_{\alpha}\\) had a Riemann integral and was a continuous function of \\(\alpha\\) (the continuity being uniform with respect to \\(x\\)), instead of assuming that \\(f_{\alpha}\\)  was a continuous function of both variables. This is actually done by Hobson, [*Functions of a Real Variable*](https://archive.org/details/theoryfunctions00hobsgoog), p. 599.
+[^hobsonsway,+9]: It is obvious that it would have been sufficient to assume that \\(f_{\boldsymbol{\alpha}}\\) had a Riemann integral and was a continuous function of \\(\boldsymbol{\alpha}\\) (the continuity being uniform with respect to \\(x\\)), instead of assuming that \\(f_{\boldsymbol{\alpha}}\\)  was a continuous function of both variables. This is actually done by Hobson, [*Functions of a Real Variable*](https://archive.org/details/theoryfunctions00hobsgoog), p. 599.
 
-But, for any given \\(\epsilon\\), a number \\(\delta\\) *independent* of \\(x\\) exists (since the continuity of \\(f_{\alpha}\\) is uniform[^hobsonsway,+9] with respect to the variable \\(x\\)) such that 
-\\[\left|\, f_{\alpha}(x, \alpha') - f_{\alpha}(x, \alpha) \,\right| < \left. \epsilon \middle/ (b-a)\right. ,\\] 
-whenever \\(\left|\, \alpha' - \alpha \,\right| < \delta\\). 
+But, for any given \\(\epsilon\\), a number \\(\delta\\) *independent* of \\(x\\) exists (since the continuity of \\(f_{\boldsymbol{\alpha}}\\) is uniform[^hobsonsway,+9] with respect to the variable \\(x\\)) such that 
+\\[\left|\, f_{\boldsymbol{\alpha}}(x, \boldsymbol{\alpha}') - f_{\boldsymbol{\alpha}}(x, \boldsymbol{\alpha}) \,\right| < \left. \epsilon \middle/ (b-a)\right. ,\\] 
+whenever \\(\left|\, \boldsymbol{\alpha}' - \boldsymbol{\alpha} \,\right| < \delta\\). 
 
 
 Taking \\(\left|\, h \,\right| < \delta\\) we see that \\(\left| \,\theta h \,\right| < \delta\\), and so *whenever* \\(\left|\, h \,\right| < \delta\\), 
-\\[\left|\int_a^b \frac{f(x,\alpha+h)-f(x, \alpha)}{h} dx - \int_a^b \! f_{\alpha}(x, \alpha)\,dx \,\right|\\]
+\\[\left|\int_a^b \frac{f(x,\boldsymbol{\alpha}+h)-f(x, \boldsymbol{\alpha})}{h} dx - \int_a^b \! f_{\boldsymbol{\alpha}}(x, \boldsymbol{\alpha})\,dx \,\right|\\]
 \\[
-\begin{align*} \qquad \qquad \qquad &\leq \int_a^b \!\left|\, f_{\alpha}(x, \alpha+\theta h) - f_{\alpha}(x, \alpha)\,\right|\, dx.\\
+\begin{align*} \qquad \qquad \qquad &\leq \int_a^b \!\left|\, f_{\boldsymbol{\alpha}}(x, \boldsymbol{\alpha}+\theta h) - f_{\boldsymbol{\alpha}}(x, \boldsymbol{\alpha})\,\right|\, dx.\\
 \\
 & < \epsilon.
 \end{align*}
 \\] 
 
 Therefore by the definition of a limit of a function ([§3.2](CMA03-1-ContinuousFns.html#continuityoffunctionsofrealvariables)), 
-\\[\lim_{h \rightarrow 0} \int_a^b \frac{f(x,\alpha+h)-f(x, \alpha)}{h} dx\\]
-exists and is equal to \\(\displaystyle \int_a^b \! f_{\alpha} \,dx\\). 
+\\[\lim_{h \rightarrow 0} \int_a^b \frac{f(x,\boldsymbol{\alpha}+h)-f(x, \boldsymbol{\alpha})}{h} dx\\]
+exists and is equal to \\(\displaystyle \int_a^b \! f_{\boldsymbol{\alpha}} \,dx\\). 
 
->*Example* 1. If \\(a, b\\) be not constants but functions of \\(\alpha\\) with continuous differential coefficients, shew that
->\\[\frac{d}{d\alpha}\int_a^b \! f(x, \alpha)\, dx = f(b, \alpha)\frac{db}{d\alpha}-f(a, \alpha)\frac{da}{d\alpha}+\int_a^b \! \frac{\partial f}{\partial \alpha} dx.\\]
+>*Example* 1. If \\(a, b\\) be not constants but functions of \\(\boldsymbol{\alpha}\\) with continuous differential coefficients, shew that
+>\\[\frac{d}{d\boldsymbol{\alpha}}\int_a^b \! f(x, \boldsymbol{\alpha})\, dx = f(b, \boldsymbol{\alpha})\frac{db}{d\boldsymbol{\alpha}}-f(a, \boldsymbol{\alpha})\frac{da}{d\boldsymbol{\alpha}}+\int_a^b \! \frac{\partial f}{\partial \boldsymbol{\alpha}} dx.\\]
 
->######*Example* 2. If \\(f(x, \alpha)\\) is a continuous function of both variables, \\(\displaystyle \int_a^b \!  f(x, \alpha)\,dx\\) is a continuous function of \\(\alpha\\). [4.2example2]######
+>######*Example* 2. If \\(f(x, \boldsymbol{\alpha})\\) is a continuous function of both variables, \\(\displaystyle \int_a^b \!  f(x, \boldsymbol{\alpha})\,dx\\) is a continuous function of \\(\boldsymbol{\alpha}\\). [4.2example2]######
 
 </div>
 

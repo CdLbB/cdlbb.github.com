@@ -19,7 +19,7 @@ transcendental functions."/>
 	<meta name="latexfooter" content="mmd-cambridge-footer"/>
 	<link type="text/css" rel="stylesheet" href="css/documentation.css"/>
 <script type="text/javascript"
-src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
 <script type="text/javascript" src="js/showhide.js"></script>
 <script type="text/javascript" src="js/mathjaxend.js"></script>
 </head>
@@ -34,7 +34,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></scr
 <p>Let <span class="math">\(f(x, y)\)</span> be a function which is continuous with regard to both of the variables <span class="math">\(x\)</span> and <span class="math">\(y\)</span>, when <span class="math">\(a \leq x \leq b\)</span>, <span class="math">\(\alpha \leq y \leq \beta\)</span>. </p>
 
 <p>By <a href="CMA04-1-Integration.html#4.2example2">§4.2 example 2</a>, it is clear<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a> that
-<span class="math">\[\int_a^b \left\{\int_\alpha^\beta f(x,y)\, dy \right\}dx=\int_\alpha^\beta \left\{\int_a^b f(x,y)\, dx \right\}dy\]</span>
+<span class="math">\[\int_a^b \!\left\{\int_\alpha^\beta \! f(x,y)\, dy \right\}dx=\int_\alpha^\beta \!\left\{\int_a^b \! f(x,y)\, dx \right\}dy\]</span>
 both exist. These are called <em>repeated integrals</em>. </p>
 
 <p>Also, as in <a href="CMA03-3-Heine-Borel.html#arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.">§3.62</a>, <span class="math">\(f(x, y)\)</span>, being a continuous function of both variables,
@@ -44,49 +44,45 @@ attains its upper and lower bounds. </p>
 rectangle in a Cartesian diagram; divide it into <span class="math">\(n\nu\)</span> rectangles by lines parallel
 to the axes. </p>
 
-<p>Let <span class="math">\(U_{m,\mu}, \, L_{\,m,\mu}\)</span> be the upper and lower bounds of <span class="math">\(f(x, y)\)</span> in one of the smaller rectangles whose area is, say, <span class="math">\(A_{m,\mu}\)</span>; and let
-<span class="math">\[\sum_{m=1}^n \sum_{\mu=1}^\nu U_{m,\mu}A_{m,\mu}=S_{n,\nu}, \quad \sum_{m=1}^n \sum_{\mu=1}^\nu L_{\,m,\mu}A_{m,\mu}=s_{n,\nu} .\]</span> </p>
+<p>Let <span class="math">\(U_{m,\:\! \mu}, \, L_{\,m,\:\! \mu}\)</span> be the upper and lower bounds of <span class="math">\(f(x, y)\)</span> in one of the smaller rectangles whose area is, say, <span class="math">\(A_{m,\:\! \mu}\)</span>; and let
+<span class="math">\[\sum_{m=1}^n \sum_{\mu=1}^\nu U_{m,\:\! \mu}A_{m,\:\! \mu}=S_{n,\:\! \nu}, \quad \sum_{m=1}^n \sum_{\mu=1}^\nu L_{\,m,\:\! \mu}A_{m,\:\! \mu}=s_{n,\:\! \nu} .\]</span> </p>
 
-<p>Then <span class="math">\(S_{n,\nu} \geq s_{n,\nu}\)</span>, and, as in <a href="CMA04-1-Integration.html#4.11upperandlowerintegrals.">§4.11</a>, we can find numbers <span class="math">\(\underline{S}_{n,\nu}\)</span>, <span class="math">\(\overline{s}_{n,\nu}\)</span>, which
-are the lower and upper bounds of <span class="math">\(S_{n,\nu}\)</span>, <span class="math">\(s_{n,\nu}\)</span>, respectively, the values of <span class="math">\(\underline{S}_{ n,\nu}\)</span>, <span class="math">\(\overline{s}_{n,\nu}\)</span> depending only on the number of the rectangles and not on their
-shapes; and <span class="math">\(\underline{S}_{n,\nu} \geq \overline{s}_{n,\nu}\)</span>. We then find the lower and upper bounds (<span class="math">\(S\)</span> and <span class="math">\(s\)</span>)
-respectively of <span class="math">\(\underline{S}_{n,\nu}\)</span>, <span class="math">\(\overline{s}_{n,\nu}\)</span> <em>qua</em><a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a> functions of <span class="math">\(n\)</span> and <span class="math">\(\nu\)</span>; and <span class="math">\(S_{n,\nu} \geq S \geq s \geq s_{n,\nu}\)</span>, as in
+<p>Then <span class="math">\(S_{n,\:\! \nu} \geq s_{n,\:\! \nu}\)</span>, and, as in <a href="CMA04-1-Integration.html#4.11upperandlowerintegrals.">§4.11</a>, we can find numbers <span class="math">\(\underline{S}_{n,\:\! \nu}\)</span>, <span class="math">\(\overline{s}_{n,\:\! \nu}\)</span>, which
+are the lower and upper bounds of <span class="math">\(S_{n,\:\! \nu}\)</span>, <span class="math">\(s_{n,\:\! \nu}\)</span>, respectively, the values of <span class="math">\(\underline{S}_{ n,\:\! \nu}\)</span>, <span class="math">\(\overline{s}_{n,\:\! \nu}\)</span> depending only on the number of the rectangles and not on their
+shapes; and <span class="math">\(\underline{S}_{n,\:\! \nu} \geq \overline{s}_{n,\:\! \nu}\)</span>. We then find the lower and upper bounds (<span class="math">\(S\)</span> and <span class="math">\(s\)</span>)
+respectively of <span class="math">\(\underline{S}_{n,\:\! \nu}\)</span>, <span class="math">\(\overline{s}_{n,\:\! \nu}\)</span> <em>qua</em><a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a> functions of <span class="math">\(n\)</span> and <span class="math">\(\nu\)</span>; and <span class="math">\(S_{n,\:\! \nu} \geq S \geq s \geq s_{n,\:\! \nu}\)</span>, as in
 <a href="CMA04-1-Integration.html#4.11upperandlowerintegrals.">§4.11</a>. </p>
 
 <p>Also, from the uniformity of the continuity of <span class="math">\(f(x, y)\)</span>, given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(\delta\)</span> such that
-<span class="math">\[U_{m,\mu} - L_{\,m,\mu} < \epsilon,\]</span>
+<span class="math">\[U_{m,\:\! \mu} - L_{\,m,\:\! \mu} < \epsilon,\]</span>
 (for all values of <span class="math">\(m\)</span> and <span class="math">\(\mu\)</span>) whenever the sides of all the small rectangles are less than the number <span class="math">\(\delta\)</span> which depends only on the form of the function <span class="math">\(f(x, y)\)</span> and on <span class="math">\(\epsilon\)</span>. </p>
 
-<p>And then <span class="math">\[(S_{n,\nu}-s_{n,\nu} < \epsilon (b — a) (\beta — \alpha),\]</span>
-and so <span class="math">\[(S-s < \epsilon (b — a) (\beta — \alpha).\]</span></p>
+<p>And then <span class="math">\[(S_{n,\:\! \nu}-s_{n,\:\! \nu} < \epsilon (b - a) (\beta - \alpha),\]</span>
+and so <span class="math">\[(S-s < \epsilon (b - a) (\beta - \alpha).\]</span></p>
 
 <p>But <span class="math">\(S\)</span> and <span class="math">\(s\)</span> are <em>independent</em> of <span class="math">\(\epsilon\)</span>, and so <span class="math">\(S = s\)</span>. </p>
 
 <p>The common value of <span class="math">\(S\)</span> and <span class="math">\(s\)</span> is called the <em>double integral</em> of <span class="math">\(f(x, y)\)</span> and
 is written
-<span class="math">\[\int_a^b \int_\alpha^\beta f(x,y)(dxdy).\]</span></p>
+<span class="math">\[\int_a^b \!\int_\alpha^\beta \! f(x,y)(dxdy).\]</span></p>
 
-<blockquote>
 <p>It is easy to shew that the repeated integrals and the double integral are all equal when <span class="math">\(f(x, y)\)</span> is a continuous function of both variables. </p>
 
-<p>For let <span class="math">\(\Upsilon_m,\,  \Lambda_m\)</span> be the upper and lower bounds of <span class="math">\[\int_\alpha^\beta f(x,y)\, dy\]</span>
+<p>For let <span class="math">\(\Upsilon_m,\,  \Lambda_m\)</span> be the upper and lower bounds of <span class="math">\[\int_\alpha^\beta \! f(x,y)\, dy\]</span>
  as <span class="math">\(x\)</span> varies between <span class="math">\(x_{m-1}\)</span> and <span class="math">\(x_m\)</span>.</p>
 
-<p>Then <span class="math">\[\sum_{m=1}^n \Upsilon_m (x_{m}-x_{m-1}) \geq  \int_a^b \left\{\int_\alpha^\beta f(x,y)\, dy \right\}dx \geq \sum_{m=1}^n \Lambda_m (x_{m}-x_{m-1}) \]</span>
-But<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a> <span class="math">\[\sum_{\mu=1}^\nu U_{m,\mu} (y_{m}-y_{m-1}) \geq \Upsilon_m \geq \Lambda_m \geq \sum_{\mu=1}^\nu L_{\,m,\mu} (y_{m}-y_{m-1}).\]</span></p>
-</blockquote>
+<p>Then <span class="math">\[\sum_{m=1}^n \Upsilon_m (x_{m}-x_{m-1}) \geq  \int_a^b \!\left\{\int_\alpha^\beta \! f(x,y)\, dy \right\}dx \geq \sum_{m=1}^n \Lambda_m (x_{m}-x_{m-1}). \]</span>
+But<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a> <span class="math">\[\sum_{\mu=1}^\nu U_{m,\:\! \mu} (y_{\mu}-y_{\mu-1}) \geq \Upsilon_m \geq \Lambda_m \geq \sum_{\mu=1}^\nu L_{\,m,\:\! \mu} (y_{\mu}-y_{\mu-1}).\]</span></p>
 
-<blockquote>
 <p>Multiplying these last inequalities by <span class="math">\((x_{m}-x_{m-1})\)</span>, using the preceding inequalities and summing, we get
-<span class="math">\[\sum_{m=1}^n \sum_{\mu=1}^\nu U_{m,\mu} A_{m, \mu} \geq \int_a^b \left\{\int_\alpha^\beta f(x,y)\, dy \right\}dx \geq \sum_{m=1}^n \sum_{\mu=1}^\nu L_{\,m,\mu} A_{m, \mu};\]</span>
+<span class="math">\[\sum_{m=1}^n \sum_{\mu=1}^\nu U_{m,\:\! \mu} A_{m, \:\! \mu} \geq \int_a^b \!\left\{\int_\alpha^\beta \! f(x,y)\, dy \right\}dx \geq \sum_{m=1}^n \sum_{\mu=1}^\nu L_{\,m,\:\! \mu} A_{m, \:\! \mu};\]</span>
 and so, proceeding to the limit,
-<span class="math">\[S \geq \int_a^b \left\{\int_\alpha^\beta f(x,y)\, dy \right\}dx \geq  s.\]</span>
-But <span class="math">\[S=s=\int_a^b \int_\alpha^\beta f(x,y)(dxdy),\]</span>
+<span class="math">\[S \geq \int_a^b \!\left\{\int_\alpha^\beta \! f(x,y)\, dy \right\}dx \geq  s.\]</span>
+But <span class="math">\[S=s=\int_a^b \!\int_\alpha^\beta \! f(x,y)(dxdy),\]</span>
 and so one of the repeated integrals is equal to the double integral. Similarly the other repeated integral is equal to the double integral. </p>
-</blockquote>
 
 <blockquote>
-<h6 id="4.3corollary"><em>Corollary</em>. If <span class="math">\(f(x, y)\)</span> be a continuous function of both variables, <span class="math">\[\int_0^1 dx \left\{\int_0^{1-x}f(x,y)\,dy \right\}=\int_0^1 dy \left\{\int_0^{1-y}f(x,y)\,dx \right\}\]</span></h6>
+<h6 id="4.3corollary"><em>Corollary</em>. If <span class="math">\(f(x, y)\)</span> be a continuous function of both variables, <span class="math">\[\int_0^1 \! dx \left\{\int_0^{1-x}\! f(x,y)\,dy \right\}=\int_0^1 \! dy \left\{\int_0^{1-y}\! f(x,y)\,dx \right\}\]</span></h6>
 </blockquote>
 
 <h3 id="4.4infiniteintegrals.">4.4 Infinite integrals.</h3>
@@ -98,9 +94,9 @@ question is called an <em>infinite integral</em>.<a href="#fn:4" id="fnref:4" ti
 <p><em>Examples</em>.
 <span class="math">\[
 \begin{align*}
-&(1) \quad\int_a^\infty \frac{dx}{x^2}=\lim_{b \rightarrow \infty} \left(\frac{1}{b}-\frac{1}{a}\right)=\frac{1}{a}.\\
-&(2) \quad\int_0^\infty \frac{xdx}{(x^2+a^2)^2}=\lim_{b \rightarrow \infty}\left(\frac{1}{2(b^2+a^2)}+\frac{1}{2a^2}\right)=\frac{1}{2a^2}\\
-&(3) \quad \text{By integrating by parts, shew that } \int_0^\infty t^n e^{-t}dt=n!. &(Euler.)
+&(1) \quad\int_a^\infty \!\frac{dx}{x^2}=\lim_{b \rightarrow \infty} \left(\frac{1}{b}-\frac{1}{a}\right)=\frac{1}{a}.\\
+&(2) \quad\int_0^\infty \!\frac{xdx}{(x^2+a^2)^2}=\lim_{b \rightarrow \infty}\left(\frac{1}{2(b^2+a^2)}+\frac{1}{2a^2}\right)=\frac{1}{2a^2}\\
+&(3) \quad \text{By integrating by parts, shew that } \int_0^\infty \! t^n e^{-t}dt=n!. &(\mathrm{Euler.})
 \end{align*}
 \]</span></p>
 </blockquote>
@@ -111,7 +107,7 @@ of <span class="math">\(a\)</span> is a matter of indifference. </p>
 
 <h4 id="4.41infiniteintegralsofcontinuousfunctions.conditionsforconvergence.">4.41 Infinite integrals of continuous functions. Conditions for convergence.</h4>
 
-<p>A necessary and sufficient condition for the convergence of <span class="math">\(\int_a^\infty f(x)\,dx\)</span> is that, corresponding to any positive number <span class="math">\(\epsilon\)</span>, a positive number <span class="math">\(X\)</span> should exist such that <span class="math">\(\left|\int_{x'}^{x' '} f(x)\,dx\right| < \epsilon\)</span>
+<p>A necessary and sufficient condition for the convergence of <span class="math">\(\int_a^\infty f(x)\,dx\)</span> is that, corresponding to any positive number <span class="math">\(\epsilon\)</span>, a positive number <span class="math">\(X\)</span> should exist such that <span class="math">\(\left|\,\int_{x'}^{x' '} f(x)\,dx\,\right| < \epsilon\)</span>
  whenever <span class="math">\(x'' \geq x' \geq X\)</span>. </p>
 
 <p>The condition is obviously necessary; to prove that it is sufficient, suppose it is satisfied; then, if <span class="math">\(n \geq X - a \)</span> and <span class="math">\(n\)</span> be a positive integer and <span class="math">\(S_n = \int_a^{a+n} f(x)\,dx\)</span>, we have
@@ -119,7 +115,7 @@ of <span class="math">\(a\)</span> is a matter of indifference. </p>
 Hence, by <a href="CMA02-1-Limits.html#cauchy">§2.22</a>, <span class="math">\(S_n\)</span> tends to a limit, <span class="math">\(S\)</span>; and then, if <span class="math">\(\xi > a + n\)</span>,
 <span class="math">\[
 \begin{align*}
-\left|\,S - \int_a^\xi f(x)\,dx \,\right| &\leq  \left|\,S - \int_a^{a+n} f(x)\,dx \, \right|+\left|\int_{a+n}^\xi f(x)\,dx \,\right|\\
+\left|\,S - \int_a^\xi \! f(x)\,dx \,\right| &\leq  \left|\,S - \int_a^{a+n} \! f(x)\,dx \, \right|+\left|\int_{a+n}^\xi \! f(x)\,dx \,\right|\\
 \\
 \\
 & < 2\epsilon;
@@ -129,16 +125,16 @@ and so <span class="math">\(\lim\limits_{\xi \rightarrow \infty}\int_a^\xi f(x)\
 
 <h4 id="4.42uniformityofconvergenceofaninfiniteintegral.">4.42 Uniformity of convergence of an infinite integral.</h4>
 
-<p>The integral <span class="math">\(\int_a^\infty f(x, \alpha)\, dx\)</span> is said to converge uniformly with regard to <span class="math">\(\alpha\)</span> in a given domain of values of <span class="math">\(\alpha\)</span> if, corresponding to an arbitrary positive
-number <span class="math">\(\epsilon\)</span>, there exists a number <span class="math">\(X\)</span> <em>independent</em> of <span class="math">\(\alpha\)</span> such that
-<span class="math">\[\left|\,\int_{x'}^\infty f(x,\alpha)\,dx \,\right| < \epsilon.\]</span>
-for all values of a in the domain and all values of <span class="math">\(x' \geq X\)</span>. </p>
+<p>The integral <span class="math">\(\int_a^\infty f(x, \boldsymbol{\alpha})\, dx\)</span> is said to converge uniformly with regard to <span class="math">\(\boldsymbol{\alpha}\)</span> in a given domain of values of <span class="math">\(\boldsymbol{\alpha}\)</span> if, corresponding to an arbitrary positive
+number <span class="math">\(\epsilon\)</span>, there exists a number <span class="math">\(X\)</span> <em>independent</em> of <span class="math">\(\boldsymbol{\alpha}\)</span> such that
+<span class="math">\[\left|\,\int_{x'}^\infty \! f(x,\boldsymbol{\alpha})\,dx \,\right| < \epsilon.\]</span>
+for all values of <span class="math">\(\boldsymbol{\alpha}\)</span> in the domain and all values of <span class="math">\(x' \geq X\)</span>. </p>
 
 <p>The reader will see without difficulty on comparing <a href="CMA02-1-Limits.html#cauchy">§2.22</a>
 and <a href="CMA03-2-Uniformity.html#ontheconditionforuniformityofconvergence.">§3.31</a> with
-<a href="#4.41infiniteintegralsofcontinuousfunctions.conditionsforconvergence.">§4.41</a> that a necessary and sufficient condition that <span class="math">\(\int_a^\infty f(x, \alpha)\, dx\)</span> should converge uniformly in a given domain is that, corresponding to any positive number <span class="math">\(\epsilon\)</span>, there exists a number <span class="math">\(X\)</span> independent of a such that
-<span class="math">\[\left|\,\int_{x'}^{x''} f(x,\alpha)\,dx \,\right| < \epsilon.\]</span>
-for all values of <span class="math">\(\alpha\)</span> in the domain whenever <span class="math">\(x'' \geq x' \geq X\)</span>. </p>
+<a href="#4.41infiniteintegralsofcontinuousfunctions.conditionsforconvergence.">§4.41</a> that a necessary and sufficient condition that <span class="math">\(\int_a^\infty f(x, \boldsymbol{\alpha})\, dx\)</span> should converge uniformly in a given domain is that, corresponding to any positive number <span class="math">\(\epsilon\)</span>, there exists a number <span class="math">\(X\)</span> independent of <span class="math">\(\boldsymbol{\alpha}\)</span> such that
+<span class="math">\[\left|\,\int_{x'}^{x''} \! f(x,\boldsymbol{\alpha})\,dx \,\right| < \epsilon.\]</span>
+for all values of <span class="math">\(\boldsymbol{\alpha}\)</span> in the domain whenever <span class="math">\(x'' \geq x' \geq X\)</span>. </p>
 
 <h4 id="4.43testsfortheconvergenceofaninfiniteintegral.">4.43 Tests for the convergence of an infinite integral.</h4>
 
@@ -156,7 +152,7 @@ converges absolutely. </p>
 </blockquote>
 
 <blockquote>
-<p>[Note. It was observed by Dirichlet<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a> that it is <em>not necessary</em> for the convergence of <span class="math">\(\int_a^\infty f(x)\,dx\)</span> that <span class="math">\(f(x) \rightarrow 0\)</span> as <span class="math">\(x \rightarrow \infty\)</span>: the reader may see this by considering the function
+<p>[<strong>Note</strong>. It was observed by Dirichlet<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a> that it is <em>not necessary</em> for the convergence of <span class="math">\(\int_a^\infty f(x)\,dx\)</span> that <span class="math">\(f(x) \rightarrow 0\)</span> as <span class="math">\(x \rightarrow \infty\)</span>: the reader may see this by considering the function
 <span class="math">\[
 \begin{align*}
 &f(x)=0 \qquad\qquad \text{ when}\quad n \leq x \leq n+1-(n+1)^{-2},\\
@@ -166,19 +162,19 @@ converges absolutely. </p>
 \]</span>
 where <span class="math">\(n\)</span> takes all integral values. </p>
 
-<p>For <span class="math">\(\int_0^\xi f(x)\,dx\)</span> increases with <span class="math">\(\xi\)</span> and <span class="math">\(\int_n^{n+1} f(x)\,dx=\frac{1}{6}(n + 1)^{-2}\)</span>; whence it follows without difficulty that <span class="math">\(\int_a^\infty f(x)\,dx\)</span> converges. But when <span class="math">\(x=n+1-\frac{1}{2}(n + 1)^{-2}\)</span>, <span class="math">\(f(x) = \frac{1}{4}\)</span>; and so <span class="math">\(f(x)\)</span> does not tend to zero.] </p>
+<p>For <span class="math">\(\int_0^\xi f(x)\,dx\)</span> increases with <span class="math">\(\xi\)</span> and <span class="math">\(\int_n^{n+1} f(x)\,dx=\frac{1}{6}(n + 1)^{-2}\)</span>; whence it follows without difficulty that <span class="math">\(\int_a^\infty f(x)\,dx\)</span> converges. But when <span class="math">\(x=n+1-\frac{1}{2}(n + 1)^{-2}\)</span>, <span class="math">\(f(x) = \frac{1}{4}\)</span>; and so <span class="math">\(f(x)\)</span> does <em>not</em> tend to zero.] </p>
 </blockquote>
 
 <p>(II) <em>The Maclaurin-Cauchy<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a> test.</em> If <span class="math">\(f(x) > 0\)</span> and <span class="math">\(f(x) \rightarrow 0\)</span> steadily,
 <span class="math">\(\int_1^\infty f(x)\,dx\)</span> and <span class="math">\(\sum_{n=1}^\infty f(x)\)</span> converge or diverge together. </p>
 
 <p>For
-<span class="math">\[f(m) \geq \int_m^{m+1} f(x)\,dx \geq f(m+1),\]</span>
+<span class="math">\[f(m) \geq \int_m^{m+1} \! f(x)\,dx \geq f(m+1),\]</span>
 and so
-<span class="math">\[\sum_{m=1}^n f(m) \geq \int_1^{n+1} f(x)\,dx \geq \sum_{m=1}^{n+1} f(m). \]</span></p>
+<span class="math">\[\sum_{m=1}^n f(m) \geq \int_1^{n+1} \! f(x)\,dx \geq \sum_{m=2}^{n+1} f(m). \]</span></p>
 
 <p>The first inequality shews that, if the series converges, the increasing sequence
-<span class="math">\( \int_1^{n+1} f(x)\,dx\)</span> converges (<a href="CMA02-1-Limits.html#thelimitofanincreasingsequence">§2.2</a>) when <span class="math">\(n \rightarrow \infty\)</span> through integral values, and hence it follows without difficulty that <span class="math">\( \int_1^{x'} f(x)\,dx\)</span> converges when <span class="math">\(x \rightarrow \infty\)</span>; also if the integral diverges,
+<span class="math">\( \int_1^{n+1} f(x)\,dx\)</span> converges (<a href="CMA02-1-Limits.html#thelimitofanincreasingsequence">§2.2</a>) when <span class="math">\(n \rightarrow \infty\)</span> through integral values, and hence it follows without difficulty that <span class="math">\( \int_1^{x'} f(x)\,dx\)</span> converges when <span class="math">\(x' \rightarrow \infty\)</span>; also if the integral diverges,
 so does the series. </p>
 
 <p>The second shews that if the series diverges so does the integral, and if the integral
@@ -198,8 +194,8 @@ be <span class="math">\(A\)</span>, we can choose <span class="math">\(X\)</span
 when <span class="math">\(x\geq X\)</span>; and then by the second mean value theorem, when <span class="math">\(x'' \geq x' \geq X\)</span>, we have
 <span class="math">\[
 \begin{align*}
-\left|\int_{x'}^{x''} f(x)\phi(x)\,dx\,\right| &= \left|\,f(x')\int_{x'}^\xi \phi(x)\,dx \,\right| \\
-&= f(x')\ \left|\int_{a}^\xi \phi(x)\,dx - \int_{a}^{x'} \phi(x)\,dx \,\right|\\
+\left|\int_{x'}^{x''} \! f(x)\phi(x)\,dx\,\right| &= \left|\,f(x')\int_{x'}^\xi \!\phi(x)\,dx \,\right| \\
+&= f(x')\ \left|\int_{a}^\xi \!\phi(x)\,dx - \int_{a}^{x'} \!\phi(x)\,dx \,\right|\\
 \\
 \\
 &\leq 2A\,f(x')< \epsilon.
@@ -208,17 +204,17 @@ when <span class="math">\(x\geq X\)</span>; and then by the second mean value th
 which is the condition for convergence. </p>
 
 <blockquote>
-<p><em>Example</em> 1. <span class="math">\(\displaystyle \int_0^\infty \frac{\sin x}{x} dx\)</span> converges. </p>
+<p><em>Example</em> 1. <span class="math">\(\displaystyle \int_0^\infty \!\frac{\sin x}{x} dx\)</span> converges. </p>
 </blockquote>
 
 <blockquote>
-<p><em>Example </em>2. <span class="math">\(\displaystyle \int_0^\infty x^{-1} \sin (x^3- ax) \,dx\)</span> converges. </p>
+<p><em>Example </em>2. <span class="math">\(\displaystyle \int_0^\infty \! x^{-1} \sin (x^3- ax) \,dx\)</span> converges. </p>
 </blockquote>
 
 <h5 id="4.431testsforuniformityofconvergenceofaninfiniteintegral.">4.431 Tests for uniformity of convergence of an infinite integral.<a href="#fn:9" id="fnref:9" title="see footnote" class="footnote">[9]</a></h5>
 
-<p>(I) <em>De la Vallée Poussin&#8217;s test.<a href="#fn:10" id="fnref:10" title="see footnote" class="footnote">[10]</a></em> The reader will easily see by using the reasoning of <a href="CMA03-2-Uniformity.html#aconditionduetoweierstrassforuniformconvergence.">§3.34</a> that <span class="math">\(\int_a^\infty f(x,\alpha)\,dx\)</span> converges uniformly with regard to <span class="math">\(\alpha\)</span> in a domain of values of <span class="math">\(\alpha\)</span> if <span class="math">\(\left| \, f(x,\alpha)\, \right| < \mu(x)\)</span>, where <span class="math">\(\mu(x)\)</span> is independent of <span class="math">\(\alpha\)</span> and <span class="math">\(\int_a^\infty \mu(x)\,dx\)</span> converges.
-[For, choosing <span class="math">\(X\)</span> so that <span class="math">\(\int_{x'}^{x''} \mu(x)\,dx < \epsilon\)</span> when <span class="math">\(x" > x' >X\)</span>, we have <span class="math">\(\left|\,\int_{x'}^{x''} f(x,\alpha)\,dx\right| < \epsilon\)</span>, and the choice of <span class="math">\(X\)</span> is independent of <span class="math">\(\alpha\)</span>] </p>
+<p>(I) <em>De la Vallée Poussin&#8217;s test.<a href="#fn:10" id="fnref:10" title="see footnote" class="footnote">[10]</a></em> The reader will easily see by using the reasoning of <a href="CMA03-2-Uniformity.html#aconditionduetoweierstrassforuniformconvergence.">§3.34</a> that <span class="math">\(\int_a^\infty f(x,\boldsymbol{\alpha})\,dx\)</span> converges uniformly with regard to <span class="math">\(\boldsymbol{\alpha}\)</span> in a domain of values of <span class="math">\(\boldsymbol{\alpha}\)</span> if <span class="math">\(\left| \, f(x,\boldsymbol{\alpha})\, \right| < \mu(x)\)</span>, where <span class="math">\(\mu(x)\)</span> is independent of <span class="math">\(\boldsymbol{\alpha}\)</span> and <span class="math">\(\int_a^\infty \mu(x)\,dx\)</span> converges.
+[ For, choosing <span class="math">\(X\)</span> so that <span class="math">\(\int_{x'}^{x''} \mu(x)\,dx < \epsilon\)</span> when <span class="math">\(x'' \leq x' \leq X\)</span>, we have <span class="math">\(\left|\,\int_{x'}^{x''} f(x,\boldsymbol{\alpha})\,dx\right| < \epsilon\)</span>, and the choice of <span class="math">\(X\)</span> is independent of <span class="math">\(\boldsymbol{\alpha}\)</span>. ] </p>
 
 <blockquote>
 <p><em>Example</em>. <span class="math">\(\int_0^\infty x^{\alpha-1}e^{-x} dx\)</span> converges uniformly in any interval <span class="math">\([A, B]\)</span> such that <span class="math">\(1 \leq A \leq B\)</span>. </p>
@@ -229,101 +225,100 @@ which is the condition for convergence. </p>
 <p>This may be illustrated by an example. </p>
 
 <blockquote>
-<p>Consider <span class="math">\(\displaystyle \int_0^\infty \frac{\sin \alpha x}{x} dx \)</span> where <span class="math">\(\alpha\)</span> is real. We have <span class="math">\[\int_{x'}^{x''} \frac{\sin \alpha x}{x} dx=\int_{\alpha x'}^{\alpha x''} \frac{\sin y}{y} dy. \]</span></p>
+<p>Consider <span class="math">\(\displaystyle \int_0^\infty \!\frac{\sin \alpha x}{x} dx \)</span> where <span class="math">\(\alpha\)</span> is real. We have <span class="math">\[\int_{x'}^{x''} \!\frac{\sin \alpha x}{x} dx=\int_{\alpha x'}^{\alpha x''} \!\frac{\sin y}{y} dy. \]</span></p>
 
-<p>Since <span class="math">\(\displaystyle \int_0^\infty \frac{\sin y}{y} dy \)</span> converges we can find <span class="math">\(Y\)</span> such that <span class="math">\(\displaystyle  \int_{y'}^{y''} \frac{\sin \alpha y}{y} dy\)</span> when <span class="math">\(y" \geq y' \geq Y\)</span>. So <span class="math">\(\displaystyle \left| \int_{x'}^{x''} \frac{\sin \alpha x }{x}dx\, \right| < \epsilon\)</span> whenever <span class="math">\(\left|\, ax' \right | > Y\)</span>; if <span class="math">\(\left|\, \alpha \,\right| \geq \delta > 0\)</span>, we therefore get <span class="math">\[\displaystyle \left| \int_{x'}^{x''} \frac{\sin \alpha x }{x}dx\, \right| < \epsilon\]</span>when <span class="math">\(x'' >  x' > X= \left.Y\right/\delta\)</span>; and this choice of <span class="math">\(X\)</span> is independent of <span class="math">\(\alpha\)</span>. So the convergence is
+<p>Since <span class="math">\(\displaystyle \int_0^\infty \!\frac{\sin y}{y} dy \)</span> converges we can find <span class="math">\(Y\)</span> such that <span class="math">\(\displaystyle  \int_{y'}^{y''} \!\frac{\sin y}{y} dy\)</span> when <span class="math">\(y'' \geq y' \geq Y\)</span>. So <span class="math">\(\displaystyle \left| \int_{x'}^{x''} \!\frac{\sin \alpha x }{x}dx\, \right| < \epsilon\)</span> whenever <span class="math">\(\left|\, ax' \right | \geq Y\)</span>; if <span class="math">\(\left|\, \alpha \,\right| \geq \delta > 0\)</span>, we therefore get <span class="math">\[\displaystyle \left| \int_{x'}^{x''} \!\frac{\sin \alpha x }{x}dx\, \right| < \epsilon\]</span>when <span class="math">\(x'' \geq  x' \leq X= \left.Y\right/\delta \:\!\)</span>; and this choice of <span class="math">\(X\)</span> is independent of <span class="math">\(\alpha\)</span>. So the convergence is
 uniform when <span class="math">\(\alpha  \geq \delta > 0\)</span>, and when <span class="math">\(\alpha  \leq -\delta < 0\)</span>,. </p>
 </blockquote>
 
 <blockquote>
-<p><em>Example</em>. <span class="math">\(\displaystyle \int_1^\infty \left\{\int_0^\alpha \sin (\beta^2 x^3)\, d\beta \right\}  dx\)</span> is uniformly convergent in any range of real values of <span class="math">\(\alpha\)</span>. (de la Vallée Poussin.) </p>
+<p><em>Example</em>. <span class="math">\(\displaystyle \int_1^\infty \!\left\{\int_0^\alpha \!\sin (\beta^2 x^3)\, d\beta \right\}  dx\)</span> is uniformly convergent in any range of real values of <span class="math">\(\alpha\)</span>. (de la Vallée Poussin.) </p>
 
 <p>[ Write <span class="math">\(\beta^2x^3 = z\)</span> and observe that <span class="math">\( \left|\int_0^{\alpha^2 x^3} z^{-\frac{1}{2}}\sin z\, dz \, \right|\)</span> does not exceed a constant independent of <span class="math">\(\alpha\)</span> and <span class="math">\(x\)</span> since <span class="math">\(\int_0^\infty z^{-\frac{1}{2}}\sin z\, dz\)</span> converges.] </p>
 </blockquote>
 
 <p>(III) <em>The method of integration by parts.</em></p>
 
-<p>If <span class="math">\[ \int f(x, \alpha)\,dx = \phi (x, \alpha) + \int  \chi( x, \alpha )\, dx\]</span>
-and if <span class="math">\(\phi(x,\alpha) \rightarrow 0\)</span> uniformly as <span class="math">\(x \rightarrow \infty\)</span> and <span class="math">\( \int_a^\infty  \chi(x, \alpha)\,dx \)</span> converges uniformly with regard
-to <span class="math">\(\alpha\)</span>, then obviously <span class="math">\( \int_a^\infty  f(x, \alpha)\,dx \)</span> converges uniformly with regard to <span class="math">\(\alpha\)</span>. </p>
+<p>If <span class="math">\[ \int \! f(x, \boldsymbol{\alpha})\,dx = \phi (x, \boldsymbol{\alpha}) + \int  \!\chi( x, \boldsymbol{\alpha} )\, dx\]</span>
+and if <span class="math">\(\phi(x,\boldsymbol{\alpha}) \rightarrow 0\)</span> uniformly as <span class="math">\(x \rightarrow \infty\)</span> and <span class="math">\( \int_a^\infty  \chi(x, \boldsymbol{\alpha})\,dx \)</span> converges uniformly with regard
+to <span class="math">\(\boldsymbol{\alpha}\)</span>, then obviously <span class="math">\( \int_a^\infty  f(x, \boldsymbol{\alpha})\,dx \)</span> converges uniformly with regard to <span class="math">\(\boldsymbol{\alpha}\)</span>. </p>
 
 <p>(IV) <em>The method of decomposition.</em> </p>
 
 <blockquote>
-<p><em>Example</em>. <span class="math">\[\int_0^\infty \frac{\cos x \sin \alpha x}{x} dx=\frac{1}{2}\int_0^\infty \frac{\sin(\alpha+1)x}{x}dx+\frac{1}{2}\int_0^\infty \frac{\sin(\alpha-1)x}{x}dx; \]</span>
+<p><em>Example</em>. <span class="math">\[\int_0^\infty \!\frac{\cos x \sin \alpha x}{x} dx=\frac{1}{2}\int_0^\infty \!\frac{\sin(\alpha+1)x}{x}dx+\frac{1}{2}\int_0^\infty \!\frac{\sin(\alpha-1)x}{x}dx; \]</span>
 both of the latter integrals converge uniformly in any closed domain of real values of a from which the points <span class="math">\(\alpha = \pm 1\)</span> are excluded. </p>
 </blockquote>
 
 <h4 id="4.44theoremsconcerninguniformlyconvergentinfiniteintegrals.">4.44 Theorems concerning uniformly convergent infinite integrals.</h4>
 
-<p>(I) <em>Let <span class="math">\(\int_a^\infty f(x, \alpha) \,dx\)</span> converge uniformly when <span class="math">\(\alpha\)</span> lies in a domain <span class="math">\(S\)</span>.
-Then, if <span class="math">\(f(x, \alpha)\)</span> is a continuous function of both variables when <span class="math">\(x \geq a\)</span> and <span class="math">\(\alpha\)</span> lies in <span class="math">\(S\)</span>, <span class="math">\(\int_a^\infty f(x, a)\,dx\)</span> is a continuous function<a href="#fn:11" id="fnref:11" title="see footnote" class="footnote">[11]</a> of <span class="math">\(\alpha\)</span>.</em> </p>
+<p>(I) <em>Let <span class="math">\(\int_a^\infty f(x, \boldsymbol{\alpha}) \,dx\)</span> converge uniformly when <span class="math">\(\boldsymbol{\alpha}\)</span> lies in a domain <span class="math">\(S\)</span>.
+Then, if <span class="math">\(f(x, \boldsymbol{\alpha})\)</span> is a continuous function of both variables when <span class="math">\(x \geq a\)</span> and <span class="math">\(\boldsymbol{\alpha}\)</span> lies in <span class="math">\(S\)</span>, <span class="math">\(\int_a^\infty f(x, \boldsymbol{\alpha})\,dx\)</span> is a continuous function<a href="#fn:11" id="fnref:11" title="see footnote" class="footnote">[11]</a> of <span class="math">\(\boldsymbol{\alpha}\)</span>.</em> </p>
 
-<p>For, given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(X\)</span> <em>independent of</em> <span class="math">\(\alpha\)</span>, such that <span class="math">\(\left|\int_\xi^\infty f(x, \alpha) \,dx \right| < \epsilon \)</span> whenever <span class="math">\(\xi \geq X\)</span></p>
+<p>For, given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(X\)</span> <em>independent of</em> <span class="math">\(\boldsymbol{\alpha}\)</span>, such that <span class="math">\(\left|\int_\xi^\infty f(x, \boldsymbol{\alpha}) \,dx \right| < \epsilon \)</span> whenever <span class="math">\(\xi \geq X\)</span></p>
 
-<p>Also we can find <span class="math">\(\delta\)</span> <em>independent of <span class="math">\(x\)</span> and</em> <span class="math">\(\alpha\)</span>, such that
-<span class="math">\[\left|\,f(x, \alpha) - f(x,\alpha') \, \right| < \left. \epsilon \middle/ (X- \alpha)\right. \]</span>
-whenever <span class="math">\(\left|\,\alpha -\alpha' \, \right|< \delta\)</span>. </p>
+<p>Also we can find <span class="math">\(\delta\)</span> <em>independent of <span class="math">\(x\)</span> and</em> <span class="math">\(\boldsymbol{\alpha}\)</span>, such that
+<span class="math">\[\left|\,f(x, \boldsymbol{\alpha}) - f(x,\boldsymbol{\alpha}') \, \right| < \left. \epsilon \middle/ (X- \boldsymbol{\alpha})\right. \]</span>
+whenever <span class="math">\(\left|\,\boldsymbol{\alpha} -\boldsymbol{\alpha}' \, \right|< \delta\)</span>. </p>
 
-<p>That is to say, given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(\delta\)</span> independent of <span class="math">\(\alpha\)</span>, such that
+<p>That is to say, given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(\delta\)</span> independent of <span class="math">\(\boldsymbol{\alpha}\)</span>, such that
 <span class="math">\[
 \begin{align*}
-\left|\,\int_a^\infty \!f(x,\alpha)\, dx - \int_a^\infty \!f(x,\alpha') \,dx\,\right| &\leq \left|\, \int_a^X \!f(x, \alpha) - f(x,\alpha') \,dx\, \right|\\
- & \quad + \left|\, \int_X^\infty \!f(x, \alpha') \, dx \, \right|+ \left|\, \int_X^\infty \!f(x, \alpha) \, dx \, \right|\\
+\left|\,\int_a^\infty \!f(x,\boldsymbol{\alpha})\, dx - \int_a^\infty \!f(x,\boldsymbol{\alpha}') \,dx\,\right| &\leq \left|\, \int_a^X \!f(x, \boldsymbol{\alpha}) - f(x,\boldsymbol{\alpha}') \,dx\, \right|\\
+ & \quad + \left|\, \int_X^\infty \!f(x, \boldsymbol{\alpha}') \, dx \, \right|+ \left|\, \int_X^\infty \!f(x, \boldsymbol{\alpha}) \, dx \, \right|\\
 \\
 \\
 & < 3\epsilon
 \end{align*}
 \]</span>
-whenever <span class="math">\(\left|\,\alpha -\alpha' \, \right|< \delta\)</span>; and this is the condition for continuity. </p>
+whenever <span class="math">\(\left|\,\boldsymbol{\alpha} -\boldsymbol{\alpha}' \, \right|< \delta\)</span>; and this is the condition for continuity. </p>
 
-<p>(II) If <span class="math">\(f (x, \alpha)\)</span> satisfies the same conditions as in (I), and if a lies in <span class="math">\(S\)</span>
-when <span class="math">\(A \leq \alpha \leq B\)</span>, then
-<span class="math">\[\int_A^B \left\{\int_a^\infty \!f(x,\alpha)\, dx \right\} d\alpha = \int_a^\infty \left\{\int_A^B \!f(x,\alpha)\, d\alpha \right\} dx.\]</span></p>
+<h6 id="4.44ii">(II) If <span class="math">\(f (x, \boldsymbol{\alpha})\)</span> satisfies the same conditions as in (I), and if <span class="math">\(\boldsymbol{\alpha}\)</span> lies in <span class="math">\(S\)</span> when <span class="math">\(A \leq \boldsymbol{\alpha} \leq B\)</span>, then <span class="math">\[\int_A^B \!\left\{\int_a^\infty \!f(x,\boldsymbol{\alpha})\, dx \right\} d\boldsymbol{\alpha} = \int_a^\infty \!\left\{\int_A^B \!f(x,\boldsymbol{\alpha})\, d\boldsymbol{\alpha} \right\} dx.\]</span></h6>
 
 <p>For, by <a href="#4.3doubleintegralsandrepeatedintegrals.">§4.3</a>,
-<span class="math">\[\int_A^B \left\{\int_a^\xi \!f(x,\alpha)\, dx \right\} d\alpha = \int_a^\xi \left\{\int_A^B \!f(x,\alpha)\, d\alpha \right\} dx.\]</span>
+<span class="math">\[\int_A^B \!\left\{\int_a^\xi \!f(x,\boldsymbol{\alpha})\, dx \right\} d\boldsymbol{\alpha} = \int_a^\xi \left\{\int_A^B \!f(x,\boldsymbol{\alpha})\, d\boldsymbol{\alpha} \right\} dx.\]</span>
 Therefore
-<span class="math">\[\left|\,\int_A^B \left\{\int_a^\infty \!f(x,\alpha)\, dx \right\} d\alpha - \int_a^\xi \left\{\int_A^B \!f(x,\alpha)\, d\alpha \right\} dx\,\right|\]</span>
+<span class="math">\[\left|\,\int_A^B \!\left\{\int_a^\infty \!f(x,\boldsymbol{\alpha})\, dx \right\} d\boldsymbol{\alpha} - \int_a^\xi \left\{\int_A^B \!f(x,\boldsymbol{\alpha})\, d\boldsymbol{\alpha} \right\} dx\,\right|\]</span>
 <span class="math">\[
 \begin{align*}
-\qquad \qquad \qquad \quad \qquad &=\left|\,\int_A^B \left\{\int_\xi^\infty \!f(x,\alpha)\, dx \right\} d\alpha\,\right| \\
-&<\int_A^B \epsilon d\alpha < \epsilon (B-A)
+\qquad \qquad \qquad \quad \qquad &=\left|\,\int_A^B \!\left\{\int_\xi^\infty \!f(x,\boldsymbol{\alpha})\, dx \right\} d\boldsymbol{\alpha}\,\right| \\
+&<\int_A^B \!\epsilon d\boldsymbol{\alpha} < \epsilon (B-A)
 \end{align*}
 \]</span>
 for all sufficiently large values of <span class="math">\(\xi\)</span>. </p>
 
 <p>But, from <a href="CMA02-1-Limits.html#limits">§2.1</a> and <a href="#4.41infiniteintegralsofcontinuousfunctions.conditionsforconvergence.">§4.41</a>, this is the condition that
-<span class="math">\[\lim_{\xi \rightarrow \infty} \int_a^\xi \left\{\int_A^B \!f(x,\alpha)\, d\alpha \right\} dx\]</span>
+<span class="math">\[\lim_{\xi \rightarrow \infty} \int_a^\xi \left\{\int_A^B \!f(x,\boldsymbol{\alpha})\, d\boldsymbol{\alpha} \right\} dx\]</span>
 should exist, and be equal to
-<span class="math">\[\int_A^B \left\{\int_a^\infty \!f(x,\alpha)\, dx \right\} d \alpha.\]</span></p>
+<span class="math">\[\int_A^B \!\left\{\int_a^\infty \!f(x,\boldsymbol{\alpha})\, dx \right\} d \boldsymbol{\alpha}.\]</span></p>
 
 <blockquote>
-<h6 id="4.44corollary"><em>Corollary</em>. The equation <span class="math">\(\displaystyle \frac{d}{d\alpha} \int_a^\infty \!\phi(x,\alpha)\,dx  = \int_a^\infty \!\frac{\partial \phi}{\partial \alpha}dx\)</span> is true if the integral on the right converges uniformly and the integrand is a continuous function of both variables, when <span class="math">\(x \geq \alpha\)</span> and <span class="math">\(\alpha\)</span> lies in a domain <span class="math">\(S\)</span>, and if the integral on the left is convergent.</h6>
+<h6 id="4.44corollary"><em>Corollary</em>. The equation <span class="math">\(\displaystyle \frac{d}{d\boldsymbol{\alpha}} \int_a^\infty \!\phi(x,\boldsymbol{\alpha})\,dx  = \int_a^\infty \!\frac{\partial \phi}{\partial \boldsymbol{\alpha}}dx\)</span> is true if the integral on the right converges uniformly and the integrand is a continuous function of both variables, when <span class="math">\(x \geq a\)</span> and <span class="math">\(\boldsymbol{\alpha}\)</span> lies in a domain <span class="math">\(S\)</span>, and if the integral on the left is convergent.<a href="#fn:12" id="fnref:12" title="see footnote" class="footnote">[12]</a></h6>
 
-<p>Let <span class="math">\(A\)</span> be a point of <span class="math">\(S\)</span>, and let <span class="math">\(\frac{\partial \phi}{\partial \alpha}=f(x, \alpha)\)</span>, so that, by <a href="CMA04-1-Integration.html#4.13example3">§4.13 example 3</a>,
-<span class="math">\[\int_A^\alpha \!f(x, \alpha')\,d\alpha' = \phi(x,\alpha)-\phi(x,A).\]</span>
-Then <span class="math">\( \int_a^\infty \left\{\int_A^\alpha f(x,\alpha')\, d\alpha' \right\} d x\)</span> converges, that is <span class="math">\(\int_a^\infty \left\{ \phi(x,\alpha)-\phi(x,A) \right\} dx\)</span> converges, and therefore, since <span class="math">\(\int_a^\infty f(x,\alpha)\,dx\)</span> converges, so does <span class="math">\(\int_a^\infty f(x,A)\,dx\)</span>.<a href="#fn:12" id="fnref:12" title="see footnote" class="footnote">[12]</a> </p>
+<p>Let <span class="math">\(A\)</span> be a point of <span class="math">\(S\)</span>, and let <span class="math">\(\frac{\partial \phi}{\partial \boldsymbol{\alpha}}=f(x, \boldsymbol{\alpha})\)</span>, so that, by <a href="CMA04-1-Integration.html#4.13example3">§4.13 example 3</a>,
+<span class="math">\[\int_A^\boldsymbol{\alpha} \!f(x, \boldsymbol{\alpha}')\,d\boldsymbol{\alpha}' = \phi(x,\boldsymbol{\alpha})-\phi(x,A).\]</span>
+Then <span class="math">\( \int_a^\infty \left\{\int_A^\boldsymbol{\alpha} f(x,\boldsymbol{\alpha}')\, d\boldsymbol{\alpha}' \right\} d x\)</span> converges,<a href="#fn:13" id="fnref:13" title="see footnote" class="footnote">[13]</a> that is <span class="math">\(\int_a^\infty \left\{ \phi(x,\boldsymbol{\alpha})-\phi(x,A) \right\} dx\)</span> converges, and therefore, since <span class="math">\(\int_a^\infty \phi(x,\boldsymbol{\alpha})\,dx\)</span> converges, so does <span class="math">\(\int_a^\infty \phi(x,A)\,dx\)</span>.</p>
 </blockquote>
 
 <blockquote>
 <p>Then <span class="math">\[
 \begin{align*}
-\frac{d}{d\alpha}\left[\int_a^\infty \phi(x,\alpha)\, dx \right]&=\frac{d}{d\alpha}\left[\int_a^\infty \left\{\phi(x,\alpha)-\phi(x,A)\right\}\,dx\right] \\
-&=\frac{d}{d\alpha}\left[\int_a^\infty \left\{\int_A^\alpha f(x,\alpha')\,d\alpha'\right\}\,dx\right] \\
-&=\frac{d}{d\alpha} \int_A^\alpha \left\{\int_a^\infty f(x,\alpha')\,dx\right\}\,d\alpha' \\
-&=\int_a^\infty f(x,\alpha)\, dx = \int_a^\infty \frac{\partial \phi}{\partial \alpha} dx,
+\frac{d}{d\boldsymbol{\alpha}}\left[\int_a^\infty \!\phi(x,\boldsymbol{\alpha})\, dx \right]&=\frac{d}{d\boldsymbol{\alpha}}\left[\int_a^\infty \!\left\{\phi(x,\boldsymbol{\alpha})-\phi(x,A)\right\}\,dx\right] \\
+&=\frac{d}{d\boldsymbol{\alpha}}\left[\int_a^\infty \!\left\{\int_A^\boldsymbol{\alpha}\! f(x,\boldsymbol{\alpha}')\,d\boldsymbol{\alpha}'\right\}\,dx\right] \\
+&=\frac{d}{d\boldsymbol{\alpha}} \int_A^\boldsymbol{\alpha} \left\{\int_a^\infty \! f(x,\boldsymbol{\alpha}')\,dx\right\}\,d\boldsymbol{\alpha}' \\
+&=\int_a^\infty \! f(x,\boldsymbol{\alpha})\, dx = \int_a^\infty \!\frac{\partial \phi}{\partial \boldsymbol{\alpha}} dx,
 \end{align*}
 \]</span>
-which is the required result; the change of the order of the integrations has been justified above, and the differentiation of <span class="math">\(\int_A^\alpha \)</span> with regard to <span class="math">\(\alpha\)</span> is justified by <a href="#4.44theoremsconcerninguniformlyconvergentinfiniteintegrals.">§4.44 (I)</a> and <a href="CMA04-1-Integration.html#4.13example3">§4.13 example 3</a>. </p>
+which is the required result; the change of the order of the integrations has been justified above, and the differentiation of <span class="math">\(\int_A^\boldsymbol{\alpha} \)</span> with regard to <span class="math">\(\boldsymbol{\alpha}\)</span> is justified by <a href="#4.44theoremsconcerninguniformlyconvergentinfiniteintegrals.">§4.44 (I)</a> and <a href="CMA04-1-Integration.html#4.13example3">§4.13 example 3</a>. </p>
 </blockquote>
 
 </div>
 </div>
 
 <div id="footer">
-<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
-<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/"> GitHub.</a></h3>
+<h4>All content is either in the public domain or licensed under <a href="http://creativecommons.org/licenses/by/3.0/us/">a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h4>Feel free report typos and other issues on <span style="font-weight: 400;"><a href="https://github.com/CdLbB/cdlbb.github.com/tree/master/WandW">GitHub</a></span> or by email at <span style="font-weight: 400;"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#110;&#x69;&#x74;&#104;&#x61;&#114;&#100;&#x74;&#x40;&#x75;&#x77;&#46;&#101;&#x64;&#x75;">&#x6e;&#x69;&#116;&#x68;&#x61;&#114;&#100;&#x74;&#x40;&#117;&#119;&#x2e;&#101;&#x64;&#x75;</a></span>.</h4>
 </div>
 
 <div id="navint" class="navigation" style="visibility:hidden;" >
@@ -492,7 +487,7 @@ which is the required result; the change of the order of the integrations has be
 </li>
 
 <li id="fn:3">
-<p>The upper bound of <span class="math">\(f(x, y)\)</span> in the rectangle <span class="math">\(A_{m,\mu}\)</span> is not less than the upper bound of <span class="math">\(f(x, y)\)</span> on that portion of the line <span class="math">\(x = \xi\)</span> which lies in the rectangle. <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p>The upper bound of <span class="math">\(f(x, y)\)</span> in the rectangle <span class="math">\(A_{m,\:\! \mu}\)</span> is not less than the upper bound of <span class="math">\(f(x, y)\)</span> on that portion of the line <span class="math">\(x = \xi\)</span> which lies in the rectangle. <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:4">
@@ -524,11 +519,15 @@ which is the required result; the change of the order of the integrations has be
 </li>
 
 <li id="fn:11">
-<p>This result is due to Stokes. His statement is that the integral is a continuous function of <span class="math">\(\alpha\)</span> if it does not &#8216;converge infinitely slowly&#8217;. <a href="#fnref:11" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p>This result is due to Stokes. His statement is that the integral is a continuous function of <span class="math">\(\boldsymbol{\alpha}\)</span> if it does not &#8216;converge infinitely slowly&#8217;. <a href="#fnref:11" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:12">
-<p><em>Editor&#8217;s Note</em>: This sentence muddles the argument a bit. Since <span class="math">\(\alpha\)</span> and <span class="math">\(A\)</span> are in <span class="math">\(S\)</span>, the premise of the theorem assumes that <span class="math">\(\int_a^\infty f(x,\alpha)\,dx\)</span> and <span class="math">\(\int_a^\infty f(x,A)\,dx\)</span> converge. And <span class="math">\( \int_a^\infty \left\{\int_A^\alpha f(x,\alpha')\, d\alpha' \right\} d x\)</span> converges either by implication or by <a href="#4.44theoremsconcerninguniformlyconvergentinfiniteintegrals.">(I)</a> and <a href="CMA04-1-Integration.html#4.2example2">§4.2 example 2</a>. <a href="#fnref:12" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p><em>Editor&#8217;s Note</em>: The proof below only assumes <span class="math">\(  \int_a^\infty \!\phi(x,\boldsymbol{\alpha})\,dx\)</span> is convergent in a small neighborhood of <span class="math">\(\boldsymbol{\alpha}\)</span> so that its derivative is meaningful. <a href="#fnref:12" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:13">
+<p><em>Editor&#8217;s Note</em>: By assumption, <span class="math">\( \int_a^\infty  f(x,\boldsymbol{\alpha}')\, d x\)</span> is convergent and, by <a href="#4.44theoremsconcerninguniformlyconvergentinfiniteintegrals.">(I)</a>, it is continuous. Since the conditions of <a href="#4.44ii">(II)</a> are satisfied, <span class="math">\( \int_A^\boldsymbol{\alpha} \left\{\int_a^\infty f(x,\boldsymbol{\alpha}')\, dx \right\} d\boldsymbol{\alpha}'\)</span> is equal to <span class="math">\(\int_a^\infty \left\{\int_A^\boldsymbol{\alpha} f(x,\boldsymbol{\alpha}')\, d\boldsymbol{\alpha}' \right\} d x \)</span>, which must be convergent. <a href="#fnref:13" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 </ol>

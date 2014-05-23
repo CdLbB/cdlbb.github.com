@@ -405,13 +405,13 @@ such that \\(a \leq \xi \leq b\\) and
 
 ###4.2 Differentiation of integrals containing a parameter. ###
 
-The equation<a class="marginmark" onClick="toggleHide('mn:14,-13');">&#91;14&#93;</a> \\(\displaystyle \frac{d}{d\alpha}\int_a^b \! f(x, \alpha) \, dx = \int_a^b \!\frac{\partial f}{\partial \alpha} \, dx\\) is true *if \\(f(x, \alpha)\\) possesses a Riemann integral with respect to \\(x\\) and \\(f_{\alpha}\,  ( = \frac{\partial f}{\partial \alpha})\\) is a continuous function of both<a class="marginmark" onClick="toggleHide('mn:15,-8');">&#91;15&#93;</a> of the variables \\(x\\) and \\(\alpha\\)*. 
+The equation<a class="marginmark" onClick="toggleHide('mn:14,-13');">&#91;14&#93;</a> \\(\displaystyle \frac{d}{d\boldsymbol{\alpha}}\int_a^b \! f(x, \boldsymbol{\alpha}) \, dx = \int_a^b \!\frac{\partial f}{\partial \boldsymbol{\alpha}} \, dx\\) is true *if \\(f(x, \boldsymbol{\alpha})\\) possesses a Riemann integral with respect to \\(x\\) and \\(f_{\boldsymbol{\alpha}}\,  ( = \frac{\partial f}{\partial \boldsymbol{\alpha}})\\) is a continuous function of both<a class="marginmark" onClick="toggleHide('mn:15,-8');">&#91;15&#93;</a> of the variables \\(x\\) and \\(\boldsymbol{\alpha}\\)*. 
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:14,-13" style="margin-top: -13em; margin-bottom: -13em;"><a class="marginmark">&#91;14&#93;</a>This formula was given by Leibniz, without specifying the restrictions laid on \\(f(x, \alpha)\\).<a onClick="hideIt('mn:14,-13')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:14,-13" style="margin-top: -13em; margin-bottom: -13em;"><a class="marginmark">&#91;14&#93;</a>This formula was given by Leibniz, without specifying the restrictions laid on \\(f(x, \boldsymbol{\alpha})\\).<a onClick="hideIt('mn:14,-13')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -432,15 +432,15 @@ The equation<a class="marginmark" onClick="toggleHide('mn:14,-13');">&#91;14&#93
 <div markdown=1 class="contenttext">
 
 For 
-\\[\frac{d}{d\alpha}\int_a^b \! f(x,\alpha)\,dx = \lim_{h \rightarrow 0} \int_a^b \frac{f(x,\alpha+h)-f(x, \alpha)}{h} dx\\]
-if this limit exists. But, by the first mean value theorem, since \\(f_{\alpha}\\) is a 
-continuous function of \\(\alpha\\), the second integrand is \\(f_{\alpha} (x, a + \theta h)\\), where \\(0 \leq \theta \leq 1\\).
+\\[\frac{d}{d\boldsymbol{\alpha}}\int_a^b \! f(x,\boldsymbol{\alpha})\,dx = \lim_{h \rightarrow 0} \int_a^b \frac{f(x,\boldsymbol{\alpha}+h)-f(x, \boldsymbol{\alpha})}{h} dx\\]
+if this limit exists. But, by the first mean value theorem, since \\(f_{\boldsymbol{\alpha}}\\) is a 
+continuous function of \\(\boldsymbol{\alpha}\\), the second integrand is \\(f_{\boldsymbol{\alpha}} (x, a + \theta h)\\), where \\(0 \leq \theta \leq 1\\).
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:16,+9" style="margin-top: +9em; margin-bottom: +9em;"><a class="marginmark">&#91;16&#93;</a>It is obvious that it would have been sufficient to assume that \\(f_{\alpha}\\) had a Riemann integral and was a continuous function of \\(\alpha\\) (the continuity being uniform with respect to \\(x\\)), instead of assuming that \\(f_{\alpha}\\)  was a continuous function of both variables. This is actually done by Hobson, [*Functions of a Real Variable*](https://archive.org/details/theoryfunctions00hobsgoog), p. 599.<a onClick="hideIt('mn:16,+9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:16,+9" style="margin-top: +9em; margin-bottom: +9em;"><a class="marginmark">&#91;16&#93;</a>It is obvious that it would have been sufficient to assume that \\(f_{\boldsymbol{\alpha}}\\) had a Riemann integral and was a continuous function of \\(\boldsymbol{\alpha}\\) (the continuity being uniform with respect to \\(x\\)), instead of assuming that \\(f_{\boldsymbol{\alpha}}\\)  was a continuous function of both variables. This is actually done by Hobson, [*Functions of a Real Variable*](https://archive.org/details/theoryfunctions00hobsgoog), p. 599.<a onClick="hideIt('mn:16,+9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -448,28 +448,28 @@ continuous function of \\(\alpha\\), the second integrand is \\(f_{\alpha} (x, a
 
 <div markdown=1 class="contenttext">
 
-But, for any given \\(\epsilon\\), a number \\(\delta\\) *independent* of \\(x\\) exists (since the continuity of \\(f_{\alpha}\\) is uniform<a class="marginmark" onClick="toggleHide('mn:16,+9');">&#91;16&#93;</a> with respect to the variable \\(x\\)) such that 
-\\[\left|\, f_{\alpha}(x, \alpha') - f_{\alpha}(x, \alpha) \,\right| < \left. \epsilon \middle/ (b-a)\right. ,\\] 
-whenever \\(\left|\, \alpha' - \alpha \,\right| < \delta\\). 
+But, for any given \\(\epsilon\\), a number \\(\delta\\) *independent* of \\(x\\) exists (since the continuity of \\(f_{\boldsymbol{\alpha}}\\) is uniform<a class="marginmark" onClick="toggleHide('mn:16,+9');">&#91;16&#93;</a> with respect to the variable \\(x\\)) such that 
+\\[\left|\, f_{\boldsymbol{\alpha}}(x, \boldsymbol{\alpha}') - f_{\boldsymbol{\alpha}}(x, \boldsymbol{\alpha}) \,\right| < \left. \epsilon \middle/ (b-a)\right. ,\\] 
+whenever \\(\left|\, \boldsymbol{\alpha}' - \boldsymbol{\alpha} \,\right| < \delta\\). 
 
 
 Taking \\(\left|\, h \,\right| < \delta\\) we see that \\(\left| \,\theta h \,\right| < \delta\\), and so *whenever* \\(\left|\, h \,\right| < \delta\\), 
-\\[\left|\int_a^b \frac{f(x,\alpha+h)-f(x, \alpha)}{h} dx - \int_a^b \! f_{\alpha}(x, \alpha)\,dx \,\right|\\]
+\\[\left|\int_a^b \frac{f(x,\boldsymbol{\alpha}+h)-f(x, \boldsymbol{\alpha})}{h} dx - \int_a^b \! f_{\boldsymbol{\alpha}}(x, \boldsymbol{\alpha})\,dx \,\right|\\]
 \\[
-\begin{align*} \qquad \qquad \qquad &\leq \int_a^b \!\left|\, f_{\alpha}(x, \alpha+\theta h) - f_{\alpha}(x, \alpha)\,\right|\, dx.\\
+\begin{align*} \qquad \qquad \qquad &\leq \int_a^b \!\left|\, f_{\boldsymbol{\alpha}}(x, \boldsymbol{\alpha}+\theta h) - f_{\boldsymbol{\alpha}}(x, \boldsymbol{\alpha})\,\right|\, dx.\\
 \\
 & < \epsilon.
 \end{align*}
 \\] 
 
 Therefore by the definition of a limit of a function ([&#167;3.2](CMA03-1-ContinuousFnsMN.html#continuityoffunctionsofrealvariables)), 
-\\[\lim_{h \rightarrow 0} \int_a^b \frac{f(x,\alpha+h)-f(x, \alpha)}{h} dx\\]
-exists and is equal to \\(\displaystyle \int_a^b \! f_{\alpha} \,dx\\). 
+\\[\lim_{h \rightarrow 0} \int_a^b \frac{f(x,\boldsymbol{\alpha}+h)-f(x, \boldsymbol{\alpha})}{h} dx\\]
+exists and is equal to \\(\displaystyle \int_a^b \! f_{\boldsymbol{\alpha}} \,dx\\). 
 
->*Example* 1. If \\(a, b\\) be not constants but functions of \\(\alpha\\) with continuous differential coefficients, shew that
->\\[\frac{d}{d\alpha}\int_a^b \! f(x, \alpha)\, dx = f(b, \alpha)\frac{db}{d\alpha}-f(a, \alpha)\frac{da}{d\alpha}+\int_a^b \! \frac{\partial f}{\partial \alpha} dx.\\]
+>*Example* 1. If \\(a, b\\) be not constants but functions of \\(\boldsymbol{\alpha}\\) with continuous differential coefficients, shew that
+>\\[\frac{d}{d\boldsymbol{\alpha}}\int_a^b \! f(x, \boldsymbol{\alpha})\, dx = f(b, \boldsymbol{\alpha})\frac{db}{d\boldsymbol{\alpha}}-f(a, \boldsymbol{\alpha})\frac{da}{d\boldsymbol{\alpha}}+\int_a^b \! \frac{\partial f}{\partial \boldsymbol{\alpha}} dx.\\]
 
->######*Example* 2. If \\(f(x, \alpha)\\) is a continuous function of both variables, \\(\displaystyle \int_a^b \!  f(x, \alpha)\,dx\\) is a continuous function of \\(\alpha\\). [4.2example2]######
+>######*Example* 2. If \\(f(x, \boldsymbol{\alpha})\\) is a continuous function of both variables, \\(\displaystyle \int_a^b \!  f(x, \boldsymbol{\alpha})\,dx\\) is a continuous function of \\(\boldsymbol{\alpha}\\). [4.2example2]######
 
 </div>
 
