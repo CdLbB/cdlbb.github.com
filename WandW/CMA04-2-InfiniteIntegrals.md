@@ -34,7 +34,7 @@ By [§4.2 example 2](CMA04-1-Integration.html#4.2example2), it is clear[^clearly
 \\[\int_a^b \!\left\{\int_\alpha^\beta \! f(x,y)\, dy \right\}dx=\int_\alpha^\beta \!\left\{\int_a^b \! f(x,y)\, dx \right\}dy\\]
 both exist. These are called *repeated integrals*. 
 
-[^clearly]: *Editor's Note*: It is only clear that both integrals exist. To show they are equal requires an argument. We can use the existence  of both integrals, the first mean value theorem, and the uniform continuity \\(f(x,y)\\) on the region \\([a,b] \times [\alpha, \beta]\\) to demonstrate the equality. Or  we can, as the authors do later, show that they are both equal the *double integral* defined below.
+[^clearly]: *Editor's Note*: It is only clear that both integrals exist. To show they are equal requires an argument. We can use the existence  of both integrals, the [first mean value theorem](CMA04-1-Integration.html#4.14meanvaluetheorems.), and the uniform continuity \\(f(x,y)\\) on the region \\([a,b] \times [\alpha, \beta]\\) to demonstrate the equality. Or  we can, as the authors do later, show that they are both equal the *double integral* defined below.
 
 Also, as in [§3.62](CMA03-3-Heine-Borel.html#arealfunctionofarealvariablecontinuousinaclosedintervalattainsitsupperbound.), \\(f(x, y)\\), being a continuous function of both variables, 
 attains its upper and lower bounds. 
@@ -184,7 +184,7 @@ converges so does the series ([§2.2](CMA02-1-Limits.html#thelimitofanincreasing
 
 [^bertrand,+2]: [*Journal de Math.* **vii.** (1842)](http://gallica.bnf.fr/ark:/12148/bpt6k163860.image), pp. 38, 39.
 
-(III) *Bertrand's[^bertrand,+2] test.* If \\(f(x) = O(x^{\:\!\lambda-1})\\),  \\(\int_a^\infty f(x)\,dx\\) converges when \\(\lambda < 0\\); and if \\(f(x) = O(x^{-1} \{\log x\}^{\lambda-1})\\), \\(\int_a^\infty f(x)\,dx\\)  converges when \\(\lambda < 0\\). 
+######(III) *Bertrand's[^bertrand,+2] test.* If \\(f(x) = O(x^{\:\!\lambda-1})\\),  \\(\int_a^\infty f(x)\,dx\\) converges when \\(\lambda < 0\\); and if \\(f(x) = O(x^{-1} \{\log x\}^{\lambda-1})\\), \\(\int_a^\infty f(x)\,dx\\)  converges when \\(\lambda < 0\\). [4.43bertrandstest]######
 
 These results are particular cases of the comparison test given in (I). 
 
@@ -220,8 +220,7 @@ which is the condition for convergence.
 
 [^osgoodpoussin,+3]: This name is due to Osgood. 
 
-(I) *De la Vallée Poussin's test.[^osgoodpoussin,+3]* The reader will easily see by using the reasoning of [§3.34](CMA03-2-Uniformity.html#aconditionduetoweierstrassforuniformconvergence.) that \\(\int_a^\infty f(x,\boldsymbol{\alpha})\,dx\\) converges uniformly with regard to \\(\boldsymbol{\alpha}\\) in a domain of values of \\(\boldsymbol{\alpha}\\) if \\(\left| \, f(x,\boldsymbol{\alpha})\, \right| < \mu(x)\\), where \\(\mu(x)\\) is independent of \\(\boldsymbol{\alpha}\\) and \\(\int_a^\infty \mu(x)\,dx\\) converges. 
-[ For, choosing \\(X\\) so that \\(\int_{x'}^{x''} \mu(x)\,dx < \epsilon\\) when  \\(x'' \leq x' \leq X\\), we have   \\(\left|\,\int_{x'}^{x''} f(x,\boldsymbol{\alpha})\,dx\right| < \epsilon\\), and the choice of \\(X\\) is independent of \\(\boldsymbol{\alpha}\\). ] 
+######(I) *De la Vallée Poussin's test.[^osgoodpoussin,+3]* The reader will easily see by using the reasoning of [§3.34](CMA03-2-Uniformity.html#aconditionduetoweierstrassforuniformconvergence.) that \\(\int_a^\infty f(x,\boldsymbol{\alpha})\,dx\\) converges uniformly with regard to \\(\boldsymbol{\alpha}\\) in a domain of values of \\(\boldsymbol{\alpha}\\) if \\(\left| \, f(x,\boldsymbol{\alpha})\, \right| < \mu(x)\\), where \\(\mu(x)\\) is independent of \\(\boldsymbol{\alpha}\\) and \\(\int_a^\infty \mu(x)\,dx\\) converges. ( For, choosing \\(X\\) so that \\(\int_{x'}^{x''} \mu(x)\,dx < \epsilon\\) when  \\(x'' \leq x' \leq X\\), we have   \\(\left|\,\int_{x'}^{x''} f(x,\boldsymbol{\alpha})\,dx\right| < \epsilon\\), and the choice of \\(X\\) is independent of \\(\boldsymbol{\alpha}\\). ) [4.431poussinstest]###### 
 
 >*Example*. \\(\int_0^\infty x^{\alpha-1}e^{-x} dx\\) converges uniformly in any interval \\([A, B]\\) such that \\(1 \leq A \leq B\\). 
 

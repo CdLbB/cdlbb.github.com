@@ -31,27 +31,28 @@ HTML header:	<script type="text/javascript"
 If \\(\left|\,f(x) \,\right| \rightarrow  \infty\\) as \\(x  \rightarrow a+0\\), then \\(\lim\limits_{\delta \rightarrow +0} \displaystyle \int_{a+\delta}^b \!f(x)\, dx\\) may exist, and is written simply \\( \int_a^b f(x)\, dx\\); this limit is called an *improper integral*. 
 
 If \\(\left|\,f(x)\, \right| \rightarrow \infty\\) as \\(x \rightarrow c\\), where \\(a < c < b\\), then 
-\\[\lim_{\delta \rightarrow +0} \int_a^{c-\delta}  \!f(x)\, dx + \lim_{\delta' \rightarrow +0} \int_{c+\delta'}^b  f(x)\,dx\\] 
+\\[\lim_{\delta \rightarrow +0} \int_a^{c-\delta}  \!f(x)\, dx + \lim_{\delta' \rightarrow +0} \int_{c+\delta'}^b  \! f(x)\,dx\\] 
 may exist; this is also written \\( \int_a^b f(x)\, dx\\), and is also called an improper integral; it might however happen that neither of these limits exists when 
 \\(\delta, \,\delta' \rightarrow 0\\) independently, but 
-\\[\lim_{\delta \rightarrow +0} \left\{ \int_a^{c-\delta} \!f(x)\,dx+\int_{c+\delta}^b f(x)\,dx \right\} \\]
+\\[\lim_{\delta \rightarrow +0} \left\{ \int_a^{c-\delta} \!f(x)\,dx+\int_{c+\delta}^b \! f(x)\,dx \right\} \\]
 exists; this is called 'Cauchy's principal value of \\( \int_a^b f(x)\, dx\\)' and is written for brevity \\( P \int_a^b f(x)\, dx\\). 
 
 Results similar to those of [§§4.4-4.44](CMA04-2-InfiniteIntegrals.html#4.4infiniteintegrals.) may be obtained for improper 
 integrals. But all that is required in practice is (i) the idea of absolute 
-convergence, (ii) the analogue of Bertrand's test for convergence, (iii) the 
-analogue of de la Vallée Poussin's test for uniformity of convergence. The 
+convergence, (ii) the analogue of [Bertrand's test](CMA04-2-InfiniteIntegrals.html#4.43bertrandstest) for convergence, (iii) the 
+analogue of [de la Vallée Poussin's test](CMA04-2-InfiniteIntegrals.html#4.431poussinstest) for uniformity of convergence. The 
 construction of these is left to the reader, as is also the consideration 
 of integrals in which the integrand has an infinite limit at more than one 
 point of the range of integration.[^improperdetails,-2] 
 
-[^improperdetails,-2]: For a detailed discussion of improper integrals, the reader is referred either to [Hobson's](https://archive.org/details/theoryfunctions00hobsgoog) or to [Pierpont's *Functions of a Real Variable*](https://archive.org/details/lecturesonthethe032088mbp). The connexion between infinite integrals and improper integrals is exhibited by Bromwich, [*Infinite Series*](https://archive.org/details/introductiontoth00bromuoft), §164.
+[^improperdetails,-2]: For a detailed discussion of improper integrals, the reader is referred either to [Hobson's](https://archive.org/details/theoryfunctions00hobsgoog) or to [Pierpont's *Functions of a Real Variable*](https://archive.org/details/lecturesonthethe032088mbp). The connexion between infinite integrals and improper integrals is exhibited by Bromwich, [*Infinite Series*](https://archive.org/details/introductiontoth00bromuoft), §164 (p. 414--416).
 
 >######*Examples*.[4.5examples]###### 
 \\[
 \begin{align*}
 &(1) \quad  \int_0^\pi \! x^{-\frac{1}{2}} \cos x\, dx \,\text{ is an improper integral.} \\
-&(2) \quad  \int^1 \! x^{\lambda-1} (1-x)^{\mu-1} dx \, \text{ is an improper integral}\\  & \qquad \qquad \text{ if } 0 < \lambda < 1, \,0 < \mu <1. \\
+&(2) \quad  \int^1 \! x^{\lambda-1} (1-x)^{\mu-1} dx \, \text{ is an improper integral if } 0 < \lambda < 1, \,0 < \mu <1. \\ 
+& \qquad \qquad \text{It does not converge for negative values of }\lambda \text{ and } \mu .\\
 &(3) \quad P \int_0^2 \!\frac{x^{\alpha-1}}{1-x} dx \,\text{ is the principal value of an improper integral}\\ & \qquad \qquad  \text{when } 0 < \alpha <1.  
 \end{align*}
 \\]
@@ -88,7 +89,7 @@ this triangle \\(\phi(x, y)\\) is continuous, and hence, by [§4.3 corollary](CM
 Now 
 \\[
 \begin{align*}
-&\int_\delta^{1-2\delta} \! dx \left\{\int_\delta^{1-x} \!\phi(x,y)\,dy \right\}\\
+&\int_\delta^{1-2\delta} \! dx \left\{\int_0^{1-x} \!\phi(x,y)\,dy \right\}\\
 &\qquad  =\int_\delta^{1-2\delta}\! dx \left\{\int_\delta^{1-x-\delta} \! \phi(x,y)\,dy \right\} + \int_\delta^{1-2\delta} \! I_1 \, dx + \int_\delta^{1-2\delta} \! I_2 \,dx,
 \end{align*}
 \\]
@@ -102,22 +103,22 @@ But \\[
 \\]
 since \\[  (1-x-y)^{\nu-1} \leq (1-x-\delta)^{\nu-1}. \\] 
 
-[^defineb,+1]: \\(\int_0^1 x_1^{\lambda-1} (1-x)^{\nu-1} dx_1= B (\lambda, \nu)\\) exists if \\(\lambda > 0\\), \\(\nu > 0\\) ([§4.5 example 2](#4.5examples)). 
+[^defineb,+1]: \\(\int_0^1 x_1^{\:\!\lambda-1} (1-x)^{\nu-1} dx_1= B (\lambda, \nu)\\) exists if \\(\lambda > 0\\), \\(\nu > 0\\) ([§4.5 example 2](#4.5examples)). 
 
 Therefore, writing \\(x = (1 - \delta)x_1\\), we have[^defineb,+1] 
 \\[
 \begin{align*}
-\left|\,\int_0^{1-2\delta} \! I_1 \, dx\, \right| & \leq M \delta^\mu \mu^{-1}  \int_0^{1-\delta} \! x^{\lambda-1} (1-x-\delta)^{\nu-1} dx \\
+\left|\,\int_\delta^{1-2\delta} \! I_1 \, dx\, \right| & \leq M \delta^\mu \mu^{-1}  \int_0^{1-\delta} \! x^{\lambda-1} (1-x-\delta)^{\nu-1} dx \\
 & \leq M \delta^\mu \mu^{-1} (1-\delta)^{\lambda+\nu-1} \int_0^1 \! x_1^{\lambda-1} (1-x_1)^{\nu-1} dx_1 \\
 & < M \delta^\mu \mu^{-1} (1-\delta)^{\lambda+\nu-1} B(\lambda,\nu) \rightarrow 0 \text{ as } \delta \rightarrow 0.
 \end{align*}
 \\]  The reader will prove similarly that \\(\int_\delta^{1-2\delta}I_2\, dx \rightarrow 0\\) as \\(\delta \rightarrow 0\\). 
 
-[^exists,+1]: The repeated integral exists, and is, in fact, absolutely convergent; for \\[\int_0^{1-x}\! \left|\, x^{\lambda-1} y^{\mu-1} (1 -x-y)^{\nu-1} f(x,y)\,\right|\, dy\\]\\[ \qquad \quad  < Mx^{\lambda-1} (1-x)^{\lambda+\nu-1} \int_0^1\! s^{\mu-1} (1-s)^{\nu-1} ds,\\]writing \\(y = (1 -x)s\\); and \\[ \int_0^1 \!Mx^{\lambda-1} (1-x)^{\lambda+\nu-1} \int_0^1\! s^{\mu-1} (1-s)^{\nu-1} ds \;\text{ exists.}\\] And since the integral exists, its value which is \\(\lim\limits_{\delta,\,\epsilon \rightarrow 0} \int_\delta^{1-\epsilon}\\) may be written \\(\lim\limits_{\delta \rightarrow 0} \int_\delta^{1-2\delta}\\).
+[^exists,+1]: The repeated integral exists, and is, in fact, absolutely convergent; for \\[\int_0^{1-x}\! \left|\, x^{\lambda-1} y^{\mu-1} (1\! -\! x\! -\! y)^{\nu-1} f(x,y)\,\right|\, dy\\]\\[<  Mx^{\lambda-1} (1\! -\! x)^{\lambda+\nu-1} \!\!\int_0^1\!\!\! s^{\mu-1} (1\! -\! s)^{\nu-1} ds,\\]writing \\(y = (1\! -\! x)s\\); and \\[ \int_0^1 \!\!\! Mx^{\lambda-1} (1\!-\! x)^{\lambda+\nu-1} \!\!\int_0^1\!\!\! s^{\mu-1} (1\! -\! s)^{\nu-1} ds\\]exists. <br><br>And since the integral exists, its value which is \\(\lim\limits_{\delta,\,\epsilon \rightarrow 0} \int_\delta^{1-\epsilon}\\) may be written \\(\lim\limits_{\delta \rightarrow 0} \int_\delta^{1-2\delta}\\).
 
 Hence[^exists,+1] \\[
 \begin{align*}
-\int_0^1 \! dx \left\{\int_\delta^{1-x} \! \phi(x,y)\,dy \right\} & =\lim_{\delta \rightarrow 0}\int_\delta^{1-2\delta} \! dx \left\{\int_\delta^{1-x} \!\phi(x,y)\,dy \right\}\\
+\int_0^1 \! dx \left\{\int_0^{1-x} \! \phi(x,y)\,dy \right\} & =\lim_{\delta \rightarrow 0}\int_\delta^{1-2\delta} \! dx \left\{\int_0^{1-x} \!\phi(x,y)\,dy \right\}\\
 &  =\lim_{\delta \rightarrow 0}\int_\delta^{1-2\delta} \!dx \left\{\int_\delta^{1-x-\delta} \!\phi(x,y)\,dy \right\}\\
 & =\lim_{\delta \rightarrow 0}\int_\delta^{1-2\delta} \!dy \left\{\int_\delta^{1-y-\delta} \!\phi(x,y)\,dx \right\}.
 \end{align*}
@@ -125,7 +126,7 @@ Hence[^exists,+1] \\[
 
 by what has been already proved; but, by a precisely similar piece of work, the last 
 integral is 
-\\[\int_0^1\! dy \left\{\int_\delta^{1-y} \!\phi(x,y)\,dx \right\}.\\]
+\\[\int_0^1\! dy \left\{\int_0^{1-y} \!\phi(x,y)\,dx \right\}.\\]
 We have consequently proved the theorem in question. 
 
 >*Corollary*, Writing \\(\xi = a + (b-a) x\\), \\(\eta = b-(b-a)y\\), we see that, if \\(\phi(\xi,\eta)\\) is continuous, 
@@ -133,7 +134,7 @@ We have consequently proved the theorem in question.
 >&\qquad =\int_a^b \!d\eta \left\{\int_a^\eta \!(\xi-a)^{\lambda-1} (b-\eta)^{\mu-1} (\eta-\xi)^{\nu-1} \phi(\xi,\eta)\,d\xi \right\}\end{align*}\\]
 This is called Dirichlet's formula. 
 
->[**Note**. What are now called infinite and improper integrals were defined by Cauchy, [*Leçons sur le calc. inf.* 1823](http://gallica.bnf.fr/ark:/12148/bpt6k62404287), though the idea of infinite integrals seems to date from Maclaurin (1742). The test for convergence was employed by Chartier (1853). Stokes (1847) distinguished between 'essentially' (absolutely) and non-essentially convergent integrals though he did not give a formal definition. Such a definition was given by Dirichlet in 1854 and 1858 (see his [*Vorlesungen*, 1904](https://archive.org/details/glejeunedirichle00lejeuoft), p. 39). In the early part of the nineteenth century improper integrals received more attention than infinite integrals,- probably because it was not fully realised that an infinite integral is really the *limit* of an integral.] 
+>[**Note**. What are now called infinite and improper integrals were defined by Cauchy, [*Leçons sur le calc. inf.* 1823](http://gallica.bnf.fr/ark:/12148/bpt6k62404287), though the idea of infinite integrals seems to date from Maclaurin (1742). The test for convergence was employed by Chartier (1853). Stokes (1847) distinguished between 'essentially' (absolutely) and non-essentially convergent integrals though he did not give a formal definition. Such a definition was given by Dirichlet in 1854 and 1858 (see his [*Vorlesungen*, 1904](https://archive.org/details/glejeunedirichle00lejeuoft), p. 39). In the early part of the nineteenth century improper integrals received more attention than infinite integrals, probably because it was not fully realised that an infinite integral is really the *limit* of an integral.] 
 
 ###4.6 Complex integration.[^watson,-2][4.6complexintegration.]### 
 
@@ -144,10 +145,10 @@ along a particular path (namely part of the real axis) in the Argand diagram.
 Let \\(f(z)\\), \\((= P + iQ)\\), be a function of a complex variable \\(z\\), which is continuous  along a simple curve *AB* in the Argand diagram. 
 
 Let the equations of the curve be 
-\\[x = x (t),\quad  y = y(t) \quad (a \leq z \leq b).\\] 
+\\[x = x (t),\quad  y = y(t) \quad (a \leq t \leq b).\\] 
 Let \\[x(a) + iy(a) = z_0 ,\quad x(b) + iy(b) = Z.\\] 
 Then if \\(x(t),\, y(t)\\) have continuous differential coefficients,[^assumption,-9] we *define*[^compare,-5] 
-\\(\int_{z_0}^Z  f(z)\, dz\\) taken along the simple curve *AB* to mean 
+\\(\int_{z_{0}}^Z  f(z)\, dz\\) taken along the simple curve *AB* to mean 
 \\[\int_a^b \! (P+iQ)\left(\frac{dx}{dt}+i\frac{dy}{dt}\right) dt.\\]
 
 [^assumption,-9]: This assumption will be made throughout the subsequent work.
@@ -160,7 +161,7 @@ It obviously exists if \\(\frac{dx}{dt}\\), \\(\frac{dy}{dt}\\)  are continuous;
 
 By [§4.13 example 4](CMA04-1-Integration.html#4.13example4), this definition is consistent with the definition of an integral when *AB* happens to be part of the real axis. 
 
->######*Examples*. \\(\int_{z_0}^Z  f(z)\, dz = -\int^{z_0}_Z  f(z)\, dz \\) the paths of integration being the same (but in opposite directions) in each integral. [4.6examples]######
+>######*Examples*. \\(\int_{z_{0}}^Z  f(z)\, dz = -\int^{z_0}_Z  f(z)\, dz \\) the paths of integration being the same (but in opposite directions) in each integral. [4.6examples]######
 >\\[
 >\begin{align*}
 >&\int_{z_0}^Z   \!dz = Z-z_0 \\ \\
@@ -235,7 +236,7 @@ convergent, and that its sum is \\(\displaystyle \int_C \!S(z)\, dz\\).
 if the series on the right converges uniformly and the series on the left is convergent. 
 
 >*Example* 1. Consider the series 
->\\[\sum_{n=0}^\infty \frac{2x\{n(n+1) \sin^2 x^2-1\}\cos x^2}{\{1+n^2\sin^2 x^2\}\{1+(n+1)^2\sin^2x^2\}},\\]
+>\\[\sum_{n=1}^\infty \frac{2x\{n(n+1) \sin^2 x^2-1\}\cos x^2}{\{1+n^2\sin^2 x^2\}\{1+(n+1)^2\sin^2x^2\}},\\]
 in which \\(x\\) is real. 
 >
 >The nth term is
@@ -251,7 +252,7 @@ and if \\(n\\) be any integer, by taking \\(x=(n+1)^{-1}\\) this has the limit 2
 the sum of the series is  \\( \arctan\{\sin x^2\}\\). On the other hand, the sum of the integrals from 
 to \\(x\\) of the first \\(n\\) terms of the series is 
 \\[\arctan\{\sin x^2 \} - \arctan\{(n + 1) \sin x^2 \},\\] 
-and as \\(n \rightarrow \infty\\) this tends to \\(\arctan\{\sin x^2 \} =\frac{1}{2}\pi\\).
+and as \\(n \rightarrow \infty\\) this tends to \\(\arctan\{\sin x^2 \} -\frac{1}{2}\pi\\).
 > 
 >Therefore the integral of the sum of the series differs from the sum of the integrals of the terms by \\(\frac{1}{2}\pi\\). 
 
@@ -283,14 +284,14 @@ where
 
 ###REFERENCES.### 
 
-*Integration*
+*Integration.*
 :G. F. B. Riemann, [*Ges. Math. Werke*](https://archive.org/details/bernhardriemann00webegoog), pp. 239-241. 
-:P. G. Lejeune-Dirichlet, [*Vorlesungen*. (Brunswick, 1904.)](https://archive.org/details/glejeunedirichle00lejeuoft) 
-:G. F. Meyer, [*Bestimmte Integrale*. (Leipzig, 1871.)] (https://archive.org/details/vorlesungenberd00lejegoog)
+:P. G. Lejeune-Dirichlet, [*Vorlesungen*.](https://archive.org/details/glejeunedirichle00lejeuoft) (Brunswick, 1904.)
+:G. F. Meyer, [*Bestimmte Integrale*.] (https://archive.org/details/vorlesungenberd00lejegoog) (Leipzig, 1871.)
 :E. Goursat, [*Cours d'Analyse*](https://archive.org/details/ed2coursdanalyse01gouruoft) (Paris, 1910, 1911) Chs. [**iv**](https://archive.org/details/ed2coursdanalyse01gouruoft), [**xiv.**](https://archive.org/details/coursdanalysemat02gouruoft)
-:C. J. de la Vallée Poussin (Louvain and Paris, 1914), [*Cours d'Analyse Infinitésimale*](https://archive.org/details/danalyseinfinitesi01pousrich),  Ch. **vi.**
-:E. W. Hobson, [*Functions of a Real Variable* (1907)](https://archive.org/details/theoryfunctions00hobsgoog), Ch. **v.** 
-:T. J. l'a. Bromwich, [*Theory of Infinite Series* (1908)](https://archive.org/details/anintroductiont00bromgoog), Appendix **iii.** 
+:C. J. de la Vallée Poussin, [*Cours d'Analyse Infinitésimale*](https://archive.org/details/danalyseinfinitesi01pousrich) (Louvain and Paris, 1914),  Ch. **vi.**
+:E. W. Hobson, [*Functions of a Real Variable* ](https://archive.org/details/theoryfunctions00hobsgoog) (1907), Ch. **v.** 
+:T. J. l'a. Bromwich, [*Theory of Infinite Series*](https://archive.org/details/anintroductiont00bromgoog)  (1908), Appendix **iii.** 
 
 <div markdown=1 id="exercises">
 
@@ -320,7 +321,7 @@ is a continuous function of \\(\alpha\\). \\(\vphantom{\\ 3\\}\\)<br>
 (Stokes.) 
 
 5. Discuss the convergence of \\(\displaystyle \int_0^\infty \!\frac{x^\mu}{1+x^\nu \left|\, \sin x \,\right|^{\,p}} dx \\) when \\(\mu\\), \\(\nu\\), \\(p\\) are positive. \\(\vphantom{\\ 3\\}\\)<br>
-([Hardy, *Messenger*, **xxxi.** (1902)](http://books.google.com/books?id=Rpo_AQAAIAAJ), p. 177.) 
+(Hardy, [*Messenger*, **xxxi.** (1902)](http://books.google.com/books?id=Rpo_AQAAIAAJ), p. 177.) 
 
 6. Examine the convergence of the integrals 
 \\[\int_0^\infty \left(\frac{1}{x}-\frac{1}{2}e^{-x}+\frac{1}{1-e^x} \right)\frac{dx}{x}, \quad \int_0^\infty \frac{\sin(x+x^2)}{x^n} dx.\\] 
@@ -332,16 +333,16 @@ is a continuous function of \\(\alpha\\). \\(\vphantom{\\ 3\\}\\)<br>
 ([Math. Trip. 1908.](http://books.google.com/books?id=SrEQAQAAIAAJ)) 
 
 9. If a series  \\(g(z) = \sum\limits_{\nu=0}^\infty (c_\nu - c_{\nu+1}) \sin (2\nu + 1) \pi z\\), (in which \\(c_0 =0\\)), converges uniformly in an interval, shew that \\(g (z)\dfrac{\pi}{\sin \pi z}\\). is the derivative of the series \\(f(z) = \sum\limits_{\nu=1}^\infty \dfrac{c_\nu}{\nu} \sin 2 \nu \:\!\pi z\\).  \\(\vphantom{\\ 3\\}\\)<br>
-([Lerch, *Ann. de l'Ecole norm. sup.* (3) **xii.** (1895)](http://www.numdam.org/numdam-bin/browse?id=ASENS_1895_3_12_), p. 351.) 
+(Lerch, [*Ann. de l'Ecole norm. sup.* (3) **xii.** (1895)](http://www.numdam.org/numdam-bin/browse?id=ASENS_1895_3_12_), p. 351.) 
 
-10.  Shew that \\[ \int^\infty \int^\infty \cdots \int^\infty \!\!\frac{dx_1 dx_2 \dots\, dx_n}{(x_1^2+ x_2^2+ \cdots +x_n^2)^{\alpha}} \\]  \\[\text{and}\\]  \\[  \int^\infty \int^\infty \cdots \int^\infty \!\!\frac{dx_1 dx_2 \dots \, dx_n}{x_1^{\,\alpha} + x_2^{\,\beta} + \cdots + x_n^{\,\lambda}}\\] converge when \\(\alpha > \frac{1}{2}n\\) and \\(\alpha^{-1} + \beta^{-1} + \cdots  +\lambda^{-1} < 1\\) respectively. \\(\vphantom{\\ 3\\}\\)<br>
+10.  Shew that \\[ \int^\infty \!\int^\infty \!\!\cdots \int^\infty \!\!\frac{dx_1 dx_2 \dots\, dx_n}{(x_1^2+ x_2^2+ \cdots +x_n^2)^{\alpha}} \\]  \\[\text{and}\\]  \\[  \int^\infty \!\!\int^\infty \!\cdots \int^\infty \!\!\frac{dx_1 dx_2 \dots \, dx_n}{x_1^{\,\alpha} + x_2^{\,\beta} + \cdots + x_n^{\,\lambda}}\\] converge when \\(\alpha > \frac{1}{2}n\\) and \\(\alpha^{-1} + \beta^{-1} + \cdots  +\lambda^{-1} < 1\\) respectively. \\(\vphantom{\\ 3\\}\\)<br>
 (Math. Trip. 1904.) 
 
 11.  If \\(f(x,y)\\) be a continuous function of both \\(x\\) and \\(y\\) in the ranges \\(a \leq x \leq b \\), \\(a \leq y \leq b\\) except that it has ordinary discontinuities at points on a finite number of curves, with 
 continuously turning tangents, each of which meets any line parallel to the coordinate axes only a finite number of times, then \\(\int _a^b \!f(x, y)\, dx\\) is a continuous function of \\(y\\). 
 
-     [Consider \\(\displaystyle \int_a^{\alpha_1-\delta_1} + \int_{\alpha_1+\epsilon_1}^{\alpha_2-\delta_2} + \cdots + \int_{\alpha_n+\epsilon_n}^b \!\!\{ f(x, y+h)-f(x,y)\}\,dx \\), where the numbers \\(\delta_1,\, \delta_2,\, \dots \\) \\(\epsilon_1,\, \epsilon_2,\, \dots \\) are so chosen as to exclude the discontinuities of \\(f(x, y+h)\\) from the range of integration; \\(\alpha_1,\, \alpha_2,\, \dots\\) being the discontinuities of \\(f(x, y)\\).]  \\(\vphantom{\\ 3\\}\\)<br>
- (Böcher.) 
+     [Consider \\(\displaystyle \int_a^{\alpha_1-\delta_1} \! + \int_{\alpha_1+\epsilon_1}^{\alpha_2-\delta_2} \! + \cdots + \int_{\alpha_n+\epsilon_n}^b \!\!\{ f(x, y+h)-f(x,y)\}\,dx \\), where the numbers \\(\delta_1,\, \delta_2,\, \dots \\) \\(\epsilon_1,\, \epsilon_2,\, \dots \\) are so chosen as to exclude the discontinuities of \\(f(x, y+h)\\) from the range of integration; \\(\alpha_1,\, \alpha_2,\, \dots\\) being the discontinuities of \\(f(x, y)\\).]  \\(\vphantom{\\ 3\\}\\)<br>
+ (Bôcher.) 
 
 </div>
 
@@ -352,8 +353,9 @@ continuously turning tangents, each of which meets any line parallel to the coor
 
 
 <div id="footer">
-<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
-<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/"> GitHub.</a></h3>
+<h4>All content is either in the public domain or licensed under <a href="http://creativecommons.org/licenses/by/3.0/us/">a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h4>Feel free report typos and other issues on <span style="font-weight: 400;"><a href="https://github.com/CdLbB/cdlbb.github.com/tree/master/WandW">GitHub</a></span> or by email at <span style="font-weight: 400;"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#110;&#x69;&#x74;&#104;&#x61;&#114;&#100;&#x74;&#x40;&#x75;&#x77;&#46;&#101;&#x64;&#x75;">&#x6e;&#x69;&#116;&#x68;&#x61;&#114;&#100;&#x74;&#x40;&#117;&#119;&#x2e;&#101;&#x64;&#x75;</a></span>.</h4>
 </div>
 
 

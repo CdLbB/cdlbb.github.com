@@ -38,7 +38,7 @@ both exist. These are called *repeated integrals*.
 
 
 
-<div markdown=1 class="marginnotes" id="mn:1,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;1&#93;</a>*Editor's Note*: It is only clear that both integrals exist. To show they are equal requires an argument. We can use the existence  of both integrals, the first mean value theorem, and the uniform continuity \\(f(x,y)\\) on the region \\([a,b] \times [\alpha, \beta]\\) to demonstrate the equality. Or  we can, as the authors do later, show that they are both equal the *double integral* defined below.<a onClick="hideIt('mn:1,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:1,-7" style="margin-top: -7em; margin-bottom: -7em;"><a class="marginmark">&#91;1&#93;</a>*Editor's Note*: It is only clear that both integrals exist. To show they are equal requires an argument. We can use the existence  of both integrals, the [first mean value theorem](CMA04-1-IntegrationMN.html#4.14meanvaluetheorems.), and the uniform continuity \\(f(x,y)\\) on the region \\([a,b] \times [\alpha, \beta]\\) to demonstrate the equality. Or  we can, as the authors do later, show that they are both equal the *double integral* defined below.<a onClick="hideIt('mn:1,-7')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -254,7 +254,7 @@ converges so does the series ([&#167;2.2](CMA02-1-LimitsMN.html#thelimitofanincr
 
 <div markdown=1 class="contenttext">
 
-(III) *Bertrand's<a class="marginmark" onClick="toggleHide('mn:7,+2');">&#91;7&#93;</a> test.* If \\(f(x) = O(x^{\:\!\lambda-1})\\),  \\(\int_a^\infty f(x)\,dx\\) converges when \\(\lambda < 0\\); and if \\(f(x) = O(x^{-1} \{\log x\}^{\lambda-1})\\), \\(\int_a^\infty f(x)\,dx\\)  converges when \\(\lambda < 0\\). 
+######(III) *Bertrand's<a class="marginmark" onClick="toggleHide('mn:7,+2');">&#91;7&#93;</a> test.* If \\(f(x) = O(x^{\:\!\lambda-1})\\),  \\(\int_a^\infty f(x)\,dx\\) converges when \\(\lambda < 0\\); and if \\(f(x) = O(x^{-1} \{\log x\}^{\lambda-1})\\), \\(\int_a^\infty f(x)\,dx\\)  converges when \\(\lambda < 0\\). [4.43bertrandstest]######
 
 These results are particular cases of the comparison test given in (I). 
 
@@ -320,8 +320,7 @@ which is the condition for convergence.
 
 <div markdown=1 class="contenttext">
 
-(I) *De la Vall&eacute;e Poussin's test.<a class="marginmark" onClick="toggleHide('mn:10,+3');">&#91;10&#93;</a>* The reader will easily see by using the reasoning of [&#167;3.34](CMA03-2-UniformityMN.html#aconditionduetoweierstrassforuniformconvergence.) that \\(\int_a^\infty f(x,\boldsymbol{\alpha})\,dx\\) converges uniformly with regard to \\(\boldsymbol{\alpha}\\) in a domain of values of \\(\boldsymbol{\alpha}\\) if \\(\left| \, f(x,\boldsymbol{\alpha})\, \right| < \mu(x)\\), where \\(\mu(x)\\) is independent of \\(\boldsymbol{\alpha}\\) and \\(\int_a^\infty \mu(x)\,dx\\) converges. 
-[ For, choosing \\(X\\) so that \\(\int_{x'}^{x''} \mu(x)\,dx < \epsilon\\) when  \\(x'' \leq x' \leq X\\), we have   \\(\left|\,\int_{x'}^{x''} f(x,\boldsymbol{\alpha})\,dx\right| < \epsilon\\), and the choice of \\(X\\) is independent of \\(\boldsymbol{\alpha}\\). ] 
+######(I) *De la Vall&eacute;e Poussin's test.<a class="marginmark" onClick="toggleHide('mn:10,+3');">&#91;10&#93;</a>* The reader will easily see by using the reasoning of [&#167;3.34](CMA03-2-UniformityMN.html#aconditionduetoweierstrassforuniformconvergence.) that \\(\int_a^\infty f(x,\boldsymbol{\alpha})\,dx\\) converges uniformly with regard to \\(\boldsymbol{\alpha}\\) in a domain of values of \\(\boldsymbol{\alpha}\\) if \\(\left| \, f(x,\boldsymbol{\alpha})\, \right| < \mu(x)\\), where \\(\mu(x)\\) is independent of \\(\boldsymbol{\alpha}\\) and \\(\int_a^\infty \mu(x)\,dx\\) converges. ( For, choosing \\(X\\) so that \\(\int_{x'}^{x''} \mu(x)\,dx < \epsilon\\) when  \\(x'' \leq x' \leq X\\), we have   \\(\left|\,\int_{x'}^{x''} f(x,\boldsymbol{\alpha})\,dx\right| < \epsilon\\), and the choice of \\(X\\) is independent of \\(\boldsymbol{\alpha}\\). ) [4.431poussinstest]###### 
 
 >*Example*. \\(\int_0^\infty x^{\alpha-1}e^{-x} dx\\) converges uniformly in any interval \\([A, B]\\) such that \\(1 \leq A \leq B\\). 
 

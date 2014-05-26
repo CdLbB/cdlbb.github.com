@@ -34,16 +34,16 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
 <p>If <span class="math">\(\left|\,f(x) \,\right| \rightarrow  \infty\)</span> as <span class="math">\(x  \rightarrow a+0\)</span>, then <span class="math">\(\lim\limits_{\delta \rightarrow +0} \displaystyle \int_{a+\delta}^b \!f(x)\, dx\)</span> may exist, and is written simply <span class="math">\( \int_a^b f(x)\, dx\)</span>; this limit is called an <em>improper integral</em>. </p>
 
 <p>If <span class="math">\(\left|\,f(x)\, \right| \rightarrow \infty\)</span> as <span class="math">\(x \rightarrow c\)</span>, where <span class="math">\(a < c < b\)</span>, then
-<span class="math">\[\lim_{\delta \rightarrow +0} \int_a^{c-\delta}  \!f(x)\, dx + \lim_{\delta' \rightarrow +0} \int_{c+\delta'}^b  f(x)\,dx\]</span>
+<span class="math">\[\lim_{\delta \rightarrow +0} \int_a^{c-\delta}  \!f(x)\, dx + \lim_{\delta' \rightarrow +0} \int_{c+\delta'}^b  \! f(x)\,dx\]</span>
 may exist; this is also written <span class="math">\( \int_a^b f(x)\, dx\)</span>, and is also called an improper integral; it might however happen that neither of these limits exists when
 <span class="math">\(\delta, \,\delta' \rightarrow 0\)</span> independently, but
-<span class="math">\[\lim_{\delta \rightarrow +0} \left\{ \int_a^{c-\delta} \!f(x)\,dx+\int_{c+\delta}^b f(x)\,dx \right\} \]</span>
+<span class="math">\[\lim_{\delta \rightarrow +0} \left\{ \int_a^{c-\delta} \!f(x)\,dx+\int_{c+\delta}^b \! f(x)\,dx \right\} \]</span>
 exists; this is called &#8216;Cauchy&#8217;s principal value of <span class="math">\( \int_a^b f(x)\, dx\)</span>&#8217; and is written for brevity <span class="math">\( P \int_a^b f(x)\, dx\)</span>. </p>
 
 <p>Results similar to those of <a href="CMA04-2-InfiniteIntegrals.html#4.4infiniteintegrals.">§§4.4&#8211;4.44</a> may be obtained for improper
 integrals. But all that is required in practice is (i) the idea of absolute
-convergence, (ii) the analogue of Bertrand&#8217;s test for convergence, (iii) the
-analogue of de la Vallée Poussin&#8217;s test for uniformity of convergence. The
+convergence, (ii) the analogue of <a href="CMA04-2-InfiniteIntegrals.html#4.43bertrandstest">Bertrand&#8217;s test</a> for convergence, (iii) the
+analogue of <a href="CMA04-2-InfiniteIntegrals.html#4.431poussinstest">de la Vallée Poussin&#8217;s test</a> for uniformity of convergence. The
 construction of these is left to the reader, as is also the consideration
 of integrals in which the integrand has an infinite limit at more than one
 point of the range of integration.<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a> </p>
@@ -54,7 +54,8 @@ point of the range of integration.<a href="#fn:1" id="fnref:1" title="see footno
 <p><span class="math">\[
 \begin{align*}
 &(1) \quad  \int_0^\pi \! x^{-\frac{1}{2}} \cos x\, dx \,\text{ is an improper integral.} \\
-&(2) \quad  \int^1 \! x^{\lambda-1} (1-x)^{\mu-1} dx \, \text{ is an improper integral}\\  & \qquad \qquad \text{ if } 0 < \lambda < 1, \,0 < \mu <1. \\
+&(2) \quad  \int^1 \! x^{\lambda-1} (1-x)^{\mu-1} dx \, \text{ is an improper integral if } 0 < \lambda < 1, \,0 < \mu <1. \\ 
+& \qquad \qquad \text{It does not converge for negative values of }\lambda \text{ and } \mu .\\
 &(3) \quad P \int_0^2 \!\frac{x^{\alpha-1}}{1-x} dx \,\text{ is the principal value of an improper integral}\\ & \qquad \qquad  \text{when } 0 < \alpha <1.  
 \end{align*}
 \]</span></p>
@@ -90,7 +91,7 @@ this triangle <span class="math">\(\phi(x, y)\)</span> is continuous, and hence,
 <p>Now
 <span class="math">\[
 \begin{align*}
-&\int_\delta^{1-2\delta} \! dx \left\{\int_\delta^{1-x} \!\phi(x,y)\,dy \right\}\\
+&\int_\delta^{1-2\delta} \! dx \left\{\int_0^{1-x} \!\phi(x,y)\,dy \right\}\\
 &\qquad  =\int_\delta^{1-2\delta}\! dx \left\{\int_\delta^{1-x-\delta} \! \phi(x,y)\,dy \right\} + \int_\delta^{1-2\delta} \! I_1 \, dx + \int_\delta^{1-2\delta} \! I_2 \,dx,
 \end{align*}
 \]</span>
@@ -107,7 +108,7 @@ since <span class="math">\[  (1-x-y)^{\nu-1} \leq (1-x-\delta)^{\nu-1}. \]</span
 <p>Therefore, writing <span class="math">\(x = (1 - \delta)x_1\)</span>, we have<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a>
 <span class="math">\[
 \begin{align*}
-\left|\,\int_0^{1-2\delta} \! I_1 \, dx\, \right| & \leq M \delta^\mu \mu^{-1}  \int_0^{1-\delta} \! x^{\lambda-1} (1-x-\delta)^{\nu-1} dx \\
+\left|\,\int_\delta^{1-2\delta} \! I_1 \, dx\, \right| & \leq M \delta^\mu \mu^{-1}  \int_0^{1-\delta} \! x^{\lambda-1} (1-x-\delta)^{\nu-1} dx \\
 & \leq M \delta^\mu \mu^{-1} (1-\delta)^{\lambda+\nu-1} \int_0^1 \! x_1^{\lambda-1} (1-x_1)^{\nu-1} dx_1 \\
 & < M \delta^\mu \mu^{-1} (1-\delta)^{\lambda+\nu-1} B(\lambda,\nu) \rightarrow 0 \text{ as } \delta \rightarrow 0.
 \end{align*}
@@ -115,7 +116,7 @@ since <span class="math">\[  (1-x-y)^{\nu-1} \leq (1-x-\delta)^{\nu-1}. \]</span
 
 <p>Hence<a href="#fn:4" id="fnref:4" title="see footnote" class="footnote">[4]</a> <span class="math">\[
 \begin{align*}
-\int_0^1 \! dx \left\{\int_\delta^{1-x} \! \phi(x,y)\,dy \right\} & =\lim_{\delta \rightarrow 0}\int_\delta^{1-2\delta} \! dx \left\{\int_\delta^{1-x} \!\phi(x,y)\,dy \right\}\\
+\int_0^1 \! dx \left\{\int_0^{1-x} \! \phi(x,y)\,dy \right\} & =\lim_{\delta \rightarrow 0}\int_\delta^{1-2\delta} \! dx \left\{\int_0^{1-x} \!\phi(x,y)\,dy \right\}\\
 &  =\lim_{\delta \rightarrow 0}\int_\delta^{1-2\delta} \!dx \left\{\int_\delta^{1-x-\delta} \!\phi(x,y)\,dy \right\}\\
 & =\lim_{\delta \rightarrow 0}\int_\delta^{1-2\delta} \!dy \left\{\int_\delta^{1-y-\delta} \!\phi(x,y)\,dx \right\}.
 \end{align*}
@@ -123,7 +124,7 @@ since <span class="math">\[  (1-x-y)^{\nu-1} \leq (1-x-\delta)^{\nu-1}. \]</span
 
 <p>by what has been already proved; but, by a precisely similar piece of work, the last
 integral is
-<span class="math">\[\int_0^1\! dy \left\{\int_\delta^{1-y} \!\phi(x,y)\,dx \right\}.\]</span>
+<span class="math">\[\int_0^1\! dy \left\{\int_0^{1-y} \!\phi(x,y)\,dx \right\}.\]</span>
 We have consequently proved the theorem in question. </p>
 
 <blockquote>
@@ -134,7 +135,7 @@ This is called Dirichlet&#8217;s formula. </p>
 </blockquote>
 
 <blockquote>
-<p>[<strong>Note</strong>. What are now called infinite and improper integrals were defined by Cauchy, <a href="http://gallica.bnf.fr/ark:/12148/bpt6k62404287"><em>Leçons sur le calc. inf.</em> 1823</a>, though the idea of infinite integrals seems to date from Maclaurin (1742). The test for convergence was employed by Chartier (1853). Stokes (1847) distinguished between &#8216;essentially&#8217; (absolutely) and non-essentially convergent integrals though he did not give a formal definition. Such a definition was given by Dirichlet in 1854 and 1858 (see his <a href="https://archive.org/details/glejeunedirichle00lejeuoft"><em>Vorlesungen</em>, 1904</a>, p. 39). In the early part of the nineteenth century improper integrals received more attention than infinite integrals,- probably because it was not fully realised that an infinite integral is really the <em>limit</em> of an integral.] </p>
+<p>[<strong>Note</strong>. What are now called infinite and improper integrals were defined by Cauchy, <a href="http://gallica.bnf.fr/ark:/12148/bpt6k62404287"><em>Leçons sur le calc. inf.</em> 1823</a>, though the idea of infinite integrals seems to date from Maclaurin (1742). The test for convergence was employed by Chartier (1853). Stokes (1847) distinguished between &#8216;essentially&#8217; (absolutely) and non-essentially convergent integrals though he did not give a formal definition. Such a definition was given by Dirichlet in 1854 and 1858 (see his <a href="https://archive.org/details/glejeunedirichle00lejeuoft"><em>Vorlesungen</em>, 1904</a>, p. 39). In the early part of the nineteenth century improper integrals received more attention than infinite integrals, probably because it was not fully realised that an infinite integral is really the <em>limit</em> of an integral.] </p>
 </blockquote>
 
 <h3 id="4.6complexintegration.">4.6 Complex integration.<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a></h3>
@@ -144,10 +145,10 @@ along a particular path (namely part of the real axis) in the Argand diagram.
 Let <span class="math">\(f(z)\)</span>, <span class="math">\((= P + iQ)\)</span>, be a function of a complex variable <span class="math">\(z\)</span>, which is continuous along a simple curve <em>AB</em> in the Argand diagram. </p>
 
 <p>Let the equations of the curve be
-<span class="math">\[x = x (t),\quad  y = y(t) \quad (a \leq z \leq b).\]</span>
+<span class="math">\[x = x (t),\quad  y = y(t) \quad (a \leq t \leq b).\]</span>
 Let <span class="math">\[x(a) + iy(a) = z_0 ,\quad x(b) + iy(b) = Z.\]</span>
 Then if <span class="math">\(x(t),\, y(t)\)</span> have continuous differential coefficients,<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a> we <em>define</em><a href="#fn:7" id="fnref:7" title="see footnote" class="footnote">[7]</a>
-<span class="math">\(\int_{z_0}^Z  f(z)\, dz\)</span> taken along the simple curve <em>AB</em> to mean
+<span class="math">\(\int_{z_{0}}^Z  f(z)\, dz\)</span> taken along the simple curve <em>AB</em> to mean
 <span class="math">\[\int_a^b \! (P+iQ)\left(\frac{dx}{dt}+i\frac{dy}{dt}\right) dt.\]</span></p>
 
 <p>The &#8216;length&#8217; of the curve AB will be defined as <span class="math">\( {\normalsize\int}_{a}^b \!\sqrt{\left(\frac{dx}{dt}\right)^2+ \left(\frac{dx}{dt}\right)^2} \,dt. \)</span>
@@ -157,7 +158,7 @@ It obviously exists if <span class="math">\(\frac{dx}{dt}\)</span>, <span class=
 <p>By <a href="CMA04-1-Integration.html#4.13example4">§4.13 example 4</a>, this definition is consistent with the definition of an integral when <em>AB</em> happens to be part of the real axis. </p>
 
 <blockquote>
-<h6 id="4.6examples"><em>Examples</em>. <span class="math">\(\int_{z_0}^Z  f(z)\, dz = -\int^{z_0}_Z  f(z)\, dz \)</span> the paths of integration being the same (but in opposite directions) in each integral.</h6>
+<h6 id="4.6examples"><em>Examples</em>. <span class="math">\(\int_{z_{0}}^Z  f(z)\, dz = -\int^{z_0}_Z  f(z)\, dz \)</span> the paths of integration being the same (but in opposite directions) in each integral.</h6>
 
 <p><span class="math">\[
 \begin{align*}
@@ -224,7 +225,7 @@ if the series on the right converges uniformly and the series on the left is con
 
 <blockquote>
 <p><em>Example</em> 1. Consider the series
-<span class="math">\[\sum_{n=0}^\infty \frac{2x\{n(n+1) \sin^2 x^2-1\}\cos x^2}{\{1+n^2\sin^2 x^2\}\{1+(n+1)^2\sin^2x^2\}},\]</span>
+<span class="math">\[\sum_{n=1}^\infty \frac{2x\{n(n+1) \sin^2 x^2-1\}\cos x^2}{\{1+n^2\sin^2 x^2\}\{1+(n+1)^2\sin^2x^2\}},\]</span>
 in which <span class="math">\(x\)</span> is real. </p>
 
 <p>The nth term is
@@ -240,7 +241,7 @@ and if <span class="math">\(n\)</span> be any integer, by taking <span class="ma
 the sum of the series is <span class="math">\( \arctan\{\sin x^2\}\)</span>. On the other hand, the sum of the integrals from
 to <span class="math">\(x\)</span> of the first <span class="math">\(n\)</span> terms of the series is
 <span class="math">\[\arctan\{\sin x^2 \} - \arctan\{(n + 1) \sin x^2 \},\]</span>
-and as <span class="math">\(n \rightarrow \infty\)</span> this tends to <span class="math">\(\arctan\{\sin x^2 \} =\frac{1}{2}\pi\)</span>.</p>
+and as <span class="math">\(n \rightarrow \infty\)</span> this tends to <span class="math">\(\arctan\{\sin x^2 \} -\frac{1}{2}\pi\)</span>.</p>
 
 <p>Therefore the integral of the sum of the series differs from the sum of the integrals of the terms by <span class="math">\(\frac{1}{2}\pi\)</span>. </p>
 </blockquote>
@@ -280,20 +281,20 @@ where
 <h3 id="references.">REFERENCES.</h3>
 
 <dl>
-<dt><em>Integration</em></dt>
+<dt><em>Integration.</em></dt>
 <dd>G. F. B. Riemann, <a href="https://archive.org/details/bernhardriemann00webegoog"><em>Ges. Math. Werke</em></a>, pp. 239&#8211;241.</dd>
 
-<dd>P. G. Lejeune-Dirichlet, <a href="https://archive.org/details/glejeunedirichle00lejeuoft"><em>Vorlesungen</em>. (Brunswick, 1904.)</a></dd>
+<dd>P. G. Lejeune-Dirichlet, <a href="https://archive.org/details/glejeunedirichle00lejeuoft"><em>Vorlesungen</em>.</a> (Brunswick, 1904.)</dd>
 
-<dd>G. F. Meyer, <a href="https://archive.org/details/vorlesungenberd00lejegoog"><em>Bestimmte Integrale</em>. (Leipzig, 1871.)</a></dd>
+<dd>G. F. Meyer, <a href="https://archive.org/details/vorlesungenberd00lejegoog"><em>Bestimmte Integrale</em>.</a> (Leipzig, 1871.)</dd>
 
 <dd>E. Goursat, <a href="https://archive.org/details/ed2coursdanalyse01gouruoft"><em>Cours d&#8217;Analyse</em></a> (Paris, 1910, 1911) Chs. <a href="https://archive.org/details/ed2coursdanalyse01gouruoft"><strong>iv</strong></a>, <a href="https://archive.org/details/coursdanalysemat02gouruoft"><strong>xiv.</strong></a></dd>
 
-<dd>C. J. de la Vallée Poussin (Louvain and Paris, 1914), <a href="https://archive.org/details/danalyseinfinitesi01pousrich"><em>Cours d&#8217;Analyse Infinitésimale</em></a>, Ch. <strong>vi.</strong></dd>
+<dd>C. J. de la Vallée Poussin, <a href="https://archive.org/details/danalyseinfinitesi01pousrich"><em>Cours d&#8217;Analyse Infinitésimale</em></a> (Louvain and Paris, 1914), Ch. <strong>vi.</strong></dd>
 
-<dd>E. W. Hobson, <a href="https://archive.org/details/theoryfunctions00hobsgoog"><em>Functions of a Real Variable</em> (1907)</a>, Ch. <strong>v.</strong></dd>
+<dd>E. W. Hobson, <a href="https://archive.org/details/theoryfunctions00hobsgoog"><em>Functions of a Real Variable</em> </a> (1907), Ch. <strong>v.</strong></dd>
 
-<dd>T. J. l&#8217;a. Bromwich, <a href="https://archive.org/details/anintroductiont00bromgoog"><em>Theory of Infinite Series</em> (1908)</a>, Appendix <strong>iii.</strong></dd>
+<dd>T. J. l&#8217;a. Bromwich, <a href="https://archive.org/details/anintroductiont00bromgoog"><em>Theory of Infinite Series</em></a> (1908), Appendix <strong>iii.</strong></dd>
 </dl>
 <div id="exercises">
 
@@ -320,7 +321,7 @@ is a continuous function of <span class="math">\(\alpha\)</span>. <span class="m
 <li><p>Shew that <span class="math">\(\displaystyle \int_0^\infty \! \exp[-e^{i\alpha}(x^3-nx)]\, dx\)</span> converges uniformly in the range <span class="math">\(\left[ -\frac{1}{2}\pi, \, \frac{1}{2}\pi \,\right]\)</span> of values of <span class="math">\(\alpha\)</span>. <span class="math">\(\vphantom{\\ 3\\}\)</span><br>
 (Stokes.) </p></li>
 <li><p>Discuss the convergence of <span class="math">\(\displaystyle \int_0^\infty \!\frac{x^\mu}{1+x^\nu \left|\, \sin x \,\right|^{\,p}} dx \)</span> when <span class="math">\(\mu\)</span>, <span class="math">\(\nu\)</span>, <span class="math">\(p\)</span> are positive. <span class="math">\(\vphantom{\\ 3\\}\)</span><br>
-(<a href="http://books.google.com/books?id=Rpo_AQAAIAAJ">Hardy, <em>Messenger</em>, <strong>xxxi.</strong> (1902)</a>, p. 177.) </p></li>
+(Hardy, <a href="http://books.google.com/books?id=Rpo_AQAAIAAJ"><em>Messenger</em>, <strong>xxxi.</strong> (1902)</a>, p. 177.) </p></li>
 <li><p>Examine the convergence of the integrals
 <span class="math">\[\int_0^\infty \left(\frac{1}{x}-\frac{1}{2}e^{-x}+\frac{1}{1-e^x} \right)\frac{dx}{x}, \quad \int_0^\infty \frac{\sin(x+x^2)}{x^n} dx.\]</span>
 (<a href="https://archive.org/details/papersetinmathtr00cambrich">Math. Trip. 1914.</a>) </p></li>
@@ -328,14 +329,14 @@ is a continuous function of <span class="math">\(\alpha\)</span>. <span class="m
 <li><p>Shew that <span class="math">\(\displaystyle \int_a^\infty \! x^{-n}e^{\sin x} \sin 2x \, dx\)</span> converges if <span class="math">\(a > 0\)</span>, <span class="math">\(n > 0\)</span>. <span class="math">\(\vphantom{\\ 3\\}\)</span><br>
 (<a href="http://books.google.com/books?id=SrEQAQAAIAAJ">Math. Trip. 1908.</a>) </p></li>
 <li><p>If a series <span class="math">\(g(z) = \sum\limits_{\nu=0}^\infty (c_\nu - c_{\nu+1}) \sin (2\nu + 1) \pi z\)</span>, (in which <span class="math">\(c_0 =0\)</span>), converges uniformly in an interval, shew that <span class="math">\(g (z)\dfrac{\pi}{\sin \pi z}\)</span>. is the derivative of the series <span class="math">\(f(z) = \sum\limits_{\nu=1}^\infty \dfrac{c_\nu}{\nu} \sin 2 \nu \:\!\pi z\)</span>. <span class="math">\(\vphantom{\\ 3\\}\)</span><br>
-(<a href="http://www.numdam.org/numdam-bin/browse?id=ASENS_1895_3_12_">Lerch, <em>Ann. de l&#8217;Ecole norm. sup.</em> (3) <strong>xii.</strong> (1895)</a>, p. 351.) </p></li>
-<li><p>Shew that <span class="math">\[ \int^\infty \int^\infty \cdots \int^\infty \!\!\frac{dx_1 dx_2 \dots\, dx_n}{(x_1^2+ x_2^2+ \cdots +x_n^2)^{\alpha}} \]</span> <span class="math">\[\text{and}\]</span> <span class="math">\[  \int^\infty \int^\infty \cdots \int^\infty \!\!\frac{dx_1 dx_2 \dots \, dx_n}{x_1^{\,\alpha} + x_2^{\,\beta} + \cdots + x_n^{\,\lambda}}\]</span> converge when <span class="math">\(\alpha > \frac{1}{2}n\)</span> and <span class="math">\(\alpha^{-1} + \beta^{-1} + \cdots  +\lambda^{-1} < 1\)</span> respectively. <span class="math">\(\vphantom{\\ 3\\}\)</span><br>
+(Lerch, <a href="http://www.numdam.org/numdam-bin/browse?id=ASENS_1895_3_12_"><em>Ann. de l&#8217;Ecole norm. sup.</em> (3) <strong>xii.</strong> (1895)</a>, p. 351.) </p></li>
+<li><p>Shew that <span class="math">\[ \int^\infty \!\int^\infty \!\!\cdots \int^\infty \!\!\frac{dx_1 dx_2 \dots\, dx_n}{(x_1^2+ x_2^2+ \cdots +x_n^2)^{\alpha}} \]</span> <span class="math">\[\text{and}\]</span> <span class="math">\[  \int^\infty \!\!\int^\infty \!\cdots \int^\infty \!\!\frac{dx_1 dx_2 \dots \, dx_n}{x_1^{\,\alpha} + x_2^{\,\beta} + \cdots + x_n^{\,\lambda}}\]</span> converge when <span class="math">\(\alpha > \frac{1}{2}n\)</span> and <span class="math">\(\alpha^{-1} + \beta^{-1} + \cdots  +\lambda^{-1} < 1\)</span> respectively. <span class="math">\(\vphantom{\\ 3\\}\)</span><br>
 (Math. Trip. 1904.) </p></li>
 <li><p>If <span class="math">\(f(x,y)\)</span> be a continuous function of both <span class="math">\(x\)</span> and <span class="math">\(y\)</span> in the ranges <span class="math">\(a \leq x \leq b \)</span>, <span class="math">\(a \leq y \leq b\)</span> except that it has ordinary discontinuities at points on a finite number of curves, with
 continuously turning tangents, each of which meets any line parallel to the coordinate axes only a finite number of times, then <span class="math">\(\int _a^b \!f(x, y)\, dx\)</span> is a continuous function of <span class="math">\(y\)</span>. </p>
 
-<p>[Consider <span class="math">\(\displaystyle \int_a^{\alpha_1-\delta_1} + \int_{\alpha_1+\epsilon_1}^{\alpha_2-\delta_2} + \cdots + \int_{\alpha_n+\epsilon_n}^b \!\!\{ f(x, y+h)-f(x,y)\}\,dx \)</span>, where the numbers <span class="math">\(\delta_1,\, \delta_2,\, \dots \)</span> <span class="math">\(\epsilon_1,\, \epsilon_2,\, \dots \)</span> are so chosen as to exclude the discontinuities of <span class="math">\(f(x, y+h)\)</span> from the range of integration; <span class="math">\(\alpha_1,\, \alpha_2,\, \dots\)</span> being the discontinuities of <span class="math">\(f(x, y)\)</span>.] <span class="math">\(\vphantom{\\ 3\\}\)</span><br>
- (Böcher.) </p></li>
+<p>[Consider <span class="math">\(\displaystyle \int_a^{\alpha_1-\delta_1} \! + \int_{\alpha_1+\epsilon_1}^{\alpha_2-\delta_2} \! + \cdots + \int_{\alpha_n+\epsilon_n}^b \!\!\{ f(x, y+h)-f(x,y)\}\,dx \)</span>, where the numbers <span class="math">\(\delta_1,\, \delta_2,\, \dots \)</span> <span class="math">\(\epsilon_1,\, \epsilon_2,\, \dots \)</span> are so chosen as to exclude the discontinuities of <span class="math">\(f(x, y+h)\)</span> from the range of integration; <span class="math">\(\alpha_1,\, \alpha_2,\, \dots\)</span> being the discontinuities of <span class="math">\(f(x, y)\)</span>.] <span class="math">\(\vphantom{\\ 3\\}\)</span><br>
+ (Bôcher.) </p></li>
 </ol>
 </div>
 
@@ -343,8 +344,9 @@ continuously turning tangents, each of which meets any line parallel to the coor
 </div>
 
 <div id="footer">
-<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
-<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/"> GitHub.</a></h3>
+<h4>All content is either in the public domain or licensed under <a href="http://creativecommons.org/licenses/by/3.0/us/">a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h4>Feel free report typos and other issues on <span style="font-weight: 400;"><a href="https://github.com/CdLbB/cdlbb.github.com/tree/master/WandW">GitHub</a></span> or by email at <span style="font-weight: 400;"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#110;&#x69;&#x74;&#104;&#x61;&#114;&#100;&#x74;&#x40;&#x75;&#x77;&#46;&#101;&#x64;&#x75;">&#x6e;&#x69;&#116;&#x68;&#x61;&#114;&#100;&#x74;&#x40;&#117;&#119;&#x2e;&#101;&#x64;&#x75;</a></span>.</h4>
 </div>
 
 <div id="navint" class="navigation" style="visibility:hidden;" >
@@ -506,7 +508,7 @@ continuously turning tangents, each of which meets any line parallel to the coor
 <ol>
 
 <li id="fn:1">
-<p>For a detailed discussion of improper integrals, the reader is referred either to <a href="https://archive.org/details/theoryfunctions00hobsgoog">Hobson&#8217;s</a> or to <a href="https://archive.org/details/lecturesonthethe032088mbp">Pierpont&#8217;s <em>Functions of a Real Variable</em></a>. The connexion between infinite integrals and improper integrals is exhibited by Bromwich, <a href="https://archive.org/details/introductiontoth00bromuoft"><em>Infinite Series</em></a>, §164. <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p>For a detailed discussion of improper integrals, the reader is referred either to <a href="https://archive.org/details/theoryfunctions00hobsgoog">Hobson&#8217;s</a> or to <a href="https://archive.org/details/lecturesonthethe032088mbp">Pierpont&#8217;s <em>Functions of a Real Variable</em></a>. The connexion between infinite integrals and improper integrals is exhibited by Bromwich, <a href="https://archive.org/details/introductiontoth00bromuoft"><em>Infinite Series</em></a>, §164 (p. 414&#8211;416). <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:2">
@@ -514,11 +516,11 @@ continuously turning tangents, each of which meets any line parallel to the coor
 </li>
 
 <li id="fn:3">
-<p><span class="math">\(\int_0^1 x_1^{\lambda-1} (1-x)^{\nu-1} dx_1= B (\lambda, \nu)\)</span> exists if <span class="math">\(\lambda > 0\)</span>, <span class="math">\(\nu > 0\)</span> (<a href="#4.5examples">§4.5 example 2</a>).  <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p><span class="math">\(\int_0^1 x_1^{\:\!\lambda-1} (1-x)^{\nu-1} dx_1= B (\lambda, \nu)\)</span> exists if <span class="math">\(\lambda > 0\)</span>, <span class="math">\(\nu > 0\)</span> (<a href="#4.5examples">§4.5 example 2</a>).  <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:4">
-<p>The repeated integral exists, and is, in fact, absolutely convergent; for <span class="math">\[\int_0^{1-x}\! \left|\, x^{\lambda-1} y^{\mu-1} (1 -x-y)^{\nu-1} f(x,y)\,\right|\, dy\]</span><span class="math">\[ \qquad \quad  < Mx^{\lambda-1} (1-x)^{\lambda+\nu-1} \int_0^1\! s^{\mu-1} (1-s)^{\nu-1} ds,\]</span>writing <span class="math">\(y = (1 -x)s\)</span>; and <span class="math">\[ \int_0^1 \!Mx^{\lambda-1} (1-x)^{\lambda+\nu-1} \int_0^1\! s^{\mu-1} (1-s)^{\nu-1} ds \;\text{ exists.}\]</span> And since the integral exists, its value which is <span class="math">\(\lim\limits_{\delta,\,\epsilon \rightarrow 0} \int_\delta^{1-\epsilon}\)</span> may be written <span class="math">\(\lim\limits_{\delta \rightarrow 0} \int_\delta^{1-2\delta}\)</span>. <a href="#fnref:4" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p>The repeated integral exists, and is, in fact, absolutely convergent; for <span class="math">\[\int_0^{1-x}\! \left|\, x^{\lambda-1} y^{\mu-1} (1\! -\! x\! -\! y)^{\nu-1} f(x,y)\,\right|\, dy\]</span><span class="math">\[<  Mx^{\lambda-1} (1\! -\! x)^{\lambda+\nu-1} \!\!\int_0^1\!\!\! s^{\mu-1} (1\! -\! s)^{\nu-1} ds,\]</span>writing <span class="math">\(y = (1\! -\! x)s\)</span>; and <span class="math">\[ \int_0^1 \!\!\! Mx^{\lambda-1} (1\!-\! x)^{\lambda+\nu-1} \!\!\int_0^1\!\!\! s^{\mu-1} (1\! -\! s)^{\nu-1} ds\]</span>exists. <br><br>And since the integral exists, its value which is <span class="math">\(\lim\limits_{\delta,\,\epsilon \rightarrow 0} \int_\delta^{1-\epsilon}\)</span> may be written <span class="math">\(\lim\limits_{\delta \rightarrow 0} \int_\delta^{1-2\delta}\)</span>. <a href="#fnref:4" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:5">

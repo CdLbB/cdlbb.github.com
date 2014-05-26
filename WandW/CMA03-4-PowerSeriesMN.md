@@ -122,14 +122,14 @@ We have therefore arrived at a contradiction by supposing that some coefficient 
 ### References.###
 
 *Complex functions and uniformity.*
-:T. J. l'a. Bromwich, [*Theory of Infinite Series* (1908)](https://archive.org/details/anintroductiont00bromgoog), Ch. **vii.** 
+:T. J. l'a. Bromwich, [*Theory of Infinite Series*](https://archive.org/details/anintroductiont00bromgoog) (1908), Ch. **vii.** 
 :E. Goursat, [*Cours d'Analyse*](https://archive.org/details/ed2coursdanalyse01gouruoft) (Paris, 1910, 1911) Chs. [**i**](https://archive.org/details/ed2coursdanalyse01gouruoft), [**xiv.**](https://archive.org/details/coursdanalysemat02gouruoft)
-:C. J. de la Vall&eacute;e Poussin (Louvain and Paris, 1914), [*Cours d'Analyse Infinit&eacute;simale*](https://archive.org/details/danalyseinfinitesi01pousrich), 
+:C. J. de la Vall&eacute;e Poussin, [*Cours d'Analyse Infinit&eacute;simale*](https://archive.org/details/danalyseinfinitesi01pousrich) (Louvain and Paris, 1914), 
 Introduction and Ch. **viii.** 
-:G. H. Hardy, [*A course of Pure Mathematics* (1914)](http://www.gutenberg.org/ebooks/38769), Ch. **v.** 
-:W. F. Osgood, [*Lehrbuch der Funktionentheorie* (Leipzig, 1912)](https://archive.org/details/lehrbuchderfunk01osgogoog), Chs. **ii, iii.** 
-:G. N. Watson, [*Complex Integration and Cauchy's Theorem* (Camb. Math. Tracts, 
-No. 15), (1914)](https://archive.org/details/complexintegrat00watsrich), Chs. **i, ii.** 
+:G. H. Hardy, [*A course of Pure Mathematics*](http://www.gutenberg.org/ebooks/38769) (1914), Ch. **v.** 
+:W. F. Osgood, [*Lehrbuch der Funktionentheorie*](https://archive.org/details/lehrbuchderfunk01osgogoog) (Leipzig, 1912), Chs. **ii, iii.** 
+:G. N. Watson, [*Complex Integration and Cauchy's Theorem*](https://archive.org/details/complexintegrat00watsrich) (Camb. Math. Tracts, 
+No. 15), (1914), Chs. **i, ii.** 
 
 <div markdown=1 id="exercises">
 
