@@ -102,7 +102,22 @@ Let \\(x^{\lambda-1} y^{\mu-1} (1 - x -y)^{\nu-1}   f(x,y) = \phi(x,y)\\); and l
 
 Let \\(\delta\\) be any positive number less than \\(\frac{1}{3}\\). 
 
-Draw the triangle whose sides are \\(x = \delta\\), \\(y = \delta\\), \\(x+y = 1- \delta\\); at all points on and inside 
+</div>
+
+
+
+<div markdown=1 class="marginnotes" id="mn:3,+2" style="margin-top: +2em; margin-bottom: +2em;"><a class="marginmark">&#91;3&#93;</a>![Figure 1: Area of integration.][fig_1]<a onClick="hideIt('mn:3,+2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+
+</div>
+
+
+
+<div markdown=1 class="contenttext">
+
+[fig_1]: W&WIllustrationA.svg "Area of integration."
+
+
+Draw the triangle whose sides are \\(x = \delta\\), \\(y = \delta\\), \\(x+y = 1- \delta\\);<a class="marginmark" onClick="toggleHide('mn:3,+2');">&#91;3&#93;</a> at all points on and inside 
 this triangle \\(\phi(x, y)\\) is continuous, and hence, by [&#167;4.3 corollary](CMA04-2-InfiniteIntegralsMN.html#4.3corollary), 
 \\[\int_\delta^{1-2\delta} \!dx \left\{\int_\delta^{1-x-\delta} \!\phi(x,y)\,dy \right\}=\int_\delta^{1-2\delta}\! dy \left\{\int_\delta^{1-y-\delta} \!\phi(x,y)\,dx \right\}.\\]
 
@@ -127,7 +142,7 @@ since \\[  (1-x-y)^{\nu-1} \leq (1-x-\delta)^{\nu-1}. \\]
 
 
 
-<div markdown=1 class="marginnotes" id="mn:3,+1" style="margin-top: +1em; margin-bottom: +1em;"><a class="marginmark">&#91;3&#93;</a>\\(\int_0^1 x_1^{\:\!\lambda-1} (1-x)^{\nu-1} dx_1= B (\lambda, \nu)\\) exists if \\(\lambda > 0\\), \\(\nu > 0\\) ([&#167;4.5 example 2](#4.5examples)). <a onClick="hideIt('mn:3,+1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:4,+1" style="margin-top: +1em; margin-bottom: +1em;"><a class="marginmark">&#91;4&#93;</a>\\(\int_0^1 x_1^{\:\!\lambda-1} (1-x)^{\nu-1} dx_1= B (\lambda, \nu)\\) exists if \\(\lambda > 0\\), \\(\nu > 0\\) ([&#167;4.5 example 2](#4.5examples)). <a onClick="hideIt('mn:4,+1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -135,7 +150,7 @@ since \\[  (1-x-y)^{\nu-1} \leq (1-x-\delta)^{\nu-1}. \\]
 
 <div markdown=1 class="contenttext">
 
-Therefore, writing \\(x = (1 - \delta)x_1\\), we have<a class="marginmark" onClick="toggleHide('mn:3,+1');">&#91;3&#93;</a> 
+Therefore, writing \\(x = (1 - \delta)x_1\\), we have<a class="marginmark" onClick="toggleHide('mn:4,+1');">&#91;4&#93;</a> 
 \\[
 \begin{align*}
 \left|\,\int_\delta^{1-2\delta} \! I_1 \, dx\, \right| & \leq M \delta^\mu \mu^{-1}  \int_0^{1-\delta} \! x^{\lambda-1} (1-x-\delta)^{\nu-1} dx \\
@@ -148,7 +163,7 @@ Therefore, writing \\(x = (1 - \delta)x_1\\), we have<a class="marginmark" onCli
 
 
 
-<div markdown=1 class="marginnotes" id="mn:4,+1" style="margin-top: +1em; margin-bottom: +1em;"><a class="marginmark">&#91;4&#93;</a>The repeated integral exists, and is, in fact, absolutely convergent; for \\[\int_0^{1-x}\! \left|\, x^{\lambda-1} y^{\mu-1} (1\! -\! x\! -\! y)^{\nu-1} f(x,y)\,\right|\, dy\\]\\[<  Mx^{\lambda-1} (1\! -\! x)^{\lambda+\nu-1} \!\!\int_0^1\!\!\! s^{\mu-1} (1\! -\! s)^{\nu-1} ds,\\]writing \\(y = (1\! -\! x)s\\); and \\[ \int_0^1 \!\!\! Mx^{\lambda-1} (1\!-\! x)^{\lambda+\nu-1} \!\!\int_0^1\!\!\! s^{\mu-1} (1\! -\! s)^{\nu-1} ds\\]exists. <br><br>And since the integral exists, its value which is \\(\lim\limits_{\delta,\,\epsilon \rightarrow 0} \int_\delta^{1-\epsilon}\\) may be written \\(\lim\limits_{\delta \rightarrow 0} \int_\delta^{1-2\delta}\\).<a onClick="hideIt('mn:4,+1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:5,+1" style="margin-top: +1em; margin-bottom: +1em;"><a class="marginmark">&#91;5&#93;</a>The repeated integral exists, and is, in fact, absolutely convergent; for \\[\int_0^{1-x}\! \left|\, x^{\lambda-1} y^{\mu-1} (1\! -\! x\! -\! y)^{\nu-1} f(x,y)\,\right|\, dy\\]\\[<  Mx^{\lambda-1} (1\! -\! x)^{\lambda+\nu-1} \!\!\int_0^1\!\!\! s^{\mu-1} (1\! -\! s)^{\nu-1} ds,\\]writing \\(y = (1\! -\! x)s\\); and \\[ \int_0^1 \!\!\! Mx^{\lambda-1} (1\!-\! x)^{\lambda+\nu-1} \!\!\int_0^1\!\!\! s^{\mu-1} (1\! -\! s)^{\nu-1} ds\\]exists. <br><br>And since the integral exists, its value which is \\(\lim\limits_{\delta,\,\epsilon \rightarrow 0} \int_\delta^{1-\epsilon}\\) may be written \\(\lim\limits_{\delta \rightarrow 0} \int_\delta^{1-2\delta}\\).<a onClick="hideIt('mn:5,+1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -156,7 +171,7 @@ Therefore, writing \\(x = (1 - \delta)x_1\\), we have<a class="marginmark" onCli
 
 <div markdown=1 class="contenttext">
 
-Hence<a class="marginmark" onClick="toggleHide('mn:4,+1');">&#91;4&#93;</a> \\[
+Hence<a class="marginmark" onClick="toggleHide('mn:5,+1');">&#91;5&#93;</a> \\[
 \begin{align*}
 \int_0^1 \! dx \left\{\int_0^{1-x} \! \phi(x,y)\,dy \right\} & =\lim_{\delta \rightarrow 0}\int_\delta^{1-2\delta} \! dx \left\{\int_0^{1-x} \!\phi(x,y)\,dy \right\}\\
 &  =\lim_{\delta \rightarrow 0}\int_\delta^{1-2\delta} \!dx \left\{\int_\delta^{1-x-\delta} \!\phi(x,y)\,dy \right\}\\
@@ -176,13 +191,13 @@ This is called Dirichlet's formula.
 
 >[**Note**. What are now called infinite and improper integrals were defined by Cauchy, [*Leçons sur le calc. inf.* 1823](http://gallica.bnf.fr/ark:/12148/bpt6k62404287), though the idea of infinite integrals seems to date from Maclaurin (1742). The test for convergence was employed by Chartier (1853). Stokes (1847) distinguished between 'essentially' (absolutely) and non-essentially convergent integrals though he did not give a formal definition. Such a definition was given by Dirichlet in 1854 and 1858 (see his [*Vorlesungen*, 1904](https://archive.org/details/glejeunedirichle00lejeuoft), p. 39). In the early part of the nineteenth century improper integrals received more attention than infinite integrals, probably because it was not fully realised that an infinite integral is really the *limit* of an integral.] 
 
-###4.6 Complex integration.<a class="marginmark" onClick="toggleHide('mn:5,-2');">&#91;5&#93;</a>[4.6complexintegration.]### 
+###4.6 Complex integration.<a class="marginmark" onClick="toggleHide('mn:6,-2');">&#91;6&#93;</a>[4.6complexintegration.]### 
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:5,-2" style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;5&#93;</a>A treatment of complex integration based on a different set of ideas and not making so many assumptions concerning the curve *AB* will be found in Watson's [*Complex Integration and Cauchy's Theorem*](https://archive.org/details/complexintegrat00watsrich). <a onClick="hideIt('mn:5,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:6,-2" style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;6&#93;</a>A treatment of complex integration based on a different set of ideas and not making so many assumptions concerning the curve *AB* will be found in Watson's [*Complex Integration and Cauchy's Theorem*](https://archive.org/details/complexintegrat00watsrich). <a onClick="hideIt('mn:6,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -197,7 +212,7 @@ Let \\(f(z)\\), \\((= P + iQ)\\), be a function of a complex variable \\(z\\), w
 Let the equations of the curve be 
 \\[x = x (t),\quad  y = y(t) \quad (a \leq t \leq b).\\] 
 Let \\[x(a) + iy(a) = z_0 ,\quad x(b) + iy(b) = Z.\\] 
-Then if \\(x(t),\, y(t)\\) have continuous differential coefficients,<a class="marginmark" onClick="toggleHide('mn:6,-9');">&#91;6&#93;</a> we *define*<a class="marginmark" onClick="toggleHide('mn:7,-5');">&#91;7&#93;</a> 
+Then if \\(x(t),\, y(t)\\) have continuous differential coefficients,<a class="marginmark" onClick="toggleHide('mn:7,-9');">&#91;7&#93;</a> we *define*<a class="marginmark" onClick="toggleHide('mn:8,-5');">&#91;8&#93;</a> 
 \\(\int_{z_{0}}^Z  f(z)\, dz\\) taken along the simple curve *AB* to mean 
 \\[\int_a^b \! (P+iQ)\left(\frac{dx}{dt}+i\frac{dy}{dt}\right) dt.\\]
 
@@ -205,7 +220,7 @@ Then if \\(x(t),\, y(t)\\) have continuous differential coefficients,<a class="m
 
 
 
-<div markdown=1 class="marginnotes" id="mn:6,-9" style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;6&#93;</a>This assumption will be made throughout the subsequent work.<a onClick="hideIt('mn:6,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:7,-9" style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;7&#93;</a>This assumption will be made throughout the subsequent work.<a onClick="hideIt('mn:7,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -217,7 +232,7 @@ Then if \\(x(t),\, y(t)\\) have continuous differential coefficients,<a class="m
 
 
 
-<div markdown=1 class="marginnotes" id="mn:7,-5" style="margin-top: -5em; margin-bottom: -5em;"><a class="marginmark">&#91;7&#93;</a>Cp. [&#167;4.13 example 4](CMA04-1-IntegrationMN.html#4.13example4). <a onClick="hideIt('mn:7,-5')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:8,-5" style="margin-top: -5em; margin-bottom: -5em;"><a class="marginmark">&#91;8&#93;</a>Cp. [&#167;4.13 example 4](CMA04-1-IntegrationMN.html#4.13example4). <a onClick="hideIt('mn:8,-5')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -250,13 +265,13 @@ Let a sequence of points be taken on a simple curve \\(z_0 Z\\); and let the fir
 \\(z_1^{\,(n)}, \, z_2^{\,(n)}, \, , \dots , z_n^{\,(n)}\\) \\((z_0^{\,(n)} = z_0, \, z_{n+1}^{\,(n)} = Z)\\);  let their parameters be \\(t_1^{\,(n)}, \, t_2^{\,(n)}, \, , \dots , t_n^{\,(n)}\\), and let the sequence be such that, given any number \\(\delta\\), we can find \\(N\\) such 
 that, when \\(n > N\\), \\(t_{r+1}^{\,(n)}-t_r^{\,(n)} < \delta \\), for \\(r= 0, 1, 2, \dots , n\\); let \\(\zeta_r^{\,(n)}\\) be any point whose parameter lies between \\(t_{r}^{\,(n)}, \,t_{r+1}^{\,(n)} \\); then we can make 
 \\[\left|\, \sum_{r=0}^n \left(z_{r+1}^{\,(n)}- z_r^{\,(n)}\right) \, f\left(\zeta_r^{\,(n)}\right) - \int_{z_0}^Z \! f(z)\, dz \,\right|\\]
-arbitrarily small by taking \\(n\\) sufficiently large.<a class="marginmark" onClick="toggleHide('mn:8,-2');">&#91;8&#93;</a>
+arbitrarily small by taking \\(n\\) sufficiently large.<a class="marginmark" onClick="toggleHide('mn:9,-2');">&#91;9&#93;</a>
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:8,-2" style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;8&#93;</a>*Editor's Note*:  By taking \\(\delta\\)  sufficiently small, we make \\(N\\) and \\(n\\) sufficiently large.<a onClick="hideIt('mn:8,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:9,-2" style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;9&#93;</a>*Editor's Note*:  By taking \\(\delta\\)  sufficiently small, we make \\(N\\) and \\(n\\) sufficiently large.<a onClick="hideIt('mn:9,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -268,7 +283,7 @@ arbitrarily small by taking \\(n\\) sufficiently large.<a class="marginmark" onC
 
 
 
-<div markdown=1 class="marginnotes" id="mn:8,-2" style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;8&#93;</a>*Editor's Note*:  By taking \\(\delta\\)  sufficiently small, we make \\(N\\) and \\(n\\) sufficiently large.<a onClick="hideIt('mn:8,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:9,-2" style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;9&#93;</a>*Editor's Note*:  By taking \\(\delta\\)  sufficiently small, we make \\(N\\) and \\(n\\) sufficiently large.<a onClick="hideIt('mn:9,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -323,7 +338,7 @@ convergent, and that its sum is \\(\displaystyle \int_C \!S(z)\, dz\\).
 
 
 
-<div markdown=1 class="marginnotes" id="mn:9,+1" style="margin-top: +1em; margin-bottom: +1em;"><a class="marginmark">&#91;9&#93;</a>\\(\dfrac{df(z)}{dz}\\) means \\(\lim\limits_{h \rightarrow 0} \dfrac{f(z+h)-f(z)}{h}\\) where \\(h \rightarrow 0\\) along a definite simple curve; this definition is modified slightly in [&#167;5.12](CMA05-1-AnalyticFunctionsMN.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.) in the case when \\(f(z)\\) is an *analytic* function.<a onClick="hideIt('mn:9,+1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:10,+1" style="margin-top: +1em; margin-bottom: +1em;"><a class="marginmark">&#91;10&#93;</a>\\(\dfrac{df(z)}{dz}\\) means \\(\lim\limits_{h \rightarrow 0} \dfrac{f(z+h)-f(z)}{h}\\) where \\(h \rightarrow 0\\) along a definite simple curve; this definition is modified slightly in [&#167;5.12](CMA05-1-AnalyticFunctionsMN.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.) in the case when \\(f(z)\\) is an *analytic* function.<a onClick="hideIt('mn:10,+1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -331,7 +346,7 @@ convergent, and that its sum is \\(\displaystyle \int_C \!S(z)\, dz\\).
 
 <div markdown=1 class="contenttext">
 
->Corollary. As in [&#167;4.44 corollary](CMA04-2-InfiniteIntegralsMN.html#4.44corollary), it may be shewn that<a class="marginmark" onClick="toggleHide('mn:9,+1');">&#91;9&#93;</a> 
+>Corollary. As in [&#167;4.44 corollary](CMA04-2-InfiniteIntegralsMN.html#4.44corollary), it may be shewn that<a class="marginmark" onClick="toggleHide('mn:10,+1');">&#91;10&#93;</a> 
 \\[\frac{d}{dz}\sum_{n=0}^\infty u_n(z) = \sum_{n=0}^\infty \frac{d}{dz}u_n(z)  \\]
 if the series on the right converges uniformly and the series on the left is convergent. 
 

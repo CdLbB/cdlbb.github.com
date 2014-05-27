@@ -82,7 +82,12 @@ Let \\(x^{\lambda-1} y^{\mu-1} (1 - x -y)^{\nu-1}   f(x,y) = \phi(x,y)\\); and l
 
 Let \\(\delta\\) be any positive number less than \\(\frac{1}{3}\\). 
 
-Draw the triangle whose sides are \\(x = \delta\\), \\(y = \delta\\), \\(x+y = 1- \delta\\); at all points on and inside 
+[^triangle,+2]: ![Figure 1: Area of integration.][fig_1]
+
+[fig_1]: W&WIllustrationA.svg "Area of integration."
+
+
+Draw the triangle whose sides are \\(x = \delta\\), \\(y = \delta\\), \\(x+y = 1- \delta\\);[^triangle,+2] at all points on and inside 
 this triangle \\(\phi(x, y)\\) is continuous, and hence, by [§4.3 corollary](CMA04-2-InfiniteIntegrals.html#4.3corollary), 
 \\[\int_\delta^{1-2\delta} \!dx \left\{\int_\delta^{1-x-\delta} \!\phi(x,y)\,dy \right\}=\int_\delta^{1-2\delta}\! dy \left\{\int_\delta^{1-y-\delta} \!\phi(x,y)\,dx \right\}.\\]
 

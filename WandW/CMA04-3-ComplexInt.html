@@ -84,7 +84,7 @@ integral equations; the investigation which we shall give is due to W. A. Hurwit
 
 <p>Let <span class="math">\(\delta\)</span> be any positive number less than <span class="math">\(\frac{1}{3}\)</span>. </p>
 
-<p>Draw the triangle whose sides are <span class="math">\(x = \delta\)</span>, <span class="math">\(y = \delta\)</span>, <span class="math">\(x+y = 1- \delta\)</span>; at all points on and inside
+<p>Draw the triangle whose sides are <span class="math">\(x = \delta\)</span>, <span class="math">\(y = \delta\)</span>, <span class="math">\(x+y = 1- \delta\)</span>;<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a> at all points on and inside
 this triangle <span class="math">\(\phi(x, y)\)</span> is continuous, and hence, by <a href="CMA04-2-InfiniteIntegrals.html#4.3corollary">§4.3 corollary</a>,
 <span class="math">\[\int_\delta^{1-2\delta} \!dx \left\{\int_\delta^{1-x-\delta} \!\phi(x,y)\,dy \right\}=\int_\delta^{1-2\delta}\! dy \left\{\int_\delta^{1-y-\delta} \!\phi(x,y)\,dx \right\}.\]</span></p>
 
@@ -105,7 +105,7 @@ where <span class="math">\[I_1= \int_0^\delta \!\phi(x,y)\,dy, \quad I_2= \int_{
 \]</span>
 since <span class="math">\[  (1-x-y)^{\nu-1} \leq (1-x-\delta)^{\nu-1}. \]</span> </p>
 
-<p>Therefore, writing <span class="math">\(x = (1 - \delta)x_1\)</span>, we have<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a>
+<p>Therefore, writing <span class="math">\(x = (1 - \delta)x_1\)</span>, we have<a href="#fn:4" id="fnref:4" title="see footnote" class="footnote">[4]</a>
 <span class="math">\[
 \begin{align*}
 \left|\,\int_\delta^{1-2\delta} \! I_1 \, dx\, \right| & \leq M \delta^\mu \mu^{-1}  \int_0^{1-\delta} \! x^{\lambda-1} (1-x-\delta)^{\nu-1} dx \\
@@ -114,7 +114,7 @@ since <span class="math">\[  (1-x-y)^{\nu-1} \leq (1-x-\delta)^{\nu-1}. \]</span
 \end{align*}
 \]</span> The reader will prove similarly that <span class="math">\(\int_\delta^{1-2\delta}I_2\, dx \rightarrow 0\)</span> as <span class="math">\(\delta \rightarrow 0\)</span>. </p>
 
-<p>Hence<a href="#fn:4" id="fnref:4" title="see footnote" class="footnote">[4]</a> <span class="math">\[
+<p>Hence<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a> <span class="math">\[
 \begin{align*}
 \int_0^1 \! dx \left\{\int_0^{1-x} \! \phi(x,y)\,dy \right\} & =\lim_{\delta \rightarrow 0}\int_\delta^{1-2\delta} \! dx \left\{\int_0^{1-x} \!\phi(x,y)\,dy \right\}\\
 &  =\lim_{\delta \rightarrow 0}\int_\delta^{1-2\delta} \!dx \left\{\int_\delta^{1-x-\delta} \!\phi(x,y)\,dy \right\}\\
@@ -138,7 +138,7 @@ This is called Dirichlet&#8217;s formula. </p>
 <p>[<strong>Note</strong>. What are now called infinite and improper integrals were defined by Cauchy, <a href="http://gallica.bnf.fr/ark:/12148/bpt6k62404287"><em>Leçons sur le calc. inf.</em> 1823</a>, though the idea of infinite integrals seems to date from Maclaurin (1742). The test for convergence was employed by Chartier (1853). Stokes (1847) distinguished between &#8216;essentially&#8217; (absolutely) and non-essentially convergent integrals though he did not give a formal definition. Such a definition was given by Dirichlet in 1854 and 1858 (see his <a href="https://archive.org/details/glejeunedirichle00lejeuoft"><em>Vorlesungen</em>, 1904</a>, p. 39). In the early part of the nineteenth century improper integrals received more attention than infinite integrals, probably because it was not fully realised that an infinite integral is really the <em>limit</em> of an integral.] </p>
 </blockquote>
 
-<h3 id="4.6complexintegration.">4.6 Complex integration.<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a></h3>
+<h3 id="4.6complexintegration.">4.6 Complex integration.<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a></h3>
 
 <p>Integration with regard to a real variable <span class="math">\(x\)</span> may be regarded as integration
 along a particular path (namely part of the real axis) in the Argand diagram.
@@ -147,7 +147,7 @@ Let <span class="math">\(f(z)\)</span>, <span class="math">\((= P + iQ)\)</span>
 <p>Let the equations of the curve be
 <span class="math">\[x = x (t),\quad  y = y(t) \quad (a \leq t \leq b).\]</span>
 Let <span class="math">\[x(a) + iy(a) = z_0 ,\quad x(b) + iy(b) = Z.\]</span>
-Then if <span class="math">\(x(t),\, y(t)\)</span> have continuous differential coefficients,<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a> we <em>define</em><a href="#fn:7" id="fnref:7" title="see footnote" class="footnote">[7]</a>
+Then if <span class="math">\(x(t),\, y(t)\)</span> have continuous differential coefficients,<a href="#fn:7" id="fnref:7" title="see footnote" class="footnote">[7]</a> we <em>define</em><a href="#fn:8" id="fnref:8" title="see footnote" class="footnote">[8]</a>
 <span class="math">\(\int_{z_{0}}^Z  f(z)\, dz\)</span> taken along the simple curve <em>AB</em> to mean
 <span class="math">\[\int_a^b \! (P+iQ)\left(\frac{dx}{dt}+i\frac{dy}{dt}\right) dt.\]</span></p>
 
@@ -178,7 +178,7 @@ It obviously exists if <span class="math">\(\frac{dx}{dt}\)</span>, <span class=
 <span class="math">\(z_1^{\,(n)}, \, z_2^{\,(n)}, \, , \dots , z_n^{\,(n)}\)</span> <span class="math">\((z_0^{\,(n)} = z_0, \, z_{n+1}^{\,(n)} = Z)\)</span>; let their parameters be <span class="math">\(t_1^{\,(n)}, \, t_2^{\,(n)}, \, , \dots , t_n^{\,(n)}\)</span>, and let the sequence be such that, given any number <span class="math">\(\delta\)</span>, we can find <span class="math">\(N\)</span> such
 that, when <span class="math">\(n > N\)</span>, <span class="math">\(t_{r+1}^{\,(n)}-t_r^{\,(n)} < \delta \)</span>, for <span class="math">\(r= 0, 1, 2, \dots , n\)</span>; let <span class="math">\(\zeta_r^{\,(n)}\)</span> be any point whose parameter lies between <span class="math">\(t_{r}^{\,(n)}, \,t_{r+1}^{\,(n)} \)</span>; then we can make
 <span class="math">\[\left|\, \sum_{r=0}^n \left(z_{r+1}^{\,(n)}- z_r^{\,(n)}\right) \, f\left(\zeta_r^{\,(n)}\right) - \int_{z_0}^Z \! f(z)\, dz \,\right|\]</span>
-arbitrarily small by taking <span class="math">\(n\)</span> sufficiently large.<a href="#fn:8" id="fnref:8" title="see footnote" class="footnote">[8]</a></p>
+arbitrarily small by taking <span class="math">\(n\)</span> sufficiently large.<a href="#fn:9" id="fnref:9" title="see footnote" class="footnote">[9]</a></p>
 
 <h4 id="4.62anupperlimittothevalueofacomplexintegral.">4.62 An upper limit to the value of a complex integral.</h4>
 
@@ -218,7 +218,7 @@ there corresponds a number <span class="math">\(r\)</span> <em>independent</em> 
 convergent, and that its sum is <span class="math">\(\displaystyle \int_C \!S(z)\, dz\)</span>. </p>
 
 <blockquote>
-<p>Corollary. As in <a href="CMA04-2-InfiniteIntegrals.html#4.44corollary">§4.44 corollary</a>, it may be shewn that<a href="#fn:9" id="fnref:9" title="see footnote" class="footnote">[9]</a>
+<p>Corollary. As in <a href="CMA04-2-InfiniteIntegrals.html#4.44corollary">§4.44 corollary</a>, it may be shewn that<a href="#fn:10" id="fnref:10" title="see footnote" class="footnote">[10]</a>
 <span class="math">\[\frac{d}{dz}\sum_{n=0}^\infty u_n(z) = \sum_{n=0}^\infty \frac{d}{dz}u_n(z)  \]</span>
 if the series on the right converges uniformly and the series on the left is convergent. </p>
 </blockquote>
@@ -340,7 +340,7 @@ continuously turning tangents, each of which meets any line parallel to the coor
 </ol>
 </div>
 
-</div>
+<p></div></p>
 </div>
 
 <div id="footer">
@@ -516,31 +516,38 @@ continuously turning tangents, each of which meets any line parallel to the coor
 </li>
 
 <li id="fn:3">
-<p><span class="math">\(\int_0^1 x_1^{\:\!\lambda-1} (1-x)^{\nu-1} dx_1= B (\lambda, \nu)\)</span> exists if <span class="math">\(\lambda > 0\)</span>, <span class="math">\(\nu > 0\)</span> (<a href="#4.5examples">§4.5 example 2</a>).  <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<figure>
+<img src="W&WIllustrationA.svg" alt="Figure 1: Area of integration." id="fig_1" title="Area of integration." />
+<figcaption>Figure 1: Area of integration.</figcaption>
+</figure>
 </li>
 
 <li id="fn:4">
-<p>The repeated integral exists, and is, in fact, absolutely convergent; for <span class="math">\[\int_0^{1-x}\! \left|\, x^{\lambda-1} y^{\mu-1} (1\! -\! x\! -\! y)^{\nu-1} f(x,y)\,\right|\, dy\]</span><span class="math">\[<  Mx^{\lambda-1} (1\! -\! x)^{\lambda+\nu-1} \!\!\int_0^1\!\!\! s^{\mu-1} (1\! -\! s)^{\nu-1} ds,\]</span>writing <span class="math">\(y = (1\! -\! x)s\)</span>; and <span class="math">\[ \int_0^1 \!\!\! Mx^{\lambda-1} (1\!-\! x)^{\lambda+\nu-1} \!\!\int_0^1\!\!\! s^{\mu-1} (1\! -\! s)^{\nu-1} ds\]</span>exists. <br><br>And since the integral exists, its value which is <span class="math">\(\lim\limits_{\delta,\,\epsilon \rightarrow 0} \int_\delta^{1-\epsilon}\)</span> may be written <span class="math">\(\lim\limits_{\delta \rightarrow 0} \int_\delta^{1-2\delta}\)</span>. <a href="#fnref:4" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p><span class="math">\(\int_0^1 x_1^{\:\!\lambda-1} (1-x)^{\nu-1} dx_1= B (\lambda, \nu)\)</span> exists if <span class="math">\(\lambda > 0\)</span>, <span class="math">\(\nu > 0\)</span> (<a href="#4.5examples">§4.5 example 2</a>).  <a href="#fnref:4" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:5">
-<p>A treatment of complex integration based on a different set of ideas and not making so many assumptions concerning the curve <em>AB</em> will be found in Watson&#8217;s <a href="https://archive.org/details/complexintegrat00watsrich"><em>Complex Integration and Cauchy&#8217;s Theorem</em></a>.  <a href="#fnref:5" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p>The repeated integral exists, and is, in fact, absolutely convergent; for <span class="math">\[\int_0^{1-x}\! \left|\, x^{\lambda-1} y^{\mu-1} (1\! -\! x\! -\! y)^{\nu-1} f(x,y)\,\right|\, dy\]</span><span class="math">\[<  Mx^{\lambda-1} (1\! -\! x)^{\lambda+\nu-1} \!\!\int_0^1\!\!\! s^{\mu-1} (1\! -\! s)^{\nu-1} ds,\]</span>writing <span class="math">\(y = (1\! -\! x)s\)</span>; and <span class="math">\[ \int_0^1 \!\!\! Mx^{\lambda-1} (1\!-\! x)^{\lambda+\nu-1} \!\!\int_0^1\!\!\! s^{\mu-1} (1\! -\! s)^{\nu-1} ds\]</span>exists. <br><br>And since the integral exists, its value which is <span class="math">\(\lim\limits_{\delta,\,\epsilon \rightarrow 0} \int_\delta^{1-\epsilon}\)</span> may be written <span class="math">\(\lim\limits_{\delta \rightarrow 0} \int_\delta^{1-2\delta}\)</span>. <a href="#fnref:5" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:6">
-<p>This assumption will be made throughout the subsequent work. <a href="#fnref:6" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p>A treatment of complex integration based on a different set of ideas and not making so many assumptions concerning the curve <em>AB</em> will be found in Watson&#8217;s <a href="https://archive.org/details/complexintegrat00watsrich"><em>Complex Integration and Cauchy&#8217;s Theorem</em></a>.  <a href="#fnref:6" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:7">
-<p>Cp. <a href="CMA04-1-Integration.html#4.13example4">§4.13 example 4</a>.  <a href="#fnref:7" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p>This assumption will be made throughout the subsequent work. <a href="#fnref:7" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:8">
-<p><em>Editor&#8217;s Note</em>: By taking <span class="math">\(\delta\)</span> sufficiently small, we make <span class="math">\(N\)</span> and <span class="math">\(n\)</span> sufficiently large. <a href="#fnref:8" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p>Cp. <a href="CMA04-1-Integration.html#4.13example4">§4.13 example 4</a>.  <a href="#fnref:8" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:9">
-<p><span class="math">\(\dfrac{df(z)}{dz}\)</span> means <span class="math">\(\lim\limits_{h \rightarrow 0} \dfrac{f(z+h)-f(z)}{h}\)</span> where <span class="math">\(h \rightarrow 0\)</span> along a definite simple curve; this definition is modified slightly in <a href="CMA05-1-AnalyticFunctions.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.">§5.12</a> in the case when <span class="math">\(f(z)\)</span> is an <em>analytic</em> function. <a href="#fnref:9" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p><em>Editor&#8217;s Note</em>: By taking <span class="math">\(\delta\)</span> sufficiently small, we make <span class="math">\(N\)</span> and <span class="math">\(n\)</span> sufficiently large. <a href="#fnref:9" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:10">
+<p><span class="math">\(\dfrac{df(z)}{dz}\)</span> means <span class="math">\(\lim\limits_{h \rightarrow 0} \dfrac{f(z+h)-f(z)}{h}\)</span> where <span class="math">\(h \rightarrow 0\)</span> along a definite simple curve; this definition is modified slightly in <a href="CMA05-1-AnalyticFunctions.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.">§5.12</a> in the case when <span class="math">\(f(z)\)</span> is an <em>analytic</em> function. <a href="#fnref:10" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 </ol>
