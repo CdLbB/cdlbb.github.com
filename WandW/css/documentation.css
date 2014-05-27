@@ -470,7 +470,18 @@ text-decoration: none;
     padding: 0;
     }
 
-
+.marginnotes img
+    {
+    width: 100%;
+    max-width: 250px;
+    min-width: 150px;
+    }    
+    
+.marginnotes figcaption
+    {
+    margin-left: 5%;
+    margin-right: 5%;
+    }
 
 div#footnotify_panel ul li
     {
