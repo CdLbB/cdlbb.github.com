@@ -124,7 +124,7 @@ whenever \\(\left|\, x-x_1  \right| < \eta\\) and \\(a\leq x\leq b\\).<a class="
 
 
 
-<div markdown=1 class="marginnotes" id="mn:5,+3" style="margin-top: +3em; margin-bottom: +3em;"><a class="marginmark">&#91;5&#93;</a>If a function is said to have ordinary discontinuities at certain points of an interval it is implied that it is continuous at all other points of the interval. <a onClick="hideIt('mn:5,+3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:5,+3" style="margin-top: +3em; margin-bottom: +3em;"><a class="marginmark">&#91;5&#93;</a>If a function is said to have ordinary discontinuities at certain points of an interval, it is implied that it is continuous at all other points of the interval. <a onClick="hideIt('mn:5,+3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -198,8 +198,7 @@ the simple curve is said to be *closed*.
 >*Example* 1. The circle \\(x^2 +y^2 =1\\) is a simple closed curve; for we may write<a class="marginmark" onClick="toggleHide('mn:7,+2');">&#91;7&#93;</a>
 >\\[\qquad x=\sin t, \quad y=\cos t. \qquad (0 \leq t \leq 2\pi)\\]
 
-A *two-dimensional continuum* is a set of points in a plane possessing the 
-following two properties : 
+######A *two-dimensional continuum* is a set of points in a plane possessing the following two properties: [3.21continuum]######
 
 <div markdown=1 class="listroman">
 

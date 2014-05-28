@@ -35,11 +35,13 @@ The reader will be already familiar with the term *elementary function*, as
 used (in text-books on Algebra, Trigonometry, and the Differential Calculus) 
 to denote certain analytical expressions[^analyticfuncyions,+3] depending on a variable \\(z\\), the 
 symbols involved therein being those of elementary algebra together with 
-exponentials, logarithms and the trigonometrical functions; examples of such 
+exponentials, logarithms and the trigonometrical functions;[^appendix,-3] examples of such 
 expressions are 
 \\[z^2,\quad e^z, \quad \log z, \quad \arcsin z^{\frac{3}{2}}.\\] 
 Such combinations of the elementary functions of analysis have in common 
 a remarkable property, which will now be investigated. 
+
+[^appendix,-3]: *Editor's Note*: Exponentials, logarithms and the trigonometrical functions are defined and their fundamental properties derived in the [Appendix](CMA24-Appendix-I-LogrithmAndExponential.html).
 
 Take as an example the function \\(e^z\\). 
 Write \\(e^z=f(x)\\). Then, if \\(z\\) be a fixed point and if \\(z'\\) be any other point, we have 
@@ -76,20 +78,20 @@ function \\(f(z)\\) under consideration; at other points \\(f(z)\\) is said to b
 
 The property does not hold good at *any* point for the function \\( \left|\,z\,\right|\\). 
 
-####5.12 Cauchy's definition[^cauchysmemoir,-1] of an analytic function of a complex variable. [5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.]####
+####5.12 Cauchy's definition[^cauchysmemoir,-2] of an analytic function of a complex variable. [5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.]####
 
-[^cauchysmemoir,-1]: See the memoir cited in [§5.2](CMA05-2-CauchysTheorem.html#5.2cauchystheoremontheintegralofafunctionroundacontour.).
+[^cauchysmemoir,-2]: See the memoir cited in [§5.2](CMA05-2-CauchysTheorem.html#5.2cauchystheoremontheintegralofafunctionroundacontour.) (1st margin note).
 
 The property considered in [§5.11](#5.11occasionalfailureoftheproperty.) will be taken as the basis of the definition of an *analytic function*, which may be stated as follows. 
 
-[^analytic,-1]: The words 'regular' and 'holomorphic' are sometimes used. A distinction has been made by Borel between 'monogenic' and 'analytic' functions in the case of functions with an infinite number of singularities. See [§5.51](CMA05-4-AnalyticContinuation.html#). <br><br>*Editor's Note*: Modern usage is slightly different: a complex function is *analytic, holomorphic (or regular) at a point \\(z\\)* if it is differentiable in a open neighborhood of \\(z\\) and is *holomorphic on set \\(S\\)* if it is holomorphic at every point of an open set containing \\(S\\).
+[^analytic,-3]: The words 'regular' and 'holomorphic' are sometimes used. A distinction has been made by Borel between 'monogenic' and 'analytic' functions in the case of functions with an infinite number of singularities. See [§5.51](CMA05-4-AnalyticContinuation.html#). <br><br>*Editor's Note*: Modern usage is slightly different: a complex function is *analytic, holomorphic (or regular) at a point \\(z\\)* if it is differentiable in a open neighborhood of \\(z\\) and is *holomorphic on set \\(S\\)* if it is holomorphic at every point of an open set containing \\(S\\).
 
 Let a two-dimensional region in the \\(z\\)-plane be given; and let \\(u\\) be a 
 function of \\(z\\) defined uniquely at all points of the region. Let \\(z\\), \\(z + \delta z\\) be values of the variable \\(z\\) at two points, and \\(u\\), \\(u + \delta u\\) the corresponding values of \\(u\\). Then, if, at any point \\(z\\) within the area, \\(\dfrac{\delta u}{\delta z}\\) tends to a limit when \\(\delta x \rightarrow 0\\), \\(\delta y \rightarrow 0\\), independently (where \\(\delta z = \delta x + i\delta y\\)), \\(u\\) is said to be a function of \\(z\\) 
-which is *monogenic* or *analytic*[^analytic,-1] at the point. If the function is analytic and *one-valued* at all points of the region, we say that the function is *analytic 
-throughout the region.*[^onevalued,+2] 
+which is *monogenic* or *analytic*[^analytic,-3] at the point. If the function is analytic and *one-valued* at all points of the region, we say that the function is *analytic 
+throughout the region.*[^onevalued,+3] 
 
-[^onevalued,+2]: See [§5.2 cor. 2](CMA05-2-CauchysTheorem.html#5.2corollary2), footnote.
+[^onevalued,+3]: See [§5.2 cor. 2](CMA05-2-CauchysTheorem.html#5.2corollary2), margin note.
 
 We shall frequently use the word 'function' alone to denote an analytic 
 function, as the functions studied in this work will be almost exclusively 
@@ -128,7 +130,7 @@ where \\(v\\) is a function of \\(z\\) and \\(z'\\) such that \\(\left|\,v\,\rig
 
 ####5.13 An application of the modified Heine-Borel theorem.####
 
-Let \\(f(z)\\) be analytic at all points of a continuum; and on any point \\(z\\) of the boundary of the continuum let numbers \\(f_1(z)\\), \\(\delta\\) (\\(\delta\\) depending on \\(z\\)) exist such that 
+Let \\(f(z)\\) be analytic at all points of [a continuum](CMA03-1-ContinuousFns.html#3.21continuum); and on any point \\(z\\) of the boundary of the continuum let numbers \\(f_1(z)\\), \\(\delta\\) (\\(\delta\\) depending on \\(z\\)) exist such that 
 \\[\left|\,f(z')-f(z)-(z'-z)\,f_1(z)\,\right|\ < \epsilon\, \left|\, z'-z\,\right|\\] 
 whenever \\(\left|\, z'-z\,\right| < \delta\\) and \\(z'\\) is a point of the continuum or its boundary.[^boundary,-2] 
 
@@ -153,8 +155,9 @@ is satisfied by all points \\(z'\\) inside or on the boundary of that part.
 
 
 <div id="footer">
-<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
-<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/"> GitHub.</a></h3>
+<h4>All content is either in the public domain or licensed under <a href="http://creativecommons.org/licenses/by/3.0/us/">a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h4>Feel free report typos and other issues on <span style="font-weight: 400;"><a href="https://github.com/CdLbB/cdlbb.github.com/tree/master/WandW">GitHub</a></span> or by email at <span style="font-weight: 400;"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#110;&#x69;&#x74;&#104;&#x61;&#114;&#100;&#x74;&#x40;&#x75;&#x77;&#46;&#101;&#x64;&#x75;">&#x6e;&#x69;&#116;&#x68;&#x61;&#114;&#100;&#x74;&#x40;&#117;&#119;&#x2e;&#101;&#x64;&#x75;</a></span>.</h4>
 </div>
 
 <div id="navaprop" class="navigation" style="visibility:hidden;" >

@@ -128,8 +128,7 @@ the simple curve is said to be *closed*.
 >*Example* 1. The circle \\(x^2 +y^2 =1\\) is a simple closed curve; for we may write[^contsine,+2]
 >\\[\qquad x=\sin t, \quad y=\cos t. \qquad (0 \leq t \leq 2\pi)\\]
 
-A *two-dimensional continuum* is a set of points in a plane possessing the 
-following two properties : 
+######A *two-dimensional continuum* is a set of points in a plane possessing the following two properties: [3.21continuum]######
 
 <div markdown=1 class="listroman">
 
