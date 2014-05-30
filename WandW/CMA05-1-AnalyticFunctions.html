@@ -37,7 +37,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
 used (in text-books on Algebra, Trigonometry, and the Differential Calculus)
 to denote certain analytical expressions<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a> depending on a variable <span class="math">\(z\)</span>, the
 symbols involved therein being those of elementary algebra together with
-exponentials, logarithms and the trigonometrical functions; examples of such
+exponentials, logarithms and the trigonometrical functions;<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a> examples of such
 expressions are
 <span class="math">\[z^2,\quad e^z, \quad \log z, \quad \arcsin z^{\frac{3}{2}}.\]</span>
 Such combinations of the elementary functions of analysis have in common
@@ -78,14 +78,14 @@ function <span class="math">\(f(z)\)</span> under consideration; at other points
 
 <p>The property does not hold good at <em>any</em> point for the function <span class="math">\( \left|\,z\,\right|\)</span>. </p>
 
-<h4 id="5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.">5.12 Cauchy&#8217;s definition<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a> of an analytic function of a complex variable.</h4>
+<h4 id="5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.">5.12 Cauchy&#8217;s definition<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a> of an analytic function of a complex variable.</h4>
 
 <p>The property considered in <a href="#5.11occasionalfailureoftheproperty.">§5.11</a> will be taken as the basis of the definition of an <em>analytic function</em>, which may be stated as follows. </p>
 
 <p>Let a two-dimensional region in the <span class="math">\(z\)</span>-plane be given; and let <span class="math">\(u\)</span> be a
 function of <span class="math">\(z\)</span> defined uniquely at all points of the region. Let <span class="math">\(z\)</span>, <span class="math">\(z + \delta z\)</span> be values of the variable <span class="math">\(z\)</span> at two points, and <span class="math">\(u\)</span>, <span class="math">\(u + \delta u\)</span> the corresponding values of <span class="math">\(u\)</span>. Then, if, at any point <span class="math">\(z\)</span> within the area, <span class="math">\(\dfrac{\delta u}{\delta z}\)</span> tends to a limit when <span class="math">\(\delta x \rightarrow 0\)</span>, <span class="math">\(\delta y \rightarrow 0\)</span>, independently (where <span class="math">\(\delta z = \delta x + i\delta y\)</span>), <span class="math">\(u\)</span> is said to be a function of <span class="math">\(z\)</span>
-which is <em>monogenic</em> or <em>analytic</em><a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a> at the point. If the function is analytic and <em>one-valued</em> at all points of the region, we say that the function is <em>analytic
-throughout the region.</em><a href="#fn:4" id="fnref:4" title="see footnote" class="footnote">[4]</a> </p>
+which is <em>monogenic</em> or <em>analytic</em><a href="#fn:4" id="fnref:4" title="see footnote" class="footnote">[4]</a> at the point. If the function is analytic and <em>one-valued</em> at all points of the region, we say that the function is <em>analytic
+throughout the region.</em><a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a> </p>
 
 <p>We shall frequently use the word &#8216;function&#8217; alone to denote an analytic
 function, as the functions studied in this work will be almost exclusively
@@ -107,7 +107,7 @@ whenever <span class="math">\(\left|\, z' - z \,\right| < \delta\)</span>. </p>
 
 <p>If <span class="math">\(f(z)\)</span> is analytic at all points <span class="math">\(z\)</span> of a region, <span class="math">\(l\)</span> obviously depends on <span class="math">\(z\)</span>; we consequently write <span class="math">\(l = f '(z)\)</span>. </p>
 
-<p>Hence <span class="math">\[f(z')= f(z) + (z'-z)f'(z) + v(z'- z),\]</span>
+<p>Hence <span class="math">\[f(z')= f(z) + (z'-z)\;\! f'(z) + v(z'- z),\]</span>
 where <span class="math">\(v\)</span> is a function of <span class="math">\(z\)</span> and <span class="math">\(z'\)</span> such that <span class="math">\(\left|\,v\,\right| < \epsilon\)</span> when <span class="math">\(\left|\,z' -z\,\right|< \delta\)</span>. </p>
 
 <blockquote>
@@ -126,9 +126,9 @@ where <span class="math">\(v\)</span> is a function of <span class="math">\(z\)<
 
 <h4 id="5.13anapplicationofthemodifiedheine-boreltheorem.">5.13 An application of the modified Heine-Borel theorem.</h4>
 
-<p>Let <span class="math">\(f(z)\)</span> be analytic at all points of a continuum; and on any point <span class="math">\(z\)</span> of the boundary of the continuum let numbers <span class="math">\(f_1(z)\)</span>, <span class="math">\(\delta\)</span> (<span class="math">\(\delta\)</span> depending on <span class="math">\(z\)</span>) exist such that
-<span class="math">\[\left|\,f(z')-f(z)-(z'-z)\,f_1(z)\,\right|\ < \epsilon\, \left|\, z'-z\,\right|\]</span>
-whenever <span class="math">\(\left|\, z'-z\,\right| < \delta\)</span> and <span class="math">\(z'\)</span> is a point of the continuum or its boundary.<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a> </p>
+<p>Let <span class="math">\(f(z)\)</span> be analytic at all points of <a href="CMA03-1-ContinuousFns.html#3.21continuum">a continuum</a>; and on any point <span class="math">\(z\)</span> of the boundary of the continuum let numbers <span class="math">\(f_1(z)\)</span>, <span class="math">\(\delta\)</span> (<span class="math">\(\delta\)</span> depending on <span class="math">\(z\)</span>) exist such that
+<span class="math">\[\left|\,f(z')-f(z)-(z'-z)\;\! f_1(z)\,\right|\ < \epsilon\, \left|\, z'-z\,\right|\]</span>
+whenever <span class="math">\(\left|\, z'-z\,\right| < \delta\)</span> and <span class="math">\(z'\)</span> is a point of the continuum or its boundary.<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a> </p>
 
 <p>The above inequality is obviously satisfied for all points <span class="math">\(z\)</span> of the continuum
 as well as boundary points. </p>
@@ -137,16 +137,17 @@ as well as boundary points. </p>
 the region formed by the continuum and its boundary can be divided into
 a <em>finite</em> number of parts (squares with sides parallel to the axes and their
 interiors, or portions of such squares) such that <em>inside</em> or on the boundary of
-any part there is one point <span class="math">\(z_1\)</span> such that the inequality
-<span class="math">\[\left|\,f(z')-f(z_1)-(z'-z_1)\,f_1(z_1)\,\right|\ < \epsilon\, \left|\, z'-z_1\,\right|\]</span>
+any part (part <span class="math">\(n\)</span>)<a href="#fn:7" id="fnref:7" title="see footnote" class="footnote">[7]</a> there is one point <span class="math">\(z_n\)</span> such that the inequality
+<span class="math">\[\left|\,f(z')-f(z_n)-(z'-z_n)\;\! f_1(z_n)\,\right|\ < \epsilon\, \left|\, z'-z_n\,\right|\]</span>
 is satisfied by all points <span class="math">\(z'\)</span> inside or on the boundary of that part. </p>
 
 </div>
 </div>
 
 <div id="footer">
-<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
-<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/"> GitHub.</a></h3>
+<h4>All content is either in the public domain or licensed under <a href="http://creativecommons.org/licenses/by/3.0/us/">a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h4>Feel free report typos and other issues on <span style="font-weight: 400;"><a href="https://github.com/CdLbB/cdlbb.github.com/tree/master/WandW">GitHub</a></span> or by email at <span style="font-weight: 400;"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#110;&#x69;&#x74;&#104;&#x61;&#114;&#100;&#x74;&#x40;&#x75;&#x77;&#46;&#101;&#x64;&#x75;">&#x6e;&#x69;&#116;&#x68;&#x61;&#114;&#100;&#x74;&#x40;&#117;&#119;&#x2e;&#101;&#x64;&#x75;</a></span>.</h4>
 </div>
 
 <div id="navaprop" class="navigation" style="visibility:hidden;" >
@@ -186,7 +187,7 @@ is satisfied by all points <span class="math">\(z'\)</span> inside or on the bou
 </li>
 <li class="part"><a onClick="hideIt('navaprop');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a onClick="hideIt('navaprop');showIt('navback');">BACKMATTER</a> 
-  <ul >
+   <ul >
     <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
   </ul>
 </li>
@@ -309,19 +310,27 @@ is satisfied by all points <span class="math">\(z'\)</span> inside or on the bou
 </li>
 
 <li id="fn:2">
-<p>See the memoir cited in <a href="CMA05-2-CauchysTheorem.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">§5.2</a>. <a href="#fnref:2" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p><em>Editor&#8217;s Note</em>: Exponentials, logarithms and the trigonometrical functions are defined and their fundamental properties derived in the <a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a>. <a href="#fnref:2" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:3">
-<p>The words &#8216;regular&#8217; and &#8216;holomorphic&#8217; are sometimes used. A distinction has been made by Borel between &#8216;monogenic&#8217; and &#8216;analytic&#8217; functions in the case of functions with an infinite number of singularities. See <a href="CMA05-4-AnalyticContinuation.html#">§5.51</a>. <br><br><em>Editor&#8217;s Note</em>: Modern usage is slightly different: a complex function is <em>analytic, holomorphic (or regular) at a point <span class="math">\(z\)</span></em> if it is differentiable in a open neighborhood of <span class="math">\(z\)</span> and is <em>holomorphic on set <span class="math">\(S\)</span></em> if it is holomorphic at every point of an open set containing <span class="math">\(S\)</span>. <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p>See the memoir cited in <a href="CMA05-2-CauchysTheorem.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">§5.2</a> (1st margin note). <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:4">
-<p>See <a href="CMA05-2-CauchysTheorem.html#5.2corollary2">§5.2 cor. 2</a>, footnote. <a href="#fnref:4" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p>The words &#8216;regular&#8217; and &#8216;holomorphic&#8217; are sometimes used. A distinction has been made by Borel between &#8216;monogenic&#8217; and &#8216;analytic&#8217; functions in the case of functions with an infinite number of singularities. See <a href="CMA05-4-AnalyticContinuation.html#">§5.51</a>. <br><br><em>Editor&#8217;s Note</em>: Modern usage is slightly different: a complex function is <em>analytic, holomorphic (or regular) at a point <span class="math">\(z\)</span></em> if it is differentiable in a open neighborhood of <span class="math">\(z\)</span> and is <em>holomorphic on set <span class="math">\(S\)</span></em> if it is holomorphic at every point of an open set containing <span class="math">\(S\)</span>. <a href="#fnref:4" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:5">
-<p>We write <span class="math">\(f_1(z)\)</span> instead of <span class="math">\(f'(z)\)</span> as the differential coefficient might not exist when <span class="math">\(z'\)</span> approaches <span class="math">\(z\)</span> from outside the boundary so that <span class="math">\(f_1(z)\)</span> is not necessarily a unique derivate. <a href="#fnref:5" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p>See <a href="CMA05-2-CauchysTheorem.html#5.2corollary2">§5.2 cor. 2</a>, margin note. <a href="#fnref:5" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:6">
+<p>We write <span class="math">\(f_1(z)\)</span> instead of <span class="math">\(f'(z)\)</span> as the differential coefficient might not exist when <span class="math">\(z'\)</span> approaches <span class="math">\(z\)</span> from outside the boundary so that <span class="math">\(f_1(z)\)</span> is not necessarily a unique derivate. <a href="#fnref:6" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:7">
+<p><em>Editor&#8217;s Note</em>: For clarity, I indexed the parts and the <span class="math">\(z_n\)</span>. <a href="#fnref:7" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 </ol>

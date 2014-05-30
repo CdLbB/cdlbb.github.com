@@ -113,7 +113,7 @@ whenever \\(\left|\, z' - z \,\right| < \delta\\).
 
 If \\(f(z)\\) is analytic at all points \\(z\\) of a region, \\(l\\) obviously depends on \\(z\\); we consequently write \\(l = f '(z)\\). 
 
-Hence \\[f(z')= f(z) + (z'-z)f'(z) + v(z'- z),\\] 
+Hence \\[f(z')= f(z) + (z'-z)\;\! f'(z) + v(z'- z),\\] 
 where \\(v\\) is a function of \\(z\\) and \\(z'\\) such that \\(\left|\,v\,\right| < \epsilon\\) when \\(\left|\,z' -z\,\right|< \delta\\). 
 
 >*Example* 1. Find the points at which the following functions are not analytic: 
@@ -131,7 +131,7 @@ where \\(v\\) is a function of \\(z\\) and \\(z'\\) such that \\(\left|\,v\,\rig
 ####5.13 An application of the modified Heine-Borel theorem.####
 
 Let \\(f(z)\\) be analytic at all points of [a continuum](CMA03-1-ContinuousFns.html#3.21continuum); and on any point \\(z\\) of the boundary of the continuum let numbers \\(f_1(z)\\), \\(\delta\\) (\\(\delta\\) depending on \\(z\\)) exist such that 
-\\[\left|\,f(z')-f(z)-(z'-z)\,f_1(z)\,\right|\ < \epsilon\, \left|\, z'-z\,\right|\\] 
+\\[\left|\,f(z')-f(z)-(z'-z)\;\! f_1(z)\,\right|\ < \epsilon\, \left|\, z'-z\,\right|\\] 
 whenever \\(\left|\, z'-z\,\right| < \delta\\) and \\(z'\\) is a point of the continuum or its boundary.[^boundary,-2] 
 
 [^boundary,-2]: We write \\(f_1(z)\\) instead of \\(f'(z)\\) as the differential coefficient might not exist when \\(z'\\) approaches \\(z\\) from outside the boundary so that \\(f_1(z)\\) is not necessarily a unique derivate.
@@ -143,10 +143,11 @@ Applying the two-dimensional form of the theorem of [§3.6](CMA03-3-Heine-Borel.
 the region formed by the continuum and its boundary can be divided into 
 a *finite* number of parts (squares with sides parallel to the axes and their 
 interiors, or portions of such squares) such that *inside* or on the boundary of 
-any part there is one point \\(z_1\\) such that the inequality 
-\\[\left|\,f(z')-f(z_1)-(z'-z_1)\,f_1(z_1)\,\right|\ < \epsilon\, \left|\, z'-z_1\,\right|\\] 
+any part (part \\(n\\))[^addindex,-7] there is one point \\(z_n\\) such that the inequality 
+\\[\left|\,f(z')-f(z_n)-(z'-z_n)\;\! f_1(z_n)\,\right|\ < \epsilon\, \left|\, z'-z_n\,\right|\\] 
 is satisfied by all points \\(z'\\) inside or on the boundary of that part. 
 
+[^addindex,-7]: *Editor's Note*: For clarity, I indexed the parts and the \\(z_n\\).
 
 </div>
 

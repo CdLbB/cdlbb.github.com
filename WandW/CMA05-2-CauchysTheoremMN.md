@@ -64,7 +64,7 @@ follows. *If \\(f(z)\\) is a function of \\(z\\), analytic at all points on<a cl
 
 
 
-<div markdown=1 class="marginnotes" id="mn:3,-10" style="margin-top: -10em; margin-bottom: -10em;"><a class="marginmark">&#91;3&#93;</a>It is not necessary that \\(f(z)\\) should be analytic *on* \\(C\\) (it is sufficient that it be continuous on and inside \\(C\\)), but if \\(f(z)\\) is not analytic on \\(C\\), the theorem is much harder to prove. This proof merely assumes that \\(f'(z)\\) *exists* at all points on and inside \\(C\\). Earlier proofs made more extended assumptions; thus Cauchy's proof assumed the *continuity* of \\(f'(z)\\). Riemann's proof made an equivalent assumption. Goursat's first proof assumed that \\(f(z)\\) was *uniformly* differentiable throughout \\(C\\). <br><br> *Editor's Note*: For those like me who find the first sentence of the above footnote ambiguously worded, I am sure it is intended to claim that it is sufficient for \\(f(z)\\) to be analytic *inside* \\(C\\) and continuous *on and inside* \\(C\\).<a onClick="hideIt('mn:3,-10')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:3,-10" style="margin-top: -10em; margin-bottom: -10em;"><a class="marginmark">&#91;3&#93;</a>It is not necessary that \\(f(z)\\) should be analytic *on* \\(C\\) (it is sufficient that it be continuous on and inside \\(C\\)), but if \\(f(z)\\) is not analytic on \\(C\\), the theorem is much harder to prove. This proof merely assumes that \\(f'(z)\\) *exists* at all points on and inside \\(C\\). Earlier proofs made more extended assumptions; thus Cauchy's proof assumed the *continuity* of \\(f'(z)\\). Riemann's proof made an equivalent assumption. Goursat's first proof assumed that \\(f(z)\\) was *uniformly* differentiable throughout \\(C\\). <br><br> *Editor's Note*: For those like me who find the first sentence of the above note ambiguously worded, I am sure it is intended to claim that it is sufficient for \\(f(z)\\) to be analytic *inside* \\(C\\) and continuous *on and inside* \\(C\\).<a onClick="hideIt('mn:3,-10')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -91,10 +91,11 @@ cancel;<a class="marginmark" onClick="toggleHide('mn:4,-8');">&#91;4&#93;</a> th
 
 <div markdown=1 class="contenttext">
 
-Now consider \\(\displaystyle\int_{(C_n)} \! f(z)\,dz\\). With the notation of [&#167;5.12](CMA05-1-AnalyticFunctionsMN.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.),
+Now consider \\(\displaystyle\int_{(C_n)} \! f(z)\,dz\\). With the notation of [&#167;5.12](CMA05-1-AnalyticFunctionsMN.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.) 
+(and \\(z_n\\) from [&#167;5.13](CMA05-1-AnalyticFunctionsMN.html#5.13anapplicationofthemodifiedheine-boreltheorem.)),
 \\[\begin{align*}
-\int_{(C_n)}\!f(z) \,dz &= \int_{(C_n)}\!\left\{f(z_1)+(z-z_1)\,f'(z_1)+(z-z_1)v\right\} \,dz\\
-&=\left\{f(z_1)-z_1 f'(z_1)\right\}\int_{(C_n)}\!dz + f'(z_1)\int_{(C_n)}\!z\,dz + \int_{(C_n)}\!(z-z_1)v\,dz.
+\int_{(C_n)}\!f(z) \,dz &= \int_{(C_n)}\!\left\{f(z_n)+(z-z_n)\;\! f'(z_n)+(z-z_n)\:\! v\right\} \,dz\\
+&=\left\{f(z_n)-z_n f'(z_n)\right\}\int_{(C_n)}\!dz + f'(z_n)\int_{(C_n)}\!z\,dz + \int_{(C_n)}\!(z-z_n)\:\! v\,dz.
 \end{align*}\\]
 But
 \\[\int_{(C_n)}\!dz=\left[z\right]_{C_n}=0, \quad \int_{(C_n)}\!z\,dz=\left[\frac{1}{2}z^2\right]_{C_n}=0,\\] 
@@ -105,14 +106,14 @@ Now let \\(l_n\\) be the side of \\(C_n\\) and \\(A_n\\) the area of \\(C_n\\).
 Then, using [&#167;4.62](CMA04-3-ComplexIntMN.html#4.62anupperlimittothevalueofacomplexintegral.), 
 
 \\[\begin{align*}
-\left|\,\int_{(C_n)}\!f(z) \,dz \,\right| &= \left|\,\int_{(C_n)} \!(z-z')v\, dz\, \right| \leq \int_{(C_n)} \! \left|\,(z-z')v\, \right| \,\left|\, dz \, \right| \\
-&< \epsilon l_n \sqrt{2} \int_{(C_n)} \! \left|\, dz\,\right| = \epsilon l_n \sqrt{2} \cdot 4l_n = 4\epsilon A_n \sqrt{2}
+\left|\,\int_{(C_n)}\!f(z) \,dz \,\right| &= \left|\,\int_{(C_n)} \!(z-z_n)\:\! v\, dz\, \right| \leq \int_{(C_n)} \! \left|\,(z-z_n)\:\! v\,  dz \, \right| \\
+&< \epsilon l_n \sqrt{2} \int_{(C_n)} \! \left|\, dz\,\right| = \epsilon l_n \sqrt{2} \cdot 4l_n = 4\epsilon A_n \sqrt{2} .
 \end{align*}\\]
 
 In like manner 
 \\[\begin{align*}
-\left|\,\int_{(D_n)}\!f(z) \,dz \,\right| & \leq \int_{(D_n)} \! \left|\,(z-z')v\, \right| \,\left|\, dz \, \right| \\
-& \leq  4\epsilon (A'_n+ l'_n\lambda_n )\sqrt{2}
+\left|\,\int_{(D_n)}\!f(z) \,dz \,\right| & \leq \int_{(D_n)} \! \left|\,(z-z_n)\:\! v \, dz \, \right| \\
+& \leq  4\epsilon (A'_n+ l'_n\lambda_n )\sqrt{2} ,
 \end{align*}\\]
 where \\(A'_n\\) is the area of the complete square of which \\(D n\\) is part, \\(l'_n\\) is the side of this square and \\(\lambda_n\\) is the length of the part of \\(C\\) which lies inside this 
 square. Hence, if \\(\lambda\\) be the whole length of \\(C\\), while \\(l\\) is the side of a square which encloses all the squares \\(C_n\\) and \\(D_n\\), 
@@ -130,7 +131,7 @@ can have is zero; and this is Cauchy's result.
 
 
 
-<div markdown=1 class="marginnotes" id="mn:5,+6" style="margin-top: +6em; margin-bottom: +6em;"><a class="marginmark">&#91;5&#93;</a>The phrase 'analytic throughout a region' implies one-valuedness ([&#167;5.12](CMA05-1-AnalyticFunctionsMN.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.)); that is to say that after \\(z\\) has described a closed path surrounding \\(C_0\\), \\(f(z)\\) has returned to its initial value. A many-valued function such as log \\(z\\) considered in the region \\(1 \leq  \left|\, z\,\right| \leq 2\\) will be said to be 'analytic at all points of the region.' <a onClick="hideIt('mn:5,+6')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:5,+6" style="margin-top: +6em; margin-bottom: +6em;"><a class="marginmark">&#91;5&#93;</a>The phrase 'analytic throughout a region' implies one-valuedness ([&#167;5.12](CMA05-1-AnalyticFunctionsMN.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.)); that is to say that after \\(z\\) has described a closed path surrounding \\(C_0\\), \\(f(z)\\) has returned to its initial value. A many-valued function such as log \\(z\\) considered in the region \\(1 \leq  \left|\, z\,\right| \leq 2\\) will be said to be 'analytic at all points of the region' (but *not* 'analytic throughout the region' --*Editor*). <a onClick="hideIt('mn:5,+6')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -162,7 +163,7 @@ Let \\(C\\) be a contour within and on which \\(f(z)\\) is an analytic function 
 is a function of \\(z\\), which is analytic at all points within the contour \\(C\\) except the point \\(z = a\\). 
 
 Now, given \\(\epsilon\\), we can find \\(\delta\\) such that 
-\\[\left|\,f(z)-f(a)-(z-a)f'(a)\,\right| \leq \epsilon\left|\,z-a\,\right|\\] 
+\\[\left|\,f(z)-f(a)-(z-a)\;\! f'(a)\,\right| \leq \epsilon\left|\,z-a\,\right|\\] 
 whenever \\(\left|\, z - a \,\right| < \delta\\); with the point \\(a\\) as centre describe a circle \\(\gamma\\) of radius 
 \\(r < \delta\\), \\(r\\) being so small that  lies wholly inside \\(C\\). 
 
@@ -173,7 +174,7 @@ Then in the space between \\(\gamma\\) and \\(C\\) \\(\left. f(z)\middle/(z - a)
 where \\(\int_C\\) and \\(\int_\gamma\\) denote integrals taken counter-clockwise along the curves \\(C\\) and \\(\gamma\\) respectively. 
 
 But, since \\(\left|\, z - a\,\right| < \delta\\) on \\(\gamma\\), we have 
-\\[\int_\gamma \!\frac{f(z)\,dz}{z-a}=\int_\gamma \!\frac{f(a)+(z-a)f'(a)+v(z-a)}{z-a}dz,\\]
+\\[\int_\gamma \!\frac{f(z)\,dz}{z-a}=\int_\gamma \!\frac{f(a)+(z-a)\;\! f'(a)+v(z-a)}{z-a}dz,\\]
 where \\(\left|\, v\,\right| <  \epsilon\\); and so 
 \\[\int_C \!\frac{f(z)\,dz}{z-a}=f(a)\!\int_\gamma \!\frac{dz}{z-a} + f'(a)\!\int_\gamma \!dz +\int_\gamma v\,dz.\\]
 
@@ -192,7 +193,7 @@ But the left-hand side is independent of \\(\epsilon\\), and so it must be zero,
 \\[f(a) = \frac{1}{2\pi i }\! \int_C \! \frac{f(z)\,dz}{z-a}.\\]
 
 This remarkable result expresses the value of a function \\(f(z)\\), (which is 
-analytic on and inside \\(C\\)) at any point \\(a\\) *within* a contour \\(C\\), in terms of an integral which depends only on the value of \\(f(z)\\) at points on the contour itself. 
+*analytic* on and inside \\(C\\)) at any point \\(a\\) *within* a contour \\(C\\), in terms of an integral which depends only on the value of \\(f(z)\\) at points on the contour itself. 
 
 >######*Corollary*. If \\(f(z)\\) is an analytic one-valued function of \\(z\\) in a ring-shaped region bounded by two curves \\(C\\) and \\(C'\\), and \\(a\\) is a point in the region, then \\[f(a) = \frac{1}{2\pi i }\! \int_C \! \frac{f(z)\,dz}{z-a}-\frac{1}{2\pi i }\! \int_{C'} \! \frac{f(z)\,dz}{z-a},\\] where \\(C\\) is the outer of the curves and the integrals are taken counter-clockwise. [5.21corollary]######
 
@@ -217,7 +218,7 @@ while we can take \\(\left|\, h\,\right|\\)  less than the upper bound of \\(\fr
 
 Therefore \\(\displaystyle \left|\,\frac{f(z)}{(z-a)^2(z-a-h)}\,\right|\\) is bounded; let its upper bound be \\(K\\). 
 Then, if \\(l\\) be the length of \\(C\\), 
-\\[\left|\,\lim_{h \rightarrow 0} \frac{1}{2\pi i}\int_C \frac{f(z)}{(z-a)^2(z-a-h)}\,\right|\leq \lim_{h \rightarrow 0 } \:\left|\,h\,\right|\,(2\pi)^{-1} K \,l = 0,\\]
+\\[\left|\,\lim_{h \rightarrow 0} \frac{h}{2\pi i}\int_C \frac{f(z)\,dz}{(z-a)^2(z-a-h)}\,\right|\leq \lim_{h \rightarrow 0 } \:\left|\,h\,\right|\,(2\pi)^{-1} K \,l = 0,\\]
 and consequently
 \\[f'(z)=\frac{1}{2\pi i }\! \int_C  \frac{f(z)\,dz}{(z-a)^2},\\] 
 a formula which expresses the value of the derivate of a function at a point 
@@ -239,7 +240,7 @@ of \\(a\\); its derivate, which is represented by the expression just given, is
 denoted by \\(f''(a)\\), and is called the *second derivate* of \\(f(a)\\). 
 
 Similarly it can be shewn that \\(f''(a)\\) is an analytic function of \\(a\\), possessing a derivate equal to 
-\\[\frac{2\cdot 3}{2\pi i }\! \int_C \frac{f(z)\,dz}{(z-a)^4}.\\] 
+\\[\frac{2\cdot 3}{2\pi i }\! \int_C \frac{f(z)\,dz}{(z-a)^4};\\] 
 
 this is denoted by \\(f'''(a)\\), and is called the *third derivate* of \\(f(a)\\). And in general an \\(n\\)th derivate \\(f^{(n)}(a)\\) of \\(f(a)\\) exists, expressible by the integral 
 \\[\frac{n!}{2\pi i }\! \int_C \frac{f(z)\,dz}{(z-a)^{n+1}},\\] 
@@ -260,13 +261,13 @@ Let \\(f(z)\\) be analytic on and inside a circle with centre \\(a\\) and radius
  
 >*Example*. If \\(f(z)\\) is analytic, \\(z=x +iy\\) and \\( \nabla^2=\dfrac{\partial^2}{\partial x^2}+\dfrac{\partial^2}{\partial y^2}\\), shew that  
 >\\[\nabla^2 \log \left|\,f(z)\,\right| = 0; \text{ and } \nabla^2  \left|\,f(z)\,\right| > 0\\] 
-unless \\(f(z) =0 \\) or \\(f'(z) = 0\\).<a class="marginmark" onClick="toggleHide('mn:6,-3');">&#91;6&#93;</a> (Trinity, 1910.) 
+unless \\(f(z) =0 \\) or \\(f'(z) = 0\\).<a class="marginmark" onClick="toggleHide('mn:6,-5');">&#91;6&#93;</a> \\(\vphantom{\\ 3\\}\\)<br> (Trinity, 1910.) 
 
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:6,-3" style="margin-top: -3em; margin-bottom: -3em;"><a class="marginmark">&#91;6&#93;</a>*Editor's Note*: Either part of this example can be used to prove the [*maximum modulus principle*](http://mathworld.wolfram.com/MaximumModulusPrinciple.html). <a onClick="hideIt('mn:6,-3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:6,-5" style="margin-top: -5em; margin-bottom: -5em;"><a class="marginmark">&#91;6&#93;</a>*Editor's Note*: Either part of this example can be used to prove the [*maximum modulus principle*](http://mathworld.wolfram.com/MaximumModulusPrinciple.html). <a onClick="hideIt('mn:6,-5')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -282,8 +283,9 @@ unless \\(f(z) =0 \\) or \\(f'(z) = 0\\).<a class="marginmark" onClick="toggleHi
 
 
 <div id="footer">
-<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
-<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/"> GitHub.</a></h3>
+<h4>All content is either in the public domain or licensed under <a href="http://creativecommons.org/licenses/by/3.0/us/">a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h4>Feel free report typos and other issues on <span style="font-weight: 400;"><a href="https://github.com/CdLbB/cdlbb.github.com/tree/master/WandW">GitHub</a></span> or by email at <span style="font-weight: 400;"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#110;&#x69;&#x74;&#104;&#x61;&#114;&#100;&#x74;&#x40;&#x75;&#x77;&#46;&#101;&#x64;&#x75;">&#x6e;&#x69;&#116;&#x68;&#x61;&#114;&#100;&#x74;&#x40;&#117;&#119;&#x2e;&#101;&#x64;&#x75;</a></span>.</h4>
 </div>
 
 <div id="navcauchy" class="navigation" style="visibility:hidden;" >

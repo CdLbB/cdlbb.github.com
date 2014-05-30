@@ -44,10 +44,11 @@ complete sum each side of each square appears twice as a path of integration,
 and the integrals along it are taken in opposite directions and consequently
 cancel;<a href="#fn:4" id="fnref:4" title="see footnote" class="footnote">[4]</a> the only parts of the sum which survive are the integrals of <span class="math">\(f(z)\)</span> taken along a number of arcs which together make up <span class="math">\(C\)</span>, each arc being taken in the same sense as in <span class="math">\(\displaystyle \int_{(C)} \! f(z)\,dz\)</span>; these integrals therefore just make up <span class="math">\(\displaystyle\int_{(C)}\!  f(z)\,dz\)</span>. </p>
 
-<p>Now consider <span class="math">\(\displaystyle\int_{(C_n)} \! f(z)\,dz\)</span>. With the notation of <a href="CMA05-1-AnalyticFunctions.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.">§5.12</a>,
+<p>Now consider <span class="math">\(\displaystyle\int_{(C_n)} \! f(z)\,dz\)</span>. With the notation of <a href="CMA05-1-AnalyticFunctions.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.">§5.12</a>
+(and <span class="math">\(z_n\)</span> from <a href="CMA05-1-AnalyticFunctions.html#5.13anapplicationofthemodifiedheine-boreltheorem.">§5.13</a>),
 <span class="math">\[\begin{align*}
-\int_{(C_n)}\!f(z) \,dz &= \int_{(C_n)}\!\left\{f(z_1)+(z-z_1)\,f'(z_1)+(z-z_1)v\right\} \,dz\\
-&=\left\{f(z_1)-z_1 f'(z_1)\right\}\int_{(C_n)}\!dz + f'(z_1)\int_{(C_n)}\!z\,dz + \int_{(C_n)}\!(z-z_1)v\,dz.
+\int_{(C_n)}\!f(z) \,dz &= \int_{(C_n)}\!\left\{f(z_n)+(z-z_n)\;\! f'(z_n)+(z-z_n)\:\! v\right\} \,dz\\
+&=\left\{f(z_n)-z_n f'(z_n)\right\}\int_{(C_n)}\!dz + f'(z_n)\int_{(C_n)}\!z\,dz + \int_{(C_n)}\!(z-z_n)\:\! v\,dz.
 \end{align*}\]</span>
 But
 <span class="math">\[\int_{(C_n)}\!dz=\left[z\right]_{C_n}=0, \quad \int_{(C_n)}\!z\,dz=\left[\frac{1}{2}z^2\right]_{C_n}=0,\]</span>
@@ -58,14 +59,14 @@ by the <a href="CMA04-3-ComplexInt.html#4.6examples">examples of §4.6</a>, sinc
 <p>Then, using <a href="CMA04-3-ComplexInt.html#4.62anupperlimittothevalueofacomplexintegral.">§4.62</a>, </p>
 
 <p><span class="math">\[\begin{align*}
-\left|\,\int_{(C_n)}\!f(z) \,dz \,\right| &= \left|\,\int_{(C_n)} \!(z-z')v\, dz\, \right| \leq \int_{(C_n)} \! \left|\,(z-z')v\, \right| \,\left|\, dz \, \right| \\
-&< \epsilon l_n \sqrt{2} \int_{(C_n)} \! \left|\, dz\,\right| = \epsilon l_n \sqrt{2} \cdot 4l_n = 4\epsilon A_n \sqrt{2}
+\left|\,\int_{(C_n)}\!f(z) \,dz \,\right| &= \left|\,\int_{(C_n)} \!(z-z_n)\:\! v\, dz\, \right| \leq \int_{(C_n)} \! \left|\,(z-z_n)\:\! v\,  dz \, \right| \\
+&< \epsilon l_n \sqrt{2} \int_{(C_n)} \! \left|\, dz\,\right| = \epsilon l_n \sqrt{2} \cdot 4l_n = 4\epsilon A_n \sqrt{2} .
 \end{align*}\]</span></p>
 
 <p>In like manner
 <span class="math">\[\begin{align*}
-\left|\,\int_{(D_n)}\!f(z) \,dz \,\right| & \leq \int_{(D_n)} \! \left|\,(z-z')v\, \right| \,\left|\, dz \, \right| \\
-& \leq  4\epsilon (A'_n+ l'_n\lambda_n )\sqrt{2}
+\left|\,\int_{(D_n)}\!f(z) \,dz \,\right| & \leq \int_{(D_n)} \! \left|\,(z-z_n)\:\! v \, dz \, \right| \\
+& \leq  4\epsilon (A'_n+ l'_n\lambda_n )\sqrt{2} ,
 \end{align*}\]</span>
 where <span class="math">\(A'_n\)</span> is the area of the complete square of which <span class="math">\(D n\)</span> is part, <span class="math">\(l'_n\)</span> is the side of this square and <span class="math">\(\lambda_n\)</span> is the length of the part of <span class="math">\(C\)</span> which lies inside this
 square. Hence, if <span class="math">\(\lambda\)</span> be the whole length of <span class="math">\(C\)</span>, while <span class="math">\(l\)</span> is the side of a square which encloses all the squares <span class="math">\(C_n\)</span> and <span class="math">\(D_n\)</span>,
@@ -111,7 +112,7 @@ may be taken as the property defining an analytic function, the other properties
 is a function of <span class="math">\(z\)</span>, which is analytic at all points within the contour <span class="math">\(C\)</span> except the point <span class="math">\(z = a\)</span>. </p>
 
 <p>Now, given <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(\delta\)</span> such that
-<span class="math">\[\left|\,f(z)-f(a)-(z-a)f'(a)\,\right| \leq \epsilon\left|\,z-a\,\right|\]</span>
+<span class="math">\[\left|\,f(z)-f(a)-(z-a)\;\! f'(a)\,\right| \leq \epsilon\left|\,z-a\,\right|\]</span>
 whenever <span class="math">\(\left|\, z - a \,\right| < \delta\)</span>; with the point <span class="math">\(a\)</span> as centre describe a circle <span class="math">\(\gamma\)</span> of radius
 <span class="math">\(r < \delta\)</span>, <span class="math">\(r\)</span> being so small that lies wholly inside <span class="math">\(C\)</span>. </p>
 
@@ -122,7 +123,7 @@ whenever <span class="math">\(\left|\, z - a \,\right| < \delta\)</span>; with t
 <p>where <span class="math">\(\int_C\)</span> and <span class="math">\(\int_\gamma\)</span> denote integrals taken counter-clockwise along the curves <span class="math">\(C\)</span> and <span class="math">\(\gamma\)</span> respectively. </p>
 
 <p>But, since <span class="math">\(\left|\, z - a\,\right| < \delta\)</span> on <span class="math">\(\gamma\)</span>, we have
-<span class="math">\[\int_\gamma \!\frac{f(z)\,dz}{z-a}=\int_\gamma \!\frac{f(a)+(z-a)f'(a)+v(z-a)}{z-a}dz,\]</span>
+<span class="math">\[\int_\gamma \!\frac{f(z)\,dz}{z-a}=\int_\gamma \!\frac{f(a)+(z-a)\;\! f'(a)+v(z-a)}{z-a}dz,\]</span>
 where <span class="math">\(\left|\, v\,\right| <  \epsilon\)</span>; and so
 <span class="math">\[\int_C \!\frac{f(z)\,dz}{z-a}=f(a)\!\int_\gamma \!\frac{dz}{z-a} + f'(a)\!\int_\gamma \!dz +\int_\gamma v\,dz.\]</span></p>
 
@@ -141,7 +142,7 @@ Thus
 <span class="math">\[f(a) = \frac{1}{2\pi i }\! \int_C \! \frac{f(z)\,dz}{z-a}.\]</span></p>
 
 <p>This remarkable result expresses the value of a function <span class="math">\(f(z)\)</span>, (which is
-analytic on and inside <span class="math">\(C\)</span>) at any point <span class="math">\(a\)</span> <em>within</em> a contour <span class="math">\(C\)</span>, in terms of an integral which depends only on the value of <span class="math">\(f(z)\)</span> at points on the contour itself. </p>
+<em>analytic</em> on and inside <span class="math">\(C\)</span>) at any point <span class="math">\(a\)</span> <em>within</em> a contour <span class="math">\(C\)</span>, in terms of an integral which depends only on the value of <span class="math">\(f(z)\)</span> at points on the contour itself. </p>
 
 <blockquote>
 <h6 id="5.21corollary"><em>Corollary</em>. If <span class="math">\(f(z)\)</span> is an analytic one-valued function of <span class="math">\(z\)</span> in a ring-shaped region bounded by two curves <span class="math">\(C\)</span> and <span class="math">\(C'\)</span>, and <span class="math">\(a\)</span> is a point in the region, then <span class="math">\[f(a) = \frac{1}{2\pi i }\! \int_C \! \frac{f(z)\,dz}{z-a}-\frac{1}{2\pi i }\! \int_{C'} \! \frac{f(z)\,dz}{z-a},\]</span> where <span class="math">\(C\)</span> is the outer of the curves and the integrals are taken counter-clockwise.</h6>
@@ -168,7 +169,7 @@ while we can take <span class="math">\(\left|\, h\,\right|\)</span> less than th
 
 <p>Therefore <span class="math">\(\displaystyle \left|\,\frac{f(z)}{(z-a)^2(z-a-h)}\,\right|\)</span> is bounded; let its upper bound be <span class="math">\(K\)</span>.
 Then, if <span class="math">\(l\)</span> be the length of <span class="math">\(C\)</span>,
-<span class="math">\[\left|\,\lim_{h \rightarrow 0} \frac{1}{2\pi i}\int_C \frac{f(z)}{(z-a)^2(z-a-h)}\,\right|\leq \lim_{h \rightarrow 0 } \:\left|\,h\,\right|\,(2\pi)^{-1} K \,l = 0,\]</span>
+<span class="math">\[\left|\,\lim_{h \rightarrow 0} \frac{h}{2\pi i}\int_C \frac{f(z)\,dz}{(z-a)^2(z-a-h)}\,\right|\leq \lim_{h \rightarrow 0 } \:\left|\,h\,\right|\,(2\pi)^{-1} K \,l = 0,\]</span>
 and consequently
 <span class="math">\[f'(z)=\frac{1}{2\pi i }\! \int_C  \frac{f(z)\,dz}{(z-a)^2},\]</span>
 a formula which expresses the value of the derivate of a function at a point
@@ -190,7 +191,7 @@ of <span class="math">\(a\)</span>; its derivate, which is represented by the ex
 denoted by <span class="math">\(f''(a)\)</span>, and is called the <em>second derivate</em> of <span class="math">\(f(a)\)</span>. </p>
 
 <p>Similarly it can be shewn that <span class="math">\(f''(a)\)</span> is an analytic function of <span class="math">\(a\)</span>, possessing a derivate equal to
-<span class="math">\[\frac{2\cdot 3}{2\pi i }\! \int_C \frac{f(z)\,dz}{(z-a)^4}.\]</span> </p>
+<span class="math">\[\frac{2\cdot 3}{2\pi i }\! \int_C \frac{f(z)\,dz}{(z-a)^4};\]</span> </p>
 
 <p>this is denoted by <span class="math">\(f'''(a)\)</span>, and is called the <em>third derivate</em> of <span class="math">\(f(a)\)</span>. And in general an <span class="math">\(n\)</span>th derivate <span class="math">\(f^{(n)}(a)\)</span> of <span class="math">\(f(a)\)</span> exists, expressible by the integral
 <span class="math">\[\frac{n!}{2\pi i }\! \int_C \frac{f(z)\,dz}{(z-a)^{n+1}},\]</span>
@@ -212,15 +213,16 @@ variable <span class="math">\(z\)</span> at all points of a closed two-dimension
 <blockquote>
 <p><em>Example</em>. If <span class="math">\(f(z)\)</span> is analytic, <span class="math">\(z=x +iy\)</span> and <span class="math">\( \nabla^2=\dfrac{\partial^2}{\partial x^2}+\dfrac{\partial^2}{\partial y^2}\)</span>, shew that<br/>
 <span class="math">\[\nabla^2 \log \left|\,f(z)\,\right| = 0; \text{ and } \nabla^2  \left|\,f(z)\,\right| > 0\]</span>
-unless <span class="math">\(f(z) =0 \)</span> or <span class="math">\(f'(z) = 0\)</span>.<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a> (Trinity, 1910.) </p>
+unless <span class="math">\(f(z) =0 \)</span> or <span class="math">\(f'(z) = 0\)</span>.<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a> <span class="math">\(\vphantom{\\ 3\\}\)</span><br> (Trinity, 1910.) </p>
 </blockquote>
 
 </div>
 </div>
 
 <div id="footer">
-<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
-<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/"> GitHub.</a></h3>
+<h4>All content is either in the public domain or licensed under <a href="http://creativecommons.org/licenses/by/3.0/us/">a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h4>Feel free report typos and other issues on <span style="font-weight: 400;"><a href="https://github.com/CdLbB/cdlbb.github.com/tree/master/WandW">GitHub</a></span> or by email at <span style="font-weight: 400;"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#110;&#x69;&#x74;&#104;&#x61;&#114;&#100;&#x74;&#x40;&#x75;&#x77;&#46;&#101;&#x64;&#x75;">&#x6e;&#x69;&#116;&#x68;&#x61;&#114;&#100;&#x74;&#x40;&#117;&#119;&#x2e;&#101;&#x64;&#x75;</a></span>.</h4>
 </div>
 
 <div id="navcauchy" class="navigation" style="visibility:hidden;" >
@@ -260,7 +262,7 @@ unless <span class="math">\(f(z) =0 \)</span> or <span class="math">\(f'(z) = 0\
 </li>
 <li class="part"><a onClick="hideIt('navcauchy');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
 <li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a> 
-  <ul >
+   <ul >
     <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
   </ul>
 </li>
@@ -387,7 +389,7 @@ unless <span class="math">\(f(z) =0 \)</span> or <span class="math">\(f'(z) = 0\
 </li>
 
 <li id="fn:3">
-<p>It is not necessary that <span class="math">\(f(z)\)</span> should be analytic <em>on</em> <span class="math">\(C\)</span> (it is sufficient that it be continuous on and inside <span class="math">\(C\)</span>), but if <span class="math">\(f(z)\)</span> is not analytic on <span class="math">\(C\)</span>, the theorem is much harder to prove. This proof merely assumes that <span class="math">\(f'(z)\)</span> <em>exists</em> at all points on and inside <span class="math">\(C\)</span>. Earlier proofs made more extended assumptions; thus Cauchy&#8217;s proof assumed the <em>continuity</em> of <span class="math">\(f'(z)\)</span>. Riemann&#8217;s proof made an equivalent assumption. Goursat&#8217;s first proof assumed that <span class="math">\(f(z)\)</span> was <em>uniformly</em> differentiable throughout <span class="math">\(C\)</span>. <br><br> <em>Editor&#8217;s Note</em>: For those like me who find the first sentence of the above footnote ambiguously worded, I am sure it is intended to claim that it is sufficient for <span class="math">\(f(z)\)</span> to be analytic <em>inside</em> <span class="math">\(C\)</span> and continuous <em>on and inside</em> <span class="math">\(C\)</span>. <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p>It is not necessary that <span class="math">\(f(z)\)</span> should be analytic <em>on</em> <span class="math">\(C\)</span> (it is sufficient that it be continuous on and inside <span class="math">\(C\)</span>), but if <span class="math">\(f(z)\)</span> is not analytic on <span class="math">\(C\)</span>, the theorem is much harder to prove. This proof merely assumes that <span class="math">\(f'(z)\)</span> <em>exists</em> at all points on and inside <span class="math">\(C\)</span>. Earlier proofs made more extended assumptions; thus Cauchy&#8217;s proof assumed the <em>continuity</em> of <span class="math">\(f'(z)\)</span>. Riemann&#8217;s proof made an equivalent assumption. Goursat&#8217;s first proof assumed that <span class="math">\(f(z)\)</span> was <em>uniformly</em> differentiable throughout <span class="math">\(C\)</span>. <br><br> <em>Editor&#8217;s Note</em>: For those like me who find the first sentence of the above note ambiguously worded, I am sure it is intended to claim that it is sufficient for <span class="math">\(f(z)\)</span> to be analytic <em>inside</em> <span class="math">\(C\)</span> and continuous <em>on and inside</em> <span class="math">\(C\)</span>. <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:4">
@@ -395,7 +397,7 @@ unless <span class="math">\(f(z) =0 \)</span> or <span class="math">\(f'(z) = 0\
 </li>
 
 <li id="fn:5">
-<p>The phrase &#8216;analytic throughout a region&#8217; implies one-valuedness (<a href="CMA05-1-AnalyticFunctions.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.">§5.12</a>); that is to say that after <span class="math">\(z\)</span> has described a closed path surrounding <span class="math">\(C_0\)</span>, <span class="math">\(f(z)\)</span> has returned to its initial value. A many-valued function such as log <span class="math">\(z\)</span> considered in the region <span class="math">\(1 \leq  \left|\, z\,\right| \leq 2\)</span> will be said to be &#8216;analytic at all points of the region.&#8217;  <a href="#fnref:5" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p>The phrase &#8216;analytic throughout a region&#8217; implies one-valuedness (<a href="CMA05-1-AnalyticFunctions.html#5.12cauchysdefinitionofananalyticfunctionofacomplexvariable.">§5.12</a>); that is to say that after <span class="math">\(z\)</span> has described a closed path surrounding <span class="math">\(C_0\)</span>, <span class="math">\(f(z)\)</span> has returned to its initial value. A many-valued function such as log <span class="math">\(z\)</span> considered in the region <span class="math">\(1 \leq  \left|\, z\,\right| \leq 2\)</span> will be said to be &#8216;analytic at all points of the region&#8217; (but <em>not</em> &#8216;analytic throughout the region&#8217; &#8211;<em>Editor</em>).  <a href="#fnref:5" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:6">
