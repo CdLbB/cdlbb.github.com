@@ -36,13 +36,13 @@ For let \\(a\\) be any point inside \\(C\\); on \\(C\\), let \\(\sum\limits_{n=0
 
 Then
 \\[\begin{align*}
-\frac{1}{2\pi i}\!\int_C \frac{\Phi(z)}{z-a} dz &= \frac{1}{2\pi i}\!\int_C \left\{\sum_{n=0}^\infty f_n(z)\right\}\frac{dz}{z-a}\\
+\frac{1}{2\pi i}\!\int_C \frac{\Phi(z)}{z-a} dz &= \frac{1}{2\pi i}\!\int_C \left\{\sum_{n=0}^\infty \:\! f_n(z)\right\}\frac{dz}{z-a}\\
 \\&=\sum_{n=0}^\infty \left\{\frac{1}{2\pi i}\!\int_C \frac{f_n(z)}{z-a} dz \right\}, 
 \end{align*}\\]
-by [§4.7](CMA04-3-ComplexInt.html#4.7integrationofinfiniteseries.).[^bounded,-7] But this last series,
+by [§4.7](CMA04-3-ComplexInt.html#4.7integrationofinfiniteseries.).[^bounded,-10] But this last series,
 by [§5.21](CMA05-2-CauchysTheorem.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.), is \\(\sum\limits_{n=0}^\infty f_n(a)\\); the series under consideration therefore converges at all points inside \\(C\\); let its sum inside \\(C\\) (as well as on \\(C\\)) be called \\(\Phi(z)\\). Then the function is analytic if it has a unique differential coefficient at all points inside \\(C\\). 
 
-[^bounded,-7]: Since \\(\left|\, z - a \, \right|^{-1}\\)  is bounded when \\(a\\) is fixed and \\(z\\) is on \\(C\\), the uniformity of the convergence of \\(\sum\limits_{n=0}^\infty \left. f_n(z) \middle/ (z-a) \right.\\) follows from that of \\(\sum\limits_{n=0}^\infty f_n(z)\\). 
+[^bounded,-10]: Since \\(\left|\, z - a \, \right|^{-1}\\)  is bounded when \\(a\\) is fixed and \\(z\\) is on \\(C\\), the uniformity of the convergence of \\(\sum\limits_{n=0}^\infty \left. f_n(z) \middle/ (z-a) \right.\\) follows from that of \\(\sum\limits_{n=0}^\infty f_n(z)\\). 
 
 But if \\(a\\) and \\(a + h\\) be inside \\(C\\), 
 \\[\frac{\Phi(a+h)-\Phi(a)}{h} = \frac{1}{2\pi i}\!\int_C \frac{\Phi(z)\,dz}{(z-a)(z-a-h)},\\]
@@ -50,9 +50,9 @@ and hence, as in [§5.22](CMA05-2-CauchysTheorem.html#5.22thederivatesofananalyt
 \\[ \frac{1}{2\pi i}\!\int_C \frac{\Phi(z)\,dz}{(z-a)^2};\\]
 and therefore \\(\Phi(z)\\) is analytic inside \\(C\\). Further, by 
 transforming the last integral in the same way as we transformed the first 
-one, we see that \\(\Phi'(a)=\sum\limits_{n=0}^\infty f'(a)\\), so that \\(\sum\limits_{n=0}^\infty f(a)\\) may be 'differentiated term by term.' 
+one, we see that \\(\Phi'(a)=\sum\limits_{n=0}^\infty f'_n (a)\\), so that \\(\sum\limits_{n=0}^\infty f_n (a)\\) may be 'differentiated term by term.' 
 
->If a series of analytic functions converges only at points of a curve which is not closed nothing can be inferred as to the convergence of the derived series.[^compact,-2] 
+>If a series of analytic functions converges only at points of a curve which is *not* closed nothing can be inferred as to the convergence of the derived series.[^compact,-2] 
 
 [^compact,-2]: This might have been anticipated as the main theorem of this section deals with uniformity of convergence over a *two-dimensional* region. 
 
@@ -74,8 +74,10 @@ Let \\(f(t, z)\\) satisfy the following conditions when \\(t\\) lies on a certai
 
 [^qua,-3]: *Editor's Note*: In this usage, the word *qua* means *treated as ...*
 
+[^complexderivate,+1]: *Editor's Note*: What was done in [§4.2](CMA04-1-IntegrationMN.html#4.2differentiationofintegralscontainingaparameter.) (and [§4.44 (II) corollary](CMA04-2-InfiniteIntegrals.html#4.44corollary)) was for \\(f(x, \alpha)\\) where \\(x\\) and  \\(\alpha\\) were real -- the complex derivate had not yet been defined. However, the proofs in those sections may be re-interpreted without any changes to apply for complex \\(\alpha\\).
+
 Then \\(\int_a^b f(t,z)\, dt\\) is an analytic function of \\(z\\). For, by [§4.2](CMA04-1-Integration.html#4.2differentiationofintegralscontainingaparameter.), it has the 
-unique derivate \\[\int_a^b\! \frac{\partial f(t,z)}{\partial z}dt.\\]
+unique derivate[^complexderivate,+1] \\[\int_a^b\! \frac{\partial f(t,z)}{\partial z}dt.\\]
 
 ####5.32 Analytic functions represented by infinite integrals.####
 
@@ -92,7 +94,7 @@ From [§4.44 (II) corollary](CMA04-2-InfiniteIntegrals.html#4.44corollary), it f
 
 For if these conditions are satisfied, \\(\int_a^\infty f(t, z) \,dt\\) has the unique derivate \\[\int_a^\infty\! \frac{\partial f(t,z)}{\partial z}dt.\\]
 
->A case of very great importance is afforded by the integral \\(\int_0^\infty \! e^{-t\:\!z} f(t) \, dt\\)
+>A case of very great importance is afforded by the integral \\(\int_0^\infty \! e^{-t\:\!z} f(t) \, dt\\),
 where \\(f(t)\\) is continuous and \\(\left|\, f(t)\, \right| < Ke^{r\:\!t}\\)  where \\(K\\), \\(r\\) are independent of \\(t\\); it is obvious from the conditions stated that the integral is an analytic 
 function of \\(z\\) when \\(\mathfrak{Re}(z) \geq r_1 > r\\). [Condition (iv) is satisfied, by [§4.431 (I)](CMA04-2-InfiniteIntegrals.html#4.431testsforuniformityofconvergenceofaninfiniteintegral.), since \\(\int_0^\infty t e^{(r-r_1)\:\!t}dt\\) converges.] 
  
@@ -112,11 +114,11 @@ is analytic at all points on and inside \\(C\\). Let \\(z = a + h\\) be any poin
 
 Therefore, by [§4.62](CMA04-3-ComplexInt.html#4.62anupperlimittothevalueofacomplexintegral.), 
 \\[\left|\,\frac{1}{2\pi i}\!\int_C \frac{h^{n+1}f(z)\,dz}{(z-a)^{n+1}(z-a-h)}\,\right| \leq \frac{M \cdot 2\pi R}{2\pi}\left( \frac{\left|\,h\,\right|}{R}\right)^{n+1},\\]
-where \\(R\\) is the radius of the circle \\(C\\), so that \\(2\pi R\\) is the length of the path of integration in the last integral, and \\(R = \left|\,z — a\,\right|\\) for points \\(z\\) on the circumference of \\(C\\). 
+where \\(R\\) is the radius of the circle \\(C\\), so that \\(2\pi R\\) is the length of the path of integration in the last integral, and \\(R = \left|\,z - a\,\right|\\) for points \\(z\\) on the circumference of \\(C\\). 
 
 The right-hand side of the last inequality tends to zero as \\(n \rightarrow \infty\\). We 
 have therefore 
-\\[f(a + h)=f(a) + hf'(a)+\frac{h^2}{2!}f"(a) + \cdots +\frac{h^n}{n!}f^{(n)}(a) + \cdots, \\]
+\\[f(a + h)=f(a) + hf'(a)+\frac{h^2}{2!}f''(a) + \cdots +\frac{h^n}{n!}f^{(n)}(a) + \cdots, \\]
 which we can write 
 \\[f(z) = f(a) + (z-a)f'(a) + \frac{(z-a)^2}{2!} f''(a) + \cdots + \frac{(z-a)^n}{n!}f^{(n)}(a)+ \cdots .\\]
 
@@ -128,7 +130,7 @@ by [§5.3 corollary](#5.3corollary), it follows that the radius of convergence i
 At this stage we may introduce some terms which will be frequently 
 used. 
 
-If \\(f(a) = 0\\), the function \\(f(z)\\) is said to have a *zero* at the point \\(z = a\\). If at such a point \\(f'(a)\\) is different from zero, the zero of \\(f(a)\\) is said to be *simple*; if, however,\\(\,f'(a)\\),\\(\, f''(a), \dots ,\, f^{(n-1)}(a)\\) are all zero, so that the Taylor's expansion of \\(f(z)\\) at \\(z = a\\) begins with a term in \\((z - a)^n\\), then the function \\(f(z)\\) is said to have a *zero of the n*th *order* at the point \\(z = a\\). 
+If \\(f(a) = 0\\), the function \\(f(z)\\) is said to have a *zero* at the point \\(z = a\\). If at such a point \\(f'(a)\\) is different from zero, the zero of \\(f(a)\\) is said to be *simple*; if, however, \\(\,f'(a)\\), \\(\, f''(a), \dots ,\, f^{(n-1)}(a)\\) are all zero, so that the Taylor's expansion of \\(f(z)\\) at \\(z = a\\) begins with a term in \\((z - a)^n\\), then the function \\(f(z)\\) is said to have a *zero of the n*th *order* at the point \\(z = a\\). 
 
 >*Example* 1. Find the function \\(f(z)\\), which is analytic throughout the circle \\(C\\) and its interior, whose centre is at the origin and whose radius is unity, and has the value 
 \\[\frac{\alpha-\cos \theta}{\alpha^2-2\alpha \cos \theta + 1}+i\frac{\sin \theta}{\alpha^2-2\alpha \cos \theta + 1}\\] 
@@ -153,9 +155,9 @@ or \\(f(z) = (a - z)^{-1}\\) for all points within the circle.
 the circumference of the circle \\(\left|\, z\,\right| = 1\\), is \\(a_n\\), if \\(\sum a_\nu z^\nu\\) is analytic throughout the circle and its interior.
 >
  [Let \\(\sum\limits_{\nu=0}^\infty a_\nu z^\nu = f(z)\\), so that \\(a_\nu=\dfrac{f^{(n)}(0)}{n!}\\). Then, writing \\(z = e^{i\theta}\\), and calling \\(C\\) the circle \\(\left|\, z\,\right| = 1\\), <br><br>
-\\(\displaystyle \frac{1}{2 \pi}\!\int_0^{2\pi} \! \frac{f(z)\,d\theta}{z^n} = \frac{1}{2 \pi i}\!\int_C \frac{f(z)\,dz}{z^{n+1}}=\frac{f^{(n)}(0)}{n!}=a_n. \\)]
+\\(\displaystyle \frac{1}{2 \pi}\!\int_0^{2\pi} \! \frac{f(z)\,d\theta}{z^n} = \frac{1}{2 \pi i}\!\int_C \frac{f(z)\,dz}{z^{n+1}}=\frac{f^{(n)}(0)}{n!}=a_n.\:\! \\)]
 
->*Example* 3. Let \\(f(z) = z^r\\); then \\(f(z + h)\\) is an analytic function of \\(h\\) when \\(\left|\, h\,\right| < \left|\, z\, \right|\\) for all values of \\(r\\); and so \\[(z + h)^r =z^r + rz^{r-1} h  + \frac{r(r-1)}{2}z^{r-2}h^2  + \cdots,\\] this series converging when \\(\left|\, h\,\right| < \left|\, z\, \right|\\). This is the binomial theorem. 
+>*Example* 3. Let \\(f(z) = z^r\\); then \\(f(z + h)\\) is an analytic function of \\(h\\) when \\(\left|\, h\,\right| < \left|\, z\, \right|\;\!\\) for all values of \\(r\\); and so \\[(z + h)^r =z^r + rz^{r-1} h  + \frac{r(r-1)}{2}z^{r-2}h^2  + \cdots,\\] this series converging when \\(\left|\, h\,\right| < \left|\, z\, \right|\\). This is the binomial theorem. 
 
 >*Example* 4. Prove that if \\(h\\) is a positive constant, and \\((1+2zh+h^2)^{-\frac{1}{2}}\\) is expanded in 
 the form 
@@ -172,22 +174,24 @@ of this circle is the point \\(h=0\\), and its circumference will be such as to 
 >But \\[1+2zh+h^2=\left\{h-z+(z^2-1)^{\frac{1}{2}}\right\}\left\{h-z-(z^2-1)^{\frac{1}{2}}\right\},\\]
 so the singularities of \\((1+2zh+h^2)^{-\frac{1}{2}}\\) are the points \\(h=z-(z^2-1)^{\frac{1}{2}}\\)  and \\(h=z+(z^2-1)^{\frac{1}{2}}\\). 
 [These singularities are branch points (see [§5.7](CMA05-6-ManyValuedFunctions.html#many-valuedfunctions.) ).] 
->
->Thus the series (A) converges so long as \\(\left|\, h  \,\right|\\) is less than both 
->\\[\left|\, z-(z^2-1)^{\frac{1}{2}} \,\right| \quad \text{and} \quad \left|\, z+(z^2-1)^{\frac{1}{2}} \,\right|\,. \\]
-Draw an ellipse in the \\(z\\)-plane passing through the point \\(z\\) and having its foci at \\(\pm 1\\). 
-Let \\(\alpha\\) be its semi-major axis, and \\(\theta\\) the eccentric angle of \\(z\\) on it. 
->
->Then \\[z=\alpha \cos \theta + i\,(a^2-1)^{\frac{1}{2}} \sin \theta,\\] 
-which gives \\[z \pm  (z^2 - 1)^{\frac{1}{2}} =\left\{\alpha \pm (a^2-1)^{\frac{1}{2}}\right\}\left(\cos \theta \pm i \sin \theta \right),\\]
-so \\[\left|\,z \pm (z^2 -1)^{\frac{1}{2}}\,\right| = \alpha \pm (\alpha^2 -1)^{\frac{1}{2}}.\\]
-> 
->Thus the series (A) converges so long as \\(h\\) is less than the smaller of the numbers \\(\alpha +(\alpha^2 -1)^{\frac{1}{2}}\\) and \\(\alpha-(\alpha^2 -1)^{\frac{1}{2}}\\), i.e. so long as \\(h\\) is less than \\(\alpha-(\alpha^2 -1)^{\frac{1}{2}}\\). But \\(h =\alpha-(\alpha^2 -1)^{\frac{1}{2}}\\) 
-when \\(a =\frac{1}{2}(h+h^{-1}) \\).[^ellipse,-7] 
->
->Therefore the series (A) converges so long as \\(z\\) is within an ellipse whose foci are  1 and -1, and whose semi-major axis is \\(\frac{1}{2}(h+h^{-1}) \\). 
 
-[^ellipse,-7]: *Editor's Note*: It might be helpful to observe, \\(h < \alpha-(\alpha^2 -1)^{\frac{1}{2}}\\) whenever \\(1 \leq \alpha < \frac{1}{2}(h+h^{-1}) \\).
+[^eccentricangle,+10]: *Editor's Note*: See ["Eccentric Angle."](http://mathworld.wolfram.com/EccentricAngle.html) at MathWorld.
+
+>Thus the series (A) converges so long as \\(\left|\, h  \,\right|\\) is less than both 
+>\\[\left|\, z-(z^2-1)^{\frac{1}{2}} \:\!\right| \quad \text{and} \quad \left|\, z+(z^2-1)^{\frac{1}{2}} \:\!\right|\,. \\]
+Draw an ellipse in the \\(z\\)-plane passing through the point \\(z\\) and having its foci at \\(\pm 1\\). 
+Let \\(\alpha\\) be its semi-major axis, and \\(\theta\\) the eccentric angle[^eccentricangle,+10] of \\(z\\) on it. 
+>
+>Then \\[z=\alpha \cos \theta + i\,(\alpha^2-1)^{\frac{1}{2}} \sin \theta,\\] 
+which gives \\[z \pm  (z^2 - 1)^{\frac{1}{2}} =\left\{\alpha \pm (\alpha^2-1)^{\frac{1}{2}}\right\}\left(\cos \theta \pm i \sin \theta \right),\\]
+so \\[\left|\,z \pm (z^2 -1)^{\frac{1}{2}}\,\right| = \alpha \pm (\alpha^2 -1)^{\frac{1}{2}}.\\]
+>
+>Thus the series (A) converges so long as \\(h\\) is less than the smaller of the numbers \\(\alpha +(\alpha^2 -1)^{\frac{1}{2}}\\) and \\(\alpha-(\alpha^2 -1)^{\frac{1}{2}}\\), i.e. so long as \\(h\\) is less than \\(\alpha-(\alpha^2 -1)^{\frac{1}{2}}\\). But \\(h =\alpha-(\alpha^2 -1)^{\frac{1}{2}}\\) 
+when \\(\alpha =\frac{1}{2}(h+h^{-1}) \\).[^ellipse,-10] 
+>
+>Therefore the series (A) converges so long as \\(z\\) is within an ellipse whose foci are  \\(1\\) and \\(-1\\), and whose semi-major axis is \\(\frac{1}{2}(h+h^{-1}) \\). 
+
+[^ellipse,-10]: *Editor's Note*: It might be helpful to observe, \\(h < \alpha-(\alpha^2 -1)^{\frac{1}{2}}\\) whenever \\(1 \leq \alpha < \frac{1}{2}(h+h^{-1}) \\).
 
 ####5.41 Forms of the remainder in Taylor's series. ####
 
@@ -227,8 +231,9 @@ if \\(f'(x)\\) is continuous when \\(a \leq x \leq a+h\\); this result is usuall
 
 
 <div id="footer">
-<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
-<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/"> GitHub.</a></h3>
+<h4>All content is either in the public domain or licensed under <a href="http://creativecommons.org/licenses/by/3.0/us/">a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h4>Feel free to report typos and other issues on <span style="font-weight: 400;"><a href="https://github.com/CdLbB/cdlbb.github.com/tree/master/WandW">GitHub</a></span> or by email at <span style="font-weight: 400;"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#110;&#x69;&#x74;&#104;&#x61;&#114;&#100;&#x74;&#x40;&#x75;&#x77;&#46;&#101;&#x64;&#x75;">&#x6e;&#x69;&#116;&#x68;&#x61;&#114;&#100;&#x74;&#x40;&#117;&#119;&#x2e;&#101;&#x64;&#x75;</a></span>.</h4>
 </div>
 
 <div id="navcauchy" class="navigation" style="visibility:hidden;" >

@@ -39,7 +39,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
 
 <p>Then
 <span class="math">\[\begin{align*}
-\frac{1}{2\pi i}\!\int_C \frac{\Phi(z)}{z-a} dz &= \frac{1}{2\pi i}\!\int_C \left\{\sum_{n=0}^\infty f_n(z)\right\}\frac{dz}{z-a}\\
+\frac{1}{2\pi i}\!\int_C \frac{\Phi(z)}{z-a} dz &= \frac{1}{2\pi i}\!\int_C \left\{\sum_{n=0}^\infty \:\! f_n(z)\right\}\frac{dz}{z-a}\\
 \\&=\sum_{n=0}^\infty \left\{\frac{1}{2\pi i}\!\int_C \frac{f_n(z)}{z-a} dz \right\}, 
 \end{align*}\]</span>
 by <a href="CMA04-3-ComplexInt.html#4.7integrationofinfiniteseries.">§4.7</a>.<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a> But this last series,
@@ -51,10 +51,10 @@ and hence, as in <a href="CMA05-2-CauchysTheorem.html#5.22thederivatesofananalyt
 <span class="math">\[ \frac{1}{2\pi i}\!\int_C \frac{\Phi(z)\,dz}{(z-a)^2};\]</span>
 and therefore <span class="math">\(\Phi(z)\)</span> is analytic inside <span class="math">\(C\)</span>. Further, by
 transforming the last integral in the same way as we transformed the first
-one, we see that <span class="math">\(\Phi'(a)=\sum\limits_{n=0}^\infty f'(a)\)</span>, so that <span class="math">\(\sum\limits_{n=0}^\infty f(a)\)</span> may be &#8216;differentiated term by term.&#8217; </p>
+one, we see that <span class="math">\(\Phi'(a)=\sum\limits_{n=0}^\infty f'_n (a)\)</span>, so that <span class="math">\(\sum\limits_{n=0}^\infty f_n (a)\)</span> may be &#8216;differentiated term by term.&#8217; </p>
 
 <blockquote>
-<p>If a series of analytic functions converges only at points of a curve which is not closed nothing can be inferred as to the convergence of the derived series.<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a> </p>
+<p>If a series of analytic functions converges only at points of a curve which is <em>not</em> closed nothing can be inferred as to the convergence of the derived series.<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a> </p>
 </blockquote>
 
 <blockquote>
@@ -78,7 +78,7 @@ one, we see that <span class="math">\(\Phi'(a)=\sum\limits_{n=0}^\infty f'(a)\)<
 </div>
 
 <p>Then <span class="math">\(\int_a^b f(t,z)\, dt\)</span> is an analytic function of <span class="math">\(z\)</span>. For, by <a href="CMA04-1-Integration.html#4.2differentiationofintegralscontainingaparameter.">§4.2</a>, it has the
-unique derivate <span class="math">\[\int_a^b\! \frac{\partial f(t,z)}{\partial z}dt.\]</span></p>
+unique derivate<a href="#fn:4" id="fnref:4" title="see footnote" class="footnote">[4]</a> <span class="math">\[\int_a^b\! \frac{\partial f(t,z)}{\partial z}dt.\]</span></p>
 
 <h4 id="5.32analyticfunctionsrepresentedbyinfiniteintegrals.">5.32 Analytic functions represented by infinite integrals.</h4>
 
@@ -96,12 +96,12 @@ unique derivate <span class="math">\[\int_a^b\! \frac{\partial f(t,z)}{\partial 
 <p>For if these conditions are satisfied, <span class="math">\(\int_a^\infty f(t, z) \,dt\)</span> has the unique derivate <span class="math">\[\int_a^\infty\! \frac{\partial f(t,z)}{\partial z}dt.\]</span></p>
 
 <blockquote>
-<p>A case of very great importance is afforded by the integral <span class="math">\(\int_0^\infty \! e^{-t\:\!z} f(t) \, dt\)</span>
+<p>A case of very great importance is afforded by the integral <span class="math">\(\int_0^\infty \! e^{-t\:\!z} f(t) \, dt\)</span>,
 where <span class="math">\(f(t)\)</span> is continuous and <span class="math">\(\left|\, f(t)\, \right| < Ke^{r\:\!t}\)</span> where <span class="math">\(K\)</span>, <span class="math">\(r\)</span> are independent of <span class="math">\(t\)</span>; it is obvious from the conditions stated that the integral is an analytic
 function of <span class="math">\(z\)</span> when <span class="math">\(\mathfrak{Re}(z) \geq r_1 > r\)</span>. [Condition (iv) is satisfied, by <a href="CMA04-2-InfiniteIntegrals.html#4.431testsforuniformityofconvergenceofaninfiniteintegral.">§4.431 (I)</a>, since <span class="math">\(\int_0^\infty t e^{(r-r_1)\:\!t}dt\)</span> converges.] </p>
 </blockquote>
 
-<h3 id="5.4taylorstheorem.">5.4 Taylor&#8217;s Theorem.<a href="#fn:4" id="fnref:4" title="see footnote" class="footnote">[4]</a></h3>
+<h3 id="5.4taylorstheorem.">5.4 Taylor&#8217;s Theorem.<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a></h3>
 
 <p>Consider a function <span class="math">\(f(z)\)</span>, which is analytic in the neighbourhood of a
 point <span class="math">\(z = a\)</span>. Let <span class="math">\(C\)</span> be a circle with <span class="math">\(a\)</span> as centre in the <span class="math">\(z\)</span>-plane, which does not have any singular point of the function <span class="math">\(f(z)\)</span> on or inside it; so that <span class="math">\(f(z)\)</span>
@@ -114,11 +114,11 @@ is analytic at all points on and inside <span class="math">\(C\)</span>. Let <sp
 
 <p>Therefore, by <a href="CMA04-3-ComplexInt.html#4.62anupperlimittothevalueofacomplexintegral.">§4.62</a>,
 <span class="math">\[\left|\,\frac{1}{2\pi i}\!\int_C \frac{h^{n+1}f(z)\,dz}{(z-a)^{n+1}(z-a-h)}\,\right| \leq \frac{M \cdot 2\pi R}{2\pi}\left( \frac{\left|\,h\,\right|}{R}\right)^{n+1},\]</span>
-where <span class="math">\(R\)</span> is the radius of the circle <span class="math">\(C\)</span>, so that <span class="math">\(2\pi R\)</span> is the length of the path of integration in the last integral, and <span class="math">\(R = \left|\,z — a\,\right|\)</span> for points <span class="math">\(z\)</span> on the circumference of <span class="math">\(C\)</span>. </p>
+where <span class="math">\(R\)</span> is the radius of the circle <span class="math">\(C\)</span>, so that <span class="math">\(2\pi R\)</span> is the length of the path of integration in the last integral, and <span class="math">\(R = \left|\,z - a\,\right|\)</span> for points <span class="math">\(z\)</span> on the circumference of <span class="math">\(C\)</span>. </p>
 
 <p>The right-hand side of the last inequality tends to zero as <span class="math">\(n \rightarrow \infty\)</span>. We
 have therefore
-<span class="math">\[f(a + h)=f(a) + hf'(a)+\frac{h^2}{2!}f"(a) + \cdots +\frac{h^n}{n!}f^{(n)}(a) + \cdots, \]</span>
+<span class="math">\[f(a + h)=f(a) + hf'(a)+\frac{h^2}{2!}f''(a) + \cdots +\frac{h^n}{n!}f^{(n)}(a) + \cdots, \]</span>
 which we can write
 <span class="math">\[f(z) = f(a) + (z-a)f'(a) + \frac{(z-a)^2}{2!} f''(a) + \cdots + \frac{(z-a)^n}{n!}f^{(n)}(a)+ \cdots .\]</span></p>
 
@@ -130,7 +130,7 @@ by <a href="#5.3corollary">§5.3 corollary</a>, it follows that the radius of co
 <p>At this stage we may introduce some terms which will be frequently
 used. </p>
 
-<p>If <span class="math">\(f(a) = 0\)</span>, the function <span class="math">\(f(z)\)</span> is said to have a <em>zero</em> at the point <span class="math">\(z = a\)</span>. If at such a point <span class="math">\(f'(a)\)</span> is different from zero, the zero of <span class="math">\(f(a)\)</span> is said to be <em>simple</em>; if, however,<span class="math">\(\,f'(a)\)</span>,<span class="math">\(\, f''(a), \dots ,\, f^{(n-1)}(a)\)</span> are all zero, so that the Taylor&#8217;s expansion of <span class="math">\(f(z)\)</span> at <span class="math">\(z = a\)</span> begins with a term in <span class="math">\((z - a)^n\)</span>, then the function <span class="math">\(f(z)\)</span> is said to have a <em>zero of the n</em>th <em>order</em> at the point <span class="math">\(z = a\)</span>. </p>
+<p>If <span class="math">\(f(a) = 0\)</span>, the function <span class="math">\(f(z)\)</span> is said to have a <em>zero</em> at the point <span class="math">\(z = a\)</span>. If at such a point <span class="math">\(f'(a)\)</span> is different from zero, the zero of <span class="math">\(f(a)\)</span> is said to be <em>simple</em>; if, however, <span class="math">\(\,f'(a)\)</span>, <span class="math">\(\, f''(a), \dots ,\, f^{(n-1)}(a)\)</span> are all zero, so that the Taylor&#8217;s expansion of <span class="math">\(f(z)\)</span> at <span class="math">\(z = a\)</span> begins with a term in <span class="math">\((z - a)^n\)</span>, then the function <span class="math">\(f(z)\)</span> is said to have a <em>zero of the n</em>th <em>order</em> at the point <span class="math">\(z = a\)</span>. </p>
 
 <blockquote>
 <p><em>Example</em> 1. Find the function <span class="math">\(f(z)\)</span>, which is analytic throughout the circle <span class="math">\(C\)</span> and its interior, whose centre is at the origin and whose radius is unity, and has the value
@@ -144,7 +144,7 @@ used. </p>
 \\ &=\frac{n!}{2\pi i}\! \int_0^{2\pi} \!\frac{e^{-ni\theta}\, d\theta}{\alpha-e^{-i\theta}}=\frac{n!}{2\pi i}\! \int_C \frac{dz}{z^n(\alpha-z)}=\left[\frac{d^n}{dz^n} \frac{1}{\alpha-z}\right]_{z=0}\\
 \\ &=\frac{n!}{\alpha^{n+1}}.
 \end{align*}\]</span>
-Therefore by Maclaurin&#8217;s Theorem,<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a>
+Therefore by Maclaurin&#8217;s Theorem,<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a>
 <span class="math">\[f(z)=\sum_{n=0}^\infty \frac{z^n}{\alpha^{n+1}},\]</span>
 or <span class="math">\(f(z) = (a - z)^{-1}\)</span> for all points within the circle. </p>
 
@@ -156,11 +156,11 @@ or <span class="math">\(f(z) = (a - z)^{-1}\)</span> for all points within the c
 the circumference of the circle <span class="math">\(\left|\, z\,\right| = 1\)</span>, is <span class="math">\(a_n\)</span>, if <span class="math">\(\sum a_\nu z^\nu\)</span> is analytic throughout the circle and its interior.</p>
 
 <p>[Let <span class="math">\(\sum\limits_{\nu=0}^\infty a_\nu z^\nu = f(z)\)</span>, so that <span class="math">\(a_\nu=\dfrac{f^{(n)}(0)}{n!}\)</span>. Then, writing <span class="math">\(z = e^{i\theta}\)</span>, and calling <span class="math">\(C\)</span> the circle <span class="math">\(\left|\, z\,\right| = 1\)</span>, <br><br>
-<span class="math">\(\displaystyle \frac{1}{2 \pi}\!\int_0^{2\pi} \! \frac{f(z)\,d\theta}{z^n} = \frac{1}{2 \pi i}\!\int_C \frac{f(z)\,dz}{z^{n+1}}=\frac{f^{(n)}(0)}{n!}=a_n. \)</span>]</p>
+<span class="math">\(\displaystyle \frac{1}{2 \pi}\!\int_0^{2\pi} \! \frac{f(z)\,d\theta}{z^n} = \frac{1}{2 \pi i}\!\int_C \frac{f(z)\,dz}{z^{n+1}}=\frac{f^{(n)}(0)}{n!}=a_n.\:\! \)</span>]</p>
 </blockquote>
 
 <blockquote>
-<p><em>Example</em> 3. Let <span class="math">\(f(z) = z^r\)</span>; then <span class="math">\(f(z + h)\)</span> is an analytic function of <span class="math">\(h\)</span> when <span class="math">\(\left|\, h\,\right| < \left|\, z\, \right|\)</span> for all values of <span class="math">\(r\)</span>; and so <span class="math">\[(z + h)^r =z^r + rz^{r-1} h  + \frac{r(r-1)}{2}z^{r-2}h^2  + \cdots,\]</span> this series converging when <span class="math">\(\left|\, h\,\right| < \left|\, z\, \right|\)</span>. This is the binomial theorem. </p>
+<p><em>Example</em> 3. Let <span class="math">\(f(z) = z^r\)</span>; then <span class="math">\(f(z + h)\)</span> is an analytic function of <span class="math">\(h\)</span> when <span class="math">\(\left|\, h\,\right| < \left|\, z\, \right|\;\!\)</span> for all values of <span class="math">\(r\)</span>; and so <span class="math">\[(z + h)^r =z^r + rz^{r-1} h  + \frac{r(r-1)}{2}z^{r-2}h^2  + \cdots,\]</span> this series converging when <span class="math">\(\left|\, h\,\right| < \left|\, z\, \right|\)</span>. This is the binomial theorem. </p>
 </blockquote>
 
 <blockquote>
@@ -199,20 +199,22 @@ of this circle is the point <span class="math">\(h=0\)</span>, and its circumfer
 <p>But <span class="math">\[1+2zh+h^2=\left\{h-z+(z^2-1)^{\frac{1}{2}}\right\}\left\{h-z-(z^2-1)^{\frac{1}{2}}\right\},\]</span>
 so the singularities of <span class="math">\((1+2zh+h^2)^{-\frac{1}{2}}\)</span> are the points <span class="math">\(h=z-(z^2-1)^{\frac{1}{2}}\)</span> and <span class="math">\(h=z+(z^2-1)^{\frac{1}{2}}\)</span>.
 [These singularities are branch points (see <a href="CMA05-6-ManyValuedFunctions.html#many-valuedfunctions.">§5.7</a> ).] </p>
+</blockquote>
 
+<blockquote>
 <p>Thus the series (A) converges so long as <span class="math">\(\left|\, h  \,\right|\)</span> is less than both
-<span class="math">\[\left|\, z-(z^2-1)^{\frac{1}{2}} \,\right| \quad \text{and} \quad \left|\, z+(z^2-1)^{\frac{1}{2}} \,\right|\,. \]</span>
+<span class="math">\[\left|\, z-(z^2-1)^{\frac{1}{2}} \:\!\right| \quad \text{and} \quad \left|\, z+(z^2-1)^{\frac{1}{2}} \:\!\right|\,. \]</span>
 Draw an ellipse in the <span class="math">\(z\)</span>-plane passing through the point <span class="math">\(z\)</span> and having its foci at <span class="math">\(\pm 1\)</span>.
-Let <span class="math">\(\alpha\)</span> be its semi-major axis, and <span class="math">\(\theta\)</span> the eccentric angle of <span class="math">\(z\)</span> on it. </p>
+Let <span class="math">\(\alpha\)</span> be its semi-major axis, and <span class="math">\(\theta\)</span> the eccentric angle<a href="#fn:7" id="fnref:7" title="see footnote" class="footnote">[7]</a> of <span class="math">\(z\)</span> on it. </p>
 
-<p>Then <span class="math">\[z=\alpha \cos \theta + i\,(a^2-1)^{\frac{1}{2}} \sin \theta,\]</span>
-which gives <span class="math">\[z \pm  (z^2 - 1)^{\frac{1}{2}} =\left\{\alpha \pm (a^2-1)^{\frac{1}{2}}\right\}\left(\cos \theta \pm i \sin \theta \right),\]</span>
+<p>Then <span class="math">\[z=\alpha \cos \theta + i\,(\alpha^2-1)^{\frac{1}{2}} \sin \theta,\]</span>
+which gives <span class="math">\[z \pm  (z^2 - 1)^{\frac{1}{2}} =\left\{\alpha \pm (\alpha^2-1)^{\frac{1}{2}}\right\}\left(\cos \theta \pm i \sin \theta \right),\]</span>
 so <span class="math">\[\left|\,z \pm (z^2 -1)^{\frac{1}{2}}\,\right| = \alpha \pm (\alpha^2 -1)^{\frac{1}{2}}.\]</span></p>
 
 <p>Thus the series (A) converges so long as <span class="math">\(h\)</span> is less than the smaller of the numbers <span class="math">\(\alpha +(\alpha^2 -1)^{\frac{1}{2}}\)</span> and <span class="math">\(\alpha-(\alpha^2 -1)^{\frac{1}{2}}\)</span>, i.e. so long as <span class="math">\(h\)</span> is less than <span class="math">\(\alpha-(\alpha^2 -1)^{\frac{1}{2}}\)</span>. But <span class="math">\(h =\alpha-(\alpha^2 -1)^{\frac{1}{2}}\)</span>
-when <span class="math">\(a =\frac{1}{2}(h+h^{-1}) \)</span>.<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a> </p>
+when <span class="math">\(\alpha =\frac{1}{2}(h+h^{-1}) \)</span>.<a href="#fn:8" id="fnref:8" title="see footnote" class="footnote">[8]</a> </p>
 
-<p>Therefore the series (A) converges so long as <span class="math">\(z\)</span> is within an ellipse whose foci are 1 and &#8211;1, and whose semi-major axis is <span class="math">\(\frac{1}{2}(h+h^{-1}) \)</span>. </p>
+<p>Therefore the series (A) converges so long as <span class="math">\(z\)</span> is within an ellipse whose foci are <span class="math">\(1\)</span> and <span class="math">\(-1\)</span>, and whose semi-major axis is <span class="math">\(\frac{1}{2}(h+h^{-1}) \)</span>. </p>
 </blockquote>
 
 <h4 id="5.41formsoftheremainderintaylorsseries.">5.41 Forms of the remainder in Taylor&#8217;s series.</h4>
@@ -252,8 +254,9 @@ if <span class="math">\(f'(x)\)</span> is continuous when <span class="math">\(a
 </div>
 
 <div id="footer">
-<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
-<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/"> GitHub.</a></h3>
+<h4>All content is either in the public domain or licensed under <a href="http://creativecommons.org/licenses/by/3.0/us/">a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h4>Feel free to report typos and other issues on <span style="font-weight: 400;"><a href="https://github.com/CdLbB/cdlbb.github.com/tree/master/WandW">GitHub</a></span> or by email at <span style="font-weight: 400;"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#110;&#x69;&#x74;&#104;&#x61;&#114;&#100;&#x74;&#x40;&#x75;&#x77;&#46;&#101;&#x64;&#x75;">&#x6e;&#x69;&#116;&#x68;&#x61;&#114;&#100;&#x74;&#x40;&#117;&#119;&#x2e;&#101;&#x64;&#x75;</a></span>.</h4>
 </div>
 
 <div id="navcauchy" class="navigation" style="visibility:hidden;" >
@@ -427,15 +430,23 @@ if <span class="math">\(f'(x)\)</span> is continuous when <span class="math">\(a
 </li>
 
 <li id="fn:4">
-<p>The formal expansion was first published by Dr Brook Taylor (1715) in his <a href="http://17centurymaths.com/contents/taylorscontents.html"><em>Methodus Incrementorum</em></a>.  <a href="#fnref:4" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p><em>Editor&#8217;s Note</em>: What was done in <a href="CMA04-1-IntegrationMN.html#4.2differentiationofintegralscontainingaparameter.">§4.2</a> (and <a href="CMA04-2-InfiniteIntegrals.html#4.44corollary">§4.44 (II) corollary</a>) was for <span class="math">\(f(x, \alpha)\)</span> where <span class="math">\(x\)</span> and <span class="math">\(\alpha\)</span> were real &#8211; the complex derivate had not yet been defined. However, the proofs in those sections may be re-interpreted without any changes to apply for complex <span class="math">\(\alpha\)</span>. <a href="#fnref:4" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:5">
-<p>The result <span class="math">\(f(z) =f(0) +z\,f'(0) +\dfrac{z^2}{2} f''(0) + \cdots\)</span>, obtained by putting <span class="math">\(a =0\)</span> in Taylor&#8217;s Theorem, is usually called <em>Maclaurin&#8217;s Theorem</em>; it was discovered by <a href="https://archive.org/details/lineaetertiiord00newtgoog">Stirling (1717)</a> and published by Maclaurin (1742) in his <a href="https://archive.org/details/atreatiseonflux01maclgoog"><em>Fluxions</em></a>.  <a href="#fnref:5" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p>The formal expansion was first published by Dr Brook Taylor (1715) in his <a href="http://17centurymaths.com/contents/taylorscontents.html"><em>Methodus Incrementorum</em></a>.  <a href="#fnref:5" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 <li id="fn:6">
-<p><em>Editor&#8217;s Note</em>: It might be helpful to observe, <span class="math">\(h < \alpha-(\alpha^2 -1)^{\frac{1}{2}}\)</span> whenever <span class="math">\(1 \leq \alpha < \frac{1}{2}(h+h^{-1}) \)</span>. <a href="#fnref:6" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+<p>The result <span class="math">\(f(z) =f(0) +z\,f'(0) +\dfrac{z^2}{2} f''(0) + \cdots\)</span>, obtained by putting <span class="math">\(a =0\)</span> in Taylor&#8217;s Theorem, is usually called <em>Maclaurin&#8217;s Theorem</em>; it was discovered by <a href="https://archive.org/details/lineaetertiiord00newtgoog">Stirling (1717)</a> and published by Maclaurin (1742) in his <a href="https://archive.org/details/atreatiseonflux01maclgoog"><em>Fluxions</em></a>.  <a href="#fnref:6" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:7">
+<p><em>Editor&#8217;s Note</em>: See <a href="http://mathworld.wolfram.com/EccentricAngle.html">&#8220;Eccentric Angle.&#8221;</a> at MathWorld. <a href="#fnref:7" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:8">
+<p><em>Editor&#8217;s Note</em>: It might be helpful to observe, <span class="math">\(h < \alpha-(\alpha^2 -1)^{\frac{1}{2}}\)</span> whenever <span class="math">\(1 \leq \alpha < \frac{1}{2}(h+h^{-1}) \)</span>. <a href="#fnref:8" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
 </li>
 
 </ol>
