@@ -158,7 +158,7 @@ B_{n}
 
 >**Note**: A proof of this result, depending on contour integration, is given by Carda, [*Monatshefte für Math. und Phys.* **v.** (1894)](http://books.google.com/books?id=iHVVAAAAYAAJ), pp. 321--4.
 
->*Example*. Shew that
+>*Example* 1. Shew that
 \\[
 B_{n}
 =
@@ -277,7 +277,7 @@ Bernoullian polynomial.
 >The Maclaurin series for the
 expression on the right was given by Bernoulli.
 
->*Example*. Shew that, when \\(n > 1\\),
+>*Example* 2. Shew that, when \\(n > 1\\),
   \\[
   \phi_{n}(z) = (-1)^{n} \phi_{n}(1-z).
   \\]
