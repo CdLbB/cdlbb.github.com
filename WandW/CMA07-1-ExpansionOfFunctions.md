@@ -29,17 +29,19 @@ HTML header:	<script type="text/javascript"
 
 ##The Expansion of Functions in Infinite Series##
 
-###7.1 A formula due to Darboux###*TODO.  Journal de Math. (3), ii. (1876), p. 271.}
+### 7.1 A formula due to Darboux.[^darboux,-1] [7.1aformuladuetodarboux.]###
+
+[^darboux,-1]:  [*Journal de Math.* (3), **ii.** (1876)](https://archive.org/details/s3journaldemat02liou), p. 291.
 
 Let \\(f(z)\\) be analytic at all points of the straight line joining \\(a\\)
 to \\(z\\), and let \\(\phi(t)\\) be any polynomial of degree \\(n\\) in \\(t\\).
 
 Then if \\(0 \leq t \leq 1\\), we have by differentiation
 \\[\begin{align*}
-  \frac{d }{d t}
+  &\frac{d }{d t}
   \sum_{m=1}^{n} (-1)^{m} (z-a)^{m} \phi^{(n-m)}(t) f^{(m)}(a + t(z-a))
   \\
-  =-(z-a) \phi^{(n)}(t) f'(a + t(z-a))
+  &\quad =-(z-a) \phi^{(n)}(t) f'(a + t(z-a))
   +
   (-1)^{n} (z-a)^{n+1} \phi(t) f^{(n+1)}(a + t (z-a)).
 \end{align*}\\]
@@ -47,25 +49,24 @@ Then if \\(0 \leq t \leq 1\\), we have by differentiation
 Noting that \\(\phi^{(n)}(t)\\) is constant \\(= \phi^{(n)}(0)\\), and integrating
 between the limits \\(0\\) and \\(1\\) of \\(t\\), we get
 \\[\begin{align*}
-  \phi^{(n)}(0) \left\{ f(z) - f(a) \right\}
+  &\phi^{(n)}(0) \left\{ f(z) - f(a) \right\}
   \\
-  =&
+  &\quad=
   \sum_{m=1}^{n} (-1)^{m-1} (z-a)^{m}
   \left\{ 
     \phi^{(n-m)}(1) f^{(m)}(z) - \phi^{(n-m)}(0) f^{(m)}(a)
   \right\}
   \\
-  &
+ &\qquad
   + (-1)^{n} (z-a)^{n+1}
-  \!\int_{n}^{1}\! \phi(t) f^{(n+1)}(a + t(z-a)) \, dt,
+  \!\int_{0}^{1}\! \phi(t) f^{(n+1)}(a + t(z-a)) \, dt,
 \end{align*}\\]
 which is the formula in question.
 
 Taylor's series may be obtained as a special case of this by writing
 \\(\phi(t) = (t-1)^{n}\\) and making \\(n\rightarrow\infty\\).
 
-%\begin{smalltext}
-Example. By substituting \\(2n\\) for \\(n\\) in the formula of Darboux, and
+>*Example*. By substituting \\(2n\\) for \\(n\\) in the formula of Darboux, and
 taking \\(\phi(t) = t^{n} (t-1)^{n}\\), obtain the expansion (supposed convergent)
 \\[
 f(z) - f(a)
@@ -76,8 +77,9 @@ f(z) - f(a)
 \\]
 and find the expression for the remainder after \\(n\\) terms in this
 series.
-%\end{smalltext}
-\Section{7}{2}{The \Bernoulli an numbers and the \Bernoulli an polynomials.}
+
+
+###7.2 The Bernoullian numbers and the Bernoullian polynomials. ###
 
 The function \\(\frac{1}{2} z \cot \frac{1}{2} z\\) is analytic when \\(\left|\, z\,\right| <
 2\pi\\),
@@ -90,14 +92,12 @@ Maclaurin series, thus
 - B_{1} \frac{z^{2}}{2!}
 - B_{2} \frac{z^{4}}{4!}
 - B_{3} \frac{z^{6}}{6!}
-\ cdots
+\cdots
 ;
 \\]
-then \\(B_{n}\\) is called the \\(n\\)th \emph{\Bernoulli an
-  number}\footnote{TODO These numbers were introduced by Jakob BernouUi in bis Ars
-Conjectandi, p. 97 (published posthumously, 1713).}.
-It is found that\footnote{TODO Tables of the first sixty-two \Bernoulli an numbers have been given by
-Adams, Brit. A.is. ReiJorts, 1877.}
+then \\(B_{n}\\) is called the \\(n\\)th *Bernoullian
+  number*.[^ars,-15]
+It is found that[^tableofbn,-3] [^modernbn,+3]
 \\[
 B_{1} = \frac{1}{6},
 \quad
@@ -112,12 +112,15 @@ B_{5} = \frac{5}{66},
 \ldots.
 \\]
 
-%
-% 126
-%
+[^ars,-15]: These numbers were introduced by Jakob Bernoulli in his [*Ars Conjectandi*](http://books.google.com/books?id=kD4PAAAAQAAJ), p. 97 (published posthumously, 1713). (See also, a German translation by Haussner, [*Wahrscheinlichkeitsrechnung, Ars conjectandi*](https://archive.org/details/wahrscheinlichke00bernuoft) (1899), p. 99 -- *Editor*.)
+
+[^tableofbn,-3]: Tables of the first sixty-two Bernoullian numbers have been given by Adams, [*Brit. Ass. Reports*, 1877](https://archive.org/details/reportofbritisha78brit), p. [8.](https://archive.org/stream/reportofbritisha78brit#page/n351/mode/2up)
+
+[^modernbn,+3]: *Editor's Note*: Modern practice defines the Bernoulli numbers somewhat differently (see ["Bernoulli Number."](http://mathworld.wolfram.com/BernoulliNumber.html) at MathWorld). In terms of the original Bernoullian numbers, \\(B_n\\), defined here, the modern Bernoulli numbers, \\(\mathbb{B}_n\\), are\\[\mathbb{B}_n = \left\{\begin{array}{lcl} 1 &&  \text{ for } n=1 \\   -\tfrac{1}{2} && \text{ for } n=2 \\  (-1)^{\left. n\middle/ 2\right.-1} B_{\left. n\middle/ 2\right.} && \text{ for } n \text{ even } \\  0 && \text{ for } n \text{ odd. }\end{array}   \right.\\]
+
 These numbers can be expressed as definite integrals as follows:
 
-We have, by example TODO:2 (p. TODO:122) of Chapter TODO:VI,
+We have, by [miscellaneous example 2  of Chapter **vi**](),
 \\[\begin{align*}
   \int_{0}^{\infty}\!
   \frac{\sin px \, dx}{e^{\pi x} - 1}
@@ -127,7 +130,7 @@ We have, by example TODO:2 (p. TODO:122) of Chapter TODO:VI,
   =&
   -\frac{1}{2p}
   +
-  \frac{i}{2} \left\{ 
+  \frac{1}{2p} \left\{ 
     1
     + B_{1} \frac{(2p)^{2}}{2!}
     - B_{2} \frac{(2p)^{4}}{4!}
@@ -140,9 +143,9 @@ Since
 \int_{0}^{\infty}\!
 \frac{x^{n} \sin \left(px + \frac{1}{2} n \pi \right)}{e^{\pi x} - 1} dx
 \\]
-converges uniformly (by de la Vall\'ee Poussin's test) near
+converges uniformly (by [de la Vallée Poussin's test](CMA04-2-InfiniteIntegrals.html#4.431poussinstest)) near
 \\(p=0\\) we
-may, by \hardsubsectionref{4}{4}{4} corollary, differentiate both
+may, by [§4.44 corollary](CMA04-2-InfiniteIntegrals.html#4.44corollary), differentiate both
 sides of this equation any number of times and then put \\(p = 0\\); doing
 so and writing \\(2t\\) for \\(x\\), we obtain
 \\[
@@ -150,43 +153,40 @@ B_{n}
 =
 4n
 \!\int_{0}^{\infty}\!
-\frac{t^{2n-1} \, dt}{e^{2\pi t} - 1}.
+\frac{t^{2n-1} \, dt}{e^{2\pi\:\! t} - 1}.
 \\]
-%\begin{remark}
-A proof of this result, depending on contour integration, is given by
-Carda, Monatshefte fur Math, v.nd Phys. v. (1894), pp. 321-4.
-%\end{remark}
 
-TODO:fixexample
-Example. Shew that
+>**Note**: A proof of this result, depending on contour integration, is given by Carda, [*Monatshefte für Math. und Phys.* **v.** (1894)](http://books.google.com/books?id=iHVVAAAAYAAJ), pp. 321--4.
+
+>*Example*. Shew that
 \\[
 B_{n}
 =
 \frac{2n}{\pi^{2n} (2^{2n}-1)}
 \!\int_{0}^{\infty}\!
-\frac{x^{2n}-1}{\sinh x}
-> 0.
+\frac{x^{2n-1}dx}{\sinh x} > 0.
 \\]
 
-Now consider the function \\(t \frac{e^{zt}-1}{e^{t}-1}\\), which may be
+Now consider the function \\(t \dfrac{e^{z\:\!t}-1}{e^{t}-1}\\), which may be
 expanded into a
 Maclaurin series in powers of \\(t\\) valid when \\(\left|\, t\,\right| < 2\pi\\).
 
-\emph{The \Bernoulli an polynomial\footnote{TODO The name was given by
-    Raabe, Journal filr Math. xlii. (1851), p.348.} of order \\(n\\)} is
-defined to be the coefficient of \\(\frac{t^{n}}{n!}\\)
+[^raabe,+2]: The name was given by Raabe, [*Journal für Math.* **xlii.** (1851)](http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0042), p. 348.
+
+*The Bernoullian polynomial[^raabe,+2] of order \\(n\\)* is
+defined to be the coefficient of \\(\left.\vphantom{g_n}t^{n}\!\middle/n!\right.\\)
 in this expansion. It is denoted by \\(\phi_{n}(z)\\), so that
 \\[
-t \frac{e^{zt}-1}{e^{t}-1}
+t \frac{e^{z\:\!t}-1}{e^{t}-1}
 =
 \sum_{n=1}^{\infty}
-\frac{\theta_{n}(z) t^{n}}{n!}.
+\frac{\phi_{n}(z) t^{n}}{n!}.
 \\]
 
 This polynomial possesses several important properties. Writing \\(z+1\\)
 for \\(z\\) in the preceding equation and subtracting, we find that
 \\[
-t e^{zt}
+t e^{z\:\! t}
 =
 \sum_{n=1}^{\infty}
 \left\{ 
@@ -204,11 +204,8 @@ n z^{n-1}
 \\]
 which is a difference-equation satisfied by the function \\(\phi_{n}(z)\\).
 
-%
-% 127
-%
 
-An explicit expression for the \Bernoulli an polynomials can be obtained
+An explicit expression for the Bernoullian polynomials can be obtained
 as follows. We have
 \\[
 e^{zt} - 1
@@ -235,24 +232,24 @@ Hence
 \\[
 \sum_{n=1}^{\infty}
 \frac{\phi_{n}(z) t^{n}}{n!}
-=
+= \!\!
 \left\{ 
   zt
   + \frac{z^{2} t^{2}}{2!}
   + \frac{z^{3} t^{3}}{3!}
   + \cdots
-\right\}
+\right\} \!\!
 \left\{ 
   1
   - \frac{t}{2}
   + \frac{B_{1} t^{2}}{2!}
   - \frac{B_{2} t^{4}}{4!}
   + \cdots
-\right\}.
+\right\}\! .
 \\]
 
 From this, by equating coefficients of \\(t^{n}\\)
-(\hardsubsectionref{3}{7}{3}), we have
+([§3.73](CMA03-4-PowerSeries.html#3.73powerserieswhichvanishidentically.)), we have
 \\[
 \phi_{n}(z)
 =
@@ -266,32 +263,30 @@ z^{n}
 the last term being that in \\(z\\) or \\(z^{2}\\) and
 \\({n \choose 2}, {n \choose 4},\ldots\\)  being the
 binomial coefficients; this is the Maclaurin series for the \\(n\\)th
-\Bernoulli an polynomial.
-%\begin{Remark}
-When \\(z\\) is an integer, it may be seen from the difference-equation that
+Bernoullian polynomial.
+
+>When \\(z\\) is an integer, it may be seen from the difference-equation that
 \\[
-\phi_{n}(z)/n
+\left.\phi_{n}(z)\middle/n \right.
 =
 1^{n-1}
 + 2^{n-1}
 + \cdots + (z-1)^{n-1}.
 \\]
+>
+>The Maclaurin series for the
+expression on the right was given by Bernoulli.
 
-The Maclaurin series for the
-expression on the right was given by \Bernoulli.
-
-%\begin{Remark}
-\begin{wandwexample}
-  Shew that, when \\(n > 1\\),
+>*Example*. Shew that, when \\(n > 1\\),
   \\[
   \phi_{n}(z) = (-1)^{n} \phi_{n}(1-z).
   \\]
-\end{wandwexample}
-%\end{Remark}
-\Subsection{7}{2}{1}{The Euler-Maclaurin expansion.}
 
-In the formula of Darboux \hardsectionref{7}{1}) write \\(\phi_{n}(t)\\)
-for \\(\phi(t)\\), where \\(\phi_{n}(t)\\) is the \\(n\\)th \Bernoulli an polynomial.
+
+####7.21 The Euler-Maclaurin expansion.####
+
+In the formula of Darboux ([§7.1](#7.1aformuladuetodarboux.)) write \\(\phi_{n}(t)\\)
+for \\(\phi(t)\\), where \\(\phi_{n}(t)\\) is the \\(n\\)th Bernoullian polynomial.
 
 Differentiating the equation
 \\[
@@ -301,7 +296,7 @@ Differentiating the equation
 \\[
 \phi_{n}^{(n-k)}(t+1) - \phi_{n}^{(n-k)}(t)
 =
-n (n-t) \cdots k t^{k-1}
+n (n-1) \cdots (k+1)k t^{k-1}
 \\]
 Putting \\(t=0\\) in this, we have
 \\(\phi_{n}^{(n-k)}(1) = \phi_{n}^{(n-k)}(0).\\)
@@ -309,35 +304,18 @@ Putting \\(t=0\\) in this, we have
 Now, from the Maclaurin
 series for \\(\phi_{n}(z)\\), we have if \\(k > 0\\)
 \\[\begin{align*}
-  \phi_{n}^{(n-2k-1)}(0) = 0,
-  &
-  \quad
-  \phi_{n}^{(n-2k)}(0) = \frac{n!}{(2k)!} (-1)^{k-1} B_{k},
+  &\phi_{n}^{(n-2k-1)}(0) = 0,&
+  
+  \;
+  &\phi_{n}^{(n-2k)}(0) = \frac{n!}{(2k)!} (-1)^{k-1} B_{k},
   \\
-  \phi_{n}^{(n-1)}(0) = -\frac{1}{2} n!,
-  &
-  \quad
-  \phi_{n}^{(n)}(0) = n!.
+  &\phi_{n}^{(n-1)}(0) = -\frac{1}{2} n!,&
+  
+  \;
+  &\phi_{n}^{(n)}(0) = n!.
 \end{align*}\\]
 
-Substituting these values of \\(\phi_{n}^{(n-k)}(1)\\) and
-\\(\phi_{n}^{(n-k)}(0)\\) in Darboux's
-result, we obtain the Euler-Maclaurin sum
-formula\footnote{TODO A history of the formula is given by Barnes, Proc. London Math. Soc.
-(2), iii. (1905), p. 253. It was discovered by Euler (1732), but was
-not published at the time. Euler communicated it (June 9, 1730) to
-Stirling who replied (April 16, 1738) that it included his own theorem
-(see \hardsubsectionref{12}{3}{3}) as a particular case, and also that the more general
-theorem had been discovered by Maclaurin; and Euler, in a lengthy
-reply, waived his claims to priority. The theorem was published by
-Euler, Comm. Acad. Imp. Petrop. vi. (1732), [Published 1738], pp.
-68-97, and by Maclaurin in 1742, Treatise on Fluxions, p. 672. For
-information concerning the correspondence between Euler and Stirling,
-we are indebted to Mr C. Tweedie.},
-
-%
-% 128
-%
+Substituting these values of \\(\phi_{n}^{(n-k)}(1)\\) and \\(\phi_{n}^{(n-k)}(0)\\) in Darboux's result, we obtain the *Euler-Maclaurin sum formula*,[^emformula,-10]
 \\[\begin{align*}
 (z-a) f'(a)
 =&
@@ -350,9 +328,11 @@ f(z) - f(a)
 \\
 &
 -\frac{(z-a)^{2n+1}}{(2n)!}
-\!\int_{0}^{1}\! \phi_{(2n)}(t) f^{(2n+1)}\left\{ a + (z-a) t \right\}
+\!\int_{0}^{1}\! \phi_{2n}(t) \, f^{(2n+1)}(a + (z-a) t )
 \, dt.
 \end{align*}\\]
+
+[^emformula,-10]: A history of the formula is given by Barnes, [*Proc. London Math. Soc.* (2), **iii.** (1905)](https://archive.org/details/proceedingslond15socigoog), p. 253. It was discovered by Euler (1732), but was not published at the time. Euler communicated it (June 9, 1736) to Stirling who replied (April 16, 1738) that it included his own theorem (see [§12.33](whereOwhere.html)) as a particular case, and also that the more general theorem had been discovered by Maclaurin; and Euler, in a lengthy reply, waived his claims to priority. The theorem was published by Euler, [*Comm. Acad. Imp. Petrop.* **vi.** (1732)](http://eulerarchive.maa.org/pages/E025.html), [Published 1738], pp. 68-97, and by Maclaurin in 1742, [*Treatise on Fluxions*](https://archive.org/details/atreatiseonflux01maclgoog), p. 672. For information concerning the correspondence between Euler and Stirling, we are indebted to Mr C. Tweedie (see his [*James Stirling; a sketch of his life and works*](https://archive.org/details/jamesstirlingske00stir) (1922) -- *Editor*).
 
 In certain cases the last term tends to zero as
 \\(n \rightarrow \infty\\), and we can
@@ -375,13 +355,13 @@ If we write \\(\omega\\) for \\(z - a\\) and \\(F(x)\\) for \\(f'(x)\\), the las
   \!\int_{0}^{1}\! \phi_{2n}(t) F^{(2n)}(a + \omega t) \, dt.
 \end{align*}\\]
 
-Writing \\(a + \omega, a + 2\omega, \ldots, a + (r-1) \omega\\)
+Writing \\(a + \omega\\), \\(a + 2\omega, \ldots, a + (r-1) \omega\\)
 for \\(a\\) in this result and adding up, we get
 \\[\begin{align*}
-\int_{a}^{a + r\omega}\! F(x) \, dx
+\int_{a}^{a + r\omega}\! \!\! F(x) \, dx &
 =
 \omega
- &
+ 
 \left\{ 
   \frac{1}{2} F(a) + F(a+\omega) + F(a+2\omega)
   + \cdots + \frac{1}{2} F(a + r\omega)
@@ -395,7 +375,7 @@ for \\(a\\) in this result and adding up, we get
   -
   F^{(2m-1)}(a)
 \right\}
-+ R_{n}
++ R_{n} ,
 \end{align*}\\]
 where
 \\[
@@ -404,7 +384,7 @@ R_{n}
 \frac{\omega^{2n+1}}{(2n)!}
 \!\int_{0}^{1}\! \phi_{2n}(t)
 \left\{ \sum_{m=0}^{r-1} F^{(2n)}(a + m\omega + \omega t)\right\}
-\, dt.
+ dt.
 \\]
 
 This last formula is of the utmost importance in connexion with the
@@ -412,36 +392,30 @@ numerical evaluation of definite integrals. It is valid if \\(F(x)\\) is
 analytic at all points of the straight line joining
 \\(a\\) to \\(a + r \omega\\).
 
-%\begin{Remark}
-\begin{wandwexample}
-  If \\(f(z)\\) be an odd function of \\(z\\), shew that
-  \\[
+>*Example* 1. If \\(f(z)\\) be an odd function of \\(z\\), shew that
+  \\[\begin{align*}
   z f'(z)
-  =
+  =&
   f(z)
   +
   \sum_{m=2}^{n}
   (-1)^{m}
   \frac{B_{m-1} (2z)^{2m-2}}{(2m-2)!}
-  f^{(2m-2)}(z)
-  -
+  f^{(2m-2)}(z) \\
+  &-
   \frac{2^{2n} z^{2n+1}}{(2n)!}
-  \!\int_{0}^{1}\!
-  \phi_{2n}(t)
-  f^{(2n+1)}(-z + 2zt)
+  \!\int_{0}^{1}\!\!
+  \phi_{2n}(t)\,
+  f^{(2n+1)}(-z + 2\:\! z\:\! t)
   \, dt.
-  \\]
-\end{wandwexample}
-\begin{wandwexample}
-  Shew, by integrating by parts, that the remainder after \\(n\\)
-  terms of the expansion of \\(\frac{1}{2} z \cot \frac{1}{2} z\\) may be written in the form
+  \end{align*}\\]
+
+>*Example* 2. Shew, by integrating by parts, that the remainder after \\(n\\) terms of the expansion of \\(\frac{1}{2} z \cot \frac{1}{2} z\\) may be written in the form
   \\[
   \frac{ (-1)^{n+1} z^{2n+1} }{ (2n)! \sin z }
-  \!\int_{0}^{1} \phi_{2n}(t) \cos (zt) \, dt.
+  \!\int_{0}^{1} \phi_{2n}(t) \cos (z\:\! t) \, dt.
   \\]
-\addexamplecitation{Math. Trip. 1904.}
-\end{wandwexample}
-%\end{Remark}
+Math. Trip. 1904.
 
 </div>
 </div>
@@ -464,31 +438,26 @@ analytic at all points of the straight line joining
 <li class="part"><a onClick="hideIt('navcauchy');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
   <ul>
     <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
-    <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
-    <li><a href="CMA06-1-Residues.html#thetheoryofresiduesbrapplicationtotheevaluationofdefinitenbspintegrals">The Theory of Residues</a>
+    <li><a href="CMA06-1-Residues.html">The Theory of Residues</a>
+    <li><a href="CMA07-1-ExpansionOfFunctions.html">Expanding Functions in Infinite Series</a>
       <ul>
-        <li><a href="CMA06-1-Residues.html#6.1residues.">Residues</a>
-        <li><a href="CMA06-1-Residues.html#6.2theevaluationofdefiniteintegrals.">The Evaluation of Definite Integrals</a>
+        <li class="current"><a href="#7.1aformuladuetodarboux.">A formula due to Darboux</a>
+        <li class="current"><a href="#7.2thebernoulliannumbersandthebernoullianpolynomials.">The Bernoullian numbers</a>
           <ul>
-	     <li><a href="CMA06-1-Residues.html#6.21theevaluationoftheintegralsofcertainperiodicfunctionstakenbetweenthelimits0and2pi.">Evaluation of Certain Periodic Integrals</a> </li>
-              <li><a href="CMA06-1-Residues.html#6.22theevaluationofcertaintypesofintegralstakenbetweenthelimits-inftyandinfty.">Evaluation of Certain Infinite Integrals</a></li>
-	      <li><a href="CMA06-1-Residues.html#6.221certaininfiniteintegralsinvolvingsinesandcosines.">Evaluation of Integrals with Sines & Cosines</a></li>
-              <li><a href="CMA06-1-Residues.html#6.222jordanslemma.">Jordan&#8217;s Lemma</a></li>
-              <li class="current"><a href="#6.23principalvaluesofintegrals.">Principal Values of integrals</a> </li>
-              <li class="current"><a href="#6.24evaluationofintegralsoftheform.">Evaluation of <span class="math">\(\int_0^\infty x^{\alpha-1}Q(z)\, dx\)</span>.</a> </li>
+	     <li><a href="#7.21theeuler-maclaurinexpansion.">The Euler-Maclaurin Expansion</a> </li>
           </ul>
        </li>
-        <li class="current"><a href="#6.3cauchysintegral.">Cauchy&#8217;s Integral</a>
-          <ul>
-	     <li><a href="#6.31thenumberofrootsofanequationcontainedwithinacontour.">Counting the roots of an equation</a> </li>
-          </ul>
-       </li>
-	<li><a href="CMA06-3-ConnexionTwixtZeros.html#6.4connexionbetweenthezerosofafunctionandthezerosofitsderivate.">Connexion between a Function&#8217;s Zeros  and its Derivate&#8217;s Zeros.</a></li>
-        <li><a href="CMA06-3-ConnexionTwixtZeros.html#references.">References</a></li>
-        <li><a href="CMA06-3-ConnexionTwixtZeros.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
+        <li><a href="CMA07-2-BurmannsTheorem.html#7.3burmannstheorem.">B&uuml;rmann&#8217;s Theorem</a></li>
+	<li><a href="CMA07-3-FactorTheorem.html#7.4Expansionofaclassoffunctionsinrationalfractions.">Expansion of functions in rationals</a></li>
+        <li><a href="CMA07-2-BurmannsTheorem.html#7.52theexpansionofaclassoffunctionsasinfiniteproducts.">Expansion of functions as products</a></li>
+	<li><a href="CMA07-3-FactorTheorem.html#7.6thefactortheoremofweierstrass.">The Factor Theorem of Weierstrass</a></li>
+        <li><a href="CMA07-4-BorelsTheorem.html#7.7theexpansionofaclassofperiodicfunctionsinaseriesofcotangents.">Expansion of functions in cotangents</a></li>
+	<li><a href="CMA07-4-BorelsTheorem.html#7.8borelstheorem.">Borel&#8217;s Theorem</a></li>
+        <li><a href="CMA07-5-Exercises.html#references.">References</a></li>
+        <li><a href="CMA07-5-Exercises.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ul>
     </li>
-    <li><a href="CMA07-1-ExpansionOfFunctions.html">Expanding Functions in Infinite Series</a></li>
+    <li><a href="CMA08-1-AsymptoticExpansion.html">Asymptotic Expansions and Summable Series</a></li>
     <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
   </ul>
 </li>
@@ -537,8 +506,8 @@ analytic at all points of the straight line joining
      <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
      <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
       <li><a href="CMA06-1-Residues.html">The Theory of Residues</a></li>
-     <li class="more current"><a onClick="showIt('navcauchy');hideIt('navprocesses');"> you are here . . . </a></li>
      <li><a href="CMA07-1-ExpansionOfFunctions.html">Expanding Functions in Infinite Series</a></li>
+     <li class="more current"><a onClick="showIt('navcauchy');hideIt('navprocesses');"> you are here . . . </a></li>
      <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
@@ -603,13 +572,13 @@ analytic at all points of the straight line joining
 
 
 <div id="navfixedleft" class="fixedBleft">
-<p><a href="CMA06-1-Residues.html">&#x25C0;</a></p>
+<p><a href="CMA06-3-ConnexionTwixtZeros.html">&#x25C0;</a></p>
 </div>
 
 <div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
-<p><a onClick="hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');showIt('navcauchy');" style="float: left;">&#x25A4;</a> <a href="CMA06-3-ConnexionTwixtZeros.html" style="float: right;">&#x25B6;</a></p>
+<p><a onClick="hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');showIt('navcauchy');" style="float: left;">&#x25A4;</a> <a href="CMA07-2-BurmannsTheorem.html" style="float: right;">&#x25B6;</a></p>
 </div>
 
 <div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;" >
-<p><a onClick="hideIt('navcauchy');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA06-3-ConnexionTwixtZeros.html" style="float: right;">&#x25B6;	</a></p>
+<p><a onClick="hideIt('navcauchy');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA07-2-BurmannsTheorem.html" style="float: right;">&#x25B6;	</a></p>
 </div>

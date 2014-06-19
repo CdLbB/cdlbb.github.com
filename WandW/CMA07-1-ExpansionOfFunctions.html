@@ -3,14 +3,14 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="latexinput" content="mmd-cambridge-header"/>
-	<title>A Course of Modern Analysis-404 page</title>
+	<title>A Course of Modern Analysis-ExpansionOfFunctions 7-1</title>
 	<meta name="subtitle" content="An introduction to the general theory of
 infinite processes and analytic functions;
 with an account of the principal
 transcendental functions."/>
 	<meta name="author" content="E.T. Whittaker and G.N. Watson"/>
 	<meta name="editor" content="Eric Nitardy"/>
-	<meta name="date" content="May 29, 2012"/>
+	<meta name="date" content="May 19, 2014"/>
 	<meta name="titlefile" content="mmd-WandW-title"/>
 	<meta name="copyrightfile" content="mmd-WandW-copyright"/>
 	<meta name="test" content="And this is a new key-value pair"/>
@@ -18,6 +18,10 @@ transcendental functions."/>
 	<meta name="latexinput" content="mmd-cambridge-begin-doc"/>
 	<meta name="latexfooter" content="mmd-cambridge-footer"/>
 	<link type="text/css" rel="stylesheet" href="css/documentation.css"/>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+<script type="text/javascript" src="js/showhide.js"></script>
+<script type="text/javascript" src="js/mathjaxend.js"></script>
 </head>
 <body>
 
@@ -25,11 +29,583 @@ transcendental functions."/>
 <div id="content">
 <div class="contenttext">
 
-<h2 id="pagenotfound">Page not Found</h2>
+<h2 id="theexpansionoffunctionsininfiniteseries">The Expansion of Functions in Infinite Series</h2>
 
-<p>This portion of the book is not yet finished. The book is growing gradually. Try the link again in a couple months.</p>
+<h3 id="7.1aformuladuetodarboux.">7.1 A formula due to Darboux.<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a></h3>
+
+<p>Let <span class="math">\(f(z)\)</span> be analytic at all points of the straight line joining <span class="math">\(a\)</span>
+to <span class="math">\(z\)</span>, and let <span class="math">\(\phi(t)\)</span> be any polynomial of degree <span class="math">\(n\)</span> in <span class="math">\(t\)</span>.</p>
+
+<p>Then if <span class="math">\(0 \leq t \leq 1\)</span>, we have by differentiation
+<span class="math">\[\begin{align*}
+  &\frac{d }{d t}
+  \sum_{m=1}^{n} (-1)^{m} (z-a)^{m} \phi^{(n-m)}(t) f^{(m)}(a + t(z-a))
+  \\
+  &\quad =-(z-a) \phi^{(n)}(t) f'(a + t(z-a))
+  +
+  (-1)^{n} (z-a)^{n+1} \phi(t) f^{(n+1)}(a + t (z-a)).
+\end{align*}\]</span></p>
+
+<p>Noting that <span class="math">\(\phi^{(n)}(t)\)</span> is constant <span class="math">\(= \phi^{(n)}(0)\)</span>, and integrating
+between the limits <span class="math">\(0\)</span> and <span class="math">\(1\)</span> of <span class="math">\(t\)</span>, we get
+<span class="math">\[\begin{align*}
+  &\phi^{(n)}(0) \left\{ f(z) - f(a) \right\}
+  \\
+  &\quad=
+  \sum_{m=1}^{n} (-1)^{m-1} (z-a)^{m}
+  \left\{ 
+    \phi^{(n-m)}(1) f^{(m)}(z) - \phi^{(n-m)}(0) f^{(m)}(a)
+  \right\}
+  \\
+ &\qquad
+  + (-1)^{n} (z-a)^{n+1}
+  \!\int_{0}^{1}\! \phi(t) f^{(n+1)}(a + t(z-a)) \, dt,
+\end{align*}\]</span>
+which is the formula in question.</p>
+
+<p>Taylor&#8217;s series may be obtained as a special case of this by writing
+<span class="math">\(\phi(t) = (t-1)^{n}\)</span> and making <span class="math">\(n\rightarrow\infty\)</span>.</p>
+
+<blockquote>
+<p><em>Example</em>. By substituting <span class="math">\(2n\)</span> for <span class="math">\(n\)</span> in the formula of Darboux, and
+taking <span class="math">\(\phi(t) = t^{n} (t-1)^{n}\)</span>, obtain the expansion (supposed convergent)
+<span class="math">\[
+f(z) - f(a)
+=
+\sum_{n=1}^{\infty}
+\frac{ (-1)^{n-1} (z-a)^{n} }{2^{n} n!}
+\left\{ f^{(n)}(z) + (-1)^{n-1} f^{(n)}(a) \right\},
+\]</span>
+and find the expression for the remainder after <span class="math">\(n\)</span> terms in this
+series.</p>
+</blockquote>
+
+<h3 id="7.2thebernoulliannumbersandthebernoullianpolynomials.">7.2 The Bernoullian numbers and the Bernoullian polynomials.</h3>
+
+<p>The function <span class="math">\(\frac{1}{2} z \cot \frac{1}{2} z\)</span> is analytic when <span class="math">\(\left|\, z\,\right| <
+2\pi\)</span>,
+and, since it is an even function of <span class="math">\(z\)</span>, it can be expanded into a
+Maclaurin series, thus
+<span class="math">\[
+\frac{1}{2} z \cot \frac{1}{2} z
+=
+1
+- B_{1} \frac{z^{2}}{2!}
+- B_{2} \frac{z^{4}}{4!}
+- B_{3} \frac{z^{6}}{6!}
+\cdots
+;
+\]</span>
+then <span class="math">\(B_{n}\)</span> is called the <span class="math">\(n\)</span>th <em>Bernoullian
+ number</em>.<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a>
+It is found that<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a> <a href="#fn:4" id="fnref:4" title="see footnote" class="footnote">[4]</a>
+<span class="math">\[
+B_{1} = \frac{1}{6},
+\quad
+B_{2} = \frac{1}{30},
+\quad
+B_{3} = \frac{1}{42},
+\quad
+B_{4} = \frac{1}{30},
+\quad
+B_{5} = \frac{5}{66},
+\quad
+\ldots.
+\]</span></p>
+
+<p>These numbers can be expressed as definite integrals as follows:</p>
+
+<p>We have, by <a href="">miscellaneous example 2 of Chapter <strong>vi</strong></a>,
+<span class="math">\[\begin{align*}
+  \int_{0}^{\infty}\!
+  \frac{\sin px \, dx}{e^{\pi x} - 1}
+  =&
+  -\frac{1}{2p} + \frac{i}{2} \cot ip
+  \\
+  =&
+  -\frac{1}{2p}
+  +
+  \frac{1}{2p} \left\{ 
+    1
+    + B_{1} \frac{(2p)^{2}}{2!}
+    - B_{2} \frac{(2p)^{4}}{4!}
+    + \cdots
+     \right\}.
+\end{align*}\]</span></p>
+
+<p>Since
+<span class="math">\[
+\int_{0}^{\infty}\!
+\frac{x^{n} \sin \left(px + \frac{1}{2} n \pi \right)}{e^{\pi x} - 1} dx
+\]</span>
+converges uniformly (by <a href="CMA04-2-InfiniteIntegrals.html#4.431poussinstest">de la Vallée Poussin&#8217;s test</a>) near
+<span class="math">\(p=0\)</span> we
+may, by <a href="CMA04-2-InfiniteIntegrals.html#4.44corollary">§4.44 corollary</a>, differentiate both
+sides of this equation any number of times and then put <span class="math">\(p = 0\)</span>; doing
+so and writing <span class="math">\(2t\)</span> for <span class="math">\(x\)</span>, we obtain
+<span class="math">\[
+B_{n}
+=
+4n
+\!\int_{0}^{\infty}\!
+\frac{t^{2n-1} \, dt}{e^{2\pi\:\! t} - 1}.
+\]</span></p>
+
+<blockquote>
+<p><strong>Note</strong>: A proof of this result, depending on contour integration, is given by Carda, <a href="http://books.google.com/books?id=iHVVAAAAYAAJ"><em>Monatshefte für Math. und Phys.</em> <strong>v.</strong> (1894)</a>, pp. 321&#8211;4.</p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em>. Shew that
+<span class="math">\[
+B_{n}
+=
+\frac{2n}{\pi^{2n} (2^{2n}-1)}
+\!\int_{0}^{\infty}\!
+\frac{x^{2n-1}dx}{\sinh x} > 0.
+\]</span></p>
+</blockquote>
+
+<p>Now consider the function <span class="math">\(t \dfrac{e^{z\:\!t}-1}{e^{t}-1}\)</span>, which may be
+expanded into a
+Maclaurin series in powers of <span class="math">\(t\)</span> valid when <span class="math">\(\left|\, t\,\right| < 2\pi\)</span>.</p>
+
+<p><em>The Bernoullian polynomial<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a> of order <span class="math">\(n\)</span></em> is
+defined to be the coefficient of <span class="math">\(\left.\vphantom{g_n}t^{n}\!\middle/n!\right.\)</span>
+in this expansion. It is denoted by <span class="math">\(\phi_{n}(z)\)</span>, so that
+<span class="math">\[
+t \frac{e^{z\:\!t}-1}{e^{t}-1}
+=
+\sum_{n=1}^{\infty}
+\frac{\phi_{n}(z) t^{n}}{n!}.
+\]</span></p>
+
+<p>This polynomial possesses several important properties. Writing <span class="math">\(z+1\)</span>
+for <span class="math">\(z\)</span> in the preceding equation and subtracting, we find that
+<span class="math">\[
+t e^{z\:\! t}
+=
+\sum_{n=1}^{\infty}
+\left\{ 
+  \phi_{n}(z+1) - \phi_{n}(z)
+\right\}
+\frac{t^{n}}{n!}.
+\]</span></p>
+
+<p>On equating coefficients of <span class="math">\(t^{n}\)</span> on both
+sides of this equation we obtain
+<span class="math">\[
+n z^{n-1}
+=
+\phi_{n}(z+1) - \phi_{n}(z),
+\]</span>
+which is a difference-equation satisfied by the function <span class="math">\(\phi_{n}(z)\)</span>.</p>
+
+<p>An explicit expression for the Bernoullian polynomials can be obtained
+as follows. We have
+<span class="math">\[
+e^{zt} - 1
+=
+zt
++ \frac{z^{2}t^{2}}{2!}
++ \frac{z^{3}t^{3}}{3!}
++ \cdots,
+\]</span>
+and
+<span class="math">\[
+\frac{t}{e^{t}-1}
+=
+\frac{t}{2i} \cot \frac{t}{2i} - \frac{t}{2}
+=
+1
+- \frac{t}{2}
++ \frac{B_{1} t^{2}}{2!}
+- \frac{B_{2} t^{4}}{4!}
++ \cdots.
+\]</span></p>
+
+<p>Hence
+<span class="math">\[
+\sum_{n=1}^{\infty}
+\frac{\phi_{n}(z) t^{n}}{n!}
+= \!\!
+\left\{ 
+  zt
+  + \frac{z^{2} t^{2}}{2!}
+  + \frac{z^{3} t^{3}}{3!}
+  + \cdots
+\right\} \!\!
+\left\{ 
+  1
+  - \frac{t}{2}
+  + \frac{B_{1} t^{2}}{2!}
+  - \frac{B_{2} t^{4}}{4!}
+  + \cdots
+\right\}\! .
+\]</span></p>
+
+<p>From this, by equating coefficients of <span class="math">\(t^{n}\)</span>
+(<a href="CMA03-4-PowerSeries.html#3.73powerserieswhichvanishidentically.">§3.73</a>), we have
+<span class="math">\[
+\phi_{n}(z)
+=
+z^{n}
+- \frac{1}{2} n z^{n-1}
++ {n \choose 2} B_{1} z^{n-2}
+- {n \choose 4} B_{2} z^{n-4}
++ {n \choose 6} B_{3} z^{n-6}
+- \cdots,
+\]</span>
+the last term being that in <span class="math">\(z\)</span> or <span class="math">\(z^{2}\)</span> and
+<span class="math">\({n \choose 2}, {n \choose 4},\ldots\)</span> being the
+binomial coefficients; this is the Maclaurin series for the <span class="math">\(n\)</span>th
+Bernoullian polynomial.</p>
+
+<blockquote>
+<p>When <span class="math">\(z\)</span> is an integer, it may be seen from the difference-equation that
+<span class="math">\[
+\left.\phi_{n}(z)\middle/n \right.
+=
+1^{n-1}
++ 2^{n-1}
++ \cdots + (z-1)^{n-1}.
+\]</span></p>
+
+<p>The Maclaurin series for the
+expression on the right was given by Bernoulli.</p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em>. Shew that, when <span class="math">\(n > 1\)</span>,
+ <span class="math">\[
+  \phi_{n}(z) = (-1)^{n} \phi_{n}(1-z).
+  \]</span></p>
+</blockquote>
+
+<h4 id="7.21theeuler-maclaurinexpansion.">7.21 The Euler-Maclaurin expansion.</h4>
+
+<p>In the formula of Darboux (<a href="#7.1aformuladuetodarboux.">§7.1</a>) write <span class="math">\(\phi_{n}(t)\)</span>
+for <span class="math">\(\phi(t)\)</span>, where <span class="math">\(\phi_{n}(t)\)</span> is the <span class="math">\(n\)</span>th Bernoullian polynomial.</p>
+
+<p>Differentiating the equation
+<span class="math">\[
+\phi_{n}(t+1) - \phi_{n}(t) = n t^{n-1}
+\]</span>
+<span class="math">\(n - k\)</span> times, we have
+<span class="math">\[
+\phi_{n}^{(n-k)}(t+1) - \phi_{n}^{(n-k)}(t)
+=
+n (n-1) \cdots (k+1)k t^{k-1}
+\]</span>
+Putting <span class="math">\(t=0\)</span> in this, we have
+<span class="math">\(\phi_{n}^{(n-k)}(1) = \phi_{n}^{(n-k)}(0).\)</span></p>
+
+<p>Now, from the Maclaurin
+series for <span class="math">\(\phi_{n}(z)\)</span>, we have if <span class="math">\(k > 0\)</span>
+<span class="math">\[\begin{align*}
+  &\phi_{n}^{(n-2k-1)}(0) = 0,&
+  
+  \;
+  &\phi_{n}^{(n-2k)}(0) = \frac{n!}{(2k)!} (-1)^{k-1} B_{k},
+  \\
+  &\phi_{n}^{(n-1)}(0) = -\frac{1}{2} n!,&
+  
+  \;
+  &\phi_{n}^{(n)}(0) = n!.
+\end{align*}\]</span></p>
+
+<p>Substituting these values of <span class="math">\(\phi_{n}^{(n-k)}(1)\)</span> and <span class="math">\(\phi_{n}^{(n-k)}(0)\)</span> in Darboux&#8217;s result, we obtain the <em>Euler-Maclaurin sum formula</em>,<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a>
+<span class="math">\[\begin{align*}
+(z-a) f'(a)
+=&
+f(z) - f(a)
+- \frac{z-a}{2} \left\{ f'(z) - f'(a) \right\}
+\\
+&
++ \sum_{m=1}^{n-1} \frac{ (-1)^{m-1} B_{m} (z-a)^{2m}}{(2m)!}
+\left\{ f^{(2m)}(z) - f^{(2m)}(a) \right\}
+\\
+&
+-\frac{(z-a)^{2n+1}}{(2n)!}
+\!\int_{0}^{1}\! \phi_{2n}(t) \, f^{(2n+1)}(a + (z-a) t )
+\, dt.
+\end{align*}\]</span></p>
+
+<p>In certain cases the last term tends to zero as
+<span class="math">\(n \rightarrow \infty\)</span>, and we can
+thus obtain an infinite series for <span class="math">\(f(z) - f(a)\)</span>.</p>
+
+<p>If we write <span class="math">\(\omega\)</span> for <span class="math">\(z - a\)</span> and <span class="math">\(F(x)\)</span> for <span class="math">\(f'(x)\)</span>, the last formula becomes
+<span class="math">\[\begin{align*}
+  \!\int_{a}^{a+\omega}\! F(x) \, dx
+  =
+  &
+  \frac{1}{2} \omega \left\{ F(a) + F(a + \omega) \right\}
+  \\
+  &
+  + \sum_{m=1}^{n-1}
+  \frac{(-1)^{m} B_{m} \omega^{2m}}{(2m)!}
+  \left\{ F^{(2m-1)}(a+\omega) - F^{(2m-1)}(a) \right\}
+  \\
+  &
+  + \frac{\omega^{2n+1}}{(2n)!}
+  \!\int_{0}^{1}\! \phi_{2n}(t) F^{(2n)}(a + \omega t) \, dt.
+\end{align*}\]</span></p>
+
+<p>Writing <span class="math">\(a + \omega\)</span>, <span class="math">\(a + 2\omega, \ldots, a + (r-1) \omega\)</span>
+for <span class="math">\(a\)</span> in this result and adding up, we get
+<span class="math">\[\begin{align*}
+\int_{a}^{a + r\omega}\! \!\! F(x) \, dx &
+=
+\omega
+ 
+\left\{ 
+  \frac{1}{2} F(a) + F(a+\omega) + F(a+2\omega)
+  + \cdots + \frac{1}{2} F(a + r\omega)
+\right\}
+\\
+&
++ \sum_{m=1}^{n-1}
+\frac{(-1)^{m} B_{m} \omega^{2m}}{(2m)!}
+\left\{ 
+  F^{(2m-1)}(a + r\omega)
+  -
+  F^{(2m-1)}(a)
+\right\}
++ R_{n} ,
+\end{align*}\]</span>
+where
+<span class="math">\[
+R_{n}
+=
+\frac{\omega^{2n+1}}{(2n)!}
+\!\int_{0}^{1}\! \phi_{2n}(t)
+\left\{ \sum_{m=0}^{r-1} F^{(2n)}(a + m\omega + \omega t)\right\}
+ dt.
+\]</span></p>
+
+<p>This last formula is of the utmost importance in connexion with the
+numerical evaluation of definite integrals. It is valid if <span class="math">\(F(x)\)</span> is
+analytic at all points of the straight line joining
+<span class="math">\(a\)</span> to <span class="math">\(a + r \omega\)</span>.</p>
+
+<blockquote>
+<p><em>Example</em> 1. If <span class="math">\(f(z)\)</span> be an odd function of <span class="math">\(z\)</span>, shew that
+ <span class="math">\[\begin{align*}
+  z f'(z)
+  =&
+  f(z)
+  +
+  \sum_{m=2}^{n}
+  (-1)^{m}
+  \frac{B_{m-1} (2z)^{2m-2}}{(2m-2)!}
+  f^{(2m-2)}(z) \\
+  &-
+  \frac{2^{2n} z^{2n+1}}{(2n)!}
+  \!\int_{0}^{1}\!\!
+  \phi_{2n}(t)\,
+  f^{(2n+1)}(-z + 2\:\! z\:\! t)
+  \, dt.
+  \end{align*}\]</span></p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 2. Shew, by integrating by parts, that the remainder after <span class="math">\(n\)</span> terms of the expansion of <span class="math">\(\frac{1}{2} z \cot \frac{1}{2} z\)</span> may be written in the form
+ <span class="math">\[
+  \frac{ (-1)^{n+1} z^{2n+1} }{ (2n)! \sin z }
+  \!\int_{0}^{1} \phi_{2n}(t) \cos (z\:\! t) \, dt.
+  \]</span>
+Math. Trip. 1904.</p>
+</blockquote>
 </div>
 </div>
+
+<div id="footer">
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a><br><span style="font-size:63%;">Based on a transcription by </span><a href="https://github.com/bwignall/Whittaker-and-Watson"><span style="font-size:74%;">Brian Wignall.</span></a></h3>
+<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+</div>
+
+<div id="navcauchy" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navfront');">FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
+  <ul>
+    <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
+    <li><a href="CMA06-1-Residues.html">The Theory of Residues</a>
+    <li><a href="CMA07-1-ExpansionOfFunctions.html">Expanding Functions in Infinite Series</a>
+      <ul>
+        <li class="current"><a href="#7.1aformuladuetodarboux.">A formula due to Darboux</a>
+        <li class="current"><a href="#7.2thebernoulliannumbersandthebernoullianpolynomials.">The Bernoullian numbers</a>
+          <ul>
+         <li><a href="#7.21theeuler-maclaurinexpansion.">The Euler-Maclaurin Expansion</a> </li>
+          </ul>
+       </li>
+        <li><a href="CMA07-2-BurmannsTheorem.html#7.3burmannstheorem.">B&uuml;rmann&#8217;s Theorem</a></li>
+    <li><a href="CMA07-3-FactorTheorem.html#7.4Expansionofaclassoffunctionsinrationalfractions.">Expansion of functions in rationals</a></li>
+        <li><a href="CMA07-2-BurmannsTheorem.html#7.52theexpansionofaclassoffunctionsasinfiniteproducts.">Expansion of functions as products</a></li>
+    <li><a href="CMA07-3-FactorTheorem.html#7.6thefactortheoremofweierstrass.">The Factor Theorem of Weierstrass</a></li>
+        <li><a href="CMA07-4-BorelsTheorem.html#7.7theexpansionofaclassofperiodicfunctionsinaseriesofcotangents.">Expansion of functions in cotangents</a></li>
+    <li><a href="CMA07-4-BorelsTheorem.html#7.8borelstheorem.">Borel&#8217;s Theorem</a></li>
+        <li><a href="CMA07-5-Exercises.html#references.">References</a></li>
+        <li><a href="CMA07-5-Exercises.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
+      </ul>
+    </li>
+    <li><a href="CMA08-1-AsymptoticExpansion.html">Asymptotic Expansions and Summable Series</a></li>
+    <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a> 
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfront" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a>FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-Front.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-Front.html#preface">Preface</a></li>
+    <li><a href="CMA00-Front.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navfront');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navprocesses" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
+<li class="part"><a>PROCESSES OF ANALYSIS</a>
+  <ul >
+    <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
+    <li><a href="CMA02-1-Limits.html">The Theory of Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
+     <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
+      <li><a href="CMA06-1-Residues.html">The Theory of Residues</a></li>
+     <li><a href="CMA07-1-ExpansionOfFunctions.html">Expanding Functions in Infinite Series</a></li>
+     <li class="more current"><a onClick="showIt('navcauchy');hideIt('navprocesses');"> you are here . . . </a></li>
+     <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navtranscendental" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navtranscendental');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
+  <ul>
+    <li class="notdone"><a href="whereOwhere.html">The Gamma Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Zeta Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Legendre Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Bessel Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Mathieu Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
+  </ul>
+  </li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navback" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a>BACKMATTER</a>
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+    <li ><a href="whereOwhere.html">Authors Quoted</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfixedleft" class="fixedBleft">
+<p><a href="CMA06-3-ConnexionTwixtZeros.html">&#x25C0;</a></p>
+</div>
+
+<div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
+<p><a onClick="hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');showIt('navcauchy');" style="float: left;">&#x25A4;</a> <a href="CMA07-2-BurmannsTheorem.html" style="float: right;">&#x25B6;</a></p>
+</div>
+
+<div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;" >
+<p><a onClick="hideIt('navcauchy');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA07-2-BurmannsTheorem.html" style="float: right;">&#x25B6;   </a></p>
+</div>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p><a href="https://archive.org/details/s3journaldemat02liou"><em>Journal de Math.</em> (3), <strong>ii.</strong> (1876)</a>, p. 291. <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:2">
+<p>These numbers were introduced by Jakob Bernoulli in his <a href="http://books.google.com/books?id=kD4PAAAAQAAJ"><em>Ars Conjectandi</em></a>, p. 97 (published posthumously, 1713). (See also, a German translation by Haussner, <a href="https://archive.org/details/wahrscheinlichke00bernuoft"><em>Wahrscheinlichkeitsrechnung, Ars conjectandi</em></a> (1899), p. 99 &#8211; <em>Editor</em>.) <a href="#fnref:2" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:3">
+<p>Tables of the first sixty-two Bernoullian numbers have been given by Adams, <a href="https://archive.org/details/reportofbritisha78brit"><em>Brit. Ass. Reports</em>, 1877</a>, p. <a href="https://archive.org/stream/reportofbritisha78brit#page/n351/mode/2up">8.</a> <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:4">
+<p><em>Editor&#8217;s Note</em>: Modern practice defines the Bernoulli numbers somewhat differently (see <a href="http://mathworld.wolfram.com/BernoulliNumber.html">&#8220;Bernoulli Number.&#8221;</a> at MathWorld). In terms of the original Bernoullian numbers, <span class="math">\(B_n\)</span>, defined here, the modern Bernoulli numbers, <span class="math">\(\mathbb{B}_n\)</span>, are<span class="math">\[\mathbb{B}_n = \left\{\begin{array}{lcl} 1 &&  \text{ for } n=1 \\   -\tfrac{1}{2} && \text{ for } n=2 \\  (-1)^{\left. n\middle/ 2\right.-1} B_{\left. n\middle/ 2\right.} && \text{ for } n \text{ even } \\  0 && \text{ for } n \text{ odd. }\end{array}   \right.\]</span> <a href="#fnref:4" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:5">
+<p>The name was given by Raabe, <a href="http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0042"><em>Journal für Math.</em> <strong>xlii.</strong> (1851)</a>, p. 348. <a href="#fnref:5" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:6">
+<p>A history of the formula is given by Barnes, <a href="https://archive.org/details/proceedingslond15socigoog"><em>Proc. London Math. Soc.</em> (2), <strong>iii.</strong> (1905)</a>, p. 253. It was discovered by Euler (1732), but was not published at the time. Euler communicated it (June 9, 1736) to Stirling who replied (April 16, 1738) that it included his own theorem (see <a href="whereOwhere.html">§12.33</a>) as a particular case, and also that the more general theorem had been discovered by Maclaurin; and Euler, in a lengthy reply, waived his claims to priority. The theorem was published by Euler, <a href="http://eulerarchive.maa.org/pages/E025.html"><em>Comm. Acad. Imp. Petrop.</em> <strong>vi.</strong> (1732)</a>, [Published 1738], pp. 68&#8211;97, and by Maclaurin in 1742, <a href="https://archive.org/details/atreatiseonflux01maclgoog"><em>Treatise on Fluxions</em></a>, p. 672. For information concerning the correspondence between Euler and Stirling, we are indebted to Mr C. Tweedie (see his <a href="https://archive.org/details/jamesstirlingske00stir"><em>James Stirling; a sketch of his life and works</em></a> (1922) &#8211; <em>Editor</em>). <a href="#fnref:6" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
 
 </body>
 </html>
