@@ -116,8 +116,8 @@ This process is called *continuation*<a class="marginmark" onClick="toggleHide('
 <div markdown=1 class="contenttext">
 
 
-It is important to know whether continuation by two different paths \\(PBQ\\), \\(PB'Q\\) will give the same final power series; it will be seen that this is the case, if the function have no singularity inside the closed curve \\(PBQB'P\\), in the following way: Let \\(P_1\\) be any point on \\(PBQ\\), inside the circle \\(C\\) with centre \\(P\\); obtain the continuation of the function 
-with \\(P_1\\) as origin, and let it converge inside a circle \\(C_1\\); let \\(P_1'\\) be any point inside both circles and also inside the curve \\(PBQB'P\\); let \\(S\\), \\(S_1\\), \\(S_1'\\) be the power series with \\(P\\), \\(P_1\\), \\(P_1'\\) as origins; then \\(S_1 \equiv  S_1'\\)<a class="marginmark" onClick="toggleHide('mn:6,-13');">&#91;6&#93;</a> over a certain domain which will contain \\(P_1\\), if \\(P_1'\\) be taken sufficiently near \\(P_1\\); and hence \\(S_1\\) will be the continuation of \\(S_1'\\); for if \\(T_1\\) were the continuation of \\(S_1'\\), we have \\(T_1 \equiv  S_1\\) over a domain containing \\(P_1\\), and so ([&#167;3.73](CMA03-4-PowerSeriesMN.html#3.73powerserieswhichvanishidentically.)) corresponding coefficients in \\(S_1\\) and \\(T_1\\) are the same. By carrying out such a process a sufficient number of times, we deform the path \\(PBQ\\) into the path \\(PB'Q\\) if no singular point is inside \\(PBQB'P\\). The reader will convince himself by drawing a figure that the process can be carried out in a finite number of steps. 
+It is important to know whether continuation by two different paths \\(PBQ\\), \\(PB'\!Q\\) will give the same final power series; it will be seen that this is the case, if the function have no singularity inside the closed curve \\(PBQB'\!P\\), in the following way: Let \\(P_1\\) be any point on \\(PBQ\\), inside the circle \\(C\\) with centre \\(P\\); obtain the continuation of the function 
+with \\(P_1\\) as origin, and let it converge inside a circle \\(C_1\\); let \\(P_1'\\) be any point inside both circles and also inside the curve \\(PBQB'\!P\\); let \\(S\\), \\(S_1\\), \\(S_1'\\) be the power series with \\(P\\), \\(P_1\\), \\(P_1'\\) as origins; then \\(S_1 \equiv  S_1'\\)<a class="marginmark" onClick="toggleHide('mn:6,-13');">&#91;6&#93;</a> over a certain domain which will contain \\(P_1\\), if \\(P_1'\\) be taken sufficiently near \\(P_1\\); and hence \\(S_1\\) will be the continuation of \\(S_1'\\); for if \\(T_1\\) were the continuation of \\(S_1'\\), we have \\(T_1 \equiv  S_1\\) over a domain containing \\(P_1\\), and so ([&#167;3.73](CMA03-4-PowerSeriesMN.html#3.73powerserieswhichvanishidentically.)) corresponding coefficients in \\(S_1\\) and \\(T_1\\) are the same. By carrying out such a process a sufficient number of times, we deform the path \\(PBQ\\) into the path \\(PB'\!Q\\) if no singular point is inside \\(PBQB'\!P\\). The reader will convince himself by drawing a figure that the process can be carried out in a finite number of steps. 
 
 </div>
 
@@ -132,15 +132,15 @@ with \\(P_1\\) as origin, and let it converge inside a circle \\(C_1\\); let \\(
 <div markdown=1 class="contenttext">
 
 >*Example*. The series 
-\\[\frac{1}{\alpha}+\frac{z}{\alpha^2}+\frac{z^2}{\alpha^3}=\frac{z^3}{\alpha^4}+ \cdots\\]
+\\[\frac{1}{a}+\frac{z}{a^2}+\frac{z^2}{a^3}+\frac{z^3}{a^4}+ \cdots\\]
 represents the function
-\\[f(z) = \frac{1}{\alpha - z}\\]
-only for points \\(z\\) within the circle \\(\left|\, z \,\right| = \left|\, \alpha \,\right|\\).
+\\[f(z) = \frac{1}{a - z}\\]
+only for points \\(z\\) within the circle \\(\left|\, z \,\right| = \left|\, a\vphantom{z} \,\right|\\).
 > 
 >But any number of other power series exist, of the type 
->\\[\frac{1}{\alpha-b}+ \frac{z-b}{(\alpha-b)^2}+\frac{(z-b)^2}{(\alpha-b)^3}+\frac{(z-b)^3}{(\alpha-b)^4} + \cdots ;\\]
+>\\[\frac{1}{a-b}+ \frac{z-b}{(a-b)^2}+\frac{(z-b)^2}{(a-b)^3}+\frac{(z-b)^3}{(a-b)^4} + \cdots ;\\]
 if \\(\left. b\middle/ a\right.\\) is not real and positive these converge at points inside a circle which is partly 
-inside and partly outside \\(\left|\, z \,\right| = \left|\, \alpha \,\right|\\); these series represent this same function at points 
+inside and partly outside \\(\left|\, z \,\right| = \left|\, a\vphantom{z} \,\right|\\); these series represent this same function at points 
 outside this circle. 
 
 #####5.501 On functions to which the continuation-process cannot be applied. #####
@@ -161,19 +161,20 @@ we see that if \\(z\\) is such that \\(z^4 = 1\\), then \\(z\\) is a singularity
 is a singularity of \\(f(z)\\). But these points all lie on the circle \\(\left|\, z \,\right| = 1\\); and in any arc of this circle, however small, there are an unlimited number of them. The attempt to carry out the process of continuation will therefore be frustrated by the existence of this 
 unbroken front of singularities, beyond which it is impossible to pass. 
 
-In such a case the function \\(f(z)\\) *cannot be continued at all* to points \\(z\\) situated outside the circle \\(\left|\, z \,\right| = 1\\); such a function is called a *lacunary function*, and the circle is said to be a *limiting circle* for the function.<a class="marginmark" onClick="toggleHide('mn:7,-6');">&#91;7&#93;</a> 
-
 </div>
 
 
 
-<div markdown=1 class="marginnotes" id="mn:7,-6" style="margin-top: -6em; margin-bottom: -6em;"><a class="marginmark">&#91;7&#93;</a>*Editor's Note*: The term *lacunary* refers to the increasingly large gaps in the power series, which give rise to the limiting circle. (See Mandelbrojt, [*Researches on the Singularities of Functions Defined by Taylor's Series*](SingularitiesOfFunctionsDefinedByTaylorsSeries.pdf) (1927), Chs. [**v.**](http://scholarship.rice.edu/bitstream/handle/1911/8511/article_RI144261.pdf), [**xii.**](http://scholarship.rice.edu/bitstream/handle/1911/8518/article_RI144339.pdf))<a onClick="hideIt('mn:7,-6')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:7,-1" style="margin-top: -1em; margin-bottom: -1em;"><a class="marginmark">&#91;7&#93;</a>*Editor's Note*: The term *lacunary* refers to the increasingly large gaps in the power series, which give rise to the limiting circle. (See Mandelbrojt, [*Researches on the Singularities of Functions Defined by Taylor's Series*](SingularitiesOfFunctionsDefinedByTaylorsSeries.pdf) (1927), Chs. [**v.**](http://scholarship.rice.edu/bitstream/handle/1911/8511/article_RI144261.pdf), [**xii.**](http://scholarship.rice.edu/bitstream/handle/1911/8518/article_RI144339.pdf))<a onClick="hideIt('mn:7,-1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
 
 
 <div markdown=1 class="contenttext">
+
+In such a case the function \\(f(z)\\) *cannot be continued at all* to points \\(z\\) situated outside the circle \\(\left|\, z \,\right| = 1\\); such a function is called a *lacunary function*, and the circle is said to be a *limiting circle* for the function.<a class="marginmark" onClick="toggleHide('mn:7,-1');">&#91;7&#93;</a> 
+
 
 ####5.51 The identity of two functions. ####
 
@@ -213,7 +214,7 @@ definition of Weierstrass is really equivalent to that of Cauchy.<a class="margi
 It is important to observe that *the limit of a combination of analytic 
 functions can represent different analytic functions in different parts of the 
 plane.* This can be seen by considering the series 
-\\[\frac{1}{2}\left(z+\frac{1}{z}\right) + \sum_{n-1}^\infty \left(z-\frac{1}{z}\right)\left(\frac{1}{1+z^n}-\frac{1}{z+z^{n-1}}\right).\\]
+\\[\frac{1}{2}\left(z+\frac{1}{z}\right) + \sum_{n-1}^\infty \left(z-\frac{1}{z}\right)\left(\frac{1}{1+z^n}-\frac{1}{1+z^{n-1}}\right).\\]
 
 The sum of the first \\(n + 1\\) terms of this series is 
 \\[\frac{1}{z}+\left(z-\frac{1}{z}\right)\frac{1}{1+z^n}.\\]
@@ -250,8 +251,9 @@ of \\(C\\) which do not belong to \\(S\\); but the function is not analytic in \
 
 
 <div id="footer">
-<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
-<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/"> GitHub.</a></h3>
+<h4>All content is either in the public domain or licensed under <a href="http://creativecommons.org/licenses/by/3.0/us/">a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h4>Feel free to report typos and other issues on <span style="font-weight: 400;"><a href="https://github.com/CdLbB/cdlbb.github.com/tree/master/WandW">GitHub</a></span> or by email at <span style="font-weight: 400;"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#110;&#x69;&#x74;&#104;&#x61;&#114;&#100;&#x74;&#x40;&#x75;&#x77;&#46;&#101;&#x64;&#x75;">&#x6e;&#x69;&#116;&#x68;&#x61;&#114;&#100;&#x74;&#x40;&#117;&#119;&#x2e;&#101;&#x64;&#x75;</a></span>.</h4>
 </div>
 
 <div id="navcauchy" class="navigation" style="visibility:hidden;" >

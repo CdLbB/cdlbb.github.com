@@ -58,20 +58,20 @@ values of the function are now known, and form the Taylor series with <span clas
 
 <p>This process is called <em>continuation</em><a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a>. By means of it, starting from a representation of a function by any one power series we can find any number of other power series, which between them define the value of the function at all points of a domain, any point of which can be reached from <span class="math">\(P\)</span> without passing through a singularity of the function;<a href="#fn:4" id="fnref:4" title="see footnote" class="footnote">[4]</a> and the aggregate of all the power series thus obtained<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a> constitutes the analytical expression of the function. </p>
 
-<p>It is important to know whether continuation by two different paths <span class="math">\(PBQ\)</span>, <span class="math">\(PB'Q\)</span> will give the same final power series; it will be seen that this is the case, if the function have no singularity inside the closed curve <span class="math">\(PBQB'P\)</span>, in the following way: Let <span class="math">\(P_1\)</span> be any point on <span class="math">\(PBQ\)</span>, inside the circle <span class="math">\(C\)</span> with centre <span class="math">\(P\)</span>; obtain the continuation of the function
-with <span class="math">\(P_1\)</span> as origin, and let it converge inside a circle <span class="math">\(C_1\)</span>; let <span class="math">\(P_1'\)</span> be any point inside both circles and also inside the curve <span class="math">\(PBQB'P\)</span>; let <span class="math">\(S\)</span>, <span class="math">\(S_1\)</span>, <span class="math">\(S_1'\)</span> be the power series with <span class="math">\(P\)</span>, <span class="math">\(P_1\)</span>, <span class="math">\(P_1'\)</span> as origins; then <span class="math">\(S_1 \equiv  S_1'\)</span><a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a> over a certain domain which will contain <span class="math">\(P_1\)</span>, if <span class="math">\(P_1'\)</span> be taken sufficiently near <span class="math">\(P_1\)</span>; and hence <span class="math">\(S_1\)</span> will be the continuation of <span class="math">\(S_1'\)</span>; for if <span class="math">\(T_1\)</span> were the continuation of <span class="math">\(S_1'\)</span>, we have <span class="math">\(T_1 \equiv  S_1\)</span> over a domain containing <span class="math">\(P_1\)</span>, and so (<a href="CMA03-4-PowerSeries.html#3.73powerserieswhichvanishidentically.">§3.73</a>) corresponding coefficients in <span class="math">\(S_1\)</span> and <span class="math">\(T_1\)</span> are the same. By carrying out such a process a sufficient number of times, we deform the path <span class="math">\(PBQ\)</span> into the path <span class="math">\(PB'Q\)</span> if no singular point is inside <span class="math">\(PBQB'P\)</span>. The reader will convince himself by drawing a figure that the process can be carried out in a finite number of steps. </p>
+<p>It is important to know whether continuation by two different paths <span class="math">\(PBQ\)</span>, <span class="math">\(PB'\!Q\)</span> will give the same final power series; it will be seen that this is the case, if the function have no singularity inside the closed curve <span class="math">\(PBQB'\!P\)</span>, in the following way: Let <span class="math">\(P_1\)</span> be any point on <span class="math">\(PBQ\)</span>, inside the circle <span class="math">\(C\)</span> with centre <span class="math">\(P\)</span>; obtain the continuation of the function
+with <span class="math">\(P_1\)</span> as origin, and let it converge inside a circle <span class="math">\(C_1\)</span>; let <span class="math">\(P_1'\)</span> be any point inside both circles and also inside the curve <span class="math">\(PBQB'\!P\)</span>; let <span class="math">\(S\)</span>, <span class="math">\(S_1\)</span>, <span class="math">\(S_1'\)</span> be the power series with <span class="math">\(P\)</span>, <span class="math">\(P_1\)</span>, <span class="math">\(P_1'\)</span> as origins; then <span class="math">\(S_1 \equiv  S_1'\)</span><a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a> over a certain domain which will contain <span class="math">\(P_1\)</span>, if <span class="math">\(P_1'\)</span> be taken sufficiently near <span class="math">\(P_1\)</span>; and hence <span class="math">\(S_1\)</span> will be the continuation of <span class="math">\(S_1'\)</span>; for if <span class="math">\(T_1\)</span> were the continuation of <span class="math">\(S_1'\)</span>, we have <span class="math">\(T_1 \equiv  S_1\)</span> over a domain containing <span class="math">\(P_1\)</span>, and so (<a href="CMA03-4-PowerSeries.html#3.73powerserieswhichvanishidentically.">§3.73</a>) corresponding coefficients in <span class="math">\(S_1\)</span> and <span class="math">\(T_1\)</span> are the same. By carrying out such a process a sufficient number of times, we deform the path <span class="math">\(PBQ\)</span> into the path <span class="math">\(PB'\!Q\)</span> if no singular point is inside <span class="math">\(PBQB'\!P\)</span>. The reader will convince himself by drawing a figure that the process can be carried out in a finite number of steps. </p>
 
 <blockquote>
 <p><em>Example</em>. The series
-<span class="math">\[\frac{1}{\alpha}+\frac{z}{\alpha^2}+\frac{z^2}{\alpha^3}=\frac{z^3}{\alpha^4}+ \cdots\]</span>
+<span class="math">\[\frac{1}{a}+\frac{z}{a^2}+\frac{z^2}{a^3}+\frac{z^3}{a^4}+ \cdots\]</span>
 represents the function
-<span class="math">\[f(z) = \frac{1}{\alpha - z}\]</span>
-only for points <span class="math">\(z\)</span> within the circle <span class="math">\(\left|\, z \,\right| = \left|\, \alpha \,\right|\)</span>.</p>
+<span class="math">\[f(z) = \frac{1}{a - z}\]</span>
+only for points <span class="math">\(z\)</span> within the circle <span class="math">\(\left|\, z \,\right| = \left|\, a\vphantom{z} \,\right|\)</span>.</p>
 
 <p>But any number of other power series exist, of the type
-<span class="math">\[\frac{1}{\alpha-b}+ \frac{z-b}{(\alpha-b)^2}+\frac{(z-b)^2}{(\alpha-b)^3}+\frac{(z-b)^3}{(\alpha-b)^4} + \cdots ;\]</span>
+<span class="math">\[\frac{1}{a-b}+ \frac{z-b}{(a-b)^2}+\frac{(z-b)^2}{(a-b)^3}+\frac{(z-b)^3}{(a-b)^4} + \cdots ;\]</span>
 if <span class="math">\(\left. b\middle/ a\right.\)</span> is not real and positive these converge at points inside a circle which is partly
-inside and partly outside <span class="math">\(\left|\, z \,\right| = \left|\, \alpha \,\right|\)</span>; these series represent this same function at points
+inside and partly outside <span class="math">\(\left|\, z \,\right| = \left|\, a\vphantom{z} \,\right|\)</span>; these series represent this same function at points
 outside this circle. </p>
 </blockquote>
 
@@ -121,7 +121,7 @@ definition of Weierstrass is really equivalent to that of Cauchy.<a href="#fn:8"
 <p>It is important to observe that <em>the limit of a combination of analytic
 functions can represent different analytic functions in different parts of the
 plane.</em> This can be seen by considering the series
-<span class="math">\[\frac{1}{2}\left(z+\frac{1}{z}\right) + \sum_{n-1}^\infty \left(z-\frac{1}{z}\right)\left(\frac{1}{1+z^n}-\frac{1}{z+z^{n-1}}\right).\]</span></p>
+<span class="math">\[\frac{1}{2}\left(z+\frac{1}{z}\right) + \sum_{n-1}^\infty \left(z-\frac{1}{z}\right)\left(\frac{1}{1+z^n}-\frac{1}{1+z^{n-1}}\right).\]</span></p>
 
 <p>The sum of the first <span class="math">\(n + 1\)</span> terms of this series is
 <span class="math">\[\frac{1}{z}+\left(z-\frac{1}{z}\right)\frac{1}{1+z^n}.\]</span>
@@ -144,8 +144,9 @@ of <span class="math">\(C\)</span> which do not belong to <span class="math">\(S
 </div>
 
 <div id="footer">
-<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a></h3>
-<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/"> GitHub.</a></h3>
+<h4>All content is either in the public domain or licensed under <a href="http://creativecommons.org/licenses/by/3.0/us/">a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h4>Feel free to report typos and other issues on <span style="font-weight: 400;"><a href="https://github.com/CdLbB/cdlbb.github.com/tree/master/WandW">GitHub</a></span> or by email at <span style="font-weight: 400;"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#110;&#x69;&#x74;&#104;&#x61;&#114;&#100;&#x74;&#x40;&#x75;&#x77;&#46;&#101;&#x64;&#x75;">&#x6e;&#x69;&#116;&#x68;&#x61;&#114;&#100;&#x74;&#x40;&#117;&#119;&#x2e;&#101;&#x64;&#x75;</a></span>.</h4>
 </div>
 
 <div id="navcauchy" class="navigation" style="visibility:hidden;" >
