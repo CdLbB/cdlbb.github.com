@@ -105,10 +105,12 @@ function of \\(z\\) when \\(\mathfrak{Re}(z) \geq r_1 > r\\). [Condition (iv) is
 
 Consider a function \\(f(z)\\), which is analytic in the neighbourhood of a 
 point \\(z = a\\). Let \\(C\\) be a circle with \\(a\\) as centre in the \\(z\\)-plane, which does not have any singular point of the function \\(f(z)\\) on or inside it; so that \\(f(z)\\) 
-is analytic at all points on and inside \\(C\\). Let \\(z = a + h\\) be any point inside the circle \\(C\\). Then, by [§5.21](CMA05-2-CauchysTheorem.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.), we have 
+is analytic at all points on and inside \\(C\\). Let \\(z = a + h\\) be any point inside the circle \\(C\\). Then, by [§5.21](CMA05-2-CauchysTheorem.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.), we have[^geometric,-4] 
 \\[f(a+h)=\frac{1}{2\pi i}\! \int_C \frac{f(z)\, dz}{z-a-h}\\]
-\\[=\frac{1}{2\pi i}\! \int_C \! f(z)\, dz\left\{\frac{1}{z-a}+\frac{h}{(z-a)^2}+\cdots +\frac{h^n}{(z-a)^{n+1}}+\frac{h^{n+1}}{(z-a)^{n+1}(z-a-h)}\right\}\\]
-\\[=f(a)+hf'(a)+\frac{h^2}{2!}f''(a)+ \cdots +\frac{h^n}{n!}f^{(n)}(a)+\frac{1}{2\pi i}\!\int_C \frac{h^{n+1}f(z)\,dz}{(z-a)^{n+1}(z-a-h)}. \\]
+\\[=\frac{1}{2\pi i}\! \int_C \! f(z)\, dz\left\{\!\frac{1}{z-a}\!+\!\frac{h}{(z-a)^2}\!+\!\cdots \!+\!\frac{h^n}{(z-a)^{n+1}}\!+\!\frac{h^{n+1}}{(z-a)^{n+1}(z-a-h)}\!\right\}\\]
+\\[=f(a)+hf'\!(a)+\!\frac{h^2}{2!}f''\!(a)+\! \cdots \!+\!\frac{h^n}{n!}f^{(n)}(a)+\!\frac{1}{2\pi i}\!\int_C \frac{h^{n+1}f(z)\,dz}{(z-a)^{n+1}(z-a-h)}. \\]
+
+[^geometric,-4]: *Editor's Note*: For those unfamiliar with this expansion, it follows from the geometric series formula, \\[\begin{align*}\sum_{m=0}^n r^m &= \frac{1-r^{n+1}}{1-r} \\ \frac{1}{1-r} &= \sum_{m=0}^n r^m + \frac{r^{n+1}}{1-r}. \end{align*}\\] Hence, if \\(a-b=c\\), \\[\begin{align*}\frac{a}{c} &= \frac{1}{1-\left. \vphantom{g} b \middle/ a \right.} \\ &= \sum_{m=0}^n \left(\frac{b}{a}\right)^m + \frac{b^{n+1}}{a^n c} .\end{align*}\\] Whittaker and Watson make regular use of this expansion (see [§5.6](CMA05-5-LaurentsTheorem.html#5.6laurentstheorem.)).
 
 ######But when \\(z\\) is on \\(C\\), the modulus of \\(\dfrac{f(z)}{z-a-h}\\) is continuous, and so, by [§3.61 cor. (ii)](CMA03-3-Heine-Borel.html#continuousisbounded), will not exceed some finite number \\(M\\). [5.4termvanishes]######
 

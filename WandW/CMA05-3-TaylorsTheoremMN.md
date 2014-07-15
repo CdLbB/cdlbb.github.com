@@ -155,10 +155,22 @@ function of \\(z\\) when \\(\mathfrak{Re}(z) \geq r_1 > r\\). [Condition (iv) is
 
 Consider a function \\(f(z)\\), which is analytic in the neighbourhood of a 
 point \\(z = a\\). Let \\(C\\) be a circle with \\(a\\) as centre in the \\(z\\)-plane, which does not have any singular point of the function \\(f(z)\\) on or inside it; so that \\(f(z)\\) 
-is analytic at all points on and inside \\(C\\). Let \\(z = a + h\\) be any point inside the circle \\(C\\). Then, by [&#167;5.21](CMA05-2-CauchysTheoremMN.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.), we have 
+is analytic at all points on and inside \\(C\\). Let \\(z = a + h\\) be any point inside the circle \\(C\\). Then, by [&#167;5.21](CMA05-2-CauchysTheoremMN.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.), we have<a class="marginmark" onClick="toggleHide('mn:6,-4');">&#91;6&#93;</a> 
 \\[f(a+h)=\frac{1}{2\pi i}\! \int_C \frac{f(z)\, dz}{z-a-h}\\]
-\\[=\frac{1}{2\pi i}\! \int_C \! f(z)\, dz\left\{\frac{1}{z-a}+\frac{h}{(z-a)^2}+\cdots +\frac{h^n}{(z-a)^{n+1}}+\frac{h^{n+1}}{(z-a)^{n+1}(z-a-h)}\right\}\\]
-\\[=f(a)+hf'(a)+\frac{h^2}{2!}f''(a)+ \cdots +\frac{h^n}{n!}f^{(n)}(a)+\frac{1}{2\pi i}\!\int_C \frac{h^{n+1}f(z)\,dz}{(z-a)^{n+1}(z-a-h)}. \\]
+\\[=\frac{1}{2\pi i}\! \int_C \! f(z)\, dz\left\{\!\frac{1}{z-a}\!+\!\frac{h}{(z-a)^2}\!+\!\cdots \!+\!\frac{h^n}{(z-a)^{n+1}}\!+\!\frac{h^{n+1}}{(z-a)^{n+1}(z-a-h)}\!\right\}\\]
+\\[=f(a)+hf'\!(a)+\!\frac{h^2}{2!}f''\!(a)+\! \cdots \!+\!\frac{h^n}{n!}f^{(n)}(a)+\!\frac{1}{2\pi i}\!\int_C \frac{h^{n+1}f(z)\,dz}{(z-a)^{n+1}(z-a-h)}. \\]
+
+</div>
+
+
+
+<div markdown=1 class="marginnotes" id="mn:6,-4" style="margin-top: -4em; margin-bottom: -4em;"><a class="marginmark">&#91;6&#93;</a>*Editor's Note*: For those unfamiliar with this expansion, it follows from the geometric series formula, \\[\begin{align*}\sum_{m=0}^n r^m &= \frac{1-r^{n+1}}{1-r} \\ \frac{1}{1-r} &= \sum_{m=0}^n r^m + \frac{r^{n+1}}{1-r}. \end{align*}\\] Hence, if \\(a-b=c\\), \\[\begin{align*}\frac{a}{c} &= \frac{1}{1-\left. \vphantom{g} b \middle/ a \right.} \\ &= \sum_{m=0}^n \left(\frac{b}{a}\right)^m + \frac{b^{n+1}}{a^n c} .\end{align*}\\] Whittaker and Watson make regular use of this expansion (see [&#167;5.6](CMA05-5-LaurentsTheoremMN.html#5.6laurentstheorem.)).<a onClick="hideIt('mn:6,-4')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+
+</div>
+
+
+
+<div markdown=1 class="contenttext">
 
 ######But when \\(z\\) is on \\(C\\), the modulus of \\(\dfrac{f(z)}{z-a-h}\\) is continuous, and so, by [&#167;3.61 cor. (ii)](CMA03-3-Heine-BorelMN.html#continuousisbounded), will not exceed some finite number \\(M\\). [5.4termvanishes]######
 
@@ -193,7 +205,7 @@ If \\(f(a) = 0\\), the function \\(f(z)\\) is said to have a *zero* at the point
 >\\ &=\frac{n!}{2\pi i}\! \int_0^{2\pi} \!\frac{e^{-ni\theta}\, d\theta}{\alpha-e^{-i\theta}}=\frac{n!}{2\pi i}\! \int_C \frac{dz}{z^n(\alpha-z)}=\left[\frac{d^n}{dz^n} \frac{1}{\alpha-z}\right]_{z=0}\\
 >\\ &=\frac{n!}{\alpha^{n+1}}.
 >\end{align*}\\]
-Therefore by Maclaurin's Theorem,<a class="marginmark" onClick="toggleHide('mn:6,-15');">&#91;6&#93;</a>
+Therefore by Maclaurin's Theorem,<a class="marginmark" onClick="toggleHide('mn:7,-15');">&#91;7&#93;</a>
 >\\[f(z)=\sum_{n=0}^\infty \frac{z^n}{\alpha^{n+1}},\\]
 or \\(f(z) = (a - z)^{-1}\\) for all points within the circle. 
 >
@@ -203,7 +215,7 @@ or \\(f(z) = (a - z)^{-1}\\) for all points within the circle.
 
 
 
-<div markdown=1 class="marginnotes" id="mn:6,-15" style="margin-top: -15em; margin-bottom: -15em;"><a class="marginmark">&#91;6&#93;</a>The result \\(f(z) =f(0) +z\,f'(0) +\dfrac{z^2}{2} f''(0) + \cdots\\), obtained by putting \\(a =0\\) in Taylor's Theorem, is usually called *Maclaurin's Theorem*; it was discovered by [Stirling (1717)](https://archive.org/details/lineaetertiiord00newtgoog) and published by Maclaurin (1742) in his [*Fluxions*](https://archive.org/details/atreatiseonflux01maclgoog). <a onClick="hideIt('mn:6,-15')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:7,-15" style="margin-top: -15em; margin-bottom: -15em;"><a class="marginmark">&#91;7&#93;</a>The result \\(f(z) =f(0) +z\,f'(0) +\dfrac{z^2}{2} f''(0) + \cdots\\), obtained by putting \\(a =0\\) in Taylor's Theorem, is usually called *Maclaurin's Theorem*; it was discovered by [Stirling (1717)](https://archive.org/details/lineaetertiiord00newtgoog) and published by Maclaurin (1742) in his [*Fluxions*](https://archive.org/details/atreatiseonflux01maclgoog). <a onClick="hideIt('mn:7,-15')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -239,7 +251,7 @@ so the singularities of \\((1+2zh+h^2)^{-\frac{1}{2}}\\) are the points \\(h=z-(
 
 
 
-<div markdown=1 class="marginnotes" id="mn:7,+10" style="margin-top: +10em; margin-bottom: +10em;"><a class="marginmark">&#91;7&#93;</a>*Editor's Note*: See ["Eccentric Angle."](http://mathworld.wolfram.com/EccentricAngle.html) at MathWorld.<a onClick="hideIt('mn:7,+10')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:8,+10" style="margin-top: +10em; margin-bottom: +10em;"><a class="marginmark">&#91;8&#93;</a>*Editor's Note*: See ["Eccentric Angle."](http://mathworld.wolfram.com/EccentricAngle.html) at MathWorld.<a onClick="hideIt('mn:8,+10')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -250,14 +262,14 @@ so the singularities of \\((1+2zh+h^2)^{-\frac{1}{2}}\\) are the points \\(h=z-(
 >Thus the series (A) converges so long as \\(\left|\, h  \,\right|\\) is less than both 
 >\\[\left|\, z-(z^2-1)^{\frac{1}{2}} \:\!\right| \quad \text{and} \quad \left|\, z+(z^2-1)^{\frac{1}{2}} \:\!\right|\,. \\]
 Draw an ellipse in the \\(z\\)-plane passing through the point \\(z\\) and having its foci at \\(\pm 1\\). 
-Let \\(\alpha\\) be its semi-major axis, and \\(\theta\\) the eccentric angle<a class="marginmark" onClick="toggleHide('mn:7,+10');">&#91;7&#93;</a> of \\(z\\) on it. 
+Let \\(\alpha\\) be its semi-major axis, and \\(\theta\\) the eccentric angle<a class="marginmark" onClick="toggleHide('mn:8,+10');">&#91;8&#93;</a> of \\(z\\) on it. 
 >
 >Then \\[z=\alpha \cos \theta + i\,(\alpha^2-1)^{\frac{1}{2}} \sin \theta,\\] 
 which gives \\[z \pm  (z^2 - 1)^{\frac{1}{2}} =\left\{\alpha \pm (\alpha^2-1)^{\frac{1}{2}}\right\}\left(\cos \theta \pm i \sin \theta \right),\\]
 so \\[\left|\,z \pm (z^2 -1)^{\frac{1}{2}}\,\right| = \alpha \pm (\alpha^2 -1)^{\frac{1}{2}}.\\]
 >
 >Thus the series (A) converges so long as \\(h\\) is less than the smaller of the numbers \\(\alpha +(\alpha^2 -1)^{\frac{1}{2}}\\) and \\(\alpha-(\alpha^2 -1)^{\frac{1}{2}}\\), i.e. so long as \\(h\\) is less than \\(\alpha-(\alpha^2 -1)^{\frac{1}{2}}\\). But \\(h =\alpha-(\alpha^2 -1)^{\frac{1}{2}}\\) 
-when \\(\alpha =\frac{1}{2}(h+h^{-1}) \\).<a class="marginmark" onClick="toggleHide('mn:8,-10');">&#91;8&#93;</a> 
+when \\(\alpha =\frac{1}{2}(h+h^{-1}) \\).<a class="marginmark" onClick="toggleHide('mn:9,-10');">&#91;9&#93;</a> 
 >
 >Therefore the series (A) converges so long as \\(z\\) is within an ellipse whose foci are  \\(1\\) and \\(-1\\), and whose semi-major axis is \\(\frac{1}{2}(h+h^{-1}) \\). 
 
@@ -265,7 +277,7 @@ when \\(\alpha =\frac{1}{2}(h+h^{-1}) \\).<a class="marginmark" onClick="toggleH
 
 
 
-<div markdown=1 class="marginnotes" id="mn:8,-10" style="margin-top: -10em; margin-bottom: -10em;"><a class="marginmark">&#91;8&#93;</a>*Editor's Note*: It might be helpful to observe, \\(h < \alpha-(\alpha^2 -1)^{\frac{1}{2}}\\) whenever \\(1 \leq \alpha < \frac{1}{2}(h+h^{-1}) \\).<a onClick="hideIt('mn:8,-10')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:9,-10" style="margin-top: -10em; margin-bottom: -10em;"><a class="marginmark">&#91;9&#93;</a>*Editor's Note*: It might be helpful to observe, \\(h < \alpha-(\alpha^2 -1)^{\frac{1}{2}}\\) whenever \\(1 \leq \alpha < \frac{1}{2}(h+h^{-1}) \\).<a onClick="hideIt('mn:9,-10')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
