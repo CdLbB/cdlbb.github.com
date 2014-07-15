@@ -126,10 +126,14 @@ function of <span class="math">\(z\)</span> when <span class="math">\(\mathfrak{
 
 <p>Consider a function <span class="math">\(f(z)\)</span>, which is analytic in the neighbourhood of a
 point <span class="math">\(z = a\)</span>. Let <span class="math">\(C\)</span> be a circle with <span class="math">\(a\)</span> as centre in the <span class="math">\(z\)</span>-plane, which does not have any singular point of the function <span class="math">\(f(z)\)</span> on or inside it; so that <span class="math">\(f(z)\)</span>
-is analytic at all points on and inside <span class="math">\(C\)</span>. Let <span class="math">\(z = a + h\)</span> be any point inside the circle <span class="math">\(C\)</span>. Then, by <a href="CMA05-2-CauchysTheoremMN.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.">&#167;5.21</a>, we have
+is analytic at all points on and inside <span class="math">\(C\)</span>. Let <span class="math">\(z = a + h\)</span> be any point inside the circle <span class="math">\(C\)</span>. Then, by <a href="CMA05-2-CauchysTheoremMN.html#5.21thevalueofananalyticfunctionatapointexpressedasanintegraltakenroundacontourenclosingthepoint.">&#167;5.21</a>, we have<a class="marginmark" onClick="toggleHide('mn:6,-4');">&#91;6&#93;</a>
 <span class="math">\[f(a+h)=\frac{1}{2\pi i}\! \int_C \frac{f(z)\, dz}{z-a-h}\]</span>
-<span class="math">\[=\frac{1}{2\pi i}\! \int_C \! f(z)\, dz\left\{\frac{1}{z-a}+\frac{h}{(z-a)^2}+\cdots +\frac{h^n}{(z-a)^{n+1}}+\frac{h^{n+1}}{(z-a)^{n+1}(z-a-h)}\right\}\]</span>
-<span class="math">\[=f(a)+hf'(a)+\frac{h^2}{2!}f''(a)+ \cdots +\frac{h^n}{n!}f^{(n)}(a)+\frac{1}{2\pi i}\!\int_C \frac{h^{n+1}f(z)\,dz}{(z-a)^{n+1}(z-a-h)}. \]</span></p>
+<span class="math">\[=\frac{1}{2\pi i}\! \int_C \! f(z)\, dz\left\{\!\frac{1}{z-a}\!+\!\frac{h}{(z-a)^2}\!+\!\cdots \!+\!\frac{h^n}{(z-a)^{n+1}}\!+\!\frac{h^{n+1}}{(z-a)^{n+1}(z-a-h)}\!\right\}\]</span>
+<span class="math">\[=f(a)+hf'\!(a)+\!\frac{h^2}{2!}f''\!(a)+\! \cdots \!+\!\frac{h^n}{n!}f^{(n)}(a)+\!\frac{1}{2\pi i}\!\int_C \frac{h^{n+1}f(z)\,dz}{(z-a)^{n+1}(z-a-h)}. \]</span></p>
+</div>
+<div class="marginnotes"  id="mn:6,-4"  style="margin-top: -4em; margin-bottom: -4em;"><a class="marginmark">&#91;6&#93;</a><em>Editor&#8217;s Note</em>: For those unfamiliar with this expansion, it follows from the geometric series formula, <span class="math">\[\begin{align*}\sum_{m=0}^n r^m &= \frac{1-r^{n+1}}{1-r} \\ \frac{1}{1-r} &= \sum_{m=0}^n r^m + \frac{r^{n+1}}{1-r}. \end{align*}\]</span> Hence, if <span class="math">\(a-b=c\)</span>, <span class="math">\[\begin{align*}\frac{a}{c} &= \frac{1}{1-\left. \vphantom{g} b \middle/ a \right.} \\ &= \sum_{m=0}^n \left(\frac{b}{a}\right)^m + \frac{b^{n+1}}{a^n c} .\end{align*}\]</span> Whittaker and Watson make regular use of this expansion (see <a href="CMA05-5-LaurentsTheoremMN.html#5.6laurentstheorem.">&#167;5.6</a>).<a onClick="hideIt('mn:6,-4')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
 
 <h6 id="5.4termvanishes">But when <span class="math">\(z\)</span> is on <span class="math">\(C\)</span>, the modulus of <span class="math">\(\dfrac{f(z)}{z-a-h}\)</span> is continuous, and so, by <a href="CMA03-3-Heine-BorelMN.html#continuousisbounded">&#167;3.61 cor. (ii)</a>, will not exceed some finite number <span class="math">\(M\)</span>.</h6>
 
@@ -165,14 +169,14 @@ used. </p>
 \\ &=\frac{n!}{2\pi i}\! \int_0^{2\pi} \!\frac{e^{-ni\theta}\, d\theta}{\alpha-e^{-i\theta}}=\frac{n!}{2\pi i}\! \int_C \frac{dz}{z^n(\alpha-z)}=\left[\frac{d^n}{dz^n} \frac{1}{\alpha-z}\right]_{z=0}\\
 \\ &=\frac{n!}{\alpha^{n+1}}.
 \end{align*}\]</span>
-Therefore by Maclaurin&#8217;s Theorem,<a class="marginmark" onClick="toggleHide('mn:6,-15');">&#91;6&#93;</a>
+Therefore by Maclaurin&#8217;s Theorem,<a class="marginmark" onClick="toggleHide('mn:7,-15');">&#91;7&#93;</a>
 <span class="math">\[f(z)=\sum_{n=0}^\infty \frac{z^n}{\alpha^{n+1}},\]</span>
 or <span class="math">\(f(z) = (a - z)^{-1}\)</span> for all points within the circle. </p>
 
 <p>This example raises the interesting question, Will it still be convenient to define <span class="math">\(f(z)\)</span> as <span class="math">\((a - z)^{-1}\)</span> at points outside the circle? This will be discussed in <a href="CMA05-4-AnalyticContinuationMN.html#theidentityoftwofunctions.">&#167;5.51</a>.] </p>
 </blockquote>
 </div>
-<div class="marginnotes"  id="mn:6,-15"  style="margin-top: -15em; margin-bottom: -15em;"><a class="marginmark">&#91;6&#93;</a>The result <span class="math">\(f(z) =f(0) +z\,f'(0) +\dfrac{z^2}{2} f''(0) + \cdots\)</span>, obtained by putting <span class="math">\(a =0\)</span> in Taylor&#8217;s Theorem, is usually called <em>Maclaurin&#8217;s Theorem</em>; it was discovered by <a href="https://archive.org/details/lineaetertiiord00newtgoog">Stirling (1717)</a> and published by Maclaurin (1742) in his <a href="https://archive.org/details/atreatiseonflux01maclgoog"><em>Fluxions</em></a>. <a onClick="hideIt('mn:6,-15')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div class="marginnotes"  id="mn:7,-15"  style="margin-top: -15em; margin-bottom: -15em;"><a class="marginmark">&#91;7&#93;</a>The result <span class="math">\(f(z) =f(0) +z\,f'(0) +\dfrac{z^2}{2} f''(0) + \cdots\)</span>, obtained by putting <span class="math">\(a =0\)</span> in Taylor&#8217;s Theorem, is usually called <em>Maclaurin&#8217;s Theorem</em>; it was discovered by <a href="https://archive.org/details/lineaetertiiord00newtgoog">Stirling (1717)</a> and published by Maclaurin (1742) in his <a href="https://archive.org/details/atreatiseonflux01maclgoog"><em>Fluxions</em></a>. <a onClick="hideIt('mn:7,-15')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
 <div class="contenttext">
 
@@ -226,7 +230,7 @@ so the singularities of <span class="math">\((1+2zh+h^2)^{-\frac{1}{2}}\)</span>
 [These singularities are branch points (see <a href="CMA05-6-ManyValuedFunctionsMN.html#many-valuedfunctions.">&#167;5.7</a> ).] </p>
 </blockquote>
 </div>
-<div class="marginnotes"  id="mn:7,+10"  style="margin-top: +10em; margin-bottom: +10em;"><a class="marginmark">&#91;7&#93;</a><em>Editor&#8217;s Note</em>: See <a href="http://mathworld.wolfram.com/EccentricAngle.html">&#8220;Eccentric Angle.&#8221;</a> at MathWorld.<a onClick="hideIt('mn:7,+10')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div class="marginnotes"  id="mn:8,+10"  style="margin-top: +10em; margin-bottom: +10em;"><a class="marginmark">&#91;8&#93;</a><em>Editor&#8217;s Note</em>: See <a href="http://mathworld.wolfram.com/EccentricAngle.html">&#8220;Eccentric Angle.&#8221;</a> at MathWorld.<a onClick="hideIt('mn:8,+10')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
 <div class="contenttext">
 
@@ -234,19 +238,19 @@ so the singularities of <span class="math">\((1+2zh+h^2)^{-\frac{1}{2}}\)</span>
 <p>Thus the series (A) converges so long as <span class="math">\(\left|\, h  \,\right|\)</span> is less than both
 <span class="math">\[\left|\, z-(z^2-1)^{\frac{1}{2}} \:\!\right| \quad \text{and} \quad \left|\, z+(z^2-1)^{\frac{1}{2}} \:\!\right|\,. \]</span>
 Draw an ellipse in the <span class="math">\(z\)</span>-plane passing through the point <span class="math">\(z\)</span> and having its foci at <span class="math">\(\pm 1\)</span>.
-Let <span class="math">\(\alpha\)</span> be its semi-major axis, and <span class="math">\(\theta\)</span> the eccentric angle<a class="marginmark" onClick="toggleHide('mn:7,+10');">&#91;7&#93;</a> of <span class="math">\(z\)</span> on it. </p>
+Let <span class="math">\(\alpha\)</span> be its semi-major axis, and <span class="math">\(\theta\)</span> the eccentric angle<a class="marginmark" onClick="toggleHide('mn:8,+10');">&#91;8&#93;</a> of <span class="math">\(z\)</span> on it. </p>
 
 <p>Then <span class="math">\[z=\alpha \cos \theta + i\,(\alpha^2-1)^{\frac{1}{2}} \sin \theta,\]</span>
 which gives <span class="math">\[z \pm  (z^2 - 1)^{\frac{1}{2}} =\left\{\alpha \pm (\alpha^2-1)^{\frac{1}{2}}\right\}\left(\cos \theta \pm i \sin \theta \right),\]</span>
 so <span class="math">\[\left|\,z \pm (z^2 -1)^{\frac{1}{2}}\,\right| = \alpha \pm (\alpha^2 -1)^{\frac{1}{2}}.\]</span></p>
 
 <p>Thus the series (A) converges so long as <span class="math">\(h\)</span> is less than the smaller of the numbers <span class="math">\(\alpha +(\alpha^2 -1)^{\frac{1}{2}}\)</span> and <span class="math">\(\alpha-(\alpha^2 -1)^{\frac{1}{2}}\)</span>, i.e. so long as <span class="math">\(h\)</span> is less than <span class="math">\(\alpha-(\alpha^2 -1)^{\frac{1}{2}}\)</span>. But <span class="math">\(h =\alpha-(\alpha^2 -1)^{\frac{1}{2}}\)</span>
-when <span class="math">\(\alpha =\frac{1}{2}(h+h^{-1}) \)</span>.<a class="marginmark" onClick="toggleHide('mn:8,-10');">&#91;8&#93;</a> </p>
+when <span class="math">\(\alpha =\frac{1}{2}(h+h^{-1}) \)</span>.<a class="marginmark" onClick="toggleHide('mn:9,-10');">&#91;9&#93;</a> </p>
 
 <p>Therefore the series (A) converges so long as <span class="math">\(z\)</span> is within an ellipse whose foci are <span class="math">\(1\)</span> and <span class="math">\(-1\)</span>, and whose semi-major axis is <span class="math">\(\frac{1}{2}(h+h^{-1}) \)</span>. </p>
 </blockquote>
 </div>
-<div class="marginnotes"  id="mn:8,-10"  style="margin-top: -10em; margin-bottom: -10em;"><a class="marginmark">&#91;8&#93;</a><em>Editor&#8217;s Note</em>: It might be helpful to observe, <span class="math">\(h < \alpha-(\alpha^2 -1)^{\frac{1}{2}}\)</span> whenever <span class="math">\(1 \leq \alpha < \frac{1}{2}(h+h^{-1}) \)</span>.<a onClick="hideIt('mn:8,-10')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div class="marginnotes"  id="mn:9,-10"  style="margin-top: -10em; margin-bottom: -10em;"><a class="marginmark">&#91;9&#93;</a><em>Editor&#8217;s Note</em>: It might be helpful to observe, <span class="math">\(h < \alpha-(\alpha^2 -1)^{\frac{1}{2}}\)</span> whenever <span class="math">\(1 \leq \alpha < \frac{1}{2}(h+h^{-1}) \)</span>.<a onClick="hideIt('mn:9,-10')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 </div>
 <div class="contenttext">
 
