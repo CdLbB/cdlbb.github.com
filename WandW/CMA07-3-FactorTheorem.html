@@ -3,14 +3,14 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="latexinput" content="mmd-cambridge-header"/>
-	<title>A Course of Modern Analysis-404 page</title>
+	<title>A Course of Modern Analysis-FactorTheorem 7-3</title>
 	<meta name="subtitle" content="An introduction to the general theory of
 infinite processes and analytic functions;
 with an account of the principal
 transcendental functions."/>
 	<meta name="author" content="E.T. Whittaker and G.N. Watson"/>
 	<meta name="editor" content="Eric Nitardy"/>
-	<meta name="date" content="May 29, 2012"/>
+	<meta name="date" content="July 15, 2014"/>
 	<meta name="titlefile" content="mmd-WandW-title"/>
 	<meta name="copyrightfile" content="mmd-WandW-copyright"/>
 	<meta name="test" content="And this is a new key-value pair"/>
@@ -18,6 +18,10 @@ transcendental functions."/>
 	<meta name="latexinput" content="mmd-cambridge-begin-doc"/>
 	<meta name="latexfooter" content="mmd-cambridge-footer"/>
 	<link type="text/css" rel="stylesheet" href="css/documentation.css"/>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+<script type="text/javascript" src="js/showhide.js"></script>
+<script type="text/javascript" src="js/mathjaxend.js"></script>
 </head>
 <body>
 
@@ -25,11 +29,893 @@ transcendental functions."/>
 <div id="content">
 <div class="contenttext">
 
-<h2 id="pagenotfound">Page not Found</h2>
+<h3 id="7.4theexpansionofaclassoffunctionsinrationalfractions.">7.4 The expansion of a class of functions in rational fractions.<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a></h3>
 
-<p>This portion of the book is not yet finished. The book is growing gradually. Try the link again in a couple months.</p>
+<p>Consider a function <span class="math">\(f(z)\)</span>, whose only singularities in the finite
+part of the plane are simple poles <span class="math">\(a_{1}\)</span>, <span class="math">\(a_{2}\)</span>, <span class="math">\(a_{3},\ldots\)</span>, where
+<span class="math">\(\left|\, a_{1} \,\right| \leq \left|\, a_{2} \,\right| \leq \left|\, a_{3} \,\right| \leq \ldots \:\!\)</span>;
+let <span class="math">\(b_{1}\)</span>, <span class="math">\(b_{2}\)</span>, <span class="math">\(b_{3},\ldots\)</span>, be the residues at these
+poles, and let it be possible to choose a sequence of circles <span class="math">\(C_{m}\)</span> (the
+radius of <span class="math">\(C_{m}\)</span> being <span class="math">\(R_{m}\)</span>) with centre at <span class="math">\(O\)</span>, not passing through any
+poles, such that <span class="math">\(\left|\, f(z) \,\right|\)</span> is bounded on <span class="math">\(C_{m}\)</span>. (The function
+<span class="math">\(\mathrm{cosec}\;\! z\)</span> may
+be cited as an example of the class of functions considered, and we
+take <span class="math">\(R_{m} = (m + \frac{1}{2})\pi\)</span>.) Suppose further that
+<span class="math">\(R_{m} \rightarrow \infty\)</span> as <span class="math">\(m \rightarrow \infty\)</span> and that
+the upper bound<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a>
+of <span class="math">\(\left|\, f(z) \,\right|\)</span> on <span class="math">\(C_{m}\)</span> is itself bounded
+as <span class="math">\(m\rightarrow\infty\)</span>;<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a> so
+that, for all points on the circle <span class="math">\(C_{m}\)</span>, <span class="math">\(\left|\, f(z) \,\right| < M\)</span>, where <span class="math">\(M\)</span> is
+independent of <span class="math">\(m\)</span>.</p>
+
+<p>Then, if <span class="math">\(x\)</span> be not a pole of <span class="math">\(f(z)\)</span>, since the only poles of the
+integrand are the poles of <span class="math">\(f(z)\)</span> and the point <span class="math">\(z = x\)</span>, we have, by <a href="CMA06-1-Residues.html#6.1residues.">§6.1</a>,
+<span class="math">\[
+\frac{1}{2 \pi i} \!\int_{C_{m}}\! \frac{f(z)}{z-x} \, d z
+=
+f(x) + \sum_{r} \frac{b_{r}}{a_{r}-x}.
+\]</span>
+where the summation extends over all poles in the interior of <span class="math">\(C_m\)</span>.</p>
+
+<p>But
+<span class="math">\[\begin{align*}
+  \frac{1}{2 \pi i}
+  \!\int_{C_{m}}\! \frac{f(z)}{z-x} \, d z
+  &=
+  \frac{1}{2 \pi i}
+  \!\int_{C_{m}}\! \frac{f(z)}{z} \, d z
+  +
+  \frac{x}{2 \pi i}
+  \!\int_{C_{m}}\! \frac{f(x)}{z(z-x)} \, d z
+  \\ \\
+  &=
+  f(0) + \sum_{r} \frac{b_{r}}{a_{r}}
+  +
+  \frac{x}{2 \pi i}
+  \!\int_{C_{m}}\! \frac{f(z)}{z(z-x)} \, d z,
+\end{align*}\]</span>
+if we suppose the function <span class="math">\(f(z)\)</span> to be analytic at the origin.</p>
+
+<p>Now as <span class="math">\(m \rightarrow \infty\)</span>,
+<span class="math">\(\displaystyle \int_{C_{m}}\! \frac{f(z)}{z(z-x)} \, d z\)</span> is
+<span class="math">\(O(R_{m}^{-1})\)</span>, and so tends to zero as
+<span class="math">\(m\)</span> tends to infinity.</p>
+
+<p>Therefore, making <span class="math">\(m \rightarrow \infty\)</span>, we have
+<span class="math">\[
+0
+=
+f(x) - f(0)
++
+\sum_{n=1}^{\infty}
+b_{n} \left(
+  \frac{1}{a_{n}-x} - \frac{1}{a_{n}}
+\right)
+-
+\lim_{m\rightarrow\infty}
+\frac{x}{2 \pi i}
+\!\int_{C_{m}}\! \frac{f(z)}{z(z-x)} \, d x,
+\]</span>
+i.e.
+<span class="math">\[
+f(x) = f(0)
++
+\sum_{n=1}^{\infty}
+b_{n}
+\left\{
+  \frac{1}{x-a_{n}} + \frac{1}{a_{n}}
+\right\}
+\]</span>
+which is an expansion of <span class="math">\(f(x)\)</span> in rational fractions of <span class="math">\(x\)</span>; and the
+summation extends over <em>all</em> the poles of <span class="math">\(f(x)\)</span>.</p>
+
+<p>If <span class="math">\(\left|\, a_{n} \,\right| < \left|\, a_{n+1} \,\right|\)</span>, this series converges uniformly
+throughout the region given by <span class="math">\(\left|\, x \,\right| < a\)</span>, where <span class="math">\(a\)</span> is any constant
+(except near the points <span class="math">\(a_{n}\)</span>).
+For if <span class="math">\(R_{m}\)</span> be the radius of the circle which encloses the points
+<span class="math">\(\left|\, a_{1} \,\right|, \ldots, \left|\, a_{n} \,\right|\)</span>,
+the modulus of the remainder of the terms of the series after the first <span class="math">\(n\)</span> is
+<span class="math">\[
+\left|\,  \frac{x}{2 \pi i}
+  \!\int_{C_{m}}\! \frac{f(z)}{z(z-x)} \, d z
+ \,\right|
+< \frac{Ma}{R_{m}-a},
+\]</span>
+by <a href="CMA04-3-ComplexInt.html#4.62anupperlimittothevalueofacomplexintegral.">§4.62</a>; and, given
+<span class="math">\(\epsilon\)</span>, we can choose <span class="math">\(n\)</span> <em>independent</em> of <span class="math">\(x\)</span>
+such that <span class="math">\(\displaystyle \frac{Ma}{R_{m}-a} < \epsilon\)</span>.</p>
+
+<p>The convergence is obviously still uniform even if
+<span class="math">\(\left|\, a_{n} \,\right| \leq \left|\, a_{n+1} \,\right|\)</span>
+provided the terms of the series are grouped so as to combine the
+terms corresponding to poles of equal moduli.</p>
+
+<p>If, instead of the condition <span class="math">\(\left|\, f(z) \,\right| < M\)</span>, we have the
+condition <span class="math">\(\left|\,  z^{-p} f(z)  \,\right| < M\)</span>,
+where <span class="math">\(M\)</span> is independent of <span class="math">\(m\)</span> when <span class="math">\(z\)</span> is on <span class="math">\(C_{m}\)</span>, and <span class="math">\(p\)</span> is
+a positive integer, then we should have to
+expand <span class="math">\(\displaystyle \int_{C} \frac{f(z)}{z-x} \, d z\)</span> by writing
+<span class="math">\[
+\frac{1}{z-x}
+=
+\frac{1}{z}
++ \frac{x}{z^{2}}
++ \cdots
++ \frac{x^{p+1}}{z^{p+1}(z-x)},
+\]</span>
+and should obtain a similar but somewhat more complicated expansion.</p>
+
+<blockquote>
+<p><em>Example</em> 1. Prove that
+<span class="math">\[
+\mathrm{cosec}\;\! z
+=
+\frac{1}{z}
++
+\sum (-1)^{n}
+\left(\frac{1}{z-n\pi} + \frac{1}{n\pi}\right)
+\]</span>
+the summation extending to all positive and negative values of <span class="math">\(n\)</span>.</p>
+
+<p>To obtain this result, let <span class="math">\(\mathrm{cosec}\;\! z - \dfrac{1}{z} = f(z)\)</span>.
+The singularities of this function are at the
+points <span class="math">\(z=n\pi\)</span>, where <span class="math">\(n\)</span> is any positive or negative integer.</p>
+
+<p>The residue of <span class="math">\(f(z)\)</span> at the singularity <span class="math">\(n\pi\)</span> is therefore
+<span class="math">\((-1)^{n}\)</span>, and the reader will easily see that <span class="math">\(\left|\, f(z) \,\right|\)</span> is
+bounded on the circle <span class="math">\(\left|\, z \,\right| = (n + \frac{1}{2}\:\!) \pi\)</span> as
+<span class="math">\(n \rightarrow \infty\)</span>.</p>
+
+<p>Applying now the general theorem
+<span class="math">\[
+f(z)
+=
+f(0)
++
+\sum c_{n} \left[ \frac{1}{z-a_{n}} + \frac{1}{a_{n}}  \right],
+\]</span>
+where <span class="math">\(c_{n}\)</span> is the residue at the singularity <span class="math">\(a_{n}\)</span>, we have
+<span class="math">\[
+f(z)
+=
+f(0)
++
+\sum (-1)^{n} \left\{ \frac{1}{z-n\pi} + \frac{1}{n\pi}  \right\}.
+\]</span></p>
+
+<p>But
+<span class="math">\[
+f(0)
+=
+\lim_{z \rightarrow 0} \frac{z - \sin z}{z \sin z} = 0.
+\]</span></p>
+
+<p>Therefore
+<span class="math">\[
+\mathrm{cosec}\;\! z
+=
+\frac{1}{z}
++
+\sum (-1)^{n} \left[ \frac{1}{z-n\pi} + \frac{1}{n\pi}  \right],
+\]</span>
+which is the required result.</p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 2. If <span class="math">\(0 < a < 1\)</span>, shew that
+<span class="math">\[
+\frac{e^{az}}{e^{z}-1}
+=
+\frac{1}{z}
++
+\sum_{n=1}^{\infty}
+\frac{2z \cos 2na\pi - 4n\pi \sin 2na\pi}{z^{2}+4n^{2}\pi^{2}}.
+\]</span></p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 3. Prove that
+<span class="math">\[\begin{align*}
+\frac{1}{2 \pi x^{2} (\cosh x - \cos x)}
+=&
+\frac{1}{2 \pi x^{4}}
+-
+\frac{1}{e^{\pi}-e^{-\pi}}
+\frac{1}{\pi^{4} + \frac{1}{4} x^{4}}\\
+&+
+\frac{2}{e^{2 \pi}-e^{-2 \pi}}
+\frac{1}{(2 \pi)^{4} + \frac{1}{4} x^{4}}
+-
+\frac{3}{e^{3 \pi}-e^{-3 \pi}}
+\frac{1}{(3 \pi)^{4} + \frac{1}{4} x^{4}}
++
+\cdots.
+\end{align*}\]</span></p>
+
+<p>The general term of the series on the right is
+<span class="math">\[
+\frac{(-1)^{r} r}{(e^{r \pi}-e^{-r \pi})
+  \left\{(r \pi)^{4} + \frac{1}{4} x^{4}\right\}},
+\]</span>
+which is the residue at each of the four singularities
+<span class="math">\(r\)</span>, <span class="math">\(-r\)</span>, <span class="math">\(ri\)</span>, <span class="math">\(-ri\)</span> of the function
+<span class="math">\[
+\frac{\pi z}{(\pi^{4}z^{4} + \frac{1}{4} x^{4}) (e^{\pi z} - e^{-\pi
+    z}) \sin \pi z}.
+\]</span></p>
+
+<p>The singularities of this latter function which are not of the type
+<span class="math">\(r\)</span>, <span class="math">\(-r\)</span>, <span class="math">\(ri\)</span>, <span class="math">\(-ri\)</span> are at the five points
+<span class="math">\[
+0,
+\frac{(\pm 1 \pm i\:\!) x}{2 \pi}.
+\]</span>
+At <span class="math">\(z=0\)</span> the residue is
+<span class="math">\[
+\frac{2}{\pi x^{4}};
+\]</span>
+at each of the four points
+<span class="math">\(\displaystyle \frac{(\pm 1 \pm i\:\!) x}{2 \pi}\)</span>, the residue is
+<span class="math">\[
+\left\{
+  2 \pi x^{2} (\cos x - \cosh x)
+\right\}^{-1}
+\]</span></p>
+
+<p>Therefore
+<span class="math">\[\begin{align*}
+  4
+  \sum_{r=1}^{\infty}
+  \frac{(-1)^{r} r}{e^{r\pi} - e^{-r\pi}}&
+  \frac{1}{(r\pi)^{4} + \frac{1}{4} x^{4}}
+  +
+  \frac{2}{\pi x^{4}}
+  -
+  \frac{2}{ \pi x^{2} (\cosh x - \cos x)}
+  \\
+  &
+  =
+  \frac{1}{2 \pi i}
+  \lim_{n \rightarrow \infty}
+  \!\int_{C}\!
+  \frac{\pi z}{
+    (\pi^{4}z^{4} + \frac{1}{x^{4}})
+    (e^{\pi z}-e^{-\pi z})
+    \sin \pi z
+  }
+  \, d z,
+\end{align*}\]</span>
+where <span class="math">\(C\)</span> is the circle whose radius is <span class="math">\(n + \frac{1}{2}\)</span>, (<span class="math">\(n\)</span> an integer),
+and whose centre is the origin. But, at points on <span class="math">\(C\)</span>, this integrand is
+<span class="math">\(O( \left|\, z \,\right|^{-3} )\)</span>; the limit of the integral round <span class="math">\(C\)</span> is
+therefore zero.
+From the last equation the required result is now obvious.</p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 4. Prove that
+ <span class="math">\[
+  \sec x
+  =
+  4 \pi
+  \left(
+    \frac{1}{\pi^{2} - 4 x^{2}}
+    -
+    \frac{3}{9 \pi^{2} - 4 x^{2}}
+    +
+    \frac{5}{25 \pi^{2} - 4 x^{2}}
+    -
+    \cdots
+  \right).
+  \]</span></p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 5. Prove that
+ <span class="math">\[
+  \mathrm{cosech}\;\! x
+  =
+  \frac{1}{x}
+  -
+  2x
+  \left(
+    \frac{1}{\pi^{2} + x^{2}}
+    -
+    \frac{1}{4\pi^{2} + x^{2}}
+    +
+    \frac{1}{9 \pi^{2} + x^{2}}
+    -
+    \cdots
+  \right).
+  \]</span></p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 6. Prove that
+ <span class="math">\[
+  \mathrm{sech}\;\! x 
+  =
+  4 \pi
+  \left(
+    \frac{1}{\pi^{2} + 4 x^{2}}
+    -
+    \frac{3}{9\pi^{2} + 4 x^{2}}
+    +
+    \frac{5}{25 \pi^{2} + 4 x^{2}}
+    -
+    \cdots
+  \right).
+  \]</span></p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 7. Prove that
+ <span class="math">\[
+  \coth x
+  =
+  \frac{1}{x}
+  +
+  2x
+  \left(
+    \frac{1}{\pi^{2} + x^{2}}
+    +
+    \frac{1}{4 \pi^{2} + x^{2}}
+    +
+    \frac{1}{9 \pi^{2} + x^{2}}
+    +
+    \cdots
+  \right).
+  \]</span></p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 8. Prove that
+ <span class="math">\[
+  \sum_{m=-\infty}^{\infty}
+  \sum_{n=-\infty}^{\infty}
+  \frac{1}{ (m^{2}+a^{2}) (n^{2}+b^{2}) }
+  =
+  \frac{\pi^{2}}{ab} \coth \pi a \coth \pi b.
+  \]</span>
+(Math. Trip. 1899.)</p>
+</blockquote>
+
+<h3 id="7.5theexpansionofaclassoffunctionsasinfiniteproducts.">7.5 The expansion of a class of functions as infinite products.</h3>
+
+<p>The theorem of the last article can be applied to the expansion of a
+certain class of functions as infinite products.</p>
+
+<p>For let <span class="math">\(f(z)\)</span> be a function which has simple zeros at the points <span class="math">\(a_{1}\)</span>, <span class="math">\(a_{2}\)</span>, <span class="math">\(a_{3}, \ldots\)</span>,<a href="#fn:4" id="fnref:4" title="see footnote" class="footnote">[4]</a> where <span class="math">\(\lim_{n \rightarrow \infty} \left|\, a_{n} \,\right|\)</span> is infinite; and let <span class="math">\(f(z)\)</span> be analytic for all values of <span class="math">\(z\)</span>.</p>
+
+<p>Then <span class="math">\(f'(z)\)</span> is analytic for all values of <span class="math">\(z\)</span>
+(<a href="CMA05-2-CauchysTheorem.html#5.22thederivatesofananalyticfunction.">§5.22</a>), and so <span class="math">\(\frac{f'(z)}{f(z)}\)</span> can have
+singularities only at the points <span class="math">\(a_{1}\)</span>, <span class="math">\(a_{2}\)</span>, <span class="math">\(a_{3}, \ldots\)</span>.</p>
+
+<p>Consequently, by Taylor&#8217;s theorem,
+<span class="math">\[
+f(z)
+=
+(z-a_{r})\:\! f'(a_{r})
++
+\frac{ (z-a_{r})^{2} }{2} f''(a_{r})
++
+\cdots
+\]</span>
+and
+<span class="math">\[
+f'(z)
+=
+f'(a_{r})
++
+(z-a_{r}) \:\! f''(a_{r})
++
+\cdots.
+\]</span></p>
+
+<p>It follows immediately that at each of the points <span class="math">\(a_{r}\)</span>, the
+function
+<span class="math">\(\frac{f'(z)}{f(z)}\)</span> has a simple pole, with residue <span class="math">\(+1\)</span>.</p>
+
+<p>If then we can find a sequence of circles <span class="math">\(C_{m}\)</span> of the nature described
+in <a href="#7.4theexpansionofaclassoffunctionsinrationalfractions.">§7.4</a>, such that <span class="math">\(\frac{f'(z)}{f(z)}\)</span> is bounded on
+<span class="math">\(C_{m}\)</span> as <span class="math">\(m \rightarrow \infty\)</span>, it follows, from the
+expansion given in <a href="#7.4theexpansionofaclassoffunctionsinrationalfractions.">§7.4</a>, that
+<span class="math">\[
+\frac{f'(z)}{f(z)}
+=
+\frac{f'(0)}{f(0)}
++
+\sum_{n=1}^{\infty}
+\left\{
+  \frac{1}{z-a_{n}}
+  -
+  \frac{1}{a_{n}}
+\right\}.
+\]</span></p>
+
+<p>Since this series converges uniformly when the terms are suitably
+grouped (<a href="#7.4theexpansionofaclassoffunctionsinrationalfractions.">§7.4</a>), we may integrate term-by-term
+(<a href="CMA04-3-ComplexInt.html#4.7integrationofinfiniteseries.">§4.7</a>}. Doing so, and taking the exponential of each
+side, we get
+<span class="math">\[
+f(z)
+=
+c
+e^{ z \:\!\frac{f'(0)}{f(0)} }
+\prod_{n=1}^{\infty}
+\left\{
+  \left( 1 - \frac{z}{a_{n}} \right)
+  e^{ \frac{z}{a_{n}} }
+\right\},
+\]</span>
+where <span class="math">\(c\)</span> is independent of <span class="math">\(z\)</span>.</p>
+
+<p>Putting <span class="math">\(z = 0\)</span>, we see that <span class="math">\(f(0) = c\)</span>, and thus the general result
+becomes
+<span class="math">\[
+f(z)
+=
+f(0)
+e^{ z \:\!\frac{f'(0)}{f(0)} }
+\prod_{n=1}^{\infty}
+\left\{
+  \left( 1 - \frac{z}{a_{n}} \right)
+  e^{ \frac{z}{a_{n}} }
+\right\}.
+\]</span></p>
+
+<p>This furnishes the expansion, in the form of an infinite product, of
+any function <span class="math">\(f(z)\)</span> which fulfils the conditions stated.</p>
+
+<blockquote>
+<p><em>Example</em> 1. Consider the function
+ <span class="math">\(f(z) = \dfrac{\sin z}{z}\)</span>, which has simple zeros at
+ the points <span class="math">\(r \pi\)</span>, where <span class="math">\(r\)</span> is any positive or negative integer.</p>
+
+<p>In this case we have
+ <span class="math">\[
+  f(0) = 1,
+  \quad
+  f'(0) = 0,
+  \]</span>
+ and so the theorem gives immediately
+ <span class="math">\[
+  \frac{\sin z}{z}
+  =
+  \prod_{n=1}^{\infty}
+  \left\{
+    \left(1 - \frac{z}{n \pi}\right)
+    e^{ \frac{z}{n \pi} }
+  \right\}
+  \left\{
+    \left(1 + \frac{z}{n \pi}\right)
+    e^{ -\frac{z}{n \pi} }
+  \right\};
+  \]</span>
+ for it is easily seen that the condition concerning the behaviour of
+ <span class="math">\(\frac{f'(z)}{f(z)}\)</span> as <span class="math">\(\left|\, z \,\right| \rightarrow \infty\)</span> is fulfilled.</p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 2. Prove that
+ <span class="math">\[\begin{align*}
+  \left\{
+    1 + \left( \frac{k}{x}  \right)^{2}
+  \right\}
+&
+  \left\{
+    1 + \left( \frac{k}{2\pi - x}  \right)^{2}
+  \right\}
+  \left\{
+    1 + \left( \frac{k}{2\pi + x}  \right)^{2}
+  \right\} \\
+\times & 
+  \left\{
+    1 + \left( \frac{k}{4\pi - x}  \right)^{2}
+  \right\}
+  \left\{
+    1 + \left( \frac{k}{4\pi + x}  \right)^{2}
+  \right\}  \times \cdots
+  \\ \\
+& \quad =
+  \frac{\cosh x - \cos x}{1-\cos x}.
+  \end{align*}\]</span>
+(Trinity, 1899.)</p>
+</blockquote>
+
+<h3 id="7.6thefactortheoremofweierstrass.">7.6 The factor theorem of Weierstrass.<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a></h3>
+
+<p>The theorem of <a href="#7.5theexpansionofaclassoffunctionsasinfiniteproducts.">§7.5</a> is very similar to a more general theorem in
+which the character of the function <span class="math">\(f(z)\)</span>, as
+<span class="math">\(\left|\, z \,\right| \rightarrow \infty\)</span>, is not so
+narrowly restricted.</p>
+
+<p>Let <span class="math">\(f(z)\)</span> be a function of <span class="math">\(z\)</span> with no essential singularities (except at
+&#8216;the point infinity&#8217;); and let the zeros and poles of <span class="math">\(f(z)\)</span> be at
+<span class="math">\(a_{1}\)</span>, <span class="math">\(a_{2}\)</span>, <span class="math">\(a_{3}, \ldots\)</span>, where
+<span class="math">\(0 < \left|\, a_{1} \,\right| \leq \left|\, a_{2} \,\right| \leq \left|\, a_{3} \,\right| \ldots\)</span>.
+Let the zero at <span class="math">\(a_{n}\)</span> be of (integer) order <span class="math">\(m_{n}\)</span>.<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a></p>
+
+<p>If the number of zeros and poles is unlimited, it is necessary that
+<span class="math">\(\left|\, a_{n} \,\right| \rightarrow \infty\)</span>, as <span class="math">\(n \rightarrow \infty\)</span>;
+for, if not, the points <span class="math">\(a_{n}\)</span> would have a limit
+point,<a href="#fn:7" id="fnref:7" title="see footnote" class="footnote">[7]</a>
+which would be an essential singularity of <span class="math">\(f(z)\)</span>.</p>
+
+<p>We proceed to shew first of all that it is possible to find
+polynomials <span class="math">\(g(z)\)</span> such that
+<span class="math">\[
+\prod_{n=1}^{\infty}
+  \left\{
+    \left(
+      1
+      -
+      \frac{z}{a_{n}}
+    \right)
+    e^{ g_{n}(z)}
+  \right\}^{m_{n}}
+\]</span>
+converges for all finite values of <span class="math">\(z\)</span>.<a href="#fn:8" id="fnref:8" title="see footnote" class="footnote">[8]</a></p>
+
+<p>Let <span class="math">\(K\)</span> be any constant, and let <span class="math">\(\left|\, z \,\right| < K\)</span>; then, since
+<span class="math">\(\left|\, a_{n} \,\right| \rightarrow \infty\)</span>, we can
+find <span class="math">\(N\)</span> such that, when <span class="math">\(n > N\)</span>, <span class="math">\(\left|\, a_{n} \,\right| > 2K\)</span>.</p>
+
+<p>The first <span class="math">\(N\)</span> factors of the product do not affect its
+convergence;<a href="#fn:8" title="see footnote" class="footnote">[8]</a>
+consider any value of <span class="math">\(n\)</span> greater than <span class="math">\(N\)</span>, and let
+<span class="math">\[
+g_{n}(z)
+=
+\frac{z}{a_{n}}
++
+\frac{1}{2} \left( \frac{z}{a_{n}} \right)^{2}
++
+\cdots
++
+\frac{1}{k_{n}-1}
+\left( \frac{z}{a_{n}} \right)^{k_{n} - 1}.
+\]</span>
+Then
+<span class="math">\[\begin{align*}
+  \left|\, 
+    -
+    \sum_{m=1}^{\infty}
+    \frac{1}{m}
+    \left(
+      \frac{z}{a_{n}}
+    \right)^{m}
+    +
+    g_{n}
+   \,\right|
+  &=
+  \left|\, 
+    \sum_{m=k_{n}}^{\infty}
+    \frac{1}{m}
+    \left(
+      \frac{z}{a_{n}}
+    \right)^{m}
+   \,\right|
+  \\
+  &<
+  \left|\,  \frac{z}{a_{n}}  \,\right|^{k_{n}}
+  \sum_{m=0}^{\infty}
+  \left|\,  \frac{z}{a_{n}}  \,\right|^{m}
+  \\
+  &<
+  2
+  \left|\,  (K a_{n}^{-1})^{k_{n}}   \,\right|,
+\end{align*}\]</span>
+since
+<span class="math">\( \left|\,  z_{n} a_{n}^{-1}  \,\right| < \frac{1}{2}\)</span>.</p>
+
+<p>Hence
+<span class="math">\[
+\left\{
+  \left(
+    1
+    -
+    \frac{z}{a_{n}}
+  \right)
+  e^{g_{n}(z)}
+\right\}^{m_{n}}
+=
+e^{u_{n}(z)},
+\]</span>
+where
+<span class="math">\[
+\left|\,  u_{n}(z)  \,\right|
+\leq
+2
+\left|\, 
+  m_{n}
+  (K a_{n}^{-1})^{k_{n}}
+ \,\right|.
+\]</span></p>
+
+<p>Now <span class="math">\(m_{n}\)</span> and <span class="math">\(a_{n}\)</span> are given, but <span class="math">\(k_{n}\)</span> is at our disposal;
+since <span class="math">\(K a_{n}^{-1} < \frac{1}{2}\)</span>, we
+choose <span class="math">\(k_{n}\)</span> to be the smallest number such that
+<span class="math">\(2 \left|\, m_{n} (K a_{n}^{-1})^{k_{n}} \,\right| < b_{n}\)</span>,
+where
+<span class="math">\(\sum_{n=1}^{\infty} b_{n}\)</span> is any convergent series of positive terms.<a href="#fn:9" id="fnref:9" title="see footnote" class="footnote">[9]</a></p>
+
+<p>Hence
+<span class="math">\[
+\prod_{n = N+1}^{\infty}
+  \left\{
+    \left(
+      1
+      -
+      \frac{z}{a_{n}}
+    \right)
+    e^{g_{n}(z)}
+  \right\}^{m_{n}}
+=
+\prod_{n = N+1}^{\infty}
+e^{u_{n}(z)},
+\]</span>
+where
+<span class="math">\( \left|\,  u_{n}(z)  \,\right| < b_{n} \)</span>;
+and therefore, since <span class="math">\(b_{n}\)</span> is independent of <span class="math">\(z\)</span>, the
+product converges absolutely and uniformly when
+<span class="math">\(\left|\, z \,\right| < K\)</span>, except near the points <span class="math">\(a_{n}\)</span>.</p>
+
+<p>Now let
+<span class="math">\[
+F(z)
+=
+\prod_{n=1}^{\infty}
+\left[
+  \left\{
+    \left(
+      1
+      -
+      \frac{z}{a_{n}}
+    \right)
+    e^{g_{n}(z)}
+  \right\}^{m_{n}}
+\right].
+\]</span></p>
+
+<p>Then, if <span class="math">\(f(z) \div F(z) = G_{1}(z)\)</span>, <span class="math">\(G_{1}(z)\)</span> is an integral
+function (<a href="CMA05-5-LaurentsTheorem.html#5.64functionswithnoessentialsingularities.">§5.64</a>) of <span class="math">\(z\)</span> and has no zeros.</p>
+
+<p>It follows that
+<span class="math">\(\dfrac{1}{G_{1}(z)} \dfrac{d}{d z} G_{1}(z)\)</span>
+is analytic for all finite values of <span class="math">\(z\)</span>; and so, by Taylor&#8217;s theorem,
+this function can be expressed as a series <span class="math">\(\sum_{n=1}^{\infty} n
+b_{n} z^{n-1}\)</span> converging everywhere; integrating, it follows that
+<span class="math">\[
+G_{1}(z) = c e^{G(z)},
+\]</span>
+where <span class="math">\(G(z) = \sum_{n=1}^{\infty} b_{n} z^{n}\)</span> and <span class="math">\(c\)</span> is a constant;
+this series converges everywhere, and so <span class="math">\(G(z)\)</span> is an integral
+function.</p>
+
+<p>Therefore, finally,
+<span class="math">\[
+f(z)
+=
+f(0)
+e^{G(z)}
+\prod_{n=1}^{\infty}
+  \left\{
+    \left(
+      1
+      -
+      \frac{z}{a_{n}}
+    \right)
+    e^{g_{n}(z)}
+  \right\}^{m_{n}},
+\]</span>
+where <span class="math">\(G(z)\)</span> is some integral function such that <span class="math">\(G(0) = 0\)</span>.</p>
+
+<p>[<strong>Note</strong>. The presence of the arbitrary element <span class="math">\(G(z)\)</span> which occurs in
+this formula for <span class="math">\(f(z)\)</span> is due to the lack of conditions as to the
+behaviour of <span class="math">\(f(z)\)</span> as <span class="math">\(\left|\, z \,\right| \rightarrow \infty\)</span>.]</p>
+
+<blockquote>
+<p><em>Corollary</em>. If <span class="math">\(m_{n} =1\)</span>, it is
+sufficient to take <span class="math">\(k_{n} = n\)</span>, by <a href="CMA02-2-Series.html#ratiotest">§2.36</a>.</p>
+</blockquote>
 </div>
 </div>
+
+<div id="footer">
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a><br><span style="font-size:63%;">Based on a transcription by </span><a href="https://github.com/bwignall/Whittaker-and-Watson"><span style="font-size:74%;">Brian Wignall.</span></a></h3>
+<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+</div>
+
+<div id="navcauchy" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navfront');">FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
+  <ul>
+    <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
+    <li><a href="CMA06-1-Residues.html">The Theory of Residues</a>
+    <li><a href="CMA07-1-ExpansionOfFunctions.html">Expanding Functions in Infinite Series</a>
+      <ul>
+        <li><a href="CMA07-1-ExpansionOfFunctions.html#7.1aformuladuetodarboux.">A formula due to Darboux</a>
+        <li><a href="CMA07-1-ExpansionOfFunctions.html#7.2thebernoulliannumbersandthebernoullianpolynomials.">The Bernoullian numbers</a></li>
+        <li><a href="CMA07-2-BurmannsTheorem.html#7.3burmannstheorem.">B&uuml;rmann&#8217;s Theorem</a></li>
+    <li class="current"><a href="#7.4theexpansionofaclassoffunctionsinrationalfractions.">Expansion of functions in rationals</a></li>
+        <li class="current"><a href="#7.5theexpansionofaclassoffunctionsasinfiniteproducts.">Expansion of functions as products</a></li>
+    <li class="current"><a href="#7.6thefactortheoremofweierstrass.">The Factor Theorem of Weierstrass</a></li>
+        <li><a href="CMA07-4-BorelsTheorem.html#7.7theexpansionofaclassofperiodicfunctionsinaseriesofcotangents.">Expansion of functions in cotangents</a></li>
+    <li><a href="CMA07-4-BorelsTheorem.html#7.8borelstheorem.">Borel&#8217;s Theorem</a></li>
+        <li><a href="CMA07-5-Exercises.html#references.">References</a></li>
+        <li><a href="CMA07-5-Exercises.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
+      </ul>
+    </li>
+    <li><a href="CMA08-1-AsymptoticExpansion.html">Asymptotic Expansions and Summable Series</a></li>
+    <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a> 
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfront" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a>FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-Front.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-Front.html#preface">Preface</a></li>
+    <li><a href="CMA00-Front.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navfront');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navprocesses" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
+<li class="part"><a>PROCESSES OF ANALYSIS</a>
+  <ul >
+    <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
+    <li><a href="CMA02-1-Limits.html">The Theory of Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
+     <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
+      <li><a href="CMA06-1-Residues.html">The Theory of Residues</a></li>
+     <li><a href="CMA07-1-ExpansionOfFunctions.html">Expanding Functions in Infinite Series</a></li>
+     <li class="more current"><a onClick="showIt('navcauchy');hideIt('navprocesses');"> you are here . . . </a></li>
+     <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navtranscendental" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navtranscendental');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
+  <ul>
+    <li class="notdone"><a href="whereOwhere.html">The Gamma Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Zeta Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Legendre Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Bessel Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Mathieu Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
+  </ul>
+  </li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navback" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a>BACKMATTER</a>
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+    <li ><a href="whereOwhere.html">Authors Quoted</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfixedleft" class="fixedBleft">
+<p><a href="CMA07-2-BurmannsTheorem.html">&#x25C0;</a></p>
+</div>
+
+<div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
+<p><a onClick="hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');showIt('navcauchy');" style="float: left;">&#x25A4;</a> <a href="CMA07-4-BorelsTheorem.html" style="float: right;">&#x25B6;</a></p>
+</div>
+
+<div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;" >
+<p><a onClick="hideIt('navcauchy');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA07-4-BorelsTheorem.html" style="float: right;">&#x25B6; </a></p>
+</div>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p>Mittag-Leffler, <a href="https://archive.org/details/actasocietatissc111880suom"><em>Acta Soc. Scient. Fennicae</em>, <strong>xi.</strong> (1880)</a>, pp. 273&#8211;293. See also <a href="https://archive.org/details/actamathematica04upps"><em>Acta Math.</em> <strong>iv.</strong> (1884)</a>, pp. 1&#8211;79. <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:2">
+<p>Which is a function of <span class="math">\(m\)</span>. <a href="#fnref:2" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:3">
+<p>Of course <span class="math">\(R_{m}\)</span> need not (and frequently must not) tend to infinity continuously; e.g. in the example taken <span class="math">\(R_{m} = (m+\frac{1}{2})z\)</span>, where <span class="math">\(m\)</span> assumes only integer values. <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:4">
+<p>These being the only zeros of <span class="math">\(f(z)\)</span>; and <span class="math">\(a_{n} \neq 0\)</span>. <a href="#fnref:4" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:5">
+<p><a href="https://archive.org/stream/abhandlungenderk1876deut#page/n603/mode/2up"><em>Berliner Abh.</em> (1876)</a>, pp. 11&#8211;60; <a href="https://archive.org/details/mathematischewer02weieuoft"><em>Math. Werke</em>, <strong>ii.</strong></a> (1895), pp. 77&#8211;124. <a href="#fnref:5" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:6">
+<p>We here regard a pole as being a zero of negative order. <a href="#fnref:6" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:7">
+<p>From the two-dimensional analogue of <a href="CMA02-1-Limits.html#bolzanosection">§2.21</a>. <a href="#fnref:7" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:8">
+<p>Provided that <span class="math">\(z\)</span> is not at one of the points <span class="math">\(a_{m}\)</span> for which <span class="math">\(m\)</span> is negative. <a href="#fnref:8" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:9">
+<p>E.g. we might take <span class="math">\(b_{n} = 2^{-n}\)</span>. <a href="#fnref:9" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
 
 </body>
 </html>

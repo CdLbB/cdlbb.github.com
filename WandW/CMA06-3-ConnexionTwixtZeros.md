@@ -133,7 +133,7 @@ the tangent describes the curve \\(C\\); this gives the required result.
   \\]
   (Trinity, 1898.)
 
-2. By integrating \\(\dfrac{e^{\pm ai\:\!z}}{e^{2\pi\:\! z}-1}\\) round a contour formed by the rectangle whose  corners are \\(0\\), \\(R\\), \\(R+i\\), \\(i\\) (the rectangle being indented at \\(0\\) and \\(i\\)) and making \\(R\rightarrow\infty\\),  shew that 
+2. ######By integrating \\(\dfrac{e^{\pm ai\:\!z}}{e^{2\pi\:\! z}-1}\\) round a contour formed by the rectangle whose  corners are \\(0\\), \\(R\\), \\(R+i\\), \\(i\\) (the rectangle being indented at \\(0\\) and \\(i\\)) and making \\(R\rightarrow\infty\\),  shew that [chap6miscex2]######
 \\[ 
   \int_{0}^{\infty}\!
   \frac{ \sin ax }{e^{2 \pi \:\! x} - 1}

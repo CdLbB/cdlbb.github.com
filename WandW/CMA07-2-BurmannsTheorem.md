@@ -117,9 +117,9 @@ and \\(z\\) and such that, if \\(\zeta\\) be any point inside it, the equation
 \\(\phi(t) = \phi(\zeta)\\) has no roots on or inside the contour
 except a simple root \\(t=\zeta\\).*[^small,-3]
 
-[^small,-3]: It is assumed that such a contour can be chosen if  \\(\left|\,z - a\,\right|\\) be sufficiently small; see [§7.31](#).
+[^small,-3]: It is assumed that such a contour can be chosen if  \\(\left|\,z - a\,\right|\\) be sufficiently small; see [§7.31](#7.31teixeirasextendedformofburmannstheorem.).
 
-[^geometric,+2]: *Editor's Note*: For those unfamiliar with this expansion, it follows from the geometric series formula, \\[\begin{align*}\sum_{m=0}^n r^m &= \frac{1-r^{n+1}}{1-r} \\ \frac{1}{1-r} &= \sum_{m=0}^n r^m + \frac{r^{n+1}}{1-r}. \end{align*}\\] Hence, if \\(a-b=c\\), \\[\begin{align*}\frac{a}{c} &= \frac{1}{1-\left. \vphantom{g} b \middle/ a \right.} \\ &= \sum_{m=0}^n \left(\frac{b}{a}\right)^m + \frac{b^{n+1}}{a^n c} .\end{align*}\\] This expansion was also used to prove Taylor's theorem ([§5.4](CMA05-3-TaylorsTheoremMN.html#5.4taylorstheorem.)).
+[^geometric,+2]: *Editor's Note*: For those unfamiliar with this expansion, it follows from the geometric series formula, \\[\begin{align*}\sum_{m=0}^n r^m &= \frac{1-r^{n+1}}{1-r} \\ \frac{1}{1-r} &= \sum_{m=0}^n r^m + \frac{r^{n+1}}{1-r}. \end{align*}\\] Hence, if \\(a-b=c\\), \\[\begin{align*}\frac{1}{c} &= \frac{1}{a\:\! (1-\left. \vphantom{g} b \middle/ a \right.)} \\ &= \frac{1}{a}\left(\sum_{m=0}^n \left(\frac{b}{a}\right)^m + \frac{b^{n+1}}{a^n c}\right) .\end{align*}\\] This expansion was also used to prove Taylor's theorem ([§5.4](CMA05-3-TaylorsTheorem.html#5.4taylorstheorem.)).
 
 To prove this, we have[^geometric,+2]
 \\[\begin{align*}
@@ -606,8 +606,8 @@ the expansion being valid so long as
 	     <li><a href="#7.32lagrangestheorem.">Lagrange’s theorem</a> </li>
            </ul>
          </li>
-	<li><a href="CMA07-3-FactorTheorem.html#7.4Expansionofaclassoffunctionsinrationalfractions.">Expansion of functions in rationals</a></li>
-        <li><a href="CMA07-2-BurmannsTheorem.html#7.52theexpansionofaclassoffunctionsasinfiniteproducts.">Expansion of functions as products</a></li>
+	<li><a href="CMA07-3-FactorTheorem.html#7.4theexpansionofaclassoffunctionsinrationalfractions.">Expansion of functions in rationals</a></li>
+        <li><a href="CMA07-3-FactorTheorem.html#7.5theexpansionofaclassoffunctionsasinfiniteproducts.">Expansion of functions as products</a></li>
 	<li><a href="CMA07-3-FactorTheorem.html#7.6thefactortheoremofweierstrass.">The Factor Theorem of Weierstrass</a></li>
         <li><a href="CMA07-4-BorelsTheorem.html#7.7theexpansionofaclassofperiodicfunctionsinaseriesofcotangents.">Expansion of functions in cotangents</a></li>
 	<li><a href="CMA07-4-BorelsTheorem.html#7.8borelstheorem.">Borel&#8217;s Theorem</a></li>

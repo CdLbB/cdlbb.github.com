@@ -131,7 +131,7 @@ except a simple root \\(t=\zeta\\).*<a class="marginmark" onClick="toggleHide('m
 
 
 
-<div markdown=1 class="marginnotes" id="mn:2,-3" style="margin-top: -3em; margin-bottom: -3em;"><a class="marginmark">&#91;2&#93;</a>It is assumed that such a contour can be chosen if  \\(\left|\,z - a\,\right|\\) be sufficiently small; see [&#167;7.31](#).<a onClick="hideIt('mn:2,-3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:2,-3" style="margin-top: -3em; margin-bottom: -3em;"><a class="marginmark">&#91;2&#93;</a>It is assumed that such a contour can be chosen if  \\(\left|\,z - a\,\right|\\) be sufficiently small; see [&#167;7.31](#7.31teixeirasextendedformofburmannstheorem.).<a onClick="hideIt('mn:2,-3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -143,7 +143,7 @@ except a simple root \\(t=\zeta\\).*<a class="marginmark" onClick="toggleHide('m
 
 
 
-<div markdown=1 class="marginnotes" id="mn:3,+2" style="margin-top: +2em; margin-bottom: +2em;"><a class="marginmark">&#91;3&#93;</a>*Editor's Note*: For those unfamiliar with this expansion, it follows from the geometric series formula, \\[\begin{align*}\sum_{m=0}^n r^m &= \frac{1-r^{n+1}}{1-r} \\ \frac{1}{1-r} &= \sum_{m=0}^n r^m + \frac{r^{n+1}}{1-r}. \end{align*}\\] Hence, if \\(a-b=c\\), \\[\begin{align*}\frac{a}{c} &= \frac{1}{1-\left. \vphantom{g} b \middle/ a \right.} \\ &= \sum_{m=0}^n \left(\frac{b}{a}\right)^m + \frac{b^{n+1}}{a^n c} .\end{align*}\\] This expansion was also used to prove Taylor's theorem ([&#167;5.4](CMA05-3-TaylorsTheoremMNMN.html#5.4taylorstheorem.)).<a onClick="hideIt('mn:3,+2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:3,+2" style="margin-top: +2em; margin-bottom: +2em;"><a class="marginmark">&#91;3&#93;</a>*Editor's Note*: For those unfamiliar with this expansion, it follows from the geometric series formula, \\[\begin{align*}\sum_{m=0}^n r^m &= \frac{1-r^{n+1}}{1-r} \\ \frac{1}{1-r} &= \sum_{m=0}^n r^m + \frac{r^{n+1}}{1-r}. \end{align*}\\] Hence, if \\(a-b=c\\), \\[\begin{align*}\frac{1}{c} &= \frac{1}{a\:\! (1-\left. \vphantom{g} b \middle/ a \right.)} \\ &= \frac{1}{a}\left(\sum_{m=0}^n \left(\frac{b}{a}\right)^m + \frac{b^{n+1}}{a^n c}\right) .\end{align*}\\] This expansion was also used to prove Taylor's theorem ([&#167;5.4](CMA05-3-TaylorsTheoremMN.html#5.4taylorstheorem.)).<a onClick="hideIt('mn:3,+2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
@@ -686,8 +686,8 @@ the expansion being valid so long as
 	     <li><a href="#7.32lagrangestheorem.">Lagrange&rsquo;s theorem</a> </li>
            </ul>
          </li>
-	<li><a href="CMA07-3-FactorTheoremMN.html#7.4Expansionofaclassoffunctionsinrationalfractions.">Expansion of functions in rationals</a></li>
-        <li><a href="CMA07-2-BurmannsTheoremMN.html#7.52theexpansionofaclassoffunctionsasinfiniteproducts.">Expansion of functions as products</a></li>
+	<li><a href="CMA07-3-FactorTheoremMN.html#7.4theexpansionofaclassoffunctionsinrationalfractions.">Expansion of functions in rationals</a></li>
+        <li><a href="CMA07-3-FactorTheoremMN.html#7.5theexpansionofaclassoffunctionsasinfiniteproducts.">Expansion of functions as products</a></li>
 	<li><a href="CMA07-3-FactorTheoremMN.html#7.6thefactortheoremofweierstrass.">The Factor Theorem of Weierstrass</a></li>
         <li><a href="CMA07-4-BorelsTheoremMN.html#7.7theexpansionofaclassofperiodicfunctionsinaseriesofcotangents.">Expansion of functions in cotangents</a></li>
 	<li><a href="CMA07-4-BorelsTheoremMN.html#7.8borelstheorem.">Borel&#8217;s Theorem</a></li>

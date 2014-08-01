@@ -160,7 +160,7 @@ B_{5} = \frac{5}{66},
 
 These numbers can be expressed as definite integrals as follows:
 
-We have, by [miscellaneous example 2  of Chapter **vi**](),
+We have, by [miscellaneous example 2  of Chapter **vi**](CMA06-3-ConnexionTwixtZerosMN.html#chap6miscex2),
 \\[\begin{align*}
   \int_{0}^{\infty}\!
   \frac{\sin px \, dx}{e^{\pi x} - 1}
@@ -508,8 +508,8 @@ Math. Trip. 1904.
           </ul>
        </li>
         <li><a href="CMA07-2-BurmannsTheoremMN.html#7.3burmannstheorem.">B&uuml;rmann&#8217;s Theorem</a></li>
-	<li><a href="CMA07-3-FactorTheoremMN.html#7.4Expansionofaclassoffunctionsinrationalfractions.">Expansion of functions in rationals</a></li>
-        <li><a href="CMA07-2-BurmannsTheoremMN.html#7.52theexpansionofaclassoffunctionsasinfiniteproducts.">Expansion of functions as products</a></li>
+	<li><a href="CMA07-3-FactorTheoremMN.html#7.4theexpansionofaclassoffunctionsinrationalfractions.">Expansion of functions in rationals</a></li>
+        <li><a href="CMA07-3-FactorTheoremMN.html#7.5theexpansionofaclassoffunctionsasinfiniteproducts.">Expansion of functions as products</a></li>
 	<li><a href="CMA07-3-FactorTheoremMN.html#7.6thefactortheoremofweierstrass.">The Factor Theorem of Weierstrass</a></li>
         <li><a href="CMA07-4-BorelsTheoremMN.html#7.7theexpansionofaclassofperiodicfunctionsinaseriesofcotangents.">Expansion of functions in cotangents</a></li>
 	<li><a href="CMA07-4-BorelsTheoremMN.html#7.8borelstheorem.">Borel&#8217;s Theorem</a></li>
