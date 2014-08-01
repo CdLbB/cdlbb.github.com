@@ -210,7 +210,7 @@ April, 2014.
   <ol>
 <h3><a href="CMA01-Complex.html" style="color: #001160;">PROCESSES OF ANALYSIS</a></h3>
 
-    <li  class="current"><a href="CMA01-Complex.html#complexnumbers">Complex Numbers &nbsp;&nbsp;  <strong>(pp.&nbsp;3-10)</strong></a>
+    <li  class="current"><a href="CMA01-Complex.html#complexnumbers">Complex Numbers &nbsp;&nbsp;  <strong>(pp.&nbsp;3&ndash;10)</strong></a>
       <ol>
         <li>1.1 <a href="CMA01-Complex.html#rationalnumbers">Rational numbers</a></li>
         <li>1.2 <a href="CMA01-Complex.html#dedekind">Dedekind&#8217;s theory of irrational numbers</a></li>
@@ -221,7 +221,7 @@ April, 2014.
         <li><a href="CMA01-Complex.html#miscellaneousexamples">Miscellaneous Examples</a></li>
       </ol>
     </li>
-    <li><a href="CMA02-1-Limits.html">The Theory of Convergence &nbsp;&nbsp;  <strong>(pp.&nbsp;11-40)</strong></a>
+    <li><a href="CMA02-1-Limits.html">The Theory of Convergence &nbsp;&nbsp;  <strong>(pp.&nbsp;11&ndash;40)</strong></a>
       <ol>
           <li>2.1 <a href="CMA02-1-Limits.html#limits">The Definition of the Limit of a Sequence</a></li>
           <li>2.2 <a href="CMA02-1-Limits.html#thelimitofanincreasingsequence">The Limit of an Increasing Sequence</a></li>
@@ -235,7 +235,7 @@ April, 2014.
          <li><a href="CMA02-4-Products.html#miscellaneousexamples">Miscellaneous Examples</a></li>
       </ol>
     </li>
-    <li><a href="CMA03-1-ContinuousFns.html">Continuous Functions and Uniform&nbsp;Convergence &nbsp;&nbsp;  <strong>(pp.&nbsp;41-60)</strong></a>
+    <li><a href="CMA03-1-ContinuousFns.html">Continuous Functions and Uniform&nbsp;Convergence &nbsp;&nbsp;  <strong>(pp.&nbsp;41&ndash;60)</strong></a>
       <ol>
           <li>3.1 <a href="CMA03-1-ContinuousFns.html#thedependenceofonecomplexnumberonanother">The Dependence of One Complex Number on Another</a></li>
           <li>3.2 <a href="CMA03-1-ContinuousFns.html#continuityoffunctionsofrealvariables">Continuity of Functions of Real Variables</a></li>
@@ -248,7 +248,7 @@ April, 2014.
          <li><a href="CMA03-4-PowerSeries.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
       </ol>
 </li>
-    <li><a href="CMA04-1-Integration.html">The Theory of Reimann Integration &nbsp;&nbsp;  <strong>(pp.&nbsp;61-81)</strong></a>
+    <li><a href="CMA04-1-Integration.html">The Theory of Reimann Integration &nbsp;&nbsp;  <strong>(pp.&nbsp;61&ndash;81)</strong></a>
         <ol>
           <li>4.1 <a href="CMA04-1-Integration.html#4.1theconceptofintegration.">The Concept of Integration</a></li>
 	  <li>4.2 <a href="CMA04-1-Integration.html#4.2differentiationofintegralscontainingaparameter.">Differentiation of Integrals containing a Parameter</a></li>
@@ -261,7 +261,7 @@ April, 2014.
          <li><a href="CMA04-3-ComplexInt.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
         </ol>
       </li>
-     <li class="notdone"><a href="CMA05-1-AnalyticFunctions.html">The Fundamental Properties of Analytic&nbsp;Functions &nbsp;&nbsp;  <strong>(pp.&nbsp;82-110)</strong></a>
+     <li class="notdone"><a href="CMA05-1-AnalyticFunctions.html">The Fundamental Properties of Analytic&nbsp;Functions &nbsp;&nbsp;  <strong>(pp.&nbsp;82&ndash;110)</strong></a>
      <ol>
           <li>5.1 <a href="CMA05-1-AnalyticFunctions.html#5.1apropertyoftheelementaryfunctions.">A Property of Elementary Functions</a></li>
 	  <li>5.2 <a href="CMA05-2-CauchysTheorem.html#5.2cauchystheoremontheintegralofafunctionroundacontour.">Cauchy&#8217;s Theorem on Contour Integrals</a></li>
@@ -274,7 +274,7 @@ April, 2014.
          <li><a href="CMA05-6-ManyValuedFunctions.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
         </ol>
      </li>
-     <li><a href="CMA06-1-Residues.html">The Theory of Residues &nbsp;&nbsp;  <strong>(pp.&nbsp;111-124)</strong></a>
+     <li><a href="CMA06-1-Residues.html">The Theory of Residues &nbsp;&nbsp;  <strong>(pp.&nbsp;111&ndash;124)</strong></a>
      <ol>
           <li>6.1 <a href="CMA06-1-Residues.html#6.1residues.">Residues</a></li>
 	  <li>6.2 <a href="CMA06-1-Residues.html#6.2theevaluationofdefiniteintegrals.">The Evaluation of Definite Integrals</a></li>
@@ -284,8 +284,22 @@ April, 2014.
          <li><a href="CMA06-3-ConnexionTwixtZeros.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
         </ol>
      </li>
-    <li><a href="CMA07-1-ExpansionOfFunctions.html">The Expansion of Functions in Infinite&nbsp;Series</a></li>
-    <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summable&nbsp;Series</a></li>
+    <li><a href="CMA07-1-ExpansionOfFunctions.html">The Expansion of Functions in Infinite&nbsp;Series &nbsp;&nbsp;  <strong>(pp.&nbsp;125&ndash;149)</strong></a>
+     <ol>
+          <li>7.1 <a href="CMA07-1-ExpansionOfFunctions.html#7.1aformuladuetodarboux.">A Formula due to Darboux</a></li>
+	  <li>7.2 <a href="CMA07-1-ExpansionOfFunctions.html#7.2thebernoulliannumbersandthebernoullianpolynomials.">The Bernoullian Numbers and Bernoullian Polynomials</a></li>
+	  <li>7.3 <a href="CMA07-2-BurmannsTheorem.html#7.3burmannstheorem.">B&uuml;rmann&#8217;s Theorem</a></li>
+	  <li>7.4 <a href="CMA07-3-FactorTheorem.html#7.4theexpansionofaclassoffunctionsinrationalfractions.">The Expansion of Functions in Rational Fractions</a></li>
+	  <li>7.5 <a href="CMA07-3-FactorTheorem.html#7.5theexpansionofaclassoffunctionsasinfiniteproducts.">The Expansion of Functions as Infinite Products</a></li>
+	  <li>7.6 <a href="CMA07-3-FactorTheorem.html#7.6thefactortheoremofweierstrass.">The Factor Theorem of Weierstrass</a></li>
+	  <li>7.7 <a href="CMA07-4-BorelsTheorem.html#7.7theexpansionofaclassofperiodicfunctionsinaseriesofcotangents.">The Expansion of Periodic Functions in a Series of
+Cotangents</a></li>
+	  <li>7.8 <a href="CMA07-4-BorelsTheorem.html#7.8borelstheorem.">Borel&#8217;s Theorem</a></li>
+         <li><a href="CMA07-5-Exercises.html#references."">References</a>
+         <li><a href="CMA07-5-Exercises.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
+        </ol>
+     </li>
+    <li><a href="CMA08-1-AsymptoticExpansion.html">Asymptotic Expansions and Summable&nbsp;Series</a></li>
     <li class="notdone"><a href="whereOwhere.html">Fourier Series and Trigonometrical&nbsp;Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
      <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
@@ -360,8 +374,8 @@ April, 2014.
      <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
      <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
       <li><a href="CMA06-1-Residues.html">The Theory of Residues</a></li>
-     <li class="notdone"><a href="whereOwhere.html">Expanding Functions in Infinite Series</a></li>
-     <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
+     <li><a href="CMA07-1-ExpansionOfFunctions.html">Expanding Functions in Infinite Series</a></li>
+     <li class="notdone"><a href="CMA08-1-AsymptoticExpansion.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
      <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
