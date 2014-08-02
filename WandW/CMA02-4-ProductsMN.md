@@ -119,7 +119,7 @@ This establishes the result.<a class="marginmark" onClick="toggleHide('mn:3,-5')
 
 Consider the infinite product
 \\[\left(1-\frac{z^2}{\pi^2}\right)\left(1-\frac{z^2}{2^2\pi^2}\right)\left(1-\frac{z^2}{3^2\pi^2}\right) \dots ,\\]
-which, as will be proved later ([&#167;7.5](whereOwhere.html)), represents the function \\(z^{-1} \sin z\\). 
+which, as will be proved later ([&#167;7.5](CMA07-3-FactorTheoremMN.html#7.5theexpansionofaclassoffunctionsasinfiniteproducts.)), represents the function \\(z^{-1} \sin z\\). 
 
 In order to find whether it is absolutely convergent, we must consider the \\(\sum\limits_{n=1}^{\infty} \displaystyle \frac{z^2}{n^2\pi^2}\\) or \\(\displaystyle\frac{z^2}{\pi^2} \textstyle \sum\limits_{n=1}^{\infty} \displaystyle \frac{1}{n^2}\\);  this series is absolutely convergent, and so the product is absolutely convergent for all values of \\(z\\). 
 
@@ -143,7 +143,7 @@ and so the absolute convergence of the series in question follows by comparison
 with the series 
 \\[1+1+\frac{1}{2^2}+\frac{1}{2^2}+\frac{1}{3^2}+\frac{1}{3^2}+\frac{1}{4^2}+\frac{1}{4^2}+ \dots .\\]
 
-The infinite product in this last form is therefore again absolutely convergent, the adjunction of the factors \\(e^{\pm\frac{z}{n\pi}}\\) having changed the convergence from conditional to absolute. This result is a particular case of the first part of the factor theorem of Weierstrass ([&#167;7.6](whereOwhere.html)).
+The infinite product in this last form is therefore again absolutely convergent, the adjunction of the factors \\(e^{\pm\frac{z}{n\pi}}\\) having changed the convergence from conditional to absolute. This result is a particular case of the first part of the factor theorem of Weierstrass ([&#167;7.6](CMA07-3-FactorTheoremMN.html#7.6thefactortheoremofweierstrass.)).
 
 >*Example* 1. Prove that \\(\prod\limits_{n=1}^{\infty} \displaystyle \left\{\left(1-\frac{z}{c+n}\right)e^{\frac{z}{n}}\right\}\\) is absolutely convergent for all values of \\(z\\), if \\(c\\) is a constant other than a negative integer. 
 >
