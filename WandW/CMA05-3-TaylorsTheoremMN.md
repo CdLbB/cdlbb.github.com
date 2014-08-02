@@ -164,7 +164,7 @@ is analytic at all points on and inside \\(C\\). Let \\(z = a + h\\) be any poin
 
 
 
-<div markdown=1 class="marginnotes" id="mn:6,-4" style="margin-top: -4em; margin-bottom: -4em;"><a class="marginmark">&#91;6&#93;</a>*Editor's Note*: For those unfamiliar with this expansion, it follows from the geometric series formula, \\[\begin{align*}\sum_{m=0}^n r^m &= \frac{1-r^{n+1}}{1-r} \\ \frac{1}{1-r} &= \sum_{m=0}^n r^m + \frac{r^{n+1}}{1-r}. \end{align*}\\] Hence, if \\(a-b=c\\), \\[\begin{align*}\frac{a}{c} &= \frac{1}{1-\left. \vphantom{g} b \middle/ a \right.} \\ &= \sum_{m=0}^n \left(\frac{b}{a}\right)^m + \frac{b^{n+1}}{a^n c} .\end{align*}\\] Whittaker and Watson make regular use of this expansion (see [&#167;5.6](CMA05-5-LaurentsTheoremMN.html#5.6laurentstheorem.)).<a onClick="hideIt('mn:6,-4')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:6,-4" style="margin-top: -4em; margin-bottom: -4em;"><a class="marginmark">&#91;6&#93;</a>*Editor's Note*: For those unfamiliar with this expansion, it follows from the geometric series formula, \\[\begin{align*}\sum_{m=0}^n r^m &= \frac{1-r^{n+1}}{1-r} \\ \frac{1}{1-r} &= \sum_{m=0}^n r^m + \frac{r^{n+1}}{1-r}. \end{align*}\\] Hence, if \\(a-b=c\\), \\[\begin{align*}\frac{1}{c} &= \frac{1}{a \left(1- \vphantom{g} b \middle/ a \right)} \\ &= \frac{1}{a}\left(\sum_{m=0}^n \left(\frac{b}{a}\right)^m + \frac{b^{n+1}}{a^n c}\right) .\end{align*}\\] Whittaker and Watson make regular use of this expansion (see [&#167;5.6](CMA05-5-LaurentsTheoremMN.html#5.6laurentstheorem.)).<a onClick="hideIt('mn:6,-4')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 
