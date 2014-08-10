@@ -131,11 +131,7 @@ with \\(P_1\\) as origin, and let it converge inside a circle \\(C_1\\); let \\(
 
 <div markdown=1 class="contenttext">
 
->*Example*. The series 
-\\[\frac{1}{a}+\frac{z}{a^2}+\frac{z^2}{a^3}+\frac{z^3}{a^4}+ \cdots\\]
-represents the function
-\\[f(z) = \frac{1}{a - z}\\]
-only for points \\(z\\) within the circle \\(\left|\, z \,\right| = \left|\, a\vphantom{z} \,\right|\\).
+>######*Example*. The series \\[\frac{1}{a}+\frac{z}{a^2}+\frac{z^2}{a^3}+\frac{z^3}{a^4}+ \cdots\\] represents the function \\[f(z) = \frac{1}{a - z}\\] only for points \\(z\\) within the circle \\(\left|\, z \,\right| = \left|\, a\vphantom{z} \,\right|\\). [5.5example]######
 > 
 >But any number of other power series exist, of the type 
 >\\[\frac{1}{a-b}+ \frac{z-b}{(a-b)^2}+\frac{(z-b)^2}{(a-b)^3}+\frac{(z-b)^3}{(a-b)^4} + \cdots ;\\]

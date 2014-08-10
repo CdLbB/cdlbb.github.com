@@ -164,8 +164,7 @@ where \\(n\\) takes all integral values.
 >
 >For \\(\int_0^\xi f(x)\,dx\\) increases with \\(\xi\\) and \\(\int_n^{n+1} f(x)\,dx=\frac{1}{6}(n + 1)^{-2}\\); whence it follows without difficulty that \\(\int_a^\infty f(x)\,dx\\) converges. But when \\(x=n+1-\frac{1}{2}(n + 1)^{-2}\\),  \\(f(x) = \frac{1}{4}\\); and so \\(f(x)\\) does *not* tend to zero.] 
 
-(II) *The Maclaurin-Cauchy[^macandcauchy,-4] test.* If \\(f(x) > 0\\) and \\(f(x) \rightarrow 0\\) steadily, 
-\\(\int_1^\infty f(x)\,dx\\) and \\(\sum_{n=1}^\infty f(x)\\) converge or diverge together. 
+######(II) *The Maclaurin-Cauchy[^macandcauchy,-4] test.* If \\(f(x) > 0\\) and \\(f(x)\rightarrow 0\\) steadily, \\(\int_1^\infty f(x)\,dx\\) and \\(\sum_{n=1}^\infty f(x)\\) converge or diverge together. [4.43ii]######
 
 [^macandcauchy,-4]: Maclaurin ([*Fluxions*, **i.**](https://archive.org/details/atreatiseonflux01maclgoog) pp. 289, 290) makes a verbal statement practically equivalent to this result. Cauchy's result is given in his [*Oeuvres* (2), **vii**](https://archive.org/details/oeuvresdaugusti207caucrich), p. 269. 
 
