@@ -3,14 +3,14 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="latexinput" content="mmd-cambridge-header"/>
-	<title>A Course of Modern Analysis-404 page</title>
+	<title>A Course of Modern Analysis-BorelsTheorem 7-4</title>
 	<meta name="subtitle" content="An introduction to the general theory of
 infinite processes and analytic functions;
 with an account of the principal
 transcendental functions."/>
 	<meta name="author" content="E.T. Whittaker and G.N. Watson"/>
 	<meta name="editor" content="Eric Nitardy"/>
-	<meta name="date" content="May 29, 2012"/>
+	<meta name="date" content="August 3, 2014"/>
 	<meta name="titlefile" content="mmd-WandW-title"/>
 	<meta name="copyrightfile" content="mmd-WandW-copyright"/>
 	<meta name="test" content="And this is a new key-value pair"/>
@@ -18,6 +18,10 @@ transcendental functions."/>
 	<meta name="latexinput" content="mmd-cambridge-begin-doc"/>
 	<meta name="latexfooter" content="mmd-cambridge-footer"/>
 	<link type="text/css" rel="stylesheet" href="css/documentation.css"/>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+<script type="text/javascript" src="js/showhide.js"></script>
+<script type="text/javascript" src="js/mathjaxend.js"></script>
 </head>
 <body>
 
@@ -25,11 +29,790 @@ transcendental functions."/>
 <div id="content">
 <div class="contenttext">
 
-<h2 id="pagenotfound">Page not Found</h2>
+<h3 id="7.7theexpansionofaclassofperiodicfunctionsinaseriesofcotangents.">7.7 The expansion of a class of periodic functions in a series of cotangents.</h3>
 
-<p>This portion of the book is not yet finished. The book is growing gradually. Try the link again in a couple months.</p>
+<p>Let <span class="math">\(f(z)\)</span> be a periodic function of <span class="math">\(z\)</span>, analytic except at a certain
+number of simple poles; for convenience, let <span class="math">\(\pi\)</span> be the period of
+<span class="math">\(f(z)\)</span> so that <span class="math">\(f(z) = f(z + \pi)\)</span>.</p>
+
+<p>Let <span class="math">\(z = x + iy\)</span> and let <span class="math">\(f(z) \rightarrow l\)</span> uniformly with respect
+to <span class="math">\(x\)</span> as <span class="math">\(y \rightarrow +\infty\)</span>,
+when <span class="math">\(0 \leq x \leq \pi\)</span>; similarly let <span class="math">\(f(z) \rightarrow l'\)</span>
+uniformly as <span class="math">\(y \rightarrow -\infty\)</span>.</p>
+
+<p>Let the poles of <span class="math">\(f(z)\)</span> in the strip <span class="math">\(0 < x \leq \pi\)</span> be at
+<span class="math">\(a_{1}\)</span>, <span class="math">\(a_{2}\)</span>, <span class="math">\(\ldots, a_{n}\)</span>; and
+let the residues at them be <span class="math">\(c_{1}\)</span>, <span class="math">\(c_{2}\)</span>, <span class="math">\(\ldots, c_{n}\)</span>.</p>
+
+<p>Further, let <span class="math">\(ABCD\)</span> be a rectangle whose corners are
+<span class="math">\(-i\rho\)</span>, <span class="math">\(\pi - i\rho\)</span>, <span class="math">\(\pi + i\rho'\)</span>, and <span class="math">\(i\rho'\)</span> in order.<a class="marginmark" onClick="toggleHide('mn:1,-1');">&#91;1&#93;</a></p>
+
+</div>
+<div class="marginnotes"  id="mn:1,-1"  style="margin-top: -1em; margin-bottom: -1em;"><a class="marginmark">&#91;1&#93;</a>If any of the poles are on <span class="math">\(x = \pi\)</span>, shift the rectangle slightly to the right; <span class="math">\(\rho, \rho'\)</span> are to be taken so large that <span class="math">\(a_{1}\)</span>, <span class="math">\(a_{2}, \ldots, a_{n}\)</span> are inside the rectangle.<a onClick="hideIt('mn:1,-1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>Consider
+<span class="math">\[
+\frac{1}{2 \pi i}
+\!\int f(t) \cot (t-z) \, d t
+\]</span>
+taken round this rectangle; the residue of the integrand at <span class="math">\(a_{r}\)</span> is
+<span class="math">\(c_{r} \cot (a_{r}-z)\)</span>, and the residue at <span class="math">\(z\)</span> is <span class="math">\(f(z)\)</span>.</p>
+
+<p>Also the integrals along <span class="math">\(DA\)</span> and <span class="math">\(CB\)</span> cancel on account of the
+periodicity of the integrand; and as <span class="math">\(\rho \rightarrow \infty\)</span>,
+the integrand on <span class="math">\(AB\)</span> tends
+uniformly to <span class="math">\(l'\! i\)</span>, while as <span class="math">\(\rho' \rightarrow \infty\)</span>
+the integrand on <span class="math">\(CD\)</span> tends uniformly
+to <span class="math">\(-li\)</span>; therefore
+<span class="math">\[
+\frac{1}{2} (l' + l)
+=
+f(z)
++
+\sum_{r=1}^{n}
+c_{r}
+\cot \:\!(a_{r} - z).
+\]</span></p>
+
+<p>That is to say, we have the expansion
+<span class="math">\[
+f(z)
+=
+\frac{1}{2} (l' + l)
++
+\sum_{r=1}^{n}
+c_{r}
+\cot (z - a_{r}).
+\]</span></p>
+
+<blockquote>
+<p><em>Example</em> 1. Shew
+ <span class="math">\[\begin{align*}
+    \cot (x - a_{1})
+    \cot (x - a_{2})&
+    \cdots
+    \cot (x - a_{n}) \\
+    =&
+    \sum_{r=1}^{n}
+    \cot (a_{r} - a_{1})
+    \cdots
+    *
+    \cdots
+    \cot (a_{r} - a_{n})
+    \cot (x - a_{r})
+    +
+    (-1)^{\frac{1}{2} n},
+    \\
+    \textrm{or}\qquad
+    =&
+    \sum_{r=1}^{n}
+    \cot (a_{r} - a_{1})
+    \cdots
+    *
+    \cdots
+    \cot (a_{r} - a_{n})
+    \cot (x - a_{r}),
+  \end{align*}\]</span>
+according as <span class="math">\(n\)</span> is even or odd, where the &#8216;<span class="math">\(*\)</span>&#8217; means that the factor
+<span class="math">\(\cot (a_{r} - a_{r})\)</span> is omitted.</p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 2. Prove that
+<span class="math">\[\begin{align*}
+  \frac{
+    \sin (x - b_{1})
+    \sin (x - b_{2})
+    \cdots
+    \sin (x - b_{n})
+  }{
+    \sin (x - a_{1})
+    \sin (x - a_{2})
+    \cdots
+    \sin (x - a_{n})
+  } \\ 
+  &\mkern-90mu =
+  \frac{
+    \sin (a_{1} - b_{1})
+    \cdots
+    \sin (a_{1} - b_{n})
+  }{
+    \sin (a_{1} - a_{2})
+    \cdots
+    \sin (a_{1} - a_{n})
+  }
+  \cot (x - a_{1})
+  \\
+  &\mkern-36mu + 
+  \frac{
+    \sin (a_{2} - b_{1})
+    \cdots
+    \sin (a_{2} - b_{n})
+  }{
+    \sin (a_{2} - a_{1})
+    \cdots
+    \sin (a_{2} - a_{n})
+  }
+  \cot (x - a_{2}) + \cdots \\
+&\mkern-54mu \cdots \, + 
+  \frac{
+    \sin (a_{n} - b_{1})
+    \cdots
+    \sin (a_{n} - b_{n})
+  }{
+    \sin (a_{n} - a_{1})
+    \cdots
+    \sin (a_{n} - a_{n-1})
+  }
+  \cot (x - a_{n})
+  \\ 
+  &\mkern-36mu +
+  \cos (a_{1} + a_{2} + \cdots + a_{n}
+  - b_{1} - b_{2} - \cdots - b_{n}).
+\end{align*}\]</span></p>
+</blockquote>
+
+<h3 id="7.8borelstheorem.">7.8 Borel&#8217;s theorem.<a class="marginmark" onClick="toggleHide('mn:2,-1');">&#91;2&#93;</a></h3>
+</div>
+<div class="marginnotes"  id="mn:2,-1"  style="margin-top: -1em; margin-bottom: -1em;"><a class="marginmark">&#91;2&#93;</a><a href="https://archive.org/details/leconssurlesseri00boreuoft"><em>Leçons sur les s&eacute;ries divergentes</em></a> (1901), p. 94. See also the memoirs there cited.<a onClick="hideIt('mn:2,-1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>Let <span class="math">\(f(z) = \sum\limits_{n=0}^{\infty} a_{n} z^{n}\)</span> be analytic when
+<span class="math">\(\left|\, z \,\right| \leq r\)</span>, so that, by
+<a href="CMA05-2-CauchysTheoremMN.html#5.23cauchysinequality.">&#167;5.23</a>,
+<span class="math">\(\left|\,  a_{n} r^{n}  \,\right| < M\)</span>
+where <span class="math">\(M\)</span> is independent of <span class="math">\(n\)</span>.</p>
+
+<p>Hence, if
+<span class="math">\(\phi(z) = \sum\limits_{n=0}^{\infty} \dfrac{a_{n} z^{n}}{n!}\)</span>,
+<span class="math">\(\phi(z)\)</span> is an integral function, and
+<span class="math">\[
+\left|\,  \phi(z)  \,\right|
+<
+\sum_{n=0}^{\infty} \frac{M \left|\, z^{n} \,\right| }{ r^{n} \cdot n!}
+=
+M e^{\left.\left|\:\! z \:\!\right|\middle/r\right.},
+\]</span>
+and similarly
+<span class="math">\(\left|\,  \phi^{(n)}(z)  \,\right| < \dfrac{M e^{\left.\left|\:\! z \:\!\right|\middle/r\right.}}{r^{\:\!n}}\)</span>.</p>
+
+<p>Now consider
+<span class="math">\(f_{1}(z) = \int_{0}^{\infty}\! e^{-t} \phi(zt) \, d t\)</span>;
+this integral is an analytic function
+of <span class="math">\(z\)</span> when <span class="math">\(\left|\, z \,\right| < r\)</span>, by <a href="CMA05-3-TaylorsTheoremMN.html#5.32analyticfunctionsrepresentedbyinfiniteintegrals.">&#167;5.32</a>.</p>
+
+<p>Also, if we integrate by parts,
+<span class="math">\[\begin{align*}
+  f_{1}(z)
+  =&
+  \left[\vphantom{\sum}- e^{-t} \phi(zt) \right]_{0}^{\infty}
+  +
+  z \!\int_{0}^{\infty}\! e^{-t} \phi'(zt) \, d t
+  \\
+  =&
+  \sum_{m=0}^{n}
+  z^{m}
+  \left[\vphantom{\sum} - e^{-t} \phi^{(m)}(zt) \right]_{0}^{\infty}
+  +
+  z^{n+1}
+  \!\int_{0}^{\infty}\!
+  e^{-t} \phi^{(n+1)}(zt) \, d t.
+\end{align*}\]</span></p>
+
+<p>But <span class="math">\(\lim\limits_{t \rightarrow 0} e^{-t} \phi^{(m)}(zt) = a_{m}\)</span>; and,
+when <span class="math">\(\left|\, z \,\right| < r\)</span>,
+<span class="math">\(\lim\limits_{t \rightarrow \infty} e^{-t} \phi^{(m)}(zt) = 0\)</span>.</p>
+
+<p>Therefore
+<span class="math">\[
+f_{1}(z) = \sum_{m=0}^{n} a_{m} z^{m} + R_{n},
+\]</span></p>
+
+<p>where
+<span class="math">\[\begin{align*}
+\left|\,R_{n}\,\right| 
+&<
+\left|\,z^{n+1}\right|\int_0^\infty \! e^{-t} 
+\dfrac{M e^{\left.\left|\:\! zt \:\!\right|\middle/r\right.}}{r^{\:\!n+1}}
+\, d t \\
+&=
+\left|\,\frac{z}{r}\,\right|^{n+1}\!\!
+\frac{M}{1-\left.\left|\,z\,\right|\middle/ r\right.}
+\rightarrow 0 \,\text{ as } \, n \rightarrow \infty .
+\end{align*}\]</span></p>
+
+<p>Consequently, when <span class="math">\(\left|\, z \,\right| < r\)</span>,
+<span class="math">\[
+f_{1}(z) = \sum_{m=0}^{\infty} a_{m} z^{m} = f(z);
+\]</span>
+and so
+<span class="math">\[
+f(z) = \!\int_{0}^{\infty}\! e^{-t} \phi(zt) \, d t,
+\]</span>
+where
+<span class="math">\(
+\phi(z) = \sum\limits_{n=0}^{\infty} \dfrac{a_{n} z^{n}}{n!};
+\)</span>
+is called <em>Borel&#8217;s function</em> associated with
+<span class="math">\(\sum\limits_{n=0}^{\infty} a_{n} z^{n}\)</span>.</p>
+
+<blockquote>
+<p>If
+<span class="math">\(S = \sum\limits_{n=0}^{\infty} a_{n}\)</span>
+and
+<span class="math">\(\phi(z) = \sum\limits_{n=0}^{\infty} \dfrac{a_{n} z^{n}}{n!}\)</span>
+and if we can establish the relation
+<span class="math">\(S = \int_{0}^{\infty}\! e^{-t} \phi(t) \, d t\)</span>,
+the series <span class="math">\(S\)</span> is said <a href="">&#167;8.41</a> to be
+&#8216;<em>summable (B)</em>&#8217;; so that the
+theorem just proved shews that a Taylor&#8217;s series representing an
+analytic function is summable (B).</p>
+</blockquote>
+
+<h4 id="7.81borelsintegralandanalyticcontinuation.">7.81 Borel&#8217;s integral and analytic continuation.</h4>
+
+<p>We next obtain Borel&#8217;s result that his integral represents an analytic
+function in a more extended region than the interior of the circle
+<span class="math">\(\left|\, z \,\right| = r\)</span>.</p>
+
+<figure>
+<img src="W&WIllustration2.svg" alt="Figure 2: Extended region of convergence for Borels integral." id="fig_2" title="Extended region of convergence for Borel's Integral." />
+<figcaption>Figure 2: Extended region of convergence for Borel&#8217;s integral.</figcaption>
+</figure>
+
+<p>This extended region is obtained as follows: take the singularities
+<span class="math">\(a\)</span>, <span class="math">\(b\)</span>, <span class="math">\(c, \ldots\)</span> of <span class="math">\(f(z)\)</span> and through each of them draw a line perpendicular
+to the line joining that singularity to the origin. The lines so drawn
+will divide the plane into regions of which one is a polygon with the
+origin inside it.</p>
+
+<p><em>Then Borel&#8217;s integral represents an analytic function</em>
+(which, by <a href="CMA05-4-AnalyticContinuationMN.html#5.5theprocessofcontinuation.">&#167;5.5</a>
+and <a href="">&#167;7.8</a>, is obviously that defined by <span class="math">\(f(z)\)</span>
+and its continuations)
+<em>throughout the interior of this polygon.</em> The reader will observe that
+this is the first actual formula obtained for the analytic
+continuation of a function, except the trivial one of
+<a href="CMA05-4-AnalyticContinuationMN.html#5.5example">&#167;5.5, example</a>.</p>
+
+<figure>
+<img src="W&WIllustration2a.svg" alt="Figure 2a: Showing Borels integral is analytic at any \(\zeta\\) in the polygon." id="fig_2a" title="Showing Borel's integral is analytic at any \\(\zeta\\) in the polygon." />
+<figcaption>Figure 2a: Showing Borel&#8217;s integral is analytic at any <span class="math">\(\zeta\)</span> in the polygon.</figcaption>
+</figure>
+</div>
+<div class="marginnotes"  id="mn:3,+1"  style="margin-top: +1em; margin-bottom: +1em;"><a class="marginmark">&#91;3&#93;</a>The reader will see this from the figure; for if there were such a singularity the corresponding side of the polygon would pass between <span class="math">\(O\)</span> and <span class="math">\(P\)</span>; \ie, <span class="math">\(P\)</span> would be outside the polygon.<a onClick="hideIt('mn:3,+1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>For, take any point <span class="math">\(P\)</span> with affix <span class="math">\(\zeta\)</span> inside the polygon; then
+the circle with <span class="math">\(OP\)</span> as diameter has no singularity on or inside
+it;<a class="marginmark" onClick="toggleHide('mn:3,+1');">&#91;3&#93;</a> and
+consequently we can draw a slightly
+larger concentric circle <span class="math">\(C\)</span> with no singularity on or inside
+it.<a class="marginmark" onClick="toggleHide('mn:4,-24');">&#91;4&#93;</a> Then, by <a href="CMA05-3-TaylorsTheoremMN.html#5.4taylorstheorem.">&#167;5.4</a>,
+<span class="math">\[
+a_{n}
+=
+\frac{1}{2 \pi i}
+\!\int_{C}\! \frac{f(z)}{z^{n+1}} \, d z,
+\]</span>
+and so
+<span class="math">\[
+\phi(\zeta t)
+=
+\frac{1}{2 \pi i}
+\sum_{n=0}^{\infty}
+\frac{\zeta^{n} t^{n}}{n!}
+\!\int_{C}\! \frac{f(z)}{z^{n+1}} \, d z;
+\]</span>
+but
+<span class="math">\(\sum\limits_{n=0}^{\infty} \dfrac{\zeta^{n} t^{n}}{n!} \dfrac{f(z)}{z^{n+1}}\)</span>
+converges uniformly (<a href="CMA03-2-UniformityMN.html#aconditionduetoweierstrassforuniformconvergence.">&#167;3.34</a>) on <span class="math">\(C\)</span> since
+<span class="math">\(f(z)\)</span> is bounded and <span class="math">\(\left|\, z \,\right| \geq \delta > 0\)</span>, where
+<span class="math">\(\delta\)</span> is independent of <span class="math">\(z\)</span>; therefore, by <a href="CMA04-3-ComplexIntMN.html#4.7integrationofinfiniteseries.">&#167;4.7</a>,
+<span class="math">\[
+\phi(\zeta t)
+=
+\frac{1}{2 \pi i}
+\!\int_{C}\! z^{-1} f(z) \exp(\zeta \:\! t \:\! z^{-1}) \, d z,
+\]</span>
+and so, when <span class="math">\(t\)</span> is real,
+<span class="math">\(\left|\, \phi(\zeta t) \,\right| < F(\zeta) e^{\lambda t}\)</span>,
+where <span class="math">\(F(\zeta)\)</span> is bounded in any closed region lying wholly
+<em>inside</em> the polygon and is independent of <span class="math">\(t\)</span>;
+and <span class="math">\(\lambda\)</span> is the greatest value of the real part of
+<span class="math">\(\left.\zeta \middle/ z\right.\)</span> on <span class="math">\(C\)</span>.</p>
+</div>
+<div class="marginnotes"  id="mn:4,-24"  style="margin-top: -24em; margin-bottom: -24em;"><a class="marginmark">&#91;4&#93;</a>The differeuce of the radii of the circles being, say, <span class="math">\(\delta\)</span>.<a onClick="hideIt('mn:4,-24')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>If we draw the circle traced out by the point <span class="math">\(\left.\zeta \middle/ z\right.\)</span>, we see that
+the real part of <span class="math">\(\left.\zeta \middle/ z\right.\)</span> is greatest when <span class="math">\(z\)</span> is at the extremity of the
+diameter through <span class="math">\(\zeta\)</span>, and so the value of <span class="math">\(\lambda\)</span> is
+<span class="math">\( \left|\, \zeta \,\right| \cdot \left\{\left|\, \zeta \,\right| + \delta\right\}^{-1} < 1\)</span>.</p>
+
+<p>We can get a similar inequality for <span class="math">\(\phi'(\zeta t)\)</span> and hence,
+by <a href="CMA05-3-TaylorsTheoremMN.html#5.32analyticfunctionsrepresentedbyinfiniteintegrals.">&#167;5.32</a>,
+<span class="math">\(\int_{0}^{\infty}\! e^{-t} \phi(\zeta t) \, d t\)</span>
+is analytic at <span class="math">\(\zeta\)</span> and is obviously a one-valued function of
+<span class="math">\(\zeta\)</span>.</p>
+
+<p>This is the result stated above.</p>
+</div>
+<div class="marginnotes"  id="mn:5,-2"  style="margin-top: -2em; margin-bottom: -2em;"><a class="marginmark">&#91;5&#93;</a><a href="http://gallica.bnf.fr/ark:/12148/bpt6k5426516z"><em>M&eacute;m de l&#8217;Acad. des Sci.</em> (Paris, 1717)</a>; see Tweedie, <a href="http://journals.cambridge.org/action/displayIssue?jid=PEM&amp;volumeId=36&amp;seriesId=0&amp;issueId=-1"><em>Proc. Edin. Math. Soc.</em> <strong>xxxvi.</strong> (1917)</a>.<a onClick="hideIt('mn:5,-2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<h4 id="7.82expansionsinseriesofinversefactorials.">7.82 Expansions in series of inverse factorials.</h4>
+</div>
+<div class="marginnotes"  id="mn:6,+0"  style="margin-top: +0em; margin-bottom: +0em;"><a class="marginmark">&#91;6&#93;</a><a href="http://gallica.bnf.fr/ark:/12148/bpt6k62011b">Methodus Differentialis</a> (London, 1730) (or see <a href="https://openlibrary.org/works/OL4843825W/James_Stirling's_Methodus_Differentialis">James Stirling&#8217;s Methodus Differentialis: An Annotated Translation of Stirling&#8217;s Text</a> (2003) &#8211;<em>Editor</em>).<a onClick="hideIt('mn:6,+0')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>A mode of development of functions, which, after being used by
+Nicole<a class="marginmark" onClick="toggleHide('mn:5,-2');">&#91;5&#93;</a>
+and
+Stirling<a class="marginmark" onClick="toggleHide('mn:6,+0');">&#91;6&#93;</a>
+in the eighteenth century, was systematically
+investigated by
+Schl&ouml;milch<a class="marginmark" onClick="toggleHide('mn:7,+0');">&#91;7&#93;</a>
+in 1863, is that of expansion in a series
+of inverse factorials.</p>
+</div>
+<div class="marginnotes"  id="mn:7,+0"  style="margin-top: +0em; margin-bottom: +0em;"><a class="marginmark">&#91;7&#93;</a><a href="https://archive.org/details/compendiumderhh13schlgoog"><em>Compendium der h&ouml;heren Analysis.</em> <strong>ii</strong></a>, p. 89. More recent investigations are due to Kluyver, Nielsen and Pincherle. See <em>Comptes Rendus</em>, <a href="https://archive.org/details/comptesrendusheb1331901acad"><strong>cxxxiii.</strong> (1901)</a>, p. 1273, <a href="https://archive.org/details/comptesrendusheb134acad"><strong>cxxxiv.</strong> (1902)</a>, pp. 157, 587, <em>Annales de l&#8217;École norm. sup.</em> (3), <a href="http://www.numdam.org/numdam-bin/feuilleter?id=ASENS_1902_3_19_"><strong>xix.</strong></a> p. 409, <a href="http://www.numdam.org/numdam-bin/feuilleter?id=ASENS_1904_3_21_"><strong>xxii.</strong></a> p. 449, <a href="http://www.numdam.org/numdam-bin/feuilleter?id=ASENS_1905_3_22_"><strong>xxiii.</strong></a> p. 9, <a href="https://archive.org/details/rendiconti51111902acca"><em>Rendiconti del Lincei</em>, (5), <strong>xi.</strong> (1902)</a>, pp. 139, 417, and <a href="http://babel.hathitrust.org/cgi/pt?id=mdp.39015040422050;view=1up;seq=51"><em>Palermo Rendiconti</em>, <strong>xxxiv.</strong> (1912)</a>, p. 41. Properties of functions defined by series of inverse factorials have been studied in an important memoir by N&ouml;rlund, <a href="https://archive.org/details/actamathematica37upps"><em>Acta Math.</em> <strong>xxxvii</strong>. (1914)</a>, pp. 327&#8211;387.<a onClick="hideIt('mn:7,+0')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>To obtain such an expansion of a function analytic when
+<span class="math">\(\left|\, z \,\right| > r\)</span>, we let
+the function be
+<span class="math">\(f(z) = \sum\limits_{n=0}^{\infty} a_{n} z^{-n}\)</span>,<a class="marginmark" onClick="toggleHide('mn:8,+0');">&#91;8&#93;</a> and use the formula
+<span class="math">\(f(z) = \int\limits_{0}^{\infty}\! z e^{-t\:\!z} \phi(t) \, d t\)</span>,
+where <span class="math">\(\phi(t) = \sum\limits_{n=0}^{\infty} \left.a_{n} t^{n} \middle/ n!\right.\)</span>;
+this result may be obtained in the same way as
+that of <a href="#7.8borelstheorem.">&#167;7.8</a>.</p>
+
+<p>Modify this by writing
+<span class="math">\(e^{-t} = 1 - \xi\)</span>, <span class="math">\(\phi(t) = F(\xi)\)</span>;
+then
+<span class="math">\[
+f(z)
+=
+\!\int_{0}^{1}\!
+z (1 - \xi)^{z-1} F(\xi) \, d \xi.
+\]</span></p>
+</div>
+<div class="marginnotes"  id="mn:8,+0"  style="margin-top: +0em; margin-bottom: +0em;"><a class="marginmark">&#91;8&#93;</a><em>Editor&#8217;s Note</em>: The convergence of this series, in this case implies <span class="math">\(\left|\, a_{n}r^{-n} \,\right| < M\)</span>, for some <span class="math">\(M\)</span>.<a onClick="hideIt('mn:8,+0')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>Now if <span class="math">\(t = u + iv\)</span> and if <span class="math">\(t\)</span> be confined to the strip
+<span class="math">\(-\pi < v < \pi\)</span>, <span class="math">\(t\)</span> is a
+one-valued function of <span class="math">\(\xi\)</span> and <span class="math">\(F(\xi)\)</span> is an analytic function of
+<span class="math">\(\xi\)</span>; and <span class="math">\(\xi\)</span> is
+restricted so that <span class="math">\(-\pi < \arg (1-\xi) < \pi\)</span>. Also the interior of the
+circle <span class="math">\(\left|\, \xi \,\right| = 1\)</span> corresponds
+to the interior of the curve traced out by the point
+<span class="math">\(t = - \log \left(2 \cos \frac{1}{2} \theta\right) + \frac{1}{2} i \theta\)</span>,
+( writing <span class="math">\(\xi= -\exp (-i \theta \:\!)\)</span> ); and inside this curve
+<span class="math">\[
+\left|\, t \,\right| - \mathfrak{Re}(t)
+\leq
+\sqrt{ \left\{\mathfrak{Re}(t)\right\}^{2} + \pi^{2} }
+-
+\mathfrak{Re}(t)
+\rightarrow 0,
+\,\text{ as }\, \mathfrak{Re}(t) \rightarrow \infty .\]</span>
+It follows that, when <span class="math">\(\left|\, \xi \,\right| \leq 1\)</span>,
+<span class="math">\(\left|\, F(\xi) \,\right| < M e^{r\:\!\left|\:\! t \:\!\right|} < M_{1} \left|\, e^{r\:\! t} \,\right|\)</span>,
+where <span class="math">\(M_{1}\)</span> is independent of <span class="math">\(t\:\!\)</span>; and so
+<span class="math">\(F(\xi) < M_{1} \left|\, (1-\xi)^{-r} \;\!\right|\)</span>.</p>
+
+<p>Now suppose that <span class="math">\(0 \leq \xi < 1\)</span>; then, by
+ <a href="CMA05-2-CauchysTheoremMN.html#5.23cauchysinequality.">&#167;5.23</a>,
+<span class="math">\(\left|\, F^{(n)}(\xi) \,\right| < M_{2}\:\! n! \:\!\rho^{-n}\)</span>
+where <span class="math">\(M_{2}\)</span> is the upper bound of
+<span class="math">\(\left|\, F(z) \,\right|\)</span> on a circle with centre <span class="math">\(\xi\)</span> and
+radius <span class="math">\(\rho < 1 - \xi\)</span>.</p>
+</div>
+<div class="marginnotes"  id="mn:9,+1"  style="margin-top: +1em; margin-bottom: +1em;"><a class="marginmark">&#91;9&#93;</a><span class="math">\((1 + x^{-1})^{x}\)</span> increases with <span class="math">\(x\)</span>; for <span class="math">\(\frac{1}{1-y} > e^{y}\)</span>, when <span class="math">\(y < 1\)</span>, and so <span class="math">\(\log \left(\frac{1}{1-y}\right) > y\)</span>. That is to say, putting <span class="math">\(y^{-1} = 1+x\)</span>, <span class="math">\( \frac{d}{d x} x \log (1 + x^{-1})  =  \log(1 + x^{-1})  -  \frac{1}{1+x}  >  0 \)</span>.<a onClick="hideIt('mn:9,+1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>Taking <span class="math">\(\rho = \frac{n}{n+1} (1-\xi)\)</span> and observing
+that
+<span class="math">\((1 + n^{-1})^{n} < e\)</span>,<a class="marginmark" onClick="toggleHide('mn:9,+1');">&#91;9&#93;</a>
+we find that
+<span class="math">\[\begin{align*}
+  \left|\, F^{(n)}(\xi) \,\right|
+  &<
+  M_{1}
+  \left[
+    1
+    -
+    \left\{
+      \xi
+      +
+      \frac{n}{n+1} \xi
+    \right\}
+  \right]^{-r}
+  \!\!\!\cdot  n! \cdot
+  \left\{
+    \frac{n (1-\xi)}{n+1}
+  \right\}^{-n}
+  \\
+  &<
+  M_{1} e (n+1)^{r} n! (1-\xi)^{-r-n}.
+\end{align*}\]</span></p>
+
+<p>Remembering that, by <a href="CMA04-3-ComplexIntMN.html#4.5improperintegrals.principalvalues.">&#167;4.5</a>, <span class="math">\(\int_{0}^{1}\)</span> means
+<span class="math">\(\lim\limits_{\epsilon \rightarrow +0} \int_{0}^{1-\epsilon}\)</span>, we
+have, by repeated integrations by parts,
+<span class="math">\[\begin{align*}
+  f(z)
+  &=
+  \lim_{\epsilon \rightarrow +0}
+  \left[ \vphantom{\sum}
+    -(1 - \xi)^{z} F(\xi)
+  \right]_{0}^{1-\epsilon}
+  +
+  \!\int_{0}^{1 - \epsilon}\!
+  (1 - \xi)^{z} F'(\xi) \, d \xi 
+  \\
+  &=
+  \lim_{\epsilon \rightarrow +0}
+  \left[ \vphantom{\sum}
+    -(1 - \xi)^{z} F(\xi)
+  \right]_{0}^{1 - \epsilon}
+  +
+  \frac{1}{z + 1}
+  \left[ \vphantom{\sum}
+    -(1 - \xi)^{z+1} F'(\xi)
+  \right]_{0}^{1 - \epsilon}
+  \\
+  &
+  \phantom{ \,=\left[ \vphantom{\sum}
+    -(1 - \xi)^{z} F(\xi)
+  \right]_{0}^{1 - \epsilon}\,}
+  +
+  \frac{1}{z + 1}
+  \!\int_{0}^{1 - \epsilon}\!
+  (1 - \xi)^{z+1} F''(\xi) \, d \xi
+  \\ 
+  &=
+  \vphantom{\int}\quad \cdots
+  \\ 
+  &=
+  b_{0}
+  +
+  \frac{b_{1}}{z+1}
+  +
+  \frac{b_{2}}{(z+1)(z+2)}
+  +
+  \cdots
+  +
+  \frac{b_{n}}{(z+1)(z+2)\cdots(z+n)}
+  +
+  R_{n},
+\end{align*}\]</span>
+where
+<span class="math">\[\begin{align*}
+  b_{n}
+  &=
+  \lim_{\epsilon \rightarrow 0}
+  \left[ \vphantom{\sum}
+    -(1-\xi)^{z+n} F^{(n)}(\xi)
+  \right]_{0}^{1 - \epsilon}
+  \\
+  &=
+  F^{(n)}(0),
+\end{align*}\]</span>
+if the real part of <span class="math">\(z+n-r-n>0\)</span>, i.e. if <span class="math">\(\mathfrak{Re}(z) > r\)</span>;
+further
+<span class="math">\[\begin{align*}
+  \left|\, R_{n} \,\right|
+  &\leq 
+  \frac{1}{ \left|\,  (z+1)(z+2)\cdots(z+n)   \,\right|}
+  \lim_{\epsilon \rightarrow 0}
+  \!\int_{0}^{1 - \epsilon}\!
+  \left|\,  (1-\xi)^{z+n} F^{(n+1)}(\xi)  \,\right|
+  \, d \xi
+  \\
+  &<
+  \frac{ M_{1} e (n+2)^{r} n!}{
+    \left|\, (z+1)(z+2)\cdots(z+n) \,\right| \mathfrak{Re}(z-r)}
+  \\
+  &<
+  \frac{ M_{1} e (n+2)^{r} n!}{
+    (r+1+\delta)(r+2+\delta) \cdots (r+n+\delta) \:\!\delta 
+    },
+\end{align*}\]</span>
+where <span class="math">\(\delta = \mathfrak{Re}(z - r)\)</span>.</p>
+
+<p>Now
+<span class="math">\[
+\prod_{m=1}^{n}
+\left\{
+  \left(
+    1
+    +
+    \frac{r + \delta}{m}
+  \right)
+  e^{-\frac{r+\delta}{m}}
+\right\}
+\]</span>
+tends to a limit (<a href="CMA02-4-ProductsMN.html#someexamplesofinfiniteproducts">&#167;2.71</a>) as
+<span class="math">\(n \rightarrow \infty\)</span>, and so <span class="math">\(\left|\, R_{n} \,\right| \rightarrow 0 \)</span>
+if
+<span class="math">\( (n+2)^{r} e^{-(r+\delta) \sum_{1}^{n} \left.1\middle/m\right.} \)</span>
+tends to zero; but
+<span class="math">\[
+\sum_{m=1}^{n} \left.1\middle/m\right.
+>
+\!\int_{1}^{n+1}\! \frac{\, d x}{x}
+=
+\log(n+1),
+\]</span>
+by <a href="CMA04-2-InfiniteIntegralsMN.html#4.43ii">&#167;4.43 (II)</a>,
+and <span class="math">\((n + 2)^{r} (n+1)^{-r-\delta} \rightarrow 0\)</span> when
+<span class="math">\(\delta > 0\)</span>; therefore <span class="math">\(R_{n} \rightarrow 0\)</span> as
+<span class="math">\(n \rightarrow \infty\)</span>, and so, when <span class="math">\(\mathfrak{Re}(z) > r\)</span>,
+we have the convergent expansion
+<span class="math">\[
+f(z)
+=
+b_{0}
++
+\frac{b_{1}}{z+1}
++
+\frac{b_{2}}{(z+1)(z+2)}
++
+\cdots +
+\frac{b_{n}}{(z+1)(z+2)\cdots(z+n)}
++
+\cdots.
+\]</span></p>
+
+<blockquote>
+<p><em>Example</em> 1. Obtain the same expansion by using the results
+<span class="math">\[
+\frac{1}{(z+1)(z+2)\cdots(z+n+1)}
+=
+\frac{1}{n!}
+\!\int_{0}^{1}\! u^{n} (1-u)^{z} \, d u,
+\]</span>
+<span class="math">\[
+\int_{C}\!
+\frac{ f(t) \, d t }{z - t}
+=
+\!\int_{C} \!\, d t
+\!\int_{0}^{1}\!
+f(t) (1-u)^{z-t-1} \, d u.
+\]</span></p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 2. Obtain the expansion
+<span class="math">\[
+\log\left(1 + \frac{1}{z}\right)
+=
+\frac{1}{z}
+-
+\frac{a_{1}}{z(z+1)}
+-
+\frac{a_{2}}{z(z+1)(z+2)}
+-
+\cdots,
+\]</span>
+where
+<span class="math">\[
+a_{n}
+=
+\!\int_{0}^{1}\!
+t \:\! (1-t) (2-t) \cdots (n-1-t) \, d t,
+\]</span>
+and discuss the region in which it converges. <span class="math">\(\vphantom{\\ 3\\}\)</span><br>(Schl&ouml;milch.)</p>
+</blockquote>
 </div>
 </div>
+
+<div id="footer">
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a><br><span style="font-size:63%;">Based on a transcription by </span><a href="https://github.com/bwignall/Whittaker-and-Watson"><span style="font-size:74%;">Brian Wignall.</span></a></h3>
+<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+</div>
+
+<div id="navcauchy" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navfront');">FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
+  <ul>
+    <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
+    <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a>
+    <li><a href="CMA07-1-ExpansionOfFunctionsMN.html">Expanding Functions in Infinite Series</a>
+      <ul>
+        <li><a href="CMA07-1-ExpansionOfFunctionsMN.html#7.1aformuladuetodarboux.">A formula due to Darboux</a>
+        <li><a href="CMA07-1-ExpansionOfFunctionsMN.html#7.2thebernoulliannumbersandthebernoullianpolynomials.">The Bernoullian numbers</a></li>
+        <li ><a href="CMA07-2-BurmannsTheoremMN.html#7.3burmannstheorem.">B&uuml;rmann&#8217;s Theorem</a></li>
+    <li><a href="CMA07-3-FactorTheoremMN.html#7.4theexpansionofaclassoffunctionsinrationalfractions.">Expansion of functions in rationals</a></li>
+        <li><a href="CMA07-3-FactorTheoremMN.html#7.5theexpansionofaclassoffunctionsasinfiniteproducts.">Expansion of functions as products</a></li>
+    <li><a href="CMA07-3-FactorTheoremMN.html#7.6thefactortheoremofweierstrass.">The Factor Theorem of Weierstrass</a></li>
+        <li class="current"><a href="#7.7theexpansionofaclassofperiodicfunctionsinaseriesofcotangents.">Expansion of functions in cotangents</a></li>
+    <li class="current"><a href="CMA07-4-BorelsTheoremMN.html#7.8borelstheorem.">Borel&#8217;s Theorem</a> 
+           <ul>
+         <li><a href="#7.81borelsintegralandanalyticcontinuation.">Borel&#8217;s integral and analytic continuation.</a> </li>
+         <li><a href="#7.82expansionsinseriesofinversefactorials.">Expansions in series of inverse factorials.</a> </li>
+           </ul>
+            </li>
+        <li><a href="CMA07-5-ExercisesMN.html#references.">References</a></li>
+        <li><a href="CMA07-5-ExercisesMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
+      </ul>
+    </li>
+    <li><a href="CMA08-1-AsymptoticExpansionMN.html">Asymptotic Expansions and Summable Series</a></li>
+    <li class="more"><a onClick="hideIt('navcauchy');showIt('navprocesses');"> more . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navcauchy');showIt('navback');">BACKMATTER</a> 
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponentialMN.html">Appendix</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfront" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a>FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-FrontMN.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-FrontMN.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-FrontMN.html#preface">Preface</a></li>
+    <li><a href="CMA00-FrontMN.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navfront');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navprocesses" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
+<li class="part"><a>PROCESSES OF ANALYSIS</a>
+  <ul >
+    <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
+    <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
+     <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
+      <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
+     <li><a href="CMA07-1-ExpansionOfFunctionsMN.html">Expanding Functions in Infinite Series</a></li>
+     <li class="more current"><a onClick="showIt('navcauchy');hideIt('navprocesses');"> you are here . . . </a></li>
+     <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navtranscendental" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navtranscendental');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
+  <ul>
+    <li class="notdone"><a href="whereOwhere.html">The Gamma Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Zeta Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Legendre Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Bessel Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Mathieu Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lam&eacute;&#8217;s Equation</a></li> 
+  </ul>
+  </li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navback" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navcauchy');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a>BACKMATTER</a>
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponentialMN.html">Appendix</a></li>
+    <li ><a href="whereOwhere.html">Authors Quoted</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfixedleft" class="fixedBleft">
+<p><a href="CMA07-3-FactorTheoremMN.html">&#x25C0;</a></p>
+</div>
+
+<div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
+<p><a onClick="hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');showIt('navcauchy');" style="float: left;">&#x25A4;</a> <a href="CMA07-5-ExercisesMN.html" style="float: right;">&#x25B6;</a></p>
+</div>
+
+<div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;" >
+<p><a onClick="hideIt('navcauchy');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA07-5-ExercisesMN.html" style="float: right;">&#x25B6;   </a></p>
+</div>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=9773061; 
+var sc_invisible=1; 
+var sc_security="6fa476f1"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="site stats"
+href="http://statcounter.com/free-web-stats/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/9773061/0/6fa476f1/1/"
+alt="site stats"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
 
 </body>
 </html>
