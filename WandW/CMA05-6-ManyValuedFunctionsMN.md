@@ -171,7 +171,7 @@ shew that the remainder after \\(n - 1\\) terms is
 where \\[\lambda_n(z)=-1+z-\frac{z^2}{2!}+\frac{z^3}{3!}- \cdots (-1)^n\frac{z^n}{n!},\\]
 and where \\(\phi(z)\\) is analytic near \\(z=0\\), is convergent near the point \\(z=0\\); and shew that if the sum of the series be denoted by \\(f(z)\\), then \\(f(z)\\) satisfies the differential equation 
 \\[f'(z)=f(z)-\phi(z).\\]
-(Pincherle, [*Rend. dei Lincei* (5), **v.** (1896)](http://babel.hathitrust.org/cgi/pt?id=njp.32101077264388;view=1up;seq=33), p. 27.) 
+(Pincherle, [*Rend. dei Lincei* (5), **v.** (1896)](https://archive.org/stream/rendiconti5518961acca#page/26/mode/2up), p. 27.) 
 
 11. Shew that the arithmetic mean of the squares of the moduli of all the values of the series \\(\sum\limits_{n=0}^\infty a_n z^n\\) on a circle \\(\left|\,z\,\right|=r\\), situated within its circle of convergence, is equal to the sum of the squares of the moduli of the separate terms.\\(\vphantom{\\ 3\\}\\)<br>
 (Gutzmer, [*Math. Ann.* **xxxii.** (1888)](http://www.digizeitschriften.de/dms/toc/?PPN=PPN235181684_0032), pp. 596-600.) 
