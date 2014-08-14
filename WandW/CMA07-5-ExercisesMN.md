@@ -448,11 +448,11 @@ HTML header:	<script type="text/javascript"
     \\[G_{n}=\left|
 \begin{array}{ccccccc}
 & 2a_1 & a_0 & \ 0 & 0 & \cdots  & 0 & \\
-& 4a_2 & 3a_1 & \phantom{\cdots} 2a_0 \phantom{\cdots}& 0 & \phantom{\cdots} \cdots \phantom{\cdots} & 0 & \\
+& 4a_2 & 3a_1 & 2a_0 &  0  &  \cdots  & 0 & \\
 & 6a_3 & 5a_2 & 4a_1 & 3a_0 & \cdots & 0 & \\
-& \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \\
-& (2n-2)a_{n-1}& \cdots & \cdots & \cdots & \cdots & (n-1)a_0 & \\
-& na_{n}& (n-1)a_{n-1} & \cdots & \cdots & \cdots & a_1 & \\
+& \vdots & \vdots & \vdots & \ddots & \ddots & \vdots & \\
+& \mkern-15mu (2n-2)a_{n-1}\mkern-16mu &  & \cdots &  & \ddots & \mkern-10mu (n-1)a_0 \mkern-12mu  & \\
+&  na_{n}&\mkern-14mu (n-1)a_{n-1}\mkern-16mu  &  & \cdots &  & a_1 & \\
 \end{array} \right|
 \\]
     and obtain a similar expression for
@@ -724,7 +724,8 @@ HTML header:	<script type="text/javascript"
      \right].
     \\]
     Hence, by using [&#167;6.3](CMA06-2-CauchysIntegralMN.html#6.3cauchysintegral.), 
-    [&#167;6.31](CMA06-2-CauchysIntegralMN.html#6.31thenumberofrootsofanequationcontainedwithinacontour.), obtain Lagrange's theorem.
+    [&#167;6.31](CMA06-2-CauchysIntegralMN.html#6.31thenumberofrootsofanequationcontainedwithinacontour.), 
+    obtain [Lagrange's theorem](CMA07-2-BurmannsTheoremMN.html#7.32lagrangestheorem.).
 
 
 
