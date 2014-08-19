@@ -64,7 +64,7 @@ function of \\(x\\) throughout the range, and so \\(\lim\limits_{x \, \rightarro
 
 
 
-<div markdown=1 class="marginnotes" id="mn:2,-1" style="margin-top: -1em; margin-bottom: -1em;"><a class="marginmark">&#91;2&#93;</a>[*Journal f&uuml;r Math.* **i.** (1826)](http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0001), pp. 311-339, Theorem **vi.** This is Abel's original proof. In some text-books a more elaborate proof, by the use of Cesaro's sums ([&#167;8.43](whereOwhere.html)), is given.<a onClick="hideIt('mn:2,-1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+<div markdown=1 class="marginnotes" id="mn:2,-1" style="margin-top: -1em; margin-bottom: -1em;"><a class="marginmark">&#91;2&#93;</a>[*Journal f&uuml;r Math.* **i.** (1826)](http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0001), pp. 311-339, Theorem **vi.** This is Abel's original proof. In some text-books a more elaborate proof, by the use of Cesaro's sums ([&#167;8.43](CMA08-2-MethodsOfSummationMN.html#8.43cesarosmethodofsummation.)), is given.<a onClick="hideIt('mn:2,-1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
 
 </div>
 

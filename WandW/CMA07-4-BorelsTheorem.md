@@ -255,7 +255,7 @@ and
 \\(\phi(z) = \sum\limits_{n=0}^{\infty} \dfrac{a_{n} z^{n}}{n!}\\)
 and if we can establish the relation
 \\(S = \int_{0}^{\infty}\! e^{-t} \phi(t) \, d t\\),
-the series \\(S\\) is said [§8.41]() to be
+the series \\(S\\) is said [§8.41](CMA08-2-MethodsOfSummation.html#8.41borelsmethodofsummation.) to be
 '*summable (B)*'; so that the
 theorem just proved shews that a Taylor's series representing an
 analytic function is summable (B).

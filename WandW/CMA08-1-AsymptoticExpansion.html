@@ -3,14 +3,14 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="latexinput" content="mmd-cambridge-header"/>
-	<title>A Course of Modern Analysis-404 page</title>
+	<title>A Course of Modern Analysis-AsymtoticExsansion-8-1</title>
 	<meta name="subtitle" content="An introduction to the general theory of
 infinite processes and analytic functions;
 with an account of the principal
 transcendental functions."/>
 	<meta name="author" content="E.T. Whittaker and G.N. Watson"/>
 	<meta name="editor" content="Eric Nitardy"/>
-	<meta name="date" content="May 29, 2012"/>
+	<meta name="date" content="Aug 15, 2014"/>
 	<meta name="titlefile" content="mmd-WandW-title"/>
 	<meta name="copyrightfile" content="mmd-WandW-copyright"/>
 	<meta name="test" content="And this is a new key-value pair"/>
@@ -18,6 +18,10 @@ transcendental functions."/>
 	<meta name="latexinput" content="mmd-cambridge-begin-doc"/>
 	<meta name="latexfooter" content="mmd-cambridge-footer"/>
 	<link type="text/css" rel="stylesheet" href="css/documentation.css"/>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+<script type="text/javascript" src="js/showhide.js"></script>
+<script type="text/javascript" src="js/mathjaxend.js"></script>
 </head>
 <body>
 
@@ -25,11 +29,512 @@ transcendental functions."/>
 <div id="content">
 <div class="contenttext">
 
-<h2 id="pagenotfound">Page not Found</h2>
+<h2 id="asymptoticexpansionsandsummableseries">Asymptotic Expansions and Summable Series</h2>
 
-<p>This portion of the book is not yet finished. The book is growing gradually. Try the link again in a couple months.</p>
+<h3 id="8.1simpleexampleofanasymptoticexpansion.">8.1 Simple example of an asymptotic expansion.</h3>
+
+<p>Consider the function <span class="math">\(f(x) = \!\int_x^\infty \! t^{-1}e^{x-t} \, d t\)</span>, where <span class="math">\(x\)</span> is real and positive, and the path of integration is the real axis. </p>
+
+<p>By repeated integrations by parts, we obtain
+<span class="math">\[
+     f(x)=\frac{1}{x}-\frac{1!}{x^2}+\frac{2!}{x^3}- 
+     \cdots +\frac{(-1)^{n-1}(n-1)!}{x^n} +
+     (-1)^n n! \! \int_x^\infty \! \frac{e^{x-t}}{t^{n+1}} dt. 
+\]</span></p>
+
+<p>In connexion with the function <span class="math">\(f(x)\)</span>, we therefore consider the expression
+<span class="math">\[ 
+     u_{n-1} = \frac{(-1)^{n-1}(n-1)!}{x^n}, 
+\]</span>
+and we shall write
+<span class="math">\[ 
+     \sum_{m=0}^n
+     \frac{1}{x} - \frac{1!}{x^2} + \frac{2!}{x^3}- 
+     \cdots + \frac{(-1)^n n!}{n^{n+1}} = 
+     S_{n}(x) . 
+\]</span>
+Then we have <span class="math">\(\left|\, u_m \middle/ u_{m-1} \,\right| = mx^{-1} \rightarrow \infty \)</span> as <span class="math">\(m \rightarrow \infty\)</span>. <em>The series <span class="math">\(\sum u_m\)</span> m is therefore divergent for all values of <span class="math">\(x\)</span></em>. In spite of this, however, the series can be used for the calculation of <span class="math">\(f(x)\)</span>; this can be seen in the following way. </p>
+
+<p>Take any fixed value for the number <span class="math">\(n\)</span>, and calculate the value of <span class="math">\(S_n\)</span>.
+We have
+<span class="math">\[ 
+      f(x) - S_n (x)  =
+     (-1)^{n+1} (n + 1) !  \! \int_x^\infty \! \frac{e^{x-t}}{t^{n+2}} dt ,
+\]</span>
+and therefore, since <span class="math">\(e^{x-t} \leq 1\)</span>,
+<span class="math">\[ 
+     \left|\, f(x) - S_n (x) \,\right| =
+     (n + 1) !  \! \int_x^\infty \! \frac{e^{x-t}}{t^{n+2}} dt <
+      (n+1)! \! \int_x^\infty \! \frac{dt}{t^{n+2}} =
+      \frac{n!}{x^{n+1}}.
+\]</span>
+For values of <span class="math">\(x\)</span> which are sufficiently large, the right-hand member of this equation is very small. Thus, if we take <span class="math">\(x \geq 2n\)</span>, we have
+<span class="math">\[
+       \left|\, f(x) - S_n (x) \,\right| < \frac{1}{2^{n+1} n^2} , 
+\]</span>
+which for large values of <span class="math">\(n\)</span> is very small. It follows therefore that
+<em>the value of the function <span class="math">\(f(x)\)</span> can be calculated with great accuracy for large values of <span class="math">\(x\)</span>, by taking the sum of a suitable number of terms of the series <span class="math">\(\sum u_m\)</span></em>. </p>
+
+<blockquote>
+<p>Taking even fairly small values of <span class="math">\(x\)</span> and <span class="math">\(n\)</span>,
+<span class="math">\[
+     S_5 (10) = 0.09152,\,\text{ and } \, 0 < f(10) - S_5 (10) < 0.00012. 
+\]</span></p>
+</blockquote>
+
+<p>The series is on this account said to be an asymptotic expansion of the
+function <span class="math">\(f(x)\)</span>. The precise definition of an <em>asymptotic expansion</em> will now be given. </p>
+
+<h3 id="8.2definitionofanasymptoticexpansion.">8.2 Definition of an asymptotic expansion.</h3>
+
+<p>A divergent series
+<span class="math">\[
+     A_0 + \frac{A_1}{x} + \frac{A_2}{x^2} + 
+     \cdots + \frac{A_n}{x^n} + \cdots ,
+\]</span></p>
+
+<p>in which the sum of the first <span class="math">\((n + 1)\)</span> terms is <span class="math">\(S_n (z)\)</span>, is said to be an <em>asymptotic expansion</em> of a function <span class="math">\(f(z)\)</span> for a given range of values of <span class="math">\(\arg z\)</span>, if the
+expression <span class="math">\(R_n (z) = z^n \!\left\{f(z) - S_n (z)\right\}\)</span> satisfies the condition
+<span class="math">\[
+     \lim_{\left|\;\! z \;\!\right|\:\!\rightarrow\:\! \infty}
+     R_n (z) = 0 \quad\text{(}\:\! n\,\text{ fixed)}, 
+\]</span>
+even though
+<span class="math">\[
+     \lim_{n \:\!\rightarrow\:\! \infty}
+     R_n (z) = 0 \quad\text{(}\:\! z\,\text{ fixed)}. 
+\]</span> </p>
+
+<p>When this is the case, we can make
+<span class="math">\[
+     \left|\,
+     z^n \!\left\{f(z) - S_n (z)\right\}
+     \,\right| < \epsilon,
+\]</span>
+where <span class="math">\(\epsilon\)</span> can be made arbitrarily small, by taking <span class="math">\(\left|\;\! z \;\!\right|\)</span> sufficiently large. </p>
+
+<p>We denote the fact that the series is the asymptotic expansion of <span class="math">\(f(z)\)</span> by
+writing
+<span class="math">\[
+     f(z) \sim \sum_{n=0}^\infty A_n z^{-n}
+\]</span></p>
+
+<p>The definition which has just been given is due to Poincaré.<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a> Special asymptotic expansions had, however, been discovered and used in the
+eighteenth century by Stirling, Maclaurin and Euler. Asymptotic expansions are of great importance in the theory of Linear Differential Equations,
+and in Dynamical Astronomy; some applications will be given in subsequent
+chapters of the present work. </p>
+
+<p>The example discussed in <a href="#8.1simpleexampleofanasymptoticexpansion.">§8.l</a> clearly satisfies the definition just
+given: for, when <span class="math">\(x\)</span> is positive,
+<span class="math">\[
+     \left|\,
+     x^n \!\left\{f(x) - S_n (x)\right\}
+     \,\right| 
+     < n! \:\! x^{-1} \rightarrow 0 \, \text{ as }\, x \rightarrow \infty .
+\]</span>
+For the sake of simplicity, in this chapter we shall for the most part consider
+asymptotic expansions only in connexion with real positive values of the argument.
+The theory for complex values of the argument may be discussed by an extension of the
+analysis. </p>
+
+<h4 id="8.21anotherexampleofanasymptoticexpansion.">8.21 Another example of an asymptotic expansion.</h4>
+
+<p>As a second example, consider the function <span class="math">\(f(x)\)</span>, represented by the series
+<span class="math">\[
+     f(x)= \sum_{k=1}^\infty \frac{c^k}{x+k} ,
+\]</span>
+where <span class="math">\(x > 0\)</span> and <span class="math">\(0 < c < 1\)</span>. </p>
+
+<p>The ratio of the <span class="math">\(k\)</span>-th term of this series to the <span class="math">\((k - 1)\)</span>th is less than <span class="math">\(c\)</span>, and consequently
+the series converges for all positive values of <span class="math">\(x\)</span>. We shall confine our attention to positive
+values of <span class="math">\(x\)</span>. We have, when <span class="math">\(x > k\)</span>,
+<span class="math">\[
+     \frac{1}{x+k}=\frac{1}{x} - \frac{k}{x^2} + \frac{k^2}{x^3} -
+     \frac{k^3}{x^4} + \frac{k^4}{x^5} -\cdots .
+\]</span>
+If, therefore, it were allowable to expand each fraction <span class="math">\(\dfrac{1}{x+k}\)</span>, in this way,<a href="#fn:2" id="fnref:2" title="see footnote" class="footnote">[2]</a> and to rearrange the series for <span class="math">\(f(x)\)</span> in descending powers of <span class="math">\(x\)</span>, we should obtain the formal series
+<span class="math">\[
+     \frac{A_1}{x} + \frac{A_2}{x^2} + \cdots + \frac{A_n}{x^n} + \cdots ,
+\]</span>
+where
+<span class="math">\[
+     A_n = (-1)^{n-1} \sum_{k=1}^\infty k^{n-1} c^k . 
+\]</span>
+ But this procedure is not legitimate, and in fact <span class="math">\(\sum_{n=1}^\infty A_n x^{-n}\)</span> diverges.<a href="#fn:3" id="fnref:3" title="see footnote" class="footnote">[3]</a> We can, however, shew that it is an asymptotic expansion of <span class="math">\(f(x)\)</span>. </p>
+
+<p>For let
+<span class="math">\[
+     S_n (x) = \frac{A_1}{x} + \frac{A_2}{x^2} + 
+     \cdots + \frac{A_{n+1}}{x^{n+1}}
+\]</span>
+Then
+<span class="math">\[
+     \begin{align*}
+     S_n (x) &= \sum_{k=1}^\infty 
+     \left(
+     \frac{c^k}{x} - \frac{kc^k}{x^2} + \frac{k^2 c^k}{x^3} +
+     \cdots + \frac{(-1)^n k^n c^k}{x^{n+1}}
+     \right) \\
+     &=
+     \sum_{k=1}^\infty 
+     \left\{
+          1- 
+          \left(
+           -\frac{k}{x}
+           \right)^{n+1}
+      \!\right\}
+      \frac{c^k}{x+k};
+     \end{align*}
+\]</span>
+so that
+<span class="math">\[
+     \left|\, f(x)-S_n (x) \,\right| = 
+     \left|\, 
+          \sum_{k=1}^\infty 
+          \left( -\frac{k}{x}\right)^{n+1}\!
+          \frac{c^k}{x+k}
+     \,\right| <
+     x^{-n-2} \sum_{k=1}^\infty k^{n+1} c^k .
+\]</span></p>
+
+<p>Now <span class="math">\(\sum\limits_{k=1}^\infty k^{n+1} c^k\)</span> converges for any given value of <span class="math">\(n\)</span> and is equal to <span class="math">\(C_n\)</span>, say; and hence <span class="math">\(\left|\, f(x)-S_n (x) \,\right| < C_n x^{-n-2} \)</span>.</p>
+
+<p>Consequently
+<span class="math">\[
+      f(x) \sim  \sum_{n=1}^\infty A_n x^{-n} . 
+\]</span></p>
+
+<blockquote>
+<p><em>Example</em>. If <span class="math">\(f(x) = \displaystyle \!\int_x^\infty \! e^{x^2-t^2}  dt\)</span>, where <span class="math">\(x\)</span> is positive and the path of integration is the real axis, prove that
+<span class="math">\[
+     f(x) \sim 
+     \frac{1}{2x} - \frac{1}{2^2 x^3} +
+     \frac{1\cdot 3}{2^3 x^5} - 
+     \frac{1\cdot 3 \cdot 5}{2^4 x^7} + 
+     \cdots .
+\]</span>
+[In fact, it was shewn by Stokes in 1857 that
+<span class="math">\[
+     \int_0^\infty \! e^{x^2-t^2}  dt \,\sim\,
+     \pm \frac{1}{2}e^{x^2}\! \sqrt{\pi} -
+     \left(
+     \frac{1}{2x} - \frac{1}{2^2 x^3} +
+     \frac{1\cdot 3}{2^3 x^5} - 
+     \frac{1\cdot 3 \cdot 5}{2^4 x^7} + 
+     \cdots 
+     \right);
+\]</span>
+the upper or lower sign is to be taken according as <span class="math">\(-\frac{1}{2}\pi < \arg x < \frac{1}{2}\pi\)</span> or <span class="math">\(\frac{1}{2}\pi < \arg x < \frac{3}{2}\pi\)</span>.] </p>
+</blockquote>
+
+<h3 id="8.3multiplicationofasymptoticexpansions.">8.3 Multiplication of asymptotic expansions.</h3>
+
+<p>We shall now shew that two asymptotic expansions, valid for a common
+range of values of <span class="math">\(\arg z\)</span>, can be multiplied together in the same way as
+ordinary series, the result being a new asymptotic expansion. </p>
+
+<p>For let
+<span class="math">\[
+     f(z) \sim \sum_{m=0}^\infty A_m z^{-m}, \quad \phi(z) \sim \sum_{m=0}^\infty B_m z^{-m},
+\]</span>
+and let <span class="math">\(S_n (z)\)</span> and <span class="math">\(T_n (z)\)</span> be the sums of their first <span class="math">\((n + 1)\)</span> terms; so that, <span class="math">\(n\)</span> being fixed,
+<span class="math">\[
+     f(z) - S_n(z) = o(z^{-n}), \quad \phi(z) - T_n(z) = o(z^{-n}).
+\]</span>
+Then, if <span class="math">\(C_m = A_0 B_m+A_1 B_{m-1}+\cdots +A_m B_0\)</span>, it is obvious that<a href="#fn:4" id="fnref:4" title="see footnote" class="footnote">[4]</a>
+<span class="math">\[
+     S_n (z)T_n (z) = \sum_{m=0}^n C_m z^{-m} + o(z^{-n}). 
+\]</span>
+But
+<span class="math">\[\begin{align*}
+     f(z) \phi (z) 
+     &=
+     \left\{
+          S_n (z) + o(z^{-n})
+     \right\} \!
+     \left\{
+          T_n(z)+ o(z^{-n})
+     \right\}  \\
+     &=
+     S_n(z)T_n(z) + o(z^{-n})
+     \vphantom{\sum^n} \\
+     &=
+     \sum_{m=0}^n C_m z^{-m} + o(z^{-n}). 
+\end{align*}\]</span></p>
+
+<p>This result being true for <em>any</em> fixed value of <span class="math">\(n\)</span>, we see that
+<span class="math">\[
+     f(z)\phi(z) \sim \sum_{m=0}^\infty C_m z^{-m}.
+\]</span></p>
+
+<h4 id="8.31integrationofasymptoticexpansions.">8.31 Integration of asymptotic expansions.</h4>
+
+<p>We shall now shew that it is permissible to integrate an asymptotic
+expansion term by term, the resulting series being the asymptotic expansion
+of the integral of the function represented by the original series.<a href="#fn:5" id="fnref:5" title="see footnote" class="footnote">[5]</a> </p>
+
+<p>For let <span class="math">\(f(x) \sim \sum\limits_{m=2}^\infty A_m x^{-n}\)</span>, and let <span class="math">\(S_n (x) = \sum\limits_{m=2}^n A_m x^{-n}\)</span>.
+Then, given any positive number <span class="math">\(\epsilon\)</span>, we can find <span class="math">\(x_0\)</span> such that
+<span class="math">\[
+     \left|\, f(x) - S_n (x) \,\right| < 
+     \epsilon \:\! \left|\, x \,\right|^{-n}
+     \,\text{ when }\,  x > x_0 , 
+\]</span>
+and therefore
+<span class="math">\[\begin{align*}
+     \left|
+           \int_x^\infty \! f(x) \, d x  - 
+           \! \int_x^\infty \! S_n (x) \, d x 
+      \, \right| 
+      &\leq
+      \! \int_x^\infty \! 
+      \left| \,
+           f(x) - S_n (x)
+      \,\right| \, d x\\
+      &<
+      \frac{\epsilon}{(n-1)\:\! x^{n-1}} .
+\end{align*}\]</span>
+But
+<span class="math">\[
+     \int_x^\infty \! S_n (x) \, d x =
+     \frac{A_2}{x} + \frac{A_3}{2x^2} + 
+     \cdots + \frac{A_n}{(n-1)\:\! x^{n-1}},
+\]</span>
+and therefore
+<span class="math">\[
+     \int_x^\infty \! f(x) \, d x 
+     \sim 
+     \sum_{m=2}^\infty \frac{A_m}{(m-1)\:\! x^{m-1}}.
+\]</span></p>
+
+<p>On the other hand, it is not in general permissible to differentiate an asymptotic expansion;<a href="#fn:6" id="fnref:6" title="see footnote" class="footnote">[6]</a> this may be seen by considering <span class="math">\(e^{-x} \sin (e^x)\)</span>.</p>
+
+<h4 id="8.32uniquenessofanasymptoticexpansion.">8.32 Uniqueness of an asymptotic expansion.</h4>
+
+<p>A question naturally suggests itself, as to whether a given series can be
+the asymptotic expansion of several distinct functions. The answer to this
+is in the affirmative. To shew this, we first observe that there are functions
+<span class="math">\(L \:\!(x)\)</span> which are represented asymptotically by a series all of whose terms are
+zero, i.e. functions such that <span class="math">\(\lim\limits_{x \rightarrow \infty} x^n L \:\! (x) = 0\)</span> for every fixed value of <span class="math">\(n\)</span>. The function <span class="math">\(e^{-x}\)</span> is such a function when <span class="math">\(x\)</span> is positive. The asymptotic expansion of a function <span class="math">\(J (x)\)</span><a href="#fn:7" id="fnref:7" title="see footnote" class="footnote">[7]</a> is therefore also the asymptotic expansion of
+<span class="math">\[
+     J(x) + L \:\!(x). 
+\]</span></p>
+
+<p>On the other hand, a function cannot be represented by more than one distinct
+asymptotic expansion over the whole of a given range of values of <span class="math">\(z\)</span>; for, if
+<span class="math">\[
+     f(z) \sim \sum_{m=0}^\infty A_m z^{-m}, \quad f(z) \sim \sum_{m=0}^\infty B_m z^{-m},
+\]</span>
+then
+<span class="math">\[
+     \lim_{z \rightarrow \infty} z^n 
+     \left(
+          A_0 + \frac{a_1}{z} + 
+          \cdots + \frac{A_n}{z^n}-B_0 - \frac{B_1}{z} -
+          \cdots - \frac{B_n}{z^n}
+     \right) = 0 ,
+\]</span>
+which can only be if <span class="math">\(A_0 = B_0;\; A_1 = B_1, \cdots \)</span>. </p>
+
+<p>Important examples of asymptotic expansions will be discussed later, in connexion with the Gamma-function (<a href="whereOwhere.html">Chapter <strong>xii</strong></a>)
+and Bessel functions (<a href="whereOwhere.html">Chapter <strong>xvii</strong></a>). </p>
+
 </div>
 </div>
+
+<div id="footer">
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/"> GitHub.</a></h3>
+<h4>All content is either in the public domain or licensed under <a href="http://creativecommons.org/licenses/by/3.0/us/">a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h4>Feel free to report typos and other issues on <span style="font-weight: 400;"><a href="https://github.com/CdLbB/cdlbb.github.com/tree/master/WandW">GitHub</a></span> or by email at <span style="font-weight: 400;"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#110;&#x69;&#x74;&#104;&#x61;&#114;&#100;&#x74;&#x40;&#x75;&#x77;&#46;&#101;&#x64;&#x75;">&#x6e;&#x69;&#116;&#x68;&#x61;&#114;&#100;&#x74;&#x40;&#117;&#119;&#x2e;&#101;&#x64;&#x75;</a></span>.</h4>
+</div>
+
+<div id="navaprop" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navaprop');showIt('navfront');">FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navaprop');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
+  <ul>
+    <li class="more"><a onClick="hideIt('navaprop');showIt('navprocesses');"> more . . . </a></li>
+    <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
+    <li><a href="#asymptoticexpansionsandsummableseries">Asymptotic Expansions and Summable Series</a>
+      <ul>
+        <li class="current"><a href="#8.1simpleexampleofanasymptoticexpansion.">A simple asymptotic expansion</a></li>
+    <li class="current"><a href="#8.2definitionofanasymptoticexpansion.">Definition of an asymptotic expansion</a>
+          <ul>
+              <li><a href="#8.21anotherexampleofanasymptoticexpansion.">Another asymptotic expansion</a></li>
+          </ul>   
+       </li>
+       <li class="current"><a href="#8.3multiplicationofasymptoticexpansions.">Multiplication of asymptotic expansions</a>
+          <ul>
+              <li><a href="#8.31integrationofasymptoticexpansions.">Integration of asymptotic expansions</a></li>
+              <li><a href="#8.32uniquenessofanasymptoticexpansion.">Uniqueness of an asymptotic expansion</a></li>
+          </ul>   
+       </li>       
+       <li><a href="CMA08-2-MethodsOfSummation.html#8.4.methodsofsummingseries.">Methods of &#8216;summing&#8217; series</a></li>
+    <li><a href="CMA08-2-MethodsOfSummation.html#8.5hardysconvergencetheorem.">Hardy&#8217;s convergence theorem</a></li>
+        <li><a href="CMA08-2-MethodsOfSummation.html#references.">References</a></li>
+        <li><a href="CMA08-2-MethodsOfSummation.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
+      </ul>
+    </li>
+    <li><a href="CMA09-1-FourierSeries.html">Fourier Series &amp; Trigonometrical Series</a></li>
+    <li class="more"><a onClick="hideIt('navaprop');showIt('navprocesses');"> more . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navaprop');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navaprop');showIt('navback');">BACKMATTER</a> 
+   <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfront" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a>FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-Front.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-Front.html#preface">Preface</a></li>
+    <li><a href="CMA00-Front.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navaprop');hideIt('navfront');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navprocesses" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
+<li class="part"><a>PROCESSES OF ANALYSIS</a>
+  <ul >
+    <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
+    <li><a href="CMA02-1-Limits.html">The Theory of Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
+     <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
+     <li><a href="CMA06-1-Residues.html">The Theory of Residues</a></li>
+     <li><a href="CMA07-1-ExpansionOfFunctions.html">Expanding Functions in Infinite Series</a></li>
+     <li><a href="CMA08-1-AsymptoticExpansion.html">Asymptotic Expansions and Summability</a></li>
+     <li class="more current"><a onClick="showIt('navaprop');hideIt('navprocesses');"> you are here . . . </a></li>
+     <li class="notdone"><a href="CMA09-1-FourierSeries.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navtranscendental" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
+<ul>
+    <li class="more current"><a onClick="showIt('navaprop');hideIt('navtranscendental');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
+  <ul>
+    <li class="notdone"><a href="whereOwhere.html">The Gamma Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Zeta Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Legendre Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Bessel Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Mathieu Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
+  </ul>
+  </li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navback" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navaprop');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a>BACKMATTER</a>
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+    <li ><a href="whereOwhere.html">Authors Quoted</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfixedleft" class="fixedBleft">
+<p><a href="CMA07-5-Exercises.html">&#x25C0;</a></p>
+</div>
+
+<div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
+<p><a onClick="showIt('navaprop');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA08-2-MethodsOfSummation.html" style="float: right;">&#x25B6;</a></p>
+</div>
+
+<div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
+<p><a onClick="hideIt('navaprop');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA08-2-MethodsOfSummation.html" style="float: right;">&#x25B6; </a></p>
+</div>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p><a href="https://archive.org/details/actamathematica09lefgoog"><em>Acta Mathematica</em>, <strong>viii</strong>. (1886)</a>, pp. 295&#8211;344.  <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:2">
+<p>It is not allowable, since <span class="math">\(k > x\)</span> for all terms of the series after some definite term. <a href="#fnref:2" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:3">
+<p><em>Editor&#8217;s Note</em>: By D’Alembert’s ratio test (<a href="CMA02-2-Series.html#ratiotest">§2.36</a>). <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:4">
+<p>See <a href="CMA02-1-Limits.html#definitionofthephraseoftheorderof">§2.11</a>; we use <span class="math">\(o(z^{-n})\)</span> to denote <em>any</em> function <span class="math">\(\psi(z)\)</span> such that <span class="math">\(z^n \:\!\psi(z)  \rightarrow 0\)</span> as <span class="math">\(\left|\, z \,\right| \rightarrow \infty\)</span>.  <a href="#fnref:4" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:5">
+<p><em>Editor&#8217;s Note</em>: Provided the first two terms of the asymptotic expansion are zero. <a href="#fnref:5" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:6">
+<p>For a theorem concerning differentiation of asymptotic expansions representing analytic functions, see Ritt, <a href="http://www.ams.org/journals/bull/1918-24-05/home.html"><em>Bull. American Math. Soc</em>. <strong>xxiv</strong>. (1918)</a>, pp. 225&#8211;227. <a href="#fnref:6" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+<li id="fn:7">
+<p>It has been shewn that when the coefficients in the expansion satisfy certain inequalities, there is only one <em>analytic</em> function with that asymptotic expansion. See <a href="http://rsta.royalsocietypublishing.org/content/211/471-483"><em>Phil. Trans.</em> 211, <strong>a</strong>, (1912)</a>, pp. 279&#8211;313.  <a href="#fnref:7" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
 
 </body>
 </html>

@@ -3,14 +3,14 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="latexinput" content="mmd-cambridge-header"/>
-	<title>A Course of Modern Analysis-404 page</title>
+	<title>A Course of Modern Analysis-MethodsOfSummation-8-2</title>
 	<meta name="subtitle" content="An introduction to the general theory of
 infinite processes and analytic functions;
 with an account of the principal
 transcendental functions."/>
 	<meta name="author" content="E.T. Whittaker and G.N. Watson"/>
 	<meta name="editor" content="Eric Nitardy"/>
-	<meta name="date" content="May 29, 2012"/>
+	<meta name="date" content="Aug 19, 2014"/>
 	<meta name="titlefile" content="mmd-WandW-title"/>
 	<meta name="copyrightfile" content="mmd-WandW-copyright"/>
 	<meta name="test" content="And this is a new key-value pair"/>
@@ -18,6 +18,10 @@ transcendental functions."/>
 	<meta name="latexinput" content="mmd-cambridge-begin-doc"/>
 	<meta name="latexfooter" content="mmd-cambridge-footer"/>
 	<link type="text/css" rel="stylesheet" href="css/documentation.css"/>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+<script type="text/javascript" src="js/showhide.js"></script>
+<script type="text/javascript" src="js/mathjaxend.js"></script>
 </head>
 <body>
 
@@ -25,10 +29,583 @@ transcendental functions."/>
 <div id="content">
 <div class="contenttext">
 
-<h2 id="pagenotfound">Page not Found</h2>
+<h3 id="8.4.methodsofsummingseries.">8.4. Methods of &#8216;summing&#8217; series.</h3>
 
-<p>This portion of the book is not yet finished. The book is growing gradually. Try the link again in a couple months.</p>
+<p>We have seen that it is possible to obtain a development of the form </p>
+
+<p>n </p>
+
+<p>f(x) = 2 A m w~^ + R n (x), </p>
+
+<p>m=l) </p>
+
+<p>OO </p>
+
+<p>where R n (x) — &gt; oo as n— &gt; oo , and the series 2 A m x~ m does not converge. </p>
+
+<p>m=0 </p>
+
+<p>We now consider what meaning, if any, can be attached to the &#8217; sum &#8217; of
+a non-convergent series. That is to say, given the numbers a , a 1 , a 2 , &#8230;,
+we wish to formulate definite rules by which we can obtain from them a </p>
+
+<p>CO CO </p>
+
+<p>number S such that 8= 2 a n if 2 a n converges, and such that S exists </p>
+
+<p>re=0 »=0 </p>
+
+<p>when this series does not converge. </p>
+
+<h4 id="8.41borelsmethodofsummation.">8.41 Borel&#8217;s method of summation.</h4>
+
+<p>We have seen (§ 7&#8211;81) that </p>
+
+<p>oo r&quot;&gt; </p>
+
+<p>2 a n z n = e~ l <f> (tz) dt, </p>
+
+<p>n=0 J </p>
+
+<p>OO fj, Writ, </p>
+
+<p>where &lt;fi(tz)= 2 -^—. — , the equation certainly being true inside the circle </p>
+
+<p>TC=0 n ■ </p>
+
+<p>00 </p>
+
+<p>of convergence of 2 a n z n . If the integral exists at points z outside this
+»=o </p>
+
+<p>circle, we define the &#8217; Borel sum &#8217; of 2 a n z n to mean the integral. </p>
+
+<p>»=o </p>
+
+<ul>
+<li></li>
+<li><p>Borel, Lecons sur les Series Divergentes (1901), pp. 97&#8211;115. </p></li>
+</ul>
+
+<p>8 &#8217;4&#8211;8 &quot;4 3] SUMMABLE SERIES 155 </p>
+
+<p>I 00 </p>
+
+<p>Thus, whenever R (z) &lt; 1, the &#8217; Bore] sum &#8217; of the series 2 z n is </p>
+
+<p>B=0 </p>
+
+<p>e-tePdt = (1 - z)-\
+o </p>
+
+<p>If the &#8217; Borel sum &#8217; exists we say that the series is &#8217; summable (B).&#8217; </p>
+
+<h4 id="8.42eulersmethodofsummation.">8.42 Euler&#8217;s method of summation.</h4>
+
+<p>A method, practically due to Euler, is suggested by the theorem of § 371; </p>
+
+<p>00 00 </p>
+
+<p>the &#8217; sum &#8217; of 2 a n may be defined as lim 2 a n x n , when this limit exists. </p>
+
+<p>»=0 *-»l&#8211;0 »l=0 </p>
+
+<p>Thus the &#8217; sum &#8217; of the series 1 — 1 + 1 — 1 + &#8230; would be
+lim (1 - x + x 2 - &#8230;) = lim (1 + x)- 1 = . </p>
+
+<h4 id="8.43cesarosmethodofsummation.">8.43 Cesàro&#8217;s method of summation.</h4>
+
+<p>Let s n = Oj + a 2 + &#8230; + a n; then if S — lim - (sj + s 2 + &#8230; + s n ) exists, we </p>
+
+<p>00 </p>
+
+<p>say that 2 a n is &#8216;summable (CI),&#8217; and that its sum (CI) is S. It is </p>
+
+<p>n=l </p>
+
+<p>00 </p>
+
+<p>necessary to establish the &#8216;condition of consistency %,&#8217; namely that S= 2 a n
+when this series is convergent </p>
+
+<p>To obtain the re
+to prove that S n — » s, </p>
+
+<p>m=l </p>
+
+<p>To obtain the required result, let 2 a m = s, 2 s m = nS n; then we have </p>
+
+<p>m=l m=l </p>
+
+<p>Given e, we can choose n such that
+so -| s — s n I ^ 6. </p>
+
+<p>Then, if i&gt; &gt; n, we have </p>
+
+<p>■^ a&gt;„ </p>
+
+<p>&lt; e for all values of p, and </p>
+
+<p>S, </p>
+
+<p>„ = a 1 + a 2 (l j + &#8230; + a n (l J + a n+1 {l ) + &#8230;+a„(l - j. </p>
+
+<p>Since 1, 1 — v~\ 1 — 2v~ l , &#8230; is a positive decreasing sequence, it follows
+from Abel&#8217;s inequality (§ 2 - 301) that </p>
+
+<p>0<sup>(1-3+0</sup>(1 - n -~) + &#8212; +a i l - v -^r)&lt;{ 1 -l </p>
+
+<p>Therefore </p>
+
+<p>1\ f, n&#8211;1 </p>
+
+<p>S y - -U + oJl - -) + &#8230; +o»(l </p>
+
+<p>&lt;u-?)«. </p>
+
+<ul>
+<li>JnsJii. CaZc. Di^. (1755). See Borel, loc. cit. Introduction,
+t Bulletin des Sciences Math. (2), xiv. (1890), p. 114.
+% Seethe end of § 8&#8211;4.</li>
+</ul>
+
+<p>156 THE PROCESSES OF ANALYSIS [CHAP. VIII </p>
+
+<p>Making v-* oo , we see that, if S be any one of the limit points (§ 2&#8217;21)
+of $„, then </p>
+
+<p>S— 2 a„ </p>
+
+<p>^e- </p>
+
+<p>Therefore, since | s - s n \ % e, we have </p>
+
+<p>\S-s\%2e. </p>
+
+<p>This inequality being true for every positive value of e we infer, as in § 221,
+that S = s; that is to say S„ has the unique limit s; this is the theorem which
+had to be proved. </p>
+
+<p>Example 1. Frame a definition of &#8216;uniform summability (Cl) of a series of variable
+terms.&#8217; </p>
+
+<p>Example 2. If b n&lt; „ ^ 6„ + lt „ ^ when »&lt; v, and if, when n is ^erf, lim b^ „ = 1, and
+if 2 a m =s, then lim J 2 a n 6 ?l&gt; „[ =&amp; </p>
+
+<h5 id="8.431cesarosgeneralmethodofsummation.">8.431 Cesàro&#8217;s general method of summation.</h5>
+
+<p>CO V </p>
+
+<p>A series 2 a w is said to be &#8217;summable (Cr) 1 if lim 2 a n b ntV exists, where </p>
+
+<p>*-=!, ^{K^) ( 1+ 7+bs)-( 1 + .-ri)r- </p>
+
+<p>It follows from § 8&quot;43 example 2 that the &#8217; condition of consistency &#8217; is satisfied; in
+fact it can be proved* that if a series is summable (Or 1 ) it is also summable (Cr) when
+r&gt;t /; the condition of consistency is the particular case of this result when r = 0. </p>
+
+<h4 id="8.44themethodofsummationofriesz.">8.44 The method of summation of Riesz.</h4>
+
+<p>A more extended method of &#8217; summing &#8217; a series than the preceding is by means of </p>
+
+<p>X V </p>
+
+<p>ljm 2 (l-~) a n , </p>
+
+<p>in which X„ is any real function of n which tends to infinity with n. A series for which
+this limit exists is said to be &#8217; summable (Rr) with sum-function X„.&#8217; </p>
+
+<h3 id="8.5hardysconvergencetheorem.">8.5 Hardy&#8217;s convergence theorem.</h3>
+
+<p>s summable (
+a n = (l/n), </p>
+
+<p>Let 2 a n be a series which is summable (C 1). Then if </p>
+
+<p>the series ^ a n converges. </p>
+
+<p>n=l </p>
+
+<ul>
+<li>Bromwich, Infinite Series, § 122.
+t Comptes Bendus, cxlix. (1910), pp. 18&#8211;21.</li>
+</ul>
+
+<p>i Proc. London Math. Soc. (2), vm. (1910), pp. 302&#8211;304. For the proof nere given, we are
+indebted to Mr Littlewood. </p>
+
+<p>8&#8211;431&#8211;8&#8211;5] </p>
+
+<p>8&#8211;431&#8211;8&#8217;5] </p>
+
+<p>Let Sn = a I + a.^ + </p>
+
+<p>SUMMABLE SERIES </p>
+
+<p>157 </p>
+
+<p>. + cin; then since S Un is summable {G 1), we have </p>
+
+<p>M = l </p>
+
+<p>Si + So+ &#8230; + Sn = n[s + (l)j, </p>
+
+<p>where s is the sum ((71) of X «». </p>
+
+<p>Let
+and let </p>
+
+<p>Sm-s = t,a, {m = l, 2, &#8230; n), </p>
+
+<p>ti + to+ &#8230; +tn = (Tn • </p>
+
+<p>With this notation, it is sufficient to shew that, if j a„ | &lt; Kn~^, where K
+is independent of n, and if On = n.o (1), then tn —&gt; sis n —&gt; cc . </p>
+
+<p>Suppose first that a^, a^, &#8230; are real. Then, if tn does not tend to zero,
+there is some positive number h such that there are an unlimited number of
+the numbers t,i which satisfy either^ (i) t^ &gt; h or (ii) tn &lt; —h. We shall shew
+that either of these hypotheses implies a contradiction. Take the former*,
+and choose n so that tn &gt; h. </p>
+
+<p>Then, when r = 0, 1,2, </p>
+
+<p>&lt; K/n. </p>
+
+<p>Now plot the points P,. whose coordinates are (r, tn+r) in a Cartesian
+diagram. Since tn<sup>r+i</sup>-tn+r = an+r+i, the slope of the line PrPr+i is less
+than = arc tan (K/n). </p>
+
+<p>Therefore the points Pq, Pj, P.,, &#8230; lie above the line y = h — xtan 6.
+Let Pk be the last uf the points P„, Pj, &#8230; which lie on the left of a;&#8217;= hcot 6,
+so that k ^ h cot 6. </p>
+
+<p>Draw rectangles as shewn in the figure. The area of these rectangles
+exceeds the area of the triangle bounded by y = h — x tan 6 and the axes;
+that is to say </p>
+
+<p>&quot;&#8220;h+A; O&#8221;?!— 1 ^^ tn + &#8217; n+i + &#8230; + Cn+fc </p>
+
+<blockquote>
+<p>|-A&#8217;-cot^ = i/i2ir-i7^. </p>
+</blockquote>
+
+<ul>
+<li>The reader will see that the latter hypothesis involves a contradiction by using arguments
+of a precisely similar character to those which will be employed in dealing with the former
+hypothesis.</li>
+</ul>
+
+<p>158 THE PROCESSES OF ANALYSIS [CBAP. VIII </p>
+
+<p>But I (Tn+k — 0&quot;7i-i ! &lt; I 0&#8217;7i+A; ! + I ^n-i \ </p>
+
+<p>= (n + k).o{l) + {n-l).o(l)
+= n.o{l),
+since k ^ hnK~^, and h, K are independent of n. </p>
+
+<p>Therefore, for a set of values of n tending to infinity, </p>
+
+<p>^h-K~^n &lt;n.o{l),
+which is impossible since ^h&#8217;-K~^ is )iot o (1) as /i-&gt; x . </p>
+
+<p>This is the contradiction obtained on the hypothesis that lim tn&gt; h &gt; 0;
+therefore Urn tn ^ 0. Similarly, by taking the corresponding case in which
+tn^ — h, we arrive at the result lim tn ^ 0. Therefore since lim tn &gt; lim tn, </p>
+
+<p>we have lim t^ = lim tn = 0, </p>
+
+<p>and so tn — &gt; 0. </p>
+
+<p>That is to say Sn —&gt; s, and so 2 a,i is convergent and its sum is s. </p>
+
+<p>If an be complex, we consider R (a„) and / (a^) separately, and find </p>
+
+<p>00 « </p>
+
+<p>that S R{an) and S /(c/„) converge by the theorem just proved, and so
+w=l «=i </p>
+
+<p>00 </p>
+
+<p>2 an converges. </p>
+
+<p>M = l </p>
+
+<p>The reader will see in Chapter ix that this result is of great importance
+in the modern theory of Fourier series. </p>
+
+<p>Corollary. If «« (I) be a function of | such that 2 «„ (^) is uniformly summahle {C ) </p>
+
+<p>n = l </p>
+
+<p>throughout a domain of values of |, and if j a„ (|) | &lt; A&#8217;&quot;~^, where K is independent of |, </p>
+
+<p>2 a„ (^) converges uniformly throughoxit the domain.
+n=i </p>
+
+<p>For, retaining the notation of the preceding section, if ^n(^) does not tend to zero </p>
+
+<p>uniformly, we can find a positive number h independent of n and | such that an infinite </p>
+
+<p>sequence of values of n can be found for which t^ (^») &gt; A or i„ (^„) &lt;-h for some point ^,j </p>
+
+<p>of the domain*; the value of ^„ depends on the value of n under consideration. </p>
+
+<p>We then find, as in the original theorem, </p>
+
+<p>WK-^n&lt;n.o{) </p>
+
+<p>for a set of values of n tending to infinity. The contradiction implied in the inequality
+shewst that h does not exist, and so ^rt(|)&#8211;9&#8211;0 uniformly. </p>
+
+<ul>
+<li>It is assumed that «„ (^) is real; the extension to complex variables cau be made as in the
+former theorem. If no such number h existed, &lt;„ (|) would tend to zero uniformly.</li>
+</ul>
+
+<p>t It is essential to observe that the constants involved iu the inequality do not depend on |,j.
+For if, say, K depended on ^„, K~^ would really be a function of n and might be o (1) qua function
+of n, and the inequality would not imply a contradiction. </p>
+
+<p>ASYMPTOTIC EXPANSIONS AND SUMMABLE SERIES 159 </p>
+
+<h3 id="references.">References.</h3>
+
+<p>H. PoiNCAR^, Acta Mathematica, viii. (1886), pp. 295&#8211;344. </p>
+
+<p>E. BoREL, Lecons sur les Series Divergentes (Paris, 1901). </p>
+
+<p>T. J. Pa. Bromwich, Theory of Infinite Series (1908), Ch. xi. </p>
+
+<p>E. W. Barnes, Phil. Trans, of the Royal Society, 206, a (1906), pp. 249&#8211;297. </p>
+
+<p>G. H. Hardy and J. E. Littlewood, Proc. London Math. Soc. (2), xi. (1913), pp. 1&#8211;16*. </p>
+
+<p>G. N. Watson, Phil. Trans, of the Royal Society, 213, a (1911), pp. 279&#8211;313. </p>
+
+<p>S. Chapman +, Proc. London Math. Soc. (2), ix. (1911), pp. 369&#8211;409. </p>
+
+<h3 id="miscellaneousexamples.">Miscellaneous Examples.</h3>
+
+<dl>
+<dt>/&quot; e~^ 1 2 ! 4 ! </dt>
+<dd>; :idt~ - ~ + -^ — &#8230;</dd>
+</dl>
+
+<p>when X is real and positive. </p>
+
+<ol>
+<li>Discuss the representation of the function</li>
+</ol>
+
+<p>f{x)={&#8217;&#8217; ^&lt;^{t)e^-dt </p>
+
+<p>(where x is supposed real and positive, and is a function subject to certain general con-
+ditions) by means of the series </p>
+
+<p>//^^_&lt;^W «^&#8217;(0) , &lt;^&quot;(0) </p>
+
+<p>Shew that in certain cases (e.g. (^(;) = e&#8217;&quot;) the series is absolutely convergent, and
+represents /(.r) for large positive valu&amp;s of x\ but that in certain other cases the series is
+the asymptotic expansion off{x). </p>
+
+<ol>
+<li>Shew that</li>
+</ol>
+
+<p>for large positive values of z. </p>
+
+<p>I ,7 1 «-l (a-l)(a&#8211;2) </p>
+
+<p>z z^ z^ </p>
+
+<p>(Legendre, Exerdces de Calc. Int. (1811), p. 340.)
+4. Shew that if, when x&gt;0, </p>
+
+<p>du </p>
+
+<p>^^•&#8217;^=rK<sup>*''</sup>°KT:^)} </p>
+
+<p>,—xa </p>
+
+<p>Shew also that/(.r) can be expanded into an absolutely convergent series of the form </p>
+
+<p>f{x)= 2 , ^, % , ,r- (Schlomilch.) </p>
+
+<p>•&#8216;^ &#8217; A.=i(^+l)(.r-i&#8211;2)&#8230;(^ + ^-} </p>
+
+<ol>
+<li><p>Shew that if the series 1+0 + 0&#8211;1+04&#8211;1 + + 0&#8211;1 + &#8230;, in which two zeros
+precede each —1 and one zero precedes each +1, be &#8216;summed&#8217; by Ceskro&#8217;s method,
+its sum is f. (Euler, Borel.) </p></li>
+<li><p>Shew that the series 1&#8211;21 + 4! — &#8230; cannot be summed by Borel&#8217;s method, but the
+series l+0&#8211;2! + + 4! + &#8230; can be so summed. </p></li>
+<li><p>This paper contains many references to recent developments of the subject.
+t A bibliography of the literature of summable series will be found on p. 372 of this
+memoir. </p></li>
+</ol>
+
+<p></div></p>
 </div>
+
+<div id="footer">
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/"> GitHub.</a></h3>
+<h4>All content is either in the public domain or licensed under <a href="http://creativecommons.org/licenses/by/3.0/us/">a Creative Commons Attribution 3.0 United States License.</a></h4>
+<h4>Feel free to report typos and other issues on <span style="font-weight: 400;"><a href="https://github.com/CdLbB/cdlbb.github.com/tree/master/WandW">GitHub</a></span> or by email at <span style="font-weight: 400;"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#110;&#x69;&#x74;&#104;&#x61;&#114;&#100;&#x74;&#x40;&#x75;&#x77;&#46;&#101;&#x64;&#x75;">&#x6e;&#x69;&#116;&#x68;&#x61;&#114;&#100;&#x74;&#x40;&#117;&#119;&#x2e;&#101;&#x64;&#x75;</a></span>.</h4>
+</div>
+
+<div id="navaprop" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navaprop');showIt('navfront');">FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navaprop');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
+  <ul>
+    <li class="more"><a onClick="hideIt('navaprop');showIt('navprocesses');"> more . . . </a></li>
+    <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
+    <li><a href="#asymptoticexpansionsandsummableseries">Asymptotic Expansions and Summable Series</a>
+      <ul>
+        <li><a href="CMA08-1-AsymptoticExpansion.html#8.1simpleexampleofanasymptoticexpansion.">A simple asymptotic expansion</a></li>
+    <li><a href="CMA08-1-AsymptoticExpansion.html#8.2definitionofanasymptoticexpansion.">Definition of an asymptotic expansion</a></li>
+       <li><a href="CMA08-1-AsymptoticExpansion.html#8.3multiplicationofasymptoticexpansions.">Multiplication of asymptotic expansions</a></li>       
+       <li class="current"><a href="#8.4.methodsofsummingseries.">Methods of &#8216;summing&#8217; series</a>
+          <ul>
+              <li><a href="#8.41borelsmethodofsummation.">Borel&#8217;s method of summation</a></li>
+              <li><a href="#8.42eulersmethodofsummation.">Euler&#8217;s method of summation</a></li>
+              <li><a href="#8.43cesarosmethodofsummation.">Ces&agrave;ro&#8217;s method of summation</a>
+              <ul>
+                  <li><a href="#8.431cesarosgeneralmethodofsummation.">Ces&agrave;ro&#8217;s general method of summation</a></li>
+              </ul>   
+           </li>
+          </ul>   
+       </li>
+    <li class="current"><a href="#8.5hardysconvergencetheorem.">Hardy&#8217;s convergence theorem</a></li>
+        <li class="current"><a href="#references.">References</a></li>
+        <li class="current"><a href="#miscellaneousexamples.">Miscellaneous Examples</a></li>
+      </ul>
+    </li>
+    <li><a href="CMA09-1-FourierSeries.html">Fourier Series &amp; Trigonometrical Series</a></li>
+    <li class="more"><a onClick="hideIt('navaprop');showIt('navprocesses');"> more . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navaprop');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navaprop');showIt('navback');">BACKMATTER</a> 
+   <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfront" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a>FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-Front.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-Front.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-Front.html#preface">Preface</a></li>
+    <li><a href="CMA00-Front.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-Front.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navaprop');hideIt('navfront');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navprocesses" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
+<li class="part"><a>PROCESSES OF ANALYSIS</a>
+  <ul >
+    <li><a href="CMA01-Complex.html">Complex Numbers</a></li>
+    <li><a href="CMA02-1-Limits.html">The Theory of Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFns.html">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
+     <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
+     <li><a href="CMA06-1-Residues.html">The Theory of Residues</a></li>
+     <li><a href="CMA07-1-ExpansionOfFunctions.html">Expanding Functions in Infinite Series</a></li>
+     <li><a href="CMA08-1-AsymptoticExpansion.html">Asymptotic Expansions and Summability</a></li>
+     <li class="more current"><a onClick="showIt('navaprop');hideIt('navprocesses');"> you are here . . . </a></li>
+     <li class="notdone"><a href="CMA09-1-FourierSeries.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navtranscendental" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
+<ul>
+    <li class="more current"><a onClick="showIt('navaprop');hideIt('navtranscendental');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
+  <ul>
+    <li class="notdone"><a href="whereOwhere.html">The Gamma Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Zeta Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Legendre Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Bessel Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Mathieu Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lamé&#8217;s Equation</a></li> 
+  </ul>
+  </li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navback" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navaprop');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a>BACKMATTER</a>
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponential.html">Appendix</a></li>
+    <li ><a href="whereOwhere.html">Authors Quoted</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfixedleft" class="fixedBleft">
+<p><a href="CMA08-1-AsymptoticExpansion.html">&#x25C0;</a></p>
+</div>
+
+<div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
+<p><a onClick="showIt('navaprop');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA09-1-FourierSeries.html" style="float: right;">&#x25B6;</a></p>
+</div>
+
+<div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
+<p><a onClick="hideIt('navaprop');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA09-1-FourierSeries.html" style="float: right;">&#x25B6;  </a></p>
 </div>
 
 </body>

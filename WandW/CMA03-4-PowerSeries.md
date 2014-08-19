@@ -50,7 +50,7 @@ function of \\(x\\) throughout the range, and so \\(\lim\limits_{x \, \rightarro
 
 #### 3.72 Abel's theorem[^abelsproducts,-1] on multiplication of series. [abelstheoremonmultiplicationofseries.] ####
 
-[^abelsproducts,-1]: [*Journal für Math.* **i.** (1826)](http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0001), pp. 311-339, Theorem **vi.** This is Abel's original proof. In some text-books a more elaborate proof, by the use of Cesaro's sums ([§8.43](whereOwhere.html)), is given.
+[^abelsproducts,-1]: [*Journal für Math.* **i.** (1826)](http://gdz.sub.uni-goettingen.de/dms/load/toc/?PPN=PPN243919689_0001), pp. 311-339, Theorem **vi.** This is Abel's original proof. In some text-books a more elaborate proof, by the use of Cesaro's sums ([§8.43](CMA08-2-MethodsOfSummation.html#8.43cesarosmethodofsummation.)), is given.
 
 This is a modification of the theorem of [§2.53](CMA02-3-MoreSeries.html#cauchymultiplication) for absolutely convergent 
 series. 
