@@ -349,8 +349,18 @@ Cotangents</a></li>
          <li><a href="CMA07-5-ExercisesMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
         </ol>
      </li>
-    <li><a href="CMA08-1-AsymptoticExpansionMN.html">Asymptotic Expansions and Summable&nbsp;Series</a></li>
-    <li class="notdone"><a href="whereOwhere.html">Fourier Series and Trigonometrical&nbsp;Series</a></li>
+    <li><a href="CMA08-1-AsymptoticExpansionMN.html">Asymptotic Expansions and Summable&nbsp;Series &nbsp;&nbsp;  <strong>(pp.&nbsp;150&ndash;159)</strong></a>
+     <ol>
+          <li>8.1 <a href="CMA08-1-AsymptoticExpansionMN.html#8.1simpleexampleofanasymptoticexpansion.">Simple Example of an Asymptotic Expansion</a></li>
+	  <li>8.2 <a href="CMA08-1-AsymptoticExpansionMN.html#8.2definitionofanasymptoticexpansion.">Definition of an Asymptotic Expansion</a></li>
+	  <li>8.3 <a href="CMA08-1-AsymptoticExpansionMN.html#8.3multiplicationofasymptoticexpansions.">Multiplication of Asymptotic Expansions</a></li>
+	  <li>8.4 <a href="CMA08-2-MethodsOfSummationMN.html#8.4.methodsofsummingseries.">Methods of &#8216;Summing&#8217; Series</a></li>
+	  <li>8.5 <a href="CMA08-2-MethodsOfSummationMN.html#8.5hardysconvergencetheorem.">Hardy&#8217;s Convergence Theorem</a></li>
+         <li><a href="CMA08-2-MethodsOfSummationMN.html#references."">References</a></li>
+         <li><a href="CMA08-2-MethodsOfSummationMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
+        </ol>
+     </li>
+    <li><a href="CMA09-1-FourierSeriesMN.html">Fourier Series and Trigonometrical&nbsp;Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
      <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
  
