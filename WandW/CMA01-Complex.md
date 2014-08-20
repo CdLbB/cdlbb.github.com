@@ -387,7 +387,7 @@ where \\(\mu\\) is the number of the constituent primes.\\(\vphantom{\\ 3\\}\\)<
      <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
      <li><a href="CMA06-1-Residues.html">The Theory of Residues</a></li>
      <li><a href="CMA07-1-ExpansionOfFunctions.html">Expanding Functions in Infinite Series</a></li>
-     <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
+     <l><a href="CMA08-1-AsymptoticExpansion.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
      <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>

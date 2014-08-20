@@ -508,7 +508,7 @@ Math. Trip. 1904.
       <li><a href="CMA06-1-Residues.html">The Theory of Residues</a></li>
      <li><a href="CMA07-1-ExpansionOfFunctions.html">Expanding Functions in Infinite Series</a></li>
      <li class="more current"><a onClick="showIt('navcauchy');hideIt('navprocesses');"> you are here . . . </a></li>
-     <li class="notdone"><a href="whereOwhere.html">Asymptotic Expansions and Summability</a></li>
+     <l><a href="CMA08-1-AsymptoticExpansion.html">Asymptotic Expansions and Summability</a></li>
      <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
      <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
