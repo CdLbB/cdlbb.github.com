@@ -38,13 +38,8 @@ All found
 3. [the expressions convergent and divergent were introduced by James Gregory, Professor of Mathematics at Edinburgh, in the same year (1668).](CMA02-2-Series.html#convergenceofaninfiniteseries) 
 3. [he (Newton) investigated the convergence of hypergeometric series in 1704.](CMA02-2-Series.html#convergenceofaninfiniteseries)
 4.  [It (the Bolzano-Weierstrass theorem) seems to have been known to Cauchy.](CMA02-1-Limits.html#bolzanosection)
-5.  *Example*. If in the series
->\\[1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4} + \dots \\]
->the order of the terms be altered, so that the ratio of the positive terms to the negative terms in the first \\(n\\) terms is ultimately \\(a^2\\), shew that the sum of the series will become \\(\log(2a)\\). <br> [(Manning.)](CMA02-3-MoreSeries.html#effectofchangingtheorderoftermsinaseries)
-
 5.  [These methods (of summing double series) are due to Cauchy.](CMA02-3-MoreSeries.html#methodsofsummingdoubleseries)
 6.  [The convergence of the product in which a_{n−1}=−1/n^2 was investigated by Wallis as early as 1655.](CMA02-4-Products.html#infiniteproducts)
-7.  [Infinite determinants had previously occurred in the researches of F&uuml;rstenau on the algebraic equation of the 7th degree, Darstellung der reellen Wurzeln algebraischer Gleichungen durch Determinanten der Coeffizienten (Marburg, 1860).](CMA02-4-Products.html#infinitedeterminants)
 8. [(de la Vallee Poussin, M&eacute;m. de l&rsquo;Acad. de Belgique, LIII. (1896), no. 6.)](CMA02-4-Products.html#miscellaneousexamples) Example 10.
 
 *Chapter 3.*
@@ -55,6 +50,14 @@ All found
 *Chapter 4.*
 
 1. The formula for differentiation of  integrals containing a parameter [was given by Leibniz, without specifying the restrictions laid on f(x,α).](CMA04-1-Integration.html#4.2differentiationofintegralscontainingaparameter.) (in marginnote).
+
+*Chapter 7.*
+
+1. [One of the miscellaneous exercises lists "Gambioli, Bologna Memorie, 1892." as a reference.](CMA07-5-Exercises.html#miscellaneousexamples.) <br><br>I was able to find [Memorie della R. Accademia delle scienze dell'Istituto di Bologna (1892)](http://books.google.com/books?id=N7c9AQAAMAAJ) but there is no mention there of Gambioli.
+
+*Chapter 8.*
+
+1. The definition of asymptotic expansion "is due to Poincaré. [Special asymptotic expansions had, however, been discovered and used in the eighteenth century by Stirling, Maclaurin and Euler."](CMA08-1-AsymptoticExpansion.html#8.2definitionofanasymptoticexpansion.)
 
 *Appendix* 
 
