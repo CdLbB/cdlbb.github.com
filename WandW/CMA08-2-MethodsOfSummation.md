@@ -30,309 +30,215 @@ HTML header:	<script type="text/javascript"
 ###8.4. Methods of  'summing' series. [8.4.methodsofsummingseries.]###
 
 We have seen that it is possible to obtain a development of the form 
+\\[
+     f(x) = \sum_{m=0}_{n} A_mx^{-m} + R_n(x),
+\\]
+where \\(R_n (x) \rightarrow \infty\\) as \\(n \rightarrow\infty\\), and the series \\(\sum\limits_{m=0}^{\infty} A_m x^{-m}\\) does not converge. 
 
-n 
-
-f(x) = 2 A m w~^ + R n (x), 
-
-m=l) 
-
-OO 
-
-where R n (x) — > oo as n— > oo , and the series 2 A m x~ m does not converge. 
-
-m=0 
-
-We now consider what meaning, if any, can be attached to the ' sum ' of 
-a non-convergent series. That is to say, given the numbers a , a 1 , a 2 , ..., 
+We now consider what meaning, if any, can be attached to the 'sum' of 
+a non-convergent series. That is to say, given the numbers \\(a_0\\), \\(a_1\\), \\(a_2, \dots\\), 
 we wish to formulate definite rules by which we can obtain from them a 
-
-CO CO 
-
-number S such that 8= 2 a n if 2 a n converges, and such that S exists 
-
-re=0 »=0 
-
+number \\(S\\) such that \\(S = \sum_{n=0}^{\infty} a_n\\) if \\(\sum_{n=0}^{\infty} a_n\\)  converges, and such that \\(S\\) exists 
 when this series does not converge. 
 
-####8.41 Borel's method of summation. [8.41borelsmethodofsummation.]####
-We have seen (§ 7-81) that 
+####8.41 Borel's method of summation.[^borel,-1] [8.41borelsmethodofsummation.]####
 
-oo r"> 
+[^borel,-1]: Borel, [*Leçons sur les Séries Divergentes*](https://archive.org/details/leconssurlesseri00boreuoft) (1901), pp. 97--115. 
 
-2 a n z n = e~ l <f> (tz) dt, 
+We have seen ([§7.81](CMA07-4-BorelsTheorem.html#7.81borelsintegralandanalyticcontinuation.)) that 
+\\[
+     \sum_{n=0}^{\infty} a_n z^n =
+     \! \int_0^{\infty} e^{-t} \phi(tz) \, d t ,
+\\]
+where \\(\phi(tz) = \sum\limits_{n=0}^{\infty} \dfrac{a_n t^nz^n}{n!} \\), the equation certainly being true inside the circle 
+of convergence of \\(\sum\limits_{n=0}^{\infty} a_n z^n\\) . If the integral exists at points \\(z\\) outside this 
+circle, we define the 'Borel sum' of \\(\sum\limits_{n=0}^{\infty} a_n z^n\\) to mean the integral. 
 
-n=0 J 
+Thus, whenever \\(\mathfrak{Re}(z) < 1\\), the 'Borel sum' of the series \\(\sum\limits_{n=0}^{\infty} z^n\\) is
+\\[
+     \int_0^\infty \! e^{-t}e^{tz} \, d t = (1-z)^{-1}.
+\\]
+If the 'Borel sum' exists we say that the series is 'summable (\\(B\\))'. 
 
-OO fj, Writ, 
+####8.42 Euler's method of summation.[^euler,-1] [8.42eulersmethodofsummation.]####
 
-where <fi(tz)= 2 -^—. — , the equation certainly being true inside the circle 
+[^euler,-1]: [*Instit. Calc. Diff.*](http://eulerarchive.maa.org/pages/E212.html) (1755). See Borel, [*loc. cit.*](https://archive.org/details/leconssurlesseri00boreuoft) Introduction.
 
-TC=0 n ■ 
+A method, practically due to Euler, is suggested by the theorem of [§3.71](CMA03-4-PowerSeries.html#abelstheoremoncontinuityuptothecircleofconvergence.); 
+the 'sum' of \\(\sum\limits_{n=0}^{\infty} a_n\\) may be defined as \\(\lim\limits_{x \rightarrow 1-0}\;\! \sum\limits_{n=0}^{\infty} a_n z^n\\), when this limit exists. 
 
-00 
+Thus the 'sum' of the series \\(1 - 1 + 1 - 1 + \cdots\\) would be 
+\\[
+     \lim_{x \rightarrow 1-0} (1 - x + x^2 - \cdots ) = \lim_{x \rightarrow 1-0} (1 + x)^{-1} = \frac{1}{2}.
+\\]
 
-of convergence of 2 a n z n . If the integral exists at points z outside this 
-»=o 
+####8.43 Cesàro's method of summation.[^cesaro,-1] [8.43cesarosmethodofsummation.]####
 
-circle, we define the ' Borel sum ' of 2 a n z n to mean the integral. 
+[^cesaro,-1]: [*Bulletin des Sciences Math.* (2), **xiv**. (1890)](https://archive.org/details/s2bulletindessci14fran), p. 114.
 
-»=o 
+Let \\(s_n = a_1 + a_2 + \cdots + a_n\\); then *if \\(S =\lim\limits_{n \rightarrow \infty}  \frac{1}{n}(s_1 + s_2 + \cdots + s_n )\\) exists*, we 
+say that \\(\sum_{n=1}^{\infty} a_n\\) is '*summable* (\\(C\:\! 1\\))', and that its sum (\\(C\:\! 1\\)) is \\(S\\). It is 
+necessary to establish the 'condition of consistency',[^consistency,-2] namely that \\(S = \sum_{n=1}^{\infty} a_n\\) 
+when this series is convergent .
 
-* 
+[^consistency,-2]: See the end of [§8.4](#8.4.methodsofsummingseries.).
 
-+ Borel, Lecons sur les Series Divergentes (1901), pp. 97-115. 
+To obtain the required result, let \\(\sum\limits_{m=1}^{\infty} a_m = s\\), \\(\sum\limits_{m=1}^{\infty} s_m = nS_n\\); then we have to prove that \\(S_n \rightarrow s\\),
 
+Given \\(\epsilon\\), we can choose \\(n\\) such that \\(\left| \, \sum\limits_{m=m+1}^{n+p} a_m \, \right| < \epsilon \\) for all values of \\(p\\), and 
+so  that \\(\left| \,  s - s_n \, \right| < \epsilon\\). 
 
-
-8 '4-8 "4 3] SUMMABLE SERIES 155 
-
-I 00 
-
-Thus, whenever R (z) < 1, the ' Bore] sum ' of the series 2 z n is 
-
-B=0 
-
-
-
-e-tePdt = (1 - z)-\ 
-o 
-
-If the ' Borel sum ' exists we say that the series is ' summable (B).' 
-
-####8.42 Euler's method of summation. [8.42eulersmethodofsummation.]####
-
-A method, practically due to Euler, is suggested by the theorem of § 371; 
-
-00 00 
-
-the ' sum ' of 2 a n may be defined as lim 2 a n x n , when this limit exists. 
-
-»=0 *-»l-0 »l=0 
-
-Thus the ' sum ' of the series 1 — 1 + 1 — 1 + ... would be 
-lim (1 - x + x 2 - . . .) = lim (1 + x)- 1 = \. 
-
-####8.43 Cesàro's method of summation. [8.43cesarosmethodofsummation.]####
-
-Let s n = Oj + a 2 + . . . + a n; then if S — lim - (sj + s 2 + . . . + s n ) exists, we 
-
-00 
-
-say that 2 a n is 'summable (CI),' and that its sum (CI) is S. It is 
-
-n=l 
-
-00 
-
-necessary to establish the 'condition of consistency %,' namely that S= 2 a n 
-when this series is convergent 
-
-To obtain the re 
-to prove that S n — » s, 
-
-
-
-m=l 
-
-
-
-To obtain the required result, let 2 a m = s, 2 s m = nS n; then we have 
-
-m=l m=l 
-
-
-
-Given e, we can choose n such that 
-so -| s — s n I ^ 6. 
-
-Then, if i> > n, we have 
-
-
-
-■^ a>„ 
-
-
-
-< e for all values of p, and 
-
-
-
-S, 
-
-
-
-„ = a 1 + a 2 (l j + ... + a n (l J + a n+1 {l ) + ...+a„(l - j. 
-
-Since 1, 1 — v~\ 1 — 2v~ l , ... is a positive decreasing sequence, it follows 
-from Abel's inequality (§ 2 - 301) that 
-
-0^(1-3+0^(1 - n -~) + --- +a i l - v -^r)\<{ 1 -l 
-
+Then, if \\(\nu  > n\\), we have 
+\\[ \begin{align*}
+     S_{\nu}=
+     a_1 &+ a_2 \left(1 - \frac{1}{\nu} \right) +
+     \cdots + a_n \left(1 - \frac{n-1}{\nu} \right) \\
+     &+
+     a_{n+1} \left(1 - \frac{n}{\nu} \right)+
+     \cdots + a_{\nu} \left(1 - \frac{\nu-1}{\nu} \right) .
+\end{align*} \\]
+Since \\(1\\), \\(1 - v^{-1}\\),  \\(1 - 2v^{-1}, \dots\\) is a positive decreasing sequence, it follows 
+from Abel's inequality ([§2.301](CMA02-2-Series.html#abelsinequality.)) that 
+\\[
+     \left| \,
+          a_{n+1} \left(1 - \frac{n}{\nu} \right)+
+          a_{n+2} \left(1 - \frac{n+1}{\nu} \right)
+          \cdots + a_{\nu} \left(1 - \frac{\nu-1}{\nu} \right) 
+     \, \right| <
+     \left(
+          1 - \frac{n}{\nu}
+     \right) \epsilon .
+\\]
 Therefore 
+\\[
+     \left| \,
+          S_{\nu} -
+          \left\{
+               a_1 + 
+               a_2 \left(1 - \frac{1}{\nu} \right) +
+               \cdots + a_n \left(1 - \frac{n-1}{\nu} \right)
+          \right\}
+     \, \right | <
+      \left(
+          1 - \frac{n}{\nu}
+     \right) \epsilon .
+\\]
 
+Making \\(\nu \rightarrow\infty \\), we see that, if \\(S\\) be any one of the limit points ([§2.21](CMA02-1-LimitsMN.html#bolzanosection)) of \\(S_{\nu}\\) then 
+\\[
+     \left| \,
+          S- \sum_{m=1}^n a_m 
+     \, \right| \leq
+     \epsilon .
+\\]
+Therefore, since \\(\left|\,  s - s_n \,\right| \leq \epsilon\\), we have 
+\\[
+     \left| \, S-s \, \right| \leq 2 \epsilon .
+\\]
+This inequality being true for *every* positive value of \\(\epsilon\\) we infer, as in [§2.21](), 
+that \\(S = s\\); that is to say \\(S_{\nu}\\) has the unique limit \\(s\\); this is the theorem which had to be proved. 
 
+>*Example* 1. Frame a definition of 'uniform summability (\\(C\:\! 1\\)) of a series of variable terms.' 
 
-1\ f, n-1 
-
-
-
-S y - -U + oJl - -) + ... +o»(l 
-
-
-
-<u-?)«. 
-
-
-
-* JnsJii. CaZc. Di^. (1755). See Borel, loc. cit. Introduction, 
-t Bulletin des Sciences Math. (2), xiv. (1890), p. 114. 
-% Seethe end of § 8-4. 
-
-
-
-156 THE PROCESSES OF ANALYSIS [CHAP. VIII 
-
-Making v-* oo , we see that, if S be any one of the limit points (§ 2'21) 
-of $„, then 
-
-
-
-S— 2 a„ 
-
-
-
-^e- 
-
-
-
-Therefore, since | s - s n \ % e, we have 
-
-\S-s\%2e. 
-
-This inequality being true for every positive value of e we infer, as in § 221, 
-that S = s; that is to say S„ has the unique limit s; this is the theorem which 
-had to be proved. 
-
-Example 1. Frame a definition of 'uniform summability (Cl) of a series of variable 
-terms.' 
-
-Example 2. If b n< „ ^ 6„ + lt „ ^ when »< v, and if, when n is ^erf, lim b^ „ = 1, and 
-if 2 a m =s, then lim J 2 a n 6 ?l> „[ =& 
+>######*Example* 2. If \\(b_{n,\;\!\nu} \geq b_{n+1,\;\!\nu} \geq 0\\) when \\(n< \nu\\) and if, when \\(n\\) is *fixed*, \\(\lim\limits_{\nu \rightarrow \infty} b_{n,\;\!\nu} = 1\\), and if  \\(\sum\limits_{m=1}^{\infty} a_m =s\\), then [8.43example2]######
+\\[
+     \lim_{\nu \rightarrow \infty} 
+     \left\{ 
+          \sum_{n=1}^{\nu} a_n b_{n,\;\!\nu} 
+     \right\}
+     =s.
+\\]
 
 #####8.431 Cesàro's general method of summation. [8.431cesarosgeneralmethodofsummation.]#####
 
-CO V 
+A series \\(\sum\limits_{n=1}^{\infty} a_n\\) is said to be 'summable (\\(C\:\! r\\))' if \\(\lim\limits_{\nu \rightarrow \infty} \sum\limits_{n=1}^{\nu} a_n b_{n,\;\!\nu}\\) exists, where 
+\\[ \begin{align*}
+     b_{0,\;\!\nu} 
+     &=1 \\
+     b_{n,\;\!\nu}
+     &=
+     \left\{
+          \left(
+               1 + \frac{r}{v+1-n}
+          \right)
+          \left(
+               1 + \frac{r}{v+2-n}
+          \right)
+          \cdots
+          \left(
+               1 + \frac{r}{v-1}
+          \right)
+     \right\}^{-1} \! .
+\end{align*} \\]
+It follows from [§8.43 example 2](#8.43example2) that the 'condition of consistency' is satisfied; in 
+fact it can be proved[^bromwich,-3] that if a series is summable (\\(C\:\! r'\\)) it is also summable (\\(C\:\! r\\)) when 
+\\(r > r' \!\\); the condition of consistency is the particular case of this result when r = 0. 
 
-A series 2 a w is said to be 'summable (Cr) 1 if lim 2 a n b ntV exists, where 
+[^bromwich,-3]: Bromwich, [*Infinite Series*](https://archive.org/details/introductiontoth00bromuoft), §122 (pp. 310--312). 
 
-*-=!, ^{K^) ( 1+ 7+bs)-( 1 + .-ri)r- 
+####8.44 The method of summation of Riesz.[^riesz,-1] [8.44themethodofsummationofriesz.]#### 
 
-It follows from § 8"43 example 2 that the ' condition of consistency ' is satisfied; in 
-fact it can be proved* that if a series is summable (Or 1 ) it is also summable (Cr) when 
-r>t /; the condition of consistency is the particular case of this result when r = 0. 
+[^riesz,-1]: [*Comptes Rendus*, **cxlix**. (1909)](https://archive.org/details/comptesrendusheb149acad), pp. 18--21.
 
-####8.44 The method of summation of Riesz. [8.44themethodofsummationofriesz.]#### 
-
-A more extended method of ' summing ' a series than the preceding is by means of 
-
-X V 
-
-
-
-ljm 2 (l-~) a n , 
-
-in which X„ is any real function of n which tends to infinity with n. A series for which 
-this limit exists is said to be ' summable (Rr) with sum-function X„.' 
-
-
-
-###8.5 Hardy's convergence theorem. [8.5hardysconvergencetheorem.]###
-
-s summable ( 
-a n = (l/n), 
-
-
-
-Let 2 a n be a series which is summable (C 1). Then if 
-
-
-
-the series ^ a n converges. 
-
-n=l 
-
-* Bromwich, Infinite Series, § 122. 
-t Comptes Bendus, cxlix. (1910), pp. 18-21. 
-
-i Proc. London Math. Soc. (2), vm. (1910), pp. 302-304. For the proof nere given, we are 
-indebted to Mr Littlewood. 
+A more extended method of 'summing' a series than the preceding is by means of 
+\\[
+     \lim_{\nu \rightarrow \infty} \;\!
+     \sum_{n=1}^\infty 
+     \left(
+          1- \frac{\lambda_n}{\lambda_\nu}
+     \right)^{\:\!\! r} a_n .
+\\]
+in which \\(\lambda_n\\) is any real function of \\(n\\) which tends to infinity with \\(n\\). A series for which 
+this limit exists is said to be 'summable (\\(R\:\! r\\)) with sum-function \\(\lambda_n\\)'. 
 
 
 
-8-431-8-5] 
+###8.5 Hardy's convergence theorem.[^hardy,-1] [8.5hardysconvergencetheorem.]###
 
+[^hardy,-1]: [*Proc. London Math. Soc.* (2), **viii.** (1910)](http://babel.hathitrust.org/cgi/pt?id=inu.30000021006535;view=1up;seq=7), pp. 301--304. For the proof here given, we are indebted to Mr. Littlewood. 
 
-8-431-8'5] 
+*Let \\(\sum\limits_{n=1}^\infty a_n \\) be a series which is summable (\\(C\:\!  1\\)). Then if 
+\\[
+     a_n = O\left( 1 \middle/ n \right),
+\\]
+the series \\(\sum\limits_{n=1}^\infty a_n \\) converges. *
 
-Let Sn = a I + a.^ + 
-
-
-
-SUMMABLE SERIES 
-
-
-
-157 
-
-
-
-. + cin; then since S Un is summable {G 1), we have 
-
-M = l 
-
-Si + So+ ... + Sn = n[s + (l)j, 
-
-
-
-where s is the sum ((71) of X «». 
-
-
+Let \\(S_n = a_1 + a_2 + \cdots + a_n\\) 
+then since \\(\sum\limits_{n=1}^\infty a_n \\) is summable {\\(C\:\! 1\\)), we have 
+\\[
+     s_1 + s_2 + \cdots + s_n =
+     n\left\{ s + o(1) \right\},
+\\]
+where \\(s\\) is the sum (\\(C\:\! 1\\) of \\(\sum\limits_{n=1}^\infty a_n \\). 
 
 Let 
+\\[
+     s_m - s  = t_m, \quad (\, m = 1, \, 2, \cdots , \:\! n\,),
+\\]
 and let 
+\\[
+     t_1 + t_2 + \cdots + t_n = \sigma_n .
+\\]
+
+With this notation, it is sufficient to shew that, if \\(\left|\, a_n \,\right| < Kn^{-1}\\), where \\(K\\) 
+is independent of \\(n\\), and if \\(\sigma_ n = n\cdot o (1)\\), then \\(t_n \rightarrow 0\\)  as \\(n \rightarrow \infty\\). 
+
+Suppose first that \\(a_1\\), \\(a_2, \dots\\) are real. Then, if \\(t_n\\) does not tend to zero, 
+there is some positive number \\(h\\) such that there are an unlimited number of 
+the numbers \\(t_n\\) which satisfy *either* (i) \\(t_n > h\\) *or* (ii) \\(t_n < -h\\). We shall shew 
+that either of these hypotheses implies a contradiction. Take the former,[^formerlatter,-2] and choose \\(n\\) so that \\(t_n > h\\). 
+
+[^formerlatter,-2]: The reader will see that the latter hypothesis involves a contradiction by using arguments of a precisely similar character to those which will be employed in dealing with the former hypothesis.
+
+Then, when \\(r = 0\\), \\(1\\), \\(2\\), \\(\dots\\), 
+\\[
+     \left|\, a_{n+1} \,\right| < \left. \vphantom{z} K \middle/ n \right. .
+\\] 
+Now plot the points \\(P_r\\),. whose coordinates are \\((r, t_{n+r})\\) in a Cartesian 
+diagram. Since \\(t_{n+r+1}-t_{n+r} = a_{n+r+1}\\), the slope of the line \\(P_r P_{r+1}\\) is less 
+than \\(\left.  K \middle/ n \right.\\). Let \\(\theta= \arctan (\left.  K \middle/ n \right.)\\). 
 
 
-
-Sm-s = t,a, {m = l, 2, ... n), 
-
-ti + to+ ... +tn = (Tn • 
-
-
-
-With this notation, it is sufficient to shew that, if j a„ | < Kn~^, where K 
-is independent of n, and if On = n.o (1), then tn —> sis n —> cc . 
-
-Suppose first that a^, a^, ... are real. Then, if tn does not tend to zero, 
-there is some positive number h such that there are an unlimited number of 
-the numbers t,i which satisfy either^ (i) t^ > h or (ii) tn < —h. We shall shew 
-that either of these hypotheses implies a contradiction. Take the former*, 
-and choose n so that tn > h. 
-
-
-
-Then, when r = 0, 1,2, 
-
-
-
-< K/n. 
-
-
-
-
-Now plot the points P,. whose coordinates are (r, tn+r) in a Cartesian 
-diagram. Since tn^r+i-tn+r = an+r+i, the slope of the line PrPr+i is less 
-than = arc tan (K/n). 
 
 Therefore the points Pq, Pj, P.,, ... lie above the line y = h — xtan 6. 
 Let Pk be the last uf the points P„, Pj, ... which lie on the left of a;'= hcot 6, 
@@ -346,9 +252,7 @@ that is to say
 
 >|-A'-cot^ = i/i2ir-i7^. 
 
-* The reader will see that the latter hypothesis involves a contradiction by using arguments 
-of a precisely similar character to those which will be employed in dealing with the former 
-hypothesis. 
+* The reader will see that the latter hypothesis involves a contradiction by using arguments of a precisely similar character to those which will be employed in dealing with the former hypothesis. 
 
 
 
