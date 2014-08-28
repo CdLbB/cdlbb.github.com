@@ -285,9 +285,9 @@ continuation of a function, except the trivial one of
 [§5.5, example](CMA05-4-AnalyticContinuation.html#5.5example).
 
 
-![Figure 2a: Showing Borel's integral is analytic at any \\(\zeta\\) in the polygon.][fig_2a]
+![Figure 2a: Showing Borel's integral is analytic at any point \\(P\:(=\!\zeta)\\) in the polygon.][fig_2a]
 
-[fig_2a]: W&WIllustration2a.svg "Showing Borel's integral is analytic at any \\(\zeta\\) in the polygon."
+[fig_2a]: W&WIllustration2a.svg "Showing Borel's integral is analytic at any \\(P\:(=\zeta)\\) in the polygon."
 
 [^outsidepolygon,+1]: The reader will see this from the figure; for if there were such a singularity the corresponding side of the polygon would pass between \\(O\\) and \\(P\\); \ie, \\(P\\) would be outside the polygon.
 

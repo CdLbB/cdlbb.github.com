@@ -305,9 +305,9 @@ continuation of a function, except the trivial one of
 [&#167;5.5, example](CMA05-4-AnalyticContinuationMN.html#5.5example).
 
 
-![Figure 2a: Showing Borel's integral is analytic at any \\(\zeta\\) in the polygon.][fig_2a]
+![Figure 2a: Showing Borel's integral is analytic at any point \\(P\:(=\!\zeta)\\) in the polygon.][fig_2a]
 
-[fig_2a]: W&WIllustration2a.svg "Showing Borel's integral is analytic at any \\(\zeta\\) in the polygon."
+[fig_2a]: W&WIllustration2a.svg "Showing Borel's integral is analytic at any \\(P\:(=\zeta)\\) in the polygon."
 
 </div>
 
