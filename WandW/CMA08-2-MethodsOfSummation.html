@@ -195,12 +195,12 @@ this limit exists is said to be &#8216;summable (<span class="math">\(R\:\! r\)<
 the series <span class="math">\(\sum\limits_{n=1}^\infty a_n \)</span> converges. </em></p>
 
 <p>Let <span class="math">\(S_n = a_1 + a_2 + \cdots + a_n\)</span>
-then since <span class="math">\(\sum\limits_{n=1}^\infty a_n \)</span> is summable {<span class="math">\(C\:\! 1\)</span>), we have
+then since <span class="math">\(\sum\limits_{n=1}^\infty a_n \)</span> is summable (<span class="math">\(C\:\! 1\)</span>), we have
 <span class="math">\[
      s_1 + s_2 + \cdots + s_n =
      n\left\{ s + o(1) \right\},
 \]</span>
-where <span class="math">\(s\)</span> is the sum (<span class="math">\(C\:\! 1\)</span> of <span class="math">\(\sum\limits_{n=1}^\infty a_n \)</span>. </p>
+where <span class="math">\(s\)</span> is the sum (<span class="math">\(C\:\! 1\)</span>) of <span class="math">\(\sum\limits_{n=1}^\infty a_n \)</span>. </p>
 
 <p>Let
 <span class="math">\[
@@ -223,68 +223,78 @@ that either of these hypotheses implies a contradiction. Take the former,<a href
 <span class="math">\[
      \left|\, a_{n+1} \,\right| < \left. \vphantom{z} K \middle/ n \right. .
 \]</span>
-Now plot the points <span class="math">\(P_r\)</span>,. whose coordinates are <span class="math">\((r, t_{n+r})\)</span> in a Cartesian
-diagram. Since <span class="math">\(t_{n+r+1}-t_{n+r} = a_{n+r+1}\)</span>, the slope of the line <span class="math">\(P_r P_{r+1}\)</span> is less
-than <span class="math">\(\left.  K \middle/ n \right.\)</span>. Let <span class="math">\(\theta= \arctan (\left.  K \middle/ n \right.)\)</span>. </p>
+Now plot the points <span class="math">\(P_r\)</span> whose coordinates are <span class="math">\((r, t_{\:\! n+r})\)</span> in a Cartesian
+diagram. Since <span class="math">\(t_{\:\! n+r+1}-t_{\:\! n+r} = a_{n+r+1}\)</span>, the slope of the line <span class="math">\(P_r P_{r+1}\)</span> is greater than
+than <span class="math">\(-\left.  K \middle/ n \right.\)</span>. Let <span class="math">\(\theta= \arctan (\left.  K \middle/ n \right.)\)</span>. </p>
 
-<p>Therefore the points Pq, Pj, P.,, &#8230; lie above the line y = h — xtan 6.
-Let Pk be the last uf the points P„, Pj, &#8230; which lie on the left of a;&#8217;= hcot 6,
-so that k ^ h cot 6. </p>
+<figure>
+<img src="W&WIllustration3.svg" alt="Figure 3: Plotting \(P_r = (r,t_{\:\! n+r})\\)." id="fig_3" title="Plotting  \\(P_r = (r,t_{n+r})\\)." />
+<figcaption>Figure 3: Plotting <span class="math">\(P_r = (r,t_{\:\! n+r})\)</span>.</figcaption>
+</figure>
+
+<p>Therefore the points <span class="math">\(P_0\)</span>, <span class="math">\(P_1\)</span>, <span class="math">\(P_2, \dots\)</span> lie above the line <span class="math">\(y = h - x \tan\theta\)</span>.
+Let <span class="math">\(P_k\)</span> be the last of the points <span class="math">\(P_0\)</span>, <span class="math">\(P_1, \dots\)</span>, which lie on the left of <span class="math">\(x=h \cot\theta\)</span>,
+so that <span class="math">\(k \leq h \cot\theta\)</span>. </p>
 
 <p>Draw rectangles as shewn in the figure. The area of these rectangles
-exceeds the area of the triangle bounded by y = h — x tan 6 and the axes;
-that is to say </p>
+exceeds the area of the triangle bounded by <span class="math">\(y = h - x \tan \theta\)</span> and the axes;
+that is to say
+<span class="math">\[\begin{align*}
+     \sigma_{n+k} - \sigma_{n-1} 
+     &=
+     t_n + t_{n+1} + \cdots + t_{n+k} \\
+     &>
+     \frac{1}{2} h^2 K^{-1} n.
+\end{align*}\]</span></p>
 
-<p>&quot;&#8220;h+A; O&#8221;?!— 1 ^^ tn + &#8217; n+i + &#8230; + Cn+fc </p>
+<p>But
+<span class="math">\[\begin{align*} 
+     \left|\,
+           \sigma_{n+k} - \sigma_{n-1} 
+      \,\right|
+     & \leq
+     \left|\,
+          \sigma_{n+k}
+     \,\right| +
+     \left|\,
+          \sigma_{n-1}
+     \,\right| \\
+     &=
+      (n + k)\cdot o(1) + (n-1)\cdot o(1) \\
+     &=
+      n\cdot o(1), 
+\end{align*}\]</span>
+since <span class="math">\(k \leq hnK^{-1}\)</span>, and <span class="math">\(h\)</span>, <span class="math">\(K\)</span> are independent of <span class="math">\(n\)</span>. </p>
 
-<blockquote>
-<p>|-A&#8217;-cot^ = i/i2ir-i7^. </p>
-</blockquote>
+<p>Therefore, for a set of values of <span class="math">\(n\)</span> tending to infinity,
+<span class="math">\[
+     \frac{1}{2} h^2 K^{-1} <
+     n \cdot o(1),
+\]</span>
+which is impossible since <span class="math">\(\frac{1}{2} h^2 K^{-1}\)</span> is <em>not</em> <span class="math">\(o(1)\)</span> as <span class="math">\(n \rightarrow \infty\)</span>. </p>
 
-<ul>
-<li>The reader will see that the latter hypothesis involves a contradiction by using arguments of a precisely similar character to those which will be employed in dealing with the former hypothesis.</li>
-</ul>
+<p>This is the contradiction obtained on the hypothesis that <span class="math">\(\varlimsup t_n \geq h > 0\)</span>;
+therefore <span class="math">\(\varlimsup t_n \leq 0\)</span>. Similarly, by taking the corresponding case in which
+<span class="math">\(t_n^ - h\)</span>, we arrive at the result <span class="math">\(\varliminf t_n \leq 0\)</span>. Therefore since <span class="math">\(\varlimsup t_n  \geq \varliminf t_n \)</span>,
+we have
+<span class="math">\[
+     \varlimsup t_n  = \varliminf t_n  = 0, 
+\]</span>
+and so
+<span class="math">\[
+     t_n \rightarrow 0. 
+\]</span>
+That is to say <span class="math">\(s_n \rightarrow s\)</span>, <em>and so <span class="math">\(\sum\limits_{n=1}^\infty a_n \)</span> is convergent and its sum is <span class="math">\(s\)</span>.</em> </p>
 
-<p>158 THE PROCESSES OF ANALYSIS [CBAP. VIII </p>
+<p>If <span class="math">\(a_n\)</span> be complex, we consider <span class="math">\(\mathfrak{Re} (a_n)\)</span> and <span class="math">\(\mathfrak{Im} (a_n)\)</span> separately, and find
+that <span class="math">\(\sum\limits_{n=1}^\infty \mathfrak{Re} (a_n) \)</span> and <span class="math">\(\sum\limits_{n=1}^\infty \mathfrak{Im} (a_n) \)</span> converge by the theorem just proved, and so <span class="math">\(\sum\limits_{n=1}^\infty a_n \)</span> converges. </p>
 
-<p>But I (Tn+k — 0&quot;7i-i ! &lt; I 0&#8217;7i+A; ! + I ^n-i \ </p>
-
-<p>= (n + k).o{l) + {n-l).o(l)
-= n.o{l),
-since k ^ hnK~^, and h, K are independent of n. </p>
-
-<p>Therefore, for a set of values of n tending to infinity, </p>
-
-<p>^h-K~^n &lt;n.o{l),
-which is impossible since ^h&#8217;-K~^ is )iot o (1) as /i-&gt; x . </p>
-
-<p>This is the contradiction obtained on the hypothesis that lim tn&gt; h &gt; 0;
-therefore Urn tn ^ 0. Similarly, by taking the corresponding case in which
-tn^ — h, we arrive at the result lim tn ^ 0. Therefore since lim tn &gt; lim tn, </p>
-
-<p>we have lim t^ = lim tn = 0, </p>
-
-<p>and so tn — &gt; 0. </p>
-
-<p>That is to say Sn —&gt; s, and so 2 a,i is convergent and its sum is s. </p>
-
-<p>If an be complex, we consider R (a„) and / (a^) separately, and find </p>
-
-<p>00 « </p>
-
-<p>that S R{an) and S /(c/„) converge by the theorem just proved, and so
-w=l «=i </p>
-
-<p>00 </p>
-
-<p>2 an converges. </p>
-
-<p>M = l </p>
-
-<p>The reader will see in Chapter ix that this result is of great importance
+<p>The reader will see in <a href="CMA09-1-FourierSeries.html">Chapter <strong>ix</strong></a> that this result is of great importance
 in the modern theory of Fourier series. </p>
 
-<p>Corollary. If «« (I) be a function of | such that 2 «„ (^) is uniformly summahle {C ) </p>
+<blockquote>
+<p><em>Corollary</em>. If «« (I) be a function of | such that 2 «„ (^) is uniformly summahle {C ) </p>
+</blockquote>
 
 <p>n = l </p>
 

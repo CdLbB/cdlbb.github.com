@@ -204,12 +204,12 @@ this limit exists is said to be 'summable (\\(R\:\! r\\)) with sum-function \\(\
 the series \\(\sum\limits_{n=1}^\infty a_n \\) converges. *
 
 Let \\(S_n = a_1 + a_2 + \cdots + a_n\\) 
-then since \\(\sum\limits_{n=1}^\infty a_n \\) is summable {\\(C\:\! 1\\)), we have 
+then since \\(\sum\limits_{n=1}^\infty a_n \\) is summable (\\(C\:\! 1\\)), we have 
 \\[
      s_1 + s_2 + \cdots + s_n =
      n\left\{ s + o(1) \right\},
 \\]
-where \\(s\\) is the sum (\\(C\:\! 1\\) of \\(\sum\limits_{n=1}^\infty a_n \\). 
+where \\(s\\) is the sum (\\(C\:\! 1\\)) of \\(\sum\limits_{n=1}^\infty a_n \\). 
 
 Let 
 \\[
@@ -234,68 +234,76 @@ Then, when \\(r = 0\\), \\(1\\), \\(2\\), \\(\dots\\),
 \\[
      \left|\, a_{n+1} \,\right| < \left. \vphantom{z} K \middle/ n \right. .
 \\] 
-Now plot the points \\(P_r\\),. whose coordinates are \\((r, t_{n+r})\\) in a Cartesian 
-diagram. Since \\(t_{n+r+1}-t_{n+r} = a_{n+r+1}\\), the slope of the line \\(P_r P_{r+1}\\) is less 
-than \\(\left.  K \middle/ n \right.\\). Let \\(\theta= \arctan (\left.  K \middle/ n \right.)\\). 
+Now plot the points \\(P_r\\) whose coordinates are \\((r, t_{\:\! n+r})\\) in a Cartesian 
+diagram. Since \\(t_{\:\! n+r+1}-t_{\:\! n+r} = a_{n+r+1}\\), the slope of the line \\(P_r P_{r+1}\\) is greater than 
+than \\(-\left.  K \middle/ n \right.\\). Let \\(\theta= \arctan (\left.  K \middle/ n \right.)\\). 
 
+![Figure 3: Plotting  \\(P_r = (r,t_{\:\! n+r})\\).][fig_3]
 
+[fig_3]: W&WIllustration3.svg "Plotting  \\(P_r = (r,t_{n+r})\\)."
 
-Therefore the points Pq, Pj, P.,, ... lie above the line y = h — xtan 6. 
-Let Pk be the last uf the points P„, Pj, ... which lie on the left of a;'= hcot 6, 
-so that k ^ h cot 6. 
+Therefore the points \\(P_0\\), \\(P_1\\), \\(P_2, \dots\\) lie above the line \\(y = h - x \tan\theta\\). 
+Let \\(P_k\\) be the last of the points \\(P_0\\), \\(P_1, \dots\\), which lie on the left of \\(x=h \cot\theta\\), 
+so that \\(k \leq h \cot\theta\\). 
 
 Draw rectangles as shewn in the figure. The area of these rectangles 
-exceeds the area of the triangle bounded by y = h — x tan 6 and the axes; 
+exceeds the area of the triangle bounded by \\(y = h - x \tan \theta\\) and the axes; 
 that is to say 
+\\[\begin{align*}
+     \sigma_{n+k} - \sigma_{n-1} 
+     &=
+     t_n + t_{n+1} + \cdots + t_{n+k} \\
+     &>
+     \frac{1}{2} h^2 K^{-1} n.
+\end{align*}\\]
 
-""h+A; O"?!— 1 ^^ tn + ' n+i + . . . + Cn+fc 
 
->|-A'-cot^ = i/i2ir-i7^. 
+But 
+\\[\begin{align*} 
+     \left|\,
+           \sigma_{n+k} - \sigma_{n-1} 
+      \,\right|
+     & \leq
+     \left|\,
+          \sigma_{n+k}
+     \,\right| +
+     \left|\,
+          \sigma_{n-1}
+     \,\right| \\
+     &=
+      (n + k)\cdot o(1) + (n-1)\cdot o(1) \\
+     &=
+      n\cdot o(1), 
+\end{align*}\\]
+since \\(k \leq hnK^{-1}\\), and \\(h\\), \\(K\\) are independent of \\(n\\). 
 
-* The reader will see that the latter hypothesis involves a contradiction by using arguments of a precisely similar character to those which will be employed in dealing with the former hypothesis. 
+Therefore, for a set of values of \\(n\\) tending to infinity, 
+\\[
+     \frac{1}{2} h^2 K^{-1} <
+     n \cdot o(1),
+\\] 
+which is impossible since \\(\frac{1}{2} h^2 K^{-1}\\) is *not* \\(o(1)\\) as \\(n \rightarrow \infty\\). 
 
+This is the contradiction obtained on the hypothesis that \\(\varlimsup t_n \geq h > 0\\); 
+therefore \\(\varlimsup t_n \leq 0\\). Similarly, by taking the corresponding case in which 
+\\(t_n \leq - h\\), we arrive at the result \\(\varliminf t_n \geq 0\\). Therefore since \\(\varlimsup t_n  \geq \varliminf t_n \\), 
+we have 
+\\[
+     \varlimsup t_n  = \varliminf t_n  = 0, 
+\\]
+and so 
+\\[
+     t_n \rightarrow 0. 
+\\]
+That is to say \\(s_n \rightarrow s\\), *and so \\(\sum\limits_{n=1}^\infty a_n \\) is convergent and its sum is \\(s\\).* 
 
+If \\(a_n\\) be complex, we consider \\(\mathfrak{Re} (a_n)\\) and \\(\mathfrak{Im} (a_n)\\) separately, and find 
+that \\(\sum\limits_{n=1}^\infty \mathfrak{Re} (a_n) \\) and \\(\sum\limits_{n=1}^\infty \mathfrak{Im} (a_n) \\) converge by the theorem just proved, and so \\(\sum\limits_{n=1}^\infty a_n \\) converges. 
 
-158 THE PROCESSES OF ANALYSIS [CBAP. VIII 
-
-But I (Tn+k — 0"7i-i ! < I 0'7i+A; ! + I ^n-i \ 
-
-= (n + k).o{l) + {n-l).o(l) 
-= n.o{l), 
-since k ^ hnK~^, and h, K are independent of n. 
-
-Therefore, for a set of values of n tending to infinity, 
-
-^h-K~^n <n.o{l), 
-which is impossible since ^h'-K~^ is )iot o (1) as /i-> x . 
-
-This is the contradiction obtained on the hypothesis that lim tn> h > 0; 
-therefore Urn tn ^ 0. Similarly, by taking the corresponding case in which 
-tn^ — h, we arrive at the result lim tn ^ 0. Therefore since lim tn > lim tn, 
-
-we have lim t^ = lim tn = 0, 
-
-and so tn — > 0. 
-
-That is to say Sn —> s, and so 2 a,i is convergent and its sum is s. 
-
-If an be complex, we consider R (a„) and / (a^) separately, and find 
-
-00 « 
-
-that S R{an) and S /(c/„) converge by the theorem just proved, and so 
-w=l «=i 
-
-00 
-
-2 an converges. 
-
-M = l 
-
-The reader will see in Chapter ix that this result is of great importance 
+The reader will see in [Chapter **ix**](CMA09-1-FourierSeries.html) that this result is of great importance 
 in the modern theory of Fourier series. 
 
-Corollary. If «« (I) be a function of | such that 2 «„ (^) is uniformly summahle {C \) 
+>*Corollary*. If «« (I) be a function of | such that 2 «„ (^) is uniformly summahle {C \) 
 
 n = l 
 
