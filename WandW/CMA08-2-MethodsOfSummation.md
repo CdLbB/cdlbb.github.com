@@ -140,14 +140,7 @@ that \\(S = s\\); that is to say \\(S_{\nu}\\) has the unique limit \\(s\\); thi
 
 >*Example* 1. Frame a definition of 'uniform summability \\((C\:\!  1)\\) of a series of variable terms.' 
 
->######*Example* 2. If \\(b_{n,\;\!\nu} \geq b_{n+1,\;\!\nu} \geq 0\\) when \\(n< \nu\\) and if, when \\(n\\) is *fixed*, \\(\lim\limits_{\nu \rightarrow \infty} b_{n,\;\!\nu} = 1\\), and if  \\(\sum\limits_{m=1}^{\infty} a_m =s\\), then [8.43example2]######
-\\( \displaystyle
-     \lim_{\nu \rightarrow \infty} 
-     \left\{ 
-          \sum_{n=1}^{\nu} a_n b_{n,\;\!\nu} 
-     \right\}
-     =s.
-\\)
+>######*Example* 2. If \\(b_{n,\;\!\nu} \geq b_{n+1,\;\!\nu} \geq 0\\) when \\(n< \nu\\) and if, when \\(n\\) is *fixed*, \\(\lim\limits_{\nu \rightarrow \infty} b_{n,\;\!\nu} = 1\\), and if  \\(\sum\limits_{m=1}^{\infty} a_m =s\\), then \\( \displaystyle \lim_{\nu \rightarrow \infty}   \left\{   \sum_{n=1}^{\nu} a_n b_{n,\;\!\nu}   \right\}  =s.\\) [8.43example2]######
 
 #####8.431 Cesàro's general method of summation. [8.431cesarosgeneralmethodofsummation.]#####
 
