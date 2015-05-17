@@ -46,7 +46,7 @@ and we shall write
 \\[ 
      \sum_{m=0}^n
      \frac{1}{x} - \frac{1!}{x^2} + \frac{2!}{x^3}- 
-     \cdots + \frac{(-1)^n n!}{n^{n+1}} = 
+     \cdots + \frac{(-1)^n n!}{x^{n+1}} = 
      S_{n}(x) . 
 \\]
 Then we have \\(\left|\, u_m \middle/ u_{m-1} \,\right| = mx^{-1} \rightarrow \infty \\) as \\(m \rightarrow \infty\\). *The series \\(\sum u_m\\) m is therefore divergent for all values of \\(x\\)*. In spite of this, however, the series can be used for the calculation of \\(f(x)\\); this can be seen in the following way. 
@@ -370,7 +370,7 @@ and Bessel functions ([Chapter **xvii**](whereOwhere.html)).
 <li class="part"><a onClick="hideIt('navaprop');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
   <ul>
     <li class="more"><a onClick="hideIt('navaprop');showIt('navprocesses');"> more . . . </a></li>
-    <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
+    <li><a href="CMA07-1-ExpansionOfFunctions.html">Expanding Functions in Infinite Series</a></li>
     <li><a href="#asymptoticexpansionsandsummableseries">Asymptotic Expansions and Summable Series</a>
       <ul>
         <li class="current"><a href="#8.1simpleexampleofanasymptoticexpansion.">A simple asymptotic expansion</a></li>

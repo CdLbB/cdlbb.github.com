@@ -239,9 +239,7 @@ are numerically less than \\( \left.\epsilon \middle/ k\right.\\); and therefore
 \\[\left|\,\sum_{n=m+1}^{m+p} a_n(z)\:\! u_n(z)\,\right| < \frac{\epsilon u_{m+1}(z)}{k} < \epsilon ,\\]
 and the choice of \\(\epsilon\\) and \\(m\\) to is independent of \\(z\\).]
 
->*Example* 1. Shew that, if \\(\delta >0\\), the series 
-\\[\sum_{n=1}^\infty \frac{\cos n\theta}{n}, \quad \sum_{n=1}^\infty \frac{\sin n\theta}{n}\\]
-converge uniformly in the range \\(\delta \leq \theta \leq 2\pi-\delta\\).
+>######*Example* 1. Shew that, if \\(\delta >0\\), the series \\[\sum_{n=1}^\infty \frac{\cos n\theta}{n}, \quad \sum_{n=1}^\infty \frac{\sin n\theta}{n}\\] converge uniformly in the range \\(\delta \leq \theta \leq 2\pi-\delta\\). [3.35example1]######
 >
 >Obtain the corresponding result for the series 
 \\[\sum_{n=1}^\infty \frac{ (-1)^n\cos n\theta}{n}, \quad \sum_{n=1}^\infty \frac{ (-1)^n\sin n\theta}{n}.\\]

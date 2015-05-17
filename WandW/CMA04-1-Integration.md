@@ -244,8 +244,7 @@ for some value of \\(\xi\\) such that \\(a \leq \xi \leq b\\).[^alternative,-4]
 
  [^bonnets,+5]: [Journal de Math. xiv. (1849)](http://gallica.bnf.fr/ark:/12148/bpt6k163938.image.langEN), p. 249. The proof given is a modified form of an investigation due to Holder, [Gott. Nach. (1889)](http://gdz.sub.uni-goettingen.de/en/dms/loader/toc/?PPN=PPN252457072_1889), pp. 38-47.
 
-(II) Let \\(f(x)\\) and \\(\phi(x)\\) be integrable in the range \\([a, b]\\) and let \\(\phi(x)\\) be a *positive decreasing* function of \\(x\\). Then *Bonnet's[^bonnets,+5] form of the Second Mean Value Theorem* is that a number \\(\xi\\) exists such that \\(a \leq \xi \leq b\\), and 
-\\[\int_a^b \! f(x)\phi(x) \, dx = \phi(a) \!\int_a^{\xi} \! f(x)\,dx.\\].
+######(II) Let \\(f(x)\\) and \\(\phi(x)\\) be integrable in the range \\([a, b]\\) and let \\(\phi(x)\\) be a *positive decreasing* function of \\(x\\). Then *Bonnet's[^bonnets,+5] form of the Second Mean Value Theorem* is that a number \\(\xi\\) exists such that \\(a \leq \xi \leq b\\), and \\[\int_a^b \! f(x)\phi(x) \, dx = \phi(a) \!\int_a^{\xi} \! f(x)\,dx.\\].[4.14iisecondmeanvaluetheorem]######
 
 For, with the notation of [§§4.1-4.13](#4.1theconceptofintegration.), consider the sum 
 \\[S= \sum_{s=1}^p (x_s-x_{s-1})\,f(x_{s-1})\,\phi(x_{s-1}) .\\]

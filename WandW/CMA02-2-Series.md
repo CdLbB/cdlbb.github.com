@@ -114,7 +114,7 @@ Then if \\(f_n \geq f_{n+1}> 0\\) and* \\(\lim\:\! f_n = 0\\),[^steadydecrease,+
 
 For, since \\(\lim\:\! f_n = 0\\), given an arbitrary positive number \\(\epsilon\\), we can find \\(m\\) such that \\(f_{m+1} < \epsilon\left/2K\right.\\).
 
-Then \\(\left|\, \sum\limits_{n=m+1}^{m+q} a_n  \,\right| \leq \left|\, \sum\limits_{n=1}^{m} a_n  \,\right| + \left|\, \sum\limits_{n=1}^{q} a_n  \,\right| < 2K\\), for all positive values of \\(q\\); so 
+Then \\(\left|\, \sum\limits_{n=m+1}^{m+q} a_n  \,\right| \leq \left|\, \sum\limits_{n=1}^{m+q} a_n  \,\right| + \left|\, \sum\limits_{n=1}^{m} a_n  \,\right| < 2K\\), for all positive values of \\(q\\); so 
 that, by Abel's inequality, we have, for all positive values of \\(p\\),
 \\[ \left|\, \sum\limits_{n=m+1}^{m+p} a_n f_n  \,\right| \leq A f_{m+1} \\]
 where \\(A <2K\\).
@@ -131,11 +131,11 @@ Therefore \\(\left|\, \sum\limits_{n=m+1}^{m+p} a_n f_n  \,\right| \leq 2K f_{m+
 
 
 
->*Example* 1. Shew that if \\(0 < \theta < 2 \pi\\), \\(\left|\, \sum\limits_{n=1}^p  \sin n \theta \,\right| < \,\!\mathrm{cosec} \frac{1}{2} \theta \\); and deduce that, if \\(f_n \rightarrow 0\\) steadily, \\(\sum\limits_{n=1}^{\infty}  f_n \sin n \theta \\) converges for all real values of \\(\theta\\), and that \\(\sum\limits_{n=1}^{\infty}  f_n \cos n \theta \\) converges if \\(\theta\\) is not an even multiple of \\(\pi\\).
+>######*Example* 1. Shew that if \\(0 < \theta < 2 \pi\\), \\(\left|\, \sum\limits_{n=1}^p  \sin n \theta \,\right| < \,\!\mathrm{cosec} \frac{1}{2} \theta \\); and deduce that, if \\(f_n \rightarrow 0\\) steadily, \\(\sum\limits_{n=1}^{\infty}  f_n \sin n \theta \\) converges for all real values of \\(\theta\\), and that \\(\sum\limits_{n=1}^{\infty}  f_n \cos n \theta \\) converges if \\(\theta\\) is not an even multiple of \\(\pi\\). [2.31example1]######
 
 
 
->*Example* 2. Shew that, if \\(f_n \rightarrow 0\\) steadily, \\(\sum\limits_{n=1}^{\infty} (-1)^n  f_n \cos n \theta \\) converges if \\(\theta\\) is real and not an odd multiple of \\(\pi\\), and \\(\sum\limits_{n=1}^{\infty} (-1)^n f_n \sin n \theta \\) converges for all real values of \\(\theta\\). [Write \\(\pi + \theta\\) for \\(\theta\\) in example 1.]
+>######*Example* 2. Shew that, if \\(f_n \rightarrow 0\\) steadily, \\(\sum\limits_{n=1}^{\infty} (-1)^n  f_n \cos n \theta \\) converges if \\(\theta\\) is real and not an odd multiple of \\(\pi\\), and \\(\sum\limits_{n=1}^{\infty} (-1)^n f_n \sin n \theta \\) converges for all real values of \\(\theta\\). (Write \\(\pi + \theta\\) for \\(\theta\\) in example 1.)[2.31example2]######
 
 
 #### 2.32 Absolute and conditional convergence [absoluteandconditionalconvergence]####
@@ -152,7 +152,7 @@ In this case, therefore, the divergence of the series of moduli does not entail 
 Series, which are such that the series formed by the moduli of their terms are convergent, possess special properties of great importance, and are called *absolutely convergent* series. Series which though convergent are not absolutely convergent (i.e. the series themselves converge, but the series of moduli diverge) are said to be *conditionally convergent*.
 
 
-#### 2.33 The geometric series, and the series \\( \sum\limits_{n=1}^{\infty} \displaystyle \, \frac{1}{n^p} \\) [geometricseries] ####
+#### 2.33 The geometric series, and the series \\( \sum\limits_{n=1}^{\infty} \displaystyle \, \frac{1}{n^{\!\; p}} \\) [geometricseries] ####
 
 The convergence of a particular series is in most cases investigated, not by the direct consideration of the sum \\(S_{n,\:\! p}\\), but (as will appear from the following articles) by a comparison of the given series with some other series which is known to be convergent or divergent. We shall now investigate the convergence of two of the series which are most frequently used as standards for comparison.
 

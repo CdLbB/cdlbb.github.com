@@ -354,8 +354,7 @@ for some value of \\(\xi\\) such that \\(a \leq \xi \leq b\\).<a class="marginma
 
 <div markdown=1 class="contenttext">
 
-(II) Let \\(f(x)\\) and \\(\phi(x)\\) be integrable in the range \\([a, b]\\) and let \\(\phi(x)\\) be a *positive decreasing* function of \\(x\\). Then *Bonnet's<a class="marginmark" onClick="toggleHide('mn:11,+5');">&#91;11&#93;</a> form of the Second Mean Value Theorem* is that a number \\(\xi\\) exists such that \\(a \leq \xi \leq b\\), and 
-\\[\int_a^b \! f(x)\phi(x) \, dx = \phi(a) \!\int_a^{\xi} \! f(x)\,dx.\\].
+######(II) Let \\(f(x)\\) and \\(\phi(x)\\) be integrable in the range \\([a, b]\\) and let \\(\phi(x)\\) be a *positive decreasing* function of \\(x\\). Then *Bonnet's<a class="marginmark" onClick="toggleHide('mn:11,+5');">&#91;11&#93;</a> form of the Second Mean Value Theorem* is that a number \\(\xi\\) exists such that \\(a \leq \xi \leq b\\), and \\[\int_a^b \! f(x)\phi(x) \, dx = \phi(a) \!\int_a^{\xi} \! f(x)\,dx.\\].[4.14iisecondmeanvaluetheorem]######
 
 For, with the notation of [&#167;&#167;4.1-4.13](#4.1theconceptofintegration.), consider the sum 
 \\[S= \sum_{s=1}^p (x_s-x_{s-1})\,f(x_{s-1})\,\phi(x_{s-1}) .\\]

@@ -434,8 +434,8 @@ series \\(1+0 - 2!+0 + 4!+0 - \cdots\\)  can be so summed.
 <li class="part"><a onClick="hideIt('navaprop');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
   <ul>
     <li class="more"><a onClick="hideIt('navaprop');showIt('navprocesses');"> more . . . </a></li>
-    <li><a href="CMA04-1-Integration.html">The Theory of Riemann Integration</a></li>
-    <li><a href="#asymptoticexpansionsandsummableseries">Asymptotic Expansions and Summable Series</a>
+    <li><a href="CMA07-1-ExpansionOfFunctions.html">Expanding Functions in Infinite Series</a></li>
+    <li><a href="CMA08-1-AsymptoticExpansion.html#asymptoticexpansionsandsummableseries">Asymptotic Expansions and Summable Series</a>
       <ul>
         <li><a href="CMA08-1-AsymptoticExpansion.html#8.1simpleexampleofanasymptoticexpansion.">A simple asymptotic expansion</a></li>
 	<li><a href="CMA08-1-AsymptoticExpansion.html#8.2definitionofanasymptoticexpansion.">Definition of an asymptotic expansion</a></li>
