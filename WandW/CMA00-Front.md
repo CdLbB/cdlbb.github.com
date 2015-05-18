@@ -139,7 +139,7 @@ Our thanks are due to Miss Wrinch for reading the greater part of the proofs and
 
 | 	| 
 | :-------	  |
-|\\(\quad\\) | 
+|  &nbsp;              | 
 | E.T.W.	  |
 | G.N.W.	  | 
 
@@ -310,7 +310,18 @@ Cotangents</a></li>
          <li><a href="CMA08-2-MethodsOfSummation.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
         </ol>
      </li>
-    <li><a href="CMA09-1-FourierSeries.html">Fourier Series and Trigonometrical&nbsp;Series</a></li>
+    <li><a href="CMA09-1-FourierSeries.html">Fourier Series and Trigonometrical&nbsp;Series &nbsp;&nbsp;  <strong>(pp.&nbsp;160&ndash;193)</strong></a><ol>
+          <li>9.1 <a href="CMA09-1-FourierSeries.html##9.1definitionoffourierseries.">Definition of Fourier Series</a></li>
+	  <li>9.2 <a href="CMA09-2-DirichletsConditions.html#9.2ondirichletsconditionsandfourierstheorem.">Dirichlet&#8217;s conditions &amp Fourier&#8217;s theorem</a></li>
+	  <li>9.3 <a href="CMA09-2-DirichletsConditions.html#9.3thenatureofthecoefficientsinafourierseries.">Coefficients of a Fourier series</a></li>
+	  <li>9.4 <a href="CMA09-3-FejersTheorem.html#9.4fejerstheorem.">Fej&eacute;r&#8217;s theorem</a></li>
+	  <li>9.5 <a href="CMA09-5-FourierConstants.html#9.5thehurwitz-liapounofftheoremconcerningfourierconstants.">Hurwitz-Liapounoff theorem concerning Fourier constants</a></li>
+	  <li>9.6 <a href="CMA09-5-FourierConstants.html#9.6riemannstheoryoftrigonometricalseries.">Riemann&#8217;s theory of trigonometrical series</a></li>
+	  <li>9.7 <a href="CMA09-6-RiemannsTheorem.html#9.7fouriersrepresentationofafunctionbyanintegral.">Fourier&#8217;s representation of a function by an integral</a></li>
+         <li><a href="CMA09-7-MiscellaneousExamples.html#references.">References</a>
+         <li><a href="CMA09-7-MiscellaneousExamples.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
+        </ol>
+     </li>
      <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
      <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
  
