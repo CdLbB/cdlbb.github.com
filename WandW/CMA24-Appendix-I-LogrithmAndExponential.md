@@ -319,8 +319,8 @@ and the result required follows from the result of [§A.2](#a.2theexponentialfun
      <li><a href="CMA05-1-AnalyticFunctions.html">The Properties of Analytic Functions</a></li>
      <li><a href="CMA06-1-Residues.html">The Theory of Residues</a></li>
      <li><a href="CMA07-1-ExpansionOfFunctions.html">Expanding Functions in Infinite Series</a></li>
-     <li><a href="CMA08-1-AsymptoticExpansion.html">Asymptotic Expansions and Summability</a></li>
-     <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li><a href="CMA08-1-AsymptoticExpansion.html">Asymptotic Expansions &amp Summability</a></li>
+     <li><a href="CMA09-1-FourierSeries.html">Fourier Series &amp; Trigonometrical Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
      <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
   </ul>

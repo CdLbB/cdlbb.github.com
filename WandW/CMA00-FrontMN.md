@@ -345,7 +345,7 @@ April, 2014.
 	  <li>7.7 <a href="CMA07-4-BorelsTheoremMN.html#7.7theexpansionofaclassofperiodicfunctionsinaseriesofcotangents.">The Expansion of Periodic Functions in a Series of
 Cotangents</a></li>
 	  <li>7.8 <a href="CMA07-4-BorelsTheoremMN.html#7.8borelstheorem.">Borel&#8217;s Theorem</a></li>
-         <li><a href="CMA07-5-ExercisesMN.html#references."">References</a>
+         <li><a href="CMA07-5-ExercisesMN.html#references.">References</a>
          <li><a href="CMA07-5-ExercisesMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
         </ol>
      </li>
@@ -356,7 +356,7 @@ Cotangents</a></li>
 	  <li>8.3 <a href="CMA08-1-AsymptoticExpansionMN.html#8.3multiplicationofasymptoticexpansions.">Multiplication of Asymptotic Expansions</a></li>
 	  <li>8.4 <a href="CMA08-2-MethodsOfSummationMN.html#8.4.methodsofsummingseries.">Methods of &#8216;Summing&#8217; Series</a></li>
 	  <li>8.5 <a href="CMA08-2-MethodsOfSummationMN.html#8.5hardysconvergencetheorem.">Hardy&#8217;s Convergence Theorem</a></li>
-         <li><a href="CMA08-2-MethodsOfSummationMN.html#references."">References</a></li>
+         <li><a href="CMA08-2-MethodsOfSummationMN.html#references.">References</a></li>
          <li><a href="CMA08-2-MethodsOfSummationMN.html#miscellaneousexamples.">Miscellaneous Examples</a></li>
         </ol>
      </li>
@@ -435,8 +435,8 @@ Cotangents</a></li>
      <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
       <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
      <li><a href="CMA07-1-ExpansionOfFunctionsMN.html">Expanding Functions in Infinite Series</a></li>
-     <li><a href="CMA08-1-AsymptoticExpansionMN.html">Asymptotic Expansions and Summability</a></li>
-     <li class="notdone"><a href="whereOwhere.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li><a href="CMA08-1-AsymptoticExpansionMN.html">Asymptotic Expansions &amp Summability</a></li>
+     <li><a href="CMA09-1-FourierSeriesMN.html">Fourier Series &amp; Trigonometrical Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
      <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
   </ul>
