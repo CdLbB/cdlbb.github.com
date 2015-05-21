@@ -520,13 +520,13 @@ Hence, by putting \\(t = 1\\) shew that
 
 
 <div id="navfixedleft" class="fixedBleft">
-<p><a href="CMA06-2-CauchysIntegral.html">&#x25C0;</a></p>
+<p><a href="CMA06-2-CauchysIntegral.html">&#x25C0;&#xFE0E;</a></p>
 </div>
 
 <div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
-<p><a onClick="hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');showIt('navcauchy');" style="float: left;">&#x25A4;</a> <a href="CMA07-1-ExpansionOfFunctions.html" style="float: right;">&#x25B6;</a></p>
+<p><a onClick="hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');showIt('navcauchy');" style="float: left;">&#x25A4;</a> <a href="CMA07-1-ExpansionOfFunctions.html" style="float: right;">&#x25B6;&#xFE0E;</a></p>
 </div>
 
 <div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;" >
-<p><a onClick="hideIt('navcauchy');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA07-1-ExpansionOfFunctions.html" style="float: right;">&#x25B6;	</a></p>
+<p><a onClick="hideIt('navcauchy');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA07-1-ExpansionOfFunctions.html" style="float: right;">&#x25B6;&#xFE0E;	</a></p>
 </div>

@@ -647,13 +647,13 @@ Hence *when \\(\left|\,z\,\right|=1 \\), a sufficient condition<a class="marginm
 
 
 <div id="navfixedleft" class="fixedBleft">
-<p><a href="CMA02-1-LimitsMN.html">&#x25C0;</a></p>
+<p><a href="CMA02-1-LimitsMN.html">&#x25C0;&#xFE0E;</a></p>
 </div>
 
 <div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
-<p><a onClick="showIt('navseries');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA02-3-MoreSeriesMN.html" style="float: right;">&#x25B6;</a></p>
+<p><a onClick="showIt('navseries');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA02-3-MoreSeriesMN.html" style="float: right;">&#x25B6;&#xFE0E;</a></p>
 </div>
 
 <div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
-<p><a onClick="hideIt('navseries');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA02-3-MoreSeriesMN.html" style="float: right;">&#x25B6;	</a></p>
+<p><a onClick="hideIt('navseries');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA02-3-MoreSeriesMN.html" style="float: right;">&#x25B6;&#xFE0E;	</a></p>
 </div>

@@ -624,13 +624,13 @@ continuously turning tangents, each of which meets any line parallel to the coor
 
 
 <div id="navfixedleft" class="fixedBleft">
-<p><a href="CMA04-2-InfiniteIntegralsMN.html">&#x25C0;</a></p>
+<p><a href="CMA04-2-InfiniteIntegralsMN.html">&#x25C0;&#xFE0E;</a></p>
 </div>
 
 <div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
-<p><a onClick="showIt('navint');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA05-1-AnalyticFunctionsMN.html" style="float: right;">&#x25B6;</a></p>
+<p><a onClick="showIt('navint');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA05-1-AnalyticFunctionsMN.html" style="float: right;">&#x25B6;&#xFE0E;</a></p>
 </div>
 
 <div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
-<p><a onClick="hideIt('navint');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA05-1-AnalyticFunctionsMN.html" style="float: right;">&#x25B6;	</a></p>
+<p><a onClick="hideIt('navint');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA05-1-AnalyticFunctionsMN.html" style="float: right;">&#x25B6;&#xFE0E;	</a></p>
 </div>

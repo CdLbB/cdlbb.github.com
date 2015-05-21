@@ -599,13 +599,13 @@ converges; that is, the series \\(\sum\limits_{n=1}^{\infty} n a_n z^{n-1}\\) co
 
 
 <div id="navfixedleft" class="fixedBleft">
-<p><a href="CMA02-2-SeriesMN.html">&#x25C0;</a></p>
+<p><a href="CMA02-2-SeriesMN.html">&#x25C0;&#xFE0E;</a></p>
 </div>
 
 <div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
-<p><a onClick="showIt('navseries2');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA02-4-ProductsMN.html" style="float: right;">&#x25B6;</a></p>
+<p><a onClick="showIt('navseries2');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA02-4-ProductsMN.html" style="float: right;">&#x25B6;&#xFE0E;</a></p>
 </div>
 
 <div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
-<p><a onClick="hideIt('navseries2');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA02-4-ProductsMN.html" style="float: right;">&#x25B6;	</a></p>
+<p><a onClick="hideIt('navseries2');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA02-4-ProductsMN.html" style="float: right;">&#x25B6;&#xFE0E;	</a></p>
 </div>
