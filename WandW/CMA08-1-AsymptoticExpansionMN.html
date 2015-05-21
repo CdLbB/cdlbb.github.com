@@ -50,7 +50,7 @@ and we shall write
 <span class="math">\[ 
      \sum_{m=0}^n
      \frac{1}{x} - \frac{1!}{x^2} + \frac{2!}{x^3}- 
-     \cdots + \frac{(-1)^n n!}{n^{n+1}} = 
+     \cdots + \frac{(-1)^n n!}{x^{n+1}} = 
      S_{n}(x) . 
 \]</span>
 Then we have <span class="math">\(\left|\, u_m \middle/ u_{m-1} \,\right| = mx^{-1} \rightarrow \infty \)</span> as <span class="math">\(m \rightarrow \infty\)</span>. <em>The series <span class="math">\(\sum u_m\)</span> m is therefore divergent for all values of <span class="math">\(x\)</span></em>. In spite of this, however, the series can be used for the calculation of <span class="math">\(f(x)\)</span>; this can be seen in the following way. </p>
@@ -78,7 +78,7 @@ which for large values of <span class="math">\(n\)</span> is very small. It foll
 <blockquote>
 <p>Taking even fairly small values of <span class="math">\(x\)</span> and <span class="math">\(n\)</span>,
 <span class="math">\[
-     S_5 (10) = 0.09152,\,\text{ and } \, 0 < f(10) - S_5 (10) < 0.00012. 
+  S_5 (10) = 0.09152,\,\text{ and } \, 0 < f(10) - S_5 (10) < 0.00012. 
 \]</span></p>
 </blockquote>
 
@@ -220,22 +220,22 @@ so that
 <blockquote>
 <p><em>Example</em>. If <span class="math">\(f(x) = \displaystyle \!\int_x^\infty \! e^{x^2-t^2}  dt\)</span>, where <span class="math">\(x\)</span> is positive and the path of integration is the real axis, prove that
 <span class="math">\[
-     f(x) \sim 
-     \frac{1}{2x} - \frac{1}{2^2 x^3} +
-     \frac{1\cdot 3}{2^3 x^5} - 
-     \frac{1\cdot 3 \cdot 5}{2^4 x^7} + 
-     \cdots .
+  f(x) \sim 
+  \frac{1}{2x} - \frac{1}{2^2 x^3} +
+  \frac{1\cdot 3}{2^3 x^5} - 
+  \frac{1\cdot 3 \cdot 5}{2^4 x^7} + 
+  \cdots .
 \]</span>
 [In fact, it was shewn by Stokes in 1857 that
 <span class="math">\[
-     \int_0^\infty \! e^{x^2-t^2}  dt \,\sim\,
-     \pm \frac{1}{2}e^{x^2}\! \sqrt{\pi} -
-     \left(
-     \frac{1}{2x} - \frac{1}{2^2 x^3} +
-     \frac{1\cdot 3}{2^3 x^5} - 
-     \frac{1\cdot 3 \cdot 5}{2^4 x^7} + 
-     \cdots 
-     \right);
+  \int_0^\infty \! e^{x^2-t^2}  dt \,\sim\,
+  \pm \frac{1}{2}e^{x^2}\! \sqrt{\pi} -
+  \left(
+  \frac{1}{2x} - \frac{1}{2^2 x^3} +
+  \frac{1\cdot 3}{2^3 x^5} - 
+  \frac{1\cdot 3 \cdot 5}{2^4 x^7} + 
+  \cdots 
+  \right);
 \]</span>
 the upper or lower sign is to be taken according as <span class="math">\(-\frac{1}{2}\pi < \arg x < \frac{1}{2}\pi\)</span> or <span class="math">\(\frac{1}{2}\pi < \arg x < \frac{3}{2}\pi\)</span>.] </p>
 </blockquote>
@@ -387,7 +387,7 @@ and Bessel functions (<a href="whereOwhere.html">Chapter <strong>xvii</strong></
 <li class="part"><a onClick="hideIt('navaprop');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
   <ul>
     <li class="more"><a onClick="hideIt('navaprop');showIt('navprocesses');"> more . . . </a></li>
-    <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
+    <li><a href="CMA07-1-ExpansionOfFunctionsMN.html">Expanding Functions in Infinite Series</a></li>
     <li><a href="#asymptoticexpansionsandsummableseries">Asymptotic Expansions and Summable Series</a>
       <ul>
         <li class="current"><a href="#8.1simpleexampleofanasymptoticexpansion.">A simple asymptotic expansion</a></li>
@@ -456,9 +456,9 @@ and Bessel functions (<a href="whereOwhere.html">Chapter <strong>xvii</strong></
      <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
      <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
      <li><a href="CMA07-1-ExpansionOfFunctionsMN.html">Expanding Functions in Infinite Series</a></li>
-     <li><a href="CMA08-1-AsymptoticExpansionMN.html">Asymptotic Expansions and Summability</a></li>
+     <li><a href="CMA08-1-AsymptoticExpansionMN.html">Asymptotic Expansions &amp Summability</a></li>
      <li class="more current"><a onClick="showIt('navaprop');hideIt('navprocesses');"> you are here . . . </a></li>
-     <li class="notdone"><a href="CMA09-1-FourierSeriesMN.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li><a href="CMA09-1-FourierSeriesMN.html">Fourier Series &amp; Trigonometrical Series</a></li>
      <li class="notdone"><a href="whereOwhere.html">Linear Differential Equations</a></li>
      <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
   </ul>
@@ -517,15 +517,15 @@ and Bessel functions (<a href="whereOwhere.html">Chapter <strong>xvii</strong></
 </div>
 
 <div id="navfixedleft" class="fixedBleft">
-<p><a href="CMA07-5-ExercisesMN.html">&#x25C0;</a></p>
+<p><a href="CMA07-5-ExercisesMN.html">&#x25C0;&#xFE0E;</a></p>
 </div>
 
 <div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
-<p><a onClick="showIt('navaprop');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA08-2-MethodsOfSummationMN.html" style="float: right;">&#x25B6;</a></p>
+<p><a onClick="showIt('navaprop');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA08-2-MethodsOfSummationMN.html" style="float: right;">&#x25B6;&#xFE0E;</a></p>
 </div>
 
 <div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
-<p><a onClick="hideIt('navaprop');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA08-2-MethodsOfSummationMN.html" style="float: right;">&#x25B6;   </a></p>
+<p><a onClick="hideIt('navaprop');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA08-2-MethodsOfSummationMN.html" style="float: right;">&#x25B6;&#xFE0E;   </a></p>
 </div>
 
 <!-- Start of StatCounter Code for Default Guide -->
