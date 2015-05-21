@@ -755,9 +755,9 @@ div#exercises  ol li
     color: black;
     }   
 
-.navigation ul li.uncurrent a, .navigation ul li.part ul li.uncurrent a
+.navigation ul li.uncurrent a, .navigation ul li.part ul li.uncurrent a, .navigation ul li.part ul li ul li a
     {
-    background-color: #f4df40;
+    background-color: #fbeb54;
     color: black;
     }  
     
