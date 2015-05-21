@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="latexinput" content="mmd-cambridge-header"/>
+	<title>A Course of Modern Analysis-FourierSeries 9-1</title>
+	<meta name="subtitle" content="An introduction to the general theory of
+infinite processes and analytic functions;
+with an account of the principal
+transcendental functions."/>
+	<meta name="author" content="E.T. Whittaker and G.N. Watson"/>
+	<meta name="editor" content="Eric Nitardy"/>
+	<meta name="date" content="May 11, 2015"/>
+	<meta name="titlefile" content="mmd-WandW-title"/>
+	<meta name="copyrightfile" content="mmd-WandW-copyright"/>
+	<meta name="test" content="And this is a new key-value pair"/>
+	<meta name="latexmode" content="memoir"/>
+	<meta name="latexinput" content="mmd-cambridge-begin-doc"/>
+	<meta name="latexfooter" content="mmd-cambridge-footer"/>
+	<link type="text/css" rel="stylesheet" href="css/documentation.css"/>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+<script type="text/javascript" src="js/showhide.js"></script>
+<script type="text/javascript" src="js/mathjaxend.js"></script>
+</head>
+<body>
+
+<div id="header"><h1><a href="CMA00-FrontMN.html">A COURSE OF MODERN<span>&nbsp;</span>ANALYSIS</a></h1><h2>E. T. WHITTAKER <span style="font-size:65%;">AND</span> G.<span>&nbsp;</span>N.<span>&nbsp;</span>WATSON</h2></div>
+<div id="content">
+<div class="contenttext">
+
+<h2 id="fourierseriesandtrigonometricalseries">Fourier Series and Trigonometrical Series</h2>
+
+<h3 id="9.1definitionoffourierseries.">9.1 Definition of Fourier Series.<a class="marginmark" onClick="toggleHide('mn:1,-1');">&#91;1&#93;</a></h3>
+
+</div>
+<div class="marginnotes"  id="mn:1,-1"  style="margin-top: -1em; margin-bottom: -1em;"><a class="marginmark">&#91;1&#93;</a>Throughout this chapter (except in <a href="#9.11natureoftheregionwithinwhichatrigonometricalseriesconverges.">&#167;9.11</a>) it is supposed that all the numbers involved are real.<a onClick="hideIt('mn:1,-1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>Series of the type
+<span class="math">\[ \begin{align*}
+  \frac{1}{2} a_{\:\!0}
+  + (a_{1} + \cos x + b_{1} \sin x)
+  &+ (a_{2} + \cos 2x + b_{2} \sin 2x)
+  + \cdots
+  \\
+ & =
+  \frac{1}{2} a_{\:\!0}
+  +
+  \sum_{n=1}^{\infty} ( a_{n} \cos n x + b_{n} \sin n x),
+\end{align*} \]</span>
+where <span class="math">\( a_{n}\)</span>, <span class="math">\( b_{n}\)</span> are independent of <span class="math">\( x\)</span>, are of great importance in many
+investigations. They are called <em>trigonometrical series.</em><a class="marginmark" onClick="toggleHide('mn:2,-1');">&#91;2&#93;</a></p>
+</div>
+<div class="marginnotes"  id="mn:2,-1"  style="margin-top: -1em; margin-bottom: -1em;"><a class="marginmark">&#91;2&#93;</a><em>Editor&#8217;s Note:</em> Or, as we now call them, <em>trigonometric</em> series.<a onClick="hideIt('mn:2,-1')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>If there is a function <span class="math">\(f(t)\)</span> such that
+<span class="math">\(\int_{\!-\pi}^{\:\pi} f(t) \, d t\)</span> exists as a Riemann
+integral or as an improper integral which converges absolutely, and such that
+<span class="math">\[ 
+\pi a_{n} = \int_{-\pi}^{\pi}\! f(t) \cos nt \, d t,
+\quad
+\pi b_{n} = \int_{-\pi}^{\pi}\! f(t) \sin nt \, d t,
+\]</span>
+then the trigonometrical series is called a <em>Fourier series</em>.</p>
+
+<p>Trigonometrical series first appeared in analysis in connexion with
+the investigations of Daniel Bernoulli on vibrating
+strings;
+d&#8217;Alembert had previously solved the equation of motion
+<span class="math">\( \ddot{y} = a^{2} \dfrac{d^{2} y}{d x^{2}}\)</span>
+in the form
+<span class="math">\(y = \frac{1}{2} \left\{ f(x+at) + f(x-at) \right\}\)</span>, where <span class="math">\(y=f(x)\)</span> is the initial shape of the string starting from rest;
+and Bernoulli shewed that a formal solution is
+<span class="math">\[ 
+y
+=
+\sum_{n=1}^{\infty}
+b_{n}
+\sin \frac{n \pi x}{l}
+\cos \frac{n \pi a t}{l},
+\]</span>
+the fixed ends of the string being <span class="math">\((0,0)\)</span> and <span class="math">\((l,0)\)</span>; and he asserted
+that this was the most general solution of the problem. This appeared
+to d&#8217;Alembert and Euler to be impossible, since such a series, having
+period <span class="math">\(2l\)</span>, could not possibly represent such a function
+as
+<span class="math">\(c x \:\! (l-x)\)</span> when <span class="math">\(t = 0\)</span>.<a class="marginmark" onClick="toggleHide('mn:3,-5');">&#91;3&#93;</a>
+A controversy arose between these mathematicians, of which
+an account is given in Hobson&#8217;s <a href="https://archive.org/details/theoryfunctions00hobsgoog"><em>Functions of a Real Variable.</em></a></p>
+</div>
+<div class="marginnotes"  id="mn:3,-5"  style="margin-top: -5em; margin-bottom: -5em;"><a class="marginmark">&#91;3&#93;</a>This function gives a simple form to the initial shape of the string.<a onClick="hideIt('mn:3,-5')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>Fourier, in his <a href="https://archive.org/details/thorieanalytiq00four"><em>Theorie de la Chaleur</em></a>, investigated a number of
+trigonometrical series and shewed that, in a large number of
+particular cases, a Fourier series <em>actually converged to the sum <span class="math">\(f(x)\)</span></em>.
+Poisson attempted a general proof of this theorem, <a href="http://gallica.bnf.fr/ark:/12148/bpt6k433675h"><em>Journal de l&#8217;École polytechnique,</em> <strong>xii</strong>. (1823)</a>, pp. 404&#8211;509. Two proofs were given by
+Cauchy, <a href="https://archive.org/details/mmoiresdelacad06memo"><em>M&eacute;m. de l&#8217;Acad. R. des Sci.</em> <strong>vi.</strong> (1823, published 1826)</a>, pp.
+603&#8211;612 (<a href="http://gallica.bnf.fr/ark:/12148/bpt6k901828.r=.langEN"><em>Oeuvres</em>, (1), <strong>ii.</strong></a> pp. 12&#8211;19) and <a href="https://books.google.com/books?id=OssWAAAAQAAJ&amp;printsec=frontcover"><em>Exercices de Math.</em> <strong>ii.</strong> (1827)</a>,
+pp. 341&#8211;376 (<a href="http://gallica.bnf.fr/ark:/12148/bpt6k901990.r=.langEN"><em>Oeuvres</em>, (2), <strong>vii.</strong> </a> pp. 393&#8211;430); these proofs, which are
+based on the theory of contour integration, are concerned with rather
+particular classes of functions and one is invalid. The second proof
+has been investigated by Harnack, <a href="http://www.digizeitschriften.de/dms/toc/?PPN=PPN235181684_0032"><em>Math. Ann.</em> <strong>xxxii.</strong> (1888)</a>, pp.
+175&#8211;202.</p>
+</div>
+<div class="marginnotes"  id="mn:4,+2"  style="margin-top: +2em; margin-bottom: +2em;"><a class="marginmark">&#91;4&#93;</a><a href="http://www.digizeitschriften.de/dms/toc/?PPN=PPN243919689_0004"><em>Journal f&uuml;r Math.</em> <strong>iv.</strong> (1829)</a>, pp. 157&#8211;169.}<a onClick="hideIt('mn:4,+2')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>In 1829, Dirichlet gave the first rigorous proof
+that, for a general class of functions, the Fourier series, defined as above, does
+converge to the sum <span class="math">\(f(x)\)</span>.<a class="marginmark" onClick="toggleHide('mn:4,+2');">&#91;4&#93;</a> A modification of this proof was given later
+by Bonnet.<a class="marginmark" onClick="toggleHide('mn:5,-3');">&#91;5&#93;</a></p>
+</div>
+<div class="marginnotes"  id="mn:5,-3"  style="margin-top: -3em; margin-bottom: -3em;"><a class="marginmark">&#91;5&#93;</a><a href="http://www.biodiversitylibrary.org/item/53693#page/7/mode/1up"><em>M&eacute;moires des Savants &eacute;trangers</em> of the Belgian Academy, <strong>xxiii.</strong> (1848&#8211;1850)</a>. Bonnet employs the second mean value theorem (<a href="CMA04-1-IntegrationMN.html#4.14iisecondmeanvaluetheorem">&#167;4.14 (II)</a>) directly, while Dirichlet&#8217;s original proof makes use of arguments precisely similar to those by which that theorem is proved. See <a href="CMA09-4-FouriersTheoremMN.html#9.43thedirichlet-bonnetproofoffourierstheorem.">&#167;9.43</a>.<a onClick="hideIt('mn:5,-3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>The result of Dirichlet
+is that
+if <span class="math">\(f(t)\)</span> is defined and bounded in the
+range <span class="math">\((-\pi, \pi)\)</span> and if <span class="math">\(f(t)\)</span> has only a finite number of maxima and
+minima and a finite number of discontinuities in this range and,
+further, if <span class="math">\(f(t)\)</span> is defined by the equation
+<span class="math">\[ 
+f(t + 2 \pi) = f(t)
+\]</span>
+outside the range <span class="math">\((-\pi, \pi)\)</span>, then, provided that
+<span class="math">\[ 
+\pi a_{n}
+=
+\int_{-\pi}^{\pi}\! f(t) \cos nt \, d t,
+\quad
+\pi b_{n}
+=
+\int_{-\pi}^{\pi}\! f(t) \sin nt \, d t,
+\]</span>
+the series
+<span class="math">\( 
+\frac{1}{2} a_{\:\!0}
++
+\sum_{\:\!n=1}^{\:\!\infty}
+\left(
+  a_{n} \cos nz
+  +
+  b_{n} \sin nz
+\right),
+\)</span>
+ converges to the sum <span class="math">\(\frac{1}{2} \left\{  f(x+0) + f(x-0)  \right\}\)</span>.<a class="marginmark" onClick="toggleHide('mn:6,-3');">&#91;6&#93;</a></p>
+</div>
+<div class="marginnotes"  id="mn:6,-3"  style="margin-top: -3em; margin-bottom: -3em;"><a class="marginmark">&#91;6&#93;</a>The conditions postulated for <span class="math">\(f(t)\)</span> are known as <em>Dirichlet&#8217;s conditions</em>; as will be seen in <a href="CMA09-2-DirichletsConditionsMN.html#9.2ondirichletsconditionsandfourierstheorem.">&#167;9.2</a>, <a href="CMA09-4-FouriersTheoremMN.html#9.42theproofoffourierstheorem.">&#167;9.42</a>, they are unnecessarily stringent.<a onClick="hideIt('mn:6,-3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<p>Later, Riemann and Cantor developed the theory of trigonometrical
+series generally, while still more recently Hurwitz, Fej&eacute;r and others
+have investigated properties of Fourier series when the series does
+not necessarily converge. Thus Fej&eacute;r has proved the remarkable
+theorem that a Fourier series (even if not convergent) is <a href="CMA08-2-MethodsOfSummationMN.html#8.43cesarosmethodofsummation.">&#8216;summable
+<span class="math">\((C\:\!  1)\)</span>&#8217;</a> at all points at which <span class="math">\(f(x \pm 0)\)</span> exist, and its sum <span class="math">\((C\:\!  1)\)</span> is
+<span class="math">\(\frac{1}{2} \left\{  f(x+0) + f(x-0)  \right\}\)</span>,
+provided that <span class="math">\(\int_{\!-\pi}^{\!\:\pi} f(t) \, d t\)</span> is an absolutely convergent integral.
+One of the investigations of the convergence of Fourier series which we shall give later
+(<a href="CMA09-4-FouriersTheoremMN.html#9.42theproofoffourierstheorem.">&#167;9.42</a>) is based on this result.</p>
+
+<p>For a fuller account of investigations subsequent to Riemann, the
+reader is referred to Hobson&#8217;s <a href="https://archive.org/details/theoryfunctions00hobsgoog"><em>Functions of a Real Variable</em></a>, and to de la Vall&eacute;e Poussin&#8217;s <a href="https://archive.org/details/danalyseinfinitesi01pousrich"><em>Cours d&rsquo;Analyse Infinit&eacute;simale</em></a>.</p>
+
+<h4 id="9.11natureoftheregionwithinwhichatrigonometricalseriesconverges.">9.11 Nature of the region within which a trigonometrical series converges.</h4>
+
+<p>Consider the series
+<span class="math">\[ 
+\frac{1}{2} a_{\:\!0}
++
+\sum_{n=1}^{\infty}
+\left(
+  a_{n} \cos nz
+  +
+  b_{n} \sin nz
+\right),
+\]</span>
+where <span class="math">\(z\)</span> may be complex. If we write
+<span class="math">\(e^{iz} = \zeta\)</span>, the series becomes
+<span class="math">\[ 
+\frac{1}{2} a_{0}
++
+\sum_{n=1}^{\infty}
+\left\{ 
+  \frac{1}{2} (a_{n} - i b_{n}) \zeta^{n}
+  +
+  \frac{1}{2} (a_{n} + i b_{n}) \zeta^{-n}
+\right\}
+\]</span>
+This Laurent series will converge, if it converges at all, in a region
+in which <span class="math">\(a \leq \left| \, \zeta \, \right| \leq b\)</span>, where <span class="math">\(a,b\)</span> are positive
+constants.</p>
+
+<p>But, if <span class="math">\(z = x + iy\)</span>, <span class="math">\(\left| \, \zeta \, \right|  = e^{-y}\)</span>, and so we get, as the
+region of convergence of the trigonometrical series, the strip in the
+<span class="math">\(z\)</span> plane defined by the inequality
+<span class="math">\[ 
+\log a \leq -y \leq \log b.
+\]</span> </p>
+
+<p>The case which is of the greatest importance in practice is that in which
+<span class="math">\(a = b = 1\)</span>, and the strip consists of a single line, namely the real axis.</p>
+
+<blockquote>
+<h6 id="9.1example1"><em>Example</em> 1. Let <span class="math">\[ f(z)  =  \sin z - \frac{1}{2} \sin 2z + \frac{1}{3} \sin 3z - \frac{1}{4} \sin 4z + \ldots,\]</span> where <span class="math">\(z = x + iy\)</span>.</h6>
+</blockquote>
+</div>
+<div class="marginnotes"  id="mn:7,+9"  style="margin-top: +9em; margin-bottom: +9em;"><a class="marginmark">&#91;7&#93;</a>Both series <em>do converge</em> if <span class="math">\(y=0\)</span>, see <a href="CMA02-2-SeriesMN.html#2.31example2">&#167;2.31 example 2</a>.<a onClick="hideIt('mn:7,+9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<blockquote>
+<p>Writing this in the form
+<span class="math">\[ 
+f(z)
+=
+-
+\frac{1}{2}
+i
+\left(
+e^{iz}
+- \frac{1}{2} e^{2iz}
++ \frac{1}{3} e^{3iz}
+-
+\cdots
+\right)
++
+\frac{1}{2}
+i
+\left(
+e^{-iz}
+- \frac{1}{2} e^{-2iz}
++ \frac{1}{3} e^{-3iz}
+-
+\cdots
+\right)
+\]</span>
+we notice that the first series converges
+only if
+<span class="math">\(y \geq 0\)</span>, and the second only if <span class="math">\(y \leq 0\)</span>.<a class="marginmark" onClick="toggleHide('mn:7,+9');">&#91;7&#93;</a></p>
+
+<p>Writing <span class="math">\(x\)</span> in place of <span class="math">\(z\)</span> (<span class="math">\(x\)</span> being real), we see that by Abel&#8217;s
+theorem <a href="CMA03-4-PowerSeriesMN.html#abelstheoremoncontinuityuptothecircleofconvergence.">(&#167;3.71)</a>,
+<span class="math">\[ \begin{align*}
+  f(x)
+  & =
+  \lim_{r \rightarrow 1} \left(
+    r \sin x
+    - \frac{1}{2} r^{2} \sin 2x
+    + \frac{1}{3} r^{3} \sin 3x
+    - \cdots
+  \right)
+  \\
+  & =
+  \lim_{r \rightarrow 1} \left\{ 
+    - \frac{1}{2} i \left(
+      r e^{ix}
+      - \frac{1}{2} r^{2} e^{2ix}
+      + \frac{1}{3} r^{3} e^{3ix}
+      - \cdots
+    \right) 
+\right.
+  \\
+  & \qquad \qquad 
+\left. +
+    \frac{1}{2} i \left(
+      r e^{-ix}
+      - \frac{1}{2} r^{2} e^{-2ix}
+      + \frac{1}{3} r^{3} e^{-3ix}
+      - \cdots
+    \right) 
+  \right\}
+\end{align*} \]</span></p>
+
+<p>This is the limit of one of the values of
+<span class="math">\[ 
+- \frac{1}{2} i \log (1 + r e^{ix})
++ \frac{1}{2} i \log (1 + r e^{-ix}),
+\]</span>
+and as <span class="math">\(r \rightarrow 1\)</span> (if <span class="math">\(-\pi < x < \pi\)</span>), this tends to
+<span class="math">\(\frac{1}{2} x + k\pi\)</span>, where <span class="math">\(k\)</span> is some integer.</p>
+
+<p>Now <span class="math">\(\displaystyle \sum_{n=1}^{\infty} \frac{(-1)^{n-1} \sin nx}{n}\)</span> converges uniformly
+(<a href="CMA03-2-UniformityMN.html#3.35example1">&#167;3.35 example 1</a>) and is therefore continuous in
+the range <span class="math">\(-\pi + \delta \leq x \leq \pi - \delta\)</span>, where
+<span class="math">\(\delta\)</span> is any positive constant.</p>
+
+<p>Since <span class="math">\(\frac{1}{2} x\)</span> is continuous, <span class="math">\(k\)</span> has the same value wherever <span class="math">\(x\)</span> lies in the
+range; and putting <span class="math">\(x=0\)</span>, we see that <span class="math">\(k=0\)</span>.</p>
+
+<p><em>Therefore, when <span class="math">\(-\pi < x < \pi\)</span>,
+ <span class="math">\[ 
+  f(x) = \frac{1}{2} x.
+  \]</span> </em></p>
+
+<p>But, when <span class="math">\(\pi < x < 3\pi\)</span>,
+<span class="math">\[ 
+f(x)
+=
+f(x - 2\pi)
+=
+\frac{1}{2} (x - 2\pi)
+=
+\frac{1}{2} x - \pi,
+\]</span>
+and generally, if <span class="math">\((2n - 1) \pi < x < (2n + 1) \pi\)</span>,
+<span class="math">\[ 
+f(x) = \frac{1}{2} x - n \pi.
+\]</span> </p>
+</blockquote>
+
+<p>We have thus arrived at an example in which <span class="math">\(f(x)\)</span> is
+not represented by a single analytical expression.</p>
+
+<p>It must be observed that this phenomenon can only occur when the
+strip in which the Fourier series converges is a single line.
+For if the strip is not of zero breadth, the associated Laurent
+series converges in an annulus of non-zero breadth and represents an
+analytic function of <span class="math">\(\zeta\)</span> in that annulus; and, since
+<span class="math">\(\zeta\)</span> is an analytic function of <span class="math">\(z\)</span>, the Fourier series
+represents an analytic function of <span class="math">\(z\)</span>;<a class="marginmark" onClick="toggleHide('mn:8,-12');">&#91;8&#93;</a> such a series might be
+<span class="math">\[ 
+r \sin x
+- \frac{1}{2} r^{2} \sin 2x
++ \frac{1}{3} r^{3} \sin 3x
+- \cdots,
+\]</span>
+where <span class="math">\(0 < r < 1\)</span>; its sum is
+<span class="math">\(\arctan \left(\dfrac{r \sin x}{1 + r \cos x}\right)\)</span>, the <span class="math">\(\arctan\)</span> always
+representing an angle between <span class="math">\(\pm \frac{1}{2} \pi\)</span>.<a class="marginmark" onClick="toggleHide('mn:9,-3');">&#91;9&#93;</a></p>
+</div>
+<div class="marginnotes"  id="mn:8,-12"  style="margin-top: -12em; margin-bottom: -12em;"><a class="marginmark">&#91;8&#93;</a><em>Editor&#8217;s Note</em>: Alternatively, and more simply, if the series converges in a strip, it can be analytically continued as one analytic function, but if it converges only on a line, it can&#8217;t.<a onClick="hideIt('mn:8,-12')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+</div>
+<div class="marginnotes"  id="mn:9,-3"  style="margin-top: -3em; margin-bottom: -3em;"><a class="marginmark">&#91;9&#93;</a><em>Editor&#8217;s Note</em>: From <a href="#9.1example1">example 1</a>, the series is equal to <span class="math">\[\begin{align*} - \frac{1}{2} i \log & \left(\frac{1 + r e^{ix}}{1 + r e^{-ix}}\right) \\ =&- i \log \left(\frac{1 + r e^{ix}}{1 + r e^{-ix}}\right)^{\!\frac{1}{2}}\\ =&\quad\arg\left(\frac{1 + r e^{ix}}{1 + r e^{-ix}}\right)^{\!\frac{1}{2}} \end{align*}\]</span> since <span class="math">\(\displaystyle \left(\frac{1 + r e^{ix}}{1 + r e^{-ix}}\right)\)</span> is on the unit circle. Moreover, <span class="math">\[\begin{align*} =\arg &\left(\!\!\frac{(1 + r e^{ix})^2}{1 + 2r \cos x +r^2 }\!\!\right )^{\!\frac{1}{2}} \\ &  =  \arg\left(\!\frac{1 + r\cos x +ir\sin x}{\sqrt{1 + 2r \cos x +r^2}}\!\right) \\ &  =  \arctan \left(\dfrac{r \sin x}{1 + r \cos x}\right). \end{align*}\]</span> <a onClick="hideIt('mn:9,-3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<blockquote>
+<h6 id="9.1example2"><em>Example</em> 2. When <span class="math">\(-\pi \leq x \leq \pi\)</span>,</h6>
+
+<p><span class="math">\[ 
+\sum_{n=1}^{\infty}
+\frac{(-)^{n-1} \cos nx}{n^{2}}
+=
+\frac{1}{12} \pi^{2}
+-
+\frac{1}{4} x^{2}.
+\]</span> </p>
+
+<p>The series converges only when <span class="math">\(x\)</span> is real; by
+<a href="CMA03-2-UniformityMN.html#aconditionduetoweierstrassforuniformconvergence.">&#167;3.34</a> the convergence is then
+absolute and uniform.</p>
+
+<p>Since
+<span class="math">\[ 
+\frac{1}{2} x
+= 
+\sin x 
+-  \frac{1}{2} \sin 2x 
++  \frac{1}{3} \sin 3x 
+-  \cdots \quad
+(-\pi + \delta \leq x \pi - \delta,
+\delta > 0), 
+\]</span>
+and this series converges uniformly, we may integrate
+term-by-term from <span class="math">\(0\)</span> to <span class="math">\(x\)</span> (<a href="CMA04-3-ComplexIntMN.html#4.7integrationofinfiniteseries.">&#167;4.7</a>),
+and consequently
+<span class="math">\[ 
+\frac{1}{4} x^{2}
+=
+\sum_{n=1}^{\infty}
+\frac{(-1)^{n-1} (1 - \cos nx)}{n^{2}}
+\quad
+(-\pi + \delta \leq x \leq \pi - \delta).
+\]</span> </p>
+
+<p>That is to say, when <span class="math">\(-\pi + \delta \leq x \leq \pi - \delta\)</span>,
+<span class="math">\[ 
+C - \frac{1}{4} x^{2}
+=
+\sum_{n=1}^{\infty} \frac{(-1)^{n-1} \cos nx}{n^{2}},
+\]</span>
+where <span class="math">\(C\)</span> is a constant, at present undetermined.</p>
+
+<p>But since the series on the right converges uniformly throughout the
+range <span class="math">\(-\pi \leq x \leq \pi\)</span>, its sum is a continuous function of <span class="math">\(x\)</span> in this
+extended range; and so, proceeding to the limit when
+<span class="math">\(x \rightarrow \pm \pi\)</span>, we see
+that the last equation is still true when <span class="math">\(x = \pm \pi\)</span>.</p>
+
+<p>To determine <span class="math">\(C\)</span>, integrate each side of the equation (<a href="CMA04-3-ComplexIntMN.html#4.7integrationofinfiniteseries.">&#167;4.7</a>) between
+the limits <span class="math">\(-\pi, \:\!\pi\)</span>; and we get
+<span class="math">\[ 
+2 \pi C - \frac{1}{6} \pi^{3} = 0.
+\]</span> </p>
+
+<p>Consequently
+<span class="math">\[ 
+\frac{1}{12} \pi^{2} - \frac{1}{4} x^{2}
+=
+\sum_{n=1}^{\infty}
+\frac{ (-1)^{n-1} \cos nx }{ n^{2} }
+\quad
+(-\pi \leq x \leq \pi).
+\]</span> </p>
+</blockquote>
+
+<blockquote>
+<p><em>Example</em> 3.
+By writing <span class="math">\(\pi - 2x\)</span> for <span class="math">\(x\)</span> in <a href="#9.1example2">example 2</a>, shew that
+<span class="math">\[ 
+\sum_{n=1}^{\infty} \frac{\sin^{2} nx}{n^{2}}
+=
+\begin{cases}
+\frac{1}{2} x (\pi - x)                         & 0 \leq x \leq \pi,   \\
+\frac{1}{2} \left\{  \pi \left| \, x \, \right|  - x^{2}\right\} & -\pi \leq x \leq \pi.
+\end{cases}
+\]</span> </p>
+</blockquote>
+
+<h4 id="9.12valuesofthecoefficientsintermsofthesumofatrigonometricalseries.">9.12 Values of the Coefficients in Terms of the Sum of a Trigonometrical Series.</h4>
+
+<p>Let the trigonometrical series
+<span class="math">\( \displaystyle
+\frac{1}{2} c_{\:\!0}
++
+\sum_{n=1}^{\infty} (c_{n} \cos nx + d_{n} \sin nx)
+\)</span>
+be uniformly convergent in the range <span class="math">\((-\pi, \pi)\)</span> and let its sum be <span class="math">\(f(x)\)</span>.
+Using the obvious results
+<span class="math">\[ \begin{align*}
+  \int_{-\pi}^{\pi}\! \cos mx \cos nx \, d x
+  =&
+  \begin{cases}
+    0 & m \neq n \\
+    \pi & m = n \neq 0,
+  \end{cases}
+  \\
+  \int_{-\pi}^{\pi}\! \sin mx \sin nx \, d x
+  =&
+  \begin{cases}
+    0 & m \neq n \\
+    \pi & m = n \neq 0,
+  \end{cases}
+  \\
+  \int_{-\pi}^{\pi}\! \, d x
+  =& 2\pi,
+\end{align*} \]</span>
+we find, on multiplying the equation
+<span class="math">\( \displaystyle
+\frac{1}{2} c_{\:\!0}
++
+\sum_{n=1}^{\infty}
+(c_{n} \cos nx + d_{n} \sin nx)
+= f(x)
+\)</span>
+by
+<span class="math">\(\cos nx\)</span> or by <span class="math">\(\sin nx\)</span><a class="marginmark" onClick="toggleHide('mn:10,-9');">&#91;10&#93;</a> and integrating
+term-by-term
+(<a href="CMA04-3-ComplexIntMN.html#4.7integrationofinfiniteseries.">&#167;4.7</a>),<a class="marginmark" onClick="toggleHide('mn:11,-3');">&#91;11&#93;</a>
+<span class="math">\[ 
+\pi c_{n} = \int_{-\pi}^{\pi}\! f(x) \cos nx \, d x,
+\quad
+\pi d_{n} = \int_{-\pi}^{\pi}\! f(x) \sin nx \, d x.
+\]</span> </p>
+</div>
+<div class="marginnotes"  id="mn:10,-9"  style="margin-top: -9em; margin-bottom: -9em;"><a class="marginmark">&#91;10&#93;</a>Multiplying by these factors does not destroy the uniformity of the convergence.<a onClick="hideIt('mn:10,-9')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+</div>
+<div class="marginnotes"  id="mn:11,-3"  style="margin-top: -3em; margin-bottom: -3em;"><a class="marginmark">&#91;11&#93;</a>These were given by Euler (with limits <span class="math">\(0\)</span> and <span class="math">\(2\pi\)</span>), <a href="http://eulerarchive.maa.org/pages/E703.html"><em>Nova Acta Acad. Petrop.</em> <strong>xi.</strong> (1793) pp. 94&#8211;113.</a>.<a onClick="hideIt('mn:11,-3')" title="hide margin note" class="reversefootnote">&#160;&#8617;</a>
+</div>
+<div class="contenttext">
+
+<blockquote>
+<p><em>Corollary</em>. A trigonometrical series uniformly convergent in the range
+<span class="math">\((-\pi, \pi)\)</span> is a Fourier series.</p>
+</blockquote>
+
+<blockquote>
+<p><strong>Note</strong>. Lebesgue has given a proof (<a href="https://archive.org/details/leonssurlessrie01lebegoog"><em>S&eacute;ries trigonom&eacute;triques</em></a>, p. 124) of a theorem communicated to him by Fatou that the trigonometrical series
+<span class="math">\( \left.\sum_{\:\!n=2}^{\:\!\infty} \sin nx \middle/ \!\log n\right.\)</span>, which converges for all real values of <span class="math">\(x\)</span>
+(<a href="CMA02-2-SeriesMN.html#2.31example1">&#167;2.31 example 1</a>), is <em>not</em> a Fourier series.</p>
+</blockquote>
+</div>
+</div>
+
+<div id="footer">
+<h3><span style="font-size:85%;">Typeset by </span><a href="../index.html" target="_blank">Eric Nitardy </a> <span style="font-size:85%;">AND Hosted by </span><a href="https://github.com/" target="_blank"> GitHub.</a><br><span style="font-size:63%;">Based on a transcription by </span><a href="https://github.com/bwignall/Whittaker-and-Watson"><span style="font-size:74%;">Brian Wignall.</span></a></h3>
+<h4>All content is either in the public domain or <a href="http://creativecommons.org/licenses/by/3.0/us/" target="_blank">licensed under a Creative Commons Attribution 3.0 United States License.</a></h4>
+</div>
+
+<div id="navaprop" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="hideIt('navaprop');showIt('navfront');">FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navaprop');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>
+  <ul>
+    <li class="more"><a onClick="hideIt('navaprop');showIt('navprocesses');"> more . . . </a></li>
+    <li><a href="CMA08-1-AsymptoticExpansionMN.html">Asymptotic Expansions &amp Summability</a></li>
+    <li><a href="#fourierseriesandtrigonometricalseries">Fourier Series &amp Trigonometrical Series</a>
+      <ul>
+        <li class="current"><a href="#9.1definitionoffourierseries.">Definition of Fourier Series</a>
+          <ul>
+              <li><a href="#9.11natureoftheregionwithinwhichatrigonometricalseriesconverges.">Regions where Trigonometrical Series converge</a></li>
+              <li><a href="#9.12valuesofthecoefficientsintermsofthesumofatrigonometricalseries.">Coefficients of a Trigonometrical Series</a></li>
+          </ul>   
+       </li>
+       <li><a href="#9.2ondirichletsconditionsandfourierstheorem.">Dirichlet&#8217;s conditions &amp Fourier&#8217;s theorem</a></li>       
+       <li><a href="#9.3thenatureofthecoefficientsinafourierseries.">Coefficients of a Fourier series</a></li>
+    <li><a href="#9.4fejerstheorem.">Fej&eacute;r&#8217;s theorem</a></li>
+    <li><a href="#9.5thehurwitz-liapounofftheoremconcerningfourierconstants.">Hurwitz-Liapounoff theorem concerning Fourier constants</a></li>
+    <li><a href="#9.6riemannstheoryoftrigonometricalseries.">Riemann&#8217;s theory of trigonometrical series</a></li>
+    <li><a href="#9.7fouriersrepresentationofafunctionbyanintegral.">Fourier&#8217;s representation of a function by an integral</a></li>
+        <li><a href="#references.">References</a></li>
+        <li><a href="#miscellaneousexamples.">Miscellaneous Examples</a></li>
+      </ul>
+    </li>
+    <li><a href="CMA10-1-LinearDifferentialEqnsMN.html">Linear Differential Equations</a></li>
+    <li class="more"><a onClick="hideIt('navaprop');showIt('navprocesses');"> more . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navaprop');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navaprop');showIt('navback');">BACKMATTER</a> 
+   <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponentialMN.html">Appendix</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfront" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a>FRONTMATTER</a>
+  <ul>
+    <li><a href="CMA00-FrontMN.html#acourseof">Title Page</a></li>
+    <li><a href="CMA00-FrontMN.html#cambridgeuniversitypress">Copyright</a></li>
+    <li><a href="CMA00-FrontMN.html#preface">Preface</a></li>
+    <li><a href="CMA00-FrontMN.html#editorsnote">Editor&#8217;s Note</a></li>
+    <li class="toc"><a href="CMA00-FrontMN.html#contents">Table of Contents</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navprocesses');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navaprop');hideIt('navfront');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navfront');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navprocesses" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navprocesses');">FRONTMATTER</a></li>
+<li class="part"><a>PROCESSES OF ANALYSIS</a>
+  <ul >
+    <li><a href="CMA01-ComplexMN.html">Complex Numbers</a></li>
+    <li><a href="CMA02-1-LimitsMN.html">The Theory of Convergence</a></li>
+     <li><a href="CMA03-1-ContinuousFnsMN.html">Continuity and Uniform Convergence</a></li>
+     <li><a href="CMA04-1-IntegrationMN.html">The Theory of Riemann Integration</a></li>
+     <li><a href="CMA05-1-AnalyticFunctionsMN.html">The Properties of Analytic Functions</a></li>
+     <li><a href="CMA06-1-ResiduesMN.html">The Theory of Residues</a></li>
+     <li><a href="CMA07-1-ExpansionOfFunctionsMN.html">Expanding Functions in Infinite Series</a></li>
+     <li><a href="CMA08-1-AsymptoticExpansionMN.html">Asymptotic Expansions and Summability</a></li>
+     <li><a href="CMA09-1-FourierSeriesMN.html">Fourier Series &amp; Trigonometrical Series</a></li>
+     <li class="more current"><a onClick="showIt('navaprop');hideIt('navprocesses');"> you are here . . . </a></li>
+     <li class="notdone"><a href="CMA10-1-LinearDifferentialEqnsMN.html">Linear Differential Equations</a></li>
+     <li class="notdone"><a href="whereOwhere.html">Integral Equations</a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navtranscendental');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a onClick="hideIt('navprocesses');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navtranscendental" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navtranscendental');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navtranscendental');">PROCESSES OF ANALYSIS</a> 
+<ul>
+    <li class="more current"><a onClick="showIt('navaprop');hideIt('navtranscendental');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a>THE TRANSCENDENTAL FUNCTIONS</a>
+  <ul>
+    <li class="notdone"><a href="whereOwhere.html">The Gamma Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Zeta Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Legendre Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Confluent Hypergeometric Function</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Bessel Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Equations of Mathematical Physics</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Mathieu Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Elliptic &amp; Weierstrassian Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Theta Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">The Jacobian Elliptic Functions</a></li>
+    <li class="notdone"><a href="whereOwhere.html">Ellipsoidal Harmonics &amp; Lam&eacute;&#8217;s Equation</a></li> 
+  </ul>
+  </li>
+<li class="part"><a onClick="hideIt('navtranscendental');showIt('navback');">BACKMATTER</a></li>
+</ul>
+</div>
+
+<div id="navback" class="navigation" style="visibility:hidden;" >
+<h2 id="contents">Contents</h2>
+<ul>
+<li class="part"><a onClick="showIt('navfront');hideIt('navback');">FRONTMATTER</a></li>
+<li class="part"><a onClick="showIt('navprocesses');hideIt('navback');">PROCESSES OF ANALYSIS</a>  
+<ul>
+    <li class="more current"><a onClick="showIt('navaprop');hideIt('navback');"> you are here . . . </a></li>
+  </ul>
+</li>
+<li class="part"><a onClick="showIt('navtranscendental');hideIt('navback');">THE TRANSCENDENTAL FUNCTIONS</a></li>
+<li class="part"><a>BACKMATTER</a>
+  <ul >
+    <li ><a href="CMA24-Appendix-I-LogrithmAndExponentialMN.html">Appendix</a></li>
+    <li ><a href="whereOwhere.html">Authors Quoted</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="navfixedleft" class="fixedBleft">
+<p><a href="CMA08-2-MethodsOfSummationMN.html">&#x25C0;&#xFE0E;</a></p>
+</div>
+
+<div id="navfixedrightempty" class="fixedBright" style="visibility: visible;">
+<p><a onClick="showIt('navaprop');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');showIt('navfixedrightlist');hideIt('navfixedrightempty');" style="float: left;">&#x25A4;</a> <a href="CMA09-2-DirichletsConditionsMN.html" style="float: right;">&#x25B6;&#xFE0E;</a></p>
+</div>
+
+<div  id="navfixedrightlist" class="fixedBright" style="visibility: hidden;">
+<p><a onClick="hideIt('navaprop');hideIt('navfront');hideIt('navprocesses');hideIt('navtranscendental');hideIt('navback');hideIt('navfixedrightlist');showIt('navfixedrightempty');" style="float: left;">&#x25A2;</a> <a href="CMA09-2-DirichletsConditionsMN.html" style="float: right;">&#x25B6;&#xFE0E; </a></p>
+</div>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=9773061; 
+var sc_invisible=1; 
+var sc_security="6fa476f1"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="site stats"
+href="http://statcounter.com/free-web-stats/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/9773061/0/6fa476f1/1/"
+alt="site stats"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>
