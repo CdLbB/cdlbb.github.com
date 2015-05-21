@@ -340,10 +340,10 @@ Since
 = 
 \sin x 
 -  \frac{1}{2} \sin 2x 
-+  \frac{1}{3}  \sin 3x 
++  \frac{1}{3} \sin 3x 
 -  \cdots \quad
 (-\pi + \delta \leq x \pi - \delta,
-\delta > 0), \quad
+\delta > 0), 
 \\] 
 and this series converges uniformly, we may integrate
 term-by-term from \\(0\\) to \\(x\\) ([§4.7](CMA04-3-ComplexInt.html#4.7integrationofinfiniteseries.)),
@@ -480,14 +480,14 @@ term-by-term
     <li><a href="CMA08-1-AsymptoticExpansion.html">Asymptotic Expansions &amp Summability</a></li>
     <li><a href="#fourierseriesandtrigonometricalseries">Fourier Series &amp Trigonometrical Series</a>
       <ul>
-        <li class="current"><a href="#9.1definitionoffourierseries.">Definition of Fourier Series.</a>
+        <li class="current"><a href="#9.1definitionoffourierseries.">Definition of Fourier Series</a>
           <ul>
               <li><a href="#9.11natureoftheregionwithinwhichatrigonometricalseriesconverges.">Regions where Trigonometrical Series converge</a></li>
               <li><a href="#9.12valuesofthecoefficientsintermsofthesumofatrigonometricalseries.">Coefficients of a Trigonometrical Series</a></li>
           </ul>   
        </li>
        <li><a href="#9.2ondirichletsconditionsandfourierstheorem.">Dirichlet&#8217;s conditions &amp Fourier&#8217;s theorem</a></li>       
-       <li><a href="#9.3thenatureofthecoefficientsinafourierseries">Coefficients of a Fourier series</a></li>
+       <li><a href="#9.3thenatureofthecoefficientsinafourierseries.">Coefficients of a Fourier series</a></li>
 	<li><a href="#9.4fejerstheorem.">Fej&eacute;r&#8217;s theorem</a></li>
 	<li><a href="#9.5thehurwitz-liapounofftheoremconcerningfourierconstants.">Hurwitz-Liapounoff theorem concerning Fourier constants</a></li>
 	<li><a href="#9.6riemannstheoryoftrigonometricalseries.">Riemann&#8217;s theory of trigonometrical series</a></li>
