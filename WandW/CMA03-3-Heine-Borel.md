@@ -215,7 +215,7 @@ Then
 
 [^positivefn,-5]: *Editor's Note*: Both these functions need not be positive. In some cases, only one is. However, one can add the upper bound of \\(\left|\,f(x)\right|\\) over the interval to each function, and they will both become positive.
 
->*Example* 3. If \\(f(x)\\) have limited total fluctuation in the range \\([a, b]\\), then the limits \\(f(x \pm 0)\\) exist at all points in the interior of the range. [[See §3.2 example 2.](CMA03-1-ContinuousFns.html#limitsexample)] 
+>######*Example* 3. If \\(f(x)\\) have limited total fluctuation in the range \\([a, b]\\), then the limits \\(f(x \pm 0)\\) exist at all points in the interior of the range. [[See §3.2 example 2.](CMA03-1-ContinuousFns.html#limitsexample)] [3.64example3]######
 
 
 >*Example* 4. If \\(f(x),\, g(x)\\) have limited total fluctuation in the range \\([a, b]\\) so has \\(f(x)g(x)\\).

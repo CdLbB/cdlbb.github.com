@@ -365,7 +365,7 @@ Then
 
 <div markdown=1 class="contenttext">
 
->*Example* 3. If \\(f(x)\\) have limited total fluctuation in the range \\([a, b]\\), then the limits \\(f(x \pm 0)\\) exist at all points in the interior of the range. [[See &#167;3.2 example 2.](CMA03-1-ContinuousFnsMN.html#limitsexample)] 
+>######*Example* 3. If \\(f(x)\\) have limited total fluctuation in the range \\([a, b]\\), then the limits \\(f(x \pm 0)\\) exist at all points in the interior of the range. [[See &#167;3.2 example 2.](CMA03-1-ContinuousFnsMN.html#limitsexample)] [3.64example3]######
 
 
 >*Example* 4. If \\(f(x),\, g(x)\\) have limited total fluctuation in the range \\([a, b]\\) so has \\(f(x)g(x)\\).
