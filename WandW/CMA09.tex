@@ -1,0 +1,4056 @@
+%
+% 160
+%
+\chapter{Fourier Series and Trigonometrical Series}
+\Section{9}{1}{Definition of Fourier series}\footnote{Throughout
+  this chapter (except in \hardsubsectionref{9}{1}{1}) it is supposed that all
+  the numbers involved are real.}.
+Series of the type
+\\[ \begin{align*}
+  \frac{1}{2} a_{0}
+  + (a_{1} + \cos x + b_{1} \sin x)
+  + (a_{2} + \cos 2x + b_{2} \sin 2x)
+  + \cdots
+  \\
+  &
+  \hfill
+  \frac{1}{2} a_{0}
+  +
+  \sum_{n=1}^{\infty} ( a_{n} \cos n x + b_{n} \sin n x),
+\end{align*} \\]
+where \\( a_{n}\\), \\( b_{n}\\) are independent of \\( x\\), are of great importance in many
+investigations. They are called *trigonometrical series*.
+
+If there is a function \\(f(t)\\) such that
+\\(\int_{-\pi}^{\pi} f(t) \, d t\\) exists as a Riemann
+integral or as an improper integral which converges absolutely, and such that
+\\[ 
+\pi a_{n} = \int_{-\pi}^{\pi}\! f(t) \cos nt \, d t,
+\quad
+\pi b_{n} = \int_{-\pi}^{\pi}\! f(t) \sin nt \, d t,
+\\] 
+then the trigonometrical series is called a *Fourier series*.
+
+%\begin{smalltext}
+Trigonometrical series first appeared in analysis in connexion with
+the investigations of Daniel Bernoulli on vibrating
+strings\index{Strings, vibrations of}\index{Vibrations of!strings};
+d'Alembert had previously solved the equation of
+motion
+\\( \ddot{y} = a^{2} \frac{\dd^{2} y}{\dd x^{2}}\\)
+in the form
+\\(y = \frac{1}{2} \left\{ f(x+at) + f(x-at) \right\}\\), where \\(y=f(x)\\) is
+the initial shape of the string starting from rest;
+and Bernoulli shewed that a formal solution is
+\\[ 
+y
+=
+\sum_{n=1}^{\infty}
+b_{n}
+\sin \frac{n \pi x}{l}
+\cos \frac{n \pi a t}{l},
+\\] 
+the fixed ends of the string being \\((0,0)\\) and \\((l,0)\\); and he asserted
+that this was the most general solution of the problem. This appeared
+to d'Alembert and Euler to be impossible, since such a series, having
+period \\(2l\\), could not possibly represent such a function
+as\footnote{This function gives a simple form to the initial shape of the string.}
+\\(c x (l-x)\\) when \\(t = 0\\).
+A controversy arose between these mathematicians, of which
+an account is given in Hobson's *Functions of a Real Variable.*
+
+Fourier, in his *Theorie de la Chaleur*, investigated a number of
+trigonometrical series and shewed that, in a large number of
+particular cases, a Fourier series *actually converged to the sum \\(f(x)\\)*.
+Poisson attempted a general proof of this theorem. TODO Journal de VEcole
+poly technique, xil. (1823), pp. 404-509. Two proofs were given by
+Cauchy, TODO Men. de VAcad. R. des Sci. vi. (1823, publi-hed 1826), pp.
+603-612 Oeuvres, (1), n. pp. 12-19) and Exercices de Math. 11. (1827),
+pp. 341-376 (Oeuvres, (2), vil. pp. 393-430); these proofs, which are
+based on the theory of contour integration, are concerned with rather
+particular classes of functions and one is invalid. The second proof
+has been investigated by Harnack, TODO Math. Ann. xxxii. (1888), pp.
+175-202.
+
+%\end{smalltext}
+%
+% 161
+%
+
+In 1829, Dirichlet gave the first rigorous proof\footnote{TODO Journal J iir Math. iv. (1829), pp. 157-169.}
+that, for a general class of functions, the Fourier series, defined as above, does
+converge to the sum \\(f(x)\\). A modification of this proof was given later
+by Bonnet\footnote{TODO Meiuoires des Savants etramjers of the Belgian Academy, xxiii.
+(1848-1850). Bonnet employs the second mean value theorem directly,
+while Dirichlet's original proof makes use of arguments precisely
+similar to those by which that theorem is proved. See \hardsubsectionref{9}{4}{3}.}.
+
+The result of Dirichlet\index{Statement of Fourier's theorem, \Dirichlet's}
+is that\footnote{The conditions postulated for \\(f(t)\\)
+  are known as *Dirichlet's conditions*; as will be seen in TODO §§ 9-2, 9 42, they are unnecessarily
+  stringent.}
+if \\(f(t)\\) is defined and bounded in the
+range \\((-\pi, \pi)\\) and if \\(f(t)\\) has only a finite number of maxima and
+minima and a finite number of discontinuities in this range and,
+further, if \\(f(t)\\) is defined by the equation
+\\[ 
+f(t + 2 \pi) = f(t)
+\\] 
+outside the range \\((-\pi, \pi)\\), then, provided that
+\\[ 
+\pi a_{n}
+=
+\int_{-\pi}^{\pi}\! f(t) \cos nt \, d t,
+\quad
+\pi b_{n}
+=
+\int_{-\pi}^{\pi}\! f(t) \sin nt \, d t,
+\\] 
+the series \\(TODO\\) converges to the sum /( +
+0)+/( - 0) .
+
+Later, Riemann and Cantor developed the theory of trigonometrical
+series generally, while still more recently Hurwitz, \Fejer\ and others
+have investigated properties of Fourier series when the series does
+not necessarily converge. Thus \Fejer has proved the remarkable
+theorem that a Fourier series (even if not convergent) is 'summable
+\\((C1)\\(' at all points at which \\(f(x \pm 0)\\) exist, and its sum \\((C1)\\) is
+\\(\frac{1}{2} \left\{  f(x+0) + f(x-0)  \right\}\\),
+provided that \\(\int_{-\pi}^{\pi} f(t) \, d t\\) is an absolutely convergent integral.
+One of the investigations of the convergence of Fourier series which we shall give later
+(\hardsectionref{9}{4}{2}) is based on this result.
+
+For a fuller account of investigations subsequent to Riemann, the
+reader is referred to Hobson's *Functions of a Real Variable*, and to
+TODO de la Vallee Poussin's Cours dWnalyse Infinitesimale.
+
+\Subsection{9}{1}{1}{Nature of the region within which a
+  trigonometrical series converges.}
+
+Consider the series
+\\[ 
+\frac{1}{2} a_{0}
++
+\sum_{n=1}^{\infty}
+\left(
+  a_{n} \cos nz
+  +
+  b_{n} \sin nz
+\right),
+\\] 
+where \\(z\\) may be complex. If we write
+\\(e^{iz} = \zeta\\), the series becomes
+\\[ 
+\frac{1}{2} a_{0}
++
+\sum_{n=1}^{\infty}
+\left\{ 
+  \frac{1}{2} (a_{n} - i b_{n}) \zeta^{n}
+  +
+  \frac{1}{2} (a_{n} + i b_{n}) \zeta^{-n}
+\right\}
+\\] 
+This Laurent series will converge, if it converges at all, in a region
+in which \\(a \leq \left| \, \zeta \, \right| \leq b\\), where \\(a,b\\) are positive
+constants.
+
+But, if \\(z = x + iy\\), \\(\left| \, \zeta \, \right|  = e^{-y}\\), and so we get, as the
+region of convergence of the trigonometrical series, the strip in the
+\\(z\\) plane defined by the inequality
+\\[ 
+\log a \leq -y \leq \log b.
+\\] 
+
+The case which is of the greatest importance in practice is that in which
+\\(a = b = 1\\), and the strip consists of a single line, namely the real axis.
+
+TODO Example 1
+Let
+\\[ 
+f(z)
+=
+\sin z
+- \frac{1}{2} \sin 2z
++ \frac{1}{3} \sin 3z
+- \frac{1}{4} \sin 4z
++ \ldots,
+\\] 
+where \\(z = x + iy\\).
+%
+% 161
+%
+
+Writing this in the form
+\\[ 
+f(z)
+=
+-
+\frac{1}{2}
+i
+\left(
+  e^{iz}
+  - \frac{1}{2} e^{2iz}
+  + \frac{1}{3} e^{3iz}
+  -
+  \cdots
+\right)
++
+\frac{1}{2}
+i
+\left(
+  e^{-iz}
+  - \frac{1}{2} e^{-2iz}
+  + \frac{1}{3} e^{-3iz}
+  -
+  \cdots
+\right)
+\\] 
+we notice that the first series converges\footnote{The series
+  *do converge* if \\(y=0\\), see \hardsubsectionref{2}{3}{1} example TODO 2}
+only if
+\\(y \geq 0\\), and the second only if \\(y \leq 0\\).
+
+Writing \\(x\\) in place of \\(z\\) (\\(x\\) being real), we see that by Abel's
+theorem (\hardsubsectionref{3}{7}{1}),
+\\[ \begin{align*}
+  f(x)
+  &=
+  \lim_{r \rightarrow 1} \left(
+    r \sin x
+    - \frac{1}{2} r^{2} \sin 2x
+    + \frac{1}{3} r^{3} \sin 3x
+    - \cdots
+  \right)
+  \\
+  &=
+  \lim_{r \rightarrow 1} \left\{ 
+    - \frac{1}{2} \left(
+      r e^{ix}
+      - \frac{1}{2} r^{2} e^{2ix}
+      + \frac{1}{3} r^{3} e^{3ix}
+      - \cdots
+    \right)
+    +
+    \frac{1}{2} i \left(
+      r e^{-ix}
+      - \frac{1}{2} r^{2} e^{-2ix}
+      + \frac{1}{3} r^{3} e^{-3ix}
+      - \cdots
+    \right)
+  \right\}
+\end{align*} \\]
+
+This is the limit of one of the values of
+\\[ 
+- \frac{1}{2} i \log (1 + r e^{ix})
++ \frac{1}{2} i \log (1 + r e^{-ix}),
+\\] 
+and as \\(r \rightarrow 1\\) (if \\(-\pi < x < \pi\\)), this tends to
+\\(\frac{1}{2} x + k\pi\\), where \\(k\\) is some integer.
+
+Now \\(\sum_{n=1}^{\infty} \frac{(-)^{n-1} \sin nx}{n}\\) converges uniformly
+(\hardsubsectionref{3}{3}{5} example TODO 1) and is therefore continuous in
+the range \\(-\pi + \delta \leq x \leq \pi - \delta\\), where
+\\(\delta\\) is any positive constant.
+
+Since \\(\frac{1}{2} x\\) is continuous, \\(k\\) has the same value wherever \\(x\\) lies in the
+range; and putting \\(x=0\\), we see that \\(k=0\\).
+
+*Therefore, when \\(-\pi < x < \pi\\*,
+  \\[ 
+  f(x) = \frac{1}{2} x.
+  \\] 
+}
+
+But, when \\(\pi < x < 3\pi\\),
+\\[ 
+f(x)
+=
+f(x - 2\pi)
+=
+\frac{1}{2} (x - 2\pi)
+=
+\frac{1}{2} x - \pi,
+\\] 
+and generally, if \\((2n - 1) \pi < x < (2n + 1) \pi\\),
+\\[ 
+f(x) = \frac{1}{2} x - n \pi.
+\\] 
+
+We have thus arrived at an example in which \\(f(x)\\) is
+not represented by a single analytical expression.
+
+It must be observed that this phenomenon can only occur when the
+strip in which the Fourier series converges is a single line.
+For if the strip is not of zero breadth, the associated Laurent
+series converges in an annulus of non-zero breadth and represents an
+analytic function of \\(\zeta\\) in that annulus; and, since
+\\(\zeta\\) is an analytic function of \\(z\\), the Fourier series
+represents an analytic function of \\(z\\); such a series is given by
+\\[ 
+r \sin x
+- \frac{1}{2} r^{2} \sin 2x
++ \frac{1}{3} r^{3} \sin 3x
+- \cdots,
+\\] 
+where \\(0 < r < 1\\); its sum is
+\\(\arctan \frac{r \sin x}{1 + r \cos x}\\), the \\(\arctan\\) always
+representing an angle between \\(\pm \frac{1}{2} \pi\\).
+
+Example TODO
+When \\(-\pi \leq x \leq \pi\\),
+\\[ 
+\sum_{n=1}^{\infty}
+\frac{(-)^{n-1} \cos nx}{n^{2}}
+=
+\frac{1}{12} \pi^{2}
+-
+\frac{1}{4} x^{2}.
+\\] 
+
+The series converges only when \\(x\\) is real; by
+\hardsubsectionref{3}{3}{4} the convergence is then
+absolute and uniform.
+
+Since
+\\[ 
+\frac{1}{2} x
+=
+\sin x
+- \frac{1}{2} \sin 2x
++ \frac{1}{3} \sin 3x
+- \cdots
+\quad
+(-\pi + \delta \leq x \pi - \delta,
+\delta > 0),
+\\] 
+and this series converges uniformly, we may integrate
+term-by-term from \\(0\\) to \\(x\\) (\hardsectionref{4}{7}),
+and consequently
+\\[ 
+\frac{1}{4} x^{2}
+=
+\sum_{n=1}^{\infty}
+\frac{(-)^{n-1} (1 - \cos nx)}{n^{2}}
+\quad
+(-\pi + \delta \leq x \leq \pi - \delta).
+\\] 
+%
+% 163
+%
+
+That is to say, when \\(-\pi + \delta \leq x \leq \pi - \delta\\),
+\\[ 
+C - \frac{1}{4} x^{2}
+=
+\sum_{n=1}^{\infty} \frac{(-)^{n-1} \cos nx}{n^{2}},
+\\] 
+where \\(C\\) is a constant, at present undetermined.
+
+But since the series on the right converges uniformly throughout the
+range \\(-\pi \leq x \leq \pi\\), its sum is a continuous function of \\(x\\) in this
+extended range; and so, proceeding to the limit when
+\\(x \rightarrow \pm \pi\\), we see
+that the last equation is still true when \\(x = \pm \pi\\).
+
+To determine \\(C\\), integrate each side of the equation \hardsectionref{4}{7} between
+the limits \\(-\pi, \pi\\); and we get
+\\[ 
+2 \pi C - \frac{1}{6} \pi^{3} = 0.
+\\] 
+
+Consequently
+\\[ 
+\frac{1}{12} \pi^{2} - \frac{1}{4} x^{2}
+=
+\sum_{n=1}^{\infty}
+\frac{ (-)^{n-1} \cos nx }{ n^{2} }
+\quad
+(-\pi \leq x \leq \pi).
+\\] 
+
+Example TODO.
+By writing \\(\pi - 2x\\) for \\(x\\) in example TODO2, shew that
+\\[ 
+\sum_{n=1}^{\infty} \frac{\sin^{2} nx}{n^{2}}
+=
+\begin{cases}
+  \frac{1}{2} x (\pi - x)                         & 0 \leq x \leq \pi,   \\
+  \frac{1}{2} \left\{  \pi \left| \, x \, \right|  - x^{2}\right\} & -\pi \leq x \leq \pi.
+\end{cases}
+\\] 
+
+\Subsection{9}{1}{2}{Values of the coefficients in terms of the sum of a
+trigonometrical series.}
+Let the trigonometrical series
+\\(
+\frac{1}{2} c_{0}
++
+\sum_{n=1}^{\infty} (c_{n} \cos nx + d_{n} \sin nx)
+\\)
+be uniformly convergent in the range \\((-\pi, \pi)\\) and let its sum be \\(f(x)\\).
+Using the obvious results
+\\[ \begin{align*}
+  \int_{-\pi}^{\pi}\! \cos mx \cos nx \, d x
+  =&
+  \begin{cases}
+    0 & m \neq n \\
+    \pi & m = n \neq 0,
+  \end{cases}
+  \\
+  \int_{-\pi}^{\pi}\! \sin mx \sin nx \, d x
+  =&
+  \begin{cases}
+    0 & m \neq n \\
+    \pi & m = n \neq 0,
+  \end{cases}
+  \\
+  \int_{-\pi}^{\pi}\! \, d x
+  =& 2\pi,
+\end{align*} \\]
+we find, on multiplying the equation
+\\(
+\frac{1}{2} c_{0}
++
+\sum_{n=1}^{\infty}
+(c_{n} \cos nx + d_{n} \sin nx)
+= f(x)
+\\)
+by\footnote{Multiplying by these factors does not destroy the uniformity of the
+  convergence.}
+\\(\cos nx\\) or by \\(\sin nx\\) and integrating
+term-by-term\footnote{These were given by TODO Euler (with limits \\(0\\) and \\(2\pi\\)),
+  Nova Acta Acad. Petrop. xi. (1793).}
+(\hardsectionref{4}{7}),
+\\[ 
+\pi c_{n} = \int_{-\pi}^{\pi}\! f(x) \cos nx \, d x,
+\quad
+\pi d_{n} = \int_{-\pi}^{\pi}\! f(x) \sin nx \, d x.
+\\] 
+
+TODO Corollary. A trigonometrical series uniformly convergent in the range
+\\((-\pi, \pi)\\) is a Fourier series.
+
+TODO Note. Lebesgue has given a proof (TODO Series trigonometriques, p. 124) of a
+theorem communicated to him by Fatou that the trigonometrical series
+\\(\sum_{n=2}^{\infty} \sin nx / \log n\\), which converges for all real values of \\(x\\)
+(\hardsubsectionref{2}{3}{1} example TODO), is *not* a Fourier series.
+
+\Section{9}{2}{On Dirichlet's conditions and Fourier's theorem.
+\index{Statement of Fourier's theorem, \Dirichlet's}}
+A theorem, of the type described in \hardsectionref{9}{1}, concerning the
+expansibility of a function of a real variable into a trigonometrical
+series is usually described
+%
+% 164
+%
+as *Fourier's theorem*. On account of the length and difficulty of a
+formal proof of the theorem (even when the function to be expanded is
+subjected to unnecessarily stringent conditions), we defer the proof
+until TODO §§ \hardsubsectionref{9}{4}{2}, \hardsubsectionref{9}{4}{3}.
+It is, however, convenient to state here certain
+*sufficient* conditions under which a function can be expanded into a
+trigonometrical series.
+
+*Let \\(f(t)\\) he defined arbitrarily when \\(-\pi \leq t \leq \pi\\)
+  and defined\footnote{This definition frequently results in \\(f(t)\\) not being
+    expressible by a single analytical expression for all real values of \\(t\\).*
+    Cf.\hardsubsectionref{9}{1}{1} example TODO:1.
+  for all other real values of \\(t\\) by means of the equation
+  \\[ 
+  f(t + 2\pi) = f(t),
+  \\] 
+  so that \\(f(t)\\) is a periodic function with period \\(2\pi\\).
+}
+*Let \\(f(t)\\) be such that
+  \\(\int_{-\pi}^{\pi} f(t) \, d t\\) exists; and if this is an improper
+  integral, let it be absolutely convergent.*
+
+*Let \\(a_{n}, b_{n}\\) be defined by the
+  equations\footnote{The numbers \\(a_{n}, b_{n}\\) are called
+    **the Fourier constants\index{Fourier constants}** of
+    \\(f(t)\\), and the symbols \\(a_{n}, b_{n}\\) will be used in this sense throughout
+    §§ TODO \hardsectionref{9}{2}--\hardsectionref{9}{5}.
+    It may be shewn that the convergence and absolute convergence of the
+    integrals defining the Fourier constants are consequences of the
+    convergence and absolute convergence of
+    \\(\int_{-\pi}^{\pi} f(t) \, d t\\).
+    Cf. §§ TODO \hardsubsectionref{2}{3}{2}, \hardsectionref{4}{5}.}
+  \\[ 
+  \pi a_{n} = \int_{-\pi}^{\pi}\! f(t) \cos nt \, d t,
+  \quad
+  \pi b_{n} = \int_{-\pi}^{\pi}\! f(t) \sin nt \, d t
+  \quad
+  (n=0,1,2,\ldots).
+  \\]*
+
+*Then, if \\(x\\) be an interior point of any interval \\((a, b)\\) in which
+  \\(f(t)\\) has limited total fluctuation, the series
+  \\[ 
+  \frac{1}{2} a_{0}
+  +
+  \sum_{n=1}^{\infty} (a_{n} \cos nx + b_{n} \sin nx)
+  \\] 
+  is convergent, and its sum\footnote{The limits \\(f(x \pm 0)\\) exist,
+    by \hardsubsectionref{3}{6}{4} example TODO:3.}
+  is \\(\frac{1}{2} \left\{  f(x+0) + f(x-0) \right\}\\).
+  If \\(f(t)\\) is continuous at \\(t=x\\), this sum reduces to \\(f(x)\\).*
+
+This theorem will be assumed in
+TODO \hardsubsectionref{9}{2}{1}--\hardsubsectionref{9}{3}{2};
+these sections deal with theorems concerning Fourier series which
+are of some importance
+in practical applications. It should be stated here that every
+function which Applied Mathematicians need to expand into Fourier
+series satisfies the conditions just imposed on \\(f(t)\\), so that the
+analysis given later in this chapter establishes the validity of all
+the expansions into Fourier series which are required in physical
+investigations.
+
+The reader will observe that in the theorem just stated,
+\\(f(t)\\) is subject to less stringent conditions than those contemplated by
+Dirichlet, and this decrease of stringency is of
+considerable practical importance. Thus, so simple a series as
+\\(\sum_{n=1}^{\infty} (-)^{n-1} (\cos nx) / n\\)
+is the
+expansion of the function\footnote{Cf. example TODO:6 at the end of the chapter (p. TODO:190).}
+\\(\log \left| \, 2 \cos \frac{1}{2} x \, \right| \\); and this function
+does not satisfy Dirichlet's condition of boundedness at \\(\pm \pi\\).
+
+It is convenient to describe the series
+\\(\frac{1}{2} a_{0} + \sum_{n=1}^{\infty} (a_{n} \cos nx + b_{n} \sin nx)\\)
+as *the Fourier series associated with \\(f(t)\\)*. This description must,
+however, be
+%
+% 165
+%
+taken as implying nothing concerning the convergence of the series in
+question.
+
+\Subsection{9}{2}{1}{The representation of a function by Fourier series for ranges
+other than \\((-\pi,\pi)\\).}
+
+Consider a function \\(f(x)\\) with an (absolutely) convergent integral,
+and with limited total fluctuation in the range \\(a \leq x \leq b\\).
+
+Write
+\\(x = \frac{1}{2} (a + b) - \frac{1}{2} (a-b) \pi^{-1} x',
+\quad
+f(x) = F(x')\\).
+
+Then it is known (\hardsectionref{9}{2}) that
+\\[ 
+\frac{1}{2} [F(x'+0) + F(x'-0)]
+=
+\frac{1}{2} a_{0} + \sum_{n=1}^{\infty} (a_{n} \cos nx' + b_{n} \sin nx'),
+\\] 
+and so
+\\[ \begin{align*}
+  & \frac{1}{2} \left\{ f(x+0) + f(x-0)\right\}
+  \\
+  &
+  \hfill
+  =
+  \frac{1}{2} a_{0}
+  +
+  \sum_{n=1}^{\infty}
+  \left\{
+    a_{n} \cos \frac{n \pi (2x-a-b)}{b-a}
+    +
+    b_{n} \sin \frac{n \pi (2x-a-b)}{b-a}
+  \right\},
+\end{align*} \\]
+where by an obvious transformation
+\\[ \begin{align*}
+  \frac{1}{2} (b-a) a_{n} =& \int_{a}^{b}\! f(x) \cos \frac{n \pi (2x-a-b)}{b-a} \, d x,
+  \\
+  \frac{1}{2} (b-a) b_{n} =& \int_{a}^{b}\! f(x) \sin \frac{n \pi (2x-a-b)}{b-a} \, d x
+  .
+\end{align*} \\]
+\Subsection{9}{2}{2}{The cosine series and the sine series.}
+Let \\(f(x)\\) be defined in the range \\((0,l)\\) and let it have an
+(absolutely) convergent integral and also let it have limited
+total fluctuation in that range.
+*Define* \\(f(x)\\) in the range
+\\(\wandwtypo{(0,-l)}{(-l,0)}\\)
+by the equation
+\\[ 
+f(-x) = f(x).\index{Even functions}
+\\] 
+
+Then
+\\[ 
+\frac{1}{2} \left\{ f(x+0) + f(x-0) \right\}
+=
+\frac{1}{2} a_{0}
++
+\sum_{n=1}^{\infty} \left\{
+  a_{n} \cos \frac{n \pi x}{l}
+  +
+  b_{n} \sin \frac{n \pi x}{l}
+\right\},
+\\] 
+where, by \hardsubsectionref{9}{2}{1},
+\\[ \begin{align*}
+  l a_{n}
+  =&
+  \int_{-l}^{l}\! f(t) \cos \frac{n \pi t}{l} \, d t
+  =
+  2 \! \int_{0}^{l}\! f(t) \cos \frac{n \pi t}{l} \, d t,
+  \\
+  l b_{n}
+  =&
+  \int_{-l}^{l}\! f(t) \sin \frac{n \pi t}{l} \, d t
+  = 0,
+\end{align*} \\]
+so that when \\(-l \leq x \leq l\\),
+\\[ 
+\frac{1}{2} \left\{ f(x+0) + f(x-0) \right\}
+=
+\frac{1}{2} a_{0} + \sum_{n=1}^{\infty} a_{n} \cos \frac{n \pi x}{l};
+\\] 
+this is called the *cosine series*.
+
+If, however, we define \\(f(x)\\) in the range \\((0,-l)\\) by the equation
+\\[ 
+f(-x) = -f(\wandwtypo{-}{}x),\index{Odd functions}
+\\] 
+%
+% 166
+%
+we get, when \\(-l \leq x \leq l\\),
+\\[ 
+\frac{1}{2} \left\{ f(x+0) + f(x-0) \right\}
+=
+\sum_{n=1}^{\infty} b_{n} \sin \frac{n \pi x}{l},
+\\] 
+where
+\\[ 
+l b_{n}
+=
+2 \! \int_{0}^{l}\! f(t) \sin \frac{n \pi t}{l} \, d t;
+\\] 
+this is called the *sine series*.
+
+Thus the series
+\\[ 
+\frac{1}{2} a_{0}
++
+\sum_{n=1}^{\infty} a_{n} \cos \frac{n \pi x}{l},
+\quad
+\sum_{n=1}^{\infty} b_{n} \sin \frac{n \pi x}{l},
+\\] 
+where
+\\[ 
+\frac{1}{2} l a_{n}
+=
+\int_{0}^{l}\! f(t) \cos \frac{n \pi t}{l} \, d t,
+\quad
+\frac{1}{2} l b_{n}
+=
+\int_{0}^{l}\! f(t) \sin \frac{n \pi t}{l} \, d t,
+\\] 
+*have the same sum when \\(0 \leq x \leq l\\);*
+but their sums are numerically
+equal and opposite in sign when \\(0 \geq x \geq -l\\).
+
+%\begin{smalltext}
+The cosine series was given by Clairaut, TODO Hist, de I'Acad. R. des Sci.
+1754 [published, 1759], in a memoir dated July 9, 1757; the sine
+series was obtained between 1762 and 1765 by Lagrange, Oeuvres, l. p.
+553.
+%\end{smalltext}
+
+TODO Example 1. Expand \\(\frac{1}{2} (\pi - x) \sin x\\) in a cosine series in the range
+\\(0 \leq x \leq \pi\\).
+[We have, by the formula just obtained,
+\\[ 
+\frac{1}{2} (\pi - x) \sin x
+=
+\frac{1}{2} a_{0}
++ \sum_{n=1}^{\infty} a_{n} \cos nx,
+\\] 
+where
+\\[ 
+\frac{1}{2} \pi a_{n}
+=
+\int_{0}^{\pi}\! \frac{1}{2} (\pi - x) \sin x \cos nx \, d x.
+\\] 
+
+But, integrating by parts, if \\(n \neq 1\\),
+\\[ \begin{align*}
+  &
+  \int_{0}^{\pi}\! 2 (\pi - x) \sin x \cos nx \, d x
+  \\
+  & \quad
+  \int_{0}^{\pi}\! (\pi - x) \left\{
+    \sin (n+1) x - \sin (n-1) x
+  \right\} \, d x
+  \\
+  & \quad
+  \left[
+    (x - \pi)
+    \left\{
+      \frac{ \cos (n+1) x }{n+1}
+      -
+      \frac{ \cos (n-1) x }{n-1}
+    \right\}
+  \right]_{0}^{\pi}
+  -
+  \int_{0}^{\pi}\!
+  \left\{
+    \frac{ \cos (n+1) x }{n+1}
+    -
+    \frac{ \cos (n-1) x }{n-1}
+  \right\}
+  \, d x
+  \\
+  & \quad
+  \pi
+  \left(
+    \frac{1}{n+1}
+    -
+    \frac{1}{n-1}
+  \right)
+  =
+  \frac{-2\pi}{(n+1)(n-1)}
+\end{align*} \\]
+Whereas if \\(n=1\\), we get
+\\(\int_{0}^{\pi} 2 (\pi - x) \sin x \cos x \, d x = \frac{1}{2} \pi\\).
+
+Therefore the required series is
+\\[ 
+\frac{1}{2}
++ \frac{1}{4} \cos x
+- \frac{1}{1 \cdot 3} \cos 2x
+- \frac{1}{2 \cdot 4} \cos 3x
+- \frac{1}{3 \cdot 5} \cos 4x
+- \cdots.
+\\] 
+
+It will be observed that it is only for values of \\(x\\) between
+\\(0\\) and \\(\pi\\) that the sum of this series is proved to be
+\\(\frac{1}{2} (\pi - x) \sin x\\); thus for
+instance when \\(x\\) has a value between \\(0\\) and \\(-\pi\\),
+the sum of the series is not
+\\(\frac{1}{2} (\pi - x) \sin x\\), but \\(-\frac{1}{2} (\pi + x) \sin x\\); when \\(x\\) has a value
+between \\(\pi\\) and \\(2 \pi\\), the sum of the series happens to be again
+\\(\frac{1}{2} (\pi - x) \sin x\\), but this is a mere coincidence arising from the special
+function considered, and does not follow from the general theorem.]
+
+TODO Example 2. Expand \\(\frac{1}{8} \pi x (\pi - x)\\) in a sine series,
+valid when \\(0 \leq x \leq \pi\\).
+
+[The series is \\(\sin x + \frac{\sin 3x}{3^{3}} + \frac{\sin 5x}{5^{3}} + \cdots.\\)]
+%
+% 167
+%
+
+TOOD Example 3. Shew that, when \\(0 \leq x \leq \pi\\),
+\\[ 
+\frac{1}{96}
+\pi
+(\pi - 2x)
+(\pi^{2} + 2 \pi x - 2 x^{2})
+=
+\cos x
++ \frac{\cos 3x}{3^{4}}
++ \frac{\cos 5x}{5^{4}}
++ \cdots.
+\\] 
+
+[Denoting the left-hand side by \\(f(x)\\), we have, on integrating by
+parts and observing that \\(f'(0) = f'(\pi) = 0\\),
+\\[ \begin{align*}
+  \int_{0}^{\pi}\! f(x) \cos nx \, d x
+  =&
+  \frac{1}{n} \left[f(x) \sin nx\right]_{0}^{\pi}
+  -
+  \frac{1}{n} \! \int_{0}^{\pi}\! f'(x) \sin nx \, d x
+  \\
+  =&
+  \frac{1}{n^{2}} \left[f'(x) \cos nx\right]_{0}^{\pi}
+  -
+  \frac{1}{n^{2}} \! \int_{0}^{\pi}\! f''(x) \cos nx \, d x
+  \\
+  =&
+  -\frac{1}{n^{3}} \left[f''(x) \sin nx\right]_{0}^{\pi}
+  +
+  \frac{1}{n^{3}} \! \int_{0}^{\pi}\! f'''(x) \sin nx \, d x
+  =&
+  -\frac{1}{n^{4}} \left[f'''(x) \cos nx\right]_{0}^{\pi}
+  =
+  \frac{\pi}{4 n^{4}} (1 - \cos n \pi).]
+\end{align*} \\]
+TODO Example 4. Shew that for values of \\(x\\) between \\(0\\) and \\(\pi\\),
+\\(e^{s x}\\) can be expanded in the cosine series
+\\[ 
+\frac{2 s}{\pi}
+\left(e^{s \pi} - 1\right)
+\left(
+  \frac{1}{2 s^{2}}
+  + \frac{\cos 2x}{s^{2} + 4}
+  + \frac{\cos 4x}{s^{2} + 16}
+  + \cdots
+\right)
+-
+\frac{2 s}{\pi}
+\left(e^{s \pi} - 1\right)
+\left(
+  \frac{\cos x}{s^{2} + 1}
+  + \frac{\cos 3x}{s^{2} + 9}
+  + \cdots
+\right),
+\\] 
+and draw graphs of the function \\(e^{s x}\\) and of the sum of the series.
+
+TODO Example 5. Shew that for values of \\(x\\) between \\(0\\) and \\(\pi\\),
+the function \\(\frac{1}{8} \pi (\pi - 2x)\\) can
+be expanded in the cosine series
+\\[ 
+\cos x
++ \frac{\cos 3x}{3^{2}}
++ \frac{\cos 5x}{5^{2}}
++ \cdots,
+\\] 
+and draw graphs of the function \\(\frac{1}{8} \pi (\pi - 2x)\\) and of the sum of the
+series.
+
+\Section{9}{3}{The nature of the coefficients in a Fourier series.}\footnote{TODO The analysis of this section and of \hardsubsectionref{9}{3}{1} is contained in Stokes'
+great memoir, Camb. Phil. Tratis. VIII. (1849), pp. 538-583 [Math.
+Papers, i. pp. 236-313].}
+
+Suppose that (as in the numerical examples which have been discussed)
+the interval \\((-\pi, \pi)\\) can bo divided into a finite number of ranges
+\\((-\pi, k_{1}), (k_{1}, k_{2}), \ldots, (k_{n}, \pi)\\)
+such that throughout each range \\(f(x)\\)
+and all its differential coefficients are continuous with limited
+total fluctuation and that they have limits on the right and on the
+left (\hardsectionref{3}{2}) at the end points of these ranges.
+
+Then
+\\[ 
+\pi a_{m}
+=
+\int_{-\pi}^{k_{1}}\! f(t) \cos mt \, d t
++ \int_{k_{1}}^{k_{2}}\! f(t) \cos mt \, d t
++ \cdots
++ \int_{k_{n}}^{\pi}\! f(t) \cos mt \, d t.
+\\] 
+
+Integrating by parts we get
+\\[ \begin{align*}
+  &
+  \pi a_{m}
+  =
+  \left[
+    m^{-1} f(t) \sin mt
+  \right]_{-\pi}^{k_{1}}
+  +
+  \left[
+    m^{-1} f(t) \sin mt
+  \right]_{k_{1}}^{k_{2}}
+  +
+  \cdots
+  +
+  \left[
+    m^{-1} f(t) \sin mt
+  \right]_{k_{n}}^{\pi}
+  \\
+  & \hfill
+  - m^{-1}\! \int_{-\pi}^{k_{1}}\! f'(t) \sin mt \, d t
+  - m^{-1}\! \int_{k_{1}}^{k_{2}}\! f'(t) \sin mt \, d t
+  \cdots
+  - m^{-1}\! \int_{k_{n}}^{\pi}\! f'(t) \sin mt \, d t,
+\end{align*} \\]
+so that
+\\[ 
+a_{m} = \frac{A_{m}}{m} - \frac{b_{m}'}{m},
+\\] 
+%
+% 168
+%
+where
+\\[ 
+\pi A_{m}
+=
+\sum_{r=1}^{n}
+\sin m k_{r}
+\left\{
+  f(k_{r} - 0) - f(k_{r} + 0),
+\right\}
+\\] 
+and \\(b_{m}'\\) is a Fourier constant of \\(f'(x)\\).
+
+Similarly
+\\[ 
+b_{m} = \frac{B_{m}}{m} + \frac{a_{m}'}{m},
+\\] 
+where
+\\[ 
+\pi B_{m}
+=
+-
+\sum_{r=1}^{n}
+\cos m k_{r}
+\left\{
+  f(k_{r} - 0)
+  -
+  f(k_{r} + 0)
+\right\}
+-
+\cos m \pi
+\right\}
+  f(\pi - 0)
+  -
+  f(-\pi + 0)
+\right\}
+,
+\\] 
+and \\(a_{m}'\\) is a Fourier constant of \\(f'(x)\\).
+
+Similarly, we get
+\\[ 
+a_{m}' = \frac{A_{m}'}{m} - \frac{b_{m}''}{m},
+\quad
+b_{m}' = \frac{B_{m}'}{m} - \frac{a_{m}''}{m},
+\\] 
+where \\(a_{m}'', b_{m}''\\) are the Fourier constants of
+\\(f''(x)\\) and
+\\[ \begin{align*}
+  \pi A_{m}'
+  =&
+  \sum_{r=1}^{n} \sin m k_{r} \left\{
+    f'(k_{r}-0) - f'(k_{r}+0)
+  \right\},
+  \\
+  \pi B_{m}'
+  =&
+  - \sum_{r=1}^{n} \cos m k_{r} \left\{
+    f'(k_{r}-0) - f'(k_{r}+0)
+  \right\}
+  \\
+  \hfill
+  - \cos m \pi \left\{
+    f'(\pi - 0) - f'(-\pi + 0)
+  \right\}.
+\end{align*} \\]
+
+Therefore
+\\[ 
+a_{m} =
+\frac{A_{m}}{m}
+- \frac{B_{m}'}{m^{2}}
+- \frac{a_{m}''}{m^{2}},
+\quad
+b_{m} =
+\frac{B_{m}}{m}
++ \frac{A_{m}'}{m^{2}}
+- \frac{b_{m}''}{m^{2}},
+\\] 
+
+Now as \\(m \rightarrow \infty\\), we see that
+\\[ 
+A_{m}' = \bigo(1),
+\quad
+B_{m}' = \bigo(1),
+\\] 
+and, since the integrands involved in \\(a_{m}''\\) and \\(b_{m}''\\)
+are bounded, it is evident that
+\\[ 
+a_{m}'' = \bigo(1),
+\quad
+b_{m}'' = \bigo(1).
+\\] 
+
+Hence if \\(A_{m}=0, B_{m}=0\\), the Fourier series for \\(f(x)\\) converges
+absolutely and uniformly, by \hardsubsectionref{3}{3}{4}.
+
+The necessary and sufficient conditions that
+\\(A_{m} = B_{m} = 0\\) for all values of \\(m\\) are that
+\\[ 
+f(k_{r} - 0) = f(k_{r} + 0),
+\quad
+f(\pi - 0) = f(-\pi + 0)
+\\] 
+that is to say that\footnote{Of course \\(f(x)\\) is also subject to the conditions stated at the
+beginning of the section.} \\(f(x)\\) should be continuous for *all* values of \\(x\\).
+
+\Subsection{9}{3}{1}{Differentiation of Fourier series.}
+The result of differentiating
+\\[ 
+\frac{1}{2} a_{0}
++ \sum_{m=1}^{\infty} (a_{m} \cos mx + b_{m} \sin mx)
+\\] 
+term by term is
+\\[ 
+\sum_{m=1}^{\infty} \left\{
+  m b_{m} \cos mx
+  -
+  m a_{m} \sin mx
+\right\}.
+\\] 
+%
+% 169
+%
+
+With the notation of \hardsectionref{9}{3}, this is the same as
+\\[ 
+\frac{1}{2} a_{0}'
++
+\sum_{m=1}^{\infty} ( a_{m}' \cos mx + b_{m}' \sin mx),
+\\] 
+provided that \\(A_{m} = B_{m} = 0\\) and
+\\(\int_{-\pi}^{\pi} f'(x) \, d x = 0\\);
+these conditions are satisfied if \\(f(x)\\) is continuous for all values of
+\\(x\\).
+
+Consequently sufficient conditions for the legitimacy of
+differentiating a Fourier series term by term are that \\(f(x)\\) should be
+continuous for *all* values of \\(x\\) and \\(f'(x)\\) should have only a finite
+number of points of discontinuity in the range \\((-\pi, \pi)\\), both
+functions having limited total fluctuation throughout the range.
+
+\Subsection{9}{3}{2}{Determination of points of discontinuity.}
+
+The expressions for \\(a_{m}\\) and \\(b_{m}\\) which have been found in
+\hardsectionref{9}{3} can
+frequently be applied in practical examples to determine the points
+at which the sum of a given Fourier series may be discontinuous. Thus,
+let it be required to determine the places at which the sum of the
+series
+\\[ 
+\sin x
++ \frac{1}{3} \sin 3x
++ \frac{1}{5} \sin 5x
++ \cdots
+\\] 
+is discontinuous.
+
+*Assuming* that the series is a Fourier series and not *any*
+trigonometrical series and observing that
+\\(a_{m} = 0, b_{m} = (2m)^{-1}(1 - \cos m \pi)\\), we get on considering the
+formula found in \hardsectionref{9}{3},
+\\[ 
+A_{m} = 0,
+\quad
+B_{m} = \frac{1}{2} - \frac{1}{2} \cos m \pi,
+\quad
+a_{m}' = b_{m}' = 0.
+\\] 
+
+Hence if \\(k_{1}, k_{2},\ldots\\) are the places at which the analytic
+character of the sum is broken, we have
+\\[ 
+0
+=
+\pi A_{m}
+=
+\left[
+  \sin m k_{1} \left\{
+    f(k_{1} - 0) - f(k_{1} + 0)
+  \right\}
+  +
+  \sin m k_{2} \left\{
+    f(k_{2} - 0) - f(k_{2} + 0)
+  \right\}
+  +
+  \cdots
+\right].
+\\] 
+Since this is true for all values of \\(m\\), the numbers
+\\(k_{1}, k_{2}, \ldots\\) must
+be multiples of \\(\pi\\); but
+there is only one even multiple of \\(\pi\\) in the range
+\\(-\pi < x \leq \pi\\), namely zero.
+So \\(k_{1} = 0\\),
+and \\(k_{2}, k_{3}, \ldots\\) do not exist.
+Substituting \\(k_{1} = 0\\) in the equation
+\\(B_{m} = \frac{1}{2} - \frac{1}{2} \cos m \pi\\), we have
+\\[ 
+\pi (\frac{1}{2} - \frac{1}{2} \cos m \pi)
+=
+- \left[
+  \cos m \pi \left\{
+    f(\pi - 0) - f(-\pi + 0)
+  \right\}
+  + f(-0)
+  - f(+0)
+\right].
+\\] 
+
+Since this is true for all values of \\(m\\), we have
+\\[ 
+\frac{1}{2} \pi = f(+0) - f(-0),
+\quad
+\frac{1}{2} \pi = f(\pi - 0) - f(-\pi + 0).
+\\] 
+
+This shews that, if the
+series is a Fourier series, \\(f(x)\\) has discontinuities at the points
+\\(n \pi\\) (\\(n\\) any integer), and since \\(a_{m}' = b_{m}' = 0\\), we should
+expect\footnote{In point of fact
+  \\[ 
+  f(x)
+  =
+  \begin{cases}
+    -\frac{1}{4} \pi & -\pi < x < 0;\\
+    \frac{1}{4} \pi & 0 < x < \pi.
+  \end{cases}
+  \\] 
+} \\(f(x)\\)
+to be constant in the open range \\((-\pi, 0)\\) and to be another constant
+in the open range \\((0, \pi)\\).
+
+\Section{9}{4}{\Fejer's theorem.}
+
+We now begin the discussion of the theory of Fourier series by proving
+the following theorem, due to \Fejer,\footnote{TODO:Math. Ann. lviii. (1904), pp. 51-69.}
+concerning the summability of
+the Fourier series associated with an arbitrary function, \\(f(t)\\):
+
+*Let \\(f(t)\\) be a function of the real variable \\(t\\), defined arbitrarily
+  when \\(-\pi \leq t < \pi\\), and defined by the equation
+  \\[ 
+  f(t + 2\pi) = f(t)
+  \\] 
+%
+% 170
+%
+  for all other real values of \\(t\\); and let
+  \\(\int_{-\pi}^{\pi} f(t) \, d t\\)
+  exist and (if it is an improper integral)
+  let it he absolutely convergent.*
+
+*Then the Fourier series associated with the function
+  \\(f(t)\\) is summable\footnote{See \hardsubsectionref{8}{4}{3}.} (\\(C1\\))
+  at all points \\(x\\) at which the two limits \\(f(x \pm 0)\\) exist.*
+
+And its sum (\\(C1\\)) is
+\\[ 
+\frac{1}{2} \left\{
+  f(x + 0) + f(x-0)
+\right\}.
+\\] 
+
+Let \\(a_{n}, b_{n}, (n=0,1,2,\ldots)\\) denote the Fourier constants
+(\hardsectionref{9}{2}) of
+\\(f(t)\\) and let
+\\[ 
+\frac{1}{2} a_{0} = A_{0},
+\hfill
+a_{n} \cos n x + b_{n} \sin n x = A_{n}(x),
+\hfill
+\sum_{n=0}^{m} A_{n}(x) = S_{m}(x).
+\\] 
+
+Then we have to prove that
+\\[ 
+\lim_{m \rightarrow \infty}
+\frac{1}{m} \left\{
+  A_{0}
+  + S_{1}(x) + S_{2}(x) + \cdots + S_{m-1}(x)
+\right\}
+=
+\frac{1}{2} \left\{
+  f(x+0) + f(x-0)
+\right\},
+\\] 
+provided that the limits on the right exist.
+
+If we substitute for the Fourier constants their values in the form of
+integrals (\hardsectionref{9}{2}), it is easy to verify
+that\footnote{It is obvious that, if we write \\(\lambda\\) for \\(e^{i(x-t)}\\) in the second line,
+  then
+  \\[ \begin{align*}
+    m + &
+    (m-1) (\lambda + \lambda^{-1})
+    + (m-2) (\lambda^{2} + \lambda^{-2})
+    + \cdots
+    + (\lambda^{m-1} + \lambda^{1 - m})
+    \\
+    =&
+    (1 - \lambda)^{-1} \left\{
+      \lambda^{1-m}
+      + \lambda^{2-m}
+      + \cdots
+      + \lambda^{-1}
+      + 1
+      - \lambda
+      - \lambda^{2}
+      - \cdots
+      - \lambda^{m}
+    \right\} \\
+    =&
+    (1 - \lambda)^{-2} \left\{
+      \lambda^{1 - m}
+      - 2 \lambda
+      + \lambda^{m+1}
+    \right\}
+    =
+    (\lambda^{\frac{1}{2} m} - \lambda^{-\frac{1}{2} m})^{2}
+    /
+    (\lambda^{\frac{1}{2}} - \lambda^{-\frac{1}{2}})^{2}.
+  \end{align*} \\]
+  m + (m - 1) (X + X-i) + (hi - 2) (X2 + X-2) + . . . + (X' -i + Xi-' )
+
+  = (l-X)-i \ i-™ + X2-' +...+X-i + l-X--X'-i-...-X' = (1 - X)-2 xi- v -
+  2X + X' +i = (X '" - X~ '"f /(X - X" )
+}
+\\[ \begin{align*}
+  A_{0} + \sum_{n=1}^{m-1} S_{n}(x)
+  =&
+  m A_{0}
+  + (m - 1) A_{1}(x)
+  + (m - 2) A_{2}(x)
+  + \cdots
+  + A_{m-1}(x)
+  \\
+  =&
+  \frac{1}{\pi}
+  \! \int_{-\pi}^{\pi}\! \left\{
+    \frac{1}{2} m
+    + (m-1) \cos (x-t)
+    + (m-2) \cos 2(x-t)
+    + \cdots
+    + \cos (m-1)(x-t)
+  \right\}
+  f(t) \, d t
+  \\
+  =&
+  \frac{1}{2\pi}
+  \! \int_{-\pi}^{\pi}\!
+  \frac{\sin^{2} \frac{1}{2} m (x-t)}{\sin^{2} \frac{1}{2} (x-t)}
+  f(t) \, d t
+  \\
+  =&
+  \frac{1}{2\pi}
+  \! \int_{-\pi+x}^{\pi+x}\!
+  \frac{\sin^{2} \frac{1}{2} m (x-t)}{\sin^{2} \frac{1}{2} (x-t)}
+  f(t) \, d t,
+\end{align*} \\]
+the last step following from the periodicity
+of the integrand.
+
+If now we bisect the path of integration and write \\(x \mp 2\theta\\) in place of
+\\(t\\( in the two parts of the path, we get
+\\[ 
+A_{0}
++ \sum_{n=1}^{m-1} S_{n}(x)
+=
+\frac{1}{\pi}
+\! \int_{0}^{\frac{1}{2} \pi}\!
+\frac{\sin^{2} m \theta}{\sin^{2} \theta}
+f(x + 2\theta) \, d \theta
++
+\frac{1}{\pi}
+\! \int_{0}^{\frac{1}{2} \pi}\!
+\frac{\sin^{2} m \theta}{\sin^{2} \theta}
+f(x - 2\theta) \, d \theta
+\\] 
+
+*Consequently it is sufficient to prove that, as
+  \\(m \rightarrow \infty\\), then*
+\\[ 
+\frac{1}{m}
+\! \int_{0}^{\frac{1}{2}\pi}\!
+\frac{\sin^{2} m \theta}{\sin^{2} \theta}
+f(x + 2\theta)
+\, d \theta
+\rightarrow
+\frac{1}{2} \pi f(x + 0),
+\quad
+\frac{1}{m}
+\! \int_{0}^{\frac{1}{2}\pi}\!
+\frac{\sin^{2} m \theta}{\sin^{2} \theta}
+f(x - 2\theta)
+\, d \theta
+\rightarrow
+\frac{1}{2} \pi f(x - 0),
+\\] 
+%
+% 171
+%
+
+Now, if we integrate the equation
+\\[ 
+\frac{1}{2}
+\frac{\sin^{2} m \theta}{\sin^{2} \theta}
+=
+\frac{1}{2} m + (m-1) \cos 2\theta + \cdots + \cos 2(m-1)\theta,
+\\] 
+we find that
+\\[ 
+\int_{0}^{\frac{1}{2} \pi}\!
+\frac{\sin^{2} m \theta}{\sin^{2} \theta}
+\, d \theta
+=
+\frac{1}{2} \pi m,
+\\] 
+and so we have to prove that
+\\[ 
+\frac{1}{m}
+\! \int_{0}^{\frac{1}{2} \pi}\!
+\frac{\sin^{2} m \theta}{\sin^{2} \theta}
+\phi(\theta)
+\, d \theta
+\rightarrow
+0
+\quad
+\textrm{as} %TODO: clean up; do more properly
+\quad
+m \rightarrow \infty
+\\] 
+where \\(\phi(\theta)\\) stands in turn for each of the two functions
+\\[ 
+f(x + 2\theta) - f(x + 0),
+\quad
+f(x - 2\theta) - f(x - 0).
+\\] 
+Now, given an arbitrary positive number \\(\eps\\), we can choose \\(\delta\\) so
+that\footnote{On the assumption that \\(f(x \pm 0)\\) exist.}
+\\[ 
+\left| \, \phi(\theta) \, \right|  < \eps
+\\] 
+whenever \\(0 < \theta \leq \frac{1}{2} \delta\\). This choice of \\(\delta\\) is obviously independent of \\(m\\).
+
+Then
+\\[ \begin{align*}
+  \left| \, 
+    \frac{1}{m}
+    \! \int_{0}^{\frac{1}{2}\! \pi}
+    \frac{\sin^{2} m\theta}{\sin^{2} \theta}
+    \phi(\theta)
+    \, d \theta
+   \, \right| 
+  &
+  \leq
+  \frac{1}{m}
+  \! \int_{0}^{\frac{1}{2}\! \delta}
+  \frac{\sin^{2} m\theta}{\sin^{2} \theta}
+  \left| \,  \phi(\theta) \, \right| 
+  \, d \theta
+  +
+  \frac{1}{m}
+  \! \int_{\frac{1}{2}\delta}^{\frac{1}{2}\pi}\!
+  \frac{\sin^{2} m\theta}{\sin^{2} \theta}
+  \left| \, \phi(\theta) \, \right| 
+  \, d \theta
+  \\
+  &
+  <
+  \frac{\eps}{m}
+  \! \int_{0}^{\frac{1}{2} \delta}\!
+  \frac{\sin^{2} m\theta}{\sin^{2} \theta}
+  \, d \theta
+  +
+  \frac{1}{m \sin^{2} \frac{1}{2} \delta}
+  \! \int_{\frac{1}{2} \delta}^{\frac{1}{2} \pi}\!
+  \left| \, \phi(\theta) \, \right| 
+  \, d \theta
+  \\
+  &
+  \leq
+  \frac{\eps}{m}
+  \! \int_{0}^{\frac{1}{2} \pi}\!
+  \frac{\sin^{2} m\theta}{\sin^{2} \theta}
+  \, d \theta
+  +
+  \frac{1}{m \sin^{2} \frac{1}{2}\delta}
+  \! \int_{0}^{\frac{1}{2} \pi}\!
+  \left| \, \phi(\theta) \, \right| 
+  \, d \theta
+  \\
+  &
+  =
+  \frac{1}{2} \pi \eps
+  +
+  \frac{1}{m \sin^{2} \frac{1}{2}\delta}
+  \! \int_{0}^{\frac{1}{2} \pi}\!
+  \left| \, \phi(\theta) \, \right| 
+  \, d \theta
+\end{align*} \\]
+
+Now the convergence of
+\\(\int_{-\pi}^{\pi} \left| \, f(t) \, \right|  \, d t\\)
+entails the convergence of
+\\[ 
+\int_{0}^{\frac{1}{2} \pi}\!
+\left| \, \phi(\theta) \, \right| 
+\, d \theta,
+\\] 
+and so, given \\(\eps\\) (and therefore \\(\delta\\)), we can make
+\\[ 
+\frac{1}{2} \pi \eps
+\sin^{2} \frac{1}{2} \delta
+>
+\int_{0}^{\frac{1}{2}\pi}\!
+\left| \, \phi(\theta) \, \right| 
+\, d \theta,
+\\] 
+by taking \\(m\\) sufficiently large.
+
+Hence, by taking \\(m\\) sufficiently large, we can make
+\\[ 
+\left| \, 
+  \frac{1}{m}
+  \! \int_{0}^{\frac{1}{2} \pi}\!
+  \frac{\sin^{2} m \theta}{\sin^{2} \theta}
+  \phi(\theta)
+  \, d \theta
+ \, \right| 
+<
+\pi \eps,
+\\] 
+where \\(\eps\\) is an arbitrary positive number; that is to say, from the
+definition of a limit,
+\\[ 
+\lim_{m \rightarrow \infty}
+\frac{1}{m}
+\! \int_{0}^{\frac{1}{2}\pi}\!
+\frac{\sin^{2} m\theta}{\sin^{2} \theta}
+\phi(\theta)
+\, d \theta
+=
+0,
+\\] 
+and so \Fejer's theorem is established.
+%
+% 172
+%
+
+%TODO:Corollary
+Corollary 1. Let \\(U\\) and \\(L\\) be the upper and lower bounds of \\(f(t)\\) in any
+interval \\((a, b)\\) whose length does not exceed \\(2\pi\\), and let
+\\[ 
+\int_{-\pi}^{\pi}\! \left| \, f(t) \, \right|  \, d t = \pi A.
+\\] 
+Then, if \\(a + \eta \leq x \leq b - \eta\\), where \\(\eta\\) is any positive number, we have
+\\[ \begin{align*}
+  U
+  -
+  \frac{1}{m}
+  \left\{
+    A_{0}
+    +
+    \sum_{n=1}^{m-1} S_{n}(x)
+  \right\}
+  &
+  =
+  \frac{1}{2 m \pi}
+  \left\{
+    \int_{-\pi + x}^{x - \eta}\!
+    + \int_{x - \eta}^{x + \eta}\!
+    + \int_{x + \eta}^{\pi + x}
+  \right\}
+  \frac{\sin^{2} \frac{1}{2} m (x-t)}{\sin^{2} \frac{1}{2} (x-t)}
+  \left\{
+    U - f(t)
+  \right\}
+  \, d t
+  \\
+  &
+  \geq
+  \frac{1}{2 m \pi}
+  \left\{
+    \int_{-\pi + x}^{x - \eta}\!
+    + \int_{x + \eta}^{\pi + x}
+  \right\}
+  \frac{\sin^{2} \frac{1}{2} m (x-t)}{\sin^{2} \frac{1}{2} (x-t)}
+  \left\{
+    U - f(t)
+  \right\}
+  \, d t
+  \\
+  &
+  \geq
+  -\frac{1}{2 m \pi}
+  \left\{
+    \int_{-\pi + x}^{x - \eta}\!
+    + \int_{x + \eta}^{\pi + x}
+  \right\}
+  \frac{\left| \, U \, \right|  + \left| \, f(t) \, \right| }{\sin^{2} \frac{1}{2} \eta}
+  \, d t
+\end{align*} \\]
+so that
+\\[ 
+\frac{1}{m}
+\left\{
+  A_{0}
+  + \sum_{n=1}^{m-1} S_{n}(x)
+\right\}
+\leq
+U +
+\left\{
+  \left| \, U \, \right| 
+  + \frac{1}{2} A
+\right\}
+/
+\left\{
+  m \sin^{2} \frac{1}{2} \eta
+\right\}.
+\\] 
+Similarly
+\\[ 
+\frac{1}{m}
+\left\{
+  A_{0}
+  + \sum_{n=1}^{m-1} S_{n}(x)
+\right\}
+\geq
+L -
+\left\{
+  \left| \, L \, \right| 
+  + \frac{1}{2} A
+\right\}
+/
+\left\{
+  m \sin^{2} \frac{1}{2} \eta
+\right\}.
+\\] 
+Corollary 2. Let \\(f(t)\\) be continuous in the interval \\(a \leq t \leq b\\). Since
+continuity implies uniformity of continuity (\hardsubsectionref{3}{6}{1}), the choice of
+\\(\delta\\) corresponding to any value of \\(x\\) in \\((a, b)\\) is independent of \\(x\\), and the
+upper bound of \\(\left| \, f(x \pm 0) \, \right| \\), i.e. of \\(\left| \, f(x) \, \right| \\), is also independent of \\(x\\),
+so that
+\\[ \begin{align*}
+  \int_{0}^{\frac{1}{2} \pi}\! \left| \, \phi(\theta) \, \right|  \, d \theta
+  =&
+  \int_{0}^{\frac{1}{2} \pi}\!
+  \left| \, 
+    f(x \pm 2\theta) - f(x \pm 0)
+   \, \right| 
+  \, d \theta
+  \\
+  \leq
+  &
+  \frac{1}{2} \int_{-\pi}^{\pi}\! \left| \, f(t) \, \right|  \, d t
+  + \frac{1}{2} \pi \left| \, f(x \pm 0) \, \right| ,
+\end{align*} \\]
+and the upper bound of the last expression is independent of \\(x\\).
+
+Hence the choice of \\(m\\), which makes
+\\[ 
+\left| \, 
+  \frac{1}{m}
+  \int_{0}^{\frac{1}{2} \pi}\!
+  \frac{\sin^{2} m \theta}{\sin^{2} \theta}
+  \phi(\theta)
+  \, d \theta
+ \, \right| 
+<
+\pi \eps,
+\\] 
+is independent of \\(x\\), *and consequently
+  \\(\frac{1}{m}\left\{
+    A_{0} + \sum_{n=1}^{m-1} S_{n}(x)
+  \right\}\\) tends to the limit \\(f(x)\\), as \\(m \rightarrow \infty\\),
+  uniformly throughout the interval \\(a \leq x \leq b\\).*
+\Subsection{9}{4}{1}{The Riemann-Lehesgue lemmas.}
+In order to be able to apply Hardy's theorem (\hardsectionref{8}{5}) to deduce the
+convergence of Fourier series from \Fejer's theorem, we need the two
+following lemmas :
+
+%TODO
+(I) Let \\(\int_{a}^{b}\! \psi(\theta) \, d \theta\\) exist and (if it is an improper integral) let it be
+absolutely convergent. Then, as \\(\lambda \rightarrow \infty\\),
+\\[ 
+\int_{a}^{b}\! \psi(\theta) \sin (\lamba \theta) \, d \theta
+\quad
+\textrm{is}
+\quad
+\littleo(1).
+\\] 
+%TODO
+(II) If, further, \\(\psi(\theta)\\) has limited total fluctuation in the range
+\\((a,b)\\) then, as \\(\lambda \rightarrow \infty\\),
+\\[ 
+\int_{a}^{b}\! \psi(\theta) \sin (\lambda\theta) \, d \theta
+\quad
+\textrm{is}
+\quad
+\bigo(1 / \lambda).
+\\] 
+
+%
+% 173
+%
+
+Of these results (I) %TODO:fixref
+was stated by W. R. Hamilton\footnote{TODOTrans. Dublin Acad. xix. (1843), p. 267.} and by
+Riemann\footnote{TODO:Ges. Math. IVerke, p. 241. For Lebesgue's investigation see his
+Series trigonometriques (1906), Ch. III.} in
+the case of bounded fiuictions.
+The truth of (II) %TODO:fixref
+seems to have been
+well known before its importance was realised; it is a generalisation
+of a result established by Dirksen\footnote{TODO:Journal fUr Math. iv. (1829), p. 172.}
+and Stokes (see \hardsectionref{9}{3}) in the
+case of functions with a continuous differential coefficient.
+
+The reader should observe that the analysis of this section remains
+valid when the sines are replaced throughout by cosines.
+
+%TODO:fixref
+(I) It is convenient\footnote{For this proof we are indebted to Mr Hardy;
+  it seems to be neater than the proofs given by other writers,
+  %TODO
+  e.g. de la Vallee Poussin,
+  Cours cV Analyse Infinitesiniale, ii. (1912), pp. 140-141.}
+to establish this lemma first in the case in
+which \\(\psi(\theta)\\) is bounded in the range \\((a, b)\\). In this case, let \\(K\\) be
+the upper bound of \\(\left| \, \psi(\theta) \, \right| \\), and let \\(\eps\\) be an arbitrary positive
+number. Divide the range \\((a, b)\\) into \\(n\\) parts by the points
+\\(x_{1}, x_{2}, \ldots x_{n-1}\\), and form the sums \\(S_{n}, s_{n}\\) associated with the function
+\\(\psi(\theta)\\) after the manner of \hardsectionref{4}{1}. Take \\(n\\) so large that
+\\(S_{n} - s_{n} < \eps\\); this is
+possible since \\(\psi(\theta)\\) is integrable.
+
+In the interval \\((x_{r-1}, x_{r})\\) write
+\\[ 
+\psi(\theta) = \psi_{r}(x_{r-1}) + \omega_{r}(\theta),
+\\] 
+so that
+\\[ 
+\left| \,  \omega_{r}(\theta)  \, \right|  \leq U_{r} - L_{r},
+\\] 
+where \\(U_{r}\\) and \\(L_{r}\\) are the upper and lower bounds of
+\\(\psi(\theta)\\) in the interval
+\\((x_{r-1}, x_{r})\\).
+
+It is then clear that
+
+By taking X sufficiently large (n remaining fixed after e has been
+chosen), the last expression may be made less than 2e, so that
+%TODO:alignment
+\\[ \begin{align*}
+  &
+  \left| \, 
+    \int_{a}^{b}\!
+    \psi(\theta) \sin(\lambda \theta) \, d \theta
+   \, \right| 
+  \\
+  & \quad
+  =
+  \left| \, 
+    \sum_{r=1}^{n}
+    \psi_{r}(x_{r-1})
+    \int_{x_{r-1}}^{x_{r}}\!
+    \sin (\lambda \theta) \, d \theta
+    +
+    \sum_{r=1}^{n}
+    \int_{x_{r-1}}^{x_{r}}\!
+    \omega_{r}(\theta) \sin(\lambda \theta) \, d \theta
+   \, \right| 
+  \\
+  & \quad
+  \leq
+  \sum_{r=1}^{n}
+  \left| \, 
+    \psi_{r}(x_{r-1})
+   \, \right| 
+  \cdot
+  \left| \, 
+    \int_{x_{r-1}}^{x_{r}}\!
+    \sin (\lambda \theta) \, d \theta
+   \, \right| 
+  +
+  \sum_{r=1}^{n}
+  \int_{x_{r-1}}^{x_{r}}\!
+  \left| \,  \omega_{r} (\theta) \, \right|  \, d \theta
+  \\
+  & \quad
+  \leq n K \cdot (2 / \lambda)
+  +
+  (S_{n} - s_{n})
+  \\
+  & \quad
+  < (2nK / \lambda)
+  +
+  \eps.
+\end{align*} \\]
+
+By taking \\(\lambda\\) sufficiently large (\\(n\\) remaining fixed after \\(\eps\\) has been
+chosen), the last expression may be less than \\(2\eps\\), so that
+\\[ 
+\lim_{\lambda \rightarrow \infty}
+\int_{a}^{b}\! \psi(\theta) \sin(\lambda \theta) \, d \theta = 0,
+\\] 
+and this is the result stated.
+
+When \\(\psi(\theta)\\) is unbounded, if it has an absolutely convergent integral,
+by \hardsectionref{4}{5}, we may enclose the points at which it is unbounded in a
+finite\footnote{The *finiteness* of the number of intervals is assumed in the
+definition of an improper integral,\hardsectionref{4}{5}.} number
+%
+% 174
+%
+of intervals \\(\delta_{1}, \delta_{2}, \ldots, \delta_{p}\\) such that
+\\[ 
+\sum_{n=1}^{p}
+\int_{\delta_{r}}\!
+\left| \,  \psi(\theta)  \, \right|  \, d \theta
+<
+\eps.
+\\] 
+If \\(K\\) denote the upper bound of \\(\left| \, \psi(\theta) \, \right| \\) for values of
+\\(\theta\\) outside these intervals, and if
+\\(\gamma_{1}, \gamma_{2}, \ldots, \gamma_{p+1}\\) denote the portions of the interval
+\\((a, b)\\) which do not belong to \\(\delta_{1}, \delta_{2}, \ldots, \delta_{p}\\)
+we may prove as before that
+\\[ \begin{align*}
+  \left| \, \int_{a}^{b}\! \psi(\theta) \sin (\lambda \theta) \, d \theta \, \right| 
+  & =
+  \left| \, 
+    \sum_{r=1}^{p+1}
+    \int_{\gamma_{r}}\! \psi(\theta) \sin(\lambda \theta) \, d \theta
+    +
+    \sum_{r=1}^{p}
+    \int_{\delta_{r}}\! \psi(\theta) \sin(\lambda \theta) \, d \theta
+   \, \right| 
+  \\
+  & \leq
+  \left| \, 
+    \sum_{r=1}^{p+1}
+    \int_{\gamma_{r}}\! \psi(\theta) \sin(\lambda \theta) \, d \theta
+   \, \right| 
+  +
+  \sum_{r=1}^{p}
+  \int_{\delta_{r}}\!
+  \left| \, \psi(\theta) \sin(\lambda \theta) \, \right| 
+  \, d \theta
+  \\
+  & <
+  (2nK / \lambda) + 2 \eps.
+\end{align*} \\]
+
+Now the choice of \\(\eps\\) fixes \\(n\\) and \\(K\\), so that the last expression may be
+made less than \\(3\eps\\) by taking \\(\lambda\\) sufficiently large. That is to say
+that, even if \\(\psi(\theta)\\) be unbounded,
+\\[ 
+\lim_{\lambda \rightarrow \infty}
+\int_{a}^{b}\! \psi(\theta) \sin(\lambda \theta) \, d \theta
+=
+0,
+\\] 
+provided that \\(\psi(\theta)\\) has an (improper) integral which is absolutely
+convergent.
+
+The first lemma is therefore completely proved.
+
+%TODO
+(II) When \\(\psi(\theta)\\) has limited total fluctuation in the range \\((a, b)\\),
+by %TODO: un-hardcode example number
+\hardsubsectionref{3}{6}{4} example 2, we may write
+\\[ 
+\psi(\theta) = \chi_{1}(\theta) - \chi_{2}(\theta),
+\\] 
+where \\(\chi_{1}(\theta), \chi_{2}(\theta)\\) are positive increasing bounded functions.
+
+Then, by the second mean-value theorem (\hardsubsectionref{4}{1}{4}) a number
+\\(\xi\\) exists such that \\(a \leq \xi \leq b\\) and
+\\[ \begin{align*}
+  \left| \, 
+    \int_{a}^{b}\! \chi_{1}(\theta) \sin(\lambda \theta) \, d \theta
+   \, \right| 
+  &=
+  \left| \, 
+    \chi_{1}(b) \int_{\xi}^{b}\! \sin(\lambda \theta) \, d \theta
+   \, \right| 
+  \\
+  & \leq
+  2 \chi_{1}(b) / \lambda.
+\end{align*} \\]
+
+If we treat \\(\chi_{2}(\theta)\\) in similar manner, it follows that
+\\[ \begin{align*}
+  \left| \, 
+    \int_{a}^{b}\! \psi (\theta) \sin(\lambda \theta) \, d \theta
+   \, \right| 
+  &
+  \leq
+  \left| \, 
+    \int_{a}^{b}\! \chi_{1}(\theta) \sin(\lambda\theta) \, d \theta
+   \, \right| 
+  +
+  \left| \, 
+    \int_{a}^{b}\! \chi_{2}(\theta) \sin(\lambda\theta) \, d \theta
+   \, \right| 
+  \\
+  &
+  \leq
+  2 \left\{ \chi_{1}(b) + \chi_{2}(b) \right\} / \lambda
+  \\
+  = &
+  \bigO(1 / \lambda),
+\end{align*} \\]
+and the second lemma is established.
+
+Corollary. If \\(f(t)\\) lie such that \\(\int_{-\pi}^{\pi} f(t)\\) %TODO:fix typo in book (missing 'dt')?
+exists and is an absolutely convergent integral,
+the Fourier constants \\(a_{n}, b_{n}\\) of \\(f(t)\\) are \\(\littleo{l}\\) as
+\\(n \rightarrow \infty\\);
+and if, further, \\(f(t)\\) has limited total fluctuation in the range
+\\((-\pi, \pi)\\), the Fourier constants are \\(\bigo{1/n}\\).
+
+[Of course these results are not sufficient to ensure the convergence
+of the Fourier series associated with \\(f(t)\\); for a series, in which the
+terms are of the order of magnitude of the terms in the harmonic
+series \hardsectionref{2}{3}), is not necessarily convergent.]
+
+%
+% 175
+%
+
+\Subsection{9}{4}{2}{The proof of Fourier's theorem.}
+
+We shall now prove the theorem enunciated in \hardsectionref{9}{2}, namely:
+
+%TODO:emphasize paragraphs
+Let \\(f(t)\\) be a function defined arbitrarily when \\(-\pi \leq t < \pi\\), and defined by the
+equation \\(f(t + 2\pi) = f(t)\\) for all other real values of \\(t\\); and let
+\\(\int_{-\pi}^{\pi} f(t) \, d t\\)
+exist and (if it is an improper integral) let it be absolutely
+convergent. Let \\(a_{n}, b_{n}\\) be defined by the equations
+\\[ 
+\pi a_{n} = \int_{-\pi}^{\pi}\! f(t) \cos nt \, d t,
+\quad
+\pi b_{n} = \int_{-\pi}^{\pi}\! f(t) \sin nt \, d t.
+\\] 
+Then, if \\(x\\) be an interior point of any interval \\((a, b)\\) within which
+\\(f(t)\\) has limited total fluctuation, the series
+\\[ 
+\frac{1}{2} a_{0}
++
+\sum_{n=1}^{\infty} (
+a_{n} \cos nx + b_{n} \sin nx
+)
+\\] 
+is convergent and its sum is \\(half \left\{f(x+0) + f(x-0)\right\}\\).
+
+It is convenient to give two proofs, one applicable to functions for
+which it is permissible to take the interval \\((a, b)\\) to be the interval
+\\((-\pi+x, \pi + x)\\), the other applicable to functions for which it is
+not permissible.
+
+%TODO:autonumbering
+(I) When the interval \\((a, b)\\) may be taken to be \\((-\pi + x, \pi + x)\\),
+it follows from \hardsubsectionref{9}{4}{1} (II) %TODO:ref
+that \\(a_{n} \cos nx + b_{n} \sin nx\\) is \\(\bigo{1/n}\\) as
+\\(n \rightarrow \infty\\). Now by \Fejer's theorem (\hardsectionref{9}{4})
+the series under consideration
+is summable (Cl) %TODO
+and its sum (C'l) %TODO
+is\footnote{The limits \\(f(x \pm 0)\\) exist, by \hardsubsectionref{3}{6}{4} example 3.%TODO
+}
+\\(\frac{1}{2} \left\{f(x+0) + f(x-0)\right\}\\). Therefore.,
+by Hardy's convergence theorem \hardsectionref{8}{5}), the series under consideration
+is CONVERGENT %TODO:emph?
+and its sum (by \hardsubsectionref{8}{4}{3}) is
+\\(\frac{1}{2} \left\{f(x+0) + f(x-0)\right\}\\).
+
+(II) %TODO
+Even if it is not permissible to take the interval \\((a, b)\\) to be
+the whole interval \\((-\pi + x, \pi + x)\\), it is possible, by
+hypothesis, to choose a positive number \\(\delta\\), less than \\(\pi\\),
+such that \\(f(t)\\)
+has limited total fluctuation in the interval \\((x-\delta, x+\delta)\\).
+We now define an auxiliary function \\(g(t)\\), which is equal to \\(f(t)\\) when
+\\(x - \delta \leq t \leq x + \delta\\),
+and which is equal to zero throughout the rest of the interval
+\\((-\pi + x, \pi + x)\\); and \\(g(t + 2\pi)\\) is to be equal to \\(g(t)\\) for all real
+values of \\(t\\).
+
+Then \\(g(t)\\) satisfies the conditions postulated for the functions under
+consideration in (I),%TODO:ref
+namely that it has an integral which is
+absolutely convergent and it has limited total fluctuation in the
+interval \\((-\pi + x, \pi + x)\\); and so, if
+\\(a_{n}^{(1)}, b_{n}^{(1)}\\) denote the Fourier
+constants of \\(g(t)\\), the arguments used in (I) %TODO:addref
+prove that the Fourier
+series associated with \\(g(t)\\), namely
+\\[ 
+\frac{1}{2} a_{0}^{(1)}
++
+\sum_{n=1}^{\infty}
+\left(
+  a_{n}^{(1)} \cos nx
+  +
+  b_{n}^{(1)} \sin nx
+\right),
+\\] 
+is convergent and has the sum
+\\(\frac{1}{2} \left\{g(x+0) + g(x-0)\right\}\\), and this is
+equal to
+\\[ 
+\frac{1}{2} \left\{
+  f(x+0) + f(x-0)
+\right\}.
+\\] 
+%
+% 176
+%
+
+Now let \\(S_{m}(x)\\) and \\(S_{m}^{(1)} (x)\\) denote the sums of the first \\(m + 1\\)
+terms of the Fourier series associated with \\(f(t)\\) and \\(g(t)\\) respectively. Then
+it is easily seen that
+\\[ \begin{align*}
+  S_{m}(x)
+  =&
+  \frac{1}{\pi}
+  \! \int_{-\pi}^{\pi}\! \left\{
+    \frac{1}{2}
+    + \cos (x-t)
+    + \cos 2(x-t)
+    + \cdots
+    + \cos m(x-t)
+  \right\}
+  f(t) \, d t
+  \\
+  =&
+  \frac{1}{2\pi}
+  \! \int_{-\pi}^{\pi}\!
+  \frac{\sin (m+\frac{1}{2}) (x-t) }{\sin \frac{1}{2} (x-t)}
+  f(t) \, d t
+  \\
+  =&
+  \frac{1}{2\pi}
+  \! \int_{-\pi+x}^{\pi+x}\!
+  \frac{\sin (m+\frac{1}{2}) (x-t) }{\sin \frac{1}{2} (x-t)}
+  f(t) \, d t
+  \\
+  =&
+  \frac{1}{\pi}
+  \! \int_{0}^{\frac{1}{2} \pi}\!
+  \frac{\sin (2m+1)\theta}{\sin \theta}
+  f(x + 2\theta) \, d \theta
+  +
+  \frac{1}{\pi}
+  \! \int_{0}^{\frac{1}{2} \pi}\!
+  \frac{\sin (2m+1)\theta}{\sin \theta}
+  f(x - 2\theta) \, d \theta,
+\end{align*} \\]
+by steps analogous to those given in \hardsectionref{9}{4}.
+
+In like manner
+\\[ 
+S_{m}^{(1)}(x)
+=
+\frac{1}{\pi}
+\! \int_{0}^{\frac{1}{2} \pi}\!
+\frac{\sin (2m+1)\theta}{\sin \theta}
+g(x + 2\theta) \, d \theta
++
+\frac{1}{\pi}
+\! \int_{0}^{\frac{1}{2} \pi}\!
+\frac{\sin (2m+1)\theta}{\sin \theta}
+g(x - 2\theta) \, d \theta,
+\\] 
+and so, using the definition of \\(g(t)\\), we have
+\\[ \begin{align*}
+  S_{m}(x) - S_{m}^{(1)}(x)
+  =&
+  \frac{1}{\pi}
+  \! \int_{\frac{1}{2}\delta}^{\frac{1}{2} \pi}\! \sin (2m+1)\theta
+  \frac{f(x+2\theta)}{\sin \theta}
+  \, d \theta
+  \\
+  &\quad
+  \frac{1}{\pi}
+  \! \int_{\frac{1}{2}\delta}^{\frac{1}{2} \pi}\! \sin (2m+1)\theta
+  \frac{f(x-2\theta)}{\sin \theta}
+  \, d \theta.
+\end{align*} \\]
+
+Since \\(\cosec\\) is a continuous function in the range \\((\frac{1}{2} \delta, \frac{1}{2} \pi)\\), it follows
+that \\(f(x \pm 2\theta) \cosec \theta\\) are integrable functions with absolutely
+convergent integrals; and so, by the Riemann-Lebesgue lemma of
+\hardsubsectionref{9}{4}{1} (I), %TODO:add reference to lemma (the `(I)' here)
+*both the integrals on the right in the last equation tend to zero
+as \\(m \rightarrow \infty\\).*
+
+That is to say
+\\[ 
+\lim_{m \rightarrow \infty}
+\left\{
+  S_{m}(x) - S_{m}^{(1)}(x)
+\right\}
+= 0.
+\\] 
+
+Hence, since
+\\[ 
+\lim_{m \rightarrow \infty}
+S_{m}^{(1)}(x)
+=
+\frac{1}{2} \left\{
+  f(x+0) + f(x-0)
+\right\},
+\\] 
+it follows also that
+\\[ 
+\lim_{m \rightarrow \infty} S_{m}(x)
+=
+\frac{1}{2} \left\{
+  f(x+0) + f(x-0)
+\right\}.
+\\] 
+
+*We have therefore proved that the Fourier series associated with
+  \\(f(t)\\), namely
+  \\(
+  \frac{1}{2} a_{0}
+  + \sum \left(
+    a_{n} \cos nx
+    +
+    b_{n} \sin nx
+  \right)
+  \\)
+  is convergent and its sum is*
+\\[ 
+\frac{1}{2} \left\{
+  f(x+0) + f(x-0)
+\right\}
+\\] 
+\Subsection{9}{4}{3}{The Dirichlet-Bonnet proof of Fourier's theorem.}
+It is of some interest to prove directly the theorem of \hardsubsectionref{9}{4}{2},
+without making use of the theory of summability; accordingly we now
+give a proof which is on the same general lines as the proofs due to
+Dirichlet and Bonnet.
+%
+% 177
+%
+
+As usual we denote the sum of the first \\(m + 1\\) terms of the Fourier
+series by \\(S_{m}(x)\\), and then, by the analysis of \hardsubsectionref{9}{4}{2}, we have
+\\[ 
+S_{m}(x)
+=
+\frac{1}{\pi}
+\! \int_{0}^{\frac{1}{2} \pi}\!
+\frac{\sin (2m+1)\theta}{\sin \theta}
+\f(x + 2\theta)
+\, d \theta
++
+\frac{1}{\pi}
+\! \int_{0}^{\frac{1}{2} \pi}\!
+\frac{\sin (2m+1)\theta}{\sin \theta}
+\f(x - 2\theta)
+\, d \theta.
+\\] 
+
+Again, on integrating the equation
+\\[ 
+\frac{\sin (2m+1)\theta}{\sin \theta}
+=
+1
++ 2 \cos 2\theta
++ 2 \cos 4\theta
++ \cdots
++ 2 \cos 2m\theta,
+\\] 
+we have
+\\[ 
+\int_{0}^{\frac{1}{2}\pi}\!
+\frac{\sin (2m+1)\theta}{\sin \theta}
+\, d \theta
+=
+\frac{1}{2}\pi,
+\\] 
+so that
+\\[ \begin{align*}
+  TODO
+\end{align*} \\]
+
+In order to prove that
+\\[ 
+\lim_{m \rightarrow \infty}
+S_{m}(x)
+=
+\frac{1}{2} \left\{
+  f(x+0) + f(x-0)
+\right\},
+\\] 
+it is therefore sufficient to prove that
+\\[ 
+\lim_{m \rightarrow \infty}
+\int_{0}^{\frac{1}{2}\pi}\!
+\frac{\sin (2m+1)\theta}{\sin \theta}
+\phi(\theta) \, d \theta
+=
+0,
+\\] 
+where \\(\phi(\theta)\\) stands in turn for each of the functions
+\\[ 
+f(x+2\theta) - f(x+0),
+\quad
+f(x-2\theta) - f(x-0).
+\\] 
+Now, by \hardsubsectionref{3}{6}{4} example 4, %TODO:replace ref
+\\(\theta \phi(\theta) \cosec \theta\\) is a function with limited
+total fluctuation in an interval of which \\(\theta=0\\) is an
+end-point;\footnote{The other end-point is \\(\theta = \frac{1}{2} (b-x)\\)
+  or \\(\theta = \frac{1}{2} (x-a)\\), according as \\(\phi(\theta)\\)
+  represents one or other of the two functions.} and so
+we may write
+\\[ 
+\theta
+\phi (\theta)
+\cosec \theta
+=
+\chi_{1}(\theta)
+-
+\chi_{2}(\theta),
+\\] 
+where \\(\chi_{1}(\theta), \chi_{2}(\theta)\\) are bounded positive
+increasing functions of \\(\theta\\) such that
+\\[ 
+\chi_{1}(+0) = \chi_{2}(+0) = 0.
+\\] 
+
+Hence, given an arbitrary positive number \\(\eps\\), we can choose a positive
+number \\(\delta\\) such that
+\\[ 
+0 \leq \chi_{1}(\theta) < \eps,
+\quad
+0 \leq \chi_{2}(\theta) < \eps
+\\] 
+whenever \\(0 \leq \theta \leq \frac{1}{2} \delta\\).
+
+We now obtain inequalities satisfied by the three integrals on the
+right of the obvious equation
+\\[ \begin{align*}
+  &
+ \int_{0}^{\frac{1}{2}\pi}\!
+ \frac{\sin (2m+1)\theta}{\sin \theta}
+ \phi(\theta) \, d \theta
+ =
+ \int_{\frac{1}{2} \delta}^{\frac{1}{2} \pi}\!
+ \sin (2m+1)\theta
+ \frac{\phi(\theta)}{\sin \theta}
+ \, d \theta
+ \\
+ &
+ \quad
+ \int_{0}^{\frac{1}{2} \delta}\!
+ \frac{\sin (2m+1)\theta}{\theta}
+ \chi_{1}(\theta) \, d \theta
+ -
+ \int_{0}^{\frac{1}{2} \delta}\!
+ \frac{\sin (2m+1)\theta}{\theta}
+ \chi_{2}(\theta) \, d \theta
+\end{align*} \\]
+%
+% 178
+%
+
+The modulus of the first integral can be made less than \\(\eps\\) by taking \\(m\\)
+sufficiently large; this follows from
+\hardsubsectionref{9}{4}{1} (i) %TODO:subref
+since \\(\phi(\theta) \cosec \theta\\)
+has an integral which converges absolutely in the interval
+\\((\frac{1}{2} \delta, \frac{1}{2} \pi)\\).
+
+Next, from the second mean-value theorem, it follows that there is a
+number \\(\xi\\) between \\(0\\) and \\(\delta\\) such that
+\\[ \begin{align*}
+TODO
+\end{align*} \\]
+
+Since
+\\(\int^{\infty} \frac{\sin t}{t} \, d t\\)
+is convergent, it follows that
+\\(\left| \, \int_{\beta}^{\infty} \frac{\sin u}{u} \, d u \, \right| \\)
+has an upper bound\footnote{The reader will find it interesting to prove that
+  \\(\int_{0}^{\infty} \frac{\sin u}{u} \, d u = \frac{1}{2}\pi\\).}
+\\(B\\) which is independent of \\(\beta\\), and it is then clear that
+\\[ 
+\left| \, 
+  \int_{0}^{\frac{1}{2}\delta}\!
+  \frac{\sin (2m+1)\theta}{\theta}
+  \chi_{1}(\theta)
+  \, d \theta
+ \, \right| 
+\leq
+2 B \chi_{1}(\frac{1}{2}\delta)
+<
+2 B \eps.
+\\] 
+
+On treating the third integral in a similar manner, we see that we can
+make
+\\[ 
+\left| \, 
+  \int_{0}^{\frac{1}{2}\delta}\!
+  \frac{\sin (2m+1)\theta}{\sin \theta}
+  \phi(\theta)
+  \, d \theta
+ \, \right| 
+<
+(4B+1) \eps
+\\] 
+by taking \\(m\\) sufficiently large; *and so we have proved that*
+\\[ 
+\lim_{m \rightarrow \infty}
+\int_{0}^{\frac{1}{2}\pi}\!
+\frac{\sin (2m+1)\theta}{\sin \theta}
+\phi(\theta)
+\, d \theta
+=
+0.
+\\] 
+But it has been seen that this is a sufficient condition for the limit
+of \\(S_{m}(x)\\) to be \\(\frac{1}{2} \left\{f(x+0) + f(x-0)\right\}\\); and we have therefore
+established the con- vergence of a Fourier series in the circumstances
+enunciated in \hardsubsectionref{9}{4}{2}.
+
+%\begin{smallfontnote}%TODO
+Note. The reader should observe that in either proof of the
+convergence of a Fourier *series* the second mean-value theorem is
+required; but to prove the summability of the series, the *first*
+mean-value theorem is adequate. It should also be observed that, while
+restrictions are laid upon \\(f(t)\\) throughout the range \\((-\pi, \pi)\\) in
+establishing the *summability* at any point \\(x\\), the only additional
+restriction necessary to ensure *convergence* is a restriction on the
+behaviour of the function in the *immediate neighbourhood* of the point
+\\(x\\). The fact that the convergence depends only on the behaviour of the
+function in the immediate neighbourhood of \\(x\\) (provided that the
+function has an integral which is absolutely convergent) was noticed
+by Riemann and has been emphasised by Lebesgue,
+%TODO:ref
+Series Trigonometriques p: 60.
+%\end{smallfontnote}%TODO
+
+It is obvious that the condition\footnote{Due to Jordan, Comptes Rendus, xcii. (1881), p. 228.}
+that \\(x\\) should be an interior point
+of an interval in which \\(f(t)\\) has limited total fluctuation is merely a
+*sufficient* condition for the convergence of the Fourier series; and
+it may be replaced by any condition which makes
+\\[ 
+\lim_{m \rightarrow \infty}
+\int_{0}^{\frac{1}{2}\pi}\!
+\frac{\sin (2m+1)\theta}{\sin \theta}
+\phi(\theta)
+\, d \theta
+=
+0.
+\\] 
+%
+% 179
+%
+
+Jordan's condition is, however, a natural modification of the
+Dirichlet condition that the function \\(f(t)\\) should have only a finite
+number of maxima and minima, and it does not increase the difficulty
+of the proof.
+
+Another condition with the same efifect is due to Dini,
+% TODO:ref
+Sopra le Serie di Foiirier (Pisa, 1880),
+namely that, if
+\\[ 
+\Phi(\theta)
+=
+\left\{
+  f(x+2\theta) + f(x-2\theta) - f(x+0) - f(x-0)
+\right\}
+\theta,
+\\] 
+then
+\\(\int_{0}^{a} \Phi(\theta) \, d \theta\\) should converge absolutely for some positive value of
+\\(a\\).
+
+[If the condition is satisfied, given \\(\eps\\) we can find \\(\delta\\) so that
+\\[ 
+\int_{0}^{\frac{1}{2}\delta}\!
+\left| \, 
+  \Phi(\theta)
+ \, \right| 
+\, d \theta
+<
+\eps,
+\\] 
+and then
+\\[ 
+\left| \, 
+  \int_{0}^{\frac{1}{2}\delta}\!
+  \sin (2m+1)\theta
+  \frac{\theta}{\sin \theta}
+  \Phi(\theta)
+  \, d \theta
+ \, \right| 
+<
+\frac{1}{2} \pi \eps
+\\] 
+the proof that
+\\(
+\left| \, 
+  \int_{\frac{1}{2}\delta}^{\frac{1}{2} \pi}\!
+  \frac{\sin (2m+1)\theta}{\sin \theta}
+  \phi(\theta)
+  \, d \theta
+ \, \right| 
+<
+\eps
+\\)
+for sufficiently large values of \\(m\\)
+follows from the Riemann-Lebesgue lemma.]
+
+A more stringent condition than Dini's is due to Lipschitz,
+Journal fuer Math. LXiil. (1864), p. 296, %TODO:ref
+namely \\(\left| \, \phi(\theta) < C \theta^{k} \, \right| \\), where \\(C\\) and
+\\(k\\) are positive and independent of \\(\theta\\).
+
+For other conditions due to Lebesgue and to
+de la Vallee Poussin, %TODO:proper accents
+see the latter's
+Cours d' Analyse In/lnitesimale, ii. (1912), pp. 149-150. %TODO:ref
+It should be noticed that Jordan's condition differs in character from
+Dini's condition; the latter is a condition that the series may
+converge *at a point*, the former that the series may converge
+*throughout an interval*.
+
+\Subsection{9}{4}{4}{The uniformity of the convergence of Fourier series.}
+Let \\(f(t)\\) satisfy the conditions enunciated in \hardsubsectionref{9}{4}{2},
+and further let it be continuous
+(in addition to having limited total fluctuation) in
+an interval \\((a, b)\\). *Then the Fourier series associated with \\(f(t)\\)
+  converges uniformly to the sum \\(f(x)\\) at all points \\(x\\) for which
+  \\(a + \delta \leq x \leq b - \delta\\), where \\(\delta\\) is any positive number.*
+
+Let \\(h(t)\\) be an auxiliary function defined to be equal to \\(f(t)\\) when
+\\(a \leq t \leq b\\) and equal to zero for other values of \\(t\\) in the range
+\\((-\pi, \pi)\\), and
+let \\(\alpha_{n}, \beta_{n}\\) denote the Fourier constants of \\(h(t)\\).
+Also let \\(S_{m}^{2}(x)\\) denote the sum of the first \\(m + 1\\) terms of the
+Fourier series associated with \\(h(t)\\).
+
+Then, by \hardsectionref{9}{4} corollary 2,%TODO:ref
+it follows that
+\\(\frac{1}{2} \alpha_{0} + \sum_{n=1}^{\infty} \left(\alpha_{n} \cos nx + \beta_{n} \sin nx\right)\\)
+is *uniformly* summable throughout the interval \\((a+\delta, b-\delta)\\);
+and since
+\\[ 
+\left| \, 
+  \alpha_{n} \cos nx + \beta_{n} \sin nx
+ \, \right| 
+\leq
+\sqrt{
+  \alpha_{n}^{2} + \beta_{n}^{2}
+},
+\\] 
+which is independent of \\(x\\) and which, by \hardsubsectionref{9}{4}{1} (ii), %TODO:ref
+is \\(\bigO(1/n)\\), it
+follows from \hardsectionref{8}{5} corollary that
+\\[ 
+\frac{1}{2} \alpha_{0} + \sum_{n=1}^{\infty} \left(\alpha_{n} \cos nx + \beta_{n} \sin nx\right)
+\\] 
+converges uniformly to the sum \\(h(x)\\), which is equal to \\(f(x)\\).
+
+Now, as in \hardsubsectionref{9}{4}{2},
+\\[ 
+S_{m}(x)
+-
+S_{m}^{(2)}(x)
+=
+\frac{1}{\pi}
+\! \int_{\frac{1}{2} (b-x)}^{\frac{1}{2} \pi}\!
+\frac{\sin (2m+1)\theta}{\sin \theta}
+f(x + 2\theta)
+\, d \theta
++
+\frac{1}{\pi}
+\! \int_{\frac{1}{2} (x-a)}^{\frac{1}{2} \pi}\!
+\frac{\sin (2m+1)\theta}{\sin \theta}
+f(x - 2\theta)
+\, d \theta.
+\\] 
+%
+% 180
+%
+
+As in \hardsubsectionref{9}{4}{1} we choose an arbitrary positive number
+\\(\eps\\) and then enclose the points at which \\(f(t)\\) is unbounded in a set of intervals
+\\(\delta_{1}, \delta_{2}, \ldots, \delta_{p}\\), such
+that
+\\(\sum_{r=1}^{p} \int_{\delta_{r}} \left| \, f(t) \, \right|  \, d t < \eps\\).
+
+If \\(K\\) be the upper bound of \\(\left| \, f(t) \, \right| \\) \ outside these intervals, we then
+have, as in \hardsubsectionref{9}{4}{1},
+\\[ 
+\left| \, 
+  S_{m}(x) - S_{m}^{(2)}(x)
+ \, \right| 
+<
+\left(
+  \frac{2nK}{2m + 1} + 2\eps
+\right)
+\cosec \delta,
+\\] 
+where the choice of \\(n\\) depends only on \\(a\\) and \\(b\\) and the form of the
+function \\(f(t)\\). Hence, by a choice of \\(m\\) *independent* of \\(x\\) we can make
+\\[ 
+\left| \, 
+  S_{m}(x) - S_{m}^{(2)}(x)
+ \, \right| 
+\\] 
+arbitrarily small; so that \\(\left| \, S_{m}(x) - S_{m}^{(2)}(x) \, \right| \\)
+tends uniformly to zero. Since
+\\(S_{m}^{(2)}(x) \rightarrow f(x)\\)
+uniformly, it is then obvious that
+\\(S_{m}(x) \rightarrow f(x)\\)
+uniformly; and this is the result to be proved.
+
+%\begin{notefont}???
+NOTE. It must be observed that no general statement can be made about
+uniformity or absoluteness of convergence of Fourier series. Thus the
+series of \hardsubsectionref{9}{1}{1} example 1 %TODO:ref
+converges uniformly except near \\(x = (2n+1)\pi\\)
+but converges absolutely only when \\(x = n\pi\\), whereas the series of
+\hardsubsectionref{9}{1}{1} example 2 %TODO:ref
+converges uniformly and absolutely for all real values
+of \\(x\\).
+%\begin{notefont}???
+\begin{wandwexample}
+ If \\(\phi(\theta)\\) satisfies suitable conditions in the range \\((0, \pi)\\),
+shew that
+\\[ \begin{align*}
+  \lim_{m \rightarrow \infty}
+  \int_{0}^{\pi}\!
+  \frac{\sin (2m+1)\theta}{\sin \theta}
+  \phi(\theta) \, d \theta
+  =&
+  \lim_{m \rightarrow \infty}
+  \int_{0}^{\frac{1}{2} \pi}\!
+  \frac{\sin (2m+1)\theta}{\sin \theta}
+  \phi(\theta) \, d \theta
+  \\
+  & \quad
+  +
+  \lim_{m \rightarrow \infty}
+  \int_{0}^{\frac{1}{2} \pi}\!
+  \frac{\sin (2m+1)\theta}{\sin \theta}
+  \phi(\pi - \theta) \, d \theta
+  \\
+  &
+  = \frac{1}{2} \pi \left\{
+    \phi(+0) + \phi(\pi - 0)
+  \right\}.
+\end{align*} \\]
+\end{wandwexample}
+\begin{wandwexample}
+ Prove that, if \\(a > 0\\),
+ \\[ 
+ \lim_{m \rightarrow \infty}
+ \int_{0}^{\infty}\!
+ \frac{\sin (2n+1)\theta}{\sin \theta}
+ e^{-a\theta}
+ \, d \theta
+ =
+ \frac{1}{2} \pi \coth \frac{1}{2} a \pi.
+ \\] 
+ \addexamplecitation{Math. Trip. 1894.}
+ [Shew that
+ \\[ \begin{align*}
+   \int_{0}^{\infty}\!
+   \frac{\sin (2n+1)\theta}{\sin \theta}
+   e^{-a\theta} \, d \theta
+   =&
+   \lim_{m \rightarrow \infty}
+   \int_{0}^{m \pi}\!
+   \frac{\sin (2n+1)\theta}{\sin \theta}
+   e^{-a\theta} \, d \theta
+   \\
+   =&
+   \lim_{m \rightarrow \infty}
+   \int_{0}^{\pi}\!
+   \frac{\sin (2n+1)\theta}{\sin \theta}
+   \left\{
+     e^{-a \theta}
+     + e^{-a(\theta + \pi)}
+     + \cdots
+     + e^{-a(\theta + m \pi)}
+   \right\} \, d \theta
+   \\
+   =&
+   \int_{0}^{\pi}\!
+   \frac{\sin (2n+1)\theta}{\sin \theta}
+   \frac{e^{-a \theta} \, d \theta}{1 - e^{-a\pi}},
+ \end{align*} \\]
+ and use example l.] %TODO:ref
+\end{wandwexample}
+\begin{wandwexample}
+  Discuss the uniformity of the convergence of Fourier series
+  by means of the Dirichlet-Bonnct integrals, without making use of the
+  theory of summability.
+\end{wandwexample}
+%
+\Section{9}{5}{The TODO-TODO* theorem concerning Fourier constants.}
+*Let \\(f(x)\\) be bounded in the interval \\((-\pi, \pi)\\) and let
+\\(\int_{-\pi}^{\pi} f(x) \, d x\\) exist, so
+%TODO:move into section header
+* Math. Ann. lvii. (1903), p. 429. Liapounoff discovered the theorem
+in 1896 and published it in the Proceedings of the Math. Soc. of the
+Univ. of Kharkov. See Comptes Rendw, cxxvi. (1898), p. 1024.
+%
+% 181
+%
+that the Fourier constants \\(a_{n}, b_{n}\\) of \\(f(x)\\) exist. Then the series
+\\[ 
+\frac{1}{2} a_{0}^{2}
++
+\sum_{n=1}^{\infty} \left(
+  a_{n}^{2} + b_{n}^{2}
+\right)
+\\] 
+is convergent and its sum is\footnote{This integral exists by
+  \hardsubsectionref{4}{1}{2} example 1. %TODO:ref
+  A proof of the theorem has been given by de la Valine Poussin, %TODO:accent(s)
+  in which the sole restrictions on \\(f(x)\\) are that the (improper) integrals of
+  \\(f(x)\\) and \\(\left\{f(x)\right\}^{2}\\) exist in the interval \\((-\pi, \pi)\\). See his
+  Cours d' Analyse Infinitesimale, ii. (1912), pp. 165-166.}
+\\[ 
+\frac{1}{\pi}
+\! \int_{-\pi}^{\pi}\!
+\left\{
+  f(x)
+\right\}^{2}
+\, d x.
+\\].*
+
+It will first be shewn that, with the notation of \hardsectionref{9}{4},
+\\[ 
+\lim_{m \rightarrow \infty}
+\int_{-\pi}^{\pi}\!
+\left\{
+  f(x)
+  -
+  \frac{1}{m}
+  \sum_{n=0}^{m-1}
+  S_{n}(x)
+\right\}^{2}
+\, d x
+=
+0.
+\\] 
+
+Divide the interval \\((-\pi, \pi)\\) into \\(4r\\) parts, each of length \\(\delta\\);
+let the upper and lower bounds of \\(f(x)\\) in the interval
+\\(\left\{(2p-1)\delta - \pi, (2p+3)\delta - \pi\right\}\\)
+be \\(U_{p}, L_{p}\\), and let the upper bound of \\(\left| \, f(x) \, \right| \\) in the
+interval \\((-\pi, \pi)\\) be \\(K\\). Then, by
+\hardsectionref{9}{4} corollary 1, %TODO:ref
+\\[ \begin{align*}
+  \left| \, 
+    f(x)
+    -
+    \frac{1}{m}
+    \sum_{m=0}^{m-1} S_{n}(x)
+   \, \right| 
+  <&
+  U_{p} - L_{p} + 2K / \left\{m \sin^{2} \frac{1}{2}\delta\right\}
+  \\
+  <&
+  2K \left[
+    1 + 1/\left\{m \sin^{2} \frac{1}{2}\delta\right\}
+  \right]
+\end{align*} \\]
+when \\(x\\) lies between \\(2p\delta\\) and \\((2p+2)\delta\\).
+
+Consequently, by the first mean-value theorem,
+\\[ 
+\int_{-\pi}^{\pi}\!
+\left\{
+  f(x)
+  -
+  \frac{1}{m}
+  \sum_{n=0}^{m-1} S_{n}(x)
+\right\}^{2}
+\, d x
+<
+2K
+\left\{
+  1
+  +
+  \frac{1}{m \sin^{2} \frac{1}{2}\delta}
+\right\}
+\left\{
+  2\delta
+  \sum_{p=0}^{2r-1}
+  (U_{p}-L_{p})
+  +
+  \frac{4Kr}{m \sin^{2} \frac{1}{2} \delta}
+\right\}
+\\] 
+
+Since \\(f(x)\\) satisfies the Rieraann condition of integrability
+(\hardsubsectionref{4}{1}{2}), it follows that both
+\\(4\delta \sum_{p=0}^{r-1} (U_{2p}-L_{2p})\\)
+and
+\\(4\delta \sum_{p=0}^{r-1} (U_{2p+1}-L_{2p+1})\\) can be made arbitrarily
+small by giving \\(r\\) a sufficiently large value.
+When \\(r\\) (and therefore also \\(\delta\\)) has been given
+such a value, we may choose \\(m_{1}\\) so large that
+\\(r / \left\{m_{1} \sin^{2} \frac{1}{2}\delta\right\}\\) is
+arbitrarily small. That is to say, we can make the expression on the
+right of the last iiiecpiality arbitrarily small by giving \\(m\\) any value
+greater than a determinate value \\(m_{1}\\). Hence the expression on the left
+of the inequality tends to zero as \\(m \rightarrow \infty\\).
+
+But evidently
+\\[ \begin{align*}
+  &
+  \int_{-\pi}^{\pi}\!
+  \left\{
+    f(x)
+    -
+    \frac{1}{m}
+    \sum_{n=0}^{m-1} S_{n}(x)
+  \right\}^{2} \, d x
+  \\
+  &\quad
+  \int_{-\pi}^{\pi}\!
+  \left\{
+    f(x)
+    -
+    \sum_{n=0}^{m-1}
+    \frac{m-n}{m}
+    A_{n}(x)
+  \right\}^{2} \, d x
+  \\
+  &\quad
+  \int_{-\pi}^{\pi}\!
+  \left\{
+    f(x)
+    -
+    \sum_{n=0}^{m-1}
+    A_{n}(x)
+    +
+    \sum_{n=0}^{m-1}
+    \frac{n}{m}
+    A_{n}(x)
+  \right\}^{2} \, d x
+  \\
+  &\quad
+  \int_{-\pi}^{\pi}\!
+  \left\{
+    f(x)
+    -
+    \sum_{n=0}^{m-1}
+    A_{n}(x)
+  \right\}^{2} \, d x
+  +
+  \int_{-\pi}^{\pi}\!
+  \left\{
+    \sum_{n=0}^{m-1}
+    \frac{n}{m}
+    A_{n}(x)
+  \right\}^{2} \, d x
+  \\
+  &\quad\quad
+  +
+  2
+  \int_{-\pi}^{\pi}\!
+  \left\{
+    f(x)
+    -
+    \sum_{n=0}^{m-1}
+    A_{n}(x)
+  \right\}
+  \cdot
+  \left\{
+    \sum_{n=0}^{m-1}
+    \frac{n}{m}
+    A_{n}(x)
+  \right\} \, d x
+  \\
+  &\quad
+    \int_{-\pi}^{\pi}\!
+    \left\{
+      f(x)
+      -
+      \sum_{n=0}^{m-1}
+      A_{n}(x)
+    \right\}^{2} \, d x
+    +
+    \frac{\pi}{m^{2}}
+    \sum_{n=0}^{m-1}
+    n^{2} (a_{n}^{2} + b_{n}^{2}),
+\end{align*} \\]
+%
+% 182
+%
+since
+\\[ 
+\int_{-\pi}^{\pi}\!
+f(x) A_{r}(x) \, d x
+=
+\int_{-\pi}^{\pi}\!
+\left\{
+  \sum_{n=0}^{m-1}
+  A_{n}(x)
+\right\}
+A_{r}(x)
+\, d x
+\\] 
+when \\(r = 0,1,2,\ldots,m-1\\).
+
+Since the original integral tends to zero and since it has been proved
+equal to the sura of two positive expressions, it follows that each of
+these expressions tends to zero; that is to say
+\\[ 
+\int_{-\pi}^{\pi}\!
+\left\{
+  f(x)
+  -
+  \sum_{n=0}^{m-1}
+  A_{n}(x)
+\right\}^{2} \, d x
+\rightarrow
+0.
+\\] 
+
+Now the expression on the left is equal to
+\\[ \begin{align*}
+  \int_{-\pi}^{\pi}\!
+  \left\{
+    f(x)
+  \right\}^{2} \, d x
+  -&
+  2
+  \int_{-\pi}^{\pi}\!
+  \left\{
+    f(x)
+    -
+    \sum_{n=0}^{m-1}
+    A_{n}(x)
+  \right\}
+  \cdot
+  \left\{
+    \sum_{n=0}^{m-1}
+    A_{n}(x)
+  \right\}
+  \, d x
+  \\
+  &\quad\quad
+  \int_{-\pi}^{\pi}\!
+  \left\{
+    \sum_{n=0}^{m-1}
+    A_{n}(x)
+  \right\}^{2}
+  \, d x
+  \\
+  =&
+  \int_{-\pi}^{\pi}\!
+  \left\{
+    f(x)
+  \right\}^{2}
+  \, d x
+  -
+  \int_{-\pi}^{\pi}\!
+  \left\{
+    \sum_{n=0}^{m-1}
+    A_{n}(x)
+  \right\}^{2}
+  \, d x
+  \\
+  =&
+  \int_{-\pi}^{\pi}\!
+  \left\{
+    f(x)
+  \right\}^{2}
+  \, d x
+  -
+  \pi
+  \left\{
+    \frac{1}{2} a_{0}^{2}
+    +
+    \sum_{n=1}^{m-1}
+    (a_{n}^{2} + b_{n}^{2})
+  \right\}
+  ,
+\end{align*} \\]
+so that, as \\(m \rightarrow \infty\\),
+\\[ 
+\int_{-\pi}^{\pi}\!
+\left\{
+  f(x)
+\right\}^{2}
+\, d x
+-
+\pi
+\left\{
+  \frac{1}{2} a_{0}^{2}
+  +
+  \sum_{n=1}^{m-1}
+  (a_{n}^{2} + b_{n}^{2})
+\right\}
+\rightarrow
+0.
+\\] 
+This is the theorem stated.
+
+% TODO:formatting
+Corollary. Parseval's theorem\footnote{Mem. par divers senium, i. (1805), pp. 639-648.%TODO:ref
+  Parseval, of course, assumed the permissibility of integrating the trigonometrical series
+  term-by-term.}. If \\(f(x), F(x)\\) both satisfy the
+conditions laid on \\(f(x)\\) at the beginning of this section, and if
+\\(A_{n}, B_{n}\\) be the Fourier constants of \\(F(x)\\), it follows by subtracting the pair
+of equations which may be combined in the one form
+\\[ 
+\int_{-\pi}^{\pi}\!
+\left\{
+  f(x) \pm F(x)
+\right\}^{2}
+\, d x
+=
+\pi
+\left\{
+  \frac{1}{2} (a_{0} \pm A_{0})^{2}
+  +
+  \sum_{n=1}^{\infty}
+  ((a_{n} \pm A_{n})^{2}
+  +
+  (b_{n} \pm B_{n})^{2})
+\right\}
+\\] 
+that
+\\[ 
+\int_{-\pi}^{\pi}\!
+f(x)F(x)
+\, d x
+=
+\pi
+\left\{
+  \frac{1}{2} a_{0}A_{0}
+  +
+  \sum_{n=1}^{\infty}
+  (a_{n}A_{n} + b_{n}A_{n})
+\right\}
+\\] 
+\Section{9}{6}{Riemann's theory of trigonometrical series.}
+The theory of Dirichlet concerning Fourier series is devoted to series
+which represent given functions. Important advances in the theory were
+made by Riemann, who considered properties of functions defined by a
+series of the type\footnote{Throughout \hardsectionref{9}{6}--\hardsubsubsectionref{9}{6}{3}{2} %TODO:cite multiple
+  the letters \\(a_{n}, b_{n}\\) do not necessarily denote Fourier constants.}
+\\(\frac{1}{2} a_{0} + \sum_{n=1}^{\infty} (a_{n} \cos nx + b_{n} \sin nx)\\)
+where it is assumed that
+\\(\lim_{n \rightarrow \infty} (a_{n} \cos nx + b_{n} \sin nx) = 0\\).
+We shall give the propositions leading
+up to Riemann's theorem\footnote{The proof given is due to G. Cantor, Journal fiir
+  Math, lxxii. (1870), pp. 130-142.} %TODO:ref
+that if two trigonometrical series converge and
+are equal
+%
+% 183
+%
+at all points of the range \\((-\pi, \pi)\\) with the possible exception of a
+finite number of points, corresponding coefficients in the two series
+are equal.
+
+\Subsection{9}{6}{1}{Riemann's associated function.}
+Let the sum of the series
+\\(\frac{1}{2} a_{0} + \sum_{n=1}^{\infty} (a_{n} \cos nx + b_{n} \sin nx)
+=
+A_{0} + \sum_{n=1}^{\infty} A_{n}(x)\\),
+at any point \\(x\\) where it converges, be denoted by \\(f(x)\\).
+
+Let
+\\[ 
+F(x) = \frac{1}{2} A_{0} x^{2} - \sum_{n=1}^{\infty} n^{-2} A_{n}(x).
+\\] 
+
+*Then, if the series defining \\(f(x)\\) converges at all points of any
+finite interval, the series defining \\(F(x)\\) converges for all real
+values of \\(x\\).*
+
+To obtain this result we need the following Lemma due to Cantor :
+
+Cantor's lemma\footnote{Riemann appears to have regarded this result as obvious.
+  The proof here given is a modification of Cantor's proof,
+  Math. Ann. iv. (1871), pp. 139-143, and Journal fiir Math, lxxii. (1870), pp. 130-138.}.%TODO:ref
+*If \\(\lim_{n \rightarrow \infty} A_{n}(x) = 0\\) for all values of \\(x\\) such that \\(a \leq x \leq b\\),
+then \\(a_{n} \rightarrow 0, b_{n} \rightarrow 0\\).*
+
+For take two points \\(x, x+\delta\\) of the interval. Then, given \\(\eps\\), we can
+find \\(n_{0}\\) such that\footnote{The value of \\(n_{0}\\) depends on \\(x\\) and on \\(\delta\\).},
+when \\(n > n_{0}\\)
+\\[ 
+\left| \, 
+  a_{n} \cos nx + b_{n} \sin nx
+ \, \right| 
+<
+\eps,
+\quad
+\left| \, 
+  a_{n} \cos n(x+\delta) + b_{n} \sin n(x+\delta)
+ \, \right| 
+<
+\eps.
+\\] 
+
+Therefore
+\\[ 
+\left| \, 
+  \cos n\delta
+  (a_{n} \cos nx + b_{n} \sin nx)
+  +
+  \sin n\delta
+  (-a_{n} \sin nx + b_{n} \cos nx)
+ \, \right| 
+<
+\eps.
+\\] 
+
+Since
+\\[ 
+\left| \, 
+  \cos n\delta
+  (a_{n} \cos nx + b_{n} \sin nx)
+ \, \right| 
+<
+\eps,
+\\] 
+it follows that
+\\[ 
+\left| \, 
+  \sin n\delta
+  (-a_{n} \sin nx + b_{n} \cos nx)
+ \, \right| 
+<
+2\eps,
+\\] 
+and it is obvious that
+\\[ 
+\left| \, 
+  \sin n\delta
+  (a_{n} \sin nx + b_{n} \cos nx)
+ \, \right| 
+<
+2\eps.
+\\] 
+
+Therefore, squaring and adding,
+\\[ 
+\sqrt{a_{n}^{2} + b_{n}^{2}}
+\left| \,  \sin n\delta  \, \right| 
+<
+2\eps\sqrt{2}
+\\] 
+
+Now suppose that \\(a_{n}, b_{n}\\) have not the unique limit \\(0\\); it will be shewn
+that this hypothesis involves a contradiction. For, by this
+hypothesis, *some* positive number \\(\eps_{0}\\) exists such that there is an
+unending increasing sequence \\(n_{1}, n_{2}, \ldots\\) of values of \\(n\\), for which
+\\[ 
+\sqrt{a_{n}^{2} + b_{n}^{2}} > 4\eps_{0}.
+\\] 
+
+Now let the range of values of \\(\delta\\) be called the interval \\(I_{1}\\) of length
+\\(L_{1}\\) on the real axis.
+
+Take \\(n_{1}'\\) the smallest of the integers \\(n_{r}\\) such that
+\\(n_{1}' L_{1} > 2\pi\\); then
+\\(\sin n_{1}'y\\) goes through all its phases in the interval \\(I\\); call
+\\(I_{2}\\)
+that sub-interval\footnote{If there is more than one such sub-interval,
+  take that which lies on the left.}
+of \\(I_{1}\\) in which \\(\sin n_{1}'y > 1/\sqrt{2}\\); its length is
+\\(\pi / (2n_{1}') = L_{2}\\). Next take \\(n_{2}'\\) the smallest of the integers
+\\(n_{r} (> n_{1}')\\)
+such that \\(n_{2}' L_{2} > 2\pi\\), so that
+\\(\sin n_{2}'y\\) goes through all its phases in
+the interval \\(I_{2}\\); call \\(I_{3}\\) that sub-interval%TODO:repeat previous footnote
+of \\(I_{2}\\) in which \\(\sin n_{2}'y > 1/\sqrt{2}\\);
+its length is \\(\pi / (2 n_{2}') = L_{3}\\). We thus get a sequence of
+decreasing intervals \\(I_{1}, I_{2},\ldots\\) each contained in all the previous
+ones. It is obvious from the definition of an irrational number that
+there is a certain point \\(a\\) which is not outside any of these
+intervals, and \\(\sin na \geq 1/\sqrt{2}\\) when
+\\(n=n_{1}', n_{2}', \ldots (n_{r+1}' > n_{r}')\\).
+For these values of \\(n\\),
+\\(\sqrt{a_{n}^{2} + b_{n}^{2}} \sin na > 2\eps_{0} \sqrt{2}\\).
+But it has been shewn that
+corresponding
+%
+% 184
+%
+to given numbers \\(a\\) and \\(\eps\\) we can find \\(n_{0}\\) such that when
+\\(n > n_{0}\\),
+\\(\sqrt{a_{n}^{2} + b_{n}^{2}} \sin na < 2\eps_{0} \sqrt{2}\\);
+since some values of \\(n_{r}'\\) are greater than \\(n_{0}\\), the
+required contradiction has been obtained, because we may take
+\\(\eps < \eps_{0}\\); therefore
+\\(a_{n} \rightarrow 0, b_{n} \rightarrow 0\\).
+
+Assuming that the series defining \\(f(x)\\) converges at all points of a
+certain interval of the real axis, we have just seen that
+\\(a_{n} \rightarrow 0, b_{n} \rightarrow 0\\). Then, for all real values of
+\\(x\\),
+\\(\left| \, a_{n} \cos nx + b_{n} \sin nx \, \right|  \leq \sqrt{a_{n}^{2} + b_{n}^{2}} \rightarrow 0\\),
+and so, by \hardsubsectionref{3}{3}{4}, the
+series
+\\(\frac{1}{2} A_{0} x^{2} - \sum_{n=1}^{\infty} n^{-2} A_{n}(x) = F(x)\\)
+converges absolutely and uniformly for
+all real values of \\(x\\); therefore, (\hardsubsectionref{3}{3}{2}), \\(F(x)\\) is continuous for all
+real values of \\(x\\).
+
+\Subsection{9}{6}{2}{Properties of Riemann's associated function;
+  Riemann's first lemma.}
+It is now possible to prove Riemann's first lemma *that if
+  \\[ 
+  G(x, \alpha)
+  =
+  \frac{F(x + 2\alpha) + F(x - 2\alpha) - 2F(x)}{4 \alpha^{2}},
+  \\] 
+  then \\(\lim_{\alpha \rightarrow 0} G(x,\alpha) = f(x)\\), provided that
+  \\(\sum_{n=0}^{\infty} A_{n}(x)\\) converges for the value
+  of \\(x\\) under consideration.*
+
+Since the series defining \\(F(x), F(x \pm 2\alpha)\\) converge absolutely, we may
+rearrange them; and, observing that
+\\[ \begin{align*}
+  \cos n(x + 2\alpha) + \cos n(x - 2\alpha) - 2 \cos nx =& -4 \sin^{2} n\alpha \cos nx,\\
+  \sin n(x + 2\alpha) + \sin n(x - 2\alpha) - 2 \sin nx =& -4 \sin^{2} n\alpha \sin nx,
+\end{align*} \\]
+it is evident that
+\\[ 
+G(x, \alpha)
+=
+A_{0}
++
+\sum_{n=1}^{\infty}
+\left(
+  \frac{\sin n\alpha}{n\alpha}
+\right)^{2}
+A_{n}(x).
+\\] 
+
+It will now be shewn that this series converges uniformly with regard
+to \\(\alpha\\) for all values of \\(\alpha\\), provided that
+\\(\sum_{n=1}^{\infty} A_{n}(x)\\) converges. The result
+required is then an immediate consequence of \hardsubsectionref{3}{3}{2}:
+for, if
+\\(f_{n}(\alpha) = \left(
+  \frac{\sin n\alpha}{n\alpha}
+\right)^{2}, (\alpha \neq 0)\\)
+and \\(f_{n}(0) = 1\\), then \\(f_{n}(\alpha)\\) is continuous for all values of \\(\alpha\\), and so
+\\(G(x,\alpha)\\) is a continuous function of \\(\alpha\\), and therefore, by \hardsectionref{3}{2},
+\\(G(x, 0) = \lim_{\alpha \rightarrow \infty} G (x, \alpha)\\).
+
+To prove that the series defining \\(G(x, \alpha)\\) converges uniformly, we
+employ the test given in \hardsubsectionref{3}{3}{5} example 2. %TODO:ref
+The expression corresponding to \\(\omega_{n}(x)\\) is
+\\(f_{n}(\alpha)\\), and it is obvious that
+\\(\left| \, f_{n}(\alpha) \, \right|  \leq 1\\); it is therefore sufficient to shew
+that
+\\(\sum_{n=1}^{\infty} \left| \, f_{n+1}(\alpha) - f_{n}(\alpha) \, \right|  < K\\),
+where \\(K\\) is independent of \\(\alpha\\).
+
+%\begin{smallfont}
+In fact\footnote{Since \\(x^{-1} \sin x\\) decreases as \\(x\\) increases from \\(0\\) to \\(\pi\\).},
+if \\(s\\) be the integer such that
+\\(a \left| \, \alpha \, \right|  \leq \pi < (s+1) \left| \, \alpha \, \right| \\),
+when \\(\alpha \neq 0\\) we have
+\\[ 
+\sum_{n=1}^{s-1}
+\left| \, 
+  f_{n+1}(\alpha) - f_{n}(\alpha)
+ \, \right| 
+=
+\sum_{n=1}^{s-1}
+(
+f_{n}(\alpha)
+??? %TODO
+f_{n+1}(\alpha)
+)
+=
+\frac{ \sin^{2} \alpha }{\alpha^{2}}
+-
+\frac{ \sin^{2} s\alpha }{s^{2} \alpha^{2}}.
+\\] 
+%
+% 185
+%
+
+Also
+\\[ \begin{align*}
+  \sum_{n=s+1}^{\infty}
+  \left| \, 
+    f_{n+1}(\alpha) - f_{n}(\alpha)
+   \, \right| 
+  =&
+  \sum_{n=s+1}^{\infty}
+  \left| \, 
+    \left\{
+      \frac{\sin^{2} n\alpha}{\alpha^{2}}
+      \left(
+        \frac{1}{n^{2}}
+        -
+        \frac{1}{(n+1)^{2}}
+      \right)
+    \right\}
+    +
+    \frac{\sin^{2} n\alpha - \sin^{2} (n+1)\alpha }{(n+1)^{2} \alpha^{2}}
+   \, \right| 
+  \\
+  \leq &
+  \sum_{n=s+1}^{\infty}
+  \frac{1}{\alpha^{2}}
+  \left(
+    \frac{1}{n^{2}}
+    -
+    \frac{1}{ (n+1)^{2} }
+  \right)
+  +
+  \sum_{n=s}^{\infty}
+  \frac{\left| \, 
+      \sin^{2} n\alpha - \sin^{2} (n+1)\alpha
+     \, \right| }{ (n+1)^{2} \alpha^{2} }
+  \\
+  \leq &
+  \frac{1}{ (s^{2} + 1)^{2} \alpha^{2} }
+  +
+  \sum_{n=s+1}^{\infty}
+  \frac{\left| \, 
+      \sin \alpha \sin (2n+1)\alpha
+     \, \right| }{ (n^{2} + 1)^{2} \alpha^{2} }
+  \\
+  \leq &
+  \frac{1}{ (s^{2} + 1)^{2} \alpha^{2} }
+  +
+  \frac{\left| \, \sin \alpha \, \right| }{\alpha^{2}}
+  \sum_{n=s+1}^{\infty}
+  \frac{1}{(n+1)^{2}}
+  \\
+  \leq &
+  \frac{1}{\pi^{2}}
+  +
+  \frac{\left| \, \sin \alpha \, \right| }{\alpha^{2}}
+  \! \int_{s}^{\infty}\!
+  \frac{\, d x}{(x+1)^{2}}
+  \\
+  \leq &
+  \frac{1}{\pi^{2}}
+  +
+  \frac{1}{(s+1) \alpha}.
+\end{align*} \\]
+
+Therefore
+\\[ \begin{align*}
+  \sum_{n=1}^{\infty}
+  \left| \, 
+    f_{n+1}(\alpha) - f_{n}(\alpha)
+   \, \right| 
+  \leq &
+  \frac{\sin^{2} \alpha}{\alpha^{2}}
+  -
+  \frac{\sin^{2} s\alpha}{s^{2}\alpha^{2}}
+  +
+  \left(
+    \frac{\sin^{2} s\alpha}{s^{2}\alpha^{2}}
+    +
+    \frac{\sin^{2} (s+1)\alpha}{(s+1)^{2}\alpha^{2}}
+  \right)
+  + \frac{1}{\pi^{2}} + \frac{1}{\pi}.
+  \\
+  \leq &
+  1 + \frac{1}{\pi} + \frac{2}{\pi^{2}}.
+\end{align*} \\]
+
+Since this expression is independent of \\(\alpha\\), the result required has
+been obtained\footnote{This inequality is obviously true when \\(\alpha = 0\\).}.
+%\end{smallfont}
+
+Hence, if \\(\sum_{n=0}^{\infty} A_{n}(x)\\) converges, the series defining \\(G(x,\alpha)\\)
+converges uniformly with respect to \\(\alpha\\) for all values of \\(\alpha\\), and, as stated above,
+\\[ 
+\lim_{\alpha \rightarrow \infty} G(x, \alpha)
+= G(x,0)
+= A_{0} + \sum_{n=1}^{\infty} A_{n}(x)
+= f(x).
+\\] 
+
+\begin{wandwexample}
+  If
+  \\(H(x, \alpha, \beta) = \frac{F(x+\alpha+\beta) ? %TODO
+    F(x+\alpha-\beta) ? %TODO
+    F(x-\alpha+\beta) +
+    F(x-\alpha-\beta)
+  }{4 \alpha \beta}\\)
+  shew that \\(H(x,\alpha,\beta) \rightarrow f(x)\\) when \\(f(x)\\) converges if
+  \\(\alpha,\beta \rightarrow 0\\) in such a
+  way that \\(\alpha/\beta\\) and \\(\beta/\alpha\\) remain finite.
+  \addexamplecitation{Riemann.}
+\end{wandwexample}
+\Subsubsection{9}{6}{2}{1}{Riemann's second lemma.}
+*With the notation of
+\hardsectionref{9}{6}--\hardsubsectionref{9}{6}{2}, %TODO:refmultiple
+if
+\\(a_{n}, b_{n} \rightarrow 0\\), then
+\\(\lim_{\alpha \rightarrow 0} \frac{F(x+2\alpha)+F(x-2\alpha)-2 F(x)}{4\alpha}\\) for all values of \\(x\\).*
+
+For
+\\(\frac{1}{4} \alpha^{-1} \left\{ F(x + 2\alpha) + F(x - 2\alpha) - 2 F(x)\right\}
+  =
+  A_{0} \alpha + \sum_{n=1}^{\infty} \frac{\sin^{2} n\alpha}{n^{2}\alpha} A_{n}(x)
+}\\); but by \hardsubsectionref{9}{1}{1} example 3, %TODO:example ref
+if \\(\alpha > 0\\),
+\\(\sum_{n=1}^{\infty} \frac{\sin^{2} n\alpha}{n^{2}\alpha} = \frac{1}{2} (\pi - \alpha)\\); and so,
+since
+\\[ \begin{align*}
+  &
+  A_{0}(x) \alpha
+  +
+  \sum_{n=1}^{\infty}
+  \frac{\sin^{2} n\alpha}{n^{2} \alpha} A_{n}(x)
+  \\ &
+  A_{0}(x) \alpha
+  +
+  \frac{1}{2} (\pi - \alpha) A_{1}(x)
+  +
+  \sum_{n=1}^{\infty}
+  \left\{
+    \frac{1}{2} (\pi - \alpha)
+    -
+    \sum_{m=1}^{n}
+    \frac{\sin^{2} m\alpha}{m^{2} \alpha}
+  \right\} \thebrace {
+    A_{n+1}(x) - A_{n}(x)
+  },
+\end{align*} \\]
+it follows from \hardsubsectionref{3}{3}{5} example 2, %TODO:ref example
+that this series converges uniformly
+with regard to \\(\alpha\\) for all values of \\(\alpha\\) greater than, or equal to,
+zero\footnote{If we define \\(g_{n}(\alpha)\\) by the equations
+  \\(g_{n}(\alpha) = \frac{1}{2} (\pi - \alpha) - \sum_{m=1}^{n} \frac{\sin^{2} m\alpha}{m^{2} \alpha}, (\alpha \neq 0)\\),
+  and \\(g_{n}(0) = \frac{1}{2} \pi\\), then \\(g_{n}(\alpha)\\) is continuous when
+  \\(\alpha \geq 0\\), and \\(g_{n+1}(\alpha} \leq g_{n}(\alpha)\\).
+}
+%
+% 186
+%
+
+But
+\\[ \begin{align*}
+  &
+  \lim_{\alpha \rightarrow +0} \alpha^{-1}
+  \left\{
+    F(x + 2\alpha) + F(x - 2\alpha) - 2 F(x)
+  \right\}
+  \\
+  &
+  \lim_{\alpha \rightarrow +0}
+  \left[
+    A_{0}(x) \alpha
+    + \frac{1}{2} (\pi - \alpha) A_{1}(x)
+    + \sum_{n=1}^{\infty} g_{n}(\alpha)
+    \left\{
+      A_{n+1}(x) - A_{n}(x)
+    \right\}
+  \right],
+\end{align*} \\]
+and this limit is the value of the function when \\(\alpha = 0\\), by
+\hardsubsectionref{3}{3}{2};
+and this value is zero since \\(\lim_{n \rightarrow \infty} A_{n}(x)\\).
+By symmetry we see that
+\\(\lim_{\alpha \rightarrow +0} = \lim_{\alpha \rightarrow -0}\\).
+
+\Subsection{9}{6}{3}{Riemann's theorem\footnote{
+    The proof we give is due to Gr. Cantor, Journal fit r Math, lxxii.
+    (1870), pp. 139-142. + Quoted by G. Cantor, Journal filr Math, i.xxii.
+    (1870).}
+on trigonometrical series.}
+*Two trigonometrical series which converge and are equal at all points
+  of the range \\((-\pi, \pi)\\), with the possible exception of a finite
+  number of points, must have corresponding coefficients equal.*
+%\begin{smallfont}
+An immediate deduction from this theorem is that a function of the
+type considered in \hardsubsectionref{9}{4}{2} cannot be represented
+by any trigonometrical series in the range \\((-\pi, \pi)\\) other than
+the Fourier series. This fact was first noticed by Du Bois Reymond.
+
+We observe that it is certainly possible to have other expansions of
+(say) the form
+\\[ 
+\alpha_{0}
++
+\sum_{m=1}^{\infty} \left(
+  \alpha_{m} \cos \frac{1}{2} mx
+  +
+  \beta_{m} \sin \frac{1}{2} mx
+\right),
+\\] 
+which represent \\(f(x)\\) between \\(-\pi\\) and \\(\pi\\); for write
+\\(x = 2\xi\\), and
+consider a function \\(\phi(\xi)\\), which is such that
+\\(\phi(\xi) = f(2\xi)\\) when \\(-\frac{1}{2}\pi < \xi < \frac{1}{2}\pi\\), and
+\\(\phi(\xi) = g(\xi)\\) when \\(-\pi < \xi < -\frac{1}{2} \pi\\), and when
+\\(\frac{1}{2} \pi < \xi < \pi\\),
+where \\(g(\xi)\\) is any function satisfying the conditions of
+\hardsubsectionref{9}{4}{3}. Then if we expand
+\\(\phi(\xi)\\) in a Fourier series of the form
+\\[ 
+\alpha_{0}
++
+\sum_{m=1}^{\infty} \left(
+  \alpha_{m} \cos m \xi
+  +
+  \beta_{m} \sin m \xi
+\right),
+\\] 
+this expansion represents \\(f(x)\\) when \\(-\pi < x < \pi\\); and clearly by
+choosing the function \\(g(\xi)\\) in different ways an unlimited number of
+such expansions can be obtained.
+
+The question now at issue is, whether other series proceeding in
+sines and cosines of *integral* multiples of \\(x\\) exist, which differ from
+Fourier's expansion and yet represent \\(f(x)\\) between \\(-\pi\\) and \\(\pi\\).
+%\end{smallfont}
+
+If possible, let there be two trigonometrical series satisfying the
+given conditions, and let their difference be the trigonometrical
+series
+\\[ 
+A_{0}
++
+\sum_{n=1}^{\infty} A_{n}(x)
+=
+f(x).
+\\] 
+
+Then \\(f(x) = 0\\) at all points of the range \\((-\pi, \pi)\\) w th a finite number
+of exceptions; let \\(\xi_{1}, \xi_{2}\\) be a consecutive pair of these exceptional
+points, and let \\(F(x)\\) be Riemann's associated function. We proceed to establish a
+lemma concerning the value of \\(F(x)\\) when \\(\xi_{1} < x < \xi_{2}\\).
+
+\Subsubsection{9}{6}{3}{1}{Schwartz' lemma.}\footnote{Quoted by TODO} *In the range \\(\xi_{1} < x < \xi_{2}\\),
+  \\(F(x)\\) is a linear function of \\(x\\), if \\(f(x) = 0\\) in this range.*
+
+For if \\(\theta = 1\\) or if \\(\theta = -1\\)
+\\[ 
+\phi(x)
+=
+\theta \left[
+  F(x)
+  - F(\xi_{1})
+  - \frac{x - \xi_{1}}{\xi_{2} - \xi_{1}} \left\{
+    F(\xi_{2}) - F(\xi_{1})
+  \right\}
+\right]
+-
+\frac{1}{2} h^{2} (x - \xi_{1})(\xi_{2} - x)
+\\] 
+is a continuous function of \\(x\\) in the range
+\\(\xi_{1} \leq x \leq \xi_{2}\\) and \\(\phi(\xi_{1}) = \phi(\xi_{2}) = 0\\).
+%
+% 187
+%
+
+If the first term of \\(\phi(x)\\) is not zero throughout the
+range\footnote{If it is zero throughout the range, \\(F(x)\\)
+  is a linear function of \\(x\\).}
+there will be some point \\(x=c\\) at which it is not zero. Choose the sign of \\(\theta\\)
+so that the first term is positive at \\(c\\), and then choose \\(h\\) so small
+that \\(\phi(c)\\) is still positive.
+
+Since \\(\phi(x)\\) is continuous it attains its upper bound (\hardsubsectionref{3}{6}{2}), and
+this upper bound is positive since \\(\phi(c) > 0\\). Let \\(\phi(x)\\) attain its
+upper bound at \\(c_{1}\\), so that \\(c_{1} \neq \xi_{1}, c_{1} \neq \xi_{2}\\).
+
+Then, by Riemann's first
+lemma,
+\\[ 
+\lim_{\alpha \rightarrow 0}
+\frac{\phi(c_{1} + \alpha) + \phi(c_{1} - \alpha) - 2 \phi(c_{1})}{\alpha^{2}}
+=
+h^{2}.
+\\] 
+
+But \\(\phi(c_{1} + \alpha) \leq \phi(c_{1}), \phi(c_{1} - \alpha) \leq \phi(c_{1})\\), so this limit must be
+negative or zero.
+
+Hence, by supposing that the first term of \\(\phi(x)\\) is not everywhere zero
+in the range \\((\xi_{1}, \xi_{2})\\) we have arrived at a contradiction. Therefore it
+is zero; and consequently \\(F(x)\\) is a linear function of \\(x\\) in the range
+\\(\xi_{1} < x < \xi_{2}\\)
+The lemma is therefore proved.
+
+\Subsubsection{9}{6}{3}{2}{Proof of Riemann's Theorem.}
+We see that, in the circumstances under consideration, the curve \\(y = F(x)\\)
+represents a series of segments of straight lines, the beginning
+and end of each line corresponding to an exceptional point; and as \\(F(x)\\),
+being uniformly convergent, is a continuous function of \\(x\\), these
+lines must be connected.
+
+But, by Riemann's second lemma, even if \\(\xi\\) be an exceptional point,
+\\[ 
+\lim_{\alpha \rightarrow 0}
+\frac{F(\xi + \alpha) + F(\xi - \alpha) - 2F(\xi)}{\alpha}
+=
+0.
+\\] 
+
+Now the fraction involved in this limit is the difference of the
+slopes of the two segments which meet at that point whose abscissa is
+\\(\xi\\); therefore the two segments are continuous in direction, so the
+equation \\(y = F(x)\\) represents a single line. If then we write
+\\(F(x) = cx + c'\\), it follows that \\(c\\) and \\(c'\\) have the same values for
+*all* values of \\(x\\). Thus
+\\[ 
+\frac{1}{2} A_{0} x^{2} - cx - c'
+=
+\sum_{n=1}^{\infty} n^{-2} A_{n}(x),
+\\] 
+the right-hand side of this equation being periodic, with period \\(2\pi\\).
+
+The left-hand side of this equation must therefore be periodic, with
+period \\(2\pi\\). Hence
+\\[ 
+A_{0} = 0,
+\quad
+c = 0,
+\\] 
+and
+\\[ 
+-c' = \sum_{n=1}^{\infty} n^{-2} A_{n}(x).
+\\] 
+
+Now the right-hand side of this equation converges uniformly, so we
+can multiply by \\(\cos nx\\) or by \\(\sin nx\\) and integrate.
+
+This process gives
+\\[ \begin{align*}
+  \pi n^{-2} \alpha_{n}
+  =&
+  - c' \! \int_{-\pi}^{\pi}\! \cos nx \, d x = 0,
+  \\
+  \pi n^{-2} b_{n}
+  =&
+  - c' \! \int_{-\pi}^{\pi}\! \sin nx \, d x = 0.
+\end{align*} \\]
+%
+% 188
+%
+Therefore all the coefficients vanish, and therefore the two
+trigonometrical series whose difference is
+\\(A_{0} + \sum_{n=1}^{\infty} A_{n}(x)\\) have
+corresponding coefficients equal.
+This is the result stated in \hardsubsectionref{9}{6}{3}.
+
+\Section{9}{7}{Fourier's representation of a function by an integral.}\footnote{TODO:La Theorie Analytique de la Chaleur, Cb. ix.}
+It follows from \hardsubsectionref{9}{4}{3} that, if \\(f(x)\\) be continuous except at a
+finite number of discontinuities and if it have limited total
+fluctuation in the range \\((-\infty, \infty)\\), then, if \\(x\\) be any
+*internal* point of the range \\((-\alpha, \beta)\\),
+\\[ 
+\lim_{m \rightarrow \infty}
+\int_{-\alpha}^{\beta}\!
+\frac{\sin (2m + 1)(t - x)}{t - x}
+f(t) \, d t
+=
+\lim_{\theta \rightarrow 0}
+\frac{1}{2} \pi \theta^{-1} \sin \theta
+\left\{
+  f(x + 2\theta) + f(x - 2 \theta)
+\right\}.
+\\] 
+
+Now let \\(\lambda\\) be any real number, and choose the integer \\(m\\) so that
+\\(\lambda = 2m + 1 + 2\eta\\) where \\(0 \leq \eta < 1\\).
+
+Then
+\\[ \begin{align*}
+  &
+  \int_{-\alpha}^{\beta}\!
+  \left\{
+    \sin \lambda(t - x) - \sin (2m+1)(t-x)
+  \right\}
+  (t - x)^{-1} f(t) \, d t
+  \\
+  &\quad
+  \int_{-\alpha}^{\beta}\!
+  2 \left\{
+    \cos (2m + 1 + \eta)(t-x)
+  \right\} \cdot \left\{
+    \sin \eta (t-x)
+  \right\}
+  (t - x)^{-1} f(t) \, d t
+  \\
+  &\quad
+  \rightarrow 0,
+\end{align*} \\]
+as \\(m \rightarrow \infty\\) by
+\hardsubsectionref{9}{4}{1} (ii), %TODO:ref
+since \\((t - x)^{-1} f(t) \sin \eta(t - x)\\) has
+limited total fluctuation.
+
+Consequently, from the proof of the Riemann-Lebesgue lemma of \hardsubsectionref{9}{4}{1},
+it is obvious that if \\(\int_{0}^{\infty} \left| \, f(t) \, \right|  \, d t\\) and
+\\(\int_{-\infty}^{0} \left| \, f(t) \, \right|  \, d t\\) converge, then\footnote{\\(\int_{-\infty}^{\infty}\\) means the double limit
+  \\(\lim_{\phi\rightarrow\infty, \sigma\rightarrow\infty} \int_{-\rho}^{\sigma}\\). If this limit exists, it is of course
+  equal to \\(\lim_{\rho\rightarrow\infty}\int_{-\rho}^{\rho}\\).}
+\\[ 
+\lim_{\lambda\rightarrow\infty}
+\int_{-\infty}^{\infty}\!
+\frac{\sin \lambda(t-x)}{(t-x)}
+f(t) \, d t
+=
+\frac{1}{2}
+\pi
+\left\{
+  f(x+0) + f(x-0)
+\right\},
+\\] 
+and so
+\\[ 
+\lim_{\lambda\rightarrow\infty}
+\int_{-\infty}^{\infty}\!
+\left\{
+  \int_{0}^{\lambda}\!
+  \cos u(t-x) \, d u
+\right\}
+f(t) \, d t
+=
+\frac{1}{2}
+\pi
+\left\{
+  f(x+0) + f(x-0)
+\right\},
+\\] 
+
+To obtain Fourier's result, we must reverse the order of integration
+in this repeated integral.
+
+For any given value of \\(\lambda\\) and any arbitrary value of \\(\eps\\), there exists a
+number \\(\beta\\) such that
+\\[ 
+\int_{\beta}^{\infty}\!
+\left| \, f(t) \, \right| 
+\, d t
+<
+\frac{1}{2} \eps / \lambda;
+\\] 
+%
+% 189
+%
+writing \\(\cos u(t-x) \cdot f(t) = \phi(t,u)\\), we
+have\footnote{The equation
+  \\(\int_{0}^{\beta} \int_{0}^{\lambda} = \int_{0}^{\lambda} \int_{0}^{\beta}\\)
+  is easily justified by \hardsectionref{4}{3}, by considering the ranges within
+  which \\(f(x)\\) is continuous.}
+\\[ \begin{align*}
+  \left| \, 
+    \int_{0}^{\infty}\! \left\{
+      \int_{0}^{\lambda}\! \phi(t,u) \, d u
+    \right\} \, d t
+    -
+    \int_{0}^{\lambda}\! \left\{
+      \int_{0}^{\infty}\! \phi(t,u) \, d t
+    \right\} \, d u
+   \, \right| 
+  \\
+  \quad &
+  =
+  \int_{0}^{\beta}\!
+  \left\{
+    \int_{0}^{\lambda}\! \phi(t,u) \, d u
+  \right\} \, d t
+  +
+  \int_{\beta}^{\infty}\!
+  \left\{
+    \int_{0}^{\lambda}\! \phi(t,u) \, d u
+  \right\} \, d t
+  \\
+  \quad & \quad
+  - \int_{0}^{\lambda}\! \left\{
+    \int_{0}^{\beta}\! \phi(t,u) \, d t
+  \right\} \, d u
+  - \int_{0}^{\lambda}\! \left\{
+    \int_{\beta}^{\infty}\! \phi(t,u) \, d t
+  \right\} \, d u
+  \\
+  & =
+  \left| \, 
+    \int_{\beta}^{\infty}\! \left\{
+      \int_{0}^{\lambda}\! \phi(t,u) \, d u
+    \right\} \, d t
+    -
+     \int_{0}^{\lambda}\! \left\{
+      \int_{\beta}^{\infty}\! \phi(t,u) \, d t
+    \right\} \, d u
+   \, \right| 
+  \\
+  & <
+  \int_{\beta}^{\infty}\! \left\{
+    \int_{0}^{\lambda}\! \left| \, \phi(t,u) \, \right|  \, d u
+  \right\} \, d t
+  -
+  \int_{0}^{\lambda}\! \left\{
+    \int_{\beta}^{\infty}\! \left| \, \phi(t,u) \, \right|  \, d t
+  \right\} \, d u
+  \\
+  & <
+  2 \lambda \int_{\beta}^{\infty}\! \left| \, f(t) \, \right|  \, d t
+  <
+  \eps
+  .
+\end{align*} \\]
+
+Since this is true for all values of \\(\eps\\), no matter how small, we infer
+that
+\\(\int_{0}^{\infty}\!\! \int_{0}^{\lambda} = \int_{0}^{\lambda}\!\! \int_{0}^{\infty}\\);
+similarly
+\\[ \int_{0}^{-\infty}\!\! \int_{0}^{\lambda} = \int_{0}^{\lambda}\!\! \int_{0}^{-\infty}\\] 
+
+Hence
+\\[ \begin{align*}
+  \frac{1}{2} \pi \left\{
+    f(x+0) + f(x-0)
+  \right\}
+  & =
+  \lim_{\lambda \rightarrow \infty}
+  \int_{0}^{\lambda}\!\! \int_{-\infty}^{\infty}
+  \cos u(t-x) f(t) \, d t \, d u
+  \\
+  & =
+  \int_{0}^{\infty}\!\! \int_{-\infty}^{\infty}
+  \cos u(t-x) f(t) \, d t \, d u.
+\end{align*} \\]
+
+This result is known as *Fourier's integral theorem*\footnote{
+  For a proof of the theorem when \\(f(x)\\) is subject to less stringent
+  restrictions, see
+  Hobson, Functions of a Real Variable, %% 492-493. %TODO:ref
+  The reader should observe that, although
+  \\(\lim_{\lambda\rightarrow\infty} \int_{-\infty}^{\infty}\!\! \int_{0}^{\lambda}\\) exists,
+  the repeated integral \\(\int_{-\infty}^{\infty}\! \left\{
+    \int_{0}^{\infty}\! \sin u(t-x) \, d u
+  \right\} f(t) \, d t\\) does not.
+}.
+
+Example. % TODO: Format example
+Verify Fourier's integral theorem directly
+(i) % TODO: enumerate
+for the function
+\\[ 
+f(x) = (a^{2} + x^{2})^{-\frac{1}{2}}
+\\] 
+(ii) % TODO: enumerate
+for the function defined by the equations
+\\[ 
+f(x) = 1,
+\quad
+(-1 < x < 1);
+\quad
+f(x) = 0,
+\quad (\left| \, x \, \right|  > 1).
+\\] 
+\addexamplecitation{Rayleigh.}
+
+%TODO:references section
+REFERENCES.
+G. F. B. Riemann, Ges. Math. Werke, pp. 213-250.
+E. W. Hobson, Functions of a Real Variable (1907), Ch. vii.
+H. Lebesgde, Lemons sur les Series Trigonometriques. (Paris, 1906.)
+C. J. DE LA VallJ e Poussix, Cours d: Analyse Infinitesimale, ir. (Louvain and
+Paris, 1912), Ch. IV.
+H. Burkhardt, Ena/clopddie der Math. WUg. ii. 1 (7). (Leipzig, 1914.)
+G. A. Carse and G. Shearer, A course in Fourier's analysis and
+periodogram analysis (Edinburgh Math. Tracts, No. 4, 1915).
+
+%
+% 190
+%
+
+%TODO:format examples
+Miscellaneous Examples.
+
+\begin{wandwexample}
+Obtain the expansions
+%TODO: subpart
+\frac{1 - r \cos z}{1 - 2r \cos z + r^{2} = 1 + r \cos z + r^{2} \cos 2z + \cdots,
+%TODO: subpart
+  (6) - log ( 1 - 2r cos z + r ) = - r cos J - '' cos 2 - - r cos 3 - .
+. .,
+
+,,, ?'sinz . 1 . 1 . \,
+
+(c) arc tan, = rsins + -?' sin 22 + ?: /' sin 3s + ...,
+
+   r cos 2 2 3
+
+,, 2rsin2 . I,  1 c
+
+(a) arc tan 3- = r sin z- -r sin 3 + - r° sm 02 + . . .,
+
+1 - r'' 3 5
+
+and shew that, when | r | < 1, thej- are convergent for all values of
+z in certain strips parallel to the real axis in the -plane.
+\end{wandwexample}
+\begin{wandwexample}
+Expand x and x in Fourier sine series valid when - \pi < .r < \pi;
+and hence find the value of the sum of the series
+
+sin X - sin 2.r + -3 sin 3*' - - sin 4.r + . . ., for all values of
+a.-. \addexamplecitation{Jesus, 1902.}
+\end{wandwexample}
+\begin{wandwexample}
+Shew that the function of x I'epresented by 2 ~i sin sin /2a, is
+constant
+
+n = \
+
+(0 < X < 2a) and zero (2a < x < \pi), and draw a graph of the function.
+
+\addexamplecitation{Pembroke, 1907.}
+\end{wandwexample}
+4. Find the cosine series representing /(.r) where
+
+/ (x) = sin X + cos X (0 < . ' \pi ),
+
+/(.r) = sin.r-cos.r (in- .r < \pi). \addexamplecitation{Peterhouse, 1906.}
+
+5. Shew that
+
+sin 3n- sinSjTA' sin Ttt., r -,
+
+sin TTX + - - + - - + - - - + ... = Jtt [x],
+
+where [x] denotes 4-1 or - 1 according as the integer next inferior to
+x is even or uneven, and is zero if x is an integer. \addexamplecitation{Trinity, 1895.}
+
+6. Shew that the expansions
+
+log and
+
+1
+
+2 cos - X 2
+
+log 2 .sin - X
+
+= cos X-- cos 2x + - cos 3x
+
+- COS X - - COS 2x - - cos 3x
+
+are valid for all real A'alues of x, except multiples of \pi.
+
+7. Obtain the expansion
+
+"(-)"* cos m.r, o M / 1 \ 1 /  T  \
+
+2 ~ - -yT-. = (cos X + cos 2x) log ( 2 cos -x\ +-,:?; (sin zx + sin x)
+- cos x,
+
+and find the range of values of . ' for which it is applicable.
+\addexamplecitation{Trinity, 1898.}
+
+8. Prove that, if < a- < 27r, then
+
+sin X 2 sin 2x Z sin 3.:*; \ \pi sinh a (\pi - x) a' + Y' " a +2- "a T +
+' ' " " 2 ' sinh aTr '
+
+\addexamplecitation{Trinity, 1895.}
+
+FOURIER SERIES
+
+%
+% 191
+%
+
+9. Shew that between the values -\pi and +n o( x the following
+expansions hold
+
+2 . / sin 2 sin 2x 3 sin Zx
+
+sin in.v = - sin ran -. r - -, - + -= - - ...
+
+IT \ V-m'' -l -m 32-7 2
+
+2 . ( \ m cos X m cos 2.r m cos 3 ' cos mx = - sin ??l7r;;- + - - -r
++ - 5 -
+
+TT \ 2m P - 7rt- 22-77l2 32-J/l2
+
+e-mx g-mx 2 / 1 ??IC0S.¥ ?/l COS 2.r 7?2C0S3.1- \
+
+10. Let X be a real variable V)etween and 1, and let n be an odd
+number 3. Shew that
+
+(-1)* = - + - 2 -tan - cos2OTn-:r, if is not a multiple of -, where s
+is the gi-eatest integer contained in nx; but
+
+ 1 2 1 WITT
+
+0= - + - 2 - tan - cos 2m7rx, n 7r, =i i n
+
+if jp is an integer multiple of 1/n. \addexamplecitation{Berger.}
+
+11. Shew that the sum of the series
+
+X
+
+ 5 + 47r ~ 2 m~ sin mn cos 2m7rx
+
+m = 1
+
+is 1 when 0<x<l, and when fj<A'<l, and is -1 when l<.r<|.
+\addexamplecitation{Trinity, 1901.}
+
+12. If
+
+shew that, when - 1 <x <\,
+
+a" V (x)
+
+ae"'
+
+e" - 1 =o n
+
+cos 2irx+
+
+s47r.r cosB\pij: \ \ -i 2" ""*' " i-
+
+22"
+
+32
+
+2/i !
+
+sin 47ra; sin 6nx "2-" + 1 "*" "32
+
+. -, 8IU 'iTTX Sin OTTX-, .,, -,. .,, .
+
+sm27ra;+-j; +-; +. .. = (-)"+! \ \,, V,,, x).
+
+22" 2 + l
+
+2 + 1 :
+
+\addexamplecitation{Math. Trip. 1896.}
+
+13. If 7?i is an integer, shew that, for all real values of .v,
+
+cos2' a;=2
+
+1.3.5...(2m-
+
+2.4.6 ...2m
+
+1) fl, r,i (2 i + l
+
+m m- )
+
+cos 2x + - - ~ cos 4x
+
+(ot4-1)(7 + 2)
+
+m m-l) m - 2) * (m + l)(?\pi + 2)(w+3)
+
+cos 6.r + ...V,
+
+  \ ., 4 2.4.6...(27ft-2) (1 2w-l . f2m-l)(27n-3),,
+
+r.ns2m-l\;p|\ \ - \ - \ \ \ \ J -!;; + ., COS 2x+-,,,, -;
+C0S4a-+.
+
+1.3.5 ...(2 i-l) (2 2/u + l
+
+(2to + 1)(2 h-3)
+
+/
+
+14. A point moves in a straight line with a velocity which is
+initially u, and which receives constant increments, each equal to u,
+at equal intervals r. Prove that the velocity at any time t after the
+beginning of the motion is
+
+u ut V- 1 . 2miit 77 + - + - 2 - sin,
+
+and that the di-stance traversed is
+
+lit
+
+( + ) + T7>-o32 2 -2 cos
+
+2mTTt
+
+\addexamplecitation{Trinity, 1894.}
+
+%
+% 192
+%
+
+15. If
+
+X 2 = 1
+
+f x)= 2 sin (6?i - 3) j; - 2 2 -sm 2n-l)x
+
+ji=i '2n - 1 71=1 zn - i
+
+3 v'3 f . sin 5.r sin 7.r sin ll r ]
+
+shew that / ( + 0) =/ (\pi - 0) = - \pi,
+
+and /G +0)-/(i7r-0)=-i7r, /(;:|7r+0)-/(37r-0)=*7r.
+
+Observing that the last series is
+
+6 sin (2ft- 1 ) TTsin 2n-l)x
+
+draw the graph of /(* ) \addexamplecitation{Math. Trip. 1893.}
+
+16. Shew that, when <.r < n,
+
+ / N 2 /3/ 1 .1 1 Ti, \
+
+f(,v) = '- I cos .r-- cos 0. '+- cos /.<--- cos 11. r,'-f... ' ' 3 \
+/ 11 /
+
+= sin 2x' + - sin 4.f + - sin 8.v + r sin lO.r + . . . 2 4 5
+
+where / ) = i (0< < 7r),
+
+f x) = (l7r<.r<g7r),
+
+f x)=-\ v %7T<X<1t).
+
+Find the sum of each series when .r = 0, \ ir, qtt, n, and for all
+other values of x.
+
+\addexamplecitation{Trinity, 1908.}
+
+17. Prove that the locus represented by
+
+2 2 - '' " '*'' ny =
+
+n=l "
+
+is two systems of lines at right angles, dividing the coordinate plane
+into squares of area \pi'\ \addexamplecitation{Math. Trip. 1895.}
+
+18. Shew that the equation
+
+" ( - )" ~ sin ny cos nx \
+
+n=i n ~
+
+represents the lines i/= ±mir, (wi = 0, 1, 2, ...) together with a set
+of arcs of ellipses whose
+
+semi-axes are \pi and nlslZ, the arcs being placed in squares of area
+27r" . Draw a diagram
+
+of the locus. \addexamplecitation{Trinity, 1903.}
+
+19. Shew that, if tlie point x,y, z) lies inside the octahedron
+bounded by the planes
+
+±x±y±z = Tr, then
+
+",,, sin 7ia;sin 7jwsin wj 1
+
+ j-Y- - =2-y-
+
+\addexamplecitation{Math. Trip. 1904.}
+
+20. Circles of radius a are diawn having their centres at the
+alternate angular jjoints of a regular hexagon of side a. Sliew that
+the equation of the trefoil formed by the outer arcs of the circles
+can be put in the form
+
+-nr- = -; + - cos 3(9- --= cos 6 + -- - cos9 - ..., 6s'3a 22.4 5.7 8.
+10
+
+the initial line being taken to pass through the centre of one of the
+circles.
+
+\addexamplecitation{Pembroke, 1902.}
+
+2m . = 1 H sm
+
+%
+% 193
+%
+
+21. Draw the graph represented by
+
+rr J 1 ( - )" COS nm6\ m [2 a=i 1 - nm)- J ' where m is an integer.
+\addexamplecitation{Jesus, 1908.}
+
+22. With each vertex of a regular hexagon of side 2a as centre the arc
+of a circle of radius 2a lying within the hexagon is drawn. Shew that
+the equation of the figure formed by the six arcs is
+
+f-=6-3,.i + 2Si< -)-' j- f co.6 <>,
+
+4a a=i 6n-l) bn+l)
+
+the prime vector bisecting a petal. \addexamplecitation{Trinity, 1905.}
+
+23. Shew that, if c> 0,
+
+lim f
+
+e ' cot A" sin 2ii + l)x . dx=- n tanh -c\pi.
+
+\addexamplecitation{Trinity, 1894.}
+
+24. Shew that
+
+sin(2 + l) dx 1
+
+lim r
+
+IT O
+
+oth 1.
+
+\addexamplecitation{King's, 1901.}
+
+sin X l+x' 2
+
+25. Shew that, when - 1 < .r < 1 and a is real,
+
+/ '°sin(2n + l) sin(H-.r)(9, 1 sinha.r
+
+hm I -.;; 5 -r, d6= --TT .-, .
+
+  .xjo sm a + 6- 2 smh a
+
+\addexamplecitation{Math. Trip. 1905.}
+
+26. Assuming the possibility of expanding f(x) in a uniformly
+convergent series of
+
+the form A -ainkx, where is a root of the equation /-cosa/t-Hft sin a
+- = and the
+
+  . . . *
+
+summation is extended to all positive roots of this equation,
+determine the constants Jj..
+
+\addexamplecitation{Math. Trip. 1898.}
+
+1 ""
+
+27. If f(x) = -a + 2 a cosnx + b,t>im nx)
+
+2,(=1
+
+is a Fourier series, shew that, iif x) satisfies certain general
+conditions,
+
+a = - P i f (t) cos nt ta.n - t --, 6 = - / f t)smnttn,n-t - .
+
+7T J ' 'It ""yO 'It
+
+\addexamplecitation{Beau.}
+
+W. M. A. 13
