@@ -25,7 +25,7 @@ HTML header:	<script type="text/javascript"
 <div markdown=1 id="content">
 <div markdown=1 class="contenttext">
 
-### 9.2 On Dirichlet's Conditions and Fourier's Theorem. ###
+### 9.2 On Dirichlet's Conditions and Fourier's Theorem. 
 
 A theorem, of the type described in [§9.1](CMA09-1-FourierSeries.html#9.1definitionoffourierseries.), concerning the
 expansibility of a function of a real variable into a trigonometrical
@@ -47,21 +47,17 @@ trigonometrical series.
   \\] 
   so that \\(f(t)\\) is a periodic function with period \\(2\pi\\).*[^notsingleanalytic,-4]
 
-[^notsingleanalytic,-4]: This definition frequently results in \\(f(t)\\) not being expressible by a single analytical expression for all real values of \\(t\\). Cf. [§9.11 example 1](CMA09-1-FourierSeries.html#9.1example1).
+[^notsingleanalytic,-4]: This definition frequently results in $f(t)$ not being expressible by a single analytical expression for all real values of $t$. Cf. [§9.11 example 1](CMA09-1-FourierSeries.html#9.1example1).
 
-*Let \\(f(t)\\) be such that
-  \\(\int_{-\pi}^{\pi} f(t) \, d t\\) exists; and if this is an improper
-  integral, let it be absolutely convergent.*
+*Let \\(f(t)\\) be such that  \\(\int_{-\pi}^{\pi} f(t) \, d t\\) exists; and if this is an improper  integral, let it be absolutely convergent.* 
 
 [^coeffientsanadb,+1]: The numbers \\(a_{n}, b_{n}\\) are called  *the Fourier constants* of \\(f(t)\\), and the symbols \\(a_{n}, b_{n}\\) will be used in this sense throughout [§§9.2--9.5](#9.2ondirichletsconditionsandfourierstheorem.). It may be shewn that the convergence and absolute convergence of the integrals defining the Fourier constants are consequences of the convergence and absolute convergence of \\(\int_{\!-\pi}^{\pi} \:\! f(t) \, d t\\). Cf. § [§2.32](CMA02-2-SeriesMN.html#absoluteandconditionalconvergence), [§4.5](CMA04-3-ComplexInt.html#4.5improperintegrals.principalvalues.).
 
 *Let \\(a_{n}, b_{n}\\) be defined by the
   equations*[^coeffientsanadb,+1]
-  \\[ 
-  \pi a_{n} = \int_{-\pi}^{\pi}\! f(t) \cos nt \, d t,
-  \quad
-  \pi b_{n} = \int_{-\pi}^{\pi}\! f(t) \sin nt \, d t
-  \quad
+ \\[ 
+  \pi a_{n} \!=\! \int_{-\pi}^{\pi}\! f(t) \cos nt \, d t, \enspace
+  \pi b_{n} \!=\! \int_{-\pi}^{\pi}\! f(t) \sin nt \, d t  \enspace
   (n=0,1,2,\ldots).
   \\]
 
@@ -107,7 +103,8 @@ however, be
 taken as implying nothing concerning the convergence of the series in
 question.
 
-####9.21 The representation of a function by Fourier series for ranges other than \\((-\pi,\pi)\\). [9.21therepresentationofafunctionbyfourierseriesforrangesotherthan-pipi]####
+#### 9.21 The representation of a function by Fourier series for ranges other than \\((-\pi,\pi)\\).[9.21therepresentationofafunctionbyfourierseriesforrangesotherthan-pipi]
+
 
 Consider a function \\(f(x)\\) with an (absolutely) convergent integral,
 and with limited total fluctuation in the range \\(a \leq x \leq b\\).
@@ -146,7 +143,7 @@ where by an obvious transformation
   \frac{1}{2} (b-a) b_{n} =& \int_{a}^{b}\! f(x) \sin \frac{n \pi (2x-a-b)}{b-a} \, d x .
 \end{align*} \\]
 
-#### 9.22 The Cosine Series and the Sine Series. ####
+#### 9.22 The Cosine Series and the Sine Series. 
 
 Let \\(f(x)\\) be defined in the range \\((0,l)\\) and let it have an
 (absolutely) convergent integral and also let it have limited
@@ -240,8 +237,7 @@ equal and opposite in sign when \\(0 \geq x \geq -l\\).[^cosinesine,-3]
 \\[ 
 \frac{1}{2} (\pi - x) \sin x
 =
-\frac{1}{2} a_{\:\!0}
-+ \sum_{n=1}^{\infty} a_{n} \cos nx,
+\frac{1}{2} a_{\:\!0} + \sum_{n=1}^{\infty} a_{n} \cos nx,
 \\] 
 where
 \\[ 
@@ -279,14 +275,13 @@ Whereas if \\(n=1\\), we get
 \\[\int_{0}^{\pi} 2 (\pi - x) \sin x \cos x \, d x = \frac{1}{2} \pi.\\]
 >Therefore the required series is
 \\[ 
-\frac{1}{2}
-+ \frac{1}{4} \cos x
-- \frac{1}{1 \cdot 3} \cos 2x
-- \frac{1}{2 \cdot 4} \cos 3x
-- \frac{1}{3 \cdot 5} \cos 4x
-- \cdots.
+\frac{1}{2} +
+ \frac{1}{4} \cos x -
+ \frac{1}{1 \cdot 3} \cos 2x -
+ \frac{1}{2 \cdot 4} \cos 3x - 
+ \frac{1}{3 \cdot 5} \cos 4x -
+ \cdots.
 \\] 
->
 >It will be observed that it is only for values of \\(x\\) between
 \\(0\\) and \\(\pi\\) that the sum of this series is proved to be
 \\(\frac{1}{2} (\pi - x) \sin x\\); thus for
@@ -309,15 +304,16 @@ valid when \\(0 \leq x \leq \pi\\).
 (\pi - 2x)
 (\pi^{2} + 2 \pi x - 2 x^{2})
 =
-\cos x
-+ \frac{\cos 3x}{3^{4}}
-+ \frac{\cos 5x}{5^{4}}
-+ \cdots.
+\cos x +
+ \frac{\cos 3x}{3^{4}} +
+ \frac{\cos 5x}{5^{4}} +
+ \cdots.
 \\] 
 >
 >[Denoting the left-hand side by \\(f(x)\\), we have, on integrating by
 parts and observing that \\(f'(0) = f'(\pi) = 0\\),
-\\[ \begin{align*}
+
+>\\[ \begin{align*}
   \int_{0}^{\pi}\! f(x) \cos nx \, d x
   =&\:
   \frac{1}{n} \left[f(x) \sin nx \vphantom{\int} \right]_{0}^{\pi}
@@ -342,22 +338,23 @@ parts and observing that \\(f'(0) = f'(\pi) = 0\\),
 
 >*Example* 4. Shew that for values of \\(x\\) between \\(0\\) and \\(\pi\\),
 \\(e^{s x}\\) can be expanded in the cosine series
-\\[ \begin{align*}
+>\\[ \begin{align*}
 &\frac{2 s}{\pi}
 \left(e^{s \pi} - 1\right)
 \left(
-  \frac{1}{2 s^{2}}
-  + \frac{\cos 2x}{s^{2} + 4}
-  + \frac{\cos 4x}{s^{2} + 16}
-  + \cdots
+  \frac{1}{2 s^{2}} +
+ \frac{\cos 2x}{s^{2} + 4} +
+ \frac{\cos 4x}{s^{2} + 16} + 
+\cdots
 \right) \\
 & \qquad \qquad \qquad \qquad -
 \frac{2 s}{\pi}
 \left(e^{s \pi} - 1\right)
 \left(
   \frac{\cos x}{s^{2} + 1}
-  + \frac{\cos 3x}{s^{2} + 9}
-  + \cdots
+\ +
+ \frac{\cos 3x}{s^{2} + 9} +
+ \cdots
 \right),
 \end{align*} \\] 
 and draw graphs of the function \\(e^{s x}\\) and of the sum of the series.
@@ -367,14 +364,15 @@ the function \\(\frac{1}{8} \pi (\pi - 2x)\\) can
 be expanded in the cosine series
 \\[ 
 \cos x
-+ \frac{\cos 3x}{3^{2}}
-+ \frac{\cos 5x}{5^{2}}
-+ \cdots,
+\ +
+ \frac{\cos 3x}{3^{2}} +
+ \frac{\cos 5x}{5^{2}}+
+ \cdots,
 \\] 
 and draw graphs of the function \\(\frac{1}{8} \pi (\pi - 2x)\\) and of the sum of the
 series.
 
-###9.3 The nature of the coefficients in a Fourier series.[^stokes,-1] [9.3thenatureofthecoefficientsinafourierseries.]###
+### 9.3 The nature of the coefficients in a Fourier series.[^stokes,-1] [9.3thenatureofthecoefficientsinafourierseries.]
 
 [^stokes,-1]: The analysis of this section and of [§9.31](#9.31differentiationoffourierseries.) is contained in Stokes' great memoir, [*Camb. Phil. Trans.* **viii.** (1849)](https://archive.org/details/transactionsofca08camb), pp. 538-583 [[*Math. Papers*, **i.**](https://archive.org/details/mathphyspapers01stokrich) pp. 236-313].
 
@@ -390,10 +388,10 @@ Then
 \\[ 
 \pi a_{m}
 =
-\int_{-\pi}^{k_{1}}\! f(t) \cos mt \, d t
-+ \int_{k_{1}}^{k_{2}}\! f(t) \cos mt \, d t
-+ \cdots
-+ \int_{k_{n}}^{\pi}\! f(t) \cos mt \, d t.
+\int_{-\pi}^{k_{1}}\! f(t) \cos mt \, d t +
+ \int_{k_{1}}^{k_{2}}\! f(t) \cos mt \, d t +
+ \cdots +
+ \int_{k_{n}}^{\pi}\! f(t) \cos mt \, d t.
 \\] 
 
 Integrating by parts we get
@@ -415,11 +413,11 @@ Integrating by parts we get
     m^{-1} f(t) \sin mt \vphantom{\int}
   \right]_{k_{n}}^{\pi}
   \\
-  & \quad
-  - m^{-1}\! \int_{-\pi}^{k_{1}}\! f'(t) \sin mt \, d t
-  - m^{-1}\! \int_{k_{1}}^{k_{2}}\! f'(t) \sin mt \, d t
-  \cdots
-  - m^{-1}\! \int_{k_{n}}^{\pi}\! f'(t) \sin mt \, d t,
+  & \quad - 
+m^{-1}\! \int_{-\pi}^{k_{1}}\! f'(t) \sin mt \, d t -
+ m^{-1}\! \int_{k_{1}}^{k_{2}}\! f'(t) \sin mt \, d t
+  \cdots -
+ m^{-1}\! \int_{k_{n}}^{\pi}\! f'(t) \sin mt \, d t,
 \end{align*} \\]
 so that
 \\[ 
@@ -479,13 +477,13 @@ where \\(a_{m}''\\), \\(b_{m}''\\) are the Fourier constants of
   \right\},
   \\
   \pi B_{m}'
-  =&
-  - \sum_{r=1}^{n} \cos m k_{r} \left\{
+  =& -
+ \sum_{r=1}^{n} \cos m k_{r} \left\{
     f'(k_{r}-0) - f'(k_{r}+0)
   \right\}
   \\
-  &\qquad
-  - \cos m \pi \left\{
+  &\qquad  -
+ \cos m \pi \left\{
     f'(\pi - 0) - f'(-\pi + 0)
   \right\}.
 \end{align*} \\]
@@ -493,14 +491,14 @@ where \\(a_{m}''\\), \\(b_{m}''\\) are the Fourier constants of
 Therefore
 \\[ 
 a_{m} =
-\frac{A_{m}}{m}
-- \frac{B_{m}'}{m^{2}}
-- \frac{a_{m}''}{m^{2}},
+\frac{A_{m}}{m} -
+ \frac{B_{m}'}{m^{2}} -
+ \frac{a_{m}''}{m^{2}},
 \quad
 b_{m} =
-\frac{B_{m}}{m}
-+ \frac{A_{m}'}{m^{2}}
-- \frac{b_{m}''}{m^{2}},
+\frac{B_{m}}{m} +
+ \frac{A_{m}'}{m^{2}} -
+ \frac{b_{m}''}{m^{2}},
 \\] 
 
 Now as \\(m \rightarrow \infty\\), we see that
@@ -531,12 +529,12 @@ that is to say that \\(f(x)\\) should be continuous for *all* values of \\(x\\).
 
 [^ofcourse,-2]: Of course \\(f(x)\\) is also subject to the conditions stated at the beginning of the section.
 
-####9.31 Differentiation of Fourier series.####
+#### 9.31 Differentiation of Fourier series.
 
 The result of differentiating
 \\[ 
-\frac{1}{2} a_{\:\!0}
-+ \sum_{m=1}^{\infty} (a_{m} \cos mx + b_{m} \sin mx)
+\frac{1}{2} a_{\:\!0} +
+ \sum_{m=1}^{\infty} (a_{m} \cos mx + b_{m} \sin mx)
 \\] 
 term by term is
 \\[ 
@@ -564,7 +562,7 @@ continuous for *all* values of \\(x\\) and \\(f'(x)\\) should have only a finite
 number of points of discontinuity in the range \\((-\pi, \pi)\\), both
 functions having limited total fluctuation throughout the range.
 
-####9.32 Determination of points of discontinuity.####
+#### 9.32 Determination of points of discontinuity.
 
 The expressions for \\(a_{m}\\) and \\(b_{m}\\) which have been found in
 [§9.3](#9.3thenatureofthecoefficientsinafourierseries.) can
@@ -573,14 +571,14 @@ at which the sum of a given Fourier series may be discontinuous. Thus,
 let it be required to determine the places at which the sum of the
 series
 \\[ 
-\sin x
-+ \frac{1}{3} \sin 3x
-+ \frac{1}{5} \sin 5x
-+ \cdots
+\sin x +
+ \frac{1}{3} \sin 3x +
+ \frac{1}{5} \sin 5x +
+ \cdots
 \\] 
 is discontinuous.
 
-[^formulasuse,+3]: *Editor's Note:* Since the sum of the series is an odd function, $b_{m}' = 0$. We also know that \\[ b_{m} = \frac{B_{m}}{m} + \frac{A_{m}'}{m^{2}} - \frac{b_{m}''}{m^{2}} = \frac{B_{m}}{m} + \frac{a_{m}'}{m}, \\]  but  $b_m$ has no $1/m^2$ terms. Hence $a_{m}' = 0$, and the other two equalities follow.
+[^formulasuse,+3]: *Editor's Note:* Since the sum of the series is an odd function, $b_{m}' = 0$. We also know that \\[ b_{m}\ \!=\! \frac{B_{m}}{m} \!+\! \frac{A_{m}'}{m^{2}} \!-\! \frac{b_{m}''}{m^{2}} \!=\! \frac{B_{m}}{m} \!+\! \frac{a_{m}'}{m}, \\]  but  $b_m$ has no $1/m^2$ terms. Hence $a_{m}' = 0$, and the other two equalities follow.
 
 *Assuming* that the series is a Fourier series and not *any*
 trigonometrical series and observing that
@@ -606,8 +604,7 @@ character of the sum is broken, we have
     f(k_{1} - 0) - f(k_{1} + 0)
   \right\}
   \right. \\
-& \qquad \left. \vphantom{\int}
-  + \sin m k_{2} \left\{
+& \qquad \left. \vphantom{\int} + \sin m k_{2} \left\{
     f(k_{2} - 0) - f(k_{2} + 0)
   \right\}
   +
@@ -625,19 +622,17 @@ Substituting \\(k_{1} = 0\\) in the equation
 \\(B_{m} = \frac{1}{2} - \frac{1}{2} \cos m \pi\\), we have
 \\[ 
 \pi \left(\frac{1}{2} - \frac{1}{2} \cos m \pi \right)
-=
-- \left[ \vphantom{\int}
+= - \left[ \vphantom{\int}
   \cos m \pi \left\{
     f(\pi - 0) - f(-\pi + 0)
-  \right\}
-  + f(-0)
-  - f(+0)
+  \right\} +
+ f(-0) -
+ f(+0)
 \right].
 \\] 
 
 Since this is true for all values of \\(m\\), we have
-\\[ 
-\frac{1}{2} \pi = f(+0) - f(-0),
+\\[ R\frac{1}{2} \pi = f(+0) - f(-0),
 \quad
 \frac{1}{2} \pi = f(\pi - 0) - f(-\pi + 0).
 \\] 
